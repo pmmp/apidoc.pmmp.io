@@ -1,0 +1,4 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_to_skin_data_helper =
+[
+    [ "fromClientData", "d0/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_to_skin_data_helper.html#ad2f6161ae52561496a07093d9357d00e", null ]
+];

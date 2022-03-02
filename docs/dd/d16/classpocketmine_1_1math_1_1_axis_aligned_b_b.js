@@ -1,0 +1,27 @@
+var classpocketmine_1_1math_1_1_axis_aligned_b_b =
+[
+    [ "addCoord", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#ac9ee8078bc3a8b20a765c67699a3342d", null ],
+    [ "calculateIntercept", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#afa8d8e0d9598e87b01ef2be8d699cfd7", null ],
+    [ "contract", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#ababf1512bfcedd28cedfabe801000d3f", null ],
+    [ "contractedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#ab40b70be279c92682f4d91d7bdd35096", null ],
+    [ "expand", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a982ca2c13c90cd506793be9b037ec068", null ],
+    [ "expandedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#aa7871124a6ce74ccca5cdee81dff457c", null ],
+    [ "extend", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a0dac66b8278174123d73141cafef26c0", null ],
+    [ "extendedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a77b9078a59374774f6f61400904adb68", null ],
+    [ "getAverageEdgeLength", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a4560d8c1fa074f2a4d069a917385f5bd", null ],
+    [ "getVolume", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a7faf9044c11f471e0fded2495de70593", null ],
+    [ "intersectsWith", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a7d936ccfe6c544f1fefb0c66ed5e4ec3", null ],
+    [ "isVectorInside", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a0397d8cb64dc3b0a1615db12d7be693f", null ],
+    [ "isVectorInXY", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a9310996035be98352c98c3acdaac76da", null ],
+    [ "isVectorInXZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a6ebd1667929c73178bb355f398b70df6", null ],
+    [ "isVectorInYZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a95a778fd258f3cd8f594a0e7a5c8be8f", null ],
+    [ "offset", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a74a261aecea9a68ebb042f105d56bb34", null ],
+    [ "offsetCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#ae74c22b87cf5ac8620ce2afceb16209c", null ],
+    [ "one", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a28724c6fb2adcf3e5fb11b1c4cad69d0", null ],
+    [ "squash", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a1da3cbf32ef81cb55fdc6fc5c970c499", null ],
+    [ "squashedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a4b21f786fb2342bc5c77b2967dbf9799", null ],
+    [ "stretch", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a8c668cfa7c81bb9c011b4cafad102a8c", null ],
+    [ "stretchedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#adbdea74993f66210353721863b9855f2", null ],
+    [ "trim", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a83ec7074a3a5d60d2093510d0db55483", null ],
+    [ "trimmedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a62524e05a1d33c77e7fec81ab92ecb2f", null ]
+];

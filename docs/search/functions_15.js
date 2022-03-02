@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['unblockaddress_0',['unblockAddress',['../d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#ab4f72a9218dc75a051c40a71f6a5c486',1,'pocketmine\network\mcpe\raklib\RakLibInterface\unblockAddress()'],['../d8/d3c/classpocketmine_1_1network_1_1query_1_1_dedicated_query_network_interface.html#aa4bb203af2738fb32915eca16f05c97f',1,'pocketmine\network\query\DedicatedQueryNetworkInterface\unblockAddress()'],['../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html#ae6ca614b1ffab4cd19344c939850edb3',1,'pocketmine\network\AdvancedNetworkInterface\unblockAddress()']]],
+  ['unloadworld_1',['unloadWorld',['../d8/d70/classpocketmine_1_1world_1_1_world_manager.html#a8131e79892faa4ecbb463f2437dac22e',1,'pocketmine::world::WorldManager']]],
+  ['unlockchunk_2',['unlockChunk',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a5e3184c8c09824005f8961cb3a58d68d',1,'pocketmine::world::World']]],
+  ['unregister_3',['unregister',['../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ae12ca172779fc02bf412a56df7be8a8e',1,'pocketmine::event::HandlerList']]],
+  ['unregisterall_4',['unregisterAll',['../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html#abfae685004c3af58cd9d39a08667eb7c',1,'pocketmine::event::HandlerListManager']]],
+  ['unregisterchunklistener_5',['unregisterChunkListener',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#afd51ae9c966a8d2de8dc91f80b337afc',1,'pocketmine::world::World']]],
+  ['unregisterchunklistenerfromall_6',['unregisterChunkListenerFromAll',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#aa5d895755fb6883ebb3a62e97523747d',1,'pocketmine::world::World']]],
+  ['unregisterinterface_7',['unregisterInterface',['../df/d91/classpocketmine_1_1network_1_1_network.html#a16288381e5a320ffe38160c48241b8bb',1,'pocketmine::network::Network']]],
+  ['unregisterrawpackethandler_8',['unregisterRawPacketHandler',['../df/d91/classpocketmine_1_1network_1_1_network.html#abab94b8346962475078c661cd426d7b8',1,'pocketmine::network::Network']]],
+  ['unsetbasepermission_9',['unsetBasePermission',['../d6/dc0/namespacepocketmine_1_1permission.html#a3050eea4e7b576495d47814087d88319',1,'pocketmine\permission\unsetBasePermission()'],['../d9/d10/classpocketmine_1_1permission_1_1_permissible_internal.html#a2019587eaaef6c5a49340c4dc77fbc79',1,'pocketmine\permission\PermissibleInternal\unsetBasePermission()'],['../de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#ac499fffc6bb1b20246652041c2b3485f',1,'pocketmine\permission\Permissible\unsetBasePermission()']]],
+  ['unsetpermission_10',['unsetPermission',['../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html#afa403fb17f8641856b010de450a048b0',1,'pocketmine::permission::PermissionAttachment']]],
+  ['unsetpermissions_11',['unsetPermissions',['../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html#a3ccd75503e2dce2f5f0d749b4ef3d3c4',1,'pocketmine::permission::PermissionAttachment']]],
+  ['unshift_12',['unshift',['../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#af244d3ac6fb30aa2b762ac02ffc671d1',1,'pocketmine::nbt::tag::ListTag']]],
+  ['unsubscribefromallbroadcastchannels_13',['unsubscribeFromAllBroadcastChannels',['../d5/df7/classpocketmine_1_1_server.html#a721c221388d1a1b5890a619310140caa',1,'pocketmine::Server']]],
+  ['unsubscribefrombroadcastchannel_14',['unsubscribeFromBroadcastChannel',['../d5/df7/classpocketmine_1_1_server.html#a2d73e696e7a3c87d0e7701757257fc9a',1,'pocketmine::Server']]],
+  ['up_15',['up',['../d2/d90/classpocketmine_1_1math_1_1_vector3.html#a84e61ccea823ddb5da55f9ca38c096ab',1,'pocketmine::math::Vector3']]],
+  ['updatetext_16',['updateText',['../df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a3dcfd3416ae91908d4c00c41eabd93df',1,'pocketmine::block::BaseSign']]],
+  ['usebreakon_17',['useBreakOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a86a1511d66542c24059a6b387195dc23',1,'pocketmine::world::World']]],
+  ['usehelditem_18',['useHeldItem',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#acb1c1056567862abccfc2e51b98d3e32',1,'pocketmine::player::Player']]],
+  ['useitemon_19',['useItemOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a89060c5356799854004d95571da52009',1,'pocketmine::world::World']]]
+];
