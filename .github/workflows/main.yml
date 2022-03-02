@@ -1,0 +1,15 @@
+name: API docs build
+
+on:
+  #TODO: we really want this to be built for releases exclusively, not on schedule
+  #for now a scheduled build will do the job
+  schedule:
+    - cron: 0 0 * * MON
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: pmmp/ApiDocsBuildAction/.github/workflows/build-docs.yml@master
+    with:
+      src-repo: pmmp/PocketMine-MP
+      ref: stable
