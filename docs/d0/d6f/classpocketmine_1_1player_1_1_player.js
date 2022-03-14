@@ -147,5 +147,6 @@ var classpocketmine_1_1player_1_1_player =
     [ "teleport", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81", null ],
     [ "transfer", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a812cd1bdd71aaa14f8c7c9714c97e767", null ],
     [ "unsetBasePermission", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ac499fffc6bb1b20246652041c2b3485f", null ],
-    [ "useHeldItem", "d0/d6f/classpocketmine_1_1player_1_1_player.html#acb1c1056567862abccfc2e51b98d3e32", null ]
+    [ "useHeldItem", "d0/d6f/classpocketmine_1_1player_1_1_player.html#acb1c1056567862abccfc2e51b98d3e32", null ],
+    [ "$lineHeight", "d0/d6f/classpocketmine_1_1player_1_1_player.html#adfcba9cccc68470973953f9c1c35050d", null ]
 ];

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.3 git-5d970cf5bdfd1ce09dfa349e77fd225cbbebe069</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.4 git-05fdd947546b932bafabe591542cd13b9c7c0467</span>
    </div>
   </td>
  </tr>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('de/d2c/_shulker_box_8php_source.html',
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $shulker = $this-&gt;position-&gt;getWorld()-&gt;getTile($this-&gt;position);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span>($shulker instanceof TileShulkerBox){</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keywordflow">if</span>(</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    $this-&gt;getSide($this-&gt;facing)-&gt;getId() !== BlockLegacyIds::AIR ||</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    $this-&gt;getSide($this-&gt;facing)-&gt;isSolid() ||</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                    !$shulker-&gt;canOpenWith($item-&gt;getCustomName())</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                ){</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>

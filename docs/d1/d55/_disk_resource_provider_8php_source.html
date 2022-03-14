@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.3 git-5d970cf5bdfd1ce09dfa349e77fd225cbbebe069</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.4 git-05fdd947546b932bafabe591542cd13b9c7c0467</span>
    </div>
   </td>
  </tr>
@@ -149,17 +149,17 @@ $(document).ready(function(){initNavTree('d1/d55/_disk_resource_provider_8php_so
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html#a482d3365b69a1f9c5a3fbb5382224ac8">   71</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html#a482d3365b69a1f9c5a3fbb5382224ac8">getResources</a>() : array{</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $resources = [];</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>(is_dir($this-&gt;file)){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">foreach</span>(<span class="keyword">new</span> \RecursiveIteratorIterator(<span class="keyword">new</span> \RecursiveDirectoryIterator($this-&gt;file)) as $resource){</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">if</span>($resource-&gt;isFile()){</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    $path = str_replace(DIRECTORY_SEPARATOR, <span class="stringliteral">&quot;/&quot;</span>, substr((<span class="keywordtype">string</span>) $resource, strlen($this-&gt;file)));</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    $resources[$path] = $resource;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> $resources;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">foreach</span>(<span class="keyword">new</span> \RecursiveIteratorIterator(<span class="keyword">new</span> \RecursiveDirectoryIterator($this-&gt;file)) as $resource){</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">if</span>($resource-&gt;isFile()){</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    $path = str_replace(DIRECTORY_SEPARATOR, <span class="stringliteral">&quot;/&quot;</span>, substr((<span class="keywordtype">string</span>) $resource, strlen($this-&gt;file)));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    $resources[$path] = $resource;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> $resources;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_disk_resource_provider_html"><div class="ttname"><a href="../../de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html">pocketmine\plugin\DiskResourceProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d55/_disk_resource_provider_8php_source.html#l00040">DiskResourceProvider.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_disk_resource_provider_html_a20a586d4b5cceba0b86aa8779db78aea"><div class="ttname"><a href="../../de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html#a20a586d4b5cceba0b86aa8779db78aea">pocketmine\plugin\DiskResourceProvider\getResource</a></div><div class="ttdeci">getResource(string $filename)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d55/_disk_resource_provider_8php_source.html#l00055">DiskResourceProvider.php:55</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_disk_resource_provider_html_a482d3365b69a1f9c5a3fbb5382224ac8"><div class="ttname"><a href="../../de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html#a482d3365b69a1f9c5a3fbb5382224ac8">pocketmine\plugin\DiskResourceProvider\getResources</a></div><div class="ttdeci">getResources()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d55/_disk_resource_provider_8php_source.html#l00071">DiskResourceProvider.php:71</a></div></div>
