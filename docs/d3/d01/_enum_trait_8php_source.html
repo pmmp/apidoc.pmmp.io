@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.4 git-05fdd947546b932bafabe591542cd13b9c7c0467</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.5 git-824f1f24ffbd3b0910ba49f96feb21e54620216a</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('d3/d01/_enum_trait_8php_source.html','
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">private</span> $runtimeId;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $enumName){</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^\D[A-Za-z\d_]+$/u&#39;</span>, $enumName, $matches) === 0){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^(?!\d)[A-Za-z\d_]+$/u&#39;</span>, $enumName, $matches) === 0){</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid enum member name \&quot;$enumName\&quot;, should only contain letters, numbers and underscores, and must not start with a number&quot;</span>);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;enumName = $enumName;</div>
