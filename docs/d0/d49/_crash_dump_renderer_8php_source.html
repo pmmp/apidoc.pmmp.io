@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.5 git-824f1f24ffbd3b0910ba49f96feb21e54620216a</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.5 git-c6374b79b0bd081da06abcd0524c3dcb0d4d2761</span>
    </div>
   </td>
  </tr>
@@ -135,56 +135,56 @@ $(document).ready(function(){initNavTree('d0/d49/_crash_dump_renderer_8php_sourc
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;addLine($this-&gt;data-&gt;general-&gt;name . <span class="stringliteral">&quot; Crash Dump &quot;</span> . date(<span class="stringliteral">&quot;D M j H:i:s T Y&quot;</span>, (int) $this-&gt;data-&gt;time));</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;addLine();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Error: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;message&quot;</span>]);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;addLine(<span class="stringliteral">&quot;File: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;file&quot;</span>]);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Line: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;line&quot;</span>]);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Type: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;type&quot;</span>]);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span>($this-&gt;data-&gt;plugin_involvement !== CrashDump::PLUGIN_INVOLVEMENT_NONE){</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $this-&gt;addLine();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;addLine(match($this-&gt;data-&gt;plugin_involvement){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                CrashDump::PLUGIN_INVOLVEMENT_DIRECT =&gt; <span class="stringliteral">&quot;THIS CRASH WAS CAUSED BY A PLUGIN&quot;</span>,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                CrashDump::PLUGIN_INVOLVEMENT_INDIRECT =&gt; <span class="stringliteral">&quot;A PLUGIN WAS INVOLVED IN THIS CRASH&quot;</span>,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                default =&gt; <span class="stringliteral">&quot;Unknown plugin involvement!&quot;</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            });</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span>($this-&gt;data-&gt;plugin !== <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $this-&gt;addLine(<span class="stringliteral">&quot;BAD PLUGIN: &quot;</span> . $this-&gt;data-&gt;plugin);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;addLine();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Code:&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $version = <span class="keyword">new</span> <a class="code hl_class" href="../../df/d22/classpocketmine_1_1utils_1_1_version_string.html">VersionString</a>($this-&gt;data-&gt;general-&gt;base_version, $this-&gt;data-&gt;general-&gt;is_dev, $this-&gt;data-&gt;general-&gt;build);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;addLine($this-&gt;data-&gt;general-&gt;name . <span class="stringliteral">&quot; version: &quot;</span> . $version-&gt;getFullVersion(<span class="keyword">true</span>) . <span class="stringliteral">&quot; [Protocol &quot;</span> . $this-&gt;data-&gt;general-&gt;protocol . <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Git commit: &quot;</span> . $this-&gt;data-&gt;general-&gt;git);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;addLine(<span class="stringliteral">&quot;PHP version: &quot;</span> . $this-&gt;data-&gt;general-&gt;php);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;addLine(<span class="stringliteral">&quot;OS: &quot;</span> . $this-&gt;data-&gt;general-&gt;php_os . <span class="stringliteral">&quot;, &quot;</span> . $this-&gt;data-&gt;general-&gt;os);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span>($this-&gt;data-&gt;plugin_involvement !== CrashDump::PLUGIN_INVOLVEMENT_NONE){</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;addLine();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $this-&gt;addLine(match($this-&gt;data-&gt;plugin_involvement){</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                CrashDump::PLUGIN_INVOLVEMENT_DIRECT =&gt; <span class="stringliteral">&quot;THIS CRASH WAS CAUSED BY A PLUGIN&quot;</span>,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                CrashDump::PLUGIN_INVOLVEMENT_INDIRECT =&gt; <span class="stringliteral">&quot;A PLUGIN WAS INVOLVED IN THIS CRASH&quot;</span>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                default =&gt; <span class="stringliteral">&quot;Unknown plugin involvement!&quot;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            });</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>($this-&gt;data-&gt;plugin !== <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $this-&gt;addLine(<span class="stringliteral">&quot;BAD PLUGIN: &quot;</span> . $this-&gt;data-&gt;plugin);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;addLine();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">foreach</span>($this-&gt;data-&gt;code as $lineNumber =&gt; $line){</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            $this-&gt;addLine(<span class="stringliteral">&quot;[$lineNumber] $line&quot;</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;addLine();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Backtrace:&quot;</span>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">foreach</span>($this-&gt;data-&gt;trace as $line){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $this-&gt;addLine($line);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Error: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;message&quot;</span>]);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $this-&gt;addLine(<span class="stringliteral">&quot;File: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;file&quot;</span>]);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Line: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;line&quot;</span>]);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Type: &quot;</span> . $this-&gt;data-&gt;error[<span class="stringliteral">&quot;type&quot;</span>]);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Backtrace:&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">foreach</span>($this-&gt;data-&gt;trace as $line){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            $this-&gt;addLine($line);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;addLine();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $version = <span class="keyword">new</span> VersionString($this-&gt;data-&gt;general-&gt;base_version, $this-&gt;data-&gt;general-&gt;is_dev, $this-&gt;data-&gt;general-&gt;build);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $this-&gt;addLine($this-&gt;data-&gt;general-&gt;name . <span class="stringliteral">&quot; version: &quot;</span> . $version-&gt;getFullVersion(<span class="keyword">true</span>) . <span class="stringliteral">&quot; [Protocol &quot;</span> . $this-&gt;data-&gt;general-&gt;protocol . <span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Git commit: &quot;</span> . $this-&gt;data-&gt;general-&gt;git);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $this-&gt;addLine(<span class="stringliteral">&quot;uname -a: &quot;</span> . $this-&gt;data-&gt;general-&gt;uname);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $this-&gt;addLine(<span class="stringliteral">&quot;PHP Version: &quot;</span> . $this-&gt;data-&gt;general-&gt;php);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Zend version: &quot;</span> . $this-&gt;data-&gt;general-&gt;zend);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $this-&gt;addLine(<span class="stringliteral">&quot;OS: &quot;</span> . $this-&gt;data-&gt;general-&gt;php_os . <span class="stringliteral">&quot;, &quot;</span> . $this-&gt;data-&gt;general-&gt;os);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Composer libraries: &quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">foreach</span>(<a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">Utils::stringifyKeys</a>($this-&gt;data-&gt;general-&gt;composer_libraries) as $library =&gt; $libraryVersion){</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $this-&gt;addLine(<span class="stringliteral">&quot;- $library $libraryVersion&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Code:&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">foreach</span>($this-&gt;data-&gt;code as $lineNumber =&gt; $line){</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $this-&gt;addLine(<span class="stringliteral">&quot;[$lineNumber] $line&quot;</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span>(count($this-&gt;data-&gt;plugins) &gt; 0){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $this-&gt;addLine();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            $this-&gt;addLine(<span class="stringliteral">&quot;Loaded plugins:&quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">foreach</span>($this-&gt;data-&gt;plugins as $p){</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                $this-&gt;addLine($p-&gt;name . <span class="stringliteral">&quot; &quot;</span> . $p-&gt;version . <span class="stringliteral">&quot; by &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $p-&gt;authors) . <span class="stringliteral">&quot; for API(s) &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $p-&gt;api));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span>(count($this-&gt;data-&gt;plugins) &gt; 0){</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $this-&gt;addLine();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $this-&gt;addLine(<span class="stringliteral">&quot;Loaded plugins:&quot;</span>);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">foreach</span>($this-&gt;data-&gt;plugins as $p){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                $this-&gt;addLine($p-&gt;name . <span class="stringliteral">&quot; &quot;</span> . $p-&gt;version . <span class="stringliteral">&quot; by &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $p-&gt;authors) . <span class="stringliteral">&quot; for API(s) &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $p-&gt;api));</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $this-&gt;addLine();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $this-&gt;addLine(<span class="stringliteral">&quot;uname -a: &quot;</span> . $this-&gt;data-&gt;general-&gt;uname);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Zend version: &quot;</span> . $this-&gt;data-&gt;general-&gt;zend);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $this-&gt;addLine(<span class="stringliteral">&quot;Composer libraries: &quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">foreach</span>(<a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">Utils::stringifyKeys</a>($this-&gt;data-&gt;general-&gt;composer_libraries) as $library =&gt; $libraryVersion){</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            $this-&gt;addLine(<span class="stringliteral">&quot;- $library $libraryVersion&quot;</span>);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
