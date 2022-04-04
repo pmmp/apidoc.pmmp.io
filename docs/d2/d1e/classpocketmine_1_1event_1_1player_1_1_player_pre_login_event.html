@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.5 git-c6374b79b0bd081da06abcd0524c3dcb0d4d2761</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.7 git-f924208881426528d15b81aacb106d67248ac822</span>
    </div>
   </td>
  </tr>
@@ -174,7 +174,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab274ee13ca26b82db9a55e309849b70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Called when a player connects to the server, prior to authentication taking place. Cancelling this event will cause the player to be disconnected with the kick message set.</p>
+<div class="textblock"><p >Called when a player connects to the server, prior to authentication taking place. Set a kick reason to cancel the event and disconnect the player with the kick message set.</p>
 <p >This event should be used to decide if the player may continue to login to the server. Do things like checking bans, whitelisting, server-full etc here.</p>
 <p >WARNING: Any information about the player CANNOT be trusted at this stage, because they are not authenticated and could be a hacker posing as another player. </p>
 
