@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.9 git-f272986903879dfeec0b8bd6aa592de5f59bb219</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
    </div>
   </td>
  </tr>
@@ -801,7 +801,23 @@ $(document).ready(function(){initNavTree('d9/d47/_packet_handler_default_impl_tr
 <div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleCodeBuilderSource(CodeBuilderSourcePacket $packet) : bool{</div>
 <div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        return false;</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    }</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>}</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleTickingAreasLoadStatus(TickingAreasLoadStatusPacket $packet) : bool{</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        return false;</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    }</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span> </div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleDimensionData(DimensionDataPacket $packet) : bool{</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>        return false;</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    }</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleAgentActionEvent(AgentActionEventPacket $packet) : bool{</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        return false;</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    }</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleChangeMobProperty(ChangeMobPropertyPacket $packet) : bool{</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>        return false;</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    }</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.9 git-f272986903879dfeec0b8bd6aa592de5f59bb219</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
    </div>
   </td>
  </tr>
@@ -315,14 +315,14 @@ $(document).ready(function(){initNavTree('db/d98/_item_8php_source.html','../../
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        $this-&gt;canPlaceOn = [];</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        $canPlaceOn = $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">getListTag</a>(<span class="stringliteral">&quot;CanPlaceOn&quot;</span>);</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keywordflow">if</span>($canPlaceOn !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keywordflow">if</span>($canPlaceOn !== <span class="keyword">null</span> &amp;&amp; $canPlaceOn-&gt;getTagType() === NBT::TAG_String){</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <span class="keywordflow">foreach</span>($canPlaceOn as $entry){</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                $this-&gt;canPlaceOn[$entry-&gt;getValue()] = $entry-&gt;getValue();</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            }</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        }</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        $this-&gt;canDestroy = [];</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        $canDestroy = $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">getListTag</a>(<span class="stringliteral">&quot;CanDestroy&quot;</span>);</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <span class="keywordflow">if</span>($canDestroy !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <span class="keywordflow">if</span>($canDestroy !== <span class="keyword">null</span> &amp;&amp; $canDestroy-&gt;getTagType() === NBT::TAG_String){</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            <span class="keywordflow">foreach</span>($canDestroy as $entry){</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                $this-&gt;canDestroy[$entry-&gt;getValue()] = $entry-&gt;getValue();</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            }</div>

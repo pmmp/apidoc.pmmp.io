@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.9 git-f272986903879dfeec0b8bd6aa592de5f59bb219</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d5/d38/_container_trait_8php_source.ht
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#a0d64d1e9cd5f03f58281139eacdea4a4">   44</a></span>    <span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#a0d64d1e9cd5f03f58281139eacdea4a4">getRealInventory</a>();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span> <span class="keyword">function</span> loadItems(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag) : void{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        if(($inventoryTag = $tag-&gt;getTag(<a class="code hl_interface" href="../../d9/de1/interfacepocketmine_1_1block_1_1tile_1_1_container.html">Container</a>::TAG_ITEMS)) instanceof <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">ListTag</a>){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        if(($inventoryTag = $tag-&gt;getTag(<a class="code hl_interface" href="../../d9/de1/interfacepocketmine_1_1block_1_1tile_1_1_container.html">Container</a>::TAG_ITEMS)) instanceof <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">ListTag</a> &amp;&amp; $inventoryTag-&gt;getTagType() === <a class="code hl_class" href="../../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html">NBT</a>::TAG_Compound){</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $inventory = $this-&gt;<a class="code hl_function" href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#a0d64d1e9cd5f03f58281139eacdea4a4">getRealInventory</a>();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            $listeners = $inventory-&gt;getListeners()-&gt;toArray();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $inventory-&gt;getListeners()-&gt;remove(...$listeners); <span class="comment">//prevent any events being fired by initialization</span></div>

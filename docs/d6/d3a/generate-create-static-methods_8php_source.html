@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.9 git-f272986903879dfeec0b8bd6aa592de5f59bb219</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d6/d3a/generate-create-static-methods_
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $paramTags[] = [$matches[1], $property-&gt;getName()];</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $longestParamType = max($longestParamType, strlen($matches[1]));</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span>(($phpDoc = $property-&gt;getDocComment()) !== <span class="keyword">false</span> &amp;&amp; preg_match(<span class="stringliteral">&#39;/@phpstan-var ([A-Za-z\d\[\]\\\\&lt;&gt;:\&zwj;(\&zwj;)\$ ,]+)/&#39;</span>, $phpDoc, $matches) === 1){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span>(($phpDoc = $property-&gt;getDocComment()) !== <span class="keyword">false</span> &amp;&amp; preg_match(<span class="stringliteral">&#39;/@phpstan-var ([A-Za-z\d\[\]\\\\&lt;&gt;:\*\&zwj;(\&zwj;)\$ ,]+)/&#39;</span>, substr($phpDoc, 3, -2), $matches) === 1){</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $matches[1] = trim($matches[1]);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $phpstanParamTags[] = [$matches[1], $property-&gt;getName()];</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $longestPhpstanParamType = max($longestPhpstanParamType, strlen($matches[1]));</div>

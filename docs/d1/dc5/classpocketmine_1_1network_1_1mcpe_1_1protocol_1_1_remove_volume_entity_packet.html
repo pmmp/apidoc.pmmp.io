@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.9 git-f272986903879dfeec0b8bd6aa592de5f59bb219</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
    </div>
   </td>
  </tr>
@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa064d23077830ab265f931c3385a3e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab12a84175dda75db7865db70acee0ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#ab12a84175dda75db7865db70acee0ba6">encode</a> (<a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
 <tr class="separator:ab12a84175dda75db7865db70acee0ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc40785d61aea187cb5b1241e532ff39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_volume_entity_packet.html#acc40785d61aea187cb5b1241e532ff39">getDimension</a> ()</td></tr>
+<tr class="separator:acc40785d61aea187cb5b1241e532ff39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a735dc0e377176f150a32f4b8f926b283"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_volume_entity_packet.html#a735dc0e377176f150a32f4b8f926b283">getEntityNetId</a> ()</td></tr>
 <tr class="separator:a735dc0e377176f150a32f4b8f926b283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5c94c78d92e3be9720d4f5d1c5352ff3">getName</a> ()</td></tr>
@@ -138,8 +140,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b0dc44135b4e3c57c1076df0d391dfb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_volume_entity_packet.html#a7b0dc44135b4e3c57c1076df0d391dfb">create</a> (int $entityNetId)</td></tr>
-<tr class="separator:a7b0dc44135b4e3c57c1076df0d391dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d1696273c27038f188eb7255ea30a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_volume_entity_packet.html#a89d1696273c27038f188eb7255ea30a3">create</a> (int $entityNetId, int $dimension)</td></tr>
+<tr class="separator:a89d1696273c27038f188eb7255ea30a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -276,8 +278,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b0dc44135b4e3c57c1076df0d391dfb" name="a7b0dc44135b4e3c57c1076df0d391dfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b0dc44135b4e3c57c1076df0d391dfb">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a89d1696273c27038f188eb7255ea30a3" name="a89d1696273c27038f188eb7255ea30a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d1696273c27038f188eb7255ea30a3">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,8 +291,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\RemoveVolumeEntityPacket::create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$entityNetId</em></td><td>)</td>
+          <td class="paramname"><em>$entityNetId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$dimension</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -301,7 +313,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
 
 </div>
 </div>
@@ -410,7 +422,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
 
 </div>
 </div>
@@ -499,7 +511,26 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="acc40785d61aea187cb5b1241e532ff39" name="acc40785d61aea187cb5b1241e532ff39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc40785d61aea187cb5b1241e532ff39">&#9670;&nbsp;</a></span>getDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\RemoveVolumeEntityPacket::getDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
 
 </div>
 </div>
@@ -518,7 +549,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
 
 </div>
 </div>
@@ -579,7 +610,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html#l00049">49</a> of file <a class="el" href="../../d7/db5/_remove_volume_entity_packet_8php_source.html">RemoveVolumeEntityPacket.php</a>.</p>
 
 </div>
 </div>

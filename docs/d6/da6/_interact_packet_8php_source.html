@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.2.9 git-f272986903879dfeec0b8bd6aa592de5f59bb219</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('d6/da6/_interact_packet_8php_source.ht
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $this-&gt;action = $in-&gt;getByte();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;targetActorRuntimeId = $in-&gt;<a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a50da20908fda976f3fc1c85f19ed9536">getActorRuntimeId</a>();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span>($this-&gt;action === self::ACTION_MOUSEOVER){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span>($this-&gt;action === self::ACTION_MOUSEOVER || $this-&gt;action === self::ACTION_LEAVE_VEHICLE){</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="comment">//TODO: should this be a vector3?</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            $this-&gt;x = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a83a855cea104ba6fd883bd92084c3bbb">getLFloat</a>();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            $this-&gt;y = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a83a855cea104ba6fd883bd92084c3bbb">getLFloat</a>();</div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('d6/da6/_interact_packet_8php_source.ht
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $out-&gt;putByte($this-&gt;action);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $out-&gt;putActorRuntimeId($this-&gt;targetActorRuntimeId);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span>($this-&gt;action === self::ACTION_MOUSEOVER){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span>($this-&gt;action === self::ACTION_MOUSEOVER || $this-&gt;action === self::ACTION_LEAVE_VEHICLE){</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $out-&gt;putLFloat($this-&gt;x);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $out-&gt;putLFloat($this-&gt;y);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $out-&gt;putLFloat($this-&gt;z);</div>
