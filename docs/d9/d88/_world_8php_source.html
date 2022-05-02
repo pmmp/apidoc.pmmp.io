@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-a6299b0927c1254fc482bf03f56742be0a4fb7f2</span>
    </div>
   </td>
  </tr>
@@ -2327,377 +2327,385 @@ $(document).ready(function(){initNavTree('d9/d88/_world_8php_source.html','../..
 <div class="line"><a id="l02653" name="l02653"></a><span class="lineno"> 2653</span>        unset($this-&gt;changedBlocks[$chunkHash]);</div>
 <div class="line"><a id="l02654" name="l02654"></a><span class="lineno"> 2654</span> </div>
 <div class="line"><a id="l02655" name="l02655"></a><span class="lineno"> 2655</span>        <span class="keywordflow">if</span>(array_key_exists($chunkHash, $this-&gt;chunkPopulationRequestMap)){</div>
-<div class="line"><a id="l02656" name="l02656"></a><span class="lineno"> 2656</span>            $this-&gt;chunkPopulationRequestMap[$chunkHash]-&gt;reject();</div>
-<div class="line"><a id="l02657" name="l02657"></a><span class="lineno"> 2657</span>            unset($this-&gt;chunkPopulationRequestMap[$chunkHash]);</div>
-<div class="line"><a id="l02658" name="l02658"></a><span class="lineno"> 2658</span>        }</div>
-<div class="line"><a id="l02659" name="l02659"></a><span class="lineno"> 2659</span> </div>
-<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span>        $this-&gt;timings-&gt;doChunkUnload-&gt;stopTiming();</div>
-<div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span> </div>
-<div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span>    }</div>
+<div class="line"><a id="l02656" name="l02656"></a><span class="lineno"> 2656</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Rejecting population promise for chunk $x $z&quot;</span>);</div>
+<div class="line"><a id="l02657" name="l02657"></a><span class="lineno"> 2657</span>            $this-&gt;chunkPopulationRequestMap[$chunkHash]-&gt;reject();</div>
+<div class="line"><a id="l02658" name="l02658"></a><span class="lineno"> 2658</span>            unset($this-&gt;chunkPopulationRequestMap[$chunkHash]);</div>
+<div class="line"><a id="l02659" name="l02659"></a><span class="lineno"> 2659</span>            <span class="keywordflow">if</span>(isset($this-&gt;activeChunkPopulationTasks[$chunkHash])){</div>
+<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Marking population task for chunk $x $z as orphaned&quot;</span>);</div>
+<div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span>                $this-&gt;activeChunkPopulationTasks[$chunkHash] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span>            }</div>
+<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span>        }</div>
 <div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span> </div>
-<div class="line"><a id="l02668" name="l02668"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98a5bba627898d19f9f59e51c3b910a1"> 2668</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98a5bba627898d19f9f59e51c3b910a1">isSpawnChunk</a>(<span class="keywordtype">int</span> $X, <span class="keywordtype">int</span> $Z) : bool{</div>
-<div class="line"><a id="l02669" name="l02669"></a><span class="lineno"> 2669</span>        $spawn = $this-&gt;getSpawnLocation();</div>
-<div class="line"><a id="l02670" name="l02670"></a><span class="lineno"> 2670</span>        $spawnX = $spawn-&gt;x &gt;&gt; Chunk::COORD_BIT_SIZE;</div>
-<div class="line"><a id="l02671" name="l02671"></a><span class="lineno"> 2671</span>        $spawnZ = $spawn-&gt;z &gt;&gt; Chunk::COORD_BIT_SIZE;</div>
-<div class="line"><a id="l02672" name="l02672"></a><span class="lineno"> 2672</span> </div>
-<div class="line"><a id="l02673" name="l02673"></a><span class="lineno"> 2673</span>        <span class="keywordflow">return</span> abs($X - $spawnX) &lt;= 1 &amp;&amp; abs($Z - $spawnZ) &lt;= 1;</div>
-<div class="line"><a id="l02674" name="l02674"></a><span class="lineno"> 2674</span>    }</div>
-<div class="line"><a id="l02675" name="l02675"></a><span class="lineno"> 2675</span> </div>
-<div class="line"><a id="l02679" name="l02679"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a267146b8a29f2b08a508c8307196df03"> 2679</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a267146b8a29f2b08a508c8307196df03">getSafeSpawn</a>(?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $spawn = <span class="keyword">null</span>) : <a class="code hl_class" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a>{</div>
-<div class="line"><a id="l02680" name="l02680"></a><span class="lineno"> 2680</span>        if(!($spawn instanceof <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>) || $spawn-&gt;y &lt; 1){</div>
-<div class="line"><a id="l02681" name="l02681"></a><span class="lineno"> 2681</span>            $spawn = $this-&gt;getSpawnLocation();</div>
-<div class="line"><a id="l02682" name="l02682"></a><span class="lineno"> 2682</span>        }</div>
-<div class="line"><a id="l02683" name="l02683"></a><span class="lineno"> 2683</span> </div>
-<div class="line"><a id="l02684" name="l02684"></a><span class="lineno"> 2684</span>        $max = $this-&gt;maxY;</div>
-<div class="line"><a id="l02685" name="l02685"></a><span class="lineno"> 2685</span>        $v = $spawn-&gt;floor();</div>
-<div class="line"><a id="l02686" name="l02686"></a><span class="lineno"> 2686</span>        $chunk = $this-&gt;getOrLoadChunkAtPosition($v);</div>
-<div class="line"><a id="l02687" name="l02687"></a><span class="lineno"> 2687</span>        <span class="keywordflow">if</span>($chunk === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l02688" name="l02688"></a><span class="lineno"> 2688</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d24/classpocketmine_1_1world_1_1_world_exception.html">WorldException</a>(<span class="stringliteral">&quot;Cannot find a safe spawn point in non-generated terrain&quot;</span>);</div>
-<div class="line"><a id="l02689" name="l02689"></a><span class="lineno"> 2689</span>        }</div>
-<div class="line"><a id="l02690" name="l02690"></a><span class="lineno"> 2690</span>        $x = (int) $v-&gt;x;</div>
-<div class="line"><a id="l02691" name="l02691"></a><span class="lineno"> 2691</span>        $z = (<span class="keywordtype">int</span>) $v-&gt;z;</div>
-<div class="line"><a id="l02692" name="l02692"></a><span class="lineno"> 2692</span>        $y = (int) min($max - 2, $v-&gt;y);</div>
-<div class="line"><a id="l02693" name="l02693"></a><span class="lineno"> 2693</span>        $wasAir = $this-&gt;getBlockAt($x, $y - 1, $z)-&gt;getId() === BlockLegacyIds::AIR; <span class="comment">//TODO: bad hack, clean up</span></div>
-<div class="line"><a id="l02694" name="l02694"></a><span class="lineno"> 2694</span>        <span class="keywordflow">for</span>(; $y &gt; $this-&gt;minY; --$y){</div>
-<div class="line"><a id="l02695" name="l02695"></a><span class="lineno"> 2695</span>            <span class="keywordflow">if</span>($this-&gt;getBlockAt($x, $y, $z)-&gt;isFullCube()){</div>
-<div class="line"><a id="l02696" name="l02696"></a><span class="lineno"> 2696</span>                <span class="keywordflow">if</span>($wasAir){</div>
-<div class="line"><a id="l02697" name="l02697"></a><span class="lineno"> 2697</span>                    $y++;</div>
-<div class="line"><a id="l02698" name="l02698"></a><span class="lineno"> 2698</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span>                }</div>
-<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l02701" name="l02701"></a><span class="lineno"> 2701</span>                $wasAir = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02702" name="l02702"></a><span class="lineno"> 2702</span>            }</div>
-<div class="line"><a id="l02703" name="l02703"></a><span class="lineno"> 2703</span>        }</div>
-<div class="line"><a id="l02704" name="l02704"></a><span class="lineno"> 2704</span> </div>
-<div class="line"><a id="l02705" name="l02705"></a><span class="lineno"> 2705</span>        <span class="keywordflow">for</span>(; $y &gt;= $this-&gt;minY &amp;&amp; $y &lt; $max; ++$y){</div>
-<div class="line"><a id="l02706" name="l02706"></a><span class="lineno"> 2706</span>            <span class="keywordflow">if</span>(!$this-&gt;getBlockAt($x, $y + 1, $z)-&gt;isFullCube()){</div>
-<div class="line"><a id="l02707" name="l02707"></a><span class="lineno"> 2707</span>                <span class="keywordflow">if</span>(!$this-&gt;getBlockAt($x, $y, $z)-&gt;isFullCube()){</div>
-<div class="line"><a id="l02708" name="l02708"></a><span class="lineno"> 2708</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> Position($spawn-&gt;x, $y === (<span class="keywordtype">int</span>) $spawn-&gt;y ? $spawn-&gt;y : $y, $spawn-&gt;z, $this);</div>
-<div class="line"><a id="l02709" name="l02709"></a><span class="lineno"> 2709</span>                }</div>
-<div class="line"><a id="l02710" name="l02710"></a><span class="lineno"> 2710</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l02711" name="l02711"></a><span class="lineno"> 2711</span>                ++$y;</div>
-<div class="line"><a id="l02712" name="l02712"></a><span class="lineno"> 2712</span>            }</div>
-<div class="line"><a id="l02713" name="l02713"></a><span class="lineno"> 2713</span>        }</div>
-<div class="line"><a id="l02714" name="l02714"></a><span class="lineno"> 2714</span> </div>
-<div class="line"><a id="l02715" name="l02715"></a><span class="lineno"> 2715</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> Position($spawn-&gt;x, $y, $spawn-&gt;z, $this);</div>
-<div class="line"><a id="l02716" name="l02716"></a><span class="lineno"> 2716</span>    }</div>
-<div class="line"><a id="l02717" name="l02717"></a><span class="lineno"> 2717</span> </div>
-<div class="line"><a id="l02721" name="l02721"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e"> 2721</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e">getTime</a>() : int{</div>
-<div class="line"><a id="l02722" name="l02722"></a><span class="lineno"> 2722</span>        return $this-&gt;time;</div>
-<div class="line"><a id="l02723" name="l02723"></a><span class="lineno"> 2723</span>    }</div>
-<div class="line"><a id="l02724" name="l02724"></a><span class="lineno"> 2724</span> </div>
-<div class="line"><a id="l02728" name="l02728"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3684caa290b5b455e8efac15a6fcc013"> 2728</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3684caa290b5b455e8efac15a6fcc013">getTimeOfDay</a>() : int{</div>
-<div class="line"><a id="l02729" name="l02729"></a><span class="lineno"> 2729</span>        return $this-&gt;time % self::TIME_FULL;</div>
-<div class="line"><a id="l02730" name="l02730"></a><span class="lineno"> 2730</span>    }</div>
-<div class="line"><a id="l02731" name="l02731"></a><span class="lineno"> 2731</span> </div>
-<div class="line"><a id="l02736" name="l02736"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1de566a493bd62fdfb4aec302d6b7970"> 2736</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1de566a493bd62fdfb4aec302d6b7970">getDisplayName</a>() : string{</div>
-<div class="line"><a id="l02737" name="l02737"></a><span class="lineno"> 2737</span>        return $this-&gt;displayName;</div>
-<div class="line"><a id="l02738" name="l02738"></a><span class="lineno"> 2738</span>    }</div>
-<div class="line"><a id="l02739" name="l02739"></a><span class="lineno"> 2739</span> </div>
-<div class="line"><a id="l02743" name="l02743"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3693dcf84c93ce48d8e38d86fa109c7c"> 2743</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3693dcf84c93ce48d8e38d86fa109c7c">getFolderName</a>() : string{</div>
-<div class="line"><a id="l02744" name="l02744"></a><span class="lineno"> 2744</span>        return $this-&gt;folderName;</div>
-<div class="line"><a id="l02745" name="l02745"></a><span class="lineno"> 2745</span>    }</div>
-<div class="line"><a id="l02746" name="l02746"></a><span class="lineno"> 2746</span> </div>
-<div class="line"><a id="l02750" name="l02750"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20"> 2750</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20">setTime</a>(<span class="keywordtype">int</span> $time) : void{</div>
-<div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span>        $this-&gt;time = $time;</div>
-<div class="line"><a id="l02752" name="l02752"></a><span class="lineno"> 2752</span>        $this-&gt;sendTime();</div>
-<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>    }</div>
-<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span> </div>
-<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a521749ab256c156c2d5af805ccfe7a51"> 2758</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a521749ab256c156c2d5af805ccfe7a51">stopTime</a>() : void{</div>
-<div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span>        $this-&gt;stopTime = true;</div>
-<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span>        $this-&gt;sendTime();</div>
-<div class="line"><a id="l02761" name="l02761"></a><span class="lineno"> 2761</span>    }</div>
-<div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span> </div>
-<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e"> 2766</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e">startTime</a>() : void{</div>
-<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span>        $this-&gt;stopTime = false;</div>
-<div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>        $this-&gt;sendTime();</div>
-<div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span>    }</div>
-<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span> </div>
-<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ade4f5232a1de8e46714ad34c5d2a5656"> 2774</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ade4f5232a1de8e46714ad34c5d2a5656">getSeed</a>() : int{</div>
-<div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span>        return $this-&gt;provider-&gt;getWorldData()-&gt;getSeed();</div>
-<div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span>    }</div>
-<div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span> </div>
-<div class="line"><a id="l02778" name="l02778"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab24f4aa8eb3bdabc81a682d3d4b599f5"> 2778</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab24f4aa8eb3bdabc81a682d3d4b599f5">getMinY</a>() : int{</div>
-<div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span>        return $this-&gt;minY;</div>
-<div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span>    }</div>
-<div class="line"><a id="l02781" name="l02781"></a><span class="lineno"> 2781</span> </div>
-<div class="line"><a id="l02782" name="l02782"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a124ee0c96f83dd11f221e19cad389e4a"> 2782</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a124ee0c96f83dd11f221e19cad389e4a">getMaxY</a>() : int{</div>
-<div class="line"><a id="l02783" name="l02783"></a><span class="lineno"> 2783</span>        return $this-&gt;maxY;</div>
-<div class="line"><a id="l02784" name="l02784"></a><span class="lineno"> 2784</span>    }</div>
-<div class="line"><a id="l02785" name="l02785"></a><span class="lineno"> 2785</span> </div>
-<div class="line"><a id="l02786" name="l02786"></a><span class="lineno"> 2786</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDifficulty() : int{</div>
-<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span>        return $this-&gt;provider-&gt;getWorldData()-&gt;getDifficulty();</div>
-<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span>    }</div>
-<div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span> </div>
-<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span>    <span class="keyword">public</span> <span class="keyword">function</span> setDifficulty(<span class="keywordtype">int</span> $difficulty) : void{</div>
-<div class="line"><a id="l02791" name="l02791"></a><span class="lineno"> 2791</span>        if($difficulty &lt; 0 || $difficulty &gt; 3){</div>
-<div class="line"><a id="l02792" name="l02792"></a><span class="lineno"> 2792</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid difficulty level $difficulty&quot;</span>);</div>
-<div class="line"><a id="l02793" name="l02793"></a><span class="lineno"> 2793</span>        }</div>
-<div class="line"><a id="l02794" name="l02794"></a><span class="lineno"> 2794</span>        $this-&gt;provider-&gt;getWorldData()-&gt;setDifficulty($difficulty);</div>
-<div class="line"><a id="l02795" name="l02795"></a><span class="lineno"> 2795</span> </div>
-<div class="line"><a id="l02796" name="l02796"></a><span class="lineno"> 2796</span>        <span class="keywordflow">foreach</span>($this-&gt;players as $player){</div>
-<div class="line"><a id="l02797" name="l02797"></a><span class="lineno"> 2797</span>            $player-&gt;getNetworkSession()-&gt;syncWorldDifficulty($this-&gt;getDifficulty());</div>
+<div class="line"><a id="l02665" name="l02665"></a><span class="lineno"> 2665</span>        $this-&gt;timings-&gt;doChunkUnload-&gt;stopTiming();</div>
+<div class="line"><a id="l02666" name="l02666"></a><span class="lineno"> 2666</span> </div>
+<div class="line"><a id="l02667" name="l02667"></a><span class="lineno"> 2667</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02668" name="l02668"></a><span class="lineno"> 2668</span>    }</div>
+<div class="line"><a id="l02669" name="l02669"></a><span class="lineno"> 2669</span> </div>
+<div class="line"><a id="l02673" name="l02673"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98a5bba627898d19f9f59e51c3b910a1"> 2673</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98a5bba627898d19f9f59e51c3b910a1">isSpawnChunk</a>(<span class="keywordtype">int</span> $X, <span class="keywordtype">int</span> $Z) : bool{</div>
+<div class="line"><a id="l02674" name="l02674"></a><span class="lineno"> 2674</span>        $spawn = $this-&gt;getSpawnLocation();</div>
+<div class="line"><a id="l02675" name="l02675"></a><span class="lineno"> 2675</span>        $spawnX = $spawn-&gt;x &gt;&gt; Chunk::COORD_BIT_SIZE;</div>
+<div class="line"><a id="l02676" name="l02676"></a><span class="lineno"> 2676</span>        $spawnZ = $spawn-&gt;z &gt;&gt; Chunk::COORD_BIT_SIZE;</div>
+<div class="line"><a id="l02677" name="l02677"></a><span class="lineno"> 2677</span> </div>
+<div class="line"><a id="l02678" name="l02678"></a><span class="lineno"> 2678</span>        <span class="keywordflow">return</span> abs($X - $spawnX) &lt;= 1 &amp;&amp; abs($Z - $spawnZ) &lt;= 1;</div>
+<div class="line"><a id="l02679" name="l02679"></a><span class="lineno"> 2679</span>    }</div>
+<div class="line"><a id="l02680" name="l02680"></a><span class="lineno"> 2680</span> </div>
+<div class="line"><a id="l02684" name="l02684"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a267146b8a29f2b08a508c8307196df03"> 2684</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a267146b8a29f2b08a508c8307196df03">getSafeSpawn</a>(?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $spawn = <span class="keyword">null</span>) : <a class="code hl_class" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a>{</div>
+<div class="line"><a id="l02685" name="l02685"></a><span class="lineno"> 2685</span>        if(!($spawn instanceof <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>) || $spawn-&gt;y &lt; 1){</div>
+<div class="line"><a id="l02686" name="l02686"></a><span class="lineno"> 2686</span>            $spawn = $this-&gt;getSpawnLocation();</div>
+<div class="line"><a id="l02687" name="l02687"></a><span class="lineno"> 2687</span>        }</div>
+<div class="line"><a id="l02688" name="l02688"></a><span class="lineno"> 2688</span> </div>
+<div class="line"><a id="l02689" name="l02689"></a><span class="lineno"> 2689</span>        $max = $this-&gt;maxY;</div>
+<div class="line"><a id="l02690" name="l02690"></a><span class="lineno"> 2690</span>        $v = $spawn-&gt;floor();</div>
+<div class="line"><a id="l02691" name="l02691"></a><span class="lineno"> 2691</span>        $chunk = $this-&gt;getOrLoadChunkAtPosition($v);</div>
+<div class="line"><a id="l02692" name="l02692"></a><span class="lineno"> 2692</span>        <span class="keywordflow">if</span>($chunk === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l02693" name="l02693"></a><span class="lineno"> 2693</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d24/classpocketmine_1_1world_1_1_world_exception.html">WorldException</a>(<span class="stringliteral">&quot;Cannot find a safe spawn point in non-generated terrain&quot;</span>);</div>
+<div class="line"><a id="l02694" name="l02694"></a><span class="lineno"> 2694</span>        }</div>
+<div class="line"><a id="l02695" name="l02695"></a><span class="lineno"> 2695</span>        $x = (int) $v-&gt;x;</div>
+<div class="line"><a id="l02696" name="l02696"></a><span class="lineno"> 2696</span>        $z = (<span class="keywordtype">int</span>) $v-&gt;z;</div>
+<div class="line"><a id="l02697" name="l02697"></a><span class="lineno"> 2697</span>        $y = (int) min($max - 2, $v-&gt;y);</div>
+<div class="line"><a id="l02698" name="l02698"></a><span class="lineno"> 2698</span>        $wasAir = $this-&gt;getBlockAt($x, $y - 1, $z)-&gt;getId() === BlockLegacyIds::AIR; <span class="comment">//TODO: bad hack, clean up</span></div>
+<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span>        <span class="keywordflow">for</span>(; $y &gt; $this-&gt;minY; --$y){</div>
+<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span>            <span class="keywordflow">if</span>($this-&gt;getBlockAt($x, $y, $z)-&gt;isFullCube()){</div>
+<div class="line"><a id="l02701" name="l02701"></a><span class="lineno"> 2701</span>                <span class="keywordflow">if</span>($wasAir){</div>
+<div class="line"><a id="l02702" name="l02702"></a><span class="lineno"> 2702</span>                    $y++;</div>
+<div class="line"><a id="l02703" name="l02703"></a><span class="lineno"> 2703</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02704" name="l02704"></a><span class="lineno"> 2704</span>                }</div>
+<div class="line"><a id="l02705" name="l02705"></a><span class="lineno"> 2705</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l02706" name="l02706"></a><span class="lineno"> 2706</span>                $wasAir = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02707" name="l02707"></a><span class="lineno"> 2707</span>            }</div>
+<div class="line"><a id="l02708" name="l02708"></a><span class="lineno"> 2708</span>        }</div>
+<div class="line"><a id="l02709" name="l02709"></a><span class="lineno"> 2709</span> </div>
+<div class="line"><a id="l02710" name="l02710"></a><span class="lineno"> 2710</span>        <span class="keywordflow">for</span>(; $y &gt;= $this-&gt;minY &amp;&amp; $y &lt; $max; ++$y){</div>
+<div class="line"><a id="l02711" name="l02711"></a><span class="lineno"> 2711</span>            <span class="keywordflow">if</span>(!$this-&gt;getBlockAt($x, $y + 1, $z)-&gt;isFullCube()){</div>
+<div class="line"><a id="l02712" name="l02712"></a><span class="lineno"> 2712</span>                <span class="keywordflow">if</span>(!$this-&gt;getBlockAt($x, $y, $z)-&gt;isFullCube()){</div>
+<div class="line"><a id="l02713" name="l02713"></a><span class="lineno"> 2713</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> Position($spawn-&gt;x, $y === (<span class="keywordtype">int</span>) $spawn-&gt;y ? $spawn-&gt;y : $y, $spawn-&gt;z, $this);</div>
+<div class="line"><a id="l02714" name="l02714"></a><span class="lineno"> 2714</span>                }</div>
+<div class="line"><a id="l02715" name="l02715"></a><span class="lineno"> 2715</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l02716" name="l02716"></a><span class="lineno"> 2716</span>                ++$y;</div>
+<div class="line"><a id="l02717" name="l02717"></a><span class="lineno"> 2717</span>            }</div>
+<div class="line"><a id="l02718" name="l02718"></a><span class="lineno"> 2718</span>        }</div>
+<div class="line"><a id="l02719" name="l02719"></a><span class="lineno"> 2719</span> </div>
+<div class="line"><a id="l02720" name="l02720"></a><span class="lineno"> 2720</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> Position($spawn-&gt;x, $y, $spawn-&gt;z, $this);</div>
+<div class="line"><a id="l02721" name="l02721"></a><span class="lineno"> 2721</span>    }</div>
+<div class="line"><a id="l02722" name="l02722"></a><span class="lineno"> 2722</span> </div>
+<div class="line"><a id="l02726" name="l02726"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e"> 2726</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e">getTime</a>() : int{</div>
+<div class="line"><a id="l02727" name="l02727"></a><span class="lineno"> 2727</span>        return $this-&gt;time;</div>
+<div class="line"><a id="l02728" name="l02728"></a><span class="lineno"> 2728</span>    }</div>
+<div class="line"><a id="l02729" name="l02729"></a><span class="lineno"> 2729</span> </div>
+<div class="line"><a id="l02733" name="l02733"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3684caa290b5b455e8efac15a6fcc013"> 2733</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3684caa290b5b455e8efac15a6fcc013">getTimeOfDay</a>() : int{</div>
+<div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span>        return $this-&gt;time % self::TIME_FULL;</div>
+<div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span>    }</div>
+<div class="line"><a id="l02736" name="l02736"></a><span class="lineno"> 2736</span> </div>
+<div class="line"><a id="l02741" name="l02741"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1de566a493bd62fdfb4aec302d6b7970"> 2741</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1de566a493bd62fdfb4aec302d6b7970">getDisplayName</a>() : string{</div>
+<div class="line"><a id="l02742" name="l02742"></a><span class="lineno"> 2742</span>        return $this-&gt;displayName;</div>
+<div class="line"><a id="l02743" name="l02743"></a><span class="lineno"> 2743</span>    }</div>
+<div class="line"><a id="l02744" name="l02744"></a><span class="lineno"> 2744</span> </div>
+<div class="line"><a id="l02748" name="l02748"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3693dcf84c93ce48d8e38d86fa109c7c"> 2748</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3693dcf84c93ce48d8e38d86fa109c7c">getFolderName</a>() : string{</div>
+<div class="line"><a id="l02749" name="l02749"></a><span class="lineno"> 2749</span>        return $this-&gt;folderName;</div>
+<div class="line"><a id="l02750" name="l02750"></a><span class="lineno"> 2750</span>    }</div>
+<div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span> </div>
+<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20"> 2755</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20">setTime</a>(<span class="keywordtype">int</span> $time) : void{</div>
+<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>        $this-&gt;time = $time;</div>
+<div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span>        $this-&gt;sendTime();</div>
+<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span>    }</div>
+<div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span> </div>
+<div class="line"><a id="l02763" name="l02763"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a521749ab256c156c2d5af805ccfe7a51"> 2763</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a521749ab256c156c2d5af805ccfe7a51">stopTime</a>() : void{</div>
+<div class="line"><a id="l02764" name="l02764"></a><span class="lineno"> 2764</span>        $this-&gt;stopTime = true;</div>
+<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span>        $this-&gt;sendTime();</div>
+<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span>    }</div>
+<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span> </div>
+<div class="line"><a id="l02771" name="l02771"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e"> 2771</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e">startTime</a>() : void{</div>
+<div class="line"><a id="l02772" name="l02772"></a><span class="lineno"> 2772</span>        $this-&gt;stopTime = false;</div>
+<div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span>        $this-&gt;sendTime();</div>
+<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span>    }</div>
+<div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span> </div>
+<div class="line"><a id="l02779" name="l02779"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ade4f5232a1de8e46714ad34c5d2a5656"> 2779</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ade4f5232a1de8e46714ad34c5d2a5656">getSeed</a>() : int{</div>
+<div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span>        return $this-&gt;provider-&gt;getWorldData()-&gt;getSeed();</div>
+<div class="line"><a id="l02781" name="l02781"></a><span class="lineno"> 2781</span>    }</div>
+<div class="line"><a id="l02782" name="l02782"></a><span class="lineno"> 2782</span> </div>
+<div class="line"><a id="l02783" name="l02783"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab24f4aa8eb3bdabc81a682d3d4b599f5"> 2783</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab24f4aa8eb3bdabc81a682d3d4b599f5">getMinY</a>() : int{</div>
+<div class="line"><a id="l02784" name="l02784"></a><span class="lineno"> 2784</span>        return $this-&gt;minY;</div>
+<div class="line"><a id="l02785" name="l02785"></a><span class="lineno"> 2785</span>    }</div>
+<div class="line"><a id="l02786" name="l02786"></a><span class="lineno"> 2786</span> </div>
+<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a124ee0c96f83dd11f221e19cad389e4a"> 2787</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a124ee0c96f83dd11f221e19cad389e4a">getMaxY</a>() : int{</div>
+<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span>        return $this-&gt;maxY;</div>
+<div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span>    }</div>
+<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span> </div>
+<div class="line"><a id="l02791" name="l02791"></a><span class="lineno"> 2791</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDifficulty() : int{</div>
+<div class="line"><a id="l02792" name="l02792"></a><span class="lineno"> 2792</span>        return $this-&gt;provider-&gt;getWorldData()-&gt;getDifficulty();</div>
+<div class="line"><a id="l02793" name="l02793"></a><span class="lineno"> 2793</span>    }</div>
+<div class="line"><a id="l02794" name="l02794"></a><span class="lineno"> 2794</span> </div>
+<div class="line"><a id="l02795" name="l02795"></a><span class="lineno"> 2795</span>    <span class="keyword">public</span> <span class="keyword">function</span> setDifficulty(<span class="keywordtype">int</span> $difficulty) : void{</div>
+<div class="line"><a id="l02796" name="l02796"></a><span class="lineno"> 2796</span>        if($difficulty &lt; 0 || $difficulty &gt; 3){</div>
+<div class="line"><a id="l02797" name="l02797"></a><span class="lineno"> 2797</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid difficulty level $difficulty&quot;</span>);</div>
 <div class="line"><a id="l02798" name="l02798"></a><span class="lineno"> 2798</span>        }</div>
-<div class="line"><a id="l02799" name="l02799"></a><span class="lineno"> 2799</span>    }</div>
+<div class="line"><a id="l02799" name="l02799"></a><span class="lineno"> 2799</span>        $this-&gt;provider-&gt;getWorldData()-&gt;setDifficulty($difficulty);</div>
 <div class="line"><a id="l02800" name="l02800"></a><span class="lineno"> 2800</span> </div>
-<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span>    <span class="keyword">private</span> <span class="keyword">function</span> addChunkHashToPopulationRequestQueue(<span class="keywordtype">int</span> $chunkHash) : void{</div>
-<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span>        if(!isset($this-&gt;chunkPopulationRequestQueueIndex[$chunkHash])){</div>
-<div class="line"><a id="l02803" name="l02803"></a><span class="lineno"> 2803</span>            $this-&gt;chunkPopulationRequestQueue-&gt;enqueue($chunkHash);</div>
-<div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span>            $this-&gt;chunkPopulationRequestQueueIndex[$chunkHash] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span>        }</div>
-<div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>    }</div>
-<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span> </div>
-<div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>    <span class="keyword">private</span> <span class="keyword">function</span> enqueuePopulationRequest(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?ChunkLoader $associatedChunkLoader) : Promise{</div>
-<div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span>        $chunkHash = World::chunkHash($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02813" name="l02813"></a><span class="lineno"> 2813</span>        $this-&gt;addChunkHashToPopulationRequestQueue($chunkHash);</div>
-<div class="line"><a id="l02814" name="l02814"></a><span class="lineno"> 2814</span>        $resolver = $this-&gt;chunkPopulationRequestMap[$chunkHash] = <span class="keyword">new</span> PromiseResolver();</div>
-<div class="line"><a id="l02815" name="l02815"></a><span class="lineno"> 2815</span>        <span class="keywordflow">if</span>($associatedChunkLoader === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l02816" name="l02816"></a><span class="lineno"> 2816</span>            $temporaryLoader = <span class="keyword">new</span> <span class="keyword">class </span>implements ChunkLoader{};</div>
-<div class="line"><a id="l02817" name="l02817"></a><span class="lineno"> 2817</span>            $this-&gt;registerChunkLoader($temporaryLoader, $chunkX, $chunkZ);</div>
-<div class="line"><a id="l02818" name="l02818"></a><span class="lineno"> 2818</span>            $resolver-&gt;getPromise()-&gt;onCompletion(</div>
-<div class="line"><a id="l02819" name="l02819"></a><span class="lineno"> 2819</span>                fn() =&gt; $this-&gt;unregisterChunkLoader($temporaryLoader, $chunkX, $chunkZ),</div>
-<div class="line"><a id="l02820" name="l02820"></a><span class="lineno"> 2820</span>                <span class="keyword">static</span> <span class="keyword">function</span>() : <span class="keywordtype">void</span>{}</div>
-<div class="line"><a id="l02821" name="l02821"></a><span class="lineno"> 2821</span>            );</div>
-<div class="line"><a id="l02822" name="l02822"></a><span class="lineno"> 2822</span>        }</div>
-<div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>        <span class="keywordflow">return</span> $resolver-&gt;getPromise();</div>
-<div class="line"><a id="l02824" name="l02824"></a><span class="lineno"> 2824</span>    }</div>
-<div class="line"><a id="l02825" name="l02825"></a><span class="lineno"> 2825</span> </div>
-<div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>    <span class="keyword">private</span> <span class="keyword">function</span> drainPopulationRequestQueue() : void{</div>
-<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span>        $failed = [];</div>
-<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span>        <span class="keywordflow">while</span>(count($this-&gt;activeChunkPopulationTasks) &lt; $this-&gt;maxConcurrentChunkPopulationTasks &amp;&amp; !$this-&gt;chunkPopulationRequestQueue-&gt;isEmpty()){</div>
-<div class="line"><a id="l02829" name="l02829"></a><span class="lineno"> 2829</span>            $nextChunkHash = $this-&gt;chunkPopulationRequestQueue-&gt;dequeue();</div>
-<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span>            unset($this-&gt;chunkPopulationRequestQueueIndex[$nextChunkHash]);</div>
-<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>            World::getXZ($nextChunkHash, $nextChunkX, $nextChunkZ);</div>
-<div class="line"><a id="l02832" name="l02832"></a><span class="lineno"> 2832</span>            <span class="keywordflow">if</span>(isset($this-&gt;chunkPopulationRequestMap[$nextChunkHash])){</div>
-<div class="line"><a id="l02833" name="l02833"></a><span class="lineno"> 2833</span>                assert(!isset($this-&gt;activeChunkPopulationTasks[$nextChunkHash]), <span class="stringliteral">&quot;Population for chunk $nextChunkX $nextChunkZ already running&quot;</span>);</div>
-<div class="line"><a id="l02834" name="l02834"></a><span class="lineno"> 2834</span>                <span class="keywordflow">if</span>(</div>
-<div class="line"><a id="l02835" name="l02835"></a><span class="lineno"> 2835</span>                    !$this-&gt;orderChunkPopulation($nextChunkX, $nextChunkZ, <span class="keyword">null</span>)-&gt;isResolved() &amp;&amp;</div>
-<div class="line"><a id="l02836" name="l02836"></a><span class="lineno"> 2836</span>                    !isset($this-&gt;activeChunkPopulationTasks[$nextChunkHash])</div>
-<div class="line"><a id="l02837" name="l02837"></a><span class="lineno"> 2837</span>                ){</div>
-<div class="line"><a id="l02838" name="l02838"></a><span class="lineno"> 2838</span>                    $failed[] = $nextChunkHash;</div>
-<div class="line"><a id="l02839" name="l02839"></a><span class="lineno"> 2839</span>                }</div>
-<div class="line"><a id="l02840" name="l02840"></a><span class="lineno"> 2840</span>            }</div>
-<div class="line"><a id="l02841" name="l02841"></a><span class="lineno"> 2841</span>        }</div>
-<div class="line"><a id="l02842" name="l02842"></a><span class="lineno"> 2842</span> </div>
-<div class="line"><a id="l02843" name="l02843"></a><span class="lineno"> 2843</span>        <span class="comment">//these requests failed even though they weren&#39;t rate limited; we can&#39;t directly re-add them to the back of the</span></div>
-<div class="line"><a id="l02844" name="l02844"></a><span class="lineno"> 2844</span>        <span class="comment">//queue because it would result in an infinite loop</span></div>
-<div class="line"><a id="l02845" name="l02845"></a><span class="lineno"> 2845</span>        <span class="keywordflow">foreach</span>($failed as $hash){</div>
-<div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>            $this-&gt;addChunkHashToPopulationRequestQueue($hash);</div>
-<div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span>        }</div>
-<div class="line"><a id="l02848" name="l02848"></a><span class="lineno"> 2848</span>    }</div>
-<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span> </div>
-<div class="line"><a id="l02855" name="l02855"></a><span class="lineno"> 2855</span>    <span class="keyword">private</span> <span class="keyword">function</span> checkChunkPopulationPreconditions(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : array{</div>
-<div class="line"><a id="l02856" name="l02856"></a><span class="lineno"> 2856</span>        $chunkHash = World::chunkHash($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02857" name="l02857"></a><span class="lineno"> 2857</span>        $resolver = $this-&gt;chunkPopulationRequestMap[$chunkHash] ?? <span class="keyword">null</span>;</div>
-<div class="line"><a id="l02858" name="l02858"></a><span class="lineno"> 2858</span>        <span class="keywordflow">if</span>($resolver !== <span class="keyword">null</span> &amp;&amp; isset($this-&gt;activeChunkPopulationTasks[$chunkHash])){</div>
-<div class="line"><a id="l02859" name="l02859"></a><span class="lineno"> 2859</span>            <span class="comment">//generation is already running</span></div>
-<div class="line"><a id="l02860" name="l02860"></a><span class="lineno"> 2860</span>            <span class="keywordflow">return</span> [$resolver, <span class="keyword">false</span>];</div>
-<div class="line"><a id="l02861" name="l02861"></a><span class="lineno"> 2861</span>        }</div>
-<div class="line"><a id="l02862" name="l02862"></a><span class="lineno"> 2862</span> </div>
-<div class="line"><a id="l02863" name="l02863"></a><span class="lineno"> 2863</span>        $temporaryChunkLoader = <span class="keyword">new</span> <span class="keyword">class </span>implements ChunkLoader{};</div>
-<div class="line"><a id="l02864" name="l02864"></a><span class="lineno"> 2864</span>        $this-&gt;registerChunkLoader($temporaryChunkLoader, $chunkX, $chunkZ);</div>
-<div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>        $chunk = $this-&gt;loadChunk($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>        $this-&gt;unregisterChunkLoader($temporaryChunkLoader, $chunkX, $chunkZ);</div>
-<div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span>        <span class="keywordflow">if</span>($chunk !== <span class="keyword">null</span> &amp;&amp; $chunk-&gt;isPopulated()){</div>
-<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span>            <span class="comment">//chunk is already populated; return a pre-resolved promise that will directly fire callbacks assigned</span></div>
-<div class="line"><a id="l02869" name="l02869"></a><span class="lineno"> 2869</span>            $resolver ??= <span class="keyword">new</span> PromiseResolver();</div>
-<div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>            unset($this-&gt;chunkPopulationRequestMap[$chunkHash]);</div>
-<div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span>            $resolver-&gt;resolve($chunk);</div>
-<div class="line"><a id="l02872" name="l02872"></a><span class="lineno"> 2872</span>            <span class="keywordflow">return</span> [$resolver, <span class="keyword">false</span>];</div>
-<div class="line"><a id="l02873" name="l02873"></a><span class="lineno"> 2873</span>        }</div>
-<div class="line"><a id="l02874" name="l02874"></a><span class="lineno"> 2874</span>        <span class="keywordflow">return</span> [$resolver, <span class="keyword">true</span>];</div>
-<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span>    }</div>
-<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span> </div>
-<div class="line"><a id="l02888" name="l02888"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b"> 2888</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b">requestChunkPopulation</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?<a class="code hl_interface" href="../../db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html">ChunkLoader</a> $associatedChunkLoader) : <a class="code hl_class" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>{</div>
-<div class="line"><a id="l02889" name="l02889"></a><span class="lineno"> 2889</span>        [$resolver, $proceedWithPopulation] = $this-&gt;checkChunkPopulationPreconditions($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02890" name="l02890"></a><span class="lineno"> 2890</span>        <span class="keywordflow">if</span>(!$proceedWithPopulation){</div>
-<div class="line"><a id="l02891" name="l02891"></a><span class="lineno"> 2891</span>            <span class="keywordflow">return</span> $resolver?-&gt;getPromise() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
-<div class="line"><a id="l02892" name="l02892"></a><span class="lineno"> 2892</span>        }</div>
-<div class="line"><a id="l02893" name="l02893"></a><span class="lineno"> 2893</span> </div>
-<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>        <span class="keywordflow">if</span>(count($this-&gt;activeChunkPopulationTasks) &gt;= $this-&gt;maxConcurrentChunkPopulationTasks){</div>
-<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span>            <span class="comment">//too many chunks are already generating; delay resolution of the request until later</span></div>
+<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span>        <span class="keywordflow">foreach</span>($this-&gt;players as $player){</div>
+<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span>            $player-&gt;getNetworkSession()-&gt;syncWorldDifficulty($this-&gt;getDifficulty());</div>
+<div class="line"><a id="l02803" name="l02803"></a><span class="lineno"> 2803</span>        }</div>
+<div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span>    }</div>
+<div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span> </div>
+<div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>    <span class="keyword">private</span> <span class="keyword">function</span> addChunkHashToPopulationRequestQueue(<span class="keywordtype">int</span> $chunkHash) : void{</div>
+<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>        if(!isset($this-&gt;chunkPopulationRequestQueueIndex[$chunkHash])){</div>
+<div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span>            $this-&gt;chunkPopulationRequestQueue-&gt;enqueue($chunkHash);</div>
+<div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>            $this-&gt;chunkPopulationRequestQueueIndex[$chunkHash] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02810" name="l02810"></a><span class="lineno"> 2810</span>        }</div>
+<div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>    }</div>
+<div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span> </div>
+<div class="line"><a id="l02816" name="l02816"></a><span class="lineno"> 2816</span>    <span class="keyword">private</span> <span class="keyword">function</span> enqueuePopulationRequest(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?ChunkLoader $associatedChunkLoader) : Promise{</div>
+<div class="line"><a id="l02817" name="l02817"></a><span class="lineno"> 2817</span>        $chunkHash = World::chunkHash($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02818" name="l02818"></a><span class="lineno"> 2818</span>        $this-&gt;addChunkHashToPopulationRequestQueue($chunkHash);</div>
+<div class="line"><a id="l02819" name="l02819"></a><span class="lineno"> 2819</span>        $resolver = $this-&gt;chunkPopulationRequestMap[$chunkHash] = <span class="keyword">new</span> PromiseResolver();</div>
+<div class="line"><a id="l02820" name="l02820"></a><span class="lineno"> 2820</span>        <span class="keywordflow">if</span>($associatedChunkLoader === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l02821" name="l02821"></a><span class="lineno"> 2821</span>            $temporaryLoader = <span class="keyword">new</span> <span class="keyword">class </span>implements ChunkLoader{};</div>
+<div class="line"><a id="l02822" name="l02822"></a><span class="lineno"> 2822</span>            $this-&gt;registerChunkLoader($temporaryLoader, $chunkX, $chunkZ);</div>
+<div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>            $resolver-&gt;getPromise()-&gt;onCompletion(</div>
+<div class="line"><a id="l02824" name="l02824"></a><span class="lineno"> 2824</span>                fn() =&gt; $this-&gt;unregisterChunkLoader($temporaryLoader, $chunkX, $chunkZ),</div>
+<div class="line"><a id="l02825" name="l02825"></a><span class="lineno"> 2825</span>                <span class="keyword">static</span> <span class="keyword">function</span>() : <span class="keywordtype">void</span>{}</div>
+<div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>            );</div>
+<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span>        }</div>
+<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span>        <span class="keywordflow">return</span> $resolver-&gt;getPromise();</div>
+<div class="line"><a id="l02829" name="l02829"></a><span class="lineno"> 2829</span>    }</div>
+<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span> </div>
+<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>    <span class="keyword">private</span> <span class="keyword">function</span> drainPopulationRequestQueue() : void{</div>
+<div class="line"><a id="l02832" name="l02832"></a><span class="lineno"> 2832</span>        $failed = [];</div>
+<div class="line"><a id="l02833" name="l02833"></a><span class="lineno"> 2833</span>        <span class="keywordflow">while</span>(count($this-&gt;activeChunkPopulationTasks) &lt; $this-&gt;maxConcurrentChunkPopulationTasks &amp;&amp; !$this-&gt;chunkPopulationRequestQueue-&gt;isEmpty()){</div>
+<div class="line"><a id="l02834" name="l02834"></a><span class="lineno"> 2834</span>            $nextChunkHash = $this-&gt;chunkPopulationRequestQueue-&gt;dequeue();</div>
+<div class="line"><a id="l02835" name="l02835"></a><span class="lineno"> 2835</span>            unset($this-&gt;chunkPopulationRequestQueueIndex[$nextChunkHash]);</div>
+<div class="line"><a id="l02836" name="l02836"></a><span class="lineno"> 2836</span>            World::getXZ($nextChunkHash, $nextChunkX, $nextChunkZ);</div>
+<div class="line"><a id="l02837" name="l02837"></a><span class="lineno"> 2837</span>            <span class="keywordflow">if</span>(isset($this-&gt;chunkPopulationRequestMap[$nextChunkHash])){</div>
+<div class="line"><a id="l02838" name="l02838"></a><span class="lineno"> 2838</span>                assert(!($this-&gt;activeChunkPopulationTasks[$nextChunkHash] ?? <span class="keyword">false</span>), <span class="stringliteral">&quot;Population for chunk $nextChunkX $nextChunkZ already running&quot;</span>);</div>
+<div class="line"><a id="l02839" name="l02839"></a><span class="lineno"> 2839</span>                <span class="keywordflow">if</span>(</div>
+<div class="line"><a id="l02840" name="l02840"></a><span class="lineno"> 2840</span>                    !$this-&gt;orderChunkPopulation($nextChunkX, $nextChunkZ, <span class="keyword">null</span>)-&gt;isResolved() &amp;&amp;</div>
+<div class="line"><a id="l02841" name="l02841"></a><span class="lineno"> 2841</span>                    !isset($this-&gt;activeChunkPopulationTasks[$nextChunkHash])</div>
+<div class="line"><a id="l02842" name="l02842"></a><span class="lineno"> 2842</span>                ){</div>
+<div class="line"><a id="l02843" name="l02843"></a><span class="lineno"> 2843</span>                    $failed[] = $nextChunkHash;</div>
+<div class="line"><a id="l02844" name="l02844"></a><span class="lineno"> 2844</span>                }</div>
+<div class="line"><a id="l02845" name="l02845"></a><span class="lineno"> 2845</span>            }</div>
+<div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>        }</div>
+<div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span> </div>
+<div class="line"><a id="l02848" name="l02848"></a><span class="lineno"> 2848</span>        <span class="comment">//these requests failed even though they weren&#39;t rate limited; we can&#39;t directly re-add them to the back of the</span></div>
+<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span>        <span class="comment">//queue because it would result in an infinite loop</span></div>
+<div class="line"><a id="l02850" name="l02850"></a><span class="lineno"> 2850</span>        <span class="keywordflow">foreach</span>($failed as $hash){</div>
+<div class="line"><a id="l02851" name="l02851"></a><span class="lineno"> 2851</span>            $this-&gt;addChunkHashToPopulationRequestQueue($hash);</div>
+<div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span>        }</div>
+<div class="line"><a id="l02853" name="l02853"></a><span class="lineno"> 2853</span>    }</div>
+<div class="line"><a id="l02854" name="l02854"></a><span class="lineno"> 2854</span> </div>
+<div class="line"><a id="l02860" name="l02860"></a><span class="lineno"> 2860</span>    <span class="keyword">private</span> <span class="keyword">function</span> checkChunkPopulationPreconditions(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : array{</div>
+<div class="line"><a id="l02861" name="l02861"></a><span class="lineno"> 2861</span>        $chunkHash = World::chunkHash($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02862" name="l02862"></a><span class="lineno"> 2862</span>        $resolver = $this-&gt;chunkPopulationRequestMap[$chunkHash] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l02863" name="l02863"></a><span class="lineno"> 2863</span>        <span class="keywordflow">if</span>($resolver !== <span class="keyword">null</span> &amp;&amp; isset($this-&gt;activeChunkPopulationTasks[$chunkHash])){</div>
+<div class="line"><a id="l02864" name="l02864"></a><span class="lineno"> 2864</span>            <span class="comment">//generation is already running</span></div>
+<div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>            <span class="keywordflow">return</span> [$resolver, <span class="keyword">false</span>];</div>
+<div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>        }</div>
+<div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span> </div>
+<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span>        $temporaryChunkLoader = <span class="keyword">new</span> <span class="keyword">class </span>implements ChunkLoader{};</div>
+<div class="line"><a id="l02869" name="l02869"></a><span class="lineno"> 2869</span>        $this-&gt;registerChunkLoader($temporaryChunkLoader, $chunkX, $chunkZ);</div>
+<div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>        $chunk = $this-&gt;loadChunk($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span>        $this-&gt;unregisterChunkLoader($temporaryChunkLoader, $chunkX, $chunkZ);</div>
+<div class="line"><a id="l02872" name="l02872"></a><span class="lineno"> 2872</span>        <span class="keywordflow">if</span>($chunk !== <span class="keyword">null</span> &amp;&amp; $chunk-&gt;isPopulated()){</div>
+<div class="line"><a id="l02873" name="l02873"></a><span class="lineno"> 2873</span>            <span class="comment">//chunk is already populated; return a pre-resolved promise that will directly fire callbacks assigned</span></div>
+<div class="line"><a id="l02874" name="l02874"></a><span class="lineno"> 2874</span>            $resolver ??= <span class="keyword">new</span> PromiseResolver();</div>
+<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span>            unset($this-&gt;chunkPopulationRequestMap[$chunkHash]);</div>
+<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span>            $resolver-&gt;resolve($chunk);</div>
+<div class="line"><a id="l02877" name="l02877"></a><span class="lineno"> 2877</span>            <span class="keywordflow">return</span> [$resolver, <span class="keyword">false</span>];</div>
+<div class="line"><a id="l02878" name="l02878"></a><span class="lineno"> 2878</span>        }</div>
+<div class="line"><a id="l02879" name="l02879"></a><span class="lineno"> 2879</span>        <span class="keywordflow">return</span> [$resolver, <span class="keyword">true</span>];</div>
+<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>    }</div>
+<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span> </div>
+<div class="line"><a id="l02893" name="l02893"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b"> 2893</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b">requestChunkPopulation</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?<a class="code hl_interface" href="../../db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html">ChunkLoader</a> $associatedChunkLoader) : <a class="code hl_class" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>{</div>
+<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>        [$resolver, $proceedWithPopulation] = $this-&gt;checkChunkPopulationPreconditions($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span>        <span class="keywordflow">if</span>(!$proceedWithPopulation){</div>
 <div class="line"><a id="l02896" name="l02896"></a><span class="lineno"> 2896</span>            <span class="keywordflow">return</span> $resolver?-&gt;getPromise() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
 <div class="line"><a id="l02897" name="l02897"></a><span class="lineno"> 2897</span>        }</div>
-<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span>        <span class="keywordflow">return</span> $this-&gt;internalOrderChunkPopulation($chunkX, $chunkZ, $associatedChunkLoader, $resolver);</div>
-<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>    }</div>
-<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span> </div>
-<div class="line"><a id="l02911" name="l02911"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2"> 2911</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2">orderChunkPopulation</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?<a class="code hl_interface" href="../../db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html">ChunkLoader</a> $associatedChunkLoader) : <a class="code hl_class" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>{</div>
-<div class="line"><a id="l02912" name="l02912"></a><span class="lineno"> 2912</span>        [$resolver, $proceedWithPopulation] = $this-&gt;checkChunkPopulationPreconditions($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02913" name="l02913"></a><span class="lineno"> 2913</span>        <span class="keywordflow">if</span>(!$proceedWithPopulation){</div>
-<div class="line"><a id="l02914" name="l02914"></a><span class="lineno"> 2914</span>            <span class="keywordflow">return</span> $resolver?-&gt;getPromise() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
-<div class="line"><a id="l02915" name="l02915"></a><span class="lineno"> 2915</span>        }</div>
-<div class="line"><a id="l02916" name="l02916"></a><span class="lineno"> 2916</span> </div>
-<div class="line"><a id="l02917" name="l02917"></a><span class="lineno"> 2917</span>        <span class="keywordflow">return</span> $this-&gt;internalOrderChunkPopulation($chunkX, $chunkZ, $associatedChunkLoader, $resolver);</div>
-<div class="line"><a id="l02918" name="l02918"></a><span class="lineno"> 2918</span>    }</div>
-<div class="line"><a id="l02919" name="l02919"></a><span class="lineno"> 2919</span> </div>
-<div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span>    <span class="keyword">private</span> <span class="keyword">function</span> internalOrderChunkPopulation(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?ChunkLoader $associatedChunkLoader, ?<a class="code hl_class" href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html">PromiseResolver</a> $resolver) : <a class="code hl_class" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>{</div>
-<div class="line"><a id="l02925" name="l02925"></a><span class="lineno"> 2925</span>        $chunkHash = <a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a>::chunkHash($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02926" name="l02926"></a><span class="lineno"> 2926</span> </div>
-<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span>        Timings::$population-&gt;startTiming();</div>
-<div class="line"><a id="l02928" name="l02928"></a><span class="lineno"> 2928</span> </div>
-<div class="line"><a id="l02929" name="l02929"></a><span class="lineno"> 2929</span>        <span class="keywordflow">for</span>($xx = -1; $xx &lt;= 1; ++$xx){</div>
-<div class="line"><a id="l02930" name="l02930"></a><span class="lineno"> 2930</span>            <span class="keywordflow">for</span>($zz = -1; $zz &lt;= 1; ++$zz){</div>
-<div class="line"><a id="l02931" name="l02931"></a><span class="lineno"> 2931</span>                <span class="keywordflow">if</span>($this-&gt;isChunkLocked($chunkX + $xx, $chunkZ + $zz)){</div>
-<div class="line"><a id="l02932" name="l02932"></a><span class="lineno"> 2932</span>                    <span class="comment">//chunk is already in use by another generation request; queue the request for later</span></div>
-<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span>                    <span class="keywordflow">return</span> $resolver?-&gt;<a class="code hl_function" href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html#a7aca15f04b19dc46bbf1983c238d6740">getPromise</a>() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
-<div class="line"><a id="l02934" name="l02934"></a><span class="lineno"> 2934</span>                }</div>
-<div class="line"><a id="l02935" name="l02935"></a><span class="lineno"> 2935</span>            }</div>
-<div class="line"><a id="l02936" name="l02936"></a><span class="lineno"> 2936</span>        }</div>
-<div class="line"><a id="l02937" name="l02937"></a><span class="lineno"> 2937</span> </div>
-<div class="line"><a id="l02938" name="l02938"></a><span class="lineno"> 2938</span>        $this-&gt;activeChunkPopulationTasks[$chunkHash] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02939" name="l02939"></a><span class="lineno"> 2939</span>        <span class="keywordflow">if</span>($resolver === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l02940" name="l02940"></a><span class="lineno"> 2940</span>            $resolver = <span class="keyword">new</span> PromiseResolver();</div>
-<div class="line"><a id="l02941" name="l02941"></a><span class="lineno"> 2941</span>            $this-&gt;chunkPopulationRequestMap[$chunkHash] = $resolver;</div>
-<div class="line"><a id="l02942" name="l02942"></a><span class="lineno"> 2942</span>        }</div>
-<div class="line"><a id="l02943" name="l02943"></a><span class="lineno"> 2943</span> </div>
-<div class="line"><a id="l02944" name="l02944"></a><span class="lineno"> 2944</span>        $chunkPopulationLockId = <span class="keyword">new</span> ChunkLockId();</div>
-<div class="line"><a id="l02945" name="l02945"></a><span class="lineno"> 2945</span> </div>
-<div class="line"><a id="l02946" name="l02946"></a><span class="lineno"> 2946</span>        $temporaryChunkLoader = <span class="keyword">new</span> <span class="keyword">class </span>implements ChunkLoader{};</div>
-<div class="line"><a id="l02947" name="l02947"></a><span class="lineno"> 2947</span>        <span class="keywordflow">for</span>($xx = -1; $xx &lt;= 1; ++$xx){</div>
-<div class="line"><a id="l02948" name="l02948"></a><span class="lineno"> 2948</span>            <span class="keywordflow">for</span>($zz = -1; $zz &lt;= 1; ++$zz){</div>
-<div class="line"><a id="l02949" name="l02949"></a><span class="lineno"> 2949</span>                $this-&gt;lockChunk($chunkX + $xx, $chunkZ + $zz, $chunkPopulationLockId);</div>
-<div class="line"><a id="l02950" name="l02950"></a><span class="lineno"> 2950</span>                $this-&gt;registerChunkLoader($temporaryChunkLoader, $chunkX + $xx, $chunkZ + $zz);</div>
-<div class="line"><a id="l02951" name="l02951"></a><span class="lineno"> 2951</span>            }</div>
-<div class="line"><a id="l02952" name="l02952"></a><span class="lineno"> 2952</span>        }</div>
-<div class="line"><a id="l02953" name="l02953"></a><span class="lineno"> 2953</span> </div>
-<div class="line"><a id="l02954" name="l02954"></a><span class="lineno"> 2954</span>        $centerChunk = $this-&gt;loadChunk($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02955" name="l02955"></a><span class="lineno"> 2955</span>        $adjacentChunks = $this-&gt;getAdjacentChunks($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02956" name="l02956"></a><span class="lineno"> 2956</span>        $task = <span class="keyword">new</span> PopulationTask(</div>
-<div class="line"><a id="l02957" name="l02957"></a><span class="lineno"> 2957</span>            $this-&gt;worldId,</div>
-<div class="line"><a id="l02958" name="l02958"></a><span class="lineno"> 2958</span>            $chunkX,</div>
-<div class="line"><a id="l02959" name="l02959"></a><span class="lineno"> 2959</span>            $chunkZ,</div>
-<div class="line"><a id="l02960" name="l02960"></a><span class="lineno"> 2960</span>            $centerChunk,</div>
-<div class="line"><a id="l02961" name="l02961"></a><span class="lineno"> 2961</span>            $adjacentChunks,</div>
-<div class="line"><a id="l02962" name="l02962"></a><span class="lineno"> 2962</span>            <span class="keyword">function</span>(Chunk $centerChunk, array $adjacentChunks) use ($chunkPopulationLockId, $chunkX, $chunkZ, $temporaryChunkLoader) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l02963" name="l02963"></a><span class="lineno"> 2963</span>                <span class="keywordflow">if</span>(!$this-&gt;isLoaded()){</div>
-<div class="line"><a id="l02964" name="l02964"></a><span class="lineno"> 2964</span>                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l02965" name="l02965"></a><span class="lineno"> 2965</span>                }</div>
-<div class="line"><a id="l02966" name="l02966"></a><span class="lineno"> 2966</span> </div>
-<div class="line"><a id="l02967" name="l02967"></a><span class="lineno"> 2967</span>                $this-&gt;generateChunkCallback($chunkPopulationLockId, $chunkX, $chunkZ, $centerChunk, $adjacentChunks, $temporaryChunkLoader);</div>
-<div class="line"><a id="l02968" name="l02968"></a><span class="lineno"> 2968</span>            }</div>
-<div class="line"><a id="l02969" name="l02969"></a><span class="lineno"> 2969</span>        );</div>
-<div class="line"><a id="l02970" name="l02970"></a><span class="lineno"> 2970</span>        $workerId = $this-&gt;workerPool-&gt;selectWorker();</div>
-<div class="line"><a id="l02971" name="l02971"></a><span class="lineno"> 2971</span>        <span class="keywordflow">if</span>(!isset($this-&gt;workerPool-&gt;getRunningWorkers()[$workerId]) &amp;&amp; isset($this-&gt;generatorRegisteredWorkers[$workerId])){</div>
-<div class="line"><a id="l02972" name="l02972"></a><span class="lineno"> 2972</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Selected worker $workerId previously had generator registered, but is now offline&quot;</span>);</div>
-<div class="line"><a id="l02973" name="l02973"></a><span class="lineno"> 2973</span>            unset($this-&gt;generatorRegisteredWorkers[$workerId]);</div>
-<div class="line"><a id="l02974" name="l02974"></a><span class="lineno"> 2974</span>        }</div>
-<div class="line"><a id="l02975" name="l02975"></a><span class="lineno"> 2975</span>        <span class="keywordflow">if</span>(!isset($this-&gt;generatorRegisteredWorkers[$workerId])){</div>
-<div class="line"><a id="l02976" name="l02976"></a><span class="lineno"> 2976</span>            $this-&gt;registerGeneratorToWorker($workerId);</div>
-<div class="line"><a id="l02977" name="l02977"></a><span class="lineno"> 2977</span>        }</div>
-<div class="line"><a id="l02978" name="l02978"></a><span class="lineno"> 2978</span>        $this-&gt;workerPool-&gt;submitTaskToWorker($task, $workerId);</div>
-<div class="line"><a id="l02979" name="l02979"></a><span class="lineno"> 2979</span> </div>
-<div class="line"><a id="l02980" name="l02980"></a><span class="lineno"> 2980</span>        Timings::$population-&gt;stopTiming();</div>
-<div class="line"><a id="l02981" name="l02981"></a><span class="lineno"> 2981</span>        <span class="keywordflow">return</span> $resolver-&gt;<a class="code hl_function" href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html#a7aca15f04b19dc46bbf1983c238d6740">getPromise</a>();</div>
-<div class="line"><a id="l02982" name="l02982"></a><span class="lineno"> 2982</span>    }</div>
-<div class="line"><a id="l02983" name="l02983"></a><span class="lineno"> 2983</span> </div>
-<div class="line"><a id="l02988" name="l02988"></a><span class="lineno"> 2988</span>    <span class="keyword">private</span> <span class="keyword">function</span> generateChunkCallback(ChunkLockId $chunkLockId, <span class="keywordtype">int</span> $x, <span class="keywordtype">int</span> $z, Chunk $chunk, array $adjacentChunks, ChunkLoader $temporaryChunkLoader) : void{</div>
-<div class="line"><a id="l02989" name="l02989"></a><span class="lineno"> 2989</span>        Timings::$generationCallback-&gt;startTiming();</div>
-<div class="line"><a id="l02990" name="l02990"></a><span class="lineno"> 2990</span> </div>
-<div class="line"><a id="l02991" name="l02991"></a><span class="lineno"> 2991</span>        $dirtyChunks = 0;</div>
-<div class="line"><a id="l02992" name="l02992"></a><span class="lineno"> 2992</span>        <span class="keywordflow">for</span>($xx = -1; $xx &lt;= 1; ++$xx){</div>
-<div class="line"><a id="l02993" name="l02993"></a><span class="lineno"> 2993</span>            <span class="keywordflow">for</span>($zz = -1; $zz &lt;= 1; ++$zz){</div>
-<div class="line"><a id="l02994" name="l02994"></a><span class="lineno"> 2994</span>                $this-&gt;unregisterChunkLoader($temporaryChunkLoader, $x + $xx, $z + $zz);</div>
-<div class="line"><a id="l02995" name="l02995"></a><span class="lineno"> 2995</span>                <span class="keywordflow">if</span>(!$this-&gt;unlockChunk($x + $xx, $z + $zz, $chunkLockId)){</div>
-<div class="line"><a id="l02996" name="l02996"></a><span class="lineno"> 2996</span>                    $dirtyChunks++;</div>
-<div class="line"><a id="l02997" name="l02997"></a><span class="lineno"> 2997</span>                }</div>
-<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span>            }</div>
-<div class="line"><a id="l02999" name="l02999"></a><span class="lineno"> 2999</span>        }</div>
-<div class="line"><a id="l03000" name="l03000"></a><span class="lineno"> 3000</span> </div>
-<div class="line"><a id="l03001" name="l03001"></a><span class="lineno"> 3001</span>        $index = World::chunkHash($x, $z);</div>
-<div class="line"><a id="l03002" name="l03002"></a><span class="lineno"> 3002</span>        <span class="keywordflow">if</span>(!isset($this-&gt;chunkPopulationRequestMap[$index])){</div>
-<div class="line"><a id="l03003" name="l03003"></a><span class="lineno"> 3003</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Discarding population result for chunk x=$x,z=$z - promise was already broken&quot;</span>);</div>
-<div class="line"><a id="l03004" name="l03004"></a><span class="lineno"> 3004</span>            unset($this-&gt;activeChunkPopulationTasks[$index]);</div>
-<div class="line"><a id="l03005" name="l03005"></a><span class="lineno"> 3005</span>        }elseif(isset($this-&gt;activeChunkPopulationTasks[$index])){</div>
-<div class="line"><a id="l03006" name="l03006"></a><span class="lineno"> 3006</span>            <span class="keywordflow">if</span>($dirtyChunks === 0){</div>
-<div class="line"><a id="l03007" name="l03007"></a><span class="lineno"> 3007</span>                $oldChunk = $this-&gt;loadChunk($x, $z);</div>
-<div class="line"><a id="l03008" name="l03008"></a><span class="lineno"> 3008</span>                $this-&gt;setChunk($x, $z, $chunk);</div>
-<div class="line"><a id="l03009" name="l03009"></a><span class="lineno"> 3009</span> </div>
-<div class="line"><a id="l03010" name="l03010"></a><span class="lineno"> 3010</span>                <span class="keywordflow">foreach</span>($adjacentChunks as $relativeChunkHash =&gt; $adjacentChunk){</div>
-<div class="line"><a id="l03011" name="l03011"></a><span class="lineno"> 3011</span>                    World::getXZ($relativeChunkHash, $relativeX, $relativeZ);</div>
-<div class="line"><a id="l03012" name="l03012"></a><span class="lineno"> 3012</span>                    <span class="keywordflow">if</span>($relativeX &lt; -1 || $relativeX &gt; 1 || $relativeZ &lt; -1 || $relativeZ &gt; 1){</div>
-<div class="line"><a id="l03013" name="l03013"></a><span class="lineno"> 3013</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Adjacent chunks should be in range -1 ... +1 coordinates&quot;</span>);</div>
-<div class="line"><a id="l03014" name="l03014"></a><span class="lineno"> 3014</span>                    }</div>
-<div class="line"><a id="l03015" name="l03015"></a><span class="lineno"> 3015</span>                    $this-&gt;setChunk($x + $relativeX, $z + $relativeZ, $adjacentChunk);</div>
-<div class="line"><a id="l03016" name="l03016"></a><span class="lineno"> 3016</span>                }</div>
+<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span> </div>
+<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>        <span class="keywordflow">if</span>(count($this-&gt;activeChunkPopulationTasks) &gt;= $this-&gt;maxConcurrentChunkPopulationTasks){</div>
+<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span>            <span class="comment">//too many chunks are already generating; delay resolution of the request until later</span></div>
+<div class="line"><a id="l02901" name="l02901"></a><span class="lineno"> 2901</span>            <span class="keywordflow">return</span> $resolver?-&gt;getPromise() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
+<div class="line"><a id="l02902" name="l02902"></a><span class="lineno"> 2902</span>        }</div>
+<div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span>        <span class="keywordflow">return</span> $this-&gt;internalOrderChunkPopulation($chunkX, $chunkZ, $associatedChunkLoader, $resolver);</div>
+<div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span>    }</div>
+<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span> </div>
+<div class="line"><a id="l02916" name="l02916"></a><span class="lineno"><a class="line" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2"> 2916</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2">orderChunkPopulation</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?<a class="code hl_interface" href="../../db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html">ChunkLoader</a> $associatedChunkLoader) : <a class="code hl_class" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>{</div>
+<div class="line"><a id="l02917" name="l02917"></a><span class="lineno"> 2917</span>        [$resolver, $proceedWithPopulation] = $this-&gt;checkChunkPopulationPreconditions($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02918" name="l02918"></a><span class="lineno"> 2918</span>        <span class="keywordflow">if</span>(!$proceedWithPopulation){</div>
+<div class="line"><a id="l02919" name="l02919"></a><span class="lineno"> 2919</span>            <span class="keywordflow">return</span> $resolver?-&gt;getPromise() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
+<div class="line"><a id="l02920" name="l02920"></a><span class="lineno"> 2920</span>        }</div>
+<div class="line"><a id="l02921" name="l02921"></a><span class="lineno"> 2921</span> </div>
+<div class="line"><a id="l02922" name="l02922"></a><span class="lineno"> 2922</span>        <span class="keywordflow">return</span> $this-&gt;internalOrderChunkPopulation($chunkX, $chunkZ, $associatedChunkLoader, $resolver);</div>
+<div class="line"><a id="l02923" name="l02923"></a><span class="lineno"> 2923</span>    }</div>
+<div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span> </div>
+<div class="line"><a id="l02929" name="l02929"></a><span class="lineno"> 2929</span>    <span class="keyword">private</span> <span class="keyword">function</span> internalOrderChunkPopulation(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, ?ChunkLoader $associatedChunkLoader, ?<a class="code hl_class" href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html">PromiseResolver</a> $resolver) : <a class="code hl_class" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>{</div>
+<div class="line"><a id="l02930" name="l02930"></a><span class="lineno"> 2930</span>        $chunkHash = <a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a>::chunkHash($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02931" name="l02931"></a><span class="lineno"> 2931</span> </div>
+<div class="line"><a id="l02932" name="l02932"></a><span class="lineno"> 2932</span>        Timings::$population-&gt;startTiming();</div>
+<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span> </div>
+<div class="line"><a id="l02934" name="l02934"></a><span class="lineno"> 2934</span>        <span class="keywordflow">for</span>($xx = -1; $xx &lt;= 1; ++$xx){</div>
+<div class="line"><a id="l02935" name="l02935"></a><span class="lineno"> 2935</span>            <span class="keywordflow">for</span>($zz = -1; $zz &lt;= 1; ++$zz){</div>
+<div class="line"><a id="l02936" name="l02936"></a><span class="lineno"> 2936</span>                <span class="keywordflow">if</span>($this-&gt;isChunkLocked($chunkX + $xx, $chunkZ + $zz)){</div>
+<div class="line"><a id="l02937" name="l02937"></a><span class="lineno"> 2937</span>                    <span class="comment">//chunk is already in use by another generation request; queue the request for later</span></div>
+<div class="line"><a id="l02938" name="l02938"></a><span class="lineno"> 2938</span>                    <span class="keywordflow">return</span> $resolver?-&gt;<a class="code hl_function" href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html#a7aca15f04b19dc46bbf1983c238d6740">getPromise</a>() ?? $this-&gt;enqueuePopulationRequest($chunkX, $chunkZ, $associatedChunkLoader);</div>
+<div class="line"><a id="l02939" name="l02939"></a><span class="lineno"> 2939</span>                }</div>
+<div class="line"><a id="l02940" name="l02940"></a><span class="lineno"> 2940</span>            }</div>
+<div class="line"><a id="l02941" name="l02941"></a><span class="lineno"> 2941</span>        }</div>
+<div class="line"><a id="l02942" name="l02942"></a><span class="lineno"> 2942</span> </div>
+<div class="line"><a id="l02943" name="l02943"></a><span class="lineno"> 2943</span>        $this-&gt;activeChunkPopulationTasks[$chunkHash] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02944" name="l02944"></a><span class="lineno"> 2944</span>        <span class="keywordflow">if</span>($resolver === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l02945" name="l02945"></a><span class="lineno"> 2945</span>            $resolver = <span class="keyword">new</span> PromiseResolver();</div>
+<div class="line"><a id="l02946" name="l02946"></a><span class="lineno"> 2946</span>            $this-&gt;chunkPopulationRequestMap[$chunkHash] = $resolver;</div>
+<div class="line"><a id="l02947" name="l02947"></a><span class="lineno"> 2947</span>        }</div>
+<div class="line"><a id="l02948" name="l02948"></a><span class="lineno"> 2948</span> </div>
+<div class="line"><a id="l02949" name="l02949"></a><span class="lineno"> 2949</span>        $chunkPopulationLockId = <span class="keyword">new</span> ChunkLockId();</div>
+<div class="line"><a id="l02950" name="l02950"></a><span class="lineno"> 2950</span> </div>
+<div class="line"><a id="l02951" name="l02951"></a><span class="lineno"> 2951</span>        $temporaryChunkLoader = <span class="keyword">new</span> <span class="keyword">class </span>implements ChunkLoader{};</div>
+<div class="line"><a id="l02952" name="l02952"></a><span class="lineno"> 2952</span>        <span class="keywordflow">for</span>($xx = -1; $xx &lt;= 1; ++$xx){</div>
+<div class="line"><a id="l02953" name="l02953"></a><span class="lineno"> 2953</span>            <span class="keywordflow">for</span>($zz = -1; $zz &lt;= 1; ++$zz){</div>
+<div class="line"><a id="l02954" name="l02954"></a><span class="lineno"> 2954</span>                $this-&gt;lockChunk($chunkX + $xx, $chunkZ + $zz, $chunkPopulationLockId);</div>
+<div class="line"><a id="l02955" name="l02955"></a><span class="lineno"> 2955</span>                $this-&gt;registerChunkLoader($temporaryChunkLoader, $chunkX + $xx, $chunkZ + $zz);</div>
+<div class="line"><a id="l02956" name="l02956"></a><span class="lineno"> 2956</span>            }</div>
+<div class="line"><a id="l02957" name="l02957"></a><span class="lineno"> 2957</span>        }</div>
+<div class="line"><a id="l02958" name="l02958"></a><span class="lineno"> 2958</span> </div>
+<div class="line"><a id="l02959" name="l02959"></a><span class="lineno"> 2959</span>        $centerChunk = $this-&gt;loadChunk($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02960" name="l02960"></a><span class="lineno"> 2960</span>        $adjacentChunks = $this-&gt;getAdjacentChunks($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02961" name="l02961"></a><span class="lineno"> 2961</span>        $task = <span class="keyword">new</span> PopulationTask(</div>
+<div class="line"><a id="l02962" name="l02962"></a><span class="lineno"> 2962</span>            $this-&gt;worldId,</div>
+<div class="line"><a id="l02963" name="l02963"></a><span class="lineno"> 2963</span>            $chunkX,</div>
+<div class="line"><a id="l02964" name="l02964"></a><span class="lineno"> 2964</span>            $chunkZ,</div>
+<div class="line"><a id="l02965" name="l02965"></a><span class="lineno"> 2965</span>            $centerChunk,</div>
+<div class="line"><a id="l02966" name="l02966"></a><span class="lineno"> 2966</span>            $adjacentChunks,</div>
+<div class="line"><a id="l02967" name="l02967"></a><span class="lineno"> 2967</span>            <span class="keyword">function</span>(Chunk $centerChunk, array $adjacentChunks) use ($chunkPopulationLockId, $chunkX, $chunkZ, $temporaryChunkLoader) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l02968" name="l02968"></a><span class="lineno"> 2968</span>                <span class="keywordflow">if</span>(!$this-&gt;isLoaded()){</div>
+<div class="line"><a id="l02969" name="l02969"></a><span class="lineno"> 2969</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l02970" name="l02970"></a><span class="lineno"> 2970</span>                }</div>
+<div class="line"><a id="l02971" name="l02971"></a><span class="lineno"> 2971</span> </div>
+<div class="line"><a id="l02972" name="l02972"></a><span class="lineno"> 2972</span>                $this-&gt;generateChunkCallback($chunkPopulationLockId, $chunkX, $chunkZ, $centerChunk, $adjacentChunks, $temporaryChunkLoader);</div>
+<div class="line"><a id="l02973" name="l02973"></a><span class="lineno"> 2973</span>            }</div>
+<div class="line"><a id="l02974" name="l02974"></a><span class="lineno"> 2974</span>        );</div>
+<div class="line"><a id="l02975" name="l02975"></a><span class="lineno"> 2975</span>        $workerId = $this-&gt;workerPool-&gt;selectWorker();</div>
+<div class="line"><a id="l02976" name="l02976"></a><span class="lineno"> 2976</span>        <span class="keywordflow">if</span>(!isset($this-&gt;workerPool-&gt;getRunningWorkers()[$workerId]) &amp;&amp; isset($this-&gt;generatorRegisteredWorkers[$workerId])){</div>
+<div class="line"><a id="l02977" name="l02977"></a><span class="lineno"> 2977</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Selected worker $workerId previously had generator registered, but is now offline&quot;</span>);</div>
+<div class="line"><a id="l02978" name="l02978"></a><span class="lineno"> 2978</span>            unset($this-&gt;generatorRegisteredWorkers[$workerId]);</div>
+<div class="line"><a id="l02979" name="l02979"></a><span class="lineno"> 2979</span>        }</div>
+<div class="line"><a id="l02980" name="l02980"></a><span class="lineno"> 2980</span>        <span class="keywordflow">if</span>(!isset($this-&gt;generatorRegisteredWorkers[$workerId])){</div>
+<div class="line"><a id="l02981" name="l02981"></a><span class="lineno"> 2981</span>            $this-&gt;registerGeneratorToWorker($workerId);</div>
+<div class="line"><a id="l02982" name="l02982"></a><span class="lineno"> 2982</span>        }</div>
+<div class="line"><a id="l02983" name="l02983"></a><span class="lineno"> 2983</span>        $this-&gt;workerPool-&gt;submitTaskToWorker($task, $workerId);</div>
+<div class="line"><a id="l02984" name="l02984"></a><span class="lineno"> 2984</span> </div>
+<div class="line"><a id="l02985" name="l02985"></a><span class="lineno"> 2985</span>        Timings::$population-&gt;stopTiming();</div>
+<div class="line"><a id="l02986" name="l02986"></a><span class="lineno"> 2986</span>        <span class="keywordflow">return</span> $resolver-&gt;<a class="code hl_function" href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html#a7aca15f04b19dc46bbf1983c238d6740">getPromise</a>();</div>
+<div class="line"><a id="l02987" name="l02987"></a><span class="lineno"> 2987</span>    }</div>
+<div class="line"><a id="l02988" name="l02988"></a><span class="lineno"> 2988</span> </div>
+<div class="line"><a id="l02993" name="l02993"></a><span class="lineno"> 2993</span>    <span class="keyword">private</span> <span class="keyword">function</span> generateChunkCallback(ChunkLockId $chunkLockId, <span class="keywordtype">int</span> $x, <span class="keywordtype">int</span> $z, Chunk $chunk, array $adjacentChunks, ChunkLoader $temporaryChunkLoader) : void{</div>
+<div class="line"><a id="l02994" name="l02994"></a><span class="lineno"> 2994</span>        Timings::$generationCallback-&gt;startTiming();</div>
+<div class="line"><a id="l02995" name="l02995"></a><span class="lineno"> 2995</span> </div>
+<div class="line"><a id="l02996" name="l02996"></a><span class="lineno"> 2996</span>        $dirtyChunks = 0;</div>
+<div class="line"><a id="l02997" name="l02997"></a><span class="lineno"> 2997</span>        <span class="keywordflow">for</span>($xx = -1; $xx &lt;= 1; ++$xx){</div>
+<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span>            <span class="keywordflow">for</span>($zz = -1; $zz &lt;= 1; ++$zz){</div>
+<div class="line"><a id="l02999" name="l02999"></a><span class="lineno"> 2999</span>                $this-&gt;unregisterChunkLoader($temporaryChunkLoader, $x + $xx, $z + $zz);</div>
+<div class="line"><a id="l03000" name="l03000"></a><span class="lineno"> 3000</span>                <span class="keywordflow">if</span>(!$this-&gt;unlockChunk($x + $xx, $z + $zz, $chunkLockId)){</div>
+<div class="line"><a id="l03001" name="l03001"></a><span class="lineno"> 3001</span>                    $dirtyChunks++;</div>
+<div class="line"><a id="l03002" name="l03002"></a><span class="lineno"> 3002</span>                }</div>
+<div class="line"><a id="l03003" name="l03003"></a><span class="lineno"> 3003</span>            }</div>
+<div class="line"><a id="l03004" name="l03004"></a><span class="lineno"> 3004</span>        }</div>
+<div class="line"><a id="l03005" name="l03005"></a><span class="lineno"> 3005</span> </div>
+<div class="line"><a id="l03006" name="l03006"></a><span class="lineno"> 3006</span>        $index = World::chunkHash($x, $z);</div>
+<div class="line"><a id="l03007" name="l03007"></a><span class="lineno"> 3007</span>        <span class="keywordflow">if</span>(!isset($this-&gt;activeChunkPopulationTasks[$index])){</div>
+<div class="line"><a id="l03008" name="l03008"></a><span class="lineno"> 3008</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;This should always be set, regardless of whether the task was orphaned or not&quot;</span>);</div>
+<div class="line"><a id="l03009" name="l03009"></a><span class="lineno"> 3009</span>        }</div>
+<div class="line"><a id="l03010" name="l03010"></a><span class="lineno"> 3010</span>        <span class="keywordflow">if</span>(!$this-&gt;activeChunkPopulationTasks[$index]){</div>
+<div class="line"><a id="l03011" name="l03011"></a><span class="lineno"> 3011</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Discarding orphaned population result for chunk x=$x,z=$z&quot;</span>);</div>
+<div class="line"><a id="l03012" name="l03012"></a><span class="lineno"> 3012</span>            unset($this-&gt;activeChunkPopulationTasks[$index]);</div>
+<div class="line"><a id="l03013" name="l03013"></a><span class="lineno"> 3013</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l03014" name="l03014"></a><span class="lineno"> 3014</span>            <span class="keywordflow">if</span>($dirtyChunks === 0){</div>
+<div class="line"><a id="l03015" name="l03015"></a><span class="lineno"> 3015</span>                $oldChunk = $this-&gt;loadChunk($x, $z);</div>
+<div class="line"><a id="l03016" name="l03016"></a><span class="lineno"> 3016</span>                $this-&gt;setChunk($x, $z, $chunk);</div>
 <div class="line"><a id="l03017" name="l03017"></a><span class="lineno"> 3017</span> </div>
-<div class="line"><a id="l03018" name="l03018"></a><span class="lineno"> 3018</span>                <span class="keywordflow">if</span>(($oldChunk === <span class="keyword">null</span> || !$oldChunk-&gt;isPopulated()) &amp;&amp; $chunk-&gt;isPopulated()){</div>
-<div class="line"><a id="l03019" name="l03019"></a><span class="lineno"> 3019</span>                    (<span class="keyword">new</span> ChunkPopulateEvent($this, $x, $z, $chunk))-&gt;call();</div>
-<div class="line"><a id="l03020" name="l03020"></a><span class="lineno"> 3020</span> </div>
-<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>                    <span class="keywordflow">foreach</span>($this-&gt;getChunkListeners($x, $z) as $listener){</div>
-<div class="line"><a id="l03022" name="l03022"></a><span class="lineno"> 3022</span>                        $listener-&gt;onChunkPopulated($x, $z, $chunk);</div>
-<div class="line"><a id="l03023" name="l03023"></a><span class="lineno"> 3023</span>                    }</div>
+<div class="line"><a id="l03018" name="l03018"></a><span class="lineno"> 3018</span>                <span class="keywordflow">foreach</span>($adjacentChunks as $relativeChunkHash =&gt; $adjacentChunk){</div>
+<div class="line"><a id="l03019" name="l03019"></a><span class="lineno"> 3019</span>                    World::getXZ($relativeChunkHash, $relativeX, $relativeZ);</div>
+<div class="line"><a id="l03020" name="l03020"></a><span class="lineno"> 3020</span>                    <span class="keywordflow">if</span>($relativeX &lt; -1 || $relativeX &gt; 1 || $relativeZ &lt; -1 || $relativeZ &gt; 1){</div>
+<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Adjacent chunks should be in range -1 ... +1 coordinates&quot;</span>);</div>
+<div class="line"><a id="l03022" name="l03022"></a><span class="lineno"> 3022</span>                    }</div>
+<div class="line"><a id="l03023" name="l03023"></a><span class="lineno"> 3023</span>                    $this-&gt;setChunk($x + $relativeX, $z + $relativeZ, $adjacentChunk);</div>
 <div class="line"><a id="l03024" name="l03024"></a><span class="lineno"> 3024</span>                }</div>
-<div class="line"><a id="l03025" name="l03025"></a><span class="lineno"> 3025</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l03026" name="l03026"></a><span class="lineno"> 3026</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Discarding population result for chunk x=$x,z=$z - terrain was modified on the main thread before async population completed&quot;</span>);</div>
-<div class="line"><a id="l03027" name="l03027"></a><span class="lineno"> 3027</span>            }</div>
+<div class="line"><a id="l03025" name="l03025"></a><span class="lineno"> 3025</span> </div>
+<div class="line"><a id="l03026" name="l03026"></a><span class="lineno"> 3026</span>                <span class="keywordflow">if</span>(($oldChunk === <span class="keyword">null</span> || !$oldChunk-&gt;isPopulated()) &amp;&amp; $chunk-&gt;isPopulated()){</div>
+<div class="line"><a id="l03027" name="l03027"></a><span class="lineno"> 3027</span>                    (<span class="keyword">new</span> ChunkPopulateEvent($this, $x, $z, $chunk))-&gt;call();</div>
 <div class="line"><a id="l03028" name="l03028"></a><span class="lineno"> 3028</span> </div>
-<div class="line"><a id="l03029" name="l03029"></a><span class="lineno"> 3029</span>            <span class="comment">//This needs to be in this specific spot because user code might call back to orderChunkPopulation().</span></div>
-<div class="line"><a id="l03030" name="l03030"></a><span class="lineno"> 3030</span>            <span class="comment">//If it does, and finds the promise, and doesn&#39;t find an active task associated with it, it will schedule</span></div>
-<div class="line"><a id="l03031" name="l03031"></a><span class="lineno"> 3031</span>            <span class="comment">//another PopulationTask. We don&#39;t want that because we&#39;re here processing the results.</span></div>
-<div class="line"><a id="l03032" name="l03032"></a><span class="lineno"> 3032</span>            <span class="comment">//We can&#39;t remove the promise from the array before setting the chunks in the world because that would lead</span></div>
-<div class="line"><a id="l03033" name="l03033"></a><span class="lineno"> 3033</span>            <span class="comment">//to the same problem. Therefore, it&#39;s necessary that this code be split into two if/else, with this in the</span></div>
-<div class="line"><a id="l03034" name="l03034"></a><span class="lineno"> 3034</span>            <span class="comment">//middle.</span></div>
-<div class="line"><a id="l03035" name="l03035"></a><span class="lineno"> 3035</span>            unset($this-&gt;activeChunkPopulationTasks[$index]);</div>
+<div class="line"><a id="l03029" name="l03029"></a><span class="lineno"> 3029</span>                    <span class="keywordflow">foreach</span>($this-&gt;getChunkListeners($x, $z) as $listener){</div>
+<div class="line"><a id="l03030" name="l03030"></a><span class="lineno"> 3030</span>                        $listener-&gt;onChunkPopulated($x, $z, $chunk);</div>
+<div class="line"><a id="l03031" name="l03031"></a><span class="lineno"> 3031</span>                    }</div>
+<div class="line"><a id="l03032" name="l03032"></a><span class="lineno"> 3032</span>                }</div>
+<div class="line"><a id="l03033" name="l03033"></a><span class="lineno"> 3033</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l03034" name="l03034"></a><span class="lineno"> 3034</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Discarding population result for chunk x=$x,z=$z - terrain was modified on the main thread before async population completed&quot;</span>);</div>
+<div class="line"><a id="l03035" name="l03035"></a><span class="lineno"> 3035</span>            }</div>
 <div class="line"><a id="l03036" name="l03036"></a><span class="lineno"> 3036</span> </div>
-<div class="line"><a id="l03037" name="l03037"></a><span class="lineno"> 3037</span>            <span class="keywordflow">if</span>($dirtyChunks === 0){</div>
-<div class="line"><a id="l03038" name="l03038"></a><span class="lineno"> 3038</span>                $promise = $this-&gt;chunkPopulationRequestMap[$index];</div>
-<div class="line"><a id="l03039" name="l03039"></a><span class="lineno"> 3039</span>                unset($this-&gt;chunkPopulationRequestMap[$index]);</div>
-<div class="line"><a id="l03040" name="l03040"></a><span class="lineno"> 3040</span>                $promise-&gt;resolve($chunk);</div>
-<div class="line"><a id="l03041" name="l03041"></a><span class="lineno"> 3041</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l03042" name="l03042"></a><span class="lineno"> 3042</span>                <span class="comment">//request failed, stick it back on the queue</span></div>
-<div class="line"><a id="l03043" name="l03043"></a><span class="lineno"> 3043</span>                <span class="comment">//we didn&#39;t resolve the promise or touch it in any way, so any fake chunk loaders are still valid and</span></div>
-<div class="line"><a id="l03044" name="l03044"></a><span class="lineno"> 3044</span>                <span class="comment">//don&#39;t need to be added a second time.</span></div>
-<div class="line"><a id="l03045" name="l03045"></a><span class="lineno"> 3045</span>                $this-&gt;addChunkHashToPopulationRequestQueue($index);</div>
-<div class="line"><a id="l03046" name="l03046"></a><span class="lineno"> 3046</span>            }</div>
-<div class="line"><a id="l03047" name="l03047"></a><span class="lineno"> 3047</span> </div>
-<div class="line"><a id="l03048" name="l03048"></a><span class="lineno"> 3048</span>            $this-&gt;drainPopulationRequestQueue();</div>
-<div class="line"><a id="l03049" name="l03049"></a><span class="lineno"> 3049</span>        }</div>
-<div class="line"><a id="l03050" name="l03050"></a><span class="lineno"> 3050</span>        Timings::$generationCallback-&gt;stopTiming();</div>
-<div class="line"><a id="l03051" name="l03051"></a><span class="lineno"> 3051</span>    }</div>
-<div class="line"><a id="l03052" name="l03052"></a><span class="lineno"> 3052</span> </div>
-<div class="line"><a id="l03053" name="l03053"></a><span class="lineno"> 3053</span>    <span class="keyword">public</span> <span class="keyword">function</span> doChunkGarbageCollection() : void{</div>
-<div class="line"><a id="l03054" name="l03054"></a><span class="lineno"> 3054</span>        $this-&gt;timings-&gt;doChunkGC-&gt;startTiming();</div>
+<div class="line"><a id="l03037" name="l03037"></a><span class="lineno"> 3037</span>            <span class="comment">//This needs to be in this specific spot because user code might call back to orderChunkPopulation().</span></div>
+<div class="line"><a id="l03038" name="l03038"></a><span class="lineno"> 3038</span>            <span class="comment">//If it does, and finds the promise, and doesn&#39;t find an active task associated with it, it will schedule</span></div>
+<div class="line"><a id="l03039" name="l03039"></a><span class="lineno"> 3039</span>            <span class="comment">//another PopulationTask. We don&#39;t want that because we&#39;re here processing the results.</span></div>
+<div class="line"><a id="l03040" name="l03040"></a><span class="lineno"> 3040</span>            <span class="comment">//We can&#39;t remove the promise from the array before setting the chunks in the world because that would lead</span></div>
+<div class="line"><a id="l03041" name="l03041"></a><span class="lineno"> 3041</span>            <span class="comment">//to the same problem. Therefore, it&#39;s necessary that this code be split into two if/else, with this in the</span></div>
+<div class="line"><a id="l03042" name="l03042"></a><span class="lineno"> 3042</span>            <span class="comment">//middle.</span></div>
+<div class="line"><a id="l03043" name="l03043"></a><span class="lineno"> 3043</span>            unset($this-&gt;activeChunkPopulationTasks[$index]);</div>
+<div class="line"><a id="l03044" name="l03044"></a><span class="lineno"> 3044</span> </div>
+<div class="line"><a id="l03045" name="l03045"></a><span class="lineno"> 3045</span>            <span class="keywordflow">if</span>($dirtyChunks === 0){</div>
+<div class="line"><a id="l03046" name="l03046"></a><span class="lineno"> 3046</span>                $promise = $this-&gt;chunkPopulationRequestMap[$index];</div>
+<div class="line"><a id="l03047" name="l03047"></a><span class="lineno"> 3047</span>                unset($this-&gt;chunkPopulationRequestMap[$index]);</div>
+<div class="line"><a id="l03048" name="l03048"></a><span class="lineno"> 3048</span>                $promise-&gt;resolve($chunk);</div>
+<div class="line"><a id="l03049" name="l03049"></a><span class="lineno"> 3049</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l03050" name="l03050"></a><span class="lineno"> 3050</span>                <span class="comment">//request failed, stick it back on the queue</span></div>
+<div class="line"><a id="l03051" name="l03051"></a><span class="lineno"> 3051</span>                <span class="comment">//we didn&#39;t resolve the promise or touch it in any way, so any fake chunk loaders are still valid and</span></div>
+<div class="line"><a id="l03052" name="l03052"></a><span class="lineno"> 3052</span>                <span class="comment">//don&#39;t need to be added a second time.</span></div>
+<div class="line"><a id="l03053" name="l03053"></a><span class="lineno"> 3053</span>                $this-&gt;addChunkHashToPopulationRequestQueue($index);</div>
+<div class="line"><a id="l03054" name="l03054"></a><span class="lineno"> 3054</span>            }</div>
 <div class="line"><a id="l03055" name="l03055"></a><span class="lineno"> 3055</span> </div>
-<div class="line"><a id="l03056" name="l03056"></a><span class="lineno"> 3056</span>        <span class="keywordflow">foreach</span>($this-&gt;chunks as $index =&gt; $chunk){</div>
-<div class="line"><a id="l03057" name="l03057"></a><span class="lineno"> 3057</span>            <span class="keywordflow">if</span>(!isset($this-&gt;unloadQueue[$index])){</div>
-<div class="line"><a id="l03058" name="l03058"></a><span class="lineno"> 3058</span>                World::getXZ($index, $X, $Z);</div>
-<div class="line"><a id="l03059" name="l03059"></a><span class="lineno"> 3059</span>                <span class="keywordflow">if</span>(!$this-&gt;isSpawnChunk($X, $Z)){</div>
-<div class="line"><a id="l03060" name="l03060"></a><span class="lineno"> 3060</span>                    $this-&gt;unloadChunkRequest($X, $Z, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l03061" name="l03061"></a><span class="lineno"> 3061</span>                }</div>
-<div class="line"><a id="l03062" name="l03062"></a><span class="lineno"> 3062</span>            }</div>
-<div class="line"><a id="l03063" name="l03063"></a><span class="lineno"> 3063</span>            $chunk-&gt;collectGarbage();</div>
-<div class="line"><a id="l03064" name="l03064"></a><span class="lineno"> 3064</span>        }</div>
-<div class="line"><a id="l03065" name="l03065"></a><span class="lineno"> 3065</span> </div>
-<div class="line"><a id="l03066" name="l03066"></a><span class="lineno"> 3066</span>        $this-&gt;provider-&gt;doGarbageCollection();</div>
-<div class="line"><a id="l03067" name="l03067"></a><span class="lineno"> 3067</span> </div>
-<div class="line"><a id="l03068" name="l03068"></a><span class="lineno"> 3068</span>        $this-&gt;timings-&gt;doChunkGC-&gt;stopTiming();</div>
-<div class="line"><a id="l03069" name="l03069"></a><span class="lineno"> 3069</span>    }</div>
-<div class="line"><a id="l03070" name="l03070"></a><span class="lineno"> 3070</span> </div>
-<div class="line"><a id="l03071" name="l03071"></a><span class="lineno"> 3071</span>    <span class="keyword">public</span> <span class="keyword">function</span> unloadChunks(<span class="keywordtype">bool</span> $force = <span class="keyword">false</span>) : void{</div>
-<div class="line"><a id="l03072" name="l03072"></a><span class="lineno"> 3072</span>        if(count($this-&gt;unloadQueue) &gt; 0){</div>
-<div class="line"><a id="l03073" name="l03073"></a><span class="lineno"> 3073</span>            $maxUnload = 96;</div>
-<div class="line"><a id="l03074" name="l03074"></a><span class="lineno"> 3074</span>            $now = microtime(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l03075" name="l03075"></a><span class="lineno"> 3075</span>            <span class="keywordflow">foreach</span>($this-&gt;unloadQueue as $index =&gt; $time){</div>
-<div class="line"><a id="l03076" name="l03076"></a><span class="lineno"> 3076</span>                World::getXZ($index, $X, $Z);</div>
-<div class="line"><a id="l03077" name="l03077"></a><span class="lineno"> 3077</span> </div>
-<div class="line"><a id="l03078" name="l03078"></a><span class="lineno"> 3078</span>                <span class="keywordflow">if</span>(!$force){</div>
-<div class="line"><a id="l03079" name="l03079"></a><span class="lineno"> 3079</span>                    <span class="keywordflow">if</span>($maxUnload &lt;= 0){</div>
-<div class="line"><a id="l03080" name="l03080"></a><span class="lineno"> 3080</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l03081" name="l03081"></a><span class="lineno"> 3081</span>                    }elseif($time &gt; ($now - 30)){</div>
-<div class="line"><a id="l03082" name="l03082"></a><span class="lineno"> 3082</span>                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l03083" name="l03083"></a><span class="lineno"> 3083</span>                    }</div>
-<div class="line"><a id="l03084" name="l03084"></a><span class="lineno"> 3084</span>                }</div>
+<div class="line"><a id="l03056" name="l03056"></a><span class="lineno"> 3056</span>            $this-&gt;drainPopulationRequestQueue();</div>
+<div class="line"><a id="l03057" name="l03057"></a><span class="lineno"> 3057</span>        }</div>
+<div class="line"><a id="l03058" name="l03058"></a><span class="lineno"> 3058</span>        Timings::$generationCallback-&gt;stopTiming();</div>
+<div class="line"><a id="l03059" name="l03059"></a><span class="lineno"> 3059</span>    }</div>
+<div class="line"><a id="l03060" name="l03060"></a><span class="lineno"> 3060</span> </div>
+<div class="line"><a id="l03061" name="l03061"></a><span class="lineno"> 3061</span>    <span class="keyword">public</span> <span class="keyword">function</span> doChunkGarbageCollection() : void{</div>
+<div class="line"><a id="l03062" name="l03062"></a><span class="lineno"> 3062</span>        $this-&gt;timings-&gt;doChunkGC-&gt;startTiming();</div>
+<div class="line"><a id="l03063" name="l03063"></a><span class="lineno"> 3063</span> </div>
+<div class="line"><a id="l03064" name="l03064"></a><span class="lineno"> 3064</span>        <span class="keywordflow">foreach</span>($this-&gt;chunks as $index =&gt; $chunk){</div>
+<div class="line"><a id="l03065" name="l03065"></a><span class="lineno"> 3065</span>            <span class="keywordflow">if</span>(!isset($this-&gt;unloadQueue[$index])){</div>
+<div class="line"><a id="l03066" name="l03066"></a><span class="lineno"> 3066</span>                World::getXZ($index, $X, $Z);</div>
+<div class="line"><a id="l03067" name="l03067"></a><span class="lineno"> 3067</span>                <span class="keywordflow">if</span>(!$this-&gt;isSpawnChunk($X, $Z)){</div>
+<div class="line"><a id="l03068" name="l03068"></a><span class="lineno"> 3068</span>                    $this-&gt;unloadChunkRequest($X, $Z, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l03069" name="l03069"></a><span class="lineno"> 3069</span>                }</div>
+<div class="line"><a id="l03070" name="l03070"></a><span class="lineno"> 3070</span>            }</div>
+<div class="line"><a id="l03071" name="l03071"></a><span class="lineno"> 3071</span>            $chunk-&gt;collectGarbage();</div>
+<div class="line"><a id="l03072" name="l03072"></a><span class="lineno"> 3072</span>        }</div>
+<div class="line"><a id="l03073" name="l03073"></a><span class="lineno"> 3073</span> </div>
+<div class="line"><a id="l03074" name="l03074"></a><span class="lineno"> 3074</span>        $this-&gt;provider-&gt;doGarbageCollection();</div>
+<div class="line"><a id="l03075" name="l03075"></a><span class="lineno"> 3075</span> </div>
+<div class="line"><a id="l03076" name="l03076"></a><span class="lineno"> 3076</span>        $this-&gt;timings-&gt;doChunkGC-&gt;stopTiming();</div>
+<div class="line"><a id="l03077" name="l03077"></a><span class="lineno"> 3077</span>    }</div>
+<div class="line"><a id="l03078" name="l03078"></a><span class="lineno"> 3078</span> </div>
+<div class="line"><a id="l03079" name="l03079"></a><span class="lineno"> 3079</span>    <span class="keyword">public</span> <span class="keyword">function</span> unloadChunks(<span class="keywordtype">bool</span> $force = <span class="keyword">false</span>) : void{</div>
+<div class="line"><a id="l03080" name="l03080"></a><span class="lineno"> 3080</span>        if(count($this-&gt;unloadQueue) &gt; 0){</div>
+<div class="line"><a id="l03081" name="l03081"></a><span class="lineno"> 3081</span>            $maxUnload = 96;</div>
+<div class="line"><a id="l03082" name="l03082"></a><span class="lineno"> 3082</span>            $now = microtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l03083" name="l03083"></a><span class="lineno"> 3083</span>            <span class="keywordflow">foreach</span>($this-&gt;unloadQueue as $index =&gt; $time){</div>
+<div class="line"><a id="l03084" name="l03084"></a><span class="lineno"> 3084</span>                World::getXZ($index, $X, $Z);</div>
 <div class="line"><a id="l03085" name="l03085"></a><span class="lineno"> 3085</span> </div>
-<div class="line"><a id="l03086" name="l03086"></a><span class="lineno"> 3086</span>                <span class="comment">//If the chunk can&#39;t be unloaded, it stays on the queue</span></div>
-<div class="line"><a id="l03087" name="l03087"></a><span class="lineno"> 3087</span>                <span class="keywordflow">if</span>($this-&gt;unloadChunk($X, $Z, <span class="keyword">true</span>)){</div>
-<div class="line"><a id="l03088" name="l03088"></a><span class="lineno"> 3088</span>                    unset($this-&gt;unloadQueue[$index]);</div>
-<div class="line"><a id="l03089" name="l03089"></a><span class="lineno"> 3089</span>                    --$maxUnload;</div>
-<div class="line"><a id="l03090" name="l03090"></a><span class="lineno"> 3090</span>                }</div>
-<div class="line"><a id="l03091" name="l03091"></a><span class="lineno"> 3091</span>            }</div>
-<div class="line"><a id="l03092" name="l03092"></a><span class="lineno"> 3092</span>        }</div>
-<div class="line"><a id="l03093" name="l03093"></a><span class="lineno"> 3093</span>    }</div>
-<div class="line"><a id="l03094" name="l03094"></a><span class="lineno"> 3094</span>}</div>
+<div class="line"><a id="l03086" name="l03086"></a><span class="lineno"> 3086</span>                <span class="keywordflow">if</span>(!$force){</div>
+<div class="line"><a id="l03087" name="l03087"></a><span class="lineno"> 3087</span>                    <span class="keywordflow">if</span>($maxUnload &lt;= 0){</div>
+<div class="line"><a id="l03088" name="l03088"></a><span class="lineno"> 3088</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l03089" name="l03089"></a><span class="lineno"> 3089</span>                    }elseif($time &gt; ($now - 30)){</div>
+<div class="line"><a id="l03090" name="l03090"></a><span class="lineno"> 3090</span>                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l03091" name="l03091"></a><span class="lineno"> 3091</span>                    }</div>
+<div class="line"><a id="l03092" name="l03092"></a><span class="lineno"> 3092</span>                }</div>
+<div class="line"><a id="l03093" name="l03093"></a><span class="lineno"> 3093</span> </div>
+<div class="line"><a id="l03094" name="l03094"></a><span class="lineno"> 3094</span>                <span class="comment">//If the chunk can&#39;t be unloaded, it stays on the queue</span></div>
+<div class="line"><a id="l03095" name="l03095"></a><span class="lineno"> 3095</span>                <span class="keywordflow">if</span>($this-&gt;unloadChunk($X, $Z, <span class="keyword">true</span>)){</div>
+<div class="line"><a id="l03096" name="l03096"></a><span class="lineno"> 3096</span>                    unset($this-&gt;unloadQueue[$index]);</div>
+<div class="line"><a id="l03097" name="l03097"></a><span class="lineno"> 3097</span>                    --$maxUnload;</div>
+<div class="line"><a id="l03098" name="l03098"></a><span class="lineno"> 3098</span>                }</div>
+<div class="line"><a id="l03099" name="l03099"></a><span class="lineno"> 3099</span>            }</div>
+<div class="line"><a id="l03100" name="l03100"></a><span class="lineno"> 3100</span>        }</div>
+<div class="line"><a id="l03101" name="l03101"></a><span class="lineno"> 3101</span>    }</div>
+<div class="line"><a id="l03102" name="l03102"></a><span class="lineno"> 3102</span>}</div>
 <div class="ttc" id="aclass_prefixed_logger_html"><div class="ttname"><a href="../../d9/d00/class_prefixed_logger.html">PrefixedLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dae/_prefixed_logger_8php_source.html#l00020">PrefixedLogger.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_config_group_html"><div class="ttname"><a href="../../d1/d84/classpocketmine_1_1_server_config_group.html">pocketmine\ServerConfigGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d2c/_server_config_group_8php_source.html#l00034">ServerConfigGroup.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_config_group_html_acdd3e9f40ea2bf0817b79403be7736a4"><div class="ttname"><a href="../../d1/d84/classpocketmine_1_1_server_config_group.html#acdd3e9f40ea2bf0817b79403be7736a4">pocketmine\ServerConfigGroup\getProperty</a></div><div class="ttdeci">getProperty(string $variable, $defaultValue=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d2c/_server_config_group_8php_source.html#l00057">ServerConfigGroup.php:57</a></div></div>
@@ -2715,8 +2723,8 @@ $(document).ready(function(){initNavTree('d9/d88/_world_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_biome_ids_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html">pocketmine\data\bedrock\BiomeIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d7a/_biome_ids_8php_source.html#l00026">BiomeIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html">pocketmine\entity\EntityFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/df1/_entity_factory_8php_source.html#l00066">EntityFactory.php:66</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00078">Entity.php:78</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_a22a098fc4892820db7d15a73edea64ca"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a22a098fc4892820db7d15a73edea64ca">pocketmine\entity\Entity\despawnFrom</a></div><div class="ttdeci">despawnFrom(Player $player, bool $send=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l01509">Entity.php:1509</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_acaced48bc41cc13b10c1e99ba76bdabd"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#acaced48bc41cc13b10c1e99ba76bdabd">pocketmine\entity\Entity\getViewers</a></div><div class="ttdeci">getViewers()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l01450">Entity.php:1450</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_a22a098fc4892820db7d15a73edea64ca"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a22a098fc4892820db7d15a73edea64ca">pocketmine\entity\Entity\despawnFrom</a></div><div class="ttdeci">despawnFrom(Player $player, bool $send=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l01510">Entity.php:1510</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_acaced48bc41cc13b10c1e99ba76bdabd"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#acaced48bc41cc13b10c1e99ba76bdabd">pocketmine\entity\Entity\getViewers</a></div><div class="ttdeci">getViewers()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l01451">Entity.php:1451</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_experience_orb_html"><div class="ttname"><a href="../../df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html">pocketmine\entity\object\ExperienceOrb</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d68/_experience_orb_8php_source.html#l00037">ExperienceOrb.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">pocketmine\entity\object\ItemEntity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00044">ItemEntity.php:44</a></div></div>
@@ -2771,29 +2779,29 @@ $(document).ready(function(){initNavTree('d9/d88/_world_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a095945092a01cc24ac52e1a47fd0a603"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a095945092a01cc24ac52e1a47fd0a603">pocketmine\world\World\getHighestAdjacentBlockLight</a></div><div class="ttdeci">getHighestAdjacentBlockLight(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01503">World.php:1503</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a0e05a3361dcf6c41b4e495136a1c7ae2"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a0e05a3361dcf6c41b4e495136a1c7ae2">pocketmine\world\World\getPotentialBlockSkyLightAt</a></div><div class="ttdeci">getPotentialBlockSkyLightAt(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01404">World.php:1404</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a103316b68a211045bda7aa1478464027"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a103316b68a211045bda7aa1478464027">pocketmine\world\World\removeOnUnloadCallback</a></div><div class="ttdeci">removeOnUnloadCallback(\Closure $callback)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00592">World.php:592</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a124ee0c96f83dd11f221e19cad389e4a"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a124ee0c96f83dd11f221e19cad389e4a">pocketmine\world\World\getMaxY</a></div><div class="ttdeci">getMaxY()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02782">World.php:2782</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a124ee0c96f83dd11f221e19cad389e4a"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a124ee0c96f83dd11f221e19cad389e4a">pocketmine\world\World\getMaxY</a></div><div class="ttdeci">getMaxY()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02787">World.php:2787</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a16cdf6ac3e324348abd75753d2e89345"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a16cdf6ac3e324348abd75753d2e89345">pocketmine\world\World\isChunkLocked</a></div><div class="ttdeci">isChunkLocked(int $chunkX, int $chunkZ)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02171">World.php:2171</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a17b929ab6177e1de0eeef8ebfaa3d2d9"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a17b929ab6177e1de0eeef8ebfaa3d2d9">pocketmine\world\World\setSpawnLocation</a></div><div class="ttdeci">setSpawnLocation(Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02281">World.php:2281</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a1de566a493bd62fdfb4aec302d6b7970"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1de566a493bd62fdfb4aec302d6b7970">pocketmine\world\World\getDisplayName</a></div><div class="ttdeci">getDisplayName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02736">World.php:2736</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a1de566a493bd62fdfb4aec302d6b7970"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1de566a493bd62fdfb4aec302d6b7970">pocketmine\world\World\getDisplayName</a></div><div class="ttdeci">getDisplayName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02741">World.php:2741</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a245f7a5e15b62be208a3ddb925c28c40"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a245f7a5e15b62be208a3ddb925c28c40">pocketmine\world\World\createBlockUpdatePackets</a></div><div class="ttdeci">createBlockUpdatePackets(array $blocks)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00971">World.php:971</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a25b61871c93a17008d6ac44c0da6c98e"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a25b61871c93a17008d6ac44c0da6c98e">pocketmine\world\World\getSunAngleDegrees</a></div><div class="ttdeci">getSunAngleDegrees()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01344">World.php:1344</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a267146b8a29f2b08a508c8307196df03"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a267146b8a29f2b08a508c8307196df03">pocketmine\world\World\getSafeSpawn</a></div><div class="ttdeci">getSafeSpawn(?Vector3 $spawn=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02679">World.php:2679</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a267146b8a29f2b08a508c8307196df03"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a267146b8a29f2b08a508c8307196df03">pocketmine\world\World\getSafeSpawn</a></div><div class="ttdeci">getSafeSpawn(?Vector3 $spawn=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02684">World.php:2684</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a28654f28814833471e5f68f4d4b7d2d5"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a28654f28814833471e5f68f4d4b7d2d5">pocketmine\world\World\registerChunkListener</a></div><div class="ttdeci">registerChunkListener(ChunkListener $listener, int $chunkX, int $chunkZ)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00732">World.php:732</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a2918e74505925e8d80690ea329a0013c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a2918e74505925e8d80690ea329a0013c">pocketmine\world\World\getBlockAt</a></div><div class="ttdeci">getBlockAt(int $x, int $y, int $z, bool $cached=true, bool $addToCache=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01554">World.php:1554</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a29fef9939ee7bff3db7be9d6573948c1"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a29fef9939ee7bff3db7be9d6573948c1">pocketmine\world\World\getSunAngleRadians</a></div><div class="ttdeci">getSunAngleRadians()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01337">World.php:1337</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a2c428c401333adc84e6935615db8b736"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a2c428c401333adc84e6935615db8b736">pocketmine\world\World\getChunkEntities</a></div><div class="ttdeci">getChunkEntities(int $chunkX, int $chunkZ)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02097">World.php:2097</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a2dc3564ff0d7dcea937c06f6458f85c7"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a2dc3564ff0d7dcea937c06f6458f85c7">pocketmine\world\World\addEntity</a></div><div class="ttdeci">addEntity(Entity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02295">World.php:2295</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a313897aff31fc38f41f76e67990678d9"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a313897aff31fc38f41f76e67990678d9">pocketmine\world\World\getBlockLightAt</a></div><div class="ttdeci">getBlockLightAt(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01429">World.php:1429</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a3684caa290b5b455e8efac15a6fcc013"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3684caa290b5b455e8efac15a6fcc013">pocketmine\world\World\getTimeOfDay</a></div><div class="ttdeci">getTimeOfDay()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02728">World.php:2728</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a3693dcf84c93ce48d8e38d86fa109c7c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3693dcf84c93ce48d8e38d86fa109c7c">pocketmine\world\World\getFolderName</a></div><div class="ttdeci">getFolderName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02743">World.php:2743</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a3684caa290b5b455e8efac15a6fcc013"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3684caa290b5b455e8efac15a6fcc013">pocketmine\world\World\getTimeOfDay</a></div><div class="ttdeci">getTimeOfDay()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02733">World.php:2733</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a3693dcf84c93ce48d8e38d86fa109c7c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3693dcf84c93ce48d8e38d86fa109c7c">pocketmine\world\World\getFolderName</a></div><div class="ttdeci">getFolderName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02748">World.php:2748</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a3d2c176b58e60d7f8228ebeb57961118"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3d2c176b58e60d7f8228ebeb57961118">pocketmine\world\World\getBlock</a></div><div class="ttdeci">getBlock(Vector3 $pos, bool $cached=true, bool $addToCache=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01541">World.php:1541</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a4240d30fa22ebd25dedb969791820943"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a4240d30fa22ebd25dedb969791820943">pocketmine\world\World\getRandomTickedBlocks</a></div><div class="ttdeci">getRandomTickedBlocks()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01017">World.php:1017</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a42e678d9292e210cc82f4e25eec19f6e"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e">pocketmine\world\World\startTime</a></div><div class="ttdeci">startTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02766">World.php:2766</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a42e678d9292e210cc82f4e25eec19f6e"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e">pocketmine\world\World\startTime</a></div><div class="ttdeci">startTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02771">World.php:2771</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a49fed6f1f69d8470efe62d696e6b1f69"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a49fed6f1f69d8470efe62d696e6b1f69">pocketmine\world\World\computeSunAnglePercentage</a></div><div class="ttdeci">computeSunAnglePercentage()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01314">World.php:1314</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a4a369f4ca6168901f541f65849212ef1"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a4a369f4ca6168901f541f65849212ef1">pocketmine\world\World\getSunAnglePercentage</a></div><div class="ttdeci">getSunAnglePercentage()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01330">World.php:1330</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a4ab9d5e6969f878013a87b75878ac966"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a4ab9d5e6969f878013a87b75878ac966">pocketmine\world\World\broadcastPacketToViewers</a></div><div class="ttdeci">broadcastPacketToViewers(Vector3 $pos, ClientboundPacket $packet)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00669">World.php:669</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a4b863b5212f72c25ae9e58a2c303bf42"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a4b863b5212f72c25ae9e58a2c303bf42">pocketmine\world\World\getPlayers</a></div><div class="ttdeci">getPlayers()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02039">World.php:2039</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a521749ab256c156c2d5af805ccfe7a51"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a521749ab256c156c2d5af805ccfe7a51">pocketmine\world\World\stopTime</a></div><div class="ttdeci">stopTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02758">World.php:2758</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a521749ab256c156c2d5af805ccfe7a51"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a521749ab256c156c2d5af805ccfe7a51">pocketmine\world\World\stopTime</a></div><div class="ttdeci">stopTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02763">World.php:2763</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a55b65f3b29b0496d707be5a0a97a18a4"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a55b65f3b29b0496d707be5a0a97a18a4">pocketmine\world\World\getOrLoadChunkAtPosition</a></div><div class="ttdeci">getOrLoadChunkAtPosition(Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02104">World.php:2104</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a5608242f2644d02bb5ed501ff9338361"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a5608242f2644d02bb5ed501ff9338361">pocketmine\world\World\chunkBlockHash</a></div><div class="ttdeci">static chunkBlockHash(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00362">World.php:362</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a5a8af5ed6919927fcbb368080d1b617a"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a5a8af5ed6919927fcbb368080d1b617a">pocketmine\world\World\getHighestAdjacentPotentialBlockSkyLight</a></div><div class="ttdeci">getHighestAdjacentPotentialBlockSkyLight(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01488">World.php:1488</a></div></div>
@@ -2812,19 +2820,19 @@ $(document).ready(function(){initNavTree('d9/d88/_world_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a85ae934ad9f346ae6ffe0fd147cdeefd"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a85ae934ad9f346ae6ffe0fd147cdeefd">pocketmine\world\World\getNearestEntity</a></div><div class="ttdeci">getNearestEntity(Vector3 $pos, float $maxDistance, string $entityType=Entity::class, bool $includeDead=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01997">World.php:1997</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a86a1511d66542c24059a6b387195dc23"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a86a1511d66542c24059a6b387195dc23">pocketmine\world\World\useBreakOn</a></div><div class="ttdeci">useBreakOn(Vector3 $vector, Item &amp;$item=null, ?Player $player=null, bool $createParticles=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01701">World.php:1701</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a89060c5356799854004d95571da52009"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a89060c5356799854004d95571da52009">pocketmine\world\World\useItemOn</a></div><div class="ttdeci">useItemOn(Vector3 $vector, Item &amp;$item, int $face, ?Vector3 $clickVector=null, ?Player $player=null, bool $playSound=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01803">World.php:1803</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a8bbfbc57ac0982841980aefd9a0b808b"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b">pocketmine\world\World\requestChunkPopulation</a></div><div class="ttdeci">requestChunkPopulation(int $chunkX, int $chunkZ, ?ChunkLoader $associatedChunkLoader)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02888">World.php:2888</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a8bbfbc57ac0982841980aefd9a0b808b"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b">pocketmine\world\World\requestChunkPopulation</a></div><div class="ttdeci">requestChunkPopulation(int $chunkX, int $chunkZ, ?ChunkLoader $associatedChunkLoader)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02893">World.php:2893</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a8bea64a5f338c1766bcffcee442999b4"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bea64a5f338c1766bcffcee442999b4">pocketmine\world\World\getSkyLightReduction</a></div><div class="ttdeci">getSkyLightReduction()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01363">World.php:1363</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a8bf41f042030e757e7821c3b6d9dadf4"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bf41f042030e757e7821c3b6d9dadf4">pocketmine\world\World\addSound</a></div><div class="ttdeci">addSound(Vector3 $pos, Sound $sound, ?array $players=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00599">World.php:599</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a8ead35eda777f930abdc64313c95b9e7"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a8ead35eda777f930abdc64313c95b9e7">pocketmine\world\World\setBlock</a></div><div class="ttdeci">setBlock(Vector3 $pos, Block $block, bool $update=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01603">World.php:1603</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a92150b820812bd5583ecaf0d19a6a286"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a92150b820812bd5583ecaf0d19a6a286">pocketmine\world\World\getNearbyEntities</a></div><div class="ttdeci">getNearbyEntities(AxisAlignedBB $bb, ?Entity $entity=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01962">World.php:1962</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a98697e8c47a2ed43da52da0c77f0a2d4"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98697e8c47a2ed43da52da0c77f0a2d4">pocketmine\world\World\getCollidingEntities</a></div><div class="ttdeci">getCollidingEntities(AxisAlignedBB $bb, ?Entity $entity=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01943">World.php:1943</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a98a5bba627898d19f9f59e51c3b910a1"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98a5bba627898d19f9f59e51c3b910a1">pocketmine\world\World\isSpawnChunk</a></div><div class="ttdeci">isSpawnChunk(int $X, int $Z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02668">World.php:2668</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a98a5bba627898d19f9f59e51c3b910a1"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98a5bba627898d19f9f59e51c3b910a1">pocketmine\world\World\isSpawnChunk</a></div><div class="ttdeci">isSpawnChunk(int $X, int $Z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02673">World.php:2673</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_aa0e95e4a1a37f086984193c97f9d3e1c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#aa0e95e4a1a37f086984193c97f9d3e1c">pocketmine\world\World\addParticle</a></div><div class="ttdeci">addParticle(Vector3 $pos, Particle $particle, ?array $players=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00615">World.php:615</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_aa199c56310d54714a178b2ecf7e9d792"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#aa199c56310d54714a178b2ecf7e9d792">pocketmine\world\World\getSpawnLocation</a></div><div class="ttdeci">getSpawnLocation()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02274">World.php:2274</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_aa5d895755fb6883ebb3a62e97523747d"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#aa5d895755fb6883ebb3a62e97523747d">pocketmine\world\World\unregisterChunkListenerFromAll</a></div><div class="ttdeci">unregisterChunkListenerFromAll(ChunkListener $listener)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00764">World.php:764</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_aae34caa8f2a4fbf6c1fd658f6b4494fd"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#aae34caa8f2a4fbf6c1fd658f6b4494fd">pocketmine\world\World\__construct</a></div><div class="ttdeci">__construct(Server $server, string $name, WritableWorldProvider $provider, AsyncPool $workerPool)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00410">World.php:410</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_aaf2e52d2197f18484a7ca442a6528d98"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#aaf2e52d2197f18484a7ca442a6528d98">pocketmine\world\World\computeSkyLightReduction</a></div><div class="ttdeci">computeSkyLightReduction()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01352">World.php:1352</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ab24f4aa8eb3bdabc81a682d3d4b599f5"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab24f4aa8eb3bdabc81a682d3d4b599f5">pocketmine\world\World\getMinY</a></div><div class="ttdeci">getMinY()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02778">World.php:2778</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ab24f4aa8eb3bdabc81a682d3d4b599f5"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab24f4aa8eb3bdabc81a682d3d4b599f5">pocketmine\world\World\getMinY</a></div><div class="ttdeci">getMinY()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02783">World.php:2783</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ab2cddf93aeeaa0f632cc402ed1bd698b"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab2cddf93aeeaa0f632cc402ed1bd698b">pocketmine\world\World\getId</a></div><div class="ttdeci">getId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00536">World.php:536</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ab2e56030289d1f0d7d62458ec066c39c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab2e56030289d1f0d7d62458ec066c39c">pocketmine\world\World\loadChunk</a></div><div class="ttdeci">loadChunk(int $x, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02453">World.php:2453</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_abc4f34e0983bb088473fcc4156124c02"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#abc4f34e0983bb088473fcc4156124c02">pocketmine\world\World\getEntities</a></div><div class="ttdeci">getEntities()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01934">World.php:1934</a></div></div>
@@ -2832,10 +2840,10 @@ $(document).ready(function(){initNavTree('d9/d88/_world_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ac92daa7f223443980ddd2584ade6df56"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ac92daa7f223443980ddd2584ade6df56">pocketmine\world\World\getRealBlockSkyLightAt</a></div><div class="ttdeci">getRealBlockSkyLightAt(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01419">World.php:1419</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ad4c1e012e3e1faf646d38f10eee648f0"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ad4c1e012e3e1faf646d38f10eee648f0">pocketmine\world\World\getTile</a></div><div class="ttdeci">getTile(Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02049">World.php:2049</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ad7c91209484c04132e9de1e83ff40449"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ad7c91209484c04132e9de1e83ff40449">pocketmine\world\World\getFullLightAt</a></div><div class="ttdeci">getFullLightAt(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01379">World.php:1379</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ada131427fe06f5a7c41f384d4809ac4e"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e">pocketmine\world\World\getTime</a></div><div class="ttdeci">getTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02721">World.php:2721</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ada131427fe06f5a7c41f384d4809ac4e"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e">pocketmine\world\World\getTime</a></div><div class="ttdeci">getTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02726">World.php:2726</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_adc1189d64938fbbe075988a5731ebfd2"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#adc1189d64938fbbe075988a5731ebfd2">pocketmine\world\World\getHighestAdjacentRealBlockSkyLight</a></div><div class="ttdeci">getHighestAdjacentRealBlockSkyLight(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01496">World.php:1496</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ade4f5232a1de8e46714ad34c5d2a5656"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ade4f5232a1de8e46714ad34c5d2a5656">pocketmine\world\World\getSeed</a></div><div class="ttdeci">getSeed()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02774">World.php:2774</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ae70fe036fcd3cace8d11a28c2a5ad5e2"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2">pocketmine\world\World\orderChunkPopulation</a></div><div class="ttdeci">orderChunkPopulation(int $chunkX, int $chunkZ, ?ChunkLoader $associatedChunkLoader)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02911">World.php:2911</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ade4f5232a1de8e46714ad34c5d2a5656"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ade4f5232a1de8e46714ad34c5d2a5656">pocketmine\world\World\getSeed</a></div><div class="ttdeci">getSeed()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02779">World.php:2779</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ae70fe036fcd3cace8d11a28c2a5ad5e2"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2">pocketmine\world\World\orderChunkPopulation</a></div><div class="ttdeci">orderChunkPopulation(int $chunkX, int $chunkZ, ?ChunkLoader $associatedChunkLoader)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02916">World.php:2916</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ae88d3a62ea6d1672edd83e176faab98c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae88d3a62ea6d1672edd83e176faab98c">pocketmine\world\World\dropExperience</a></div><div class="ttdeci">dropExperience(Vector3 $pos, int $amount)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01679">World.php:1679</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ae8fc7f41e5623220db4621bda8c41a69"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae8fc7f41e5623220db4621bda8c41a69">pocketmine\world\World\isInLoadedTerrain</a></div><div class="ttdeci">isInLoadedTerrain(Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02254">World.php:2254</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_ae8fe6ea100fce0c373ee7231adfa1d42"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae8fe6ea100fce0c373ee7231adfa1d42">pocketmine\world\World\lockChunk</a></div><div class="ttdeci">lockChunk(int $chunkX, int $chunkZ, ChunkLockId $lockId)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02141">World.php:2141</a></div></div>
@@ -2843,7 +2851,7 @@ $(document).ready(function(){initNavTree('d9/d88/_world_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_af3b2c8f68ca7ae5f877fb93b3f44e26c"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#af3b2c8f68ca7ae5f877fb93b3f44e26c">pocketmine\world\World\scheduleDelayedBlockUpdate</a></div><div class="ttdeci">scheduleDelayedBlockUpdate(Vector3 $pos, int $delay)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l01203">World.php:1203</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_af80f01543be2670005ee70df2b2e510b"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#af80f01543be2670005ee70df2b2e510b">pocketmine\world\World\addOnUnloadCallback</a></div><div class="ttdeci">addOnUnloadCallback(\Closure $callback)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00587">World.php:587</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_afd51ae9c966a8d2de8dc91f80b337afc"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afd51ae9c966a8d2de8dc91f80b337afc">pocketmine\world\World\unregisterChunkListener</a></div><div class="ttdeci">unregisterChunkListener(ChunkListener $listener, int $chunkX, int $chunkZ)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00749">World.php:749</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_afdeb436c4017e94817b06f926652ec20"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20">pocketmine\world\World\setTime</a></div><div class="ttdeci">setTime(int $time)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02750">World.php:2750</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_afdeb436c4017e94817b06f926652ec20"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20">pocketmine\world\World\setTime</a></div><div class="ttdeci">setTime(int $time)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l02755">World.php:2755</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_timings_html"><div class="ttname"><a href="../../d7/d08/classpocketmine_1_1world_1_1_world_timings.html">pocketmine\world\WorldTimings</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd9/_world_timings_8php_source.html#l00029">WorldTimings.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_biome_html"><div class="ttname"><a href="../../d8/d20/classpocketmine_1_1world_1_1biome_1_1_biome.html">pocketmine\world\biome\Biome</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d93/_biome_8php_source.html#l00031">Biome.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_biome_registry_html"><div class="ttname"><a href="../../d4/db3/classpocketmine_1_1world_1_1biome_1_1_biome_registry.html">pocketmine\world\biome\BiomeRegistry</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/_biome_registry_8php_source.html#l00030">BiomeRegistry.php:30</a></div></div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-223893fd5c10916daf4514896ebe0c6da26840f4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.2 git-a6299b0927c1254fc482bf03f56742be0a4fb7f2</span>
    </div>
   </td>
  </tr>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('d2/dbd/_u_pn_p_8php_source.html','../.
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="stringliteral">&#39;/upnp:controlURL&#39;</span></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        ), <span class="stringliteral">&quot;xpath query is borked&quot;</span>);</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">if</span>(count($xpathResult) === 0){</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">if</span>($xpathResult === <span class="keyword">null</span> || count($xpathResult) === 0){</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> UPnPException(<span class="stringliteral">&quot;Your router does not support portforwarding&quot;</span>);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        $controlURL = (string) $xpathResult[0];</div>
