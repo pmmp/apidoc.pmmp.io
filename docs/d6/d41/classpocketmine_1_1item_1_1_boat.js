@@ -18,7 +18,7 @@ var classpocketmine_1_1item_1_1_boat =
     [ "getFuelResidue", "d6/d41/classpocketmine_1_1item_1_1_boat.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "d6/d41/classpocketmine_1_1item_1_1_boat.html#a1bea6a625e310104715f5434d6a53712", null ],
     [ "getLore", "d6/d41/classpocketmine_1_1item_1_1_boat.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],
-    [ "getMaxStackSize", "d6/d41/classpocketmine_1_1item_1_1_boat.html#ad981d95fce9c8a14832dc5fabbf4f3e4", null ],
+    [ "getMaxStackSize", "d6/d41/classpocketmine_1_1item_1_1_boat.html#ab2684657498a5d3ece43023f77d2b77d", null ],
     [ "getName", "d6/d41/classpocketmine_1_1item_1_1_boat.html#a2ee3936259ed3fd96fa07dcbcc4797c1", null ],
     [ "getNamedTag", "d6/d41/classpocketmine_1_1item_1_1_boat.html#a2b35e6f346e5955b086fcc07ead985a7", null ],
     [ "getVanillaName", "d6/d41/classpocketmine_1_1item_1_1_boat.html#ac534c116a4d2291a8d67f15c4b485b74", null ],
