@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.3 git-7c3b78b0a0ae848a8fb034251ef53edb7b0c08e4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-38d75f3aabde1a97c1b0730674788c25b420c4a9</span>
    </div>
   </td>
  </tr>
@@ -122,21 +122,21 @@ $(document).ready(function(){initNavTree('d9/d10/_inventory_transaction_event_8p
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">pocketmine\event\Event</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">pocketmine\inventory\transaction\InventoryTransaction</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html">InventoryTransactionEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> $transaction;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">InventoryTransaction</a> $transaction){</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;transaction = $transaction;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTransaction() : <a class="code hl_class" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">InventoryTransaction</a>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> $this-&gt;transaction;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html">InventoryTransactionEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> $transaction;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">InventoryTransaction</a> $transaction){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;transaction = $transaction;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTransaction() : <a class="code hl_class" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">InventoryTransaction</a>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> $this-&gt;transaction;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">pocketmine\event\Event</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00031">Event.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event_html"><div class="ttname"><a href="../../dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html">pocketmine\event\inventory\InventoryTransactionEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00035">InventoryTransactionEvent.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event_html"><div class="ttname"><a href="../../dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html">pocketmine\event\inventory\InventoryTransactionEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00044">InventoryTransactionEvent.php:44</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction_html"><div class="ttname"><a href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">pocketmine\inventory\transaction\InventoryTransaction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d6c/_inventory_transaction_8php_source.html#l00057">InventoryTransaction.php:57</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1inventory_html"><div class="ttname"><a href="../../da/db8/namespacepocketmine_1_1event_1_1inventory.html">pocketmine\event\inventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d76/_craft_item_event_8php_source.html#l00024">CraftItemEvent.php:24</a></div></div>

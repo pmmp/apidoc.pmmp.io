@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.3 git-7c3b78b0a0ae848a8fb034251ef53edb7b0c08e4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-38d75f3aabde1a97c1b0730674788c25b420c4a9</span>
    </div>
   </td>
  </tr>
@@ -132,9 +132,18 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a847810daab9f3d6396db6c759038a2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Called when there is a transaction between two Inventory objects. The source of this can be a Player, entities, mobs, or even hoppers in the future! </p>
+<div class="textblock"><p >Called when a player performs actions involving items in inventories.</p>
+<p >This may involve multiple inventories, and may include actions such as:</p><ul>
+<li>moving items from one slot to another</li>
+<li>splitting itemstacks</li>
+<li>dragging itemstacks across inventory slots (slot painting)</li>
+<li>dropping an item on the ground</li>
+<li>taking an item from the creative inventory menu</li>
+<li>destroying (trashing) an item</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a href="https://doc.pmmp.io/en/rtfd/developer-reference/inventory-transactions.html">https://doc.pmmp.io/en/rtfd/developer-reference/inventory-transactions.html</a> for more information on <a class="el" href="../../da/db8/namespacepocketmine_1_1event_1_1inventory.html">inventory</a> transactions </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00035">35</a> of file <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html">InventoryTransactionEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00044">44</a> of file <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html">InventoryTransactionEvent.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afd25f70b960bdf6ce4b4a054d07a77dc" name="afd25f70b960bdf6ce4b4a054d07a77dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd25f70b960bdf6ce4b4a054d07a77dc">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -152,7 +161,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00041">41</a> of file <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html">InventoryTransactionEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00050">50</a> of file <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html">InventoryTransactionEvent.php</a>.</p>
 
 </div>
 </div>
@@ -234,7 +243,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00045">45</a> of file <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html">InventoryTransactionEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html#l00054">54</a> of file <a class="el" href="../../d9/d10/_inventory_transaction_event_8php_source.html">InventoryTransactionEvent.php</a>.</p>
 
 </div>
 </div>

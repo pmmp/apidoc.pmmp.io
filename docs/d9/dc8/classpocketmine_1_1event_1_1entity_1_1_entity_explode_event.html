@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.3 git-7c3b78b0a0ae848a8fb034251ef53edb7b0c08e4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-38d75f3aabde1a97c1b0730674788c25b420c4a9</span>
    </div>
   </td>
  </tr>
@@ -150,9 +150,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8ce5f6dd1a44b8226faad4a620f0331a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Called when a entity explodes @phpstan-extends EntityEvent&lt;Entity&gt; </p>
+<div class="textblock"><p >Called when an entity explodes, after the explosion's impact has been calculated. No changes have been made to the world at this stage.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dd7/classpocketmine_1_1event_1_1entity_1_1_explosion_prime_event.html">ExplosionPrimeEvent</a></dd></dl>
+<p>@phpstan-extends EntityEvent&lt;Entity&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00037">37</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00041">41</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aca2c93e17566ecdcfb2b42c065f2ae93" name="aca2c93e17566ecdcfb2b42c065f2ae93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca2c93e17566ecdcfb2b42c065f2ae93">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -194,11 +196,12 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">Block[]</td><td class="paramname">$blocks</td><td></td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$yield</td><td>0-100 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00052">52</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00057">57</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -252,9 +255,10 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns a list of blocks destroyed by the explosion.</p>
 <dl class="section return"><dt>Returns</dt><dd>Block[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00066">66</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00076">76</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -330,7 +334,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00059">59</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00067">67</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -348,8 +352,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the percentage chance of drops from each block destroyed by the explosion. </p><dl class="section return"><dt>Returns</dt><dd>float 0-100 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00078">78</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00094">94</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -397,6 +402,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the blocks destroyed by the explosion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">Block[]</td><td class="paramname">$blocks</td><td></td></tr>
@@ -404,7 +410,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00073">73</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00085">85</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -423,8 +429,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the percentage chance of drops from each block destroyed by the explosion. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">float</td><td class="paramname">$yield</td><td>0-100 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00082">82</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00102">102</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -449,7 +461,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00044">44</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00048">48</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -521,7 +533,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00041">41</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00045">45</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>
@@ -545,7 +557,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00047">47</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html#l00051">51</a> of file <a class="el" href="../../d7/de4/_entity_explode_event_8php_source.html">EntityExplodeEvent.php</a>.</p>
 
 </div>
 </div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.3 git-7c3b78b0a0ae848a8fb034251ef53edb7b0c08e4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-38d75f3aabde1a97c1b0730674788c25b420c4a9</span>
    </div>
   </td>
  </tr>
@@ -120,31 +120,34 @@ $(document).ready(function(){initNavTree('de/df5/_player_quit_event_8php_source.
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html">PlayerQuitEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">PlayerEvent</a>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">protected</span> $quitMessage;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">protected</span> $quitReason;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span> $quitMessage, <span class="keywordtype">string</span> $quitReason){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;player = $player;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;quitMessage = $quitMessage;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;quitReason = $quitReason;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> setQuitMessage(<a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span> $quitMessage) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;quitMessage = $quitMessage;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span> <span class="keyword">function</span> getQuitMessage() : <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> $this-&gt;quitMessage;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> getQuitReason() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> $this-&gt;quitReason;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html">   39</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html">PlayerQuitEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">PlayerEvent</a>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">protected</span> $quitMessage;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">protected</span> $quitReason;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span> $quitMessage, <span class="keywordtype">string</span> $quitReason){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;player = $player;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;quitMessage = $quitMessage;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;quitReason = $quitReason;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa">   55</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa">setQuitMessage</a>(<a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span> $quitMessage) : void{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;quitMessage = $quitMessage;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a6e7073fe5cf297e4f92bc47f0db763a9">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a6e7073fe5cf297e4f92bc47f0db763a9">getQuitMessage</a>() : <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|string{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        return $this-&gt;quitMessage;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3aea575bc25658fe57943fa29d208c8b">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3aea575bc25658fe57943fa29d208c8b">getQuitReason</a>() : string{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        return $this-&gt;quitReason;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_event_html"><div class="ttname"><a href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">pocketmine\event\player\PlayerEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/da2/_player_event_8php_source.html#l00032">PlayerEvent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_quit_event_html"><div class="ttname"><a href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html">pocketmine\event\player\PlayerQuitEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/df5/_player_quit_event_8php_source.html#l00032">PlayerQuitEvent.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_quit_event_html"><div class="ttname"><a href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html">pocketmine\event\player\PlayerQuitEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/df5/_player_quit_event_8php_source.html#l00039">PlayerQuitEvent.php:39</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_quit_event_html_a2e8087e1f9e841174477a266884efaaa"><div class="ttname"><a href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa">pocketmine\event\player\PlayerQuitEvent\setQuitMessage</a></div><div class="ttdeci">setQuitMessage(Translatable|string $quitMessage)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df5/_player_quit_event_8php_source.html#l00055">PlayerQuitEvent.php:55</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_quit_event_html_a3aea575bc25658fe57943fa29d208c8b"><div class="ttname"><a href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3aea575bc25658fe57943fa29d208c8b">pocketmine\event\player\PlayerQuitEvent\getQuitReason</a></div><div class="ttdeci">getQuitReason()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df5/_player_quit_event_8php_source.html#l00069">PlayerQuitEvent.php:69</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_quit_event_html_a6e7073fe5cf297e4f92bc47f0db763a9"><div class="ttname"><a href="../../df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a6e7073fe5cf297e4f92bc47f0db763a9">pocketmine\event\player\PlayerQuitEvent\getQuitMessage</a></div><div class="ttdeci">getQuitMessage()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df5/_player_quit_event_8php_source.html#l00062">PlayerQuitEvent.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00026">Translatable.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00158">Player.php:158</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1player_html"><div class="ttname"><a href="../../de/d7b/namespacepocketmine_1_1event_1_1player.html">pocketmine\event\player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d76/_player_bed_enter_event_8php_source.html#l00024">PlayerBedEnterEvent.php:24</a></div></div>

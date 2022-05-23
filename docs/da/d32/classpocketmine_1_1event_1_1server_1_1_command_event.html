@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.3 git-7c3b78b0a0ae848a8fb034251ef53edb7b0c08e4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-38d75f3aabde1a97c1b0730674788c25b420c4a9</span>
    </div>
   </td>
  </tr>
@@ -140,11 +140,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:adae3b55d90e045fed4b196ea48349542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Called when any CommandSender runs a command, early in the process</p>
-<p >You don't want to use this except for a few cases like logging commands, blocking commands on certain places, or applying modifiers.</p>
-<p >The message DOES NOT contain a slash at the start </p>
+<div class="textblock"><p >Called when any CommandSender runs a command, before it is parsed.</p>
+<p >This can be used for logging commands, or preprocessing the command string to add custom features (e.g. selectors).</p>
+<p >WARNING: DO NOT use this to block commands. Many commands have aliases. For example, /version can also be invoked using /ver or /about. To prevent command senders from using certain commands, deny them permission to use the commands you don't want them to have access to.</p>
+<dl class="section see"><dt>See also</dt><dd>Permissible::addAttachment()</dd></dl>
+<p>The message DOES NOT begin with a slash. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00038">38</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00044">44</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2bbb54294d41c3ef8a9aa02f90b7241e" name="a2bbb54294d41c3ef8a9aa02f90b7241e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bbb54294d41c3ef8a9aa02f90b7241e">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -172,7 +174,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00047">47</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00053">53</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 
 </div>
 </div>
@@ -227,7 +229,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00056">56</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00062">62</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 
 </div>
 </div>
@@ -273,7 +275,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00052">52</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00058">58</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 
 </div>
 </div>
@@ -322,7 +324,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00060">60</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00066">66</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 
 </div>
 </div>
@@ -347,7 +349,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00042">42</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00048">48</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 
 </div>
 </div>
@@ -395,7 +397,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00045">45</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d1e/_command_event_8php_source.html#l00051">51</a> of file <a class="el" href="../../d1/d1e/_command_event_8php_source.html">CommandEvent.php</a>.</p>
 
 </div>
 </div>

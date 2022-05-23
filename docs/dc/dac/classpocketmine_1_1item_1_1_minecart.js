@@ -18,7 +18,7 @@ var classpocketmine_1_1item_1_1_minecart =
     [ "getFuelResidue", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
     [ "getLore", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],
-    [ "getMaxStackSize", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#ad981d95fce9c8a14832dc5fabbf4f3e4", null ],
+    [ "getMaxStackSize", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#ae8a4ca404a4b7c623585b3a4ceaa2a91", null ],
     [ "getName", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#a2ee3936259ed3fd96fa07dcbcc4797c1", null ],
     [ "getNamedTag", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#a2b35e6f346e5955b086fcc07ead985a7", null ],
     [ "getVanillaName", "dc/dac/classpocketmine_1_1item_1_1_minecart.html#ac534c116a4d2291a8d67f15c4b485b74", null ],

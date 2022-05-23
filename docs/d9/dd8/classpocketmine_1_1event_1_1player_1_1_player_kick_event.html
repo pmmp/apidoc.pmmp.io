@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.3 git-7c3b78b0a0ae848a8fb034251ef53edb7b0c08e4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-38d75f3aabde1a97c1b0730674788c25b420c4a9</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab8800f5b02291735c0405517e19f8bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Called when a player leaves the server </p>
+<div class="textblock"><p >Called when a player is kicked (forcibly disconnected) from the server, e.g. if an operator used /kick. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00034">34</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -290,8 +290,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the quit message broadcasted to other players, e.g. "Steve left the game". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00061">61</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00076">76</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
 
 </div>
 </div>
@@ -309,8 +310,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the message shown on the kicked player's disconnection screen. This message is also displayed in the console and server log. When kicked by the /kick command, the default is something like "Kicked by admin.". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00053">53</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00062">62</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
 
 </div>
 </div>
@@ -358,8 +360,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the quit message broadcasted to other players. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00057">57</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00069">69</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
 
 </div>
 </div>
@@ -378,8 +381,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the message shown on the kicked player's disconnection screen. This message is also displayed in the console and server log. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00049">49</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html#l00053">53</a> of file <a class="el" href="../../dc/dee/_player_kick_event_8php_source.html">PlayerKickEvent.php</a>.</p>
 
 </div>
 </div>
