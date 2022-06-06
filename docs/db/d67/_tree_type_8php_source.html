@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('db/d67/_tree_type_8php_source.html','.
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('db/d67/_tree_type_8php_source.html','.
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        __construct as Enum___construct;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> <span class="keyword">static</span> $numericIdMap = [];</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> <span class="keyword">static</span> array $numericIdMap = [];</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        self::registerAll(</div>
@@ -151,23 +151,22 @@ $(document).ready(function(){initNavTree('db/d67/_tree_type_8php_source.html','.
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> self::$numericIdMap[$magicNumber];</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">private</span> $displayName;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">private</span> $magicNumber;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $enumName, <span class="keywordtype">string</span> $displayName, <span class="keywordtype">int</span> $magicNumber){</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $this-&gt;Enum___construct($enumName);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;displayName = $displayName;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;magicNumber = $magicNumber;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> $this-&gt;displayName;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMagicNumber() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> $this-&gt;magicNumber;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">string</span> $enumName,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $displayName,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $magicNumber</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    ){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $this-&gt;Enum___construct($enumName);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> $this-&gt;displayName;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMagicNumber() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">return</span> $this-&gt;magicNumber;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_tree_type_html"><div class="ttname"><a href="../../d7/de7/classpocketmine_1_1block_1_1utils_1_1_tree_type.html">pocketmine\block\utils\TreeType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d67/_tree_type_8php_source.html#l00041">TreeType.php:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,6 +1,6 @@
 var classpocketmine_1_1world_1_1_world =
 [
-    [ "__construct", "d4/d2b/classpocketmine_1_1world_1_1_world.html#aae34caa8f2a4fbf6c1fd658f6b4494fd", null ],
+    [ "__construct", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a8b003390da4281b56c309c3c123b4c15", null ],
     [ "__debugInfo", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a81b5a7343134c44faa0391821052fefa", null ],
     [ "addEntity", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a2dc3564ff0d7dcea937c06f6458f85c7", null ],
     [ "addOnUnloadCallback", "d4/d2b/classpocketmine_1_1world_1_1_world.html#af80f01543be2670005ee70df2b2e510b", null ],

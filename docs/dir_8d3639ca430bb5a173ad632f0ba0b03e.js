@@ -14,5 +14,6 @@ var dir_8d3639ca430bb5a173ad632f0ba0b03e =
     [ "FurnaceInventory.php", "dc/dfc/_furnace_inventory_8php_source.html", null ],
     [ "HopperInventory.php", "d5/d1b/_hopper_inventory_8php_source.html", null ],
     [ "LoomInventory.php", "d8/def/_loom_inventory_8php_source.html", null ],
-    [ "ShulkerBoxInventory.php", "d2/df1/_shulker_box_inventory_8php_source.html", null ]
+    [ "ShulkerBoxInventory.php", "d2/df1/_shulker_box_inventory_8php_source.html", null ],
+    [ "StonecutterInventory.php", "d0/d18/_stonecutter_inventory_8php_source.html", null ]
 ];

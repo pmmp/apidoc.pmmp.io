@@ -13,7 +13,8 @@ var namespacepocketmine_1_1block =
       [ "FurnaceInventory", "d8/d69/classpocketmine_1_1block_1_1inventory_1_1_furnace_inventory.html", "d8/d69/classpocketmine_1_1block_1_1inventory_1_1_furnace_inventory" ],
       [ "HopperInventory", "d0/dc5/classpocketmine_1_1block_1_1inventory_1_1_hopper_inventory.html", "d0/dc5/classpocketmine_1_1block_1_1inventory_1_1_hopper_inventory" ],
       [ "LoomInventory", "db/d8d/classpocketmine_1_1block_1_1inventory_1_1_loom_inventory.html", "db/d8d/classpocketmine_1_1block_1_1inventory_1_1_loom_inventory" ],
-      [ "ShulkerBoxInventory", "d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory.html", "d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory" ]
+      [ "ShulkerBoxInventory", "d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory.html", "d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory" ],
+      [ "StonecutterInventory", "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html", "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory" ]
     ] ],
     [ "tile", "db/dba/namespacepocketmine_1_1block_1_1tile.html", "db/dba/namespacepocketmine_1_1block_1_1tile" ],
     [ "utils", null, [
@@ -35,6 +36,7 @@ var namespacepocketmine_1_1block =
       [ "SkullType", "d8/dbc/classpocketmine_1_1block_1_1utils_1_1_skull_type.html", null ],
       [ "SlabType", "dd/da9/classpocketmine_1_1block_1_1utils_1_1_slab_type.html", null ],
       [ "StairShape", "df/d5a/classpocketmine_1_1block_1_1utils_1_1_stair_shape.html", null ],
+      [ "SupportType", "d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html", null ],
       [ "TreeType", "d7/de7/classpocketmine_1_1block_1_1utils_1_1_tree_type.html", null ]
     ] ],
     [ "ActivatorRail", "d6/d7d/classpocketmine_1_1block_1_1_activator_rail.html", "d6/d7d/classpocketmine_1_1block_1_1_activator_rail" ],
@@ -199,6 +201,7 @@ var namespacepocketmine_1_1block =
     [ "Stair", "d7/d95/classpocketmine_1_1block_1_1_stair.html", "d7/d95/classpocketmine_1_1block_1_1_stair" ],
     [ "Stem", "dc/d0c/classpocketmine_1_1block_1_1_stem.html", "dc/d0c/classpocketmine_1_1block_1_1_stem" ],
     [ "StoneButton", "dc/de3/classpocketmine_1_1block_1_1_stone_button.html", "dc/de3/classpocketmine_1_1block_1_1_stone_button" ],
+    [ "Stonecutter", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html", "df/d79/classpocketmine_1_1block_1_1_stonecutter" ],
     [ "StonePressurePlate", "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html", "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate" ],
     [ "StraightOnlyRail", "d7/d52/classpocketmine_1_1block_1_1_straight_only_rail.html", "d7/d52/classpocketmine_1_1block_1_1_straight_only_rail" ],
     [ "Sugarcane", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html", "da/da9/classpocketmine_1_1block_1_1_sugarcane" ],

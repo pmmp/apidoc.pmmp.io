@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d5/d82/_record_8php_source.html','../.
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -120,8 +120,9 @@ $(document).ready(function(){initNavTree('d5/d82/_record_8php_source.html','../.
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d6/d93/classpocketmine_1_1block_1_1utils_1_1_record_type.html">pocketmine\block\utils\RecordType</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d8/d29/classpocketmine_1_1item_1_1_record.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d8/d29/classpocketmine_1_1item_1_1_record.html">Record</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">private</span> $recordType;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d6/d93/classpocketmine_1_1block_1_1utils_1_1_record_type.html">RecordType</a> $recordType;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//TODO: inconsistent parameter order</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html">ItemIdentifier</a> $identifier, <a class="code hl_class" href="../../d6/d93/classpocketmine_1_1block_1_1utils_1_1_record_type.html">RecordType</a> $recordType, <span class="keywordtype">string</span> $name){</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $this-&gt;recordType = $recordType;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        parent::__construct($identifier, $name);</div>

@@ -45,6 +45,7 @@ var namespacepocketmine_1_1command =
     ] ],
     [ "utils", null, [
       [ "CommandException", "d2/db2/classpocketmine_1_1command_1_1utils_1_1_command_exception.html", null ],
+      [ "CommandStringHelper", "d7/ddc/classpocketmine_1_1command_1_1utils_1_1_command_string_helper.html", "d7/ddc/classpocketmine_1_1command_1_1utils_1_1_command_string_helper" ],
       [ "InvalidCommandSyntaxException", "da/d46/classpocketmine_1_1command_1_1utils_1_1_invalid_command_syntax_exception.html", null ]
     ] ],
     [ "Command", "d6/df1/classpocketmine_1_1command_1_1_command.html", "d6/df1/classpocketmine_1_1command_1_1_command" ],

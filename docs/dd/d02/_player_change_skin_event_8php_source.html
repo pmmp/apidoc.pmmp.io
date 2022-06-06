@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('dd/d02/_player_change_skin_event_8php_
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -125,31 +125,30 @@ $(document).ready(function(){initNavTree('dd/d02/_player_change_skin_event_8php_
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d1/dd8/classpocketmine_1_1event_1_1player_1_1_player_change_skin_event.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/dd8/classpocketmine_1_1event_1_1player_1_1_player_change_skin_event.html">PlayerChangeSkinEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">PlayerEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> $oldSkin;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> $newSkin;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a> $oldSkin, <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a> $newSkin){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;player = $player;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;oldSkin = $oldSkin;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;newSkin = $newSkin;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOldSkin() : <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> $this-&gt;oldSkin;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNewSkin() : <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> $this-&gt;newSkin;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">public</span> <span class="keyword">function</span> setNewSkin(<a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a> $skin) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;newSkin = $skin;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a> $oldSkin,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a> $newSkin</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    ){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;player = $player;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOldSkin() : <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> $this-&gt;oldSkin;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNewSkin() : <a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> $this-&gt;newSkin;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> setNewSkin(<a class="code hl_class" href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">Skin</a> $skin) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;newSkin = $skin;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_skin_html"><div class="ttname"><a href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">pocketmine\entity\Skin</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d80/_skin_8php_source.html#l00035">Skin.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_change_skin_event_html"><div class="ttname"><a href="../../d1/dd8/classpocketmine_1_1event_1_1player_1_1_player_change_skin_event.html">pocketmine\event\player\PlayerChangeSkinEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d02/_player_change_skin_event_8php_source.html#l00034">PlayerChangeSkinEvent.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_event_html"><div class="ttname"><a href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">pocketmine\event\player\PlayerEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/da2/_player_event_8php_source.html#l00032">PlayerEvent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00158">Player.php:158</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00160">Player.php:160</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1player_html"><div class="ttname"><a href="../../de/d7b/namespacepocketmine_1_1event_1_1player.html">pocketmine\event\player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d76/_player_bed_enter_event_8php_source.html#l00024">PlayerBedEnterEvent.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html_ab6c4dceac6e98e0eb02896a6809e52fa"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">pocketmine\event\CancellableTrait</a></div><div class="ttdeci">trait CancellableTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d98/_cancellable_trait_8php_source.html#l00034">CancellableTrait.php:34</a></div></div>

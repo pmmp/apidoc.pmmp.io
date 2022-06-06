@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('dd/d94/_dye_color_id_map_8php_source.h
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -123,9 +123,9 @@ $(document).ready(function(){initNavTree('dd/d94/_dye_color_id_map_8php_source.h
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">   29</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">DyeColorIdMap</a>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    use SingletonTrait;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> $idToEnum = [];</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> array $idToEnum = [];</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> $enumToId = [];</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> array $enumToId = [];</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;<span class="keyword">register</span>(0, DyeColor::WHITE());</div>

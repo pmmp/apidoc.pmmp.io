@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -165,30 +165,30 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html">   71</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html">LevelDB</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d6/dfa/classpocketmine_1_1world_1_1format_1_1io_1_1_base_world_provider.html">BaseWorldProvider</a> implements <a class="code hl_interface" href="../../d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html">WritableWorldProvider</a>{</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">//According to Tomasso, these aren&#39;t supposed to be readable anymore. Thankfully he didn&#39;t change the readable ones...</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_DATA_2D = <span class="stringliteral">&quot;\x2d&quot;</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_DATA_2D_LEGACY = <span class="stringliteral">&quot;\x2e&quot;</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_SUBCHUNK_PREFIX = <span class="stringliteral">&quot;\x2f&quot;</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_LEGACY_TERRAIN = <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BLOCK_ENTITY = <span class="stringliteral">&quot;1&quot;</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_ENTITY = <span class="stringliteral">&quot;2&quot;</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_PENDING_TICK = <span class="stringliteral">&quot;3&quot;</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BLOCK_EXTRA_DATA = <span class="stringliteral">&quot;4&quot;</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BIOME_STATE = <span class="stringliteral">&quot;5&quot;</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_STATE_FINALISATION = <span class="stringliteral">&quot;6&quot;</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_DATA_2D = ChunkDataKey::HEIGHTMAP_AND_2D_BIOMES;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_DATA_2D_LEGACY = ChunkDataKey::HEIGHTMAP_AND_2D_BIOME_COLORS;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_SUBCHUNK_PREFIX = ChunkDataKey::SUBCHUNK;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_LEGACY_TERRAIN = ChunkDataKey::LEGACY_TERRAIN;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BLOCK_ENTITY = ChunkDataKey::BLOCK_ENTITIES;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_ENTITY = ChunkDataKey::ENTITIES;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_PENDING_TICK = ChunkDataKey::PENDING_SCHEDULED_TICKS;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BLOCK_EXTRA_DATA = ChunkDataKey::LEGACY_BLOCK_EXTRA_DATA;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BIOME_STATE = ChunkDataKey::BIOME_STATES;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_STATE_FINALISATION = ChunkDataKey::FINALIZATION;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BORDER_BLOCKS = <span class="stringliteral">&quot;8&quot;</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_HARDCODED_SPAWNERS = <span class="stringliteral">&quot;9&quot;</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_BORDER_BLOCKS = ChunkDataKey::BORDER_BLOCKS;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_HARDCODED_SPAWNERS = ChunkDataKey::HARDCODED_SPAWNERS;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">protected</span> <span class="keyword">const</span> FINALISATION_NEEDS_INSTATICKING = 0;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">protected</span> <span class="keyword">const</span> FINALISATION_NEEDS_POPULATION = 1;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">protected</span> <span class="keyword">const</span> FINALISATION_DONE = 2;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_VERSION = <span class="stringliteral">&quot;v&quot;</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">protected</span> <span class="keyword">const</span> TAG_VERSION = ChunkDataKey::OLD_VERSION;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">protected</span> <span class="keyword">const</span> ENTRY_FLAT_WORLD_LAYERS = <span class="stringliteral">&quot;game_flatworldlayers&quot;</span>;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">protected</span> <span class="keyword">const</span> CURRENT_LEVEL_CHUNK_VERSION = 7;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">protected</span> <span class="keyword">const</span> CURRENT_LEVEL_SUBCHUNK_VERSION = 8;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">protected</span> <span class="keyword">const</span> CURRENT_LEVEL_CHUNK_VERSION = ChunkVersion::v1_2_0; <span class="comment">//yes, I know this is wrong, but it ensures vanilla auto-fixes stuff we currently don&#39;t</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">protected</span> <span class="keyword">const</span> CURRENT_LEVEL_SUBCHUNK_VERSION = <a class="code hl_variable" href="../../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#adcde846e62dd7d2e55688d42c2dcb510">SubChunkVersion::PALETTED_MULTI</a>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">protected</span> $db;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> deserializeExtraDataKey(<span class="keywordtype">int</span> $chunkVersion, <span class="keywordtype">int</span> $key, ?<span class="keywordtype">int</span> &amp;$x, ?<span class="keywordtype">int</span> &amp;$y, ?<span class="keywordtype">int</span> &amp;$z) : void{</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        if($chunkVersion &gt;= 3){</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        if($chunkVersion &gt;= ChunkVersion::v1_0_0){</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            $x = ($key &gt;&gt; 12) &amp; 0xf;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            $z = ($key &gt;&gt; 8) &amp; 0xf;</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            $y = $key &amp; 0xff;</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a12f9e0e07dd19b05750d457746810917">  209</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a12f9e0e07dd19b05750d457746810917">deserializeLegacyExtraData</a>(<span class="keywordtype">string</span> $index, <span class="keywordtype">int</span> $chunkVersion) : array{</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        if(($extraRawData = $this-&gt;db-&gt;get($index . self::TAG_BLOCK_EXTRA_DATA)) === false || $extraRawData === <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        if(($extraRawData = $this-&gt;db-&gt;get($index . <a class="code hl_class" href="../../da/da0/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_chunk_data_key.html">ChunkDataKey</a>::LEGACY_BLOCK_EXTRA_DATA)) === false || $extraRawData === <span class="stringliteral">&quot;&quot;</span>){</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="keywordflow">return</span> [];</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        }</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a3a33cae8ceee5f67454e54ab15f5f49f">  241</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a3a33cae8ceee5f67454e54ab15f5f49f">loadChunk</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : ?<a class="code hl_class" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">ChunkData</a>{</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        $index = <a class="code hl_class" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html">LevelDB</a>::chunkIndex($chunkX, $chunkZ);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        $chunkVersionRaw = $this-&gt;db-&gt;get($index . self::TAG_VERSION);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        $chunkVersionRaw = $this-&gt;db-&gt;get($index . ChunkDataKey::OLD_VERSION);</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">if</span>($chunkVersionRaw === <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
@@ -334,23 +334,23 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        $hasBeenUpgraded = $chunkVersion &lt; self::CURRENT_LEVEL_CHUNK_VERSION;</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">switch</span>($chunkVersion){</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keywordflow">case</span> 15: <span class="comment">//MCPE 1.12.0.4 beta (???)</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordflow">case</span> 14: <span class="comment">//MCPE 1.11.1.2 (???)</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">case</span> 13: <span class="comment">//MCPE 1.11.0.4 beta (???)</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">case</span> 12: <span class="comment">//MCPE 1.11.0.3 beta (???)</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">case</span> 11: <span class="comment">//MCPE 1.11.0.1 beta (???)</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="keywordflow">case</span> 10: <span class="comment">//MCPE 1.9 (???)</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="keywordflow">case</span> 9: <span class="comment">//MCPE 1.8 (???)</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">case</span> 8: <span class="comment">//MCPE 1.2.13 (paletted subchunks)</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="keywordflow">case</span> 7: <span class="comment">//MCPE 1.2 (???)</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="keywordflow">case</span> 6: <span class="comment">//MCPE 1.2.0.2 beta (???)</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordflow">case</span> 4: <span class="comment">//MCPE 1.1</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keywordflow">case</span> ChunkVersion::v1_12_0_4_beta:</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordflow">case</span> ChunkVersion::v1_11_1:</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">case</span> ChunkVersion::v1_11_0_4_beta:</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">case</span> ChunkVersion::v1_11_0_3_beta:</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">case</span> ChunkVersion::v1_11_0_1_beta:</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="keywordflow">case</span> ChunkVersion::v1_9_0:</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="keywordflow">case</span> ChunkVersion::v1_8_0:</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">case</span> ChunkVersion::v1_2_13:</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="keywordflow">case</span> ChunkVersion::v1_2_0:</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="keywordflow">case</span> ChunkVersion::v1_2_0_2_beta:</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordflow">case</span> ChunkVersion::v1_1_0:</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <span class="comment">//TODO: check beds</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">case</span> 3: <span class="comment">//MCPE 1.0</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">case</span> ChunkVersion::v1_0_0:</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                $convertedLegacyExtraData = $this-&gt;deserializeLegacyExtraData($index, $chunkVersion);</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                <span class="keywordflow">for</span>($y = Chunk::MIN_SUBCHUNK_INDEX; $y &lt;= Chunk::MAX_SUBCHUNK_INDEX; ++$y){</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                    <span class="keywordflow">if</span>(($data = $this-&gt;db-&gt;get($index . self::TAG_SUBCHUNK_PREFIX . chr($y))) === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                    <span class="keywordflow">if</span>(($data = $this-&gt;db-&gt;get($index . ChunkDataKey::SUBCHUNK . chr($y))) === <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                    }</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
@@ -364,18 +364,18 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                    }</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                    <span class="keywordflow">switch</span>($subChunkVersion){</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                        <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                        <span class="keywordflow">case</span> 2: <span class="comment">//these are all identical to version 0, but vanilla respects these so we should also</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                        <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                        <span class="keywordflow">case</span> 6:</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                        <span class="keywordflow">case</span> 7:</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC:</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC_BUG_2: <span class="comment">//these are all identical to version 0, but vanilla respects these so we should also</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC_BUG_3:</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC_BUG_4:</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC_BUG_5:</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC_BUG_6:</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                        <span class="keywordflow">case</span> SubChunkVersion::CLASSIC_BUG_7:</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                            <span class="keywordflow">try</span>{</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                                $blocks = $binaryStream-&gt;get(4096);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                                $blockData = $binaryStream-&gt;get(2048);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                                <span class="keywordflow">if</span>($chunkVersion &lt; 4){</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                                <span class="keywordflow">if</span>($chunkVersion &lt; ChunkVersion::v1_1_0){</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                                    $binaryStream-&gt;get(4096); <span class="comment">//legacy light info, discard it</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                                    $hasBeenUpgraded = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                                }</div>
@@ -390,14 +390,14 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                            $subChunks[$y] = <span class="keyword">new</span> SubChunk(BlockLegacyIds::AIR &lt;&lt; Block::INTERNAL_METADATA_BITS, $storages);</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                        <span class="keywordflow">case</span> 1: <span class="comment">//paletted v1, has a single blockstorage</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                        <span class="keywordflow">case</span> SubChunkVersion::PALETTED_SINGLE:</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                            $storages = [$this-&gt;deserializePaletted($binaryStream)];</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                            <span class="keywordflow">if</span>(isset($convertedLegacyExtraData[$y])){</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                                $storages[] = $convertedLegacyExtraData[$y];</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                            }</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                            $subChunks[$y] = <span class="keyword">new</span> SubChunk(BlockLegacyIds::AIR &lt;&lt; Block::INTERNAL_METADATA_BITS, $storages);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                        <span class="keywordflow">case</span> 8:</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                        <span class="keywordflow">case</span> SubChunkVersion::PALETTED_MULTI:</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                            <span class="comment">//legacy extradata layers intentionally ignored because they aren&#39;t supposed to exist in v8</span></div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                            $storageCount = $binaryStream-&gt;getByte();</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                            <span class="keywordflow">if</span>($storageCount &gt; 0){</div>
@@ -415,7 +415,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                    }</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                }</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="keywordflow">if</span>(($maps2d = $this-&gt;db-&gt;get($index . self::TAG_DATA_2D)) !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="keywordflow">if</span>(($maps2d = $this-&gt;db-&gt;get($index . ChunkDataKey::HEIGHTMAP_AND_2D_BIOMES)) !== <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                    $binaryStream = <span class="keyword">new</span> BinaryStream($maps2d);</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    <span class="keywordflow">try</span>{</div>
@@ -426,12 +426,12 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                    }</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                }</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="keywordflow">case</span> 2: <span class="comment">// &lt; MCPE 1.0</span></div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            <span class="keywordflow">case</span> 0: <span class="comment">//MCPE 0.9.0.1 beta (first version)</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="keywordflow">case</span> ChunkVersion::v0_9_5:</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <span class="keywordflow">case</span> ChunkVersion::v0_9_2:</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            <span class="keywordflow">case</span> ChunkVersion::v0_9_0:</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                $convertedLegacyExtraData = $this-&gt;deserializeLegacyExtraData($index, $chunkVersion);</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                $legacyTerrain = $this-&gt;db-&gt;get($index . self::TAG_LEGACY_TERRAIN);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                $legacyTerrain = $this-&gt;db-&gt;get($index . ChunkDataKey::LEGACY_TERRAIN);</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                <span class="keywordflow">if</span>($legacyTerrain === <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException(<span class="stringliteral">&quot;Missing expected LEGACY_TERRAIN tag for format version $chunkVersion&quot;</span>);</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                }</div>
@@ -468,7 +468,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        $nbt = <span class="keyword">new</span> LittleEndianNbtSerializer();</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        $entities = [];</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">if</span>(($entityData = $this-&gt;db-&gt;get($index . self::TAG_ENTITY)) !== <span class="keyword">false</span> &amp;&amp; $entityData !== <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">if</span>(($entityData = $this-&gt;db-&gt;get($index . ChunkDataKey::ENTITIES)) !== <span class="keyword">false</span> &amp;&amp; $entityData !== <span class="stringliteral">&quot;&quot;</span>){</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            <span class="keywordflow">try</span>{</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                $entities = array_map(fn(TreeRoot $root) =&gt; $root-&gt;mustGetCompoundTag(), $nbt-&gt;readMultiple($entityData));</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        }</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>        $tiles = [];</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        <span class="keywordflow">if</span>(($tileData = $this-&gt;db-&gt;get($index . self::TAG_BLOCK_ENTITY)) !== <span class="keyword">false</span> &amp;&amp; $tileData !== <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        <span class="keywordflow">if</span>(($tileData = $this-&gt;db-&gt;get($index . ChunkDataKey::BLOCK_ENTITIES)) !== <span class="keyword">false</span> &amp;&amp; $tileData !== <span class="stringliteral">&quot;&quot;</span>){</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>            <span class="keywordflow">try</span>{</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                $tiles = array_map(fn(TreeRoot $root) =&gt; $root-&gt;mustGetCompoundTag(), $nbt-&gt;readMultiple($tileData));</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>            }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
@@ -485,7 +485,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            }</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        }</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        $finalisationChr = $this-&gt;db-&gt;get($index . self::TAG_STATE_FINALISATION);</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        $finalisationChr = $this-&gt;db-&gt;get($index . ChunkDataKey::FINALIZATION);</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        <span class="keywordflow">if</span>($finalisationChr !== <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            $finalisation = ord($finalisationChr);</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>            $terrainPopulated = $finalisation === self::FINALISATION_DONE;</div>
@@ -513,13 +513,13 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        $index = LevelDB::chunkIndex($chunkX, $chunkZ);</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        $write = new \LevelDBWriteBatch();</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        $write-&gt;put($index . self::TAG_VERSION, chr(self::CURRENT_LEVEL_CHUNK_VERSION));</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        $write-&gt;put($index . ChunkDataKey::OLD_VERSION, chr(self::CURRENT_LEVEL_CHUNK_VERSION));</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        $chunk = $chunkData-&gt;getChunk();</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        <span class="keywordflow">if</span>($chunk-&gt;getTerrainDirtyFlag(Chunk::DIRTY_FLAG_BLOCKS)){</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>            $subChunks = $chunk-&gt;getSubChunks();</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>            <span class="keywordflow">foreach</span>($subChunks as $y =&gt; $subChunk){</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>                $key = $index . self::TAG_SUBCHUNK_PREFIX . chr($y);</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>                $key = $index . ChunkDataKey::SUBCHUNK . chr($y);</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>                <span class="keywordflow">if</span>($subChunk-&gt;isEmptyAuthoritative()){</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>                    $write-&gt;delete($key);</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>                }<span class="keywordflow">else</span>{</div>
@@ -558,17 +558,17 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>        }</div>
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span> </div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>        <span class="keywordflow">if</span>($chunk-&gt;getTerrainDirtyFlag(Chunk::DIRTY_FLAG_BIOMES)){</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>            $write-&gt;put($index . self::TAG_DATA_2D, str_repeat(<span class="stringliteral">&quot;\x00&quot;</span>, 512) . $chunk-&gt;getBiomeIdArray());</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>            $write-&gt;put($index . ChunkDataKey::HEIGHTMAP_AND_2D_BIOMES, str_repeat(<span class="stringliteral">&quot;\x00&quot;</span>, 512) . $chunk-&gt;getBiomeIdArray());</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>        }</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="comment">//TODO: use this properly</span></div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>        $write-&gt;put($index . self::TAG_STATE_FINALISATION, chr($chunk-&gt;isPopulated() ? self::FINALISATION_DONE : self::FINALISATION_NEEDS_POPULATION));</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>        $write-&gt;put($index . ChunkDataKey::FINALIZATION, chr($chunk-&gt;isPopulated() ? self::FINALISATION_DONE : self::FINALISATION_NEEDS_POPULATION));</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        $this-&gt;writeTags($chunkData-&gt;<a class="code hl_function" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html#a09238bb2ea72e3a55bf0df088b26ff1a">getTileNBT</a>(), $index . self::TAG_BLOCK_ENTITY, $write);</div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        $this-&gt;writeTags($chunkData-&gt;<a class="code hl_function" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html#acc2632c685f86e332942f889808696c3">getEntityNBT</a>(), $index . self::TAG_ENTITY, $write);</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        $this-&gt;writeTags($chunkData-&gt;<a class="code hl_function" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html#a09238bb2ea72e3a55bf0df088b26ff1a">getTileNBT</a>(), $index . ChunkDataKey::BLOCK_ENTITIES, $write);</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        $this-&gt;writeTags($chunkData-&gt;<a class="code hl_function" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html#acc2632c685f86e332942f889808696c3">getEntityNBT</a>(), $index . ChunkDataKey::ENTITIES, $write);</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span> </div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        $write-&gt;delete($index . self::TAG_DATA_2D_LEGACY);</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        $write-&gt;delete($index . self::TAG_LEGACY_TERRAIN);</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        $write-&gt;delete($index . ChunkDataKey::HEIGHTMAP_AND_2D_BIOME_COLORS);</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        $write-&gt;delete($index . ChunkDataKey::LEGACY_TERRAIN);</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>        $this-&gt;db-&gt;write($write);</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    }</div>
@@ -600,7 +600,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span> </div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno"><a class="line" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a16ef2269160f2ae99bd259b2341e16ff">  529</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a16ef2269160f2ae99bd259b2341e16ff">getAllChunks</a>(<span class="keywordtype">bool</span> $skipCorrupted = <span class="keyword">false</span>, ?\<a class="code hl_interface" href="../../d4/d00/interface_logger.html">Logger</a> $logger = <span class="keyword">null</span>) : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        foreach($this-&gt;db-&gt;getIterator() as $key =&gt; $_){</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            <span class="keywordflow">if</span>(strlen($key) === 9 &amp;&amp; substr($key, -1) === self::TAG_VERSION){</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            <span class="keywordflow">if</span>(strlen($key) === 9 &amp;&amp; substr($key, -1) === ChunkDataKey::OLD_VERSION){</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>                $chunkX = Binary::readLInt(substr($key, 0, 4));</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                $chunkZ = Binary::readLInt(substr($key, 4, 4));</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>                <span class="keywordflow">try</span>{</div>
@@ -622,14 +622,14 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno"><a class="line" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a297b244969d63f065a048dcff1a7c877">  550</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a297b244969d63f065a048dcff1a7c877">calculateChunkCount</a>() : int{</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        $count = 0;</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        <span class="keywordflow">foreach</span>($this-&gt;db-&gt;getIterator() as $key =&gt; $_){</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>            <span class="keywordflow">if</span>(strlen($key) === 9 &amp;&amp; substr($key, -1) === self::TAG_VERSION){</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>            <span class="keywordflow">if</span>(strlen($key) === 9 &amp;&amp; substr($key, -1) === ChunkDataKey::OLD_VERSION){</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>                $count++;</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            }</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        }</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="keywordflow">return</span> $count;</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    }</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00051">Block.php:51</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00052">Block.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_legacy_ids_html"><div class="ttname"><a href="../../db/d51/classpocketmine_1_1block_1_1_block_legacy_ids.html">pocketmine\block\BlockLegacyIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d7d/_block_legacy_ids_8php_source.html#l00026">BlockLegacyIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_biome_ids_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html">pocketmine\data\bedrock\BiomeIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d7a/_biome_ids_8php_source.html#l00026">BiomeIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_legacy_block_id_to_string_id_map_html"><div class="ttname"><a href="../../de/db4/classpocketmine_1_1data_1_1bedrock_1_1_legacy_block_id_to_string_id_map.html">pocketmine\data\bedrock\LegacyBlockIdToStringIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/_legacy_block_id_to_string_id_map_8php_source.html#l00029">LegacyBlockIdToStringIdMap.php:29</a></div></div>
@@ -656,6 +656,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_chunk_exception_html"><div class="ttname"><a href="../../da/d64/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_chunk_exception.html">pocketmine\world\format\io\exception\CorruptedChunkException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d59/_corrupted_chunk_exception_8php_source.html#l00028">CorruptedChunkException.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_world_exception_html"><div class="ttname"><a href="../../d0/da7/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_world_exception.html">pocketmine\world\format\io\exception\CorruptedWorldException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/de5/_corrupted_world_exception_8php_source.html#l00028">CorruptedWorldException.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_unsupported_world_format_exception_html"><div class="ttname"><a href="../../d1/d50/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_unsupported_world_format_exception.html">pocketmine\world\format\io\exception\UnsupportedWorldFormatException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d2f/_unsupported_world_format_exception_8php_source.html#l00028">UnsupportedWorldFormatException.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_chunk_data_key_html"><div class="ttname"><a href="../../da/da0/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_chunk_data_key.html">pocketmine\world\format\io\leveldb\ChunkDataKey</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dce/_chunk_data_key_8php_source.html#l00026">ChunkDataKey.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b_html"><div class="ttname"><a href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html">pocketmine\world\format\io\leveldb\LevelDB</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d16/_level_d_b_8php_source.html#l00071">LevelDB.php:71</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b_html_a12f9e0e07dd19b05750d457746810917"><div class="ttname"><a href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a12f9e0e07dd19b05750d457746810917">pocketmine\world\format\io\leveldb\LevelDB\deserializeLegacyExtraData</a></div><div class="ttdeci">deserializeLegacyExtraData(string $index, int $chunkVersion)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d16/_level_d_b_8php_source.html#l00209">LevelDB.php:209</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b_html_a16ef2269160f2ae99bd259b2341e16ff"><div class="ttname"><a href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a16ef2269160f2ae99bd259b2341e16ff">pocketmine\world\format\io\leveldb\LevelDB\getAllChunks</a></div><div class="ttdeci">getAllChunks(bool $skipCorrupted=false, ?\Logger $logger=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d16/_level_d_b_8php_source.html#l00529">LevelDB.php:529</a></div></div>
@@ -667,6 +668,7 @@ $(document).ready(function(){initNavTree('df/d16/_level_d_b_8php_source.html','.
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b_html_a4fdb365948d2e792038a732a9197a3e0"><div class="ttname"><a href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a4fdb365948d2e792038a732a9197a3e0">pocketmine\world\format\io\leveldb\LevelDB\getWorldMinY</a></div><div class="ttdeci">getWorldMinY()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d16/_level_d_b_8php_source.html#l00138">LevelDB.php:138</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b_html_a9a44ba5166d0b810951cda0a3cae6626"><div class="ttname"><a href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#a9a44ba5166d0b810951cda0a3cae6626">pocketmine\world\format\io\leveldb\LevelDB\getWorldMaxY</a></div><div class="ttdeci">getWorldMaxY()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d16/_level_d_b_8php_source.html#l00142">LevelDB.php:142</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b_html_ae19a243e9ef2efb236c0a268db5a20b6"><div class="ttname"><a href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#ae19a243e9ef2efb236c0a268db5a20b6">pocketmine\world\format\io\leveldb\LevelDB\saveChunk</a></div><div class="ttdeci">saveChunk(int $chunkX, int $chunkZ, ChunkData $chunkData)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d16/_level_d_b_8php_source.html#l00436">LevelDB.php:436</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version_html_adcde846e62dd7d2e55688d42c2dcb510"><div class="ttname"><a href="../../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#adcde846e62dd7d2e55688d42c2dcb510">pocketmine\world\format\io\leveldb\SubChunkVersion\PALETTED_MULTI</a></div><div class="ttdeci">const PALETTED_MULTI</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de4/_sub_chunk_version_8php_source.html#l00049">SubChunkVersion.php:49</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_html"><div class="ttname"><a href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">pocketmine\world\generator\Generator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9c/_generator_8php_source.html#l00034">Generator.php:34</a></div></div>
 <div class="ttc" id="ainterface_logger_html"><div class="ttname"><a href="../../d4/d00/interface_logger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d41/_logger_8php_source.html#l00018">Logger.php:18</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1format_1_1io_1_1_world_data_html"><div class="ttname"><a href="../../d7/d4e/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_data.html">pocketmine\world\format\io\WorldData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d9a/_world_data_8php_source.html#l00028">WorldData.php:28</a></div></div>

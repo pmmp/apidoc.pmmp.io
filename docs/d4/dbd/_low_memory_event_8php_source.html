@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d4/dbd/_low_memory_event_8php_source.h
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -120,44 +120,39 @@ $(document).ready(function(){initNavTree('d4/dbd/_low_memory_event_8php_source.h
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">pocketmine\utils\Process</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html">LowMemoryEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html">ServerEvent</a>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> $memory;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> $memoryLimit;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> $triggerCount;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> $global;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">int</span> $memory, <span class="keywordtype">int</span> $memoryLimit, <span class="keywordtype">bool</span> $isGlobal = <span class="keyword">false</span>, <span class="keywordtype">int</span> $triggerCount = 0){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;memory = $memory;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;memoryLimit = $memoryLimit;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;global = $isGlobal;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;triggerCount = $triggerCount;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d">   52</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d">getMemory</a>() : int{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return $this-&gt;memory;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06">getMemoryLimit</a>() : int{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        return $this-&gt;memoryLimit;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#ad3c71c08b98ee3a82aef9735f6e700d6">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#ad3c71c08b98ee3a82aef9735f6e700d6">getTriggerCount</a>() : int{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        return $this-&gt;triggerCount;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">function</span> isGlobal() : bool{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        return $this-&gt;global;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb">   77</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb">getMemoryFreed</a>() : int{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $usage = <a class="code hl_class" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">Process</a>::getAdvancedMemoryUsage();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> $this-&gt;getMemory() - ($this-&gt;isGlobal() ? $usage[1] : $usage[0]);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $memory,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $memoryLimit,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> $isGlobal = <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $triggerCount = 0</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ){}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d">getMemory</a>() : int{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        return $this-&gt;memory;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06">getMemoryLimit</a>() : int{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        return $this-&gt;memoryLimit;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#ad3c71c08b98ee3a82aef9735f6e700d6">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#ad3c71c08b98ee3a82aef9735f6e700d6">getTriggerCount</a>() : int{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        return $this-&gt;triggerCount;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span> <span class="keyword">function</span> isGlobal() : bool{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        return $this-&gt;isGlobal;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb">getMemoryFreed</a>() : int{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $usage = <a class="code hl_class" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">Process</a>::getAdvancedMemoryUsage();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> $this-&gt;getMemory() - ($this-&gt;isGlobal() ? $usage[1] : $usage[0]);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html">pocketmine\event\server\LowMemoryEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00032">LowMemoryEvent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_a5b80a5685d7c99143da08c5b98991c3d"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d">pocketmine\event\server\LowMemoryEvent\getMemory</a></div><div class="ttdeci">getMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00052">LowMemoryEvent.php:52</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_a93024f18be81026a91668bcfc5544a06"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06">pocketmine\event\server\LowMemoryEvent\getMemoryLimit</a></div><div class="ttdeci">getMemoryLimit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00059">LowMemoryEvent.php:59</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_aab6da03c8024748329b94fd714b747cb"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb">pocketmine\event\server\LowMemoryEvent\getMemoryFreed</a></div><div class="ttdeci">getMemoryFreed()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00077">LowMemoryEvent.php:77</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_ad3c71c08b98ee3a82aef9735f6e700d6"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#ad3c71c08b98ee3a82aef9735f6e700d6">pocketmine\event\server\LowMemoryEvent\getTriggerCount</a></div><div class="ttdeci">getTriggerCount()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00066">LowMemoryEvent.php:66</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_a5b80a5685d7c99143da08c5b98991c3d"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d">pocketmine\event\server\LowMemoryEvent\getMemory</a></div><div class="ttdeci">getMemory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00043">LowMemoryEvent.php:43</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_a93024f18be81026a91668bcfc5544a06"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06">pocketmine\event\server\LowMemoryEvent\getMemoryLimit</a></div><div class="ttdeci">getMemoryLimit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00050">LowMemoryEvent.php:50</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_aab6da03c8024748329b94fd714b747cb"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb">pocketmine\event\server\LowMemoryEvent\getMemoryFreed</a></div><div class="ttdeci">getMemoryFreed()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00068">LowMemoryEvent.php:68</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_low_memory_event_html_ad3c71c08b98ee3a82aef9735f6e700d6"><div class="ttname"><a href="../../df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#ad3c71c08b98ee3a82aef9735f6e700d6">pocketmine\event\server\LowMemoryEvent\getTriggerCount</a></div><div class="ttdeci">getTriggerCount()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dbd/_low_memory_event_8php_source.html#l00057">LowMemoryEvent.php:57</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_server_event_html"><div class="ttname"><a href="../../d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html">pocketmine\event\server\ServerEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/_server_event_8php_source.html#l00031">ServerEvent.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_process_html"><div class="ttname"><a href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">pocketmine\utils\Process</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dcb/_process_8php_source.html#l00045">Process.php:45</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1server_html"><div class="ttname"><a href="../../db/d28/namespacepocketmine_1_1event_1_1server.html">pocketmine\event\server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1e/_command_event_8php_source.html#l00024">CommandEvent.php:24</a></div></div>

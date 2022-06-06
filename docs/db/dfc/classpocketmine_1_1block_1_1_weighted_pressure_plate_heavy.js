@@ -42,7 +42,7 @@ var classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy =
     [ "onNearbyBlockChange", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onRandomTick", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a36afea9f0214193963f75577e8d48c26", null ],
     [ "onScheduledUpdate", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a1a1a2b2adf423738289d296198f044e1", null ],
-    [ "place", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
+    [ "place", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#aea565015992ca482a9550b6ab460b567", null ],
     [ "readStateFromData", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#afcd48d367f303202aeaeebb5a7b40bc1", null ],
     [ "readStateFromWorld", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#af6cd0b6690ff09dac13f0af27eb61aa2", null ],

@@ -22,7 +22,8 @@ var namespacepocketmine =
       [ "PotionContainerChangeRecipe", "d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html", null ],
       [ "PotionTypeRecipe", "d8/dfb/classpocketmine_1_1crafting_1_1_potion_type_recipe.html", null ],
       [ "ShapedRecipe", "d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe.html", "d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe" ],
-      [ "ShapelessRecipe", "dd/d02/classpocketmine_1_1crafting_1_1_shapeless_recipe.html", "dd/d02/classpocketmine_1_1crafting_1_1_shapeless_recipe" ]
+      [ "ShapelessRecipe", "dd/d02/classpocketmine_1_1crafting_1_1_shapeless_recipe.html", "dd/d02/classpocketmine_1_1crafting_1_1_shapeless_recipe" ],
+      [ "ShapelessRecipeType", "df/d32/classpocketmine_1_1crafting_1_1_shapeless_recipe_type.html", null ]
     ] ],
     [ "crash", null, [
       [ "CrashDump", "d7/d2c/classpocketmine_1_1crash_1_1_crash_dump.html", null ],
@@ -35,6 +36,7 @@ var namespacepocketmine =
       [ "bedrock", null, [
         [ "BannerPatternTypeIdMap", "db/d15/classpocketmine_1_1data_1_1bedrock_1_1_banner_pattern_type_id_map.html", null ],
         [ "BiomeIds", "dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html", null ],
+        [ "CompoundTypeIds", "d1/d35/classpocketmine_1_1data_1_1bedrock_1_1_compound_type_ids.html", null ],
         [ "CoralTypeIdMap", "d7/d32/classpocketmine_1_1data_1_1bedrock_1_1_coral_type_id_map.html", null ],
         [ "DyeColorIdMap", "d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html", null ],
         [ "EffectIdMap", "dc/d70/classpocketmine_1_1data_1_1bedrock_1_1_effect_id_map.html", null ],

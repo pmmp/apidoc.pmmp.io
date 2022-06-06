@@ -1,6 +1,7 @@
 var dir_40bb855b7b2023435b78cde29725ed48 =
 [
     [ "ApiVersion.php", "d1/dcb/_api_version_8php_source.html", null ],
+    [ "DisablePluginException.php", "dc/d8f/_disable_plugin_exception_8php_source.html", null ],
     [ "DiskResourceProvider.php", "d1/d55/_disk_resource_provider_8php_source.html", null ],
     [ "PharPluginLoader.php", "d8/da3/_phar_plugin_loader_8php_source.html", null ],
     [ "Plugin.php", "dd/de9/_plugin_8php_source.html", null ],

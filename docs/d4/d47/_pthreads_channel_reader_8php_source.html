@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d4/d47/_pthreads_channel_reader_8php_s
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -120,16 +120,12 @@ $(document).ready(function(){initNavTree('d4/d47/_pthreads_channel_reader_8php_s
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../d5/dea/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_reader.html">raklib\server\ipc\InterThreadChannelReader</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d9/d57/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader.html">   28</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d9/d57/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader.html">PthreadsChannelReader</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d5/dea/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_reader.html">InterThreadChannelReader</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">private</span> $buffer;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(\Threaded $buffer){</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $this-&gt;buffer = $buffer;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">function</span> read() : ?<span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> $this-&gt;buffer-&gt;shift();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keyword">private</span> \Threaded $buffer){}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">function</span> read() : ?<span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> $this-&gt;buffer-&gt;shift();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader_html"><div class="ttname"><a href="../../d9/d57/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader.html">pocketmine\network\mcpe\raklib\PthreadsChannelReader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d47/_pthreads_channel_reader_8php_source.html#l00028">PthreadsChannelReader.php:28</a></div></div>
 <div class="ttc" id="ainterfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_reader_html"><div class="ttname"><a href="../../d5/dea/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_reader.html">raklib\server\ipc\InterThreadChannelReader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4a/_inter_thread_channel_reader_8php_source.html#l00020">InterThreadChannelReader.php:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

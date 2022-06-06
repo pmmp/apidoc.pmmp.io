@@ -39,7 +39,7 @@ var classpocketmine_1_1block_1_1_wooden_button =
     [ "onEntityLand", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#ad2e8ef76bce522537bbb1d274725782e", null ],
-    [ "onNearbyBlockChange", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#a863a7a7c27f111cc622ebb10711807c2", null ],
+    [ "onNearbyBlockChange", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#a52ed8bdf7de387ec8e4cbfb86a93a026", null ],
     [ "onRandomTick", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#a36afea9f0214193963f75577e8d48c26", null ],
     [ "onScheduledUpdate", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#afdee05667b21388413e3753efc64bfb6", null ],
     [ "place", "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#aea56a9b616cd0d03cffad5b8f943d333", null ],

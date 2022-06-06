@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,42 +111,25 @@ $(document).ready(function(){initNavTree('df/d12/_air_8php_source.html','../../'
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">Air</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a53245da0a5792da34188b3a0d6eb1708">   33</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a53245da0a5792da34188b3a0d6eb1708">canBeFlowedInto</a>() : bool{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        return true;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> canBeReplaced() : bool{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return true;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005">canBePlaced</a>() : bool{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        return false;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> isSolid() : bool{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        return false;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a8215a98317b607cfeaa89a6241a2d4c1">   52</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a8215a98317b607cfeaa89a6241a2d4c1">recalculateCollisionBoxes</a>() : array{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return [];</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_air_html"><div class="ttname"><a href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">pocketmine\block\Air</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d12/_air_8php_source.html#l00031">Air.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_air_html_a53245da0a5792da34188b3a0d6eb1708"><div class="ttname"><a href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a53245da0a5792da34188b3a0d6eb1708">pocketmine\block\Air\canBeFlowedInto</a></div><div class="ttdeci">canBeFlowedInto()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d12/_air_8php_source.html#l00033">Air.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_air_html_a5ebe9e92545615f60ed9fc9dcfc40005"><div class="ttname"><a href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005">pocketmine\block\Air\canBePlaced</a></div><div class="ttdeci">canBePlaced()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d12/_air_8php_source.html#l00041">Air.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_air_html_a8215a98317b607cfeaa89a6241a2d4c1"><div class="ttname"><a href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a8215a98317b607cfeaa89a6241a2d4c1">pocketmine\block\Air\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d12/_air_8php_source.html#l00052">Air.php:52</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_transparent_8php_source.html#l00026">Transparent.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_aligned_b_b_html"><div class="ttname"><a href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d87/_axis_aligned_b_b_8php_source.html#l00029">AxisAlignedBB.php:29</a></div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">Air</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">function</span> canBeReplaced() : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005">   35</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005">canBePlaced</a>() : bool{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        return false;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_air_html"><div class="ttname"><a href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">pocketmine\block\Air</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d12/_air_8php_source.html#l00029">Air.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_air_html_a5ebe9e92545615f60ed9fc9dcfc40005"><div class="ttname"><a href="../../d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005">pocketmine\block\Air\canBePlaced</a></div><div class="ttdeci">canBePlaced()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d12/_air_8php_source.html#l00035">Air.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/_flowable_8php_source.html#l00029">Flowable.php:29</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

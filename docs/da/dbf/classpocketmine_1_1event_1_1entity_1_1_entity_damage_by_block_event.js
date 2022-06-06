@@ -1,6 +1,6 @@
 var classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event =
 [
-    [ "__construct", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#aefe4ba3844bc0bd9ef3995cc8a78cecd", null ],
+    [ "__construct", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#acbe5b807e75a02c4c7998957b7af81a6", null ],
     [ "call", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#a3d979a673428c9ae66e1039bf796e945", null ],
     [ "canBeReducedByArmor", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#a07cd6d5e3b26834336b2637115f351ed", null ],
     [ "getAttackCooldown", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#af80ab3af401d712ab1b4d9e9493bce58", null ],

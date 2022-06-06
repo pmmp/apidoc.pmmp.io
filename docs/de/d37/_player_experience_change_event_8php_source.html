@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('de/d37/_player_experience_change_event
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -126,52 +126,49 @@ $(document).ready(function(){initNavTree('de/d37/_player_experience_change_event
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">protected</span> $entity;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> $oldLevel;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> $oldProgress;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> $newLevel;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> $newProgress;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $player, <span class="keywordtype">int</span> $oldLevel, <span class="keywordtype">float</span> $oldProgress, ?<span class="keywordtype">int</span> $newLevel, ?<span class="keywordtype">float</span> $newProgress){</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;entity = $player;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;oldLevel = $oldLevel;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;oldProgress = $oldProgress;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;newLevel = $newLevel;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;newProgress = $newProgress;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOldLevel() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $this-&gt;oldLevel;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOldProgress() : <span class="keywordtype">float</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> $this-&gt;oldProgress;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $player,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $oldLevel,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $oldProgress,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">private</span> ?<span class="keywordtype">int</span> $newLevel,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $newProgress</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    ){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;entity = $player;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOldLevel() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> $this-&gt;oldLevel;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOldProgress() : <span class="keywordtype">float</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> $this-&gt;oldProgress;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#ac571ae788a0d049e0b3f3632a8a02b63">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#ac571ae788a0d049e0b3f3632a8a02b63">getNewLevel</a>() : ?int{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        return $this-&gt;newLevel;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#ac571ae788a0d049e0b3f3632a8a02b63">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#ac571ae788a0d049e0b3f3632a8a02b63">getNewLevel</a>() : ?int{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        return $this-&gt;newLevel;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#a41dfd86eb2089d2ebe9cfbc0a16e9f39">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#a41dfd86eb2089d2ebe9cfbc0a16e9f39">getNewProgress</a>() : ?float{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        return $this-&gt;newProgress;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#a41dfd86eb2089d2ebe9cfbc0a16e9f39">   76</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#a41dfd86eb2089d2ebe9cfbc0a16e9f39">getNewProgress</a>() : ?float{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        return $this-&gt;newProgress;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">function</span> setNewLevel(?<span class="keywordtype">int</span> $newLevel) : void{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $this-&gt;newLevel = $newLevel;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">function</span> setNewLevel(?<span class="keywordtype">int</span> $newLevel) : void{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $this-&gt;newLevel = $newLevel;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">function</span> setNewProgress(?<span class="keywordtype">float</span> $newProgress) : void{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        if($newProgress &lt; 0.0 || $newProgress &gt; 1.0){</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;XP progress must be in range 0-1&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $this-&gt;newProgress = $newProgress;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">public</span> <span class="keyword">function</span> setNewProgress(?<span class="keywordtype">float</span> $newProgress) : void{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        if($newProgress &lt; 0.0 || $newProgress &gt; 1.0){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;XP progress must be in range 0-1&quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;newProgress = $newProgress;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_human_8php_source.html#l00073">Human.php:73</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_event_html"><div class="ttname"><a href="../../de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html">pocketmine\event\entity\EntityEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d55/_entity_event_8php_source.html#l00035">EntityEvent.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_experience_change_event_html"><div class="ttname"><a href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html">pocketmine\event\player\PlayerExperienceChangeEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d37/_player_experience_change_event_8php_source.html#l00035">PlayerExperienceChangeEvent.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_experience_change_event_html_a41dfd86eb2089d2ebe9cfbc0a16e9f39"><div class="ttname"><a href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#a41dfd86eb2089d2ebe9cfbc0a16e9f39">pocketmine\event\player\PlayerExperienceChangeEvent\getNewProgress</a></div><div class="ttdeci">getNewProgress()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d37/_player_experience_change_event_8php_source.html#l00076">PlayerExperienceChangeEvent.php:76</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_experience_change_event_html_ac571ae788a0d049e0b3f3632a8a02b63"><div class="ttname"><a href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#ac571ae788a0d049e0b3f3632a8a02b63">pocketmine\event\player\PlayerExperienceChangeEvent\getNewLevel</a></div><div class="ttdeci">getNewLevel()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d37/_player_experience_change_event_8php_source.html#l00069">PlayerExperienceChangeEvent.php:69</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_experience_change_event_html_a41dfd86eb2089d2ebe9cfbc0a16e9f39"><div class="ttname"><a href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#a41dfd86eb2089d2ebe9cfbc0a16e9f39">pocketmine\event\player\PlayerExperienceChangeEvent\getNewProgress</a></div><div class="ttdeci">getNewProgress()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d37/_player_experience_change_event_8php_source.html#l00069">PlayerExperienceChangeEvent.php:69</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_experience_change_event_html_ac571ae788a0d049e0b3f3632a8a02b63"><div class="ttname"><a href="../../df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html#ac571ae788a0d049e0b3f3632a8a02b63">pocketmine\event\player\PlayerExperienceChangeEvent\getNewLevel</a></div><div class="ttdeci">getNewLevel()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d37/_player_experience_change_event_8php_source.html#l00062">PlayerExperienceChangeEvent.php:62</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1player_html"><div class="ttname"><a href="../../de/d7b/namespacepocketmine_1_1event_1_1player.html">pocketmine\event\player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d76/_player_bed_enter_event_8php_source.html#l00024">PlayerBedEnterEvent.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html_ab6c4dceac6e98e0eb02896a6809e52fa"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">pocketmine\event\CancellableTrait</a></div><div class="ttdeci">trait CancellableTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d98/_cancellable_trait_8php_source.html#l00034">CancellableTrait.php:34</a></div></div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_pre_spawn_packet_handler_8php_
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -139,95 +139,88 @@ $(document).ready(function(){initNavTree('dd/dbe/_pre_spawn_packet_handler_8php_
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>use <span class="keyword">function</span> sprintf;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d0/d3c/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler.html">   50</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d0/d3c/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler.html">PreSpawnPacketHandler</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html">PacketHandler</a>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span> $server;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> $player;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">private</span> $session;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">InventoryManager</a> $inventoryManager;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> $server,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">InventoryManager</a> $inventoryManager</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ){}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> setUp() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $location = $this-&gt;player-&gt;getLocation();</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> $server, <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, <a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session, <a class="code hl_class" href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">InventoryManager</a> $inventoryManager){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;player = $player;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a> = $server;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;session = $session;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;inventoryManager = $inventoryManager;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> setUp() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $location = $this-&gt;player-&gt;getLocation();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $levelSettings = <span class="keyword">new</span> <a class="code hl_class" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html">LevelSettings</a>();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $levelSettings-&gt;seed = -1;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $levelSettings-&gt;spawnSettings = <span class="keyword">new</span> <a class="code hl_class" href="../../d9/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_spawn_settings.html">SpawnSettings</a>(SpawnSettings::BIOME_TYPE_DEFAULT, <span class="stringliteral">&quot;&quot;</span>, DimensionIds::OVERWORLD); <span class="comment">//TODO: implement this properly</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $levelSettings-&gt;worldGamemode = TypeConverter::getInstance()-&gt;coreGameModeToProtocol($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getGamemode());</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $levelSettings-&gt;difficulty = $location-&gt;getWorld()-&gt;getDifficulty();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $levelSettings-&gt;spawnPosition = BlockPosition::fromVector3($location-&gt;getWorld()-&gt;getSpawnLocation());</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $levelSettings-&gt;hasAchievementsDisabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $levelSettings-&gt;time = $location-&gt;getWorld()-&gt;getTime();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $levelSettings-&gt;eduEditionOffer = 0;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $levelSettings-&gt;rainLevel = 0; <span class="comment">//TODO: implement these properly</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $levelSettings-&gt;lightningLevel = 0;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $levelSettings-&gt;commandsEnabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $levelSettings-&gt;gameRules = [</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="stringliteral">&quot;naturalregeneration&quot;</span> =&gt; <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html">BoolGameRule</a>(<span class="keyword">false</span>, <span class="keyword">false</span>) <span class="comment">//Hack for client side regeneration</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        ];</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $levelSettings-&gt;experiments = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_experiments.html">Experiments</a>([], <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;session-&gt;sendDataPacket(<a class="code hl_function" href="../../d2/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_start_game_packet.html#a66a0ab6e43f4287a424093edab9166d7">StartGamePacket::create</a>(</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $this-&gt;player-&gt;getId(),</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            $this-&gt;player-&gt;getId(),</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            TypeConverter::getInstance()-&gt;coreGameModeToProtocol($this-&gt;player-&gt;getGamemode()),</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $this-&gt;player-&gt;getOffsetPosition($location),</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $location-&gt;pitch,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $location-&gt;yaw,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $levelSettings,</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $this-&gt;server-&gt;getMotd(),</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keyword">new</span> <a class="code hl_class" href="../../d1/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_settings.html">PlayerMovementSettings</a>(PlayerMovementType::SERVER_AUTHORITATIVE_V1, 0, <span class="keyword">false</span>),</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            0,</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            0,</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            sprintf(<span class="stringliteral">&quot;%s %s&quot;</span>, VersionInfo::NAME, VersionInfo::VERSION()-&gt;getFullVersion(<span class="keyword">true</span>)),</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            [],</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            0,</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            GlobalItemTypeDictionary::getInstance()-&gt;getDictionary()-&gt;getEntries()</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        ));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $levelSettings = <span class="keyword">new</span> <a class="code hl_class" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html">LevelSettings</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $levelSettings-&gt;seed = -1;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $levelSettings-&gt;spawnSettings = <span class="keyword">new</span> <a class="code hl_class" href="../../d9/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_spawn_settings.html">SpawnSettings</a>(SpawnSettings::BIOME_TYPE_DEFAULT, <span class="stringliteral">&quot;&quot;</span>, DimensionIds::OVERWORLD); <span class="comment">//TODO: implement this properly</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $levelSettings-&gt;worldGamemode = TypeConverter::getInstance()-&gt;coreGameModeToProtocol($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getGamemode());</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $levelSettings-&gt;difficulty = $location-&gt;getWorld()-&gt;getDifficulty();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $levelSettings-&gt;spawnPosition = BlockPosition::fromVector3($location-&gt;getWorld()-&gt;getSpawnLocation());</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $levelSettings-&gt;hasAchievementsDisabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $levelSettings-&gt;time = $location-&gt;getWorld()-&gt;getTime();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $levelSettings-&gt;eduEditionOffer = 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $levelSettings-&gt;rainLevel = 0; <span class="comment">//TODO: implement these properly</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $levelSettings-&gt;lightningLevel = 0;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $levelSettings-&gt;commandsEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $levelSettings-&gt;gameRules = [</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="stringliteral">&quot;naturalregeneration&quot;</span> =&gt; <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html">BoolGameRule</a>(<span class="keyword">false</span>, <span class="keyword">false</span>) <span class="comment">//Hack for client side regeneration</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        ];</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $levelSettings-&gt;experiments = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_experiments.html">Experiments</a>([], <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $this-&gt;session-&gt;sendDataPacket(<a class="code hl_function" href="../../d2/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_start_game_packet.html#a66a0ab6e43f4287a424093edab9166d7">StartGamePacket::create</a>(</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            $this-&gt;player-&gt;getId(),</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $this-&gt;player-&gt;getId(),</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            TypeConverter::getInstance()-&gt;coreGameModeToProtocol($this-&gt;player-&gt;getGamemode()),</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            $this-&gt;player-&gt;getOffsetPosition($location),</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            $location-&gt;pitch,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $location-&gt;yaw,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            $levelSettings,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $this-&gt;server-&gt;getMotd(),</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keyword">new</span> <a class="code hl_class" href="../../d1/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_settings.html">PlayerMovementSettings</a>(PlayerMovementType::SERVER_AUTHORITATIVE_V1, 0, <span class="keyword">false</span>),</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            0,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            0,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            sprintf(<span class="stringliteral">&quot;%s %s&quot;</span>, VersionInfo::NAME, VersionInfo::VERSION()-&gt;getFullVersion(<span class="keyword">true</span>)),</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            [],</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            0,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            GlobalItemTypeDictionary::getInstance()-&gt;getDictionary()-&gt;getEntries()</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        ));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $this-&gt;session-&gt;sendDataPacket(StaticPacketCache::getInstance()-&gt;getAvailableActorIdentifiers());</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $this-&gt;session-&gt;sendDataPacket(StaticPacketCache::getInstance()-&gt;getBiomeDefs());</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $this-&gt;session-&gt;syncAttributes($this-&gt;player, $this-&gt;player-&gt;getAttributeMap()-&gt;getAll());</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $this-&gt;session-&gt;syncAvailableCommands();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $this-&gt;session-&gt;syncAdventureSettings($this-&gt;player);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">foreach</span>($this-&gt;player-&gt;getEffects()-&gt;all() as $effect){</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $this-&gt;session-&gt;onEntityEffectAdded($this-&gt;player, $effect, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $this-&gt;player-&gt;sendData([$this-&gt;player]);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $this-&gt;session-&gt;sendDataPacket(StaticPacketCache::getInstance()-&gt;getAvailableActorIdentifiers());</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        $this-&gt;session-&gt;sendDataPacket(StaticPacketCache::getInstance()-&gt;getBiomeDefs());</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $this-&gt;session-&gt;syncAttributes($this-&gt;player, $this-&gt;player-&gt;getAttributeMap()-&gt;getAll());</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $this-&gt;session-&gt;syncAvailableCommands();</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        $this-&gt;session-&gt;syncAdventureSettings($this-&gt;player);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">foreach</span>($this-&gt;player-&gt;getEffects()-&gt;all() as $effect){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            $this-&gt;session-&gt;onEntityEffectAdded($this-&gt;player, $effect, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $this-&gt;player-&gt;sendData([$this-&gt;player]);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        $this-&gt;inventoryManager-&gt;syncAll();</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        $this-&gt;inventoryManager-&gt;syncCreative();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $this-&gt;inventoryManager-&gt;syncSelectedHotbarSlot();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        $this-&gt;session-&gt;sendDataPacket(CraftingDataCache::getInstance()-&gt;getCache($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getCraftingManager()));</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        $this-&gt;session-&gt;syncPlayerList($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getOnlinePlayers());</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleRequestChunkRadius(<a class="code hl_class" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html">RequestChunkRadiusPacket</a> $packet) : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $this-&gt;player-&gt;setViewDistance($packet-&gt;radius);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $this-&gt;inventoryManager-&gt;syncAll();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        $this-&gt;inventoryManager-&gt;syncCreative();</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $this-&gt;inventoryManager-&gt;syncSelectedHotbarSlot();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $this-&gt;session-&gt;sendDataPacket(CraftingDataCache::getInstance()-&gt;getCache($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getCraftingManager()));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        $this-&gt;session-&gt;syncPlayerList($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getOnlinePlayers());</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleRequestChunkRadius(<a class="code hl_class" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html">RequestChunkRadiusPacket</a> $packet) : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        $this-&gt;player-&gt;setViewDistance($packet-&gt;radius);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00174">src/Server.php:174</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_version_info_html"><div class="ttname"><a href="../../d4/db7/classpocketmine_1_1_version_info.html">pocketmine\VersionInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ded/_version_info_8php_source.html#l00032">VersionInfo.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_inventory_manager_html"><div class="ttname"><a href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">pocketmine\network\mcpe\InventoryManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d9e/_inventory_manager_8php_source.html#l00069">InventoryManager.php:69</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_inventory_manager_html"><div class="ttname"><a href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">pocketmine\network\mcpe\InventoryManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d9e/_inventory_manager_8php_source.html#l00070">InventoryManager.php:70</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00137">NetworkSession.php:137</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache_html"><div class="ttname"><a href="../../d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html">pocketmine\network\mcpe\cache\CraftingDataCache</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d17/_crafting_data_cache_8php_source.html#l00049">CraftingDataCache.php:49</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache_html"><div class="ttname"><a href="../../d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html">pocketmine\network\mcpe\cache\CraftingDataCache</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d17/_crafting_data_cache_8php_source.html#l00050">CraftingDataCache.php:50</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1cache_1_1_static_packet_cache_html"><div class="ttname"><a href="../../df/dc5/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_static_packet_cache.html">pocketmine\network\mcpe\cache\StaticPacketCache</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0a/_static_packet_cache_8php_source.html#l00034">StaticPacketCache.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_global_item_type_dictionary_html"><div class="ttname"><a href="../../d2/d68/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_global_item_type_dictionary.html">pocketmine\network\mcpe\convert\GlobalItemTypeDictionary</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d29/_global_item_type_dictionary_8php_source.html#l00039">GlobalItemTypeDictionary.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html">pocketmine\network\mcpe\convert\TypeConverter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00055">TypeConverter.php:55</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html">pocketmine\network\mcpe\convert\TypeConverter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00057">TypeConverter.php:57</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler_html"><div class="ttname"><a href="../../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html">pocketmine\network\mcpe\handler\PacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8a/_packet_handler_8php_source.html#l00035">PacketHandler.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler_html"><div class="ttname"><a href="../../d0/d3c/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler.html">pocketmine\network\mcpe\handler\PreSpawnPacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00050">PreSpawnPacketHandler.php:50</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet_html"><div class="ttname"><a href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html">pocketmine\network\mcpe\protocol\RequestChunkRadiusPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00019">RequestChunkRadiusPacket.php:19</a></div></div>
@@ -241,7 +234,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_pre_spawn_packet_handler_8php_
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_settings_html"><div class="ttname"><a href="../../d1/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_settings.html">pocketmine\network\mcpe\protocol\types\PlayerMovementSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc8/_player_movement_settings_8php_source.html#l00019">PlayerMovementSettings.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_type_html"><div class="ttname"><a href="../../de/d3e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_type.html">pocketmine\network\mcpe\protocol\types\PlayerMovementType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d20/_player_movement_type_8php_source.html#l00017">PlayerMovementType.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_spawn_settings_html"><div class="ttname"><a href="../../d9/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_spawn_settings.html">pocketmine\network\mcpe\protocol\types\SpawnSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d28/_spawn_settings_8php_source.html#l00019">SpawnSettings.php:19</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00158">Player.php:158</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00160">Player.php:160</a></div></div>
 <div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00206">PocketMine.php:206</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

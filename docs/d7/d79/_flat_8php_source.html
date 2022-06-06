@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d7/d79/_flat_8php_source.html','../../
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -128,74 +128,73 @@ $(document).ready(function(){initNavTree('d7/d79/_flat_8php_source.html','../../
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> count;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html">Flat</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> $chunk;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> $populators = [];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> array $populators = [];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d9/de9/classpocketmine_1_1world_1_1generator_1_1_flat_generator_options.html">FlatGeneratorOptions</a> $options;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d9/de9/classpocketmine_1_1world_1_1generator_1_1_flat_generator_options.html">FlatGeneratorOptions</a> $options;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html#a4d35af173835913e1ccc062803e43c72">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html#a4d35af173835913e1ccc062803e43c72">__construct</a>(<span class="keywordtype">int</span> $seed, <span class="keywordtype">string</span> $preset){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        parent::__construct($seed, $preset !== <span class="stringliteral">&quot;&quot;</span> ? $preset : <span class="stringliteral">&quot;2;bedrock,2xdirt,grass;1;&quot;</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;options = <a class="code hl_function" href="../../d9/de9/classpocketmine_1_1world_1_1generator_1_1_flat_generator_options.html#a84049a7366c36a77e9d710d06f0cc112">FlatGeneratorOptions::parsePreset</a>($this-&gt;preset);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span>(isset($this-&gt;options-&gt;getExtraOptions()[<span class="stringliteral">&quot;decoration&quot;</span>])){</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $ores = <span class="keyword">new</span> <a class="code hl_class" href="../../dc/d8e/classpocketmine_1_1world_1_1generator_1_1populator_1_1_ore.html">Ore</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $stone = VanillaBlocks::STONE();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $ores-&gt;setOreTypes([</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::COAL_ORE(), $stone, 20, 16, 0, 128),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::IRON_ORE(), $stone, 20, 8, 0, 64),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::REDSTONE_ORE(), $stone, 8, 7, 0, 16),</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::LAPIS_LAZULI_ORE(), $stone, 1, 6, 0, 32),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::GOLD_ORE(), $stone, 2, 8, 0, 32),</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::DIAMOND_ORE(), $stone, 1, 7, 0, 16),</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::DIRT(), $stone, 20, 32, 0, 128),</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::GRAVEL(), $stone, 10, 16, 0, 128)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            ]);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            $this-&gt;populators[] = $ores;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $this-&gt;generateBaseChunk();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">protected</span> <span class="keyword">function</span> generateBaseChunk() : void{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;chunk = new <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a>([], <a class="code hl_class" href="../../d8/d5f/classpocketmine_1_1world_1_1format_1_1_biome_array.html">BiomeArray</a>::fill($this-&gt;options-&gt;getBiomeId()), false);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $structure = $this-&gt;options-&gt;getStructure();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $count = count($structure);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">for</span>($sy = 0; $sy &lt; $count; $sy += SubChunk::EDGE_LENGTH){</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            $subchunk = $this-&gt;chunk-&gt;getSubChunk($sy &gt;&gt; SubChunk::COORD_BIT_SIZE);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">for</span>($y = 0; $y &lt; SubChunk::EDGE_LENGTH &amp;&amp; isset($structure[$y | $sy]); ++$y){</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                $id = $structure[$y | $sy];</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">for</span>($Z = 0; $Z &lt; SubChunk::EDGE_LENGTH; ++$Z){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    <span class="keywordflow">for</span>($X = 0; $X &lt; SubChunk::EDGE_LENGTH; ++$X){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        $subchunk-&gt;setFullBlock($X, $y, $Z, $id);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">public</span> <span class="keyword">function</span> generateChunk(ChunkManager $world, <span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : void{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $world-&gt;setChunk($chunkX, $chunkZ, clone $this-&gt;chunk);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">public</span> <span class="keyword">function</span> populateChunk(ChunkManager $world, <span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : void{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;random-&gt;setSeed(0xdeadbeef ^ ($chunkX &lt;&lt; 8) ^ $chunkZ ^ $this-&gt;seed);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">foreach</span>($this-&gt;populators as $populator){</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $populator-&gt;populate($world, $chunkX, $chunkZ, $this-&gt;random);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00573">VanillaBlocks.php:573</a></div></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html#a4d35af173835913e1ccc062803e43c72">   46</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html#a4d35af173835913e1ccc062803e43c72">__construct</a>(<span class="keywordtype">int</span> $seed, <span class="keywordtype">string</span> $preset){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        parent::__construct($seed, $preset !== <span class="stringliteral">&quot;&quot;</span> ? $preset : <span class="stringliteral">&quot;2;bedrock,2xdirt,grass;1;&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;options = <a class="code hl_function" href="../../d9/de9/classpocketmine_1_1world_1_1generator_1_1_flat_generator_options.html#a84049a7366c36a77e9d710d06f0cc112">FlatGeneratorOptions::parsePreset</a>($this-&gt;preset);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>(isset($this-&gt;options-&gt;getExtraOptions()[<span class="stringliteral">&quot;decoration&quot;</span>])){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $ores = <span class="keyword">new</span> <a class="code hl_class" href="../../dc/d8e/classpocketmine_1_1world_1_1generator_1_1populator_1_1_ore.html">Ore</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $stone = VanillaBlocks::STONE();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $ores-&gt;setOreTypes([</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::COAL_ORE(), $stone, 20, 16, 0, 128),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::IRON_ORE(), $stone, 20, 8, 0, 64),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::REDSTONE_ORE(), $stone, 8, 7, 0, 16),</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::LAPIS_LAZULI_ORE(), $stone, 1, 6, 0, 32),</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::GOLD_ORE(), $stone, 2, 8, 0, 32),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::DIAMOND_ORE(), $stone, 1, 7, 0, 16),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::DIRT(), $stone, 20, 32, 0, 128),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keyword">new</span> <a class="code hl_class" href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">OreType</a>(VanillaBlocks::GRAVEL(), $stone, 10, 16, 0, 128)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            ]);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;populators[] = $ores;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $this-&gt;generateBaseChunk();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">protected</span> <span class="keyword">function</span> generateBaseChunk() : void{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;chunk = new <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a>([], <a class="code hl_class" href="../../d8/d5f/classpocketmine_1_1world_1_1format_1_1_biome_array.html">BiomeArray</a>::fill($this-&gt;options-&gt;getBiomeId()), false);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $structure = $this-&gt;options-&gt;getStructure();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $count = count($structure);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">for</span>($sy = 0; $sy &lt; $count; $sy += SubChunk::EDGE_LENGTH){</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            $subchunk = $this-&gt;chunk-&gt;getSubChunk($sy &gt;&gt; SubChunk::COORD_BIT_SIZE);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">for</span>($y = 0; $y &lt; SubChunk::EDGE_LENGTH &amp;&amp; isset($structure[$y | $sy]); ++$y){</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                $id = $structure[$y | $sy];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">for</span>($Z = 0; $Z &lt; SubChunk::EDGE_LENGTH; ++$Z){</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">for</span>($X = 0; $X &lt; SubChunk::EDGE_LENGTH; ++$X){</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        $subchunk-&gt;setFullBlock($X, $y, $Z, $id);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">public</span> <span class="keyword">function</span> generateChunk(ChunkManager $world, <span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : void{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $world-&gt;setChunk($chunkX, $chunkZ, clone $this-&gt;chunk);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">public</span> <span class="keyword">function</span> populateChunk(ChunkManager $world, <span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : void{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;random-&gt;setSeed(0xdeadbeef ^ ($chunkX &lt;&lt; 8) ^ $chunkZ ^ $this-&gt;seed);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">foreach</span>($this-&gt;populators as $populator){</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $populator-&gt;populate($world, $chunkX, $chunkZ, $this-&gt;random);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00575">VanillaBlocks.php:575</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_biome_array_html"><div class="ttname"><a href="../../d8/d5f/classpocketmine_1_1world_1_1format_1_1_biome_array.html">pocketmine\world\format\BiomeArray</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d56/_biome_array_8php_source.html#l00031">BiomeArray.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_chunk_html"><div class="ttname"><a href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">pocketmine\world\format\Chunk</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/_chunk_8php_source.html#l00034">Chunk.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_sub_chunk_html"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1_sub_chunk.html">pocketmine\world\format\SubChunk</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9c/_sub_chunk_8php_source.html#l00030">SubChunk.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_flat_generator_options_html"><div class="ttname"><a href="../../d9/de9/classpocketmine_1_1world_1_1generator_1_1_flat_generator_options.html">pocketmine\world\generator\FlatGeneratorOptions</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_flat_generator_options_8php_source.html#l00038">FlatGeneratorOptions.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_flat_generator_options_html_a84049a7366c36a77e9d710d06f0cc112"><div class="ttname"><a href="../../d9/de9/classpocketmine_1_1world_1_1generator_1_1_flat_generator_options.html#a84049a7366c36a77e9d710d06f0cc112">pocketmine\world\generator\FlatGeneratorOptions\parsePreset</a></div><div class="ttdeci">static parsePreset(string $presetString)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_flat_generator_options_8php_source.html#l00100">FlatGeneratorOptions.php:100</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_flat_html"><div class="ttname"><a href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html">pocketmine\world\generator\Flat</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d79/_flat_8php_source.html#l00036">Flat.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_flat_html_a4d35af173835913e1ccc062803e43c72"><div class="ttname"><a href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html#a4d35af173835913e1ccc062803e43c72">pocketmine\world\generator\Flat\__construct</a></div><div class="ttdeci">__construct(int $seed, string $preset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d79/_flat_8php_source.html#l00048">Flat.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_flat_html_a4d35af173835913e1ccc062803e43c72"><div class="ttname"><a href="../../d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html#a4d35af173835913e1ccc062803e43c72">pocketmine\world\generator\Flat\__construct</a></div><div class="ttdeci">__construct(int $seed, string $preset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d79/_flat_8php_source.html#l00046">Flat.php:46</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_html"><div class="ttname"><a href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">pocketmine\world\generator\Generator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9c/_generator_8php_source.html#l00034">Generator.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1object_1_1_ore_type_html"><div class="ttname"><a href="../../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html">pocketmine\world\generator\object\OreType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de4/_ore_type_8php_source.html#l00028">OreType.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1populator_1_1_ore_html"><div class="ttname"><a href="../../dc/d8e/classpocketmine_1_1world_1_1generator_1_1populator_1_1_ore.html">pocketmine\world\generator\populator\Ore</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d24/populator_2_ore_8php_source.html#l00032">populator/Ore.php:32</a></div></div>

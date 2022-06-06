@@ -3,7 +3,7 @@ var classpocketmine_1_1block_1_1_air =
     [ "__toString", "d7/d31/classpocketmine_1_1block_1_1_air.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "blocksDirectSkyLight", "d7/d31/classpocketmine_1_1block_1_1_air.html#a2127737ad69279d366e4462b54f693f2", null ],
     [ "burnsForever", "d7/d31/classpocketmine_1_1block_1_1_air.html#aa09e248dd611c0ebb95cf2adf2d6d31c", null ],
-    [ "canBeFlowedInto", "d7/d31/classpocketmine_1_1block_1_1_air.html#a53245da0a5792da34188b3a0d6eb1708", null ],
+    [ "canBeFlowedInto", "d7/d31/classpocketmine_1_1block_1_1_air.html#ac7c6b2cf8fdce0bf501dc62d06b04aff", null ],
     [ "canBePlaced", "d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005", null ],
     [ "canClimb", "d7/d31/classpocketmine_1_1block_1_1_air.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "d7/d31/classpocketmine_1_1block_1_1_air.html#a912c0f3a42aefc049e119f931a2ec86e", null ],
@@ -45,6 +45,6 @@ var classpocketmine_1_1block_1_1_air =
     [ "place", "d7/d31/classpocketmine_1_1block_1_1_air.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromData", "d7/d31/classpocketmine_1_1block_1_1_air.html#a07738ba94103cf04074fbd8d56b57f5b", null ],
     [ "readStateFromWorld", "d7/d31/classpocketmine_1_1block_1_1_air.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
-    [ "recalculateCollisionBoxes", "d7/d31/classpocketmine_1_1block_1_1_air.html#a8215a98317b607cfeaa89a6241a2d4c1", null ],
+    [ "recalculateCollisionBoxes", "d7/d31/classpocketmine_1_1block_1_1_air.html#a097af4a935135a8524d812f497373075", null ],
     [ "ticksRandomly", "d7/d31/classpocketmine_1_1block_1_1_air.html#ab6b90601adfc9732893dcffe256514a9", null ]
 ];

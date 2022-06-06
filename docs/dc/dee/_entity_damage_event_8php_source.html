@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('dc/dee/_entity_damage_event_8php_sourc
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -154,104 +154,103 @@ $(document).ready(function(){initNavTree('dc/dee/_entity_damage_event_8php_sourc
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAUSE_CUSTOM = 14;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAUSE_STARVATION = 15;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span> $cause;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">private</span> $baseDamage;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">private</span> $originalBase;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $baseDamage;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $originalBase;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">private</span> array $originals;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $attackCooldown = 10;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">private</span> $modifiers;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">private</span> $originals;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">private</span> $attackCooldown = 10;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a27249050ff20cd48767c06e603f5adfd">   85</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a27249050ff20cd48767c06e603f5adfd">__construct</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity, <span class="keywordtype">int</span> $cause, <span class="keywordtype">float</span> $damage, array $modifiers = []){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;entity = $entity;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;cause = $cause;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;baseDamage = $this-&gt;originalBase = $damage;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $this-&gt;modifiers = $modifiers;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $this-&gt;originals = $this-&gt;modifiers;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCause() : int{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        return $this-&gt;cause;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">  101</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">getBaseDamage</a>() : float{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        return $this-&gt;baseDamage;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aae9beb4f56a92a138291b4a554aec092">  110</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aae9beb4f56a92a138291b4a554aec092">setBaseDamage</a>(<span class="keywordtype">float</span> $damage) : void{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $this-&gt;baseDamage = $damage;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3">  117</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3">getOriginalBaseDamage</a>() : float{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        return $this-&gt;originalBase;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a1101a9056f8403897cc065084fb0b51e">  124</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a1101a9056f8403897cc065084fb0b51e">getOriginalModifiers</a>() : array{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        return $this-&gt;originals;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOriginalModifier(<span class="keywordtype">int</span> $type) : float{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        return $this-&gt;originals[$type] ?? 0.0;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aa276a38b674d9048c0b412e934aacecc">  135</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aa276a38b674d9048c0b412e934aacecc">getModifiers</a>() : array{</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        return $this-&gt;modifiers;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">public</span> <span class="keyword">function</span> getModifier(<span class="keywordtype">int</span> $type) : float{</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        return $this-&gt;modifiers[$type] ?? 0.0;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keyword">public</span> <span class="keyword">function</span> setModifier(<span class="keywordtype">float</span> $damage, <span class="keywordtype">int</span> $type) : void{</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        $this-&gt;modifiers[$type] = $damage;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">public</span> <span class="keyword">function</span> isApplicable(<span class="keywordtype">int</span> $type) : bool{</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        return isset($this-&gt;modifiers[$type]);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFinalDamage() : float{</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        return max(0, $this-&gt;baseDamage + array_sum($this-&gt;modifiers));</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a07cd6d5e3b26834336b2637115f351ed">  158</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a07cd6d5e3b26834336b2637115f351ed">canBeReducedByArmor</a>() : bool{</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        switch($this-&gt;cause){</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">case</span> self::CAUSE_FIRE_TICK:</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">case</span> self::CAUSE_SUFFOCATION:</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">case</span> self::CAUSE_DROWNING:</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">case</span> self::CAUSE_STARVATION:</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">case</span> self::CAUSE_FALL:</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keywordflow">case</span> self::CAUSE_VOID:</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="keywordflow">case</span> self::CAUSE_MAGIC:</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">case</span> self::CAUSE_SUICIDE:</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        }</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#af80ab3af401d712ab1b4d9e9493bce58">  178</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#af80ab3af401d712ab1b4d9e9493bce58">getAttackCooldown</a>() : int{</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        return $this-&gt;attackCooldown;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ac8debf34386dc271b819cddd0f88f389">  187</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ac8debf34386dc271b819cddd0f88f389">setAttackCooldown</a>(<span class="keywordtype">int</span> $attackCooldown) : void{</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        $this-&gt;attackCooldown = $attackCooldown;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a5487f53b9fb1d2130fcaf5d02bb75906">   77</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a5487f53b9fb1d2130fcaf5d02bb75906">__construct</a>(</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $cause,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">float</span> $damage,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keyword">private</span> array $modifiers = []</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    ){</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $this-&gt;entity = $entity;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $this-&gt;baseDamage = $this-&gt;originalBase = $damage;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $this-&gt;originals = $modifiers;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCause() : int{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        return $this-&gt;cause;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">   95</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">getBaseDamage</a>() : float{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        return $this-&gt;baseDamage;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aae9beb4f56a92a138291b4a554aec092">  104</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aae9beb4f56a92a138291b4a554aec092">setBaseDamage</a>(<span class="keywordtype">float</span> $damage) : void{</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $this-&gt;baseDamage = $damage;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3">  111</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3">getOriginalBaseDamage</a>() : float{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        return $this-&gt;originalBase;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a1101a9056f8403897cc065084fb0b51e">  118</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a1101a9056f8403897cc065084fb0b51e">getOriginalModifiers</a>() : array{</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        return $this-&gt;originals;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOriginalModifier(<span class="keywordtype">int</span> $type) : float{</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        return $this-&gt;originals[$type] ?? 0.0;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aa276a38b674d9048c0b412e934aacecc">  129</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aa276a38b674d9048c0b412e934aacecc">getModifiers</a>() : array{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        return $this-&gt;modifiers;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">public</span> <span class="keyword">function</span> getModifier(<span class="keywordtype">int</span> $type) : float{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        return $this-&gt;modifiers[$type] ?? 0.0;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">public</span> <span class="keyword">function</span> setModifier(<span class="keywordtype">float</span> $damage, <span class="keywordtype">int</span> $type) : void{</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        $this-&gt;modifiers[$type] = $damage;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keyword">public</span> <span class="keyword">function</span> isApplicable(<span class="keywordtype">int</span> $type) : bool{</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        return isset($this-&gt;modifiers[$type]);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFinalDamage() : float{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        return max(0, $this-&gt;baseDamage + array_sum($this-&gt;modifiers));</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a07cd6d5e3b26834336b2637115f351ed">  152</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a07cd6d5e3b26834336b2637115f351ed">canBeReducedByArmor</a>() : bool{</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        switch($this-&gt;cause){</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordflow">case</span> self::CAUSE_FIRE_TICK:</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">case</span> self::CAUSE_SUFFOCATION:</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">case</span> self::CAUSE_DROWNING:</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">case</span> self::CAUSE_STARVATION:</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">case</span> self::CAUSE_FALL:</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">case</span> self::CAUSE_VOID:</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">case</span> self::CAUSE_MAGIC:</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">case</span> self::CAUSE_SUICIDE:</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#af80ab3af401d712ab1b4d9e9493bce58">  172</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#af80ab3af401d712ab1b4d9e9493bce58">getAttackCooldown</a>() : int{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        return $this-&gt;attackCooldown;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ac8debf34386dc271b819cddd0f88f389">  181</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ac8debf34386dc271b819cddd0f88f389">setAttackCooldown</a>(<span class="keywordtype">int</span> $attackCooldown) : void{</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        $this-&gt;attackCooldown = $attackCooldown;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00078">Entity.php:78</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">pocketmine\event\entity\EntityDamageEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00036">EntityDamageEvent.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_a07cd6d5e3b26834336b2637115f351ed"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a07cd6d5e3b26834336b2637115f351ed">pocketmine\event\entity\EntityDamageEvent\canBeReducedByArmor</a></div><div class="ttdeci">canBeReducedByArmor()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00158">EntityDamageEvent.php:158</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_a1101a9056f8403897cc065084fb0b51e"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a1101a9056f8403897cc065084fb0b51e">pocketmine\event\entity\EntityDamageEvent\getOriginalModifiers</a></div><div class="ttdeci">getOriginalModifiers()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00124">EntityDamageEvent.php:124</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_a27249050ff20cd48767c06e603f5adfd"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a27249050ff20cd48767c06e603f5adfd">pocketmine\event\entity\EntityDamageEvent\__construct</a></div><div class="ttdeci">__construct(Entity $entity, int $cause, float $damage, array $modifiers=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00085">EntityDamageEvent.php:85</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_aa276a38b674d9048c0b412e934aacecc"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aa276a38b674d9048c0b412e934aacecc">pocketmine\event\entity\EntityDamageEvent\getModifiers</a></div><div class="ttdeci">getModifiers()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00135">EntityDamageEvent.php:135</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_aae9beb4f56a92a138291b4a554aec092"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aae9beb4f56a92a138291b4a554aec092">pocketmine\event\entity\EntityDamageEvent\setBaseDamage</a></div><div class="ttdeci">setBaseDamage(float $damage)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00110">EntityDamageEvent.php:110</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_ab85b2c10a6d07dd32f7b0bae2e5416b3"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3">pocketmine\event\entity\EntityDamageEvent\getOriginalBaseDamage</a></div><div class="ttdeci">getOriginalBaseDamage()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00117">EntityDamageEvent.php:117</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_ac8debf34386dc271b819cddd0f88f389"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ac8debf34386dc271b819cddd0f88f389">pocketmine\event\entity\EntityDamageEvent\setAttackCooldown</a></div><div class="ttdeci">setAttackCooldown(int $attackCooldown)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00187">EntityDamageEvent.php:187</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_adc24bf28628c62322cfcc83928e36fdc"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">pocketmine\event\entity\EntityDamageEvent\getBaseDamage</a></div><div class="ttdeci">getBaseDamage()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00101">EntityDamageEvent.php:101</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_af80ab3af401d712ab1b4d9e9493bce58"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#af80ab3af401d712ab1b4d9e9493bce58">pocketmine\event\entity\EntityDamageEvent\getAttackCooldown</a></div><div class="ttdeci">getAttackCooldown()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00178">EntityDamageEvent.php:178</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_a07cd6d5e3b26834336b2637115f351ed"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a07cd6d5e3b26834336b2637115f351ed">pocketmine\event\entity\EntityDamageEvent\canBeReducedByArmor</a></div><div class="ttdeci">canBeReducedByArmor()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00152">EntityDamageEvent.php:152</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_a1101a9056f8403897cc065084fb0b51e"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a1101a9056f8403897cc065084fb0b51e">pocketmine\event\entity\EntityDamageEvent\getOriginalModifiers</a></div><div class="ttdeci">getOriginalModifiers()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00118">EntityDamageEvent.php:118</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_a5487f53b9fb1d2130fcaf5d02bb75906"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#a5487f53b9fb1d2130fcaf5d02bb75906">pocketmine\event\entity\EntityDamageEvent\__construct</a></div><div class="ttdeci">__construct(Entity $entity, private int $cause, float $damage, private array $modifiers=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00077">EntityDamageEvent.php:77</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_aa276a38b674d9048c0b412e934aacecc"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aa276a38b674d9048c0b412e934aacecc">pocketmine\event\entity\EntityDamageEvent\getModifiers</a></div><div class="ttdeci">getModifiers()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00129">EntityDamageEvent.php:129</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_aae9beb4f56a92a138291b4a554aec092"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#aae9beb4f56a92a138291b4a554aec092">pocketmine\event\entity\EntityDamageEvent\setBaseDamage</a></div><div class="ttdeci">setBaseDamage(float $damage)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00104">EntityDamageEvent.php:104</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_ab85b2c10a6d07dd32f7b0bae2e5416b3"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3">pocketmine\event\entity\EntityDamageEvent\getOriginalBaseDamage</a></div><div class="ttdeci">getOriginalBaseDamage()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00111">EntityDamageEvent.php:111</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_ac8debf34386dc271b819cddd0f88f389"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#ac8debf34386dc271b819cddd0f88f389">pocketmine\event\entity\EntityDamageEvent\setAttackCooldown</a></div><div class="ttdeci">setAttackCooldown(int $attackCooldown)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00181">EntityDamageEvent.php:181</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_adc24bf28628c62322cfcc83928e36fdc"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">pocketmine\event\entity\EntityDamageEvent\getBaseDamage</a></div><div class="ttdeci">getBaseDamage()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00095">EntityDamageEvent.php:95</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html_af80ab3af401d712ab1b4d9e9493bce58"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#af80ab3af401d712ab1b4d9e9493bce58">pocketmine\event\entity\EntityDamageEvent\getAttackCooldown</a></div><div class="ttdeci">getAttackCooldown()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00172">EntityDamageEvent.php:172</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_event_html"><div class="ttname"><a href="../../de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html">pocketmine\event\entity\EntityEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d55/_entity_event_8php_source.html#l00035">EntityEvent.php:35</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1entity_html"><div class="ttname"><a href="../../d9/d86/namespacepocketmine_1_1event_1_1entity.html">pocketmine\event\entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9a/_entity_block_change_event_8php_source.html#l00024">EntityBlockChangeEvent.php:24</a></div></div>

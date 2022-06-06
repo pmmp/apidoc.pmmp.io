@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d1/d87/_totem_use_animation_8php_sourc
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -123,22 +123,18 @@ $(document).ready(function(){initNavTree('d1/d87/_totem_use_animation_8php_sourc
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html">TotemUseAnimation</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../db/da9/interfacepocketmine_1_1entity_1_1animation_1_1_animation.html">Animation</a>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> $human;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//TODO: check if this can be expanded to more than just humans</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keyword">private</span> <a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $human){}</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $human){</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">//TODO: check if this can be expanded to more than just humans</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;human = $human;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html#a9cd1bb50c6a226970942de54d010ff0d">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html#a9cd1bb50c6a226970942de54d010ff0d">encode</a>() : array{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        return [</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_class" href="../../d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html">ActorEventPacket</a>::create($this-&gt;human-&gt;getId(), <a class="code hl_class" href="../../d8/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_actor_event.html">ActorEvent</a>::CONSUME_TOTEM, 0)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        ];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html#a9cd1bb50c6a226970942de54d010ff0d">   35</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html#a9cd1bb50c6a226970942de54d010ff0d">encode</a>() : array{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        return [</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_class" href="../../d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html">ActorEventPacket</a>::create($this-&gt;human-&gt;getId(), <a class="code hl_class" href="../../d8/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_actor_event.html">ActorEvent</a>::CONSUME_TOTEM, 0)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        ];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_human_8php_source.html#l00073">Human.php:73</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_totem_use_animation_html"><div class="ttname"><a href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html">pocketmine\entity\animation\TotemUseAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d87/_totem_use_animation_8php_source.html#l00030">TotemUseAnimation.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_totem_use_animation_html_a9cd1bb50c6a226970942de54d010ff0d"><div class="ttname"><a href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html#a9cd1bb50c6a226970942de54d010ff0d">pocketmine\entity\animation\TotemUseAnimation\encode</a></div><div class="ttdeci">encode()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d87/_totem_use_animation_8php_source.html#l00040">TotemUseAnimation.php:40</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_totem_use_animation_html_a9cd1bb50c6a226970942de54d010ff0d"><div class="ttname"><a href="../../db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html#a9cd1bb50c6a226970942de54d010ff0d">pocketmine\entity\animation\TotemUseAnimation\encode</a></div><div class="ttdeci">encode()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d87/_totem_use_animation_8php_source.html#l00035">TotemUseAnimation.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet_html"><div class="ttname"><a href="../../d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html">pocketmine\network\mcpe\protocol\ActorEventPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/_actor_event_packet_8php_source.html#l00020">ActorEventPacket.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_actor_event_html"><div class="ttname"><a href="../../d8/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_actor_event.html">pocketmine\network\mcpe\protocol\types\ActorEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dcb/_actor_event_8php_source.html#l00017">ActorEvent.php:17</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1entity_1_1animation_1_1_animation_html"><div class="ttname"><a href="../../db/da9/interfacepocketmine_1_1entity_1_1animation_1_1_animation.html">pocketmine\entity\animation\Animation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d94/_animation_8php_source.html#l00031">Animation.php:31</a></div></div>

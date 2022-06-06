@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d2/dff/_closure_task_8php_source.html'
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -122,30 +122,28 @@ $(document).ready(function(){initNavTree('d2/dff/_closure_task_8php_source.html'
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html">ClosureTask</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> $closure;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#aaffb21ca23beaadb272b544f24b527e6">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#aaffb21ca23beaadb272b544f24b527e6">__construct</a>(\Closure $closure){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">Utils::validateCallableSignature</a>(<span class="keyword">new</span> <a class="code hl_class" href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">CallbackType</a>(<span class="keyword">new</span> <a class="code hl_class" href="../../d9/d22/class_dave_random_1_1_callback_validator_1_1_return_type.html">ReturnType</a>()), $closure);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;closure = $closure;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> getName() : string{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        return <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::getNiceClosureName($this-&gt;closure);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a64b9488bfba2f901a595862ec1fc2d11">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a64b9488bfba2f901a595862ec1fc2d11">onRun</a>() : void{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        ($this-&gt;closure)();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a48a27d1813e7cfb1ed1dbef63cd382af">   46</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a48a27d1813e7cfb1ed1dbef63cd382af">__construct</a>(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">private</span> \Closure $closure</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    ){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">Utils::validateCallableSignature</a>(<span class="keyword">new</span> <a class="code hl_class" href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">CallbackType</a>(<span class="keyword">new</span> <a class="code hl_class" href="../../d9/d22/class_dave_random_1_1_callback_validator_1_1_return_type.html">ReturnType</a>()), $closure);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getName() : string{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::getNiceClosureName($this-&gt;closure);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a64b9488bfba2f901a595862ec1fc2d11">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a64b9488bfba2f901a595862ec1fc2d11">onRun</a>() : void{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        ($this-&gt;closure)();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="ttc" id="aclass_dave_random_1_1_callback_validator_1_1_callback_type_html"><div class="ttname"><a href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">DaveRandom\CallbackValidator\CallbackType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db9/_callback_type_8php_source.html#l00005">CallbackType.php:6</a></div></div>
 <div class="ttc" id="aclass_dave_random_1_1_callback_validator_1_1_return_type_html"><div class="ttname"><a href="../../d9/d22/class_dave_random_1_1_callback_validator_1_1_return_type.html">DaveRandom\CallbackValidator\ReturnType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/deb/_return_type_8php_source.html#l00005">ReturnType.php:6</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_closure_task_html"><div class="ttname"><a href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html">pocketmine\scheduler\ClosureTask</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dff/_closure_task_8php_source.html#l00041">ClosureTask.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_closure_task_html_a64b9488bfba2f901a595862ec1fc2d11"><div class="ttname"><a href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a64b9488bfba2f901a595862ec1fc2d11">pocketmine\scheduler\ClosureTask\onRun</a></div><div class="ttdeci">onRun()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dff/_closure_task_8php_source.html#l00062">ClosureTask.php:62</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_closure_task_html_aaffb21ca23beaadb272b544f24b527e6"><div class="ttname"><a href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#aaffb21ca23beaadb272b544f24b527e6">pocketmine\scheduler\ClosureTask\__construct</a></div><div class="ttdeci">__construct(\Closure $closure)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dff/_closure_task_8php_source.html#l00053">ClosureTask.php:53</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_closure_task_html_a48a27d1813e7cfb1ed1dbef63cd382af"><div class="ttname"><a href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a48a27d1813e7cfb1ed1dbef63cd382af">pocketmine\scheduler\ClosureTask\__construct</a></div><div class="ttdeci">__construct(private \Closure $closure)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dff/_closure_task_8php_source.html#l00046">ClosureTask.php:46</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_closure_task_html_a64b9488bfba2f901a595862ec1fc2d11"><div class="ttname"><a href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html#a64b9488bfba2f901a595862ec1fc2d11">pocketmine\scheduler\ClosureTask\onRun</a></div><div class="ttdeci">onRun()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dff/_closure_task_8php_source.html#l00056">ClosureTask.php:56</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_task_html"><div class="ttname"><a href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">pocketmine\scheduler\Task</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d19/_task_8php_source.html#l00028">Task.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/_utils_8php_source.html#l00100">Utils.php:100</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a496f1c43cf987c01fa66621672465bd1"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">pocketmine\utils\Utils\validateCallableSignature</a></div><div class="ttdeci">static validateCallableSignature(callable|CallbackType $signature, callable $subject)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/_utils_8php_source.html#l00558">Utils.php:558</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a496f1c43cf987c01fa66621672465bd1"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">pocketmine\utils\Utils\validateCallableSignature</a></div><div class="ttdeci">static validateCallableSignature(callable|CallbackType $signature, callable $subject)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/_utils_8php_source.html#l00556">Utils.php:556</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1scheduler_html"><div class="ttname"><a href="../../d3/d75/namespacepocketmine_1_1scheduler.html">pocketmine\scheduler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d27/_async_pool_8php_source.html#l00024">AsyncPool.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

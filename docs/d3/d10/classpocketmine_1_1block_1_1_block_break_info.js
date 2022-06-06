@@ -1,6 +1,6 @@
 var classpocketmine_1_1block_1_1_block_break_info =
 [
-    [ "__construct", "d3/d10/classpocketmine_1_1block_1_1_block_break_info.html#a15c06b47e60ac8a46525a60935ba9ed5", null ],
+    [ "__construct", "d3/d10/classpocketmine_1_1block_1_1_block_break_info.html#a4685aa0301e126e3cc82175767e4d22e", null ],
     [ "breaksInstantly", "d3/d10/classpocketmine_1_1block_1_1_block_break_info.html#ac337f3210839ac2fdfbdec8ef327a9bf", null ],
     [ "getBlastResistance", "d3/d10/classpocketmine_1_1block_1_1_block_break_info.html#adb3832b527c3ef1e93dddc64ad120868", null ],
     [ "getBreakTime", "d3/d10/classpocketmine_1_1block_1_1_block_break_info.html#a338d07df56f68918f1ad1d90e78c87c8", null ],

@@ -32,7 +32,10 @@ var namespacepocketmine_1_1world =
           [ "UnsupportedWorldFormatException", "d1/d50/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_unsupported_world_format_exception.html", null ]
         ] ],
         [ "leveldb", null, [
-          [ "LevelDB", "df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html", "df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b" ]
+          [ "ChunkDataKey", "da/da0/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_chunk_data_key.html", null ],
+          [ "ChunkVersion", "d9/dc6/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_chunk_version.html", null ],
+          [ "LevelDB", "df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html", "df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b" ],
+          [ "SubChunkVersion", "dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html", "dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version" ]
         ] ],
         [ "region", null, [
           [ "Anvil", "d9/d75/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_anvil.html", "d9/d75/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_anvil" ],

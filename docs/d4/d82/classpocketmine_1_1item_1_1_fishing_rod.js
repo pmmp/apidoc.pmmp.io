@@ -1,10 +1,11 @@
 var classpocketmine_1_1item_1_1_fishing_rod =
 [
+    [ "applyDamage", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a66d8aa38bb8fd5197eed6335fc48453a", null ],
     [ "canStackWith", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a49a05b01faaaf071449c97060fe44926", null ],
     [ "clearCustomBlockData", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
     [ "clearCustomName", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a336d6f91be72079853413f5b4036a57d", null ],
     [ "clearNamedTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a", null ],
-    [ "deserializeCompoundTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a568624515bba5ff57e21ec8c828ade56", null ],
+    [ "deserializeCompoundTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a444bab7a652a1dc604048e392f5887cd", null ],
     [ "equals", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a4a9aa55600bb30c4d55ad63337874a07", null ],
     [ "equalsExact", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#af737301b899b7a7c9e9b0bb9a234a119", null ],
     [ "getAttackPoints", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57", null ],
@@ -18,17 +19,21 @@ var classpocketmine_1_1item_1_1_fishing_rod =
     [ "getFuelResidue", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
     [ "getLore", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],
-    [ "getMaxStackSize", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#ad981d95fce9c8a14832dc5fabbf4f3e4", null ],
+    [ "getMaxDurability", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a16dd4bc39cfb1c49d5b7a0111416f3eb", null ],
+    [ "getMaxStackSize", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a63474ace1506783160426af7b497e968", null ],
     [ "getName", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a2ee3936259ed3fd96fa07dcbcc4797c1", null ],
     [ "getNamedTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a2b35e6f346e5955b086fcc07ead985a7", null ],
     [ "getVanillaName", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#ac534c116a4d2291a8d67f15c4b485b74", null ],
     [ "hasAnyDamageValue", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#ad69764e364024d7ba67563b4efd45a31", null ],
     [ "hasNamedTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#ad2d004e5063f6ca465ed956b024217b1", null ],
+    [ "isBroken", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a9dd261853760b5df7ddacfd351b8df15", null ],
+    [ "isUnbreakable", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a40f57ea1d37fba8d60bf520baf93d4e0", null ],
     [ "jsonDeserialize", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#ad533c9307902b2661fdeb93e1d94a3ed", null ],
     [ "jsonSerialize", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#aad9f6fbf32449170a157b787d4227ee6", null ],
     [ "nbtDeserialize", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a9866a7ab362cec28252d67f6382a4ad4", null ],
     [ "nbtSerialize", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a27ef1db0d41125973529fb720b06a00d", null ],
     [ "onAttackEntity", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a6418882adeea5fe0359fbc7e750c01dd", null ],
+    [ "onBroken", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#afeeecf923ffec0b2cf16e9a571fc0d38", null ],
     [ "onClickAir", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a7a76ae1302113dc20f47f918b62d1eaf", null ],
     [ "onDestroyBlock", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a27c605022f9244e426a01364f38cb9f8", null ],
     [ "onInteractBlock", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a11fcc1d08fe403b43769e6d236ec768b", null ],
@@ -40,5 +45,6 @@ var classpocketmine_1_1item_1_1_fishing_rod =
     [ "setCustomBlockData", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a3bc65b2324649d8735dadf9bf8cf0705", null ],
     [ "setCustomName", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#aec8070c04112770e0d01a3c56b252e81", null ],
     [ "setLore", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#aa27432059ecfd201a3cec74253b21fa9", null ],
-    [ "setNamedTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a8e97e9296238bf8794a2d2f8e94e8a93", null ]
+    [ "setNamedTag", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a8e97e9296238bf8794a2d2f8e94e8a93", null ],
+    [ "setUnbreakable", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html#a73119267ef6a787c72da33162fabb14c", null ]
 ];

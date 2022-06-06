@@ -1,6 +1,6 @@
 var classpocketmine_1_1event_1_1player_1_1_player_edit_book_event =
 [
-    [ "__construct", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html#a857537f14163cd766af425516ef06cc5", null ],
+    [ "__construct", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html#a427e77b7d64666632d4d3c061768d21b", null ],
     [ "call", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html#a3d979a673428c9ae66e1039bf796e945", null ],
     [ "getAction", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html#a67ef326a5e2b65251ab888bee9a624b1", null ],
     [ "getModifiedPages", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html#ae10f48db837d50bf178b776c5550f34f", null ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d7/da2/_biome_selector_8php_source.htm
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -124,48 +124,48 @@ $(document).ready(function(){initNavTree('d7/da2/_biome_selector_8php_source.htm
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">pocketmine\world\generator\noise\Simplex</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html">   32</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html">BiomeSelector</a>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> $temperature;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> $rainfall;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> $map = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">Random</a> $random){</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;temperature = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">Simplex</a>($random, 2, 1 / 16, 1 / 512);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;rainfall = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">Simplex</a>($random, 2, 1 / 16, 1 / 512);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html#a296deafd9322955eb4b7dd25ae514300">   54</a></span>    <span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html#a296deafd9322955eb4b7dd25ae514300">lookup</a>(<span class="keywordtype">float</span> $temperature, <span class="keywordtype">float</span> $rainfall) : int;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">public</span> <span class="keyword">function</span> recalculate() : void{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;map = new \SplFixedArray(64 * 64);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $biomeRegistry = BiomeRegistry::getInstance();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; 64; ++$i){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">for</span>($j = 0; $j &lt; 64; ++$j){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                $biome = $biomeRegistry-&gt;getBiome($this-&gt;<a class="code hl_function" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html#a296deafd9322955eb4b7dd25ae514300">lookup</a>($i / 63, $j / 63));</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">if</span>($biome instanceof <a class="code hl_class" href="../../d8/d8c/classpocketmine_1_1world_1_1biome_1_1_unknown_biome.html">UnknownBiome</a>){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Unknown biome returned by selector with ID &quot;</span> . $biome-&gt;getId());</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                $this-&gt;map[$i + ($j &lt;&lt; 6)] = $biome;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTemperature(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z) : float{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        return ($this-&gt;temperature-&gt;noise2D($x, $z, true) + 1) / 2;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRainfall(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z) : float{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        return ($this-&gt;rainfall-&gt;noise2D($x, $z, true) + 1) / 2;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> pickBiome(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z) : Biome{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $temperature = (int) ($this-&gt;getTemperature($x, $z) * 63);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $rainfall = (int) ($this-&gt;getRainfall($x, $z) * 63);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> $this-&gt;map[$temperature + ($rainfall &lt;&lt; 6)];</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">Simplex</a> $temperature;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">Simplex</a> $rainfall;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    private \SplFixedArray $map;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">Random</a> $random){</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;temperature = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">Simplex</a>($random, 2, 1 / 16, 1 / 512);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;rainfall = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html">Simplex</a>($random, 2, 1 / 16, 1 / 512);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html#a296deafd9322955eb4b7dd25ae514300">   52</a></span>    <span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html#a296deafd9322955eb4b7dd25ae514300">lookup</a>(<span class="keywordtype">float</span> $temperature, <span class="keywordtype">float</span> $rainfall) : int;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">public</span> <span class="keyword">function</span> recalculate() : void{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;map = new \SplFixedArray(64 * 64);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $biomeRegistry = BiomeRegistry::getInstance();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; 64; ++$i){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">for</span>($j = 0; $j &lt; 64; ++$j){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                $biome = $biomeRegistry-&gt;getBiome($this-&gt;<a class="code hl_function" href="../../d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html#a296deafd9322955eb4b7dd25ae514300">lookup</a>($i / 63, $j / 63));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">if</span>($biome instanceof <a class="code hl_class" href="../../d8/d8c/classpocketmine_1_1world_1_1biome_1_1_unknown_biome.html">UnknownBiome</a>){</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Unknown biome returned by selector with ID &quot;</span> . $biome-&gt;getId());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                $this-&gt;map[$i + ($j &lt;&lt; 6)] = $biome;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTemperature(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z) : float{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        return ($this-&gt;temperature-&gt;noise2D($x, $z, true) + 1) / 2;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRainfall(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z) : float{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        return ($this-&gt;rainfall-&gt;noise2D($x, $z, true) + 1) / 2;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">function</span> pickBiome(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z) : Biome{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $temperature = (int) ($this-&gt;getTemperature($x, $z) * 63);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $rainfall = (int) ($this-&gt;getRainfall($x, $z) * 63);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> $this-&gt;map[$temperature + ($rainfall &lt;&lt; 6)];</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">pocketmine\utils\Random</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00032">Random.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_biome_html"><div class="ttname"><a href="../../d8/d20/classpocketmine_1_1world_1_1biome_1_1_biome.html">pocketmine\world\biome\Biome</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d93/_biome_8php_source.html#l00031">Biome.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_biome_registry_html"><div class="ttname"><a href="../../d4/db3/classpocketmine_1_1world_1_1biome_1_1_biome_registry.html">pocketmine\world\biome\BiomeRegistry</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/_biome_registry_8php_source.html#l00030">BiomeRegistry.php:30</a></div></div>

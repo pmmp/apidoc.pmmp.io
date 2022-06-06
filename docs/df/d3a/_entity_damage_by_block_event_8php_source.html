@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('df/d3a/_entity_damage_by_block_event_8
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -121,21 +121,19 @@ $(document).ready(function(){initNavTree('df/d3a/_entity_damage_by_block_event_8
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html">EntityDamageByBlockEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> $damager;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#aefe4ba3844bc0bd9ef3995cc8a78cecd">   39</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#aefe4ba3844bc0bd9ef3995cc8a78cecd">__construct</a>(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $damager, <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity, <span class="keywordtype">int</span> $cause, <span class="keywordtype">float</span> $damage, array $modifiers = []){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;damager = $damager;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        parent::__construct($entity, $cause, $damage, $modifiers);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDamager() : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        return $this-&gt;damager;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00051">Block.php:51</a></div></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#acbe5b807e75a02c4c7998957b7af81a6">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#acbe5b807e75a02c4c7998957b7af81a6">__construct</a>(<span class="keyword">private</span> <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $damager, <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity, <span class="keywordtype">int</span> $cause, <span class="keywordtype">float</span> $damage, array $modifiers = []){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        parent::__construct($entity, $cause, $damage, $modifiers);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDamager() : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        return $this-&gt;damager;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00052">Block.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00078">Entity.php:78</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event_html"><div class="ttname"><a href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html">pocketmine\event\entity\EntityDamageByBlockEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3a/_entity_damage_by_block_event_8php_source.html#l00032">EntityDamageByBlockEvent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event_html_aefe4ba3844bc0bd9ef3995cc8a78cecd"><div class="ttname"><a href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#aefe4ba3844bc0bd9ef3995cc8a78cecd">pocketmine\event\entity\EntityDamageByBlockEvent\__construct</a></div><div class="ttdeci">__construct(Block $damager, Entity $entity, int $cause, float $damage, array $modifiers=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3a/_entity_damage_by_block_event_8php_source.html#l00039">EntityDamageByBlockEvent.php:39</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event_html_acbe5b807e75a02c4c7998957b7af81a6"><div class="ttname"><a href="../../da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html#acbe5b807e75a02c4c7998957b7af81a6">pocketmine\event\entity\EntityDamageByBlockEvent\__construct</a></div><div class="ttdeci">__construct(private Block $damager, Entity $entity, int $cause, float $damage, array $modifiers=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3a/_entity_damage_by_block_event_8php_source.html#l00037">EntityDamageByBlockEvent.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">pocketmine\event\entity\EntityDamageEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00036">EntityDamageEvent.php:36</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1entity_html"><div class="ttname"><a href="../../d9/d86/namespacepocketmine_1_1event_1_1entity.html">pocketmine\event\entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9a/_entity_block_change_event_8php_source.html#l00024">EntityBlockChangeEvent.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

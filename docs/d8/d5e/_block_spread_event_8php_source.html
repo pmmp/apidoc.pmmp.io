@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d8/d5e/_block_spread_event_8php_source
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -120,18 +120,20 @@ $(document).ready(function(){initNavTree('d8/d5e/_block_spread_event_8php_source
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">BlockSpreadEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html">BaseBlockChangeEvent</a>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> $source;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $source, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $newState){</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        parent::__construct($block, $newState);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;source = $source;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSource() : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this-&gt;source;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00051">Block.php:51</a></div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $source,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $newState</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    ){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        parent::__construct($block, $newState);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSource() : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> $this-&gt;source;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00052">Block.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_base_block_change_event_html"><div class="ttname"><a href="../../d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html">pocketmine\event\block\BaseBlockChangeEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df1/_base_block_change_event_8php_source.html#l00033">BaseBlockChangeEvent.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_block_spread_event_html"><div class="ttname"><a href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">pocketmine\event\block\BlockSpreadEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5e/_block_spread_event_8php_source.html#l00031">BlockSpreadEvent.php:31</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1block_html"><div class="ttname"><a href="../../d0/d1c/namespacepocketmine_1_1event_1_1block.html">pocketmine\event\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df1/_base_block_change_event_8php_source.html#l00024">BaseBlockChangeEvent.php:24</a></div></div>

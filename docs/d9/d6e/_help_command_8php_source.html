@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -131,95 +131,101 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <span class="keyword">function</span> is_numeric;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <span class="keyword">function</span> ksort;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> min;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <span class="keyword">function</span> strtolower;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use <span class="keyword">const</span> SORT_FLAG_CASE;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>use <span class="keyword">const</span> SORT_NATURAL;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html">HelpCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        parent::__construct(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $name,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            KnownTranslationFactory::pocketmine_command_help_description(),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            KnownTranslationFactory::commands_help_usage(),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            [<span class="stringliteral">&quot;?&quot;</span>]</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        );</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;setPermission(DefaultPermissionNames::COMMAND_HELP);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a46540e581cbab1e08c78c696c9a75e8f">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a46540e581cbab1e08c78c696c9a75e8f">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>(count($args) === 0){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $commandName = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $pageNumber = 1;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }elseif(is_numeric($args[count($args) - 1])){</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            $pageNumber = (int) array_pop($args);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span>($pageNumber &lt;= 0){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                $pageNumber = 1;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            $commandName = implode(<span class="stringliteral">&quot; &quot;</span>, $args);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            $commandName = implode(<span class="stringliteral">&quot; &quot;</span>, $args);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            $pageNumber = 1;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $pageHeight = $sender-&gt;<a class="code hl_function" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a1428021c250a27063d67667d81008b55">getScreenLineHeight</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span>($commandName === <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            $commands = [];</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">foreach</span>($sender-&gt;getServer()-&gt;getCommandMap()-&gt;getCommands() as $command){</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">if</span>($command-&gt;testPermissionSilent($sender)){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    $commands[$command-&gt;getName()] = $command;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            ksort($commands, SORT_NATURAL | SORT_FLAG_CASE);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            $commands = array_chunk($commands, $pageHeight);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $pageNumber = min(count($commands), $pageNumber);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span>($pageNumber &lt; 1){</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                $pageNumber = 1;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $sender-&gt;sendMessage(KnownTranslationFactory::commands_help_header((<span class="keywordtype">string</span>) $pageNumber, (<span class="keywordtype">string</span>) count($commands)));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $lang = $sender-&gt;getLanguage();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">if</span>(isset($commands[$pageNumber - 1])){</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">foreach</span>($commands[$pageNumber - 1] as $command){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                    $description = $command-&gt;getDescription();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    $sender-&gt;sendMessage(TextFormat::DARK_GREEN . <span class="stringliteral">&quot;/&quot;</span> . $command-&gt;getName() . <span class="stringliteral">&quot;: &quot;</span> . TextFormat::WHITE . $descriptionString);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">if</span>(($cmd = $sender-&gt;getServer()-&gt;getCommandMap()-&gt;getCommand(strtolower($commandName))) instanceof <a class="code hl_class" href="../../d6/df1/classpocketmine_1_1command_1_1_command.html">Command</a>){</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <span class="keywordflow">if</span>($cmd-&gt;testPermissionSilent($sender)){</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    $lang = $sender-&gt;getLanguage();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    $description = $cmd-&gt;getDescription();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_header($commandName)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        -&gt;format(TextFormat::YELLOW . <span class="stringliteral">&quot;--------- &quot;</span> . TextFormat::WHITE, TextFormat::YELLOW . <span class="stringliteral">&quot; ---------&quot;</span>));</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_description(TextFormat::WHITE . $descriptionString)</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        -&gt;prefix(TextFormat::GOLD));</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    $usage = $cmd-&gt;getUsage();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    $usageString = $usage instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($usage) : $usage;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_usage(TextFormat::WHITE . implode(<span class="stringliteral">&quot;\n&quot;</span> . TextFormat::WHITE, explode(<span class="stringliteral">&quot;\n&quot;</span>, $usageString)))</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                        -&gt;prefix(TextFormat::GOLD));</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_notFound($commandName, <span class="stringliteral">&quot;/help&quot;</span>)-&gt;prefix(TextFormat::RED));</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <span class="keyword">function</span> sort;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use <span class="keyword">function</span> strtolower;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>use <span class="keyword">const</span> SORT_FLAG_CASE;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>use <span class="keyword">const</span> SORT_NATURAL;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html">HelpCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        parent::__construct(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            $name,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            KnownTranslationFactory::pocketmine_command_help_description(),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            KnownTranslationFactory::commands_help_usage(),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            [<span class="stringliteral">&quot;?&quot;</span>]</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;setPermission(DefaultPermissionNames::COMMAND_HELP);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a46540e581cbab1e08c78c696c9a75e8f">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a46540e581cbab1e08c78c696c9a75e8f">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span>(count($args) === 0){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $commandName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $pageNumber = 1;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }elseif(is_numeric($args[count($args) - 1])){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $pageNumber = (int) array_pop($args);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span>($pageNumber &lt;= 0){</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                $pageNumber = 1;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            $commandName = implode(<span class="stringliteral">&quot; &quot;</span>, $args);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            $commandName = implode(<span class="stringliteral">&quot; &quot;</span>, $args);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            $pageNumber = 1;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $pageHeight = $sender-&gt;<a class="code hl_function" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a1428021c250a27063d67667d81008b55">getScreenLineHeight</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">if</span>($commandName === <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $commands = [];</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">foreach</span>($sender-&gt;getServer()-&gt;getCommandMap()-&gt;getCommands() as $command){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">if</span>($command-&gt;testPermissionSilent($sender)){</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    $commands[$command-&gt;getName()] = $command;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            ksort($commands, SORT_NATURAL | SORT_FLAG_CASE);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $commands = array_chunk($commands, $pageHeight);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $pageNumber = min(count($commands), $pageNumber);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span>($pageNumber &lt; 1){</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                $pageNumber = 1;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $sender-&gt;sendMessage(KnownTranslationFactory::commands_help_header((<span class="keywordtype">string</span>) $pageNumber, (<span class="keywordtype">string</span>) count($commands)));</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $lang = $sender-&gt;getLanguage();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">if</span>(isset($commands[$pageNumber - 1])){</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">foreach</span>($commands[$pageNumber - 1] as $command){</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    $description = $command-&gt;getDescription();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    $sender-&gt;sendMessage(TextFormat::DARK_GREEN . <span class="stringliteral">&quot;/&quot;</span> . $command-&gt;getName() . <span class="stringliteral">&quot;: &quot;</span> . TextFormat::WHITE . $descriptionString);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">if</span>(($cmd = $sender-&gt;getServer()-&gt;getCommandMap()-&gt;getCommand(strtolower($commandName))) instanceof <a class="code hl_class" href="../../d6/df1/classpocketmine_1_1command_1_1_command.html">Command</a>){</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordflow">if</span>($cmd-&gt;testPermissionSilent($sender)){</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    $lang = $sender-&gt;getLanguage();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $description = $cmd-&gt;getDescription();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_header($cmd-&gt;getName())</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                        -&gt;format(TextFormat::YELLOW . <span class="stringliteral">&quot;--------- &quot;</span> . TextFormat::WHITE, TextFormat::YELLOW . <span class="stringliteral">&quot; ---------&quot;</span>));</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_description(TextFormat::WHITE . $descriptionString)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        -&gt;prefix(TextFormat::GOLD));</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    $usage = $cmd-&gt;getUsage();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    $usageString = $usage instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($usage) : $usage;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_usage(TextFormat::WHITE . implode(<span class="stringliteral">&quot;\n&quot;</span> . TextFormat::WHITE, explode(<span class="stringliteral">&quot;\n&quot;</span>, $usageString)))</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                        -&gt;prefix(TextFormat::GOLD));</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                    $aliases = $cmd-&gt;getAliases();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    sort($aliases, SORT_NATURAL);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_aliases(TextFormat::WHITE . implode(<span class="stringliteral">&quot;, &quot;</span>, $aliases))</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                        -&gt;prefix(TextFormat::GOLD));</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_notFound($commandName, <span class="stringliteral">&quot;/help&quot;</span>)-&gt;prefix(TextFormat::RED));</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1_command_html"><div class="ttname"><a href="../../d6/df1/classpocketmine_1_1command_1_1_command.html">pocketmine\command\Command</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_command_8php_source.html#l00041">Command.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_help_command_html"><div class="ttname"><a href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html">pocketmine\command\defaults\HelpCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6e/_help_command_8php_source.html#l00044">HelpCommand.php:44</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_help_command_html_a46540e581cbab1e08c78c696c9a75e8f"><div class="ttname"><a href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a46540e581cbab1e08c78c696c9a75e8f">pocketmine\command\defaults\HelpCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6e/_help_command_8php_source.html#l00056">HelpCommand.php:56</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_help_command_html"><div class="ttname"><a href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html">pocketmine\command\defaults\HelpCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6e/_help_command_8php_source.html#l00045">HelpCommand.php:45</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_help_command_html_a46540e581cbab1e08c78c696c9a75e8f"><div class="ttname"><a href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a46540e581cbab1e08c78c696c9a75e8f">pocketmine\command\defaults\HelpCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6e/_help_command_8php_source.html#l00057">HelpCommand.php:57</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00034">VanillaCommand.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00026">Translatable.php:26</a></div></div>

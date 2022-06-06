@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,45 +111,37 @@ $(document).ready(function(){initNavTree('d0/d04/_permission_attachment_info_8ph
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/dc0/namespacepocketmine_1_1permission.html">pocketmine\permission</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">PermissionAttachmentInfo</a>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">private</span> $permission;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span> $attachment;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> $value;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> $groupPermission;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $permission, ?<a class="code hl_class" href="../../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html">PermissionAttachment</a> $attachment, <span class="keywordtype">bool</span> $value, ?<a class="code hl_class" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">PermissionAttachmentInfo</a> $groupPermission){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;permission = $permission;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;attachment = $attachment;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;value = $value;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;groupPermission = $groupPermission;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $permission,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html">PermissionAttachment</a> $attachment,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> $value,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">PermissionAttachmentInfo</a> $groupPermission</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ){}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPermission() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> $this-&gt;permission;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAttachment() : ?<a class="code hl_class" href="../../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html">PermissionAttachment</a>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> $this-&gt;attachment;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> getValue() : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> $this-&gt;value;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPermission() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> $this-&gt;permission;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAttachment() : ?<a class="code hl_class" href="../../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html">PermissionAttachment</a>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> $this-&gt;attachment;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">public</span> <span class="keyword">function</span> getValue() : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> $this-&gt;value;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html#a8874f0ba46997ec2c16be5adb34d2930">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html#a8874f0ba46997ec2c16be5adb34d2930">getGroupPermissionInfo</a>() : ?<a class="code hl_class" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">PermissionAttachmentInfo</a>{ return $this-&gt;groupPermission; }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html#a8874f0ba46997ec2c16be5adb34d2930">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html#a8874f0ba46997ec2c16be5adb34d2930">getGroupPermissionInfo</a>() : ?<a class="code hl_class" href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">PermissionAttachmentInfo</a>{ return $this-&gt;groupPermission; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_permission_attachment_html"><div class="ttname"><a href="../../d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html">pocketmine\permission\PermissionAttachment</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d91/_permission_attachment_8php_source.html#l00030">PermissionAttachment.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_permission_attachment_info_html"><div class="ttname"><a href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html">pocketmine\permission\PermissionAttachmentInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d04/_permission_attachment_info_8php_source.html#l00026">PermissionAttachmentInfo.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1permission_1_1_permission_attachment_info_html_a8874f0ba46997ec2c16be5adb34d2930"><div class="ttname"><a href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html#a8874f0ba46997ec2c16be5adb34d2930">pocketmine\permission\PermissionAttachmentInfo\getGroupPermissionInfo</a></div><div class="ttdeci">getGroupPermissionInfo()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d04/_permission_attachment_info_8php_source.html#l00062">PermissionAttachmentInfo.php:62</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1permission_1_1_permission_attachment_info_html_a8874f0ba46997ec2c16be5adb34d2930"><div class="ttname"><a href="../../d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html#a8874f0ba46997ec2c16be5adb34d2930">pocketmine\permission\PermissionAttachmentInfo\getGroupPermissionInfo</a></div><div class="ttdeci">getGroupPermissionInfo()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d04/_permission_attachment_info_8php_source.html#l00050">PermissionAttachmentInfo.php:50</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1permission_html"><div class="ttname"><a href="../../d6/dc0/namespacepocketmine_1_1permission.html">pocketmine\permission</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d0a/_ban_entry_8php_source.html#l00024">BanEntry.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

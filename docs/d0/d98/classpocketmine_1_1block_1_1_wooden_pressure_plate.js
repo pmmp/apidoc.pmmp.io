@@ -42,7 +42,7 @@ var classpocketmine_1_1block_1_1_wooden_pressure_plate =
     [ "onNearbyBlockChange", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onRandomTick", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a36afea9f0214193963f75577e8d48c26", null ],
     [ "onScheduledUpdate", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a1a1a2b2adf423738289d296198f044e1", null ],
-    [ "place", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
+    [ "place", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#aea565015992ca482a9550b6ab460b567", null ],
     [ "readStateFromData", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#afc9f40bb3f97cbb2e2d983942d0bf8cb", null ],
     [ "readStateFromWorld", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#af6cd0b6690ff09dac13f0af27eb61aa2", null ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,34 +111,30 @@ $(document).ready(function(){initNavTree('dd/dc7/_enchantment_instance_8php_sour
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\item\enchantment;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html">   31</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html">EnchantmentInstance</a>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> $enchantment;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> $level;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html">Enchantment</a> $enchantment,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $level = 1</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    ){}</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#ac9369fe22528529d8de601349b46eb0d">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#ac9369fe22528529d8de601349b46eb0d">__construct</a>(<a class="code hl_class" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html">Enchantment</a> $enchantment, <span class="keywordtype">int</span> $level = 1){</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;enchantment = $enchantment;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;level = $level;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#acacebf07e30745aff1b59f7c5682d6a1">   51</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#acacebf07e30745aff1b59f7c5682d6a1">getType</a>() : <a class="code hl_class" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html">Enchantment</a>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        return $this-&gt;enchantment;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#a3b27b7c724cc7e1b283b2ec6429108e1">   58</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#a3b27b7c724cc7e1b283b2ec6429108e1">getLevel</a>() : int{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        return $this-&gt;level;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#acacebf07e30745aff1b59f7c5682d6a1">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#acacebf07e30745aff1b59f7c5682d6a1">getType</a>() : <a class="code hl_class" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html">Enchantment</a>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        return $this-&gt;enchantment;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#a3b27b7c724cc7e1b283b2ec6429108e1">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#a3b27b7c724cc7e1b283b2ec6429108e1">getLevel</a>() : int{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return $this-&gt;level;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_html"><div class="ttname"><a href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html">pocketmine\item\enchantment\Enchantment</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d13/_enchantment_8php_source.html#l00033">Enchantment.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_instance_html"><div class="ttname"><a href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html">pocketmine\item\enchantment\EnchantmentInstance</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc7/_enchantment_instance_8php_source.html#l00031">EnchantmentInstance.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_instance_html_a3b27b7c724cc7e1b283b2ec6429108e1"><div class="ttname"><a href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#a3b27b7c724cc7e1b283b2ec6429108e1">pocketmine\item\enchantment\EnchantmentInstance\getLevel</a></div><div class="ttdeci">getLevel()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc7/_enchantment_instance_8php_source.html#l00058">EnchantmentInstance.php:58</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_instance_html_ac9369fe22528529d8de601349b46eb0d"><div class="ttname"><a href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#ac9369fe22528529d8de601349b46eb0d">pocketmine\item\enchantment\EnchantmentInstance\__construct</a></div><div class="ttdeci">__construct(Enchantment $enchantment, int $level=1)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc7/_enchantment_instance_8php_source.html#l00043">EnchantmentInstance.php:43</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_instance_html_acacebf07e30745aff1b59f7c5682d6a1"><div class="ttname"><a href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#acacebf07e30745aff1b59f7c5682d6a1">pocketmine\item\enchantment\EnchantmentInstance\getType</a></div><div class="ttdeci">getType()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc7/_enchantment_instance_8php_source.html#l00051">EnchantmentInstance.php:51</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_instance_html_a3b27b7c724cc7e1b283b2ec6429108e1"><div class="ttname"><a href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#a3b27b7c724cc7e1b283b2ec6429108e1">pocketmine\item\enchantment\EnchantmentInstance\getLevel</a></div><div class="ttdeci">getLevel()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc7/_enchantment_instance_8php_source.html#l00047">EnchantmentInstance.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_enchantment_instance_html_acacebf07e30745aff1b59f7c5682d6a1"><div class="ttname"><a href="../../d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html#acacebf07e30745aff1b59f7c5682d6a1">pocketmine\item\enchantment\EnchantmentInstance\getType</a></div><div class="ttdeci">getType()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc7/_enchantment_instance_8php_source.html#l00040">EnchantmentInstance.php:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

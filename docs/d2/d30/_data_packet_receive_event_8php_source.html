@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d2/d30/_data_packet_receive_event_8php
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -125,22 +125,19 @@ $(document).ready(function(){initNavTree('d2/d30/_data_packet_receive_event_8php
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d1/dcc/classpocketmine_1_1event_1_1server_1_1_data_packet_receive_event.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/dcc/classpocketmine_1_1event_1_1server_1_1_data_packet_receive_event.html">DataPacketReceiveEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html">ServerEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> $packet;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> $origin;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $origin,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a> $packet</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    ){}</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $origin, <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a> $packet){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;packet = $packet;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;origin = $origin;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPacket() : <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> $this-&gt;packet;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOrigin() : <a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> $this-&gt;origin;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPacket() : <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> $this-&gt;packet;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOrigin() : <a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> $this-&gt;origin;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_data_packet_receive_event_html"><div class="ttname"><a href="../../d1/dcc/classpocketmine_1_1event_1_1server_1_1_data_packet_receive_event.html">pocketmine\event\server\DataPacketReceiveEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d30/_data_packet_receive_event_8php_source.html#l00031">DataPacketReceiveEvent.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_server_event_html"><div class="ttname"><a href="../../d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html">pocketmine\event\server\ServerEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/_server_event_8php_source.html#l00031">ServerEvent.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00137">NetworkSession.php:137</a></div></div>

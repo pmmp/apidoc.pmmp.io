@@ -63,7 +63,7 @@ var searchData=
   ['loadlocationtable_60',['loadLocationTable',['../df/d95/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_loader.html#a14f4739f13afc28aea8f1cd62b9e5ca8',1,'pocketmine::world::format::io::region::RegionLoader']]],
   ['loadpermissions_61',['loadPermissions',['../da/da3/classpocketmine_1_1permission_1_1_permission_parser.html#aa7b9592745f1f243463a887802e2504d',1,'pocketmine::permission::PermissionParser']]],
   ['loadplugin_62',['loadPlugin',['../d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html#aa97f548a648c65010976df1f76c76dca',1,'pocketmine\plugin\PharPluginLoader\loadPlugin()'],['../d5/d36/interfacepocketmine_1_1plugin_1_1_plugin_loader.html#a978075977f3caa8ec5afe060f4a49ab8',1,'pocketmine\plugin\PluginLoader\loadPlugin()'],['../d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader.html#ae38ce761380bba89484f3870284db478',1,'pocketmine\plugin\ScriptPluginLoader\loadPlugin()']]],
-  ['loadplugins_63',['loadPlugins',['../db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ae4e44e721686a7f1b9bac8c32c724d31',1,'pocketmine::plugin::PluginManager']]],
+  ['loadplugins_63',['loadPlugins',['../db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a6457b86b09e1dec395938298fa39be52',1,'pocketmine::plugin::PluginManager']]],
   ['loadworld_64',['loadWorld',['../d8/d70/classpocketmine_1_1world_1_1_world_manager.html#af1eb7ca53aadd02ef44651449d3990ba',1,'pocketmine::world::WorldManager']]],
   ['location_65',['Location',['../dc/d56/classpocketmine_1_1entity_1_1_location.html',1,'pocketmine::entity']]],
   ['lockchunk_66',['lockChunk',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae8fe6ea100fce0c373ee7231adfa1d42',1,'pocketmine::world::World']]],

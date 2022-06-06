@@ -1,6 +1,6 @@
 var classpocketmine_1_1event_1_1inventory_1_1_craft_item_event =
 [
-    [ "__construct", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a69ec21ac3d3bb91bff9297146d54fda1", null ],
+    [ "__construct", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a31e9d3ca57ee5e036fbeb47f126c491a", null ],
     [ "call", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a3d979a673428c9ae66e1039bf796e945", null ],
     [ "getInputs", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a757b2ee09785dbfb65ade78cf499067a", null ],
     [ "getOutputs", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#ae09abc10a868a86bdce7a29d99d08a54", null ],

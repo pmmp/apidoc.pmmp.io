@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('dd/d05/_bandwidth_stats_tracker_8php_s
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -122,42 +122,40 @@ $(document).ready(function(){initNavTree('dd/d05/_bandwidth_stats_tracker_8php_s
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> count;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html">BandwidthStatsTracker</a>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">private</span> $history;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> $nextHistoryIndex = 0;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> $bytesSinceLastRotation = 0;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> $totalBytes = 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">private</span> array $history;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $nextHistoryIndex = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $bytesSinceLastRotation = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $totalBytes = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5314a0b2750822c3a8769fc78a90ed29">   38</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5314a0b2750822c3a8769fc78a90ed29">__construct</a>(<span class="keywordtype">int</span> $historySize){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $this-&gt;history = array_fill(0, $historySize, 0);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5314a0b2750822c3a8769fc78a90ed29">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5314a0b2750822c3a8769fc78a90ed29">__construct</a>(<span class="keywordtype">int</span> $historySize){</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;history = array_fill(0, $historySize, 0);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> add(<span class="keywordtype">int</span> $bytes) : void{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;totalBytes += $bytes;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;bytesSinceLastRotation += $bytes;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> add(<span class="keywordtype">int</span> $bytes) : void{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;totalBytes += $bytes;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;bytesSinceLastRotation += $bytes;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTotalBytes() : int{ return $this-&gt;totalBytes; }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7">rotateHistory</a>() : void{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $this-&gt;history[$this-&gt;nextHistoryIndex] = $this-&gt;bytesSinceLastRotation;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;bytesSinceLastRotation = 0;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;nextHistoryIndex = ($this-&gt;nextHistoryIndex + 1) % count($this-&gt;history);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#ae4d96ca93f1d70fe4fe0c0e436f23639">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#ae4d96ca93f1d70fe4fe0c0e436f23639">getAverageBytes</a>() : float{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        return array_sum($this-&gt;history) / count($this-&gt;history);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">function</span> resetHistory() : void{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $this-&gt;history = array_fill(0, count($this-&gt;history), 0);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTotalBytes() : int{ return $this-&gt;totalBytes; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7">   54</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7">rotateHistory</a>() : void{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;history[$this-&gt;nextHistoryIndex] = $this-&gt;bytesSinceLastRotation;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;bytesSinceLastRotation = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;nextHistoryIndex = ($this-&gt;nextHistoryIndex + 1) % count($this-&gt;history);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#ae4d96ca93f1d70fe4fe0c0e436f23639">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#ae4d96ca93f1d70fe4fe0c0e436f23639">getAverageBytes</a>() : float{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return array_sum($this-&gt;history) / count($this-&gt;history);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> resetHistory() : void{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $this-&gt;history = array_fill(0, count($this-&gt;history), 0);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html">pocketmine\network\BandwidthStatsTracker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00030">BandwidthStatsTracker.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html_a5314a0b2750822c3a8769fc78a90ed29"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5314a0b2750822c3a8769fc78a90ed29">pocketmine\network\BandwidthStatsTracker\__construct</a></div><div class="ttdeci">__construct(int $historySize)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00043">BandwidthStatsTracker.php:43</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html_a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7">pocketmine\network\BandwidthStatsTracker\rotateHistory</a></div><div class="ttdeci">rotateHistory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00059">BandwidthStatsTracker.php:59</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html_ae4d96ca93f1d70fe4fe0c0e436f23639"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#ae4d96ca93f1d70fe4fe0c0e436f23639">pocketmine\network\BandwidthStatsTracker\getAverageBytes</a></div><div class="ttdeci">getAverageBytes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00068">BandwidthStatsTracker.php:68</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html_a5314a0b2750822c3a8769fc78a90ed29"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5314a0b2750822c3a8769fc78a90ed29">pocketmine\network\BandwidthStatsTracker\__construct</a></div><div class="ttdeci">__construct(int $historySize)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00038">BandwidthStatsTracker.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html_a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#a5cd981ff8f1d9adb9d1a2e5c6c7b8cf7">pocketmine\network\BandwidthStatsTracker\rotateHistory</a></div><div class="ttdeci">rotateHistory()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00054">BandwidthStatsTracker.php:54</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_bandwidth_stats_tracker_html_ae4d96ca93f1d70fe4fe0c0e436f23639"><div class="ttname"><a href="../../da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html#ae4d96ca93f1d70fe4fe0c0e436f23639">pocketmine\network\BandwidthStatsTracker\getAverageBytes</a></div><div class="ttdeci">getAverageBytes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d05/_bandwidth_stats_tracker_8php_source.html#l00063">BandwidthStatsTracker.php:63</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1network_html"><div class="ttname"><a href="../../db/dd0/namespacepocketmine_1_1network.html">pocketmine\network</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df4/_advanced_network_interface_8php_source.html#l00027">AdvancedNetworkInterface.php:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

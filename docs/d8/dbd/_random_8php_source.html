@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.3.5 git-39b8daeeec3fd2ad9a8593bb15edca65349948bd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.4.2 git-6ecfbd1bdec03f87472bc684fb93fbf41aec6539</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d8/dbd/_random_8php_source.html','../.
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @link http://www.pocketmine.net/</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -125,80 +125,77 @@ $(document).ready(function(){initNavTree('d8/dbd/_random_8php_source.html','../.
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">const</span> Z = 521288629;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">const</span> W = 88675123;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> $x;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> $y;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> $z;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> $w;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">protected</span> $seed;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a84d30ae30ee5efbb4b93b5b20406991b">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a84d30ae30ee5efbb4b93b5b20406991b">__construct</a>(<span class="keywordtype">int</span> $seed = -1){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>($seed === -1){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $seed = time();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;<a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">setSeed</a>($seed);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">setSeed</a>(<span class="keywordtype">int</span> $seed) : void{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $this-&gt;seed = $seed;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;x = self::X ^ $seed;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;y = self::Y ^ ($seed &lt;&lt; 17) | (($seed &gt;&gt; 15) &amp; 0x7fffffff) &amp; 0xffffffff;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;z = self::Z ^ ($seed &lt;&lt; 31) | (($seed &gt;&gt; 1) &amp; 0x7fffffff) &amp; 0xffffffff;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;w = self::W ^ ($seed &lt;&lt; 18) | (($seed &gt;&gt; 14) &amp; 0x7fffffff) &amp; 0xffffffff;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSeed() : int{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        return $this-&gt;seed;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $x;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $y;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $z;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $w;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">protected</span> $seed;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a84d30ae30ee5efbb4b93b5b20406991b">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a84d30ae30ee5efbb4b93b5b20406991b">__construct</a>(<span class="keywordtype">int</span> $seed = -1){</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>($seed === -1){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $seed = time();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;<a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">setSeed</a>($seed);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">   60</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">setSeed</a>(<span class="keywordtype">int</span> $seed) : void{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;seed = $seed;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;x = self::X ^ $seed;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;y = self::Y ^ ($seed &lt;&lt; 17) | (($seed &gt;&gt; 15) &amp; 0x7fffffff) &amp; 0xffffffff;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;z = self::Z ^ ($seed &lt;&lt; 31) | (($seed &gt;&gt; 1) &amp; 0x7fffffff) &amp; 0xffffffff;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;w = self::W ^ ($seed &lt;&lt; 18) | (($seed &gt;&gt; 14) &amp; 0x7fffffff) &amp; 0xffffffff;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSeed() : int{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        return $this-&gt;seed;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#aa5237479b44aaa36c301a06f23d2ee21">   75</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#aa5237479b44aaa36c301a06f23d2ee21">nextInt</a>() : int{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        return $this-&gt;nextSignedInt() &amp; 0x7fffffff;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#aa5237479b44aaa36c301a06f23d2ee21">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#aa5237479b44aaa36c301a06f23d2ee21">nextInt</a>() : int{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        return $this-&gt;nextSignedInt() &amp; 0x7fffffff;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764">   89</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764">nextSignedInt</a>() : int{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $t = ($this-&gt;x ^ ($this-&gt;x &lt;&lt; 11)) &amp; 0xffffffff;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $this-&gt;x = $this-&gt;y;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;y = $this-&gt;z;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $this-&gt;z = $this-&gt;w;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;w = ($this-&gt;w ^ (($this-&gt;w &gt;&gt; 19) &amp; 0x7fffffff) ^ ($t ^ (($t &gt;&gt; 8) &amp; 0x7fffffff))) &amp; 0xffffffff;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">return</span> Binary::signInt($this-&gt;w);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764">nextSignedInt</a>() : int{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $t = ($this-&gt;x ^ ($this-&gt;x &lt;&lt; 11)) &amp; 0xffffffff;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $this-&gt;x = $this-&gt;y;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;y = $this-&gt;z;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;z = $this-&gt;w;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;w = ($this-&gt;w ^ (($this-&gt;w &gt;&gt; 19) &amp; 0x7fffffff) ^ ($t ^ (($t &gt;&gt; 8) &amp; 0x7fffffff))) &amp; 0xffffffff;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> Binary::signInt($this-&gt;w);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a88cce78f9092b06a9e589880c92fb93a">   96</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a88cce78f9092b06a9e589880c92fb93a">nextFloat</a>() : float{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        return $this-&gt;nextInt() / 0x7fffffff;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a88cce78f9092b06a9e589880c92fb93a">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a88cce78f9092b06a9e589880c92fb93a">nextFloat</a>() : float{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        return $this-&gt;nextInt() / 0x7fffffff;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3">nextSignedFloat</a>() : float{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        return $this-&gt;nextSignedInt() / 0x7fffffff;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3">  110</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3">nextSignedFloat</a>() : float{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        return $this-&gt;nextSignedInt() / 0x7fffffff;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2600510e4b1c0056d1cbcc3df6afb19c">  110</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2600510e4b1c0056d1cbcc3df6afb19c">nextBoolean</a>() : bool{</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        return ($this-&gt;nextSignedInt() &amp; 0x01) === 0;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2600510e4b1c0056d1cbcc3df6afb19c">  117</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2600510e4b1c0056d1cbcc3df6afb19c">nextBoolean</a>() : bool{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        return ($this-&gt;nextSignedInt() &amp; 0x01) === 0;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a69b65efef10b810bb3554e2640bab255">  127</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a69b65efef10b810bb3554e2640bab255">nextRange</a>(<span class="keywordtype">int</span> $start = 0, <span class="keywordtype">int</span> $end = 0x7fffffff) : int{</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        return $start + ($this-&gt;nextInt() % ($end + 1 - $start));</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">public</span> <span class="keyword">function</span> nextBoundedInt(<span class="keywordtype">int</span> $bound) : int{</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        return $this-&gt;nextInt() % $bound;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a69b65efef10b810bb3554e2640bab255">  120</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a69b65efef10b810bb3554e2640bab255">nextRange</a>(<span class="keywordtype">int</span> $start = 0, <span class="keywordtype">int</span> $end = 0x7fffffff) : int{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        return $start + ($this-&gt;nextInt() % ($end + 1 - $start));</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">public</span> <span class="keyword">function</span> nextBoundedInt(<span class="keywordtype">int</span> $bound) : int{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        return $this-&gt;nextInt() % $bound;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">pocketmine\utils\Random</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00032">Random.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a2600510e4b1c0056d1cbcc3df6afb19c"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2600510e4b1c0056d1cbcc3df6afb19c">pocketmine\utils\Random\nextBoolean</a></div><div class="ttdeci">nextBoolean()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00117">Random.php:117</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a2a70be76d91805b530fba6389a796764"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764">pocketmine\utils\Random\nextSignedInt</a></div><div class="ttdeci">nextSignedInt()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00089">Random.php:89</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a69b65efef10b810bb3554e2640bab255"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a69b65efef10b810bb3554e2640bab255">pocketmine\utils\Random\nextRange</a></div><div class="ttdeci">nextRange(int $start=0, int $end=0x7fffffff)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00127">Random.php:127</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a84d30ae30ee5efbb4b93b5b20406991b"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a84d30ae30ee5efbb4b93b5b20406991b">pocketmine\utils\Random\__construct</a></div><div class="ttdeci">__construct(int $seed=-1)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00056">Random.php:56</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a88cce78f9092b06a9e589880c92fb93a"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a88cce78f9092b06a9e589880c92fb93a">pocketmine\utils\Random\nextFloat</a></div><div class="ttdeci">nextFloat()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00103">Random.php:103</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_aa5237479b44aaa36c301a06f23d2ee21"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#aa5237479b44aaa36c301a06f23d2ee21">pocketmine\utils\Random\nextInt</a></div><div class="ttdeci">nextInt()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00082">Random.php:82</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_ab4684a7b04a81177bb237e145093279c"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">pocketmine\utils\Random\setSeed</a></div><div class="ttdeci">setSeed(int $seed)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00067">Random.php:67</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_ae98fc8c86f8eadc828cf5816df3fbbc3"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3">pocketmine\utils\Random\nextSignedFloat</a></div><div class="ttdeci">nextSignedFloat()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00110">Random.php:110</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a2600510e4b1c0056d1cbcc3df6afb19c"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2600510e4b1c0056d1cbcc3df6afb19c">pocketmine\utils\Random\nextBoolean</a></div><div class="ttdeci">nextBoolean()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00110">Random.php:110</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a2a70be76d91805b530fba6389a796764"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764">pocketmine\utils\Random\nextSignedInt</a></div><div class="ttdeci">nextSignedInt()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00082">Random.php:82</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a69b65efef10b810bb3554e2640bab255"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a69b65efef10b810bb3554e2640bab255">pocketmine\utils\Random\nextRange</a></div><div class="ttdeci">nextRange(int $start=0, int $end=0x7fffffff)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00120">Random.php:120</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a84d30ae30ee5efbb4b93b5b20406991b"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a84d30ae30ee5efbb4b93b5b20406991b">pocketmine\utils\Random\__construct</a></div><div class="ttdeci">__construct(int $seed=-1)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00049">Random.php:49</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_a88cce78f9092b06a9e589880c92fb93a"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#a88cce78f9092b06a9e589880c92fb93a">pocketmine\utils\Random\nextFloat</a></div><div class="ttdeci">nextFloat()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00096">Random.php:96</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_aa5237479b44aaa36c301a06f23d2ee21"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#aa5237479b44aaa36c301a06f23d2ee21">pocketmine\utils\Random\nextInt</a></div><div class="ttdeci">nextInt()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00075">Random.php:75</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_ab4684a7b04a81177bb237e145093279c"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ab4684a7b04a81177bb237e145093279c">pocketmine\utils\Random\setSeed</a></div><div class="ttdeci">setSeed(int $seed)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00060">Random.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html_ae98fc8c86f8eadc828cf5816df3fbbc3"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3">pocketmine\utils\Random\nextSignedFloat</a></div><div class="ttdeci">nextSignedFloat()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_random_8php_source.html#l00103">Random.php:103</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

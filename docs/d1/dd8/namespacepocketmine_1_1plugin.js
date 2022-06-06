@@ -1,6 +1,7 @@
 var namespacepocketmine_1_1plugin =
 [
     [ "ApiVersion", "d0/df2/classpocketmine_1_1plugin_1_1_api_version.html", "d0/df2/classpocketmine_1_1plugin_1_1_api_version" ],
+    [ "DisablePluginException", "d2/db2/classpocketmine_1_1plugin_1_1_disable_plugin_exception.html", null ],
     [ "DiskResourceProvider", "de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html", "de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider" ],
     [ "PharPluginLoader", "d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html", "d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader" ],
     [ "Plugin", "d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html", "d4/d92/interfacepocketmine_1_1plugin_1_1_plugin" ],
