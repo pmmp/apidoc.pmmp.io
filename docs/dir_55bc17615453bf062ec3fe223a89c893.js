@@ -33,6 +33,7 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "GeneratorType.php", "dc/d1c/_generator_type_8php_source.html", null ],
     [ "GetTypeIdFromConstTrait.php", "d1/dff/_get_type_id_from_const_trait_8php_source.html", null ],
     [ "InputMode.php", "d6/d4b/_input_mode_8php_source.html", null ],
+    [ "InteractionMode.php", "d3/df6/_interaction_mode_8php_source.html", null ],
     [ "IntGameRule.php", "dd/db2/_int_game_rule_8php_source.html", null ],
     [ "ItemComponentPacketEntry.php", "d0/d45/_item_component_packet_entry_8php_source.html", null ],
     [ "ItemInteractionData.php", "d8/d87/_item_interaction_data_8php_source.html", null ],
