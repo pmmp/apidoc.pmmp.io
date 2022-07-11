@@ -823,6 +823,7 @@ var annotated_dup =
         ] ],
         [ "BaseNbtSerializer", "de/dc3/classpocketmine_1_1nbt_1_1_base_nbt_serializer.html", "de/dc3/classpocketmine_1_1nbt_1_1_base_nbt_serializer" ],
         [ "BigEndianNbtSerializer", "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html", "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer" ],
+        [ "InvalidTagValueException", "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html", null ],
         [ "JsonNbtParser", "d7/dca/classpocketmine_1_1nbt_1_1_json_nbt_parser.html", "d7/dca/classpocketmine_1_1nbt_1_1_json_nbt_parser" ],
         [ "LittleEndianNbtSerializer", "df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html", "df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer" ],
         [ "NBT", "d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html", "d5/d67/classpocketmine_1_1nbt_1_1_n_b_t" ],

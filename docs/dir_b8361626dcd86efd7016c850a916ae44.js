@@ -3,6 +3,7 @@ var dir_b8361626dcd86efd7016c850a916ae44 =
     [ "tag", "dir_42d10c1c7ba0a069ab4b3a8dd884ab34.html", "dir_42d10c1c7ba0a069ab4b3a8dd884ab34" ],
     [ "BaseNbtSerializer.php", "de/d86/_base_nbt_serializer_8php_source.html", null ],
     [ "BigEndianNbtSerializer.php", "d7/df2/_big_endian_nbt_serializer_8php_source.html", null ],
+    [ "InvalidTagValueException.php", "d4/dc5/_invalid_tag_value_exception_8php_source.html", null ],
     [ "JsonNbtParser.php", "d9/dc3/_json_nbt_parser_8php_source.html", null ],
     [ "LittleEndianNbtSerializer.php", "d7/da4/_little_endian_nbt_serializer_8php_source.html", null ],
     [ "NBT.php", "d9/da2/_n_b_t_8php_source.html", null ],

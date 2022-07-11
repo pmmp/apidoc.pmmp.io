@@ -2127,6 +2127,7 @@ var hierarchy =
     [ "pocketmine\\world\\WorldTimings", "d7/d08/classpocketmine_1_1world_1_1_world_timings.html", null ],
     [ "pocketmine\\item\\WritableBookPage", "d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html", null ],
     [ "InvalidArgumentException", null, [
-      [ "pocketmine\\entity\\InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ]
+      [ "pocketmine\\entity\\InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ],
+      [ "pocketmine\\nbt\\InvalidTagValueException", "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html", null ]
     ] ]
 ];
