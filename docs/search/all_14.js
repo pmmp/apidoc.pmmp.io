@@ -454,7 +454,6 @@ var searchData=
   ['sword_451',['Sword',['../d6/d74/classpocketmine_1_1item_1_1_sword.html',1,'pocketmine::item']]],
   ['syncactordata_452',['syncActorData',['../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4',1,'pocketmine::network::mcpe::NetworkSession']]],
   ['syncactorpropertypacket_453',['SyncActorPropertyPacket',['../dc/d98/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sync_actor_property_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['syncadventuresettings_454',['syncAdventureSettings',['../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a4b1c8b9f68c5c00dac4e5aa086a7fe07',1,'pocketmine::network::mcpe::NetworkSession']]],
-  ['syncattributes_455',['syncAttributes',['../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1',1,'pocketmine::network::mcpe::NetworkSession']]],
-  ['syncplayerlist_456',['syncPlayerList',['../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23',1,'pocketmine::network::mcpe::NetworkSession']]]
+  ['syncattributes_454',['syncAttributes',['../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1',1,'pocketmine::network::mcpe::NetworkSession']]],
+  ['syncplayerlist_455',['syncPlayerList',['../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23',1,'pocketmine::network::mcpe::NetworkSession']]]
 ];

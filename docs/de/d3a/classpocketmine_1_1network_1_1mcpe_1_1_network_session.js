@@ -11,7 +11,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1_network_session =
     [ "onTranslatedChatMessage", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f4c2d5d6c3951ef4d8a2d7d06abb360", null ],
     [ "startUsingChunk", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c", null ],
     [ "syncActorData", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4", null ],
-    [ "syncAdventureSettings", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a4b1c8b9f68c5c00dac4e5aa086a7fe07", null ],
     [ "syncAttributes", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1", null ],
     [ "syncPlayerList", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23", null ],
     [ "transfer", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a577ff99b430239c21bf431c021ffc504", null ]

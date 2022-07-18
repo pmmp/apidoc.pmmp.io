@@ -14,6 +14,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_
     [ "$DeviceOS", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a4ff82a9d4b257437ef31d8ff99dfda8f", null ],
     [ "$GameVersion", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a3a91fe1d90d9850720d7a4c21a700696", null ],
     [ "$GuiScale", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#ab294bef6443fe8e758787b065dfbc8b3", null ],
+    [ "$IsEditorMode", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#ab8986e39033393b0c17c5c2832125624", null ],
     [ "$LanguageCode", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a928e9d521ce804d0a70d64e9ecbdaae9", null ],
     [ "$PersonaSkin", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a97eecb3c353ab20b75d687ded4a2f555", null ],
     [ "$PlatformOfflineId", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a416445a2239936d61659d1516246dd87", null ],

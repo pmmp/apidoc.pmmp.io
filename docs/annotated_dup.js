@@ -896,7 +896,8 @@ var annotated_dup =
                 [ "CommandEnumConstraint", "d1/d8f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum_constraint.html", "d1/d8f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum_constraint" ],
                 [ "CommandOriginData", "d9/dec/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_origin_data.html", null ],
                 [ "CommandOutputMessage", "d4/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_output_message.html", null ],
-                [ "CommandParameter", "d1/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter.html", null ]
+                [ "CommandParameter", "d1/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter.html", null ],
+                [ "CommandPermissions", "d1/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_permissions.html", null ]
               ] ],
               [ "entity", null, [
                 [ "Attribute", "da/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute.html", null ],
@@ -1068,6 +1069,7 @@ var annotated_dup =
               [ "SubChunkPositionOffset", "d2/dcf/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_position_offset.html", null ],
               [ "SubChunkRequestResult", "d9/dac/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_request_result.html", null ],
               [ "UIProfile", "d1/d47/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_u_i_profile.html", null ],
+              [ "UpdateAbilitiesPacketLayer", "d8/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_abilities_packet_layer.html", "d8/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_abilities_packet_layer" ],
               [ "UpdateSubChunkBlocksPacketEntry", "d6/db7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_sub_chunk_blocks_packet_entry.html", null ]
             ] ],
             [ "ActorEventPacket", "d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html", "d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet" ],
@@ -1120,9 +1122,11 @@ var annotated_dup =
             [ "CreatePhotoPacket", "df/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_create_photo_packet.html", "df/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_create_photo_packet" ],
             [ "CreativeContentPacket", "d5/d75/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_creative_content_packet.html", "d5/d75/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_creative_content_packet" ],
             [ "DataPacket", "d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html", "d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet" ],
+            [ "DeathInfoPacket", "db/d4d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_death_info_packet.html", "db/d4d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_death_info_packet" ],
             [ "DebugInfoPacket", "dd/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_debug_info_packet.html", "dd/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_debug_info_packet" ],
             [ "DimensionDataPacket", "d1/dee/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_dimension_data_packet.html", "d1/dee/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_dimension_data_packet" ],
             [ "DisconnectPacket", "d9/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_disconnect_packet.html", "d9/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_disconnect_packet" ],
+            [ "EditorNetworkPacket", "d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet.html", "d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet" ],
             [ "EducationSettingsPacket", "d6/dd5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_education_settings_packet.html", "d6/dd5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_education_settings_packet" ],
             [ "EduUriResourcePacket", "d1/d5c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_edu_uri_resource_packet.html", "d1/d5c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_edu_uri_resource_packet" ],
             [ "EmoteListPacket", "dc/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_list_packet.html", "dc/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_list_packet" ],
@@ -1251,6 +1255,8 @@ var annotated_dup =
             [ "TickSyncPacket", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet.html", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet" ],
             [ "ToastRequestPacket", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet.html", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet" ],
             [ "TransferPacket", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet" ],
+            [ "UpdateAbilitiesPacket", "de/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_abilities_packet.html", "de/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_abilities_packet" ],
+            [ "UpdateAdventureSettingsPacket", "d9/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_adventure_settings_packet.html", "d9/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_adventure_settings_packet" ],
             [ "UpdateAttributesPacket", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet.html", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet" ],
             [ "UpdateBlockPacket", "d8/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_packet.html", "d8/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_packet" ],
             [ "UpdateBlockSyncedPacket", "df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_synced_packet.html", "df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_synced_packet" ],

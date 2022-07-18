@@ -72,5 +72,6 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "SubChunkPositionOffset.php", "df/de3/_sub_chunk_position_offset_8php_source.html", null ],
     [ "SubChunkRequestResult.php", "d0/df2/_sub_chunk_request_result_8php_source.html", null ],
     [ "UIProfile.php", "dc/d7c/_u_i_profile_8php_source.html", null ],
+    [ "UpdateAbilitiesPacketLayer.php", "dc/deb/_update_abilities_packet_layer_8php_source.html", null ],
     [ "UpdateSubChunkBlocksPacketEntry.php", "d7/d5d/_update_sub_chunk_blocks_packet_entry_8php_source.html", null ]
 ];
