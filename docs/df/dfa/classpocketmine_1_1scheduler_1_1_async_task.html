@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.1 git-fec89b7803132bcf043afcb4d57000b26a7781ec</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.1 git-4852f8029a5942f79e537861ae664e645259880a</span>
    </div>
   </td>
  </tr>
@@ -167,12 +167,14 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class used to run async tasks in other threads.</p>
-<p >An <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> does not have its own thread. It is queued into an <a class="el" href="../../d8/db6/classpocketmine_1_1scheduler_1_1_async_pool.html">AsyncPool</a> and executed if there is an async worker with no <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> running. Therefore, an <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> SHOULD NOT execute for more than a few seconds. For tasks that run for a long time or infinitely, start another thread instead.</p>
+<p >An <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> is run by a thread pool of reusable threads, and doesn't have its own dedicated thread. A thread is usually chosen from the pool at random to run the task (though a specific thread in the pool may be selected manually, if needed). Reusing threads this way has a much lower performance cost than starting an entirely new thread for every operation. AsyncTasks are therefore suitable for brief CPU-bound tasks, such as world generation, compression/decompression of data, etc.</p>
+<p ><a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> SHOULD NOT be used for I/O-bound tasks, such as network I/O, file I/O, database I/O, etc. The server's central <a class="el" href="../../d8/db6/classpocketmine_1_1scheduler_1_1_async_pool.html">AsyncPool</a> is used for things like compressing network packets for sending, so using <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> for I/O will slow the whole server down, stall chunk loading, etc.</p>
+<p >An <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> SHOULD NOT run for more than a few seconds. For tasks that run for a long time or indefinitely, create a dedicated thread instead.</p>
+<p >The <a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> instance is not accessible inside <code><a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a6db5fee11fc3b30c6ec45c62de8ee8dc">AsyncTask::onRun()</a></code>. It can only be accessed in the main server thread, e.g. during <code><a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a0116d1721376b18f7410934b72a19ecc">AsyncTask::onCompletion()</a></code> or <code><a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">AsyncTask::onProgressUpdate()</a></code>. This means that whatever you do in <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a6db5fee11fc3b30c6ec45c62de8ee8dc">onRun()</a> must be able to work without the <a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> instance.</p>
 <p >WARNING: Any non-Threaded objects WILL BE SERIALIZED when assigned to members of AsyncTasks or other Threaded object. If later accessed from said Threaded object, you will be operating on a COPY OF THE OBJECT, NOT THE ORIGINAL OBJECT. If you want to store non-serializable objects to access when the task completes, store them using <code><a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab5e5e139bf17f0880c19b9cd6b593c8b">AsyncTask::storeLocal</a></code>.</p>
-<p >WARNING: As of pthreads v3.1.6, arrays are converted to Volatile objects when assigned as members of Threaded objects. Keep this in mind when using arrays stored as members of your <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a>.</p>
-<p >WARNING: Do not call PocketMine-MP API methods from other Threads!! </p>
+<p >WARNING: Arrays are converted to Volatile objects when assigned as members of Threaded objects. Keep this in mind when using arrays stored as members of your <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00050">50</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00062">62</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a95d079639885e7f97c28512f98575cf9" name="a95d079639885e7f97c28512f98575cf9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95d079639885e7f97c28512f98575cf9">&#9670;&nbsp;</a></span>__destruct()</h2>
@@ -197,7 +199,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00240">240</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00252">252</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -217,7 +219,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00123">123</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00135">135</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -236,7 +238,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00165">165</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00177">177</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -274,7 +276,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException if no data were stored by this <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00231">231</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00243">243</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -294,7 +296,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00108">108</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00120">120</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -313,7 +315,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00127">127</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00139">139</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -332,7 +334,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00101">101</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00113">113</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -351,7 +353,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00089">89</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00101">101</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -371,7 +373,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether this task has finished executing, whether successfully or not. This differs from isRunning() because it is not true prior to task execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00097">97</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00109">109</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -390,7 +392,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00135">135</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00147">147</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -412,7 +414,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a46a351009a910d5befe105d2403403c1">pocketmine\network\mcpe\auth\ProcessLoginTask</a>, <a class="el" href="../../d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a884adc21e05e65e3aa1f51a1ea04c115">pocketmine\network\mcpe\ChunkRequestTask</a>, <a class="el" href="../../d6/dda/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_task.html#a36ac45e5bafc4475831febe607cd73ab">pocketmine\network\mcpe\compression\CompressBatchTask</a>, <a class="el" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">pocketmine\network\mcpe\encryption\PrepareEncryptionTask</a>, <a class="el" href="../../df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a7d2b0f78831aad0105a723210643744c">pocketmine\scheduler\BulkCurlTask</a>, <a class="el" href="../../d7/d6f/classpocketmine_1_1updater_1_1_update_check_task.html#a2287957cdb9711c4b574ce2b92d8a420">pocketmine\updater\UpdateCheckTask</a>, <a class="el" href="../../d9/d4a/classpocketmine_1_1world_1_1generator_1_1_population_task.html#afdfe943a422e49b3dcfa2d773a7732ac">pocketmine\world\generator\PopulationTask</a>, and <a class="el" href="../../d9/d7c/classpocketmine_1_1world_1_1light_1_1_light_population_task.html#a313ade787eace1a6e068a55ac8da9045">pocketmine\world\light\LightPopulationTask</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00148">148</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00160">160</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -434,7 +436,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a26b0f919a8a77bd4afbf2cf55c7284bc">pocketmine\network\mcpe\ChunkRequestTask</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00188">188</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00200">200</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -461,7 +463,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00180">180</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00192">192</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -516,7 +518,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00158">158</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00170">170</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -544,7 +546,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Override this to do normal __destruct() cleanup from a child class. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00253">253</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00265">265</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -563,7 +565,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00073">73</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00085">85</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -589,7 +591,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00119">119</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00131">131</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -608,7 +610,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00131">131</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00143">143</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -656,7 +658,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00208">208</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00220">220</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d9e/_process_login_task_8php_source.html#l00064">pocketmine\network\mcpe\auth\ProcessLoginTask\__construct()</a>, <a class="el" href="../../d4/d27/_bulk_curl_task_8php_source.html#l00052">pocketmine\scheduler\BulkCurlTask\__construct()</a>, <a class="el" href="../../d0/dd6/_light_population_task_8php_source.html#l00050">pocketmine\world\light\LightPopulationTask\__construct()</a>, <a class="el" href="../../db/d11/_chunk_request_task_8php_source.html#l00057">pocketmine\network\mcpe\ChunkRequestTask\__construct()</a>, <a class="el" href="../../d3/dde/_population_task_8php_source.html#l00053">pocketmine\world\generator\PopulationTask\__construct()</a>, and <a class="el" href="../../d3/d39/_prepare_encryption_task_8php_source.html#l00050">pocketmine\network\mcpe\encryption\PrepareEncryptionTask\__construct()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -683,7 +685,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00063">63</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00075">75</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
@@ -699,7 +701,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00060">60</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00072">72</a> of file <a class="el" href="../../dd/d42/_async_task_8php_source.html">AsyncTask.php</a>.</p>
 
 </div>
 </div>
