@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.1 git-4852f8029a5942f79e537861ae664e645259880a</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.2 git-5d9f78303726a6ba58cdda8231976f57a54a73c4</span>
    </div>
   </td>
  </tr>
@@ -1119,7 +1119,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>        }</div>
 <div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span> </div>
-<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        $oldPos = $this-&gt;getLocation();</div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        $oldPos = $this-&gt;location;</div>
 <div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>        $distanceSquared = $newPos-&gt;distanceSquared($oldPos);</div>
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span> </div>
 <div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        $revert = <span class="keyword">false</span>;</div>
@@ -1137,7 +1137,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span><span class="comment">             * asking for help if you suffer the consequences of messing with this.</span></div>
 <div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span><span class="comment">             */</span></div>
 <div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Moved too fast, reverting movement&quot;</span>);</div>
-<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Old position: &quot;</span> . $this-&gt;location-&gt;asVector3() . <span class="stringliteral">&quot;, new position: &quot;</span> . $newPos);</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Old position: &quot;</span> . $oldPos-&gt;asVector3() . <span class="stringliteral">&quot;, new position: &quot;</span> . $newPos);</div>
 <div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>            $revert = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>        }elseif(!$this-&gt;getWorld()-&gt;isInLoadedTerrain($newPos)){</div>
 <div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>            $revert = <span class="keyword">true</span>;</div>
@@ -1145,9 +1145,9 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>        }</div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span> </div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>        <span class="keywordflow">if</span>(!$revert &amp;&amp; $distanceSquared != 0){</div>
-<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>            $dx = $newPos-&gt;x - $this-&gt;location-&gt;x;</div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>            $dy = $newPos-&gt;y - $this-&gt;location-&gt;y;</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>            $dz = $newPos-&gt;z - $this-&gt;location-&gt;z;</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>            $dx = $newPos-&gt;x - $oldPos-&gt;x;</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>            $dy = $newPos-&gt;y - $oldPos-&gt;y;</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>            $dz = $newPos-&gt;z - $oldPos-&gt;z;</div>
 <div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span> </div>
 <div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>            $this-&gt;move($dx, $dy, $dz);</div>
 <div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>        }</div>
@@ -2346,7 +2346,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_attribute_html"><div class="ttname"><a href="../../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html">pocketmine\entity\Attribute</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dba/src_2entity_2_attribute_8php_source.html#l00029">src/entity/Attribute.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00078">Entity.php:78</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_a81725faf49c2b6fb3314cac3f6a11e3c"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a81725faf49c2b6fb3314cac3f6a11e3c">pocketmine\entity\Entity\onInteract</a></div><div class="ttdeci">onInteract(Player $player, Vector3 $clickPos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l01088">Entity.php:1088</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_human_8php_source.html#l00073">Human.php:73</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_human_8php_source.html#l00077">Human.php:77</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00076">Living.php:76</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_skin_html"><div class="ttname"><a href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">pocketmine\entity\Skin</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d80/_skin_8php_source.html#l00035">Skin.php:35</a></div></div>
