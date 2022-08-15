@@ -62,6 +62,7 @@ var dir_682c7921c367674b86e95b8a006ee2ec =
     [ "EmoteListPacket.php", "dd/dcc/_emote_list_packet_8php_source.html", null ],
     [ "EmotePacket.php", "d4/d24/_emote_packet_8php_source.html", null ],
     [ "EventPacket.php", "d6/dfa/_event_packet_8php_source.html", null ],
+    [ "FeatureRegistryPacket.php", "d3/d97/_feature_registry_packet_8php_source.html", null ],
     [ "FilterTextPacket.php", "dc/dad/_filter_text_packet_8php_source.html", null ],
     [ "GameRulesChangedPacket.php", "dd/d8b/_game_rules_changed_packet_8php_source.html", null ],
     [ "GuiDataPickItemPacket.php", "d2/d1a/_gui_data_pick_item_packet_8php_source.html", null ],

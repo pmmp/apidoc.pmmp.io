@@ -49,11 +49,14 @@ var searchData=
   ['attribute_46',['Attribute',['../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html',1,'pocketmine\entity\Attribute'],['../da/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute.html',1,'pocketmine\network\mcpe\protocol\types\entity\Attribute']]],
   ['attributefactory_47',['AttributeFactory',['../dd/da4/classpocketmine_1_1entity_1_1_attribute_factory.html',1,'pocketmine::entity']]],
   ['attributemap_48',['AttributeMap',['../d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html',1,'pocketmine::entity']]],
-  ['authenticationdata_49',['AuthenticationData',['../d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data.html',1,'pocketmine::network::mcpe::protocol::types::login']]],
-  ['automationclientconnectpacket_50',['AutomationClientConnectPacket',['../db/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_automation_client_connect_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['availableactoridentifierspacket_51',['AvailableActorIdentifiersPacket',['../d9/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_actor_identifiers_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['availablecommandspacket_52',['AvailableCommandsPacket',['../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['axe_53',['Axe',['../d5/d0a/classpocketmine_1_1item_1_1_axe.html',1,'pocketmine::item']]],
-  ['axis_54',['Axis',['../db/d25/classpocketmine_1_1math_1_1_axis.html',1,'pocketmine::math']]],
-  ['axisalignedbb_55',['AxisAlignedBB',['../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html',1,'pocketmine::math']]]
+  ['attributemodifier_49',['AttributeModifier',['../d4/dba/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute_modifier.html',1,'pocketmine::network::mcpe::protocol::types::entity']]],
+  ['attributemodifieroperation_50',['AttributeModifierOperation',['../d3/da7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute_modifier_operation.html',1,'pocketmine::network::mcpe::protocol::types::entity']]],
+  ['attributemodifiertargetoperand_51',['AttributeModifierTargetOperand',['../d8/d39/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute_modifier_target_operand.html',1,'pocketmine::network::mcpe::protocol::types::entity']]],
+  ['authenticationdata_52',['AuthenticationData',['../d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data.html',1,'pocketmine::network::mcpe::protocol::types::login']]],
+  ['automationclientconnectpacket_53',['AutomationClientConnectPacket',['../db/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_automation_client_connect_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['availableactoridentifierspacket_54',['AvailableActorIdentifiersPacket',['../d9/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_actor_identifiers_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['availablecommandspacket_55',['AvailableCommandsPacket',['../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['axe_56',['Axe',['../d5/d0a/classpocketmine_1_1item_1_1_axe.html',1,'pocketmine::item']]],
+  ['axis_57',['Axis',['../db/d25/classpocketmine_1_1math_1_1_axis.html',1,'pocketmine::math']]],
+  ['axisalignedbb_58',['AxisAlignedBB',['../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html',1,'pocketmine::math']]]
 ];

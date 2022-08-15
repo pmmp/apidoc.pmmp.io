@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.3 git-d77a95e4aff2c94312ce1dd3d8c4cfd2c7cdecc4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.2 git-c5b2488fc1f46c34f4fe3554693e2a5ecebc8a88</span>
    </div>
   </td>
  </tr>
@@ -540,7 +540,7 @@ $(document).ready(function(){initNavTree('d3/d8b/_item_factory_8php_source.html'
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>            <span class="keywordflow">if</span>(isset($this-&gt;list[$offset = self::getListOffset($id, $meta)])){</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>                $item = clone $this-&gt;list[$offset];</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>            }elseif(isset($this-&gt;list[$zero = self::getListOffset($id, 0)]) &amp;&amp; $this-&gt;list[$zero] instanceof <a class="code hl_class" href="../../dc/d20/classpocketmine_1_1item_1_1_durable.html">Durable</a>){</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>                <span class="keywordflow">if</span>($meta &lt;= $this-&gt;list[$zero]-&gt;getMaxDurability()){</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>                <span class="keywordflow">if</span>($meta &gt;= 0 &amp;&amp; $meta &lt;= $this-&gt;list[$zero]-&gt;getMaxDurability()){</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>                    $item = clone $this-&gt;list[$zero];</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>                    $item-&gt;setDamage($meta);</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>                }<span class="keywordflow">else</span>{</div>

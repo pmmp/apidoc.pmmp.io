@@ -52,5 +52,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_seri
     [ "putVarLong", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a3c3434058ab67359f28c6d76ef16d3e9", null ],
     [ "putVector3", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#aa4a64c376839f96be44d7a389e211725", null ],
     [ "putVector3Nullable", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a1b728b1ff0ff741238eafeb000b9b1cf", null ],
-    [ "rewind", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a9a544acb5b5614cdedfe2f91d250361c", null ]
+    [ "readOptional", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c", null ],
+    [ "rewind", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a9a544acb5b5614cdedfe2f91d250361c", null ],
+    [ "writeOptional", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085", null ]
 ];

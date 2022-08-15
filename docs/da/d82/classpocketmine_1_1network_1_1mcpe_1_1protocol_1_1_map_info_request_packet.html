@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.3 git-d77a95e4aff2c94312ce1dd3d8c4cfd2c7cdecc4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.2 git-c5b2488fc1f46c34f4fe3554693e2a5ecebc8a88</span>
    </div>
   </td>
  </tr>
@@ -136,11 +136,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a754046070b52b948535218120383d7e9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_map_info_request_packet.html#a754046070b52b948535218120383d7e9">create</a> (int $mapId)</td></tr>
-<tr class="separator:a754046070b52b948535218120383d7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0674702c7e243dc2e696a2a7edb89b94"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_map_info_request_packet.html#a0674702c7e243dc2e696a2a7edb89b94">create</a> (int $mapId, array $clientPixels)</td></tr>
+<tr class="separator:a0674702c7e243dc2e696a2a7edb89b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a4458b29cb04fc94d29b0fa4f10686206"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_map_info_request_packet.html#a4458b29cb04fc94d29b0fa4f10686206">$clientPixels</a> = []</td></tr>
+<tr class="separator:a4458b29cb04fc94d29b0fa4f10686206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a435e8e5640d36fa7db716ad2148843f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_map_info_request_packet.html#a435e8e5640d36fa7db716ad2148843f3">$mapId</a></td></tr>
 <tr class="separator:a435e8e5640d36fa7db716ad2148843f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#aa8f8e8ec577e46952ad065c9ede0943a">$recipientSubId</a> = 0</td></tr>
@@ -165,7 +167,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00019">19</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00021">21</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9e53bcf6c12eab41fd619f5d812c1be2" name="a9e53bcf6c12eab41fd619f5d812c1be2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e53bcf6c12eab41fd619f5d812c1be2">&#9670;&nbsp;</a></span>__get()</h2>
@@ -276,8 +278,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a754046070b52b948535218120383d7e9" name="a754046070b52b948535218120383d7e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a754046070b52b948535218120383d7e9">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a0674702c7e243dc2e696a2a7edb89b94" name="a0674702c7e243dc2e696a2a7edb89b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0674702c7e243dc2e696a2a7edb89b94">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,8 +291,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\MapInfoRequestPacket::create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$mapId</em></td><td>)</td>
+          <td class="paramname"><em>$mapId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$clientPixels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -299,9 +311,14 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >@generate-create-func </p>
+<p >@generate-create-func </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">MapInfoRequestPacketClientPixel[]</td><td class="paramname">$clientPixels</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 
 </div>
 </div>
@@ -410,7 +427,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 
 </div>
 </div>
@@ -499,7 +516,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 
 </div>
 </div>
@@ -560,7 +577,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 
 </div>
 </div>
@@ -594,6 +611,22 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4458b29cb04fc94d29b0fa4f10686206" name="a4458b29cb04fc94d29b0fa4f10686206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4458b29cb04fc94d29b0fa4f10686206">&#9670;&nbsp;</a></span>$clientPixels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">array pocketmine\network\mcpe\protocol\MapInfoRequestPacket::$clientPixels = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00026">26</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+
+</div>
+</div>
 <a id="a435e8e5640d36fa7db716ad2148843f3" name="a435e8e5640d36fa7db716ad2148843f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a435e8e5640d36fa7db716ad2148843f3">&#9670;&nbsp;</a></span>$mapId</h2>
 
@@ -606,7 +639,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00024">24</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 
 </div>
 </div>
@@ -670,7 +703,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00020">20</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../d3/d48/_map_info_request_packet_8php_source.html">MapInfoRequestPacket.php</a>.</p>
 
 </div>
 </div>

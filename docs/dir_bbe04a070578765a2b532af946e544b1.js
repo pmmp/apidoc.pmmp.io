@@ -1,6 +1,9 @@
 var dir_bbe04a070578765a2b532af946e544b1 =
 [
     [ "vendor/pocketmine/bedrock-protocol/src/types/entity/Attribute.php", "d2/d71/vendor_2pocketmine_2bedrock-protocol_2src_2types_2entity_2_attribute_8php_source.html", null ],
+    [ "AttributeModifier.php", "d0/dc1/_attribute_modifier_8php_source.html", null ],
+    [ "AttributeModifierOperation.php", "de/df3/_attribute_modifier_operation_8php_source.html", null ],
+    [ "AttributeModifierTargetOperand.php", "d7/dbe/_attribute_modifier_target_operand_8php_source.html", null ],
     [ "BlockPosMetadataProperty.php", "d0/d21/_block_pos_metadata_property_8php_source.html", null ],
     [ "ByteMetadataProperty.php", "d3/dc3/_byte_metadata_property_8php_source.html", null ],
     [ "CompoundTagMetadataProperty.php", "d6/dec/_compound_tag_metadata_property_8php_source.html", null ],

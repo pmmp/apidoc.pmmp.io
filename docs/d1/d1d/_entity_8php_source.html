@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.3 git-d77a95e4aff2c94312ce1dd3d8c4cfd2c7cdecc4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.2 git-c5b2488fc1f46c34f4fe3554693e2a5ecebc8a88</span>
    </div>
   </td>
  </tr>
@@ -1412,7 +1412,7 @@ $(document).ready(function(){initNavTree('d1/d1d/_entity_8php_source.html','../.
 <div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>            $this-&gt;location-&gt;yaw, <span class="comment">//TODO: head yaw</span></div>
 <div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span>            $this-&gt;location-&gt;yaw, <span class="comment">//TODO: body yaw (wtf mojang?)</span></div>
 <div class="line"><a id="l01468" name="l01468"></a><span class="lineno"> 1468</span>            array_map(function(<a class="code hl_class" href="../../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html">Attribute</a> $attr) : NetworkAttribute{</div>
-<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>                return new NetworkAttribute($attr-&gt;getId(), $attr-&gt;getMinValue(), $attr-&gt;getMaxValue(), $attr-&gt;getValue(), $attr-&gt;getDefaultValue());</div>
+<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>                return new NetworkAttribute($attr-&gt;getId(), $attr-&gt;getMinValue(), $attr-&gt;getMaxValue(), $attr-&gt;getValue(), $attr-&gt;getDefaultValue(), []);</div>
 <div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span>            }, $this-&gt;attributeMap-&gt;getAll()),</div>
 <div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span>            $this-&gt;getAllNetworkData(),</div>
 <div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>            [] <span class="comment">//TODO: entity links</span></div>

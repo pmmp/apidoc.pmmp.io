@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.6.3 git-d77a95e4aff2c94312ce1dd3d8c4cfd2c7cdecc4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.2 git-c5b2488fc1f46c34f4fe3554693e2a5ecebc8a88</span>
    </div>
   </td>
  </tr>
@@ -136,11 +136,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a44269dfaf867a5318c334d1d0a556b4a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a44269dfaf867a5318c334d1d0a556b4a">create</a> (int $formId, string $formData)</td></tr>
-<tr class="separator:a44269dfaf867a5318c334d1d0a556b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09934224637332814effd12eb19d09a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#ad09934224637332814effd12eb19d09a">cancel</a> (int $formId, int $cancelReason)</td></tr>
+<tr class="separator:ad09934224637332814effd12eb19d09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146802ad53053440ff6589b8dae2ee48"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a146802ad53053440ff6589b8dae2ee48">response</a> (int $formId, string $formData)</td></tr>
+<tr class="separator:a146802ad53053440ff6589b8dae2ee48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a94a14818fe8479e0685b66ecf635c0ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a94a14818fe8479e0685b66ecf635c0ee">$cancelReason</a></td></tr>
+<tr class="separator:a94a14818fe8479e0685b66ecf635c0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2d26059738d1b62428adfb20c79c159"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#ad2d26059738d1b62428adfb20c79c159">$formData</a></td></tr>
 <tr class="separator:ad2d26059738d1b62428adfb20c79c159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0a0907726ab10347b39e74f007dd307"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#ae0a0907726ab10347b39e74f007dd307">$formId</a></td></tr>
@@ -149,6 +153,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#adaad4a5e300a6eefe7bd9cb321626ba6">$senderSubId</a> = 0</td></tr>
 <tr class="separator:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89633a856271131e8a446650a0d99fe4"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a89633a856271131e8a446650a0d99fe4">CANCEL_REASON_CLOSED</a> = 0</td></tr>
+<tr class="separator:a89633a856271131e8a446650a0d99fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7371a432fa83388518bea160d8ab8489"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a7371a432fa83388518bea160d8ab8489">CANCEL_REASON_USER_BUSY</a> = 1</td></tr>
+<tr class="separator:a7371a432fa83388518bea160d8ab8489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2792ffab2e1f8b6d34b2340737871a9e"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a2792ffab2e1f8b6d34b2340737871a9e">NETWORK_ID</a> = ProtocolInfo::MODAL_FORM_RESPONSE_PACKET</td></tr>
 <tr class="separator:a2792ffab2e1f8b6d34b2340737871a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3431ad9592d959cbe302d5706b8cad82"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a3431ad9592d959cbe302d5706b8cad82">PID_MASK</a> = 0x3ff</td></tr>
@@ -278,8 +286,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a44269dfaf867a5318c334d1d0a556b4a" name="a44269dfaf867a5318c334d1d0a556b4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44269dfaf867a5318c334d1d0a556b4a">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ad09934224637332814effd12eb19d09a" name="ad09934224637332814effd12eb19d09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09934224637332814effd12eb19d09a">&#9670;&nbsp;</a></span>cancel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +296,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static pocketmine\network\mcpe\protocol\ModalFormResponsePacket::create </td>
+          <td class="memname">static pocketmine\network\mcpe\protocol\ModalFormResponsePacket::cancel </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$formId</em>, </td>
@@ -296,8 +304,8 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$formData</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$cancelReason</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -311,9 +319,8 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>
@@ -422,7 +429,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00049">49</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>
@@ -511,7 +518,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00040">40</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00055">55</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>
@@ -572,7 +579,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00062">62</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>
@@ -605,7 +612,61 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a146802ad53053440ff6589b8dae2ee48" name="a146802ad53053440ff6589b8dae2ee48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146802ad53053440ff6589b8dae2ee48">&#9670;&nbsp;</a></span>response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\network\mcpe\protocol\ModalFormResponsePacket::response </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$formId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$formData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a94a14818fe8479e0685b66ecf635c0ee" name="a94a14818fe8479e0685b66ecf635c0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a14818fe8479e0685b66ecf635c0ee">&#9670;&nbsp;</a></span>$cancelReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\ModalFormResponsePacket::$cancelReason</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+
+</div>
+</div>
 <a id="ad2d26059738d1b62428adfb20c79c159" name="ad2d26059738d1b62428adfb20c79c159"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2d26059738d1b62428adfb20c79c159">&#9670;&nbsp;</a></span>$formData</h2>
 
@@ -618,7 +679,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00023">23</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>
@@ -634,7 +695,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00026">26</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>
@@ -683,6 +744,39 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/db7/_data_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../d1/db7/_data_packet_8php_source.html">DataPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a89633a856271131e8a446650a0d99fe4" name="a89633a856271131e8a446650a0d99fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89633a856271131e8a446650a0d99fe4">&#9670;&nbsp;</a></span>CANCEL_REASON_CLOSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ModalFormResponsePacket::CANCEL_REASON_CLOSED = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a7371a432fa83388518bea160d8ab8489" name="a7371a432fa83388518bea160d8ab8489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7371a432fa83388518bea160d8ab8489">&#9670;&nbsp;</a></span>CANCEL_REASON_USER_BUSY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ModalFormResponsePacket::CANCEL_REASON_USER_BUSY = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sent if a form is sent when the player is on a loading screen </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html#l00024">24</a> of file <a class="el" href="../../de/da6/_modal_form_response_packet_8php_source.html">ModalFormResponsePacket.php</a>.</p>
 
 </div>
 </div>

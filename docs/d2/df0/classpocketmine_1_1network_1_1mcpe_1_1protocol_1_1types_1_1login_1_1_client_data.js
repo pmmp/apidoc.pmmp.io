@@ -34,5 +34,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_
     [ "$SkinResourcePatch", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a799cd5c75732d71dd635b6c383b57ec1", null ],
     [ "$ThirdPartyName", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a444ac274dffb347f665e7345462b6d56", null ],
     [ "$ThirdPartyNameOnly", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a2541e78572ef4f7fec67c21cd4fbdf80", null ],
+    [ "$TrustedSkin", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#ae6578e68f3bb9748bafa18c67e6b1551", null ],
     [ "$UIProfile", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#ac450cd99e4cfd8678549584556cff5f3", null ]
 ];
