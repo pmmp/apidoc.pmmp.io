@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.2 git-c5b2488fc1f46c34f4fe3554693e2a5ecebc8a88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.3 git-5cb77c83657b62809bc33959d78202b702043995</span>
    </div>
   </td>
  </tr>
@@ -1470,7 +1470,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span> </div>
 <div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>        $ev = <span class="keyword">new</span> PlayerBlockPickEvent($this, $block, $item);</div>
 <div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>        $existingSlot = $this-&gt;inventory-&gt;first($item);</div>
-<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>        <span class="keywordflow">if</span>($existingSlot === -1 &amp;&amp; $this-&gt;hasFiniteResources()){</div>
+<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>        <span class="keywordflow">if</span>($existingSlot === -1 &amp;&amp; ($this-&gt;hasFiniteResources() || $this-&gt;isSpectator())){</div>
 <div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>            $ev-&gt;cancel();</div>
 <div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>        }</div>
 <div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>        $ev-&gt;call();</div>
@@ -2349,7 +2349,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_human_8php_source.html#l00077">Human.php:77</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00076">Living.php:76</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_skin_html"><div class="ttname"><a href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">pocketmine\entity\Skin</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d80/_skin_8php_source.html#l00035">Skin.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_skin_html"><div class="ttname"><a href="../../d8/d49/classpocketmine_1_1entity_1_1_skin.html">pocketmine\entity\Skin</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d80/_skin_8php_source.html#l00034">Skin.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_arm_swing_animation_html"><div class="ttname"><a href="../../d7/dfc/classpocketmine_1_1entity_1_1animation_1_1_arm_swing_animation.html">pocketmine\entity\animation\ArmSwingAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d13/_arm_swing_animation_8php_source.html#l00030">ArmSwingAnimation.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_critical_hit_animation_html"><div class="ttname"><a href="../../dd/d0b/classpocketmine_1_1entity_1_1animation_1_1_critical_hit_animation.html">pocketmine\entity\animation\CriticalHitAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d47/_critical_hit_animation_8php_source.html#l00029">CriticalHitAnimation.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1effect_1_1_vanilla_effects_html"><div class="ttname"><a href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">pocketmine\entity\effect\VanillaEffects</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0d/_vanilla_effects_8php_source.html#l00063">VanillaEffects.php:63</a></div></div>
@@ -2544,7 +2544,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1_chunk_listener_html"><div class="ttname"><a href="../../de/dac/interfacepocketmine_1_1world_1_1_chunk_listener.html">pocketmine\world\ChunkListener</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de8/_chunk_listener_8php_source.html#l00041">ChunkListener.php:41</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1sound_1_1_sound_html"><div class="ttname"><a href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">pocketmine\world\sound\Sound</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db3/_sound_8php_source.html#l00029">Sound.php:29</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1permission_html_afdd461d1ff1079ac57a9cb8eae807e5b"><div class="ttname"><a href="../../d6/dc0/namespacepocketmine_1_1permission.html#afdd461d1ff1079ac57a9cb8eae807e5b">pocketmine\permission\hasPermission</a></div><div class="ttdeci">hasPermission($name)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de1/_permissible_delegate_trait_8php_source.html#l00058">PermissibleDelegateTrait.php:58</a></div></div>
-<div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00206">PocketMine.php:206</a></div></div>
+<div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00207">PocketMine.php:207</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

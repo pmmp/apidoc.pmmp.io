@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.2 git-c5b2488fc1f46c34f4fe3554693e2a5ecebc8a88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.3 git-5cb77c83657b62809bc33959d78202b702043995</span>
    </div>
   </td>
  </tr>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('d9/d27/_async_pool_8php_source.html','
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Cannot submit the same AsyncTask instance more than once&quot;</span>);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        $task-&gt;progressUpdates = new \Threaded;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        $task-&gt;progressUpdates = new \Threaded();</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        $task-&gt;setSubmitted();</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        $this-&gt;getWorker($worker)-&gt;stack($task);</div>
