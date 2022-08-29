@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.7.3 git-5cb77c83657b62809bc33959d78202b702043995</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-fb25e0541676f5cfbe7b1601507533c500a11f54</span>
    </div>
   </td>
  </tr>
@@ -126,34 +126,33 @@ $(document).ready(function(){initNavTree('df/dc4/_multi_recipe_8php_source.html'
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">const</span> TYPE_FIREWORKS = <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000002&quot;</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">const</span> TYPE_MAP_LOCKING_CARTOGRAPHY = <span class="stringliteral">&quot;602234E4-CAC1-4353-8BB7-B1EBFF70024B&quot;</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> UuidInterface $recipeId;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $recipeNetId;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">int</span> $typeId, UuidInterface $recipeId, <span class="keywordtype">int</span> $recipeNetId){</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        parent::__construct($typeId);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;recipeId = $recipeId;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;recipeNetId = $recipeNetId;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRecipeId() : UuidInterface{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> $this-&gt;recipeId;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRecipeNetId() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> $this-&gt;recipeNetId;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> decode(<span class="keywordtype">int</span> $typeId, <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $uuid = $in-&gt;<a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a4422362716d1330111535838be2f2776">getUUID</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $recipeNetId = $in-&gt;readGenericTypeNetworkId();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($typeId, $uuid, $recipeNetId);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> encode(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $out-&gt;putUUID($this-&gt;recipeId);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $out-&gt;writeGenericTypeNetworkId($this-&gt;recipeNetId);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">int</span> $typeId,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">private</span> UuidInterface $recipeId,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $recipeNetId</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    ){</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        parent::__construct($typeId);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRecipeId() : UuidInterface{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> $this-&gt;recipeId;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRecipeNetId() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> $this-&gt;recipeNetId;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> decode(<span class="keywordtype">int</span> $typeId, <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $uuid = $in-&gt;<a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a4422362716d1330111535838be2f2776">getUUID</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $recipeNetId = $in-&gt;readGenericTypeNetworkId();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($typeId, $uuid, $recipeNetId);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">public</span> <span class="keyword">function</span> encode(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $out-&gt;putUUID($this-&gt;recipeId);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $out-&gt;writeGenericTypeNetworkId($this-&gt;recipeNetId);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00061">bedrock-protocol/src/serializer/PacketSerializer.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a4422362716d1330111535838be2f2776"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a4422362716d1330111535838be2f2776">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getUUID</a></div><div class="ttdeci">getUUID()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00095">bedrock-protocol/src/serializer/PacketSerializer.php:95</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe_html"><div class="ttname"><a href="../../d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html">pocketmine\network\mcpe\protocol\types\recipe\MultiRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc4/_multi_recipe_8php_source.html#l00020">MultiRecipe.php:20</a></div></div>

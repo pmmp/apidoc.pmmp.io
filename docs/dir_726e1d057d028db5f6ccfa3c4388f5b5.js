@@ -3,6 +3,7 @@ var dir_726e1d057d028db5f6ccfa3c4388f5b5 =
     [ "stackrequest", "dir_66fd5caf0a2ac1d3add3d110dad92375.html", "dir_66fd5caf0a2ac1d3add3d110dad92375" ],
     [ "stackresponse", "dir_3434084109d5bce52e9950e957338f0a.html", "dir_3434084109d5bce52e9950e957338f0a" ],
     [ "ContainerIds.php", "de/db3/_container_ids_8php_source.html", null ],
+    [ "ContainerUIIds.php", "d9/d01/_container_u_i_ids_8php_source.html", null ],
     [ "CreativeContentEntry.php", "df/d8f/_creative_content_entry_8php_source.html", null ],
     [ "InventoryTransactionChangedSlotsHack.php", "d1/d9f/_inventory_transaction_changed_slots_hack_8php_source.html", null ],
     [ "ItemStack.php", "da/d1e/_item_stack_8php_source.html", null ],

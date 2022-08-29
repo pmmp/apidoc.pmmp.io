@@ -1,5 +1,5 @@
 var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_depreca2d8988f2c81b79d79999716180585eb5 =
 [
-    [ "__construct", "dc/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_depreca2d8988f2c81b79d79999716180585eb5.html#a5187408e75b0224cd2fd73187be28f7e", null ],
+    [ "__construct", "dc/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_depreca2d8988f2c81b79d79999716180585eb5.html#a3c64893c42f56f9114300adeb848e954", null ],
     [ "getResults", "dc/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_depreca2d8988f2c81b79d79999716180585eb5.html#ac3b5a346e833814dba4ca3646299efd3", null ]
 ];

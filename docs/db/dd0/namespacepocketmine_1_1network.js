@@ -118,6 +118,7 @@ var namespacepocketmine_1_1network =
               [ "ItemStackResponseSlotInfo", "d9/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackresponse_1_1_item_stack_response_slot_info.html", null ]
             ] ],
             [ "ContainerIds", "d0/d3b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_ids.html", null ],
+            [ "ContainerUIIds", "db/d4b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_u_i_ids.html", null ],
             [ "CreativeContentEntry", "d8/d72/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_creative_content_entry.html", null ],
             [ "InventoryTransactionChangedSlotsHack", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack" ],
             [ "ItemStack", "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html", "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack" ],
@@ -179,7 +180,7 @@ var namespacepocketmine_1_1network =
           [ "BossBarColor", "d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_boss_bar_color.html", null ],
           [ "CacheableNbt", "d1/d14/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_cacheable_nbt.html", "d1/d14/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_cacheable_nbt" ],
           [ "ChatRestrictionLevel", "d4/d14/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chat_restriction_level.html", null ],
-          [ "ChunkCacheBlob", "df/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chunk_cache_blob.html", "df/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chunk_cache_blob" ],
+          [ "ChunkCacheBlob", "df/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chunk_cache_blob.html", null ],
           [ "ChunkPosition", "df/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chunk_position.html", null ],
           [ "DeviceOS", "df/da5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_device_o_s.html", null ],
           [ "DimensionData", "d7/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_data.html", null ],

@@ -84,7 +84,7 @@ var NAVTREEINDEX19 =
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,116,17],
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,1,0,116,17],
 "d1/d9e/_player_crafting_inventory_8php_source.html":[4,0,0,9,9],
-"d1/d9f/_inventory_transaction_changed_slots_hack_8php_source.html":[4,0,1,0,1,0,1,2,4],
+"d1/d9f/_inventory_transaction_changed_slots_hack_8php_source.html":[4,0,1,0,1,0,1,2,5],
 "d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html":[2,0,1,16,0,6,1,4,5],
 "d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html":[3,0,1,16,0,6,1,4,5],
 "d1/da2/_crash_dump_data_plugin_entry_8php_source.html":[4,0,0,4,3],

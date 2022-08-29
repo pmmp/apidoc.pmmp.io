@@ -7,6 +7,7 @@ var classpocketmine_1_1utils_1_1_utils =
     [ "getMachineUniqueId", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1", null ],
     [ "getNiceClassName", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d", null ],
     [ "getNiceClosureName", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019", null ],
+    [ "getOpcacheJitMode", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a", null ],
     [ "getOS", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67", null ],
     [ "getReferenceCount", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#adffa11f45e4f965a8ee68d926703d0e1", null ],
     [ "hexdump", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e", null ],

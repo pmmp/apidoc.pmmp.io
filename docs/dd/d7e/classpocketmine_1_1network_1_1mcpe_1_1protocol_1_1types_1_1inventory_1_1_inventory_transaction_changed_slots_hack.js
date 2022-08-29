@@ -1,5 +1,5 @@
 var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack =
 [
-    [ "__construct", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html#a48d39a64bcba53cb6fe2f1faa0f6f401", null ],
+    [ "__construct", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html#ad68227e277aa6a955b373a73ebe314f0", null ],
     [ "getChangedSlotIndexes", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html#a3a7ed7650b5742e59b701d6225ac8c62", null ]
 ];

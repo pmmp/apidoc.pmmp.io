@@ -217,7 +217,7 @@ var NAVTREEINDEX39 =
 "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#ad9c5873cca5f5836db8e9d3146cd84b8":[3,0,1,15,2,13],
 "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#af684e98eca53a5954724ca403db3c843":[2,0,1,15,2,7],
 "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#af684e98eca53a5954724ca403db3c843":[3,0,1,15,2,7],
-"d3/d8d/_u_i_inventory_slot_offset_8php_source.html":[4,0,1,0,1,0,1,2,12],
+"d3/d8d/_u_i_inventory_slot_offset_8php_source.html":[4,0,1,0,1,0,1,2,13],
 "d3/d90/_resource_pack_exception_8php_source.html":[4,0,0,17,2],
 "d3/d91/_transaction_builder_inventory_8php_source.html":[4,0,0,9,0,3],
 "d3/d97/_feature_registry_packet_8php_source.html":[4,0,1,0,1,0,62],
