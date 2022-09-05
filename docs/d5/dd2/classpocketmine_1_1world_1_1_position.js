@@ -15,6 +15,7 @@ var classpocketmine_1_1world_1_1_position =
     [ "maxComponents", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a3501ceefd98b2e50c99ebf3c02e33ccc", null ],
     [ "minComponents", "d5/dd2/classpocketmine_1_1world_1_1_position.html#ac158644cb231fd9626f2be71ae52da09", null ],
     [ "north", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a4a1fb0292bfdef06f9eaa2c7548cc527", null ],
+    [ "round", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a33139a6ee53fd623982069aabc85c651", null ],
     [ "sides", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a2c5e440af846d5fde49be5459fe2db8a", null ],
     [ "sidesAroundAxis", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a05ba633e191e5af3f2a4ce84059a4b3d", null ],
     [ "sidesArray", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a2973632d0c1e01c9d61c23d75a9775ed", null ],

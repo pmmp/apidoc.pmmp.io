@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-fb25e0541676f5cfbe7b1601507533c500a11f54</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-c063198b893c945bc729282eeb4dd6746c61f269</span>
    </div>
   </td>
  </tr>
@@ -149,9 +149,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Performs a ray trace between the start and end coordinates. This returns a Generator which yields Vector3s containing the coordinates of voxels it passes through.</p>
-<p >This is an implementation of the algorithm described in the link below. <a class="el" href="../../">|Vector3[] -return &lt;int, Vector3, void, void&gt; </a></p>
+<p >The first <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> is <code>$start-&gt;floor()</code>. Every subsequent <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> has a taxicab distance of exactly 1 from the previous <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>; if the ray crosses the intersection of multiple axis boundaries directly, the algorithm prefers crossing the boundaries in the order <code>Z -&gt; Y -&gt; X</code>.</p>
+<p >If <code>$end</code> is on an axis boundary, the final <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> may or may not cross that boundary. Otherwise, the final <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> is equal to <code>$end-&gt;floor()</code>.</p>
+<p >This is an implementation of the algorithm described in the link below. <a class="el" href="../../">|Vector3[] -return &lt;int, Vector3, void, void&gt;   if $start and $end have zero distance. </a></p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html#l00055">55</a> of file <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html">VoxelRayTrace.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html#l00067">67</a> of file <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html">VoxelRayTrace.php</a>.</p>
 
 </div>
 </div>
@@ -195,9 +197,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Performs a ray trace from the start position in the given direction, for a distance of $maxDistance. This returns a Generator which yields Vector3s containing the coordinates of voxels it passes through.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d39/classpocketmine_1_1math_1_1_voxel_ray_trace.html#a9a901a830f14a4c42b0405b472a042a9">VoxelRayTrace::betweenPoints</a> for precise semantics</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>\Generator|Vector3[] @phpstan-return \Generator&lt;int, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>, void, void&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html#l00041">41</a> of file <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html">VoxelRayTrace.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html#l00043">43</a> of file <a class="el" href="../../dc/d93/_voxel_ray_trace_8php_source.html">VoxelRayTrace.php</a>.</p>
 
 </div>
 </div>

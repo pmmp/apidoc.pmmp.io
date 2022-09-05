@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-fb25e0541676f5cfbe7b1601507533c500a11f54</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-c063198b893c945bc729282eeb4dd6746c61f269</span>
    </div>
   </td>
  </tr>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('d9/d8d/_exception_trace_cleaner_8php_s
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d0/d23/classraklib_1_1utils_1_1_exception_trace_cleaner.html#a762df1ab023fd6cd4d95643bce685257">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d23/classraklib_1_1utils_1_1_exception_trace_cleaner.html#a762df1ab023fd6cd4d95643bce685257">getTrace</a>($start = 0, $trace = <span class="keyword">null</span>){</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">if</span>($trace === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&quot;xdebug_get_function_stack&quot;</span>)){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                $trace = array_reverse(xdebug_get_function_stack());</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&quot;xdebug_get_function_stack&quot;</span>) &amp;&amp; count($trace = @xdebug_get_function_stack()) !== 0){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                $trace = array_reverse($trace);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }<span class="keywordflow">else</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                $e = new \Exception();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                $trace = $e-&gt;getTrace();</div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-fb25e0541676f5cfbe7b1601507533c500a11f54</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-c063198b893c945bc729282eeb4dd6746c61f269</span>
    </div>
   </td>
  </tr>
@@ -217,8 +217,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Will return all the Items that has the same id and metadata (if not null). Won't check amount</p>
-<dl class="section return"><dt>Returns</dt><dd>Item[] </dd></dl>
+<p >Will return all the Items that has the same id and metadata (if not null). Won't check amount The returned array is indexed by slot number.</p>
+<dl class="section return"><dt>Returns</dt><dd>Item[] @phpstan-return array&lt;int, Item&gt; </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a9e8a9a58178c93680c225de229606fec">pocketmine\inventory\BaseInventory</a>.</p>
 
@@ -395,7 +395,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Item[] </dd></dl>
+<p >Returns an array of all the itemstacks in the inventory, indexed by their slot number. Empty slots are not included unless includeEmpty is true.</p>
+<dl class="section return"><dt>Returns</dt><dd>Item[] @phpstan-return array&lt;int, Item&gt; </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a0571e378479a314cd5bac0b9c33a14c2">pocketmine\block\inventory\DoubleChestInventory</a>, <a class="el" href="../../d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a0d43f95bd4f3d4602c4a71813d11a864">pocketmine\inventory\DelegateInventory</a>, <a class="el" href="../../d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a43e646d154a8134eb1e7294d158d576d">pocketmine\inventory\SimpleInventory</a>, and <a class="el" href="../../db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a641c15404415baf0e78a87f9c3ff5364">pocketmine\inventory\transaction\TransactionBuilderInventory</a>.</p>
 
@@ -561,9 +562,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the contents of the inventory. Non-numeric offsets or offsets larger than the size of the inventory are ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Item[]</td><td class="paramname">$items</td><td></td></tr>
+    <tr><td class="paramtype">Item[]</td><td class="paramname">$items</td><td>@phpstan-param array&lt;int, Item&gt; $items </td></tr>
   </table>
   </dd>
 </dl>
