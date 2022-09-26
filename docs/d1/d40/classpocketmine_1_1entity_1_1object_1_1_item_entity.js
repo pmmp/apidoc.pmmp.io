@@ -6,7 +6,7 @@ var classpocketmine_1_1entity_1_1object_1_1_item_entity =
     [ "canBeMovedByCurrents", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
     [ "canClimb", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a23093e6281aba70471af5c5e34051667", null ],
-    [ "canSaveWithChunk", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#af9c9f94d4c46643cbdaeb7d06d3e44b1", null ],
+    [ "canSaveWithChunk", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4", null ],
     [ "close", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a02eb3401e4fe566c7a2528aeb7b0222a", null ],
     [ "dealFireDamage", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#ae36a7e5064724e460fabfe810f2def20", null ],
     [ "despawnFrom", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a22a098fc4892820db7d15a73edea64ca", null ],

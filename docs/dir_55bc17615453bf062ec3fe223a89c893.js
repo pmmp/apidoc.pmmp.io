@@ -17,6 +17,7 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "ChatRestrictionLevel.php", "d8/dc8/_chat_restriction_level_8php_source.html", null ],
     [ "ChunkCacheBlob.php", "db/d3a/_chunk_cache_blob_8php_source.html", null ],
     [ "ChunkPosition.php", "d6/de6/_chunk_position_8php_source.html", null ],
+    [ "CompressionAlgorithm.php", "dd/d0a/_compression_algorithm_8php_source.html", null ],
     [ "DeviceOS.php", "dc/d03/_device_o_s_8php_source.html", null ],
     [ "DimensionData.php", "dc/dab/_dimension_data_8php_source.html", null ],
     [ "DimensionIds.php", "d9/d28/_dimension_ids_8php_source.html", null ],

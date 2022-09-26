@@ -7,5 +7,6 @@ var dir_0003aa60d4a21aee354b5b2fa826bf4b =
     [ "PacketHandler.php", "de/d8a/_packet_handler_8php_source.html", null ],
     [ "PreSpawnPacketHandler.php", "dd/dbe/_pre_spawn_packet_handler_8php_source.html", null ],
     [ "ResourcePacksPacketHandler.php", "d8/d59/_resource_packs_packet_handler_8php_source.html", null ],
+    [ "SessionStartPacketHandler.php", "d9/d7a/_session_start_packet_handler_8php_source.html", null ],
     [ "SpawnResponsePacketHandler.php", "d8/d0a/_spawn_response_packet_handler_8php_source.html", null ]
 ];

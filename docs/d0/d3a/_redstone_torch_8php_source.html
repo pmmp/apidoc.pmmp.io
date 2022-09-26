@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.8.2 git-47d98af6ac8ddd35893b769d1c24405e274469c4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-2db3498891e729bce9f03a4350c57da7ae513db6</span>
    </div>
   </td>
  </tr>
@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('d0/d3a/_redstone_torch_8php_source.htm
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        parent::__construct($idInfo, $name, $breakInfo);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> getId() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> $this-&gt;lit ? parent::getId() : $this-&gt;idInfoFlattened-&gt;getSecondId();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#aa6d503821e0e19625b5f70436aa36e4f">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#aa6d503821e0e19625b5f70436aa36e4f">getId</a>() : int{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return $this-&gt;lit ? parent::<a class="code hl_function" href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#aa6d503821e0e19625b5f70436aa36e4f">getId</a>() : $this-&gt;idInfoFlattened-&gt;getSecondId();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a0e5c208d6b354462631cccc7a1068d3f">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a0e5c208d6b354462631cccc7a1068d3f">readStateFromData</a>(<span class="keywordtype">int</span> $id, <span class="keywordtype">int</span> $stateMeta) : void{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        parent::<a class="code hl_function" href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a0e5c208d6b354462631cccc7a1068d3f">readStateFromData</a>($id, $stateMeta);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        parent::readStateFromData($id, $stateMeta);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;lit = $id !== $this-&gt;idInfoFlattened-&gt;getSecondId();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
@@ -155,6 +155,7 @@ $(document).ready(function(){initNavTree('d0/d3a/_redstone_torch_8php_source.htm
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_torch_html"><div class="ttname"><a href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html">pocketmine\block\RedstoneTorch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3a/_redstone_torch_8php_source.html#l00026">RedstoneTorch.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_torch_html_a0e5c208d6b354462631cccc7a1068d3f"><div class="ttname"><a href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a0e5c208d6b354462631cccc7a1068d3f">pocketmine\block\RedstoneTorch\readStateFromData</a></div><div class="ttdeci">readStateFromData(int $id, int $stateMeta)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3a/_redstone_torch_8php_source.html#l00041">RedstoneTorch.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_torch_html_a8cf4467129090cdf5d57afcfc37f4033"><div class="ttname"><a href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a8cf4467129090cdf5d57afcfc37f4033">pocketmine\block\RedstoneTorch\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3a/_redstone_torch_8php_source.html#l00058">RedstoneTorch.php:58</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_torch_html_aa6d503821e0e19625b5f70436aa36e4f"><div class="ttname"><a href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#aa6d503821e0e19625b5f70436aa36e4f">pocketmine\block\RedstoneTorch\getId</a></div><div class="ttdeci">getId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3a/_redstone_torch_8php_source.html#l00037">RedstoneTorch.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_torch_html_ad48c48af89f4761fd84ccf122984fd5c"><div class="ttname"><a href="../../d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#ad48c48af89f4761fd84ccf122984fd5c">pocketmine\block\RedstoneTorch\setLit</a></div><div class="ttdeci">setLit(bool $lit=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3a/_redstone_torch_8php_source.html#l00053">RedstoneTorch.php:53</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_torch_html"><div class="ttname"><a href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html">pocketmine\block\Torch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/_torch_8php_source.html#l00035">Torch.php:35</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>

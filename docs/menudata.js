@@ -104,7 +104,6 @@ var menudata={children:[
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"$",url:"functions_vars.html#index__24"},
 {text:"a",url:"functions_vars_a.html#index_a"},
-{text:"b",url:"functions_vars_b.html#index_b"},
 {text:"c",url:"functions_vars_c.html#index_c"},
 {text:"d",url:"functions_vars_d.html#index_d"},
 {text:"h",url:"functions_vars_h.html#index_h"},
