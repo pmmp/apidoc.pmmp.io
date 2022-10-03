@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-2db3498891e729bce9f03a4350c57da7ae513db6</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-cd4bb916764ab336537d4e801b1e32065da7354c</span>
    </div>
   </td>
  </tr>
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('db/deb/_explosion_8php_source.html','.
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                }</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                $entity-&gt;attack($ev);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                $entity-&gt;setMotion($motion-&gt;multiply($impact));</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                $entity-&gt;setMotion($entity-&gt;getMotion()-&gt;addVector($motion-&gt;multiply($impact)));</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            }</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>

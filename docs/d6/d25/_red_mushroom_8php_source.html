@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-2db3498891e729bce9f03a4350c57da7ae513db6</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-cd4bb916764ab336537d4e801b1e32065da7354c</span>
    </div>
   </td>
  </tr>
@@ -137,13 +137,17 @@ $(document).ready(function(){initNavTree('d6/d25/_red_mushroom_8php_source.html'
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a1b207d7cad19aa6c6d7ac01841166cd1">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a1b207d7cad19aa6c6d7ac01841166cd1">place</a>(<a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">BlockTransaction</a> $tx, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockClicked, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $down = $this-&gt;getSide(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::DOWN);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span>(!$down-&gt;isTransparent()){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">return</span> parent::place($tx, $item, $blockReplace, $blockClicked, $face, $clickVector, $player);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $position = $this-&gt;getPosition();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $lightLevel = $position-&gt;getWorld()-&gt;getFullLightAt($position-&gt;x, $position-&gt;y, $position-&gt;z);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $downId = $down-&gt;getId();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="comment">//TODO: nylium support</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>(($lightLevel &lt;= 12 &amp;&amp; !$down-&gt;isTransparent()) || $downId === BlockLegacyIds::MYCELIUM || $downId === BlockLegacyIds::PODZOL){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">return</span> parent::place($tx, $item, $blockReplace, $blockClicked, $face, $clickVector, $player);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00052">Block.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/_flowable_8php_source.html#l00033">Flowable.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_red_mushroom_html"><div class="ttname"><a href="../../d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html">pocketmine\block\RedMushroom</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d25/_red_mushroom_8php_source.html#l00032">RedMushroom.php:32</a></div></div>

@@ -114,6 +114,7 @@ var hierarchy =
         [ "pocketmine\\block\\LapisOre", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html", null ],
         [ "pocketmine\\block\\Loom", "df/d1f/classpocketmine_1_1block_1_1_loom.html", null ],
         [ "pocketmine\\block\\Magma", "d5/d81/classpocketmine_1_1block_1_1_magma.html", null ],
+        [ "pocketmine\\block\\Melon", "de/d38/classpocketmine_1_1block_1_1_melon.html", null ],
         [ "pocketmine\\block\\MushroomStem", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html", null ],
         [ "pocketmine\\block\\Mycelium", "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html", null ],
         [ "pocketmine\\block\\NetherQuartzOre", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html", null ],
@@ -263,7 +264,6 @@ var hierarchy =
           [ "pocketmine\\block\\Lava", "d1/d7b/classpocketmine_1_1block_1_1_lava.html", null ],
           [ "pocketmine\\block\\Water", "d2/d3e/classpocketmine_1_1block_1_1_water.html", null ]
         ] ],
-        [ "pocketmine\\block\\Melon", "de/d38/classpocketmine_1_1block_1_1_melon.html", null ],
         [ "pocketmine\\block\\MonsterSpawner", "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html", null ],
         [ "pocketmine\\block\\NetherPortal", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html", null ],
         [ "pocketmine\\block\\PressurePlate", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html", [
@@ -1912,6 +1912,7 @@ var hierarchy =
       [ "pocketmine\\world\\sound\\BucketEmptyWaterSound", "de/d5e/classpocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound.html", null ],
       [ "pocketmine\\world\\sound\\BucketFillLavaSound", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html", null ],
       [ "pocketmine\\world\\sound\\BucketFillWaterSound", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html", null ],
+      [ "pocketmine\\world\\sound\\BurpSound", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound.html", null ],
       [ "pocketmine\\world\\sound\\ChestCloseSound", "da/df1/classpocketmine_1_1world_1_1sound_1_1_chest_close_sound.html", null ],
       [ "pocketmine\\world\\sound\\ChestOpenSound", "d7/d29/classpocketmine_1_1world_1_1sound_1_1_chest_open_sound.html", null ],
       [ "pocketmine\\world\\sound\\ClickSound", "d1/d6b/classpocketmine_1_1world_1_1sound_1_1_click_sound.html", null ],

@@ -1641,6 +1641,7 @@ var annotated_dup =
           [ "BucketEmptyWaterSound", "de/d5e/classpocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound.html", "de/d5e/classpocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound" ],
           [ "BucketFillLavaSound", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound" ],
           [ "BucketFillWaterSound", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound" ],
+          [ "BurpSound", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound.html", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound" ],
           [ "ChestCloseSound", "da/df1/classpocketmine_1_1world_1_1sound_1_1_chest_close_sound.html", "da/df1/classpocketmine_1_1world_1_1sound_1_1_chest_close_sound" ],
           [ "ChestOpenSound", "d7/d29/classpocketmine_1_1world_1_1sound_1_1_chest_open_sound.html", "d7/d29/classpocketmine_1_1world_1_1sound_1_1_chest_open_sound" ],
           [ "ClickSound", "d1/d6b/classpocketmine_1_1world_1_1sound_1_1_click_sound.html", "d1/d6b/classpocketmine_1_1world_1_1sound_1_1_click_sound" ],

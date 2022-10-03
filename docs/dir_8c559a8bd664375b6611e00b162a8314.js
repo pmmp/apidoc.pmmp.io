@@ -17,6 +17,7 @@ var dir_8c559a8bd664375b6611e00b162a8314 =
     [ "BucketEmptyWaterSound.php", "d3/d98/_bucket_empty_water_sound_8php_source.html", null ],
     [ "BucketFillLavaSound.php", "d6/d2a/_bucket_fill_lava_sound_8php_source.html", null ],
     [ "BucketFillWaterSound.php", "de/d17/_bucket_fill_water_sound_8php_source.html", null ],
+    [ "BurpSound.php", "de/d44/_burp_sound_8php_source.html", null ],
     [ "ChestCloseSound.php", "d0/ddc/_chest_close_sound_8php_source.html", null ],
     [ "ChestOpenSound.php", "d9/d3d/_chest_open_sound_8php_source.html", null ],
     [ "ClickSound.php", "d0/d5c/_click_sound_8php_source.html", null ],

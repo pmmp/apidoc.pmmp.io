@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-2db3498891e729bce9f03a4350c57da7ae513db6</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-cd4bb916764ab336537d4e801b1e32065da7354c</span>
    </div>
   </td>
  </tr>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keyword">public</span> <span class="keyword">function</span> onClientRemoveWindow(<span class="keywordtype">int</span> $id) : void{</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        if($id === $this-&gt;lastInventoryNetworkId){</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">if</span>($id !== $this-&gt;pendingCloseWindowId){</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">if</span>(isset($this-&gt;windowMap[$id]) &amp;&amp; $id !== $this-&gt;pendingCloseWindowId){</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                $this-&gt;<span class="keyword">remove</span>($id);</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                $this-&gt;player-&gt;removeCurrentWindow();</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            }</div>
