@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-10b8dcfdd136c351fd18864e6b7e0c9257ea8a0d</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-2a910c1cc286cab793608f18881bc70f1be6aaeb</span>
    </div>
   </td>
  </tr>
@@ -191,8 +191,8 @@ $(document).ready(function(){initNavTree('d9/d73/entity_2projectile_2_splash_pot
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">if</span>($hasEffects){</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">if</span>(!$this-&gt;willLinger()){</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">foreach</span>($this-&gt;getWorld()-&gt;getNearbyEntities($this-&gt;boundingBox-&gt;expandedCopy(4.125, 2.125, 4.125), $this) as $entity){</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    <span class="keywordflow">if</span>($entity instanceof Living &amp;&amp; $entity-&gt;isAlive()){</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">foreach</span>($this-&gt;getWorld()-&gt;getCollidingEntities($this-&gt;boundingBox-&gt;expandedCopy(4.125, 2.125, 4.125), $this) as $entity){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    <span class="keywordflow">if</span>($entity instanceof Living){</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        $distanceSquared = $entity-&gt;getEyePos()-&gt;distanceSquared($this-&gt;location);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                        <span class="keywordflow">if</span>($distanceSquared &gt; 16){ <span class="comment">//4 blocks</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                            <span class="keywordflow">continue</span>;</div>

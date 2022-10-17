@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-10b8dcfdd136c351fd18864e6b7e0c9257ea8a0d</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-2a910c1cc286cab793608f18881bc70f1be6aaeb</span>
    </div>
   </td>
  </tr>
@@ -370,7 +370,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        $zSpawnChunk = $spawnLocation-&gt;getFloorZ() &gt;&gt; Chunk::COORD_BIT_SIZE;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        $world-&gt;registerChunkLoader($this-&gt;chunkLoader, $xSpawnChunk, $zSpawnChunk, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        $world-&gt;registerChunkListener($this, $xSpawnChunk, $zSpawnChunk);</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        $this-&gt;usedChunks[World::chunkHash($xSpawnChunk, $zSpawnChunk)] = UsedChunkStatus::NEEDED();</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        $this-&gt;usedChunks[<a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3e23f0eea2f9345b60e667a79aa45fd7">World::chunkHash</a>($xSpawnChunk, $zSpawnChunk)] = UsedChunkStatus::NEEDED();</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        parent::__construct($spawnLocation, $this-&gt;playerInfo-&gt;getSkin(), $namedtag);</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    }</div>
@@ -2531,7 +2531,8 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_text_format_html_aa4015b5a0efd597d5ddd0db4043ec64e"><div class="ttname"><a href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#aa4015b5a0efd597d5ddd0db4043ec64e">pocketmine\utils\TextFormat\clean</a></div><div class="ttdeci">static clean(string $string, bool $removeFormat=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d59/_text_format_8php_source.html#l00143">TextFormat.php:143</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_position_html"><div class="ttname"><a href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">pocketmine\world\Position</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0f/_position_8php_source.html#l00030">Position.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_position_html_a298ffd1f76195d1c6aabf0eabdaa91a3"><div class="ttname"><a href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html#a298ffd1f76195d1c6aabf0eabdaa91a3">pocketmine\world\Position\getWorld</a></div><div class="ttdeci">getWorld()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0f/_position_8php_source.html#l00068">Position.php:68</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00132">World.php:132</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00137">World.php:137</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_a3e23f0eea2f9345b60e667a79aa45fd7"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a3e23f0eea2f9345b60e667a79aa45fd7">pocketmine\world\World\chunkHash</a></div><div class="ttdeci">static chunkHash(int $x, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00354">World.php:354</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_chunk_html"><div class="ttname"><a href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">pocketmine\world\format\Chunk</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/_chunk_8php_source.html#l00034">Chunk.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1sound_1_1_entity_attack_no_damage_sound_html"><div class="ttname"><a href="../../da/de5/classpocketmine_1_1world_1_1sound_1_1_entity_attack_no_damage_sound.html">pocketmine\world\sound\EntityAttackNoDamageSound</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/db8/_entity_attack_no_damage_sound_8php_source.html#l00033">EntityAttackNoDamageSound.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1sound_1_1_entity_attack_sound_html"><div class="ttname"><a href="../../d1/d79/classpocketmine_1_1world_1_1sound_1_1_entity_attack_sound.html">pocketmine\world\sound\EntityAttackSound</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df3/_entity_attack_sound_8php_source.html#l00033">EntityAttackSound.php:33</a></div></div>

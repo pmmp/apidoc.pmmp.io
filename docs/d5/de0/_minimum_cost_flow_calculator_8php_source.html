@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.1 git-10b8dcfdd136c351fd18864e6b7e0c9257ea8a0d</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-2a910c1cc286cab793608f18881bc70f1be6aaeb</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('d5/de0/_minimum_cost_flow_calculator_8
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                Facing::SOUTH =&gt; ++$z</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            };</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span>(!isset($this-&gt;flowCostVisited[$hash = World::blockHash($x, $y, $z)])){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span>(!isset($this-&gt;flowCostVisited[$hash = <a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#acc9cf8f49b0adeebf371dde72ad490ba">World::blockHash</a>($x, $y, $z)])){</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="keywordflow">if</span>(!$this-&gt;world-&gt;isInWorld($x, $y, $z) || !$this-&gt;canFlowInto($this-&gt;world-&gt;getBlockAt($x, $y, $z))){</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    $this-&gt;flowCostVisited[$hash] = self::BLOCKED;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                }elseif($this-&gt;world-&gt;getBlockAt($x, $y - 1, $z)-&gt;canBeFlowedInto()){</div>
@@ -205,12 +205,12 @@ $(document).ready(function(){initNavTree('d5/de0/_minimum_cost_flow_calculator_8
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            };</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span>(!$this-&gt;world-&gt;isInWorld($x, $y, $z) || !$this-&gt;canFlowInto($this-&gt;world-&gt;getBlockAt($x, $y, $z))){</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                $this-&gt;flowCostVisited[World::blockHash($x, $y, $z)] = self::BLOCKED;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                $this-&gt;flowCostVisited[<a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#acc9cf8f49b0adeebf371dde72ad490ba">World::blockHash</a>($x, $y, $z)] = self::BLOCKED;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }elseif($this-&gt;world-&gt;getBlockAt($x, $y - 1, $z)-&gt;canBeFlowedInto()){</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                $this-&gt;flowCostVisited[World::blockHash($x, $y, $z)] = self::CAN_FLOW_DOWN;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                $this-&gt;flowCostVisited[<a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#acc9cf8f49b0adeebf371dde72ad490ba">World::blockHash</a>($x, $y, $z)] = self::CAN_FLOW_DOWN;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                $flowCost[$j] = $maxCost = 0;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }elseif($maxCost &gt; 0){</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                $this-&gt;flowCostVisited[World::blockHash($x, $y, $z)] = self::CAN_FLOW;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                $this-&gt;flowCostVisited[<a class="code hl_function" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#acc9cf8f49b0adeebf371dde72ad490ba">World::blockHash</a>($x, $y, $z)] = self::CAN_FLOW;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                $opposite = <a class="code hl_function" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#adb0c50bed6e2a948367c7c9ca6b0831d">Facing::opposite</a>($j);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                $flowCost[$j] = $this-&gt;calculateFlowCost($x, $y, $z, 1, $maxCost, $opposite, $opposite);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                $maxCost = min($maxCost, $flowCost[$j]);</div>
@@ -242,7 +242,8 @@ $(document).ready(function(){initNavTree('d5/de0/_minimum_cost_flow_calculator_8
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_minimum_cost_flow_calculator_html_ac08131980b2e9ccb7884f54895bb242c"><div class="ttname"><a href="../../db/d5b/classpocketmine_1_1block_1_1utils_1_1_minimum_cost_flow_calculator.html#ac08131980b2e9ccb7884f54895bb242c">pocketmine\block\utils\MinimumCostFlowCalculator\__construct</a></div><div class="ttdeci">__construct(private World $world, private int $flowDecayPerBlock, private \Closure $canFlowInto)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/_minimum_cost_flow_calculator_8php_source.html#l00048">MinimumCostFlowCalculator.php:48</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html_adb0c50bed6e2a948367c7c9ca6b0831d"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#adb0c50bed6e2a948367c7c9ca6b0831d">pocketmine\math\Facing\opposite</a></div><div class="ttdeci">static opposite(int $direction)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00099">Facing.php:99</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00132">World.php:132</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00137">World.php:137</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html_acc9cf8f49b0adeebf371dde72ad490ba"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#acc9cf8f49b0adeebf371dde72ad490ba">pocketmine\world\World\blockHash</a></div><div class="ttdeci">static blockHash(int $x, int $y, int $z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00373">World.php:373</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

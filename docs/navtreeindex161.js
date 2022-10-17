@@ -1,5 +1,11 @@
 var NAVTREEINDEX161 =
 {
+"dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#aa064d23077830ab265f931c3385a3e0d":[2,0,1,16,0,6,7,3],
+"dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,7,3],
+"dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[2,0,1,16,0,6,7,1],
+"dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,7,1],
+"dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#ae9c7b944efac0b296c8da9e10bc9b94e":[2,0,1,16,0,6,7,7],
+"dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#ae9c7b944efac0b296c8da9e10bc9b94e":[3,0,1,16,0,6,7,7],
 "dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#aed665ce61856cb38767999129a6af983":[3,0,1,16,0,6,7,5],
 "dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html#aed665ce61856cb38767999129a6af983":[2,0,1,16,0,6,7,5],
 "dc/df4/classpocketmine_1_1entity_1_1effect_1_1_invisibility_effect.html":[2,0,1,7,1,9],
@@ -224,16 +230,16 @@ var NAVTREEINDEX161 =
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a319a186a07d166461600dd4a639eb86f":[2,0,1,12,65,10],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a336d6f91be72079853413f5b4036a57d":[3,0,1,12,65,2],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a336d6f91be72079853413f5b4036a57d":[2,0,1,12,65,2],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a37fbd3ff1f1c8ca6257da82b6ee45922":[3,0,1,12,65,35],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a37fbd3ff1f1c8ca6257da82b6ee45922":[2,0,1,12,65,35],
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a37fbd3ff1f1c8ca6257da82b6ee45922":[3,0,1,12,65,35],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,65,41],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,1,12,65,41],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a49a05b01faaaf071449c97060fe44926":[2,0,1,12,65,0],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,65,0],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a49b1b1b68096cd3c7ab0f81cf01d0867":[2,0,1,12,65,22],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a49b1b1b68096cd3c7ab0f81cf01d0867":[3,0,1,12,65,22],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,65,5],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,1,12,65,5],
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,65,5],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,65,17],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,1,12,65,17],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a568624515bba5ff57e21ec8c828ade56":[2,0,1,12,65,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX161 =
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a6418882adeea5fe0359fbc7e750c01dd":[3,0,1,12,65,30],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a6418882adeea5fe0359fbc7e750c01dd":[2,0,1,12,65,30],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a653a8fbd8da17b08be95a985d857c4fc":[2,0,1,12,65,37],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,65,37],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,65,36],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,1,12,65,36],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a7a76ae1302113dc20f47f918b62d1eaf":[3,0,1,12,65,31],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a7a76ae1302113dc20f47f918b62d1eaf":[2,0,1,12,65,31],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,1,12,65,14],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,65,14]
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,65,37]
 };
