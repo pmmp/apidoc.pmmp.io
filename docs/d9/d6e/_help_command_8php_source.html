@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-2a910c1cc286cab793608f18881bc70f1be6aaeb</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-d74824c8d5e979d2c3147aabad54b41345dd5310</span>
    </div>
   </td>
  </tr>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $commands = [];</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">foreach</span>($sender-&gt;getServer()-&gt;getCommandMap()-&gt;getCommands() as $command){</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">if</span>($command-&gt;testPermissionSilent($sender)){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    $commands[$command-&gt;getName()] = $command;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    $commands[$command-&gt;getLabel()] = $command;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            ksort($commands, SORT_NATURAL | SORT_FLAG_CASE);</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">foreach</span>($commands[$pageNumber - 1] as $command){</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    $description = $command-&gt;getDescription();</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    $sender-&gt;sendMessage(TextFormat::DARK_GREEN . <span class="stringliteral">&quot;/&quot;</span> . $command-&gt;getName() . <span class="stringliteral">&quot;: &quot;</span> . TextFormat::WHITE . $descriptionString);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    $sender-&gt;sendMessage(TextFormat::DARK_GREEN . <span class="stringliteral">&quot;/&quot;</span> . $command-&gt;getLabel() . <span class="stringliteral">&quot;: &quot;</span> . TextFormat::WHITE . $descriptionString);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    $lang = $sender-&gt;getLanguage();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $description = $cmd-&gt;getDescription();</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_header($cmd-&gt;getName())</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_header($cmd-&gt;getLabel())</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                        -&gt;format(TextFormat::YELLOW . <span class="stringliteral">&quot;--------- &quot;</span> . TextFormat::WHITE, TextFormat::YELLOW . <span class="stringliteral">&quot; ---------&quot;</span>));</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_description(TextFormat::WHITE . $descriptionString)</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        -&gt;prefix(TextFormat::GOLD));</div>

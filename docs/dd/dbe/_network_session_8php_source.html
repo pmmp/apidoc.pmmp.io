@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-2a910c1cc286cab793608f18881bc70f1be6aaeb</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-d74824c8d5e979d2c3147aabad54b41345dd5310</span>
    </div>
   </td>
  </tr>
@@ -931,11 +931,11 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncAvailableCommands() : void{</div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>        $commandData = [];</div>
 <div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>        <span class="keywordflow">foreach</span>($this-&gt;server-&gt;getCommandMap()-&gt;getCommands() as $name =&gt; $command){</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>            <span class="keywordflow">if</span>(isset($commandData[$command-&gt;getName()]) || $command-&gt;getName() === <span class="stringliteral">&quot;help&quot;</span> || !$command-&gt;testPermissionSilent($this-&gt;player)){</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>            <span class="keywordflow">if</span>(isset($commandData[$command-&gt;getLabel()]) || $command-&gt;getLabel() === <span class="stringliteral">&quot;help&quot;</span> || !$command-&gt;testPermissionSilent($this-&gt;player)){</div>
 <div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>            }</div>
 <div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span> </div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>            $lname = strtolower($command-&gt;getName());</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>            $lname = strtolower($command-&gt;getLabel());</div>
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>            $aliases = $command-&gt;getAliases();</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>            $aliasObj = <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>            <span class="keywordflow">if</span>(count($aliases) &gt; 0){</div>
@@ -943,7 +943,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>                    <span class="comment">//work around a client bug which makes the original name not show when aliases are used</span></div>
 <div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>                    $aliases[] = $lname;</div>
 <div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>                }</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>                $aliasObj = <span class="keyword">new</span> CommandEnum(ucfirst($command-&gt;getName()) . <span class="stringliteral">&quot;Aliases&quot;</span>, array_values($aliases));</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>                $aliasObj = <span class="keyword">new</span> CommandEnum(ucfirst($command-&gt;getLabel()) . <span class="stringliteral">&quot;Aliases&quot;</span>, array_values($aliases));</div>
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>            }</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>            $description = $command-&gt;getDescription();</div>
@@ -958,7 +958,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                ]</div>
 <div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>            );</div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>            $commandData[$command-&gt;getName()] = $data;</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>            $commandData[$command-&gt;getLabel()] = $data;</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        }</div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>        $this-&gt;sendDataPacket(AvailableCommandsPacket::create($commandData, [], [], []));</div>
