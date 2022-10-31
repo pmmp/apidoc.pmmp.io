@@ -19,6 +19,7 @@ var dir_bbe04a070578765a2b532af946e544b1 =
     [ "LongMetadataProperty.php", "d0/d82/_long_metadata_property_8php_source.html", null ],
     [ "MetadataProperty.php", "d5/d37/_metadata_property_8php_source.html", null ],
     [ "PlayerMetadataFlags.php", "d1/d5d/_player_metadata_flags_8php_source.html", null ],
+    [ "PropertySyncData.php", "d3/d0f/_property_sync_data_8php_source.html", null ],
     [ "ShortMetadataProperty.php", "db/dd6/_short_metadata_property_8php_source.html", null ],
     [ "StringMetadataProperty.php", "d7/df4/_string_metadata_property_8php_source.html", null ],
     [ "Vec3MetadataProperty.php", "df/da3/_vec3_metadata_property_8php_source.html", null ]

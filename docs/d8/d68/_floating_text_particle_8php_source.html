@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.9.2 git-d74824c8d5e979d2c3147aabad54b41345dd5310</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-44af519cd6678ff600243d04e11d4280549525da</span>
    </div>
   </td>
  </tr>
@@ -130,95 +130,97 @@ $(document).ready(function(){initNavTree('d8/d68/_floating_text_particle_8php_so
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <a class="code hl_class" href="../../d8/d60/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_float_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\FloatMetadataProperty</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <a class="code hl_class" href="../../d0/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_int_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\IntMetadataProperty</a>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <a class="code hl_class" href="../../d5/d92/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_long_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\LongMetadataProperty</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <a class="code hl_class" href="../../da/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_string_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\StringMetadataProperty</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html">FloatingTextParticle</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d1/dac/interfacepocketmine_1_1world_1_1particle_1_1_particle.html">Particle</a>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//TODO: HACK!</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">protected</span> $text;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">protected</span> $title;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">protected</span> $entityId = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">protected</span> $invisible = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $text, <span class="keywordtype">string</span> $title = <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;text = $text;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;title = $title;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $this-&gt;text;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> setText(<span class="keywordtype">string</span> $text) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;text = $text;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTitle() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> $this-&gt;title;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">function</span> setTitle(<span class="keywordtype">string</span> $title) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;title = $title;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">function</span> isInvisible() : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> $this-&gt;invisible;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">function</span> setInvisible(<span class="keywordtype">bool</span> $value = <span class="keyword">true</span>) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $this-&gt;invisible = $value;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html#a3387078a59d2a70ea9205d3b3597d3e5">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html#a3387078a59d2a70ea9205d3b3597d3e5">encode</a>(<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos) : array{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $p = [];</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span>($this-&gt;entityId === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            $this-&gt;entityId = <a class="code hl_function" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a7a0ab51bbdfe50c4c8c58424974b47a7">Entity::nextRuntimeId</a>();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $p[] = <a class="code hl_function" href="../../de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html#a0b70dabb7c32575acaca22f919482232">RemoveActorPacket::create</a>($this-&gt;entityId);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span>(!$this-&gt;invisible){</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $name = $this-&gt;title . ($this-&gt;text !== <span class="stringliteral">&quot;&quot;</span> ? <span class="stringliteral">&quot;\n&quot;</span> . $this-&gt;text : <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $actorFlags = (</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                1 &lt;&lt; EntityMetadataFlags::IMMOBILE</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            );</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $actorMetadata = [</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                EntityMetadataProperties::FLAGS =&gt; <span class="keyword">new</span> LongMetadataProperty($actorFlags),</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                EntityMetadataProperties::SCALE =&gt; <span class="keyword">new</span> FloatMetadataProperty(0.01), <span class="comment">//zero causes problems on debug builds</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                EntityMetadataProperties::BOUNDING_BOX_WIDTH =&gt; <span class="keyword">new</span> FloatMetadataProperty(0.0),</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                EntityMetadataProperties::BOUNDING_BOX_HEIGHT =&gt; <span class="keyword">new</span> FloatMetadataProperty(0.0),</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                EntityMetadataProperties::NAMETAG =&gt; <span class="keyword">new</span> StringMetadataProperty($name),</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                EntityMetadataProperties::VARIANT =&gt; <span class="keyword">new</span> IntMetadataProperty(RuntimeBlockMapping::getInstance()-&gt;toRuntimeId(VanillaBlocks::AIR()-&gt;getFullId())),</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                EntityMetadataProperties::ALWAYS_SHOW_NAMETAG =&gt; <span class="keyword">new</span> ByteMetadataProperty(1),</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            ];</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $p[] = <a class="code hl_function" href="../../d2/dd1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet.html#af481a4e1c9a9cd4b800d84b21e8478ce">AddActorPacket::create</a>(</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                $this-&gt;entityId, <span class="comment">//TODO: actor unique ID</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                $this-&gt;entityId,</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                EntityIds::FALLING_BLOCK,</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                $pos, <span class="comment">//TODO: check offset (0.49?)</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                0,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <a class="code hl_class" href="../../d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html">pocketmine\network\mcpe\protocol\types\entity\PropertySyncData</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <a class="code hl_class" href="../../da/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_string_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\StringMetadataProperty</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html">   42</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html">FloatingTextParticle</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d1/dac/interfacepocketmine_1_1world_1_1particle_1_1_particle.html">Particle</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//TODO: HACK!</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span> $text;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">protected</span> $title;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">protected</span> $entityId = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">protected</span> $invisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $text, <span class="keywordtype">string</span> $title = <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;text = $text;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;title = $title;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> $this-&gt;text;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">public</span> <span class="keyword">function</span> setText(<span class="keywordtype">string</span> $text) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;text = $text;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTitle() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> $this-&gt;title;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">function</span> setTitle(<span class="keywordtype">string</span> $title) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;title = $title;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> isInvisible() : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> $this-&gt;invisible;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> setInvisible(<span class="keywordtype">bool</span> $value = <span class="keyword">true</span>) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $this-&gt;invisible = $value;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html#a3387078a59d2a70ea9205d3b3597d3e5">   83</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html#a3387078a59d2a70ea9205d3b3597d3e5">encode</a>(<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos) : array{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $p = [];</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span>($this-&gt;entityId === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $this-&gt;entityId = <a class="code hl_function" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a7a0ab51bbdfe50c4c8c58424974b47a7">Entity::nextRuntimeId</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $p[] = <a class="code hl_function" href="../../de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html#a0b70dabb7c32575acaca22f919482232">RemoveActorPacket::create</a>($this-&gt;entityId);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span>(!$this-&gt;invisible){</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $name = $this-&gt;title . ($this-&gt;text !== <span class="stringliteral">&quot;&quot;</span> ? <span class="stringliteral">&quot;\n&quot;</span> . $this-&gt;text : <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $actorFlags = (</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                1 &lt;&lt; EntityMetadataFlags::IMMOBILE</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            );</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            $actorMetadata = [</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                EntityMetadataProperties::FLAGS =&gt; <span class="keyword">new</span> LongMetadataProperty($actorFlags),</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                EntityMetadataProperties::SCALE =&gt; <span class="keyword">new</span> FloatMetadataProperty(0.01), <span class="comment">//zero causes problems on debug builds</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                EntityMetadataProperties::BOUNDING_BOX_WIDTH =&gt; <span class="keyword">new</span> FloatMetadataProperty(0.0),</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                EntityMetadataProperties::BOUNDING_BOX_HEIGHT =&gt; <span class="keyword">new</span> FloatMetadataProperty(0.0),</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                EntityMetadataProperties::NAMETAG =&gt; <span class="keyword">new</span> StringMetadataProperty($name),</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                EntityMetadataProperties::VARIANT =&gt; <span class="keyword">new</span> IntMetadataProperty(RuntimeBlockMapping::getInstance()-&gt;toRuntimeId(VanillaBlocks::AIR()-&gt;getFullId())),</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                EntityMetadataProperties::ALWAYS_SHOW_NAMETAG =&gt; <span class="keyword">new</span> ByteMetadataProperty(1),</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            ];</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $p[] = <a class="code hl_function" href="../../d2/dd1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet.html#aa5568332c3a7ce18e7ea3ce2b6105308">AddActorPacket::create</a>(</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                $this-&gt;entityId, <span class="comment">//TODO: actor unique ID</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                $this-&gt;entityId,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                EntityIds::FALLING_BLOCK,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                $pos, <span class="comment">//TODO: check offset (0.49?)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keyword">null</span>,</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                0,</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                0,</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                0,</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                [],</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                $actorMetadata,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                []</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            );</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> $p;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                0,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                [],</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                $actorMetadata,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="keyword">new</span> PropertySyncData([], []),</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                []</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            );</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> $p;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00575">VanillaBlocks.php:575</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00078">Entity.php:78</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_a7a0ab51bbdfe50c4c8c58424974b47a7"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a7a0ab51bbdfe50c4c8c58424974b47a7">pocketmine\entity\Entity\nextRuntimeId</a></div><div class="ttdeci">static nextRuntimeId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00088">Entity.php:88</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00079">Entity.php:79</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_a7a0ab51bbdfe50c4c8c58424974b47a7"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a7a0ab51bbdfe50c4c8c58424974b47a7">pocketmine\entity\Entity\nextRuntimeId</a></div><div class="ttdeci">static nextRuntimeId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00089">Entity.php:89</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping_html"><div class="ttname"><a href="../../d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping.html">pocketmine\network\mcpe\convert\RuntimeBlockMapping</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00041">RuntimeBlockMapping.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet_html"><div class="ttname"><a href="../../d2/dd1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet.html">pocketmine\network\mcpe\protocol\AddActorPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1d/_add_actor_packet_8php_source.html#l00024">AddActorPacket.php:24</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet_html_af481a4e1c9a9cd4b800d84b21e8478ce"><div class="ttname"><a href="../../d2/dd1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet.html#af481a4e1c9a9cd4b800d84b21e8478ce">pocketmine\network\mcpe\protocol\AddActorPacket\create</a></div><div class="ttdeci">static create(int $actorUniqueId, int $actorRuntimeId, string $type, Vector3 $position, ?Vector3 $motion, float $pitch, float $yaw, float $headYaw, float $bodyYaw, array $attributes, array $metadata, array $links,)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1d/_add_actor_packet_8php_source.html#l00054">AddActorPacket.php:54</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet_html"><div class="ttname"><a href="../../d2/dd1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet.html">pocketmine\network\mcpe\protocol\AddActorPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1d/_add_actor_packet_8php_source.html#l00025">AddActorPacket.php:25</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet_html_aa5568332c3a7ce18e7ea3ce2b6105308"><div class="ttname"><a href="../../d2/dd1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_actor_packet.html#aa5568332c3a7ce18e7ea3ce2b6105308">pocketmine\network\mcpe\protocol\AddActorPacket\create</a></div><div class="ttdeci">static create(int $actorUniqueId, int $actorRuntimeId, string $type, Vector3 $position, ?Vector3 $motion, float $pitch, float $yaw, float $headYaw, float $bodyYaw, array $attributes, array $metadata, PropertySyncData $syncedProperties, array $links,)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1d/_add_actor_packet_8php_source.html#l00056">AddActorPacket.php:56</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet_html"><div class="ttname"><a href="../../de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html">pocketmine\network\mcpe\protocol\RemoveActorPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/_remove_actor_packet_8php_source.html#l00019">RemoveActorPacket.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet_html_a0b70dabb7c32575acaca22f919482232"><div class="ttname"><a href="../../de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html#a0b70dabb7c32575acaca22f919482232">pocketmine\network\mcpe\protocol\RemoveActorPacket\create</a></div><div class="ttdeci">static create(int $actorUniqueId)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/_remove_actor_packet_8php_source.html#l00027">RemoveActorPacket.php:27</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_byte_metadata_property_html"><div class="ttname"><a href="../../d5/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_byte_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\ByteMetadataProperty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc3/_byte_metadata_property_8php_source.html#l00021">ByteMetadataProperty.php:21</a></div></div>
@@ -228,9 +230,10 @@ $(document).ready(function(){initNavTree('d8/d68/_floating_text_particle_8php_so
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_float_metadata_property_html"><div class="ttname"><a href="../../d8/d60/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_float_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\FloatMetadataProperty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d36/_float_metadata_property_8php_source.html#l00020">FloatMetadataProperty.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_int_metadata_property_html"><div class="ttname"><a href="../../d0/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_int_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\IntMetadataProperty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dba/_int_metadata_property_8php_source.html#l00020">IntMetadataProperty.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_long_metadata_property_html"><div class="ttname"><a href="../../d5/d92/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_long_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\LongMetadataProperty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/_long_metadata_property_8php_source.html#l00022">LongMetadataProperty.php:22</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data_html"><div class="ttname"><a href="../../d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html">pocketmine\network\mcpe\protocol\types\entity\PropertySyncData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d0f/_property_sync_data_8php_source.html#l00020">PropertySyncData.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_string_metadata_property_html"><div class="ttname"><a href="../../da/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_string_metadata_property.html">pocketmine\network\mcpe\protocol\types\entity\StringMetadataProperty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df4/_string_metadata_property_8php_source.html#l00020">StringMetadataProperty.php:20</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1particle_1_1_floating_text_particle_html"><div class="ttname"><a href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html">pocketmine\world\particle\FloatingTextParticle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d68/_floating_text_particle_8php_source.html#l00041">FloatingTextParticle.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1particle_1_1_floating_text_particle_html_a3387078a59d2a70ea9205d3b3597d3e5"><div class="ttname"><a href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html#a3387078a59d2a70ea9205d3b3597d3e5">pocketmine\world\particle\FloatingTextParticle\encode</a></div><div class="ttdeci">encode(Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d68/_floating_text_particle_8php_source.html#l00082">FloatingTextParticle.php:82</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1particle_1_1_floating_text_particle_html"><div class="ttname"><a href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html">pocketmine\world\particle\FloatingTextParticle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d68/_floating_text_particle_8php_source.html#l00042">FloatingTextParticle.php:42</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1particle_1_1_floating_text_particle_html_a3387078a59d2a70ea9205d3b3597d3e5"><div class="ttname"><a href="../../dc/d9d/classpocketmine_1_1world_1_1particle_1_1_floating_text_particle.html#a3387078a59d2a70ea9205d3b3597d3e5">pocketmine\world\particle\FloatingTextParticle\encode</a></div><div class="ttdeci">encode(Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d68/_floating_text_particle_8php_source.html#l00083">FloatingTextParticle.php:83</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1particle_1_1_particle_html"><div class="ttname"><a href="../../d1/dac/interfacepocketmine_1_1world_1_1particle_1_1_particle.html">pocketmine\world\particle\Particle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d61/_particle_8php_source.html#l00029">Particle.php:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

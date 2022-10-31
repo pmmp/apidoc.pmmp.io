@@ -919,6 +919,7 @@ var annotated_dup =
                 [ "LongMetadataProperty", "d5/d92/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_long_metadata_property.html", null ],
                 [ "MetadataProperty", "d0/d15/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_metadata_property.html", null ],
                 [ "PlayerMetadataFlags", "d0/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_player_metadata_flags.html", null ],
+                [ "PropertySyncData", "d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html", "d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data" ],
                 [ "ShortMetadataProperty", "d3/d52/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_short_metadata_property.html", null ],
                 [ "StringMetadataProperty", "da/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_string_metadata_property.html", null ],
                 [ "Vec3MetadataProperty", "df/d8e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_vec3_metadata_property.html", null ]
@@ -1074,7 +1075,7 @@ var annotated_dup =
               [ "SpawnSettings", "d9/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_spawn_settings.html", "d9/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_spawn_settings" ],
               [ "StructureEditorData", "dd/d9e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_structure_editor_data.html", null ],
               [ "StructureSettings", "d0/d65/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_structure_settings.html", null ],
-              [ "SubChunkPacketEntryCommon", "da/d1e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_common.html", "da/d1e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_common" ],
+              [ "SubChunkPacketEntryCommon", "da/d1e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_common.html", null ],
               [ "SubChunkPacketEntryWithCache", "d2/d3b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_with_cache.html", null ],
               [ "SubChunkPacketEntryWithCacheList", "d4/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_with_cache_list.html", "d4/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_with_cache_list" ],
               [ "SubChunkPacketEntryWithoutCache", "d8/dc1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_packet_entry_without_cache.html", null ],

@@ -1765,6 +1765,7 @@ var hierarchy =
     [ "pocketmine\\promise\\Promise", "d9/db4/classpocketmine_1_1promise_1_1_promise.html", null ],
     [ "pocketmine\\promise\\PromiseResolver", "d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html", null ],
     [ "pocketmine\\promise\\PromiseSharedData", "d2/d15/classpocketmine_1_1promise_1_1_promise_shared_data.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\entity\\PropertySyncData", "d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html", null ],
     [ "raklib\\server\\ProtocolAcceptor", "db/d2d/interfaceraklib_1_1server_1_1_protocol_acceptor.html", [
       [ "raklib\\server\\SimpleProtocolAcceptor", "d2/d81/classraklib_1_1server_1_1_simple_protocol_acceptor.html", null ]
     ] ],
