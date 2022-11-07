@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-44af519cd6678ff600243d04e11d4280549525da</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
    </div>
   </td>
  </tr>
@@ -469,100 +469,100 @@ $(document).ready(function(){initNavTree('d4/d8a/_config_8php_source.html','../.
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        $this-&gt;fillDefaults($defaults, $this-&gt;config);</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    }</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    <span class="keyword">private</span> <span class="keyword">function</span> fillDefaults(array $default, &amp;$data) : int{</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>        $changed = 0;</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>        <span class="keywordflow">foreach</span>(Utils::stringifyKeys($default) as $k =&gt; $v){</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            <span class="keywordflow">if</span>(is_array($v)){</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>                <span class="keywordflow">if</span>(!isset($data[$k]) || !is_array($data[$k])){</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                    $data[$k] = [];</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                }</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>                $changed += $this-&gt;fillDefaults($v, $data[$k]);</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>            }elseif(!isset($data[$k])){</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>                $data[$k] = $v;</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>                ++$changed;</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>            }</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        }</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span> </div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>        <span class="keywordflow">if</span>($changed &gt; 0){</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            $this-&gt;changed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>        }</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>        <span class="keywordflow">return</span> $changed;</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    }</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#afe7b58828eb43ae3d5701194a2385d41">  525</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#afe7b58828eb43ae3d5701194a2385d41">parseList</a>(<span class="keywordtype">string</span> $content) : array{</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>        $result = [];</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>        <span class="keywordflow">foreach</span>(explode(<span class="stringliteral">&quot;\n&quot;</span>, trim(str_replace(<span class="stringliteral">&quot;\r\n&quot;</span>, <span class="stringliteral">&quot;\n&quot;</span>, $content))) as $v){</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>            $v = trim($v);</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>            <span class="keywordflow">if</span>($v === <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            }</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>            $result[] = $v;</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        }</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    }</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a3973212bf2731577ed6802d1d88ff9cd">  541</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a3973212bf2731577ed6802d1d88ff9cd">writeList</a>(array $entries) : string{</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        return implode(<span class="stringliteral">&quot;\n&quot;</span>, $entries);</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    }</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a25949ac45c9bb46c9366f1ae8cd87b84">  549</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a25949ac45c9bb46c9366f1ae8cd87b84">writeProperties</a>(array $config) : string{</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        $content = <span class="stringliteral">&quot;#Properties Config file\r\n#&quot;</span> . date(<span class="stringliteral">&quot;D M j H:i:s T Y&quot;</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        <span class="keywordflow">foreach</span>(Utils::stringifyKeys($config) as $k =&gt; $v){</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>            <span class="keywordflow">if</span>(is_bool($v)){</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>                $v = $v ? <span class="stringliteral">&quot;on&quot;</span> : <span class="stringliteral">&quot;off&quot;</span>;</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            }</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            $content .= $k . <span class="stringliteral">&quot;=&quot;</span> . $v . <span class="stringliteral">&quot;\r\n&quot;</span>;</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        }</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        <span class="keywordflow">return</span> $content;</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    }</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3">  565</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3">parseProperties</a>(<span class="keywordtype">string</span> $content) : array{</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        $result = [];</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&#39;/^\s*([a-zA-Z0-9\-_\.]+)[ \t]*=([^\r\n]*)/um&#39;</span>, $content, $matches) &gt; 0){ <span class="comment">//false or 0 matches</span></div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>            <span class="keywordflow">foreach</span>($matches[1] as $i =&gt; $k){</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                $v = trim($matches[2][$i]);</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                <span class="keywordflow">switch</span>(strtolower($v)){</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;on&quot;</span>:</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;true&quot;</span>:</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;yes&quot;</span>:</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                        $v = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;off&quot;</span>:</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;false&quot;</span>:</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;no&quot;</span>:</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                        $v = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                        $v = match($v){</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                            (string) ((<span class="keywordtype">int</span>) $v) =&gt; (<span class="keywordtype">int</span>) $v,</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                            (string) ((<span class="keywordtype">float</span>) $v) =&gt; (<span class="keywordtype">float</span>) $v,</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                            <span class="keywordflow">default</span> =&gt; $v,</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                        };</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                }</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                $result[(string) $k] = $v;</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>            }</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        }</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>}</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    <span class="keyword">private</span> <span class="keyword">function</span> fillDefaults(array $default, &amp;$data) : int{</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>        $changed = 0;</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>        <span class="keywordflow">foreach</span>(Utils::stringifyKeys($default) as $k =&gt; $v){</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>            <span class="keywordflow">if</span>(is_array($v)){</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                <span class="keywordflow">if</span>(!isset($data[$k]) || !is_array($data[$k])){</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                    $data[$k] = [];</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>                }</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>                $changed += $this-&gt;fillDefaults($v, $data[$k]);</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>            }elseif(!isset($data[$k])){</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>                $data[$k] = $v;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>                ++$changed;</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>            }</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        }</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>        <span class="keywordflow">if</span>($changed &gt; 0){</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>            $this-&gt;changed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        }</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span> </div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        <span class="keywordflow">return</span> $changed;</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    }</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#afe7b58828eb43ae3d5701194a2385d41">  526</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#afe7b58828eb43ae3d5701194a2385d41">parseList</a>(<span class="keywordtype">string</span> $content) : array{</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>        $result = [];</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        <span class="keywordflow">foreach</span>(explode(<span class="stringliteral">&quot;\n&quot;</span>, trim(str_replace(<span class="stringliteral">&quot;\r\n&quot;</span>, <span class="stringliteral">&quot;\n&quot;</span>, $content))) as $v){</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>            $v = trim($v);</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>            <span class="keywordflow">if</span>($v === <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>            }</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>            $result[] = $v;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        }</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    }</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a3973212bf2731577ed6802d1d88ff9cd">  542</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a3973212bf2731577ed6802d1d88ff9cd">writeList</a>(array $entries) : string{</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        return implode(<span class="stringliteral">&quot;\n&quot;</span>, $entries);</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    }</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a25949ac45c9bb46c9366f1ae8cd87b84">  550</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a25949ac45c9bb46c9366f1ae8cd87b84">writeProperties</a>(array $config) : string{</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        $content = <span class="stringliteral">&quot;#Properties Config file\r\n#&quot;</span> . date(<span class="stringliteral">&quot;D M j H:i:s T Y&quot;</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        <span class="keywordflow">foreach</span>(Utils::stringifyKeys($config) as $k =&gt; $v){</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>            <span class="keywordflow">if</span>(is_bool($v)){</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>                $v = $v ? <span class="stringliteral">&quot;on&quot;</span> : <span class="stringliteral">&quot;off&quot;</span>;</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            }</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>            $content .= $k . <span class="stringliteral">&quot;=&quot;</span> . $v . <span class="stringliteral">&quot;\r\n&quot;</span>;</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        }</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        <span class="keywordflow">return</span> $content;</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    }</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno"><a class="line" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3">  566</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3">parseProperties</a>(<span class="keywordtype">string</span> $content) : array{</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        $result = [];</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&#39;/^\s*([a-zA-Z0-9\-_\.]+)[ \t]*=([^\r\n]*)/um&#39;</span>, $content, $matches) &gt; 0){ <span class="comment">//false or 0 matches</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>            <span class="keywordflow">foreach</span>($matches[1] as $i =&gt; $k){</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                $v = trim($matches[2][$i]);</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                <span class="keywordflow">switch</span>(strtolower($v)){</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;on&quot;</span>:</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;true&quot;</span>:</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;yes&quot;</span>:</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                        $v = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;off&quot;</span>:</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;false&quot;</span>:</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                    <span class="keywordflow">case</span> <span class="stringliteral">&quot;no&quot;</span>:</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                        $v = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                        $v = match($v){</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                            (string) ((<span class="keywordtype">int</span>) $v) =&gt; (<span class="keywordtype">int</span>) $v,</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                            (string) ((<span class="keywordtype">float</span>) $v) =&gt; (<span class="keywordtype">float</span>) $v,</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                            <span class="keywordflow">default</span> =&gt; $v,</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                        };</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                }</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                $result[(string) $k] = $v;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>            }</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        }</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    }</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html">pocketmine\errorhandler\ErrorToExceptionHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00028">ErrorToExceptionHandler.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html">pocketmine\utils\Config</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00062">Config.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a09689785078eb3582e98a7c1705a00a0"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a09689785078eb3582e98a7c1705a00a0">pocketmine\utils\Config\setNested</a></div><div class="ttdeci">setNested($key, $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00348">Config.php:348</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a23d8399766e66092e09a6ef5d2e2c49c"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a23d8399766e66092e09a6ef5d2e2c49c">pocketmine\utils\Config\getJsonOptions</a></div><div class="ttdeci">getJsonOptions()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00304">Config.php:304</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a241d41d82c83938d11a8e06da3309eb4"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a241d41d82c83938d11a8e06da3309eb4">pocketmine\utils\Config\__construct</a></div><div class="ttdeci">__construct(string $file, int $type=Config::DETECT, array $default=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00116">Config.php:116</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a25949ac45c9bb46c9366f1ae8cd87b84"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a25949ac45c9bb46c9366f1ae8cd87b84">pocketmine\utils\Config\writeProperties</a></div><div class="ttdeci">static writeProperties(array $config)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00549">Config.php:549</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a25949ac45c9bb46c9366f1ae8cd87b84"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a25949ac45c9bb46c9366f1ae8cd87b84">pocketmine\utils\Config\writeProperties</a></div><div class="ttdeci">static writeProperties(array $config)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00550">Config.php:550</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a2d60ad3774fc42763f93ecc29dd5ba2b"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a2d60ad3774fc42763f93ecc29dd5ba2b">pocketmine\utils\Config\getNested</a></div><div class="ttdeci">getNested($key, $default=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00377">Config.php:377</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a30636ec61c133d63774fe214fe5e0120"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a30636ec61c133d63774fe214fe5e0120">pocketmine\utils\Config\__isset</a></div><div class="ttdeci">__isset($k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00333">Config.php:333</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a3973212bf2731577ed6802d1d88ff9cd"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a3973212bf2731577ed6802d1d88ff9cd">pocketmine\utils\Config\writeList</a></div><div class="ttdeci">static writeList(array $entries)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00541">Config.php:541</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a3973212bf2731577ed6802d1d88ff9cd"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a3973212bf2731577ed6802d1d88ff9cd">pocketmine\utils\Config\writeList</a></div><div class="ttdeci">static writeList(array $entries)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00542">Config.php:542</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a55c01c746cbe78019e7ee2bc7b2e9d81"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a55c01c746cbe78019e7ee2bc7b2e9d81">pocketmine\utils\Config\enableJsonOption</a></div><div class="ttdeci">enableJsonOption(int $option)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00271">Config.php:271</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a601ce3859a6a56b18aaba1ea7ead57c5"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a601ce3859a6a56b18aaba1ea7ead57c5">pocketmine\utils\Config\getPath</a></div><div class="ttdeci">getPath()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00213">Config.php:213</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a64cb87afce2423d125382e872a409cfb"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a64cb87afce2423d125382e872a409cfb">pocketmine\utils\Config\setDefaults</a></div><div class="ttdeci">setDefaults(array $defaults)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00490">Config.php:490</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a6fe04b438beb4d22b217b34de444d1d3"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3">pocketmine\utils\Config\parseProperties</a></div><div class="ttdeci">static parseProperties(string $content)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00565">Config.php:565</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a6fe04b438beb4d22b217b34de444d1d3"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3">pocketmine\utils\Config\parseProperties</a></div><div class="ttdeci">static parseProperties(string $content)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00566">Config.php:566</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a7d357d1f91121dce2043923154afe122"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a7d357d1f91121dce2043923154afe122">pocketmine\utils\Config\__set</a></div><div class="ttdeci">__set($k, $v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00324">Config.php:324</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_a83f4ae736bb459fff87de76caf98e148"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a83f4ae736bb459fff87de76caf98e148">pocketmine\utils\Config\save</a></div><div class="ttdeci">save()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00220">Config.php:220</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_aaa92b89be29937f56667313d340a036f"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#aaa92b89be29937f56667313d340a036f">pocketmine\utils\Config\exists</a></div><div class="ttdeci">exists($k, bool $lowercase=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00460">Config.php:460</a></div></div>
@@ -573,7 +573,7 @@ $(document).ready(function(){initNavTree('d4/d8a/_config_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_ad4598d4632eaa44ee5ff6f2b159dd224"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#ad4598d4632eaa44ee5ff6f2b159dd224">pocketmine\utils\Config\setJsonOptions</a></div><div class="ttdeci">setJsonOptions(int $options)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00254">Config.php:254</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_af2c527cba3dce1158d1c655d50955ec9"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#af2c527cba3dce1158d1c655d50955ec9">pocketmine\utils\Config\__unset</a></div><div class="ttdeci">__unset($k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00340">Config.php:340</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_af3739d60a1e414988b533e898236dce5"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#af3739d60a1e414988b533e898236dce5">pocketmine\utils\Config\disableJsonOption</a></div><div class="ttdeci">disableJsonOption(int $option)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00288">Config.php:288</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_afe7b58828eb43ae3d5701194a2385d41"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#afe7b58828eb43ae3d5701194a2385d41">pocketmine\utils\Config\parseList</a></div><div class="ttdeci">static parseList(string $content)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00525">Config.php:525</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_config_html_afe7b58828eb43ae3d5701194a2385d41"><div class="ttname"><a href="../../d6/d2c/classpocketmine_1_1utils_1_1_config.html#afe7b58828eb43ae3d5701194a2385d41">pocketmine\utils\Config\parseList</a></div><div class="ttdeci">static parseList(string $content)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8a/_config_8php_source.html#l00526">Config.php:526</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

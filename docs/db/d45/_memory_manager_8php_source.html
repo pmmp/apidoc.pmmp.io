@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-44af519cd6678ff600243d04e11d4280549525da</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
    </div>
   </td>
  </tr>
@@ -475,7 +475,7 @@ $(document).ready(function(){initNavTree('db/d45/_memory_manager_8php_source.htm
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        <span class="keywordflow">do</span>{</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            $continue = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keywordflow">foreach</span>($objects as $hash =&gt; $object){</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keywordflow">foreach</span>(Utils::stringifyKeys($objects) as $hash =&gt; $object){</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                <span class="keywordflow">if</span>(!is_object($object)){</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                    <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                }</div>
@@ -555,46 +555,46 @@ $(document).ready(function(){initNavTree('db/d45/_memory_manager_8php_source.htm
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>        gc_enable();</div>
 <div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    }</div>
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> continueDump($from, array &amp;$objects, array &amp;$refCounts, <span class="keywordtype">int</span> $recursion, <span class="keywordtype">int</span> $maxNesting, <span class="keywordtype">int</span> $maxStringSize){</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keywordflow">if</span>($maxNesting &lt;= 0){</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;(error) NESTING LIMIT REACHED&quot;</span>;</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        }</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span> </div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        --$maxNesting;</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span> </div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        <span class="keywordflow">if</span>(is_object($from)){</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>            <span class="keywordflow">if</span>(!isset($objects[$hash = spl_object_hash($from)])){</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>                $objects[$hash] = $from;</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                $refCounts[$hash] = 0;</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>            }</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>            ++$refCounts[$hash];</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            $data = <span class="stringliteral">&quot;(object) $hash&quot;</span>;</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        }elseif(is_array($from)){</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>            <span class="keywordflow">if</span>($recursion &gt;= 5){</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;(error) ARRAY RECURSION LIMIT REACHED&quot;</span>;</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>            }</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>            $data = [];</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>            $numeric = 0;</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>            <span class="keywordflow">foreach</span>($from as $key =&gt; $value){</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>                $data[$numeric] = [</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>                    <span class="stringliteral">&quot;k&quot;</span> =&gt; self::continueDump($key, $objects, $refCounts, $recursion + 1, $maxNesting, $maxStringSize),</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>                    <span class="stringliteral">&quot;v&quot;</span> =&gt; self::continueDump($value, $objects, $refCounts, $recursion + 1, $maxNesting, $maxStringSize),</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>                ];</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>                $numeric++;</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>            }</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        }elseif(is_string($from)){</div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>            $data = <span class="stringliteral">&quot;(string) len(&quot;</span> . strlen($from) . <span class="stringliteral">&quot;) &quot;</span> . substr(Utils::printable($from), 0, $maxStringSize);</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        }elseif(is_resource($from)){</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>            $data = <span class="stringliteral">&quot;(resource) &quot;</span> . print_r($from, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            $data = $from;</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        }</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <span class="keywordflow">return</span> $data;</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    }</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>}</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> continueDump($from, array &amp;$objects, array &amp;$refCounts, <span class="keywordtype">int</span> $recursion, <span class="keywordtype">int</span> $maxNesting, <span class="keywordtype">int</span> $maxStringSize){</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>        <span class="keywordflow">if</span>($maxNesting &lt;= 0){</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;(error) NESTING LIMIT REACHED&quot;</span>;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        }</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>        --$maxNesting;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>        <span class="keywordflow">if</span>(is_object($from)){</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>            <span class="keywordflow">if</span>(!isset($objects[$hash = spl_object_hash($from)])){</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                $objects[$hash] = $from;</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>                $refCounts[$hash] = 0;</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>            }</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>            ++$refCounts[$hash];</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>            $data = <span class="stringliteral">&quot;(object) $hash&quot;</span>;</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        }elseif(is_array($from)){</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>            <span class="keywordflow">if</span>($recursion &gt;= 5){</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;(error) ARRAY RECURSION LIMIT REACHED&quot;</span>;</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>            }</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>            $data = [];</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            $numeric = 0;</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            <span class="keywordflow">foreach</span>($from as $key =&gt; $value){</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>                $data[$numeric] = [</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                    <span class="stringliteral">&quot;k&quot;</span> =&gt; self::continueDump($key, $objects, $refCounts, $recursion + 1, $maxNesting, $maxStringSize),</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>                    <span class="stringliteral">&quot;v&quot;</span> =&gt; self::continueDump($value, $objects, $refCounts, $recursion + 1, $maxNesting, $maxStringSize),</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>                ];</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>                $numeric++;</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>            }</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        }elseif(is_string($from)){</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            $data = <span class="stringliteral">&quot;(string) len(&quot;</span> . strlen($from) . <span class="stringliteral">&quot;) &quot;</span> . substr(Utils::printable($from), 0, $maxStringSize);</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        }elseif(is_resource($from)){</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>            $data = <span class="stringliteral">&quot;(resource) &quot;</span> . print_r($from, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            $data = $from;</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        }</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        <span class="keywordflow">return</span> $data;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    }</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>}</div>
 <div class="ttc" id="aclass_prefixed_logger_html"><div class="ttname"><a href="../../d9/d00/class_prefixed_logger.html">PrefixedLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dae/_prefixed_logger_8php_source.html#l00020">PrefixedLogger.php:20</a></div></div>
 <div class="ttc" id="aclass_simple_logger_html_a7ac1aa95a08676d825b73abb4ea2d235"><div class="ttname"><a href="../../d9/df4/class_simple_logger.html#a7ac1aa95a08676d825b73abb4ea2d235">SimpleLogger\notice</a></div><div class="ttdeci">notice($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_simple_logger_8php_source.html#l00041">SimpleLogger.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_memory_manager_html"><div class="ttname"><a href="../../d3/df7/classpocketmine_1_1_memory_manager.html">pocketmine\MemoryManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d45/_memory_manager_8php_source.html#l00071">MemoryManager.php:71</a></div></div>

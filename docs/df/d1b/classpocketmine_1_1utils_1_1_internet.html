@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-44af519cd6678ff600243d04e11d4280549525da</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
    </div>
   </td>
  </tr>
@@ -207,7 +207,7 @@ Static Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00079">79</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00147">pocketmine\utils\Internet\getURL()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00151">pocketmine\utils\Internet\getURL()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -265,16 +265,17 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >GETs an URL using cURL NOTE: This is a blocking operation and can take a significant amount of time. It is inadvisable to use this method on the main thread.</p>
+<p >@phpstan-template TErrorVar of mixed</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$timeout</td><td>default 10 </td></tr>
     <tr><td class="paramtype">string[]</td><td class="paramname">$extraHeaders</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$err</td><td>reference parameter, will be set to the output of curl_error(). Use this to retrieve errors that occured during the operation. @phpstan-param list&lt;string&gt; $extraHeaders </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$err</td><td>reference parameter, will be set to the output of curl_error(). Use this to retrieve errors that occured during the operation. @phpstan-param list&lt;string&gt; $extraHeaders @phpstan-param TErrorVar $err @phpstan-param-out TErrorVar|string $err </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00147">147</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00151">151</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00079">pocketmine\utils\Internet\getIP()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -340,16 +341,17 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >POSTs data to an URL NOTE: This is a blocking operation and can take a significant amount of time. It is inadvisable to use this method on the main thread.</p>
+<p >@phpstan-template TErrorVar of mixed</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string[]&#160;|&#160;string</td><td class="paramname">$args</td><td></td></tr>
     <tr><td class="paramtype">string[]</td><td class="paramname">$extraHeaders</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$err</td><td>reference parameter, will be set to the output of curl_error(). Use this to retrieve errors that occurred during the operation. @phpstan-param string|array&lt;string, string&gt; $args @phpstan-param list&lt;string&gt; $extraHeaders </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$err</td><td>reference parameter, will be set to the output of curl_error(). Use this to retrieve errors that occurred during the operation. @phpstan-param string|array&lt;string, string&gt; $args @phpstan-param list&lt;string&gt; $extraHeaders @phpstan-param TErrorVar $err @phpstan-param-out TErrorVar|string $err </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00166">166</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00174">174</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
 
 </div>
 </div>
@@ -421,7 +423,7 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00192">192</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/_internet_8php_source.html#l00200">200</a> of file <a class="el" href="../../d7/d4f/_internet_8php_source.html">Internet.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d27/_bulk_curl_task_8php_source.html#l00057">pocketmine\scheduler\BulkCurlTask\onRun()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

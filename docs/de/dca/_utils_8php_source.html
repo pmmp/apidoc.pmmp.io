@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-44af519cd6678ff600243d04e11d4280549525da</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
    </div>
   </td>
  </tr>
@@ -358,7 +358,7 @@ $(document).ready(function(){initNavTree('de/dca/_utils_8php_source.html','../..
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                    }</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                }elseif(($cpuPresent = @file_get_contents(<span class="stringliteral">&quot;/sys/devices/system/cpu/present&quot;</span>)) !== <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                    <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/^([0-9]+)\\-([0-9]+)$/&quot;</span>, trim($cpuPresent), $matches) &gt; 0){</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                        $processors = (int) ($matches[2] - $matches[1]);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                        $processors = ((int) $matches[2]) - ((int) $matches[1]);</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    }</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                }</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                <span class="keywordflow">break</span>;</div>
