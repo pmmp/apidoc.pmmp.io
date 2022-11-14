@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-9650b7f03af0ffd53271ac6312b7c0b11796258c</span>
    </div>
   </td>
  </tr>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('d0/d68/_timezone_8php_source.html','..
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="comment">//That&#39;s been a bug in PHP since 2008!</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keywordflow">foreach</span>(timezone_abbreviations_list() as $zones){</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">foreach</span>($zones as $timezone){</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <span class="keywordflow">if</span>($timezone[<span class="stringliteral">&#39;offset&#39;</span>] == $offset){</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <span class="keywordflow">if</span>($timezone[<span class="stringliteral">&#39;timezone_id&#39;</span>] !== <span class="keyword">null</span> &amp;&amp; $timezone[<span class="stringliteral">&#39;offset&#39;</span>] == $offset){</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                    <span class="keywordflow">return</span> $timezone[<span class="stringliteral">&#39;timezone_id&#39;</span>];</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                }</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            }</div>

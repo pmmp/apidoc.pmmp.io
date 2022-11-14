@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-9650b7f03af0ffd53271ac6312b7c0b11796258c</span>
    </div>
   </td>
  </tr>
@@ -413,7 +413,7 @@ $(document).ready(function(){initNavTree('d1/d3c/_human_8php_source.html','../..
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            &amp;&amp; ($this-&gt;inventory-&gt;getItemInHand() instanceof <a class="code hl_class" href="../../d2/d09/classpocketmine_1_1item_1_1_totem.html">Totem</a> || $this-&gt;offHandInventory-&gt;getItem(0) instanceof <a class="code hl_class" href="../../d2/d09/classpocketmine_1_1item_1_1_totem.html">Totem</a>)){</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            $compensation = $this-&gt;getHealth() - $source-&gt;getFinalDamage() - 1;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <span class="keywordflow">if</span>($compensation &lt; 0){</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <span class="keywordflow">if</span>($compensation &lt;= -1){</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                $source-&gt;setModifier($compensation, EntityDamageEvent::MODIFIER_TOTEM);</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            }</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        }</div>

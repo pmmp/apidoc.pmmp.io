@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.1 git-29301614e8adb4040b961cd673278daeb6c4601e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-9650b7f03af0ffd53271ac6312b7c0b11796258c</span>
    </div>
   </td>
  </tr>
@@ -2174,168 +2174,168 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l02405" name="l02405"></a><span class="lineno"> 2405</span>        $this-&gt;ySize = 0;</div>
 <div class="line"><a id="l02406" name="l02406"></a><span class="lineno"> 2406</span>    }</div>
 <div class="line"><a id="l02407" name="l02407"></a><span class="lineno"> 2407</span> </div>
-<div class="line"><a id="l02411" name="l02411"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81"> 2411</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81">teleport</a>(<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos, ?<span class="keywordtype">float</span> $yaw = <span class="keyword">null</span>, ?<span class="keywordtype">float</span> $pitch = <span class="keyword">null</span>) : bool{</div>
-<div class="line"><a id="l02412" name="l02412"></a><span class="lineno"> 2412</span>        if(parent::teleport($pos, $yaw, $pitch)){</div>
+<div class="line"><a id="l02408" name="l02408"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81"> 2408</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81">teleport</a>(<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos, ?<span class="keywordtype">float</span> $yaw = <span class="keyword">null</span>, ?<span class="keywordtype">float</span> $pitch = <span class="keyword">null</span>) : bool{</div>
+<div class="line"><a id="l02409" name="l02409"></a><span class="lineno"> 2409</span>        if(parent::teleport($pos, $yaw, $pitch)){</div>
+<div class="line"><a id="l02410" name="l02410"></a><span class="lineno"> 2410</span> </div>
+<div class="line"><a id="l02411" name="l02411"></a><span class="lineno"> 2411</span>            $this-&gt;removeCurrentWindow();</div>
+<div class="line"><a id="l02412" name="l02412"></a><span class="lineno"> 2412</span>            $this-&gt;stopSleep();</div>
 <div class="line"><a id="l02413" name="l02413"></a><span class="lineno"> 2413</span> </div>
-<div class="line"><a id="l02414" name="l02414"></a><span class="lineno"> 2414</span>            $this-&gt;removeCurrentWindow();</div>
-<div class="line"><a id="l02415" name="l02415"></a><span class="lineno"> 2415</span>            $this-&gt;stopSleep();</div>
+<div class="line"><a id="l02414" name="l02414"></a><span class="lineno"> 2414</span>            $this-&gt;sendPosition($this-&gt;location, $this-&gt;location-&gt;yaw, $this-&gt;location-&gt;pitch, MovePlayerPacket::MODE_TELEPORT);</div>
+<div class="line"><a id="l02415" name="l02415"></a><span class="lineno"> 2415</span>            $this-&gt;broadcastMovement(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l02416" name="l02416"></a><span class="lineno"> 2416</span> </div>
-<div class="line"><a id="l02417" name="l02417"></a><span class="lineno"> 2417</span>            $this-&gt;sendPosition($this-&gt;location, $this-&gt;location-&gt;yaw, $this-&gt;location-&gt;pitch, MovePlayerPacket::MODE_TELEPORT);</div>
-<div class="line"><a id="l02418" name="l02418"></a><span class="lineno"> 2418</span>            $this-&gt;broadcastMovement(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l02419" name="l02419"></a><span class="lineno"> 2419</span> </div>
-<div class="line"><a id="l02420" name="l02420"></a><span class="lineno"> 2420</span>            $this-&gt;spawnToAll();</div>
-<div class="line"><a id="l02421" name="l02421"></a><span class="lineno"> 2421</span> </div>
-<div class="line"><a id="l02422" name="l02422"></a><span class="lineno"> 2422</span>            $this-&gt;resetFallDistance();</div>
-<div class="line"><a id="l02423" name="l02423"></a><span class="lineno"> 2423</span>            $this-&gt;nextChunkOrderRun = 0;</div>
-<div class="line"><a id="l02424" name="l02424"></a><span class="lineno"> 2424</span>            <span class="keywordflow">if</span>($this-&gt;spawnChunkLoadCount !== -1){</div>
-<div class="line"><a id="l02425" name="l02425"></a><span class="lineno"> 2425</span>                $this-&gt;spawnChunkLoadCount = 0;</div>
-<div class="line"><a id="l02426" name="l02426"></a><span class="lineno"> 2426</span>            }</div>
-<div class="line"><a id="l02427" name="l02427"></a><span class="lineno"> 2427</span>            $this-&gt;blockBreakHandler = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l02428" name="l02428"></a><span class="lineno"> 2428</span> </div>
-<div class="line"><a id="l02429" name="l02429"></a><span class="lineno"> 2429</span>            <span class="comment">//TODO: workaround for player last pos not getting updated</span></div>
-<div class="line"><a id="l02430" name="l02430"></a><span class="lineno"> 2430</span>            <span class="comment">//Entity::updateMovement() normally handles this, but it&#39;s overridden with an empty function in Player</span></div>
-<div class="line"><a id="l02431" name="l02431"></a><span class="lineno"> 2431</span>            $this-&gt;resetLastMovements();</div>
+<div class="line"><a id="l02417" name="l02417"></a><span class="lineno"> 2417</span>            $this-&gt;spawnToAll();</div>
+<div class="line"><a id="l02418" name="l02418"></a><span class="lineno"> 2418</span> </div>
+<div class="line"><a id="l02419" name="l02419"></a><span class="lineno"> 2419</span>            $this-&gt;resetFallDistance();</div>
+<div class="line"><a id="l02420" name="l02420"></a><span class="lineno"> 2420</span>            $this-&gt;nextChunkOrderRun = 0;</div>
+<div class="line"><a id="l02421" name="l02421"></a><span class="lineno"> 2421</span>            <span class="keywordflow">if</span>($this-&gt;spawnChunkLoadCount !== -1){</div>
+<div class="line"><a id="l02422" name="l02422"></a><span class="lineno"> 2422</span>                $this-&gt;spawnChunkLoadCount = 0;</div>
+<div class="line"><a id="l02423" name="l02423"></a><span class="lineno"> 2423</span>            }</div>
+<div class="line"><a id="l02424" name="l02424"></a><span class="lineno"> 2424</span>            $this-&gt;blockBreakHandler = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l02425" name="l02425"></a><span class="lineno"> 2425</span> </div>
+<div class="line"><a id="l02426" name="l02426"></a><span class="lineno"> 2426</span>            <span class="comment">//TODO: workaround for player last pos not getting updated</span></div>
+<div class="line"><a id="l02427" name="l02427"></a><span class="lineno"> 2427</span>            <span class="comment">//Entity::updateMovement() normally handles this, but it&#39;s overridden with an empty function in Player</span></div>
+<div class="line"><a id="l02428" name="l02428"></a><span class="lineno"> 2428</span>            $this-&gt;resetLastMovements();</div>
+<div class="line"><a id="l02429" name="l02429"></a><span class="lineno"> 2429</span> </div>
+<div class="line"><a id="l02430" name="l02430"></a><span class="lineno"> 2430</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02431" name="l02431"></a><span class="lineno"> 2431</span>        }</div>
 <div class="line"><a id="l02432" name="l02432"></a><span class="lineno"> 2432</span> </div>
-<div class="line"><a id="l02433" name="l02433"></a><span class="lineno"> 2433</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02434" name="l02434"></a><span class="lineno"> 2434</span>        }</div>
+<div class="line"><a id="l02433" name="l02433"></a><span class="lineno"> 2433</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l02434" name="l02434"></a><span class="lineno"> 2434</span>    }</div>
 <div class="line"><a id="l02435" name="l02435"></a><span class="lineno"> 2435</span> </div>
-<div class="line"><a id="l02436" name="l02436"></a><span class="lineno"> 2436</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l02437" name="l02437"></a><span class="lineno"> 2437</span>    }</div>
-<div class="line"><a id="l02438" name="l02438"></a><span class="lineno"> 2438</span> </div>
-<div class="line"><a id="l02439" name="l02439"></a><span class="lineno"> 2439</span>    <span class="keyword">protected</span> <span class="keyword">function</span> addDefaultWindows() : void{</div>
-<div class="line"><a id="l02440" name="l02440"></a><span class="lineno"> 2440</span>        $this-&gt;cursorInventory = new PlayerCursorInventory($this);</div>
-<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span>        $this-&gt;craftingGrid = <span class="keyword">new</span> PlayerCraftingInventory($this);</div>
-<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span> </div>
-<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span>        $this-&gt;addPermanentInventories($this-&gt;inventory, $this-&gt;armorInventory, $this-&gt;cursorInventory, $this-&gt;offHandInventory);</div>
+<div class="line"><a id="l02436" name="l02436"></a><span class="lineno"> 2436</span>    <span class="keyword">protected</span> <span class="keyword">function</span> addDefaultWindows() : void{</div>
+<div class="line"><a id="l02437" name="l02437"></a><span class="lineno"> 2437</span>        $this-&gt;cursorInventory = new PlayerCursorInventory($this);</div>
+<div class="line"><a id="l02438" name="l02438"></a><span class="lineno"> 2438</span>        $this-&gt;craftingGrid = <span class="keyword">new</span> PlayerCraftingInventory($this);</div>
+<div class="line"><a id="l02439" name="l02439"></a><span class="lineno"> 2439</span> </div>
+<div class="line"><a id="l02440" name="l02440"></a><span class="lineno"> 2440</span>        $this-&gt;addPermanentInventories($this-&gt;inventory, $this-&gt;armorInventory, $this-&gt;cursorInventory, $this-&gt;offHandInventory);</div>
+<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span> </div>
+<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span>        <span class="comment">//TODO: more windows</span></div>
+<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span>    }</div>
 <div class="line"><a id="l02444" name="l02444"></a><span class="lineno"> 2444</span> </div>
-<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>        <span class="comment">//TODO: more windows</span></div>
-<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>    }</div>
-<div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span> </div>
-<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCursorInventory() : PlayerCursorInventory{</div>
-<div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span>        return $this-&gt;cursorInventory;</div>
-<div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span>    }</div>
-<div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span> </div>
-<div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCraftingGrid() : CraftingGrid{</div>
-<div class="line"><a id="l02453" name="l02453"></a><span class="lineno"> 2453</span>        return $this-&gt;craftingGrid;</div>
-<div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span>    }</div>
-<div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span> </div>
-<div class="line"><a id="l02460" name="l02460"></a><span class="lineno"> 2460</span>    <span class="keyword">private</span> <span class="keyword">function</span> doCloseInventory() : void{</div>
-<div class="line"><a id="l02461" name="l02461"></a><span class="lineno"> 2461</span>        $inventories = [$this-&gt;craftingGrid, $this-&gt;cursorInventory];</div>
-<div class="line"><a id="l02462" name="l02462"></a><span class="lineno"> 2462</span>        <span class="keywordflow">if</span>($this-&gt;currentWindow instanceof TemporaryInventory){</div>
-<div class="line"><a id="l02463" name="l02463"></a><span class="lineno"> 2463</span>            $inventories[] = $this-&gt;currentWindow;</div>
-<div class="line"><a id="l02464" name="l02464"></a><span class="lineno"> 2464</span>        }</div>
-<div class="line"><a id="l02465" name="l02465"></a><span class="lineno"> 2465</span> </div>
-<div class="line"><a id="l02466" name="l02466"></a><span class="lineno"> 2466</span>        $transaction = <span class="keyword">new</span> InventoryTransaction($this);</div>
-<div class="line"><a id="l02467" name="l02467"></a><span class="lineno"> 2467</span>        $mainInventoryTransactionBuilder = <span class="keyword">new</span> TransactionBuilderInventory($this-&gt;inventory);</div>
-<div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span>        <span class="keywordflow">foreach</span>($inventories as $inventory){</div>
-<div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span>            $contents = $inventory-&gt;getContents();</div>
-<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span> </div>
-<div class="line"><a id="l02471" name="l02471"></a><span class="lineno"> 2471</span>            <span class="keywordflow">if</span>(count($contents) &gt; 0){</div>
-<div class="line"><a id="l02472" name="l02472"></a><span class="lineno"> 2472</span>                $drops = $mainInventoryTransactionBuilder-&gt;addItem(...$contents);</div>
-<div class="line"><a id="l02473" name="l02473"></a><span class="lineno"> 2473</span>                <span class="keywordflow">foreach</span>($drops as $drop){</div>
-<div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span>                    $transaction-&gt;addAction(<span class="keyword">new</span> DropItemAction($drop));</div>
-<div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span>                }</div>
-<div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span> </div>
-<div class="line"><a id="l02477" name="l02477"></a><span class="lineno"> 2477</span>                $clearedInventoryTransactionBuilder = <span class="keyword">new</span> TransactionBuilderInventory($inventory);</div>
-<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>                $clearedInventoryTransactionBuilder-&gt;clearAll();</div>
-<div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>                <span class="keywordflow">foreach</span>($clearedInventoryTransactionBuilder-&gt;generateActions() as $action){</div>
-<div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span>                    $transaction-&gt;addAction($action);</div>
-<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>                }</div>
-<div class="line"><a id="l02482" name="l02482"></a><span class="lineno"> 2482</span>            }</div>
+<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCursorInventory() : PlayerCursorInventory{</div>
+<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>        return $this-&gt;cursorInventory;</div>
+<div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span>    }</div>
+<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span> </div>
+<div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCraftingGrid() : CraftingGrid{</div>
+<div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span>        return $this-&gt;craftingGrid;</div>
+<div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>    }</div>
+<div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span> </div>
+<div class="line"><a id="l02457" name="l02457"></a><span class="lineno"> 2457</span>    <span class="keyword">private</span> <span class="keyword">function</span> doCloseInventory() : void{</div>
+<div class="line"><a id="l02458" name="l02458"></a><span class="lineno"> 2458</span>        $inventories = [$this-&gt;craftingGrid, $this-&gt;cursorInventory];</div>
+<div class="line"><a id="l02459" name="l02459"></a><span class="lineno"> 2459</span>        <span class="keywordflow">if</span>($this-&gt;currentWindow instanceof TemporaryInventory){</div>
+<div class="line"><a id="l02460" name="l02460"></a><span class="lineno"> 2460</span>            $inventories[] = $this-&gt;currentWindow;</div>
+<div class="line"><a id="l02461" name="l02461"></a><span class="lineno"> 2461</span>        }</div>
+<div class="line"><a id="l02462" name="l02462"></a><span class="lineno"> 2462</span> </div>
+<div class="line"><a id="l02463" name="l02463"></a><span class="lineno"> 2463</span>        $transaction = <span class="keyword">new</span> InventoryTransaction($this);</div>
+<div class="line"><a id="l02464" name="l02464"></a><span class="lineno"> 2464</span>        $mainInventoryTransactionBuilder = <span class="keyword">new</span> TransactionBuilderInventory($this-&gt;inventory);</div>
+<div class="line"><a id="l02465" name="l02465"></a><span class="lineno"> 2465</span>        <span class="keywordflow">foreach</span>($inventories as $inventory){</div>
+<div class="line"><a id="l02466" name="l02466"></a><span class="lineno"> 2466</span>            $contents = $inventory-&gt;getContents();</div>
+<div class="line"><a id="l02467" name="l02467"></a><span class="lineno"> 2467</span> </div>
+<div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span>            <span class="keywordflow">if</span>(count($contents) &gt; 0){</div>
+<div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span>                $drops = $mainInventoryTransactionBuilder-&gt;addItem(...$contents);</div>
+<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span>                <span class="keywordflow">foreach</span>($drops as $drop){</div>
+<div class="line"><a id="l02471" name="l02471"></a><span class="lineno"> 2471</span>                    $transaction-&gt;addAction(<span class="keyword">new</span> DropItemAction($drop));</div>
+<div class="line"><a id="l02472" name="l02472"></a><span class="lineno"> 2472</span>                }</div>
+<div class="line"><a id="l02473" name="l02473"></a><span class="lineno"> 2473</span> </div>
+<div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span>                $clearedInventoryTransactionBuilder = <span class="keyword">new</span> TransactionBuilderInventory($inventory);</div>
+<div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span>                $clearedInventoryTransactionBuilder-&gt;clearAll();</div>
+<div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span>                <span class="keywordflow">foreach</span>($clearedInventoryTransactionBuilder-&gt;generateActions() as $action){</div>
+<div class="line"><a id="l02477" name="l02477"></a><span class="lineno"> 2477</span>                    $transaction-&gt;addAction($action);</div>
+<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>                }</div>
+<div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>            }</div>
+<div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span>        }</div>
+<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>        <span class="keywordflow">foreach</span>($mainInventoryTransactionBuilder-&gt;generateActions() as $action){</div>
+<div class="line"><a id="l02482" name="l02482"></a><span class="lineno"> 2482</span>            $transaction-&gt;addAction($action);</div>
 <div class="line"><a id="l02483" name="l02483"></a><span class="lineno"> 2483</span>        }</div>
-<div class="line"><a id="l02484" name="l02484"></a><span class="lineno"> 2484</span>        <span class="keywordflow">foreach</span>($mainInventoryTransactionBuilder-&gt;generateActions() as $action){</div>
-<div class="line"><a id="l02485" name="l02485"></a><span class="lineno"> 2485</span>            $transaction-&gt;addAction($action);</div>
-<div class="line"><a id="l02486" name="l02486"></a><span class="lineno"> 2486</span>        }</div>
-<div class="line"><a id="l02487" name="l02487"></a><span class="lineno"> 2487</span> </div>
-<div class="line"><a id="l02488" name="l02488"></a><span class="lineno"> 2488</span>        <span class="keywordflow">if</span>(count($transaction-&gt;getActions()) !== 0){</div>
-<div class="line"><a id="l02489" name="l02489"></a><span class="lineno"> 2489</span>            <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l02490" name="l02490"></a><span class="lineno"> 2490</span>                $transaction-&gt;execute();</div>
-<div class="line"><a id="l02491" name="l02491"></a><span class="lineno"> 2491</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Successfully evacuated items from temporary inventories&quot;</span>);</div>
-<div class="line"><a id="l02492" name="l02492"></a><span class="lineno"> 2492</span>            }<span class="keywordflow">catch</span>(TransactionCancelledException){</div>
-<div class="line"><a id="l02493" name="l02493"></a><span class="lineno"> 2493</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Plugin cancelled transaction evacuating items from temporary inventories; items will be destroyed&quot;</span>);</div>
-<div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>                <span class="keywordflow">foreach</span>($inventories as $inventory){</div>
-<div class="line"><a id="l02495" name="l02495"></a><span class="lineno"> 2495</span>                    $inventory-&gt;clearAll();</div>
-<div class="line"><a id="l02496" name="l02496"></a><span class="lineno"> 2496</span>                }</div>
-<div class="line"><a id="l02497" name="l02497"></a><span class="lineno"> 2497</span>            }<span class="keywordflow">catch</span>(TransactionValidationException $e){</div>
-<div class="line"><a id="l02498" name="l02498"></a><span class="lineno"> 2498</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;This server-generated transaction should never be invalid&quot;</span>, 0, $e);</div>
-<div class="line"><a id="l02499" name="l02499"></a><span class="lineno"> 2499</span>            }</div>
-<div class="line"><a id="l02500" name="l02500"></a><span class="lineno"> 2500</span>        }</div>
-<div class="line"><a id="l02501" name="l02501"></a><span class="lineno"> 2501</span>    }</div>
-<div class="line"><a id="l02502" name="l02502"></a><span class="lineno"> 2502</span> </div>
-<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af7654ad618f4e269dd9233eb77ded29b"> 2506</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af7654ad618f4e269dd9233eb77ded29b">getCurrentWindow</a>() : ?<a class="code hl_interface" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html">Inventory</a>{</div>
-<div class="line"><a id="l02507" name="l02507"></a><span class="lineno"> 2507</span>        return $this-&gt;currentWindow;</div>
-<div class="line"><a id="l02508" name="l02508"></a><span class="lineno"> 2508</span>    }</div>
-<div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span> </div>
-<div class="line"><a id="l02513" name="l02513"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab961c54c130eb92508d9ad07a46840d2"> 2513</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab961c54c130eb92508d9ad07a46840d2">setCurrentWindow</a>(<a class="code hl_interface" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html">Inventory</a> $inventory) : bool{</div>
-<div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span>        if($inventory === $this-&gt;currentWindow){</div>
-<div class="line"><a id="l02515" name="l02515"></a><span class="lineno"> 2515</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span>        }</div>
-<div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span>        $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html">InventoryOpenEvent</a>($inventory, $this);</div>
-<div class="line"><a id="l02518" name="l02518"></a><span class="lineno"> 2518</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l02519" name="l02519"></a><span class="lineno"> 2519</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l02520" name="l02520"></a><span class="lineno"> 2520</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l02521" name="l02521"></a><span class="lineno"> 2521</span>        }</div>
-<div class="line"><a id="l02522" name="l02522"></a><span class="lineno"> 2522</span> </div>
-<div class="line"><a id="l02523" name="l02523"></a><span class="lineno"> 2523</span>        $this-&gt;removeCurrentWindow();</div>
-<div class="line"><a id="l02524" name="l02524"></a><span class="lineno"> 2524</span> </div>
-<div class="line"><a id="l02525" name="l02525"></a><span class="lineno"> 2525</span>        <span class="keywordflow">if</span>(($inventoryManager = $this-&gt;getNetworkSession()-&gt;getInvManager()) === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l02526" name="l02526"></a><span class="lineno"> 2526</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Player cannot open inventories in this state&quot;</span>);</div>
-<div class="line"><a id="l02527" name="l02527"></a><span class="lineno"> 2527</span>        }</div>
-<div class="line"><a id="l02528" name="l02528"></a><span class="lineno"> 2528</span>        $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Opening inventory &quot;</span> . get_class($inventory) . <span class="stringliteral">&quot;#&quot;</span> . spl_object_id($inventory));</div>
-<div class="line"><a id="l02529" name="l02529"></a><span class="lineno"> 2529</span>        $inventoryManager-&gt;onCurrentWindowChange($inventory);</div>
-<div class="line"><a id="l02530" name="l02530"></a><span class="lineno"> 2530</span>        $inventory-&gt;onOpen($this);</div>
-<div class="line"><a id="l02531" name="l02531"></a><span class="lineno"> 2531</span>        $this-&gt;currentWindow = $inventory;</div>
-<div class="line"><a id="l02532" name="l02532"></a><span class="lineno"> 2532</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02533" name="l02533"></a><span class="lineno"> 2533</span>    }</div>
-<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span> </div>
-<div class="line"><a id="l02535" name="l02535"></a><span class="lineno"> 2535</span>    <span class="keyword">public</span> <span class="keyword">function</span> removeCurrentWindow() : void{</div>
-<div class="line"><a id="l02536" name="l02536"></a><span class="lineno"> 2536</span>        $this-&gt;doCloseInventory();</div>
-<div class="line"><a id="l02537" name="l02537"></a><span class="lineno"> 2537</span>        <span class="keywordflow">if</span>($this-&gt;currentWindow !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l02538" name="l02538"></a><span class="lineno"> 2538</span>            $currentWindow = $this-&gt;currentWindow;</div>
-<div class="line"><a id="l02539" name="l02539"></a><span class="lineno"> 2539</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Closing inventory &quot;</span> . get_class($this-&gt;currentWindow) . <span class="stringliteral">&quot;#&quot;</span> . spl_object_id($this-&gt;currentWindow));</div>
-<div class="line"><a id="l02540" name="l02540"></a><span class="lineno"> 2540</span>            $this-&gt;currentWindow-&gt;onClose($this);</div>
-<div class="line"><a id="l02541" name="l02541"></a><span class="lineno"> 2541</span>            <span class="keywordflow">if</span>(($inventoryManager = $this-&gt;getNetworkSession()-&gt;getInvManager()) !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l02542" name="l02542"></a><span class="lineno"> 2542</span>                $inventoryManager-&gt;onCurrentWindowRemove();</div>
-<div class="line"><a id="l02543" name="l02543"></a><span class="lineno"> 2543</span>            }</div>
-<div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span>            $this-&gt;currentWindow = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l02545" name="l02545"></a><span class="lineno"> 2545</span>            (<span class="keyword">new</span> InventoryCloseEvent($currentWindow, $this))-&gt;call();</div>
-<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span>        }</div>
-<div class="line"><a id="l02547" name="l02547"></a><span class="lineno"> 2547</span>    }</div>
-<div class="line"><a id="l02548" name="l02548"></a><span class="lineno"> 2548</span> </div>
-<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span>    <span class="keyword">protected</span> <span class="keyword">function</span> addPermanentInventories(Inventory ...$inventories) : void{</div>
-<div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span>        foreach($inventories as $inventory){</div>
-<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span>            $inventory-&gt;onOpen($this);</div>
-<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span>            $this-&gt;permanentWindows[spl_object_id($inventory)] = $inventory;</div>
-<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>        }</div>
-<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>    }</div>
-<div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span> </div>
-<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span>    <span class="keyword">protected</span> <span class="keyword">function</span> removePermanentInventories() : void{</div>
-<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span>        foreach($this-&gt;permanentWindows as $inventory){</div>
-<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span>            $inventory-&gt;onClose($this);</div>
-<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span>        }</div>
-<div class="line"><a id="l02560" name="l02560"></a><span class="lineno"> 2560</span>        $this-&gt;permanentWindows = [];</div>
-<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span>    }</div>
-<div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span> </div>
-<div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span>    use ChunkListenerNoOpTrait {</div>
-<div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span>        onChunkChanged as <span class="keyword">private</span>;</div>
-<div class="line"><a id="l02565" name="l02565"></a><span class="lineno"> 2565</span>        onChunkUnloaded as <span class="keyword">private</span>;</div>
-<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span>    }</div>
-<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span> </div>
-<div class="line"><a id="l02568" name="l02568"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab72b49d7b9858fb1d9c2e395c75fa4d5"> 2568</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab72b49d7b9858fb1d9c2e395c75fa4d5">onChunkChanged</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk) : void{</div>
-<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span>        $status = $this-&gt;usedChunks[$hash = <a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a>::chunkHash($chunkX, $chunkZ)] ?? null;</div>
-<div class="line"><a id="l02570" name="l02570"></a><span class="lineno"> 2570</span>        <span class="keywordflow">if</span>($status !== <span class="keyword">null</span> &amp;&amp; $status-&gt;equals(UsedChunkStatus::SENT())){</div>
-<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span>            $this-&gt;usedChunks[$hash] = UsedChunkStatus::NEEDED();</div>
-<div class="line"><a id="l02572" name="l02572"></a><span class="lineno"> 2572</span>            $this-&gt;nextChunkOrderRun = 0;</div>
-<div class="line"><a id="l02573" name="l02573"></a><span class="lineno"> 2573</span>        }</div>
-<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span>    }</div>
-<div class="line"><a id="l02575" name="l02575"></a><span class="lineno"> 2575</span> </div>
-<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acd1e5a864df07306ea2d25b1604191c2"> 2576</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acd1e5a864df07306ea2d25b1604191c2">onChunkUnloaded</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk) : void{</div>
-<div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span>        if($this-&gt;isUsingChunk($chunkX, $chunkZ)){</div>
-<div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Detected forced unload of chunk &quot;</span> . $chunkX . <span class="stringliteral">&quot; &quot;</span> . $chunkZ);</div>
-<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>            $this-&gt;unloadChunk($chunkX, $chunkZ);</div>
-<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span>        }</div>
-<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>    }</div>
-<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span>}</div>
+<div class="line"><a id="l02484" name="l02484"></a><span class="lineno"> 2484</span> </div>
+<div class="line"><a id="l02485" name="l02485"></a><span class="lineno"> 2485</span>        <span class="keywordflow">if</span>(count($transaction-&gt;getActions()) !== 0){</div>
+<div class="line"><a id="l02486" name="l02486"></a><span class="lineno"> 2486</span>            <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l02487" name="l02487"></a><span class="lineno"> 2487</span>                $transaction-&gt;execute();</div>
+<div class="line"><a id="l02488" name="l02488"></a><span class="lineno"> 2488</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Successfully evacuated items from temporary inventories&quot;</span>);</div>
+<div class="line"><a id="l02489" name="l02489"></a><span class="lineno"> 2489</span>            }<span class="keywordflow">catch</span>(TransactionCancelledException){</div>
+<div class="line"><a id="l02490" name="l02490"></a><span class="lineno"> 2490</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Plugin cancelled transaction evacuating items from temporary inventories; items will be destroyed&quot;</span>);</div>
+<div class="line"><a id="l02491" name="l02491"></a><span class="lineno"> 2491</span>                <span class="keywordflow">foreach</span>($inventories as $inventory){</div>
+<div class="line"><a id="l02492" name="l02492"></a><span class="lineno"> 2492</span>                    $inventory-&gt;clearAll();</div>
+<div class="line"><a id="l02493" name="l02493"></a><span class="lineno"> 2493</span>                }</div>
+<div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>            }<span class="keywordflow">catch</span>(TransactionValidationException $e){</div>
+<div class="line"><a id="l02495" name="l02495"></a><span class="lineno"> 2495</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;This server-generated transaction should never be invalid&quot;</span>, 0, $e);</div>
+<div class="line"><a id="l02496" name="l02496"></a><span class="lineno"> 2496</span>            }</div>
+<div class="line"><a id="l02497" name="l02497"></a><span class="lineno"> 2497</span>        }</div>
+<div class="line"><a id="l02498" name="l02498"></a><span class="lineno"> 2498</span>    }</div>
+<div class="line"><a id="l02499" name="l02499"></a><span class="lineno"> 2499</span> </div>
+<div class="line"><a id="l02503" name="l02503"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af7654ad618f4e269dd9233eb77ded29b"> 2503</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af7654ad618f4e269dd9233eb77ded29b">getCurrentWindow</a>() : ?<a class="code hl_interface" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html">Inventory</a>{</div>
+<div class="line"><a id="l02504" name="l02504"></a><span class="lineno"> 2504</span>        return $this-&gt;currentWindow;</div>
+<div class="line"><a id="l02505" name="l02505"></a><span class="lineno"> 2505</span>    }</div>
+<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span> </div>
+<div class="line"><a id="l02510" name="l02510"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab961c54c130eb92508d9ad07a46840d2"> 2510</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab961c54c130eb92508d9ad07a46840d2">setCurrentWindow</a>(<a class="code hl_interface" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html">Inventory</a> $inventory) : bool{</div>
+<div class="line"><a id="l02511" name="l02511"></a><span class="lineno"> 2511</span>        if($inventory === $this-&gt;currentWindow){</div>
+<div class="line"><a id="l02512" name="l02512"></a><span class="lineno"> 2512</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02513" name="l02513"></a><span class="lineno"> 2513</span>        }</div>
+<div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span>        $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html">InventoryOpenEvent</a>($inventory, $this);</div>
+<div class="line"><a id="l02515" name="l02515"></a><span class="lineno"> 2515</span>        $ev-&gt;call();</div>
+<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l02518" name="l02518"></a><span class="lineno"> 2518</span>        }</div>
+<div class="line"><a id="l02519" name="l02519"></a><span class="lineno"> 2519</span> </div>
+<div class="line"><a id="l02520" name="l02520"></a><span class="lineno"> 2520</span>        $this-&gt;removeCurrentWindow();</div>
+<div class="line"><a id="l02521" name="l02521"></a><span class="lineno"> 2521</span> </div>
+<div class="line"><a id="l02522" name="l02522"></a><span class="lineno"> 2522</span>        <span class="keywordflow">if</span>(($inventoryManager = $this-&gt;getNetworkSession()-&gt;getInvManager()) === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l02523" name="l02523"></a><span class="lineno"> 2523</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Player cannot open inventories in this state&quot;</span>);</div>
+<div class="line"><a id="l02524" name="l02524"></a><span class="lineno"> 2524</span>        }</div>
+<div class="line"><a id="l02525" name="l02525"></a><span class="lineno"> 2525</span>        $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Opening inventory &quot;</span> . get_class($inventory) . <span class="stringliteral">&quot;#&quot;</span> . spl_object_id($inventory));</div>
+<div class="line"><a id="l02526" name="l02526"></a><span class="lineno"> 2526</span>        $inventoryManager-&gt;onCurrentWindowChange($inventory);</div>
+<div class="line"><a id="l02527" name="l02527"></a><span class="lineno"> 2527</span>        $inventory-&gt;onOpen($this);</div>
+<div class="line"><a id="l02528" name="l02528"></a><span class="lineno"> 2528</span>        $this-&gt;currentWindow = $inventory;</div>
+<div class="line"><a id="l02529" name="l02529"></a><span class="lineno"> 2529</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02530" name="l02530"></a><span class="lineno"> 2530</span>    }</div>
+<div class="line"><a id="l02531" name="l02531"></a><span class="lineno"> 2531</span> </div>
+<div class="line"><a id="l02532" name="l02532"></a><span class="lineno"> 2532</span>    <span class="keyword">public</span> <span class="keyword">function</span> removeCurrentWindow() : void{</div>
+<div class="line"><a id="l02533" name="l02533"></a><span class="lineno"> 2533</span>        $this-&gt;doCloseInventory();</div>
+<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span>        <span class="keywordflow">if</span>($this-&gt;currentWindow !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l02535" name="l02535"></a><span class="lineno"> 2535</span>            $currentWindow = $this-&gt;currentWindow;</div>
+<div class="line"><a id="l02536" name="l02536"></a><span class="lineno"> 2536</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Closing inventory &quot;</span> . get_class($this-&gt;currentWindow) . <span class="stringliteral">&quot;#&quot;</span> . spl_object_id($this-&gt;currentWindow));</div>
+<div class="line"><a id="l02537" name="l02537"></a><span class="lineno"> 2537</span>            $this-&gt;currentWindow-&gt;onClose($this);</div>
+<div class="line"><a id="l02538" name="l02538"></a><span class="lineno"> 2538</span>            <span class="keywordflow">if</span>(($inventoryManager = $this-&gt;getNetworkSession()-&gt;getInvManager()) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l02539" name="l02539"></a><span class="lineno"> 2539</span>                $inventoryManager-&gt;onCurrentWindowRemove();</div>
+<div class="line"><a id="l02540" name="l02540"></a><span class="lineno"> 2540</span>            }</div>
+<div class="line"><a id="l02541" name="l02541"></a><span class="lineno"> 2541</span>            $this-&gt;currentWindow = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l02542" name="l02542"></a><span class="lineno"> 2542</span>            (<span class="keyword">new</span> InventoryCloseEvent($currentWindow, $this))-&gt;call();</div>
+<div class="line"><a id="l02543" name="l02543"></a><span class="lineno"> 2543</span>        }</div>
+<div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span>    }</div>
+<div class="line"><a id="l02545" name="l02545"></a><span class="lineno"> 2545</span> </div>
+<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span>    <span class="keyword">protected</span> <span class="keyword">function</span> addPermanentInventories(Inventory ...$inventories) : void{</div>
+<div class="line"><a id="l02547" name="l02547"></a><span class="lineno"> 2547</span>        foreach($inventories as $inventory){</div>
+<div class="line"><a id="l02548" name="l02548"></a><span class="lineno"> 2548</span>            $inventory-&gt;onOpen($this);</div>
+<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span>            $this-&gt;permanentWindows[spl_object_id($inventory)] = $inventory;</div>
+<div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span>        }</div>
+<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span>    }</div>
+<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span> </div>
+<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>    <span class="keyword">protected</span> <span class="keyword">function</span> removePermanentInventories() : void{</div>
+<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>        foreach($this-&gt;permanentWindows as $inventory){</div>
+<div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span>            $inventory-&gt;onClose($this);</div>
+<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span>        }</div>
+<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span>        $this-&gt;permanentWindows = [];</div>
+<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span>    }</div>
+<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span> </div>
+<div class="line"><a id="l02560" name="l02560"></a><span class="lineno"> 2560</span>    use ChunkListenerNoOpTrait {</div>
+<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span>        onChunkChanged as <span class="keyword">private</span>;</div>
+<div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span>        onChunkUnloaded as <span class="keyword">private</span>;</div>
+<div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span>    }</div>
+<div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span> </div>
+<div class="line"><a id="l02565" name="l02565"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab72b49d7b9858fb1d9c2e395c75fa4d5"> 2565</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab72b49d7b9858fb1d9c2e395c75fa4d5">onChunkChanged</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk) : void{</div>
+<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span>        $status = $this-&gt;usedChunks[$hash = <a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a>::chunkHash($chunkX, $chunkZ)] ?? null;</div>
+<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span>        <span class="keywordflow">if</span>($status !== <span class="keyword">null</span> &amp;&amp; $status-&gt;equals(UsedChunkStatus::SENT())){</div>
+<div class="line"><a id="l02568" name="l02568"></a><span class="lineno"> 2568</span>            $this-&gt;usedChunks[$hash] = UsedChunkStatus::NEEDED();</div>
+<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span>            $this-&gt;nextChunkOrderRun = 0;</div>
+<div class="line"><a id="l02570" name="l02570"></a><span class="lineno"> 2570</span>        }</div>
+<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span>    }</div>
+<div class="line"><a id="l02572" name="l02572"></a><span class="lineno"> 2572</span> </div>
+<div class="line"><a id="l02573" name="l02573"></a><span class="lineno"><a class="line" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acd1e5a864df07306ea2d25b1604191c2"> 2573</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acd1e5a864df07306ea2d25b1604191c2">onChunkUnloaded</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk) : void{</div>
+<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span>        if($this-&gt;isUsingChunk($chunkX, $chunkZ)){</div>
+<div class="line"><a id="l02575" name="l02575"></a><span class="lineno"> 2575</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Detected forced unload of chunk &quot;</span> . $chunkX . <span class="stringliteral">&quot; &quot;</span> . $chunkZ);</div>
+<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span>            $this-&gt;unloadChunk($chunkX, $chunkZ);</div>
+<div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span>        }</div>
+<div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span>    }</div>
+<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00175">src/Server.php:175</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bed_html"><div class="ttname"><a href="../../d0/dde/classpocketmine_1_1block_1_1_bed.html">pocketmine\block\Bed</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d28/block_2_bed_8php_source.html#l00045">block/Bed.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_legacy_ids_html"><div class="ttname"><a href="../../db/d51/classpocketmine_1_1block_1_1_block_legacy_ids.html">pocketmine\block\BlockLegacyIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d7d/_block_legacy_ids_8php_source.html#l00026">BlockLegacyIds.php:26</a></div></div>
@@ -2354,7 +2354,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_critical_hit_animation_html"><div class="ttname"><a href="../../dd/d0b/classpocketmine_1_1entity_1_1animation_1_1_critical_hit_animation.html">pocketmine\entity\animation\CriticalHitAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d47/_critical_hit_animation_8php_source.html#l00029">CriticalHitAnimation.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1effect_1_1_vanilla_effects_html"><div class="ttname"><a href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">pocketmine\entity\effect\VanillaEffects</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0d/_vanilla_effects_8php_source.html#l00063">VanillaEffects.php:63</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">pocketmine\entity\object\ItemEntity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00044">ItemEntity.php:44</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1projectile_1_1_arrow_html"><div class="ttname"><a href="../../d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html">pocketmine\entity\projectile\Arrow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db5/entity_2projectile_2_arrow_8php_source.html#l00044">entity/projectile/Arrow.php:44</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1projectile_1_1_arrow_html"><div class="ttname"><a href="../../d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html">pocketmine\entity\projectile\Arrow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db5/entity_2projectile_2_arrow_8php_source.html#l00045">entity/projectile/Arrow.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html_a3d979a673428c9ae66e1039bf796e945"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">pocketmine\event\Event\call</a></div><div class="ttdeci">call()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00048">Event.php:48</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event_html"><div class="ttname"><a href="../../d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html">pocketmine\event\entity\EntityDamageByEntityEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/_entity_damage_by_entity_event_8php_source.html#l00033">EntityDamageByEntityEvent.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">pocketmine\event\entity\EntityDamageEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00036">EntityDamageEvent.php:36</a></div></div>
@@ -2448,7 +2448,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a347ad45f10f29552bca3ecec79408a9f"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a347ad45f10f29552bca3ecec79408a9f">pocketmine\player\Player\getUniqueId</a></div><div class="ttdeci">getUniqueId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00399">Player.php:399</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a3545865bf08257a29c916ba386edd419"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a3545865bf08257a29c916ba386edd419">pocketmine\player\Player\setCanSaveWithChunk</a></div><div class="ttdeci">setCanSaveWithChunk(bool $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02199">Player.php:2199</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a37ad0d6c2fcaab99e475dfd0de52b0d5"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a37ad0d6c2fcaab99e475dfd0de52b0d5">pocketmine\player\Player\kick</a></div><div class="ttdeci">kick(string $reason=&quot;&quot;, Translatable|string|null $quitMessage=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02072">Player.php:2072</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a39fbbfa9a3a64b907cc5dca4316c6d81"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81">pocketmine\player\Player\teleport</a></div><div class="ttdeci">teleport(Vector3 $pos, ?float $yaw=null, ?float $pitch=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02411">Player.php:2411</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a39fbbfa9a3a64b907cc5dca4316c6d81"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a39fbbfa9a3a64b907cc5dca4316c6d81">pocketmine\player\Player\teleport</a></div><div class="ttdeci">teleport(Vector3 $pos, ?float $yaw=null, ?float $pitch=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02408">Player.php:2408</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a3cffbb09b98b73c2080b02e8961526a0"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a3cffbb09b98b73c2080b02e8961526a0">pocketmine\player\Player\doFirstSpawn</a></div><div class="ttdeci">doFirstSpawn()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00846">Player.php:846</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a40c46a19294383bb1dee4addfe32dd8f"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a40c46a19294383bb1dee4addfe32dd8f">pocketmine\player\Player\applyPostDamageEffects</a></div><div class="ttdeci">applyPostDamageEffects(EntityDamageEvent $source)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02343">Player.php:2343</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a410eec5a9f0f40a6b88d5fde535b77b3"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a410eec5a9f0f40a6b88d5fde535b77b3">pocketmine\player\Player\setAllowFlight</a></div><div class="ttdeci">setAllowFlight(bool $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00430">Player.php:430</a></div></div>
@@ -2489,14 +2489,14 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_aafded632e1920216aedc3b637867a2a3"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#aafded632e1920216aedc3b637867a2a3">pocketmine\player\Player\canSaveWithChunk</a></div><div class="ttdeci">canSaveWithChunk()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02195">Player.php:2195</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ab21a7d3a42efbabb9d6067b8ea039026"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab21a7d3a42efbabb9d6067b8ea039026">pocketmine\player\Player\setSpawn</a></div><div class="ttdeci">setSpawn(?Vector3 $pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00983">Player.php:983</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ab62502b476482e2c9144dd352aefc476"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab62502b476482e2c9144dd352aefc476">pocketmine\player\Player\resetTitles</a></div><div class="ttdeci">resetTitles()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01951">Player.php:1951</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ab72b49d7b9858fb1d9c2e395c75fa4d5"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab72b49d7b9858fb1d9c2e395c75fa4d5">pocketmine\player\Player\onChunkChanged</a></div><div class="ttdeci">onChunkUnloaded as onChunkChanged(int $chunkX, int $chunkZ, Chunk $chunk)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02568">Player.php:2568</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ab961c54c130eb92508d9ad07a46840d2"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab961c54c130eb92508d9ad07a46840d2">pocketmine\player\Player\setCurrentWindow</a></div><div class="ttdeci">setCurrentWindow(Inventory $inventory)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02513">Player.php:2513</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ab72b49d7b9858fb1d9c2e395c75fa4d5"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab72b49d7b9858fb1d9c2e395c75fa4d5">pocketmine\player\Player\onChunkChanged</a></div><div class="ttdeci">onChunkUnloaded as onChunkChanged(int $chunkX, int $chunkZ, Chunk $chunk)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02565">Player.php:2565</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ab961c54c130eb92508d9ad07a46840d2"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ab961c54c130eb92508d9ad07a46840d2">pocketmine\player\Player\setCurrentWindow</a></div><div class="ttdeci">setCurrentWindow(Inventory $inventory)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02510">Player.php:2510</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_abe3c064e40564e0e6ca30920303db80c"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#abe3c064e40564e0e6ca30920303db80c">pocketmine\player\Player\doChunkRequests</a></div><div class="ttdeci">doChunkRequests()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00949">Player.php:949</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ac12c3579d52d5f362df2831efb8349f1"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ac12c3579d52d5f362df2831efb8349f1">pocketmine\player\Player\sendData</a></div><div class="ttdeci">sendData(?array $targets, ?array $data=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02375">Player.php:2375</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ac56863706cce2cdd18cf373ad311cd53"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ac56863706cce2cdd18cf373ad311cd53">pocketmine\player\Player\isCreative</a></div><div class="ttdeci">isCreative(bool $literal=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01115">Player.php:1115</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_acb1c1056567862abccfc2e51b98d3e32"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acb1c1056567862abccfc2e51b98d3e32">pocketmine\player\Player\useHeldItem</a></div><div class="ttdeci">useHeldItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01477">Player.php:1477</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_acc40354b712e5e9a67c222b37bbbc3e4"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acc40354b712e5e9a67c222b37bbbc3e4">pocketmine\player\Player\getAllowFlight</a></div><div class="ttdeci">getAllowFlight()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00443">Player.php:443</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_acd1e5a864df07306ea2d25b1604191c2"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acd1e5a864df07306ea2d25b1604191c2">pocketmine\player\Player\onChunkUnloaded</a></div><div class="ttdeci">onChunkUnloaded(int $chunkX, int $chunkZ, Chunk $chunk)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02576">Player.php:2576</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_acd1e5a864df07306ea2d25b1604191c2"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#acd1e5a864df07306ea2d25b1604191c2">pocketmine\player\Player\onChunkUnloaded</a></div><div class="ttdeci">onChunkUnloaded(int $chunkX, int $chunkZ, Chunk $chunk)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02573">Player.php:2573</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ad0eea32e77150b1914f71a9f5d15f878"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ad0eea32e77150b1914f71a9f5d15f878">pocketmine\player\Player\chat</a></div><div class="ttdeci">chat(string $message)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01407">Player.php:1407</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ad176e11849bd583ff8cf32fe8062418b"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ad176e11849bd583ff8cf32fe8062418b">pocketmine\player\Player\sendActionBarMessage</a></div><div class="ttdeci">sendActionBarMessage(string $message)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01937">Player.php:1937</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_ad21155cfff81c52318c8357fe0b2e64e"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#ad21155cfff81c52318c8357fe0b2e64e">pocketmine\player\Player\getName</a></div><div class="ttdeci">getName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00590">Player.php:590</a></div></div>
@@ -2516,7 +2516,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_af28edf9611ecddfad0c812b33cb8a977"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af28edf9611ecddfad0c812b33cb8a977">pocketmine\player\Player\sendSkin</a></div><div class="ttdeci">sendSkin(?array $targets=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00642">Player.php:642</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_af5703325a13a275f84e1aefd655bfab8"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af5703325a13a275f84e1aefd655bfab8">pocketmine\player\Player\isSurvival</a></div><div class="ttdeci">isSurvival(bool $literal=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01105">Player.php:1105</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_af752aeb40184a345b8f7bc700afc4a36"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af752aeb40184a345b8f7bc700afc4a36">pocketmine\player\Player\sendTranslation</a></div><div class="ttdeci">sendTranslation(string $message, array $parameters=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01983">Player.php:1983</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_af7654ad618f4e269dd9233eb77ded29b"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af7654ad618f4e269dd9233eb77ded29b">pocketmine\player\Player\getCurrentWindow</a></div><div class="ttdeci">getCurrentWindow()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02506">Player.php:2506</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_af7654ad618f4e269dd9233eb77ded29b"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af7654ad618f4e269dd9233eb77ded29b">pocketmine\player\Player\getCurrentWindow</a></div><div class="ttdeci">getCurrentWindow()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l02503">Player.php:2503</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_afa683165bff20db47ec91efa07a8e57f"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#afa683165bff20db47ec91efa07a8e57f">pocketmine\player\Player\handleMovement</a></div><div class="ttdeci">handleMovement(Vector3 $newPos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01204">Player.php:1204</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_afb795d60652fac445f8dba3d9fe25045"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#afb795d60652fac445f8dba3d9fe25045">pocketmine\player\Player\setHasBlockCollision</a></div><div class="ttdeci">setHasBlockCollision(bool $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00455">Player.php:455</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_afc17e9d7b72cf1307e28b559f9b0bdba"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#afc17e9d7b72cf1307e28b559f9b0bdba">pocketmine\player\Player\setGamemode</a></div><div class="ttdeci">setGamemode(GameMode $gm)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01076">Player.php:1076</a></div></div>
