@@ -11,7 +11,9 @@ var classpocketmine_1_1inventory_1_1_player_crafting_inventory =
     [ "getAddableItemQuantity", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a62e8a8891e7940a3b14878c3b46cbdd0", null ],
     [ "getContents", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a43e646d154a8134eb1e7294d158d576d", null ],
     [ "getIngredient", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a97bb90192ed0d4e19c477d724919a72f", null ],
+    [ "getItem", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7", null ],
     [ "getListeners", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a782f68d96eb96e27264ee54ed49184c7", null ],
+    [ "getMaxStackSize", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getRecipeHeight", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#aa2045dd45c5d85624fd00afe01b7b11e", null ],
     [ "getRecipeWidth", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a18e623fb966824524eb1251e150b611c", null ],
     [ "getSize", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad20602c8437154b4c4a201d6798e90fd", null ],
@@ -25,6 +27,7 @@ var classpocketmine_1_1inventory_1_1_player_crafting_inventory =
     [ "removeItem", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a4c58fc3d97b59245d73157c09b3bbe03", null ],
     [ "setContents", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a295a782543c002623d01ec47a6e93329", null ],
     [ "setItem", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ac03457c1ba3291c468797d3e6c259bc2", null ],
+    [ "setMaxStackSize", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a7296a52c88addd5eefe215276200b6e3", null ],
     [ "slotExists", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87", null ],
     [ "swap", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ab4558205396b6e9a38bd25c809616320", null ]
 ];

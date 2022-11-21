@@ -15,8 +15,10 @@ var classpocketmine_1_1inventory_1_1_player_inventory =
     [ "getHolder", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af3d72b8ec9fec0a90f4d1a47057a76b2", null ],
     [ "getHotbarSize", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ad1086723e970696e8e8b438be67c918a", null ],
     [ "getHotbarSlotItem", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a8b1e707e661482f1941627cff7c77ba0", null ],
+    [ "getItem", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7", null ],
     [ "getItemInHand", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a812b95b03ab4908cccb2a09bc3aaac9f", null ],
     [ "getListeners", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a782f68d96eb96e27264ee54ed49184c7", null ],
+    [ "getMaxStackSize", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getSize", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ad20602c8437154b4c4a201d6798e90fd", null ],
     [ "getViewers", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],
     [ "internalSetContents", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a0d82853303c17a6f720b487287092395", null ],
@@ -30,6 +32,7 @@ var classpocketmine_1_1inventory_1_1_player_inventory =
     [ "setHeldItemIndex", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ad879807fcfda68ccc9940479290a8627", null ],
     [ "setItem", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5", null ],
     [ "setItemInHand", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aea00deec1dff34be27e648a71f3cfaa3", null ],
+    [ "setMaxStackSize", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a7296a52c88addd5eefe215276200b6e3", null ],
     [ "slotExists", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87", null ],
     [ "swap", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ab4558205396b6e9a38bd25c809616320", null ]
 ];

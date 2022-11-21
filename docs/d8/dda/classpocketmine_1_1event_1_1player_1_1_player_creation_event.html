@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-9650b7f03af0ffd53271ac6312b7c0b11796258c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
    </div>
   </td>
  </tr>
@@ -142,9 +142,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a847810daab9f3d6396db6c759038a2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Allows the creation of players overriding the base Player class </p>
+<div class="textblock"><p >Allows the use of custom Player classes. This enables overriding built-in Player methods to change behaviour that is not possible to alter any other way.</p>
+<p >You probably don't need this event, and found your way here because you looked at some code in an old plugin that abused it (very common). Instead of using custom player classes, you should consider making session classes instead.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/pmmp/SessionsDemo">https://github.com/pmmp/SessionsDemo</a></dd></dl>
+<p>This event is a power-user feature, and multiple plugins using it at the same time will conflict and break unless they've been designed to work together. This means that it's only usually useful in private plugins.</p>
+<p >WARNING: This should NOT be used for adding extra functions or properties. This is intended for <b>overriding existing core behaviour</b>, and should only be used if you know EXACTLY what you're doing. Custom player classes may break in any update without warning. This event isn't much more than glorified reflection. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00035">35</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00048">48</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef9e3aef15b3d228e068f79540476f05" name="aef9e3aef15b3d228e068f79540476f05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef9e3aef15b3d228e068f79540476f05">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -162,7 +166,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00042">42</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00055">55</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -217,7 +221,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00048">48</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00061">61</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -235,9 +239,10 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the base class that the final player class must extend.</p>
 <dl class="section return"><dt>Returns</dt><dd>string @phpstan-return class-string&lt;Player&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00060">60</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00075">75</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -283,7 +288,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00044">44</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00057">57</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -301,9 +306,10 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the class that will be instantiated to create the player after the event.</p>
 <dl class="section return"><dt>Returns</dt><dd>string @phpstan-return class-string&lt;Player&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00080">80</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00101">101</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -322,7 +328,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00052">52</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00065">65</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -341,6 +347,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the class that the final player class must extend. The new base class must be a subclass of the current base class. This can (perhaps) be used to limit the options for custom player classes provided by other plugins.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class</td><td>@phpstan-param class-string&lt;Player&gt; $class </td></tr>
@@ -348,7 +355,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00068">68</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00087">87</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>
@@ -367,6 +374,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the class that will be instantiated to create the player after the event. The class must not be abstract, and must be an instance of the base class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class</td><td>@phpstan-param class-string&lt;Player&gt; $class </td></tr>
@@ -374,7 +382,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00088">88</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html#l00112">112</a> of file <a class="el" href="../../d6/d7e/_player_creation_event_8php_source.html">PlayerCreationEvent.php</a>.</p>
 
 </div>
 </div>

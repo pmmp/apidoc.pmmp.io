@@ -10,7 +10,10 @@ var interfacepocketmine_1_1inventory_1_1_temporary_inventory =
     [ "firstEmpty", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a164b3a2fe01600376fa7d082621b459b", null ],
     [ "getAddableItemQuantity", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a19de6c1bc1050a753769991eab469313", null ],
     [ "getContents", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a486ad078b4b853d130af8bb11c4486c1", null ],
+    [ "getItem", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#ab9f2aabeb07ac32ac95abd4b3e2df05c", null ],
     [ "getListeners", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a7fa8a9062b18f34b531ef5f7edb9bd01", null ],
+    [ "getMaxStackSize", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#afb45f7fcff5c1f84c613b8d2833f3370", null ],
+    [ "getSize", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a684ce7dacb8a711f1e2a6ac732d9b2ef", null ],
     [ "getViewers", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#ae56d3d6221cdca3b0ff012499ea7da4c", null ],
     [ "isSlotEmpty", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a23d4091616c30c614a9ef34e9d5eb78f", null ],
     [ "onOpen", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a55dc7b08c52d68ebc838321ac13310e1", null ],
@@ -18,6 +21,7 @@ var interfacepocketmine_1_1inventory_1_1_temporary_inventory =
     [ "removeItem", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a77cae2400b8893acc15bfcfad0a7607e", null ],
     [ "setContents", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a34fee0e70cbcd7a3e2e81fa31bbb1dc6", null ],
     [ "setItem", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a547b8de8fcb0e1011551fa6bbf5348d7", null ],
+    [ "setMaxStackSize", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a25ae1b1cb80ef6f0968a49baac087b68", null ],
     [ "slotExists", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#a0b608497167e82f4c487c6085dc1c80f", null ],
     [ "swap", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html#ab97a3e13f66c2d200a567ef85f12b372", null ]
 ];

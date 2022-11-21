@@ -10,7 +10,10 @@ var classpocketmine_1_1inventory_1_1_base_inventory =
     [ "firstEmpty", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ab91f0a13cfec22468eb5e6bfed9a9a80", null ],
     [ "getAddableItemQuantity", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a62e8a8891e7940a3b14878c3b46cbdd0", null ],
     [ "getContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a486ad078b4b853d130af8bb11c4486c1", null ],
+    [ "getItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ab9f2aabeb07ac32ac95abd4b3e2df05c", null ],
     [ "getListeners", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a782f68d96eb96e27264ee54ed49184c7", null ],
+    [ "getMaxStackSize", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
+    [ "getSize", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a684ce7dacb8a711f1e2a6ac732d9b2ef", null ],
     [ "getViewers", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],
     [ "internalSetContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a55e504a9849b9569eb06d9e7e220afdb", null ],
     [ "isSlotEmpty", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a7032110ecf181d3fbbc863c5f45270b0", null ],
@@ -21,6 +24,7 @@ var classpocketmine_1_1inventory_1_1_base_inventory =
     [ "removeItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4c58fc3d97b59245d73157c09b3bbe03", null ],
     [ "setContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a295a782543c002623d01ec47a6e93329", null ],
     [ "setItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5", null ],
+    [ "setMaxStackSize", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a7296a52c88addd5eefe215276200b6e3", null ],
     [ "slotExists", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87", null ],
     [ "swap", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ab4558205396b6e9a38bd25c809616320", null ]
 ];
