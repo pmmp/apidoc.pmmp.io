@@ -3,6 +3,7 @@ var namespacepocketmine_1_1event_1_1block =
     [ "BaseBlockChangeEvent", "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html", "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event" ],
     [ "BlockBreakEvent", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event" ],
     [ "BlockBurnEvent", "db/da8/classpocketmine_1_1event_1_1block_1_1_block_burn_event.html", "db/da8/classpocketmine_1_1event_1_1block_1_1_block_burn_event" ],
+    [ "BlockDeathEvent", "df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event.html", "df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event" ],
     [ "BlockEvent", "df/d69/classpocketmine_1_1event_1_1block_1_1_block_event.html", "df/d69/classpocketmine_1_1event_1_1block_1_1_block_event" ],
     [ "BlockFormEvent", "dc/d51/classpocketmine_1_1event_1_1block_1_1_block_form_event.html", "dc/d51/classpocketmine_1_1event_1_1block_1_1_block_form_event" ],
     [ "BlockGrowEvent", "db/d04/classpocketmine_1_1event_1_1block_1_1_block_grow_event.html", "db/d04/classpocketmine_1_1event_1_1block_1_1_block_grow_event" ],

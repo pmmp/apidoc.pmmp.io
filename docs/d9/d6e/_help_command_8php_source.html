@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">foreach</span>($commands[$pageNumber - 1] as $command){</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                    $description = $command-&gt;getDescription();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    $sender-&gt;sendMessage(TextFormat::DARK_GREEN . <span class="stringliteral">&quot;/&quot;</span> . $command-&gt;getLabel() . <span class="stringliteral">&quot;: &quot;</span> . TextFormat::WHITE . $descriptionString);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    $sender-&gt;sendMessage(TextFormat::DARK_GREEN . <span class="stringliteral">&quot;/&quot;</span> . $command-&gt;getLabel() . <span class="stringliteral">&quot;: &quot;</span> . TextFormat::RESET . $descriptionString);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
@@ -200,18 +200,18 @@ $(document).ready(function(){initNavTree('d9/d6e/_help_command_8php_source.html'
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    $description = $cmd-&gt;getDescription();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $descriptionString = $description instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($description) : $description;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_header($cmd-&gt;getLabel())</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        -&gt;format(TextFormat::YELLOW . <span class="stringliteral">&quot;--------- &quot;</span> . TextFormat::WHITE, TextFormat::YELLOW . <span class="stringliteral">&quot; ---------&quot;</span>));</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_description(TextFormat::WHITE . $descriptionString)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        -&gt;format(TextFormat::YELLOW . <span class="stringliteral">&quot;--------- &quot;</span> . TextFormat::RESET, TextFormat::YELLOW . <span class="stringliteral">&quot; ---------&quot;</span>));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_description(TextFormat::RESET . $descriptionString)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        -&gt;prefix(TextFormat::GOLD));</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    $usage = $cmd-&gt;getUsage();</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    $usageString = $usage instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a> ? $lang-&gt;translate($usage) : $usage;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_usage(TextFormat::WHITE . implode(<span class="stringliteral">&quot;\n&quot;</span> . TextFormat::WHITE, explode(<span class="stringliteral">&quot;\n&quot;</span>, $usageString)))</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_usage(TextFormat::RESET . implode(<span class="stringliteral">&quot;\n&quot;</span> . TextFormat::RESET, explode(<span class="stringliteral">&quot;\n&quot;</span>, $usageString)))</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                        -&gt;prefix(TextFormat::GOLD));</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    $aliases = $cmd-&gt;getAliases();</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                    sort($aliases, SORT_NATURAL);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_aliases(TextFormat::WHITE . implode(<span class="stringliteral">&quot;, &quot;</span>, $aliases))</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_help_specificCommand_aliases(TextFormat::RESET . implode(<span class="stringliteral">&quot;, &quot;</span>, $aliases))</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                        -&gt;prefix(TextFormat::GOLD));</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>

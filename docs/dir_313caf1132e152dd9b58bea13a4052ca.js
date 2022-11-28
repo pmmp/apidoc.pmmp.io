@@ -1,6 +1,7 @@
 var dir_313caf1132e152dd9b58bea13a4052ca =
 [
     [ "AssumptionFailedError.php", "da/da5/_assumption_failed_error_8php_source.html", null ],
+    [ "BroadcastLoggerForwarder.php", "d0/d39/_broadcast_logger_forwarder_8php_source.html", null ],
     [ "CloningRegistryTrait.php", "da/d38/_cloning_registry_trait_8php_source.html", null ],
     [ "Config.php", "d4/d8a/_config_8php_source.html", null ],
     [ "ConfigLoadException.php", "d4/d7b/_config_load_exception_8php_source.html", null ],

@@ -31,6 +31,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl =
     [ "onDeath", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#aac17dc3f3f88b2f3bcd614503d9a34ae", null ],
     [ "onDeathUpdate", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#a5a122ae10d347948d919332654042417", null ],
     [ "onDispose", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#a902a93c1b861c0738e47c2f1070023db", null ],
+    [ "onFirstUpdate", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHit", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#ab21e79dda0d9a3e4d0302bf03cddddc6", null ],
     [ "onHitBlock", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#ac63e377a16d1b0328ddb165a6a2b39e3", null ],
     [ "onHitEntity", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#abefd6990ef1fb83a1b4e0352a44f2455", null ],

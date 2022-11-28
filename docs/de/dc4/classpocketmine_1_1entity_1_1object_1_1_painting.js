@@ -30,6 +30,7 @@ var classpocketmine_1_1entity_1_1object_1_1_painting =
     [ "onDeath", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#acd0536c3a70945a9ffa8e62fe1816ff7", null ],
     [ "onDeathUpdate", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a5a122ae10d347948d919332654042417", null ],
     [ "onDispose", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a902a93c1b861c0738e47c2f1070023db", null ],
+    [ "onFirstUpdate", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHitGround", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a25ad669890dc24d70b8cdad878cd6449", null ],
     [ "onInteract", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a81725faf49c2b6fb3314cac3f6a11e3c", null ],
     [ "onRandomUpdate", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#aa0e37d46798a9fd0a52e325816a90eeb", null ],

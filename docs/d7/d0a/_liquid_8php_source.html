@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -405,7 +405,7 @@ $(document).ready(function(){initNavTree('d7/d0a/_liquid_8php_source.html','../.
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            }</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <span class="keywordflow">if</span>($adjacentDecay &lt;= self::MAX_DECAY){</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                $calculator = <span class="keyword">new</span> MinimumCostFlowCalculator($this-&gt;position-&gt;getWorld(), $this-&gt;getFlowDecayPerBlock(), \Closure::fromCallable([$this, <span class="stringliteral">&#39;canFlowInto&#39;</span>]));</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                $calculator = <span class="keyword">new</span> MinimumCostFlowCalculator($world, $this-&gt;getFlowDecayPerBlock(), \Closure::fromCallable([$this, <span class="stringliteral">&#39;canFlowInto&#39;</span>]));</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                <span class="keywordflow">foreach</span>($calculator-&gt;getOptimalFlowDirections($this-&gt;position-&gt;getFloorX(), $this-&gt;position-&gt;getFloorY(), $this-&gt;position-&gt;getFloorZ()) as $facing){</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                    $this-&gt;flowIntoBlock($world-&gt;getBlock($this-&gt;position-&gt;getSide($facing)), $adjacentDecay, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                }</div>
@@ -424,55 +424,57 @@ $(document).ready(function(){initNavTree('d7/d0a/_liquid_8php_source.html','../.
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            $ev = <span class="keyword">new</span> BlockSpreadEvent($block, $this, $new);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            $ev-&gt;call();</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                <span class="keywordflow">if</span>($block-&gt;getId() !== BlockLegacyIds::AIR){</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                    $this-&gt;position-&gt;getWorld()-&gt;useBreakOn($block-&gt;position);</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                }</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($block-&gt;position, $ev-&gt;getNewState());</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            }</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        }</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="keyword">private</span> <span class="keyword">function</span> getSmallestFlowDecay(Block $block, <span class="keywordtype">int</span> $decay) : int{</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        if(!($block instanceof Liquid) || !$block-&gt;isSameType($this)){</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            <span class="keywordflow">return</span> $decay;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        }</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        $blockDecay = $block-&gt;decay;</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">if</span>($block-&gt;isSource()){</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            ++$this-&gt;adjacentSources;</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        }elseif($block-&gt;falling){</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            $blockDecay = 0;</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        }</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">return</span> ($decay &gt;= 0 &amp;&amp; $blockDecay &gt;= $decay) ? $decay : $blockDecay;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keyword">protected</span> <span class="keyword">function</span> checkForHarden() : bool{</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        return false;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    }</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="keyword">protected</span> <span class="keyword">function</span> liquidCollide(Block $cause, Block $result) : bool{</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        $ev = new BlockFormEvent($this, $result);</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState());</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>            $this-&gt;position-&gt;getWorld()-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> FizzSound(2.6 + (lcg_value() - lcg_value()) * 0.8));</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        }</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keyword">protected</span> <span class="keyword">function</span> canFlowInto(Block $block) : bool{</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        return</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>            $this-&gt;position-&gt;getWorld()-&gt;isInWorld($block-&gt;position-&gt;x, $block-&gt;position-&gt;y, $block-&gt;position-&gt;z) &amp;&amp;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            $block-&gt;canBeFlowedInto() &amp;&amp;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            !($block instanceof Liquid &amp;&amp; $block-&gt;isSource()); <span class="comment">//TODO: I think this should only be liquids of the same type</span></div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    }</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>}</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                <span class="keywordflow">if</span>($block-&gt;getId() !== BlockLegacyIds::AIR){</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                    $world-&gt;useBreakOn($block-&gt;position);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                }</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                $world-&gt;setBlock($block-&gt;position, $ev-&gt;getNewState());</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            }</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    }</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keyword">private</span> <span class="keyword">function</span> getSmallestFlowDecay(Block $block, <span class="keywordtype">int</span> $decay) : int{</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        if(!($block instanceof Liquid) || !$block-&gt;isSameType($this)){</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            <span class="keywordflow">return</span> $decay;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        $blockDecay = $block-&gt;decay;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        <span class="keywordflow">if</span>($block-&gt;isSource()){</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            ++$this-&gt;adjacentSources;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        }elseif($block-&gt;falling){</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            $blockDecay = 0;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        <span class="keywordflow">return</span> ($decay &gt;= 0 &amp;&amp; $blockDecay &gt;= $decay) ? $decay : $blockDecay;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    }</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keyword">protected</span> <span class="keyword">function</span> checkForHarden() : bool{</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        return false;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    }</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <span class="keyword">protected</span> <span class="keyword">function</span> liquidCollide(Block $cause, Block $result) : bool{</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        $ev = new BlockFormEvent($this, $result);</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        $ev-&gt;call();</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>            $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>            $world-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState());</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            $world-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> FizzSound(2.6 + (lcg_value() - lcg_value()) * 0.8));</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        }</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    }</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keyword">protected</span> <span class="keyword">function</span> canFlowInto(Block $block) : bool{</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        return</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            $this-&gt;position-&gt;getWorld()-&gt;isInWorld($block-&gt;position-&gt;x, $block-&gt;position-&gt;y, $block-&gt;position-&gt;z) &amp;&amp;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            $block-&gt;canBeFlowedInto() &amp;&amp;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            !($block instanceof Liquid &amp;&amp; $block-&gt;isSource()); <span class="comment">//TODO: I think this should only be liquids of the same type</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_break_info_html"><div class="ttname"><a href="../../d3/d10/classpocketmine_1_1block_1_1_block_break_info.html">pocketmine\block\BlockBreakInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d61/_block_break_info_8php_source.html#l00029">BlockBreakInfo.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00052">Block.php:52</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a92f39092503063e6270a9c1b72f2c984"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a92f39092503063e6270a9c1b72f2c984">pocketmine\block\Block\isSameType</a></div><div class="ttdeci">isSameType(Block $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00218">Block.php:218</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a92f39092503063e6270a9c1b72f2c984"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a92f39092503063e6270a9c1b72f2c984">pocketmine\block\Block\isSameType</a></div><div class="ttdeci">isSameType(Block $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00219">Block.php:219</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_identifier_flattened_html"><div class="ttname"><a href="../../dc/dfd/classpocketmine_1_1block_1_1_block_identifier_flattened.html">pocketmine\block\BlockIdentifierFlattened</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d49/_block_identifier_flattened_8php_source.html#l00028">BlockIdentifierFlattened.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_legacy_metadata_html"><div class="ttname"><a href="../../d1/d04/classpocketmine_1_1block_1_1_block_legacy_metadata.html">pocketmine\block\BlockLegacyMetadata</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dfc/_block_legacy_metadata_8php_source.html#l00029">BlockLegacyMetadata.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">pocketmine\block\Liquid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00040">Liquid.php:40</a></div></div>

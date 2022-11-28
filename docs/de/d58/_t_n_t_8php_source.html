@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -202,40 +202,41 @@ $(document).ready(function(){initNavTree('de/d58/_t_n_t_8php_source.html','../..
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">public</span> <span class="keyword">function</span> ignite(<span class="keywordtype">int</span> $fuse = 80) : void{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, VanillaBlocks::AIR());</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        $mot = (<span class="keyword">new</span> Random())-&gt;nextSignedFloat() * M_PI * 2;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        $tnt = <span class="keyword">new</span> PrimedTNT(Location::fromObject($this-&gt;position-&gt;add(0.5, 0, 0.5), $this-&gt;position-&gt;getWorld()));</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $tnt-&gt;setFuse($fuse);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $tnt-&gt;setWorksUnderwater($this-&gt;worksUnderwater);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        $tnt-&gt;setMotion(<span class="keyword">new</span> Vector3(-sin($mot) * 0.02, 0.2, -cos($mot) * 0.02));</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        $tnt-&gt;spawnToAll();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $tnt-&gt;broadcastSound(<span class="keyword">new</span> IgniteSound());</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a33b9a4e16098d520d714f1e593ad3788">  126</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a33b9a4e16098d520d714f1e593ad3788">getFlameEncouragement</a>() : int{</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        return 15;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a34701903fed9562746ef7ec7560ea40b">  130</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a34701903fed9562746ef7ec7560ea40b">getFlammability</a>() : int{</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        return 100;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a6f602f0b48525fc55a518d278e3320b4">  134</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a6f602f0b48525fc55a518d278e3320b4">onIncinerate</a>() : void{</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        $this-&gt;ignite();</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $world-&gt;setBlock($this-&gt;position, VanillaBlocks::AIR());</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        $mot = (<span class="keyword">new</span> Random())-&gt;nextSignedFloat() * M_PI * 2;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $tnt = <span class="keyword">new</span> PrimedTNT(Location::fromObject($this-&gt;position-&gt;add(0.5, 0, 0.5), $world));</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $tnt-&gt;setFuse($fuse);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        $tnt-&gt;setWorksUnderwater($this-&gt;worksUnderwater);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        $tnt-&gt;setMotion(<span class="keyword">new</span> Vector3(-sin($mot) * 0.02, 0.2, -cos($mot) * 0.02));</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $tnt-&gt;spawnToAll();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        $tnt-&gt;broadcastSound(<span class="keyword">new</span> IgniteSound());</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a33b9a4e16098d520d714f1e593ad3788">  127</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a33b9a4e16098d520d714f1e593ad3788">getFlameEncouragement</a>() : int{</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        return 15;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a34701903fed9562746ef7ec7560ea40b">  131</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a34701903fed9562746ef7ec7560ea40b">getFlammability</a>() : int{</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        return 100;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a6f602f0b48525fc55a518d278e3320b4">  135</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a6f602f0b48525fc55a518d278e3320b4">onIncinerate</a>() : void{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        $this-&gt;ignite();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_legacy_metadata_html"><div class="ttname"><a href="../../d1/d04/classpocketmine_1_1block_1_1_block_legacy_metadata.html">pocketmine\block\BlockLegacyMetadata</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dfc/_block_legacy_metadata_8php_source.html#l00029">BlockLegacyMetadata.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_opaque_html"><div class="ttname"><a href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">pocketmine\block\Opaque</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbc/_opaque_8php_source.html#l00030">Opaque.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html">pocketmine\block\TNT</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00042">TNT.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a2e746c47da4f2402a60c7700b8a8d95a"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a2e746c47da4f2402a60c7700b8a8d95a">pocketmine\block\TNT\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00088">TNT.php:88</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a33b9a4e16098d520d714f1e593ad3788"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a33b9a4e16098d520d714f1e593ad3788">pocketmine\block\TNT\getFlameEncouragement</a></div><div class="ttdeci">getFlameEncouragement()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00126">TNT.php:126</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a34701903fed9562746ef7ec7560ea40b"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a34701903fed9562746ef7ec7560ea40b">pocketmine\block\TNT\getFlammability</a></div><div class="ttdeci">getFlammability()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00130">TNT.php:130</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a33b9a4e16098d520d714f1e593ad3788"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a33b9a4e16098d520d714f1e593ad3788">pocketmine\block\TNT\getFlameEncouragement</a></div><div class="ttdeci">getFlameEncouragement()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00127">TNT.php:127</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a34701903fed9562746ef7ec7560ea40b"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a34701903fed9562746ef7ec7560ea40b">pocketmine\block\TNT\getFlammability</a></div><div class="ttdeci">getFlammability()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00131">TNT.php:131</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a52178ff013d34e7e0ce97ccad5f2e71e"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a52178ff013d34e7e0ce97ccad5f2e71e">pocketmine\block\TNT\onBreak</a></div><div class="ttdeci">onBreak(Item $item, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00080">TNT.php:80</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a65e4e7b65790ff8bc716c0e7e73d6d52"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a65e4e7b65790ff8bc716c0e7e73d6d52">pocketmine\block\TNT\onEntityInside</a></div><div class="ttdeci">onEntityInside(Entity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00104">TNT.php:104</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a6f602f0b48525fc55a518d278e3320b4"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a6f602f0b48525fc55a518d278e3320b4">pocketmine\block\TNT\onIncinerate</a></div><div class="ttdeci">onIncinerate()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00134">TNT.php:134</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a6f602f0b48525fc55a518d278e3320b4"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a6f602f0b48525fc55a518d278e3320b4">pocketmine\block\TNT\onIncinerate</a></div><div class="ttdeci">onIncinerate()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00135">TNT.php:135</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a749df2889bfd918ccc7390c3e00759f1"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a749df2889bfd918ccc7390c3e00759f1">pocketmine\block\TNT\setWorksUnderwater</a></div><div class="ttdeci">setWorksUnderwater(bool $worksUnderwater)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00075">TNT.php:75</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_a93738a76d15c9cb65adab0c5fc5d2298"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#a93738a76d15c9cb65adab0c5fc5d2298">pocketmine\block\TNT\setUnstable</a></div><div class="ttdeci">setUnstable(bool $unstable)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00067">TNT.php:67</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html_aa22dd72eb936814970f932bdbb093cd9"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#aa22dd72eb936814970f932bdbb093cd9">pocketmine\block\TNT\getStateBitmask</a></div><div class="ttdeci">getStateBitmask()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00060">TNT.php:60</a></div></div>

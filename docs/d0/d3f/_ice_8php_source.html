@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -145,27 +145,28 @@ $(document).ready(function(){initNavTree('d0/d3f/_ice_8php_source.html','../../'
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a93f40c5f7c7d3a3a9d88549db2b9081c">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a93f40c5f7c7d3a3a9d88549db2b9081c">onRandomTick</a>() : void{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        if($this-&gt;position-&gt;getWorld()-&gt;getHighestAdjacentBlockLight($this-&gt;position-&gt;x, $this-&gt;position-&gt;y, $this-&gt;position-&gt;z) &gt;= 12){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d80/classpocketmine_1_1event_1_1block_1_1_block_melt_event.html">BlockMeltEvent</a>($this, VanillaBlocks::WATER());</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $ev-&gt;call();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState());</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a7165c1a6f4a2721b30a49a2ba9d8e277">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a7165c1a6f4a2721b30a49a2ba9d8e277">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return [];</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a896f7d2a3f24763c90ca8d7183778e92">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a896f7d2a3f24763c90ca8d7183778e92">isAffectedBySilkTouch</a>() : bool{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return true;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span>($world-&gt;getHighestAdjacentBlockLight($this-&gt;position-&gt;x, $this-&gt;position-&gt;y, $this-&gt;position-&gt;z) &gt;= 12){</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d80/classpocketmine_1_1event_1_1block_1_1_block_melt_event.html">BlockMeltEvent</a>($this, VanillaBlocks::WATER());</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $ev-&gt;call();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                $world-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState());</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a7165c1a6f4a2721b30a49a2ba9d8e277">   64</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a7165c1a6f4a2721b30a49a2ba9d8e277">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        return [];</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a896f7d2a3f24763c90ca8d7183778e92">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a896f7d2a3f24763c90ca8d7183778e92">isAffectedBySilkTouch</a>() : bool{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        return true;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html">pocketmine\block\Ice</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00031">Ice.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a697b82e5cb56aed8d371581b4bc11ba4"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a697b82e5cb56aed8d371581b4bc11ba4">pocketmine\block\Ice\getLightFilter</a></div><div class="ttdeci">getLightFilter()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00033">Ice.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a7165c1a6f4a2721b30a49a2ba9d8e277"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a7165c1a6f4a2721b30a49a2ba9d8e277">pocketmine\block\Ice\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00063">Ice.php:63</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a896f7d2a3f24763c90ca8d7183778e92"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a896f7d2a3f24763c90ca8d7183778e92">pocketmine\block\Ice\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00067">Ice.php:67</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a7165c1a6f4a2721b30a49a2ba9d8e277"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a7165c1a6f4a2721b30a49a2ba9d8e277">pocketmine\block\Ice\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00064">Ice.php:64</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a896f7d2a3f24763c90ca8d7183778e92"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a896f7d2a3f24763c90ca8d7183778e92">pocketmine\block\Ice\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00068">Ice.php:68</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a93f40c5f7c7d3a3a9d88549db2b9081c"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a93f40c5f7c7d3a3a9d88549db2b9081c">pocketmine\block\Ice\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00053">Ice.php:53</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_a951913e7b34bc3e073149a91ca8a23e8"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#a951913e7b34bc3e073149a91ca8a23e8">pocketmine\block\Ice\getFrictionFactor</a></div><div class="ttdeci">getFrictionFactor()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00037">Ice.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_ice_html_acf5e94eb492e5cd5b4ffdc156a136d04"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1block_1_1_ice.html#acf5e94eb492e5cd5b4ffdc156a136d04">pocketmine\block\Ice\onBreak</a></div><div class="ttdeci">onBreak(Item $item, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/_ice_8php_source.html#l00041">Ice.php:41</a></div></div>

@@ -33,6 +33,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_splash_potion =
     [ "onDeath", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#aac17dc3f3f88b2f3bcd614503d9a34ae", null ],
     [ "onDeathUpdate", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a5a122ae10d347948d919332654042417", null ],
     [ "onDispose", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a902a93c1b861c0738e47c2f1070023db", null ],
+    [ "onFirstUpdate", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHit", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a4a3d74660377e3a8f8bbadcf611bb4de", null ],
     [ "onHitBlock", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ac63e377a16d1b0328ddb165a6a2b39e3", null ],
     [ "onHitEntity", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#abefd6990ef1fb83a1b4e0352a44f2455", null ],

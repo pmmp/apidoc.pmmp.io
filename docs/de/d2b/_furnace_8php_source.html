@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -174,15 +174,16 @@ $(document).ready(function(){initNavTree('de/d2b/_furnace_8php_source.html','../
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html#ad30da0cb73db3c1fcd45518fae40e6b6">   85</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html#ad30da0cb73db3c1fcd45518fae40e6b6">onScheduledUpdate</a>() : void{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $furnace = $this-&gt;position-&gt;getWorld()-&gt;getTile($this-&gt;position);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span>($furnace instanceof TileFurnace &amp;&amp; $furnace-&gt;onUpdate()){</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span>(mt_rand(1, 60) === 1){ <span class="comment">//in vanilla this is between 1 and 5 seconds; try to average about 3</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                $this-&gt;position-&gt;getWorld()-&gt;addSound($this-&gt;position, $furnace-&gt;getFurnaceType()-&gt;getCookSound());</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $this-&gt;position-&gt;getWorld()-&gt;scheduleDelayedBlockUpdate($this-&gt;position, 1); <span class="comment">//TODO: check this</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $furnace = $world-&gt;getTile($this-&gt;position);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">if</span>($furnace instanceof TileFurnace &amp;&amp; $furnace-&gt;onUpdate()){</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span>(mt_rand(1, 60) === 1){ <span class="comment">//in vanilla this is between 1 and 5 seconds; try to average about 3</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                $world-&gt;addSound($this-&gt;position, $furnace-&gt;getFurnaceType()-&gt;getCookSound());</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $world-&gt;scheduleDelayedBlockUpdate($this-&gt;position, 1); <span class="comment">//TODO: check this</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_break_info_html"><div class="ttname"><a href="../../d3/d10/classpocketmine_1_1block_1_1_block_break_info.html">pocketmine\block\BlockBreakInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d61/_block_break_info_8php_source.html#l00029">BlockBreakInfo.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_identifier_flattened_html"><div class="ttname"><a href="../../dc/dfd/classpocketmine_1_1block_1_1_block_identifier_flattened.html">pocketmine\block\BlockIdentifierFlattened</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d49/_block_identifier_flattened_8php_source.html#l00028">BlockIdentifierFlattened.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_furnace_html"><div class="ttname"><a href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html">pocketmine\block\Furnace</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d2b/_furnace_8php_source.html#l00034">Furnace.php:34</a></div></div>

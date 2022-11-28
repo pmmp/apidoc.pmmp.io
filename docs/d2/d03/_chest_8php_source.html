@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -142,13 +142,13 @@ $(document).ready(function(){initNavTree('d2/d03/_chest_8php_source.html','../..
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html#a331782605e4f5e2600d571ca29fa78ea">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html#a331782605e4f5e2600d571ca29fa78ea">onPostPlace</a>() : void{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $tile = $this-&gt;position-&gt;getWorld()-&gt;getTile($this-&gt;position);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span>($tile instanceof TileChest){</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">foreach</span>([<span class="keyword">false</span>, <span class="keyword">true</span>] as $clockwise){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                $side = Facing::rotateY($this-&gt;facing, $clockwise);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $c = $this-&gt;getSide($side);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">if</span>($c instanceof <a class="code hl_class" href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html">Chest</a> &amp;&amp; $c-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a92f39092503063e6270a9c1b72f2c984">isSameType</a>($this) &amp;&amp; $c-&gt;facing === $this-&gt;facing){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $tile = $world-&gt;getTile($this-&gt;position);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span>($tile instanceof TileChest){</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">foreach</span>([<span class="keyword">false</span>, <span class="keyword">true</span>] as $clockwise){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $side = Facing::rotateY($this-&gt;facing, $clockwise);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                $c = $this-&gt;getSide($side);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">if</span>($c instanceof <a class="code hl_class" href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html">Chest</a> &amp;&amp; $c-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a92f39092503063e6270a9c1b72f2c984">isSameType</a>($this) &amp;&amp; $c-&gt;facing === $this-&gt;facing){</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    $pair = $world-&gt;getTile($c-&gt;position);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    <span class="keywordflow">if</span>($pair instanceof TileChest &amp;&amp; !$pair-&gt;isPaired()){</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        [$left, $right] = $clockwise ? [$c, $this] : [$this, $c];</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('d2/d03/_chest_8php_source.html','../..
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        return 300;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a92f39092503063e6270a9c1b72f2c984"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a92f39092503063e6270a9c1b72f2c984">pocketmine\block\Block\isSameType</a></div><div class="ttdeci">isSameType(Block $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00218">Block.php:218</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a92f39092503063e6270a9c1b72f2c984"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a92f39092503063e6270a9c1b72f2c984">pocketmine\block\Block\isSameType</a></div><div class="ttdeci">isSameType(Block $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00219">Block.php:219</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_chest_html"><div class="ttname"><a href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html">pocketmine\block\Chest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d03/_chest_8php_source.html#l00037">Chest.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_chest_html_a29701eeffca02503f801ad2dbebad222"><div class="ttname"><a href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html#a29701eeffca02503f801ad2dbebad222">pocketmine\block\Chest\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d03/_chest_8php_source.html#l00049">Chest.php:49</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_chest_html_a2ba577f3fb89130e8405beabbaeeb319"><div class="ttname"><a href="../../d8/d5c/classpocketmine_1_1block_1_1_chest.html#a2ba577f3fb89130e8405beabbaeeb319">pocketmine\block\Chest\getFuelTime</a></div><div class="ttdeci">getFuelTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d03/_chest_8php_source.html#l00097">Chest.php:97</a></div></div>

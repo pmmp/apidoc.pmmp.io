@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('de/d0e/_main_logger_8php_source.html',
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            $threadName = (new \ReflectionClass($thread))-&gt;getShortName() . <span class="stringliteral">&quot; thread&quot;</span>;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        $message = sprintf($this-&gt;format, $time-&gt;format(<span class="stringliteral">&quot;H:i:s.v&quot;</span>), $color, $threadName, $prefix, TextFormat::clean($message, <span class="keyword">false</span>));</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        $message = sprintf($this-&gt;format, $time-&gt;format(<span class="stringliteral">&quot;H:i:s.v&quot;</span>), $color, $threadName, $prefix, TextFormat::addBase($color, TextFormat::clean($message, <span class="keyword">false</span>)));</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">if</span>(!Terminal::isInit()){</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            Terminal::init($this-&gt;useFormattingCodes); <span class="comment">//lazy-init colour codes because we don&#39;t know if they&#39;ve been registered on this thread</span></div>

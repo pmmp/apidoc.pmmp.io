@@ -29,6 +29,7 @@ var classpocketmine_1_1entity_1_1object_1_1_experience_orb =
     [ "onDeath", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#aac17dc3f3f88b2f3bcd614503d9a34ae", null ],
     [ "onDeathUpdate", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a5a122ae10d347948d919332654042417", null ],
     [ "onDispose", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a902a93c1b861c0738e47c2f1070023db", null ],
+    [ "onFirstUpdate", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHitGround", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a25ad669890dc24d70b8cdad878cd6449", null ],
     [ "onInteract", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a81725faf49c2b6fb3314cac3f6a11e3c", null ],
     [ "onRandomUpdate", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a2bd1fab41c3720c1ec9f75997958c223", null ],

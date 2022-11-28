@@ -10,6 +10,7 @@ var namespacepocketmine_1_1inventory =
       ] ],
       [ "CraftingTransaction", "db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html", "db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction" ],
       [ "InventoryTransaction", "d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html", "d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction" ],
+      [ "TransactionBuilder", "d6/de0/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder.html", "d6/de0/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder" ],
       [ "TransactionBuilderInventory", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory" ],
       [ "TransactionCancelledException", "dd/d12/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_cancelled_exception.html", null ],
       [ "TransactionException", "dc/db9/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_exception.html", null ],

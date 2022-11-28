@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -168,57 +168,58 @@ $(document).ready(function(){initNavTree('d4/d4d/_farmland_8php_source.html','..
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a61654dd47140f3b53afe9bedd57d2798">   80</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a61654dd47140f3b53afe9bedd57d2798">onRandomTick</a>() : void{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        if(!$this-&gt;canHydrate()){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">if</span>($this-&gt;wetness &gt; 0){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                $this-&gt;wetness--;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, VanillaBlocks::DIRT());</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }elseif($this-&gt;wetness &lt; self::MAX_WETNESS){</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $this-&gt;wetness = self::MAX_WETNESS;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a7805e0c01a73237a7a0ebd968c4510ec">   94</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a7805e0c01a73237a7a0ebd968c4510ec">onEntityLand</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity) : ?float{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        if($entity instanceof <a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a> &amp;&amp; lcg_value() &lt; $entity-&gt;getFallDistance() - 0.5){</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d41/classpocketmine_1_1event_1_1entity_1_1_entity_trample_farmland_event.html">EntityTrampleFarmlandEvent</a>($entity, $this);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $ev-&gt;call();</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                $this-&gt;getPosition()-&gt;getWorld()-&gt;setBlock($this-&gt;getPosition(), VanillaBlocks::DIRT());</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">protected</span> <span class="keyword">function</span> canHydrate() : bool{</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="comment">//TODO: check rain</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $start = $this-&gt;position-&gt;add(-4, 0, -4);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $end = $this-&gt;position-&gt;add(4, 1, 4);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">for</span>($y = $start-&gt;y; $y &lt;= $end-&gt;y; ++$y){</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">for</span>($z = $start-&gt;z; $z &lt;= $end-&gt;z; ++$z){</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keywordflow">for</span>($x = $start-&gt;x; $x &lt;= $end-&gt;x; ++$x){</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    <span class="keywordflow">if</span>($this-&gt;position-&gt;getWorld()-&gt;getBlockAt($x, $y, $z) instanceof Water){</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aedb1a6eefea4c61754acd911eec023c6">  122</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aedb1a6eefea4c61754acd911eec023c6">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        return [</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::DIRT()-&gt;asItem()</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        ];</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a709d6bc9d507fbe497cf113770a227ae">  128</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a709d6bc9d507fbe497cf113770a227ae">getPickedItem</a>(<span class="keywordtype">bool</span> $addUserData = <span class="keyword">false</span>) : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        return <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::DIRT()-&gt;asItem();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span>(!$this-&gt;canHydrate()){</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span>($this-&gt;wetness &gt; 0){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                $this-&gt;wetness--;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                $world-&gt;setBlock($this-&gt;position, $this, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                $world-&gt;setBlock($this-&gt;position, VanillaBlocks::DIRT());</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }elseif($this-&gt;wetness &lt; self::MAX_WETNESS){</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            $this-&gt;wetness = self::MAX_WETNESS;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $world-&gt;setBlock($this-&gt;position, $this, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a7805e0c01a73237a7a0ebd968c4510ec">   95</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a7805e0c01a73237a7a0ebd968c4510ec">onEntityLand</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity) : ?float{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        if($entity instanceof <a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a> &amp;&amp; lcg_value() &lt; $entity-&gt;getFallDistance() - 0.5){</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d0/d41/classpocketmine_1_1event_1_1entity_1_1_entity_trample_farmland_event.html">EntityTrampleFarmlandEvent</a>($entity, $this);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            $ev-&gt;call();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                $this-&gt;getPosition()-&gt;getWorld()-&gt;setBlock($this-&gt;getPosition(), VanillaBlocks::DIRT());</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">protected</span> <span class="keyword">function</span> canHydrate() : bool{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="comment">//TODO: check rain</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $start = $this-&gt;position-&gt;add(-4, 0, -4);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $end = $this-&gt;position-&gt;add(4, 1, 4);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">for</span>($y = $start-&gt;y; $y &lt;= $end-&gt;y; ++$y){</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">for</span>($z = $start-&gt;z; $z &lt;= $end-&gt;z; ++$z){</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keywordflow">for</span>($x = $start-&gt;x; $x &lt;= $end-&gt;x; ++$x){</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    <span class="keywordflow">if</span>($this-&gt;position-&gt;getWorld()-&gt;getBlockAt($x, $y, $z) instanceof Water){</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aedb1a6eefea4c61754acd911eec023c6">  123</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aedb1a6eefea4c61754acd911eec023c6">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        return [</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::DIRT()-&gt;asItem()</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        ];</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a709d6bc9d507fbe497cf113770a227ae">  129</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a709d6bc9d507fbe497cf113770a227ae">getPickedItem</a>(<span class="keywordtype">bool</span> $addUserData = <span class="keyword">false</span>) : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        return <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::DIRT()-&gt;asItem();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html">pocketmine\block\Farmland</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00035">Farmland.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a4566b470e1bb602c3bf7820628235c71"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a4566b470e1bb602c3bf7820628235c71">pocketmine\block\Farmland\setWetness</a></div><div class="ttdeci">setWetness(int $wetness)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00055">Farmland.php:55</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a4a374b0b5943661effc9effb6de73a51"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a4a374b0b5943661effc9effb6de73a51">pocketmine\block\Farmland\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00076">Farmland.php:76</a></div></div>
@@ -226,10 +227,10 @@ $(document).ready(function(){initNavTree('d4/d4d/_farmland_8php_source.html','..
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a4d8cf0341bf2d5033feb57be4e4cacec"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a4d8cf0341bf2d5033feb57be4e4cacec">pocketmine\block\Farmland\readStateFromData</a></div><div class="ttdeci">readStateFromData(int $id, int $stateMeta)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00044">Farmland.php:44</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a594b88ce5ad40ac5e78893b8aad800e8"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a594b88ce5ad40ac5e78893b8aad800e8">pocketmine\block\Farmland\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00066">Farmland.php:66</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a61654dd47140f3b53afe9bedd57d2798"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a61654dd47140f3b53afe9bedd57d2798">pocketmine\block\Farmland\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00080">Farmland.php:80</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a709d6bc9d507fbe497cf113770a227ae"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a709d6bc9d507fbe497cf113770a227ae">pocketmine\block\Farmland\getPickedItem</a></div><div class="ttdeci">getPickedItem(bool $addUserData=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00128">Farmland.php:128</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a7805e0c01a73237a7a0ebd968c4510ec"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a7805e0c01a73237a7a0ebd968c4510ec">pocketmine\block\Farmland\onEntityLand</a></div><div class="ttdeci">onEntityLand(Entity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00094">Farmland.php:94</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a709d6bc9d507fbe497cf113770a227ae"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a709d6bc9d507fbe497cf113770a227ae">pocketmine\block\Farmland\getPickedItem</a></div><div class="ttdeci">getPickedItem(bool $addUserData=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00129">Farmland.php:129</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_a7805e0c01a73237a7a0ebd968c4510ec"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a7805e0c01a73237a7a0ebd968c4510ec">pocketmine\block\Farmland\onEntityLand</a></div><div class="ttdeci">onEntityLand(Entity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00095">Farmland.php:95</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_aa306f26f1f5e0a7d3ef4593dbb505b62"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aa306f26f1f5e0a7d3ef4593dbb505b62">pocketmine\block\Farmland\getStateBitmask</a></div><div class="ttdeci">getStateBitmask()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00048">Farmland.php:48</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_aedb1a6eefea4c61754acd911eec023c6"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aedb1a6eefea4c61754acd911eec023c6">pocketmine\block\Farmland\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00122">Farmland.php:122</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_farmland_html_aedb1a6eefea4c61754acd911eec023c6"><div class="ttname"><a href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#aedb1a6eefea4c61754acd911eec023c6">pocketmine\block\Farmland\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4d/_farmland_8php_source.html#l00123">Farmland.php:123</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00575">VanillaBlocks.php:575</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_block_data_serializer_html"><div class="ttname"><a href="../../df/d8e/classpocketmine_1_1block_1_1utils_1_1_block_data_serializer.html">pocketmine\block\utils\BlockDataSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d68/_block_data_serializer_8php_source.html#l00029">BlockDataSerializer.php:29</a></div></div>

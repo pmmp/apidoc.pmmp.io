@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -175,62 +175,63 @@ $(document).ready(function(){initNavTree('da/d1a/_bamboo_sapling_8php_source.htm
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a58af3ca00ebdecfbb927099d4ae956bc">   84</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a58af3ca00ebdecfbb927099d4ae956bc">onNearbyBlockChange</a>() : void{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        if(!$this-&gt;canBeSupportedBy($this-&gt;position-&gt;getWorld()-&gt;getBlock($this-&gt;position-&gt;down()))){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            $this-&gt;position-&gt;getWorld()-&gt;useBreakOn($this-&gt;position);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">private</span> <span class="keyword">function</span> grow(?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : bool{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $world = $this-&gt;position-&gt;getWorld();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span>(!$world-&gt;getBlock($this-&gt;position-&gt;up())-&gt;canBeReplaced()){</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $tx = <span class="keyword">new</span> BlockTransaction($world);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $bamboo = VanillaBlocks::BAMBOO();</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $tx-&gt;addBlock($this-&gt;position, $bamboo)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            -&gt;addBlock($this-&gt;position-&gt;up(), (clone $bamboo)-&gt;setLeafSize(Bamboo::SMALL_LEAVES));</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $ev = <span class="keyword">new</span> StructureGrowEvent($this, $tx, $player);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">return</span> $tx-&gt;apply();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a6a3db032f4e95e2acf753222b89dacef">  110</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a6a3db032f4e95e2acf753222b89dacef">ticksRandomly</a>() : bool{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        return true;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#afff9a8e8b3f935495975295fc5b53f0b">  114</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#afff9a8e8b3f935495975295fc5b53f0b">onRandomTick</a>() : void{</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        $world = $this-&gt;position-&gt;getWorld();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span>($this-&gt;ready){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            $this-&gt;ready = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span>($world-&gt;getFullLight($this-&gt;position) &lt; 9 || !$this-&gt;grow(<span class="keyword">null</span>)){</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                $world-&gt;setBlock($this-&gt;position, $this);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }elseif($world-&gt;getBlock($this-&gt;position-&gt;up())-&gt;canBeReplaced()){</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            $this-&gt;ready = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            $world-&gt;setBlock($this-&gt;position, $this);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a33427bd2df43ad62903bdedcccc06756">  127</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a33427bd2df43ad62903bdedcccc06756">asItem</a>() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        return <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::BAMBOO()-&gt;asItem();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span>(!$this-&gt;canBeSupportedBy($world-&gt;getBlock($this-&gt;position-&gt;down()))){</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $world-&gt;useBreakOn($this-&gt;position);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">private</span> <span class="keyword">function</span> grow(?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : bool{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">if</span>(!$world-&gt;getBlock($this-&gt;position-&gt;up())-&gt;canBeReplaced()){</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $tx = <span class="keyword">new</span> BlockTransaction($world);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $bamboo = VanillaBlocks::BAMBOO();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $tx-&gt;addBlock($this-&gt;position, $bamboo)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            -&gt;addBlock($this-&gt;position-&gt;up(), (clone $bamboo)-&gt;setLeafSize(Bamboo::SMALL_LEAVES));</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $ev = <span class="keyword">new</span> StructureGrowEvent($this, $tx, $player);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $ev-&gt;call();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> $tx-&gt;apply();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a6a3db032f4e95e2acf753222b89dacef">  111</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a6a3db032f4e95e2acf753222b89dacef">ticksRandomly</a>() : bool{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        return true;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#afff9a8e8b3f935495975295fc5b53f0b">  115</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#afff9a8e8b3f935495975295fc5b53f0b">onRandomTick</a>() : void{</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">if</span>($this-&gt;ready){</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            $this-&gt;ready = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">if</span>($world-&gt;getFullLight($this-&gt;position) &lt; 9 || !$this-&gt;grow(<span class="keyword">null</span>)){</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                $world-&gt;setBlock($this-&gt;position, $this);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }elseif($world-&gt;getBlock($this-&gt;position-&gt;up())-&gt;canBeReplaced()){</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            $this-&gt;ready = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            $world-&gt;setBlock($this-&gt;position, $this);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a33427bd2df43ad62903bdedcccc06756">  128</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a33427bd2df43ad62903bdedcccc06756">asItem</a>() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        return <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::BAMBOO()-&gt;asItem();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html">pocketmine\block\BambooSapling</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00034">BambooSapling.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a10eb6d88797bb1bb69c3d68cff489ec3"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a10eb6d88797bb1bb69c3d68cff489ec3">pocketmine\block\BambooSapling\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00074">BambooSapling.php:74</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a33427bd2df43ad62903bdedcccc06756"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a33427bd2df43ad62903bdedcccc06756">pocketmine\block\BambooSapling\asItem</a></div><div class="ttdeci">asItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00127">BambooSapling.php:127</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a33427bd2df43ad62903bdedcccc06756"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a33427bd2df43ad62903bdedcccc06756">pocketmine\block\BambooSapling\asItem</a></div><div class="ttdeci">asItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00128">BambooSapling.php:128</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a3e5abf2862e1a15bbc58498a87db236e"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a3e5abf2862e1a15bbc58498a87db236e">pocketmine\block\BambooSapling\setReady</a></div><div class="ttdeci">setReady(bool $ready)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00051">BambooSapling.php:51</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a41d3906cae8d2b2edee25a64902a7088"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a41d3906cae8d2b2edee25a64902a7088">pocketmine\block\BambooSapling\getStateBitmask</a></div><div class="ttdeci">getStateBitmask()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00046">BambooSapling.php:46</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a58af3ca00ebdecfbb927099d4ae956bc"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a58af3ca00ebdecfbb927099d4ae956bc">pocketmine\block\BambooSapling\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00084">BambooSapling.php:84</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a6a3db032f4e95e2acf753222b89dacef"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a6a3db032f4e95e2acf753222b89dacef">pocketmine\block\BambooSapling\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00110">BambooSapling.php:110</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a6a3db032f4e95e2acf753222b89dacef"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a6a3db032f4e95e2acf753222b89dacef">pocketmine\block\BambooSapling\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00111">BambooSapling.php:111</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_a7367cbbc243107b3f1dffab5624a3039"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a7367cbbc243107b3f1dffab5624a3039">pocketmine\block\BambooSapling\readStateFromData</a></div><div class="ttdeci">readStateFromData(int $id, int $stateMeta)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00038">BambooSapling.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_adac34a785f3f105275c02e2e225086c7"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#adac34a785f3f105275c02e2e225086c7">pocketmine\block\BambooSapling\place</a></div><div class="ttdeci">place(BlockTransaction $tx, Item $item, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00067">BambooSapling.php:67</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_afff9a8e8b3f935495975295fc5b53f0b"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#afff9a8e8b3f935495975295fc5b53f0b">pocketmine\block\BambooSapling\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00114">BambooSapling.php:114</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_bamboo_sapling_html_afff9a8e8b3f935495975295fc5b53f0b"><div class="ttname"><a href="../../d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#afff9a8e8b3f935495975295fc5b53f0b">pocketmine\block\BambooSapling\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1a/_bamboo_sapling_8php_source.html#l00115">BambooSapling.php:115</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00052">Block.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_legacy_metadata_html"><div class="ttname"><a href="../../d1/d04/classpocketmine_1_1block_1_1_block_legacy_metadata.html">pocketmine\block\BlockLegacyMetadata</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dfc/_block_legacy_metadata_8php_source.html#l00029">BlockLegacyMetadata.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_dirt_html"><div class="ttname"><a href="../../d0/d14/classpocketmine_1_1block_1_1_dirt.html">pocketmine\block\Dirt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/_dirt_8php_source.html#l00033">Dirt.php:33</a></div></div>

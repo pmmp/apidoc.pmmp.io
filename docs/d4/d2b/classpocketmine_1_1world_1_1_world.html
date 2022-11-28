@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -181,6 +181,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a665c7033db02a1df8cebfb2e52e063b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b2673cda248e41ef6b73b8d50bd192"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a72b2673cda248e41ef6b73b8d50bd192">getChunkPlayers</a> (int $chunkX, int $chunkZ)</td></tr>
 <tr class="separator:a72b2673cda248e41ef6b73b8d50bd192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bae673a93f326fb253f1b56baaea67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a46bae673a93f326fb253f1b56baaea67">getChunkTickRadius</a> ()</td></tr>
+<tr class="separator:a46bae673a93f326fb253f1b56baaea67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98697e8c47a2ed43da52da0c77f0a2d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98697e8c47a2ed43da52da0c77f0a2d4">getCollidingEntities</a> (<a class="el" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">AxisAlignedBB</a> $bb, ?<a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity=null)</td></tr>
 <tr class="separator:a98697e8c47a2ed43da52da0c77f0a2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087b8dbf55ae39863e72fc80eda1b005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a087b8dbf55ae39863e72fc80eda1b005">getCollisionBlocks</a> (<a class="el" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">AxisAlignedBB</a> $bb, bool $targetFirst=false)</td></tr>
@@ -333,6 +335,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac05f0b1b1733c655a117eac734f2460f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c44d6a3615dfc376208a1abd913409"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a97c44d6a3615dfc376208a1abd913409">setChunk</a> (int $chunkX, int $chunkZ, <a class="el" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk)</td></tr>
 <tr class="separator:a97c44d6a3615dfc376208a1abd913409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7720ff081c61a0b0bf716aea5efca468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a7720ff081c61a0b0bf716aea5efca468">setChunkTickRadius</a> (int $radius)</td></tr>
+<tr class="separator:a7720ff081c61a0b0bf716aea5efca468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5040cededf85fa359d6634010d4571e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab5040cededf85fa359d6634010d4571e">setDifficulty</a> (int $difficulty)</td></tr>
 <tr class="separator:ab5040cededf85fa359d6634010d4571e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94495ed6e98cb4e84745cd899082384d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a94495ed6e98cb4e84745cd899082384d">setSleepTicks</a> (int $ticks)</td></tr>
@@ -430,7 +434,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >@phpstan-type ChunkPosHash int @phpstan-type BlockPosHash int @phpstan-type ChunkBlockPosHash int </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00137">137</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00138">138</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8b003390da4281b56c309c3c123b4c15" name="a8b003390da4281b56c309c3c123b4c15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b003390da4281b56c309c3c123b4c15">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -473,7 +477,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00452">452</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d27/_async_pool_8php_source.html#l00118">pocketmine\scheduler\AsyncPool\removeWorkerStartHook()</a>, and <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00207">pocketmine\server()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d27/_async_pool_8php_source.html#l00118">pocketmine\scheduler\AsyncPool\removeWorkerStartHook()</a>, and <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00223">pocketmine\server()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -502,7 +506,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>mixed[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01234">1234</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01260">1260</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -530,7 +534,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00882">882</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00886">886</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -557,7 +561,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02379">2379</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02405">2405</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -578,7 +582,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@phpstan-param \Closure() : void $callback </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00629">629</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00633">633</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -620,9 +624,9 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00679">679</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00683">683</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00207">pocketmine\server()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00223">pocketmine\server()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -650,7 +654,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01092">1092</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01096">1096</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -692,9 +696,9 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00663">663</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00667">667</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00207">pocketmine\server()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00223">pocketmine\server()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -722,7 +726,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02481">2481</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02507">2507</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -798,7 +802,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Broadcasts a packet to every player who has the target position within their view distance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00736">736</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00740">740</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -828,7 +832,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02680">2680</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02706">2706</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -847,7 +851,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01004">1004</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01008">1008</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -961,7 +965,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01069">1069</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01073">1073</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -981,7 +985,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Computes how many points of sky light is subtracted based on the current time. Used to offset raw chunk sky light to get a real light value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01425">1425</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01451">1451</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1005,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Computes the percentage of a circle away from noon the sun is currently at. This can be multiplied by 2 * M_PI to get an angle in radians, or by 360 to get an angle in degrees. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01387">1387</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01413">1413</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1032,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ClientboundPacket[] @phpstan-return list&lt;ClientboundPacket&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01041">1041</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01045">1045</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1051,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03150">3150</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03176">3176</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1071,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00867">867</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00871">871</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1103,7 @@ Protected Member Functions</h2></td></tr>
 <p >Drops XP orbs into the world for the specified amount, splitting the amount into several orbs if necessary.</p>
 <dl class="section return"><dt>Returns</dt><dd>ExperienceOrb[] @phpstan-return list&lt;ExperienceOrb&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01751">1751</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01777">1777</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1145,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01731">1731</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01757">1757</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1177,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns the chunks adjacent to the specified chunk.</p>
 <dl class="section return"><dt>Returns</dt><dd>Chunk[]|null[] chunkHash =&gt; Chunk|null @phpstan-return array&lt;ChunkPosHash, Chunk|null&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02197">2197</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02223">2223</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1196,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00692">692</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00696">696</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1226,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02148">2148</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02174">2174</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1256,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02141">2141</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02167">2167</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1301,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01614">1614</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01640">1640</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1403,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01627">1627</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01653">1653</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1441,7 @@ Protected Member Functions</h2></td></tr>
 <p >Gets the raw block light level</p>
 <dl class="section return"><dt>Returns</dt><dd>int 0-15 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01502">1502</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01528">1528</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1524,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html">pocketmine\world\ChunkManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02172">2172</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02198">2198</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1551,7 +1555,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Entity[] entity runtime ID =&gt; Entity @phpstan-return array&lt;int, Entity&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02180">2180</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02206">2206</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1583,7 +1587,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns all the listeners attached to this chunk.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/dac/interfacepocketmine_1_1world_1_1_chunk_listener.html">ChunkListener</a>[] @phpstan-return array&lt;int, ChunkListener&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00844">844</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00848">848</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1619,7 @@ Protected Member Functions</h2></td></tr>
 <p >Gets the chunk loaders being used in a specific chunk</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html">ChunkLoader</a>[] @phpstan-return array&lt;int, ChunkLoader&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00719">719</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00723">723</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1644,11 +1648,31 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk.</dd></dl>
 <p >Returns a list of players who have the target chunk within their view distance.</p>
 <dl class="section return"><dt>Returns</dt><dd>Player[] spl_object_id =&gt; Player @phpstan-return array&lt;int, Player&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00709">709</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00713">713</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+
+</div>
+</div>
+<a id="a46bae673a93f326fb253f1b56baaea67" name="a46bae673a93f326fb253f1b56baaea67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bae673a93f326fb253f1b56baaea67">&#9670;&nbsp;</a></span>getChunkTickRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\world\World::getChunkTickRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the radius of chunks to be ticked around each ticking chunk loader (usually players). This is referred to as "simulation distance" in the Minecraft: Bedrock world options screen. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01111">1111</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1681,7 +1705,7 @@ Protected Member Functions</h2></td></tr>
 <p >This function is the same as <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a92150b820812bd5583ecaf0d19a6a286">World::getNearbyEntities()</a></code>, but with additional collidability filters.</p>
 <dl class="section return"><dt>Returns</dt><dd>Entity[] @phpstan-return array&lt;int, Entity&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02022">2022</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02048">2048</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1712,7 +1736,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Block[] @phpstan-return list&lt;Block&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01310">1310</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01336">1336</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1749,7 +1773,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>AxisAlignedBB[] @phpstan-return list&lt;AxisAlignedBB&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01351">1351</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01377">1377</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1768,7 +1792,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02875">2875</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02901">2901</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1816,7 +1840,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a> display name. WARNING: This is NOT guaranteed to be unique. Multiple worlds at runtime may share the same display name. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02825">2825</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02851">2851</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1837,7 +1861,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns a list of all the entities in this world, indexed by their entity runtime IDs</p>
 <dl class="section return"><dt>Returns</dt><dd>Entity[] @phpstan-return array&lt;int, Entity&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02008">2008</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02034">2034</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1857,7 +1881,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01998">1998</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02024">2024</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +1901,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a> folder name. This will not change at runtime and will be unique to a world per runtime. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02832">2832</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02858">2858</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1898,7 +1922,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the highest available level of any type of light at the given coordinates, adjusted for the current weather and time of day. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01444">1444</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01470">1470</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1935,7 +1959,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the highest available level of any type of light at the given coordinates, adjusted for the current weather and time of day. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01452">1452</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01478">1478</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -1972,7 +1996,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the highest block light level available in the positions adjacent to the specified block coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01576">1576</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01602">1602</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2009,7 +2033,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the highest available level of any type of light at, or adjacent to, the given coordinates, adjusted for the current weather and time of day. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01465">1465</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01491">1491</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2046,7 +2070,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the highest potential level of sky light in the positions adjacent to the specified block coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01561">1561</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01587">1587</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2083,7 +2107,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the highest block sky light available in the positions adjacent to the given coordinates, adjusted for the world's current time of day and weather conditions. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01569">1569</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01595">1595</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2121,7 +2145,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02328">2328</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02354">2354</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/db1/_chunk_8php_source.html#l00121">pocketmine\world\format\Chunk\getHighestBlockAt()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2159,7 +2183,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the unique world identifier </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00578">578</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00582">582</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/da3/_generator_register_task_8php_source.html#l00050">pocketmine\world\generator\GeneratorRegisterTask\__construct()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2189,7 +2213,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Chunk[] chunkHash =&gt; Chunk @phpstan-return array&lt;ChunkPosHash, Chunk&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02168">2168</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02194">2194</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2208,7 +2232,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00567">567</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00571">571</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2230,7 +2254,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html#af9eccc96a6d64967f5555fd117b8cab5">pocketmine\world\ChunkManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02871">2871</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02897">2897</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/da3/_generator_register_task_8php_source.html#l00050">pocketmine\world\generator\GeneratorRegisterTask\__construct()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2262,7 +2286,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html#ad6749f930e4d6dc6448f9fc0c0fe2c1d">pocketmine\world\ChunkManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02867">2867</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02893">2893</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/da3/_generator_register_task_8php_source.html#l00050">pocketmine\world\generator\GeneratorRegisterTask\__construct()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2304,7 +2328,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns all entities whose bounding boxes intersect the given bounding box, excluding the given entity.</p>
 <dl class="section return"><dt>Returns</dt><dd>Entity[] @phpstan-return array&lt;int, Entity&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02042">2042</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02068">2068</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2355,7 +2379,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Entity|null an entity of type $entityType, or null if not found @phpstan-return TEntity </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02077">2077</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02103">2103</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2376,7 +2400,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the chunk containing the given Vector3 position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02187">2187</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02213">2213</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2397,7 +2421,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns a list of the players in this world</p>
 <dl class="section return"><dt>Returns</dt><dd>Player[] entity runtime ID =&gt; Player @phpstan-return array&lt;int, Player&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02120">2120</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02146">2146</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2435,7 +2459,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns the highest potential level of sky light at the target coordinates, regardless of the time of day or weather conditions. You usually don't want to use this for vanilla gameplay logic; prefer the real sky light instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ac92daa7f223443980ddd2584ade6df56">World::getRealBlockSkyLightAt()</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int 0-15 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01477">1477</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01503">1503</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2462,7 +2486,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00571">571</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00575">575</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2482,7 +2506,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true[] fullID =&gt; dummy @phpstan-return array&lt;int, true&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01088">1088</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01092">1092</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2520,7 +2544,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns the sky light level at the specified coordinates, offset by the current time and weather.</p>
 <dl class="section return"><dt>Returns</dt><dd>int 0-15 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01492">1492</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01518">1518</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2546,7 +2570,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02768">2768</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02794">2794</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2566,7 +2590,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Gets the world seed </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02863">2863</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02889">2889</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/da3/_generator_register_task_8php_source.html#l00050">pocketmine\world\generator\GeneratorRegisterTask\__construct()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2595,7 +2619,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00563">563</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00567">567</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2615,7 +2639,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns how many points of sky light is subtracted based on the current time. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01436">1436</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01462">1462</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2635,7 +2659,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns a <a class="el" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a> pointing to the spawn </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02358">2358</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02384">2384</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2655,7 +2679,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the current sun angle in degrees. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01417">1417</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01443">1443</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2675,7 +2699,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the percentage of a circle away from noon the sun is currently at. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01403">1403</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01429">1429</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2695,7 +2719,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the current sun angle in radians. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01410">1410</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01436">1436</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2714,7 +2738,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00544">544</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00548">548</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2736,7 +2760,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns the Tile in a position, or null if not found.</p>
 <p >Note: This method wraps <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a74dea3bca895cd79b47506bec7b0f332">getTileAt()</a>. If you're guaranteed to be passing integers, and you're using this method in performance-sensitive code, consider using <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a74dea3bca895cd79b47506bec7b0f332">getTileAt()</a> instead of this method for better performance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02130">2130</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02156">2156</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2773,7 +2797,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the tile at the specified x,y,z coordinates, or null if it does not exist. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02137">2137</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02163">2163</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2793,7 +2817,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Gets the current time </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02810">2810</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02836">2836</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2813,7 +2837,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the current time of day </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02817">2817</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02843">2843</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2835,7 +2859,7 @@ Protected Member Functions</h2></td></tr>
 <p >Returns an array of players who have the target position within their view distance.</p>
 <dl class="section return"><dt>Returns</dt><dd>Player[] spl_object_id =&gt; Player @phpstan-return array&lt;int, Player&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00729">729</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00733">733</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2910,7 +2934,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02346">2346</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02372">2372</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2940,7 +2964,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02527">2527</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02553">2553</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -2970,7 +2994,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02342">2342</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02368">2368</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3001,7 +3025,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether anyone currently has a lock on the chunk at the given coordinates. You should check this to make sure that population tasks aren't currently modifying chunks that you want to use in async tasks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02255">2255</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02281">2281</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3031,7 +3055,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02350">2350</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02376">2376</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3050,7 +3074,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00860">860</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00864">864</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3071,7 +3095,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether the given position is in a loaded area of terrain. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02338">2338</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02364">2364</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3110,7 +3134,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html#ac8e39ac2781cfc8849880a63f47e1a8b">pocketmine\world\ChunkManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01596">1596</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01622">1622</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3129,7 +3153,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00582">582</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00586">586</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3160,7 +3184,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether the chunk at the specified coordinates is a spawn chunk </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02757">2757</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02783">2783</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3192,7 +3216,7 @@ Protected Member Functions</h2></td></tr>
 <p >Attempts to load a chunk from the world provider (if not already loaded). If the chunk is already loaded, it is returned directly.</p>
 <dl class="section return"><dt>Returns</dt><dd>Chunk|null the requested chunk, or null on failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02537">2537</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02563">2563</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3232,7 +3256,7 @@ Protected Member Functions</h2></td></tr>
 <p >This is used internally by the generation system to ensure that two PopulationTasks don't try to modify the same chunk at the same time. Generation will respect these locks and won't try to do generation of chunks over which a lock is held.</p>
 <p >WARNING: Be sure to release all locks once you're done with them, or you WILL have problems with terrain not being generated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02225">2225</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02251">2251</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3253,7 +3277,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Notify the blocks at and around the position that the block at the position may have changed. This will cause onNeighbourBlockUpdate() to be called for these blocks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01299">1299</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01325">1325</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3273,7 +3297,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02437">2437</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02463">2463</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3292,7 +3316,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00589">589</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00593">593</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3331,7 +3355,7 @@ Protected Member Functions</h2></td></tr>
 <p >If the chunk is currently locked (for example due to another chunk using it for async generation), the request will be queued and executed at the earliest opportunity.</p>
 <p >@phpstan-return Promise&lt;Chunk&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03000">3000</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03026">3026</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3368,7 +3392,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Registers a listener to receive events on a chunk. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00799">799</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00803">803</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3410,7 +3434,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00748">748</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00752">752</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3430,7 +3454,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00548">548</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00552">552</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3458,7 +3482,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02408">2408</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02434">2434</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3479,7 +3503,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@phpstan-param \Closure() : void $callback </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00634">634</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00638">638</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3499,7 +3523,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01099">1099</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01103">1103</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3519,7 +3543,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02510">2510</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02536">2536</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3558,7 +3582,7 @@ Protected Member Functions</h2></td></tr>
 <p >A <a class="el" href="../../db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html">ChunkLoader</a> can be associated with the generation request to ensure that the generation request is cancelled if no loaders are attached to the target chunk. If no loader is provided, one will be assigned (and automatically removed when the generation request completes).</p>
 <p >@phpstan-return Promise&lt;Chunk&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02977">2977</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03003">3003</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3578,7 +3602,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01238">1238</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01264">1264</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3597,7 +3621,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01253">1253</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01279">1279</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3628,7 +3652,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Schedules a block update to be executed after the specified number of ticks. Blocks will be updated with the scheduled update type. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01274">1274</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01300">1300</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3648,7 +3672,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00851">851</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00855">855</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3668,7 +3692,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00696">696</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00700">700</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3704,7 +3728,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02152">2152</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02178">2178</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3748,7 +3772,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException if the position is out of the world bounds </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01674">1674</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01700">1700</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3863,7 +3887,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException if the position is out of the world bounds </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01686">1686</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01712">1712</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3901,7 +3925,28 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html">pocketmine\world\ChunkManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02259">2259</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02285">2285</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+
+</div>
+</div>
+<a id="a7720ff081c61a0b0bf716aea5efca468" name="a7720ff081c61a0b0bf716aea5efca468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7720ff081c61a0b0bf716aea5efca468">&#9670;&nbsp;</a></span>setChunkTickRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\world\World::setChunkTickRadius </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$radius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sets the radius of chunks ticked around each ticking chunk loader (usually players). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01118">1118</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3921,7 +3966,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02879">2879</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02905">2905</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3941,7 +3986,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01030">1030</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01034">1034</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3962,7 +4007,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Sets the world spawn location </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02365">2365</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02391">2391</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -3983,7 +4028,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Sets the current time on the world </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02839">2839</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02865">2865</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4003,7 +4048,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Start the time again, if it was stopped </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02855">2855</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02881">2881</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4023,7 +4068,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Stops the time for the world, will not save the lock state to disk </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02847">2847</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02873">2873</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4065,7 +4110,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02684">2684</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02710">2710</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4101,7 +4146,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02670">2670</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02696">2696</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4121,7 +4166,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03168">3168</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l03194">3194</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4160,7 +4205,7 @@ Protected Member Functions</h2></td></tr>
 <p >You must provide the same lockID as provided to <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae8fe6ea100fce0c373ee7231adfa1d42">lockChunk()</a>. If a null lockID is given, any existing lock will be removed from the chunk, regardless of who owns it.</p>
 <p >Returns true if unlocking was successful, false otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02241">2241</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l02267">2267</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4198,7 +4243,7 @@ Protected Member Functions</h2></td></tr>
 <p >Unregisters a chunk listener previously registered.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a28654f28814833471e5f68f4d4b7d2d5">World::registerChunkListener()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00816">816</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00820">820</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4219,7 +4264,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Unregisters a chunk listener from all chunks it is listening on in this <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00831">831</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00835">835</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4255,7 +4300,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00775">775</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00779">779</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4274,7 +4319,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00554">554</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00558">558</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4310,7 +4355,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01512">1512</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01538">1538</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4359,7 +4404,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01774">1774</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01800">1800</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4421,7 +4466,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01876">1876</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l01902">1902</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4438,7 +4483,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00246">246</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00247">247</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4486,7 +4531,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00187">187</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00188">188</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4502,7 +4547,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00158">158</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00159">159</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4518,7 +4563,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00154">154</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00155">155</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4534,7 +4579,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00156">156</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00157">157</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4550,7 +4595,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00155">155</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00156">156</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4566,7 +4611,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00153">153</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00154">154</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4582,7 +4627,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00144">144</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00145">145</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4598,7 +4643,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00151">151</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00152">152</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4614,7 +4659,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00148">148</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00149">149</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4630,7 +4675,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00147">147</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00148">148</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4646,7 +4691,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00145">145</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00146">146</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4662,7 +4707,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00149">149</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00150">150</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4678,7 +4723,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00146">146</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00147">147</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4694,7 +4739,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00141">141</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00142">142</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>
@@ -4710,7 +4755,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00142">142</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d88/_world_8php_source.html#l00143">143</a> of file <a class="el" href="../../d9/d88/_world_8php_source.html">World.php</a>.</p>
 
 </div>
 </div>

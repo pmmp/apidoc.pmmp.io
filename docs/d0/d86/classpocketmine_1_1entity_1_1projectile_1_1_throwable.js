@@ -31,6 +31,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_throwable =
     [ "onDeath", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#aac17dc3f3f88b2f3bcd614503d9a34ae", null ],
     [ "onDeathUpdate", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#a5a122ae10d347948d919332654042417", null ],
     [ "onDispose", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#a902a93c1b861c0738e47c2f1070023db", null ],
+    [ "onFirstUpdate", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHit", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#ada672d1bac9a7085f46fcef9517fda18", null ],
     [ "onHitBlock", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#ac63e377a16d1b0328ddb165a6a2b39e3", null ],
     [ "onHitEntity", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#abefd6990ef1fb83a1b4e0352a44f2455", null ],

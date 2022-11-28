@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -272,13 +272,14 @@ $(document).ready(function(){initNavTree('dd/db8/_bell_8php_source.html','../../
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keyword">public</span> <span class="keyword">function</span> ring(<span class="keywordtype">int</span> $faceHit) : void{</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        $this-&gt;position-&gt;getWorld()-&gt;addSound($this-&gt;position, new BellRingSound());</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $tile = $this-&gt;position-&gt;getWorld()-&gt;getTile($this-&gt;position);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">if</span>($tile instanceof TileBell){</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            $this-&gt;position-&gt;getWorld()-&gt;broadcastPacketToViewers($this-&gt;position, $tile-&gt;createFakeUpdatePacket($faceHit));</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    }</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $world-&gt;addSound($this-&gt;position, <span class="keyword">new</span> BellRingSound());</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        $tile = $world-&gt;getTile($this-&gt;position);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">if</span>($tile instanceof TileBell){</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            $world-&gt;broadcastPacketToViewers($this-&gt;position, $tile-&gt;createFakeUpdatePacket($faceHit));</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        }</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bell_html"><div class="ttname"><a href="../../df/d78/classpocketmine_1_1block_1_1_bell.html">pocketmine\block\Bell</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db8/_bell_8php_source.html#l00041">Bell.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bell_html_a0b6e97eca9112e7dc33e4709a8047bc5"><div class="ttname"><a href="../../df/d78/classpocketmine_1_1block_1_1_bell.html#a0b6e97eca9112e7dc33e4709a8047bc5">pocketmine\block\Bell\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db8/_bell_8php_source.html#l00161">Bell.php:161</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bell_html_a1ef954012c006453345f10f0481a2e78"><div class="ttname"><a href="../../df/d78/classpocketmine_1_1block_1_1_bell.html#a1ef954012c006453345f10f0481a2e78">pocketmine\block\Bell\setAttachmentType</a></div><div class="ttdeci">setAttachmentType(BellAttachmentType $attachmentType)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db8/_bell_8php_source.html#l00112">Bell.php:112</a></div></div>

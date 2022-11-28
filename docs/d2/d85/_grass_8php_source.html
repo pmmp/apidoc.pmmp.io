@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -147,72 +147,74 @@ $(document).ready(function(){initNavTree('d2/d85/_grass_8php_source.html','../..
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a70d3de7441369da6981182851deba011">   55</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a70d3de7441369da6981182851deba011">onRandomTick</a>() : void{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $lightAbove = $this-&gt;position-&gt;getWorld()-&gt;getFullLightAt($this-&gt;position-&gt;x, $this-&gt;position-&gt;y + 1, $this-&gt;position-&gt;z);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>($lightAbove &lt; 4 &amp;&amp; $this-&gt;position-&gt;getWorld()-&gt;getBlockAt($this-&gt;position-&gt;x, $this-&gt;position-&gt;y + 1, $this-&gt;position-&gt;z)-&gt;getLightFilter() &gt;= 2){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="comment">//grass dies</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">BlockSpreadEvent</a>($this, $this, VanillaBlocks::DIRT());</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $ev-&gt;call();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState(), <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }elseif($lightAbove &gt;= 9){</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="comment">//try grass spread</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">for</span>($i = 0; $i &lt; 4; ++$i){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                $x = mt_rand($this-&gt;position-&gt;x - 1, $this-&gt;position-&gt;x + 1);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                $y = mt_rand($this-&gt;position-&gt;y - 3, $this-&gt;position-&gt;y + 1);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                $z = mt_rand($this-&gt;position-&gt;z - 1, $this-&gt;position-&gt;z + 1);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                $b = $this-&gt;position-&gt;getWorld()-&gt;getBlockAt($x, $y, $z);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordflow">if</span>(</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    !($b instanceof <a class="code hl_class" href="../../d0/d14/classpocketmine_1_1block_1_1_dirt.html">Dirt</a>) ||</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    $b-&gt;isCoarse() ||</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    $this-&gt;position-&gt;getWorld()-&gt;getFullLightAt($x, $y + 1, $z) &lt; 4 ||</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    $this-&gt;position-&gt;getWorld()-&gt;getBlockAt($x, $y + 1, $z)-&gt;getLightFilter() &gt;= 2</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                ){</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                $ev = <span class="keyword">new</span> BlockSpreadEvent($b, $this, VanillaBlocks::GRASS());</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                $ev-&gt;call();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    $this-&gt;position-&gt;getWorld()-&gt;setBlock($b-&gt;position, $ev-&gt;getNewState(), <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a1bd88828e91df01d734c736c896b6a6b">   90</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a1bd88828e91df01d734c736c896b6a6b">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        if($face !== <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP){</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span>($item instanceof <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">Fertilizer</a>){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $item-&gt;pop();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            TallGrassObject::growGrass($this-&gt;position-&gt;getWorld(), $this-&gt;position, <span class="keyword">new</span> <a class="code hl_class" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">Random</a>(mt_rand()), 8, 2);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }elseif($item instanceof Hoe){</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            $item-&gt;applyDamage(1);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            $newBlock = VanillaBlocks::FARMLAND();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            $this-&gt;position-&gt;getWorld()-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> ItemUseOnBlockSound($newBlock));</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $newBlock);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }elseif($item instanceof Shovel &amp;&amp; $this-&gt;getSide(Facing::UP)-&gt;getId() === BlockLegacyIds::AIR){</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $item-&gt;applyDamage(1);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            $newBlock = VanillaBlocks::GRASS_PATH();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            $this-&gt;position-&gt;getWorld()-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> ItemUseOnBlockSound($newBlock));</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $newBlock);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $lightAbove = $world-&gt;getFullLightAt($this-&gt;position-&gt;x, $this-&gt;position-&gt;y + 1, $this-&gt;position-&gt;z);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span>($lightAbove &lt; 4 &amp;&amp; $world-&gt;getBlockAt($this-&gt;position-&gt;x, $this-&gt;position-&gt;y + 1, $this-&gt;position-&gt;z)-&gt;getLightFilter() &gt;= 2){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="comment">//grass dies</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">BlockSpreadEvent</a>($this, $this, VanillaBlocks::DIRT());</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $ev-&gt;call();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                $world-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState(), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }elseif($lightAbove &gt;= 9){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="comment">//try grass spread</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">for</span>($i = 0; $i &lt; 4; ++$i){</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                $x = mt_rand($this-&gt;position-&gt;x - 1, $this-&gt;position-&gt;x + 1);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                $y = mt_rand($this-&gt;position-&gt;y - 3, $this-&gt;position-&gt;y + 1);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                $z = mt_rand($this-&gt;position-&gt;z - 1, $this-&gt;position-&gt;z + 1);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                $b = $world-&gt;getBlockAt($x, $y, $z);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">if</span>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    !($b instanceof <a class="code hl_class" href="../../d0/d14/classpocketmine_1_1block_1_1_dirt.html">Dirt</a>) ||</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    $b-&gt;isCoarse() ||</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    $world-&gt;getFullLightAt($x, $y + 1, $z) &lt; 4 ||</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    $world-&gt;getBlockAt($x, $y + 1, $z)-&gt;getLightFilter() &gt;= 2</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                ){</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                $ev = <span class="keyword">new</span> BlockSpreadEvent($b, $this, VanillaBlocks::GRASS());</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                $ev-&gt;call();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    $world-&gt;setBlock($b-&gt;position, $ev-&gt;getNewState(), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a1bd88828e91df01d734c736c896b6a6b">   91</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a1bd88828e91df01d734c736c896b6a6b">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        if($face !== <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP){</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">if</span>($item instanceof <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">Fertilizer</a>){</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $item-&gt;pop();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            TallGrassObject::growGrass($world, $this-&gt;position, <span class="keyword">new</span> <a class="code hl_class" href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">Random</a>(mt_rand()), 8, 2);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }elseif($item instanceof Hoe){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            $item-&gt;applyDamage(1);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            $newBlock = VanillaBlocks::FARMLAND();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            $world-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> ItemUseOnBlockSound($newBlock));</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            $world-&gt;setBlock($this-&gt;position, $newBlock);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }elseif($item instanceof Shovel &amp;&amp; $this-&gt;getSide(Facing::UP)-&gt;getId() === BlockLegacyIds::AIR){</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            $item-&gt;applyDamage(1);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $newBlock = VanillaBlocks::GRASS_PATH();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $world-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> ItemUseOnBlockSound($newBlock));</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            $world-&gt;setBlock($this-&gt;position, $newBlock);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a286fc64348f13417dcb6106c2695911b"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a286fc64348f13417dcb6106c2695911b">pocketmine\block\Block\asItem</a></div><div class="ttdeci">asItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00122">Block.php:122</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_dirt_html"><div class="ttname"><a href="../../d0/d14/classpocketmine_1_1block_1_1_dirt.html">pocketmine\block\Dirt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/_dirt_8php_source.html#l00033">Dirt.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_html"><div class="ttname"><a href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html">pocketmine\block\Grass</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/_grass_8php_source.html#l00039">Grass.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_html_a1bd88828e91df01d734c736c896b6a6b"><div class="ttname"><a href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a1bd88828e91df01d734c736c896b6a6b">pocketmine\block\Grass\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/_grass_8php_source.html#l00090">Grass.php:90</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_html_a1bd88828e91df01d734c736c896b6a6b"><div class="ttname"><a href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a1bd88828e91df01d734c736c896b6a6b">pocketmine\block\Grass\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/_grass_8php_source.html#l00091">Grass.php:91</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_html_a70d3de7441369da6981182851deba011"><div class="ttname"><a href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#a70d3de7441369da6981182851deba011">pocketmine\block\Grass\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/_grass_8php_source.html#l00055">Grass.php:55</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_html_ab2363c349c85a5d32484ef1a1175987b"><div class="ttname"><a href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#ab2363c349c85a5d32484ef1a1175987b">pocketmine\block\Grass\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/_grass_8php_source.html#l00051">Grass.php:51</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_html_ad73ee8be0b9e3402cd0612cdd84b008f"><div class="ttname"><a href="../../d6/d7c/classpocketmine_1_1block_1_1_grass.html#ad73ee8be0b9e3402cd0612cdd84b008f">pocketmine\block\Grass\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d85/_grass_8php_source.html#l00041">Grass.php:41</a></div></div>

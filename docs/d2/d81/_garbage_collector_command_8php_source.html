@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('d2/d81/_garbage_collector_command_8php
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $cyclesCollected = $sender-&gt;getServer()-&gt;getMemoryManager()-&gt;triggerGarbageCollector();</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_header()-&gt;format(TextFormat::GREEN . <span class="stringliteral">&quot;---- &quot;</span> . TextFormat::WHITE, TextFormat::GREEN . <span class="stringliteral">&quot; ----&quot;</span> . TextFormat::WHITE));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_header()-&gt;format(TextFormat::GREEN . <span class="stringliteral">&quot;---- &quot;</span> . TextFormat::RESET, TextFormat::GREEN . <span class="stringliteral">&quot; ----&quot;</span> . TextFormat::RESET));</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_chunks(TextFormat::RED . number_format($chunksCollected))-&gt;prefix(TextFormat::GOLD));</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_entities(TextFormat::RED . number_format($entitiesCollected))-&gt;prefix(TextFormat::GOLD));</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>

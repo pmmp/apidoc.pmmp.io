@@ -92,7 +92,7 @@ var namespacepocketmine_1_1network =
               [ "BeaconPaymentStackRequestAction", "d8/d1d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_beacon_payment_stack_request_action.html", null ],
               [ "CraftingConsumeInputStackRequestAction", "dd/d53/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craftin1edcfa9979fc5d75a39cf9f773292cdc.html", null ],
               [ "CraftingMarkSecondaryResultStackRequestAction", "da/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craftine73260c2466389209c6775ffd2e2cd69.html", null ],
-              [ "CraftRecipeAutoStackRequestAction", "de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action.html", null ],
+              [ "CraftRecipeAutoStackRequestAction", "de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action.html", "de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action" ],
               [ "CraftRecipeOptionalStackRequestAction", "d5/dce/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_rf367e63daecf08c070ac15ec98918954.html", null ],
               [ "CraftRecipeStackRequestAction", "dc/df5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_stack_request_action.html", null ],
               [ "CreativeCreateStackRequestAction", "d7/da4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_creative_create_stack_request_action.html", null ],
@@ -463,6 +463,7 @@ var namespacepocketmine_1_1network =
         [ "ChunkSerializer", "dd/dc9/classpocketmine_1_1network_1_1mcpe_1_1serializer_1_1_chunk_serializer.html", "dd/dc9/classpocketmine_1_1network_1_1mcpe_1_1serializer_1_1_chunk_serializer" ]
       ] ],
       [ "ChunkRequestTask", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task" ],
+      [ "ComplexWindowMapEntry", "db/d59/classpocketmine_1_1network_1_1mcpe_1_1_complex_window_map_entry.html", "db/d59/classpocketmine_1_1network_1_1mcpe_1_1_complex_window_map_entry" ],
       [ "InventoryManager", "d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html", "d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager" ],
       [ "JwtException", "d6/d69/classpocketmine_1_1network_1_1mcpe_1_1_jwt_exception.html", null ],
       [ "JwtUtils", "de/d36/classpocketmine_1_1network_1_1mcpe_1_1_jwt_utils.html", "de/d36/classpocketmine_1_1network_1_1mcpe_1_1_jwt_utils" ],

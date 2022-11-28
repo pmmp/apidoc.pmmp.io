@@ -28,6 +28,7 @@ var classpocketmine_1_1entity_1_1object_1_1_falling_block =
     [ "onDeath", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#aac17dc3f3f88b2f3bcd614503d9a34ae", null ],
     [ "onDeathUpdate", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a5a122ae10d347948d919332654042417", null ],
     [ "onDispose", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a902a93c1b861c0738e47c2f1070023db", null ],
+    [ "onFirstUpdate", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHitGround", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a25ad669890dc24d70b8cdad878cd6449", null ],
     [ "onInteract", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a81725faf49c2b6fb3314cac3f6a11e3c", null ],
     [ "onRandomUpdate", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a2bd1fab41c3720c1ec9f75997958c223", null ],

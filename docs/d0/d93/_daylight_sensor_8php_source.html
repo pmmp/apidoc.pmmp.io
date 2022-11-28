@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -188,26 +188,28 @@ $(document).ready(function(){initNavTree('d0/d93/_daylight_sensor_8php_source.ht
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aa1ed22b4e9be2bbbeb8292fb0008aa88">  102</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aa1ed22b4e9be2bbbeb8292fb0008aa88">onScheduledUpdate</a>() : void{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $signalStrength = $this-&gt;recalculateSignalStrength();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">if</span>($this-&gt;signalStrength !== $signalStrength){</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            $this-&gt;signalStrength = $signalStrength;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $this-&gt;position-&gt;getWorld()-&gt;scheduleDelayedBlockUpdate($this-&gt;position, 20);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">private</span> <span class="keyword">function</span> recalculateSignalStrength() : int{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        $lightLevel = $this-&gt;position-&gt;getWorld()-&gt;getRealBlockSkyLightAt($this-&gt;position-&gt;x, $this-&gt;position-&gt;y, $this-&gt;position-&gt;z);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">if</span>($this-&gt;inverted){</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">return</span> 15 - $lightLevel;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        $sunAngle = $this-&gt;position-&gt;getWorld()-&gt;getSunAnglePercentage();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">return</span> max(0, (<span class="keywordtype">int</span>) round($lightLevel * cos(($sunAngle + ((($sunAngle &lt; 0.5 ? 0 : 1) - $sunAngle) / 5)) * 2 * M_PI)));</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="comment">//TODO</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $signalStrength = $this-&gt;recalculateSignalStrength();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span>($this-&gt;signalStrength !== $signalStrength){</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $this-&gt;signalStrength = $signalStrength;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $world-&gt;setBlock($this-&gt;position, $this);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $world-&gt;scheduleDelayedBlockUpdate($this-&gt;position, 20);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">private</span> <span class="keyword">function</span> recalculateSignalStrength() : int{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $lightLevel = $world-&gt;getRealBlockSkyLightAt($this-&gt;position-&gt;x, $this-&gt;position-&gt;y, $this-&gt;position-&gt;z);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">if</span>($this-&gt;inverted){</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">return</span> 15 - $lightLevel;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $sunAngle = $world-&gt;getSunAnglePercentage();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> max(0, (<span class="keywordtype">int</span>) round($lightLevel * cos(($sunAngle + ((($sunAngle &lt; 0.5 ? 0 : 1) - $sunAngle) / 5)) * 2 * M_PI)));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">//TODO</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_break_info_html"><div class="ttname"><a href="../../d3/d10/classpocketmine_1_1block_1_1_block_break_info.html">pocketmine\block\BlockBreakInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d61/_block_break_info_8php_source.html#l00029">BlockBreakInfo.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_identifier_flattened_html"><div class="ttname"><a href="../../dc/dfd/classpocketmine_1_1block_1_1_block_identifier_flattened.html">pocketmine\block\BlockIdentifierFlattened</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d49/_block_identifier_flattened_8php_source.html#l00028">BlockIdentifierFlattened.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_daylight_sensor_html"><div class="ttname"><a href="../../d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html">pocketmine\block\DaylightSensor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d93/_daylight_sensor_8php_source.html#l00039">DaylightSensor.php:39</a></div></div>

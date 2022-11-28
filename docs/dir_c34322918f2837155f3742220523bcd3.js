@@ -9,6 +9,7 @@ var dir_c34322918f2837155f3742220523bcd3 =
     [ "raklib", "dir_f91dbc53a0f1c481f5610027a94c645b.html", "dir_f91dbc53a0f1c481f5610027a94c645b" ],
     [ "serializer", "dir_995b3b02552e3af7a71ff5c03a7f60a4.html", "dir_995b3b02552e3af7a71ff5c03a7f60a4" ],
     [ "ChunkRequestTask.php", "db/d11/_chunk_request_task_8php_source.html", null ],
+    [ "ComplexWindowMapEntry.php", "d3/d98/_complex_window_map_entry_8php_source.html", null ],
     [ "InventoryManager.php", "dc/d9e/_inventory_manager_8php_source.html", null ],
     [ "JwtException.php", "dd/ded/_jwt_exception_8php_source.html", null ],
     [ "JwtUtils.php", "d8/dfb/_jwt_utils_8php_source.html", null ],

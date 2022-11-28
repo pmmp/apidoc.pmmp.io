@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('d1/d0c/_bedrock_world_data_8php_source
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <a class="code hl_class" href="../../d6/dc2/classpocketmine_1_1world_1_1generator_1_1_generator_manager.html">pocketmine\world\generator\GeneratorManager</a>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <a class="code hl_class" href="../../d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html">pocketmine\world\WorldCreationOptions</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use Webmozart\PathUtil\Path;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use Symfony\Component\Filesystem\Path;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>use <span class="keyword">function</span> file_get_contents;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>use <span class="keyword">function</span> file_put_contents;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>use <span class="keyword">function</span> strlen;</div>
@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('d1/d0c/_bedrock_world_data_8php_source
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html">pocketmine\utils\Filesystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00062">Filesystem.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_limits_html"><div class="ttname"><a href="../../db/da7/classpocketmine_1_1utils_1_1_limits.html">pocketmine\utils\Limits</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da2/_limits_8php_source.html#l00026">Limits.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_creation_options_html"><div class="ttname"><a href="../../d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html">pocketmine\world\WorldCreationOptions</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_world_creation_options_8php_source.html#l00036">WorldCreationOptions.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00137">World.php:137</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00138">World.php:138</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data_html"><div class="ttname"><a href="../../d1/def/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data.html">pocketmine\world\format\io\data\BaseNbtWorldData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/_base_nbt_world_data_8php_source.html#l00034">BaseNbtWorldData.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data_html"><div class="ttname"><a href="../../d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html">pocketmine\world\format\io\data\BedrockWorldData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0c/_bedrock_world_data_8php_source.html#l00048">BedrockWorldData.php:48</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data_html_a083d7b3a413815634da15cd467f7292b"><div class="ttname"><a href="../../d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#a083d7b3a413815634da15cd467f7292b">pocketmine\world\format\io\data\BedrockWorldData\getLightningLevel</a></div><div class="ttdeci">getLightningLevel()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0c/_bedrock_world_data_8php_source.html#l00208">BedrockWorldData.php:208</a></div></div>

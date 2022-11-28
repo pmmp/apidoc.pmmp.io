@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -101,12 +101,14 @@ $(document).ready(function(){initNavTree('dd/db5/classpocketmine_1_1utils_1_1_te
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d9b/classpocketmine_1_1utils_1_1_text_format__coll__graph.svg" width="220" height="566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d9b/classpocketmine_1_1utils_1_1_text_format__coll__graph.svg" width="220" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a9a6732892c4d70370d2ed0c5e48b29"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0a9a6732892c4d70370d2ed0c5e48b29">addBase</a> (string $baseFormat, string $string)</td></tr>
+<tr class="separator:a0a9a6732892c4d70370d2ed0c5e48b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4015b5a0efd597d5ddd0db4043ec64e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#aa4015b5a0efd597d5ddd0db4043ec64e">clean</a> (string $string, bool $removeFormat=true)</td></tr>
 <tr class="separator:aa4015b5a0efd597d5ddd0db4043ec64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33be6267d2a523c4c3aeba79f87491f9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a33be6267d2a523c4c3aeba79f87491f9">colorize</a> (string $string, string $placeholder=&quot;&amp;&quot;)</td></tr>
@@ -178,6 +180,51 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d59/_text_format_8php_source.html#l00045">45</a> of file <a class="el" href="../../da/d59/_text_format_8php_source.html">TextFormat.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0a9a6732892c4d70370d2ed0c5e48b29" name="a0a9a6732892c4d70370d2ed0c5e48b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9a6732892c4d70370d2ed0c5e48b29">&#9670;&nbsp;</a></span>addBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\utils\TextFormat::addBase </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$baseFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Adds base formatting to the string. The given format codes will be inserted directly after any RESET (§r) codes.</p>
+<p >This is useful for log messages, where a RESET code should return to the log message's original colour (e.g. blue for NOTICE), rather than whatever the terminal's base text colour is (usually some off-white colour).</p>
+<p >Example behaviour:</p><ul>
+<li>Base format "§c" (red) + "Hello" (no format) = "§r§cHello"</li>
+<li>Base format "§c" + "Hello §rWorld" = "§r§cHello §r§cWorld"</li>
+</ul>
+<p >Note: Adding base formatting to the output string a second time will result in a combination of formats from both calls. This is not by design, but simply a consequence of the way the function is implemented. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d59/_text_format_8php_source.html#l00174">174</a> of file <a class="el" href="../../da/d59/_text_format_8php_source.html">TextFormat.php</a>.</p>
+
+</div>
+</div>
 <a id="aa4015b5a0efd597d5ddd0db4043ec64e" name="aa4015b5a0efd597d5ddd0db4043ec64e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4015b5a0efd597d5ddd0db4043ec64e">&#9670;&nbsp;</a></span>clean()</h2>
 
@@ -298,7 +345,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns an HTML-formatted string with colors/markup </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d59/_text_format_8php_source.html#l00164">164</a> of file <a class="el" href="../../da/d59/_text_format_8php_source.html">TextFormat.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d59/_text_format_8php_source.html#l00189">189</a> of file <a class="el" href="../../da/d59/_text_format_8php_source.html">TextFormat.php</a>.</p>
 
 </div>
 </div>

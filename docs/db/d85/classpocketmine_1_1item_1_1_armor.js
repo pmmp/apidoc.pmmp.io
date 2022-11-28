@@ -3,6 +3,7 @@ var classpocketmine_1_1item_1_1_armor =
     [ "applyDamage", "db/d85/classpocketmine_1_1item_1_1_armor.html#a66d8aa38bb8fd5197eed6335fc48453a", null ],
     [ "canStackWith", "db/d85/classpocketmine_1_1item_1_1_armor.html#a49a05b01faaaf071449c97060fe44926", null ],
     [ "clearCustomBlockData", "db/d85/classpocketmine_1_1item_1_1_armor.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
+    [ "clearCustomColor", "db/d85/classpocketmine_1_1item_1_1_armor.html#a50973c09ed15d39bce9f0d3a3ebff24b", null ],
     [ "clearCustomName", "db/d85/classpocketmine_1_1item_1_1_armor.html#a336d6f91be72079853413f5b4036a57d", null ],
     [ "clearNamedTag", "db/d85/classpocketmine_1_1item_1_1_armor.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a", null ],
     [ "deserializeCompoundTag", "db/d85/classpocketmine_1_1item_1_1_armor.html#a32bd3c59c838b1d8df28230f5f5814e2", null ],

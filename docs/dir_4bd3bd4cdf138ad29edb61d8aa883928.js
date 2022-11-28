@@ -3,6 +3,7 @@ var dir_4bd3bd4cdf138ad29edb61d8aa883928 =
     [ "BaseBlockChangeEvent.php", "d9/df1/_base_block_change_event_8php_source.html", null ],
     [ "BlockBreakEvent.php", "d2/d47/_block_break_event_8php_source.html", null ],
     [ "BlockBurnEvent.php", "d2/d44/_block_burn_event_8php_source.html", null ],
+    [ "BlockDeathEvent.php", "dc/d37/_block_death_event_8php_source.html", null ],
     [ "BlockEvent.php", "de/dc2/_block_event_8php_source.html", null ],
     [ "BlockFormEvent.php", "d4/d36/_block_form_event_8php_source.html", null ],
     [ "BlockGrowEvent.php", "d5/d36/_block_grow_event_8php_source.html", null ],

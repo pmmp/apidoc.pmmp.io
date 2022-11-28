@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -188,10 +188,10 @@ $(document).ready(function(){initNavTree('d9/d60/_boss_event_packet_8php_source.
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> $result;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> unknown6(<span class="keywordtype">int</span> $bossActorUniqueId, <span class="keywordtype">int</span> $unknownShort) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> unknown6(<span class="keywordtype">int</span> $bossActorUniqueId, <span class="keywordtype">int</span> $unknownShort, <span class="keywordtype">int</span> $color = BossBarColor::PURPLE) : <span class="keyword">self</span>{</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $result = self::base($bossActorUniqueId, self::TYPE_UNKNOWN_6);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $result-&gt;unknownShort = $unknownShort;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $result-&gt;color = 0; <span class="comment">//hardcoded due to being useless</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $result-&gt;color = $color;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $result-&gt;overlay = 0;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> $result;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.10.2 git-65623351203658c8ac2850ca7d259bfd50e7d416</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
    </div>
   </td>
  </tr>
@@ -215,27 +215,28 @@ $(document).ready(function(){initNavTree('d8/dee/_brewing_stand_8php_source.html
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a2262f2a252482fd76d2675bd87d10499">  132</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a2262f2a252482fd76d2675bd87d10499">onScheduledUpdate</a>() : void{</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $brewing = $this-&gt;position-&gt;getWorld()-&gt;getTile($this-&gt;position);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">if</span>($brewing instanceof TileBrewingStand){</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">if</span>($brewing-&gt;onUpdate()){</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                $this-&gt;position-&gt;getWorld()-&gt;scheduleDelayedBlockUpdate($this-&gt;position, 1);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            $changed = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordflow">foreach</span>(BrewingStandSlot::getAll() as $slot){</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                $occupied = !$brewing-&gt;getInventory()-&gt;isSlotEmpty($slot-&gt;getSlotNumber());</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                <span class="keywordflow">if</span>($occupied !== $this-&gt;hasSlot($slot)){</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                    $this-&gt;setSlot($slot, $occupied);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                    $changed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">if</span>($changed){</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            }</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>}</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        $brewing = $world-&gt;getTile($this-&gt;position);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">if</span>($brewing instanceof TileBrewingStand){</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">if</span>($brewing-&gt;onUpdate()){</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                $world-&gt;scheduleDelayedBlockUpdate($this-&gt;position, 1);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            $changed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">foreach</span>(BrewingStandSlot::getAll() as $slot){</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                $occupied = !$brewing-&gt;getInventory()-&gt;isSlotEmpty($slot-&gt;getSlotNumber());</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">if</span>($occupied !== $this-&gt;hasSlot($slot)){</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                    $this-&gt;setSlot($slot, $occupied);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    $changed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="keywordflow">if</span>($changed){</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                $world-&gt;setBlock($this-&gt;position, $this);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_brewing_stand_html"><div class="ttname"><a href="../../d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html">pocketmine\block\BrewingStand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dee/_brewing_stand_8php_source.html#l00037">BrewingStand.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_brewing_stand_html_a0808e771248f013f93f03351754a5322"><div class="ttname"><a href="../../d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a0808e771248f013f93f03351754a5322">pocketmine\block\BrewingStand\getSlots</a></div><div class="ttdeci">getSlots()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dee/_brewing_stand_8php_source.html#l00108">BrewingStand.php:108</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_brewing_stand_html_a2262f2a252482fd76d2675bd87d10499"><div class="ttname"><a href="../../d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a2262f2a252482fd76d2675bd87d10499">pocketmine\block\BrewingStand\onScheduledUpdate</a></div><div class="ttdeci">onScheduledUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dee/_brewing_stand_8php_source.html#l00132">BrewingStand.php:132</a></div></div>
