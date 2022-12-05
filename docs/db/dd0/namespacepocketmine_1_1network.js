@@ -444,6 +444,7 @@ var namespacepocketmine_1_1network =
         [ "UpdateAttributesPacket", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet.html", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet" ],
         [ "UpdateBlockPacket", "d8/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_packet.html", "d8/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_packet" ],
         [ "UpdateBlockSyncedPacket", "df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_synced_packet.html", "df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_synced_packet" ],
+        [ "UpdateClientInputLocksPacket", "de/d02/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_client_input_locks_packet.html", "de/d02/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_client_input_locks_packet" ],
         [ "UpdateEquipPacket", "da/d42/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_equip_packet.html", "da/d42/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_equip_packet" ],
         [ "UpdatePlayerGameTypePacket", "da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html", "da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet" ],
         [ "UpdateSoftEnumPacket", "d9/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_soft_enum_packet.html", "d9/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_soft_enum_packet" ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.11.1 git-95263795a8174d443d6b42d9f338cb24df3686fb</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.2 git-0a9b52618d4ab570be914dc8083445714ca5df2b</span>
    </div>
   </td>
  </tr>
@@ -159,61 +159,62 @@ $(document).ready(function(){initNavTree('dc/d47/_entity_metadata_flags_8php_sou
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHARGE_ATTACK = 43;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">public</span> <span class="keyword">const</span> WASD_CONTROLLED = 44;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAN_POWER_JUMP = 45;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">const</span> LINGER = 46;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span> <span class="keyword">const</span> HAS_COLLISION = 47;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">const</span> AFFECTED_BY_GRAVITY = 48;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRE_IMMUNE = 49;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">const</span> DANCING = 50;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENCHANTED = 51;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">const</span> SHOW_TRIDENT_ROPE = 52; <span class="comment">// tridents show an animated rope when enchanted with loyalty after they are thrown and return to their owner. To be combined with DATA_OWNER_EID</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">const</span> CONTAINER_PRIVATE = 53; <span class="comment">//inventory is private, doesn&#39;t drop contents when killed if true</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRANSFORMING = 54;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPIN_ATTACK = 55;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">const</span> SWIMMING = 56;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">const</span> BRIBED = 57; <span class="comment">//dolphins have this set when they go to find treasure for the player</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">const</span> PREGNANT = 58;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">public</span> <span class="keyword">const</span> LAYING_EGG = 59;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">const</span> RIDER_CAN_PICK = 60; <span class="comment">//???</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRANSITION_SITTING = 61;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">public</span> <span class="keyword">const</span> EATING = 62;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span> <span class="keyword">const</span> LAYING_DOWN = 63;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">public</span> <span class="keyword">const</span> SNEEZING = 64;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRUSTING = 65;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROLLING = 66;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCARED = 67;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">public</span> <span class="keyword">const</span> IN_SCAFFOLDING = 68;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">public</span> <span class="keyword">const</span> OVER_SCAFFOLDING = 69;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">public</span> <span class="keyword">const</span> FALL_THROUGH_SCAFFOLDING = 70;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">public</span> <span class="keyword">const</span> BLOCKING = 71; <span class="comment">//shield</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRANSITION_BLOCKING = 72;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">public</span> <span class="keyword">const</span> BLOCKED_USING_SHIELD = 73;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">public</span> <span class="keyword">const</span> BLOCKED_USING_DAMAGED_SHIELD = 74;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">public</span> <span class="keyword">const</span> SLEEPING = 75;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">public</span> <span class="keyword">const</span> WANTS_TO_WAKE = 76;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRADE_INTEREST = 77;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">public</span> <span class="keyword">const</span> DOOR_BREAKER = 78; <span class="comment">//...</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">public</span> <span class="keyword">const</span> BREAKING_OBSTRUCTION = 79;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">public</span> <span class="keyword">const</span> DOOR_OPENER = 80; <span class="comment">//...</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">public</span> <span class="keyword">const</span> ILLAGER_CAPTAIN = 81;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">public</span> <span class="keyword">const</span> STUNNED = 82;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROARING = 83;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">public</span> <span class="keyword">const</span> DELAYED_ATTACKING = 84;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">public</span> <span class="keyword">const</span> AVOIDING_MOBS = 85;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">public</span> <span class="keyword">const</span> AVOIDING_BLOCK = 86;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">public</span> <span class="keyword">const</span> FACING_TARGET_TO_RANGE_ATTACK = 87;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">const</span> HIDDEN_WHEN_INVISIBLE = 88; <span class="comment">//??????????????????</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">public</span> <span class="keyword">const</span> IS_IN_UI = 89;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">public</span> <span class="keyword">const</span> STALKING = 90;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">public</span> <span class="keyword">const</span> EMOTING = 91;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">public</span> <span class="keyword">const</span> CELEBRATING = 92;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">public</span> <span class="keyword">const</span> ADMIRING = 93;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">public</span> <span class="keyword">const</span> CELEBRATING_SPECIAL = 94;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">public</span> <span class="keyword">const</span> OUT_OF_CONTROL = 95;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">public</span> <span class="keyword">const</span> RAM_ATTACK = 96;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYING_DEAD = 97;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">public</span> <span class="keyword">const</span> IN_ASCENDABLE_BLOCK = 98;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">public</span> <span class="keyword">const</span> OVER_DESCENDABLE_BLOCK = 99;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAN_DASH = 46;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span> <span class="keyword">const</span> LINGER = 47;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">const</span> HAS_COLLISION = 48;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">const</span> AFFECTED_BY_GRAVITY = 49;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRE_IMMUNE = 50;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">const</span> DANCING = 51;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENCHANTED = 52;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">const</span> SHOW_TRIDENT_ROPE = 53; <span class="comment">// tridents show an animated rope when enchanted with loyalty after they are thrown and return to their owner. To be combined with DATA_OWNER_EID</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span> <span class="keyword">const</span> CONTAINER_PRIVATE = 54; <span class="comment">//inventory is private, doesn&#39;t drop contents when killed if true</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRANSFORMING = 55;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPIN_ATTACK = 56;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">const</span> SWIMMING = 57;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">const</span> BRIBED = 58; <span class="comment">//dolphins have this set when they go to find treasure for the player</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">public</span> <span class="keyword">const</span> PREGNANT = 59;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">const</span> LAYING_EGG = 60;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">public</span> <span class="keyword">const</span> RIDER_CAN_PICK = 61; <span class="comment">//???</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRANSITION_SITTING = 62;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span> <span class="keyword">const</span> EATING = 63;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">public</span> <span class="keyword">const</span> LAYING_DOWN = 64;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">const</span> SNEEZING = 65;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRUSTING = 66;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROLLING = 67;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCARED = 68;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">public</span> <span class="keyword">const</span> IN_SCAFFOLDING = 69;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">public</span> <span class="keyword">const</span> OVER_SCAFFOLDING = 70;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">public</span> <span class="keyword">const</span> FALL_THROUGH_SCAFFOLDING = 71;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">public</span> <span class="keyword">const</span> BLOCKING = 72; <span class="comment">//shield</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRANSITION_BLOCKING = 73;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">public</span> <span class="keyword">const</span> BLOCKED_USING_SHIELD = 74;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">public</span> <span class="keyword">const</span> BLOCKED_USING_DAMAGED_SHIELD = 75;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">public</span> <span class="keyword">const</span> SLEEPING = 76;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">public</span> <span class="keyword">const</span> WANTS_TO_WAKE = 77;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">public</span> <span class="keyword">const</span> TRADE_INTEREST = 78;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">public</span> <span class="keyword">const</span> DOOR_BREAKER = 79; <span class="comment">//...</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">public</span> <span class="keyword">const</span> BREAKING_OBSTRUCTION = 80;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">public</span> <span class="keyword">const</span> DOOR_OPENER = 81; <span class="comment">//...</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">public</span> <span class="keyword">const</span> ILLAGER_CAPTAIN = 82;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">public</span> <span class="keyword">const</span> STUNNED = 83;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROARING = 84;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">public</span> <span class="keyword">const</span> DELAYED_ATTACKING = 85;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">public</span> <span class="keyword">const</span> AVOIDING_MOBS = 86;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">public</span> <span class="keyword">const</span> AVOIDING_BLOCK = 87;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">const</span> FACING_TARGET_TO_RANGE_ATTACK = 88;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">public</span> <span class="keyword">const</span> HIDDEN_WHEN_INVISIBLE = 89; <span class="comment">//??????????????????</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">public</span> <span class="keyword">const</span> IS_IN_UI = 90;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">public</span> <span class="keyword">const</span> STALKING = 91;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">public</span> <span class="keyword">const</span> EMOTING = 92;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">public</span> <span class="keyword">const</span> CELEBRATING = 93;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">public</span> <span class="keyword">const</span> ADMIRING = 94;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">public</span> <span class="keyword">const</span> CELEBRATING_SPECIAL = 95;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">public</span> <span class="keyword">const</span> OUT_OF_CONTROL = 96;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">public</span> <span class="keyword">const</span> RAM_ATTACK = 97;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYING_DEAD = 98;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">public</span> <span class="keyword">const</span> IN_ASCENDABLE_BLOCK = 99;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">public</span> <span class="keyword">const</span> OVER_DESCENDABLE_BLOCK = 100;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_entity_metadata_flags_html"><div class="ttname"><a href="../../d8/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_entity_metadata_flags.html">pocketmine\network\mcpe\protocol\types\entity\EntityMetadataFlags</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/_entity_metadata_flags_8php_source.html#l00017">EntityMetadataFlags.php:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['high_0',['HIGH',['../d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a78ef27ffe0fdc8a42f4d6ef96fc0cb7f',1,'pocketmine::event::EventPriority']]],
-  ['highest_1',['HIGHEST',['../d6/d55/classpocketmine_1_1event_1_1_event_priority.html#ad711eaa874363f6ada16a03553393e8f',1,'pocketmine::event::EventPriority']]]
+  ['enumtrait_0',['EnumTrait',['../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97',1,'pocketmine::utils']]]
 ];

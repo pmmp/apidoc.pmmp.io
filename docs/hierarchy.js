@@ -1336,6 +1336,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateBlockPacket", "d8/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_packet.html", [
           [ "pocketmine\\network\\mcpe\\protocol\\UpdateBlockSyncedPacket", "df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_synced_packet.html", null ]
         ] ],
+        [ "pocketmine\\network\\mcpe\\protocol\\UpdateClientInputLocksPacket", "de/d02/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_client_input_locks_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateEquipPacket", "da/d42/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_equip_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdatePlayerGameTypePacket", "da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateSoftEnumPacket", "d9/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_soft_enum_packet.html", null ],
@@ -1526,6 +1527,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateAdventureSettingsPacket", "d9/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_adventure_settings_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateAttributesPacket", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateBlockPacket", "d8/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_block_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\UpdateClientInputLocksPacket", "de/d02/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_client_input_locks_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateEquipPacket", "da/d42/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_equip_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdatePlayerGameTypePacket", "da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateSoftEnumPacket", "d9/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_soft_enum_packet.html", null ],

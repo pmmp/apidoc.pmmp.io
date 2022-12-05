@@ -195,6 +195,7 @@ var dir_682c7921c367674b86e95b8a006ee2ec =
     [ "UpdateAttributesPacket.php", "d7/da4/_update_attributes_packet_8php_source.html", null ],
     [ "UpdateBlockPacket.php", "d5/d92/_update_block_packet_8php_source.html", null ],
     [ "UpdateBlockSyncedPacket.php", "da/dfc/_update_block_synced_packet_8php_source.html", null ],
+    [ "UpdateClientInputLocksPacket.php", "d9/dde/_update_client_input_locks_packet_8php_source.html", null ],
     [ "UpdateEquipPacket.php", "d7/da3/_update_equip_packet_8php_source.html", null ],
     [ "UpdatePlayerGameTypePacket.php", "d6/d0b/_update_player_game_type_packet_8php_source.html", null ],
     [ "UpdateSoftEnumPacket.php", "dd/dcf/_update_soft_enum_packet_8php_source.html", null ],

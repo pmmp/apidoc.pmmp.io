@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['paletted_5fmulti_0',['PALETTED_MULTI',['../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#adcde846e62dd7d2e55688d42c2dcb510',1,'pocketmine::world::format::io::leveldb::SubChunkVersion']]],
-  ['paletted_5fmulti_5fwith_5foffset_1',['PALETTED_MULTI_WITH_OFFSET',['../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#a6af9657d3eed3f5801aaf18358f5248e',1,'pocketmine::world::format::io::leveldb::SubChunkVersion']]],
-  ['paletted_5fsingle_2',['PALETTED_SINGLE',['../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#a8c6e16f4eb01005c65fc727f1be58754',1,'pocketmine::world::format::io::leveldb::SubChunkVersion']]],
-  ['persist_5fsneak_3',['PERSIST_SNEAK',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a2941e6af86bc68393cffef3ef3a73e03',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['pluginownedtrait_4',['PluginOwnedTrait',['../d1/dd8/namespacepocketmine_1_1plugin.html#a765c2f413a4fa914c11812f29f153151',1,'pocketmine::plugin']]]
+  ['ok_0',['OK',['../df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#ab84ecd36be98d804f8e8fa3119175646',1,'pocketmine::world::utils::SubChunkExplorerStatus']]],
+  ['optional_1',['OPTIONAL',['../d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#ab6345b062eb007ab71a2de2dc769d67f',1,'DaveRandom::CallbackValidator::ParameterType']]],
+  ['orb_5fsplit_5fsizes_2',['ORB_SPLIT_SIZES',['../df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a70cf8b292934a30414b3eb55340652b6',1,'pocketmine::entity::object::ExperienceOrb']]]
 ];

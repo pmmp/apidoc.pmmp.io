@@ -35,5 +35,8 @@ var namespacepocketmine_1_1utils =
     [ "id", "dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b", null ],
     [ "register", "dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c", null ],
     [ "setup", "dc/db6/namespacepocketmine_1_1utils.html#a627782f34054d5da6e5b7177a8b55d2e", null ],
-    [ "DestructorCallbackTrait", "dc/db6/namespacepocketmine_1_1utils.html#ad98db57f3818da64908f44911e58a54d", null ]
+    [ "CloningRegistryTrait", "dc/db6/namespacepocketmine_1_1utils.html#ac8a9451e10503894f63193bcb2785ef5", null ],
+    [ "DestructorCallbackTrait", "dc/db6/namespacepocketmine_1_1utils.html#ad98db57f3818da64908f44911e58a54d", null ],
+    [ "EnumTrait", "dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97", null ],
+    [ "RegistryTrait", "dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838", null ]
 ];
