@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.2 git-0a9b52618d4ab570be914dc8083445714ca5df2b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.2 git-74613b9b0921ac6592ae5267c936f676d4b66e3a</span>
    </div>
   </td>
  </tr>
@@ -256,108 +256,109 @@ $(document).ready(function(){initNavTree('dd/d2f/_filesystem_8php_source.html','
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a637d20643fcb722bbc5556b43bda0d59">  189</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a637d20643fcb722bbc5556b43bda0d59">createLockFile</a>(<span class="keywordtype">string</span> $lockFilePath) : ?int{</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        $resource = fopen($lockFilePath, <span class="stringliteral">&quot;a+b&quot;</span>);</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span>($resource === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid lock file path or read/write permissions denied&quot;</span>);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">if</span>(!flock($resource, LOCK_EX | LOCK_NB)){</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="comment">//wait for a shared lock to avoid race conditions if two servers started at the same time - this makes sure the</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="comment">//other server wrote its PID and released exclusive lock before we get our lock</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            flock($resource, LOCK_SH);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            $pid = Utils::assumeNotFalse(stream_get_contents($resource), <span class="stringliteral">&quot;This is a known valid file resource, at worst we should receive an empty string&quot;</span>);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^\d+$/&#39;</span>, $pid) === 1){</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) $pid;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        ftruncate($resource, 0);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        fwrite($resource, (<span class="keywordtype">string</span>) getmypid());</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        fflush($resource);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        flock($resource, LOCK_SH); <span class="comment">//prevent acquiring an exclusive lock from another process, but allow reading</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        self::$lockFileHandles[realpath($lockFilePath)] = $resource; <span class="comment">//keep the resource alive to preserve the lock</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">  217</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">releaseLockFile</a>(<span class="keywordtype">string</span> $lockFilePath) : void{</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        $lockFilePath = realpath($lockFilePath);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordflow">if</span>($lockFilePath === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid lock file path&quot;</span>);</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        }</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span>(isset(self::$lockFileHandles[$lockFilePath])){</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            flock(self::$lockFileHandles[$lockFilePath], LOCK_UN);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            fclose(self::$lockFileHandles[$lockFilePath]);</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            unset(self::$lockFileHandles[$lockFilePath]);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            @unlink($lockFilePath);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        }</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a8e9e278bb4a0a88652caafa3fb96c230">  241</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a8e9e278bb4a0a88652caafa3fb96c230">safeFilePutContents</a>(<span class="keywordtype">string</span> $fileName, <span class="keywordtype">string</span> $contents, <span class="keywordtype">int</span> $flags = 0, $context = <span class="keyword">null</span>) : void{</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        $directory = dirname($fileName);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordflow">if</span>(!is_dir($directory)){</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Target directory path does not exist or is not a directory&quot;</span>);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">if</span>(is_dir($fileName)){</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Target file path already exists and is not a file&quot;</span>);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        $counter = 0;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">do</span>{</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="comment">//we don&#39;t care about overwriting any preexisting tmpfile but we can&#39;t write if a directory is already here</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            $temporaryFileName = $fileName . <span class="stringliteral">&quot;.$counter.tmp&quot;</span>;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            $counter++;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        }<span class="keywordflow">while</span>(is_dir($temporaryFileName));</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            ErrorToExceptionHandler::trap(fn() =&gt; $context !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                file_put_contents($temporaryFileName, $contents, $flags, $context) :</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                file_put_contents($temporaryFileName, $contents, $flags)</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            );</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }<span class="keywordflow">catch</span>(\ErrorException $filePutContentsException){</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            $context !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                @unlink($temporaryFileName, $context) :</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                @unlink($temporaryFileName);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Failed to write to temporary file $temporaryFileName: &quot;</span> . $filePutContentsException-&gt;getMessage(), 0, $filePutContentsException);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        $renameTemporaryFileResult = $context !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            @rename($temporaryFileName, $fileName, $context) :</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            @rename($temporaryFileName, $fileName);</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordflow">if</span>(!$renameTemporaryFileResult){</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            <span class="comment">/*</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">             * The following code works around a bug in Windows where rename() will periodically decide to give us a</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">             * spurious &quot;Access is denied (code: 5)&quot; error. As far as I could determine, the fault comes from Windows</span></div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">             * itself, but since I couldn&#39;t reliably reproduce the issue it&#39;s very hard to debug.</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">             *</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">             * The following code can be used to test. Usually it will fail anywhere before 100,000 iterations.</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">             *</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">             * for($i = 0; $i &lt; 10_000_000; ++$i){</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">             *     file_put_contents(&#39;ops.txt.0.tmp&#39;, &#39;some data &#39; . $i, 0);</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment">             *     if(!rename(&#39;ops.txt.0.tmp&#39;, &#39;ops.txt&#39;)){</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">             *         throw new \Error(&quot;something weird happened&quot;);</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment">             *     }</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">             * }</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">             */</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                ErrorToExceptionHandler::trap(fn() =&gt; $context !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                    copy($temporaryFileName, $fileName, $context) :</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    copy($temporaryFileName, $fileName)</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                );</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            }<span class="keywordflow">catch</span>(\ErrorException $copyException){</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Failed to move temporary file contents into target file: &quot;</span> . $copyException-&gt;getMessage(), 0, $copyException);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            }</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            @unlink($temporaryFileName);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        }</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    }</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        try{</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            $resource = <a class="code hl_class" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html">ErrorToExceptionHandler</a>::trapAndRemoveFalse(fn() =&gt; fopen($lockFilePath, <span class="stringliteral">&quot;a+b&quot;</span>));</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        }<span class="keywordflow">catch</span>(\ErrorException $e){</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Failed to open lock file: &quot;</span> . $e-&gt;getMessage(), 0, $e);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">if</span>(!flock($resource, LOCK_EX | LOCK_NB)){</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="comment">//wait for a shared lock to avoid race conditions if two servers started at the same time - this makes sure the</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="comment">//other server wrote its PID and released exclusive lock before we get our lock</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            flock($resource, LOCK_SH);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            $pid = Utils::assumeNotFalse(stream_get_contents($resource), <span class="stringliteral">&quot;This is a known valid file resource, at worst we should receive an empty string&quot;</span>);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^\d+$/&#39;</span>, $pid) === 1){</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) $pid;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        ftruncate($resource, 0);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        fwrite($resource, (<span class="keywordtype">string</span>) getmypid());</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        fflush($resource);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        flock($resource, LOCK_SH); <span class="comment">//prevent acquiring an exclusive lock from another process, but allow reading</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        self::$lockFileHandles[realpath($lockFilePath)] = $resource; <span class="comment">//keep the resource alive to preserve the lock</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">  218</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">releaseLockFile</a>(<span class="keywordtype">string</span> $lockFilePath) : void{</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        $lockFilePath = realpath($lockFilePath);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">if</span>($lockFilePath === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid lock file path&quot;</span>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordflow">if</span>(isset(self::$lockFileHandles[$lockFilePath])){</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            flock(self::$lockFileHandles[$lockFilePath], LOCK_UN);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            fclose(self::$lockFileHandles[$lockFilePath]);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            unset(self::$lockFileHandles[$lockFilePath]);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            @unlink($lockFilePath);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a8e9e278bb4a0a88652caafa3fb96c230">  242</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a8e9e278bb4a0a88652caafa3fb96c230">safeFilePutContents</a>(<span class="keywordtype">string</span> $fileName, <span class="keywordtype">string</span> $contents, <span class="keywordtype">int</span> $flags = 0, $context = <span class="keyword">null</span>) : void{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        $directory = dirname($fileName);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">if</span>(!is_dir($directory)){</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Target directory path does not exist or is not a directory&quot;</span>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span>(is_dir($fileName)){</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Target file path already exists and is not a file&quot;</span>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        $counter = 0;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <span class="keywordflow">do</span>{</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="comment">//we don&#39;t care about overwriting any preexisting tmpfile but we can&#39;t write if a directory is already here</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            $temporaryFileName = $fileName . <span class="stringliteral">&quot;.$counter.tmp&quot;</span>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            $counter++;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }<span class="keywordflow">while</span>(is_dir($temporaryFileName));</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            ErrorToExceptionHandler::trap(fn() =&gt; $context !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                file_put_contents($temporaryFileName, $contents, $flags, $context) :</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                file_put_contents($temporaryFileName, $contents, $flags)</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            );</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        }<span class="keywordflow">catch</span>(\ErrorException $filePutContentsException){</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            $context !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                @unlink($temporaryFileName, $context) :</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                @unlink($temporaryFileName);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Failed to write to temporary file $temporaryFileName: &quot;</span> . $filePutContentsException-&gt;getMessage(), 0, $filePutContentsException);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        $renameTemporaryFileResult = $context !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            @rename($temporaryFileName, $fileName, $context) :</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            @rename($temporaryFileName, $fileName);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keywordflow">if</span>(!$renameTemporaryFileResult){</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <span class="comment">/*</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">             * The following code works around a bug in Windows where rename() will periodically decide to give us a</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">             * spurious &quot;Access is denied (code: 5)&quot; error. As far as I could determine, the fault comes from Windows</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">             * itself, but since I couldn&#39;t reliably reproduce the issue it&#39;s very hard to debug.</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">             *</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">             * The following code can be used to test. Usually it will fail anywhere before 100,000 iterations.</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">             *</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">             * for($i = 0; $i &lt; 10_000_000; ++$i){</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment">             *     file_put_contents(&#39;ops.txt.0.tmp&#39;, &#39;some data &#39; . $i, 0);</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">             *     if(!rename(&#39;ops.txt.0.tmp&#39;, &#39;ops.txt&#39;)){</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment">             *         throw new \Error(&quot;something weird happened&quot;);</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">             *     }</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">             * }</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">             */</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                ErrorToExceptionHandler::trap(fn() =&gt; $context !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    copy($temporaryFileName, $fileName, $context) :</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                    copy($temporaryFileName, $fileName)</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                );</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            }<span class="keywordflow">catch</span>(\ErrorException $copyException){</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Failed to move temporary file contents into target file: &quot;</span> . $copyException-&gt;getMessage(), 0, $copyException);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            }</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            @unlink($temporaryFileName);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html">pocketmine\errorhandler\ErrorToExceptionHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00028">ErrorToExceptionHandler.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_aa2e0c0b6435c0885f0799d5c1a95d53b"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">pocketmine\errorhandler\ErrorToExceptionHandler\trap</a></div><div class="ttdeci">static trap(\Closure $closure, int $levels=E_WARNING|E_NOTICE)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00100">ErrorToExceptionHandler.php:100</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html">pocketmine\utils\Filesystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00062">Filesystem.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a414d066751a7b3cc582344123835f5ff"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a414d066751a7b3cc582344123835f5ff">pocketmine\utils\Filesystem\recursiveCopy</a></div><div class="ttdeci">static recursiveCopy(string $origin, string $destination)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00102">Filesystem.php:102</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a4c3ae51775c0d2f54e91bd3467909d5d"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a4c3ae51775c0d2f54e91bd3467909d5d">pocketmine\utils\Filesystem\getCleanedPaths</a></div><div class="ttdeci">static getCleanedPaths()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00160">Filesystem.php:160</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a637d20643fcb722bbc5556b43bda0d59"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a637d20643fcb722bbc5556b43bda0d59">pocketmine\utils\Filesystem\createLockFile</a></div><div class="ttdeci">static createLockFile(string $lockFilePath)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00189">Filesystem.php:189</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a711896a81412dc85c2d66fc8f7ac3fd7"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">pocketmine\utils\Filesystem\releaseLockFile</a></div><div class="ttdeci">static releaseLockFile(string $lockFilePath)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00217">Filesystem.php:217</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a711896a81412dc85c2d66fc8f7ac3fd7"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">pocketmine\utils\Filesystem\releaseLockFile</a></div><div class="ttdeci">static releaseLockFile(string $lockFilePath)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00218">Filesystem.php:218</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a7d96685bd46a8cbb094199e98006a811"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a7d96685bd46a8cbb094199e98006a811">pocketmine\utils\Filesystem\cleanPath</a></div><div class="ttdeci">static cleanPath($path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00167">Filesystem.php:167</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a8e9e278bb4a0a88652caafa3fb96c230"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a8e9e278bb4a0a88652caafa3fb96c230">pocketmine\utils\Filesystem\safeFilePutContents</a></div><div class="ttdeci">static safeFilePutContents(string $fileName, string $contents, int $flags=0, $context=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00241">Filesystem.php:241</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a8e9e278bb4a0a88652caafa3fb96c230"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a8e9e278bb4a0a88652caafa3fb96c230">pocketmine\utils\Filesystem\safeFilePutContents</a></div><div class="ttdeci">static safeFilePutContents(string $fileName, string $contents, int $flags=0, $context=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00242">Filesystem.php:242</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a292c99eeb9f5c7baac8531811ec237de"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">pocketmine\utils\Utils\assumeNotFalse</a></div><div class="ttdeci">static assumeNotFalse(mixed $value, \Closure|string $context=&quot;This should never be false&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/_utils_8php_source.html#l00601">Utils.php:601</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
