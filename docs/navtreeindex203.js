@@ -1,5 +1,9 @@
 var NAVTREEINDEX203 =
 {
+"df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#afd1092878025cd4443d371074ac33e15":[2,0,1,16,0,0,0,7],
+"df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#afd1092878025cd4443d371074ac33e15":[3,0,1,16,0,0,0,7],
+"df/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_chain.html":[2,0,1,16,0,6,1,3,7],
+"df/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_chain.html":[3,0,1,16,0,6,1,3,7],
 "df/df8/vendor_2pocketmine_2bedrock-protocol_2src_2types_2recipe_2_potion_container_change_recipe_8php_source.html":[4,0,1,0,1,0,1,4,10],
 "df/df9/_nbt_exception_8php_source.html":[4,0,1,0,10,0,8],
 "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html":[3,0,1,22,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX203 =
 "index.html":[],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_func.html":[2,1,1],
-"namespacemembers_vars.html":[2,1,2],
-"namespaces.html":[2,0],
-"pages.html":[],
-"":[2,0,1,18],
-"":[2,0,1,21]
+"namespacemembers_vars.html":[2,1,2]
 };

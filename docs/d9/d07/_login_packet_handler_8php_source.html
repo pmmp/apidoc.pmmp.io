@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.3 git-5d2b0acfc862f44f4cde96d1d705a1ede4c8e4fd</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.4 git-61933624d23a2f18019c957e71576073c5e15756</span>
    </div>
   </td>
  </tr>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('d9/d07/_login_packet_handler_8php_sour
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            $this-&gt;session-&gt;getPort(),</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            $this-&gt;server-&gt;requiresAuthentication()</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        );</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">if</span>($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getNetwork()-&gt;getConnectionCount() &gt; $this-&gt;server-&gt;getMaxPlayers()){</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">if</span>($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getNetwork()-&gt;getValidConnectionCount() &gt; $this-&gt;server-&gt;getMaxPlayers()){</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            $ev-&gt;setKickReason(PlayerPreLoginEvent::KICK_REASON_SERVER_FULL, KnownTranslationKeys::DISCONNECTIONSCREEN_SERVERFULL);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">if</span>(!$this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;isWhitelisted($playerInfo-&gt;getUsername())){</div>
