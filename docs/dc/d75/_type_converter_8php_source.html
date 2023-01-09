@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.4 git-61933624d23a2f18019c957e71576073c5e15756</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.9 git-f7930a3a0b742120f6fa7d1464ce05618cf1aa15</span>
    </div>
   </td>
  </tr>
@@ -263,141 +263,143 @@ $(document).ready(function(){initNavTree('dc/d75/_type_converter_8php_source.htm
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    $nbt = <span class="keyword">new</span> CompoundTag();</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                }</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                $nbt-&gt;setInt(self::DAMAGE_TAG, $itemStack-&gt;getDamage());</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            }elseif($isBlockItem &amp;&amp; $itemStack-&gt;getMeta() !== 0){</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                <span class="comment">//TODO HACK: This foul-smelling code ensures that we can correctly deserialize an item when the</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                <span class="comment">//client sends it back to us, because as of 1.16.220, blockitems quietly discard their metadata</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                <span class="comment">//client-side. Aside from being very annoying, this also breaks various server-side behaviours.</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">if</span>($nbt === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                    $nbt = <span class="keyword">new</span> CompoundTag();</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                $nbt-&gt;setInt(self::PM_META_TAG, $itemStack-&gt;getMeta());</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        }</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        $blockRuntimeId = 0;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span>($isBlockItem){</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            $block = $itemStack-&gt;getBlock();</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">if</span>($block-&gt;getId() !== BlockLegacyIds::AIR){</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                $blockRuntimeId = RuntimeBlockMapping::getInstance()-&gt;toRuntimeId($block-&gt;getFullId());</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> ItemStack(</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            $id,</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            $meta,</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            $itemStack-&gt;getCount(),</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            $blockRuntimeId,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            $nbt,</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            [],</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            [],</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            $id === $this-&gt;shieldRuntimeId ? 0 : <span class="keyword">null</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        );</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a6552f8687c95d7874167288ed69496ab">  212</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a6552f8687c95d7874167288ed69496ab">netItemStackToCore</a>(<a class="code hl_class" href="../../d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html">ItemStack</a> $itemStack) : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        if($itemStack-&gt;getId() === 0){</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keywordflow">return</span> VanillaItems::AIR();</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        }</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        $compound = $itemStack-&gt;getNbt();</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        [$id, $meta] = ItemTranslator::getInstance()-&gt;fromNetworkId($itemStack-&gt;getId(), $itemStack-&gt;getMeta());</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                $meta = 0;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            }elseif($isBlockItem &amp;&amp; $itemStack-&gt;getMeta() !== 0){</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                <span class="comment">//TODO HACK: This foul-smelling code ensures that we can correctly deserialize an item when the</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                <span class="comment">//client sends it back to us, because as of 1.16.220, blockitems quietly discard their metadata</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="comment">//client-side. Aside from being very annoying, this also breaks various server-side behaviours.</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                <span class="keywordflow">if</span>($nbt === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    $nbt = <span class="keyword">new</span> CompoundTag();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                $nbt-&gt;setInt(self::PM_META_TAG, $itemStack-&gt;getMeta());</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                $meta = 0;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        $blockRuntimeId = 0;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordflow">if</span>($isBlockItem){</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            $block = $itemStack-&gt;getBlock();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="keywordflow">if</span>($block-&gt;getId() !== BlockLegacyIds::AIR){</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                $blockRuntimeId = RuntimeBlockMapping::getInstance()-&gt;toRuntimeId($block-&gt;getFullId());</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> ItemStack(</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            $id,</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            $meta,</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            $itemStack-&gt;getCount(),</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            $blockRuntimeId,</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            $nbt,</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            [],</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            [],</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            $id === $this-&gt;shieldRuntimeId ? 0 : <span class="keyword">null</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        );</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a6552f8687c95d7874167288ed69496ab">  214</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a6552f8687c95d7874167288ed69496ab">netItemStackToCore</a>(<a class="code hl_class" href="../../d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html">ItemStack</a> $itemStack) : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        if($itemStack-&gt;getId() === 0){</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="keywordflow">return</span> VanillaItems::AIR();</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        $compound = $itemStack-&gt;getNbt();</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">if</span>($compound !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            $compound = clone $compound;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <span class="keywordflow">if</span>(($idTag = $compound-&gt;getTag(self::PM_ID_TAG)) instanceof <a class="code hl_class" href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">IntTag</a>){</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                $id = $idTag-&gt;getValue();</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                $compound-&gt;removeTag(self::PM_ID_TAG);</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keywordflow">if</span>(($damageTag = $compound-&gt;getTag(self::DAMAGE_TAG)) instanceof IntTag){</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                $meta = $damageTag-&gt;getValue();</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                $compound-&gt;removeTag(self::DAMAGE_TAG);</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <span class="keywordflow">if</span>(($conflicted = $compound-&gt;getTag(self::DAMAGE_TAG_CONFLICT_RESOLUTION)) !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                    $compound-&gt;removeTag(self::DAMAGE_TAG_CONFLICT_RESOLUTION);</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    $compound-&gt;setTag(self::DAMAGE_TAG, $conflicted);</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            }elseif(($metaTag = $compound-&gt;getTag(self::PM_META_TAG)) instanceof IntTag){</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <span class="comment">//TODO HACK: This foul-smelling code ensures that we can correctly deserialize an item when the</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                <span class="comment">//client sends it back to us, because as of 1.16.220, blockitems quietly discard their metadata</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                <span class="comment">//client-side. Aside from being very annoying, this also breaks various server-side behaviours.</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                $meta = $metaTag-&gt;getValue();</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                $compound-&gt;removeTag(self::PM_META_TAG);</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            }</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">if</span>($compound-&gt;count() === 0){</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                $compound = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">if</span>($id &lt; -0x8000 || $id &gt;= 0x7fff){</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Item ID must be in range &quot;</span> . -0x8000 . <span class="stringliteral">&quot; ... &quot;</span> . 0x7fff . <span class="stringliteral">&quot; (received $id)&quot;</span>);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span>($meta &lt; 0 || $meta &gt;= 0x7fff){ <span class="comment">//this meta value may have been restored from the NBT</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Item meta must be in range 0 ... &quot;</span> . 0x7fff . <span class="stringliteral">&quot; (received $meta)&quot;</span>);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keywordflow">return</span> ItemFactory::getInstance()-&gt;get(</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                $id,</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                $meta,</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                $itemStack-&gt;getCount(),</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                $compound</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            );</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        }<span class="keywordflow">catch</span>(NbtException $e){</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keywordflow">throw</span> TypeConversionException::wrap($e, <span class="stringliteral">&quot;Bad itemstack NBT data&quot;</span>);</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a01778bd863c4aa740563f5d105952a02">  266</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a01778bd863c4aa740563f5d105952a02">createInventoryAction</a>(<a class="code hl_class" href="../../d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action.html">NetworkInventoryAction</a> $action, <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, <a class="code hl_class" href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">InventoryManager</a> $inventoryManager) : ?<a class="code hl_class" href="../../df/def/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_inventory_action.html">InventoryAction</a>{</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        if($action-&gt;oldItem-&gt;getItemStack()-&gt;equals($action-&gt;newItem-&gt;getItemStack())){</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="comment">//filter out useless noise in 1.13</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            $old = $this-&gt;netItemStackToCore($action-&gt;oldItem-&gt;getItemStack());</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../dd/de4/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception.html">TypeConversionException</a> $e){</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <span class="keywordflow">throw</span> TypeConversionException::wrap($e, <span class="stringliteral">&quot;Inventory action: oldItem&quot;</span>);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            $new = $this-&gt;netItemStackToCore($action-&gt;newItem-&gt;getItemStack());</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        }<span class="keywordflow">catch</span>(TypeConversionException $e){</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <span class="keywordflow">throw</span> TypeConversionException::wrap($e, <span class="stringliteral">&quot;Inventory action: newItem&quot;</span>);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keywordflow">switch</span>($action-&gt;sourceType){</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_CONTAINER:</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                <span class="keywordflow">if</span>($action-&gt;windowId === ContainerIds::UI &amp;&amp; $action-&gt;inventorySlot === UIInventorySlotOffset::CREATED_ITEM_OUTPUT){</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>; <span class="comment">//useless noise</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                }</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                $located = $inventoryManager-&gt;locateWindowAndSlot($action-&gt;windowId, $action-&gt;inventorySlot);</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                <span class="keywordflow">if</span>($located !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                    [$window, $slot] = $located;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> SlotChangeAction($window, $slot, $old, $new);</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                }</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;No open container with window ID $action-&gt;windowId&quot;</span>);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_WORLD:</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordflow">if</span>($action-&gt;inventorySlot !== NetworkInventoryAction::ACTION_MAGIC_SLOT_DROP_ITEM){</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Only expecting drop-item world actions from the client!&quot;</span>);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                }</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> DropItemAction($new);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_CREATIVE:</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                <span class="keywordflow">switch</span>($action-&gt;inventorySlot){</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                    <span class="keywordflow">case</span> NetworkInventoryAction::ACTION_MAGIC_SLOT_CREATIVE_DELETE_ITEM:</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> DestroyItemAction($new);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                    <span class="keywordflow">case</span> NetworkInventoryAction::ACTION_MAGIC_SLOT_CREATIVE_CREATE_ITEM:</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> CreateItemAction($old);</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Unexpected creative action type $action-&gt;inventorySlot&quot;</span>);</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                }</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_TODO:</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                <span class="comment">//These are used to balance a transaction that involves special actions, like crafting, enchanting, etc.</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                <span class="comment">//The vanilla server just accepted these without verifying them. We don&#39;t need to care about them since</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                <span class="comment">//we verify crafting by checking for imbalances anyway.</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Unknown inventory source type $action-&gt;sourceType&quot;</span>);</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        }</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    }</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>}</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        [$id, $meta] = ItemTranslator::getInstance()-&gt;fromNetworkId($itemStack-&gt;getId(), $itemStack-&gt;getMeta());</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span>($compound !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            $compound = clone $compound;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            <span class="keywordflow">if</span>(($idTag = $compound-&gt;getTag(self::PM_ID_TAG)) instanceof <a class="code hl_class" href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">IntTag</a>){</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                $id = $idTag-&gt;getValue();</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                $compound-&gt;removeTag(self::PM_ID_TAG);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">if</span>(($damageTag = $compound-&gt;getTag(self::DAMAGE_TAG)) instanceof IntTag){</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                $meta = $damageTag-&gt;getValue();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                $compound-&gt;removeTag(self::DAMAGE_TAG);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">if</span>(($conflicted = $compound-&gt;getTag(self::DAMAGE_TAG_CONFLICT_RESOLUTION)) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    $compound-&gt;removeTag(self::DAMAGE_TAG_CONFLICT_RESOLUTION);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    $compound-&gt;setTag(self::DAMAGE_TAG, $conflicted);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            }elseif(($metaTag = $compound-&gt;getTag(self::PM_META_TAG)) instanceof IntTag){</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                <span class="comment">//TODO HACK: This foul-smelling code ensures that we can correctly deserialize an item when the</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                <span class="comment">//client sends it back to us, because as of 1.16.220, blockitems quietly discard their metadata</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                <span class="comment">//client-side. Aside from being very annoying, this also breaks various server-side behaviours.</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                $meta = $metaTag-&gt;getValue();</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                $compound-&gt;removeTag(self::PM_META_TAG);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">if</span>($compound-&gt;count() === 0){</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                $compound = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">if</span>($id &lt; -0x8000 || $id &gt;= 0x7fff){</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Item ID must be in range &quot;</span> . -0x8000 . <span class="stringliteral">&quot; ... &quot;</span> . 0x7fff . <span class="stringliteral">&quot; (received $id)&quot;</span>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">if</span>($meta &lt; 0 || $meta &gt;= 0x7fff){ <span class="comment">//this meta value may have been restored from the NBT</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Item meta must be in range 0 ... &quot;</span> . 0x7fff . <span class="stringliteral">&quot; (received $meta)&quot;</span>);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordflow">return</span> ItemFactory::getInstance()-&gt;get(</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                $id,</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                $meta,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                $itemStack-&gt;getCount(),</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                $compound</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            );</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }<span class="keywordflow">catch</span>(NbtException $e){</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">throw</span> TypeConversionException::wrap($e, <span class="stringliteral">&quot;Bad itemstack NBT data&quot;</span>);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a01778bd863c4aa740563f5d105952a02">  268</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a01778bd863c4aa740563f5d105952a02">createInventoryAction</a>(<a class="code hl_class" href="../../d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action.html">NetworkInventoryAction</a> $action, <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, <a class="code hl_class" href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">InventoryManager</a> $inventoryManager) : ?<a class="code hl_class" href="../../df/def/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_inventory_action.html">InventoryAction</a>{</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        if($action-&gt;oldItem-&gt;getItemStack()-&gt;equals($action-&gt;newItem-&gt;getItemStack())){</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="comment">//filter out useless noise in 1.13</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            $old = $this-&gt;netItemStackToCore($action-&gt;oldItem-&gt;getItemStack());</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../dd/de4/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception.html">TypeConversionException</a> $e){</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">throw</span> TypeConversionException::wrap($e, <span class="stringliteral">&quot;Inventory action: oldItem&quot;</span>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        }</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            $new = $this-&gt;netItemStackToCore($action-&gt;newItem-&gt;getItemStack());</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        }<span class="keywordflow">catch</span>(TypeConversionException $e){</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <span class="keywordflow">throw</span> TypeConversionException::wrap($e, <span class="stringliteral">&quot;Inventory action: newItem&quot;</span>);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">switch</span>($action-&gt;sourceType){</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_CONTAINER:</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                <span class="keywordflow">if</span>($action-&gt;windowId === ContainerIds::UI &amp;&amp; $action-&gt;inventorySlot === UIInventorySlotOffset::CREATED_ITEM_OUTPUT){</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>; <span class="comment">//useless noise</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                $located = $inventoryManager-&gt;locateWindowAndSlot($action-&gt;windowId, $action-&gt;inventorySlot);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                <span class="keywordflow">if</span>($located !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    [$window, $slot] = $located;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> SlotChangeAction($window, $slot, $old, $new);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                }</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;No open container with window ID $action-&gt;windowId&quot;</span>);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_WORLD:</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                <span class="keywordflow">if</span>($action-&gt;inventorySlot !== NetworkInventoryAction::ACTION_MAGIC_SLOT_DROP_ITEM){</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Only expecting drop-item world actions from the client!&quot;</span>);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> DropItemAction($new);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_CREATIVE:</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                <span class="keywordflow">switch</span>($action-&gt;inventorySlot){</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                    <span class="keywordflow">case</span> NetworkInventoryAction::ACTION_MAGIC_SLOT_CREATIVE_DELETE_ITEM:</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> DestroyItemAction($new);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                    <span class="keywordflow">case</span> NetworkInventoryAction::ACTION_MAGIC_SLOT_CREATIVE_CREATE_ITEM:</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> CreateItemAction($old);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Unexpected creative action type $action-&gt;inventorySlot&quot;</span>);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                }</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <span class="keywordflow">case</span> NetworkInventoryAction::SOURCE_TODO:</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                <span class="comment">//These are used to balance a transaction that involves special actions, like crafting, enchanting, etc.</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                <span class="comment">//The vanilla server just accepted these without verifying them. We don&#39;t need to care about them since</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                <span class="comment">//we verify crafting by checking for imbalances anyway.</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeConversionException(<span class="stringliteral">&quot;Unknown inventory source type $action-&gt;sourceType&quot;</span>);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        }</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    }</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_legacy_ids_html"><div class="ttname"><a href="../../db/d51/classpocketmine_1_1block_1_1_block_legacy_ids.html">pocketmine\block\BlockLegacyIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d7d/_block_legacy_ids_8php_source.html#l00026">BlockLegacyIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1inventory_1_1transaction_1_1action_1_1_create_item_action_html"><div class="ttname"><a href="../../d8/dcd/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_create_item_action.html">pocketmine\inventory\transaction\action\CreateItemAction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d7d/_create_item_action_8php_source.html#l00036">CreateItemAction.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action_html"><div class="ttname"><a href="../../d1/d7b/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action.html">pocketmine\inventory\transaction\action\DestroyItemAction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dce/_destroy_item_action_8php_source.html#l00035">DestroyItemAction.php:35</a></div></div>
@@ -415,9 +417,9 @@ $(document).ready(function(){initNavTree('dc/d75/_type_converter_8php_source.htm
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_inventory_manager_html"><div class="ttname"><a href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html">pocketmine\network\mcpe\InventoryManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d9e/_inventory_manager_8php_source.html#l00072">InventoryManager.php:72</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception_html"><div class="ttname"><a href="../../dd/de4/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception.html">pocketmine\network\mcpe\convert\TypeConversionException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d65/_type_conversion_exception_8php_source.html#l00030">TypeConversionException.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html">pocketmine\network\mcpe\convert\TypeConverter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00054">TypeConverter.php:54</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html_a01778bd863c4aa740563f5d105952a02"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a01778bd863c4aa740563f5d105952a02">pocketmine\network\mcpe\convert\TypeConverter\createInventoryAction</a></div><div class="ttdeci">createInventoryAction(NetworkInventoryAction $action, Player $player, InventoryManager $inventoryManager)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00266">TypeConverter.php:266</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html_a01778bd863c4aa740563f5d105952a02"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a01778bd863c4aa740563f5d105952a02">pocketmine\network\mcpe\convert\TypeConverter\createInventoryAction</a></div><div class="ttdeci">createInventoryAction(NetworkInventoryAction $action, Player $player, InventoryManager $inventoryManager)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00268">TypeConverter.php:268</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html_a1b87a8dcf4c2086ffae7093758520138"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a1b87a8dcf4c2086ffae7093758520138">pocketmine\network\mcpe\convert\TypeConverter\coreGameModeToProtocol</a></div><div class="ttdeci">coreGameModeToProtocol(GameMode $gamemode)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00075">TypeConverter.php:75</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html_a6552f8687c95d7874167288ed69496ab"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a6552f8687c95d7874167288ed69496ab">pocketmine\network\mcpe\convert\TypeConverter\netItemStackToCore</a></div><div class="ttdeci">netItemStackToCore(ItemStack $itemStack)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00212">TypeConverter.php:212</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter_html_a6552f8687c95d7874167288ed69496ab"><div class="ttname"><a href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html#a6552f8687c95d7874167288ed69496ab">pocketmine\network\mcpe\convert\TypeConverter\netItemStackToCore</a></div><div class="ttdeci">netItemStackToCore(ItemStack $itemStack)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d75/_type_converter_8php_source.html#l00214">TypeConverter.php:214</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_mode_html"><div class="ttname"><a href="../../d6/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_mode.html">pocketmine\network\mcpe\protocol\types\GameMode</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d70/vendor_2pocketmine_2bedrock-protocol_2src_2types_2_game_mode_8php_source.html#l00017">vendor/pocketmine/bedrock-protocol/src/types/GameMode.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_ids_html"><div class="ttname"><a href="../../d0/d3b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_ids.html">pocketmine\network\mcpe\protocol\types\inventory\ContainerIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/db3/_container_ids_8php_source.html#l00017">ContainerIds.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_html"><div class="ttname"><a href="../../d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStack</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/_item_stack_8php_source.html#l00023">ItemStack.php:23</a></div></div>

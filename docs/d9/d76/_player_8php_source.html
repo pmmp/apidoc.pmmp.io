@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.4 git-61933624d23a2f18019c957e71576073c5e15756</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.9 git-f7930a3a0b742120f6fa7d1464ce05618cf1aa15</span>
    </div>
   </td>
  </tr>
@@ -2214,7 +2214,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>        $this-&gt;cursorInventory = new PlayerCursorInventory($this);</div>
 <div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span>        $this-&gt;craftingGrid = <span class="keyword">new</span> PlayerCraftingInventory($this);</div>
 <div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span> </div>
-<div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>        $this-&gt;addPermanentInventories($this-&gt;inventory, $this-&gt;armorInventory, $this-&gt;cursorInventory, $this-&gt;offHandInventory);</div>
+<div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>        $this-&gt;addPermanentInventories($this-&gt;inventory, $this-&gt;armorInventory, $this-&gt;cursorInventory, $this-&gt;offHandInventory, $this-&gt;craftingGrid);</div>
 <div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span> </div>
 <div class="line"><a id="l02453" name="l02453"></a><span class="lineno"> 2453</span>        <span class="comment">//TODO: more windows</span></div>
 <div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span>    }</div>
@@ -2418,7 +2418,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a464983b3197549219cb5db0efda3c8e5"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">pocketmine\nbt\tag\CompoundTag\getTag</a></div><div class="ttdeci">getTag(string $name)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00085">CompoundTag.php:85</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a573a8720852895cefad5a0163d31bc63"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">pocketmine\nbt\tag\CompoundTag\setLong</a></div><div class="ttdeci">setLong(string $name, int $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00238">CompoundTag.php:238</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_int_tag_html"><div class="ttname"><a href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">pocketmine\nbt\tag\IntTag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4a/_int_tag_8php_source.html#l00030">IntTag.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00144">NetworkSession.php:144</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00149">NetworkSession.php:149</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_animate_packet_html"><div class="ttname"><a href="../../d6/dcd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_animate_packet.html">pocketmine\network\mcpe\protocol\AnimatePacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d71/_animate_packet_8php_source.html#l00019">AnimatePacket.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet_html"><div class="ttname"><a href="../../d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet.html">pocketmine\network\mcpe\protocol\MovePlayerPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d04/_move_player_packet_8php_source.html#l00020">MovePlayerPacket.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_motion_packet_html"><div class="ttname"><a href="../../dd/d75/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_motion_packet.html">pocketmine\network\mcpe\protocol\SetActorMotionPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de6/_set_actor_motion_packet_8php_source.html#l00020">SetActorMotionPacket.php:20</a></div></div>
