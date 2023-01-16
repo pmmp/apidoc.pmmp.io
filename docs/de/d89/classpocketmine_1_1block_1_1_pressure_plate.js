@@ -51,7 +51,7 @@ var classpocketmine_1_1block_1_1_pressure_plate =
     [ "onEntityLand", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a86f1c668b5d74d68ab7e2521936bfce8", null ],
-    [ "onNearbyBlockChange", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a863a7a7c27f111cc622ebb10711807c2", null ],
+    [ "onNearbyBlockChange", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a99186b71b301c5469f29f4171bb29764", null ],
     [ "onPostPlace", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onRandomTick", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a36afea9f0214193963f75577e8d48c26", null ],
     [ "onScheduledUpdate", "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a1a1a2b2adf423738289d296198f044e1", null ],

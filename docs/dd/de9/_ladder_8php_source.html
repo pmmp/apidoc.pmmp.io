@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.9 git-f7930a3a0b742120f6fa7d1464ce05618cf1aa15</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.9 git-ba18a81e88d8e46e29cd36f82ca28f7fac620125</span>
    </div>
   </td>
  </tr>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('dd/de9/_ladder_8php_source.html','../.
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../dd/dd0/classpocketmine_1_1block_1_1_ladder.html#a860a4307ab3b07aa2c6de3a132f6d547">   72</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/dd0/classpocketmine_1_1block_1_1_ladder.html#a860a4307ab3b07aa2c6de3a132f6d547">place</a>(<a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">BlockTransaction</a> $tx, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockClicked, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        if($this-&gt;canBeSupportedBy($blockClicked, $face) &amp;&amp; <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::axis($face) !== <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::Y){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        if($this-&gt;canBeSupportedBy($blockReplace-&gt;getSide(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::opposite($face)), $face) &amp;&amp; <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::axis($face) !== <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::Y){</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $this-&gt;facing = $face;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> parent::place($tx, $item, $blockReplace, $blockClicked, $face, $clickVector, $player);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>

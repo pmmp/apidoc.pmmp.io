@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.9 git-f7930a3a0b742120f6fa7d1464ce05618cf1aa15</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.9 git-ba18a81e88d8e46e29cd36f82ca28f7fac620125</span>
    </div>
   </td>
  </tr>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">  149</a></span><span class="keyword">class </span><a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a>{</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">private</span> <span class="keyword">const</span> INCOMING_PACKET_BATCH_PER_TICK = 2; <span class="comment">//usually max 1 per tick, but transactions may arrive separately</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">private</span> <span class="keyword">const</span> INCOMING_PACKET_BATCH_MAX_BUDGET = 100; <span class="comment">//enough to account for a 5-second lag spike</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">private</span> <span class="keyword">const</span> INCOMING_PACKET_BATCH_MAX_BUDGET = 100 * self::INCOMING_PACKET_BATCH_PER_TICK; <span class="comment">//enough to account for a 5-second lag spike</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $incomingPacketBatchBudget = self::INCOMING_PACKET_BATCH_MAX_BUDGET;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $lastPacketBudgetUpdateTimeNs;</div>
