@@ -143,6 +143,7 @@ var namespacepocketmine =
     [ "MemoryManager", "d3/df7/classpocketmine_1_1_memory_manager.html", "d3/df7/classpocketmine_1_1_memory_manager" ],
     [ "Server", "d5/df7/classpocketmine_1_1_server.html", "d5/df7/classpocketmine_1_1_server" ],
     [ "ServerConfigGroup", "d1/d84/classpocketmine_1_1_server_config_group.html", "d1/d84/classpocketmine_1_1_server_config_group" ],
+    [ "TimeTrackingSleeperHandler", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler" ],
     [ "VersionInfo", "d4/db7/classpocketmine_1_1_version_info.html", null ],
     [ "check_platform_dependencies", "d2/d69/namespacepocketmine.html#ab89ad77c9b8adb99db42b2ace0c69151", null ],
     [ "critical_error", "d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69", null ],

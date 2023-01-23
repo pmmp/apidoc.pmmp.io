@@ -216,7 +216,7 @@ var searchData=
   ['processlogin_213',['processLogin',['../d7/d77/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler.html#aadb7926842667596b35a73f0234213bf',1,'pocketmine::network::mcpe::handler::LoginPacketHandler']]],
   ['processlogintask_214',['ProcessLoginTask',['../df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html',1,'pocketmine::network::mcpe::auth']]],
   ['processmostrecentmovements_215',['processMostRecentMovements',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#a24fa3c9e7e30f7cc9982df105c6304cf',1,'pocketmine::player::Player']]],
-  ['processnotifications_216',['processNotifications',['../d7/d08/classpocketmine_1_1snooze_1_1_sleeper_handler.html#a92983db67a5a996811195b29822ee4e3',1,'pocketmine::snooze::SleeperHandler']]],
+  ['processnotifications_216',['processNotifications',['../d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#ac3975a74471cef882ed6f55fbf3d6447',1,'pocketmine\TimeTrackingSleeperHandler\processNotifications()'],['../d7/d08/classpocketmine_1_1snooze_1_1_sleeper_handler.html#a92983db67a5a996811195b29822ee4e3',1,'pocketmine\snooze\SleeperHandler\processNotifications()']]],
   ['product_217',['product',['../da/d46/classpocketmine_1_1math_1_1_matrix.html#a2bba88141f675b773917a241c393b87b',1,'pocketmine::math::Matrix']]],
   ['projectile_218',['Projectile',['../dc/d01/classpocketmine_1_1entity_1_1projectile_1_1_projectile.html',1,'pocketmine::entity::projectile']]],
   ['projectilehitblockevent_219',['ProjectileHitBlockEvent',['../d3/def/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_block_event.html',1,'pocketmine::event::entity']]],
