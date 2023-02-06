@@ -26,6 +26,7 @@ var classpocketmine_1_1entity_1_1_zombie =
     [ "getBlocksAroundWithEntityInsideActions", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a4087e033dc45159d7379699024657047", null ],
     [ "getBlocksIntersected", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a1380adc70073eca8b76083e7357c44ea", null ],
     [ "getDirtyNetworkData", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ac028a6475bf09f61ce9dfb952d4a5d65", null ],
+    [ "getDisplayName", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ab86b239e5e24b16efed3ba0e19895616", null ],
     [ "getDrops", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a34c77936c9b32f382a82b80604990767", null ],
     [ "getHighestArmorEnchantmentLevel", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ad79f9505c6859c4241a95ba52e0002bd", null ],
     [ "getJumpVelocity", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a0f92f1f7b5b4abc1f9edca2f1c6e330a", null ],

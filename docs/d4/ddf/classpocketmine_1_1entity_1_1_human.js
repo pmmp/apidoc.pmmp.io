@@ -26,6 +26,7 @@ var classpocketmine_1_1entity_1_1_human =
     [ "getBlocksAroundWithEntityInsideActions", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a4087e033dc45159d7379699024657047", null ],
     [ "getBlocksIntersected", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a1380adc70073eca8b76083e7357c44ea", null ],
     [ "getDirtyNetworkData", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#ac028a6475bf09f61ce9dfb952d4a5d65", null ],
+    [ "getDisplayName", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#ab86b239e5e24b16efed3ba0e19895616", null ],
     [ "getDrops", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a73931d2c87074890c2f7487ab65f96a0", null ],
     [ "getHighestArmorEnchantmentLevel", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#ad79f9505c6859c4241a95ba52e0002bd", null ],
     [ "getInventory", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a34a8a68fed626a87b8f309c09b56ed20", null ],

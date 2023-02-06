@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.12 git-7529953f0a334eaa9cabfa850e6c644b57340ee9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
    </div>
   </td>
  </tr>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('d9/dc3/_json_nbt_parser_8php_source.ht
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">NbtDataException</a> $e){</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">NbtDataException</a>($e-&gt;getMessage() . <span class="stringliteral">&quot; at offset &quot;</span> . $stream-&gt;getOffset());</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }<span class="keywordflow">catch</span>(BinaryDataException $e){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">NbtDataException</a>(<span class="stringliteral">&quot;Syntax error: &quot;</span> . $e-&gt;getMessage() . <span class="stringliteral">&quot; at offset &quot;</span> . $stream-&gt;getOffset());</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> NbtDataException(<span class="stringliteral">&quot;Syntax error: &quot;</span> . $e-&gt;getMessage() . <span class="stringliteral">&quot; at offset &quot;</span> . $stream-&gt;getOffset());</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span>(!$stream-&gt;feof()){</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> NbtDataException(<span class="stringliteral">&quot;Syntax error: unexpected trailing characters after end of tag: &quot;</span> . $stream-&gt;getRemaining());</div>

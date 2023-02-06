@@ -26,6 +26,7 @@ var classpocketmine_1_1entity_1_1_squid =
     [ "getBlocksAroundWithEntityInsideActions", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a4087e033dc45159d7379699024657047", null ],
     [ "getBlocksIntersected", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1380adc70073eca8b76083e7357c44ea", null ],
     [ "getDirtyNetworkData", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#ac028a6475bf09f61ce9dfb952d4a5d65", null ],
+    [ "getDisplayName", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#ab86b239e5e24b16efed3ba0e19895616", null ],
     [ "getDrops", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#afc53276c0618591c3c01243b1a1e6be3", null ],
     [ "getHighestArmorEnchantmentLevel", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#ad79f9505c6859c4241a95ba52e0002bd", null ],
     [ "getJumpVelocity", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a0f92f1f7b5b4abc1f9edca2f1c6e330a", null ],

@@ -31,5 +31,7 @@ var classpocketmine_1_1_server =
     [ "shutdown", "d5/df7/classpocketmine_1_1_server.html#a5ea673149c3d2e0fbc7146d72d128563", null ],
     [ "subscribeToBroadcastChannel", "d5/df7/classpocketmine_1_1_server.html#acf9ae8acb41723959bd8fd6293d95b89", null ],
     [ "unsubscribeFromAllBroadcastChannels", "d5/df7/classpocketmine_1_1_server.html#a721c221388d1a1b5890a619310140caa", null ],
-    [ "unsubscribeFromBroadcastChannel", "d5/df7/classpocketmine_1_1_server.html#a2d73e696e7a3c87d0e7701757257fc9a", null ]
+    [ "unsubscribeFromBroadcastChannel", "d5/df7/classpocketmine_1_1_server.html#a2d73e696e7a3c87d0e7701757257fc9a", null ],
+    [ "TARGET_SECONDS_PER_TICK", "d5/df7/classpocketmine_1_1_server.html#ae1da72952e63e41de8153ecbc442dcf8", null ],
+    [ "TARGET_TICKS_PER_SECOND", "d5/df7/classpocketmine_1_1_server.html#a7b2859abdadb54ce2f3faa6d7ca1a6e1", null ]
 ];

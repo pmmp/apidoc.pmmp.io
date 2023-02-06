@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.12 git-7529953f0a334eaa9cabfa850e6c644b57340ee9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d5/df7/classpocketmine_1_1_server.html
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d1a/classpocketmine_1_1_server__coll__graph.svg" width="270" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d1a/classpocketmine_1_1_server__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <table class="memberdecls">
@@ -312,11 +312,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6538c3cfb38c17d4cf0bf893fcc5964b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c36d4e107213df02b3a36ced5f95355"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a8c36d4e107213df02b3a36ced5f95355">DEFAULT_SERVER_NAME</a> = VersionInfo::NAME . &quot; Server&quot;</td></tr>
 <tr class="separator:a8c36d4e107213df02b3a36ced5f95355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45eb923e6b7c451436d1be0e3904b369"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a45eb923e6b7c451436d1be0e3904b369">TARGET_NANOSECONDS_PER_TICK</a> = 1_000_000_000 / self::TARGET_TICKS_PER_SECOND</td></tr>
+<tr class="separator:a45eb923e6b7c451436d1be0e3904b369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1da72952e63e41de8153ecbc442dcf8"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ae1da72952e63e41de8153ecbc442dcf8">TARGET_SECONDS_PER_TICK</a> = 1 / self::TARGET_TICKS_PER_SECOND</td></tr>
+<tr class="separator:ae1da72952e63e41de8153ecbc442dcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2859abdadb54ce2f3faa6d7ca1a6e1"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a7b2859abdadb54ce2f3faa6d7ca1a6e1">TARGET_TICKS_PER_SECOND</a> = 20</td></tr>
+<tr class="separator:a7b2859abdadb54ce2f3faa6d7ca1a6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The class that manages everything </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00174">174</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00172">172</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af34984bfd90c0e06dfe111f958de2c0c" name="af34984bfd90c0e06dfe111f958de2c0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af34984bfd90c0e06dfe111f958de2c0c">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -356,7 +362,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00772">772</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00760">760</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -377,7 +383,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>mixed[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01688">1688</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01680">1680</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -397,7 +403,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01707">1707</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01699">1699</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -417,7 +423,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00693">693</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00681">681</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -437,7 +443,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00717">717</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00705">705</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -473,7 +479,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01273">1273</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01265">1265</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -510,7 +516,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01343">1343</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01335">1335</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -546,7 +552,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01313">1313</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01305">1305</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -582,7 +588,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01300">1300</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01292">1292</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -645,7 +651,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01329">1329</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01321">1321</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -664,7 +670,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01591">1591</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01583">1583</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -707,7 +713,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >@phpstan-return Promise&lt;Player&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00558">558</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00550">550</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -744,7 +750,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Executes a command from a CommandSender </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01433">1433</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01425">1425</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -764,7 +770,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01413">1413</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01405">1405</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -800,7 +806,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01540">1540</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01532">1532</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -819,7 +825,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01462">1462</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01454">1454</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -840,7 +846,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns a view distance up to the currently-allowed limit. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00345">345</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00366">366</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -859,7 +865,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00291">291</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00312">312</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -878,7 +884,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00418">418</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00439">439</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -900,7 +906,7 @@ Public Attributes</h2></td></tr>
 <p >Returns a list of all the CommandSenders subscribed to the given broadcast channel.</p>
 <dl class="section return"><dt>Returns</dt><dd>CommandSender[] @phpstan-return array&lt;int, CommandSender&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01266">1266</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01258">1258</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -920,7 +926,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>string[][] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00746">746</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00734">734</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -939,7 +945,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00458">458</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00479">479</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -958,7 +964,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00669">669</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00657">657</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -977,7 +983,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00406">406</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00427">427</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -996,7 +1002,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00303">303</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00324">324</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1022,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns <a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> global difficulty. Note that this may be overridden in individual worlds. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00374">374</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00395">395</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1041,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00295">295</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00316">316</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1060,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00367">367</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00388">388</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1079,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00363">363</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00384">384</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1106,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00765">765</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00753">753</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1125,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00349">349</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00370">370</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1144,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00689">689</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00677">677</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1163,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00354">354</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00375">375</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1182,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01758">1758</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01750">1750</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1201,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00390">390</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00411">411</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1220,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00394">394</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00415">415</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1239,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00311">311</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00332">332</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1258,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01770">1770</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01762">1762</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1277,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00386">386</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00407">407</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1296,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00275">275</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00296">296</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1315,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00685">685</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00673">673</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1334,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01766">1766</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01758">1758</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1355,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>OfflinePlayer|Player </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00476">476</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00497">497</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1375,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00504">504</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00515">515</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1389,7 +1395,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether the server requires that players be authenticated to Xbox Live. If true, connecting players who are not logged into Xbox Live will be disconnected. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00319">319</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00340">340</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1415,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Player[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00465">465</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00486">486</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d77/_send_usage_task_8php_source.html#l00061">pocketmine\stats\SendUsageTask\__construct()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1438,7 +1444,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00739">739</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00727">727</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1457,11 +1463,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>This method's results are unpredictable. The string "Steve" will return the player named "SteveJobs", until another player named "SteveJ" joins the server, at which point it will return that player instead. Prefer filtering the results of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">Server::getOnlinePlayers()</a></code> yourself.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>This method's results are unpredictable. The string "Steve" will return the player named "SteveJobs", until another player named "SteveJ" joins the server, at which point it will return that player instead. Prefer filtering the results of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">Server::getOnlinePlayers()</a></code> yourself.</dd></dl>
 <p >Returns an online player whose name begins with or equals the given string (case insensitive). The closest match will be returned, or null if there are no online matches.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a34297319629a54364616d495af596ab6">Server::getPlayerExact()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00621">621</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00609">609</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1488,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the player online with the specified raw UUID, or null if not found </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00658">658</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00646">646</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1509,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the player online with a UUID equivalent to the specified UuidInterface object, or null if not found </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00665">665</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00653">653</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1530,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns an online player with the given name (case insensitive), or null if not found. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00644">644</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00632">632</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1545,7 +1551,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Command|PluginOwned|null @phpstan-return (Command&amp;PluginOwned)|null </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00677">677</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00665">665</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1564,7 +1570,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00402">402</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00423">423</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1583,7 +1589,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00307">307</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00328">328</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1608,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00283">283</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00304">304</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1627,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00330">330</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00351">351</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1646,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00334">334</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00355">355</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1659,7 +1665,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01532">1532</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01524">1524</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1684,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00410">410</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00431">431</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1697,7 +1703,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00299">299</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00320">320</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1716,7 +1722,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00359">359</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00380">380</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1735,7 +1741,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00454">454</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00475">475</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1754,7 +1760,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00422">422</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00443">443</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1773,7 +1779,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01692">1692</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01684">1684</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1793,7 +1799,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the last server TPS measure </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00429">429</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00450">450</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1813,7 +1819,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the last server TPS average measure </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00436">436</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00457">457</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d77/_send_usage_task_8php_source.html#l00061">pocketmine\stats\SendUsageTask\__construct()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1843,7 +1849,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the TPS usage/load in % </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00443">443</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00464">464</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1863,7 +1869,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the TPS usage/load average in % </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00450">450</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00471">471</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d77/_send_usage_task_8php_source.html#l00061">pocketmine\stats\SendUsageTask\__construct()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1892,7 +1898,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00398">398</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00419">419</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1911,7 +1917,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00287">287</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00308">308</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1930,7 +1936,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00338">338</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00359">359</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1949,7 +1955,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00735">735</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00723">723</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1968,7 +1974,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00414">414</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00435">435</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -1989,7 +1995,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether the server has stored any saved data for this player. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00494">494</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00511">511</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2008,7 +2014,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00378">378</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00399">399</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2027,7 +2033,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00382">382</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00403">403</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2046,7 +2052,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01762">1762</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01754">1754</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2066,7 +2072,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00731">731</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00719">719</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2085,7 +2091,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00279">279</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00300">300</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2105,7 +2111,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00727">727</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00715">715</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2148,7 +2154,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01389">1389</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01381">1381</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2168,7 +2174,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01742">1742</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01734">1734</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2188,7 +2194,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00702">702</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00690">690</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2208,7 +2214,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00722">722</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00710">710</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2228,7 +2234,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Alias of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a56050983a98340c661899c4c9571621b">getOnlineMode()</a></code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00326">326</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00347">347</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2258,7 +2264,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00533">533</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00527">527</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2278,7 +2284,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01751">1751</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01743">1743</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2297,7 +2303,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00469">469</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00490">490</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2317,7 +2323,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Shuts the server down correctly </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01450">1450</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01442">1442</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2348,7 +2354,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Subscribes to a particular message broadcast channel. The channel ID can be any arbitrary string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01235">1235</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01227">1227</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2369,7 +2375,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Unsubscribes from all broadcast channels. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01254">1254</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01246">1246</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2400,7 +2406,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Unsubscribes from a particular message broadcast channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01242">1242</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01234">1234</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2417,7 +2423,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00178">178</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00176">176</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2433,7 +2439,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00179">179</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00177">177</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2449,7 +2455,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00182">182</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00180">180</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2465,7 +2471,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00185">185</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00183">183</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2481,7 +2487,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00183">183</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00181">181</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2497,7 +2503,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00184">184</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00182">182</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>
@@ -2513,7 +2519,57 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00181">181</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00179">179</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+
+</div>
+</div>
+<a id="a45eb923e6b7c451436d1be0e3904b369" name="a45eb923e6b7c451436d1be0e3904b369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45eb923e6b7c451436d1be0e3904b369">&#9670;&nbsp;</a></span>TARGET_NANOSECONDS_PER_TICK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\Server::TARGET_NANOSECONDS_PER_TICK = 1_000_000_000 / self::TARGET_TICKS_PER_SECOND</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00195">195</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+
+</div>
+</div>
+<a id="ae1da72952e63e41de8153ecbc442dcf8" name="ae1da72952e63e41de8153ecbc442dcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1da72952e63e41de8153ecbc442dcf8">&#9670;&nbsp;</a></span>TARGET_SECONDS_PER_TICK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\Server::TARGET_SECONDS_PER_TICK = 1 / self::TARGET_TICKS_PER_SECOND</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >The average time between ticks, in seconds. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00194">194</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
+
+</div>
+</div>
+<a id="a7b2859abdadb54ce2f3faa6d7ca1a6e1" name="a7b2859abdadb54ce2f3faa6d7ca1a6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2859abdadb54ce2f3faa6d7ca1a6e1">&#9670;&nbsp;</a></span>TARGET_TICKS_PER_SECOND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\Server::TARGET_TICKS_PER_SECOND = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Worlds, network, commands and most other things are polled this many times per second on average. Between ticks, the server will sleep to ensure that the average tick rate is maintained. It may wake up between ticks if a Snooze notification source is triggered (e.g. to process network packets). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l00190">190</a> of file <a class="el" href="../../d0/d05/src_2_server_8php_source.html">src/Server.php</a>.</p>
 
 </div>
 </div>

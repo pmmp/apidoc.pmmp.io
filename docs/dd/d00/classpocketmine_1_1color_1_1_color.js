@@ -1,8 +1,9 @@
 var classpocketmine_1_1color_1_1_color =
 [
+    [ "equals", "dd/d00/classpocketmine_1_1color_1_1_color.html#a4eb0b639b1524941623bbe51ad1b6649", null ],
     [ "fromARGB", "dd/d00/classpocketmine_1_1color_1_1_color.html#a4ba4b7a49fefbcf0e5301b839e5d02e5", null ],
     [ "fromRGB", "dd/d00/classpocketmine_1_1color_1_1_color.html#a41cc32e5cd0a3303c1522809ece05ca5", null ],
-    [ "fromRGBA", "dd/d00/classpocketmine_1_1color_1_1_color.html#a961ad33b1969f28359cdf13bd9b95c6e", null ],
+    [ "fromRGBA", "dd/d00/classpocketmine_1_1color_1_1_color.html#a3fc36ee466acb1f10725a2f44cb39887", null ],
     [ "getA", "dd/d00/classpocketmine_1_1color_1_1_color.html#a586abb0c2cc0f64e12eefcb8c8d29e66", null ],
     [ "getB", "dd/d00/classpocketmine_1_1color_1_1_color.html#ada609140d3a3aada63e97307d43546d6", null ],
     [ "getG", "dd/d00/classpocketmine_1_1color_1_1_color.html#a84fcb87007a4853da7c1c1090cba0e40", null ],

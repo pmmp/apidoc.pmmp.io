@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.12 git-7529953f0a334eaa9cabfa850e6c644b57340ee9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
    </div>
   </td>
  </tr>
@@ -123,73 +123,53 @@ $(document).ready(function(){initNavTree('d8/d89/_kill_command_8php_source.html'
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">pocketmine\event\entity\EntityDamageEvent</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../da/dca/classpocketmine_1_1permission_1_1_default_permission_names.html">pocketmine\permission\DefaultPermissionNames</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html">pocketmine\utils\TextFormat</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> implode;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> implode;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">KillCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">KillCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        parent::__construct(</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $name,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            KnownTranslationFactory::pocketmine_command_kill_description(),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            KnownTranslationFactory::pocketmine_command_kill_usage(),</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            [<span class="stringliteral">&quot;suicide&quot;</span>]</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        );</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;setPermission(implode(<span class="stringliteral">&quot;;&quot;</span>, [DefaultPermissionNames::COMMAND_KILL_SELF, DefaultPermissionNames::COMMAND_KILL_OTHER]));</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#afc8a2bf15b375c60df2063833a9f2b41">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#afc8a2bf15b375c60df2063833a9f2b41">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span>(count($args) &gt;= 2){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../da/d46/classpocketmine_1_1command_1_1utils_1_1_invalid_command_syntax_exception.html">InvalidCommandSyntaxException</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span>(count($args) === 1){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender, DefaultPermissionNames::COMMAND_KILL_OTHER)){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $player = $sender-&gt;getServer()-&gt;getPlayerByPrefix($args[0]);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">if</span>($player instanceof <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a>){</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                $player-&gt;attack(<span class="keyword">new</span> <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($player, EntityDamageEvent::CAUSE_SUICIDE, 1000));</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                Command::broadcastCommandMessage($sender, KnownTranslationFactory::commands_kill_successful($player-&gt;getName()));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                $sender-&gt;sendMessage(KnownTranslationFactory::commands_generic_player_notFound()-&gt;prefix(TextFormat::RED));</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span>($sender instanceof <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a>){</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender, DefaultPermissionNames::COMMAND_KILL_SELF)){</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $sender-&gt;attack(<span class="keyword">new</span> <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($sender, EntityDamageEvent::CAUSE_SUICIDE, 1000));</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            $sender-&gt;sendMessage(KnownTranslationFactory::commands_kill_successful($sender-&gt;getName()));</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../da/d46/classpocketmine_1_1command_1_1utils_1_1_invalid_command_syntax_exception.html">InvalidCommandSyntaxException</a>();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        parent::__construct(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            $name,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            KnownTranslationFactory::pocketmine_command_kill_description(),</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            KnownTranslationFactory::pocketmine_command_kill_usage(),</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            [<span class="stringliteral">&quot;suicide&quot;</span>]</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;setPermission(implode(<span class="stringliteral">&quot;;&quot;</span>, [DefaultPermissionNames::COMMAND_KILL_SELF, DefaultPermissionNames::COMMAND_KILL_OTHER]));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#afc8a2bf15b375c60df2063833a9f2b41">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#afc8a2bf15b375c60df2063833a9f2b41">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span>(count($args) &gt;= 2){</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../da/d46/classpocketmine_1_1command_1_1utils_1_1_invalid_command_syntax_exception.html">InvalidCommandSyntaxException</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $player = $this-&gt;fetchPermittedPlayerTarget($sender, $args[0] ?? <span class="keyword">null</span>, DefaultPermissionNames::COMMAND_KILL_SELF, DefaultPermissionNames::COMMAND_KILL_OTHER);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>($player === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $player-&gt;attack(<span class="keyword">new</span> <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($player, EntityDamageEvent::CAUSE_SUICIDE, 1000));</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span>($player === $sender){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $sender-&gt;sendMessage(KnownTranslationFactory::commands_kill_successful($sender-&gt;getName()));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            Command::broadcastCommandMessage($sender, KnownTranslationFactory::commands_kill_successful($player-&gt;getName()));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1_command_html"><div class="ttname"><a href="../../d6/df1/classpocketmine_1_1command_1_1_command.html">pocketmine\command\Command</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_command_8php_source.html#l00041">Command.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_kill_command_html"><div class="ttname"><a href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">pocketmine\command\defaults\KillCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d89/_kill_command_8php_source.html#l00037">KillCommand.php:37</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_kill_command_html_afc8a2bf15b375c60df2063833a9f2b41"><div class="ttname"><a href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#afc8a2bf15b375c60df2063833a9f2b41">pocketmine\command\defaults\KillCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d89/_kill_command_8php_source.html#l00049">KillCommand.php:49</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00034">VanillaCommand.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_kill_command_html"><div class="ttname"><a href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">pocketmine\command\defaults\KillCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d89/_kill_command_8php_source.html#l00035">KillCommand.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_kill_command_html_afc8a2bf15b375c60df2063833a9f2b41"><div class="ttname"><a href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#afc8a2bf15b375c60df2063833a9f2b41">pocketmine\command\defaults\KillCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d89/_kill_command_8php_source.html#l00047">KillCommand.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00035">VanillaCommand.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1utils_1_1_invalid_command_syntax_exception_html"><div class="ttname"><a href="../../da/d46/classpocketmine_1_1command_1_1utils_1_1_invalid_command_syntax_exception.html">pocketmine\command\utils\InvalidCommandSyntaxException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0b/_invalid_command_syntax_exception_8php_source.html#l00026">InvalidCommandSyntaxException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_damage_event_html"><div class="ttname"><a href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">pocketmine\event\entity\EntityDamageEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/_entity_damage_event_8php_source.html#l00036">EntityDamageEvent.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permission_names_html"><div class="ttname"><a href="../../da/dca/classpocketmine_1_1permission_1_1_default_permission_names.html">pocketmine\permission\DefaultPermissionNames</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4c/_default_permission_names_8php_source.html#l00026">DefaultPermissionNames.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00160">Player.php:160</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_text_format_html"><div class="ttname"><a href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html">pocketmine\utils\TextFormat</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d59/_text_format_8php_source.html#l00045">TextFormat.php:45</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1command_1_1_command_sender_html"><div class="ttname"><a href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">pocketmine\command\CommandSender</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3e/_command_sender_8php_source.html#l00031">CommandSender.php:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

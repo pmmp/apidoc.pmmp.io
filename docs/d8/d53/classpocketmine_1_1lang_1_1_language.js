@@ -4,5 +4,6 @@ var classpocketmine_1_1lang_1_1_language =
     [ "getAll", "d8/d53/classpocketmine_1_1lang_1_1_language.html#a2a8d49982da087a2800328d2a8d91a81", null ],
     [ "getLanguageList", "d8/d53/classpocketmine_1_1lang_1_1_language.html#a551584200d863fbbb87a8e3150f1f874", null ],
     [ "loadLang", "d8/d53/classpocketmine_1_1lang_1_1_language.html#a3d5b7eb29eae2ea022e2fbcefa52990e", null ],
+    [ "parseTranslation", "d8/d53/classpocketmine_1_1lang_1_1_language.html#a00eb539aa3789514ea19b8a1d4ab493a", null ],
     [ "translateString", "d8/d53/classpocketmine_1_1lang_1_1_language.html#abe28491be8ef2da7cd3ab9fa97614392", null ]
 ];

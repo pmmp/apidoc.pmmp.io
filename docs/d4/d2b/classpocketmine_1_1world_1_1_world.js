@@ -74,6 +74,7 @@ var classpocketmine_1_1world_1_1_world =
     [ "removeEntity", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a012a32b6890ba5502645c326992e1e84", null ],
     [ "removeOnUnloadCallback", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a103316b68a211045bda7aa1478464027", null ],
     [ "requestChunkPopulation", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b", null ],
+    [ "requestSafeSpawn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#af9474c177101d3f5685a422c3d42d497", null ],
     [ "scheduleDelayedBlockUpdate", "d4/d2b/classpocketmine_1_1world_1_1_world.html#af3b2c8f68ca7ae5f877fb93b3f44e26c", null ],
     [ "setBlock", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a8ead35eda777f930abdc64313c95b9e7", null ],
     [ "setBlockAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a94304c87d2659a6dde338fd96a6d756b", null ],

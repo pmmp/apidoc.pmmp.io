@@ -8,7 +8,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1_network_session =
     [ "onJukeboxPopup", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66", null ],
     [ "onMobMainHandItemChange", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425", null ],
     [ "onPlayerDestroyed", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a066a7096c6a6db10a23f5183f520b210", null ],
-    [ "onTranslatedChatMessage", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f4c2d5d6c3951ef4d8a2d7d06abb360", null ],
     [ "startUsingChunk", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c", null ],
     [ "syncActorData", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4", null ],
     [ "syncAttributes", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1", null ],

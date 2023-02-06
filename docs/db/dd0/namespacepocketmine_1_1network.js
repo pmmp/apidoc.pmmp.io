@@ -91,7 +91,7 @@ var namespacepocketmine_1_1network =
             [ "stackrequest", null, [
               [ "BeaconPaymentStackRequestAction", "d8/d1d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_beacon_payment_stack_request_action.html", null ],
               [ "CraftingConsumeInputStackRequestAction", "dd/d53/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craftin1edcfa9979fc5d75a39cf9f773292cdc.html", null ],
-              [ "CraftingMarkSecondaryResultStackRequestAction", "da/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craftine73260c2466389209c6775ffd2e2cd69.html", null ],
+              [ "CraftingCreateSpecificResultStackRequestAction", "d4/d83/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craftinde91d93e09008d05b530ecbe09226c3b.html", null ],
               [ "CraftRecipeAutoStackRequestAction", "de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action.html", "de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action" ],
               [ "CraftRecipeOptionalStackRequestAction", "d5/dce/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_rf367e63daecf08c070ac15ec98918954.html", null ],
               [ "CraftRecipeStackRequestAction", "dc/df5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_stack_request_action.html", null ],

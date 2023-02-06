@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.12 git-7529953f0a334eaa9cabfa850e6c644b57340ee9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
    </div>
   </td>
  </tr>
@@ -137,10 +137,12 @@ $(document).ready(function(){initNavTree('da/d58/deprecated.html','../../'); ini
 <dd><a class="anchor" id="_deprecated000020"></a>This method should ONLY be used for deserializing data, e.g. from a config or database. For all other purposes, use <a class="el" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">VanillaItems</a>.  </dd>
 <dt>Class <a class="el" href="../../d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser.html">pocketmine\item\LegacyStringToItemParser</a>  </dt>
 <dd><a class="anchor" id="_deprecated000022"></a>  </dd>
+<dt>Member <a class="el" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#af752aeb40184a345b8f7bc700afc4a36">pocketmine\player\Player::sendTranslation</a>  (string $message, array $parameters=[])</dt>
+<dd><a class="anchor" id="_deprecated000023"></a>Use <code><a class="el" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a70a70d021dba0274e9567bff23ed19e9">Player::sendMessage()</a></code> with a Translatable instead.  </dd>
 <dt>Member <a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a6a32d7ce2b7100d6117cd6e3cfb3b1d6">pocketmine\Server::getPlayerByPrefix</a>  (string $name)</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>This method's results are unpredictable. The string "Steve" will return the player named "SteveJobs", until another player named "SteveJ" joins the server, at which point it will return that player instead. Prefer filtering the results of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">Server::getOnlinePlayers()</a></code> yourself. </dd>
+<dd><a class="anchor" id="_deprecated000024"></a>This method's results are unpredictable. The string "Steve" will return the player named "SteveJobs", until another player named "SteveJ" joins the server, at which point it will return that player instead. Prefer filtering the results of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">Server::getOnlinePlayers()</a></code> yourself. </dd>
 <dt>Member <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a72b2673cda248e41ef6b73b8d50bd192">pocketmine\world\World::getChunkPlayers</a>  (int $chunkX, int $chunkZ)</dt>
-<dd><a class="anchor" id="_deprecated000024"></a>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk.</dd>
+<dd><a class="anchor" id="_deprecated000025"></a>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk.</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

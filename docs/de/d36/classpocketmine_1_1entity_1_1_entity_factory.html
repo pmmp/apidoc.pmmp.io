@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.12.12 git-7529953f0a334eaa9cabfa850e6c644b57340ee9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('de/d36/classpocketmine_1_1entity_1_1_e
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d8/dc1/classpocketmine_1_1entity_1_1_entity_factory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">pocketmine\entity\EntityFactory Class Reference</div></div>
 </div><!--header-->
@@ -100,7 +101,7 @@ $(document).ready(function(){initNavTree('de/d36/classpocketmine_1_1entity_1_1_e
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/deb/classpocketmine_1_1entity_1_1_entity_factory__coll__graph.svg" width="194" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/deb/classpocketmine_1_1entity_1_1_entity_factory__coll__graph.svg" width="224" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -114,6 +115,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a86e93b5712b2dd0172f7b00f135f18dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e3662dd391d53194a74c71e1dc52c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a32e3662dd391d53194a74c71e1dc52c7">register</a> (string $className, \Closure $creationFunc, array $saveNames, ?int $legacyMcpeSaveId=null)</td></tr>
 <tr class="separator:a32e3662dd391d53194a74c71e1dc52c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1457a5638759be7fbed7394cf3617074"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a1457a5638759be7fbed7394cf3617074">TAG_IDENTIFIER</a> = &quot;identifier&quot;</td></tr>
+<tr class="separator:a1457a5638759be7fbed7394cf3617074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac954cc114d88a6115f559904a76f7376"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#ac954cc114d88a6115f559904a76f7376">TAG_LEGACY_ID</a> = &quot;id&quot;</td></tr>
+<tr class="separator:ac954cc114d88a6115f559904a76f7376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class manages the creation of entities loaded from disk. You need to register your entity into this factory if you want to load/save your entity on disk (saving with chunks). </p>
@@ -135,7 +143,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00080">80</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00083">83</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>
@@ -173,7 +181,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00218">218</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00221">221</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>
@@ -194,7 +202,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@phpstan-param class-string&lt;Entity&gt; $class </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00250">250</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00253">253</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>
@@ -224,7 +232,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00239">239</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00242">242</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>
@@ -282,9 +290,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00191">191</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00194">194</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dca/_utils_8php_source.html#l00517">pocketmine\utils\Utils\testValidInstance()</a>, and <a class="el" href="../../de/dca/_utils_8php_source.html#l00549">pocketmine\utils\Utils\validateCallableSignature()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dca/_utils_8php_source.html#l00518">pocketmine\utils\Utils\testValidInstance()</a>, and <a class="el" href="../../de/dca/_utils_8php_source.html#l00550">pocketmine\utils\Utils\validateCallableSignature()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -293,6 +301,39 @@ Public Member Functions</h2></td></tr>
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory_a32e3662dd391d53194a74c71e1dc52c7_cgraph.svg" width="436" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1457a5638759be7fbed7394cf3617074" name="a1457a5638759be7fbed7394cf3617074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1457a5638759be7fbed7394cf3617074">&#9670;&nbsp;</a></span>TAG_IDENTIFIER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\entity\EntityFactory::TAG_IDENTIFIER = &quot;identifier&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00069">69</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+
+</div>
+</div>
+<a id="ac954cc114d88a6115f559904a76f7376" name="ac954cc114d88a6115f559904a76f7376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac954cc114d88a6115f559904a76f7376">&#9670;&nbsp;</a></span>TAG_LEGACY_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\entity\EntityFactory::TAG_LEGACY_ID = &quot;id&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00070">70</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>

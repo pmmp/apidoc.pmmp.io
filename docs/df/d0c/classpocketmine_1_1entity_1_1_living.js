@@ -26,6 +26,7 @@ var classpocketmine_1_1entity_1_1_living =
     [ "getBlocksAroundWithEntityInsideActions", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a4087e033dc45159d7379699024657047", null ],
     [ "getBlocksIntersected", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a1380adc70073eca8b76083e7357c44ea", null ],
     [ "getDirtyNetworkData", "df/d0c/classpocketmine_1_1entity_1_1_living.html#ac028a6475bf09f61ce9dfb952d4a5d65", null ],
+    [ "getDisplayName", "df/d0c/classpocketmine_1_1entity_1_1_living.html#ab86b239e5e24b16efed3ba0e19895616", null ],
     [ "getDrops", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133", null ],
     [ "getHighestArmorEnchantmentLevel", "df/d0c/classpocketmine_1_1entity_1_1_living.html#ad79f9505c6859c4241a95ba52e0002bd", null ],
     [ "getJumpVelocity", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a0f92f1f7b5b4abc1f9edca2f1c6e330a", null ],

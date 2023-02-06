@@ -2,7 +2,7 @@ var dir_66fd5caf0a2ac1d3add3d110dad92375 =
 [
     [ "BeaconPaymentStackRequestAction.php", "d1/df4/_beacon_payment_stack_request_action_8php_source.html", null ],
     [ "CraftingConsumeInputStackRequestAction.php", "d4/da6/_crafting_consume_input_stack_request_action_8php_source.html", null ],
-    [ "CraftingMarkSecondaryResultStackRequestAction.php", "d0/d32/_crafting_mark_secondary_result_stack_request_action_8php_source.html", null ],
+    [ "CraftingCreateSpecificResultStackRequestAction.php", "d3/d51/_crafting_create_specific_result_stack_request_action_8php_source.html", null ],
     [ "CraftRecipeAutoStackRequestAction.php", "d4/da2/_craft_recipe_auto_stack_request_action_8php_source.html", null ],
     [ "CraftRecipeOptionalStackRequestAction.php", "d0/dc7/_craft_recipe_optional_stack_request_action_8php_source.html", null ],
     [ "CraftRecipeStackRequestAction.php", "d1/d24/_craft_recipe_stack_request_action_8php_source.html", null ],
