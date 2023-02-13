@@ -35,6 +35,7 @@ var dir_682c7921c367674b86e95b8a006ee2ec =
     [ "ClientCacheBlobStatusPacket.php", "de/d96/_client_cache_blob_status_packet_8php_source.html", null ],
     [ "ClientCacheMissResponsePacket.php", "d5/d5e/_client_cache_miss_response_packet_8php_source.html", null ],
     [ "ClientCacheStatusPacket.php", "d2/d6c/_client_cache_status_packet_8php_source.html", null ],
+    [ "ClientCheatAbilityPacket.php", "d3/d45/_client_cheat_ability_packet_8php_source.html", null ],
     [ "ClientToServerHandshakePacket.php", "da/d65/_client_to_server_handshake_packet_8php_source.html", null ],
     [ "CodeBuilderPacket.php", "d5/d8e/_code_builder_packet_8php_source.html", null ],
     [ "CodeBuilderSourcePacket.php", "de/d6c/_code_builder_source_packet_8php_source.html", null ],

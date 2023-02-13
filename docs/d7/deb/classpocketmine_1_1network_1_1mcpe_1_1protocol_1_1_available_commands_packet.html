@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.14.1 git-fbaf8e3fc826f67964e3de5418cbe3e7afa13353</span>
    </div>
   </td>
  </tr>
@@ -157,6 +157,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a59e40fc7a81d8bfd4f8044b7f953fc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2270a7199b29a588ce7569bf1c1c9d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#a0d2270a7199b29a588ce7569bf1c1c9d">ARG_FLAG_POSTFIX</a> = 0x1000000</td></tr>
 <tr class="separator:a0d2270a7199b29a588ce7569bf1c1c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806a40860a24313da705f1d313673138"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#a806a40860a24313da705f1d313673138">ARG_FLAG_SOFT_ENUM</a> = 0x4000000</td></tr>
+<tr class="separator:a806a40860a24313da705f1d313673138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a730c2d2c10e56a901e5b411db4dda"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#a74a730c2d2c10e56a901e5b411db4dda">ARG_FLAG_VALID</a> = 0x100000</td></tr>
 <tr class="separator:a74a730c2d2c10e56a901e5b411db4dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adafb0eb2001547b6cc6cbbaccf175056"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#adafb0eb2001547b6cc6cbbaccf175056">ARG_TYPE_BLOCK_STATES</a> = 0x43</td></tr>
@@ -224,8 +226,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a9512a74d97dc779af259c98769d4f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa83f3328e76a9254739568c50987436e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#aa83f3328e76a9254739568c50987436e">getSoftEnum</a> (<a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in)</td></tr>
 <tr class="separator:aa83f3328e76a9254739568c50987436e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1cf36f90c4a77774a856df2b286737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#a0f1cf36f90c4a77774a856df2b286737">putCommandData</a> (<a class="el" href="../../dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html">CommandData</a> $data, array $enumIndexes, array $postfixIndexes, <a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
-<tr class="separator:a0f1cf36f90c4a77774a856df2b286737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6749df6e7d03a1b0ec78c0f75bf693a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#ab6749df6e7d03a1b0ec78c0f75bf693a">initSoftEnumsInCommandData</a> ()</td></tr>
+<tr class="separator:ab6749df6e7d03a1b0ec78c0f75bf693a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34db10b989ed32c4271897d4d719e2d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#a34db10b989ed32c4271897d4d719e2d8">putCommandData</a> (<a class="el" href="../../dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html">CommandData</a> $data, array $enumIndexes, array $softEnumIndexes, array $postfixIndexes, <a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
+<tr class="separator:a34db10b989ed32c4271897d4d719e2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fa2660a1bbf302f6dc5e1c2fbcd059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#a80fa2660a1bbf302f6dc5e1c2fbcd059">putEnum</a> (<a class="el" href="../../df/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum.html">CommandEnum</a> $enum, array $enumValueMap, <a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
 <tr class="separator:a80fa2660a1bbf302f6dc5e1c2fbcd059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf8c40e677390ec6693e9d46072bb9f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html#aaf8c40e677390ec6693e9d46072bb9f1">putEnumConstraint</a> (<a class="el" href="../../d1/d8f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum_constraint.html">CommandEnumConstraint</a> $constraint, array $enumIndexes, array $enumValueIndexes, <a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
@@ -403,7 +407,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00116">116</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00118">118</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -512,7 +516,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00125">125</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00127">127</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00088">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getString()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -611,7 +615,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00381">381</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00410">410</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -669,7 +673,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00300">300</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00324">324</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/d34/_binary_stream_8php_source.html#l00107">pocketmine\utils\BinaryStream\getBool()</a>, <a class="el" href="../../d6/d34/_binary_stream_8php_source.html#l00119">pocketmine\utils\BinaryStream\getByte()</a>, <a class="el" href="../../d6/d34/_binary_stream_8php_source.html#l00207">pocketmine\utils\BinaryStream\getLInt()</a>, <a class="el" href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00088">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getString()</a>, and <a class="el" href="../../d6/d34/_binary_stream_8php_source.html#l00309">pocketmine\utils\BinaryStream\getUnsignedVarInt()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -730,7 +734,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00166">166</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00190">190</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -788,7 +792,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00256">256</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00280">280</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -832,7 +836,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00229">229</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00253">253</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/d34/_binary_stream_8php_source.html#l00119">pocketmine\utils\BinaryStream\getByte()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -905,7 +909,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00187">187</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00211">211</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00088">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getString()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -947,7 +951,35 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00452">452</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00499">499</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="ab6749df6e7d03a1b0ec78c0f75bf693a" name="ab6749df6e7d03a1b0ec78c0f75bf693a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6749df6e7d03a1b0ec78c0f75bf693a">&#9670;&nbsp;</a></span>initSoftEnumsInCommandData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\AvailableCommandsPacket::initSoftEnumsInCommandData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Command data is decoded without referencing to any soft enums, as they are decoded afterwards. So we need to separately add soft enums to the command data </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00168">168</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -980,8 +1012,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f1cf36f90c4a77774a856df2b286737" name="a0f1cf36f90c4a77774a856df2b286737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1cf36f90c4a77774a856df2b286737">&#9670;&nbsp;</a></span>putCommandData()</h2>
+<a id="a34db10b989ed32c4271897d4d719e2d8" name="a34db10b989ed32c4271897d4d719e2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34db10b989ed32c4271897d4d719e2d8">&#9670;&nbsp;</a></span>putCommandData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,6 +1032,12 @@ Protected Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$enumIndexes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$softEnumIndexes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1028,12 +1066,13 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int[]</td><td class="paramname">$enumIndexes</td><td>string enum name -&gt; int index </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$softEnumIndexes</td><td></td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$postfixIndexes</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00344">344</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00369">369</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1122,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00202">202</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00226">226</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1179,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00284">284</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00308">308</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1223,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00239">239</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00263">263</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1261,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00216">216</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00240">240</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1239,7 +1278,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00087">87</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00089">89</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1294,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00107">107</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00109">109</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1310,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00094">94</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00096">96</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1335,7 +1374,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00101">101</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00103">103</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1370,6 +1409,22 @@ Protected Member Functions</h2></td></tr>
 <p >This is used for /xp &lt;level: int&gt;L. It can only be applied to integer parameters. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00077">77</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a806a40860a24313da705f1d313673138" name="a806a40860a24313da705f1d313673138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806a40860a24313da705f1d313673138">&#9670;&nbsp;</a></span>ARG_FLAG_SOFT_ENUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\AvailableCommandsPacket::ARG_FLAG_SOFT_ENUM = 0x4000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00079">79</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1710,7 +1765,7 @@ Protected Member Functions</h2></td></tr>
 <div class="line">        <span class="stringliteral">&quot;CommandName&quot;</span> =&gt; true</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00079">79</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html#l00081">81</a> of file <a class="el" href="../../d9/d5f/_available_commands_packet_8php_source.html">AvailableCommandsPacket.php</a>.</p>
 
 </div>
 </div>

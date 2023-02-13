@@ -1,5 +1,7 @@
 var hierarchy =
 [
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\AbilitiesData", "d9/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_data.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\AbilitiesLayer", "d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\ActorEvent", "d8/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_actor_event.html", null ],
     [ "pocketmine\\entity\\Ageable", "d8/deb/interfacepocketmine_1_1entity_1_1_ageable.html", [
       [ "pocketmine\\entity\\Villager", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html", null ],
@@ -1379,6 +1381,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\ClientCacheBlobStatusPacket", "d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientCacheMissResponsePacket", "d2/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_miss_response_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientCacheStatusPacket", "d1/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_status_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\ClientCheatAbilityPacket", "da/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cheat_ability_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientToServerHandshakePacket", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundDebugRendererPacket", "da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundMapItemDataPacket", "d6/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet.html", null ],
@@ -1551,6 +1554,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\ChangeMobPropertyPacket", "df/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_mob_property_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientCacheBlobStatusPacket", "d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientCacheStatusPacket", "d1/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_status_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\ClientCheatAbilityPacket", "da/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cheat_ability_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientToServerHandshakePacket", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\CodeBuilderSourcePacket", "d7/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_code_builder_source_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\CommandBlockUpdatePacket", "d7/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_command_block_update_packet.html", null ],
@@ -1803,7 +1807,8 @@ var hierarchy =
       [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\FurnaceRecipe", "db/d68/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_furnace_recipe.html", null ],
       [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\MultiRecipe", "d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html", null ],
       [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\ShapedRecipe", "d3/d06/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shaped_recipe.html", null ],
-      [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\ShapelessRecipe", "da/d6d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe.html", null ]
+      [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\ShapelessRecipe", "da/d6d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe.html", null ],
+      [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\SmithingTransformRecipe", "de/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_smithing_transform_recipe.html", null ]
     ] ],
     [ "pocketmine\\block\\utils\\RecordType", "d6/d93/classpocketmine_1_1block_1_1utils_1_1_record_type.html", null ],
     [ "pocketmine\\world\\format\\io\\region\\RegionGarbageMap", "d1/dd5/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_garbage_map.html", null ],
@@ -2121,7 +2126,6 @@ var hierarchy =
       [ "pocketmine\\item\\LegacyStringToItemParserException", "db/d85/classpocketmine_1_1item_1_1_legacy_string_to_item_parser_exception.html", null ],
       [ "pocketmine\\world\\generator\\InvalidGeneratorOptionsException", "dc/d83/classpocketmine_1_1world_1_1generator_1_1_invalid_generator_options_exception.html", null ]
     ] ],
-    [ "pocketmine\\network\\mcpe\\protocol\\types\\UpdateAbilitiesPacketLayer", "d8/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_abilities_packet_layer.html", null ],
     [ "pocketmine\\updater\\UpdateChecker", "dd/d12/classpocketmine_1_1updater_1_1_update_checker.html", null ],
     [ "pocketmine\\updater\\UpdateInfo", "d8/d4e/classpocketmine_1_1updater_1_1_update_info.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\UpdateSubChunkBlocksPacketEntry", "d6/db7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_sub_chunk_blocks_packet_entry.html", null ],

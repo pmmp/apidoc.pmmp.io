@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.13.1 git-4562cfb85bc5f8d9bd15077716eb9956e784c975</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.14.1 git-fbaf8e3fc826f67964e3de5418cbe3e7afa13353</span>
    </div>
   </td>
  </tr>
@@ -207,6 +207,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a550b9e3d244699354871126031370f67"><td class="memItemLeft" align="right" valign="top"><a id="a550b9e3d244699354871126031370f67" name="a550b9e3d244699354871126031370f67"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleClientCacheStatus</b> (ClientCacheStatusPacket $packet)</td></tr>
 <tr class="separator:a550b9e3d244699354871126031370f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bb599958e861ee7a3911eabec77494"><td class="memItemLeft" align="right" valign="top"><a id="a46bb599958e861ee7a3911eabec77494" name="a46bb599958e861ee7a3911eabec77494"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleClientCheatAbility</b> (ClientCheatAbilityPacket $packet)</td></tr>
+<tr class="separator:a46bb599958e861ee7a3911eabec77494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76654adcd3260898630ba6f1b43212be"><td class="memItemLeft" align="right" valign="top"><a id="a76654adcd3260898630ba6f1b43212be" name="a76654adcd3260898630ba6f1b43212be"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleClientToServerHandshake</b> (<a class="el" href="../../dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html">ClientToServerHandshakePacket</a> $packet)</td></tr>
 <tr class="separator:a76654adcd3260898630ba6f1b43212be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -669,6 +672,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa7648091d80ebce2cb334cc2971d8c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0500eb843f050cee823968a099de1326"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html#a0500eb843f050cee823968a099de1326">$lastPlayerAuthInputYaw</a> = null</td></tr>
 <tr class="separator:a0500eb843f050cee823968a099de1326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3da28a24b241ab900b1c82bc6b761c1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html#af3da28a24b241ab900b1c82bc6b761c1">$lastRequestedFullSkinId</a> = null</td></tr>
+<tr class="separator:af3da28a24b241ab900b1c82bc6b761c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb3f7cb7fc57e6d1c631e17510139fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html#adeb3f7cb7fc57e6d1c631e17510139fb">$lastRightClickData</a> = null</td></tr>
 <tr class="separator:adeb3f7cb7fc57e6d1c631e17510139fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b6fceb80d6a2d25881d7aa30d3690b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html#aa7b6fceb80d6a2d25881d7aa30d3690b">$lastRightClickTime</a> = 0.0</td></tr>
@@ -711,7 +716,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00152">152</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00154">154</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -734,7 +739,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00293">293</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00295">295</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -756,7 +761,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00580">580</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00582">582</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -778,7 +783,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00637">637</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00639">639</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -800,7 +805,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00654">654</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00656">656</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -822,7 +827,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00576">576</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00578">578</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -844,7 +849,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00778">778</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00789">789</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -866,7 +871,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00727">727</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00729">729</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -888,7 +893,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00743">743</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00745">745</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -910,7 +915,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00735">735</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00737">737</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -932,7 +937,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00641">641</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00643">643</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -954,7 +959,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00650">650</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00652">652</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -976,7 +981,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00933">933</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00944">944</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1003,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00556">556</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00558">558</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1025,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00314">314</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00316">316</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1047,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00718">718</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00720">720</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1069,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00890">890</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00901">901</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1091,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00894">894</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00905">905</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1113,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00923">923</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00934">934</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1135,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00289">289</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00291">291</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1157,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00708">708</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00710">710</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1179,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00552">552</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00554">554</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1201,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00538">538</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00540">540</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1223,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00870">870</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00881">881</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1245,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00166">166</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00168">168</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1267,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00919">919</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00930">930</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1284,7 +1289,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00584">584</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00586">586</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1311,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00182">182</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00184">184</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1333,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00646">646</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00648">648</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1350,7 +1355,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00691">691</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00693">693</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1372,7 +1377,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00747">747</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00749">749</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1394,7 +1399,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00938">938</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00949">949</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1416,7 +1421,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00712">712</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00714">714</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1438,7 +1443,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00886">886</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00897">897</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1460,7 +1465,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00633">633</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00635">635</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1487,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00695">695</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00697">697</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1504,7 +1509,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00731">731</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00733">733</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1531,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00704">704</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00706">706</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1548,7 +1553,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00756">756</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00767">767</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1570,7 +1575,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00158">158</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00160">160</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1735,6 +1740,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00145">145</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+
+</div>
+</div>
+<a id="af3da28a24b241ab900b1c82bc6b761c1" name="af3da28a24b241ab900b1c82bc6b761c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3da28a24b241ab900b1c82bc6b761c1">&#9670;&nbsp;</a></span>$lastRequestedFullSkinId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string pocketmine\network\mcpe\handler\InGamePacketHandler::$lastRequestedFullSkinId = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00152">152</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>

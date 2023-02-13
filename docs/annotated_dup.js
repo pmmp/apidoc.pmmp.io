@@ -1005,6 +1005,7 @@ var annotated_dup =
                 [ "RecipeWithTypeId", "dc/d76/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_recipe_with_type_id.html", null ],
                 [ "ShapedRecipe", "d3/d06/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shaped_recipe.html", "d3/d06/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shaped_recipe" ],
                 [ "ShapelessRecipe", "da/d6d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe.html", "da/d6d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe" ],
+                [ "SmithingTransformRecipe", "de/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_smithing_transform_recipe.html", null ],
                 [ "StringIdMetaItemDescriptor", "d1/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_string_id_meta_item_descriptor.html", null ],
                 [ "TagItemDescriptor", "d2/daa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_tag_item_descriptor.html", null ]
               ] ],
@@ -1021,6 +1022,8 @@ var annotated_dup =
                 [ "SkinData", "d3/dce/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1skin_1_1_skin_data.html", "d3/dce/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1skin_1_1_skin_data" ],
                 [ "SkinImage", "de/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1skin_1_1_skin_image.html", null ]
               ] ],
+              [ "AbilitiesData", "d9/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_data.html", "d9/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_data" ],
+              [ "AbilitiesLayer", "d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html", "d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer" ],
               [ "ActorEvent", "d8/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_actor_event.html", null ],
               [ "AgentActionType", "d5/d4b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_agent_action_type.html", null ],
               [ "BlockPaletteEntry", "dc/d64/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_palette_entry.html", "dc/d64/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_palette_entry" ],
@@ -1090,7 +1093,6 @@ var annotated_dup =
               [ "SubChunkPositionOffset", "d2/dcf/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_position_offset.html", null ],
               [ "SubChunkRequestResult", "d9/dac/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_request_result.html", null ],
               [ "UIProfile", "d1/d47/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_u_i_profile.html", null ],
-              [ "UpdateAbilitiesPacketLayer", "d8/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_abilities_packet_layer.html", "d8/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_abilities_packet_layer" ],
               [ "UpdateSubChunkBlocksPacketEntry", "d6/db7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_update_sub_chunk_blocks_packet_entry.html", null ]
             ] ],
             [ "ActorEventPacket", "d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html", "d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet" ],
@@ -1126,6 +1128,7 @@ var annotated_dup =
             [ "ClientCacheBlobStatusPacket", "d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html", "d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet" ],
             [ "ClientCacheMissResponsePacket", "d2/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_miss_response_packet.html", "d2/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_miss_response_packet" ],
             [ "ClientCacheStatusPacket", "d1/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_status_packet.html", "d1/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_status_packet" ],
+            [ "ClientCheatAbilityPacket", "da/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cheat_ability_packet.html", "da/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cheat_ability_packet" ],
             [ "ClientToServerHandshakePacket", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet" ],
             [ "CodeBuilderPacket", "da/dce/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_code_builder_packet.html", "da/dce/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_code_builder_packet" ],
             [ "CodeBuilderSourcePacket", "d7/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_code_builder_source_packet.html", "d7/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_code_builder_source_packet" ],

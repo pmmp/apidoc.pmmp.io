@@ -16,6 +16,7 @@ var dir_2e88ceff4c451bc74c8d7afdd5e58460 =
     [ "RecipeWithTypeId.php", "d7/d5a/_recipe_with_type_id_8php_source.html", null ],
     [ "vendor/pocketmine/bedrock-protocol/src/types/recipe/ShapedRecipe.php", "df/d00/vendor_2pocketmine_2bedrock-protocol_2src_2types_2recipe_2_shaped_recipe_8php_source.html", null ],
     [ "vendor/pocketmine/bedrock-protocol/src/types/recipe/ShapelessRecipe.php", "de/db3/vendor_2pocketmine_2bedrock-protocol_2src_2types_2recipe_2_shapeless_recipe_8php_source.html", null ],
+    [ "SmithingTransformRecipe.php", "db/df1/_smithing_transform_recipe_8php_source.html", null ],
     [ "StringIdMetaItemDescriptor.php", "d5/db1/_string_id_meta_item_descriptor_8php_source.html", null ],
     [ "TagItemDescriptor.php", "d0/dbb/_tag_item_descriptor_8php_source.html", null ]
 ];

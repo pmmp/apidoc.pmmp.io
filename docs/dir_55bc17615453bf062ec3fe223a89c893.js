@@ -7,6 +7,8 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "recipe", "dir_2e88ceff4c451bc74c8d7afdd5e58460.html", "dir_2e88ceff4c451bc74c8d7afdd5e58460" ],
     [ "resourcepacks", "dir_196cefb90375ff17027d4dd042055e96.html", "dir_196cefb90375ff17027d4dd042055e96" ],
     [ "skin", "dir_34122b53f8872ad93603c82d20993d9a.html", "dir_34122b53f8872ad93603c82d20993d9a" ],
+    [ "AbilitiesData.php", "d2/da6/_abilities_data_8php_source.html", null ],
+    [ "AbilitiesLayer.php", "d7/dc0/_abilities_layer_8php_source.html", null ],
     [ "ActorEvent.php", "da/dcb/_actor_event_8php_source.html", null ],
     [ "AgentActionType.php", "d0/d64/_agent_action_type_8php_source.html", null ],
     [ "BlockPaletteEntry.php", "dc/d18/_block_palette_entry_8php_source.html", null ],
@@ -77,6 +79,5 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "SubChunkPositionOffset.php", "df/de3/_sub_chunk_position_offset_8php_source.html", null ],
     [ "SubChunkRequestResult.php", "d0/df2/_sub_chunk_request_result_8php_source.html", null ],
     [ "UIProfile.php", "dc/d7c/_u_i_profile_8php_source.html", null ],
-    [ "UpdateAbilitiesPacketLayer.php", "dc/deb/_update_abilities_packet_layer_8php_source.html", null ],
     [ "UpdateSubChunkBlocksPacketEntry.php", "d7/d5d/_update_sub_chunk_blocks_packet_entry_8php_source.html", null ]
 ];
