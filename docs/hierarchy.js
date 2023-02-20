@@ -1606,6 +1606,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\ScriptMessagePacket", "d5/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_script_message_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ServerSettingsRequestPacket", "d8/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\SetActorDataPacket", "df/d1e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_data_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\SetActorLinkPacket", "d1/dba/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_link_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\SetActorMotionPacket", "dd/d75/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_motion_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\SetDefaultGameTypePacket", "d0/d5b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_default_game_type_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\SetDifficultyPacket", "da/dad/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_difficulty_packet.html", null ],

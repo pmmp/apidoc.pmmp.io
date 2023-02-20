@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.14.1 git-fbaf8e3fc826f67964e3de5418cbe3e7afa13353</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.15.1 git-b56b35b10d643f0b1b98b259daa1b9f888291638</span>
    </div>
   </td>
  </tr>
@@ -202,226 +202,234 @@ $(document).ready(function(){initNavTree('d2/d52/_item_entity_8php_source.html',
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $hasUpdate = parent::entityBaseTick($tickDiff);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span>(!$this-&gt;isFlaggedForDespawn() &amp;&amp; $this-&gt;pickupDelay !== self::NEVER_DESPAWN){ <span class="comment">//Infinite delay</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            $this-&gt;pickupDelay -= $tickDiff;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span>($this-&gt;pickupDelay &lt; 0){</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                $this-&gt;pickupDelay = 0;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">if</span>($this-&gt;hasMovementUpdate() &amp;&amp; $this-&gt;despawnDelay % self::MERGE_CHECK_PERIOD === 0){</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                $mergeable = [$this]; <span class="comment">//in case the merge target ends up not being this</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                $mergeTarget = $this;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="keywordflow">foreach</span>($this-&gt;getWorld()-&gt;getNearbyEntities($this-&gt;boundingBox-&gt;expandedCopy(0.5, 0.5, 0.5), $this) as $entity){</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    <span class="keywordflow">if</span>(!$entity instanceof ItemEntity || $entity-&gt;isFlaggedForDespawn()){</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                    <span class="keywordflow">if</span>($entity-&gt;isMergeable($this)){</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                        $mergeable[] = $entity;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                        <span class="keywordflow">if</span>($entity-&gt;item-&gt;getCount() &gt; $mergeTarget-&gt;item-&gt;getCount()){</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                            $mergeTarget = $entity;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                        }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                    }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                }</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                <span class="keywordflow">foreach</span>($mergeable as $itemEntity){</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                    <span class="keywordflow">if</span>($itemEntity !== $mergeTarget){</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                        $itemEntity-&gt;tryMergeInto($mergeTarget);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            $this-&gt;despawnDelay -= $tickDiff;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordflow">if</span>($this-&gt;despawnDelay &lt;= 0){</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                $ev = <span class="keyword">new</span> ItemDespawnEvent($this);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                $ev-&gt;call();</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                    $this-&gt;despawnDelay = self::DEFAULT_DESPAWN_DELAY;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    $this-&gt;flagForDespawn();</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    $hasUpdate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">return</span> $hasUpdate;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a30a854c7f65f98f09ce78cde7c6f8525">  162</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a30a854c7f65f98f09ce78cde7c6f8525">isMergeable</a>(<a class="code hl_class" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">ItemEntity</a> $entity) : bool{</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        $item = $entity-&gt;item;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">return</span> $entity !== $this &amp;&amp; $entity-&gt;pickupDelay !== self::NEVER_DESPAWN &amp;&amp; $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a49a05b01faaaf071449c97060fe44926">canStackWith</a>($this-&gt;item) &amp;&amp; $item-&gt;getCount() + $this-&gt;item-&gt;getCount() &lt;= $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#ad981d95fce9c8a14832dc5fabbf4f3e4">getMaxStackSize</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span>($this-&gt;isFlaggedForDespawn()){</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">return</span> $hasUpdate;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">if</span>($this-&gt;pickupDelay !== self::NEVER_DESPAWN &amp;&amp; $this-&gt;pickupDelay &gt; 0){ <span class="comment">//Infinite delay</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            $hasUpdate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            $this-&gt;pickupDelay -= $tickDiff;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span>($this-&gt;pickupDelay &lt; 0){</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                $this-&gt;pickupDelay = 0;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">if</span>($this-&gt;hasMovementUpdate() &amp;&amp; $this-&gt;despawnDelay % self::MERGE_CHECK_PERIOD === 0){</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            $mergeable = [$this]; <span class="comment">//in case the merge target ends up not being this</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            $mergeTarget = $this;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">foreach</span>($this-&gt;getWorld()-&gt;getNearbyEntities($this-&gt;boundingBox-&gt;expandedCopy(0.5, 0.5, 0.5), $this) as $entity){</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                <span class="keywordflow">if</span>(!$entity instanceof ItemEntity || $entity-&gt;isFlaggedForDespawn()){</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                <span class="keywordflow">if</span>($entity-&gt;isMergeable($this)){</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                    $mergeable[] = $entity;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                    <span class="keywordflow">if</span>($entity-&gt;item-&gt;getCount() &gt; $mergeTarget-&gt;item-&gt;getCount()){</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                        $mergeTarget = $entity;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                    }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordflow">foreach</span>($mergeable as $itemEntity){</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                <span class="keywordflow">if</span>($itemEntity !== $mergeTarget){</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    $itemEntity-&gt;tryMergeInto($mergeTarget);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">if</span>(!$this-&gt;isFlaggedForDespawn() &amp;&amp; $this-&gt;despawnDelay !== self::NEVER_DESPAWN){</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            $hasUpdate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            $this-&gt;despawnDelay -= $tickDiff;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">if</span>($this-&gt;despawnDelay &lt;= 0){</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                $ev = <span class="keyword">new</span> ItemDespawnEvent($this);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                $ev-&gt;call();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    $this-&gt;despawnDelay = self::DEFAULT_DESPAWN_DELAY;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                    $this-&gt;flagForDespawn();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">return</span> $hasUpdate;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aa8a1d091d0bcb826cc28fc5facb2ddda">  170</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aa8a1d091d0bcb826cc28fc5facb2ddda">tryMergeInto</a>(<a class="code hl_class" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">ItemEntity</a> $consumer) : bool{</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        if(!$this-&gt;isMergeable($consumer)){</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a30a854c7f65f98f09ce78cde7c6f8525">  170</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a30a854c7f65f98f09ce78cde7c6f8525">isMergeable</a>(<a class="code hl_class" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">ItemEntity</a> $entity) : bool{</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        $item = $entity-&gt;item;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">return</span> $entity !== $this &amp;&amp; $entity-&gt;pickupDelay !== self::NEVER_DESPAWN &amp;&amp; $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a49a05b01faaaf071449c97060fe44926">canStackWith</a>($this-&gt;item) &amp;&amp; $item-&gt;getCount() + $this-&gt;item-&gt;getCount() &lt;= $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#ad981d95fce9c8a14832dc5fabbf4f3e4">getMaxStackSize</a>();</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/dd6/classpocketmine_1_1event_1_1entity_1_1_item_merge_event.html">ItemMergeEvent</a>($this, $consumer);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        $consumer-&gt;setStackSize($consumer-&gt;item-&gt;getCount() + $this-&gt;item-&gt;getCount());</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $this-&gt;flagForDespawn();</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        $consumer-&gt;pickupDelay = max($consumer-&gt;pickupDelay, $this-&gt;pickupDelay);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        $consumer-&gt;despawnDelay = max($consumer-&gt;despawnDelay, $this-&gt;despawnDelay);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aa8a1d091d0bcb826cc28fc5facb2ddda">  178</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aa8a1d091d0bcb826cc28fc5facb2ddda">tryMergeInto</a>(<a class="code hl_class" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">ItemEntity</a> $consumer) : bool{</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        if(!$this-&gt;isMergeable($consumer)){</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/dd6/classpocketmine_1_1event_1_1entity_1_1_item_merge_event.html">ItemMergeEvent</a>($this, $consumer);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        $ev-&gt;call();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        }</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">protected</span> <span class="keyword">function</span> tryChangeMovement() : void{</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        $this-&gt;checkObstruction($this-&gt;location-&gt;x, $this-&gt;location-&gt;y, $this-&gt;location-&gt;z);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        parent::tryChangeMovement();</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        $consumer-&gt;setStackSize($consumer-&gt;item-&gt;getCount() + $this-&gt;item-&gt;getCount());</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        $this-&gt;flagForDespawn();</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        $consumer-&gt;pickupDelay = max($consumer-&gt;pickupDelay, $this-&gt;pickupDelay);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        $consumer-&gt;despawnDelay = max($consumer-&gt;despawnDelay, $this-&gt;despawnDelay);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keyword">protected</span> <span class="keyword">function</span> applyDragBeforeGravity() : bool{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        return true;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4">  199</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4">canSaveWithChunk</a>() : bool{</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        return !$this-&gt;item-&gt;isNull() &amp;&amp; parent::canSaveWithChunk();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">protected</span> <span class="keyword">function</span> tryChangeMovement() : void{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        $this-&gt;checkObstruction($this-&gt;location-&gt;x, $this-&gt;location-&gt;y, $this-&gt;location-&gt;z);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        parent::tryChangeMovement();</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">public</span> <span class="keyword">function</span> saveNBT() : <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>{</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $nbt = parent::saveNBT();</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">setTag</a>(self::TAG_ITEM, $this-&gt;item-&gt;nbtSerialize());</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(self::TAG_HEALTH, (<span class="keywordtype">int</span>) $this-&gt;getHealth());</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span>($this-&gt;despawnDelay === self::NEVER_DESPAWN){</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            $age = -32768;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            $age = self::DEFAULT_DESPAWN_DELAY - $this-&gt;despawnDelay;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(self::TAG_AGE, $age);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(self::TAG_PICKUP_DELAY, $this-&gt;pickupDelay);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordflow">if</span>($this-&gt;owner !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">setString</a>(self::TAG_OWNER, $this-&gt;owner);</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">if</span>($this-&gt;thrower !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">setString</a>(self::TAG_THROWER, $this-&gt;thrower);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">protected</span> <span class="keyword">function</span> applyDragBeforeGravity() : bool{</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        return true;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4">  207</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4">canSaveWithChunk</a>() : bool{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        return !$this-&gt;item-&gt;isNull() &amp;&amp; parent::canSaveWithChunk();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">public</span> <span class="keyword">function</span> saveNBT() : <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>{</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        $nbt = parent::saveNBT();</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">setTag</a>(self::TAG_ITEM, $this-&gt;item-&gt;nbtSerialize());</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(self::TAG_HEALTH, (<span class="keywordtype">int</span>) $this-&gt;getHealth());</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">if</span>($this-&gt;despawnDelay === self::NEVER_DESPAWN){</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            $age = -32768;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            $age = self::DEFAULT_DESPAWN_DELAY - $this-&gt;despawnDelay;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keywordflow">return</span> $nbt;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItem() : Item{</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        return $this-&gt;item;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keyword">public</span> <span class="keyword">function</span> canCollideWith(Entity $entity) : bool{</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        return false;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(self::TAG_AGE, $age);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(self::TAG_PICKUP_DELAY, $this-&gt;pickupDelay);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span>($this-&gt;owner !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">setString</a>(self::TAG_OWNER, $this-&gt;owner);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordflow">if</span>($this-&gt;thrower !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">setString</a>(self::TAG_THROWER, $this-&gt;thrower);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">return</span> $nbt;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">public</span> <span class="keyword">function</span> canBeCollidedWith() : bool{</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        return false;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItem() : Item{</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        return $this-&gt;item;</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPickupDelay() : int{</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        return $this-&gt;pickupDelay;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">public</span> <span class="keyword">function</span> canCollideWith(Entity $entity) : bool{</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        return false;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">public</span> <span class="keyword">function</span> setPickupDelay(<span class="keywordtype">int</span> $delay) : void{</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        $this-&gt;pickupDelay = $delay;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">public</span> <span class="keyword">function</span> canBeCollidedWith() : bool{</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        return false;</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a3ed051a2df8fc2eba5f0d5573b1ed021">  247</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a3ed051a2df8fc2eba5f0d5573b1ed021">getDespawnDelay</a>() : int{</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        return $this-&gt;despawnDelay;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a82b72b7ab31045ed54cd684e0607d05a">  254</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a82b72b7ab31045ed54cd684e0607d05a">setDespawnDelay</a>(<span class="keywordtype">int</span> $despawnDelay) : void{</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        if(($despawnDelay &lt; 0 || $despawnDelay &gt; self::MAX_DESPAWN_DELAY) &amp;&amp; $despawnDelay !== self::NEVER_DESPAWN){</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Despawn ticker must be in range 0 ... &quot;</span> . self::MAX_DESPAWN_DELAY . <span class="stringliteral">&quot; or &quot;</span> . self::NEVER_DESPAWN . <span class="stringliteral">&quot;, got $despawnDelay&quot;</span>);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        $this-&gt;despawnDelay = $despawnDelay;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOwner() : string{</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        return $this-&gt;owner;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keyword">public</span> <span class="keyword">function</span> setOwner(<span class="keywordtype">string</span> $owner) : void{</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        $this-&gt;owner = $owner;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPickupDelay() : int{</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        return $this-&gt;pickupDelay;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keyword">public</span> <span class="keyword">function</span> setPickupDelay(<span class="keywordtype">int</span> $delay) : void{</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        $this-&gt;pickupDelay = $delay;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a3ed051a2df8fc2eba5f0d5573b1ed021">  255</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a3ed051a2df8fc2eba5f0d5573b1ed021">getDespawnDelay</a>() : int{</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        return $this-&gt;despawnDelay;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a82b72b7ab31045ed54cd684e0607d05a">  262</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a82b72b7ab31045ed54cd684e0607d05a">setDespawnDelay</a>(<span class="keywordtype">int</span> $despawnDelay) : void{</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        if(($despawnDelay &lt; 0 || $despawnDelay &gt; self::MAX_DESPAWN_DELAY) &amp;&amp; $despawnDelay !== self::NEVER_DESPAWN){</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Despawn ticker must be in range 0 ... &quot;</span> . self::MAX_DESPAWN_DELAY . <span class="stringliteral">&quot; or &quot;</span> . self::NEVER_DESPAWN . <span class="stringliteral">&quot;, got $despawnDelay&quot;</span>);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        $this-&gt;despawnDelay = $despawnDelay;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThrower() : string{</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        return $this-&gt;thrower;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOwner() : string{</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        return $this-&gt;owner;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    }</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keyword">public</span> <span class="keyword">function</span> setThrower(<span class="keywordtype">string</span> $thrower) : void{</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        $this-&gt;thrower = $thrower;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keyword">public</span> <span class="keyword">function</span> setOwner(<span class="keywordtype">string</span> $owner) : void{</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        $this-&gt;owner = $owner;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a15b7926a24c6acc94f081b5d73322d58">  277</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a15b7926a24c6acc94f081b5d73322d58">sendSpawnPacket</a>(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : void{</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        $player-&gt;getNetworkSession()-&gt;sendDataPacket(<a class="code hl_class" href="../../dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html">AddItemActorPacket</a>::create(</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            $this-&gt;getId(), <span class="comment">//TODO: entity unique ID</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            $this-&gt;getId(),</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <a class="code hl_class" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a>::legacy(<a class="code hl_class" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html">TypeConverter</a>::getInstance()-&gt;coreItemStackToNet($this-&gt;getItem())),</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            $this-&gt;location-&gt;asVector3(),</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            $this-&gt;getMotion(),</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            $this-&gt;getAllNetworkData(),</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            false <span class="comment">//TODO: I have no idea what this is needed for, but right now we don&#39;t support fishing anyway</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        ));</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    }</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keyword">public</span> <span class="keyword">function</span> setStackSize(<span class="keywordtype">int</span> $newCount) : void{</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        if($newCount &lt;= 0){</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Stack size must be at least 1&quot;</span>);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        $this-&gt;item-&gt;setCount($newCount);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        $this-&gt;broadcastAnimation(<span class="keyword">new</span> ItemEntityStackSizeChangeAnimation($this, $newCount));</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThrower() : string{</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        return $this-&gt;thrower;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keyword">public</span> <span class="keyword">function</span> setThrower(<span class="keywordtype">string</span> $thrower) : void{</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        $this-&gt;thrower = $thrower;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a15b7926a24c6acc94f081b5d73322d58">  285</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a15b7926a24c6acc94f081b5d73322d58">sendSpawnPacket</a>(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : void{</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        $player-&gt;getNetworkSession()-&gt;sendDataPacket(<a class="code hl_class" href="../../dc/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_add_item_actor_packet.html">AddItemActorPacket</a>::create(</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            $this-&gt;getId(), <span class="comment">//TODO: entity unique ID</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            $this-&gt;getId(),</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <a class="code hl_class" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a>::legacy(<a class="code hl_class" href="../../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html">TypeConverter</a>::getInstance()-&gt;coreItemStackToNet($this-&gt;getItem())),</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            $this-&gt;location-&gt;asVector3(),</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            $this-&gt;getMotion(),</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            $this-&gt;getAllNetworkData(),</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            false <span class="comment">//TODO: I have no idea what this is needed for, but right now we don&#39;t support fishing anyway</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        ));</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    }</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOffsetPosition(Vector3 $vector3) : Vector3{</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        return $vector3-&gt;add(0, 0.125, 0);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keyword">public</span> <span class="keyword">function</span> onCollideWithPlayer(Player $player) : void{</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        if($this-&gt;getPickupDelay() !== 0){</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        $item = $this-&gt;getItem();</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        $playerInventory = match(<span class="keyword">true</span>){</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            $player-&gt;getOffHandInventory()-&gt;getItem(0)-&gt;canStackWith($item) &amp;&amp; $player-&gt;getOffHandInventory()-&gt;getAddableItemQuantity($item) &gt; 0 =&gt; $player-&gt;getOffHandInventory(),</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            $player-&gt;getInventory()-&gt;getAddableItemQuantity($item) &gt; 0 =&gt; $player-&gt;getInventory(),</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            <span class="keywordflow">default</span> =&gt; <span class="keyword">null</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        };</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        $ev = <span class="keyword">new</span> EntityItemPickupEvent($player, $this, $item, $playerInventory);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordflow">if</span>($player-&gt;hasFiniteResources() &amp;&amp; $playerInventory === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            $ev-&gt;cancel();</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        }</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        }</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keywordflow">foreach</span>($this-&gt;getViewers() as $viewer){</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            $viewer-&gt;getNetworkSession()-&gt;onPlayerPickUpItem($player, $this);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        $inventory = $ev-&gt;getInventory();</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">if</span>($inventory !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="keywordflow">foreach</span>($inventory-&gt;addItem($ev-&gt;getItem()) as $remains){</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                $this-&gt;getWorld()-&gt;dropItem($this-&gt;location, $remains, <span class="keyword">new</span> Vector3(0, 0, 0));</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            }</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        }</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        $this-&gt;flagForDespawn();</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    }</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>}</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keyword">public</span> <span class="keyword">function</span> setStackSize(<span class="keywordtype">int</span> $newCount) : void{</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        if($newCount &lt;= 0){</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Stack size must be at least 1&quot;</span>);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        $this-&gt;item-&gt;setCount($newCount);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        $this-&gt;broadcastAnimation(<span class="keyword">new</span> ItemEntityStackSizeChangeAnimation($this, $newCount));</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    }</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOffsetPosition(Vector3 $vector3) : Vector3{</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        return $vector3-&gt;add(0, 0.125, 0);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keyword">public</span> <span class="keyword">function</span> onCollideWithPlayer(Player $player) : void{</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        if($this-&gt;getPickupDelay() !== 0){</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        }</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        $item = $this-&gt;getItem();</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        $playerInventory = match(<span class="keyword">true</span>){</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            $player-&gt;getOffHandInventory()-&gt;getItem(0)-&gt;canStackWith($item) &amp;&amp; $player-&gt;getOffHandInventory()-&gt;getAddableItemQuantity($item) &gt; 0 =&gt; $player-&gt;getOffHandInventory(),</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            $player-&gt;getInventory()-&gt;getAddableItemQuantity($item) &gt; 0 =&gt; $player-&gt;getInventory(),</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            <span class="keywordflow">default</span> =&gt; <span class="keyword">null</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        };</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        $ev = <span class="keyword">new</span> EntityItemPickupEvent($player, $this, $item, $playerInventory);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keywordflow">if</span>($player-&gt;hasFiniteResources() &amp;&amp; $playerInventory === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            $ev-&gt;cancel();</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        $ev-&gt;call();</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keywordflow">foreach</span>($this-&gt;getViewers() as $viewer){</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            $viewer-&gt;getNetworkSession()-&gt;onPlayerPickUpItem($player, $this);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        }</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        $inventory = $ev-&gt;getInventory();</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keywordflow">if</span>($inventory !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            <span class="keywordflow">foreach</span>($inventory-&gt;addItem($ev-&gt;getItem()) as $remains){</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                $this-&gt;getWorld()-&gt;dropItem($this-&gt;location, $remains, <span class="keyword">new</span> Vector3(0, 0, 0));</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            }</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        }</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        $this-&gt;flagForDespawn();</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00079">Entity.php:79</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html_ae6385e7ea9eab6233e17ea4fe680108b"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ae6385e7ea9eab6233e17ea4fe680108b">pocketmine\entity\Entity\setHealth</a></div><div class="ttdeci">setHealth(float $amount)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00588">Entity.php:588</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_size_info_html"><div class="ttname"><a href="../../df/db7/classpocketmine_1_1entity_1_1_entity_size_info.html">pocketmine\entity\EntitySizeInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dde/_entity_size_info_8php_source.html#l00028">EntitySizeInfo.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_item_entity_stack_size_change_animation_html"><div class="ttname"><a href="../../da/dc8/classpocketmine_1_1entity_1_1animation_1_1_item_entity_stack_size_change_animation.html">pocketmine\entity\animation\ItemEntityStackSizeChangeAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4d/_item_entity_stack_size_change_animation_8php_source.html#l00030">ItemEntityStackSizeChangeAnimation.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html">pocketmine\entity\object\ItemEntity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00044">ItemEntity.php:44</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a15b7926a24c6acc94f081b5d73322d58"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a15b7926a24c6acc94f081b5d73322d58">pocketmine\entity\object\ItemEntity\sendSpawnPacket</a></div><div class="ttdeci">sendSpawnPacket(Player $player)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00277">ItemEntity.php:277</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a30a854c7f65f98f09ce78cde7c6f8525"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a30a854c7f65f98f09ce78cde7c6f8525">pocketmine\entity\object\ItemEntity\isMergeable</a></div><div class="ttdeci">isMergeable(ItemEntity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00162">ItemEntity.php:162</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a3ed051a2df8fc2eba5f0d5573b1ed021"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a3ed051a2df8fc2eba5f0d5573b1ed021">pocketmine\entity\object\ItemEntity\getDespawnDelay</a></div><div class="ttdeci">getDespawnDelay()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00247">ItemEntity.php:247</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a540a375ad8f41b7e06b1ac33b83f20c4"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4">pocketmine\entity\object\ItemEntity\canSaveWithChunk</a></div><div class="ttdeci">canSaveWithChunk()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00199">ItemEntity.php:199</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a82b72b7ab31045ed54cd684e0607d05a"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a82b72b7ab31045ed54cd684e0607d05a">pocketmine\entity\object\ItemEntity\setDespawnDelay</a></div><div class="ttdeci">setDespawnDelay(int $despawnDelay)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00254">ItemEntity.php:254</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_aa8a1d091d0bcb826cc28fc5facb2ddda"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aa8a1d091d0bcb826cc28fc5facb2ddda">pocketmine\entity\object\ItemEntity\tryMergeInto</a></div><div class="ttdeci">tryMergeInto(ItemEntity $consumer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00170">ItemEntity.php:170</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a15b7926a24c6acc94f081b5d73322d58"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a15b7926a24c6acc94f081b5d73322d58">pocketmine\entity\object\ItemEntity\sendSpawnPacket</a></div><div class="ttdeci">sendSpawnPacket(Player $player)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00285">ItemEntity.php:285</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a30a854c7f65f98f09ce78cde7c6f8525"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a30a854c7f65f98f09ce78cde7c6f8525">pocketmine\entity\object\ItemEntity\isMergeable</a></div><div class="ttdeci">isMergeable(ItemEntity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00170">ItemEntity.php:170</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a3ed051a2df8fc2eba5f0d5573b1ed021"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a3ed051a2df8fc2eba5f0d5573b1ed021">pocketmine\entity\object\ItemEntity\getDespawnDelay</a></div><div class="ttdeci">getDespawnDelay()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00255">ItemEntity.php:255</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a540a375ad8f41b7e06b1ac33b83f20c4"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a540a375ad8f41b7e06b1ac33b83f20c4">pocketmine\entity\object\ItemEntity\canSaveWithChunk</a></div><div class="ttdeci">canSaveWithChunk()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00207">ItemEntity.php:207</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_a82b72b7ab31045ed54cd684e0607d05a"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a82b72b7ab31045ed54cd684e0607d05a">pocketmine\entity\object\ItemEntity\setDespawnDelay</a></div><div class="ttdeci">setDespawnDelay(int $despawnDelay)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00262">ItemEntity.php:262</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_aa8a1d091d0bcb826cc28fc5facb2ddda"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aa8a1d091d0bcb826cc28fc5facb2ddda">pocketmine\entity\object\ItemEntity\tryMergeInto</a></div><div class="ttdeci">tryMergeInto(ItemEntity $consumer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00178">ItemEntity.php:178</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1object_1_1_item_entity_html_ac25d2a69b1d1c745d7078c07441637a3"><div class="ttname"><a href="../../d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#ac25d2a69b1d1c745d7078c07441637a3">pocketmine\entity\object\ItemEntity\onFirstUpdate</a></div><div class="ttdeci">onFirstUpdate(int $currentTick)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/_item_entity_8php_source.html#l00104">ItemEntity.php:104</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_item_pickup_event_html"><div class="ttname"><a href="../../dc/d5b/classpocketmine_1_1event_1_1entity_1_1_entity_item_pickup_event.html">pocketmine\event\entity\EntityItemPickupEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfc/_entity_item_pickup_event_8php_source.html#l00036">EntityItemPickupEvent.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_item_despawn_event_html"><div class="ttname"><a href="../../da/d1a/classpocketmine_1_1event_1_1entity_1_1_item_despawn_event.html">pocketmine\event\entity\ItemDespawnEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7e/_item_despawn_event_8php_source.html#l00036">ItemDespawnEvent.php:36</a></div></div>
