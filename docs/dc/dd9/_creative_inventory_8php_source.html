@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.15.3 git-87a2e0460c69f2d35ef04648730a5abf65bf4e78</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.16.1 git-b13e97de3d3fb5ff8dd155cf61f5238426ecb15e</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('dc/dd9/_creative_inventory_8php_source
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> array $creative = [];</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $creativeItems = json_decode(<a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a4d10c13c08994d33c947f5174ec967b5">Filesystem::fileGetContents</a>(Path::join(\<a class="code hl_namespace" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>\BEDROCK_DATA_PATH, <span class="stringliteral">&quot;creativeitems.json&quot;</span>)), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $creativeItems = json_decode(<a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a4d10c13c08994d33c947f5174ec967b5">Filesystem::fileGetContents</a>(Path::join(\<a class="code hl_namespace" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>\RESOURCE_PATH, <span class="stringliteral">&quot;legacy_creativeitems.json&quot;</span>)), <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">foreach</span>($creativeItems as $data){</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            $item = <a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#ad533c9307902b2661fdeb93e1d94a3ed">Item::jsonDeserialize</a>($data);</div>

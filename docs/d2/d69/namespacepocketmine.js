@@ -35,6 +35,7 @@ var namespacepocketmine =
     [ "data", null, [
       [ "bedrock", null, [
         [ "BannerPatternTypeIdMap", "db/d15/classpocketmine_1_1data_1_1bedrock_1_1_banner_pattern_type_id_map.html", null ],
+        [ "BedrockDataFiles", "d3/dfa/classpocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files.html", null ],
         [ "BiomeIds", "dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html", null ],
         [ "CompoundTypeIds", "d1/d35/classpocketmine_1_1data_1_1bedrock_1_1_compound_type_ids.html", null ],
         [ "CoralTypeIdMap", "d7/d32/classpocketmine_1_1data_1_1bedrock_1_1_coral_type_id_map.html", null ],

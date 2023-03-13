@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.15.3 git-87a2e0460c69f2d35ef04648730a5abf65bf4e78</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.16.1 git-b13e97de3d3fb5ff8dd155cf61f5238426ecb15e</span>
    </div>
   </td>
  </tr>
@@ -119,9 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a545ce19d751c48193a2a3fbc81701e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a091740691fd6debe0cc242e5c21967ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#a091740691fd6debe0cc242e5c21967ff">decompress</a> (string $payload)</td></tr>
 <tr class="separator:a091740691fd6debe0cc242e5c21967ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a87dc0e77c161adf67b946cf0ff0653"><td class="memItemLeft" align="right" valign="top"><a id="a0a87dc0e77c161adf67b946cf0ff0653" name="a0a87dc0e77c161adf67b946cf0ff0653"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>willCompress</b> (string $data)</td></tr>
-<tr class="separator:a0a87dc0e77c161adf67b946cf0ff0653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49ca1a3962b0926dd5aa11875e96168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#ac49ca1a3962b0926dd5aa11875e96168">getCompressionThreshold</a> ()</td></tr>
+<tr class="separator:ac49ca1a3962b0926dd5aa11875e96168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -150,6 +149,37 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d2/db8/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_zlib_compressor.html#a711491a5b54b83e10bc9e361709e3801">pocketmine\network\mcpe\compression\ZlibCompressor</a>.</p>
+
+</div>
+</div>
+<a id="ac49ca1a3962b0926dd5aa11875e96168" name="ac49ca1a3962b0926dd5aa11875e96168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49ca1a3962b0926dd5aa11875e96168">&#9670;&nbsp;</a></span>getCompressionThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\compression\Compressor::getCompressionThreshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the minimum size of packet batch that the compressor will attempt to compress.</p>
+<p >The compressor's output <b>MUST</b> still be valid input for the decompressor even if the compressor input is below this threshold. However, it may choose to use a cheaper compression option (e.g. zlib level 0, which simply wraps the data and doesn't attempt to compress it) to avoid wasting CPU time. </p>
+
+<p>Implemented in <a class="el" href="../../d2/db8/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_zlib_compressor.html#af386ea111199ed5cc16fefbce1c40f88">pocketmine\network\mcpe\compression\ZlibCompressor</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d05/src_2_server_8php_source.html#l01384">pocketmine\Server\prepareBatch()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor_ac49ca1a3962b0926dd5aa11875e96168_icgraph.svg" width="488" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

@@ -44,6 +44,7 @@ var hierarchy =
     [ "pocketmine\\block\\utils\\BannerPatternLayer", "da/dd4/classpocketmine_1_1block_1_1utils_1_1_banner_pattern_layer.html", null ],
     [ "pocketmine\\block\\utils\\BannerPatternType", "d5/d03/classpocketmine_1_1block_1_1utils_1_1_banner_pattern_type.html", null ],
     [ "pocketmine\\data\\bedrock\\BannerPatternTypeIdMap", "db/d15/classpocketmine_1_1data_1_1bedrock_1_1_banner_pattern_type_id_map.html", null ],
+    [ "pocketmine\\data\\bedrock\\BedrockDataFiles", "d3/dfa/classpocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\resourcepacks\\BehaviorPackInfoEntry", "da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1resourcepacks_1_1_behavior_pack_info_entry.html", null ],
     [ "pocketmine\\block\\utils\\BellAttachmentType", "d6/d74/classpocketmine_1_1block_1_1utils_1_1_bell_attachment_type.html", null ],
     [ "pocketmine\\network\\BidirectionalBandwidthStatsTracker", "dd/d87/classpocketmine_1_1network_1_1_bidirectional_bandwidth_stats_tracker.html", null ],

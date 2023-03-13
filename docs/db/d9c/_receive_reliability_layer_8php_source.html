@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.15.3 git-87a2e0460c69f2d35ef04648730a5abf65bf4e78</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.16.1 git-b13e97de3d3fb5ff8dd155cf61f5238426ecb15e</span>
    </div>
   </td>
  </tr>
@@ -282,84 +282,88 @@ $(document).ready(function(){initNavTree('db/d9c/_receive_reliability_layer_8php
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                $this-&gt;receiveOrderedIndex[$packet-&gt;orderChannel] = $i;</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            }elseif($packet-&gt;orderIndex &gt; $this-&gt;receiveOrderedIndex[$packet-&gt;orderChannel]){</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                $this-&gt;receiveOrderedPackets[$packet-&gt;orderChannel][$packet-&gt;orderIndex] = $packet;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="comment">//duplicate/already received packet</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            }</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <span class="comment">//not ordered or sequenced</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            $this-&gt;handleEncapsulatedPacketRoute($packet);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keyword">public</span> <span class="keyword">function</span> onDatagram(Datagram $packet) : void{</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        if($packet-&gt;seqNumber &lt; $this-&gt;windowStart or $packet-&gt;seqNumber &gt; $this-&gt;windowEnd or isset($this-&gt;ACKQueue[$packet-&gt;seqNumber])){</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Received duplicate or out-of-window packet (sequence number $packet-&gt;seqNumber, window &quot;</span> . $this-&gt;windowStart . <span class="stringliteral">&quot;-&quot;</span> . $this-&gt;windowEnd . <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        unset($this-&gt;NACKQueue[$packet-&gt;seqNumber]);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        $this-&gt;ACKQueue[$packet-&gt;seqNumber] = $packet-&gt;seqNumber;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">if</span>($this-&gt;highestSeqNumber &lt; $packet-&gt;seqNumber){</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            $this-&gt;highestSeqNumber = $packet-&gt;seqNumber;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">if</span>($packet-&gt;seqNumber === $this-&gt;windowStart){</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="comment">//got a contiguous packet, shift the receive window</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="comment">//this packet might complete a sequence of out-of-order packets, so we incrementally check the indexes</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="comment">//to see how far to shift the window, and stop as soon as we either find a gap or have an empty window</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordflow">for</span>(; isset($this-&gt;ACKQueue[$this-&gt;windowStart]); ++$this-&gt;windowStart){</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                ++$this-&gt;windowEnd;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            }</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }elseif($packet-&gt;seqNumber &gt; $this-&gt;windowStart){</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <span class="comment">//we got a gap - a later packet arrived before earlier ones did</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="comment">//we add the earlier ones to the NACK queue</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="comment">//if the missing packets arrive before the end of tick, they&#39;ll be removed from the NACK queue</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">for</span>($i = $this-&gt;windowStart; $i &lt; $packet-&gt;seqNumber; ++$i){</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <span class="keywordflow">if</span>(!isset($this-&gt;ACKQueue[$i])){</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                    $this-&gt;NACKQueue[$i] = $i;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                }</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            }</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            assert(<span class="keyword">false</span>, <span class="stringliteral">&quot;received packet before window start&quot;</span>);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordflow">foreach</span>($packet-&gt;packets as $pk){</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            $this-&gt;handleEncapsulatedPacket($pk);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="keywordflow">if</span>(count($this-&gt;receiveOrderedPackets[$packet-&gt;orderChannel]) &gt;= self::$WINDOW_SIZE){</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                    <span class="comment">//queue overflow for this channel - we should probably disconnect the peer at this point</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                $this-&gt;receiveOrderedPackets[$packet-&gt;orderChannel][$packet-&gt;orderIndex] = $packet;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <span class="comment">//duplicate/already received packet</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="comment">//not ordered or sequenced</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            $this-&gt;handleEncapsulatedPacketRoute($packet);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keyword">public</span> <span class="keyword">function</span> onDatagram(Datagram $packet) : void{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        if($packet-&gt;seqNumber &lt; $this-&gt;windowStart or $packet-&gt;seqNumber &gt; $this-&gt;windowEnd or isset($this-&gt;ACKQueue[$packet-&gt;seqNumber])){</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Received duplicate or out-of-window packet (sequence number $packet-&gt;seqNumber, window &quot;</span> . $this-&gt;windowStart . <span class="stringliteral">&quot;-&quot;</span> . $this-&gt;windowEnd . <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        unset($this-&gt;NACKQueue[$packet-&gt;seqNumber]);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        $this-&gt;ACKQueue[$packet-&gt;seqNumber] = $packet-&gt;seqNumber;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">if</span>($this-&gt;highestSeqNumber &lt; $packet-&gt;seqNumber){</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            $this-&gt;highestSeqNumber = $packet-&gt;seqNumber;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        }</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">if</span>($packet-&gt;seqNumber === $this-&gt;windowStart){</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            <span class="comment">//got a contiguous packet, shift the receive window</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <span class="comment">//this packet might complete a sequence of out-of-order packets, so we incrementally check the indexes</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            <span class="comment">//to see how far to shift the window, and stop as soon as we either find a gap or have an empty window</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <span class="keywordflow">for</span>(; isset($this-&gt;ACKQueue[$this-&gt;windowStart]); ++$this-&gt;windowStart){</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                ++$this-&gt;windowEnd;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }elseif($packet-&gt;seqNumber &gt; $this-&gt;windowStart){</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="comment">//we got a gap - a later packet arrived before earlier ones did</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="comment">//we add the earlier ones to the NACK queue</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="comment">//if the missing packets arrive before the end of tick, they&#39;ll be removed from the NACK queue</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="keywordflow">for</span>($i = $this-&gt;windowStart; $i &lt; $packet-&gt;seqNumber; ++$i){</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                <span class="keywordflow">if</span>(!isset($this-&gt;ACKQueue[$i])){</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                    $this-&gt;NACKQueue[$i] = $i;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            }</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            assert(<span class="keyword">false</span>, <span class="stringliteral">&quot;received packet before window start&quot;</span>);</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        }</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keyword">public</span> <span class="keyword">function</span> update() : void{</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        $diff = $this-&gt;highestSeqNumber - $this-&gt;windowStart + 1;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        assert($diff &gt;= 0);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <span class="keywordflow">if</span>($diff &gt; 0){</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <span class="comment">//Move the receive window to account for packets we either received or are about to NACK</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            <span class="comment">//we ignore any sequence numbers that we sent NACKs for, because we expect the client to resend them</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <span class="comment">//when it gets a NACK for it</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            $this-&gt;windowStart += $diff;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            $this-&gt;windowEnd += $diff;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">foreach</span>($packet-&gt;packets as $pk){</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            $this-&gt;handleEncapsulatedPacket($pk);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    }</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keyword">public</span> <span class="keyword">function</span> update() : void{</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        $diff = $this-&gt;highestSeqNumber - $this-&gt;windowStart + 1;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        assert($diff &gt;= 0);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <span class="keywordflow">if</span>($diff &gt; 0){</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <span class="comment">//Move the receive window to account for packets we either received or are about to NACK</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            <span class="comment">//we ignore any sequence numbers that we sent NACKs for, because we expect the client to resend them</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            <span class="comment">//when it gets a NACK for it</span></div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">if</span>(count($this-&gt;ACKQueue) &gt; 0){</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            $pk = <span class="keyword">new</span> ACK();</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            $pk-&gt;packets = $this-&gt;ACKQueue;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            ($this-&gt;sendPacket)($pk);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            $this-&gt;ACKQueue = [];</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <span class="keywordflow">if</span>(count($this-&gt;NACKQueue) &gt; 0){</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            $pk = <span class="keyword">new</span> NACK();</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            $pk-&gt;packets = $this-&gt;NACKQueue;</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            ($this-&gt;sendPacket)($pk);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            $this-&gt;NACKQueue = [];</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        }</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keyword">public</span> <span class="keyword">function</span> needsUpdate() : bool{</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        return count($this-&gt;ACKQueue) !== 0 or count($this-&gt;NACKQueue) !== 0;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            $this-&gt;windowStart += $diff;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            $this-&gt;windowEnd += $diff;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        }</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordflow">if</span>(count($this-&gt;ACKQueue) &gt; 0){</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            $pk = <span class="keyword">new</span> ACK();</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            $pk-&gt;packets = $this-&gt;ACKQueue;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            ($this-&gt;sendPacket)($pk);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            $this-&gt;ACKQueue = [];</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        }</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordflow">if</span>(count($this-&gt;NACKQueue) &gt; 0){</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            $pk = <span class="keyword">new</span> NACK();</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            $pk-&gt;packets = $this-&gt;NACKQueue;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            ($this-&gt;sendPacket)($pk);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            $this-&gt;NACKQueue = [];</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        }</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>}</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keyword">public</span> <span class="keyword">function</span> needsUpdate() : bool{</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        return count($this-&gt;ACKQueue) !== 0 or count($this-&gt;NACKQueue) !== 0;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    }</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>}</div>
 <div class="ttc" id="aclassraklib_1_1generic_1_1_receive_reliability_layer_html"><div class="ttname"><a href="../../dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer.html">raklib\generic\ReceiveReliabilityLayer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9c/_receive_reliability_layer_8php_source.html#l00029">ReceiveReliabilityLayer.php:29</a></div></div>
 <div class="ttc" id="aclassraklib_1_1generic_1_1_receive_reliability_layer_html_af1636f73f6b89ad18c10bb8e802ff514"><div class="ttname"><a href="../../dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer.html#af1636f73f6b89ad18c10bb8e802ff514">raklib\generic\ReceiveReliabilityLayer\__construct</a></div><div class="ttdeci">__construct(\Logger $logger, \Closure $onRecv, \Closure $sendPacket, int $maxSplitPacketPartCount=PHP_INT_MAX, int $maxConcurrentSplitPackets=PHP_INT_MAX)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9c/_receive_reliability_layer_8php_source.html#l00091">ReceiveReliabilityLayer.php:91</a></div></div>
 <div class="ttc" id="aclassraklib_1_1protocol_1_1_a_c_k_html"><div class="ttname"><a href="../../d9/d87/classraklib_1_1protocol_1_1_a_c_k.html">raklib\protocol\ACK</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/_a_c_k_8php_source.html#l00019">ACK.php:19</a></div></div>

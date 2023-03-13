@@ -1,6 +1,7 @@
 var dir_e64dd50e80ee3730265ab587bc10b64e =
 [
     [ "BannerPatternTypeIdMap.php", "db/d32/_banner_pattern_type_id_map_8php_source.html", null ],
+    [ "BedrockDataFiles.php", "d8/db3/_bedrock_data_files_8php_source.html", null ],
     [ "BiomeIds.php", "d0/d7a/_biome_ids_8php_source.html", null ],
     [ "CompoundTypeIds.php", "d7/d67/_compound_type_ids_8php_source.html", null ],
     [ "CoralTypeIdMap.php", "d6/d03/_coral_type_id_map_8php_source.html", null ],
