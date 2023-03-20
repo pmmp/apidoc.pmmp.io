@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.16.1 git-b13e97de3d3fb5ff8dd155cf61f5238426ecb15e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.17.1 git-52ea4feac00a116c53fc5f98602d9704ff8b8164</span>
    </div>
   </td>
  </tr>
@@ -162,12 +162,9 @@ $(document).ready(function(){initNavTree('d9/d7a/_session_start_packet_handler_8
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">protected</span> <span class="keyword">function</span> isCompatibleProtocol(<span class="keywordtype">int</span> $protocolVersion) : bool{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">//TODO: REMOVE THIS</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">//1.19.63 released with an unchanged protocol, but a bumped protocol version, since they forgot to do it in the</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">//previous release. Since they are functionally identical, we can accept both.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        return $protocolVersion === <a class="code hl_class" href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html">ProtocolInfo</a>::CURRENT_PROTOCOL || $protocolVersion === 568;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        return $protocolVersion === <a class="code hl_class" href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html">ProtocolInfo</a>::CURRENT_PROTOCOL;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00172">src/Server.php:172</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00149">NetworkSession.php:149</a></div></div>

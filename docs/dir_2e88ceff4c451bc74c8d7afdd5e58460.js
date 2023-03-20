@@ -1,5 +1,6 @@
 var dir_2e88ceff4c451bc74c8d7afdd5e58460 =
 [
+    [ "ComplexAliasItemDescriptor.php", "d5/dc1/_complex_alias_item_descriptor_8php_source.html", null ],
     [ "CraftingRecipeBlockName.php", "d3/d16/_crafting_recipe_block_name_8php_source.html", null ],
     [ "vendor/pocketmine/bedrock-protocol/src/types/recipe/FurnaceRecipe.php", "d9/d37/vendor_2pocketmine_2bedrock-protocol_2src_2types_2recipe_2_furnace_recipe_8php_source.html", null ],
     [ "FurnaceRecipeBlockName.php", "db/d21/_furnace_recipe_block_name_8php_source.html", null ],

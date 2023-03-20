@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.16.1 git-b13e97de3d3fb5ff8dd155cf61f5238426ecb15e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.17.1 git-52ea4feac00a116c53fc5f98602d9704ff8b8164</span>
    </div>
   </td>
  </tr>
@@ -942,309 +942,310 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>            AbilitiesLayer::ABILITY_OPEN_CONTAINERS =&gt; !$for-&gt;isSpectator(),</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>            AbilitiesLayer::ABILITY_ATTACK_PLAYERS =&gt; !$for-&gt;isSpectator(),</div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>            AbilitiesLayer::ABILITY_ATTACK_MOBS =&gt; !$for-&gt;isSpectator(),</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>        ];</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>        $this-&gt;sendDataPacket(UpdateAbilitiesPacket::create(<span class="keyword">new</span> AbilitiesData(</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>            $isOp ? CommandPermissions::OPERATOR : CommandPermissions::NORMAL,</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>            $isOp ? PlayerPermissions::OPERATOR : PlayerPermissions::MEMBER,</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>            $for-&gt;getId(),</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>            [</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                <span class="comment">//TODO: dynamic flying speed! FINALLY!!!!!!!!!!!!!!!!!</span></div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                <span class="keyword">new</span> AbilitiesLayer(AbilitiesLayer::LAYER_BASE, $boolAbilities, 0.05, 0.1),</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>            ]</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        )));</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    }</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span> </div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncAdventureSettings() : void{</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>        if($this-&gt;player === null){</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>            <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Cannot sync adventure settings for a player that is not yet created&quot;</span>);</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        }</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        <span class="comment">//everything except auto jump is handled via UpdateAbilitiesPacket</span></div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        $this-&gt;sendDataPacket(UpdateAdventureSettingsPacket::create(</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>            noAttackingMobs: <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>            noAttackingPlayers: <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>            worldImmutable: <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>            showNameTags: <span class="keyword">true</span>,</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>            autoJump: $this-&gt;player-&gt;hasAutoJump()</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>        ));</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>    }</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1">  937</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1">syncAttributes</a>(<a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a> $entity, array $attributes) : void{</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        if(count($attributes) &gt; 0){</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>            $this-&gt;sendDataPacket(UpdateAttributesPacket::create($entity-&gt;getId(), array_map(<span class="keyword">function</span>(<a class="code hl_class" href="../../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html">Attribute</a> $attr) : NetworkAttribute{</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> NetworkAttribute($attr-&gt;getId(), $attr-&gt;getMinValue(), $attr-&gt;getMaxValue(), $attr-&gt;getValue(), $attr-&gt;getDefaultValue(), []);</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>            }, $attributes), 0));</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>        }</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    }</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span> </div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4">  949</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4">syncActorData</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity, array $properties) : void{</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>        <span class="comment">//TODO: HACK! as of 1.18.10, the client responds differently to the same data ordered in different orders - for</span></div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>        <span class="comment">//example, sending HEIGHT in the list before FLAGS when unsetting the SWIMMING flag results in a hitbox glitch</span></div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>        ksort($properties, SORT_NUMERIC);</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        $this-&gt;sendDataPacket(SetActorDataPacket::create($entity-&gt;getId(), $properties, <span class="keyword">new</span> <a class="code hl_class" href="../../d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html">PropertySyncData</a>([], []), 0));</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    }</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEntityEffectAdded(<a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a> $entity, <a class="code hl_class" href="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance.html">EffectInstance</a> $effect, <span class="keywordtype">bool</span> $replacesOldEffect) : void{</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        <span class="comment">//TODO: we may need yet another effect &lt;=&gt; ID map in the future depending on protocol changes</span></div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../da/d25/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_effect_packet.html">MobEffectPacket</a>::add($entity-&gt;getId(), $replacesOldEffect, <a class="code hl_class" href="../../dc/d70/classpocketmine_1_1data_1_1bedrock_1_1_effect_id_map.html">EffectIdMap</a>::getInstance()-&gt;toId($effect-&gt;getType()), $effect-&gt;getAmplifier(), $effect-&gt;isVisible(), $effect-&gt;getDuration()));</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    }</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEntityEffectRemoved(Living $entity, EffectInstance $effect) : void{</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>        $this-&gt;sendDataPacket(MobEffectPacket::remove($entity-&gt;getId(), EffectIdMap::getInstance()-&gt;toId($effect-&gt;getType())));</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    }</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span> </div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEntityRemoved(Entity $entity) : void{</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        $this-&gt;sendDataPacket(RemoveActorPacket::create($entity-&gt;getId()));</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>    }</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span> </div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncAvailableCommands() : void{</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        $commandData = [];</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        <span class="keywordflow">foreach</span>($this-&gt;server-&gt;getCommandMap()-&gt;getCommands() as $name =&gt; $command){</div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>            <span class="keywordflow">if</span>(isset($commandData[$command-&gt;getLabel()]) || $command-&gt;getLabel() === <span class="stringliteral">&quot;help&quot;</span> || !$command-&gt;testPermissionSilent($this-&gt;player)){</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>            }</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span> </div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>            $lname = strtolower($command-&gt;getLabel());</div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>            $aliases = $command-&gt;getAliases();</div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>            $aliasObj = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>            <span class="keywordflow">if</span>(count($aliases) &gt; 0){</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>                <span class="keywordflow">if</span>(!in_array($lname, $aliases, <span class="keyword">true</span>)){</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>                    <span class="comment">//work around a client bug which makes the original name not show when aliases are used</span></div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>                    $aliases[] = $lname;</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>                }</div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>                $aliasObj = <span class="keyword">new</span> CommandEnum(ucfirst($command-&gt;getLabel()) . <span class="stringliteral">&quot;Aliases&quot;</span>, array_values($aliases));</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>            }</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>            $description = $command-&gt;getDescription();</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>            $data = <span class="keyword">new</span> CommandData(</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>                $lname, <span class="comment">//TODO: commands containing uppercase letters in the name crash 1.9.0 client</span></div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>                $description instanceof Translatable ? $this-&gt;player-&gt;getLanguage()-&gt;translate($description) : $description,</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>                0,</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>            AbilitiesLayer::ABILITY_PRIVILEGED_BUILDER =&gt; <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>        ];</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span> </div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        $this-&gt;sendDataPacket(UpdateAbilitiesPacket::create(<span class="keyword">new</span> AbilitiesData(</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>            $isOp ? CommandPermissions::OPERATOR : CommandPermissions::NORMAL,</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>            $isOp ? PlayerPermissions::OPERATOR : PlayerPermissions::MEMBER,</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>            $for-&gt;getId(),</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>            [</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                <span class="comment">//TODO: dynamic flying speed! FINALLY!!!!!!!!!!!!!!!!!</span></div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                <span class="keyword">new</span> AbilitiesLayer(AbilitiesLayer::LAYER_BASE, $boolAbilities, 0.05, 0.1),</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>            ]</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        )));</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    }</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncAdventureSettings() : void{</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>        if($this-&gt;player === null){</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>            <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Cannot sync adventure settings for a player that is not yet created&quot;</span>);</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        }</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        <span class="comment">//everything except auto jump is handled via UpdateAbilitiesPacket</span></div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        $this-&gt;sendDataPacket(UpdateAdventureSettingsPacket::create(</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>            noAttackingMobs: <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>            noAttackingPlayers: <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>            worldImmutable: <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>            showNameTags: <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>            autoJump: $this-&gt;player-&gt;hasAutoJump()</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>        ));</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    }</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1">  938</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1">syncAttributes</a>(<a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a> $entity, array $attributes) : void{</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        if(count($attributes) &gt; 0){</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>            $this-&gt;sendDataPacket(UpdateAttributesPacket::create($entity-&gt;getId(), array_map(<span class="keyword">function</span>(<a class="code hl_class" href="../../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html">Attribute</a> $attr) : NetworkAttribute{</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> NetworkAttribute($attr-&gt;getId(), $attr-&gt;getMinValue(), $attr-&gt;getMaxValue(), $attr-&gt;getValue(), $attr-&gt;getDefaultValue(), []);</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>            }, $attributes), 0));</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>        }</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    }</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span> </div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4">  950</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4">syncActorData</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity, array $properties) : void{</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>        <span class="comment">//TODO: HACK! as of 1.18.10, the client responds differently to the same data ordered in different orders - for</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>        <span class="comment">//example, sending HEIGHT in the list before FLAGS when unsetting the SWIMMING flag results in a hitbox glitch</span></div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        ksort($properties, SORT_NUMERIC);</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        $this-&gt;sendDataPacket(SetActorDataPacket::create($entity-&gt;getId(), $properties, <span class="keyword">new</span> <a class="code hl_class" href="../../d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html">PropertySyncData</a>([], []), 0));</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    }</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEntityEffectAdded(<a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a> $entity, <a class="code hl_class" href="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance.html">EffectInstance</a> $effect, <span class="keywordtype">bool</span> $replacesOldEffect) : void{</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        <span class="comment">//TODO: we may need yet another effect &lt;=&gt; ID map in the future depending on protocol changes</span></div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../da/d25/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_effect_packet.html">MobEffectPacket</a>::add($entity-&gt;getId(), $replacesOldEffect, <a class="code hl_class" href="../../dc/d70/classpocketmine_1_1data_1_1bedrock_1_1_effect_id_map.html">EffectIdMap</a>::getInstance()-&gt;toId($effect-&gt;getType()), $effect-&gt;getAmplifier(), $effect-&gt;isVisible(), $effect-&gt;getDuration()));</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    }</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEntityEffectRemoved(Living $entity, EffectInstance $effect) : void{</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>        $this-&gt;sendDataPacket(MobEffectPacket::remove($entity-&gt;getId(), EffectIdMap::getInstance()-&gt;toId($effect-&gt;getType())));</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>    }</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span> </div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEntityRemoved(Entity $entity) : void{</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        $this-&gt;sendDataPacket(RemoveActorPacket::create($entity-&gt;getId()));</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    }</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncAvailableCommands() : void{</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        $commandData = [];</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        <span class="keywordflow">foreach</span>($this-&gt;server-&gt;getCommandMap()-&gt;getCommands() as $name =&gt; $command){</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>            <span class="keywordflow">if</span>(isset($commandData[$command-&gt;getLabel()]) || $command-&gt;getLabel() === <span class="stringliteral">&quot;help&quot;</span> || !$command-&gt;testPermissionSilent($this-&gt;player)){</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>            }</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span> </div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>            $lname = strtolower($command-&gt;getLabel());</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>            $aliases = $command-&gt;getAliases();</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>            $aliasObj = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>            <span class="keywordflow">if</span>(count($aliases) &gt; 0){</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>                <span class="keywordflow">if</span>(!in_array($lname, $aliases, <span class="keyword">true</span>)){</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>                    <span class="comment">//work around a client bug which makes the original name not show when aliases are used</span></div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>                    $aliases[] = $lname;</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>                }</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>                $aliasObj = <span class="keyword">new</span> CommandEnum(ucfirst($command-&gt;getLabel()) . <span class="stringliteral">&quot;Aliases&quot;</span>, array_values($aliases));</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>            }</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span> </div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>            $description = $command-&gt;getDescription();</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>            $data = <span class="keyword">new</span> CommandData(</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>                $lname, <span class="comment">//TODO: commands containing uppercase letters in the name crash 1.9.0 client</span></div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>                $description instanceof Translatable ? $this-&gt;player-&gt;getLanguage()-&gt;translate($description) : $description,</div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>                0,</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>                $aliasObj,</div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>                [</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>                    [CommandParameter::standard(<span class="stringliteral">&quot;args&quot;</span>, AvailableCommandsPacket::ARG_TYPE_RAWTEXT, 0, <span class="keyword">true</span>)]</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>                ]</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>            );</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>            $commandData[$command-&gt;getLabel()] = $data;</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>        }</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span> </div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>        $this-&gt;sendDataPacket(AvailableCommandsPacket::create($commandData, [], [], []));</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    }</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span> </div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>    <span class="keyword">public</span> <span class="keyword">function</span> onChatMessage(Translatable|<span class="keywordtype">string</span> $message) : void{</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>        if($message instanceof Translatable){</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>            $language = $this-&gt;player-&gt;getLanguage();</div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>            <span class="keywordflow">if</span>(!$this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;isLanguageForced()){</div>
-<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>                <span class="comment">//we can&#39;t send nested translations to the client, so make sure they are always pre-translated by the server</span></div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>                $parameters = array_map(fn(<span class="keywordtype">string</span>|Translatable $p) =&gt; $p instanceof Translatable ? $language-&gt;translate($p) : $p, $message-&gt;getParameters());</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>                $this-&gt;sendDataPacket(TextPacket::translation($language-&gt;translateString($message-&gt;getText(), $parameters, <span class="stringliteral">&quot;pocketmine.&quot;</span>), $parameters));</div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>                $this-&gt;sendDataPacket(TextPacket::raw($language-&gt;translate($message)));</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>            }</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>            $this-&gt;sendDataPacket(TextPacket::raw($message));</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>        }</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>    }</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span> </div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66"> 1023</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66">onJukeboxPopup</a>(<span class="keywordtype">string</span> $key, array $parameters) : void{</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html">TextPacket</a>::jukeboxPopup($key, $parameters));</div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    }</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span> </div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPopup(<span class="keywordtype">string</span> $message) : void{</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html">TextPacket</a>::popup($message));</div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>    }</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span> </div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>    <span class="keyword">public</span> <span class="keyword">function</span> onTip(<span class="keywordtype">string</span> $message) : void{</div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>        $this-&gt;sendDataPacket(TextPacket::tip($message));</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    }</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span> </div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>    <span class="keyword">public</span> <span class="keyword">function</span> onFormSent(<span class="keywordtype">int</span> $id, Form $form) : bool{</div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>        return $this-&gt;sendDataPacket(ModalFormRequestPacket::create($id, json_encode($form, JSON_THROW_ON_ERROR)));</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    }</div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span> </div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c"> 1044</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c">startUsingChunk</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, \Closure $onCompletion) : void{</div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>        <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::validateCallableSignature(function() : void{}, $onCompletion);</div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span> </div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>        $world = $this-&gt;player-&gt;getLocation()-&gt;getWorld();</div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        ChunkCache::getInstance($world, $this-&gt;compressor)-&gt;request($chunkX, $chunkZ)-&gt;onResolve(</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span> </div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>            <span class="comment">//this callback may be called synchronously or asynchronously, depending on whether the promise is resolved yet</span></div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>            <span class="keyword">function</span>(<a class="code hl_class" href="../../d4/d17/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise.html">CompressBatchPromise</a> $promise) use ($world, $onCompletion, $chunkX, $chunkZ) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>                <span class="keywordflow">if</span>(!$this-&gt;isConnected()){</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                }</div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>                $currentWorld = $this-&gt;player-&gt;getLocation()-&gt;getWorld();</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                <span class="keywordflow">if</span>($world !== $currentWorld || ($status = $this-&gt;player-&gt;getUsedChunkStatus($chunkX, $chunkZ)) === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Tried to send no-longer-active chunk $chunkX $chunkZ in world &quot;</span> . $world-&gt;getFolderName());</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>                    return;</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>                }</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>                <span class="keywordflow">if</span>(!$status-&gt;equals(UsedChunkStatus::REQUESTED_SENDING())){</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>                    <span class="comment">//TODO: make this an error</span></div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                    <span class="comment">//this could be triggered due to the shitty way that chunk resends are handled</span></div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>                    <span class="comment">//right now - not because of the spammy re-requesting, but because the chunk status reverts</span></div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>                    <span class="comment">//to NEEDED if they want to be resent.</span></div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>                    return;</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>                }</div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>                $world-&gt;timings-&gt;syncChunkSend-&gt;startTiming();</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>                <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>                    $this-&gt;queueCompressed($promise);</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>                    $onCompletion();</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                }<span class="keywordflow">finally</span>{</div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>                    $world-&gt;timings-&gt;syncChunkSend-&gt;stopTiming();</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>                }</div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>            }</div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>        );</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>    }</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span> </div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>    <span class="keyword">public</span> <span class="keyword">function</span> stopUsingChunk(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : void{</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span> </div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    }</div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span> </div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    public function onEnterWorld() : void{</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>        if($this-&gt;player !== null){</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>            $world = $this-&gt;player-&gt;getWorld();</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>            $this-&gt;syncWorldTime($world-&gt;getTime());</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>            $this-&gt;syncWorldDifficulty($world-&gt;getDifficulty());</div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>            $this-&gt;syncWorldSpawnPoint($world-&gt;getSpawnLocation());</div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>            <span class="comment">//TODO: weather needs to be synced here (when implemented)</span></div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>        }</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    }</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span> </div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncWorldTime(<span class="keywordtype">int</span> $worldTime) : void{</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>        $this-&gt;sendDataPacket(SetTimePacket::create($worldTime));</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>    }</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span> </div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncWorldDifficulty(<span class="keywordtype">int</span> $worldDifficulty) : void{</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>        $this-&gt;sendDataPacket(SetDifficultyPacket::create($worldDifficulty));</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>    }</div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span> </div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInvManager() : ?InventoryManager{</div>
-<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>        return $this-&gt;invManager;</div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>    }</div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span> </div>
-<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425"> 1107</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425">onMobMainHandItemChange</a>(<a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $mob) : void{</div>
-<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>        <span class="comment">//TODO: we could send zero for slot here because remote players don&#39;t need to know which slot was selected</span></div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>        $inv = $mob-&gt;getInventory();</div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>        $this-&gt;sendDataPacket(MobEquipmentPacket::create($mob-&gt;getId(), ItemStackWrapper::legacy(TypeConverter::getInstance()-&gt;coreItemStackToNet($inv-&gt;getItemInHand())), $inv-&gt;getHeldItemIndex(), $inv-&gt;getHeldItemIndex(), ContainerIds::INVENTORY));</div>
-<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>    }</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    <span class="keyword">public</span> <span class="keyword">function</span> onMobOffHandItemChange(<a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $mob) : void{</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>        $inv = $mob-&gt;getOffHandInventory();</div>
-<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>        $this-&gt;sendDataPacket(MobEquipmentPacket::create($mob-&gt;getId(), ItemStackWrapper::legacy(TypeConverter::getInstance()-&gt;coreItemStackToNet($inv-&gt;getItem(0))), 0, 0, ContainerIds::OFFHAND));</div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    }</div>
-<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span> </div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <span class="keyword">public</span> <span class="keyword">function</span> onMobArmorChange(Living $mob) : void{</div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>        $inv = $mob-&gt;getArmorInventory();</div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>        $converter = TypeConverter::getInstance();</div>
-<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>        $this-&gt;sendDataPacket(MobArmorEquipmentPacket::create(</div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>            $mob-&gt;getId(),</div>
-<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getHelmet())),</div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getChestplate())),</div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getLeggings())),</div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getBoots()))</div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>        ));</div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>    }</div>
-<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span> </div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPlayerPickUpItem(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $collector, Entity $pickedUp) : void{</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>        $this-&gt;sendDataPacket(TakeItemActorPacket::create($collector-&gt;getId(), $pickedUp-&gt;getId()));</div>
-<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    }</div>
-<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span> </div>
-<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23"> 1137</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23">syncPlayerList</a>(array $players) : void{</div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../d2/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_list_packet.html">PlayerListPacket</a>::add(array_map(function(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : <a class="code hl_class" href="../../dd/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_list_entry.html">PlayerListEntry</a>{</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>            return <a class="code hl_class" href="../../dd/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_list_entry.html">PlayerListEntry</a>::createAdditionEntry($player-&gt;getUniqueId(), $player-&gt;getId(), $player-&gt;getDisplayName(), <a class="code hl_class" href="../../d4/d6d/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_skin_adapter_singleton.html">SkinAdapterSingleton</a>::get()-&gt;toSkinData($player-&gt;getSkin()), $player-&gt;getXuid());</div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>        }, $players)));</div>
-<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>    }</div>
-<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span> </div>
-<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPlayerAdded(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $p) : void{</div>
-<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>        $this-&gt;sendDataPacket(PlayerListPacket::add([PlayerListEntry::createAdditionEntry($p-&gt;getUniqueId(), $p-&gt;getId(), $p-&gt;getDisplayName(), SkinAdapterSingleton::get()-&gt;toSkinData($p-&gt;getSkin()), $p-&gt;getXuid())]));</div>
-<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>    }</div>
-<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span> </div>
-<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPlayerRemoved(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $p) : void{</div>
-<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>        if($p !== $this-&gt;player){</div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>            $this-&gt;sendDataPacket(PlayerListPacket::remove([PlayerListEntry::createRemovalEntry($p-&gt;<a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a347ad45f10f29552bca3ecec79408a9f">getUniqueId</a>())]));</div>
-<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>        }</div>
-<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>    }</div>
-<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span> </div>
-<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    <span class="keyword">public</span> <span class="keyword">function</span> onTitle(<span class="keywordtype">string</span> $title) : void{</div>
-<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>        $this-&gt;sendDataPacket(SetTitlePacket::title($title));</div>
-<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>    }</div>
-<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span> </div>
-<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>    <span class="keyword">public</span> <span class="keyword">function</span> onSubTitle(<span class="keywordtype">string</span> $subtitle) : void{</div>
-<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>        $this-&gt;sendDataPacket(SetTitlePacket::subtitle($subtitle));</div>
-<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    }</div>
-<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span> </div>
-<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>    <span class="keyword">public</span> <span class="keyword">function</span> onActionBar(<span class="keywordtype">string</span> $actionBar) : void{</div>
-<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>        $this-&gt;sendDataPacket(SetTitlePacket::actionBarMessage($actionBar));</div>
-<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>    }</div>
-<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span> </div>
-<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>    <span class="keyword">public</span> <span class="keyword">function</span> onClearTitle() : void{</div>
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>        $this-&gt;sendDataPacket(SetTitlePacket::clearTitle());</div>
-<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>    }</div>
-<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span> </div>
-<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>    <span class="keyword">public</span> <span class="keyword">function</span> onResetTitleOptions() : void{</div>
-<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>        $this-&gt;sendDataPacket(SetTitlePacket::resetTitleOptions());</div>
-<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>    }</div>
-<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span> </div>
-<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    <span class="keyword">public</span> <span class="keyword">function</span> onTitleDuration(<span class="keywordtype">int</span> $fadeIn, <span class="keywordtype">int</span> $stay, <span class="keywordtype">int</span> $fadeOut) : void{</div>
-<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>        $this-&gt;sendDataPacket(SetTitlePacket::setAnimationTimes($fadeIn, $stay, $fadeOut));</div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    }</div>
-<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span> </div>
-<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEmote(Human $from, <span class="keywordtype">string</span> $emoteId) : void{</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>        $this-&gt;sendDataPacket(EmotePacket::create($from-&gt;getId(), $emoteId, EmotePacket::FLAG_SERVER));</div>
-<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>    }</div>
-<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span> </div>
-<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>    <span class="keyword">public</span> <span class="keyword">function</span> onToastNotification(<span class="keywordtype">string</span> $title, <span class="keywordtype">string</span> $body) : void{</div>
-<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>        $this-&gt;sendDataPacket(ToastRequestPacket::create($title, $body));</div>
-<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>    }</div>
-<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span> </div>
-<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>    <span class="keyword">private</span> <span class="keyword">function</span> updatePacketBudget() : void{</div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        $nowNs = hrtime(true);</div>
-<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        $timeSinceLastUpdateNs = $nowNs - $this-&gt;lastPacketBudgetUpdateTimeNs;</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>        <span class="keywordflow">if</span>($timeSinceLastUpdateNs &gt; 50_000_000){</div>
-<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>            $ticksSinceLastUpdate = intdiv($timeSinceLastUpdateNs, 50_000_000);</div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>            <span class="comment">/*</span></div>
-<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span><span class="comment">             * If the server takes an abnormally long time to process a tick, add the budget for time difference to</span></div>
-<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span><span class="comment">             * compensate. This extra budget may be very large, but it will disappear the next time a normal update</span></div>
-<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span><span class="comment">             * occurs. This ensures that backlogs during a large lag spike don&#39;t cause everyone to get kicked.</span></div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span><span class="comment">             * As long as all the backlogged packets are processed before the next tick, everything should be OK for</span></div>
-<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span><span class="comment">             * clients behaving normally.</span></div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span><span class="comment">             */</span></div>
-<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>            $this-&gt;incomingPacketBatchBudget = min($this-&gt;incomingPacketBatchBudget, self::INCOMING_PACKET_BATCH_MAX_BUDGET) + (self::INCOMING_PACKET_BATCH_PER_TICK * 2 * $ticksSinceLastUpdate);</div>
-<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>            $this-&gt;lastPacketBudgetUpdateTimeNs = $nowNs;</div>
-<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>        }</div>
-<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>    }</div>
-<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span> </div>
-<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>    <span class="keyword">public</span> <span class="keyword">function</span> tick() : void{</div>
-<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>        if(!$this-&gt;isConnected()){</div>
-<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>            $this-&gt;dispose();</div>
-<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>        }</div>
-<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span> </div>
-<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>        <span class="keywordflow">if</span>($this-&gt;info === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>            <span class="keywordflow">if</span>(time() &gt;= $this-&gt;connectTime + 10){</div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>                $this-&gt;disconnect(<span class="stringliteral">&quot;Login timeout&quot;</span>);</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>            }</div>
-<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span> </div>
-<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>        }</div>
-<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span> </div>
-<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>        <span class="keywordflow">if</span>($this-&gt;player !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>            $this-&gt;player-&gt;doChunkRequests();</div>
-<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span> </div>
-<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>            $dirtyAttributes = $this-&gt;player-&gt;getAttributeMap()-&gt;needSend();</div>
-<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>            $this-&gt;syncAttributes($this-&gt;player, $dirtyAttributes);</div>
-<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>            <span class="keywordflow">foreach</span>($dirtyAttributes as $attribute){</div>
-<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>                <span class="comment">//TODO: we might need to send these to other players in the future</span></div>
-<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>                <span class="comment">//if that happens, this will need to become more complex than a flag on the attribute itself</span></div>
-<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>                $attribute-&gt;markSynchronized();</div>
-<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>            }</div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>        }</div>
-<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span> </div>
-<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>        $this-&gt;flushSendBuffer();</div>
-<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>    }</div>
-<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>}</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>                0,</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>                $aliasObj,</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>                [</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>                    [CommandParameter::standard(<span class="stringliteral">&quot;args&quot;</span>, AvailableCommandsPacket::ARG_TYPE_RAWTEXT, 0, <span class="keyword">true</span>)]</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>                ]</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>            );</div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span> </div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>            $commandData[$command-&gt;getLabel()] = $data;</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>        }</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>        $this-&gt;sendDataPacket(AvailableCommandsPacket::create($commandData, [], [], []));</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    }</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span> </div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    <span class="keyword">public</span> <span class="keyword">function</span> onChatMessage(Translatable|<span class="keywordtype">string</span> $message) : void{</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>        if($message instanceof Translatable){</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>            $language = $this-&gt;player-&gt;getLanguage();</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>            <span class="keywordflow">if</span>(!$this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;isLanguageForced()){</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>                <span class="comment">//we can&#39;t send nested translations to the client, so make sure they are always pre-translated by the server</span></div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>                $parameters = array_map(fn(<span class="keywordtype">string</span>|Translatable $p) =&gt; $p instanceof Translatable ? $language-&gt;translate($p) : $p, $message-&gt;getParameters());</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>                $this-&gt;sendDataPacket(TextPacket::translation($language-&gt;translateString($message-&gt;getText(), $parameters, <span class="stringliteral">&quot;pocketmine.&quot;</span>), $parameters));</div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>                $this-&gt;sendDataPacket(TextPacket::raw($language-&gt;translate($message)));</div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>            }</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>            $this-&gt;sendDataPacket(TextPacket::raw($message));</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        }</div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    }</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span> </div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66"> 1024</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66">onJukeboxPopup</a>(<span class="keywordtype">string</span> $key, array $parameters) : void{</div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html">TextPacket</a>::jukeboxPopup($key, $parameters));</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    }</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span> </div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPopup(<span class="keywordtype">string</span> $message) : void{</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html">TextPacket</a>::popup($message));</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    }</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span> </div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>    <span class="keyword">public</span> <span class="keyword">function</span> onTip(<span class="keywordtype">string</span> $message) : void{</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>        $this-&gt;sendDataPacket(TextPacket::tip($message));</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    }</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <span class="keyword">public</span> <span class="keyword">function</span> onFormSent(<span class="keywordtype">int</span> $id, Form $form) : bool{</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>        return $this-&gt;sendDataPacket(ModalFormRequestPacket::create($id, json_encode($form, JSON_THROW_ON_ERROR)));</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>    }</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span> </div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c"> 1045</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c">startUsingChunk</a>(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ, \Closure $onCompletion) : void{</div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>        <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::validateCallableSignature(function() : void{}, $onCompletion);</div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span> </div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        $world = $this-&gt;player-&gt;getLocation()-&gt;getWorld();</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        ChunkCache::getInstance($world, $this-&gt;compressor)-&gt;request($chunkX, $chunkZ)-&gt;onResolve(</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>            <span class="comment">//this callback may be called synchronously or asynchronously, depending on whether the promise is resolved yet</span></div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>            <span class="keyword">function</span>(<a class="code hl_class" href="../../d4/d17/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise.html">CompressBatchPromise</a> $promise) use ($world, $onCompletion, $chunkX, $chunkZ) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                <span class="keywordflow">if</span>(!$this-&gt;isConnected()){</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>                }</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                $currentWorld = $this-&gt;player-&gt;getLocation()-&gt;getWorld();</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>                <span class="keywordflow">if</span>($world !== $currentWorld || ($status = $this-&gt;player-&gt;getUsedChunkStatus($chunkX, $chunkZ)) === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Tried to send no-longer-active chunk $chunkX $chunkZ in world &quot;</span> . $world-&gt;getFolderName());</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>                    return;</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>                }</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>                <span class="keywordflow">if</span>(!$status-&gt;equals(UsedChunkStatus::REQUESTED_SENDING())){</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                    <span class="comment">//TODO: make this an error</span></div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>                    <span class="comment">//this could be triggered due to the shitty way that chunk resends are handled</span></div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>                    <span class="comment">//right now - not because of the spammy re-requesting, but because the chunk status reverts</span></div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>                    <span class="comment">//to NEEDED if they want to be resent.</span></div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>                    return;</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>                }</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>                $world-&gt;timings-&gt;syncChunkSend-&gt;startTiming();</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>                <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>                    $this-&gt;queueCompressed($promise);</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                    $onCompletion();</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>                }<span class="keywordflow">finally</span>{</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>                    $world-&gt;timings-&gt;syncChunkSend-&gt;stopTiming();</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>                }</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>            }</div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>        );</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>    }</div>
+<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span> </div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    <span class="keyword">public</span> <span class="keyword">function</span> stopUsingChunk(<span class="keywordtype">int</span> $chunkX, <span class="keywordtype">int</span> $chunkZ) : void{</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span> </div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    }</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span> </div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    public function onEnterWorld() : void{</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        if($this-&gt;player !== null){</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>            $world = $this-&gt;player-&gt;getWorld();</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>            $this-&gt;syncWorldTime($world-&gt;getTime());</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>            $this-&gt;syncWorldDifficulty($world-&gt;getDifficulty());</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>            $this-&gt;syncWorldSpawnPoint($world-&gt;getSpawnLocation());</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>            <span class="comment">//TODO: weather needs to be synced here (when implemented)</span></div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>        }</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    }</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span> </div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncWorldTime(<span class="keywordtype">int</span> $worldTime) : void{</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>        $this-&gt;sendDataPacket(SetTimePacket::create($worldTime));</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>    }</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span> </div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncWorldDifficulty(<span class="keywordtype">int</span> $worldDifficulty) : void{</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>        $this-&gt;sendDataPacket(SetDifficultyPacket::create($worldDifficulty));</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    }</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span> </div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInvManager() : ?InventoryManager{</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>        return $this-&gt;invManager;</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>    }</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span> </div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425"> 1108</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425">onMobMainHandItemChange</a>(<a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $mob) : void{</div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>        <span class="comment">//TODO: we could send zero for slot here because remote players don&#39;t need to know which slot was selected</span></div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>        $inv = $mob-&gt;getInventory();</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>        $this-&gt;sendDataPacket(MobEquipmentPacket::create($mob-&gt;getId(), ItemStackWrapper::legacy(TypeConverter::getInstance()-&gt;coreItemStackToNet($inv-&gt;getItemInHand())), $inv-&gt;getHeldItemIndex(), $inv-&gt;getHeldItemIndex(), ContainerIds::INVENTORY));</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    }</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span> </div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    <span class="keyword">public</span> <span class="keyword">function</span> onMobOffHandItemChange(<a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">Human</a> $mob) : void{</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>        $inv = $mob-&gt;getOffHandInventory();</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>        $this-&gt;sendDataPacket(MobEquipmentPacket::create($mob-&gt;getId(), ItemStackWrapper::legacy(TypeConverter::getInstance()-&gt;coreItemStackToNet($inv-&gt;getItem(0))), 0, 0, ContainerIds::OFFHAND));</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    }</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span> </div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    <span class="keyword">public</span> <span class="keyword">function</span> onMobArmorChange(Living $mob) : void{</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>        $inv = $mob-&gt;getArmorInventory();</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>        $converter = TypeConverter::getInstance();</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>        $this-&gt;sendDataPacket(MobArmorEquipmentPacket::create(</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>            $mob-&gt;getId(),</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getHelmet())),</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getChestplate())),</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getLeggings())),</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>            ItemStackWrapper::legacy($converter-&gt;coreItemStackToNet($inv-&gt;getBoots()))</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>        ));</div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>    }</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span> </div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPlayerPickUpItem(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $collector, Entity $pickedUp) : void{</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>        $this-&gt;sendDataPacket(TakeItemActorPacket::create($collector-&gt;getId(), $pickedUp-&gt;getId()));</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>    }</div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span> </div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23"> 1138</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23">syncPlayerList</a>(array $players) : void{</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>        $this-&gt;sendDataPacket(<a class="code hl_class" href="../../d2/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_list_packet.html">PlayerListPacket</a>::add(array_map(function(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : <a class="code hl_class" href="../../dd/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_list_entry.html">PlayerListEntry</a>{</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>            return <a class="code hl_class" href="../../dd/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_list_entry.html">PlayerListEntry</a>::createAdditionEntry($player-&gt;getUniqueId(), $player-&gt;getId(), $player-&gt;getDisplayName(), <a class="code hl_class" href="../../d4/d6d/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_skin_adapter_singleton.html">SkinAdapterSingleton</a>::get()-&gt;toSkinData($player-&gt;getSkin()), $player-&gt;getXuid());</div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>        }, $players)));</div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>    }</div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span> </div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPlayerAdded(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $p) : void{</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>        $this-&gt;sendDataPacket(PlayerListPacket::add([PlayerListEntry::createAdditionEntry($p-&gt;getUniqueId(), $p-&gt;getId(), $p-&gt;getDisplayName(), SkinAdapterSingleton::get()-&gt;toSkinData($p-&gt;getSkin()), $p-&gt;getXuid())]));</div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>    }</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span> </div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>    <span class="keyword">public</span> <span class="keyword">function</span> onPlayerRemoved(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $p) : void{</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>        if($p !== $this-&gt;player){</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>            $this-&gt;sendDataPacket(PlayerListPacket::remove([PlayerListEntry::createRemovalEntry($p-&gt;<a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a347ad45f10f29552bca3ecec79408a9f">getUniqueId</a>())]));</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>        }</div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    }</div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span> </div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>    <span class="keyword">public</span> <span class="keyword">function</span> onTitle(<span class="keywordtype">string</span> $title) : void{</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>        $this-&gt;sendDataPacket(SetTitlePacket::title($title));</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    }</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span> </div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    <span class="keyword">public</span> <span class="keyword">function</span> onSubTitle(<span class="keywordtype">string</span> $subtitle) : void{</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>        $this-&gt;sendDataPacket(SetTitlePacket::subtitle($subtitle));</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>    }</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span> </div>
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>    <span class="keyword">public</span> <span class="keyword">function</span> onActionBar(<span class="keywordtype">string</span> $actionBar) : void{</div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>        $this-&gt;sendDataPacket(SetTitlePacket::actionBarMessage($actionBar));</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>    }</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span> </div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>    <span class="keyword">public</span> <span class="keyword">function</span> onClearTitle() : void{</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>        $this-&gt;sendDataPacket(SetTitlePacket::clearTitle());</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>    }</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span> </div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    <span class="keyword">public</span> <span class="keyword">function</span> onResetTitleOptions() : void{</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>        $this-&gt;sendDataPacket(SetTitlePacket::resetTitleOptions());</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>    }</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span> </div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    <span class="keyword">public</span> <span class="keyword">function</span> onTitleDuration(<span class="keywordtype">int</span> $fadeIn, <span class="keywordtype">int</span> $stay, <span class="keywordtype">int</span> $fadeOut) : void{</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>        $this-&gt;sendDataPacket(SetTitlePacket::setAnimationTimes($fadeIn, $stay, $fadeOut));</div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    }</div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span> </div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>    <span class="keyword">public</span> <span class="keyword">function</span> onEmote(Human $from, <span class="keywordtype">string</span> $emoteId) : void{</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>        $this-&gt;sendDataPacket(EmotePacket::create($from-&gt;getId(), $emoteId, EmotePacket::FLAG_SERVER));</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>    }</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span> </div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>    <span class="keyword">public</span> <span class="keyword">function</span> onToastNotification(<span class="keywordtype">string</span> $title, <span class="keywordtype">string</span> $body) : void{</div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        $this-&gt;sendDataPacket(ToastRequestPacket::create($title, $body));</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    }</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span> </div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>    <span class="keyword">private</span> <span class="keyword">function</span> updatePacketBudget() : void{</div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        $nowNs = hrtime(true);</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>        $timeSinceLastUpdateNs = $nowNs - $this-&gt;lastPacketBudgetUpdateTimeNs;</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>        <span class="keywordflow">if</span>($timeSinceLastUpdateNs &gt; 50_000_000){</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>            $ticksSinceLastUpdate = intdiv($timeSinceLastUpdateNs, 50_000_000);</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>            <span class="comment">/*</span></div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span><span class="comment">             * If the server takes an abnormally long time to process a tick, add the budget for time difference to</span></div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span><span class="comment">             * compensate. This extra budget may be very large, but it will disappear the next time a normal update</span></div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span><span class="comment">             * occurs. This ensures that backlogs during a large lag spike don&#39;t cause everyone to get kicked.</span></div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span><span class="comment">             * As long as all the backlogged packets are processed before the next tick, everything should be OK for</span></div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span><span class="comment">             * clients behaving normally.</span></div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span><span class="comment">             */</span></div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>            $this-&gt;incomingPacketBatchBudget = min($this-&gt;incomingPacketBatchBudget, self::INCOMING_PACKET_BATCH_MAX_BUDGET) + (self::INCOMING_PACKET_BATCH_PER_TICK * 2 * $ticksSinceLastUpdate);</div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>            $this-&gt;lastPacketBudgetUpdateTimeNs = $nowNs;</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>        }</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>    }</div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span> </div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>    <span class="keyword">public</span> <span class="keyword">function</span> tick() : void{</div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>        if(!$this-&gt;isConnected()){</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>            $this-&gt;dispose();</div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>        }</div>
+<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span> </div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>        <span class="keywordflow">if</span>($this-&gt;info === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>            <span class="keywordflow">if</span>(time() &gt;= $this-&gt;connectTime + 10){</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>                $this-&gt;disconnect(<span class="stringliteral">&quot;Login timeout&quot;</span>);</div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>            }</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span> </div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>        }</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span> </div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>        <span class="keywordflow">if</span>($this-&gt;player !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>            $this-&gt;player-&gt;doChunkRequests();</div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span> </div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>            $dirtyAttributes = $this-&gt;player-&gt;getAttributeMap()-&gt;needSend();</div>
+<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>            $this-&gt;syncAttributes($this-&gt;player, $dirtyAttributes);</div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>            <span class="keywordflow">foreach</span>($dirtyAttributes as $attribute){</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>                <span class="comment">//TODO: we might need to send these to other players in the future</span></div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>                <span class="comment">//if that happens, this will need to become more complex than a flag on the attribute itself</span></div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>                $attribute-&gt;markSynchronized();</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>            }</div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>        }</div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span> </div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>        $this-&gt;flushSendBuffer();</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>    }</div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00172">src/Server.php:172</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_effect_id_map_html"><div class="ttname"><a href="../../dc/d70/classpocketmine_1_1data_1_1bedrock_1_1_effect_id_map.html">pocketmine\data\bedrock\EffectIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc8/_effect_id_map_8php_source.html#l00032">EffectIdMap.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_attribute_html"><div class="ttname"><a href="../../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html">pocketmine\entity\Attribute</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dba/src_2entity_2_attribute_8php_source.html#l00029">src/entity/Attribute.php:29</a></div></div>
@@ -1267,17 +1268,17 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00149">NetworkSession.php:149</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a066a7096c6a6db10a23f5183f520b210"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a066a7096c6a6db10a23f5183f520b210">pocketmine\network\mcpe\NetworkSession\onPlayerDestroyed</a></div><div class="ttdeci">onPlayerDestroyed(string $reason)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00668">NetworkSession.php:668</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a0a717e1e03da3adad4150d4bb1b419ba"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0a717e1e03da3adad4150d4bb1b419ba">pocketmine\network\mcpe\NetworkSession\handleDataPacket</a></div><div class="ttdeci">handleDataPacket(Packet $packet, string $buffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00429">NetworkSession.php:429</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a0f885bf57682e4e9f7a4bc2ee958cec1"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1">pocketmine\network\mcpe\NetworkSession\syncAttributes</a></div><div class="ttdeci">syncAttributes(Living $entity, array $attributes)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00937">NetworkSession.php:937</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a0f885bf57682e4e9f7a4bc2ee958cec1"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a0f885bf57682e4e9f7a4bc2ee958cec1">pocketmine\network\mcpe\NetworkSession\syncAttributes</a></div><div class="ttdeci">syncAttributes(Living $entity, array $attributes)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00938">NetworkSession.php:938</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a194744273a892ecd5aa10a1738761d11"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a194744273a892ecd5aa10a1738761d11">pocketmine\network\mcpe\NetworkSession\onClientDisconnect</a></div><div class="ttdeci">onClientDisconnect(string $reason)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00678">NetworkSession.php:678</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a577ff99b430239c21bf431c021ffc504"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a577ff99b430239c21bf431c021ffc504">pocketmine\network\mcpe\NetworkSession\transfer</a></div><div class="ttdeci">transfer(string $ip, int $port, string $reason=&quot;transfer&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00656">NetworkSession.php:656</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a5f3fa34cf75fd8ccb6155230e56efde4"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4">pocketmine\network\mcpe\NetworkSession\syncActorData</a></div><div class="ttdeci">syncActorData(Entity $entity, array $properties)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00949">NetworkSession.php:949</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a5fb6fdf83a1131b9d51f97c400a3c425"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425">pocketmine\network\mcpe\NetworkSession\onMobMainHandItemChange</a></div><div class="ttdeci">onMobMainHandItemChange(Human $mob)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01107">NetworkSession.php:1107</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a804917dc4576498edea5c314421adb23"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23">pocketmine\network\mcpe\NetworkSession\syncPlayerList</a></div><div class="ttdeci">syncPlayerList(array $players)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01137">NetworkSession.php:1137</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a5f3fa34cf75fd8ccb6155230e56efde4"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5f3fa34cf75fd8ccb6155230e56efde4">pocketmine\network\mcpe\NetworkSession\syncActorData</a></div><div class="ttdeci">syncActorData(Entity $entity, array $properties)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00950">NetworkSession.php:950</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a5fb6fdf83a1131b9d51f97c400a3c425"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a5fb6fdf83a1131b9d51f97c400a3c425">pocketmine\network\mcpe\NetworkSession\onMobMainHandItemChange</a></div><div class="ttdeci">onMobMainHandItemChange(Human $mob)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01108">NetworkSession.php:1108</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a804917dc4576498edea5c314421adb23"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23">pocketmine\network\mcpe\NetworkSession\syncPlayerList</a></div><div class="ttdeci">syncPlayerList(array $players)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01138">NetworkSession.php:1138</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a83932edce28e5dd2a1890c20be2dd55c"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a83932edce28e5dd2a1890c20be2dd55c">pocketmine\network\mcpe\NetworkSession\getPing</a></div><div class="ttdeci">getPing()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00330">NetworkSession.php:330</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a87fa43d86d899ff78917b17ee697fe66"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66">pocketmine\network\mcpe\NetworkSession\onJukeboxPopup</a></div><div class="ttdeci">onJukeboxPopup(string $key, array $parameters)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01023">NetworkSession.php:1023</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_a87fa43d86d899ff78917b17ee697fe66"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87fa43d86d899ff78917b17ee697fe66">pocketmine\network\mcpe\NetworkSession\onJukeboxPopup</a></div><div class="ttdeci">onJukeboxPopup(string $key, array $parameters)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01024">NetworkSession.php:1024</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_aa2c7a242b97570ec0e3a327e19d85384"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#aa2c7a242b97570ec0e3a327e19d85384">pocketmine\network\mcpe\NetworkSession\disconnect</a></div><div class="ttdeci">disconnect(string $reason, bool $notify=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00642">NetworkSession.php:642</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_ab800167a0be1a8abce0b9d3e15c8e8ad"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#ab800167a0be1a8abce0b9d3e15c8e8ad">pocketmine\network\mcpe\NetworkSession\handleEncoded</a></div><div class="ttdeci">handleEncoded(string $payload)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00357">NetworkSession.php:357</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_af527369413104478aa6e8df1a58cb67c"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c">pocketmine\network\mcpe\NetworkSession\startUsingChunk</a></div><div class="ttdeci">startUsingChunk(int $chunkX, int $chunkZ, \Closure $onCompletion)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01044">NetworkSession.php:1044</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html_af527369413104478aa6e8df1a58cb67c"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c">pocketmine\network\mcpe\NetworkSession\startUsingChunk</a></div><div class="ttdeci">startUsingChunk(int $chunkX, int $chunkZ, \Closure $onCompletion)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l01045">NetworkSession.php:1045</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache_html"><div class="ttname"><a href="../../d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache.html">pocketmine\network\mcpe\cache\ChunkCache</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd9/_chunk_cache_8php_source.html#l00040">ChunkCache.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise_html"><div class="ttname"><a href="../../d4/d17/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise.html">pocketmine\network\mcpe\compression\CompressBatchPromise</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/_compress_batch_promise_8php_source.html#l00029">CompressBatchPromise.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1compression_1_1_decompression_exception_html"><div class="ttname"><a href="../../d3/d18/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_decompression_exception.html">pocketmine\network\mcpe\compression\DecompressionException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d34/_decompression_exception_8php_source.html#l00026">DecompressionException.php:26</a></div></div>
@@ -1290,7 +1291,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_death_packet_handler_html"><div class="ttname"><a href="../../d9/dca/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_death_packet_handler.html">pocketmine\network\mcpe\handler\DeathPacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dab/_death_packet_handler_8php_source.html#l00037">DeathPacketHandler.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_handshake_packet_handler_html"><div class="ttname"><a href="../../d5/d2e/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_handshake_packet_handler.html">pocketmine\network\mcpe\handler\HandshakePacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d18/_handshake_packet_handler_8php_source.html#l00031">HandshakePacketHandler.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler_html"><div class="ttname"><a href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html">pocketmine\network\mcpe\handler\InGamePacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00133">InGamePacketHandler.php:133</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler_html"><div class="ttname"><a href="../../d7/d77/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler.html">pocketmine\network\mcpe\handler\LoginPacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d07/_login_packet_handler_8php_source.html#l00053">LoginPacketHandler.php:53</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler_html"><div class="ttname"><a href="../../d7/d77/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler.html">pocketmine\network\mcpe\handler\LoginPacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d07/_login_packet_handler_8php_source.html#l00050">LoginPacketHandler.php:50</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler_html"><div class="ttname"><a href="../../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html">pocketmine\network\mcpe\handler\PacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8a/_packet_handler_8php_source.html#l00035">PacketHandler.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler_html"><div class="ttname"><a href="../../d0/d3c/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler.html">pocketmine\network\mcpe\handler\PreSpawnPacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00054">PreSpawnPacketHandler.php:54</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler_html"><div class="ttname"><a href="../../d4/d06/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler.html">pocketmine\network\mcpe\handler\ResourcePacksPacketHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00052">ResourcePacksPacketHandler.php:52</a></div></div>
@@ -1327,7 +1328,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_network_session_8php_source.ht
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet_html"><div class="ttname"><a href="../../d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet.html">pocketmine\network\mcpe\protocol\UpdateAttributesPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da4/_update_attributes_packet_8php_source.html#l00021">UpdateAttributesPacket.php:21</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch_html"><div class="ttname"><a href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html">pocketmine\network\mcpe\protocol\serializer\PacketBatch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d74/_packet_batch_8php_source.html#l00024">PacketBatch.php:24</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context_html"><div class="ttname"><a href="../../da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializerContext</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1f/_packet_serializer_context_8php_source.html#l00021">PacketSerializerContext.php:21</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00066">bedrock-protocol/src/serializer/PacketSerializer.php:66</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00067">bedrock-protocol/src/serializer/PacketSerializer.php:67</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_data_html"><div class="ttname"><a href="../../d9/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_data.html">pocketmine\network\mcpe\protocol\types\AbilitiesData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da6/_abilities_data_8php_source.html#l00020">AbilitiesData.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer_html"><div class="ttname"><a href="../../d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html">pocketmine\network\mcpe\protocol\types\AbilitiesLayer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc0/_abilities_layer_8php_source.html#l00020">AbilitiesLayer.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position_html"><div class="ttname"><a href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">pocketmine\network\mcpe\protocol\types\BlockPosition</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/_block_position_8php_source.html#l00019">BlockPosition.php:19</a></div></div>

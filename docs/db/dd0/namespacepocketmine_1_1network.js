@@ -148,6 +148,7 @@ var namespacepocketmine_1_1network =
             [ "JwtHeader", "db/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_header.html", "db/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_header" ]
           ] ],
           [ "recipe", null, [
+            [ "ComplexAliasItemDescriptor", "db/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_complex_alias_item_descriptor.html", null ],
             [ "CraftingRecipeBlockName", "de/dec/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_crafting_recipe_block_name.html", null ],
             [ "FurnaceRecipe", "db/d68/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_furnace_recipe.html", null ],
             [ "FurnaceRecipeBlockName", "d6/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_furnace_recipe_block_name.html", null ],
@@ -276,7 +277,9 @@ var namespacepocketmine_1_1network =
         [ "BlockPickRequestPacket", "df/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_pick_request_packet.html", "df/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_pick_request_packet" ],
         [ "BookEditPacket", "d1/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_book_edit_packet.html", "d1/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_book_edit_packet" ],
         [ "BossEventPacket", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet.html", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet" ],
+        [ "CameraInstructionPacket", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet" ],
         [ "CameraPacket", "de/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_packet.html", "de/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_packet" ],
+        [ "CameraPresetsPacket", "df/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_presets_packet.html", "df/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_presets_packet" ],
         [ "CameraShakePacket", "d4/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_shake_packet.html", "d4/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_shake_packet" ],
         [ "ChangeDimensionPacket", "da/dbe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_dimension_packet.html", "da/dbe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_dimension_packet" ],
         [ "ChangeMobPropertyPacket", "df/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_mob_property_packet.html", "df/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_mob_property_packet" ],
@@ -442,6 +445,7 @@ var namespacepocketmine_1_1network =
         [ "TickSyncPacket", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet.html", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet" ],
         [ "ToastRequestPacket", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet.html", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet" ],
         [ "TransferPacket", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet" ],
+        [ "UnlockedRecipesPacket", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet" ],
         [ "UpdateAbilitiesPacket", "de/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_abilities_packet.html", "de/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_abilities_packet" ],
         [ "UpdateAdventureSettingsPacket", "d9/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_adventure_settings_packet.html", "d9/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_adventure_settings_packet" ],
         [ "UpdateAttributesPacket", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet.html", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet" ],
