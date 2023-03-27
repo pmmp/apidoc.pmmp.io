@@ -95,7 +95,7 @@ var searchData=
   ['compass_92',['Compass',['../d1/d18/classpocketmine_1_1item_1_1_compass.html',1,'pocketmine::item']]],
   ['completedusingitempacket_93',['CompletedUsingItemPacket',['../db/d15/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_completed_using_item_packet.html',1,'pocketmine::network::mcpe::protocol']]],
   ['complexaliasitemdescriptor_94',['ComplexAliasItemDescriptor',['../db/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_complex_alias_item_descriptor.html',1,'pocketmine::network::mcpe::protocol::types::recipe']]],
-  ['complexwindowmapentry_95',['ComplexWindowMapEntry',['../db/d59/classpocketmine_1_1network_1_1mcpe_1_1_complex_window_map_entry.html',1,'pocketmine::network::mcpe']]],
+  ['complexinventorymapentry_95',['ComplexInventoryMapEntry',['../da/d18/classpocketmine_1_1network_1_1mcpe_1_1_complex_inventory_map_entry.html',1,'pocketmine::network::mcpe']]],
   ['compoundtag_96',['CompoundTag',['../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html',1,'pocketmine::nbt::tag']]],
   ['compoundtagmetadataproperty_97',['CompoundTagMetadataProperty',['../df/d94/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_compound_tag_metadata_property.html',1,'pocketmine::network::mcpe::protocol::types::entity']]],
   ['compoundtypeids_98',['CompoundTypeIds',['../d1/d35/classpocketmine_1_1data_1_1bedrock_1_1_compound_type_ids.html',1,'pocketmine::data::bedrock']]],

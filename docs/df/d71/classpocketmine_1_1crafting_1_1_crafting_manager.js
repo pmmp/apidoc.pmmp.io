@@ -1,5 +1,6 @@
 var classpocketmine_1_1crafting_1_1_crafting_manager =
 [
+    [ "getCraftingRecipeIndex", "df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a", null ],
     [ "getPotionContainerChangeRecipes", "df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616", null ],
     [ "getPotionTypeRecipes", "df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a", null ],
     [ "getRecipeRegisteredCallbacks", "df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831", null ],
