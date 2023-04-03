@@ -1,5 +1,7 @@
 var NAVTREEINDEX204 =
 {
+"df/dc5/classpocketmine_1_1block_1_1_redstone.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,135,48],
+"df/dc5/classpocketmine_1_1block_1_1_redstone.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,1,0,135,17],
 "df/dc5/classpocketmine_1_1block_1_1_redstone.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,135,17],
 "df/dc5/classpocketmine_1_1block_1_1_redstone.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,1,0,135,45],
 "df/dc5/classpocketmine_1_1block_1_1_redstone.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,135,45],
@@ -247,7 +249,5 @@ var NAVTREEINDEX204 =
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae36a7e5064724e460fabfe810f2def20":[2,0,1,7,2,0,8],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae3d1faacc118b9fd25a401a995fcb1f4":[3,0,1,7,2,0,42],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae3d1faacc118b9fd25a401a995fcb1f4":[2,0,1,7,2,0,42],
-"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae6385e7ea9eab6233e17ea4fe680108b":[2,0,1,7,2,0,40],
-"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae6385e7ea9eab6233e17ea4fe680108b":[3,0,1,7,2,0,40],
-"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae8a891986a06e3621c4486538b0e5a60":[3,0,1,7,2,0,24]
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae6385e7ea9eab6233e17ea4fe680108b":[2,0,1,7,2,0,40]
 };

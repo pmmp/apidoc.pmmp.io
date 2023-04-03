@@ -1,5 +1,7 @@
 var NAVTREEINDEX184 =
 {
+"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a295a782543c002623d01ec47a6e93329":[3,0,1,4,1,25],
+"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a43e646d154a8134eb1e7294d158d576d":[3,0,1,4,1,9],
 "de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a43e646d154a8134eb1e7294d158d576d":[2,0,1,4,1,9],
 "de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a46ca31398256b2a5fecddd025587579b":[2,0,1,4,1,2],
 "de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a46ca31398256b2a5fecddd025587579b":[3,0,1,4,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX184 =
 "de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,4,5],
 "de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[2,0,1,7,1,4,5],
 "de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[3,0,1,7,1,4,3],
-"de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[2,0,1,7,1,4,3],
-"de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a7b2e804f2bd6d6f11acae88699ccec85":[3,0,1,7,1,4,4],
-"de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a7b2e804f2bd6d6f11acae88699ccec85":[2,0,1,7,1,4,4]
+"de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[2,0,1,7,1,4,3]
 };

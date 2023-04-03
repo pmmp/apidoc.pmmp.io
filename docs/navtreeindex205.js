@@ -1,5 +1,7 @@
 var NAVTREEINDEX205 =
 {
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae6385e7ea9eab6233e17ea4fe680108b":[3,0,1,7,2,0,40],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae8a891986a06e3621c4486538b0e5a60":[3,0,1,7,2,0,24],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae8a891986a06e3621c4486538b0e5a60":[2,0,1,7,2,0,24],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae96e5d919208d6d9d4ccc75136167684":[3,0,1,7,2,0,13],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ae96e5d919208d6d9d4ccc75136167684":[2,0,1,7,2,0,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX205 =
 "df/dff/item_2_coal_8php_source.html":[4,0,0,10,24],
 "dir_0003aa60d4a21aee354b5b2fa826bf4b.html":[4,0,0,12,0,5],
 "dir_0072c29217f03547b57a41ead6d94585.html":[4,0,0,9,0],
-"dir_04034b0bd6d53aa53682255ddd0bdeff.html":[4,0,0,9,0,0],
-"dir_046b3d45760c1b746efcebdccdb0c4e6.html":[4,0,0,0,1],
-"dir_08b322ce36fe2e53b32e110ea1c405fc.html":[4,0,0,12,0,0]
+"dir_04034b0bd6d53aa53682255ddd0bdeff.html":[4,0,0,9,0,0]
 };

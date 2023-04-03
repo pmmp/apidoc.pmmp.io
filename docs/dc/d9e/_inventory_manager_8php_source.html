@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.1 git-006cdaf6ea7870d5876f384a944c60fa5a12760b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.3 git-a862cf5144fbac028b95c7c44fa54fce1ad4f9a4</span>
    </div>
   </td>
  </tr>
@@ -615,50 +615,54 @@ $(document).ready(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        $playerInventory = $this-&gt;player-&gt;getInventory();</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        $selected = $playerInventory-&gt;getHeldItemIndex();</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        <span class="keywordflow">if</span>($selected !== $this-&gt;clientSelectedHotbarSlot){</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            $itemStackInfo = $this-&gt;getItemStackInfo($playerInventory, $selected);</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>            <span class="keywordflow">if</span>($itemStackInfo === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Player inventory slots should always be tracked&quot;</span>);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            $inventoryEntry = $this-&gt;inventories[spl_object_id($playerInventory)] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>            <span class="keywordflow">if</span>($inventoryEntry === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Player inventory should always be tracked&quot;</span>);</div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>            }</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            $this-&gt;session-&gt;sendDataPacket(MobEquipmentPacket::create(</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                $this-&gt;player-&gt;getId(),</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                <span class="keyword">new</span> ItemStackWrapper($itemStackInfo-&gt;getStackId(), TypeConverter::getInstance()-&gt;coreItemStackToNet($playerInventory-&gt;getItemInHand())),</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                $selected,</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                $selected,</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                ContainerIds::INVENTORY</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>            ));</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>            $this-&gt;clientSelectedHotbarSlot = $selected;</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        }</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    }</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncCreative() : void{</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        $typeConverter = TypeConverter::getInstance();</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        $entries = [];</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        <span class="keywordflow">if</span>(!$this-&gt;player-&gt;isSpectator()){</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            <span class="comment">//creative inventory may have holes if items were unregistered - ensure network IDs used are always consistent</span></div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            <span class="keywordflow">foreach</span>(CreativeInventory::getInstance()-&gt;getAll() as $k =&gt; $item){</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                $entries[] = <span class="keyword">new</span> CreativeContentEntry($k, $typeConverter-&gt;coreItemStackToNet($item));</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            }</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        }</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        $this-&gt;session-&gt;sendDataPacket(CreativeContentPacket::create($entries));</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    }</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    <span class="keyword">private</span> <span class="keyword">function</span> newItemStackId() : int{</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        return $this-&gt;nextItemStackId++;</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>            $itemStackInfo = $inventoryEntry-&gt;itemStackInfos[$selected] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            <span class="keywordflow">if</span>($itemStackInfo === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Untracked player inventory slot $selected&quot;</span>);</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>            }</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>            $this-&gt;session-&gt;sendDataPacket(MobEquipmentPacket::create(</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                $this-&gt;player-&gt;getId(),</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                <span class="keyword">new</span> ItemStackWrapper($itemStackInfo-&gt;getStackId(), TypeConverter::getInstance()-&gt;coreItemStackToNet($playerInventory-&gt;getItemInHand())),</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>                $selected,</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>                $selected,</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>                ContainerIds::INVENTORY</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>            ));</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>            $this-&gt;clientSelectedHotbarSlot = $selected;</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        }</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    }</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncCreative() : void{</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        $typeConverter = TypeConverter::getInstance();</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        $entries = [];</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        <span class="keywordflow">if</span>(!$this-&gt;player-&gt;isSpectator()){</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            <span class="comment">//creative inventory may have holes if items were unregistered - ensure network IDs used are always consistent</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            <span class="keywordflow">foreach</span>(CreativeInventory::getInstance()-&gt;getAll() as $k =&gt; $item){</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                $entries[] = <span class="keyword">new</span> CreativeContentEntry($k, $typeConverter-&gt;coreItemStackToNet($item));</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>            }</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>        }</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        $this-&gt;session-&gt;sendDataPacket(CreativeContentPacket::create($entries));</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    }</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemStackInfo(Inventory $inventory, <span class="keywordtype">int</span> $slot) : ?ItemStackInfo{</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        $entry = $this-&gt;inventories[spl_object_id($inventory)] ?? null;</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        <span class="keywordflow">return</span> $entry?-&gt;itemStackInfos[$slot] ?? <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    }</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="keyword">private</span> <span class="keyword">function</span> trackItemStack(InventoryManagerEntry $entry, <span class="keywordtype">int</span> $slotId, ItemStack $itemStack, ?<span class="keywordtype">int</span> $itemStackRequestId) : ItemStackInfo{</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        <span class="comment">//TODO: ItemStack-&gt;isNull() would be nice to have here</span></div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        $info = new ItemStackInfo($itemStackRequestId, $itemStack-&gt;getId() === 0 ? 0 : $this-&gt;newItemStackId());</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        <span class="keywordflow">return</span> $entry-&gt;itemStackInfos[$slotId] = $info;</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    }</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>}</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    <span class="keyword">private</span> <span class="keyword">function</span> newItemStackId() : int{</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        return $this-&gt;nextItemStackId++;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    }</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemStackInfo(Inventory $inventory, <span class="keywordtype">int</span> $slot) : ?ItemStackInfo{</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        $entry = $this-&gt;inventories[spl_object_id($inventory)] ?? null;</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        <span class="keywordflow">return</span> $entry?-&gt;itemStackInfos[$slot] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    }</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    <span class="keyword">private</span> <span class="keyword">function</span> trackItemStack(InventoryManagerEntry $entry, <span class="keywordtype">int</span> $slotId, ItemStack $itemStack, ?<span class="keywordtype">int</span> $itemStackRequestId) : ItemStackInfo{</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <span class="comment">//TODO: ItemStack-&gt;isNull() would be nice to have here</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        $info = new ItemStackInfo($itemStackRequestId, $itemStack-&gt;getId() === 0 ? 0 : $this-&gt;newItemStackId());</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>        <span class="keywordflow">return</span> $entry-&gt;itemStackInfos[$slotId] = $info;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    }</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1inventory_1_1_anvil_inventory_html"><div class="ttname"><a href="../../d6/d6d/classpocketmine_1_1block_1_1inventory_1_1_anvil_inventory.html">pocketmine\block\inventory\AnvilInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/ddd/_anvil_inventory_8php_source.html#l00030">AnvilInventory.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory_html"><div class="ttname"><a href="../../db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html">pocketmine\block\inventory\BrewingStandInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d97/_brewing_stand_inventory_8php_source.html#l00029">BrewingStandInventory.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory_html"><div class="ttname"><a href="../../de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html">pocketmine\block\inventory\CraftingTableInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbf/_crafting_table_inventory_8php_source.html#l00030">CraftingTableInventory.php:30</a></div></div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.1 git-006cdaf6ea7870d5876f384a944c60fa5a12760b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.3 git-a862cf5144fbac028b95c7c44fa54fce1ad4f9a4</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('df/de7/_timings_record_8php_source.htm
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\timings;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">function</span> round;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">function</span> floor;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> spl_object_id;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html">   35</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html">TimingsRecord</a>{</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('df/de7/_timings_record_8php_source.htm
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        if($measure){</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">foreach</span>(self::$records as $record){</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordflow">if</span>($record-&gt;curTickTotal &gt; Server::TARGET_NANOSECONDS_PER_TICK){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    $record-&gt;violations += (int) round($record-&gt;curTickTotal / Server::TARGET_NANOSECONDS_PER_TICK);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    $record-&gt;violations += (int) floor($record-&gt;curTickTotal / Server::TARGET_NANOSECONDS_PER_TICK);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                $record-&gt;curTickTotal = 0;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                $record-&gt;curCount = 0;</div>
