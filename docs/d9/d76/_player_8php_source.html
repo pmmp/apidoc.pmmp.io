@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.3 git-a862cf5144fbac028b95c7c44fa54fce1ad4f9a4</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.4 git-7b55c984bff7803209d9b24457031282dd31124b</span>
    </div>
   </td>
  </tr>
@@ -1143,7 +1143,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span> </div>
 <div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>        $revert = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span> </div>
-<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>        <span class="keywordflow">if</span>($distanceSquared &gt; 100){</div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>        <span class="keywordflow">if</span>($distanceSquared &gt; 225){ <span class="comment">//15 blocks</span></div>
 <div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>            <span class="comment">//TODO: this is probably too big if we process every movement</span></div>
 <div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>            <span class="comment">/* !!! BEWARE YE WHO ENTER HERE !!!</span></div>
 <div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span><span class="comment">             *</span></div>
@@ -1155,7 +1155,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span><span class="comment">             * If you must tamper with this code, be aware that this can cause very nasty results. Do not waste our time</span></div>
 <div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span><span class="comment">             * asking for help if you suffer the consequences of messing with this.</span></div>
 <div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span><span class="comment">             */</span></div>
-<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Moved too fast, reverting movement&quot;</span>);</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Moved too fast (&quot;</span> . sqrt($distanceSquared) . <span class="stringliteral">&quot; blocks in 1 movement), reverting movement&quot;</span>);</div>
 <div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Old position: &quot;</span> . $oldPos-&gt;asVector3() . <span class="stringliteral">&quot;, new position: &quot;</span> . $newPos);</div>
 <div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>            $revert = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>        }elseif(!$this-&gt;getWorld()-&gt;isInLoadedTerrain($newPos)){</div>
