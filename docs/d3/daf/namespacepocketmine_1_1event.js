@@ -15,5 +15,6 @@ var namespacepocketmine_1_1event =
     [ "Listener", "d2/d5e/interfacepocketmine_1_1event_1_1_listener.html", null ],
     [ "ListenerMethodTags", "d0/d10/classpocketmine_1_1event_1_1_listener_method_tags.html", null ],
     [ "RegisteredListener", "d4/d94/classpocketmine_1_1event_1_1_registered_listener.html", null ],
+    [ "RegisteredListenerCache", "de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html", null ],
     [ "CancellableTrait", "d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa", null ]
 ];

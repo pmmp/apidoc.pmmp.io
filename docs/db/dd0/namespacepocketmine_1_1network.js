@@ -485,6 +485,7 @@ var namespacepocketmine_1_1network =
       [ "NetworkBroadcastUtils", "d4/d18/classpocketmine_1_1network_1_1mcpe_1_1_network_broadcast_utils.html", "d4/d18/classpocketmine_1_1network_1_1mcpe_1_1_network_broadcast_utils" ],
       [ "NetworkSession", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session" ],
       [ "PacketBroadcaster", "d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster.html", "d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster" ],
+      [ "PacketRateLimiter", "db/d44/classpocketmine_1_1network_1_1mcpe_1_1_packet_rate_limiter.html", "db/d44/classpocketmine_1_1network_1_1mcpe_1_1_packet_rate_limiter" ],
       [ "PacketSender", "d4/d6a/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_sender.html", "d4/d6a/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_sender" ],
       [ "StandardEntityEventBroadcaster", "d0/d65/classpocketmine_1_1network_1_1mcpe_1_1_standard_entity_event_broadcaster.html", "d0/d65/classpocketmine_1_1network_1_1mcpe_1_1_standard_entity_event_broadcaster" ],
       [ "StandardPacketBroadcaster", "d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html", "d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster" ]

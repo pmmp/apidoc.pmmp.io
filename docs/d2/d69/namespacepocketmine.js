@@ -133,7 +133,7 @@ var namespacepocketmine =
       [ "Worker", "d2/d42/classpocketmine_1_1thread_1_1_worker.html", "d2/d42/classpocketmine_1_1thread_1_1_worker" ]
     ] ],
     [ "timings", null, [
-      [ "Timings", "de/d8c/classpocketmine_1_1timings_1_1_timings.html", null ],
+      [ "Timings", "de/d8c/classpocketmine_1_1timings_1_1_timings.html", "de/d8c/classpocketmine_1_1timings_1_1_timings" ],
       [ "TimingsHandler", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler" ],
       [ "TimingsRecord", "da/df9/classpocketmine_1_1timings_1_1_timings_record.html", "da/df9/classpocketmine_1_1timings_1_1_timings_record" ]
     ] ],

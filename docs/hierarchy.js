@@ -457,6 +457,7 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\protocol\\types\\ChunkPosition", "df/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chunk_position.html", null ],
     [ "pocketmine\\player\\ChunkSelector", "d4/db4/classpocketmine_1_1player_1_1_chunk_selector.html", null ],
     [ "pocketmine\\network\\mcpe\\serializer\\ChunkSerializer", "dd/dc9/classpocketmine_1_1network_1_1mcpe_1_1serializer_1_1_chunk_serializer.html", null ],
+    [ "pocketmine\\world\\ChunkTicker", "dd/d51/classpocketmine_1_1world_1_1_chunk_ticker.html", null ],
     [ "pocketmine\\world\\format\\io\\ChunkUtils", "de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html", null ],
     [ "pocketmine\\world\\format\\io\\leveldb\\ChunkVersion", "d9/dc6/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_chunk_version.html", null ],
     [ "ClassLoader", "dc/de7/interface_class_loader.html", [
@@ -1236,7 +1237,9 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\BlockActorDataPacket", "d1/d56/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_actor_data_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BlockEventPacket", "dd/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_event_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BossEventPacket", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\CameraInstructionPacket", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\CameraPacket", "de/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\CameraPresetsPacket", "df/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_presets_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\CameraShakePacket", "d4/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_shake_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ChangeDimensionPacket", "da/dbe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_dimension_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ChunkRadiusUpdatedPacket", "da/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_chunk_radius_updated_packet.html", null ],
@@ -1350,6 +1353,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\TickingAreasLoadStatusPacket", "d1/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_ticking_areas_load_status_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ToastRequestPacket", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TransferPacket", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\UnlockedRecipesPacket", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateAbilitiesPacket", "de/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_abilities_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateAdventureSettingsPacket", "d9/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_adventure_settings_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\UpdateAttributesPacket", "d2/d2c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_attributes_packet.html", null ],
@@ -1684,6 +1688,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "pocketmine\\network\\mcpe\\protocol\\PacketPool", "d9/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_pool.html", null ],
+    [ "pocketmine\\network\\mcpe\\PacketRateLimiter", "db/d44/classpocketmine_1_1network_1_1mcpe_1_1_packet_rate_limiter.html", null ],
     [ "raklib\\protocol\\PacketReliability", "d3/db9/classraklib_1_1protocol_1_1_packet_reliability.html", null ],
     [ "pocketmine\\network\\mcpe\\PacketSender", "d4/d6a/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_sender.html", [
       [ "pocketmine\\network\\mcpe\\raklib\\RakLibPacketSender", "dc/d49/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_packet_sender.html", null ]
@@ -1832,6 +1837,7 @@ var hierarchy =
     [ "pocketmine\\world\\format\\io\\region\\RegionLoader", "df/d95/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_loader.html", null ],
     [ "pocketmine\\world\\format\\io\\region\\RegionLocationTableEntry", "da/d41/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_location_table_entry.html", null ],
     [ "pocketmine\\event\\RegisteredListener", "d4/d94/classpocketmine_1_1event_1_1_registered_listener.html", null ],
+    [ "pocketmine\\event\\RegisteredListenerCache", "de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html", null ],
     [ "pocketmine\\item\\Releasable", "d4/d35/interfacepocketmine_1_1item_1_1_releasable.html", [
       [ "pocketmine\\item\\Bow", "d5/dbc/classpocketmine_1_1item_1_1_bow.html", null ],
       [ "pocketmine\\item\\ConsumableItem", "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html", null ]
@@ -2081,6 +2087,7 @@ var hierarchy =
       [ "pocketmine\\snooze\\SleeperNotifier", "d2/d16/classpocketmine_1_1snooze_1_1_sleeper_notifier.html", null ]
     ] ],
     [ "pocketmine\\world\\generator\\ThreadLocalGeneratorContext", "d0/d9d/classpocketmine_1_1world_1_1generator_1_1_thread_local_generator_context.html", null ],
+    [ "pocketmine\\world\\TickingChunkEntry", "d1/d78/classpocketmine_1_1world_1_1_ticking_chunk_entry.html", null ],
     [ "pocketmine\\block\\tile\\Tile", "d9/d74/classpocketmine_1_1block_1_1tile_1_1_tile.html", [
       [ "pocketmine\\block\\tile\\Comparator", "df/de7/classpocketmine_1_1block_1_1tile_1_1_comparator.html", null ],
       [ "pocketmine\\block\\tile\\DaylightSensor", "de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html", null ],

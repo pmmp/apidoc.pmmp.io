@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.4 git-7b55c984bff7803209d9b24457031282dd31124b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.19.3 git-9561ae5af7d679974ef5eef66317936c2e5563eb</span>
    </div>
   </td>
  </tr>
@@ -348,12 +348,12 @@ $(document).ready(function(){initNavTree('dd/dd9/_item_stack_request_executor_8p
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        $this-&gt;createdItemsTakenCount += $count;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        $createdItem = clone $createdItem;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        $createdItem-&gt;setCount($count);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        $takenItem = clone $createdItem;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        $takenItem-&gt;setCount($count);</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keywordflow">if</span>(!$this-&gt;createdItemFromCreativeInventory &amp;&amp; $this-&gt;createdItemsTakenCount &gt;= $createdItem-&gt;getCount()){</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            $this-&gt;setNextCreatedItem(<span class="keyword">null</span>);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        }</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">return</span> $createdItem;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">return</span> $takenItem;</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keyword">private</span> <span class="keyword">function</span> assertDoingCrafting() : void{</div>
@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('dd/dd9/_item_stack_request_executor_8p
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_swap_stack_request_action_html"><div class="ttname"><a href="../../de/db2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_swap_stack_request_action.html">pocketmine\network\mcpe\protocol\types\inventory\stackrequest\SwapStackRequestAction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2f/_swap_stack_request_action_8php_source.html#l00023">SwapStackRequestAction.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_take_stack_request_action_html"><div class="ttname"><a href="../../d6/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_take_stack_request_action.html">pocketmine\network\mcpe\protocol\types\inventory\stackrequest\TakeStackRequestAction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/_take_stack_request_action_8php_source.html#l00022">TakeStackRequestAction.php:22</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackresponse_1_1_item_stack_response_html"><div class="ttname"><a href="../../d9/d13/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackresponse_1_1_item_stack_response.html">pocketmine\network\mcpe\protocol\types\inventory\stackresponse\ItemStackResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/_item_stack_response_8php_source.html#l00020">ItemStackResponse.php:20</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00160">Player.php:160</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00162">Player.php:162</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1inventory_1_1_inventory_html"><div class="ttname"><a href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html">pocketmine\inventory\Inventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3b/_inventory_8php_source.html#l00033">Inventory.php:33</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1inventory_1_1_inventory_html_a0b608497167e82f4c487c6085dc1c80f"><div class="ttname"><a href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a0b608497167e82f4c487c6085dc1c80f">pocketmine\inventory\Inventory\slotExists</a></div><div class="ttdeci">slotExists(int $slot)</div></div>

@@ -71,6 +71,7 @@ var classpocketmine_1_1world_1_1_world =
     [ "notifyNeighbourBlockUpdate", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a0760f9b660cabe2649ea685ed579df49", null ],
     [ "orderChunkPopulation", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ae70fe036fcd3cace8d11a28c2a5ad5e2", null ],
     [ "registerChunkListener", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a28654f28814833471e5f68f4d4b7d2d5", null ],
+    [ "registerTickingChunk", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a8e21ef5424a410948ffed2bd2f464142", null ],
     [ "removeEntity", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a012a32b6890ba5502645c326992e1e84", null ],
     [ "removeOnUnloadCallback", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a103316b68a211045bda7aa1478464027", null ],
     [ "requestChunkPopulation", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a8bbfbc57ac0982841980aefd9a0b808b", null ],
@@ -87,6 +88,7 @@ var classpocketmine_1_1world_1_1_world =
     [ "unlockChunk", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a5e3184c8c09824005f8961cb3a58d68d", null ],
     [ "unregisterChunkListener", "d4/d2b/classpocketmine_1_1world_1_1_world.html#afd51ae9c966a8d2de8dc91f80b337afc", null ],
     [ "unregisterChunkListenerFromAll", "d4/d2b/classpocketmine_1_1world_1_1_world.html#aa5d895755fb6883ebb3a62e97523747d", null ],
+    [ "unregisterTickingChunk", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ac6e66c73ae74575ec53bb3d448b34fa7", null ],
     [ "useBreakOn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a86a1511d66542c24059a6b387195dc23", null ],
     [ "useItemOn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a89060c5356799854004d95571da52009", null ]
 ];

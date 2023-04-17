@@ -15,5 +15,6 @@ var dir_f278fbcf62338d746f20818c09b59427 =
     [ "HandlerListManager.php", "d9/da6/_handler_list_manager_8php_source.html", null ],
     [ "Listener.php", "df/db1/_listener_8php_source.html", null ],
     [ "ListenerMethodTags.php", "d9/d09/_listener_method_tags_8php_source.html", null ],
-    [ "RegisteredListener.php", "db/d43/_registered_listener_8php_source.html", null ]
+    [ "RegisteredListener.php", "db/d43/_registered_listener_8php_source.html", null ],
+    [ "RegisteredListenerCache.php", "da/d58/_registered_listener_cache_8php_source.html", null ]
 ];

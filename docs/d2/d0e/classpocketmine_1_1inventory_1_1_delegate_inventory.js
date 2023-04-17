@@ -17,7 +17,7 @@ var classpocketmine_1_1inventory_1_1_delegate_inventory =
     [ "getViewers", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],
     [ "internalSetContents", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#adc9d0651ccdd6b1754cec9972e8e468d", null ],
     [ "isSlotEmpty", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a7032110ecf181d3fbbc863c5f45270b0", null ],
-    [ "onContentChange", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a816548c8e0db980edebec9903c9812a6", null ],
+    [ "onContentChange", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a7d6fe14fac797b7d739276603b021f4f", null ],
     [ "onOpen", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#ad61d0fa541f73c0387c81dc3c46def67", null ],
     [ "remove", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a5c676080faee6eaecdc04a70fcedf142", null ],
     [ "removeAllViewers", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a010a9ab31edc7fa850b79849037cede7", null ],

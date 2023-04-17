@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.18.4 git-7b55c984bff7803209d9b24457031282dd31124b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.19.3 git-9561ae5af7d679974ef5eef66317936c2e5563eb</span>
    </div>
   </td>
  </tr>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d4/d4d/_farmland_8php_source.html','..
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a594b88ce5ad40ac5e78893b8aad800e8">   66</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a594b88ce5ad40ac5e78893b8aad800e8">recalculateCollisionBoxes</a>() : array{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        return [<a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">AxisAlignedBB</a>::one()]; <span class="comment">//TODO: this should be trimmed at the top by 1/16, but MCPE currently treats them as a full block (https://bugs.mojang.com/browse/MCPE-12109)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        return [<a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">AxisAlignedBB</a>::one()-&gt;trim(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP, 1 / 16)];</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a4bbbbab53f2c21bc969a7c8ef51d9443">   70</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a4bbbbab53f2c21bc969a7c8ef51d9443">onNearbyBlockChange</a>() : void{</div>

@@ -628,7 +628,8 @@ var annotated_dup =
         [ "HandlerListManager", "d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html", "d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager" ],
         [ "Listener", "d2/d5e/interfacepocketmine_1_1event_1_1_listener.html", null ],
         [ "ListenerMethodTags", "d0/d10/classpocketmine_1_1event_1_1_listener_method_tags.html", null ],
-        [ "RegisteredListener", "d4/d94/classpocketmine_1_1event_1_1_registered_listener.html", null ]
+        [ "RegisteredListener", "d4/d94/classpocketmine_1_1event_1_1_registered_listener.html", null ],
+        [ "RegisteredListenerCache", "de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html", null ]
       ] ],
       [ "form", null, [
         [ "Form", "d5/d7b/interfacepocketmine_1_1form_1_1_form.html", "d5/d7b/interfacepocketmine_1_1form_1_1_form" ],
@@ -1328,6 +1329,7 @@ var annotated_dup =
           [ "NetworkBroadcastUtils", "d4/d18/classpocketmine_1_1network_1_1mcpe_1_1_network_broadcast_utils.html", "d4/d18/classpocketmine_1_1network_1_1mcpe_1_1_network_broadcast_utils" ],
           [ "NetworkSession", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session" ],
           [ "PacketBroadcaster", "d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster.html", "d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster" ],
+          [ "PacketRateLimiter", "db/d44/classpocketmine_1_1network_1_1mcpe_1_1_packet_rate_limiter.html", "db/d44/classpocketmine_1_1network_1_1mcpe_1_1_packet_rate_limiter" ],
           [ "PacketSender", "d4/d6a/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_sender.html", "d4/d6a/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_sender" ],
           [ "StandardEntityEventBroadcaster", "d0/d65/classpocketmine_1_1network_1_1mcpe_1_1_standard_entity_event_broadcaster.html", "d0/d65/classpocketmine_1_1network_1_1mcpe_1_1_standard_entity_event_broadcaster" ],
           [ "StandardPacketBroadcaster", "d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html", "d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster" ]
@@ -1452,7 +1454,7 @@ var annotated_dup =
         [ "Worker", "d2/d42/classpocketmine_1_1thread_1_1_worker.html", "d2/d42/classpocketmine_1_1thread_1_1_worker" ]
       ] ],
       [ "timings", null, [
-        [ "Timings", "de/d8c/classpocketmine_1_1timings_1_1_timings.html", null ],
+        [ "Timings", "de/d8c/classpocketmine_1_1timings_1_1_timings.html", "de/d8c/classpocketmine_1_1timings_1_1_timings" ],
         [ "TimingsHandler", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler" ],
         [ "TimingsRecord", "da/df9/classpocketmine_1_1timings_1_1_timings_record.html", "da/df9/classpocketmine_1_1timings_1_1_timings_record" ]
       ] ],
@@ -1729,9 +1731,11 @@ var annotated_dup =
         [ "ChunkLoader", "db/d81/interfacepocketmine_1_1world_1_1_chunk_loader.html", null ],
         [ "ChunkLockId", "df/d2c/classpocketmine_1_1world_1_1_chunk_lock_id.html", null ],
         [ "ChunkManager", "d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html", "d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager" ],
+        [ "ChunkTicker", "dd/d51/classpocketmine_1_1world_1_1_chunk_ticker.html", null ],
         [ "Explosion", "d9/df8/classpocketmine_1_1world_1_1_explosion.html", "d9/df8/classpocketmine_1_1world_1_1_explosion" ],
         [ "Position", "d5/dd2/classpocketmine_1_1world_1_1_position.html", "d5/dd2/classpocketmine_1_1world_1_1_position" ],
         [ "SimpleChunkManager", "dc/d3e/classpocketmine_1_1world_1_1_simple_chunk_manager.html", "dc/d3e/classpocketmine_1_1world_1_1_simple_chunk_manager" ],
+        [ "TickingChunkEntry", "d1/d78/classpocketmine_1_1world_1_1_ticking_chunk_entry.html", null ],
         [ "TickingChunkLoader", "d0/d04/interfacepocketmine_1_1world_1_1_ticking_chunk_loader.html", null ],
         [ "World", "d4/d2b/classpocketmine_1_1world_1_1_world.html", "d4/d2b/classpocketmine_1_1world_1_1_world" ],
         [ "WorldCreationOptions", "d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html", "d0/d15/classpocketmine_1_1world_1_1_world_creation_options" ],

@@ -19,6 +19,7 @@ var dir_c34322918f2837155f3742220523bcd3 =
     [ "NetworkBroadcastUtils.php", "d2/d76/_network_broadcast_utils_8php_source.html", null ],
     [ "NetworkSession.php", "dd/dbe/_network_session_8php_source.html", null ],
     [ "PacketBroadcaster.php", "d6/dc8/_packet_broadcaster_8php_source.html", null ],
+    [ "PacketRateLimiter.php", "d2/dbd/_packet_rate_limiter_8php_source.html", null ],
     [ "PacketSender.php", "dc/d06/_packet_sender_8php_source.html", null ],
     [ "StandardEntityEventBroadcaster.php", "d7/dd7/_standard_entity_event_broadcaster_8php_source.html", null ],
     [ "StandardPacketBroadcaster.php", "d5/d6e/_standard_packet_broadcaster_8php_source.html", null ]
