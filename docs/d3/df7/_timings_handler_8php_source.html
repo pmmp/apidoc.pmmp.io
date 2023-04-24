@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.19.3 git-9561ae5af7d679974ef5eef66317936c2e5563eb</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.19.4 git-84a16ce69ae8b8880b2f3ff4e86fbedbe18348fe</span>
    </div>
   </td>
  </tr>
@@ -278,12 +278,12 @@ $(document).ready(function(){initNavTree('d3/df7/_timings_handler_8php_source.ht
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        $record = TimingsRecord::getCurrentRecord();</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordflow">if</span>($record !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span>($record-&gt;getTimerId() !== spl_object_id($this)){</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Timer \&quot;&quot;</span> . $record-&gt;getName() . <span class="stringliteral">&quot;\&quot; should have been stopped before stopping timer \&quot;&quot;</span> . $this-&gt;name . <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            }</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            $record-&gt;stopTiming($now);</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        $timerId = spl_object_id($this);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">for</span>(; $record !== <span class="keyword">null</span> &amp;&amp; $record-&gt;getTimerId() !== $timerId; $record = TimingsRecord::getCurrentRecord()){</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            \GlobalLogger::get()-&gt;error(<span class="stringliteral">&quot;Timer \&quot;&quot;</span> . $record-&gt;getName() . <span class="stringliteral">&quot;\&quot; should have been stopped before stopping timer \&quot;&quot;</span> . $this-&gt;name . <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            $record-&gt;stopTiming($now);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        $record?-&gt;stopTiming($now);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">if</span>($this-&gt;parent !== <span class="keyword">null</span>){</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            $this-&gt;parent-&gt;internalStopTiming($now);</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
