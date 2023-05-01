@@ -78,6 +78,8 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "SubChunkPosition.php", "dd/dd8/_sub_chunk_position_8php_source.html", null ],
     [ "SubChunkPositionOffset.php", "df/de3/_sub_chunk_position_offset_8php_source.html", null ],
     [ "SubChunkRequestResult.php", "d0/df2/_sub_chunk_request_result_8php_source.html", null ],
+    [ "TrimMaterial.php", "d6/d3e/_trim_material_8php_source.html", null ],
+    [ "TrimPattern.php", "d3/d14/_trim_pattern_8php_source.html", null ],
     [ "UIProfile.php", "dc/d7c/_u_i_profile_8php_source.html", null ],
     [ "UpdateSubChunkBlocksPacketEntry.php", "d7/d5d/_update_sub_chunk_blocks_packet_entry_8php_source.html", null ]
 ];

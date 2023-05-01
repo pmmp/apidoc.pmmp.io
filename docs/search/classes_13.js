@@ -65,9 +65,12 @@ var searchData=
   ['treefactory_62',['TreeFactory',['../da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory.html',1,'pocketmine::world::generator::object']]],
   ['treeroot_63',['TreeRoot',['../d7/d89/classpocketmine_1_1nbt_1_1_tree_root.html',1,'pocketmine::nbt']]],
   ['treetype_64',['TreeType',['../d7/de7/classpocketmine_1_1block_1_1utils_1_1_tree_type.html',1,'pocketmine::block::utils']]],
-  ['tripwire_65',['Tripwire',['../d5/d77/classpocketmine_1_1block_1_1_tripwire.html',1,'pocketmine::block']]],
-  ['tripwirehook_66',['TripwireHook',['../da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html',1,'pocketmine::block']]],
-  ['type_67',['Type',['../d6/d33/class_dave_random_1_1_callback_validator_1_1_type.html',1,'DaveRandom::CallbackValidator']]],
-  ['typeconversionexception_68',['TypeConversionException',['../dd/de4/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception.html',1,'pocketmine::network::mcpe::convert']]],
-  ['typeconverter_69',['TypeConverter',['../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html',1,'pocketmine::network::mcpe::convert']]]
+  ['trimdatapacket_65',['TrimDataPacket',['../d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_trim_data_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['trimmaterial_66',['TrimMaterial',['../d8/db2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_trim_material.html',1,'pocketmine::network::mcpe::protocol::types']]],
+  ['trimpattern_67',['TrimPattern',['../d9/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_trim_pattern.html',1,'pocketmine::network::mcpe::protocol::types']]],
+  ['tripwire_68',['Tripwire',['../d5/d77/classpocketmine_1_1block_1_1_tripwire.html',1,'pocketmine::block']]],
+  ['tripwirehook_69',['TripwireHook',['../da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html',1,'pocketmine::block']]],
+  ['type_70',['Type',['../d6/d33/class_dave_random_1_1_callback_validator_1_1_type.html',1,'DaveRandom::CallbackValidator']]],
+  ['typeconversionexception_71',['TypeConversionException',['../dd/de4/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception.html',1,'pocketmine::network::mcpe::convert']]],
+  ['typeconverter_72',['TypeConverter',['../d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html',1,'pocketmine::network::mcpe::convert']]]
 ];

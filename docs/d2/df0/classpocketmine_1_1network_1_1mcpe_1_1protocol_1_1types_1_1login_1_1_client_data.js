@@ -7,6 +7,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_
     [ "$CapeImageWidth", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a44fc5b34186f8b833f8268b56202325d", null ],
     [ "$CapeOnClassicSkin", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#ac37e502c074ced406d32c0388383b58b", null ],
     [ "$ClientRandomId", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a4d6eb3e739cfec54cb5ed9300b14db1b", null ],
+    [ "$CompatibleWithClientSideChunkGen", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a36c494a0f6cf815ab93af4e3d35aed10", null ],
     [ "$CurrentInputMode", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a7271f9a18e9b18d6ea212eadc1d32f10", null ],
     [ "$DefaultInputMode", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#ac88f57c991aa8bab571292940452b1cf", null ],
     [ "$DeviceId", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a0400a51789f854ec2586b0df486fc4fb", null ],

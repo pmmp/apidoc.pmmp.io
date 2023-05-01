@@ -12,6 +12,7 @@ var searchData=
   ['openconnectionreply2_9',['OpenConnectionReply2',['../da/d84/classraklib_1_1protocol_1_1_open_connection_reply2.html',1,'raklib::protocol']]],
   ['openconnectionrequest1_10',['OpenConnectionRequest1',['../d2/dfe/classraklib_1_1protocol_1_1_open_connection_request1.html',1,'raklib::protocol']]],
   ['openconnectionrequest2_11',['OpenConnectionRequest2',['../de/df1/classraklib_1_1protocol_1_1_open_connection_request2.html',1,'raklib::protocol']]],
-  ['ore_12',['Ore',['../d3/d44/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore.html',1,'pocketmine\world\generator\object\Ore'],['../dc/d8e/classpocketmine_1_1world_1_1generator_1_1populator_1_1_ore.html',1,'pocketmine\world\generator\populator\Ore']]],
-  ['oretype_13',['OreType',['../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html',1,'pocketmine::world::generator::object']]]
+  ['opensignpacket_12',['OpenSignPacket',['../d1/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_open_sign_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['ore_13',['Ore',['../d3/d44/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore.html',1,'pocketmine\world\generator\object\Ore'],['../dc/d8e/classpocketmine_1_1world_1_1generator_1_1populator_1_1_ore.html',1,'pocketmine\world\generator\populator\Ore']]],
+  ['oretype_14',['OreType',['../d0/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_ore_type.html',1,'pocketmine::world::generator::object']]]
 ];

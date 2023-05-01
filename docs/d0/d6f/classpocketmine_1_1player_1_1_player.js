@@ -108,6 +108,7 @@ var classpocketmine_1_1player_1_1_player =
     [ "onHitGround", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a56bed8e6a96647b01c68b7eac0dbe1d7", null ],
     [ "onInteract", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a81725faf49c2b6fb3314cac3f6a11e3c", null ],
     [ "onRandomUpdate", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a2bd1fab41c3720c1ec9f75997958c223", null ],
+    [ "openSignEditor", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a81fe19da1016fda686d2c43ed8b9da7f", null ],
     [ "orderChunks", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ad8f93cc2338631b7bd229bfc68d477f2", null ],
     [ "parseSkinNBT", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a3951eae5207d661583a15363e2f14f3d", null ],
     [ "processMostRecentMovements", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a24fa3c9e7e30f7cc9982df105c6304cf", null ],

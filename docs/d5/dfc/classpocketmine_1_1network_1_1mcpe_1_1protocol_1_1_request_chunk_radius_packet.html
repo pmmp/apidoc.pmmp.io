@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.19.4 git-84a16ce69ae8b8880b2f3ff4e86fbedbe18348fe</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.2 git-b70ff325488093f18899ac9935551220334bd4b9</span>
    </div>
   </td>
  </tr>
@@ -136,11 +136,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c6eb06c2a8eb2a1c715d220631ed8c6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html#a4c6eb06c2a8eb2a1c715d220631ed8c6">create</a> (int $radius)</td></tr>
-<tr class="separator:a4c6eb06c2a8eb2a1c715d220631ed8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25bc3971014bc972c0594986bccc270"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html#ab25bc3971014bc972c0594986bccc270">create</a> (int $radius, int $maxRadius)</td></tr>
+<tr class="separator:ab25bc3971014bc972c0594986bccc270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ac9bca65071766a5642a1049ad9b16bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html#ac9bca65071766a5642a1049ad9b16bfb">$maxRadius</a></td></tr>
+<tr class="separator:ac9bca65071766a5642a1049ad9b16bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b799265d8059f2a26d5535718635cab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html#a2b799265d8059f2a26d5535718635cab">$radius</a></td></tr>
 <tr class="separator:a2b799265d8059f2a26d5535718635cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#aa8f8e8ec577e46952ad065c9ede0943a">$recipientSubId</a> = 0</td></tr>
@@ -276,8 +278,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c6eb06c2a8eb2a1c715d220631ed8c6" name="a4c6eb06c2a8eb2a1c715d220631ed8c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c6eb06c2a8eb2a1c715d220631ed8c6">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ab25bc3971014bc972c0594986bccc270" name="ab25bc3971014bc972c0594986bccc270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25bc3971014bc972c0594986bccc270">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,8 +291,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\RequestChunkRadiusPacket::create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$radius</em></td><td>)</td>
+          <td class="paramname"><em>$radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$maxRadius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -301,7 +313,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
 
 </div>
 </div>
@@ -410,7 +422,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
 
 </div>
 </div>
@@ -499,7 +511,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00040">40</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
 
 </div>
 </div>
@@ -560,7 +572,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
 
 </div>
 </div>
@@ -594,6 +606,22 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac9bca65071766a5642a1049ad9b16bfb" name="ac9bca65071766a5642a1049ad9b16bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9bca65071766a5642a1049ad9b16bfb">&#9670;&nbsp;</a></span>$maxRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\RequestChunkRadiusPacket::$maxRadius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html#l00023">23</a> of file <a class="el" href="../../d5/df6/_request_chunk_radius_packet_8php_source.html">RequestChunkRadiusPacket.php</a>.</p>
+
+</div>
+</div>
 <a id="a2b799265d8059f2a26d5535718635cab" name="a2b799265d8059f2a26d5535718635cab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b799265d8059f2a26d5535718635cab">&#9670;&nbsp;</a></span>$radius</h2>
 
