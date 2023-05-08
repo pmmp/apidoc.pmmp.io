@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.2 git-b70ff325488093f18899ac9935551220334bd4b9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.5 git-fdb3a5b121e8064f099ad1d48aa1c0e84103a2df</span>
    </div>
   </td>
  </tr>
@@ -127,25 +127,22 @@ $(document).ready(function(){initNavTree('df/de7/_timings_record_8php_source.htm
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?<span class="keyword">self</span> $currentRecord = <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> clearRecords() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">foreach</span>(self::$records as $record){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            $record-&gt;handler-&gt;destroyCycles();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        self::$records = [];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        self::$currentRecord = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html#a739b8d7c9b7f7adf0d7aa96a7bbc4c31">   57</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html#a739b8d7c9b7f7adf0d7aa96a7bbc4c31">getAll</a>() : array{ return self::$records; }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> tick(<span class="keywordtype">bool</span> $measure = <span class="keyword">true</span>) : void{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        if($measure){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">foreach</span>(self::$records as $record){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">if</span>($record-&gt;curCount &gt; 0){</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    <span class="keywordflow">if</span>($record-&gt;curTickTotal &gt; Server::TARGET_NANOSECONDS_PER_TICK){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        $record-&gt;violations += (int) floor($record-&gt;curTickTotal / Server::TARGET_NANOSECONDS_PER_TICK);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">if</span>($record-&gt;curTickTotal &gt; $record-&gt;peakTime){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        $record-&gt;peakTime = $record-&gt;curTickTotal;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> reset() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">foreach</span>(self::$records as $record){</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $record-&gt;handler-&gt;reset();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self::$records = [];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        self::$currentRecord = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html#a739b8d7c9b7f7adf0d7aa96a7bbc4c31">   60</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html#a739b8d7c9b7f7adf0d7aa96a7bbc4c31">getAll</a>() : array{ return self::$records; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> tick(<span class="keywordtype">bool</span> $measure = <span class="keyword">true</span>) : void{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        if($measure){</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">foreach</span>(self::$records as $record){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordflow">if</span>($record-&gt;curCount &gt; 0){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">if</span>($record-&gt;curTickTotal &gt; Server::TARGET_NANOSECONDS_PER_TICK){</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        $record-&gt;violations += (int) floor($record-&gt;curTickTotal / Server::TARGET_NANOSECONDS_PER_TICK);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    $record-&gt;curTickTotal = 0;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    $record-&gt;curCount = 0;</div>
@@ -204,7 +201,7 @@ $(document).ready(function(){initNavTree('df/de7/_timings_record_8php_source.htm
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTicksActive() : int{ return $this-&gt;ticksActive; }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPeakTime() : float{ return $this-&gt;peakTime; }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPeakTime() : int{ return $this-&gt;peakTime; }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">public</span> <span class="keyword">function</span> startTiming(<span class="keywordtype">int</span> $now) : void{</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        $this-&gt;start = $now;</div>
@@ -230,15 +227,18 @@ $(document).ready(function(){initNavTree('df/de7/_timings_record_8php_source.htm
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        ++$this-&gt;curCount;</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        ++$this-&gt;count;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        $this-&gt;start = 0;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getCurrentRecord() : ?self{</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        return self::$currentRecord;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">if</span>($diff &gt; $this-&gt;peakTime){</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            $this-&gt;peakTime = $diff;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getCurrentRecord() : ?self{</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        return self::$currentRecord;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00177">src/Server.php:177</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_record_html"><div class="ttname"><a href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html">pocketmine\timings\TimingsRecord</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/de7/_timings_record_8php_source.html#l00036">TimingsRecord.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_record_html_a739b8d7c9b7f7adf0d7aa96a7bbc4c31"><div class="ttname"><a href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html#a739b8d7c9b7f7adf0d7aa96a7bbc4c31">pocketmine\timings\TimingsRecord\getAll</a></div><div class="ttdeci">static getAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/de7/_timings_record_8php_source.html#l00057">TimingsRecord.php:57</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_record_html_a739b8d7c9b7f7adf0d7aa96a7bbc4c31"><div class="ttname"><a href="../../da/df9/classpocketmine_1_1timings_1_1_timings_record.html#a739b8d7c9b7f7adf0d7aa96a7bbc4c31">pocketmine\timings\TimingsRecord\getAll</a></div><div class="ttdeci">static getAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/de7/_timings_record_8php_source.html#l00060">TimingsRecord.php:60</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

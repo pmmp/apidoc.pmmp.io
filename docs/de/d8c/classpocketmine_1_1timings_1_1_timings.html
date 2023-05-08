@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.2 git-b70ff325488093f18899ac9935551220334bd4b9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.5 git-fdb3a5b121e8064f099ad1d48aa1c0e84103a2df</span>
    </div>
   </td>
  </tr>
@@ -114,6 +114,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0f389f1b7cdd03034618358040f8cf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521736d99917a1ccdfa847173bd72d95"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html#a521736d99917a1ccdfa847173bd72d95">getEntityTimings</a> (<a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity)</td></tr>
 <tr class="separator:a521736d99917a1ccdfa847173bd72d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab364dcba81303dcd62679c2a229fb7b3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html#ab364dcba81303dcd62679c2a229fb7b3">getEventHandlerTimings</a> (string $event, string $handlerName, string $group)</td></tr>
+<tr class="separator:ab364dcba81303dcd62679c2a229fb7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a544d369468e812d9f8f57e07f7e2ece7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html#a544d369468e812d9f8f57e07f7e2ece7">getEventTimings</a> (<a class="el" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a> $event)</td></tr>
 <tr class="separator:a544d369468e812d9f8f57e07f7e2ece7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bab3ae64e5ced8e01dfd420e056c04d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html#a7bab3ae64e5ced8e01dfd420e056c04d">getHandleDataPacketTimings</a> (<a class="el" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a> $pk)</td></tr>
@@ -269,7 +271,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00299">299</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00301">301</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -297,7 +299,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00315">315</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00317">317</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -325,7 +327,52 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00264">264</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00266">266</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+
+</div>
+</div>
+<a id="ab364dcba81303dcd62679c2a229fb7b3" name="ab364dcba81303dcd62679c2a229fb7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab364dcba81303dcd62679c2a229fb7b3">&#9670;&nbsp;</a></span>getEventHandlerTimings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\timings\Timings::getEventHandlerTimings </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$handlerName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >@phpstan-template TEvent of Event @phpstan-param class-string&lt;TEvent&gt; $event </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00346">346</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -353,7 +400,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00331">331</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00333">333</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -381,7 +428,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00307">307</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00309">309</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -409,7 +456,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00291">291</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00293">293</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -447,7 +494,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00237">237</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00239">239</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -475,7 +522,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00323">323</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00325">325</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -503,7 +550,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00279">279</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00281">281</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
@@ -530,7 +577,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00170">170</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/da0/_timings_8php_source.html#l00172">172</a> of file <a class="el" href="../../dc/da0/_timings_8php_source.html">Timings.php</a>.</p>
 
 </div>
 </div>
