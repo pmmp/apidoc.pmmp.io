@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.5 git-44bc4d8c7caa3e02f6c20c904851eaa68aa1e95b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
    </div>
   </td>
  </tr>
@@ -204,15 +204,16 @@ $(document).ready(function(){initNavTree('d3/d7e/_status_command_8php_source.htm
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $worldName = $world-&gt;getFolderName() !== $world-&gt;getDisplayName() ? <span class="stringliteral">&quot; (&quot;</span> . $world-&gt;getDisplayName() . <span class="stringliteral">&quot;)&quot;</span> : <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $timeColor = $world-&gt;getTickRateTime() &gt; 40 ? TextFormat::RED : TextFormat::YELLOW;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;World \&quot;{$world-&gt;getFolderName()}\&quot;$worldName: &quot;</span> .</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                TextFormat::RED . number_format(count($world-&gt;getLoadedChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; chunks, &quot;</span> .</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                TextFormat::RED . number_format(count($world-&gt;getEntities())) . TextFormat::GREEN . <span class="stringliteral">&quot; entities. &quot;</span> .</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="stringliteral">&quot;Time $timeColor&quot;</span> . round($world-&gt;getTickRateTime(), 2) . <span class="stringliteral">&quot;ms&quot;</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            );</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                TextFormat::RED . number_format(count($world-&gt;getLoadedChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; loaded chunks, &quot;</span> .</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                TextFormat::RED . number_format(count($world-&gt;getTickingChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; ticking chunks, &quot;</span> .</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                TextFormat::RED . number_format(count($world-&gt;getEntities())) . TextFormat::GREEN . <span class="stringliteral">&quot; entities. &quot;</span> .</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <span class="stringliteral">&quot;Time $timeColor&quot;</span> . round($world-&gt;getTickRateTime(), 2) . <span class="stringliteral">&quot;ms&quot;</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            );</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_status_command_html"><div class="ttname"><a href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html">pocketmine\command\defaults\StatusCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d7e/_status_command_8php_source.html#l00037">StatusCommand.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_status_command_html_a6035ef8e759111b4574c4b0d2e1f8df0"><div class="ttname"><a href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html#a6035ef8e759111b4574c4b0d2e1f8df0">pocketmine\command\defaults\StatusCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d7e/_status_command_8php_source.html#l00047">StatusCommand.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00035">VanillaCommand.php:35</a></div></div>

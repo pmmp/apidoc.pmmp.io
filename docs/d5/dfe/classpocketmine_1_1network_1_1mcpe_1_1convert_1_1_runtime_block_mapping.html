@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.5 git-44bc4d8c7caa3e02f6c20c904851eaa68aa1e95b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('d5/dfe/classpocketmine_1_1network_1_1m
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab44055394a9b7a7d7903e78120222571"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping.html#ab44055394a9b7a7d7903e78120222571">__construct</a> (string $canonicalBlockStatesFile, string $r12ToCurrentBlockMapFile)</td></tr>
-<tr class="separator:ab44055394a9b7a7d7903e78120222571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc36ab7972d71563ff558a23544569c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping.html#acc36ab7972d71563ff558a23544569c3">__construct</a> (private string $canonicalBlockStatesFile, string $r12ToCurrentBlockMapFile)</td></tr>
+<tr class="separator:acc36ab7972d71563ff558a23544569c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74cc5a3aa520a7a9e34a1c1a9668b45f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping.html#a74cc5a3aa520a7a9e34a1c1a9668b45f">fromRuntimeId</a> (int $runtimeId)</td></tr>
 <tr class="separator:a74cc5a3aa520a7a9e34a1c1a9668b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3afb6cf3a103d4fa018a07b11772e88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping.html#ac3afb6cf3a103d4fa018a07b11772e88">getBedrockKnownStates</a> ()</td></tr>
@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00044">44</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab44055394a9b7a7d7903e78120222571" name="ab44055394a9b7a7d7903e78120222571"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab44055394a9b7a7d7903e78120222571">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="acc36ab7972d71563ff558a23544569c3" name="acc36ab7972d71563ff558a23544569c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc36ab7972d71563ff558a23544569c3">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">pocketmine\network\mcpe\convert\RuntimeBlockMapping::__construct </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">private string&#160;</td>
           <td class="paramname"><em>$canonicalBlockStatesFile</em>, </td>
         </tr>
         <tr>
@@ -166,7 +166,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00159">159</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00166">166</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
 
 </div>
 </div>
@@ -184,9 +184,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >WARNING: This method may load the palette from disk, which is a slow operation. Afterwards, it will cache the palette in memory, which requires (in some cases) tens of MB of memory. Avoid using this where possible.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>CompoundTag[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00171">171</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00183">183</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
 
 </div>
 </div>
@@ -206,7 +208,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00155">155</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html#l00162">162</a> of file <a class="el" href="../../dc/d73/_runtime_block_mapping_8php_source.html">RuntimeBlockMapping.php</a>.</p>
 
 </div>
 </div>

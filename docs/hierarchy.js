@@ -2093,7 +2093,6 @@ var hierarchy =
       [ "pocketmine\\snooze\\SleeperNotifier", "d2/d16/classpocketmine_1_1snooze_1_1_sleeper_notifier.html", null ]
     ] ],
     [ "pocketmine\\world\\generator\\ThreadLocalGeneratorContext", "d0/d9d/classpocketmine_1_1world_1_1generator_1_1_thread_local_generator_context.html", null ],
-    [ "pocketmine\\world\\TickingChunkEntry", "d1/d78/classpocketmine_1_1world_1_1_ticking_chunk_entry.html", null ],
     [ "pocketmine\\block\\tile\\Tile", "d9/d74/classpocketmine_1_1block_1_1tile_1_1_tile.html", [
       [ "pocketmine\\block\\tile\\Comparator", "df/de7/classpocketmine_1_1block_1_1tile_1_1_comparator.html", null ],
       [ "pocketmine\\block\\tile\\DaylightSensor", "de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html", null ],

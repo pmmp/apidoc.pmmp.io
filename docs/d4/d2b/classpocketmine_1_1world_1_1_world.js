@@ -56,6 +56,7 @@ var classpocketmine_1_1world_1_1_world =
     [ "getSunAngleDegrees", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a25b61871c93a17008d6ac44c0da6c98e", null ],
     [ "getSunAnglePercentage", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a4a369f4ca6168901f541f65849212ef1", null ],
     [ "getSunAngleRadians", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a29fef9939ee7bff3db7be9d6573948c1", null ],
+    [ "getTickingChunks", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a542909c08ebd6c0a6d19e61427644c58", null ],
     [ "getTile", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ad4c1e012e3e1faf646d38f10eee648f0", null ],
     [ "getTileAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a74dea3bca895cd79b47506bec7b0f332", null ],
     [ "getTime", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ada131427fe06f5a7c41f384d4809ac4e", null ],

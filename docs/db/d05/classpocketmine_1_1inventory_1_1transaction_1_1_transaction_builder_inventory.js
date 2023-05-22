@@ -13,6 +13,7 @@ var classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventor
     [ "getContents", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a641c15404415baf0e78a87f9c3ff5364", null ],
     [ "getItem", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#ada2a6d1bce5fecb032266cb70165838d", null ],
     [ "getListeners", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a782f68d96eb96e27264ee54ed49184c7", null ],
+    [ "getMatchingItemCount", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a0312ab72f656291bc3cbe1c25f9bf25a", null ],
     [ "getMaxStackSize", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getSize", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a01a674e8cc4f35482babfbbbb67d1e53", null ],
     [ "getViewers", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],

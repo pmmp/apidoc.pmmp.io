@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;4.20.5 git-44bc4d8c7caa3e02f6c20c904851eaa68aa1e95b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
    </div>
   </td>
  </tr>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    require_once __DIR__ . <span class="stringliteral">&#39;/VersionInfo.php&#39;</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> MIN_PHP_VERSION = <span class="stringliteral">&quot;8.0.0&quot;</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> MIN_PHP_VERSION = <span class="stringliteral">&quot;8.1.0&quot;</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">   59</a></span>    <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>($message){</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        echo <span class="stringliteral">&quot;[ERROR] $message&quot;</span> . PHP_EOL;</div>
@@ -343,102 +343,99 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                exit(1);</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            }</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">if</span>(extension_loaded(<span class="stringliteral">&#39;parallel&#39;</span>)){</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            \parallel\bootstrap(\<a class="code hl_namespace" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>\COMPOSER_AUTOLOADER_PATH);</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a6f6d362254f31df4b2979395e49be484">ErrorToExceptionHandler::set</a>();</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        $cwd = <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">Utils::assumeNotFalse</a>(realpath(<a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">Utils::assumeNotFalse</a>(getcwd())));</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        $dataPath = getopt_string(<span class="stringliteral">&quot;data&quot;</span>) ?? $cwd;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        $pluginPath = getopt_string(<span class="stringliteral">&quot;plugins&quot;</span>) ?? $cwd . DIRECTORY_SEPARATOR . <span class="stringliteral">&quot;plugins&quot;</span>;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        Filesystem::addCleanedPath($pluginPath, Filesystem::CLEAN_PATH_PLUGINS_PREFIX);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        <span class="keywordflow">if</span>(!@mkdir($dataPath, 0777, <span class="keyword">true</span>) &amp;&amp; !is_dir($dataPath)){</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Unable to create/access data directory at $dataPath. Check that the target location is accessible by the current user.&quot;</span>);</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            exit(1);</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="comment">//this has to be done after we&#39;re sure the data path exists</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        $dataPath = realpath($dataPath) . DIRECTORY_SEPARATOR;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        $lockFilePath = Path::join($dataPath, <span class="stringliteral">&#39;server.lock&#39;</span>);</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            $pid = <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a637d20643fcb722bbc5556b43bda0d59">Filesystem::createLockFile</a>($lockFilePath);</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        }<span class="keywordflow">catch</span>(\InvalidArgumentException $e){</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>($e-&gt;getMessage());</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Please ensure that there is enough space on the disk and that the current user has read/write permissions to the selected data directory $dataPath.&quot;</span>);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            exit(1);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        }</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <span class="keywordflow">if</span>($pid !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Another &quot;</span> . VersionInfo::NAME . <span class="stringliteral">&quot; instance (PID $pid) is already using this folder (&quot;</span> . realpath($dataPath) . <span class="stringliteral">&quot;).&quot;</span>);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Please stop the other server first before running a new one.&quot;</span>);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            exit(1);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        }</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="keywordflow">if</span>(!@mkdir($pluginPath, 0777, <span class="keyword">true</span>) &amp;&amp; !is_dir($pluginPath)){</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Unable to create plugin directory at $pluginPath. Check that the target location is accessible by the current user.&quot;</span>);</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            exit(1);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        }</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        $pluginPath = realpath($pluginPath) . DIRECTORY_SEPARATOR;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a6f6d362254f31df4b2979395e49be484">ErrorToExceptionHandler::set</a>();</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        $cwd = <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">Utils::assumeNotFalse</a>(realpath(<a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">Utils::assumeNotFalse</a>(getcwd())));</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        $dataPath = getopt_string(<span class="stringliteral">&quot;data&quot;</span>) ?? $cwd;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        $pluginPath = getopt_string(<span class="stringliteral">&quot;plugins&quot;</span>) ?? $cwd . DIRECTORY_SEPARATOR . <span class="stringliteral">&quot;plugins&quot;</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        Filesystem::addCleanedPath($pluginPath, Filesystem::CLEAN_PATH_PLUGINS_PREFIX);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="keywordflow">if</span>(!@mkdir($dataPath, 0777, <span class="keyword">true</span>) &amp;&amp; !is_dir($dataPath)){</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Unable to create/access data directory at $dataPath. Check that the target location is accessible by the current user.&quot;</span>);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            exit(1);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="comment">//this has to be done after we&#39;re sure the data path exists</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        $dataPath = realpath($dataPath) . DIRECTORY_SEPARATOR;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        $lockFilePath = Path::join($dataPath, <span class="stringliteral">&#39;server.lock&#39;</span>);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            $pid = <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a637d20643fcb722bbc5556b43bda0d59">Filesystem::createLockFile</a>($lockFilePath);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        }<span class="keywordflow">catch</span>(\InvalidArgumentException $e){</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>($e-&gt;getMessage());</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Please ensure that there is enough space on the disk and that the current user has read/write permissions to the selected data directory $dataPath.&quot;</span>);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            exit(1);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordflow">if</span>($pid !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Another &quot;</span> . VersionInfo::NAME . <span class="stringliteral">&quot; instance (PID $pid) is already using this folder (&quot;</span> . realpath($dataPath) . <span class="stringliteral">&quot;).&quot;</span>);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Please stop the other server first before running a new one.&quot;</span>);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            exit(1);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        }</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">if</span>(!@mkdir($pluginPath, 0777, <span class="keyword">true</span>) &amp;&amp; !is_dir($pluginPath)){</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Unable to create plugin directory at $pluginPath. Check that the target location is accessible by the current user.&quot;</span>);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            exit(1);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        $pluginPath = realpath($pluginPath) . DIRECTORY_SEPARATOR;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="comment">//Logger has a dependency on timezone</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        Timezone::init();</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="comment">//Logger has a dependency on timezone</span></div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        Timezone::init();</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        $opts = getopt(<span class="stringliteral">&quot;&quot;</span>, [<span class="stringliteral">&quot;no-wizard&quot;</span>, <span class="stringliteral">&quot;enable-ansi&quot;</span>, <span class="stringliteral">&quot;disable-ansi&quot;</span>]);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordflow">if</span>(isset($opts[<span class="stringliteral">&quot;enable-ansi&quot;</span>])){</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            Terminal::init(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        }elseif(isset($opts[<span class="stringliteral">&quot;disable-ansi&quot;</span>])){</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            Terminal::init(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            Terminal::init();</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        $opts = getopt(<span class="stringliteral">&quot;&quot;</span>, [<span class="stringliteral">&quot;no-wizard&quot;</span>, <span class="stringliteral">&quot;enable-ansi&quot;</span>, <span class="stringliteral">&quot;disable-ansi&quot;</span>]);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        <span class="keywordflow">if</span>(isset($opts[<span class="stringliteral">&quot;enable-ansi&quot;</span>])){</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            Terminal::init(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        }elseif(isset($opts[<span class="stringliteral">&quot;disable-ansi&quot;</span>])){</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            Terminal::init(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            Terminal::init();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        }</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        $logger = <span class="keyword">new</span> MainLogger(Path::join($dataPath, <span class="stringliteral">&quot;server.log&quot;</span>), Terminal::hasFormattingCodes(), <span class="stringliteral">&quot;Server&quot;</span>, <span class="keyword">new</span> \DateTimeZone(Timezone::get()));</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        \GlobalLogger::set($logger);</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        $logger = <span class="keyword">new</span> MainLogger(Path::join($dataPath, <span class="stringliteral">&quot;server.log&quot;</span>), Terminal::hasFormattingCodes(), <span class="stringliteral">&quot;Server&quot;</span>, <span class="keyword">new</span> \DateTimeZone(Timezone::get()));</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        \GlobalLogger::set($logger);</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#acc028521d7480726dbb9f9c4b6aecb83">emit_performance_warnings</a>($logger);</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        $exitCode = 0;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">do</span>{</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <span class="keywordflow">if</span>(!file_exists(Path::join($dataPath, <span class="stringliteral">&quot;server.properties&quot;</span>)) &amp;&amp; !isset($opts[<span class="stringliteral">&quot;no-wizard&quot;</span>])){</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                $installer = <span class="keyword">new</span> SetupWizard($dataPath);</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                <span class="keywordflow">if</span>(!$installer-&gt;run()){</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                    $exitCode = -1;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                }</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            }</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <span class="comment">/*</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">             * We now use the Composer autoloader, but this autoloader is still for loading plugins.</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">             */</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            $autoloader = new \BaseClassLoader();</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            $autoloader-&gt;register(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <span class="keyword">new</span> Server($autoloader, $logger, $dataPath, $pluginPath);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#aa4d33ee7970ea31d82718dec8e1be1f9">info</a>(<span class="stringliteral">&quot;Stopping other threads&quot;</span>);</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            $killer = <span class="keyword">new</span> ServerKiller(8);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            $killer-&gt;start(PTHREADS_INHERIT_NONE);</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            usleep(10000); <span class="comment">//Fixes ServerKiller not being able to start on single-core machines</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            <span class="keywordflow">if</span>(ThreadManager::getInstance()-&gt;stopAll() &gt; 0){</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#a292490915449087879e8250c5d66bfd2">debug</a>(<span class="stringliteral">&quot;Some threads could not be stopped, performing a force-kill&quot;</span>);</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                Process::kill(Process::pid(), <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            }</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        }<span class="keywordflow">while</span>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        $logger-&gt;shutdownLogWriterThread();</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        echo Terminal::$FORMAT_RESET . PHP_EOL;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">Filesystem::releaseLockFile</a>($lockFilePath);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#acc028521d7480726dbb9f9c4b6aecb83">emit_performance_warnings</a>($logger);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        $exitCode = 0;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordflow">do</span>{</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            <span class="keywordflow">if</span>(!file_exists(Path::join($dataPath, <span class="stringliteral">&quot;server.properties&quot;</span>)) &amp;&amp; !isset($opts[<span class="stringliteral">&quot;no-wizard&quot;</span>])){</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                $installer = <span class="keyword">new</span> SetupWizard($dataPath);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordflow">if</span>(!$installer-&gt;run()){</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                    $exitCode = -1;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            }</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="comment">/*</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">             * We now use the Composer autoloader, but this autoloader is still for loading plugins.</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">             */</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            $autoloader = new \BaseClassLoader();</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            $autoloader-&gt;register(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <span class="keyword">new</span> Server($autoloader, $logger, $dataPath, $pluginPath);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#aa4d33ee7970ea31d82718dec8e1be1f9">info</a>(<span class="stringliteral">&quot;Stopping other threads&quot;</span>);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            $killer = <span class="keyword">new</span> ServerKiller(8);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            $killer-&gt;start(PTHREADS_INHERIT_NONE);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            usleep(10000); <span class="comment">//Fixes ServerKiller not being able to start on single-core machines</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <span class="keywordflow">if</span>(ThreadManager::getInstance()-&gt;stopAll() &gt; 0){</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#a292490915449087879e8250c5d66bfd2">debug</a>(<span class="stringliteral">&quot;Some threads could not be stopped, performing a force-kill&quot;</span>);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                Process::kill(Process::pid(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            }</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        }<span class="keywordflow">while</span>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        $logger-&gt;shutdownLogWriterThread();</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        echo Terminal::$FORMAT_RESET . PHP_EOL;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">Filesystem::releaseLockFile</a>($lockFilePath);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        exit($exitCode);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    }</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        exit($exitCode);</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    }</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    \pocketmine\server();</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>}</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    \pocketmine\server();</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html">pocketmine\errorhandler\ErrorToExceptionHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00028">ErrorToExceptionHandler.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_a6f6d362254f31df4b2979395e49be484"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a6f6d362254f31df4b2979395e49be484">pocketmine\errorhandler\ErrorToExceptionHandler\set</a></div><div class="ttdeci">static set()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00069">ErrorToExceptionHandler.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_manager_html"><div class="ttname"><a href="../../df/dca/classpocketmine_1_1thread_1_1_thread_manager.html">pocketmine\thread\ThreadManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d38/_thread_manager_8php_source.html#l00028">ThreadManager.php:28</a></div></div>
