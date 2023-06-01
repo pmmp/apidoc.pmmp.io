@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('d8/dc9/classraklib_1_1generic_1_1_send
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aab726af9d84c8007b4a031707f8db668"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer.html#aab726af9d84c8007b4a031707f8db668">__construct</a> (int $mtuSize, \Closure $sendDatagram, \Closure $onACK)</td></tr>
-<tr class="separator:aab726af9d84c8007b4a031707f8db668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e371b461dde8124cb66b000807e2d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer.html#a62e371b461dde8124cb66b000807e2d7">__construct</a> (private int $mtuSize, private \Closure $sendDatagramCallback, private \Closure $onACK)</td></tr>
+<tr class="separator:a62e371b461dde8124cb66b000807e2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c7e9dd34491fd5abbda5c4e83886c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer.html#ad4c7e9dd34491fd5abbda5c4e83886c2">addEncapsulatedToQueue</a> (<a class="el" href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html">EncapsulatedPacket</a> $packet, bool $immediate=false)</td></tr>
 <tr class="separator:ad4c7e9dd34491fd5abbda5c4e83886c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb8434ddef4d8962c453b4ed968c75a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer.html#acb8434ddef4d8962c453b4ed968c75a5">needsUpdate</a> ()</td></tr>
@@ -123,10 +123,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00032">32</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00031">31</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aab726af9d84c8007b4a031707f8db668" name="aab726af9d84c8007b4a031707f8db668"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab726af9d84c8007b4a031707f8db668">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a62e371b461dde8124cb66b000807e2d7" name="a62e371b461dde8124cb66b000807e2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e371b461dde8124cb66b000807e2d7">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,19 +134,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">raklib\generic\SendReliabilityLayer::__construct </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">private int&#160;</td>
           <td class="paramname"><em>$mtuSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">\Closure&#160;</td>
-          <td class="paramname"><em>$sendDatagram</em>, </td>
+          <td class="paramtype">private \Closure&#160;</td>
+          <td class="paramname"><em>$sendDatagramCallback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">\Closure&#160;</td>
+          <td class="paramtype">private \Closure&#160;</td>
           <td class="paramname"><em>$onACK</em>&#160;</td>
         </tr>
         <tr>
@@ -156,9 +156,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >@phpstan-param int&lt;Session::MIN_MTU_SIZE, max&gt; $mtuSize @phpstan-param \Closure(Datagram) : void $sendDatagram @phpstan-param \Closure(int) : void $onACK </p>
+<p >@phpstan-param int&lt;Session::MIN_MTU_SIZE, max&gt; $mtuSize @phpstan-param \Closure(Datagram) : void $sendDatagramCallback @phpstan-param \Closure(int) : void $onACK </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00082">82</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00060">60</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00145">145</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00123">123</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>
@@ -208,7 +208,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00216">216</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00194">194</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00189">189</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00167">167</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00206">206</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00184">184</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>
@@ -267,7 +267,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00111">111</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00089">89</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00224">224</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html#l00202">202</a> of file <a class="el" href="../../de/d8e/_send_reliability_layer_8php_source.html">SendReliabilityLayer.php</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,25 @@
+var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader =
+[
+    [ "checkUnreadProperties", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a27259b020492dcae78339f2368be0d63", null ],
+    [ "ignored", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a24012678c9ef1eedbc8a11529d4b6865", null ],
+    [ "read5MinusHorizontalFacing", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac0e96ada52f01106071e90e8b3e560f0", null ],
+    [ "readBellAttachmentType", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a70ee8bed64c99643e7ce44cb66b19774", null ],
+    [ "readBool", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a49c770b14699a5837c42bf2546697c98", null ],
+    [ "readBoundedInt", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a6be7e7b1c70ff597fed20052e5dd05b1", null ],
+    [ "readColor", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ae6bd6ba4985960ca642a1ef1ae14c913", null ],
+    [ "readCoralFacing", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac1db9d3f20ac074f75dff0b015c45877", null ],
+    [ "readCoralType", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a7a2ad05e0daf19dac0c1257c9a94eeea", null ],
+    [ "readEndRodFacingDirection", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afc1ef00264a5352737a3ddfeae7ec035", null ],
+    [ "readFacingDirection", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aff25248c87fd7d165eaafa7d5b46ac94", null ],
+    [ "readFacingWithoutDown", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a498a3aad6674956d3d17fb1f9706c9d8", null ],
+    [ "readHorizontalFacing", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#af62c69849cba2d79dfb8e040ae68f58e", null ],
+    [ "readInt", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a23ccd6b973a13ba193d5e761771080ca", null ],
+    [ "readLegacyHorizontalFacing", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ad4c357683d2e3079045a344be37e4692", null ],
+    [ "readPillarAxis", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a361ef7e26fde8c2130ea07a1e52e8722", null ],
+    [ "readSlabPosition", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac119a1cb8c9c25c355769775c5f0f5f1", null ],
+    [ "readString", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a1daef2e7e3a94cff6e9f34a9d8f6361f", null ],
+    [ "readTorchFacing", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afecfc67d26c96eb963438588d6be1b63", null ],
+    [ "readWallConnectionType", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aed117b3159242b164b5220f7cf9ad9df", null ],
+    [ "readWeirdoHorizontalFacing", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a61cedb7ed7e27f24b1beefd2c0b5251d", null ],
+    [ "todo", "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ab9f1e36afa97cd0cc3e087a783e3958f", null ]
+];

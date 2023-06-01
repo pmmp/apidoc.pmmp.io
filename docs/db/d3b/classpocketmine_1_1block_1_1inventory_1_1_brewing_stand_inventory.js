@@ -12,7 +12,7 @@ var classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory =
     [ "getContents", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#a43e646d154a8134eb1e7294d158d576d", null ],
     [ "getItem", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7", null ],
     [ "getListeners", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#a782f68d96eb96e27264ee54ed49184c7", null ],
-    [ "getMatchingItemCount", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#a3c513d1bf1a055c52e6ef5961635a6c2", null ],
+    [ "getMatchingItemCount", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#aaa1a88b2b7f93d073538fb993a508e2c", null ],
     [ "getMaxStackSize", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getSize", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#ad20602c8437154b4c4a201d6798e90fd", null ],
     [ "getViewers", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],

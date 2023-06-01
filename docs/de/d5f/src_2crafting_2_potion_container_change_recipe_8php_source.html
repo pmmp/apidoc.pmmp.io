@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -117,39 +117,50 @@ $(document).ready(function(){initNavTree('de/d5f/src_2crafting_2_potion_containe
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\crafting;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d8/d5d/classpocketmine_1_1item_1_1_item_factory.html">pocketmine\item\ItemFactory</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html">PotionContainerChangeRecipe</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d9/d63/interfacepocketmine_1_1crafting_1_1_brewing_recipe.html">BrewingRecipe</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $inputItemId,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $ingredient,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $outputItemId</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    ){</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;ingredient = clone $ingredient;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInputItemId() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> $this-&gt;inputItemId;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span> <span class="keyword">function</span> getIngredient() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> clone $this-&gt;ingredient;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOutputItemId() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> $this-&gt;outputItemId;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">function</span> getResultFor(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $input) : ?<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> $input-&gt;getId() === $this-&gt;getInputItemId() ? ItemFactory::getInstance()-&gt;get($this-&gt;getOutputItemId(), $input-&gt;getMeta()) : <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_potion_container_change_recipe_html"><div class="ttname"><a href="../../d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html">pocketmine\crafting\PotionContainerChangeRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d5f/src_2crafting_2_potion_container_change_recipe_8php_source.html#l00029">src/crafting/PotionContainerChangeRecipe.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_factory_html"><div class="ttname"><a href="../../d8/d5d/classpocketmine_1_1item_1_1_item_factory.html">pocketmine\item\ItemFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/_item_factory_8php_source.html#l00056">ItemFactory.php:56</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00058">Item.php:58</a></div></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../df/d33/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_saved_item_data.html">pocketmine\data\bedrock\item\SavedItemData</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d2/df3/classpocketmine_1_1world_1_1format_1_1io_1_1_global_item_data_handlers.html">pocketmine\world\format\io\GlobalItemDataHandlers</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html">PotionContainerChangeRecipe</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d9/d63/interfacepocketmine_1_1crafting_1_1_brewing_recipe.html">BrewingRecipe</a>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $inputItemId,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> <a class="code hl_interface" href="../../dd/d65/interfacepocketmine_1_1crafting_1_1_recipe_ingredient.html">RecipeIngredient</a> $ingredient,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $outputItemId</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ){}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInputItemId() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> $this-&gt;inputItemId;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> getIngredient() : <a class="code hl_interface" href="../../dd/d65/interfacepocketmine_1_1crafting_1_1_recipe_ingredient.html">RecipeIngredient</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> $this-&gt;ingredient;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOutputItemId() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> $this-&gt;outputItemId;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> getResultFor(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $input) : ?<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">//TODO: this is a really awful hack, but there isn&#39;t another way for now</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">//this relies on transforming the serialized item&#39;s ID, relying on the target item type&#39;s data being the same as the input.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="comment">//This is the same assumption previously made using ItemFactory::get(), except it was less obvious how bad it was.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">//The other way is to bake the actual Potion class types into here, which isn&#39;t great for data-driving stuff.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="comment">//We need a better solution for this.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $data = GlobalItemDataHandlers::getSerializer()-&gt;serializeType($input);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> $data-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a2ee3936259ed3fd96fa07dcbcc4797c1">getName</a>() === $this-&gt;getInputItemId() ?</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            GlobalItemDataHandlers::getDeserializer()-&gt;deserializeType(<span class="keyword">new</span> <a class="code hl_class" href="../../df/d33/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_saved_item_data.html">SavedItemData</a>($this-&gt;getOutputItemId(), $data-&gt;getMeta(), $data-&gt;getBlock(), $data-&gt;getTag())) :</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_potion_container_change_recipe_html"><div class="ttname"><a href="../../d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html">pocketmine\crafting\PotionContainerChangeRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d5f/src_2crafting_2_potion_container_change_recipe_8php_source.html#l00030">src/crafting/PotionContainerChangeRecipe.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1item_1_1_saved_item_data_html"><div class="ttname"><a href="../../df/d33/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_saved_item_data.html">pocketmine\data\bedrock\item\SavedItemData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dcd/_saved_item_data_8php_source.html#l00030">SavedItemData.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html_a2ee3936259ed3fd96fa07dcbcc4797c1"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a2ee3936259ed3fd96fa07dcbcc4797c1">pocketmine\item\Item\getName</a></div><div class="ttdeci">getName()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00447">Item.php:447</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_global_item_data_handlers_html"><div class="ttname"><a href="../../d2/df3/classpocketmine_1_1world_1_1format_1_1io_1_1_global_item_data_handlers.html">pocketmine\world\format\io\GlobalItemDataHandlers</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db5/_global_item_data_handlers_8php_source.html#l00037">GlobalItemDataHandlers.php:37</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1crafting_1_1_brewing_recipe_html"><div class="ttname"><a href="../../d9/d63/interfacepocketmine_1_1crafting_1_1_brewing_recipe.html">pocketmine\crafting\BrewingRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1b/_brewing_recipe_8php_source.html#l00028">BrewingRecipe.php:28</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1crafting_1_1_recipe_ingredient_html"><div class="ttname"><a href="../../dd/d65/interfacepocketmine_1_1crafting_1_1_recipe_ingredient.html">pocketmine\crafting\RecipeIngredient</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc3/src_2crafting_2_recipe_ingredient_8php_source.html#l00028">src/crafting/RecipeIngredient.php:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

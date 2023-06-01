@@ -11,12 +11,18 @@ var namespaces_dup =
         [ "Type", "d6/d33/class_dave_random_1_1_callback_validator_1_1_type.html", "d6/d33/class_dave_random_1_1_callback_validator_1_1_type" ]
       ] ]
     ] ],
+    [ "JsonMapper", "d6/d57/namespace_json_mapper.html", null ],
     [ "pocketmine", "d2/d69/namespacepocketmine.html", "d2/d69/namespacepocketmine" ],
     [ "raklib", null, [
+      [ "client", null, [
+        [ "ClientSocket", "d5/d70/classraklib_1_1client_1_1_client_socket.html", "d5/d70/classraklib_1_1client_1_1_client_socket" ]
+      ] ],
       [ "generic", null, [
+        [ "DisconnectReason", "d7/d33/classraklib_1_1generic_1_1_disconnect_reason.html", null ],
         [ "ReceiveReliabilityLayer", "dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer.html", "dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer" ],
         [ "ReliableCacheEntry", "d2/d87/classraklib_1_1generic_1_1_reliable_cache_entry.html", "d2/d87/classraklib_1_1generic_1_1_reliable_cache_entry" ],
         [ "SendReliabilityLayer", "d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer.html", "d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer" ],
+        [ "Session", "dd/dca/classraklib_1_1generic_1_1_session.html", "dd/dca/classraklib_1_1generic_1_1_session" ],
         [ "Socket", "d9/d5c/classraklib_1_1generic_1_1_socket.html", "d9/d5c/classraklib_1_1generic_1_1_socket" ],
         [ "SocketException", "df/d21/classraklib_1_1generic_1_1_socket_exception.html", null ]
       ] ],
@@ -55,17 +61,18 @@ var namespaces_dup =
           [ "InterThreadChannelWriter", "d6/de1/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_writer.html", null ],
           [ "RakLibToUserThreadMessageProtocol", "d4/ddf/classraklib_1_1server_1_1ipc_1_1_rak_lib_to_user_thread_message_protocol.html", null ],
           [ "RakLibToUserThreadMessageReceiver", "d3/dc1/classraklib_1_1server_1_1ipc_1_1_rak_lib_to_user_thread_message_receiver.html", null ],
-          [ "RakLibToUserThreadMessageSender", "d2/d10/classraklib_1_1server_1_1ipc_1_1_rak_lib_to_user_thread_message_sender.html", null ],
+          [ "RakLibToUserThreadMessageSender", "d2/d10/classraklib_1_1server_1_1ipc_1_1_rak_lib_to_user_thread_message_sender.html", "d2/d10/classraklib_1_1server_1_1ipc_1_1_rak_lib_to_user_thread_message_sender" ],
           [ "UserToRakLibThreadMessageProtocol", "d6/dd5/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_protocol.html", null ],
           [ "UserToRakLibThreadMessageReceiver", "dc/d9f/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_receiver.html", null ],
           [ "UserToRakLibThreadMessageSender", "d4/d78/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_sender.html", null ]
         ] ],
         [ "ProtocolAcceptor", "db/d2d/interfaceraklib_1_1server_1_1_protocol_acceptor.html", null ],
         [ "Server", "d8/dd8/classraklib_1_1server_1_1_server.html", "d8/dd8/classraklib_1_1server_1_1_server" ],
-        [ "ServerEventListener", "dd/d42/interfaceraklib_1_1server_1_1_server_event_listener.html", null ],
+        [ "ServerEventListener", "dd/d42/interfaceraklib_1_1server_1_1_server_event_listener.html", "dd/d42/interfaceraklib_1_1server_1_1_server_event_listener" ],
         [ "ServerEventSource", "de/d4c/interfaceraklib_1_1server_1_1_server_event_source.html", null ],
         [ "ServerInterface", "df/d56/interfaceraklib_1_1server_1_1_server_interface.html", null ],
-        [ "Session", "d6/d53/classraklib_1_1server_1_1_session.html", "d6/d53/classraklib_1_1server_1_1_session" ],
+        [ "ServerSession", "d6/d79/classraklib_1_1server_1_1_server_session.html", "d6/d79/classraklib_1_1server_1_1_server_session" ],
+        [ "ServerSocket", "da/daa/classraklib_1_1server_1_1_server_socket.html", "da/daa/classraklib_1_1server_1_1_server_socket" ],
         [ "SimpleProtocolAcceptor", "d2/d81/classraklib_1_1server_1_1_simple_protocol_acceptor.html", null ],
         [ "UnconnectedMessageHandler", "dd/dc3/classraklib_1_1server_1_1_unconnected_message_handler.html", "dd/dc3/classraklib_1_1server_1_1_unconnected_message_handler" ]
       ] ],

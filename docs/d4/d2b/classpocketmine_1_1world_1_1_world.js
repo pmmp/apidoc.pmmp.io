@@ -82,6 +82,7 @@ var classpocketmine_1_1world_1_1_world =
     [ "setBlockAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a94304c87d2659a6dde338fd96a6d756b", null ],
     [ "setBlockAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ac05f0b1b1733c655a117eac734f2460f", null ],
     [ "setChunkTickRadius", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a7720ff081c61a0b0bf716aea5efca468", null ],
+    [ "setDisplayName", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a0bb89bc1da9a05c17bbe94a4a73c5bbe", null ],
     [ "setSpawnLocation", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a17b929ab6177e1de0eeef8ebfaa3d2d9", null ],
     [ "setTime", "d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20", null ],
     [ "startTime", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a42e678d9292e210cc82f4e25eec19f6e", null ],
@@ -90,6 +91,6 @@ var classpocketmine_1_1world_1_1_world =
     [ "unregisterChunkListener", "d4/d2b/classpocketmine_1_1world_1_1_world.html#afd51ae9c966a8d2de8dc91f80b337afc", null ],
     [ "unregisterChunkListenerFromAll", "d4/d2b/classpocketmine_1_1world_1_1_world.html#aa5d895755fb6883ebb3a62e97523747d", null ],
     [ "unregisterTickingChunk", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ac6e66c73ae74575ec53bb3d448b34fa7", null ],
-    [ "useBreakOn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a86a1511d66542c24059a6b387195dc23", null ],
-    [ "useItemOn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a89060c5356799854004d95571da52009", null ]
+    [ "useBreakOn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a1e582510a552bb3b6065dde74da1ac16", null ],
+    [ "useItemOn", "d4/d2b/classpocketmine_1_1world_1_1_world.html#ab3173b7c869185b74e47b652252268e4", null ]
 ];

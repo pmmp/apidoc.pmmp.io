@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('de/dda/classpocketmine_1_1world_1_1for
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/da9/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils__coll__graph.svg" width="198" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/da9/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils__coll__graph.svg" width="200" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -108,10 +108,12 @@ $(document).ready(function(){initNavTree('de/dda/classpocketmine_1_1world_1_1for
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1c7fbcc86cafaceaa17fb4713a336e2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#ae1c7fbcc86cafaceaa17fb4713a336e2">convertBiomeColors</a> (array $array)</td></tr>
 <tr class="separator:ae1c7fbcc86cafaceaa17fb4713a336e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d68105f1931b0cc2f5e8c46b0040c5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#a36d68105f1931b0cc2f5e8c46b0040c5">extrapolate3DBiomes</a> (string $biomes2d)</td></tr>
+<tr class="separator:a36d68105f1931b0cc2f5e8c46b0040c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html#l00029">29</a> of file <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html">ChunkUtils.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html#l00032">32</a> of file <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html">ChunkUtils.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae1c7fbcc86cafaceaa17fb4713a336e2" name="ae1c7fbcc86cafaceaa17fb4713a336e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1c7fbcc86cafaceaa17fb4713a336e2">&#9670;&nbsp;</a></span>convertBiomeColors()</h2>
@@ -144,7 +146,36 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html#l00037">37</a> of file <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html">ChunkUtils.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html#l00040">40</a> of file <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html">ChunkUtils.php</a>.</p>
+
+</div>
+</div>
+<a id="a36d68105f1931b0cc2f5e8c46b0040c5" name="a36d68105f1931b0cc2f5e8c46b0040c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d68105f1931b0cc2f5e8c46b0040c5">&#9670;&nbsp;</a></span>extrapolate3DBiomes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\world\format\io\ChunkUtils::extrapolate3DBiomes </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$biomes2d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Converts 2D biomes into a 3D biome palette. This palette can then be cloned for every subchunk. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html#l00051">51</a> of file <a class="el" href="../../d1/d0e/_chunk_utils_8php_source.html">ChunkUtils.php</a>.</p>
 
 </div>
 </div>

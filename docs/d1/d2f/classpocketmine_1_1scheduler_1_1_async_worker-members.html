@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d1/d4e/classpocketmine_1_1scheduler_1_
 
 <p>This is the complete list of members for <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__construct</b>(private \ThreadedLogger $logger, private int $id, private int $memoryLimit, private SleeperNotifier $notifier) (defined in <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a>)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__construct</b>(private ThreadSafeLogger $logger, private int $id, private int $memoryLimit, private SleeperHandlerEntry $sleeperEntry) (defined in <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a>)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>getAsyncWorkerId</b>() (defined in <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a>)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#a75770eb28002e31779b92e86a29cb4e9">getFromThreadStore</a>(string $identifier)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>getLogger</b>() (defined in <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a>)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('d1/d4e/classpocketmine_1_1scheduler_1_
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>onRun</b>() (defined in <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a>)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">quit</a>()</td><td class="entry"><a class="el" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#abb31f220a09e40bb22c29bb68a693e7c">removeFromThreadStore</a>(string $identifier)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#a9092eed63e1463de757152febae0b3e1">saveToThreadStore</a>(string $identifier, $value)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>start</b>(int $options=PTHREADS_INHERIT_NONE) (defined in <a class="el" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a>)</td><td class="entry"><a class="el" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#adf6cfa9e72379b162d462a2e9dc8d301">saveToThreadStore</a>(string $identifier, mixed $value)</td><td class="entry"><a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>start</b>(int $options=NativeThread::INHERIT_NONE) (defined in <a class="el" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a>)</td><td class="entry"><a class="el" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

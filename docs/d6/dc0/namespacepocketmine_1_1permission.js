@@ -14,9 +14,5 @@ var namespacepocketmine_1_1permission =
     [ "PermissionParser", "da/da3/classpocketmine_1_1permission_1_1_permission_parser.html", "da/da3/classpocketmine_1_1permission_1_1_permission_parser" ],
     [ "PermissionParserException", "d7/dbd/classpocketmine_1_1permission_1_1_permission_parser_exception.html", null ],
     [ "getEffectivePermissions", "d6/dc0/namespacepocketmine_1_1permission.html#aaba8c18af6b314f1bbb7ce0b041c1b83", null ],
-    [ "getPermissionRecalculationCallbacks", "d6/dc0/namespacepocketmine_1_1permission.html#a1a5ce458d87f4afd550a866af20037ed", null ],
-    [ "hasPermission", "d6/dc0/namespacepocketmine_1_1permission.html#afdd461d1ff1079ac57a9cb8eae807e5b", null ],
-    [ "isPermissionSet", "d6/dc0/namespacepocketmine_1_1permission.html#a2ae1937c5086f2ed90a34af63965fd66", null ],
-    [ "setBasePermission", "d6/dc0/namespacepocketmine_1_1permission.html#a190968bd87900970a048593748bcafc1", null ],
-    [ "unsetBasePermission", "d6/dc0/namespacepocketmine_1_1permission.html#a3050eea4e7b576495d47814087d88319", null ]
+    [ "getPermissionRecalculationCallbacks", "d6/dc0/namespacepocketmine_1_1permission.html#a1a5ce458d87f4afd550a866af20037ed", null ]
 ];

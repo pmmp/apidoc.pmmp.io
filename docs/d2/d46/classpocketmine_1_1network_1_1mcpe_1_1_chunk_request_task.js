@@ -8,8 +8,9 @@ var classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task =
     [ "onError", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a26b0f919a8a77bd4afbf2cf55c7284bc", null ],
     [ "onProgressUpdate", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#ae3aa1ef734e82c49e25962e56eaf76ef", null ],
     [ "onRun", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#ad305e0ba9b2c1168a604ab2139af22db", null ],
-    [ "publishProgress", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a89362da818cfe5c11befeebd5317ab48", null ],
+    [ "publishProgress", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948", null ],
     [ "reallyDestruct", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#adad32212908878d6e70423161dbae0bf", null ],
-    [ "setResult", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a41f96569228fbba9e54729a46ae5b51e", null ],
-    [ "storeLocal", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#ab5e5e139bf17f0880c19b9cd6b593c8b", null ]
+    [ "storeLocal", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b", null ],
+    [ "$compressor", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a97685e97fd34f44f81e60bf0024c3c87", null ],
+    [ "$progressUpdates", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#ac53490645128426de21ae1ef050722a4", null ]
 ];

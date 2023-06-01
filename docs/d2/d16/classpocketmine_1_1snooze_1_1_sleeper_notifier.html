@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -96,56 +96,43 @@ $(document).ready(function(){initNavTree('d2/d16/classpocketmine_1_1snooze_1_1_s
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for pocketmine\snooze\SleeperNotifier:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for pocketmine\snooze\SleeperNotifier:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d02/classpocketmine_1_1snooze_1_1_sleeper_notifier__inherit__graph.svg" width="212" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for pocketmine\snooze\SleeperNotifier:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d82/classpocketmine_1_1snooze_1_1_sleeper_notifier__coll__graph.svg" width="212" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d82/classpocketmine_1_1snooze_1_1_sleeper_notifier__coll__graph.svg" width="212" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c04b2bf1da0cfc3103c25cbd8f40dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/classpocketmine_1_1snooze_1_1_sleeper_notifier.html#a7c04b2bf1da0cfc3103c25cbd8f40dfc">attachSleeper</a> (\Threaded $sharedObject, int $id)</td></tr>
-<tr class="separator:a7c04b2bf1da0cfc3103c25cbd8f40dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7becd12b86e820c62713d340cc558fdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/classpocketmine_1_1snooze_1_1_sleeper_notifier.html#a7becd12b86e820c62713d340cc558fdd">getSleeperId</a> ()</td></tr>
-<tr class="separator:a7becd12b86e820c62713d340cc558fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663a5db217e0d54d9be4497f4e7b206d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/classpocketmine_1_1snooze_1_1_sleeper_notifier.html#a663a5db217e0d54d9be4497f4e7b206d">__construct</a> (private readonly ThreadSafeArray $sharedObject, private readonly int $notifierId)</td></tr>
+<tr class="separator:a663a5db217e0d54d9be4497f4e7b206d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8795ca6aa6db11299f7aac28eb86c0fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/classpocketmine_1_1snooze_1_1_sleeper_notifier.html#a8795ca6aa6db11299f7aac28eb86c0fd">wakeupSleeper</a> ()</td></tr>
 <tr class="separator:a8795ca6aa6db11299f7aac28eb86c0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Notifiers are Threaded objects which can be attached to threaded sleepers in order to wake them up. </p>
+<div class="textblock"><p >Used to wake up the sleeping thread from another thread. Use <code><a class="el" href="../../d8/d3f/classpocketmine_1_1snooze_1_1_sleeper_handler_entry.html#aa031f7fa8d0c311cac9da2cacdce4ac9">SleeperHandlerEntry::createNotifier()</a></code> inside the thread to create this. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00031">31</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7c04b2bf1da0cfc3103c25cbd8f40dfc" name="a7c04b2bf1da0cfc3103c25cbd8f40dfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c04b2bf1da0cfc3103c25cbd8f40dfc">&#9670;&nbsp;</a></span>attachSleeper()</h2>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00023">23</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a663a5db217e0d54d9be4497f4e7b206d" name="a663a5db217e0d54d9be4497f4e7b206d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663a5db217e0d54d9be4497f4e7b206d">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\snooze\SleeperNotifier::attachSleeper </td>
+          <td class="memname">pocketmine\snooze\SleeperNotifier::__construct </td>
           <td>(</td>
-          <td class="paramtype">\Threaded&#160;</td>
+          <td class="paramtype">private readonly ThreadSafeArray&#160;</td>
           <td class="paramname"><em>$sharedObject</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$id</em>&#160;</td>
+          <td class="paramtype">private readonly int&#160;</td>
+          <td class="paramname"><em>$notifierId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -153,44 +140,13 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00038">38</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00031">31</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
 
 </div>
 </div>
-<a id="a7becd12b86e820c62713d340cc558fdd" name="a7becd12b86e820c62713d340cc558fdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7becd12b86e820c62713d340cc558fdd">&#9670;&nbsp;</a></span>getSleeperId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\snooze\SleeperNotifier::getSleeperId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00043">43</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
-
-</div>
-</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8795ca6aa6db11299f7aac28eb86c0fd" name="a8795ca6aa6db11299f7aac28eb86c0fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8795ca6aa6db11299f7aac28eb86c0fd">&#9670;&nbsp;</a></span>wakeupSleeper()</h2>
 
@@ -213,9 +169,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Call this method from other threads to wake up the main server thread. </p>
+<p >Call this method to wake up the sleeping thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00050">50</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html#l00039">39</a> of file <a class="el" href="../../d5/dd3/_sleeper_notifier_8php_source.html">SleeperNotifier.php</a>.</p>
 
 </div>
 </div>

@@ -13,5 +13,6 @@ var classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event =
     [ "getOriginalModifiers", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html#a1101a9056f8403897cc065084fb0b51e", null ],
     [ "isCancelled", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
     [ "setAttackCooldown", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html#ac8debf34386dc271b819cddd0f88f389", null ],
-    [ "setBaseDamage", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html#aae9beb4f56a92a138291b4a554aec092", null ]
+    [ "setBaseDamage", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html#aae9beb4f56a92a138291b4a554aec092", null ],
+    [ "$entity", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html#a2333d7f055234d7fefc00066158bd888", null ]
 ];

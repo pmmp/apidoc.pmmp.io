@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -117,39 +117,40 @@ $(document).ready(function(){initNavTree('d3/dfe/_worker_8php_source.html','../.
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\thread;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">pocketmine\scheduler\AsyncTask</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">const</span> PTHREADS_INHERIT_NONE;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">   39</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">Worker</a> <span class="keyword">extends</span> \Worker{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    use CommonThreadPartsTrait;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> start(<span class="keywordtype">int</span> $options = PTHREADS_INHERIT_NONE) : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="comment">//this is intentionally not traitified</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        ThreadManager::getInstance()-&gt;add($this);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span>($this-&gt;getClassLoaders() === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            $this-&gt;setClassLoaders();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> parent::start($options);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">   55</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">quit</a>() : void{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;isKilled = true;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span>(!$this-&gt;isShutdown()){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">while</span>($this-&gt;unstack() !== <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            });</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $this-&gt;notify();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;shutdown();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        ThreadManager::getInstance()-&gt;remove($this);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pmmp\thread\Thread as NativeThread;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pmmp\thread\Worker as NativeWorker;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">pocketmine\scheduler\AsyncTask</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">   40</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">Worker</a> <span class="keyword">extends</span> NativeWorker{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    use CommonThreadPartsTrait;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span> <span class="keyword">function</span> start(<span class="keywordtype">int</span> $options = NativeThread::INHERIT_NONE) : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">//this is intentionally not traitified</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        ThreadManager::getInstance()-&gt;add($this);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">if</span>($this-&gt;getClassLoaders() === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $this-&gt;setClassLoaders();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> parent::start($options);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">quit</a>() : void{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;isKilled = true;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span>(!$this-&gt;isShutdown()){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">while</span>($this-&gt;unstack() !== <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            });</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;notify();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $this-&gt;shutdown();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        ThreadManager::getInstance()-&gt;remove($this);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">pocketmine\scheduler\AsyncTask</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00062">AsyncTask.php:62</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1thread_1_1_worker_html"><div class="ttname"><a href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfe/_worker_8php_source.html#l00039">Worker.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1thread_1_1_worker_html_a9be9d892b6130648bcf5433330eba096"><div class="ttname"><a href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">pocketmine\thread\Worker\quit</a></div><div class="ttdeci">quit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfe/_worker_8php_source.html#l00055">Worker.php:55</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1thread_1_1_worker_html"><div class="ttname"><a href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfe/_worker_8php_source.html#l00040">Worker.php:40</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1thread_1_1_worker_html_a9be9d892b6130648bcf5433330eba096"><div class="ttname"><a href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html#a9be9d892b6130648bcf5433330eba096">pocketmine\thread\Worker\quit</a></div><div class="ttdeci">quit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfe/_worker_8php_source.html#l00056">Worker.php:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['block_0',['block',['../d0/dc3/namespacepocketmine_1_1block.html',1,'pocketmine\block'],['../d0/d1c/namespacepocketmine_1_1event_1_1block.html',1,'pocketmine\event\block']]],
-  ['command_1',['command',['../da/d0c/namespacepocketmine_1_1command.html',1,'pocketmine']]],
-  ['entity_2',['entity',['../d7/db9/namespacepocketmine_1_1entity.html',1,'pocketmine\entity'],['../d9/d86/namespacepocketmine_1_1event_1_1entity.html',1,'pocketmine\event\entity']]],
-  ['event_3',['event',['../d3/daf/namespacepocketmine_1_1event.html',1,'pocketmine']]],
-  ['generator_4',['generator',['../db/d3f/namespacepocketmine_1_1world_1_1generator.html',1,'pocketmine::world']]],
-  ['inventory_5',['inventory',['../da/db8/namespacepocketmine_1_1event_1_1inventory.html',1,'pocketmine\event\inventory'],['../db/d9b/namespacepocketmine_1_1inventory.html',1,'pocketmine\inventory']]],
-  ['item_6',['item',['../d0/dec/namespacepocketmine_1_1item.html',1,'pocketmine']]],
-  ['math_7',['math',['../d8/db3/namespacepocketmine_1_1math.html',1,'pocketmine']]],
-  ['nbt_8',['nbt',['../d0/d59/namespacepocketmine_1_1nbt.html',1,'pocketmine']]],
-  ['network_9',['network',['../db/dd0/namespacepocketmine_1_1network.html',1,'pocketmine']]],
-  ['noise_10',['noise',['../da/d35/namespacepocketmine_1_1world_1_1generator_1_1noise.html',1,'pocketmine::world::generator']]],
-  ['permission_11',['permission',['../d6/dc0/namespacepocketmine_1_1permission.html',1,'pocketmine']]],
-  ['player_12',['player',['../de/d7b/namespacepocketmine_1_1event_1_1player.html',1,'pocketmine::event']]],
-  ['plugin_13',['plugin',['../d9/d61/namespacepocketmine_1_1event_1_1plugin.html',1,'pocketmine\event\plugin'],['../d1/dd8/namespacepocketmine_1_1plugin.html',1,'pocketmine\plugin']]],
-  ['pocketmine_14',['pocketmine',['../d2/d69/namespacepocketmine.html',1,'']]],
-  ['populator_15',['populator',['../d1/d99/namespacepocketmine_1_1world_1_1generator_1_1populator.html',1,'pocketmine::world::generator']]],
-  ['query_16',['query',['../d9/df5/namespacepocketmine_1_1network_1_1query.html',1,'pocketmine::network']]],
-  ['scheduler_17',['scheduler',['../d3/d75/namespacepocketmine_1_1scheduler.html',1,'pocketmine']]],
-  ['server_18',['server',['../db/d28/namespacepocketmine_1_1event_1_1server.html',1,'pocketmine::event']]],
-  ['tile_19',['tile',['../db/dba/namespacepocketmine_1_1block_1_1tile.html',1,'pocketmine::block']]],
-  ['upnp_20',['upnp',['../dd/db6/namespacepocketmine_1_1network_1_1upnp.html',1,'pocketmine::network']]],
-  ['utils_21',['utils',['../dc/db6/namespacepocketmine_1_1utils.html',1,'pocketmine']]],
-  ['wizard_22',['wizard',['../d1/d0f/namespacepocketmine_1_1wizard.html',1,'pocketmine']]],
-  ['world_23',['world',['../d7/d63/namespacepocketmine_1_1event_1_1world.html',1,'pocketmine\event\world'],['../df/d15/namespacepocketmine_1_1world.html',1,'pocketmine\world']]]
+  ['jsonmapper_0',['JsonMapper',['../d6/d57/namespace_json_mapper.html',1,'']]]
 ];

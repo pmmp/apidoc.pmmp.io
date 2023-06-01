@@ -8,7 +8,6 @@ var namespacepocketmine_1_1event_1_1player =
     [ "PlayerBucketFillEvent", "d6/dba/classpocketmine_1_1event_1_1player_1_1_player_bucket_fill_event.html", "d6/dba/classpocketmine_1_1event_1_1player_1_1_player_bucket_fill_event" ],
     [ "PlayerChangeSkinEvent", "d1/dd8/classpocketmine_1_1event_1_1player_1_1_player_change_skin_event.html", "d1/dd8/classpocketmine_1_1event_1_1player_1_1_player_change_skin_event" ],
     [ "PlayerChatEvent", "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event.html", "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event" ],
-    [ "PlayerCommandPreprocessEvent", "d3/dd2/classpocketmine_1_1event_1_1player_1_1_player_command_preprocess_event.html", "d3/dd2/classpocketmine_1_1event_1_1player_1_1_player_command_preprocess_event" ],
     [ "PlayerCreationEvent", "d8/dda/classpocketmine_1_1event_1_1player_1_1_player_creation_event.html", "d8/dda/classpocketmine_1_1event_1_1player_1_1_player_creation_event" ],
     [ "PlayerDataSaveEvent", "dc/d83/classpocketmine_1_1event_1_1player_1_1_player_data_save_event.html", "dc/d83/classpocketmine_1_1event_1_1player_1_1_player_data_save_event" ],
     [ "PlayerDeathEvent", "d7/d7d/classpocketmine_1_1event_1_1player_1_1_player_death_event.html", "d7/d7d/classpocketmine_1_1event_1_1player_1_1_player_death_event" ],

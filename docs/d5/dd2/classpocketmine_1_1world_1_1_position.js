@@ -1,6 +1,5 @@
 var classpocketmine_1_1world_1_1_position =
 [
-    [ "__construct", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a50f7c7a4e8d304900b673eab7b8d2fd2", null ],
     [ "asPosition", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a5d8e9b62367219f84eb7438f19be4f88", null ],
     [ "asVector3", "d5/dd2/classpocketmine_1_1world_1_1_position.html#a1bbf94c2ac5a3bfc67aaf6d9c0448b48", null ],
     [ "down", "d5/dd2/classpocketmine_1_1world_1_1_position.html#afd5e49285140152c656023ff1abc0dd6", null ],

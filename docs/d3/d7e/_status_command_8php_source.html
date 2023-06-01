@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -130,90 +130,86 @@ $(document).ready(function(){initNavTree('d3/d7e/_status_command_8php_source.htm
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html">StatusCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        parent::__construct(</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $name,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="stringliteral">&quot;status&quot;</span>,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            KnownTranslationFactory::pocketmine_command_status_description()</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;setPermission(DefaultPermissionNames::COMMAND_STATUS);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html#a6035ef8e759111b4574c4b0d2e1f8df0">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html#a6035ef8e759111b4574c4b0d2e1f8df0">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $mUsage = <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#abffaf0756ea0f94b647cc657d4a65d0f">Process::getAdvancedMemoryUsage</a>();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $server = $sender-&gt;getServer();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $sender-&gt;sendMessage(TextFormat::GREEN . <span class="stringliteral">&quot;---- &quot;</span> . TextFormat::RESET . <span class="stringliteral">&quot;Server status&quot;</span> . TextFormat::GREEN . <span class="stringliteral">&quot; ----&quot;</span>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $time = (int) (microtime(<span class="keyword">true</span>) - $server-&gt;getStartTime());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $seconds = $time % 60;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $minutes = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $hours = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $days = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span>($time &gt;= 60){</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            $minutes = floor(($time % 3600) / 60);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span>($time &gt;= 3600){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                $hours = floor(($time % (3600 * 24)) / 3600);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordflow">if</span>($time &gt;= 3600 * 24){</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    $days = floor($time / (3600 * 24));</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $uptime = ($minutes !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                ($hours !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    ($days !== <span class="keyword">null</span> ?</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                        <span class="stringliteral">&quot;$days days &quot;</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;$hours hours &quot;</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;$minutes minutes &quot;</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;$seconds seconds&quot;</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Uptime: &quot;</span> . TextFormat::RED . $uptime);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $tpsColor = TextFormat::GREEN;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span>($server-&gt;getTicksPerSecond() &lt; 12){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            $tpsColor = TextFormat::RED;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }elseif($server-&gt;getTicksPerSecond() &lt; 17){</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $tpsColor = TextFormat::GOLD;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Current TPS: {$tpsColor}{$server-&gt;getTicksPerSecond()} ({$server-&gt;getTickUsage()}%)&quot;</span>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Average TPS: {$tpsColor}{$server-&gt;getTicksPerSecondAverage()} ({$server-&gt;getTickUsageAverage()}%)&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $mUsage = <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#abffaf0756ea0f94b647cc657d4a65d0f">Process::getAdvancedMemoryUsage</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $server = $sender-&gt;getServer();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $sender-&gt;sendMessage(TextFormat::GREEN . <span class="stringliteral">&quot;---- &quot;</span> . TextFormat::RESET . <span class="stringliteral">&quot;Server status&quot;</span> . TextFormat::GREEN . <span class="stringliteral">&quot; ----&quot;</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $time = (int) (microtime(<span class="keyword">true</span>) - $server-&gt;getStartTime());</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $seconds = $time % 60;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $minutes = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $hours = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $days = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span>($time &gt;= 60){</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $minutes = floor(($time % 3600) / 60);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span>($time &gt;= 3600){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                $hours = floor(($time % (3600 * 24)) / 3600);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">if</span>($time &gt;= 3600 * 24){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    $days = floor($time / (3600 * 24));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $uptime = ($minutes !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                ($hours !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    ($days !== <span class="keyword">null</span> ?</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                        <span class="stringliteral">&quot;$days days &quot;</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;$hours hours &quot;</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;$minutes minutes &quot;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;$seconds seconds&quot;</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Uptime: &quot;</span> . TextFormat::RED . $uptime);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $tpsColor = TextFormat::GREEN;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span>($server-&gt;getTicksPerSecond() &lt; 12){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            $tpsColor = TextFormat::RED;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }elseif($server-&gt;getTicksPerSecond() &lt; 17){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $tpsColor = TextFormat::GOLD;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Current TPS: {$tpsColor}{$server-&gt;getTicksPerSecond()} ({$server-&gt;getTickUsage()}%)&quot;</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Average TPS: {$tpsColor}{$server-&gt;getTicksPerSecondAverage()} ({$server-&gt;getTickUsageAverage()}%)&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $bandwidth = $server-&gt;getNetwork()-&gt;getBandwidthTracker();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Network upload: &quot;</span> . TextFormat::RED . round($bandwidth-&gt;getSend()-&gt;getAverageBytes() / 1024, 2) . <span class="stringliteral">&quot; kB/s&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Network download: &quot;</span> . TextFormat::RED . round($bandwidth-&gt;getReceive()-&gt;getAverageBytes() / 1024, 2) . <span class="stringliteral">&quot; kB/s&quot;</span>);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $bandwidth = $server-&gt;getNetwork()-&gt;getBandwidthTracker();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Network upload: &quot;</span> . TextFormat::RED . round($bandwidth-&gt;getSend()-&gt;getAverageBytes() / 1024, 2) . <span class="stringliteral">&quot; kB/s&quot;</span>);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Network download: &quot;</span> . TextFormat::RED . round($bandwidth-&gt;getReceive()-&gt;getAverageBytes() / 1024, 2) . <span class="stringliteral">&quot; kB/s&quot;</span>);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Thread count: &quot;</span> . TextFormat::RED . Process::getThreadCount());</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Thread count: &quot;</span> . TextFormat::RED . Process::getThreadCount());</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Main thread memory: &quot;</span> . TextFormat::RED . number_format(round(($mUsage[0] / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Total memory: &quot;</span> . TextFormat::RED . number_format(round(($mUsage[1] / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Total virtual memory: &quot;</span> . TextFormat::RED . number_format(round(($mUsage[2] / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Main thread memory: &quot;</span> . TextFormat::RED . number_format(round(($mUsage[0] / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Total memory: &quot;</span> . TextFormat::RED . number_format(round(($mUsage[1] / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Total virtual memory: &quot;</span> . TextFormat::RED . number_format(round(($mUsage[2] / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $globalLimit = $server-&gt;getMemoryManager()-&gt;getGlobalMemoryLimit();</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span>($globalLimit &gt; 0){</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Maximum memory (manager): &quot;</span> . TextFormat::RED . number_format(round(($globalLimit / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">foreach</span>($server-&gt;getWorldManager()-&gt;getWorlds() as $world){</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $worldName = $world-&gt;getFolderName() !== $world-&gt;getDisplayName() ? <span class="stringliteral">&quot; (&quot;</span> . $world-&gt;getDisplayName() . <span class="stringliteral">&quot;)&quot;</span> : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $timeColor = $world-&gt;getTickRateTime() &gt; 40 ? TextFormat::RED : TextFormat::YELLOW;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;World \&quot;{$world-&gt;getFolderName()}\&quot;$worldName: &quot;</span> .</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                TextFormat::RED . number_format(count($world-&gt;getLoadedChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; loaded chunks, &quot;</span> .</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                TextFormat::RED . number_format(count($world-&gt;getTickingChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; ticking chunks, &quot;</span> .</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                TextFormat::RED . number_format(count($world-&gt;getEntities())) . TextFormat::GREEN . <span class="stringliteral">&quot; entities. &quot;</span> .</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <span class="stringliteral">&quot;Time $timeColor&quot;</span> . round($world-&gt;getTickRateTime(), 2) . <span class="stringliteral">&quot;ms&quot;</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            );</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $globalLimit = $server-&gt;getMemoryManager()-&gt;getGlobalMemoryLimit();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span>($globalLimit &gt; 0){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;Maximum memory (manager): &quot;</span> . TextFormat::RED . number_format(round(($globalLimit / 1024) / 1024, 2), 2) . <span class="stringliteral">&quot; MB.&quot;</span>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">foreach</span>($server-&gt;getWorldManager()-&gt;getWorlds() as $world){</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $worldName = $world-&gt;getFolderName() !== $world-&gt;getDisplayName() ? <span class="stringliteral">&quot; (&quot;</span> . $world-&gt;getDisplayName() . <span class="stringliteral">&quot;)&quot;</span> : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $timeColor = $world-&gt;getTickRateTime() &gt; 40 ? TextFormat::RED : TextFormat::YELLOW;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            $sender-&gt;sendMessage(TextFormat::GOLD . <span class="stringliteral">&quot;World \&quot;{$world-&gt;getFolderName()}\&quot;$worldName: &quot;</span> .</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                TextFormat::RED . number_format(count($world-&gt;getLoadedChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; loaded chunks, &quot;</span> .</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                TextFormat::RED . number_format(count($world-&gt;getTickingChunks())) . TextFormat::GREEN . <span class="stringliteral">&quot; ticking chunks, &quot;</span> .</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                TextFormat::RED . number_format(count($world-&gt;getEntities())) . TextFormat::GREEN . <span class="stringliteral">&quot; entities. &quot;</span> .</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="stringliteral">&quot;Time $timeColor&quot;</span> . round($world-&gt;getTickRateTime(), 2) . <span class="stringliteral">&quot;ms&quot;</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            );</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_status_command_html"><div class="ttname"><a href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html">pocketmine\command\defaults\StatusCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d7e/_status_command_8php_source.html#l00037">StatusCommand.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_status_command_html_a6035ef8e759111b4574c4b0d2e1f8df0"><div class="ttname"><a href="../../db/dce/classpocketmine_1_1command_1_1defaults_1_1_status_command.html#a6035ef8e759111b4574c4b0d2e1f8df0">pocketmine\command\defaults\StatusCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d7e/_status_command_8php_source.html#l00047">StatusCommand.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00035">VanillaCommand.php:35</a></div></div>

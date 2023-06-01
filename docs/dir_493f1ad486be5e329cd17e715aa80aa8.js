@@ -5,6 +5,7 @@ var dir_493f1ad486be5e329cd17e715aa80aa8 =
     [ "ChunkPopulateEvent.php", "db/d0f/_chunk_populate_event_8php_source.html", null ],
     [ "ChunkUnloadEvent.php", "d6/df8/_chunk_unload_event_8php_source.html", null ],
     [ "SpawnChangeEvent.php", "dc/d95/_spawn_change_event_8php_source.html", null ],
+    [ "WorldDisplayNameChangeEvent.php", "dd/da6/_world_display_name_change_event_8php_source.html", null ],
     [ "WorldEvent.php", "db/d9b/_world_event_8php_source.html", null ],
     [ "WorldInitEvent.php", "df/d90/_world_init_event_8php_source.html", null ],
     [ "WorldLoadEvent.php", "d3/d1f/_world_load_event_8php_source.html", null ],

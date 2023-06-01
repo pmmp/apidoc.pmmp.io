@@ -25,7 +25,7 @@ var namespacepocketmine_1_1utils =
     [ "StringToTParser", "d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html", "d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser" ],
     [ "Terminal", "da/d57/classpocketmine_1_1utils_1_1_terminal.html", "da/d57/classpocketmine_1_1utils_1_1_terminal" ],
     [ "TextFormat", "dd/db5/classpocketmine_1_1utils_1_1_text_format.html", "dd/db5/classpocketmine_1_1utils_1_1_text_format" ],
-    [ "Timezone", "dc/dc1/classpocketmine_1_1utils_1_1_timezone.html", "dc/dc1/classpocketmine_1_1utils_1_1_timezone" ],
+    [ "Timezone", "dc/dc1/classpocketmine_1_1utils_1_1_timezone.html", null ],
     [ "Utils", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html", "dc/d1a/classpocketmine_1_1utils_1_1_utils" ],
     [ "VersionString", "df/d22/classpocketmine_1_1utils_1_1_version_string.html", null ],
     [ "__callStatic", "dc/db6/namespacepocketmine_1_1utils.html#a48b537d68e3fadb3f2ab4b76deb01589", null ],

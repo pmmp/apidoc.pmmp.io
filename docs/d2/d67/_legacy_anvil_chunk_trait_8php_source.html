@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -117,76 +117,86 @@ $(document).ready(function(){initNavTree('d2/d67/_legacy_anvil_chunk_trait_8php_
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\world\format\io\region;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html">pocketmine\data\bedrock\BiomeIds</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html">pocketmine\nbt\BigEndianNbtSerializer</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">pocketmine\nbt\NbtDataException</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../dd/dec/classpocketmine_1_1nbt_1_1tag_1_1_byte_array_tag.html">pocketmine\nbt\tag\ByteArrayTag</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">pocketmine\nbt\tag\IntArrayTag</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../d8/d5f/classpocketmine_1_1world_1_1format_1_1_biome_array.html">pocketmine\world\format\BiomeArray</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html">pocketmine\data\bedrock\BiomeIds</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html">pocketmine\nbt\BigEndianNbtSerializer</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">pocketmine\nbt\NbtDataException</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../dd/dec/classpocketmine_1_1nbt_1_1tag_1_1_byte_array_tag.html">pocketmine\nbt\tag\ByteArrayTag</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">pocketmine\nbt\tag\IntArrayTag</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <a class="code hl_class" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">pocketmine\world\format\Chunk</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <a class="code hl_class" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">pocketmine\world\format\io\ChunkData</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <a class="code hl_class" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html">pocketmine\world\format\io\ChunkUtils</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <a class="code hl_class" href="../../da/d64/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_chunk_exception.html">pocketmine\world\format\io\exception\CorruptedChunkException</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <a class="code hl_class" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1_sub_chunk.html">pocketmine\world\format\SubChunk</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> zlib_decode;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>trait LegacyAnvilChunkTrait{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">protected</span> <span class="keyword">function</span> deserializeChunk(<span class="keywordtype">string</span> $data) : ?ChunkData{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $decompressed = @zlib_decode($data);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span>($decompressed === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException(<span class="stringliteral">&quot;Failed to decompress chunk NBT&quot;</span>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $nbt = <span class="keyword">new</span> BigEndianNbtSerializer();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $chunk = $nbt-&gt;read($decompressed)-&gt;mustGetCompoundTag();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException($e-&gt;getMessage(), 0, $e);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $chunk = $chunk-&gt;getTag(<span class="stringliteral">&quot;Level&quot;</span>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">if</span>(!($chunk instanceof CompoundTag)){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException(<span class="stringliteral">&quot;&#39;Level&#39; key is missing from chunk NBT&quot;</span>);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $subChunks = [];</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $subChunksTag = $chunk-&gt;getListTag(<span class="stringliteral">&quot;Sections&quot;</span>) ?? [];</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">foreach</span>($subChunksTag as $subChunk){</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span>($subChunk instanceof CompoundTag){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                $subChunks[$subChunk-&gt;getByte(<span class="stringliteral">&quot;Y&quot;</span>)] = $this-&gt;deserializeSubChunk($subChunk);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $makeBiomeArray = <span class="keyword">function</span>(<span class="keywordtype">string</span> $biomeIds) : BiomeArray{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> BiomeArray($biomeIds);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            }<span class="keywordflow">catch</span>(\InvalidArgumentException $e){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException($e-&gt;getMessage(), 0, $e);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        };</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $biomeArray = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span>(($biomeColorsTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;BiomeColors&quot;</span>)) instanceof IntArrayTag){</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $biomeArray = $makeBiomeArray(<a class="code hl_function" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#ae1c7fbcc86cafaceaa17fb4713a336e2">ChunkUtils::convertBiomeColors</a>($biomeColorsTag-&gt;getValue())); <span class="comment">//Convert back to original format</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }elseif(($biomesTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;Biomes&quot;</span>)) instanceof ByteArrayTag){</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $biomeArray = $makeBiomeArray($biomesTag-&gt;getValue());</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $biomeArray = BiomeArray::fill(BiomeIds::OCEAN);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> ChunkData(</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keyword">new</span> Chunk(</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                $subChunks,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                $biomeArray,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                $chunk-&gt;getByte(<span class="stringliteral">&quot;TerrainPopulated&quot;</span>, 0) !== 0</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            ),</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            ($entitiesTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;Entities&quot;</span>)) instanceof ListTag ? self::getCompoundList(<span class="stringliteral">&quot;Entities&quot;</span>, $entitiesTag) : [],</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            ($tilesTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;TileEntities&quot;</span>)) instanceof ListTag ? self::getCompoundList(<span class="stringliteral">&quot;TileEntities&quot;</span>, $tilesTag) : [],</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        );</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">function</span> deserializeSubChunk(CompoundTag $subChunk) : SubChunk;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <a class="code hl_class" href="../../d2/da3/classpocketmine_1_1world_1_1format_1_1io_1_1_loaded_chunk_data.html">pocketmine\world\format\io\LoadedChunkData</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use pocketmine\world\format\PalettedBlockArray;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <a class="code hl_class" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1_sub_chunk.html">pocketmine\world\format\SubChunk</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use <span class="keyword">function</span> strlen;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>use <span class="keyword">function</span> zlib_decode;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>trait LegacyAnvilChunkTrait{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">protected</span> <span class="keyword">function</span> deserializeChunk(<span class="keywordtype">string</span> $data) : ?LoadedChunkData{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $decompressed = @zlib_decode($data);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span>($decompressed === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException(<span class="stringliteral">&quot;Failed to decompress chunk NBT&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $nbt = <span class="keyword">new</span> BigEndianNbtSerializer();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $chunk = $nbt-&gt;read($decompressed)-&gt;mustGetCompoundTag();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException($e-&gt;getMessage(), 0, $e);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $chunk = $chunk-&gt;getTag(<span class="stringliteral">&quot;Level&quot;</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span>(!($chunk instanceof CompoundTag)){</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException(<span class="stringliteral">&quot;&#39;Level&#39; key is missing from chunk NBT&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $makeBiomeArray = <span class="keyword">function</span>(<span class="keywordtype">string</span> $biomeIds) : PalettedBlockArray{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">if</span>(strlen($biomeIds) !== 256){</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> CorruptedChunkException(<span class="stringliteral">&quot;Expected biome array to be exactly 256 bytes, got &quot;</span> . strlen($biomeIds));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="comment">//TODO: we may need to convert legacy biome IDs</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#a36d68105f1931b0cc2f5e8c46b0040c5">ChunkUtils::extrapolate3DBiomes</a>($biomeIds);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        };</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span>(($biomeColorsTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;BiomeColors&quot;</span>)) instanceof IntArrayTag){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            $biomes3d = $makeBiomeArray(<a class="code hl_function" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#ae1c7fbcc86cafaceaa17fb4713a336e2">ChunkUtils::convertBiomeColors</a>($biomeColorsTag-&gt;getValue())); <span class="comment">//Convert back to original format</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }elseif(($biomesTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;Biomes&quot;</span>)) instanceof ByteArrayTag){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $biomes3d = $makeBiomeArray($biomesTag-&gt;getValue());</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            $biomes3d = <span class="keyword">new</span> PalettedBlockArray(BiomeIds::OCEAN);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $subChunks = [];</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $subChunksTag = $chunk-&gt;getListTag(<span class="stringliteral">&quot;Sections&quot;</span>) ?? [];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">foreach</span>($subChunksTag as $subChunk){</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span>($subChunk instanceof CompoundTag){</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                $subChunks[$subChunk-&gt;getByte(<span class="stringliteral">&quot;Y&quot;</span>)] = $this-&gt;deserializeSubChunk($subChunk, clone $biomes3d);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">for</span>($y = Chunk::MIN_SUBCHUNK_INDEX; $y &lt;= Chunk::MAX_SUBCHUNK_INDEX; ++$y){</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span>(!isset($subChunks[$y])){</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                $subChunks[$y] = <span class="keyword">new</span> SubChunk(Block::EMPTY_STATE_ID, [], clone $biomes3d);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> LoadedChunkData(</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            data: <span class="keyword">new</span> ChunkData(</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                $subChunks,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                $chunk-&gt;getByte(<span class="stringliteral">&quot;TerrainPopulated&quot;</span>, 0) !== 0,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                ($entitiesTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;Entities&quot;</span>)) instanceof ListTag ? self::getCompoundList(<span class="stringliteral">&quot;Entities&quot;</span>, $entitiesTag) : [],</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                ($tilesTag = $chunk-&gt;getTag(<span class="stringliteral">&quot;TileEntities&quot;</span>)) instanceof ListTag ? self::getCompoundList(<span class="stringliteral">&quot;TileEntities&quot;</span>, $tilesTag) : [],</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            ),</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            upgraded: <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            fixerFlags: LoadedChunkData::FIXER_FLAG_ALL</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        );</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">function</span> deserializeSubChunk(CompoundTag $subChunk, PalettedBlockArray $biomes3d) : SubChunk;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00057">Block.php:57</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_biome_ids_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html">pocketmine\data\bedrock\BiomeIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d7a/_biome_ids_8php_source.html#l00026">BiomeIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_big_endian_nbt_serializer_html"><div class="ttname"><a href="../../d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html">pocketmine\nbt\BigEndianNbtSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df2/_big_endian_nbt_serializer_8php_source.html#l00032">BigEndianNbtSerializer.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_nbt_data_exception_html"><div class="ttname"><a href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">pocketmine\nbt\NbtDataException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d82/_nbt_data_exception_8php_source.html#l00026">NbtDataException.php:26</a></div></div>
@@ -194,12 +204,13 @@ $(document).ready(function(){initNavTree('d2/d67/_legacy_anvil_chunk_trait_8php_
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00042">CompoundTag.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_int_array_tag_html"><div class="ttname"><a href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">pocketmine\nbt\tag\IntArrayTag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d0f/_int_array_tag_8php_source.html#l00034">IntArrayTag.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_list_tag_html"><div class="ttname"><a href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0f/_list_tag_8php_source.html#l00039">ListTag.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_biome_array_html"><div class="ttname"><a href="../../d8/d5f/classpocketmine_1_1world_1_1format_1_1_biome_array.html">pocketmine\world\format\BiomeArray</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d56/_biome_array_8php_source.html#l00031">BiomeArray.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_chunk_html"><div class="ttname"><a href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">pocketmine\world\format\Chunk</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/_chunk_8php_source.html#l00034">Chunk.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_sub_chunk_html"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1_sub_chunk.html">pocketmine\world\format\SubChunk</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9c/_sub_chunk_8php_source.html#l00030">SubChunk.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_chunk_data_html"><div class="ttname"><a href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">pocketmine\world\format\io\ChunkData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d65/_chunk_data_8php_source.html#l00029">ChunkData.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils_html"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html">pocketmine\world\format\io\ChunkUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/_chunk_utils_8php_source.html#l00029">ChunkUtils.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils_html_ae1c7fbcc86cafaceaa17fb4713a336e2"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#ae1c7fbcc86cafaceaa17fb4713a336e2">pocketmine\world\format\io\ChunkUtils\convertBiomeColors</a></div><div class="ttdeci">static convertBiomeColors(array $array)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/_chunk_utils_8php_source.html#l00037">ChunkUtils.php:37</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils_html"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html">pocketmine\world\format\io\ChunkUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/_chunk_utils_8php_source.html#l00032">ChunkUtils.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils_html_a36d68105f1931b0cc2f5e8c46b0040c5"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#a36d68105f1931b0cc2f5e8c46b0040c5">pocketmine\world\format\io\ChunkUtils\extrapolate3DBiomes</a></div><div class="ttdeci">static extrapolate3DBiomes(string $biomes2d)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/_chunk_utils_8php_source.html#l00051">ChunkUtils.php:51</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils_html_ae1c7fbcc86cafaceaa17fb4713a336e2"><div class="ttname"><a href="../../de/dda/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_utils.html#ae1c7fbcc86cafaceaa17fb4713a336e2">pocketmine\world\format\io\ChunkUtils\convertBiomeColors</a></div><div class="ttdeci">static convertBiomeColors(array $array)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/_chunk_utils_8php_source.html#l00040">ChunkUtils.php:40</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1_loaded_chunk_data_html"><div class="ttname"><a href="../../d2/da3/classpocketmine_1_1world_1_1format_1_1io_1_1_loaded_chunk_data.html">pocketmine\world\format\io\LoadedChunkData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df0/_loaded_chunk_data_8php_source.html#l00030">LoadedChunkData.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_chunk_exception_html"><div class="ttname"><a href="../../da/d64/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_corrupted_chunk_exception.html">pocketmine\world\format\io\exception\CorruptedChunkException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d59/_corrupted_chunk_exception_8php_source.html#l00028">CorruptedChunkException.php:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

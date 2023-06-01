@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -124,27 +124,23 @@ $(document).ready(function(){initNavTree('d1/d1e/_command_event_8php_source.html
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../da/d32/classpocketmine_1_1event_1_1server_1_1_command_event.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d32/classpocketmine_1_1event_1_1server_1_1_command_event.html">CommandEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html">ServerEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">protected</span> $command;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">protected</span> $sender;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $command){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;sender = $sender;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;command = $command;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSender() : <a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $this-&gt;sender;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCommand() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> $this-&gt;command;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">public</span> <span class="keyword">function</span> setCommand(<span class="keywordtype">string</span> $command) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;command = $command;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">protected</span> <a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">protected</span> <span class="keywordtype">string</span> $command</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    ){}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSender() : <a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> $this-&gt;sender;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCommand() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span> $this-&gt;command;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> setCommand(<span class="keywordtype">string</span> $command) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;command = $command;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_command_event_html"><div class="ttname"><a href="../../da/d32/classpocketmine_1_1event_1_1server_1_1_command_event.html">pocketmine\event\server\CommandEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1e/_command_event_8php_source.html#l00044">CommandEvent.php:44</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_server_event_html"><div class="ttname"><a href="../../d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html">pocketmine\event\server\ServerEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/_server_event_8php_source.html#l00031">ServerEvent.php:31</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1command_1_1_command_sender_html"><div class="ttname"><a href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">pocketmine\command\CommandSender</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3e/_command_sender_8php_source.html#l00031">CommandSender.php:31</a></div></div>

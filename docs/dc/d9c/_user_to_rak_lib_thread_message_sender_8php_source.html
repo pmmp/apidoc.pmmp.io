@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -120,63 +120,61 @@ $(document).ready(function(){initNavTree('dc/d9c/_user_to_rak_lib_thread_message
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <span class="keyword">function</span> strlen;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d4/d78/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_sender.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/d78/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_sender.html">UserToRakLibThreadMessageSender</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../df/d56/interfaceraklib_1_1server_1_1_server_interface.html">ServerInterface</a>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> <a class="code hl_interface" href="../../d6/de1/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_writer.html">InterThreadChannelWriter</a> $channel;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_interface" href="../../d6/de1/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_writer.html">InterThreadChannelWriter</a> $channel){</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        $this-&gt;channel = $channel;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">function</span> sendEncapsulated(<span class="keywordtype">int</span> $sessionId, <a class="code hl_class" href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html">EncapsulatedPacket</a> $packet, <span class="keywordtype">bool</span> $immediate = <span class="keyword">false</span>) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $flags =</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            ($immediate ? ITCProtocol::ENCAPSULATED_FLAG_IMMEDIATE : 0) |</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            ($packet-&gt;identifierACK !== <span class="keyword">null</span> ? ITCProtocol::ENCAPSULATED_FLAG_NEED_ACK : 0);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $buffer = chr(ITCProtocol::PACKET_ENCAPSULATED) .</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($sessionId) .</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            chr($flags) .</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            chr($packet-&gt;reliability) .</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            ($packet-&gt;identifierACK !== <span class="keyword">null</span> ? <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($packet-&gt;identifierACK) : <span class="stringliteral">&quot;&quot;</span>) .</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            (PacketReliability::isSequencedOrOrdered($packet-&gt;reliability) ? chr($packet-&gt;orderChannel) : <span class="stringliteral">&quot;&quot;</span>) .</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            $packet-&gt;buffer;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;channel-&gt;write($buffer);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> sendRaw(<span class="keywordtype">string</span> $address, <span class="keywordtype">int</span> $port, <span class="keywordtype">string</span> $payload) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $buffer = chr(ITCProtocol::PACKET_RAW) . chr(strlen($address)) . $address . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a131035f8a278a8a1b8c3eb506bf04792">Binary::writeShort</a>($port) . $payload;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;channel-&gt;write($buffer);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">public</span> <span class="keyword">function</span> closeSession(<span class="keywordtype">int</span> $sessionId) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $buffer = chr(ITCProtocol::PACKET_CLOSE_SESSION) . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($sessionId);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;channel-&gt;write($buffer);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> setName(<span class="keywordtype">string</span> $name) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;channel-&gt;write(chr(ITCProtocol::PACKET_SET_NAME) . $name);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">public</span> <span class="keyword">function</span> setPortCheck(<span class="keywordtype">bool</span> $value) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;channel-&gt;write(chr($value ? ITCProtocol::PACKET_ENABLE_PORT_CHECK : ITCProtocol::PACKET_DISABLE_PORT_CHECK));</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> setPacketsPerTickLimit(<span class="keywordtype">int</span> $limit) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;channel-&gt;write(chr(ITCProtocol::PACKET_SET_PACKETS_PER_TICK_LIMIT) . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ae68b3a7aac41e147665f4a4c3a18bc39">Binary::writeLong</a>($limit));</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">function</span> blockAddress(<span class="keywordtype">string</span> $address, <span class="keywordtype">int</span> $timeout) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $buffer = chr(ITCProtocol::PACKET_BLOCK_ADDRESS) . chr(strlen($address)) . $address . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($timeout);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $this-&gt;channel-&gt;write($buffer);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">function</span> unblockAddress(<span class="keywordtype">string</span> $address) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $buffer = chr(ITCProtocol::PACKET_UNBLOCK_ADDRESS) . chr(strlen($address)) . $address;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $this-&gt;channel-&gt;write($buffer);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">function</span> addRawPacketFilter(<span class="keywordtype">string</span> $regex) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $this-&gt;channel-&gt;write(chr(ITCProtocol::PACKET_RAW_FILTER) . $regex);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">private</span> <a class="code hl_interface" href="../../d6/de1/interfaceraklib_1_1server_1_1ipc_1_1_inter_thread_channel_writer.html">InterThreadChannelWriter</a> $channel</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ){}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">function</span> sendEncapsulated(<span class="keywordtype">int</span> $sessionId, <a class="code hl_class" href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html">EncapsulatedPacket</a> $packet, <span class="keywordtype">bool</span> $immediate = <span class="keyword">false</span>) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $flags =</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            ($immediate ? ITCProtocol::ENCAPSULATED_FLAG_IMMEDIATE : 0) |</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            ($packet-&gt;identifierACK !== <span class="keyword">null</span> ? ITCProtocol::ENCAPSULATED_FLAG_NEED_ACK : 0);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $buffer = chr(ITCProtocol::PACKET_ENCAPSULATED) .</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($sessionId) .</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            chr($flags) .</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            chr($packet-&gt;reliability) .</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            ($packet-&gt;identifierACK !== <span class="keyword">null</span> ? <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($packet-&gt;identifierACK) : <span class="stringliteral">&quot;&quot;</span>) .</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            (PacketReliability::isSequencedOrOrdered($packet-&gt;reliability) ? chr($packet-&gt;orderChannel) : <span class="stringliteral">&quot;&quot;</span>) .</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            $packet-&gt;buffer;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;channel-&gt;write($buffer);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> sendRaw(<span class="keywordtype">string</span> $address, <span class="keywordtype">int</span> $port, <span class="keywordtype">string</span> $payload) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $buffer = chr(ITCProtocol::PACKET_RAW) . chr(strlen($address)) . $address . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a131035f8a278a8a1b8c3eb506bf04792">Binary::writeShort</a>($port) . $payload;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;channel-&gt;write($buffer);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> closeSession(<span class="keywordtype">int</span> $sessionId) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $buffer = chr(ITCProtocol::PACKET_CLOSE_SESSION) . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($sessionId);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;channel-&gt;write($buffer);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> setName(<span class="keywordtype">string</span> $name) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $this-&gt;channel-&gt;write(chr(ITCProtocol::PACKET_SET_NAME) . $name);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> setPortCheck(<span class="keywordtype">bool</span> $value) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;channel-&gt;write(chr($value ? ITCProtocol::PACKET_ENABLE_PORT_CHECK : ITCProtocol::PACKET_DISABLE_PORT_CHECK));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">public</span> <span class="keyword">function</span> setPacketsPerTickLimit(<span class="keywordtype">int</span> $limit) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;channel-&gt;write(chr(ITCProtocol::PACKET_SET_PACKETS_PER_TICK_LIMIT) . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ae68b3a7aac41e147665f4a4c3a18bc39">Binary::writeLong</a>($limit));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">function</span> blockAddress(<span class="keywordtype">string</span> $address, <span class="keywordtype">int</span> $timeout) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $buffer = chr(ITCProtocol::PACKET_BLOCK_ADDRESS) . chr(strlen($address)) . $address . <a class="code hl_function" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">Binary::writeInt</a>($timeout);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;channel-&gt;write($buffer);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> unblockAddress(<span class="keywordtype">string</span> $address) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $buffer = chr(ITCProtocol::PACKET_UNBLOCK_ADDRESS) . chr(strlen($address)) . $address;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;channel-&gt;write($buffer);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">function</span> addRawPacketFilter(<span class="keywordtype">string</span> $regex) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $this-&gt;channel-&gt;write(chr(ITCProtocol::PACKET_RAW_FILTER) . $regex);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_html"><div class="ttname"><a href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html">pocketmine\utils\Binary</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/daf/_binary_8php_source.html#l00041">Binary.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_html_a131035f8a278a8a1b8c3eb506bf04792"><div class="ttname"><a href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a131035f8a278a8a1b8c3eb506bf04792">pocketmine\utils\Binary\writeShort</a></div><div class="ttdeci">static writeShort(int $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/daf/_binary_8php_source.html#l00169">Binary.php:169</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_html_ada3b78db32190ec74ff143daad26bb44"><div class="ttname"><a href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ada3b78db32190ec74ff143daad26bb44">pocketmine\utils\Binary\writeInt</a></div><div class="ttdeci">static writeInt(int $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/daf/_binary_8php_source.html#l00242">Binary.php:242</a></div></div>

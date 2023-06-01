@@ -22,7 +22,7 @@ var namespacepocketmine_1_1inventory =
     [ "CreativeInventory", "d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html", "d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory" ],
     [ "DelegateInventory", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory" ],
     [ "Inventory", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory" ],
-    [ "InventoryHolder", "d2/d91/interfacepocketmine_1_1inventory_1_1_inventory_holder.html", "d2/d91/interfacepocketmine_1_1inventory_1_1_inventory_holder" ],
+    [ "InventoryHolder", "d2/d91/interfacepocketmine_1_1inventory_1_1_inventory_holder.html", null ],
     [ "InventoryListener", "d8/df4/interfacepocketmine_1_1inventory_1_1_inventory_listener.html", "d8/df4/interfacepocketmine_1_1inventory_1_1_inventory_listener" ],
     [ "PlayerCraftingInventory", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html", "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory" ],
     [ "PlayerCursorInventory", "d3/d37/classpocketmine_1_1inventory_1_1_player_cursor_inventory.html", "d3/d37/classpocketmine_1_1inventory_1_1_player_cursor_inventory" ],

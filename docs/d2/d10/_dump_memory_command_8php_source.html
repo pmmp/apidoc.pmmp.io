@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -125,24 +125,20 @@ $(document).ready(function(){initNavTree('d2/d10/_dump_memory_command_8php_sourc
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html">DumpMemoryCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        parent::__construct(</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $name,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="stringliteral">&quot;dumpmemory&quot;</span>,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            KnownTranslationFactory::pocketmine_command_dumpmemory_description(),</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="stringliteral">&quot;/$name [path]&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="stringliteral">&quot;/dumpmemory [path]&quot;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        );</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;setPermission(DefaultPermissionNames::COMMAND_DUMPMEMORY);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html#ab72bd2c9460e023447241b484f99aef9">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html#ab72bd2c9460e023447241b484f99aef9">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $sender-&gt;getServer()-&gt;getMemoryManager()-&gt;dumpServerMemory($args[0] ?? (Path::join($sender-&gt;getServer()-&gt;getDataPath(), <span class="stringliteral">&quot;memory_dumps&quot;</span>, date(<span class="stringliteral">&quot;D_M_j-H.i.s-T_Y&quot;</span>))), 48, 80);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $sender-&gt;getServer()-&gt;getMemoryManager()-&gt;dumpServerMemory($args[0] ?? (Path::join($sender-&gt;getServer()-&gt;getDataPath(), <span class="stringliteral">&quot;memory_dumps&quot;</span>, date(<span class="stringliteral">&quot;D_M_j-H.i.s-T_Y&quot;</span>))), 48, 80);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_dump_memory_command_html"><div class="ttname"><a href="../../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html">pocketmine\command\defaults\DumpMemoryCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d10/_dump_memory_command_8php_source.html#l00032">DumpMemoryCommand.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_dump_memory_command_html_ab72bd2c9460e023447241b484f99aef9"><div class="ttname"><a href="../../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html#ab72bd2c9460e023447241b484f99aef9">pocketmine\command\defaults\DumpMemoryCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d10/_dump_memory_command_8php_source.html#l00043">DumpMemoryCommand.php:43</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00035">VanillaCommand.php:35</a></div></div>

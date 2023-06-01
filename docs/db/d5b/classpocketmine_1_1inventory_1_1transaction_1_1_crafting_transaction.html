@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('db/d5b/classpocketmine_1_1inventory_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../df/d03/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction-members.html">List of all members</a>  </div>
@@ -110,7 +111,7 @@ $(document).ready(function(){initNavTree('db/d5b/classpocketmine_1_1inventory_1_
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d4b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction__coll__graph.svg" width="250" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d4b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction__coll__graph.svg" width="456" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -135,6 +136,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0baa2997efd633e0bcd7fe864bb3c216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a0baa2997efd633e0bcd7fe864bb3c216">validate</a> ()</td></tr>
 <tr class="separator:a0baa2997efd633e0bcd7fe864bb3c216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abd93328a23b72ffaa2ec0750240b36de"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#abd93328a23b72ffaa2ec0750240b36de">matchIngredients</a> (array $providedItems, array $recipeIngredients, int $expectedIterations)</td></tr>
+<tr class="separator:abd93328a23b72ffaa2ec0750240b36de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6ddd1a50e061bd23cafd055002f8fc39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a6ddd1a50e061bd23cafd055002f8fc39">callExecuteEvent</a> ()</td></tr>
@@ -143,29 +149,27 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a19eca710abe2264e3de36b3159e0e559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaac1df98c0461efede42e7fc830087c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#acaac1df98c0461efede42e7fc830087c">matchItems</a> (array &amp;$needItems, array &amp;$haveItems)</td></tr>
 <tr class="separator:acaac1df98c0461efede42e7fc830087c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee7429416ce5c8f3625d0d989492872e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#aee7429416ce5c8f3625d0d989492872e">matchRecipeItems</a> (array $txItems, array $recipeItems, bool $wildcards, int $iterations=0)</td></tr>
-<tr class="separator:aee7429416ce5c8f3625d0d989492872e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a753f1c3f60e20adb7ecbdd3bd53272"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a4a753f1c3f60e20adb7ecbdd3bd53272">matchOutputs</a> (array $txItems, array $recipeItems)</td></tr>
+<tr class="separator:a4a753f1c3f60e20adb7ecbdd3bd53272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7949117cbc3bb45c28f9a5867caa016"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#ad7949117cbc3bb45c28f9a5867caa016">squashDuplicateSlotChanges</a> ()</td></tr>
 <tr class="separator:ad7949117cbc3bb45c28f9a5867caa016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a88e9a4954741d4b4e8bf8ee51b93dd96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a88e9a4954741d4b4e8bf8ee51b93dd96">$actions</a> = []</td></tr>
-<tr class="separator:a88e9a4954741d4b4e8bf8ee51b93dd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cef7b04ff276169cb91b7110b08aed1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a2cef7b04ff276169cb91b7110b08aed1">$hasExecuted</a> = false</td></tr>
-<tr class="separator:a2cef7b04ff276169cb91b7110b08aed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8297939feb1cba7ea6afc2d8947f74b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a8297939feb1cba7ea6afc2d8947f74b0">$inputs</a> = []</td></tr>
-<tr class="separator:a8297939feb1cba7ea6afc2d8947f74b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b482807aa7398f3104d68716208156e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a8b482807aa7398f3104d68716208156e">$inventories</a> = []</td></tr>
-<tr class="separator:a8b482807aa7398f3104d68716208156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0679392240280b0fd581caed936e163"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#ab0679392240280b0fd581caed936e163">$outputs</a> = []</td></tr>
-<tr class="separator:ab0679392240280b0fd581caed936e163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78c60e06fc5c4cc6935939172f53ccdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a78c60e06fc5c4cc6935939172f53ccdc">$recipe</a></td></tr>
-<tr class="separator:a78c60e06fc5c4cc6935939172f53ccdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ec2999cbd88b6beb7e0afe2a3f09b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a06ec2999cbd88b6beb7e0afe2a3f09b7">$repetitions</a></td></tr>
-<tr class="separator:a06ec2999cbd88b6beb7e0afe2a3f09b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1aefdfdd0f74e7a3e6d5055c3937ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a2b1aefdfdd0f74e7a3e6d5055c3937ad">$source</a></td></tr>
-<tr class="separator:a2b1aefdfdd0f74e7a3e6d5055c3937ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a0550c81fdc2d0cb776dc672d6024e"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#ae6a0550c81fdc2d0cb776dc672d6024e">$actions</a> = []</td></tr>
+<tr class="separator:ae6a0550c81fdc2d0cb776dc672d6024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735b9fb7fdcfa59fee541e765b20a746"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a735b9fb7fdcfa59fee541e765b20a746">$hasExecuted</a> = false</td></tr>
+<tr class="separator:a735b9fb7fdcfa59fee541e765b20a746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a605df32270f2df7c2d2f71b92cf339"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a9a605df32270f2df7c2d2f71b92cf339">$inputs</a> = []</td></tr>
+<tr class="separator:a9a605df32270f2df7c2d2f71b92cf339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88227c1bcd8e4c655e2e629bcdadf42c"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a88227c1bcd8e4c655e2e629bcdadf42c">$inventories</a> = []</td></tr>
+<tr class="separator:a88227c1bcd8e4c655e2e629bcdadf42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d6fd16df0abc627912e5f413c713c6"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#ad4d6fd16df0abc627912e5f413c713c6">$outputs</a> = []</td></tr>
+<tr class="separator:ad4d6fd16df0abc627912e5f413c713c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c2ec2bde7606fc9bcd7f9bb8a6f8a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html">CraftingRecipe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#ad1c2ec2bde7606fc9bcd7f9bb8a6f8a3">$recipe</a> = null</td></tr>
+<tr class="separator:ad1c2ec2bde7606fc9bcd7f9bb8a6f8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f2185e6c7c6c793102380e986bb7c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html#a59f2185e6c7c6c793102380e986bb7c2">$repetitions</a> = null</td></tr>
+<tr class="separator:a59f2185e6c7c6c793102380e986bb7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This transaction type is specialized for crafting validation. It shares most of the same semantics of the base inventory transaction type, but the requirement for validity is slightly different.</p>
@@ -173,7 +177,7 @@ Protected Attributes</h2></td></tr>
 <p >Therefore, the validity requirement is that the imbalance of the transaction should match the expected inputs and outputs of a registered crafting recipe.</p>
 <p >This transaction allows multiple repetitions of the same recipe to be crafted in a single batch. In the case of batch crafting, the number of unmatched inputs and outputs must be exactly divisible by the expected recipe ingredients and results, with no remainder. Any leftovers are expected to be emitted back to the crafting grid. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00050">50</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00056">56</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a038832f41790166014291e68fe8f3a51" name="a038832f41790166014291e68fe8f3a51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a038832f41790166014291e68fe8f3a51">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -219,7 +223,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00063">63</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00067">67</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -248,7 +252,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00102">102</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00101">101</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -276,7 +280,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00128">128</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00127">127</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -305,7 +309,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">pocketmine\inventory\transaction\InventoryTransaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00169">169</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00276">276</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -339,7 +343,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00305">305</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00304">304</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -383,7 +387,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00238">238</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00237">237</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -413,7 +417,7 @@ Protected Attributes</h2></td></tr>
 <p >WARNING: This system is <b>explicitly designed NOT to care about ordering</b>. Any order seen in this set has NO significance and should not be relied on.</p>
 <dl class="section return"><dt>Returns</dt><dd>InventoryAction[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00098">98</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00097">97</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -441,7 +445,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html">Inventory</a>[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00086">86</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00085">85</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -468,7 +472,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00079">79</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00078">78</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -495,7 +499,58 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00331">331</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00330">330</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+
+</div>
+</div>
+<a id="abd93328a23b72ffaa2ec0750240b36de" name="abd93328a23b72ffaa2ec0750240b36de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd93328a23b72ffaa2ec0750240b36de">&#9670;&nbsp;</a></span>matchIngredients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\inventory\transaction\CraftingTransaction::matchIngredients </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$providedItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$recipeIngredients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$expectedIterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">Item[]</td><td class="paramname">$providedItems</td><td></td></tr>
+    <tr><td class="paramtype">RecipeIngredient[]</td><td class="paramname">$recipeIngredients</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00098">98</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -546,12 +601,12 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00142">142</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00141">141</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
-<a id="aee7429416ce5c8f3625d0d989492872e" name="aee7429416ce5c8f3625d0d989492872e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee7429416ce5c8f3625d0d989492872e">&#9670;&nbsp;</a></span>matchRecipeItems()</h2>
+<a id="a4a753f1c3f60e20adb7ecbdd3bd53272" name="a4a753f1c3f60e20adb7ecbdd3bd53272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a753f1c3f60e20adb7ecbdd3bd53272">&#9670;&nbsp;</a></span>matchOutputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,7 +615,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\inventory\transaction\CraftingTransaction::matchRecipeItems </td>
+          <td class="memname">pocketmine\inventory\transaction\CraftingTransaction::matchOutputs </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$txItems</em>, </td>
@@ -569,19 +624,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$recipeItems</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>$wildcards</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$iterations</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>$recipeItems</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -609,7 +652,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00076">76</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00177">177</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -638,7 +681,7 @@ Protected Attributes</h2></td></tr>
 <p >Iterates over SlotChangeActions in this transaction and compacts any which refer to the same slot in the same inventory so they can be correctly handled.</p>
 <p >Under normal circumstances, the same slot would never be changed more than once in a single transaction. However, due to the way things like the crafting grid are "implemented" in MCPE 1.2 (a.k.a. hacked-in), we may get multiple slot changes referring to the same slot in a single transaction. These multiples are not even guaranteed to be in the correct order (slot splitting in the crafting grid for example, causes the actions to be sent in the wrong order), so this method also tries to chain them into order. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00191">191</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00190">190</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -666,13 +709,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html#a75199a199caa37aa4247538d52b1c703">pocketmine\inventory\transaction\InventoryTransaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00140">140</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00242">242</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a88e9a4954741d4b4e8bf8ee51b93dd96" name="a88e9a4954741d4b4e8bf8ee51b93dd96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88e9a4954741d4b4e8bf8ee51b93dd96">&#9670;&nbsp;</a></span>$actions</h2>
+<a id="ae6a0550c81fdc2d0cb776dc672d6024e" name="ae6a0550c81fdc2d0cb776dc672d6024e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a0550c81fdc2d0cb776dc672d6024e">&#9670;&nbsp;</a></span>$actions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,79 +724,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\inventory\transaction\InventoryTransaction::$actions = []</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00067">67</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
-
-</div>
-</div>
-<a id="a2cef7b04ff276169cb91b7110b08aed1" name="a2cef7b04ff276169cb91b7110b08aed1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cef7b04ff276169cb91b7110b08aed1">&#9670;&nbsp;</a></span>$hasExecuted</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\inventory\transaction\InventoryTransaction::$hasExecuted = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00059">59</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
-
-</div>
-</div>
-<a id="a8297939feb1cba7ea6afc2d8947f74b0" name="a8297939feb1cba7ea6afc2d8947f74b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8297939feb1cba7ea6afc2d8947f74b0">&#9670;&nbsp;</a></span>$inputs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\inventory\transaction\CraftingTransaction::$inputs = []</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00057">57</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
-
-</div>
-</div>
-<a id="a8b482807aa7398f3104d68716208156e" name="a8b482807aa7398f3104d68716208156e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b482807aa7398f3104d68716208156e">&#9670;&nbsp;</a></span>$inventories</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\inventory\transaction\InventoryTransaction::$inventories = []</td>
+          <td class="memname">array pocketmine\inventory\transaction\InventoryTransaction::$actions = []</td>
         </tr>
       </table>
   </td>
@@ -767,8 +738,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0679392240280b0fd581caed936e163" name="ab0679392240280b0fd581caed936e163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0679392240280b0fd581caed936e163">&#9670;&nbsp;</a></span>$outputs</h2>
+<a id="a735b9fb7fdcfa59fee541e765b20a746" name="a735b9fb7fdcfa59fee541e765b20a746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735b9fb7fdcfa59fee541e765b20a746">&#9670;&nbsp;</a></span>$hasExecuted</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,7 +748,31 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\inventory\transaction\CraftingTransaction::$outputs = []</td>
+          <td class="memname">bool pocketmine\inventory\transaction\InventoryTransaction::$hasExecuted = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00058">58</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+
+</div>
+</div>
+<a id="a9a605df32270f2df7c2d2f71b92cf339" name="a9a605df32270f2df7c2d2f71b92cf339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a605df32270f2df7c2d2f71b92cf339">&#9670;&nbsp;</a></span>$inputs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array pocketmine\inventory\transaction\CraftingTransaction::$inputs = []</td>
         </tr>
       </table>
   </td>
@@ -787,12 +782,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00059">59</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00061">61</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>
-<a id="a78c60e06fc5c4cc6935939172f53ccdc" name="a78c60e06fc5c4cc6935939172f53ccdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78c60e06fc5c4cc6935939172f53ccdc">&#9670;&nbsp;</a></span>$recipe</h2>
+<a id="a88227c1bcd8e4c655e2e629bcdadf42c" name="a88227c1bcd8e4c655e2e629bcdadf42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88227c1bcd8e4c655e2e629bcdadf42c">&#9670;&nbsp;</a></span>$inventories</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,55 +796,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\inventory\transaction\CraftingTransaction::$recipe</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00052">52</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
-
-</div>
-</div>
-<a id="a06ec2999cbd88b6beb7e0afe2a3f09b7" name="a06ec2999cbd88b6beb7e0afe2a3f09b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06ec2999cbd88b6beb7e0afe2a3f09b7">&#9670;&nbsp;</a></span>$repetitions</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\inventory\transaction\CraftingTransaction::$repetitions</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00054">54</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
-
-</div>
-</div>
-<a id="a2b1aefdfdd0f74e7a3e6d5055c3937ad" name="a2b1aefdfdd0f74e7a3e6d5055c3937ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b1aefdfdd0f74e7a3e6d5055c3937ad">&#9670;&nbsp;</a></span>$source</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\inventory\transaction\InventoryTransaction::$source</td>
+          <td class="memname">array pocketmine\inventory\transaction\InventoryTransaction::$inventories = []</td>
         </tr>
       </table>
   </td>
@@ -860,6 +807,78 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html#l00061">61</a> of file <a class="el" href="../../dc/d6c/_inventory_transaction_8php_source.html">InventoryTransaction.php</a>.</p>
+
+</div>
+</div>
+<a id="ad4d6fd16df0abc627912e5f413c713c6" name="ad4d6fd16df0abc627912e5f413c713c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d6fd16df0abc627912e5f413c713c6">&#9670;&nbsp;</a></span>$outputs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array pocketmine\inventory\transaction\CraftingTransaction::$outputs = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00063">63</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+
+</div>
+</div>
+<a id="ad1c2ec2bde7606fc9bcd7f9bb8a6f8a3" name="ad1c2ec2bde7606fc9bcd7f9bb8a6f8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c2ec2bde7606fc9bcd7f9bb8a6f8a3">&#9670;&nbsp;</a></span>$recipe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html">CraftingRecipe</a> pocketmine\inventory\transaction\CraftingTransaction::$recipe = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00057">57</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
+
+</div>
+</div>
+<a id="a59f2185e6c7c6c793102380e986bb7c2" name="a59f2185e6c7c6c793102380e986bb7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f2185e6c7c6c793102380e986bb7c2">&#9670;&nbsp;</a></span>$repetitions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\inventory\transaction\CraftingTransaction::$repetitions = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html#l00058">58</a> of file <a class="el" href="../../d4/dee/_crafting_transaction_8php_source.html">CraftingTransaction.php</a>.</p>
 
 </div>
 </div>

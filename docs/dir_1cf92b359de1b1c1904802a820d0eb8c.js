@@ -8,5 +8,6 @@ var dir_1cf92b359de1b1c1904802a820d0eb8c =
     [ "SpruceTree.php", "d8/d6d/_spruce_tree_8php_source.html", null ],
     [ "world/generator/object/TallGrass.php", "da/da6/world_2generator_2object_2_tall_grass_8php_source.html", null ],
     [ "object/Tree.php", "d0/d80/object_2_tree_8php_source.html", null ],
-    [ "TreeFactory.php", "d7/d80/_tree_factory_8php_source.html", null ]
+    [ "TreeFactory.php", "d7/d80/_tree_factory_8php_source.html", null ],
+    [ "TreeType.php", "db/d67/_tree_type_8php_source.html", null ]
 ];

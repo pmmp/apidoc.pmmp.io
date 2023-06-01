@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -155,74 +155,72 @@ $(document).ready(function(){initNavTree('d5/da9/_handler_list_8php_source.html'
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $this-&gt;invalidateAffectedCaches();</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ae12ca172779fc02bf412a56df7be8a8e">   79</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ae12ca172779fc02bf412a56df7be8a8e">unregister</a>($object) : void{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        if($object instanceof <a class="code hl_interface" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> || $object instanceof <a class="code hl_interface" href="../../d2/d5e/interfacepocketmine_1_1event_1_1_listener.html">Listener</a>){</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">foreach</span>($this-&gt;handlerSlots as $priority =&gt; $list){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">foreach</span>($list as $hash =&gt; $listener){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    <span class="keywordflow">if</span>(($object instanceof <a class="code hl_interface" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> &amp;&amp; $listener-&gt;getPlugin() === $object)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        || ($object instanceof <a class="code hl_interface" href="../../d2/d5e/interfacepocketmine_1_1event_1_1_listener.html">Listener</a> &amp;&amp; (<span class="keyword">new</span> \ReflectionFunction($listener-&gt;getHandler()))-&gt;getClosureThis() === $object) <span class="comment">//this doesn&#39;t even need to be a listener :D</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    ){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        unset($this-&gt;handlerSlots[$priority][$hash]);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }elseif($object instanceof <a class="code hl_class" href="../../d4/d94/classpocketmine_1_1event_1_1_registered_listener.html">RegisteredListener</a>){</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            unset($this-&gt;handlerSlots[$object-&gt;getPriority()][spl_object_id($object)]);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;invalidateAffectedCaches();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">public</span> <span class="keyword">function</span> clear() : void{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $this-&gt;handlerSlots = [];</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $this-&gt;invalidateAffectedCaches();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#aeff053ada6ea01d4e400f1448b4b531e">  104</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#aeff053ada6ea01d4e400f1448b4b531e">getListenersByPriority</a>(<span class="keywordtype">int</span> $priority) : array{</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        return $this-&gt;handlerSlots[$priority] ?? [];</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">public</span> <span class="keyword">function</span> getParent() : ?<a class="code hl_class" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">HandlerList</a>{</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        return $this-&gt;parentList;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">private</span> <span class="keyword">function</span> invalidateAffectedCaches() : void{</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        foreach($this-&gt;affectedHandlerCaches as $cache){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            $cache-&gt;list = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">  125</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">getListenerList</a>() : array{</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        if($this-&gt;handlerCache-&gt;list !== null){</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">return</span> $this-&gt;handlerCache-&gt;list;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $handlerLists = [];</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">for</span>($currentList = $this; $currentList !== <span class="keyword">null</span>; $currentList = $currentList-&gt;parentList){</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            $handlerLists[] = $currentList;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        $listenersByPriority = [];</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">foreach</span>($handlerLists as $currentList){</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordflow">foreach</span>($currentList-&gt;handlerSlots as $priority =&gt; $listeners){</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                $listenersByPriority[$priority] = array_merge($listenersByPriority[$priority] ?? [], $listeners);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span> <span class="keyword">function</span> unregister(RegisteredListener|<a class="code hl_interface" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a>|Listener $object) : void{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        if($object instanceof <a class="code hl_interface" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> || $object instanceof Listener){</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">foreach</span>($this-&gt;handlerSlots as $priority =&gt; $list){</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">foreach</span>($list as $hash =&gt; $listener){</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">if</span>(($object instanceof <a class="code hl_interface" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> &amp;&amp; $listener-&gt;getPlugin() === $object)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        || ($object instanceof Listener &amp;&amp; (<span class="keyword">new</span> \ReflectionFunction($listener-&gt;getHandler()))-&gt;getClosureThis() === $object) <span class="comment">//this doesn&#39;t even need to be a listener :D</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    ){</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        unset($this-&gt;handlerSlots[$priority][$hash]);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            unset($this-&gt;handlerSlots[$object-&gt;getPriority()][spl_object_id($object)]);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $this-&gt;invalidateAffectedCaches();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">public</span> <span class="keyword">function</span> clear() : void{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $this-&gt;handlerSlots = [];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;invalidateAffectedCaches();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#aeff053ada6ea01d4e400f1448b4b531e">  101</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#aeff053ada6ea01d4e400f1448b4b531e">getListenersByPriority</a>(<span class="keywordtype">int</span> $priority) : array{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        return $this-&gt;handlerSlots[$priority] ?? [];</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">public</span> <span class="keyword">function</span> getParent() : ?<a class="code hl_class" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">HandlerList</a>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        return $this-&gt;parentList;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">private</span> <span class="keyword">function</span> invalidateAffectedCaches() : void{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        foreach($this-&gt;affectedHandlerCaches as $cache){</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            $cache-&gt;list = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">  122</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">getListenerList</a>() : array{</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        if($this-&gt;handlerCache-&gt;list !== null){</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">return</span> $this-&gt;handlerCache-&gt;list;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        $handlerLists = [];</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">for</span>($currentList = $this; $currentList !== <span class="keyword">null</span>; $currentList = $currentList-&gt;parentList){</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            $handlerLists[] = $currentList;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        $listenersByPriority = [];</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">foreach</span>($handlerLists as $currentList){</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordflow">foreach</span>($currentList-&gt;handlerSlots as $priority =&gt; $listeners){</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                $listenersByPriority[$priority] = array_merge($listenersByPriority[$priority] ?? [], $listeners);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="comment">//TODO: why on earth do the priorities have higher values for lower priority?</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        krsort($listenersByPriority, SORT_NUMERIC);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="comment">//TODO: why on earth do the priorities have higher values for lower priority?</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        krsort($listenersByPriority, SORT_NUMERIC);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">return</span> $this-&gt;handlerCache-&gt;list = array_merge(...$listenersByPriority);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">return</span> $this-&gt;handlerCache-&gt;list = array_merge(...$listenersByPriority);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">pocketmine\event\HandlerList</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00032">HandlerList.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_a4483a5f2020fad2d91d820d74f47c3f1"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a4483a5f2020fad2d91d820d74f47c3f1">pocketmine\event\HandlerList\registerAll</a></div><div class="ttdeci">registerAll(array $listeners)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00069">HandlerList.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_a45f07472021f19f3e3deb2cff15cabf4"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a45f07472021f19f3e3deb2cff15cabf4">pocketmine\event\HandlerList\__construct</a></div><div class="ttdeci">__construct(private string $class, private ?HandlerList $parentList)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00045">HandlerList.php:45</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_a9135c11aebc4e754e6eddc7c63dffc1a"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">pocketmine\event\HandlerList\getListenerList</a></div><div class="ttdeci">getListenerList()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00125">HandlerList.php:125</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_ae12ca172779fc02bf412a56df7be8a8e"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ae12ca172779fc02bf412a56df7be8a8e">pocketmine\event\HandlerList\unregister</a></div><div class="ttdeci">unregister($object)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00079">HandlerList.php:79</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_aeff053ada6ea01d4e400f1448b4b531e"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#aeff053ada6ea01d4e400f1448b4b531e">pocketmine\event\HandlerList\getListenersByPriority</a></div><div class="ttdeci">getListenersByPriority(int $priority)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00104">HandlerList.php:104</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_a9135c11aebc4e754e6eddc7c63dffc1a"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">pocketmine\event\HandlerList\getListenerList</a></div><div class="ttdeci">getListenerList()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00122">HandlerList.php:122</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_html_aeff053ada6ea01d4e400f1448b4b531e"><div class="ttname"><a href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#aeff053ada6ea01d4e400f1448b4b531e">pocketmine\event\HandlerList\getListenersByPriority</a></div><div class="ttdeci">getListenersByPriority(int $priority)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da9/_handler_list_8php_source.html#l00101">HandlerList.php:101</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_registered_listener_cache_html"><div class="ttname"><a href="../../de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html">pocketmine\event\RegisteredListenerCache</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d58/_registered_listener_cache_8php_source.html#l00029">RegisteredListenerCache.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1_registered_listener_html"><div class="ttname"><a href="../../d4/d94/classpocketmine_1_1event_1_1_registered_listener.html">pocketmine\event\RegisteredListener</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d43/_registered_listener_8php_source.html#l00030">RegisteredListener.php:30</a></div></div>
-<div class="ttc" id="ainterfacepocketmine_1_1event_1_1_listener_html"><div class="ttname"><a href="../../d2/d5e/interfacepocketmine_1_1event_1_1_listener.html">pocketmine\event\Listener</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/db1/_listener_8php_source.html#l00054">Listener.php:54</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1plugin_1_1_plugin_html"><div class="ttname"><a href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">pocketmine\plugin\Plugin</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_plugin_8php_source.html#l00035">Plugin.php:35</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html">pocketmine\event</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

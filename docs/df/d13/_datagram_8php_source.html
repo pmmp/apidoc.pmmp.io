@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -125,50 +125,48 @@ $(document).ready(function(){initNavTree('df/d13/_datagram_8php_source.html','..
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">const</span> HEADER_SIZE = 1 + 3; <span class="comment">//header flags (1) + sequence number (3)</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> $headerFlags = 0;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> $packets = [];</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> $seqNumber;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $headerFlags = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> array $packets = [];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $seqNumber;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeHeader(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $out) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $out-&gt;putByte(self::BITFLAG_VALID | $this-&gt;headerFlags);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeHeader(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $out-&gt;putByte(self::BITFLAG_VALID | $this-&gt;headerFlags);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodePayload(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $out-&gt;putLTriad($this-&gt;seqNumber);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">foreach</span>($this-&gt;packets as $packet){</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $out-&gt;put($packet-&gt;toBinary());</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a261b0991ce7e4c7ca6cf88b71a03955c">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a261b0991ce7e4c7ca6cf88b71a03955c">length</a>(){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $length = self::HEADER_SIZE;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">foreach</span>($this-&gt;packets as $packet){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $length += $packet-&gt;getTotalLength();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> $length;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodePayload(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $out) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $out-&gt;putLTriad($this-&gt;seqNumber);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">foreach</span>($this-&gt;packets as $packet){</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            $out-&gt;put($packet-&gt;toBinary());</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a261b0991ce7e4c7ca6cf88b71a03955c">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a261b0991ce7e4c7ca6cf88b71a03955c">length</a>(){</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $length = self::HEADER_SIZE;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">foreach</span>($this-&gt;packets as $packet){</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $length += $packet-&gt;getTotalLength();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $length;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a1fd3c91a645e02bb8435b3715bab84f2">   62</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a1fd3c91a645e02bb8435b3715bab84f2">decodeHeader</a>(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $in) : void{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;headerFlags = $in-&gt;getByte();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a1fd3c91a645e02bb8435b3715bab84f2">   66</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a1fd3c91a645e02bb8435b3715bab84f2">decodeHeader</a>(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $in) : void{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;headerFlags = $in-&gt;getByte();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a21e267c7514d539c93012cf67c0a4664">   70</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a21e267c7514d539c93012cf67c0a4664">decodePayload</a>(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $in) : void{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;seqNumber = $in-&gt;getLTriad();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">while</span>(!$in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a920c666740ab00acfc8b80509564c366">feof</a>()){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $this-&gt;packets[] = <a class="code hl_function" href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html#a745465d1c8d330a06932ac14c50c5deb">EncapsulatedPacket::fromBinary</a>($in);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a21e267c7514d539c93012cf67c0a4664">   66</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a21e267c7514d539c93012cf67c0a4664">decodePayload</a>(<a class="code hl_class" href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">PacketSerializer</a> $in) : void{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;seqNumber = $in-&gt;getLTriad();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">while</span>(!$in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a920c666740ab00acfc8b80509564c366">feof</a>()){</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            $this-&gt;packets[] = <a class="code hl_function" href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html#a745465d1c8d330a06932ac14c50c5deb">EncapsulatedPacket::fromBinary</a>($in);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_a920c666740ab00acfc8b80509564c366"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a920c666740ab00acfc8b80509564c366">pocketmine\utils\BinaryStream\feof</a></div><div class="ttdeci">feof()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00374">BinaryStream.php:374</a></div></div>
 <div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html">raklib\protocol\Datagram</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00019">Datagram.php:19</a></div></div>
-<div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html_a1fd3c91a645e02bb8435b3715bab84f2"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a1fd3c91a645e02bb8435b3715bab84f2">raklib\protocol\Datagram\decodeHeader</a></div><div class="ttdeci">decodeHeader(PacketSerializer $in)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00066">Datagram.php:66</a></div></div>
-<div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html_a21e267c7514d539c93012cf67c0a4664"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a21e267c7514d539c93012cf67c0a4664">raklib\protocol\Datagram\decodePayload</a></div><div class="ttdeci">decodePayload(PacketSerializer $in)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00070">Datagram.php:70</a></div></div>
-<div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html_a261b0991ce7e4c7ca6cf88b71a03955c"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a261b0991ce7e4c7ca6cf88b71a03955c">raklib\protocol\Datagram\length</a></div><div class="ttdeci">length()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00057">Datagram.php:57</a></div></div>
-<div class="ttc" id="aclassraklib_1_1protocol_1_1_encapsulated_packet_html_a745465d1c8d330a06932ac14c50c5deb"><div class="ttname"><a href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html#a745465d1c8d330a06932ac14c50c5deb">raklib\protocol\EncapsulatedPacket\fromBinary</a></div><div class="ttdeci">static fromBinary(BinaryStream $stream)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc7/_encapsulated_packet_8php_source.html#l00052">EncapsulatedPacket.php:52</a></div></div>
+<div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html_a1fd3c91a645e02bb8435b3715bab84f2"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a1fd3c91a645e02bb8435b3715bab84f2">raklib\protocol\Datagram\decodeHeader</a></div><div class="ttdeci">decodeHeader(PacketSerializer $in)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00062">Datagram.php:62</a></div></div>
+<div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html_a21e267c7514d539c93012cf67c0a4664"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a21e267c7514d539c93012cf67c0a4664">raklib\protocol\Datagram\decodePayload</a></div><div class="ttdeci">decodePayload(PacketSerializer $in)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00066">Datagram.php:66</a></div></div>
+<div class="ttc" id="aclassraklib_1_1protocol_1_1_datagram_html_a261b0991ce7e4c7ca6cf88b71a03955c"><div class="ttname"><a href="../../da/d16/classraklib_1_1protocol_1_1_datagram.html#a261b0991ce7e4c7ca6cf88b71a03955c">raklib\protocol\Datagram\length</a></div><div class="ttdeci">length()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/_datagram_8php_source.html#l00053">Datagram.php:53</a></div></div>
+<div class="ttc" id="aclassraklib_1_1protocol_1_1_encapsulated_packet_html_a745465d1c8d330a06932ac14c50c5deb"><div class="ttname"><a href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html#a745465d1c8d330a06932ac14c50c5deb">raklib\protocol\EncapsulatedPacket\fromBinary</a></div><div class="ttdeci">static fromBinary(BinaryStream $stream)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc7/_encapsulated_packet_8php_source.html#l00044">EncapsulatedPacket.php:44</a></div></div>
 <div class="ttc" id="aclassraklib_1_1protocol_1_1_packet_html"><div class="ttname"><a href="../../d6/d53/classraklib_1_1protocol_1_1_packet.html">raklib\protocol\Packet</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d65/raklib_2src_2protocol_2_packet_8php_source.html#l00021">raklib/src/protocol/Packet.php:21</a></div></div>
 <div class="ttc" id="aclassraklib_1_1protocol_1_1_packet_serializer_html"><div class="ttname"><a href="../../d3/d8a/classraklib_1_1protocol_1_1_packet_serializer.html">raklib\protocol\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/raklib_2src_2protocol_2_packet_serializer_8php_source.html#l00030">raklib/src/protocol/PacketSerializer.php:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

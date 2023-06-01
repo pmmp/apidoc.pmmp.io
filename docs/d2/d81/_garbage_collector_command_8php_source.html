@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -128,44 +128,40 @@ $(document).ready(function(){initNavTree('d2/d81/_garbage_collector_command_8php
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dd/d1e/classpocketmine_1_1command_1_1defaults_1_1_garbage_collector_command.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dd/d1e/classpocketmine_1_1command_1_1defaults_1_1_garbage_collector_command.html">GarbageCollectorCommand</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $name){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        parent::__construct(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            $name,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="stringliteral">&quot;gc&quot;</span>,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            KnownTranslationFactory::pocketmine_command_gc_description()</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        );</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;setPermission(DefaultPermissionNames::COMMAND_GC);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../dd/d1e/classpocketmine_1_1command_1_1defaults_1_1_garbage_collector_command.html#a64e89e7f26880a7ff923e1f02b6c9ebd">   45</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d1e/classpocketmine_1_1command_1_1defaults_1_1_garbage_collector_command.html#a64e89e7f26880a7ff923e1f02b6c9ebd">execute</a>(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $commandLabel, array $args){</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $chunksCollected = 0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $entitiesCollected = 0;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $memory = memory_get_usage();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">foreach</span>($sender-&gt;getServer()-&gt;getWorldManager()-&gt;getWorlds() as $world){</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $diff = [count($world-&gt;getLoadedChunks()), count($world-&gt;getEntities())];</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $world-&gt;doChunkGarbageCollection();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $world-&gt;unloadChunks(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            $chunksCollected += $diff[0] - count($world-&gt;getLoadedChunks());</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $entitiesCollected += $diff[1] - count($world-&gt;getEntities());</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $world-&gt;clearCache(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $cyclesCollected = $sender-&gt;getServer()-&gt;getMemoryManager()-&gt;triggerGarbageCollector();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $chunksCollected = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $entitiesCollected = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $memory = memory_get_usage();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">foreach</span>($sender-&gt;getServer()-&gt;getWorldManager()-&gt;getWorlds() as $world){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $diff = [count($world-&gt;getLoadedChunks()), count($world-&gt;getEntities())];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $world-&gt;doChunkGarbageCollection();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $world-&gt;unloadChunks(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $chunksCollected += $diff[0] - count($world-&gt;getLoadedChunks());</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $entitiesCollected += $diff[1] - count($world-&gt;getEntities());</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $world-&gt;clearCache(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $cyclesCollected = $sender-&gt;getServer()-&gt;getMemoryManager()-&gt;triggerGarbageCollector();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_header()-&gt;format(TextFormat::GREEN . <span class="stringliteral">&quot;---- &quot;</span> . TextFormat::RESET, TextFormat::GREEN . <span class="stringliteral">&quot; ----&quot;</span> . TextFormat::RESET));</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_chunks(TextFormat::RED . number_format($chunksCollected))-&gt;prefix(TextFormat::GOLD));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_entities(TextFormat::RED . number_format($entitiesCollected))-&gt;prefix(TextFormat::GOLD));</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_header()-&gt;format(TextFormat::GREEN . <span class="stringliteral">&quot;---- &quot;</span> . TextFormat::RESET, TextFormat::GREEN . <span class="stringliteral">&quot; ----&quot;</span> . TextFormat::RESET));</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_chunks(TextFormat::RED . number_format($chunksCollected))-&gt;prefix(TextFormat::GOLD));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_entities(TextFormat::RED . number_format($entitiesCollected))-&gt;prefix(TextFormat::GOLD));</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_cycles(TextFormat::RED . number_format($cyclesCollected))-&gt;prefix(TextFormat::GOLD));</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_memoryFreed(TextFormat::RED . number_format(round((($memory - memory_get_usage()) / 1024) / 1024, 2), 2))-&gt;prefix(TextFormat::GOLD));</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_cycles(TextFormat::RED . number_format($cyclesCollected))-&gt;prefix(TextFormat::GOLD));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_gc_memoryFreed(TextFormat::RED . number_format(round((($memory - memory_get_usage()) / 1024) / 1024, 2), 2))-&gt;prefix(TextFormat::GOLD));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_garbage_collector_command_html"><div class="ttname"><a href="../../dd/d1e/classpocketmine_1_1command_1_1defaults_1_1_garbage_collector_command.html">pocketmine\command\defaults\GarbageCollectorCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d81/_garbage_collector_command_8php_source.html#l00035">GarbageCollectorCommand.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_garbage_collector_command_html_a64e89e7f26880a7ff923e1f02b6c9ebd"><div class="ttname"><a href="../../dd/d1e/classpocketmine_1_1command_1_1defaults_1_1_garbage_collector_command.html#a64e89e7f26880a7ff923e1f02b6c9ebd">pocketmine\command\defaults\GarbageCollectorCommand\execute</a></div><div class="ttdeci">execute(CommandSender $sender, string $commandLabel, array $args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d81/_garbage_collector_command_8php_source.html#l00045">GarbageCollectorCommand.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00035">VanillaCommand.php:35</a></div></div>

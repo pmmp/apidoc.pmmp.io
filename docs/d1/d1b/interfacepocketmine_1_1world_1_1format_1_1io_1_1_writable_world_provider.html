@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af3a46f69a8b5e19ad69ded22a7b91ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05ecc799aa5743ffe20d3ab41fc7a0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#ac05ecc799aa5743ffe20d3ab41fc7a0f">loadChunk</a> (int $chunkX, int $chunkZ)</td></tr>
 <tr class="separator:ac05ecc799aa5743ffe20d3ab41fc7a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1381e497ea76cc795cfe22ba97bd826b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#a1381e497ea76cc795cfe22ba97bd826b">saveChunk</a> (int $chunkX, int $chunkZ, <a class="el" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">ChunkData</a> $chunkData)</td></tr>
-<tr class="separator:a1381e497ea76cc795cfe22ba97bd826b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dc3ab158864164b856f6617fc52038"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#af2dc3ab158864164b856f6617fc52038">saveChunk</a> (int $chunkX, int $chunkZ, <a class="el" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">ChunkData</a> $chunkData, int $dirtyFlags)</td></tr>
+<tr class="separator:af2dc3ab158864164b856f6617fc52038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Returns a generator which yields all the chunks in this world.</p>
-<dl class="section return"><dt>Returns</dt><dd>\Generator|ChunkData[] @phpstan-return \Generator&lt;array{int, int}, <a class="el" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">ChunkData</a>, void, void&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>\Generator|LoadedChunkData[] @phpstan-return \Generator&lt;array{int, int}, <a class="el" href="../../d2/da3/classpocketmine_1_1world_1_1format_1_1io_1_1_loaded_chunk_data.html">LoadedChunkData</a>, void, void&gt; </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">CorruptedChunkException</td><td></td></tr>
@@ -399,8 +399,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1381e497ea76cc795cfe22ba97bd826b" name="a1381e497ea76cc795cfe22ba97bd826b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1381e497ea76cc795cfe22ba97bd826b">&#9670;&nbsp;</a></span>saveChunk()</h2>
+<a id="af2dc3ab158864164b856f6617fc52038" name="af2dc3ab158864164b856f6617fc52038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2dc3ab158864164b856f6617fc52038">&#9670;&nbsp;</a></span>saveChunk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +421,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d0/d96/classpocketmine_1_1world_1_1format_1_1io_1_1_chunk_data.html">ChunkData</a>&#160;</td>
-          <td class="paramname"><em>$chunkData</em>&#160;</td>
+          <td class="paramname"><em>$chunkData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$dirtyFlags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -432,7 +438,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Saves a chunk (usually to disk). </p>
 
-<p>Implemented in <a class="el" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#ae19a243e9ef2efb236c0a268db5a20b6">pocketmine\world\format\io\leveldb\LevelDB</a>, and <a class="el" href="../../df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#a8d21893c266ca9451b756ef25854a508">pocketmine\world\format\io\region\WritableRegionWorldProvider</a>.</p>
+<p>Implemented in <a class="el" href="../../df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#ad1e05b62d1c0efb8eb5b33911362fa7c">pocketmine\world\format\io\leveldb\LevelDB</a>, and <a class="el" href="../../df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#a3c1c400159997bf36abd97d659c2acc0">pocketmine\world\format\io\region\WritableRegionWorldProvider</a>.</p>
 
 </div>
 </div>

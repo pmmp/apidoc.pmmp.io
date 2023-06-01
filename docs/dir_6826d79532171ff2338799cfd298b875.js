@@ -17,7 +17,6 @@ var dir_6826d79532171ff2338799cfd298b875 =
     [ "Explosion.php", "db/deb/_explosion_8php_source.html", null ],
     [ "Position.php", "d7/d0f/_position_8php_source.html", null ],
     [ "SimpleChunkManager.php", "d3/d39/_simple_chunk_manager_8php_source.html", null ],
-    [ "TickingChunkLoader.php", "d5/d1c/_ticking_chunk_loader_8php_source.html", null ],
     [ "World.php", "d9/d88/_world_8php_source.html", null ],
     [ "WorldCreationOptions.php", "d5/d89/_world_creation_options_8php_source.html", null ],
     [ "WorldException.php", "da/dea/_world_exception_8php_source.html", null ],

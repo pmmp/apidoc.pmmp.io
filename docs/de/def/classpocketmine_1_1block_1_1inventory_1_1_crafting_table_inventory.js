@@ -13,7 +13,7 @@ var classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory =
     [ "getIngredient", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a97bb90192ed0d4e19c477d724919a72f", null ],
     [ "getItem", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7", null ],
     [ "getListeners", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a782f68d96eb96e27264ee54ed49184c7", null ],
-    [ "getMatchingItemCount", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a3c513d1bf1a055c52e6ef5961635a6c2", null ],
+    [ "getMatchingItemCount", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#aaa1a88b2b7f93d073538fb993a508e2c", null ],
     [ "getMaxStackSize", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getRecipeHeight", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#aa2045dd45c5d85624fd00afe01b7b11e", null ],
     [ "getRecipeWidth", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a18e623fb966824524eb1251e150b611c", null ],

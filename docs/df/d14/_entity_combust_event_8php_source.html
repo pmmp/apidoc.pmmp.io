@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -124,24 +124,24 @@ $(document).ready(function(){initNavTree('df/d14/_entity_combust_event_8php_sour
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html">EntityCombustEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html">EntityEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">protected</span> $duration;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $combustee, <span class="keywordtype">int</span> $duration){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;entity = $combustee;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;duration = $duration;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html#a08fb02264c2165b99cd2dc805d6ab8f8">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html#a08fb02264c2165b99cd2dc805d6ab8f8">getDuration</a>() : int{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return $this-&gt;duration;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">function</span> setDuration(<span class="keywordtype">int</span> $duration) : void{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;duration = $duration;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00081">Entity.php:81</a></div></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">protected</span> <span class="keywordtype">int</span> $duration;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $combustee, <span class="keywordtype">int</span> $duration){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $this-&gt;entity = $combustee;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;duration = $duration;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html#a08fb02264c2165b99cd2dc805d6ab8f8">   46</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html#a08fb02264c2165b99cd2dc805d6ab8f8">getDuration</a>() : int{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        return $this-&gt;duration;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> setDuration(<span class="keywordtype">int</span> $duration) : void{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;duration = $duration;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00082">Entity.php:82</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_combust_event_html"><div class="ttname"><a href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html">pocketmine\event\entity\EntityCombustEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d14/_entity_combust_event_8php_source.html#l00033">EntityCombustEvent.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_combust_event_html_a08fb02264c2165b99cd2dc805d6ab8f8"><div class="ttname"><a href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html#a08fb02264c2165b99cd2dc805d6ab8f8">pocketmine\event\entity\EntityCombustEvent\getDuration</a></div><div class="ttdeci">getDuration()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d14/_entity_combust_event_8php_source.html#l00047">EntityCombustEvent.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_combust_event_html_a08fb02264c2165b99cd2dc805d6ab8f8"><div class="ttname"><a href="../../dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html#a08fb02264c2165b99cd2dc805d6ab8f8">pocketmine\event\entity\EntityCombustEvent\getDuration</a></div><div class="ttdeci">getDuration()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d14/_entity_combust_event_8php_source.html#l00046">EntityCombustEvent.php:46</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_event_html"><div class="ttname"><a href="../../de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html">pocketmine\event\entity\EntityEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d55/_entity_event_8php_source.html#l00035">EntityEvent.php:35</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1entity_html"><div class="ttname"><a href="../../d9/d86/namespacepocketmine_1_1event_1_1entity.html">pocketmine\event\entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9a/_entity_block_change_event_8php_source.html#l00024">EntityBlockChangeEvent.php:24</a></div></div>

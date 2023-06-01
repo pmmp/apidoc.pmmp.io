@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab41fbdc0a6c74f8331ffaf0d0aafe0b9"><td class="memItemLeft" align="right" valign="top"><a id="ab41fbdc0a6c74f8331ffaf0d0aafe0b9" name="ab41fbdc0a6c74f8331ffaf0d0aafe0b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>onClientConnect</b> (int $sessionId, string $address, int $port, int $clientID)</td></tr>
 <tr class="separator:ab41fbdc0a6c74f8331ffaf0d0aafe0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af904665e10cbd266e0f3fe6a68eba459"><td class="memItemLeft" align="right" valign="top"><a id="af904665e10cbd266e0f3fe6a68eba459" name="af904665e10cbd266e0f3fe6a68eba459"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>onClientDisconnect</b> (int $sessionId, string $reason)</td></tr>
-<tr class="separator:af904665e10cbd266e0f3fe6a68eba459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6dee516ec0dfb9cf574c4a395e50f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/interfaceraklib_1_1server_1_1_server_event_listener.html#a6f6dee516ec0dfb9cf574c4a395e50f5">onClientDisconnect</a> (int $sessionId, int $reason)</td></tr>
+<tr class="separator:a6f6dee516ec0dfb9cf574c4a395e50f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca4ddd9dc2616086ac166fdae622f6e"><td class="memItemLeft" align="right" valign="top"><a id="aaca4ddd9dc2616086ac166fdae622f6e" name="aaca4ddd9dc2616086ac166fdae622f6e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>onPacketAck</b> (int $sessionId, int $identifierACK)</td></tr>
 <tr class="separator:aaca4ddd9dc2616086ac166fdae622f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +137,46 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d5/d95/_server_event_listener_8php_source.html#l00019">19</a> of file <a class="el" href="../../d5/d95/_server_event_listener_8php_source.html">ServerEventListener.php</a>.</p>
-</div><hr/>The documentation for this interface was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="../../d5/d95/_server_event_listener_8php_source.html#l00021">21</a> of file <a class="el" href="../../d5/d95/_server_event_listener_8php_source.html">ServerEventListener.php</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f6dee516ec0dfb9cf574c4a395e50f5" name="a6f6dee516ec0dfb9cf574c4a395e50f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6dee516ec0dfb9cf574c4a395e50f5">&#9670;&nbsp;</a></span>onClientDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">raklib\server\ServerEventListener::onClientDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$sessionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$reason</td><td>one of the DisconnectReason constants @phpstan-param DisconnectReason::* $reason</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>DisconnectReason </dd></dl>
+
+<p>Implemented in <a class="el" href="../../d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#adf83ca90dd9f33654ea92a69868dd671">pocketmine\network\mcpe\raklib\RakLibInterface</a>, and <a class="el" href="../../d2/d10/classraklib_1_1server_1_1ipc_1_1_rak_lib_to_user_thread_message_sender.html#ab5a698df51d328b604353279ac1364c1">raklib\server\ipc\RakLibToUserThreadMessageSender</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="../../d5/d95/_server_event_listener_8php_source.html">ServerEventListener.php</a></li>
 </ul>
 </div><!-- contents -->

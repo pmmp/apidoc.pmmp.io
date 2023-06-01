@@ -8,5 +8,5 @@ var interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider =
     [ "getWorldMaxY", "d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#adecb4b899e7dff6ca40b52c54fdf5c52", null ],
     [ "getWorldMinY", "d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#af3a46f69a8b5e19ad69ded22a7b91ef9", null ],
     [ "loadChunk", "d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#ac05ecc799aa5743ffe20d3ab41fc7a0f", null ],
-    [ "saveChunk", "d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#a1381e497ea76cc795cfe22ba97bd826b", null ]
+    [ "saveChunk", "d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#af2dc3ab158864164b856f6617fc52038", null ]
 ];

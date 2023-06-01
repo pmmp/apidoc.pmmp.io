@@ -19,7 +19,8 @@ var namespacepocketmine_1_1world_1_1generator =
       [ "SpruceTree", "dd/dff/classpocketmine_1_1world_1_1generator_1_1object_1_1_spruce_tree.html", "dd/dff/classpocketmine_1_1world_1_1generator_1_1object_1_1_spruce_tree" ],
       [ "TallGrass", "d1/de9/classpocketmine_1_1world_1_1generator_1_1object_1_1_tall_grass.html", null ],
       [ "Tree", "d2/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree.html", "d2/da7/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree" ],
-      [ "TreeFactory", "da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory.html", "da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory" ]
+      [ "TreeFactory", "da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory.html", "da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory" ],
+      [ "TreeType", "d6/d14/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_type.html", null ]
     ] ],
     [ "populator", "d1/d99/namespacepocketmine_1_1world_1_1generator_1_1populator.html", "d1/d99/namespacepocketmine_1_1world_1_1generator_1_1populator" ],
     [ "Flat", "d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html", "d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat" ],

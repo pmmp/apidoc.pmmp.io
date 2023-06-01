@@ -1,6 +1,6 @@
 var classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data =
 [
-    [ "__construct", "d1/def/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data.html#a61c5d0ca13a03056f675859c24670587", null ],
+    [ "__construct", "d1/def/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data.html#ada2e15ac7f249b3d35418b72eab8281a", null ],
     [ "fix", "d1/def/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data.html#a03413ce647bfa8044d39e42cd945d7d9", null ],
     [ "getDifficulty", "d1/def/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data.html#a4e97c2d155aeadea9481c20a1827f23d", null ],
     [ "getGenerator", "d1/def/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_base_nbt_world_data.html#aee7c1b06f1e1df5ebab732dddd81af68", null ],

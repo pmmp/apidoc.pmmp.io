@@ -1,6 +1,6 @@
 var classpocketmine_1_1event_1_1block_1_1_block_break_event =
 [
-    [ "__construct", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a002f97695550a9e870bedbc1262b7d97", null ],
+    [ "__construct", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a9810a6a0e59d6d89fc76ac1230182372", null ],
     [ "call", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a3d979a673428c9ae66e1039bf796e945", null ],
     [ "getDrops", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#aac26d3d38096d82def2fe11880f24f0b", null ],
     [ "getInstaBreak", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a5539f7c534e19c399d22f05e50d9caad", null ],

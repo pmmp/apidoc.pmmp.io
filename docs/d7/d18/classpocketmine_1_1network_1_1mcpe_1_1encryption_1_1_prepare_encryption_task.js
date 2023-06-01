@@ -8,8 +8,8 @@ var classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task
     [ "onError", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ae387a6b494c63a70c82924a05e90875d", null ],
     [ "onProgressUpdate", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ae3aa1ef734e82c49e25962e56eaf76ef", null ],
     [ "onRun", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7", null ],
-    [ "publishProgress", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a89362da818cfe5c11befeebd5317ab48", null ],
+    [ "publishProgress", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948", null ],
     [ "reallyDestruct", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#adad32212908878d6e70423161dbae0bf", null ],
-    [ "setResult", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a41f96569228fbba9e54729a46ae5b51e", null ],
-    [ "storeLocal", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ab5e5e139bf17f0880c19b9cd6b593c8b", null ]
+    [ "storeLocal", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b", null ],
+    [ "$progressUpdates", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ac53490645128426de21ae1ef050722a4", null ]
 ];

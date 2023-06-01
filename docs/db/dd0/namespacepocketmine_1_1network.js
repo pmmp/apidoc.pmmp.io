@@ -8,6 +8,7 @@ var namespacepocketmine_1_1network =
       [ "cache", null, [
         [ "ChunkCache", "d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache.html", "d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache" ],
         [ "CraftingDataCache", "d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html", null ],
+        [ "CreativeInventoryCache", "dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html", null ],
         [ "StaticPacketCache", "df/dc5/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_static_packet_cache.html", null ]
       ] ],
       [ "compression", null, [
@@ -18,13 +19,13 @@ var namespacepocketmine_1_1network =
         [ "ZlibCompressor", "d2/db8/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_zlib_compressor.html", "d2/db8/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_zlib_compressor" ]
       ] ],
       [ "convert", null, [
-        [ "GlobalItemTypeDictionary", "d2/d68/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_global_item_type_dictionary.html", null ],
+        [ "BlockStateDictionary", "da/d25/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary.html", "da/d25/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary" ],
+        [ "BlockStateDictionaryEntry", "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html", "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry" ],
+        [ "BlockTranslator", "d8/d98/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_translator.html", "d8/d98/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_translator" ],
         [ "ItemTranslator", "d6/dbd/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_item_translator.html", "d6/dbd/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_item_translator" ],
+        [ "ItemTypeDictionaryFromDataHelper", "d6/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_item_type_dictionary_from_data_helper.html", null ],
         [ "LegacySkinAdapter", "d3/de8/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_legacy_skin_adapter.html", "d3/de8/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_legacy_skin_adapter" ],
-        [ "R12ToCurrentBlockMapEntry", "d6/d12/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_r12_to_current_block_map_entry.html", null ],
-        [ "RuntimeBlockMapping", "d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping.html", "d5/dfe/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_runtime_block_mapping" ],
         [ "SkinAdapter", "d2/d77/interfacepocketmine_1_1network_1_1mcpe_1_1convert_1_1_skin_adapter.html", "d2/d77/interfacepocketmine_1_1network_1_1mcpe_1_1convert_1_1_skin_adapter" ],
-        [ "SkinAdapterSingleton", "d4/d6d/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_skin_adapter_singleton.html", null ],
         [ "TypeConversionException", "dd/de4/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_conversion_exception.html", null ],
         [ "TypeConverter", "d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter.html", "d8/d07/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_type_converter" ]
       ] ],
@@ -468,13 +469,13 @@ var namespacepocketmine_1_1network =
         [ "UpdateTradePacket", "de/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_trade_packet.html", "de/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_trade_packet" ]
       ] ],
       [ "raklib", null, [
-        [ "PthreadsChannelReader", "d9/d57/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader.html", null ],
-        [ "PthreadsChannelWriter", "dc/da4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_writer.html", null ],
+        [ "PthreadsChannelReader", "d9/d57/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader.html", "d9/d57/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_reader" ],
+        [ "PthreadsChannelWriter", "dc/da4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_writer.html", "dc/da4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_writer" ],
         [ "RakLibInterface", "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html", "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface" ],
         [ "RakLibPacketSender", "dc/d49/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_packet_sender.html", "dc/d49/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_packet_sender" ],
         [ "RakLibServer", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server.html", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server" ],
         [ "RakLibThreadCrashInfo", "d3/dd3/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_thread_crash_info.html", "d3/dd3/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_thread_crash_info" ],
-        [ "SnoozeAwarePthreadsChannelWriter", "d0/dcd/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_snooze_aware_pthreads_channel_writer.html", null ]
+        [ "SnoozeAwarePthreadsChannelWriter", "d0/dcd/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_snooze_aware_pthreads_channel_writer.html", "d0/dcd/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_snooze_aware_pthreads_channel_writer" ]
       ] ],
       [ "serializer", null, [
         [ "ChunkSerializer", "dd/dc9/classpocketmine_1_1network_1_1mcpe_1_1serializer_1_1_chunk_serializer.html", "dd/dc9/classpocketmine_1_1network_1_1mcpe_1_1serializer_1_1_chunk_serializer" ]

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -126,56 +126,54 @@ $(document).ready(function(){initNavTree('d8/ddf/tile_2_barrel_8php_source.html'
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use <a class="code hl_variable" href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#a54f3b4288bddac560a6ab91ddeab2bb1">NameableTrait</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    use <a class="code hl_variable" href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#ae569096e2d912dc5e923d0330da10368">ContainerTrait</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">protected</span> $inventory;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a> $world, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos){</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        parent::__construct($world, $pos);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;inventory = <span class="keyword">new</span> <a class="code hl_class" href="../../d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory.html">BarrelInventory</a>($this-&gt;position);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span> <span class="keyword">function</span> readSaveData(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;loadName($nbt);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;loadItems($nbt);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a38a66b8887f9abfa00ceb97e485f620c">   48</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a38a66b8887f9abfa00ceb97e485f620c">writeSaveData</a>(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : void{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;saveName($nbt);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;saveItems($nbt);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> close() : void{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        if(!$this-&gt;closed){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $this-&gt;inventory-&gt;removeAllViewers();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            parent::close();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a087a8e8434f5499f97b3b081d9d619fd">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a087a8e8434f5499f97b3b081d9d619fd">getInventory</a>(){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $this-&gt;inventory;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">protected</span> <a class="code hl_class" href="../../d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory.html">BarrelInventory</a> $inventory;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a> $world, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        parent::__construct($world, $pos);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $this-&gt;inventory = <span class="keyword">new</span> <a class="code hl_class" href="../../d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory.html">BarrelInventory</a>($this-&gt;position);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> readSaveData(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;loadName($nbt);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;loadItems($nbt);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a38a66b8887f9abfa00ceb97e485f620c">   47</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a38a66b8887f9abfa00ceb97e485f620c">writeSaveData</a>(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : void{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;saveName($nbt);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;saveItems($nbt);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> close() : void{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        if(!$this-&gt;closed){</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;inventory-&gt;removeAllViewers();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            parent::close();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInventory() : BarrelInventory{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        return $this-&gt;inventory;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRealInventory() : BarrelInventory{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return $this-&gt;inventory;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a300fb4f051e5a84520e079f7e5c91903">   70</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a300fb4f051e5a84520e079f7e5c91903">getRealInventory</a>(){</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> $this-&gt;inventory;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDefaultName() : string{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        return <span class="stringliteral">&quot;Barrel&quot;</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDefaultName() : string{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return <span class="stringliteral">&quot;Barrel&quot;</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1inventory_1_1_barrel_inventory_html"><div class="ttname"><a href="../../d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory.html">pocketmine\block\inventory\BarrelInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da6/_barrel_inventory_8php_source.html#l00033">BarrelInventory.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_barrel_html"><div class="ttname"><a href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html">pocketmine\block\tile\Barrel</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddf/tile_2_barrel_8php_source.html#l00031">tile/Barrel.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_barrel_html_a087a8e8434f5499f97b3b081d9d619fd"><div class="ttname"><a href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a087a8e8434f5499f97b3b081d9d619fd">pocketmine\block\tile\Barrel\getInventory</a></div><div class="ttdeci">getInventory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddf/tile_2_barrel_8php_source.html#l00063">tile/Barrel.php:63</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_barrel_html_a300fb4f051e5a84520e079f7e5c91903"><div class="ttname"><a href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a300fb4f051e5a84520e079f7e5c91903">pocketmine\block\tile\Barrel\getRealInventory</a></div><div class="ttdeci">getRealInventory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddf/tile_2_barrel_8php_source.html#l00070">tile/Barrel.php:70</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_barrel_html_a38a66b8887f9abfa00ceb97e485f620c"><div class="ttname"><a href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a38a66b8887f9abfa00ceb97e485f620c">pocketmine\block\tile\Barrel\writeSaveData</a></div><div class="ttdeci">writeSaveData(CompoundTag $nbt)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddf/tile_2_barrel_8php_source.html#l00048">tile/Barrel.php:48</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_spawnable_html"><div class="ttname"><a href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html">pocketmine\block\tile\Spawnable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df1/_spawnable_8php_source.html#l00030">Spawnable.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_barrel_html_a38a66b8887f9abfa00ceb97e485f620c"><div class="ttname"><a href="../../d4/dcc/classpocketmine_1_1block_1_1tile_1_1_barrel.html#a38a66b8887f9abfa00ceb97e485f620c">pocketmine\block\tile\Barrel\writeSaveData</a></div><div class="ttdeci">writeSaveData(CompoundTag $nbt)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddf/tile_2_barrel_8php_source.html#l00047">tile/Barrel.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_spawnable_html"><div class="ttname"><a href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html">pocketmine\block\tile\Spawnable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df1/_spawnable_8php_source.html#l00034">Spawnable.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00042">CompoundTag.php:42</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00142">World.php:142</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00145">World.php:145</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1block_1_1tile_1_1_container_html"><div class="ttname"><a href="../../d9/de1/interfacepocketmine_1_1block_1_1tile_1_1_container.html">pocketmine\block\tile\Container</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d50/_container_8php_source.html#l00029">Container.php:29</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1block_1_1tile_1_1_nameable_html"><div class="ttname"><a href="../../d1/d55/interfacepocketmine_1_1block_1_1tile_1_1_nameable.html">pocketmine\block\tile\Nameable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d08/_nameable_8php_source.html#l00026">Nameable.php:26</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_1_1tile_html"><div class="ttname"><a href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html">pocketmine\block\tile</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d49/block_2tile_2_banner_8php_source.html#l00024">block/tile/Banner.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_1_1tile_html_a54f3b4288bddac560a6ab91ddeab2bb1"><div class="ttname"><a href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#a54f3b4288bddac560a6ab91ddeab2bb1">pocketmine\block\tile\NameableTrait</a></div><div class="ttdeci">trait NameableTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/_nameable_trait_8php_source.html#l00033">NameableTrait.php:33</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1block_1_1tile_html_ae569096e2d912dc5e923d0330da10368"><div class="ttname"><a href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#ae569096e2d912dc5e923d0330da10368">pocketmine\block\tile\ContainerTrait</a></div><div class="ttdeci">trait ContainerTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d38/_container_trait_8php_source.html#l00037">ContainerTrait.php:37</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1block_1_1tile_html_ae569096e2d912dc5e923d0330da10368"><div class="ttname"><a href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#ae569096e2d912dc5e923d0330da10368">pocketmine\block\tile\ContainerTrait</a></div><div class="ttdeci">trait ContainerTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d38/_container_trait_8php_source.html#l00039">ContainerTrait.php:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

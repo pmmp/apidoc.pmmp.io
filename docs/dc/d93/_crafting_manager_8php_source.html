@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;git-9ddac21de094ae4f19a6e45db954eccf7c600002</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.1 git-73e7201acbd765a5b1625c20aa11b977f54eb178</span>
    </div>
   </td>
  </tr>
@@ -128,206 +128,220 @@ $(document).ready(function(){initNavTree('dc/d93/_crafting_manager_8php_source.h
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html">CraftingManager</a>{</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use DestructorCallbackTrait;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">protected</span> $shapedRecipes = [];</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span> $shapelessRecipes = [];</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">protected</span> array $shapedRecipes = [];</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span> array $shapelessRecipes = [];</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">private</span> array $craftingRecipeIndex = [];</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">protected</span> $furnaceRecipeManagers = [];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">protected</span> array $furnaceRecipeManagers = [];</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">protected</span> $potionTypeRecipes = [];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">protected</span> array $potionTypeRecipes = [];</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">protected</span> $potionContainerChangeRecipes = [];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">protected</span> array $potionContainerChangeRecipes = [];</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a> $recipeRegisteredCallbacks;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;recipeRegisteredCallbacks = <span class="keyword">new</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">foreach</span>(FurnaceType::getAll() as $furnaceType){</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            $this-&gt;furnaceRecipeManagers[$furnaceType-&gt;id()] = <span class="keyword">new</span> <a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html">FurnaceRecipeManager</a>();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">private</span> array $brewingRecipeCache = [];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a> $recipeRegisteredCallbacks;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $recipeRegisteredCallbacks = $this-&gt;recipeRegisteredCallbacks;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">foreach</span>($this-&gt;furnaceRecipeManagers as $furnaceRecipeManager){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            $furnaceRecipeManager-&gt;getRecipeRegisteredCallbacks()-&gt;<a class="code hl_function" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html#aa2778f7651b5fa5ea9912a6848280a66">add</a>(<span class="keyword">static</span> <span class="keyword">function</span>(<a class="code hl_class" href="../../da/d41/classpocketmine_1_1crafting_1_1_furnace_recipe.html">FurnaceRecipe</a> $recipe) use ($recipeRegisteredCallbacks) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">foreach</span>($recipeRegisteredCallbacks as $callback){</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    $callback();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            });</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831">   92</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831">getRecipeRegisteredCallbacks</a>() : <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>{ return $this-&gt;recipeRegisteredCallbacks; }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">   97</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">sort</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $i1, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $i2) : int{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">//Use spaceship operator to compare each property, then try the next one if they are equivalent.</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        ($retval = $i1-&gt;getId() &lt;=&gt; $i2-&gt;getId()) === 0 &amp;&amp; ($retval = $i1-&gt;getMeta() &lt;=&gt; $i2-&gt;getMeta()) === 0 &amp;&amp; ($retval = $i1-&gt;getCount() &lt;=&gt; $i2-&gt;getCount()) === 0;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> $retval;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> pack(array $items) : array{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $result = [];</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">foreach</span>($items as $i =&gt; $item){</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">foreach</span>($result as $otherItem){</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="keywordflow">if</span>($item-&gt;canStackWith($otherItem)){</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    $otherItem-&gt;setCount($otherItem-&gt;getCount() + $item-&gt;getCount());</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                    <span class="keywordflow">continue</span> 2;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="comment">//No matching item found</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            $result[] = clone $item;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> hashOutputs(array $outputs) : string{</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        $outputs = self::pack($outputs);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        usort($outputs, [self::class, <span class="stringliteral">&quot;sort&quot;</span>]);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        $result = <span class="keyword">new</span> BinaryStream();</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">foreach</span>($outputs as $o){</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="comment">//count is not written because the outputs might be from multiple repetitions of a single recipe</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="comment">//this reduces the accuracy of the hash, but it won&#39;t matter in most cases.</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            $result-&gt;putVarInt($o-&gt;getId());</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            $result-&gt;putVarInt($o-&gt;getMeta());</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            $result-&gt;put((<span class="keyword">new</span> LittleEndianNbtSerializer())-&gt;write(<span class="keyword">new</span> TreeRoot($o-&gt;getNamedTag())));</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">return</span> $result-&gt;getBuffer();</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a921529c35a2e6730f5729ebdcacfcf51">  150</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a921529c35a2e6730f5729ebdcacfcf51">getShapelessRecipes</a>() : array{</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        return $this-&gt;shapelessRecipes;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a378d06be283cf5f677e03d3517fc59dc">  158</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a378d06be283cf5f677e03d3517fc59dc">getShapedRecipes</a>() : array{</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        return $this-&gt;shapedRecipes;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a">  166</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a">getCraftingRecipeIndex</a>() : array{</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        return $this-&gt;craftingRecipeIndex;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCraftingRecipeFromIndex(<span class="keywordtype">int</span> $index) : ?<a class="code hl_interface" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html">CraftingRecipe</a>{</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        return $this-&gt;craftingRecipeIndex[$index] ?? null;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFurnaceRecipeManager(FurnaceType $furnaceType) : FurnaceRecipeManager{</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        return $this-&gt;furnaceRecipeManagers[$furnaceType-&gt;id()];</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a">  182</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a">getPotionTypeRecipes</a>() : array{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        return $this-&gt;potionTypeRecipes;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">  190</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">getPotionContainerChangeRecipes</a>() : array{</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        return $this-&gt;potionContainerChangeRecipes;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerShapedRecipe(<a class="code hl_class" href="../../d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe.html">ShapedRecipe</a> $recipe) : void{</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $this-&gt;shapedRecipes[self::hashOutputs($recipe-&gt;getResults())][] = $recipe;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        $this-&gt;craftingRecipeIndex[] = $recipe;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            $callback();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $this-&gt;recipeRegisteredCallbacks = <span class="keyword">new</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">foreach</span>(FurnaceType::getAll() as $furnaceType){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $this-&gt;furnaceRecipeManagers[$furnaceType-&gt;id()] = <span class="keyword">new</span> <a class="code hl_class" href="../../d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html">FurnaceRecipeManager</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $recipeRegisteredCallbacks = $this-&gt;recipeRegisteredCallbacks;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">foreach</span>($this-&gt;furnaceRecipeManagers as $furnaceRecipeManager){</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $furnaceRecipeManager-&gt;getRecipeRegisteredCallbacks()-&gt;<a class="code hl_function" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html#aa2778f7651b5fa5ea9912a6848280a66">add</a>(<span class="keyword">static</span> <span class="keyword">function</span>(<a class="code hl_class" href="../../da/d41/classpocketmine_1_1crafting_1_1_furnace_recipe.html">FurnaceRecipe</a> $recipe) use ($recipeRegisteredCallbacks) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">foreach</span>($recipeRegisteredCallbacks as $callback){</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    $callback();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            });</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831">   98</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831">getRecipeRegisteredCallbacks</a>() : <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>{ return $this-&gt;recipeRegisteredCallbacks; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">  103</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">sort</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $i1, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $i2) : int{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">//Use spaceship operator to compare each property, then try the next one if they are equivalent.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        ($retval = $i1-&gt;getStateId() &lt;=&gt; $i2-&gt;getStateId()) === 0 &amp;&amp; ($retval = $i1-&gt;getCount() &lt;=&gt; $i2-&gt;getCount()) === 0;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">return</span> $retval;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> pack(array $items) : array{</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        $result = [];</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">foreach</span>($items as $i =&gt; $item){</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keywordflow">foreach</span>($result as $otherItem){</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="keywordflow">if</span>($item-&gt;canStackWith($otherItem)){</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    $otherItem-&gt;setCount($otherItem-&gt;getCount() + $item-&gt;getCount());</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    <span class="keywordflow">continue</span> 2;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="comment">//No matching item found</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            $result[] = clone $item;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> hashOutputs(array $outputs) : string{</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        $outputs = self::pack($outputs);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        usort($outputs, [self::class, <span class="stringliteral">&quot;sort&quot;</span>]);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        $result = <span class="keyword">new</span> BinaryStream();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">foreach</span>($outputs as $o){</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="comment">//count is not written because the outputs might be from multiple repetitions of a single recipe</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="comment">//this reduces the accuracy of the hash, but it won&#39;t matter in most cases.</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            $result-&gt;putVarInt($o-&gt;getStateId());</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            $result-&gt;put((<span class="keyword">new</span> LittleEndianNbtSerializer())-&gt;write(<span class="keyword">new</span> TreeRoot($o-&gt;getNamedTag())));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">return</span> $result-&gt;getBuffer();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a921529c35a2e6730f5729ebdcacfcf51">  155</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a921529c35a2e6730f5729ebdcacfcf51">getShapelessRecipes</a>() : array{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        return $this-&gt;shapelessRecipes;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a378d06be283cf5f677e03d3517fc59dc">  163</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a378d06be283cf5f677e03d3517fc59dc">getShapedRecipes</a>() : array{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        return $this-&gt;shapedRecipes;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a">  171</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a">getCraftingRecipeIndex</a>() : array{</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        return $this-&gt;craftingRecipeIndex;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCraftingRecipeFromIndex(<span class="keywordtype">int</span> $index) : ?<a class="code hl_interface" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html">CraftingRecipe</a>{</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        return $this-&gt;craftingRecipeIndex[$index] ?? null;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFurnaceRecipeManager(FurnaceType $furnaceType) : FurnaceRecipeManager{</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        return $this-&gt;furnaceRecipeManagers[$furnaceType-&gt;id()];</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a">  187</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a">getPotionTypeRecipes</a>() : array{</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        return $this-&gt;potionTypeRecipes;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">  195</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">getPotionContainerChangeRecipes</a>() : array{</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        return $this-&gt;potionContainerChangeRecipes;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerShapedRecipe(<a class="code hl_class" href="../../d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe.html">ShapedRecipe</a> $recipe) : void{</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        $this-&gt;shapedRecipes[self::hashOutputs($recipe-&gt;getResults())][] = $recipe;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        $this-&gt;craftingRecipeIndex[] = $recipe;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerShapelessRecipe(ShapelessRecipe $recipe) : void{</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $this-&gt;shapelessRecipes[self::hashOutputs($recipe-&gt;getResults())][] = $recipe;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        $this-&gt;craftingRecipeIndex[] = $recipe;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            $callback();</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            $callback();</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerShapelessRecipe(ShapelessRecipe $recipe) : void{</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        $this-&gt;shapelessRecipes[self::hashOutputs($recipe-&gt;getResults())][] = $recipe;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        $this-&gt;craftingRecipeIndex[] = $recipe;</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerPotionTypeRecipe(PotionTypeRecipe $recipe) : void{</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        $input = $recipe-&gt;getInput();</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        $ingredient = $recipe-&gt;getIngredient();</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        $this-&gt;potionTypeRecipes[$input-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . $input-&gt;getMeta()][$ingredient-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . ($ingredient-&gt;hasAnyDamageValue() ? <span class="stringliteral">&quot;?&quot;</span> : $ingredient-&gt;getMeta())] = $recipe;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            $callback();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            $callback();</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerPotionContainerChangeRecipe(PotionContainerChangeRecipe $recipe) : void{</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        $ingredient = $recipe-&gt;getIngredient();</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        $this-&gt;potionContainerChangeRecipes[$recipe-&gt;getInputItemId()][$ingredient-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . ($ingredient-&gt;hasAnyDamageValue() ? <span class="stringliteral">&quot;?&quot;</span> : $ingredient-&gt;getMeta())] = $recipe;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            $callback();</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        }</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a7befabc741fb42c91b31dd22a679402a">  234</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a7befabc741fb42c91b31dd22a679402a">matchRecipe</a>(<a class="code hl_class" href="../../de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html">CraftingGrid</a> $grid, array $outputs) : ?<a class="code hl_interface" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html">CraftingRecipe</a>{</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="comment">//TODO: try to match special recipes before anything else (first they need to be implemented!)</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        $outputHash = self::hashOutputs($outputs);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerPotionTypeRecipe(PotionTypeRecipe $recipe) : void{</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        $this-&gt;potionTypeRecipes[] = $recipe;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            $callback();</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keyword">public</span> <span class="keyword">function</span> registerPotionContainerChangeRecipe(PotionContainerChangeRecipe $recipe) : void{</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        $this-&gt;potionContainerChangeRecipes[] = $recipe;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keywordflow">foreach</span>($this-&gt;recipeRegisteredCallbacks as $callback){</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            $callback();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a7befabc741fb42c91b31dd22a679402a">  236</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a7befabc741fb42c91b31dd22a679402a">matchRecipe</a>(<a class="code hl_class" href="../../de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html">CraftingGrid</a> $grid, array $outputs) : ?<a class="code hl_interface" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html">CraftingRecipe</a>{</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="comment">//TODO: try to match special recipes before anything else (first they need to be implemented!)</span></div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapedRecipes[$outputHash])){</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">foreach</span>($this-&gt;shapedRecipes[$outputHash] as $recipe){</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <span class="keywordflow">if</span>($recipe-&gt;matchesCraftingGrid($grid)){</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                    <span class="keywordflow">return</span> $recipe;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            }</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapelessRecipes[$outputHash])){</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">foreach</span>($this-&gt;shapelessRecipes[$outputHash] as $recipe){</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                <span class="keywordflow">if</span>($recipe-&gt;matchesCraftingGrid($grid)){</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    <span class="keywordflow">return</span> $recipe;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            }</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        }</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#abcb3eb3efa13e661c9147100ae432ea7">  264</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#abcb3eb3efa13e661c9147100ae432ea7">matchRecipeByOutputs</a>(array $outputs) : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="comment">//TODO: try to match special recipes before anything else (first they need to be implemented!)</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        $outputHash = self::hashOutputs($outputs);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        $outputHash = self::hashOutputs($outputs);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapedRecipes[$outputHash])){</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">foreach</span>($this-&gt;shapedRecipes[$outputHash] as $recipe){</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                <span class="keywordflow">if</span>($recipe-&gt;matchesCraftingGrid($grid)){</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    <span class="keywordflow">return</span> $recipe;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapelessRecipes[$outputHash])){</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">foreach</span>($this-&gt;shapelessRecipes[$outputHash] as $recipe){</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                <span class="keywordflow">if</span>($recipe-&gt;matchesCraftingGrid($grid)){</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                    <span class="keywordflow">return</span> $recipe;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                }</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#abcb3eb3efa13e661c9147100ae432ea7">  266</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#abcb3eb3efa13e661c9147100ae432ea7">matchRecipeByOutputs</a>(array $outputs) : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="comment">//TODO: try to match special recipes before anything else (first they need to be implemented!)</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapedRecipes[$outputHash])){</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keywordflow">foreach</span>($this-&gt;shapedRecipes[$outputHash] as $recipe){</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                yield $recipe;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            }</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapelessRecipes[$outputHash])){</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">foreach</span>($this-&gt;shapelessRecipes[$outputHash] as $recipe){</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                yield $recipe;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            }</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        }</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keyword">public</span> <span class="keyword">function</span> matchBrewingRecipe(Item $input, Item $ingredient) : ?BrewingRecipe{</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        return $this-&gt;potionTypeRecipes[$input-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . $input-&gt;getMeta()][$ingredient-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . $ingredient-&gt;getMeta()] ??</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            $this-&gt;potionTypeRecipes[$input-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . $input-&gt;getMeta()][$ingredient-&gt;getId() . <span class="stringliteral">&quot;:?&quot;</span>] ??</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            $this-&gt;potionContainerChangeRecipes[$input-&gt;getId()][$ingredient-&gt;getId() . <span class="stringliteral">&quot;:&quot;</span> . $ingredient-&gt;getMeta()] ??</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            $this-&gt;potionContainerChangeRecipes[$input-&gt;getId()][$ingredient-&gt;getId() . <span class="stringliteral">&quot;:?&quot;</span>] ?? null;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    }</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        $outputHash = self::hashOutputs($outputs);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapedRecipes[$outputHash])){</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            <span class="keywordflow">foreach</span>($this-&gt;shapedRecipes[$outputHash] as $recipe){</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                yield $recipe;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <span class="keywordflow">if</span>(isset($this-&gt;shapelessRecipes[$outputHash])){</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">foreach</span>($this-&gt;shapelessRecipes[$outputHash] as $recipe){</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                yield $recipe;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            }</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        }</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keyword">public</span> <span class="keyword">function</span> matchBrewingRecipe(Item $input, Item $ingredient) : ?BrewingRecipe{</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        $inputHash = $input-&gt;getStateId();</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        $ingredientHash = $ingredient-&gt;getStateId();</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        $cached = $this-&gt;brewingRecipeCache[$inputHash][$ingredientHash] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <span class="keywordflow">if</span>($cached !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">return</span> $cached;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">foreach</span>($this-&gt;potionContainerChangeRecipes as $recipe){</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordflow">if</span>($recipe-&gt;getIngredient()-&gt;accepts($ingredient) &amp;&amp; $recipe-&gt;getResultFor($input) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordflow">return</span> $this-&gt;brewingRecipeCache[$inputHash][$ingredientHash] = $recipe;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            }</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        }</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordflow">foreach</span>($this-&gt;potionTypeRecipes as $recipe){</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="keywordflow">if</span>($recipe-&gt;getIngredient()-&gt;accepts($ingredient) &amp;&amp; $recipe-&gt;getResultFor($input) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                <span class="keywordflow">return</span> $this-&gt;brewingRecipeCache[$inputHash][$ingredientHash] = $recipe;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_grid_html"><div class="ttname"><a href="../../de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html">pocketmine\crafting\CraftingGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/ded/_crafting_grid_8php_source.html#l00032">CraftingGrid.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html">pocketmine\crafting\CraftingManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00034">CraftingManager.php:34</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a19cbfd98b01ad787885b7bda1d7e4de1"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">pocketmine\crafting\CraftingManager\sort</a></div><div class="ttdeci">static sort(Item $i1, Item $i2)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00097">CraftingManager.php:97</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a1be861963b7f04e0f653ffd978cf9616"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">pocketmine\crafting\CraftingManager\getPotionContainerChangeRecipes</a></div><div class="ttdeci">getPotionContainerChangeRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00190">CraftingManager.php:190</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a378d06be283cf5f677e03d3517fc59dc"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a378d06be283cf5f677e03d3517fc59dc">pocketmine\crafting\CraftingManager\getShapedRecipes</a></div><div class="ttdeci">getShapedRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00158">CraftingManager.php:158</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a442d49c024831ca3ae21006bc9b7c48a"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a">pocketmine\crafting\CraftingManager\getCraftingRecipeIndex</a></div><div class="ttdeci">getCraftingRecipeIndex()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00166">CraftingManager.php:166</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a73a6cdf6696dfb6b60ddf84873209d3a"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a">pocketmine\crafting\CraftingManager\getPotionTypeRecipes</a></div><div class="ttdeci">getPotionTypeRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00182">CraftingManager.php:182</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a7befabc741fb42c91b31dd22a679402a"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a7befabc741fb42c91b31dd22a679402a">pocketmine\crafting\CraftingManager\matchRecipe</a></div><div class="ttdeci">matchRecipe(CraftingGrid $grid, array $outputs)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00234">CraftingManager.php:234</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a87ed0dd39cbee159ac960292721a4831"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831">pocketmine\crafting\CraftingManager\getRecipeRegisteredCallbacks</a></div><div class="ttdeci">getRecipeRegisteredCallbacks()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00092">CraftingManager.php:92</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a921529c35a2e6730f5729ebdcacfcf51"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a921529c35a2e6730f5729ebdcacfcf51">pocketmine\crafting\CraftingManager\getShapelessRecipes</a></div><div class="ttdeci">getShapelessRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00150">CraftingManager.php:150</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_abcb3eb3efa13e661c9147100ae432ea7"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#abcb3eb3efa13e661c9147100ae432ea7">pocketmine\crafting\CraftingManager\matchRecipeByOutputs</a></div><div class="ttdeci">matchRecipeByOutputs(array $outputs)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00264">CraftingManager.php:264</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a19cbfd98b01ad787885b7bda1d7e4de1"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">pocketmine\crafting\CraftingManager\sort</a></div><div class="ttdeci">static sort(Item $i1, Item $i2)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00103">CraftingManager.php:103</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a1be861963b7f04e0f653ffd978cf9616"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">pocketmine\crafting\CraftingManager\getPotionContainerChangeRecipes</a></div><div class="ttdeci">getPotionContainerChangeRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00195">CraftingManager.php:195</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a378d06be283cf5f677e03d3517fc59dc"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a378d06be283cf5f677e03d3517fc59dc">pocketmine\crafting\CraftingManager\getShapedRecipes</a></div><div class="ttdeci">getShapedRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00163">CraftingManager.php:163</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a442d49c024831ca3ae21006bc9b7c48a"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a442d49c024831ca3ae21006bc9b7c48a">pocketmine\crafting\CraftingManager\getCraftingRecipeIndex</a></div><div class="ttdeci">getCraftingRecipeIndex()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00171">CraftingManager.php:171</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a73a6cdf6696dfb6b60ddf84873209d3a"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a73a6cdf6696dfb6b60ddf84873209d3a">pocketmine\crafting\CraftingManager\getPotionTypeRecipes</a></div><div class="ttdeci">getPotionTypeRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00187">CraftingManager.php:187</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a7befabc741fb42c91b31dd22a679402a"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a7befabc741fb42c91b31dd22a679402a">pocketmine\crafting\CraftingManager\matchRecipe</a></div><div class="ttdeci">matchRecipe(CraftingGrid $grid, array $outputs)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00236">CraftingManager.php:236</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a87ed0dd39cbee159ac960292721a4831"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a87ed0dd39cbee159ac960292721a4831">pocketmine\crafting\CraftingManager\getRecipeRegisteredCallbacks</a></div><div class="ttdeci">getRecipeRegisteredCallbacks()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00098">CraftingManager.php:98</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_a921529c35a2e6730f5729ebdcacfcf51"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a921529c35a2e6730f5729ebdcacfcf51">pocketmine\crafting\CraftingManager\getShapelessRecipes</a></div><div class="ttdeci">getShapelessRecipes()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00155">CraftingManager.php:155</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_html_abcb3eb3efa13e661c9147100ae432ea7"><div class="ttname"><a href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#abcb3eb3efa13e661c9147100ae432ea7">pocketmine\crafting\CraftingManager\matchRecipeByOutputs</a></div><div class="ttdeci">matchRecipeByOutputs(array $outputs)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d93/_crafting_manager_8php_source.html#l00266">CraftingManager.php:266</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1crafting_1_1_furnace_recipe_html"><div class="ttname"><a href="../../da/d41/classpocketmine_1_1crafting_1_1_furnace_recipe.html">pocketmine\crafting\FurnaceRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/src_2crafting_2_furnace_recipe_8php_source.html#l00028">src/crafting/FurnaceRecipe.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1crafting_1_1_furnace_recipe_manager_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html">pocketmine\crafting\FurnaceRecipeManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/db8/_furnace_recipe_manager_8php_source.html#l00029">FurnaceRecipeManager.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_shaped_recipe_html"><div class="ttname"><a href="../../d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe.html">pocketmine\crafting\ShapedRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00035">src/crafting/ShapedRecipe.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00058">Item.php:58</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_shaped_recipe_html"><div class="ttname"><a href="../../d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe.html">pocketmine\crafting\ShapedRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00034">src/crafting/ShapedRecipe.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html">pocketmine\nbt\LittleEndianNbtSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da4/_little_endian_nbt_serializer_8php_source.html#l00032">LittleEndianNbtSerializer.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_tree_root_html"><div class="ttname"><a href="../../d7/d89/classpocketmine_1_1nbt_1_1_tree_root.html">pocketmine\nbt\TreeRoot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8d/_tree_root_8php_source.html#l00032">TreeRoot.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00033">BinaryStream.php:33</a></div></div>

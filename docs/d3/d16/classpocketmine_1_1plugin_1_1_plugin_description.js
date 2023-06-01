@@ -1,6 +1,6 @@
 var classpocketmine_1_1plugin_1_1_plugin_description =
 [
-    [ "__construct", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html#a8238476ded29d1ab2e638c862f1b163c", null ],
+    [ "__construct", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html#a4e0bf7067b3da13659dccb5f1ff22014", null ],
     [ "getAuthors", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html#adaa7e902b7a127e9f6ce5796a1054190", null ],
     [ "getCommands", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html#ad95520c87be234cb361280c50d22644a", null ],
     [ "getCompatibleApis", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html#a57bbc7f790efe248472c0a99b8f1b94c", null ],

@@ -14,6 +14,5 @@ var classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data =
     [ "setLightningLevel", "d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#a8d58a8dc1bdf60f571a4cbb6b0b30c6f", null ],
     [ "setLightningTime", "d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#abf9f71689c38dc9e63bc2901bd54141e", null ],
     [ "setRainLevel", "d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#ae692a8bc8bed3c062ceb5bfa60228b44", null ],
-    [ "setRainTime", "d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#ade27b64c6a5ef18400feb150275a7adf", null ],
-    [ "CURRENT_STORAGE_NETWORK_VERSION", "d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#a0fa6bba9e6f3679c09aff578d29a5270", null ]
+    [ "setRainTime", "d5/dd1/classpocketmine_1_1world_1_1format_1_1io_1_1data_1_1_bedrock_world_data.html#ade27b64c6a5ef18400feb150275a7adf", null ]
 ];

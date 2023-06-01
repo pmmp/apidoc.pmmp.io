@@ -5,6 +5,7 @@ var namespacepocketmine_1_1event_1_1world =
     [ "ChunkPopulateEvent", "dd/d9c/classpocketmine_1_1event_1_1world_1_1_chunk_populate_event.html", "dd/d9c/classpocketmine_1_1event_1_1world_1_1_chunk_populate_event" ],
     [ "ChunkUnloadEvent", "d1/df4/classpocketmine_1_1event_1_1world_1_1_chunk_unload_event.html", "d1/df4/classpocketmine_1_1event_1_1world_1_1_chunk_unload_event" ],
     [ "SpawnChangeEvent", "d3/d42/classpocketmine_1_1event_1_1world_1_1_spawn_change_event.html", "d3/d42/classpocketmine_1_1event_1_1world_1_1_spawn_change_event" ],
+    [ "WorldDisplayNameChangeEvent", "da/d8e/classpocketmine_1_1event_1_1world_1_1_world_display_name_change_event.html", "da/d8e/classpocketmine_1_1event_1_1world_1_1_world_display_name_change_event" ],
     [ "WorldEvent", "d9/d97/classpocketmine_1_1event_1_1world_1_1_world_event.html", "d9/d97/classpocketmine_1_1event_1_1world_1_1_world_event" ],
     [ "WorldInitEvent", "da/d9d/classpocketmine_1_1event_1_1world_1_1_world_init_event.html", "da/d9d/classpocketmine_1_1event_1_1world_1_1_world_init_event" ],
     [ "WorldLoadEvent", "dc/d09/classpocketmine_1_1event_1_1world_1_1_world_load_event.html", "dc/d09/classpocketmine_1_1event_1_1world_1_1_world_load_event" ],
