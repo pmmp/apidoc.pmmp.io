@@ -1,5 +1,7 @@
 var NAVTREEINDEX234 =
 {
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,2,12,88,15],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,88,15],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a8e97e9296238bf8794a2d2f8e94e8a93":[2,0,2,12,88,48],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a8e97e9296238bf8794a2d2f8e94e8a93":[3,0,1,12,88,48],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a95cfab40de7390593990a239f8e4af73":[2,0,2,12,88,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX234 =
 "df/dac/classpocketmine_1_1item_1_1_steak.html#a4f8f013f507342e2208dc8b4c3da964b":[3,0,1,12,100,23],
 "df/dac/classpocketmine_1_1item_1_1_steak.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,100,18],
 "df/dac/classpocketmine_1_1item_1_1_steak.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,2,12,100,18],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,100,28],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,2,12,100,28],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,100,5]
+"df/dac/classpocketmine_1_1item_1_1_steak.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,100,28]
 };

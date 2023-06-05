@@ -1,5 +1,7 @@
 var NAVTREEINDEX232 =
 {
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a8307fc850da5c3f36e9dfc7ce639fe55":[3,0,1,0,232,45],
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,2,0,232,27],
 "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,232,27],
 "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a863a7a7c27f111cc622ebb10711807c2":[3,0,1,0,232,54],
 "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a863a7a7c27f111cc622ebb10711807c2":[2,0,2,0,232,54],
@@ -247,7 +249,5 @@ var NAVTREEINDEX232 =
 "df/d90/_world_init_event_8php_source.html":[4,0,0,7,6,7],
 "df/d91/_sub_chunk_explorer_8php_source.html":[4,0,0,25,6,0],
 "df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html":[3,0,1,8,2],
-"df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html":[2,0,2,8,2],
-"df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html#ad3c9dc37eed08d4fc6ac4d10b48fb988":[3,0,1,8,2,0],
-"df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html#ad3c9dc37eed08d4fc6ac4d10b48fb988":[2,0,2,8,2,0]
+"df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html":[2,0,2,8,2]
 };
