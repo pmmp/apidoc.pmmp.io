@@ -52,6 +52,7 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "MapInfoRequestPacketClientPixel.php", "de/d04/_map_info_request_packet_client_pixel_8php_source.html", null ],
     [ "MapTrackedObject.php", "d3/dfa/_map_tracked_object_8php_source.html", null ],
     [ "MultiplayerGameVisibility.php", "d0/d53/_multiplayer_game_visibility_8php_source.html", null ],
+    [ "NetworkPermissions.php", "da/d3b/_network_permissions_8php_source.html", null ],
     [ "ParticleIds.php", "d3/d7e/_particle_ids_8php_source.html", null ],
     [ "PlayerAction.php", "df/d17/_player_action_8php_source.html", null ],
     [ "PlayerAuthInputFlags.php", "d1/dda/_player_auth_input_flags_8php_source.html", null ],

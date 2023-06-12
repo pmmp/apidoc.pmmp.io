@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.0.2 git-f9818efff4407fa394c65b11846df5ec8bfe125b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.1.3 git-1d25e15ec8f6bd8b38b0fa3c546d9948aa9964ab</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a71aa5ecc5328fd6343e9b9d10c5fb832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5c94c78d92e3be9720d4f5d1c5352ff3">getName</a> ()</td></tr>
 <tr class="separator:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adf301699d1252e676c41477bb3cbfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet.html#a0adf301699d1252e676c41477bb3cbfe">getPlatformChatId</a> ()</td></tr>
+<tr class="separator:a0adf301699d1252e676c41477bb3cbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb66476a62f0afb8856641577f7671c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet.html#afb66476a62f0afb8856641577f7671c7">getXboxUserId</a> ()</td></tr>
+<tr class="separator:afb66476a62f0afb8856641577f7671c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af74503b74410627bada3cc4596cbf8d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet.html#af74503b74410627bada3cc4596cbf8d9">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
 <tr class="separator:af74503b74410627bada3cc4596cbf8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a42c2432f23e1c1b69a82f90588c1dbf5">pid</a> ()</td></tr>
@@ -142,8 +146,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a314b847c376a6588c5b87daf482dba09"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet.html#a314b847c376a6588c5b87daf482dba09">create</a> (int $actorRuntimeId, string $emoteId, int $flags)</td></tr>
-<tr class="separator:a314b847c376a6588c5b87daf482dba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee156bfdd4d45185b2ea6340fddb66d3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet.html#aee156bfdd4d45185b2ea6340fddb66d3">create</a> (int $actorRuntimeId, string $emoteId, string $xboxUserId, string $platformChatId, int $flags)</td></tr>
+<tr class="separator:aee156bfdd4d45185b2ea6340fddb66d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -284,8 +288,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a314b847c376a6588c5b87daf482dba09" name="a314b847c376a6588c5b87daf482dba09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a314b847c376a6588c5b87daf482dba09">&#9670;&nbsp;</a></span>create()</h2>
+<a id="aee156bfdd4d45185b2ea6340fddb66d3" name="aee156bfdd4d45185b2ea6340fddb66d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee156bfdd4d45185b2ea6340fddb66d3">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,6 +312,18 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$xboxUserId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$platformChatId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$flags</em>&#160;</td>
         </tr>
@@ -325,7 +341,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00034">34</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>
@@ -434,7 +450,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00052">52</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00060">60</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>
@@ -523,7 +539,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00058">58</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00068">68</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>
@@ -542,7 +558,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00040">40</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>
@@ -561,7 +577,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>
@@ -580,7 +596,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00056">56</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>
@@ -613,6 +629,44 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0adf301699d1252e676c41477bb3cbfe" name="a0adf301699d1252e676c41477bb3cbfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0adf301699d1252e676c41477bb3cbfe">&#9670;&nbsp;</a></span>getPlatformChatId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\EmotePacket::getPlatformChatId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00054">54</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+
+</div>
+</div>
+<a id="afb66476a62f0afb8856641577f7671c7" name="afb66476a62f0afb8856641577f7671c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb66476a62f0afb8856641577f7671c7">&#9670;&nbsp;</a></span>getXboxUserId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\EmotePacket::getXboxUserId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00052">52</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+
+</div>
+</div>
 <a id="af74503b74410627bada3cc4596cbf8d9" name="af74503b74410627bada3cc4596cbf8d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af74503b74410627bada3cc4596cbf8d9">&#9670;&nbsp;</a></span>handle()</h2>
 
@@ -641,7 +695,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00064">64</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/_emote_packet_8php_source.html#l00076">76</a> of file <a class="el" href="../../d4/d24/_emote_packet_8php_source.html">EmotePacket.php</a>.</p>
 
 </div>
 </div>

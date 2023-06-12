@@ -1323,6 +1323,7 @@ var hierarchy =
       [ "pocketmine\\network\\upnp\\UPnPNetworkInterface", "d0/d45/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_network_interface.html", null ]
     ] ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\inventory\\NetworkInventoryAction", "d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\NetworkPermissions", "d9/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_network_permissions.html", null ],
     [ "pocketmine\\network\\mcpe\\NetworkSession", "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html", null ],
     [ "pocketmine\\network\\NetworkSessionManager", "dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html", null ],
     [ "pocketmine\\world\\generator\\noise\\Noise", "d2/dd0/classpocketmine_1_1world_1_1generator_1_1noise_1_1_noise.html", [

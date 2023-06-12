@@ -232,6 +232,7 @@ var namespacepocketmine_1_1network =
           [ "MapInfoRequestPacketClientPixel", "df/ddc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_info_request_packet_client_pixel.html", null ],
           [ "MapTrackedObject", "d2/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_tracked_object.html", "d2/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_tracked_object" ],
           [ "MultiplayerGameVisibility", "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html", null ],
+          [ "NetworkPermissions", "d9/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_network_permissions.html", null ],
           [ "ParticleIds", "d6/dca/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_particle_ids.html", null ],
           [ "PlayerAction", "de/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_action.html", null ],
           [ "PlayerAuthInputFlags", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags" ],

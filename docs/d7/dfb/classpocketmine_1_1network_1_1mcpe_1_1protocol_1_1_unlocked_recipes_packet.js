@@ -2,7 +2,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet =
 [
     [ "__get", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2", null ],
     [ "__set", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#ab869f6f8d246ff2f83744b48f43c4b54", null ],
-    [ "create", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#a0c2a0a8a893bfe8fd1049bfb46e6c83a", null ],
+    [ "create", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#a8fed5bdea882f14656a6177ebf5dea4d", null ],
     [ "decode", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#aa064d23077830ab265f931c3385a3e0d", null ],
     [ "decodeHeader", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#a7f34ca0fc75361b63314614a92d08b49", null ],
     [ "decodePayload", "d7/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_unlocked_recipes_packet.html#af3ac77209314df549c2d88a7c9ff6a03", null ],
