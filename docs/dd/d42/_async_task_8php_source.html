@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.1.3 git-ad67fb729138c7b1e27e9bb0be604463d136b5de</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.1.4 git-588a754f1c2c76b44c2a792ef17d2319927dfae9</span>
    </div>
   </td>
  </tr>
@@ -248,17 +248,23 @@ $(document).ready(function(){initNavTree('dd/d42/_async_task_8php_source.html','
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        $this-&gt;reallyDestruct();</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">if</span>(self::$threadLocalStorage !== <span class="keyword">null</span> &amp;&amp; isset(self::$threadLocalStorage[$h = spl_object_id($this)])){</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            unset(self::$threadLocalStorage[$h]);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">if</span>(self::$threadLocalStorage-&gt;count() === 0){</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                self::$threadLocalStorage = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">  257</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">reallyDestruct</a>() : void{</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="comment">//Beware changing this code!</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="comment">//This code may cause the GC to be triggered, causing destruction of other AsyncTasks (which may or may not</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="comment">//have been indirectly referenced by the TLS).</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="comment">//This may cause the code to be re-entered from a different context unexpectedly, causing a crash if handled</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="comment">//incorrectly.</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keywordflow">if</span>(self::$threadLocalStorage-&gt;count() === 1){</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                self::$threadLocalStorage = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                unset(self::$threadLocalStorage[$h]);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">  263</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">reallyDestruct</a>() : void{</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">pocketmine\scheduler\AsyncTask</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00062">AsyncTask.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a0116d1721376b18f7410934b72a19ecc"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a0116d1721376b18f7410934b72a19ecc">pocketmine\scheduler\AsyncTask\onCompletion</a></div><div class="ttdeci">onCompletion()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00155">AsyncTask.php:155</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a1ba680fdef8ef3e5832322b56dc460f0"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">pocketmine\scheduler\AsyncTask\fetchLocal</a></div><div class="ttdeci">fetchLocal(string $key)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00235">AsyncTask.php:235</a></div></div>
@@ -266,7 +272,7 @@ $(document).ready(function(){initNavTree('dd/d42/_async_task_8php_source.html','
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a6db5fee11fc3b30c6ec45c62de8ee8dc"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a6db5fee11fc3b30c6ec45c62de8ee8dc">pocketmine\scheduler\AsyncTask\onRun</a></div><div class="ttdeci">onRun()</div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_aa5a040d7bd6023185e91387c526f8527"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#aa5a040d7bd6023185e91387c526f8527">pocketmine\scheduler\AsyncTask\getResult</a></div><div class="ttdeci">getResult()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00119">AsyncTask.php:119</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ac53490645128426de21ae1ef050722a4"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ac53490645128426de21ae1ef050722a4">pocketmine\scheduler\AsyncTask\$progressUpdates</a></div><div class="ttdeci">ThreadSafeArray $progressUpdates</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00072">AsyncTask.php:72</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_adad32212908878d6e70423161dbae0bf"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">pocketmine\scheduler\AsyncTask\reallyDestruct</a></div><div class="ttdeci">reallyDestruct()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00257">AsyncTask.php:257</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_adad32212908878d6e70423161dbae0bf"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">pocketmine\scheduler\AsyncTask\reallyDestruct</a></div><div class="ttdeci">reallyDestruct()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00263">AsyncTask.php:263</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ae3aa1ef734e82c49e25962e56eaf76ef"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">pocketmine\scheduler\AsyncTask\onProgressUpdate</a></div><div class="ttdeci">onProgressUpdate($progress)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d42/_async_task_8php_source.html#l00186">AsyncTask.php:186</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_worker_html"><div class="ttname"><a href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html">pocketmine\scheduler\AsyncWorker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dff/_async_worker_8php_source.html#l00035">AsyncWorker.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_non_thread_safe_value_html"><div class="ttname"><a href="../../d4/d69/classpocketmine_1_1thread_1_1_non_thread_safe_value.html">pocketmine\thread\NonThreadSafeValue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd6/_non_thread_safe_value_8php_source.html#l00038">NonThreadSafeValue.php:38</a></div></div>

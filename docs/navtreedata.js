@@ -292,7 +292,7 @@ var NAVTREEINDEX =
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#a51b97f07ff97887a144198bb3dba6fc4",
 "df/dd0/classpocketmine_1_1command_1_1defaults_1_1_enchant_command.html#a57c09d1063bc811e24bdc3d750e882d5",
 "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#ab4d678fcc49f71fc70fff710482f3f4e",
-"dir_adc68df1126d9aaa60a6fe177d2b2501.html"
+"dir_a63ebcc2f7b1a63914b5dceb3f4b5e8b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
