@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.1.4 git-588a754f1c2c76b44c2a792ef17d2319927dfae9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.2.1 git-8f217ca6e01a31f39a07452f37142d0e94a7cbeb</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('da/dce/classpocketmine_1_1data_1_1bedr
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d29/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data__coll__graph.svg" width="248" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d29/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data__coll__graph.svg" width="248" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a2de683ad770275da945b12cab81198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace5e1951d032a587d70a6502458c8599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html#ace5e1951d032a587d70a6502458c8599">toNbt</a> ()</td></tr>
 <tr class="separator:ace5e1951d032a587d70a6502458c8599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15f10e44e6c5ad6c76ca920218fa9a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html#aa15f10e44e6c5ad6c76ca920218fa9a9">toVanillaNbt</a> ()</td></tr>
+<tr class="separator:aa15f10e44e6c5ad6c76ca920218fa9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -251,7 +253,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html#l00126">126</a> of file <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html">BlockStateData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html#l00137">137</a> of file <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html">BlockStateData.php</a>.</p>
 
 </div>
 </div>
@@ -410,8 +412,39 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Encodes the blockstate as a TAG_Compound, but with extra PM-specific metadata, used for fixing bugs in old saved data. This should be used for anything saved to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html#l00114">114</a> of file <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html">BlockStateData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html#l00132">132</a> of file <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html">BlockStateData.php</a>.</p>
+
+</div>
+</div>
+<a id="aa15f10e44e6c5ad6c76ca920218fa9a9" name="aa15f10e44e6c5ad6c76ca920218fa9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15f10e44e6c5ad6c76ca920218fa9a9">&#9670;&nbsp;</a></span>toVanillaNbt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\data\bedrock\block\BlockStateData::toVanillaNbt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Encodes the blockstate as a TAG_Compound, exactly as it would be in vanilla Bedrock. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html#l00117">117</a> of file <a class="el" href="../../d6/d1e/_block_state_data_8php_source.html">BlockStateData.php</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d8c/_compound_tag_8php_source.html#l00117">pocketmine\nbt\tag\CompoundTag\setTag()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data_aa15f10e44e6c5ad6c76ca920218fa9a9_cgraph.svg" width="410" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

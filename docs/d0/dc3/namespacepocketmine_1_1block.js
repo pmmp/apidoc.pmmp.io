@@ -146,6 +146,7 @@ var namespacepocketmine_1_1block =
     [ "GlassPane", "d5/df3/classpocketmine_1_1block_1_1_glass_pane.html", "d5/df3/classpocketmine_1_1block_1_1_glass_pane" ],
     [ "GlazedTerracotta", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta" ],
     [ "GlowingObsidian", "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html", "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian" ],
+    [ "GlowLichen", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen" ],
     [ "Glowstone", "d5/d20/classpocketmine_1_1block_1_1_glowstone.html", "d5/d20/classpocketmine_1_1block_1_1_glowstone" ],
     [ "GoldOre", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html", "db/d9b/classpocketmine_1_1block_1_1_gold_ore" ],
     [ "Grass", "d6/d7c/classpocketmine_1_1block_1_1_grass.html", "d6/d7c/classpocketmine_1_1block_1_1_grass" ],

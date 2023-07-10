@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.1.4 git-588a754f1c2c76b44c2a792ef17d2319927dfae9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.2.1 git-8f217ca6e01a31f39a07452f37142d0e94a7cbeb</span>
    </div>
   </td>
  </tr>
@@ -119,38 +119,39 @@ $(document).ready(function(){initNavTree('d7/d01/_leaves_type_8php_source.html',
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../de/d6d/classpocketmine_1_1block_1_1utils_1_1_leaves_type.html">   44</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d6d/classpocketmine_1_1block_1_1utils_1_1_leaves_type.html">LeavesType</a>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    use EnumTrait {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">register</span> as Enum_register;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        __construct as Enum___construct;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        self::registerAll(</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;oak&quot;</span>, <span class="stringliteral">&quot;Oak&quot;</span>),</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;spruce&quot;</span>, <span class="stringliteral">&quot;Spruce&quot;</span>),</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;birch&quot;</span>, <span class="stringliteral">&quot;Birch&quot;</span>),</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;jungle&quot;</span>, <span class="stringliteral">&quot;Jungle&quot;</span>),</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;acacia&quot;</span>, <span class="stringliteral">&quot;Acacia&quot;</span>),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;dark_oak&quot;</span>, <span class="stringliteral">&quot;Dark Oak&quot;</span>),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;mangrove&quot;</span>, <span class="stringliteral">&quot;Mangrove&quot;</span>),</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;azalea&quot;</span>, <span class="stringliteral">&quot;Azalea&quot;</span>),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;flowering_azalea&quot;</span>, <span class="stringliteral">&quot;Flowering Azalea&quot;</span>)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        );</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">string</span> $enumName,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $displayName</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ){</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $this-&gt;Enum___construct($enumName);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> $this-&gt;displayName;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_leaves_type_html"><div class="ttname"><a href="../../de/d6d/classpocketmine_1_1block_1_1utils_1_1_leaves_type.html">pocketmine\block\utils\LeavesType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d01/_leaves_type_8php_source.html#l00044">LeavesType.php:44</a></div></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../de/d6d/classpocketmine_1_1block_1_1utils_1_1_leaves_type.html">   45</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d6d/classpocketmine_1_1block_1_1utils_1_1_leaves_type.html">LeavesType</a>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    use EnumTrait {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">register</span> as Enum_register;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        __construct as Enum___construct;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self::registerAll(</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;oak&quot;</span>, <span class="stringliteral">&quot;Oak&quot;</span>),</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;spruce&quot;</span>, <span class="stringliteral">&quot;Spruce&quot;</span>),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;birch&quot;</span>, <span class="stringliteral">&quot;Birch&quot;</span>),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;jungle&quot;</span>, <span class="stringliteral">&quot;Jungle&quot;</span>),</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;acacia&quot;</span>, <span class="stringliteral">&quot;Acacia&quot;</span>),</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;dark_oak&quot;</span>, <span class="stringliteral">&quot;Dark Oak&quot;</span>),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;mangrove&quot;</span>, <span class="stringliteral">&quot;Mangrove&quot;</span>),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;azalea&quot;</span>, <span class="stringliteral">&quot;Azalea&quot;</span>),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;flowering_azalea&quot;</span>, <span class="stringliteral">&quot;Flowering Azalea&quot;</span>),</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;cherry&quot;</span>, <span class="stringliteral">&quot;Cherry&quot;</span>)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">string</span> $enumName,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $displayName</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    ){</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;Enum___construct($enumName);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> $this-&gt;displayName;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_leaves_type_html"><div class="ttname"><a href="../../de/d6d/classpocketmine_1_1block_1_1utils_1_1_leaves_type.html">pocketmine\block\utils\LeavesType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d01/_leaves_type_8php_source.html#l00045">LeavesType.php:45</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

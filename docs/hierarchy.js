@@ -285,6 +285,7 @@ var hierarchy =
         [ "pocketmine\\block\\Glass", "d1/d73/classpocketmine_1_1block_1_1_glass.html", [
           [ "pocketmine\\block\\StainedGlass", "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html", null ]
         ] ],
+        [ "pocketmine\\block\\GlowLichen", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html", null ],
         [ "pocketmine\\block\\Glowstone", "d5/d20/classpocketmine_1_1block_1_1_glowstone.html", null ],
         [ "pocketmine\\block\\GrassPath", "d9/d5d/classpocketmine_1_1block_1_1_grass_path.html", null ],
         [ "pocketmine\\block\\HardenedGlass", "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html", [
@@ -386,7 +387,9 @@ var hierarchy =
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgrader", "d3/d19/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrader.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchema", "de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchemaBlockRemap", "d7/d03/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_block_remap.html", null ],
+    [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchemaFlattenedName", "dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelBlockRemap", "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html", null ],
+    [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelFlattenedName", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelTag", "d0/d06/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_tag.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelValueRemap", "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchemaUtils", "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html", null ],

@@ -193,6 +193,7 @@ var annotated_dup =
         [ "GlassPane", "d5/df3/classpocketmine_1_1block_1_1_glass_pane.html", "d5/df3/classpocketmine_1_1block_1_1_glass_pane" ],
         [ "GlazedTerracotta", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta" ],
         [ "GlowingObsidian", "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html", "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian" ],
+        [ "GlowLichen", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen" ],
         [ "Glowstone", "d5/d20/classpocketmine_1_1block_1_1_glowstone.html", "d5/d20/classpocketmine_1_1block_1_1_glowstone" ],
         [ "GoldOre", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html", "db/d9b/classpocketmine_1_1block_1_1_gold_ore" ],
         [ "Grass", "d6/d7c/classpocketmine_1_1block_1_1_grass.html", "d6/d7c/classpocketmine_1_1block_1_1_grass" ],
@@ -445,6 +446,7 @@ var annotated_dup =
               [ "model", null, [
                 [ "BlockStateUpgradeSchemaModel", "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html", "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model" ],
                 [ "BlockStateUpgradeSchemaModelBlockRemap", "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html", "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap" ],
+                [ "BlockStateUpgradeSchemaModelFlattenedName", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name.html", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name" ],
                 [ "BlockStateUpgradeSchemaModelTag", "d0/d06/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_tag.html", null ],
                 [ "BlockStateUpgradeSchemaModelValueRemap", "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html", "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap" ]
               ] ],
@@ -453,6 +455,7 @@ var annotated_dup =
               [ "BlockStateUpgrader", "d3/d19/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrader.html", "d3/d19/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrader" ],
               [ "BlockStateUpgradeSchema", "de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema.html", "de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema" ],
               [ "BlockStateUpgradeSchemaBlockRemap", "d7/d03/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_block_remap.html", "d7/d03/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_block_remap" ],
+              [ "BlockStateUpgradeSchemaFlattenedName", "dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html", null ],
               [ "BlockStateUpgradeSchemaUtils", "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html", "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils" ],
               [ "BlockStateUpgradeSchemaValueRemap", "d9/dfe/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_value_remap.html", null ],
               [ "LegacyBlockIdToStringIdMap", "d1/d10/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_legacy_block_id_to_string_id_map.html", "d1/d10/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_legacy_block_id_to_string_id_map" ]

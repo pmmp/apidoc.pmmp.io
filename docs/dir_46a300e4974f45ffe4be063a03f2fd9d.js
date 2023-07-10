@@ -104,6 +104,7 @@ var dir_46a300e4974f45ffe4be063a03f2fd9d =
     [ "GlassPane.php", "d0/d62/_glass_pane_8php_source.html", null ],
     [ "GlazedTerracotta.php", "da/df7/_glazed_terracotta_8php_source.html", null ],
     [ "GlowingObsidian.php", "dd/dc6/_glowing_obsidian_8php_source.html", null ],
+    [ "GlowLichen.php", "d5/d89/_glow_lichen_8php_source.html", null ],
     [ "Glowstone.php", "da/d34/_glowstone_8php_source.html", null ],
     [ "GoldOre.php", "dd/d7c/_gold_ore_8php_source.html", null ],
     [ "Grass.php", "d2/d85/_grass_8php_source.html", null ],
