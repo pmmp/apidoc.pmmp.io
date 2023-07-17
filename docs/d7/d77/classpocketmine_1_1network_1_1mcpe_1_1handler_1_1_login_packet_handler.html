@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.2.1 git-8f217ca6e01a31f39a07452f37142d0e94a7cbeb</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.2 git-0c1bfb058afae74dc7c06a5328576db54ded36c5</span>
    </div>
   </td>
  </tr>
@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36cb7cb2f3718913f7482bddf022661c"><td class="memItemLeft" align="right" valign="top"><a id="a36cb7cb2f3718913f7482bddf022661c" name="a36cb7cb2f3718913f7482bddf022661c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleAgentActionEvent</b> (AgentActionEventPacket $packet)</td></tr>
 <tr class="separator:a36cb7cb2f3718913f7482bddf022661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb6b4f976268c0f49b5e8573ccff908"><td class="memItemLeft" align="right" valign="top"><a id="a8eb6b4f976268c0f49b5e8573ccff908" name="a8eb6b4f976268c0f49b5e8573ccff908"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleAgentAnimation</b> (AgentAnimationPacket $packet)</td></tr>
+<tr class="separator:a8eb6b4f976268c0f49b5e8573ccff908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a941cb1efb7a64b1e63b4034a90e810"><td class="memItemLeft" align="right" valign="top"><a id="a0a941cb1efb7a64b1e63b4034a90e810" name="a0a941cb1efb7a64b1e63b4034a90e810"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleAnimate</b> (<a class="el" href="../../d6/dcd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_animate_packet.html">AnimatePacket</a> $packet)</td></tr>
 <tr class="separator:a0a941cb1efb7a64b1e63b4034a90e810"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,9 +222,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a550b9e3d244699354871126031370f67"><td class="memItemLeft" align="right" valign="top"><a id="a550b9e3d244699354871126031370f67" name="a550b9e3d244699354871126031370f67"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleClientCacheStatus</b> (ClientCacheStatusPacket $packet)</td></tr>
 <tr class="separator:a550b9e3d244699354871126031370f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46bb599958e861ee7a3911eabec77494"><td class="memItemLeft" align="right" valign="top"><a id="a46bb599958e861ee7a3911eabec77494" name="a46bb599958e861ee7a3911eabec77494"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleClientCheatAbility</b> (ClientCheatAbilityPacket $packet)</td></tr>
-<tr class="separator:a46bb599958e861ee7a3911eabec77494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76654adcd3260898630ba6f1b43212be"><td class="memItemLeft" align="right" valign="top"><a id="a76654adcd3260898630ba6f1b43212be" name="a76654adcd3260898630ba6f1b43212be"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleClientToServerHandshake</b> (<a class="el" href="../../dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html">ClientToServerHandshakePacket</a> $packet)</td></tr>
 <tr class="separator:a76654adcd3260898630ba6f1b43212be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,9 +297,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42e0187fc036aef935749e61be0cd5bb"><td class="memItemLeft" align="right" valign="top"><a id="a42e0187fc036aef935749e61be0cd5bb" name="a42e0187fc036aef935749e61be0cd5bb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleEmoteList</b> (EmoteListPacket $packet)</td></tr>
 <tr class="separator:a42e0187fc036aef935749e61be0cd5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c38cfe841355595fadb2df95e715719"><td class="memItemLeft" align="right" valign="top"><a id="a7c38cfe841355595fadb2df95e715719" name="a7c38cfe841355595fadb2df95e715719"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> (EventPacket $packet)</td></tr>
-<tr class="separator:a7c38cfe841355595fadb2df95e715719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac53dd3b58fe20084b2394139b6bd34ac"><td class="memItemLeft" align="right" valign="top"><a id="ac53dd3b58fe20084b2394139b6bd34ac" name="ac53dd3b58fe20084b2394139b6bd34ac"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleFeatureRegistry</b> (FeatureRegistryPacket $packet)</td></tr>
 <tr class="separator:ac53dd3b58fe20084b2394139b6bd34ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +348,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab16fbfcedd9f48328614bbf5fd695101"><td class="memItemLeft" align="right" valign="top"><a id="ab16fbfcedd9f48328614bbf5fd695101" name="ab16fbfcedd9f48328614bbf5fd695101"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleLecternUpdate</b> (<a class="el" href="../../d0/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_lectern_update_packet.html">LecternUpdatePacket</a> $packet)</td></tr>
 <tr class="separator:ab16fbfcedd9f48328614bbf5fd695101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478e1da6d2301ea346dae5f2f3df5d63"><td class="memItemLeft" align="right" valign="top"><a id="a478e1da6d2301ea346dae5f2f3df5d63" name="a478e1da6d2301ea346dae5f2f3df5d63"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleLegacyTelemetryEvent</b> (LegacyTelemetryEventPacket $packet)</td></tr>
+<tr class="separator:a478e1da6d2301ea346dae5f2f3df5d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b2c53e477885553173f8a7cc22ac96"><td class="memItemLeft" align="right" valign="top"><a id="a09b2c53e477885553173f8a7cc22ac96" name="a09b2c53e477885553173f8a7cc22ac96"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleLessonProgress</b> (LessonProgressPacket $packet)</td></tr>
 <tr class="separator:a09b2c53e477885553173f8a7cc22ac96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -530,9 +530,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39ab46cc6d30c6a3e80147c32474650f"><td class="memItemLeft" align="right" valign="top"><a id="a39ab46cc6d30c6a3e80147c32474650f" name="a39ab46cc6d30c6a3e80147c32474650f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleRespawn</b> (<a class="el" href="../../da/d3e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_respawn_packet.html">RespawnPacket</a> $packet)</td></tr>
 <tr class="separator:a39ab46cc6d30c6a3e80147c32474650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98c480adbe6710a7da25880045aac6e"><td class="memItemLeft" align="right" valign="top"><a id="ac98c480adbe6710a7da25880045aac6e" name="ac98c480adbe6710a7da25880045aac6e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleScriptCustomEvent</b> (ScriptCustomEventPacket $packet)</td></tr>
-<tr class="separator:ac98c480adbe6710a7da25880045aac6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a819a1a6e0be6f553475f05f2d952a2e4"><td class="memItemLeft" align="right" valign="top"><a id="a819a1a6e0be6f553475f05f2d952a2e4" name="a819a1a6e0be6f553475f05f2d952a2e4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleScriptMessage</b> (ScriptMessagePacket $packet)</td></tr>
 <tr class="separator:a819a1a6e0be6f553475f05f2d952a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -797,7 +794,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d07/_login_packet_handler_8php_source.html#l00145">145</a> of file <a class="el" href="../../d9/d07/_login_packet_handler_8php_source.html">LoginPacketHandler.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/dfb/_jwt_utils_8php_source.html#l00086">pocketmine\network\mcpe\JwtUtils\parse()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/dfb/_jwt_utils_8php_source.html#l00087">pocketmine\network\mcpe\JwtUtils\parse()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">

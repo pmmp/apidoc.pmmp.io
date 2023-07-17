@@ -10,6 +10,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_inpu
     [ "JUMP_DOWN", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab3c36400bf08f4b06fe77340f6fb52fa", null ],
     [ "JUMPING", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a229a834552fbcb8b38ed7de045a7cf08", null ],
     [ "LEFT", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#abd34d78e56102d7d04238449e3f91808", null ],
+    [ "MISSED_SWING", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#acd6eac150bd4be5a5a3836dbcb719349", null ],
     [ "NORTH_JUMP", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ae0d517857f124e48f4defe94ab1bd449", null ],
     [ "PERSIST_SNEAK", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a2941e6af86bc68393cffef3ef3a73e03", null ],
     [ "RIGHT", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#adbd96e22f852fd91b4250d0a6bca6b30", null ],
