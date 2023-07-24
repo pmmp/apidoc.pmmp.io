@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.2 git-0c1bfb058afae74dc7c06a5328576db54ded36c5</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.3 git-9ef835c82d81fc350fb2e44bcb559a774c6c37da</span>
    </div>
   </td>
  </tr>
@@ -1384,7 +1384,7 @@ $(document).ready(function(){initNavTree('d0/d05/src_2_server_8php_source.html',
 <div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span> </div>
 <div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span>    <span class="keyword">private</span> <span class="keyword">function</span> forceShutdownExit() : void{</div>
 <div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span>        $this-&gt;forceShutdown();</div>
-<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>        Process::kill(Process::pid(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>        Process::kill(Process::pid());</div>
 <div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>    }</div>
 <div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span> </div>
 <div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>    <span class="keyword">public</span> <span class="keyword">function</span> forceShutdown() : void{</div>
@@ -1452,7 +1452,7 @@ $(document).ready(function(){initNavTree('d0/d05/src_2_server_8php_source.html',
 <div class="line"><a id="l01495" name="l01495"></a><span class="lineno"> 1495</span>        }<span class="keywordflow">catch</span>(\Throwable $e){</div>
 <div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span>            $this-&gt;logger-&gt;logException($e);</div>
 <div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span>            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Crashed while crashing, killing process&quot;</span>);</div>
-<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>            @Process::kill(Process::pid(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>            @Process::kill(Process::pid());</div>
 <div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span>        }</div>
 <div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span> </div>
 <div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>    }</div>
@@ -1602,7 +1602,7 @@ $(document).ready(function(){initNavTree('d0/d05/src_2_server_8php_source.html',
 <div class="line"><a id="l01649" name="l01649"></a><span class="lineno"> 1649</span>            echo <span class="stringliteral">&quot;--- Waiting $spacing seconds to throttle automatic restart (you can kill the process safely now) ---&quot;</span> . PHP_EOL;</div>
 <div class="line"><a id="l01650" name="l01650"></a><span class="lineno"> 1650</span>            sleep($spacing);</div>
 <div class="line"><a id="l01651" name="l01651"></a><span class="lineno"> 1651</span>        }</div>
-<div class="line"><a id="l01652" name="l01652"></a><span class="lineno"> 1652</span>        @Process::kill(Process::pid(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l01652" name="l01652"></a><span class="lineno"> 1652</span>        @Process::kill(Process::pid());</div>
 <div class="line"><a id="l01653" name="l01653"></a><span class="lineno"> 1653</span>        exit(1);</div>
 <div class="line"><a id="l01654" name="l01654"></a><span class="lineno"> 1654</span>    }</div>
 <div class="line"><a id="l01655" name="l01655"></a><span class="lineno"> 1655</span> </div>

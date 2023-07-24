@@ -1,5 +1,7 @@
 var NAVTREEINDEX236 =
 {
+"df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a11a204636d0141dad5ca019a65be304e":[2,0,2,0,230,19],
+"df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a11a204636d0141dad5ca019a65be304e":[3,0,1,0,230,19],
 "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a15c9110197ae4e360ff34d87481138e3":[3,0,1,0,230,63],
 "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a15c9110197ae4e360ff34d87481138e3":[2,0,2,0,230,63],
 "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a1a1a2b2adf423738289d296198f044e1":[2,0,2,0,230,57],
@@ -247,7 +249,5 @@ var NAVTREEINDEX236 =
 "df/dbc/_sub_chunk_packet_entry_without_cache_8php_source.html":[4,0,1,0,1,0,1,72],
 "df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html":[2,0,2,9,2,3],
 "df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html":[3,0,1,9,2,3],
-"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,2,3,0],
-"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,2,9,2,3,0],
-"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a7d847a6d4db2e3a406f5ce7b4376206c":[2,0,2,9,2,3,1]
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,2,3,0]
 };

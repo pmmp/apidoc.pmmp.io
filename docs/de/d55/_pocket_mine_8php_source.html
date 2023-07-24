@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.2 git-0c1bfb058afae74dc7c06a5328576db54ded36c5</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.3 git-9ef835c82d81fc350fb2e44bcb559a774c6c37da</span>
    </div>
   </td>
  </tr>
@@ -419,7 +419,7 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            <span class="keywordflow">if</span>(ThreadManager::getInstance()-&gt;stopAll() &gt; 0){</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#a292490915449087879e8250c5d66bfd2">debug</a>(<span class="stringliteral">&quot;Some threads could not be stopped, performing a force-kill&quot;</span>);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                Process::kill(Process::pid(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">Process::kill</a>(Process::pid());</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            }</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }<span class="keywordflow">while</span>(<span class="keyword">false</span>);</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
@@ -443,6 +443,7 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_filesystem_html_a711896a81412dc85c2d66fc8f7ac3fd7"><div class="ttname"><a href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">pocketmine\utils\Filesystem\releaseLockFile</a></div><div class="ttdeci">static releaseLockFile(string $lockFilePath)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/_filesystem_8php_source.html#l00214">Filesystem.php:214</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">pocketmine\utils\MainLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00036">MainLogger.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_process_html"><div class="ttname"><a href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">pocketmine\utils\Process</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dcb/_process_8php_source.html#l00045">Process.php:45</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_process_html_a1ae6452e6e1b5e8ab6e135f649ba8e28"><div class="ttname"><a href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">pocketmine\utils\Process\kill</a></div><div class="ttdeci">static kill(int $pid, bool $subprocesses=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dcb/_process_8php_source.html#l00131">Process.php:131</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_server_killer_html"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1utils_1_1_server_killer.html">pocketmine\utils\ServerKiller</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/_server_killer_8php_source.html#l00029">ServerKiller.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_terminal_html"><div class="ttname"><a href="../../da/d57/classpocketmine_1_1utils_1_1_terminal.html">pocketmine\utils\Terminal</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0f/_terminal_8php_source.html#l00036">Terminal.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_timezone_html"><div class="ttname"><a href="../../dc/dc1/classpocketmine_1_1utils_1_1_timezone.html">pocketmine\utils\Timezone</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d68/_timezone_8php_source.html#l00048">Timezone.php:48</a></div></div>

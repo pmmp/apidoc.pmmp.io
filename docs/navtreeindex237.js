@@ -1,5 +1,7 @@
 var NAVTREEINDEX237 =
 {
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,2,9,2,3,0],
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a7d847a6d4db2e3a406f5ce7b4376206c":[2,0,2,9,2,3,1],
 "df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a7d847a6d4db2e3a406f5ce7b4376206c":[3,0,1,9,2,3,1],
 "df/dbe/_plugin_description_8php_source.html":[4,0,0,15,6],
 "df/dc2/_snow_layer_8php_source.html":[4,0,0,0,184],
@@ -247,7 +249,5 @@ var NAVTREEINDEX237 =
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a22a098fc4892820db7d15a73edea64ca":[2,0,2,7,2,0,9],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a23093e6281aba70471af5c5e34051667":[3,0,1,7,2,0,5],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a23093e6281aba70471af5c5e34051667":[2,0,2,7,2,0,5],
-"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a25ad669890dc24d70b8cdad878cd6449":[3,0,1,7,2,0,33],
-"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a25ad669890dc24d70b8cdad878cd6449":[2,0,2,7,2,0,33],
-"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a265cb93031a89ccc4a4236b3702c690b":[3,0,1,7,2,0,26]
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a25ad669890dc24d70b8cdad878cd6449":[3,0,1,7,2,0,33]
 };

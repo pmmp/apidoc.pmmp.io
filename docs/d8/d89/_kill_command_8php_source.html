@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.2 git-0c1bfb058afae74dc7c06a5328576db54ded36c5</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.3 git-9ef835c82d81fc350fb2e44bcb559a774c6c37da</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d8/d89/_kill_command_8php_source.html'
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $player-&gt;attack(<span class="keyword">new</span> <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($player, EntityDamageEvent::CAUSE_SUICIDE, 1000));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $player-&gt;attack(<span class="keyword">new</span> <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($player, EntityDamageEvent::CAUSE_SUICIDE, $player-&gt;getHealth()));</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>($player === $sender){</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $sender-&gt;sendMessage(KnownTranslationFactory::commands_kill_successful($sender-&gt;getName()));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }<span class="keywordflow">else</span>{</div>
