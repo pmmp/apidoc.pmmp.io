@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.3 git-9ef835c82d81fc350fb2e44bcb559a774c6c37da</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.4 git-486d4099dfc4445834f6a1f89e71e69c3cd90dcf</span>
    </div>
   </td>
  </tr>
@@ -159,30 +159,32 @@ $(document).ready(function(){initNavTree('da/d19/_item_stack_container_id_transl
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            ContainerUIIds::MATERIAL_REDUCER_OUTPUT,</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            ContainerUIIds::SMITHING_TABLE_INPUT,</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            ContainerUIIds::SMITHING_TABLE_MATERIAL,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            ContainerUIIds::STONECUTTER_INPUT,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            ContainerUIIds::TRADE2_INGREDIENT1,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            ContainerUIIds::TRADE2_INGREDIENT2,</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            ContainerUIIds::TRADE_INGREDIENT1,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            ContainerUIIds::TRADE_INGREDIENT2 =&gt; [ContainerIds::UI, $slotId],</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            ContainerUIIds::BARREL,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            ContainerUIIds::BLAST_FURNACE_INGREDIENT,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            ContainerUIIds::BREWING_STAND_FUEL,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            ContainerUIIds::BREWING_STAND_INPUT,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            ContainerUIIds::BREWING_STAND_RESULT,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            ContainerUIIds::FURNACE_FUEL,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            ContainerUIIds::FURNACE_INGREDIENT,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            ContainerUIIds::FURNACE_RESULT,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            ContainerUIIds::LEVEL_ENTITY, <span class="comment">//chest</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            ContainerUIIds::SHULKER_BOX,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            ContainerUIIds::SMOKER_INGREDIENT =&gt; [$currentWindowId, $slotId],</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="comment">//all preview slots are ignored, since the client shouldn&#39;t be modifying those directly</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            ContainerUIIds::SMITHING_TABLE_TEMPLATE,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            ContainerUIIds::STONECUTTER_INPUT,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            ContainerUIIds::TRADE2_INGREDIENT1,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            ContainerUIIds::TRADE2_INGREDIENT2,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            ContainerUIIds::TRADE_INGREDIENT1,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            ContainerUIIds::TRADE_INGREDIENT2 =&gt; [ContainerIds::UI, $slotId],</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            ContainerUIIds::BARREL,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            ContainerUIIds::BLAST_FURNACE_INGREDIENT,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            ContainerUIIds::BREWING_STAND_FUEL,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            ContainerUIIds::BREWING_STAND_INPUT,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            ContainerUIIds::BREWING_STAND_RESULT,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            ContainerUIIds::FURNACE_FUEL,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            ContainerUIIds::FURNACE_INGREDIENT,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            ContainerUIIds::FURNACE_RESULT,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            ContainerUIIds::HORSE_EQUIP,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            ContainerUIIds::LEVEL_ENTITY, <span class="comment">//chest</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            ContainerUIIds::SHULKER_BOX,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            ContainerUIIds::SMOKER_INGREDIENT =&gt; [$currentWindowId, $slotId],</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d78/classpocketmine_1_1network_1_1_packet_handling_exception.html">PacketHandlingException</a>(<span class="stringliteral">&quot;Unexpected container UI ID $containerInterfaceId&quot;</span>)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        };</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="comment">//all preview slots are ignored, since the client shouldn&#39;t be modifying those directly</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d78/classpocketmine_1_1network_1_1_packet_handling_exception.html">PacketHandlingException</a>(<span class="stringliteral">&quot;Unexpected container UI ID $containerInterfaceId&quot;</span>)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        };</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1_packet_handling_exception_html"><div class="ttname"><a href="../../d1/d78/classpocketmine_1_1network_1_1_packet_handling_exception.html">pocketmine\network\PacketHandlingException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3a/_packet_handling_exception_8php_source.html#l00030">PacketHandlingException.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator_html"><div class="ttname"><a href="../../d7/d96/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator.html">pocketmine\network\mcpe\handler\ItemStackContainerIdTranslator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d19/_item_stack_container_id_translator_8php_source.html#l00030">ItemStackContainerIdTranslator.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator_html_a03a0e9510d5a8afca72e6b9c4190ca0c"><div class="ttname"><a href="../../d7/d96/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator.html#a03a0e9510d5a8afca72e6b9c4190ca0c">pocketmine\network\mcpe\handler\ItemStackContainerIdTranslator\translate</a></div><div class="ttdeci">static translate(int $containerInterfaceId, int $currentWindowId, int $slotId)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d19/_item_stack_container_id_translator_8php_source.html#l00041">ItemStackContainerIdTranslator.php:41</a></div></div>
