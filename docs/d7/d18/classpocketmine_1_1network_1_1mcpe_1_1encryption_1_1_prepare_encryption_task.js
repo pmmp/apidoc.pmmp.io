@@ -1,8 +1,10 @@
 var classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task =
 [
     [ "__construct", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#acb724a6ac8242603b8f32a1b493e05f2", null ],
+    [ "cancelRun", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
     [ "fetchLocal", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
+    [ "hasCancelledRun", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a31a5f710f3a68f80c5daa945dc4642e2", null ],
     [ "isCrashed", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a328e5ca10ddf86ef16c7311f18933041", null ],
     [ "isFinished", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a3cf7454be9911ea585af23c81846c4f2", null ],
     [ "onCompletion", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334", null ],

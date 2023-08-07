@@ -11,6 +11,7 @@ var namespacepocketmine_1_1world_1_1generator =
       [ "Normal", "db/d66/classpocketmine_1_1world_1_1generator_1_1normal_1_1_normal.html", "db/d66/classpocketmine_1_1world_1_1generator_1_1normal_1_1_normal" ]
     ] ],
     [ "object", null, [
+      [ "AcaciaTree", "dd/d40/classpocketmine_1_1world_1_1generator_1_1object_1_1_acacia_tree.html", "dd/d40/classpocketmine_1_1world_1_1generator_1_1object_1_1_acacia_tree" ],
       [ "BirchTree", "d6/d75/classpocketmine_1_1world_1_1generator_1_1object_1_1_birch_tree.html", "d6/d75/classpocketmine_1_1world_1_1generator_1_1object_1_1_birch_tree" ],
       [ "JungleTree", "dc/ded/classpocketmine_1_1world_1_1generator_1_1object_1_1_jungle_tree.html", "dc/ded/classpocketmine_1_1world_1_1generator_1_1object_1_1_jungle_tree" ],
       [ "OakTree", "d5/d61/classpocketmine_1_1world_1_1generator_1_1object_1_1_oak_tree.html", "d5/d61/classpocketmine_1_1world_1_1generator_1_1object_1_1_oak_tree" ],

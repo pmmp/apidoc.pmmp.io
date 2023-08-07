@@ -30,6 +30,7 @@ var dir_23c847fc118655650d80ee30437441f9 =
     [ "PlayerJumpEvent.php", "d1/d27/_player_jump_event_8php_source.html", null ],
     [ "PlayerKickEvent.php", "dc/dee/_player_kick_event_8php_source.html", null ],
     [ "PlayerLoginEvent.php", "d1/d9b/_player_login_event_8php_source.html", null ],
+    [ "PlayerMissSwingEvent.php", "d8/d3b/_player_miss_swing_event_8php_source.html", null ],
     [ "PlayerMoveEvent.php", "d7/da4/_player_move_event_8php_source.html", null ],
     [ "PlayerPostChunkSendEvent.php", "d8/d04/_player_post_chunk_send_event_8php_source.html", null ],
     [ "PlayerPreLoginEvent.php", "d0/d06/_player_pre_login_event_8php_source.html", null ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.4 git-486d4099dfc4445834f6a1f89e71e69c3cd90dcf</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.1 git-81941ae9e5dbbcfccedafc31f6acf3a258873b45</span>
    </div>
   </td>
  </tr>
@@ -388,7 +388,7 @@ $(document).ready(function(){initNavTree('d7/d0a/_liquid_8php_source.html','../.
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            }</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keywordflow">if</span>($adjacentDecay &lt;= self::MAX_DECAY){</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                $calculator = <span class="keyword">new</span> MinimumCostFlowCalculator($world, $this-&gt;getFlowDecayPerBlock(), \Closure::fromCallable([$this, <span class="stringliteral">&#39;canFlowInto&#39;</span>]));</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                $calculator = <span class="keyword">new</span> MinimumCostFlowCalculator($world, $this-&gt;getFlowDecayPerBlock(), $this-&gt;canFlowInto(...));</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                <span class="keywordflow">foreach</span>($calculator-&gt;getOptimalFlowDirections($this-&gt;position-&gt;getFloorX(), $this-&gt;position-&gt;getFloorY(), $this-&gt;position-&gt;getFloorZ()) as $facing){</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    $this-&gt;flowIntoBlock($world-&gt;getBlock($this-&gt;position-&gt;getSide($facing)), $adjacentDecay, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                }</div>
@@ -455,8 +455,8 @@ $(document).ready(function(){initNavTree('d7/d0a/_liquid_8php_source.html','../.
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            !($block instanceof Liquid &amp;&amp; $block-&gt;isSource()); <span class="comment">//TODO: I think this should only be liquids of the same type</span></div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    }</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00057">Block.php:57</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_acfa7766036568571b645ae89ceb1029e"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#acfa7766036568571b645ae89ceb1029e">pocketmine\block\Block\hasSameTypeId</a></div><div class="ttdeci">hasSameTypeId(Block $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00163">Block.php:163</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00058">Block.php:58</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_acfa7766036568571b645ae89ceb1029e"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#acfa7766036568571b645ae89ceb1029e">pocketmine\block\Block\hasSameTypeId</a></div><div class="ttdeci">hasSameTypeId(Block $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00164">Block.php:164</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">pocketmine\block\Liquid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00040">Liquid.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html_a0e06498810709cd9b0b6441aff9ff176"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html#a0e06498810709cd9b0b6441aff9ff176">pocketmine\block\Liquid\readStateFromWorld</a></div><div class="ttdeci">readStateFromWorld()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00154">Liquid.php:154</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html_a0f7e42d98be15838ea8c0d64fa4d86b1"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html#a0f7e42d98be15838ea8c0d64fa4d86b1">pocketmine\block\Liquid\addVelocityToEntity</a></div><div class="ttdeci">addVelocityToEntity(Entity $entity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00228">Liquid.php:228</a></div></div>

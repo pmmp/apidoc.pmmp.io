@@ -15,6 +15,7 @@ var classpocketmine_1_1utils_1_1_utils =
     [ "printableCurrentTrace", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb", null ],
     [ "printableExceptionInfo", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9", null ],
     [ "printableTrace", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd", null ],
+    [ "printableTraceWithMetadata", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f", null ],
     [ "stringifyKeys", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7", null ],
     [ "testValidInstance", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60", null ],
     [ "validateArrayValueType", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d", null ],

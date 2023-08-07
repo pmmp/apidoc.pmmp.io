@@ -29,6 +29,7 @@ var namespacepocketmine_1_1event_1_1player =
     [ "PlayerJumpEvent", "d8/d8f/classpocketmine_1_1event_1_1player_1_1_player_jump_event.html", "d8/d8f/classpocketmine_1_1event_1_1player_1_1_player_jump_event" ],
     [ "PlayerKickEvent", "d9/dd8/classpocketmine_1_1event_1_1player_1_1_player_kick_event.html", "d9/dd8/classpocketmine_1_1event_1_1player_1_1_player_kick_event" ],
     [ "PlayerLoginEvent", "d6/d15/classpocketmine_1_1event_1_1player_1_1_player_login_event.html", "d6/d15/classpocketmine_1_1event_1_1player_1_1_player_login_event" ],
+    [ "PlayerMissSwingEvent", "d4/d27/classpocketmine_1_1event_1_1player_1_1_player_miss_swing_event.html", "d4/d27/classpocketmine_1_1event_1_1player_1_1_player_miss_swing_event" ],
     [ "PlayerMoveEvent", "d3/d49/classpocketmine_1_1event_1_1player_1_1_player_move_event.html", "d3/d49/classpocketmine_1_1event_1_1player_1_1_player_move_event" ],
     [ "PlayerPostChunkSendEvent", "dd/dd7/classpocketmine_1_1event_1_1player_1_1_player_post_chunk_send_event.html", "dd/dd7/classpocketmine_1_1event_1_1player_1_1_player_post_chunk_send_event" ],
     [ "PlayerPreLoginEvent", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event" ],

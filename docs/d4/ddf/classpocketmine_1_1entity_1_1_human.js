@@ -75,5 +75,7 @@ var classpocketmine_1_1entity_1_1_human =
     [ "setOwningEntity", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a8db17c4dcd6375fe3b610841c2b189bf", null ],
     [ "setSkin", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a7cf3f2132284ca3881fdf6da99dd3ed5", null ],
     [ "setTargetEntity", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#ae3d1faacc118b9fd25a401a995fcb1f4", null ],
-    [ "teleport", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5661f8a252c5324dd54ed3534ab47a6b", null ]
+    [ "teleport", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5661f8a252c5324dd54ed3534ab47a6b", null ],
+    [ "DEFAULT_KNOCKBACK_FORCE", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a4e8978f8b3b0896c5279379b1b950099", null ],
+    [ "DEFAULT_KNOCKBACK_VERTICAL_LIMIT", "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a72313b6172199315104d3a77a86d3b9d", null ]
 ];

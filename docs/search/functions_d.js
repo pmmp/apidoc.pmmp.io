@@ -29,8 +29,9 @@ var searchData=
   ['maxcomponents_26',['maxComponents',['../d2/d90/classpocketmine_1_1math_1_1_vector3.html#a3501ceefd98b2e50c99ebf3c02e33ccc',1,'pocketmine::math::Vector3']]],
   ['merge_27',['merge',['../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4',1,'pocketmine::nbt::tag::CompoundTag']]],
   ['mincomponents_28',['minComponents',['../d2/d90/classpocketmine_1_1math_1_1_vector3.html#ac158644cb231fd9626f2be71ae52da09',1,'pocketmine::math::Vector3']]],
-  ['mix_29',['mix',['../d8/dce/classpocketmine_1_1block_1_1_fillable_cauldron.html#a32faf402b9b02e85dc1769fe2a07b510',1,'pocketmine\block\FillableCauldron\mix()'],['../dd/d00/classpocketmine_1_1color_1_1_color.html#a1aaeed2ea8ebbf36ad2cec13022a2af1',1,'pocketmine\color\Color\mix()']]],
-  ['moveto_30',['moveTo',['../d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a416e1f6b373e72534a11d349c453f3e8',1,'pocketmine::world::utils::SubChunkExplorer']]],
-  ['movetochunk_31',['moveToChunk',['../d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a36be7d7c97a6807d24d7da76a8308605',1,'pocketmine::world::utils::SubChunkExplorer']]],
-  ['mustgetcompoundtag_32',['mustGetCompoundTag',['../d7/d89/classpocketmine_1_1nbt_1_1_tree_root.html#a26d336c463baa48edff0bdaf588fd1c5',1,'pocketmine::nbt::TreeRoot']]]
+  ['missswing_29',['missSwing',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#aa89875efe2495be60eb3c87391b2f198',1,'pocketmine::player::Player']]],
+  ['mix_30',['mix',['../d8/dce/classpocketmine_1_1block_1_1_fillable_cauldron.html#a32faf402b9b02e85dc1769fe2a07b510',1,'pocketmine\block\FillableCauldron\mix()'],['../dd/d00/classpocketmine_1_1color_1_1_color.html#a1aaeed2ea8ebbf36ad2cec13022a2af1',1,'pocketmine\color\Color\mix()']]],
+  ['moveto_31',['moveTo',['../d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a416e1f6b373e72534a11d349c453f3e8',1,'pocketmine::world::utils::SubChunkExplorer']]],
+  ['movetochunk_32',['moveToChunk',['../d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a36be7d7c97a6807d24d7da76a8308605',1,'pocketmine::world::utils::SubChunkExplorer']]],
+  ['mustgetcompoundtag_33',['mustGetCompoundTag',['../d7/d89/classpocketmine_1_1nbt_1_1_tree_root.html#a26d336c463baa48edff0bdaf588fd1c5',1,'pocketmine::nbt::TreeRoot']]]
 ];

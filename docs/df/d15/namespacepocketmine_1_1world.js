@@ -158,6 +158,8 @@ var namespacepocketmine_1_1world =
       [ "DoorBumpSound", "d9/d16/classpocketmine_1_1world_1_1sound_1_1_door_bump_sound.html", "d9/d16/classpocketmine_1_1world_1_1sound_1_1_door_bump_sound" ],
       [ "DoorCrashSound", "db/d7d/classpocketmine_1_1world_1_1sound_1_1_door_crash_sound.html", "db/d7d/classpocketmine_1_1world_1_1sound_1_1_door_crash_sound" ],
       [ "DoorSound", "d5/db5/classpocketmine_1_1world_1_1sound_1_1_door_sound.html", "d5/db5/classpocketmine_1_1world_1_1sound_1_1_door_sound" ],
+      [ "DripleafTiltDownSound", "da/daf/classpocketmine_1_1world_1_1sound_1_1_dripleaf_tilt_down_sound.html", "da/daf/classpocketmine_1_1world_1_1sound_1_1_dripleaf_tilt_down_sound" ],
+      [ "DripleafTiltUpSound", "d9/dc2/classpocketmine_1_1world_1_1sound_1_1_dripleaf_tilt_up_sound.html", "d9/dc2/classpocketmine_1_1world_1_1sound_1_1_dripleaf_tilt_up_sound" ],
       [ "DyeUseSound", "d1/dc4/classpocketmine_1_1world_1_1sound_1_1_dye_use_sound.html", "d1/dc4/classpocketmine_1_1world_1_1sound_1_1_dye_use_sound" ],
       [ "EnderChestCloseSound", "d4/def/classpocketmine_1_1world_1_1sound_1_1_ender_chest_close_sound.html", "d4/def/classpocketmine_1_1world_1_1sound_1_1_ender_chest_close_sound" ],
       [ "EnderChestOpenSound", "dd/df2/classpocketmine_1_1world_1_1sound_1_1_ender_chest_open_sound.html", "dd/df2/classpocketmine_1_1world_1_1sound_1_1_ender_chest_open_sound" ],

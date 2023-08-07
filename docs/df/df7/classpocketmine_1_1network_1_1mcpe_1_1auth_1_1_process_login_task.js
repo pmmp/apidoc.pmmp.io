@@ -1,8 +1,10 @@
 var classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task =
 [
     [ "__construct", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a85433d3d29a66c3460cfe94232ffa51d", null ],
+    [ "cancelRun", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
     [ "fetchLocal", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
+    [ "hasCancelledRun", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a31a5f710f3a68f80c5daa945dc4642e2", null ],
     [ "isCrashed", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a328e5ca10ddf86ef16c7311f18933041", null ],
     [ "isFinished", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a3cf7454be9911ea585af23c81846c4f2", null ],
     [ "onCompletion", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html#a46a351009a910d5befe105d2403403c1", null ],

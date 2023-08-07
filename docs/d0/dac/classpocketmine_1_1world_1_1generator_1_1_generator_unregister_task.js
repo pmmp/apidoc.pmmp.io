@@ -1,7 +1,9 @@
 var classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task =
 [
+    [ "cancelRun", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
     [ "fetchLocal", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
+    [ "hasCancelledRun", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#a31a5f710f3a68f80c5daa945dc4642e2", null ],
     [ "isCrashed", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#a328e5ca10ddf86ef16c7311f18933041", null ],
     [ "isFinished", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#a3cf7454be9911ea585af23c81846c4f2", null ],
     [ "onCompletion", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html#a0116d1721376b18f7410934b72a19ecc", null ],

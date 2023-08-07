@@ -70,5 +70,7 @@ var classpocketmine_1_1entity_1_1_living =
     [ "setNoClientPredictions", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a099fce07daf8c0ce633456ea00b4272b", null ],
     [ "setOwningEntity", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a8db17c4dcd6375fe3b610841c2b189bf", null ],
     [ "setTargetEntity", "df/d0c/classpocketmine_1_1entity_1_1_living.html#ae3d1faacc118b9fd25a401a995fcb1f4", null ],
-    [ "teleport", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a5661f8a252c5324dd54ed3534ab47a6b", null ]
+    [ "teleport", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a5661f8a252c5324dd54ed3534ab47a6b", null ],
+    [ "DEFAULT_KNOCKBACK_FORCE", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a4e8978f8b3b0896c5279379b1b950099", null ],
+    [ "DEFAULT_KNOCKBACK_VERTICAL_LIMIT", "df/d0c/classpocketmine_1_1entity_1_1_living.html#a72313b6172199315104d3a77a86d3b9d", null ]
 ];

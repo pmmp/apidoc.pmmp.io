@@ -40,6 +40,8 @@ var dir_8c559a8bd664375b6611e00b162a8314 =
     [ "DoorBumpSound.php", "df/d18/_door_bump_sound_8php_source.html", null ],
     [ "DoorCrashSound.php", "dd/d6b/_door_crash_sound_8php_source.html", null ],
     [ "DoorSound.php", "dc/d08/_door_sound_8php_source.html", null ],
+    [ "DripleafTiltDownSound.php", "dc/d6b/_dripleaf_tilt_down_sound_8php_source.html", null ],
+    [ "DripleafTiltUpSound.php", "d2/de5/_dripleaf_tilt_up_sound_8php_source.html", null ],
     [ "DyeUseSound.php", "d8/dbf/_dye_use_sound_8php_source.html", null ],
     [ "EnderChestCloseSound.php", "de/db4/_ender_chest_close_sound_8php_source.html", null ],
     [ "EnderChestOpenSound.php", "da/d97/_ender_chest_open_sound_8php_source.html", null ],

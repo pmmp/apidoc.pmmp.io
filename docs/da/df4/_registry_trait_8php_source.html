@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.3.4 git-486d4099dfc4445834f6a1f89e71e69c3cd90dcf</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.1 git-81941ae9e5dbbcfccedafc31f6acf3a258873b45</span>
    </div>
   </td>
  </tr>
@@ -175,11 +175,9 @@ $(document).ready(function(){initNavTree('da/df4/_registry_trait_8php_source.htm
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> _registryGetAll() : array{</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        self::checkInit();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> array_map(<span class="keyword">function</span>(<span class="keywordtype">object</span> $o) : <span class="keywordtype">object</span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">return</span> self::preprocessMember($o);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }, self::$members);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> array_map(self::preprocessMember(...), self::$members);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html_a48b537d68e3fadb3f2ab4b76deb01589"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a48b537d68e3fadb3f2ab4b76deb01589">pocketmine\utils\__callStatic</a></div><div class="ttdeci">static __callStatic($name, $arguments)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_registry_trait_8php_source.html#l00107">RegistryTrait.php:107</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html_a567edfa557749f22f42f6a2df53b5838"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838">pocketmine\utils\RegistryTrait</a></div><div class="ttdeci">trait RegistryTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_registry_trait_8php_source.html#l00038">RegistryTrait.php:38</a></div></div>

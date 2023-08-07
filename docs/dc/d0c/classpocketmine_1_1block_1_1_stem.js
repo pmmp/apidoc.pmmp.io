@@ -13,7 +13,7 @@ var classpocketmine_1_1block_1_1_stem =
     [ "canClimb", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a912c0f3a42aefc049e119f931a2ec86e", null ],
     [ "describeBlockItemState", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aba71bdae8759a0f2dc0bb44aeafc96e4", null ],
-    [ "describeBlockOnlyState", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#afc9c1f483fbf311f5e2a48a6304639a5", null ],
+    [ "describeBlockOnlyState", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a6f4720e9b0462351621dd87017ddb46a", null ],
     [ "generateStatePermutations", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
@@ -53,7 +53,7 @@ var classpocketmine_1_1block_1_1_stem =
     [ "onEntityLand", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a6c9da7f1ae5d2201f833497a2d8e915f", null ],
-    [ "onNearbyBlockChange", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a94c0c81da6494a41f1b8d66ca899660f", null ],
+    [ "onNearbyBlockChange", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a408d84e60e6da3eaf0b839f369e3a202", null ],
     [ "onPostPlace", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a33559fe245f1130d88f7e742ac1afb5a", null ],
@@ -62,6 +62,7 @@ var classpocketmine_1_1block_1_1_stem =
     [ "readStateFromWorld", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a097af4a935135a8524d812f497373075", null ],
     [ "setAge", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a607701ec849268f3d679d1cd9b64138f", null ],
+    [ "setFacing", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a00b17b6ab2ea033f777b0819343c5498", null ],
     [ "ticksRandomly", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a2175d7c31f1159374dd4dd359a117dbb", null ],
     [ "writeStateToWorld", "dc/d0c/classpocketmine_1_1block_1_1_stem.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -477,7 +477,6 @@ var namespacepocketmine_1_1network =
         [ "RakLibInterface", "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html", "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface" ],
         [ "RakLibPacketSender", "dc/d49/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_packet_sender.html", "dc/d49/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_packet_sender" ],
         [ "RakLibServer", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server.html", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server" ],
-        [ "RakLibThreadCrashInfo", "d3/dd3/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_thread_crash_info.html", "d3/dd3/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_thread_crash_info" ],
         [ "SnoozeAwarePthreadsChannelWriter", "d0/dcd/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_snooze_aware_pthreads_channel_writer.html", "d0/dcd/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_snooze_aware_pthreads_channel_writer" ]
       ] ],
       [ "serializer", null, [

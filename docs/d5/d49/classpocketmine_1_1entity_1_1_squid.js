@@ -70,5 +70,7 @@ var classpocketmine_1_1entity_1_1_squid =
     [ "setNoClientPredictions", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a099fce07daf8c0ce633456ea00b4272b", null ],
     [ "setOwningEntity", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a8db17c4dcd6375fe3b610841c2b189bf", null ],
     [ "setTargetEntity", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#ae3d1faacc118b9fd25a401a995fcb1f4", null ],
-    [ "teleport", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a5661f8a252c5324dd54ed3534ab47a6b", null ]
+    [ "teleport", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a5661f8a252c5324dd54ed3534ab47a6b", null ],
+    [ "DEFAULT_KNOCKBACK_FORCE", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a4e8978f8b3b0896c5279379b1b950099", null ],
+    [ "DEFAULT_KNOCKBACK_VERTICAL_LIMIT", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a72313b6172199315104d3a77a86d3b9d", null ]
 ];

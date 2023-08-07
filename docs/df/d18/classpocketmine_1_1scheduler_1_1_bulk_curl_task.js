@@ -1,8 +1,10 @@
 var classpocketmine_1_1scheduler_1_1_bulk_curl_task =
 [
     [ "__construct", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#abab1f348bbf2a91996a51890e137c3f8", null ],
+    [ "cancelRun", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
     [ "fetchLocal", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
+    [ "hasCancelledRun", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a31a5f710f3a68f80c5daa945dc4642e2", null ],
     [ "isCrashed", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a328e5ca10ddf86ef16c7311f18933041", null ],
     [ "isFinished", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a3cf7454be9911ea585af23c81846c4f2", null ],
     [ "onCompletion", "df/d18/classpocketmine_1_1scheduler_1_1_bulk_curl_task.html#a7d2b0f78831aad0105a723210643744c", null ],
