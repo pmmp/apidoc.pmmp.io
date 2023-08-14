@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.1 git-81941ae9e5dbbcfccedafc31f6acf3a258873b45</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.3 git-af9ae445fc26a3ab66f92a7aa927a534392c7cbe</span>
    </div>
   </td>
  </tr>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('db/d05/_base_coral_8php_source.html','
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d6/db0/classpocketmine_1_1block_1_1_base_coral.html#a82e0e491dee40b1c422abba73098263c">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/db0/classpocketmine_1_1block_1_1_base_coral.html#a82e0e491dee40b1c422abba73098263c">onScheduledUpdate</a>() : void{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        if(!$this-&gt;dead &amp;&amp; !$this-&gt;isCoveredWithWater()){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event.html">BlockDeathEvent</a>($this, $this-&gt;setDead(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event.html">BlockDeathEvent</a>($this, (clone $this)-&gt;setDead(<span class="keyword">true</span>));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $ev-&gt;call();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState());</div>

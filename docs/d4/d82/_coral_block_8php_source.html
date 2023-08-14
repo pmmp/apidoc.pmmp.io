@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.1 git-81941ae9e5dbbcfccedafc31f6acf3a258873b45</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.3 git-af9ae445fc26a3ab66f92a7aa927a534392c7cbe</span>
    </div>
   </td>
  </tr>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d4/d82/_coral_block_8php_source.html',
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">if</span>(!$hasWater){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event.html">BlockDeathEvent</a>($this, $this-&gt;setDead(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event.html">BlockDeathEvent</a>($this, (clone $this)-&gt;setDead(<span class="keyword">true</span>));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                $ev-&gt;call();</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    $world-&gt;setBlock($this-&gt;position, $ev-&gt;getNewState());</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('d4/d82/_coral_block_8php_source.html',
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d5/df9/classpocketmine_1_1block_1_1_coral_block.html#a599f111f4b657338fa53ff2e2f3f7f10">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/df9/classpocketmine_1_1block_1_1_coral_block.html#a599f111f4b657338fa53ff2e2f3f7f10">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return [$this-&gt;setDead(true)-&gt;asItem()];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return [(clone $this)-&gt;setDead(true)-&gt;asItem()];</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d5/df9/classpocketmine_1_1block_1_1_coral_block.html#a7ee65fb68bb5f2d638b5684e0e6ca811">   71</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/df9/classpocketmine_1_1block_1_1_coral_block.html#a7ee65fb68bb5f2d638b5684e0e6ca811">isAffectedBySilkTouch</a>() : bool{</div>

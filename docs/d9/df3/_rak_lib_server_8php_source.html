@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.1 git-81941ae9e5dbbcfccedafc31f6acf3a258873b45</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.3 git-af9ae445fc26a3ab66f92a7aa927a534392c7cbe</span>
    </div>
   </td>
  </tr>
@@ -174,37 +174,33 @@ $(document).ready(function(){initNavTree('d9/df3/_rak_lib_server_8php_source.htm
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        gc_enable();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        ini_set(<span class="stringliteral">&quot;display_errors&quot;</span>, <span class="charliteral">&#39;1&#39;</span>);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        ini_set(<span class="stringliteral">&quot;display_startup_errors&quot;</span>, <span class="charliteral">&#39;1&#39;</span>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $socket = <span class="keyword">new</span> ServerSocket($this-&gt;address-&gt;deserialize());</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $manager = <span class="keyword">new</span> Server(</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $this-&gt;serverId,</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $this-&gt;logger,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $socket,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $this-&gt;maxMtuSize,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keyword">new</span> SimpleProtocolAcceptor($this-&gt;protocolVersion),</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">new</span> UserToRakLibThreadMessageReceiver(<span class="keyword">new</span> PthreadsChannelReader($this-&gt;mainToThreadBuffer)),</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keyword">new</span> RakLibToUserThreadMessageSender(<span class="keyword">new</span> SnoozeAwarePthreadsChannelWriter($this-&gt;threadToMainBuffer, $this-&gt;sleeperEntry-&gt;createNotifier())),</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keyword">new</span> ExceptionTraceCleaner($this-&gt;mainPath)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        );</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            $this-&gt;ready = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            $this-&gt;notify();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        });</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">while</span>(!$this-&gt;isKilled){</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            $manager-&gt;tickProcessor();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $manager-&gt;waitShutdown();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">protected</span> <span class="keyword">function</span> onUncaughtException(\Throwable $e) : void{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        parent::onUncaughtException($e);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        $this-&gt;logger-&gt;logException($e);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        \GlobalLogger::set($this-&gt;logger);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $socket = <span class="keyword">new</span> ServerSocket($this-&gt;address-&gt;deserialize());</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $manager = <span class="keyword">new</span> Server(</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $this-&gt;serverId,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $this-&gt;logger,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $socket,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $this-&gt;maxMtuSize,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">new</span> SimpleProtocolAcceptor($this-&gt;protocolVersion),</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keyword">new</span> UserToRakLibThreadMessageReceiver(<span class="keyword">new</span> PthreadsChannelReader($this-&gt;mainToThreadBuffer)),</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keyword">new</span> RakLibToUserThreadMessageSender(<span class="keyword">new</span> SnoozeAwarePthreadsChannelWriter($this-&gt;threadToMainBuffer, $this-&gt;sleeperEntry-&gt;createNotifier())),</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">new</span> ExceptionTraceCleaner($this-&gt;mainPath)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        );</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            $this-&gt;ready = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            $this-&gt;notify();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        });</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">while</span>(!$this-&gt;isKilled){</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $manager-&gt;tickProcessor();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $manager-&gt;waitShutdown();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThreadName() : string{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        return <span class="stringliteral">&quot;RakLib&quot;</span>;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThreadName() : string{</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        return <span class="stringliteral">&quot;RakLib&quot;</span>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server_html"><div class="ttname"><a href="../../de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server.html">pocketmine\network\mcpe\raklib\RakLibServer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df3/_rak_lib_server_8php_source.html#l00044">RakLibServer.php:44</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server_html_a6139874cff256e699f7ac83704f888dd"><div class="ttname"><a href="../../de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server.html#a6139874cff256e699f7ac83704f888dd">pocketmine\network\mcpe\raklib\RakLibServer\__construct</a></div><div class="ttdeci">__construct(protected ThreadSafeLogger $logger, protected ThreadSafeArray $mainToThreadBuffer, protected ThreadSafeArray $threadToMainBuffer, InternetAddress $address, protected int $serverId, protected int $maxMtuSize, protected int $protocolVersion, protected SleeperHandlerEntry $sleeperEntry)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df3/_rak_lib_server_8php_source.html#l00054">RakLibServer.php:54</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server_html_ae1d6a5c514abd8b89fc625fbcf370585"><div class="ttname"><a href="../../de/dc9/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_server.html#ae1d6a5c514abd8b89fc625fbcf370585">pocketmine\network\mcpe\raklib\RakLibServer\$address</a></div><div class="ttdeci">NonThreadSafeValue $address</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df3/_rak_lib_server_8php_source.html#l00048">RakLibServer.php:48</a></div></div>

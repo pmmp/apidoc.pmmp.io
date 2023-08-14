@@ -21,7 +21,7 @@ var classpocketmine_1_1block_1_1_cake =
     [ "getBreakInfo", "df/d1c/classpocketmine_1_1block_1_1_cake.html#aa4773f0153324728a2f41820fa52442d", null ],
     [ "getCollisionBoxes", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a104403fbe0f0d27d8a5ac667cd1a89ef", null ],
     [ "getDrops", "df/d1c/classpocketmine_1_1block_1_1_cake.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
-    [ "getDropsForCompatibleTool", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
+    [ "getDropsForCompatibleTool", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a00d24f23ec1d3a1efa05246e9e8ed834", null ],
     [ "getDropsForIncompatibleTool", "df/d1c/classpocketmine_1_1block_1_1_cake.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getFlameEncouragement", "df/d1c/classpocketmine_1_1block_1_1_cake.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "df/d1c/classpocketmine_1_1block_1_1_cake.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],

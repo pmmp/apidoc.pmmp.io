@@ -44,7 +44,7 @@ var classpocketmine_1_1block_1_1_podzol =
     [ "hasEntityCollision", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#ad925607ef09026804dbbf059583e3add", null ],
     [ "hasSameTypeId", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#acfa7766036568571b645ae89ceb1029e", null ],
     [ "hasTypeTag", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#a43e3458847422ebd5dec6c914b443c93", null ],
-    [ "isAffectedBySilkTouch", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
+    [ "isAffectedBySilkTouch", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#a79e8095140e331f9226d788e449abd29", null ],
     [ "isFlammable", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#a1ce2444f76246982cfbb507fed99a48e", null ],
     [ "onAttack", "d1/d30/classpocketmine_1_1block_1_1_podzol.html#a6d937579e316caf0a9f92c20753a66cb", null ],
