@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.3 git-4b41fca9915b505ebc4db847d2e2b98e8ba18852</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-1a18e32011ad5c9f554afd8ff2042986d8ec8ac8</span>
    </div>
   </td>
  </tr>
@@ -287,95 +287,96 @@ $(document).ready(function(){initNavTree('d7/d98/_crash_dump_8php_source.html','
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="keywordflow">if</span>(($pos = strpos($error[<span class="stringliteral">&quot;message&quot;</span>], <span class="stringliteral">&quot;\n&quot;</span>)) !== <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                $error[<span class="stringliteral">&quot;message&quot;</span>] = substr($error[<span class="stringliteral">&quot;message&quot;</span>], 0, $pos);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        $error[<span class="stringliteral">&quot;message&quot;</span>] = mb_scrub($error[<span class="stringliteral">&quot;message&quot;</span>], <span class="stringliteral">&#39;UTF-8&#39;</span>);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">if</span>(isset($lastError)){</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            $this-&gt;data-&gt;lastError = $lastError;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            $this-&gt;data-&gt;lastError[<span class="stringliteral">&quot;message&quot;</span>] = mb_scrub($this-&gt;data-&gt;lastError[<span class="stringliteral">&quot;message&quot;</span>], <span class="stringliteral">&#39;UTF-8&#39;</span>);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        $this-&gt;data-&gt;error = $error;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        unset($this-&gt;data-&gt;error[<span class="stringliteral">&quot;fullFile&quot;</span>]);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        unset($this-&gt;data-&gt;error[<span class="stringliteral">&quot;trace&quot;</span>]);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        $this-&gt;data-&gt;plugin_involvement = self::PLUGIN_INVOLVEMENT_NONE;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">if</span>(!$this-&gt;determinePluginFromFile($error[<span class="stringliteral">&quot;fullFile&quot;</span>], <span class="keyword">true</span>)){ <span class="comment">//fatal errors won&#39;t leave any stack trace</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="keywordflow">foreach</span>($error[<span class="stringliteral">&quot;trace&quot;</span>] as $frame){</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                $frameFile = $frame-&gt;getFile();</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <span class="keywordflow">if</span>($frameFile === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                    <span class="keywordflow">continue</span>; <span class="comment">//PHP core</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                <span class="keywordflow">if</span>($this-&gt;determinePluginFromFile($frameFile, <span class="keyword">false</span>)){</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                }</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">if</span>($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getConfigGroup()-&gt;getPropertyBool(<span class="stringliteral">&quot;auto-report.send-code&quot;</span>, <span class="keyword">true</span>) &amp;&amp; file_exists($error[<span class="stringliteral">&quot;fullFile&quot;</span>])){</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            $file = @file($error[<span class="stringliteral">&quot;fullFile&quot;</span>], FILE_IGNORE_NEW_LINES);</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="keywordflow">if</span>($file !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="keywordflow">for</span>($l = max(0, $error[<span class="stringliteral">&quot;line&quot;</span>] - 10); $l &lt; $error[<span class="stringliteral">&quot;line&quot;</span>] + 10 &amp;&amp; isset($file[$l]); ++$l){</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    $this-&gt;data-&gt;code[$l + 1] = $file[$l];</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        $this-&gt;data-&gt;trace = array_map(array: $error[<span class="stringliteral">&quot;trace&quot;</span>], callback: fn(<a class="code hl_class" href="../../d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html">ThreadCrashInfoFrame</a> $frame) =&gt; $frame-&gt;getPrintableFrame());</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        $this-&gt;data-&gt;thread = $error[<span class="stringliteral">&quot;thread&quot;</span>];</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">private</span> <span class="keyword">function</span> determinePluginFromFile(<span class="keywordtype">string</span> $filePath, <span class="keywordtype">bool</span> $crashFrame) : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        $frameCleanPath = Filesystem::cleanPath($filePath);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">if</span>(!str_starts_with($frameCleanPath, Filesystem::CLEAN_PATH_SRC_PREFIX)){</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            <span class="keywordflow">if</span>($crashFrame){</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                $this-&gt;data-&gt;plugin_involvement = self::PLUGIN_INVOLVEMENT_DIRECT;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                $this-&gt;data-&gt;plugin_involvement = self::PLUGIN_INVOLVEMENT_INDIRECT;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            }</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordflow">if</span>(file_exists($filePath)){</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                $reflection = new \ReflectionClass(PluginBase::class);</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                $file = $reflection-&gt;getProperty(<span class="stringliteral">&quot;file&quot;</span>);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                <span class="keywordflow">foreach</span>($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getPluginManager()-&gt;getPlugins() as $plugin){</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                    $filePath = Filesystem::cleanPath($file-&gt;getValue($plugin));</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                    <span class="keywordflow">if</span>(str_starts_with($frameCleanPath, $filePath)){</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                        $this-&gt;data-&gt;plugin = $plugin-&gt;getName();</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                    }</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                }</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keyword">private</span> <span class="keyword">function</span> generalData() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        $composerLibraries = [];</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">foreach</span>(InstalledVersions::getInstalledPackages() as $package){</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            $composerLibraries[$package] = sprintf(</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                <span class="stringliteral">&quot;%s@%s&quot;</span>,</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                InstalledVersions::getPrettyVersion($package) ?? <span class="stringliteral">&quot;unknown&quot;</span>,</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                InstalledVersions::getReference($package) ?? <span class="stringliteral">&quot;unknown&quot;</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            );</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        $this-&gt;data-&gt;general = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/dba/classpocketmine_1_1crash_1_1_crash_dump_data_general.html">CrashDumpDataGeneral</a>(</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            name: $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getName(),</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            base_version: VersionInfo::BASE_VERSION,</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            build: VersionInfo::BUILD_NUMBER(),</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            is_dev: VersionInfo::IS_DEVELOPMENT_BUILD,</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            protocol: <a class="code hl_variable" href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#ae46f498b2bb241bfb097d104dde58b0e">ProtocolInfo::CURRENT_PROTOCOL</a>,</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            git: VersionInfo::GIT_HASH(),</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            uname: php_uname(<span class="stringliteral">&quot;a&quot;</span>),</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            php: PHP_VERSION,</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            zend: zend_version(),</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            php_os: PHP_OS,</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            os: <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">Utils::getOS</a>(),</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            composer_libraries: $composerLibraries,</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        );</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    }</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>}</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            $error[<span class="stringliteral">&quot;thread&quot;</span>] = <span class="stringliteral">&quot;Main&quot;</span>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $error[<span class="stringliteral">&quot;message&quot;</span>] = mb_scrub($error[<span class="stringliteral">&quot;message&quot;</span>], <span class="stringliteral">&#39;UTF-8&#39;</span>);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">if</span>(isset($lastError)){</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            $this-&gt;data-&gt;lastError = $lastError;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            $this-&gt;data-&gt;lastError[<span class="stringliteral">&quot;message&quot;</span>] = mb_scrub($this-&gt;data-&gt;lastError[<span class="stringliteral">&quot;message&quot;</span>], <span class="stringliteral">&#39;UTF-8&#39;</span>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        $this-&gt;data-&gt;error = $error;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        unset($this-&gt;data-&gt;error[<span class="stringliteral">&quot;fullFile&quot;</span>]);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        unset($this-&gt;data-&gt;error[<span class="stringliteral">&quot;trace&quot;</span>]);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        $this-&gt;data-&gt;plugin_involvement = self::PLUGIN_INVOLVEMENT_NONE;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">if</span>(!$this-&gt;determinePluginFromFile($error[<span class="stringliteral">&quot;fullFile&quot;</span>], <span class="keyword">true</span>)){ <span class="comment">//fatal errors won&#39;t leave any stack trace</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">foreach</span>($error[<span class="stringliteral">&quot;trace&quot;</span>] as $frame){</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                $frameFile = $frame-&gt;getFile();</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                <span class="keywordflow">if</span>($frameFile === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    <span class="keywordflow">continue</span>; <span class="comment">//PHP core</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                <span class="keywordflow">if</span>($this-&gt;determinePluginFromFile($frameFile, <span class="keyword">false</span>)){</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        }</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keywordflow">if</span>($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getConfigGroup()-&gt;getPropertyBool(<span class="stringliteral">&quot;auto-report.send-code&quot;</span>, <span class="keyword">true</span>) &amp;&amp; file_exists($error[<span class="stringliteral">&quot;fullFile&quot;</span>])){</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            $file = @file($error[<span class="stringliteral">&quot;fullFile&quot;</span>], FILE_IGNORE_NEW_LINES);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="keywordflow">if</span>($file !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">for</span>($l = max(0, $error[<span class="stringliteral">&quot;line&quot;</span>] - 10); $l &lt; $error[<span class="stringliteral">&quot;line&quot;</span>] + 10 &amp;&amp; isset($file[$l]); ++$l){</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    $this-&gt;data-&gt;code[$l + 1] = $file[$l];</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        $this-&gt;data-&gt;trace = array_map(array: $error[<span class="stringliteral">&quot;trace&quot;</span>], callback: fn(<a class="code hl_class" href="../../d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html">ThreadCrashInfoFrame</a> $frame) =&gt; $frame-&gt;getPrintableFrame());</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        $this-&gt;data-&gt;thread = $error[<span class="stringliteral">&quot;thread&quot;</span>];</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">private</span> <span class="keyword">function</span> determinePluginFromFile(<span class="keywordtype">string</span> $filePath, <span class="keywordtype">bool</span> $crashFrame) : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        $frameCleanPath = Filesystem::cleanPath($filePath);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordflow">if</span>(!str_starts_with($frameCleanPath, Filesystem::CLEAN_PATH_SRC_PREFIX)){</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            <span class="keywordflow">if</span>($crashFrame){</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                $this-&gt;data-&gt;plugin_involvement = self::PLUGIN_INVOLVEMENT_DIRECT;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                $this-&gt;data-&gt;plugin_involvement = self::PLUGIN_INVOLVEMENT_INDIRECT;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            }</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">if</span>(file_exists($filePath)){</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                $reflection = new \ReflectionClass(PluginBase::class);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                $file = $reflection-&gt;getProperty(<span class="stringliteral">&quot;file&quot;</span>);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                <span class="keywordflow">foreach</span>($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getPluginManager()-&gt;getPlugins() as $plugin){</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                    $filePath = Filesystem::cleanPath($file-&gt;getValue($plugin));</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                    <span class="keywordflow">if</span>(str_starts_with($frameCleanPath, $filePath)){</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                        $this-&gt;data-&gt;plugin = $plugin-&gt;getName();</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                    }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                }</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    }</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keyword">private</span> <span class="keyword">function</span> generalData() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        $composerLibraries = [];</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">foreach</span>(InstalledVersions::getInstalledPackages() as $package){</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            $composerLibraries[$package] = sprintf(</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <span class="stringliteral">&quot;%s@%s&quot;</span>,</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                InstalledVersions::getPrettyVersion($package) ?? <span class="stringliteral">&quot;unknown&quot;</span>,</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                InstalledVersions::getReference($package) ?? <span class="stringliteral">&quot;unknown&quot;</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            );</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        $this-&gt;data-&gt;general = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/dba/classpocketmine_1_1crash_1_1_crash_dump_data_general.html">CrashDumpDataGeneral</a>(</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            name: $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getName(),</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            base_version: VersionInfo::BASE_VERSION,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            build: VersionInfo::BUILD_NUMBER(),</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            is_dev: VersionInfo::IS_DEVELOPMENT_BUILD,</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            protocol: <a class="code hl_variable" href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#ae46f498b2bb241bfb097d104dde58b0e">ProtocolInfo::CURRENT_PROTOCOL</a>,</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            git: VersionInfo::GIT_HASH(),</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            uname: php_uname(<span class="stringliteral">&quot;a&quot;</span>),</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            php: PHP_VERSION,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            zend: zend_version(),</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            php_os: PHP_OS,</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            os: <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">Utils::getOS</a>(),</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            composer_libraries: $composerLibraries,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        );</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00177">src/Server.php:177</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_version_info_html"><div class="ttname"><a href="../../d4/db7/classpocketmine_1_1_version_info.html">pocketmine\VersionInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ded/_version_info_8php_source.html#l00032">VersionInfo.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1crash_1_1_crash_dump_data_general_html"><div class="ttname"><a href="../../d1/dba/classpocketmine_1_1crash_1_1_crash_dump_data_general.html">pocketmine\crash\CrashDumpDataGeneral</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/daa/_crash_dump_data_general_8php_source.html#l00026">CrashDumpDataGeneral.php:26</a></div></div>
