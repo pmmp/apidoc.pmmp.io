@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-1a18e32011ad5c9f554afd8ff2042986d8ec8ac8</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
    </div>
   </td>
  </tr>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('db/dc4/_in_game_packet_handler_8php_so
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        $hasMoved = $this-&gt;lastPlayerAuthInputPosition === <span class="keyword">null</span> || !$this-&gt;lastPlayerAuthInputPosition-&gt;equals($rawPos);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $newPos = $rawPos-&gt;round(4)-&gt;subtract(0, 1.62, 0);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $newPos = $rawPos-&gt;subtract(0, 1.62, 0)-&gt;round(4);</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">if</span>($this-&gt;forceMoveSync &amp;&amp; $hasMoved){</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            $curPos = $this-&gt;player-&gt;getLocation();</div>
