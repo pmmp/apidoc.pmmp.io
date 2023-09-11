@@ -16,6 +16,8 @@ var classpocketmine_1_1item_1_1_liquid_bucket =
     [ "getCanPlaceOn", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
+    [ "getEnchantmentTags", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a2cd585e835d275723348cd044a870ac6", null ],
     [ "getFuelTime", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#aca14598677f5c4bf1114c6122fddc5af", null ],
     [ "getLore", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

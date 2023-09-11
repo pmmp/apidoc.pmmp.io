@@ -155,6 +155,7 @@ var dir_46a300e4974f45ffe4be063a03f2fd9d =
     [ "Note.php", "d6/dff/_note_8php_source.html", null ],
     [ "Opaque.php", "d1/dbc/_opaque_8php_source.html", null ],
     [ "PackedIce.php", "d3/d1d/_packed_ice_8php_source.html", null ],
+    [ "PinkPetals.php", "de/d4e/_pink_petals_8php_source.html", null ],
     [ "Planks.php", "dc/d89/_planks_8php_source.html", null ],
     [ "Podzol.php", "d6/d7b/_podzol_8php_source.html", null ],
     [ "block/Potato.php", "d4/d02/block_2_potato_8php_source.html", null ],

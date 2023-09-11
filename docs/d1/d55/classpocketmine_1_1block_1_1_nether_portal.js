@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_nether_portal =
     [ "getDrops", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4e0444bc4ad86dedb99167f43458eba1", null ],
     [ "getDropsForCompatibleTool", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

@@ -17,6 +17,8 @@ var classpocketmine_1_1item_1_1_shears =
     [ "getCanPlaceOn", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
+    [ "getEnchantmentTags", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
     [ "getLore", "dd/d7b/classpocketmine_1_1item_1_1_shears.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

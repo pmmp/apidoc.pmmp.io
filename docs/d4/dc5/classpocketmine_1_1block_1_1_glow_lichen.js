@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_glow_lichen =
     [ "getDrops", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669", null ],
     [ "getDropsForCompatibleTool", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFaces", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#ab577287957bc7ec3a8a1708d77aae413", null ],
     [ "getFlameEncouragement", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda", null ],
     [ "getFlammability", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc", null ],

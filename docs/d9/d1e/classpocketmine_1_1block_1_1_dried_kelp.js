@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_dried_kelp =
     [ "getDrops", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#a53b4cd303660f3ad293d5e84bea16ddd", null ],
     [ "getFlammability", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#a69e09dd3b591fbd3854b01c6d48878c4", null ],
     [ "getFrictionFactor", "d9/d1e/classpocketmine_1_1block_1_1_dried_kelp.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

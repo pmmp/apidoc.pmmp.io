@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_nether_quartz_ore =
     [ "getDrops", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a27b02f6029ef1ad6a715ac8fc4c41111", null ],
     [ "getDropsForIncompatibleTool", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

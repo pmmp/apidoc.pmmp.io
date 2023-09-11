@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_wood =
     [ "getDrops", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a7fb98084c2c476ddbcc7db5f289d1eba", null ],
     [ "getFlammability", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#ac87dca4d274eb802e8dae7ac9ebbe055", null ],
     [ "getFrictionFactor", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_base_banner =
     [ "getDrops", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a070e29c4b875936366ea322bbb9a3ed8", null ],
     [ "getDropsForIncompatibleTool", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

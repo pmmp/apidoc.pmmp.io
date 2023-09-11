@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_blue_ice =
     [ "getDrops", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#a223544d9c97d4e97eff32cc6bba17084", null ],
     [ "getDropsForIncompatibleTool", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#a36a370e7fc79fec6b46cc39310965edd", null ],

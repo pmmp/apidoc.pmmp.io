@@ -17,6 +17,8 @@ var classpocketmine_1_1math_1_1_axis_aligned_b_b =
     [ "isVectorInYZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a95a778fd258f3cd8f594a0e7a5c8be8f", null ],
     [ "offset", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a74a261aecea9a68ebb042f105d56bb34", null ],
     [ "offsetCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#ae74c22b87cf5ac8620ce2afceb16209c", null ],
+    [ "offsetTowards", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#abd4953ca10412d52882381d5e5a7d81f", null ],
+    [ "offsetTowardsCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#aec5757f714fb26b35db1762f490b014f", null ],
     [ "one", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a28724c6fb2adcf3e5fb11b1c4cad69d0", null ],
     [ "squash", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a1da3cbf32ef81cb55fdc6fc5c970c499", null ],
     [ "squashedCopy", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a4b21f786fb2342bc5c77b2967dbf9799", null ],

@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_wooden_stairs =
     [ "getDrops", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a710c72da6ad375093186200bb174c942", null ],
     [ "getFlammability", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ab4f5d1c7d123e8238cdca4aa6b8a5844", null ],
     [ "getFrictionFactor", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_stained_hardened_clay =
     [ "getDrops", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

@@ -17,6 +17,8 @@ var classpocketmine_1_1item_1_1_chorus_fruit =
     [ "getCanPlaceOn", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#ac80de8f4dd57b58811abeb08c4989a6b", null ],
     [ "getDefensePoints", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
+    [ "getEnchantmentTags", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
     [ "getLore", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

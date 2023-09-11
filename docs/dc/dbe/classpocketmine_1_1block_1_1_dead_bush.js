@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_dead_bush =
     [ "getDrops", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a7a9759bc3ba63552fc11758bdfbfe256", null ],
+    [ "getEnchantmentTags", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a9b7e197a8b91c6e5a6ebc1d9bf370a62", null ],
     [ "getFlammability", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#aeae6b67e6b1fd283da5416c31eaffd05", null ],
     [ "getFrictionFactor", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

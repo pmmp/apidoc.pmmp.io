@@ -9,6 +9,7 @@ var classpocketmine_1_1event_1_1player_1_1_player_pre_login_event =
     [ "getFinalDisconnectScreenMessage", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a9ce04a4a6ce01bbe6755c31d5c3ff149", null ],
     [ "getKickFlags", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a740c940d103a724f83995e7f69468b6b", null ],
     [ "getPlayerInfo", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a5cf0eb374bf6fb8909628d2aa3cf7c4b", null ],
+    [ "hasHandlers", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
     [ "isAllowed", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a14aee0bedec985f2e97674e2df3f9507", null ],
     [ "isKickFlagSet", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a4ed78b0e1e28eb66c2d0b9297f55ffd5", null ],
     [ "setKickFlag", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html#a41a381e9d44644f602f8b7dbe5b3da34", null ]

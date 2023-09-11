@@ -16,6 +16,8 @@ var classpocketmine_1_1item_1_1_coral_fan =
     [ "getCanPlaceOn", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
+    [ "getEnchantmentTags", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#ac5a6cfdd4157b376f7f263e16e0ab1bb", null ],
     [ "getLore", "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

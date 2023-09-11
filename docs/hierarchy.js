@@ -23,6 +23,7 @@ var hierarchy =
       [ "pocketmine\\entity\\animation\\TotemUseAnimation", "db/dca/classpocketmine_1_1entity_1_1animation_1_1_totem_use_animation.html", null ]
     ] ],
     [ "pocketmine\\plugin\\ApiVersion", "d0/df2/classpocketmine_1_1plugin_1_1_api_version.html", null ],
+    [ "pocketmine\\item\\ArmorMaterial", "d8/dcd/classpocketmine_1_1item_1_1_armor_material.html", null ],
     [ "pocketmine\\item\\ArmorTypeInfo", "d8/d82/classpocketmine_1_1item_1_1_armor_type_info.html", null ],
     [ "ArrayAccess", null, [
       [ "pocketmine\\math\\Matrix", "da/d46/classpocketmine_1_1math_1_1_matrix.html", null ]
@@ -37,6 +38,7 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\protocol\\types\\entity\\AttributeModifierOperation", "d3/da7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute_modifier_operation.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\entity\\AttributeModifierTargetOperand", "d8/d39/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute_modifier_target_operand.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\login\\AuthenticationData", "d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data.html", null ],
+    [ "pocketmine\\item\\enchantment\\AvailableEnchantmentRegistry", "db/d9d/classpocketmine_1_1item_1_1enchantment_1_1_available_enchantment_registry.html", null ],
     [ "pocketmine\\math\\Axis", "db/d25/classpocketmine_1_1math_1_1_axis.html", null ],
     [ "pocketmine\\math\\AxisAlignedBB", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html", null ],
     [ "pocketmine\\network\\BandwidthStatsTracker", "da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html", null ],
@@ -264,6 +266,7 @@ var hierarchy =
           [ "pocketmine\\block\\MobHead", "d5/d56/classpocketmine_1_1block_1_1_mob_head.html", null ],
           [ "pocketmine\\block\\NetherVines", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html", null ],
           [ "pocketmine\\block\\NetherWartPlant", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html", null ],
+          [ "pocketmine\\block\\PinkPetals", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html", null ],
           [ "pocketmine\\block\\RedMushroom", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html", [
             [ "pocketmine\\block\\BrownMushroom", "df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html", null ]
           ] ],
@@ -352,6 +355,7 @@ var hierarchy =
     ] ],
     [ "pocketmine\\block\\BlockBreakInfo", "d3/d10/classpocketmine_1_1block_1_1_block_break_info.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockDataUpgrader", "d2/dcf/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_data_upgrader.html", null ],
+    [ "pocketmine\\block\\utils\\BlockEventHelper", "d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html", null ],
     [ "pocketmine\\block\\BlockIdentifier", "dd/d18/classpocketmine_1_1block_1_1_block_identifier.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockIdMetaUpgrader", "df/db9/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_id_meta_upgrader.html", null ],
     [ "pocketmine\\block\\inventory\\BlockInventory", "d4/d3a/interfacepocketmine_1_1block_1_1inventory_1_1_block_inventory.html", [
@@ -424,7 +428,8 @@ var hierarchy =
         [ "pocketmine\\event\\block\\BlockFormEvent", "dc/d51/classpocketmine_1_1event_1_1block_1_1_block_form_event.html", null ],
         [ "pocketmine\\event\\block\\BlockGrowEvent", "db/d04/classpocketmine_1_1event_1_1block_1_1_block_grow_event.html", null ],
         [ "pocketmine\\event\\block\\BlockMeltEvent", "d1/d80/classpocketmine_1_1event_1_1block_1_1_block_melt_event.html", null ],
-        [ "pocketmine\\event\\block\\BlockSpreadEvent", "d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html", null ]
+        [ "pocketmine\\event\\block\\BlockSpreadEvent", "d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html", null ],
+        [ "pocketmine\\event\\block\\PressurePlateUpdateEvent", "dd/de2/classpocketmine_1_1event_1_1block_1_1_pressure_plate_update_event.html", null ]
       ] ],
       [ "pocketmine\\event\\block\\BlockBreakEvent", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html", null ],
       [ "pocketmine\\event\\block\\BlockBurnEvent", "db/da8/classpocketmine_1_1event_1_1block_1_1_block_burn_event.html", null ],
@@ -435,6 +440,7 @@ var hierarchy =
       [ "pocketmine\\event\\block\\BrewItemEvent", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html", null ],
       [ "pocketmine\\event\\block\\BrewingFuelUseEvent", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event.html", null ],
       [ "pocketmine\\event\\block\\ChestPairEvent", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event.html", null ],
+      [ "pocketmine\\event\\block\\FarmlandHydrationChangeEvent", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event.html", null ],
       [ "pocketmine\\event\\block\\LeavesDecayEvent", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event.html", null ],
       [ "pocketmine\\event\\block\\SignChangeEvent", "dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html", null ],
       [ "pocketmine\\event\\block\\StructureGrowEvent", "dd/d17/classpocketmine_1_1event_1_1block_1_1_structure_grow_event.html", null ],
@@ -482,12 +488,14 @@ var hierarchy =
       [ "pocketmine\\event\\player\\PlayerDuplicateLoginEvent", "d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerEditBookEvent", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerEmoteEvent", "d5/d7c/classpocketmine_1_1event_1_1player_1_1_player_emote_event.html", null ],
+      [ "pocketmine\\event\\player\\PlayerEnchantingOptionsRequestEvent", "d4/db8/classpocketmine_1_1event_1_1player_1_1_player_enchanting_options_request_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerEntityInteractEvent", "d0/d26/classpocketmine_1_1event_1_1player_1_1_player_entity_interact_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerExhaustEvent", "d9/dfb/classpocketmine_1_1event_1_1player_1_1_player_exhaust_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerExperienceChangeEvent", "df/d28/classpocketmine_1_1event_1_1player_1_1_player_experience_change_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerGameModeChangeEvent", "db/d3e/classpocketmine_1_1event_1_1player_1_1_player_game_mode_change_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerInteractEvent", "d8/d28/classpocketmine_1_1event_1_1player_1_1_player_interact_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerItemConsumeEvent", "da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html", null ],
+      [ "pocketmine\\event\\player\\PlayerItemEnchantEvent", "d6/dcc/classpocketmine_1_1event_1_1player_1_1_player_item_enchant_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerItemHeldEvent", "dd/de9/classpocketmine_1_1event_1_1player_1_1_player_item_held_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerItemUseEvent", "dd/dbd/classpocketmine_1_1event_1_1player_1_1_player_item_use_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerKickEvent", "d9/dd8/classpocketmine_1_1event_1_1player_1_1_player_kick_event.html", null ],
@@ -732,6 +740,8 @@ var hierarchy =
     [ "pocketmine\\entity\\effect\\EffectManager", "da/d02/classpocketmine_1_1entity_1_1effect_1_1_effect_manager.html", null ],
     [ "raklib\\protocol\\EncapsulatedPacket", "d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\Enchant", "dd/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant.html", null ],
+    [ "pocketmine\\item\\enchantment\\EnchantingHelper", "df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper.html", null ],
+    [ "pocketmine\\item\\enchantment\\EnchantingOption", "d3/dac/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_option.html", null ],
     [ "pocketmine\\item\\enchantment\\Enchantment", "dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html", [
       [ "pocketmine\\item\\enchantment\\MeleeWeaponEnchantment", "d3/da7/classpocketmine_1_1item_1_1enchantment_1_1_melee_weapon_enchantment.html", [
         [ "pocketmine\\item\\enchantment\\FireAspectEnchantment", "d0/de0/classpocketmine_1_1item_1_1enchantment_1_1_fire_aspect_enchantment.html", null ],
@@ -799,6 +809,7 @@ var hierarchy =
         [ "pocketmine\\event\\block\\BlockUpdateEvent", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event.html", null ],
         [ "pocketmine\\event\\block\\BrewItemEvent", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html", null ],
         [ "pocketmine\\event\\block\\BrewingFuelUseEvent", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event.html", null ],
+        [ "pocketmine\\event\\block\\FarmlandHydrationChangeEvent", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event.html", null ],
         [ "pocketmine\\event\\block\\LeavesDecayEvent", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event.html", null ],
         [ "pocketmine\\event\\block\\SignChangeEvent", "dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html", null ],
         [ "pocketmine\\event\\block\\StructureGrowEvent", "dd/d17/classpocketmine_1_1event_1_1block_1_1_structure_grow_event.html", null ],
@@ -856,10 +867,12 @@ var hierarchy =
         [ "pocketmine\\event\\player\\PlayerDropItemEvent", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerEditBookEvent", "d5/d38/classpocketmine_1_1event_1_1player_1_1_player_edit_book_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerEmoteEvent", "d5/d7c/classpocketmine_1_1event_1_1player_1_1_player_emote_event.html", null ],
+        [ "pocketmine\\event\\player\\PlayerEnchantingOptionsRequestEvent", "d4/db8/classpocketmine_1_1event_1_1player_1_1_player_enchanting_options_request_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerEntityInteractEvent", "d0/d26/classpocketmine_1_1event_1_1player_1_1_player_entity_interact_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerGameModeChangeEvent", "db/d3e/classpocketmine_1_1event_1_1player_1_1_player_game_mode_change_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerInteractEvent", "d8/d28/classpocketmine_1_1event_1_1player_1_1_player_interact_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerItemConsumeEvent", "da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html", null ],
+        [ "pocketmine\\event\\player\\PlayerItemEnchantEvent", "d6/dcc/classpocketmine_1_1event_1_1player_1_1_player_item_enchant_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerItemHeldEvent", "dd/de9/classpocketmine_1_1event_1_1player_1_1_player_item_held_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerItemUseEvent", "dd/dbd/classpocketmine_1_1event_1_1player_1_1_player_item_use_event.html", null ],
         [ "pocketmine\\event\\player\\PlayerJoinEvent", "d7/dcc/classpocketmine_1_1event_1_1player_1_1_player_join_event.html", null ],
@@ -904,6 +917,7 @@ var hierarchy =
           [ "pocketmine\\event\\world\\ChunkUnloadEvent", "d1/df4/classpocketmine_1_1event_1_1world_1_1_chunk_unload_event.html", null ]
         ] ],
         [ "pocketmine\\event\\world\\SpawnChangeEvent", "d3/d42/classpocketmine_1_1event_1_1world_1_1_spawn_change_event.html", null ],
+        [ "pocketmine\\event\\world\\WorldDifficultyChangeEvent", "d4/df0/classpocketmine_1_1event_1_1world_1_1_world_difficulty_change_event.html", null ],
         [ "pocketmine\\event\\world\\WorldDisplayNameChangeEvent", "da/d8e/classpocketmine_1_1event_1_1world_1_1_world_display_name_change_event.html", null ],
         [ "pocketmine\\event\\world\\WorldInitEvent", "da/d9d/classpocketmine_1_1event_1_1world_1_1_world_init_event.html", null ],
         [ "pocketmine\\event\\world\\WorldLoadEvent", "dc/d09/classpocketmine_1_1event_1_1world_1_1_world_load_event.html", null ],
@@ -973,6 +987,8 @@ var hierarchy =
     [ "pocketmine\\event\\HandlerListManager", "d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html", null ],
     [ "pocketmine\\world\\format\\HeightArray", "df/d1d/classpocketmine_1_1world_1_1format_1_1_height_array.html", null ],
     [ "pocketmine\\entity\\HungerManager", "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html", null ],
+    [ "pocketmine\\item\\enchantment\\IncompatibleEnchantmentGroups", "da/d7a/classpocketmine_1_1item_1_1enchantment_1_1_incompatible_enchantment_groups.html", null ],
+    [ "pocketmine\\item\\enchantment\\IncompatibleEnchantmentRegistry", "de/dbf/classpocketmine_1_1item_1_1enchantment_1_1_incompatible_enchantment_registry.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\InputMode", "dc/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_input_mode.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\InteractionMode", "da/d76/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_interaction_mode.html", null ],
     [ "pocketmine\\utils\\Internet", "df/d1b/classpocketmine_1_1utils_1_1_internet.html", null ],
@@ -1056,7 +1072,8 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\InventoryManager", "d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html", null ],
     [ "pocketmine\\network\\mcpe\\InventoryManagerEntry", "d8/dac/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager_entry.html", null ],
     [ "pocketmine\\inventory\\transaction\\InventoryTransaction", "d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html", [
-      [ "pocketmine\\inventory\\transaction\\CraftingTransaction", "db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html", null ]
+      [ "pocketmine\\inventory\\transaction\\CraftingTransaction", "db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html", null ],
+      [ "pocketmine\\inventory\\transaction\\EnchantingTransaction", "d1/d68/classpocketmine_1_1inventory_1_1transaction_1_1_enchanting_transaction.html", null ]
     ] ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\inventory\\InventoryTransactionChangedSlotsHack", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html", null ],
     [ "pocketmine\\player\\IPlayer", "d2/df5/interfacepocketmine_1_1player_1_1_i_player.html", [
@@ -1074,6 +1091,8 @@ var hierarchy =
     ] ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\ItemDescriptorType", "d3/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_item_descriptor_type.html", null ],
     [ "pocketmine\\data\\bedrock\\item\\ItemDeserializer", "d2/d7e/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_item_deserializer.html", null ],
+    [ "pocketmine\\item\\enchantment\\ItemEnchantmentTagRegistry", "d3/ddb/classpocketmine_1_1item_1_1enchantment_1_1_item_enchantment_tag_registry.html", null ],
+    [ "pocketmine\\item\\enchantment\\ItemEnchantmentTags", "d9/d03/classpocketmine_1_1item_1_1enchantment_1_1_item_enchantment_tags.html", null ],
     [ "pocketmine\\item\\enchantment\\ItemFlags", "d2/da7/classpocketmine_1_1item_1_1enchantment_1_1_item_flags.html", null ],
     [ "pocketmine\\item\\ItemIdentifier", "d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html", null ],
     [ "pocketmine\\data\\bedrock\\item\\upgrade\\ItemIdMetaUpgrader", "dc/dc7/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrader.html", null ],
@@ -1169,6 +1188,7 @@ var hierarchy =
           ] ]
         ] ],
         [ "pocketmine\\item\\Dye", "d4/d96/classpocketmine_1_1item_1_1_dye.html", null ],
+        [ "pocketmine\\item\\EnchantedBook", "df/dad/classpocketmine_1_1item_1_1_enchanted_book.html", null ],
         [ "pocketmine\\item\\Fertilizer", "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html", null ],
         [ "pocketmine\\item\\FireCharge", "d9/d13/classpocketmine_1_1item_1_1_fire_charge.html", null ],
         [ "pocketmine\\item\\Food", "dc/de1/classpocketmine_1_1item_1_1_food.html", null ],
@@ -2078,6 +2098,7 @@ var hierarchy =
       [ "raklib\\server\\Server", "d8/dd8/classraklib_1_1server_1_1_server.html", null ],
       [ "raklib\\server\\ipc\\UserToRakLibThreadMessageSender", "d4/d78/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_sender.html", null ]
     ] ],
+    [ "pocketmine\\ServerProperties", "d1/d6b/classpocketmine_1_1_server_properties.html", null ],
     [ "raklib\\generic\\Session", "dd/dca/classraklib_1_1generic_1_1_session.html", [
       [ "raklib\\server\\ServerSession", "d6/d79/classraklib_1_1server_1_1_server_session.html", null ]
     ] ],
@@ -2179,6 +2200,8 @@ var hierarchy =
       [ "pocketmine\\world\\sound\\PopSound", "dd/d55/classpocketmine_1_1world_1_1sound_1_1_pop_sound.html", null ],
       [ "pocketmine\\world\\sound\\PotionFinishBrewingSound", "d8/de9/classpocketmine_1_1world_1_1sound_1_1_potion_finish_brewing_sound.html", null ],
       [ "pocketmine\\world\\sound\\PotionSplashSound", "de/d02/classpocketmine_1_1world_1_1sound_1_1_potion_splash_sound.html", null ],
+      [ "pocketmine\\world\\sound\\PressurePlateActivateSound", "d1/dc5/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_activate_sound.html", null ],
+      [ "pocketmine\\world\\sound\\PressurePlateDeactivateSound", "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound.html", null ],
       [ "pocketmine\\world\\sound\\RecordSound", "d1/d36/classpocketmine_1_1world_1_1sound_1_1_record_sound.html", null ],
       [ "pocketmine\\world\\sound\\RecordStopSound", "d7/d19/classpocketmine_1_1world_1_1sound_1_1_record_stop_sound.html", null ],
       [ "pocketmine\\world\\sound\\RedstonePowerOffSound", "d6/d02/classpocketmine_1_1world_1_1sound_1_1_redstone_power_off_sound.html", null ],
@@ -2334,6 +2357,7 @@ var hierarchy =
     [ "pocketmine\\player\\UsedChunkStatus", "dd/d8a/classpocketmine_1_1player_1_1_used_chunk_status.html", null ],
     [ "raklib\\server\\ipc\\UserToRakLibThreadMessageProtocol", "d6/dd5/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_protocol.html", null ],
     [ "pocketmine\\utils\\Utils", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html", null ],
+    [ "pocketmine\\item\\VanillaArmorMaterials", "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html", null ],
     [ "pocketmine\\block\\VanillaBlocks", "df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html", null ],
     [ "pocketmine\\entity\\effect\\VanillaEffects", "d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html", null ],
     [ "pocketmine\\item\\enchantment\\VanillaEnchantments", "d3/dfc/classpocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments.html", null ],
@@ -2382,6 +2406,7 @@ var hierarchy =
     ] ],
     [ "pocketmine\\world\\WorldTimings", "d7/d08/classpocketmine_1_1world_1_1_world_timings.html", null ],
     [ "pocketmine\\item\\WritableBookPage", "d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html", null ],
+    [ "pocketmine\\YmlServerProperties", "db/d88/classpocketmine_1_1_yml_server_properties.html", null ],
     [ "InvalidArgumentException", null, [
       [ "pocketmine\\entity\\InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ],
       [ "pocketmine\\nbt\\InvalidTagValueException", "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html", null ]

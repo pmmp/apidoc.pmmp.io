@@ -17,6 +17,8 @@ var classpocketmine_1_1item_1_1_hoe =
     [ "getCanPlaceOn", "db/d96/classpocketmine_1_1item_1_1_hoe.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "db/d96/classpocketmine_1_1item_1_1_hoe.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "db/d96/classpocketmine_1_1item_1_1_hoe.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "db/d96/classpocketmine_1_1item_1_1_hoe.html#a89878fd01a089991ee271eff92dc95b9", null ],
+    [ "getEnchantmentTags", "db/d96/classpocketmine_1_1item_1_1_hoe.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "db/d96/classpocketmine_1_1item_1_1_hoe.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "db/d96/classpocketmine_1_1item_1_1_hoe.html#ae1229e66119370a5b7d18d8bbc15c485", null ],
     [ "getLore", "db/d96/classpocketmine_1_1item_1_1_hoe.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

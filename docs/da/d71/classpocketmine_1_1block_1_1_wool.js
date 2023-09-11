@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_wool =
     [ "getDrops", "da/d71/classpocketmine_1_1block_1_1_wool.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "da/d71/classpocketmine_1_1block_1_1_wool.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "da/d71/classpocketmine_1_1block_1_1_wool.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "da/d71/classpocketmine_1_1block_1_1_wool.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1", null ],
     [ "getFlammability", "da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23", null ],
     [ "getFrictionFactor", "da/d71/classpocketmine_1_1block_1_1_wool.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

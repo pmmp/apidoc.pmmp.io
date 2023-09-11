@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -100,12 +100,14 @@ $(document).ready(function(){initNavTree('d6/dc2/classpocketmine_1_1world_1_1gen
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dc1/classpocketmine_1_1world_1_1generator_1_1_generator_manager__coll__graph.svg" width="216" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dc1/classpocketmine_1_1world_1_1generator_1_1_generator_manager__coll__graph.svg" width="216" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a70766913478ea0544cab18205be90883"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc2/classpocketmine_1_1world_1_1generator_1_1_generator_manager.html#a70766913478ea0544cab18205be90883">addAlias</a> (string $name, string $alias)</td></tr>
+<tr class="separator:a70766913478ea0544cab18205be90883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ea815499b9b3b15d883c0150e86d2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc2/classpocketmine_1_1world_1_1generator_1_1_generator_manager.html#a14ea815499b9b3b15d883c0150e86d2a">addGenerator</a> (string $class, string $name, \Closure $presetValidator, bool $overwrite=false)</td></tr>
 <tr class="separator:a14ea815499b9b3b15d883c0150e86d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c4c3d6c189b6c857053e1dca9c169b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc2/classpocketmine_1_1world_1_1generator_1_1_generator_manager.html#a6c4c3d6c189b6c857053e1dca9c169b7">getGenerator</a> (string $name)</td></tr>
@@ -139,6 +141,37 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a70766913478ea0544cab18205be90883" name="a70766913478ea0544cab18205be90883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70766913478ea0544cab18205be90883">&#9670;&nbsp;</a></span>addAlias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\world\generator\GeneratorManager::addAlias </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$alias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Aliases an already-registered generator name to another name. Useful if you want to map a generator name to an existing generator without having to replicate the parameters. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00087">87</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
+
+</div>
+</div>
 <a id="a14ea815499b9b3b15d883c0150e86d2a" name="a14ea815499b9b3b15d883c0150e86d2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14ea815499b9b3b15d883c0150e86d2a">&#9670;&nbsp;</a></span>addGenerator()</h2>
 
@@ -216,7 +249,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns the generator entry of a registered <a class="el" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a> matching the given name, or null if not found. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00095">95</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00111">111</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
 
 </div>
 </div>
@@ -237,7 +270,7 @@ Public Member Functions</h2></td></tr>
 <p >Returns a list of names for registered generators.</p>
 <dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00088">88</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00104">104</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
 
 </div>
 </div>
@@ -271,7 +304,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException if the class type cannot be matched to a known alias </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00107">107</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html#l00123">123</a> of file <a class="el" href="../../d6/d2d/_generator_manager_8php_source.html">GeneratorManager.php</a>.</p>
 
 </div>
 </div>

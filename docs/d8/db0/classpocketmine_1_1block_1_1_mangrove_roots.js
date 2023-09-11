@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_mangrove_roots =
     [ "getDrops", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#a2ad68f9b83cdae30f08820af9bf938d7", null ],
     [ "getFlammability", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#a21fa4f89fb498a60f3e2b9fda7fd193b", null ],
     [ "getFrictionFactor", "d8/db0/classpocketmine_1_1block_1_1_mangrove_roots.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

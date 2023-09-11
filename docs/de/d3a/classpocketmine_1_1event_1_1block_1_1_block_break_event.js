@@ -7,6 +7,7 @@ var classpocketmine_1_1event_1_1block_1_1_block_break_event =
     [ "getItem", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a0d2135cab6a114bf07ed99eb3b971c91", null ],
     [ "getPlayer", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#abb9d214188b72ee84e02cdd879ea1bf6", null ],
     [ "getXpDropAmount", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a96f6f5da4b520b93730546cb834b0323", null ],
+    [ "hasHandlers", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
     [ "isCancelled", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
     [ "setDrops", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#ad871eadb022db2a2298a08e1f60a062a", null ],
     [ "setDropsVariadic", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html#abaa838e85e670379f022f20ff3fc8c40", null ],

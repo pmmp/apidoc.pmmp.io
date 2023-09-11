@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_wooden_slab =
     [ "getDrops", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#aa8da1a718ebf421993a0b98c26e14429", null ],
     [ "getDropsForIncompatibleTool", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a51695a06529c8853ef13da371fc2be69", null ],
     [ "getFlammability", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a70f3f1e778bd92f38c39033e089a5cb3", null ],
     [ "getFrictionFactor", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

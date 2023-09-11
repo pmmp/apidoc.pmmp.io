@@ -4,6 +4,7 @@ var classpocketmine_1_1event_1_1player_1_1_player_transfer_event =
     [ "getAddress", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#a0842bfc7b74c5a0cd474bdaab66dfeb6", null ],
     [ "getMessage", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#a6a712100c9e2d2a7f938849e1c88e93d", null ],
     [ "getPort", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#acb708f2f11339ed673ca0a4497ff80f3", null ],
+    [ "hasHandlers", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
     [ "isCancelled", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
     [ "setAddress", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#a1f0780462219cb1e17b3a851cc6b4158", null ],
     [ "setMessage", "de/d6c/classpocketmine_1_1event_1_1player_1_1_player_transfer_event.html#a0346a06695edc1e10370b1f066fbe1a7", null ],

@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_double_tall_grass =
     [ "getDrops", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#abc2cbf6176586e86f2e0f70c9bb7ec4a", null ],
     [ "getDropsForCompatibleTool", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#a5cea905373a87593581646dff841fc4b", null ],
+    [ "getEnchantmentTags", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#a3d865c31d128c45f03ff6d1c1c8c1ca2", null ],
     [ "getFlammability", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#a97c939979dd4faf51cf395881f084132", null ],
     [ "getFrictionFactor", "dc/d19/classpocketmine_1_1block_1_1_double_tall_grass.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

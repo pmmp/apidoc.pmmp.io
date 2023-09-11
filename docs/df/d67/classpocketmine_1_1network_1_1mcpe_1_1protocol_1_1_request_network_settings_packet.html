@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e53bcf6c12eab41fd619f5d812c1be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab869f6f8d246ff2f83744b48f43c4b54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#ab869f6f8d246ff2f83744b48f43c4b54">__set</a> ($name, $value)</td></tr>
 <tr class="separator:ab869f6f8d246ff2f83744b48f43c4b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a9bcf35b367f0c8b172ceb89d6d6d44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5a9bcf35b367f0c8b172ceb89d6d6d44">canBeSentBeforeLogin</a> ()</td></tr>
-<tr class="separator:a5a9bcf35b367f0c8b172ceb89d6d6d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e6a50a3bf0916cb5b2d29b9496bb7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_network_settings_packet.html#af8e6a50a3bf0916cb5b2d29b9496bb7f">canBeSentBeforeLogin</a> ()</td></tr>
+<tr class="separator:af8e6a50a3bf0916cb5b2d29b9496bb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa064d23077830ab265f931c3385a3e0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#aa064d23077830ab265f931c3385a3e0d">decode</a> (<a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in)</td></tr>
 <tr class="separator:aa064d23077830ab265f931c3385a3e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab12a84175dda75db7865db70acee0ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#ab12a84175dda75db7865db70acee0ba6">encode</a> (<a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
@@ -248,32 +248,24 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a9bcf35b367f0c8b172ceb89d6d6d44" name="a5a9bcf35b367f0c8b172ceb89d6d6d44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a9bcf35b367f0c8b172ceb89d6d6d44">&#9670;&nbsp;</a></span>canBeSentBeforeLogin()</h2>
+<a id="af8e6a50a3bf0916cb5b2d29b9496bb7f" name="af8e6a50a3bf0916cb5b2d29b9496bb7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e6a50a3bf0916cb5b2d29b9496bb7f">&#9670;&nbsp;</a></span>canBeSentBeforeLogin()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\network\mcpe\protocol\DataPacket::canBeSentBeforeLogin </td>
+          <td class="memname">pocketmine\network\mcpe\protocol\RequestNetworkSettingsPacket::canBeSentBeforeLogin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html">pocketmine\network\mcpe\protocol\Packet</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db7/_data_packet_8php_source.html#l00042">42</a> of file <a class="el" href="../../d1/db7/_data_packet_8php_source.html">DataPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00038">38</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -411,7 +403,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00040">40</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -500,7 +492,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -548,7 +540,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00038">38</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00042">42</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -580,7 +572,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html#l00052">52</a> of file <a class="el" href="../../d2/db8/_request_network_settings_packet_8php_source.html">RequestNetworkSettingsPacket.php</a>.</p>
 
 </div>
 </div>

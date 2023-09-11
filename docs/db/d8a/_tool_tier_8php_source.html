@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -126,12 +126,12 @@ $(document).ready(function(){initNavTree('db/d8a/_tool_tier_8php_source.html','.
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        self::registerAll(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;wood&quot;</span>, 1, 60, 5, 2),</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;gold&quot;</span>, 2, 33, 5, 12),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;stone&quot;</span>, 3, 132, 6, 4),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;iron&quot;</span>, 4, 251, 7, 6),</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;diamond&quot;</span>, 5, 1562, 8, 8),</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;netherite&quot;</span>, 6, 2032, 9, 9)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;wood&quot;</span>, 1, 60, 5, 2, 15),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;gold&quot;</span>, 2, 33, 5, 12, 22),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;stone&quot;</span>, 3, 132, 6, 4, 5),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;iron&quot;</span>, 4, 251, 7, 6, 14),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;diamond&quot;</span>, 5, 1562, 8, 8, 10),</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;netherite&quot;</span>, 6, 2032, 9, 9, 15)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        );</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
@@ -140,28 +140,34 @@ $(document).ready(function(){initNavTree('db/d8a/_tool_tier_8php_source.html','.
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $harvestLevel,</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $maxDurability,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $baseAttackPoints,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $baseEfficiency</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    ){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;Enum___construct($name);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> getHarvestLevel() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> $this-&gt;harvestLevel;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMaxDurability() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> $this-&gt;maxDurability;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseAttackPoints() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> $this-&gt;baseAttackPoints;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseEfficiency() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> $this-&gt;baseEfficiency;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $baseEfficiency,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $enchantability</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    ){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;Enum___construct($name);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> getHarvestLevel() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> $this-&gt;harvestLevel;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMaxDurability() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> $this-&gt;maxDurability;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseAttackPoints() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> $this-&gt;baseAttackPoints;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseEfficiency() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> $this-&gt;baseEfficiency;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d8/df8/classpocketmine_1_1item_1_1_tool_tier.html#ab2bdc0f77048dfb4477690b0b5ea8574">   90</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/df8/classpocketmine_1_1item_1_1_tool_tier.html#ab2bdc0f77048dfb4477690b0b5ea8574">getEnchantability</a>() : int{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        return $this-&gt;enchantability;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_tool_tier_html"><div class="ttname"><a href="../../d8/df8/classpocketmine_1_1item_1_1_tool_tier.html">pocketmine\item\ToolTier</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8a/_tool_tier_8php_source.html#l00041">ToolTier.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_tool_tier_html_ab2bdc0f77048dfb4477690b0b5ea8574"><div class="ttname"><a href="../../d8/df8/classpocketmine_1_1item_1_1_tool_tier.html#ab2bdc0f77048dfb4477690b0b5ea8574">pocketmine\item\ToolTier\getEnchantability</a></div><div class="ttdeci">getEnchantability()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8a/_tool_tier_8php_source.html#l00090">ToolTier.php:90</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

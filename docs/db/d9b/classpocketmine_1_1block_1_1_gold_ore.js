@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_gold_ore =
     [ "getDrops", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a5ff21e3f76c6a1b610e25f4012d260d2", null ],
     [ "getDropsForIncompatibleTool", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

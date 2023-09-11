@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_water =
     [ "getDrops", "d2/d3e/classpocketmine_1_1block_1_1_water.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d2/d3e/classpocketmine_1_1block_1_1_water.html#ac1851e83978e72971a81987e819217a1", null ],
     [ "getDropsForIncompatibleTool", "d2/d3e/classpocketmine_1_1block_1_1_water.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d2/d3e/classpocketmine_1_1block_1_1_water.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d2/d3e/classpocketmine_1_1block_1_1_water.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFlowDecayPerBlock", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a71b5f41768ae38c3dc5160b857a4925c", null ],

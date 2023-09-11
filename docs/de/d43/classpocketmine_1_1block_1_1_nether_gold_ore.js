@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_nether_gold_ore =
     [ "getDrops", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a9639a0023765e5e1421bddfa39f911d0", null ],
     [ "getDropsForIncompatibleTool", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

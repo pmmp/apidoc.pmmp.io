@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_lapis_ore =
     [ "getDrops", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#a0950c8823e2dd979370d4dd24bd64a3d", null ],
     [ "getDropsForIncompatibleTool", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

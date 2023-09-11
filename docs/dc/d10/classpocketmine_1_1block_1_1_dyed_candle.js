@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_dyed_candle =
     [ "getDrops", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a4fc01c83e0dd9f7243401c6dada4a5d6", null ],
     [ "getDropsForIncompatibleTool", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

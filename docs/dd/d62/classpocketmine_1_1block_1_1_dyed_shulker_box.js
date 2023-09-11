@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_dyed_shulker_box =
     [ "getDrops", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a34c382f7f1002f8c2674ee69bc3ecb2b", null ],
     [ "getDropsForIncompatibleTool", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

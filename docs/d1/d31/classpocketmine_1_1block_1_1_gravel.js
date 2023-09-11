@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_gravel =
     [ "getDrops", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#ab4e50ca855a680829e28c41870e3d9c0", null ],
     [ "getDropsForIncompatibleTool", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFallDamagePerBlock", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#ae18457fbe5b8124d151afb07c0176628", null ],
     [ "getFlameEncouragement", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],

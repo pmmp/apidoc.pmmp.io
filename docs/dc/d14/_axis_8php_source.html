@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -127,17 +127,14 @@ $(document).ready(function(){initNavTree('dc/d14/_axis_8php_source.html','../../
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">const</span> X = 2;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html#a34f82c5fe724a9e7694561f43ba30f8c">   38</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html#a34f82c5fe724a9e7694561f43ba30f8c">toString</a>(<span class="keywordtype">int</span> $axis) : string{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $result = [</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::Y =&gt; <span class="stringliteral">&quot;y&quot;</span>,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::Z =&gt; <span class="stringliteral">&quot;z&quot;</span>,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::X =&gt; <span class="stringliteral">&quot;x&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        ][$axis] ?? null;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">if</span>($result === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid axis $axis&quot;</span>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        return match($axis){</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            Axis::Y =&gt; <span class="stringliteral">&quot;y&quot;</span>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            Axis::Z =&gt; <span class="stringliteral">&quot;z&quot;</span>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            Axis::X =&gt; <span class="stringliteral">&quot;x&quot;</span>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid axis $axis&quot;</span>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        };</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_html"><div class="ttname"><a href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">pocketmine\math\Axis</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_axis_8php_source.html#l00026">Axis.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_html_a34f82c5fe724a9e7694561f43ba30f8c"><div class="ttname"><a href="../../db/d25/classpocketmine_1_1math_1_1_axis.html#a34f82c5fe724a9e7694561f43ba30f8c">pocketmine\math\Axis\toString</a></div><div class="ttdeci">static toString(int $axis)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_axis_8php_source.html#l00038">Axis.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1math_html"><div class="ttname"><a href="../../d8/db3/namespacepocketmine_1_1math.html">pocketmine\math</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_axis_8php_source.html#l00024">Axis.php:24</a></div></div>

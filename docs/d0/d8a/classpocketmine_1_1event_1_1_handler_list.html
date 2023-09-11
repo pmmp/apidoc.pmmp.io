@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('d0/d8a/classpocketmine_1_1event_1_1_ha
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a45f07472021f19f3e3deb2cff15cabf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a45f07472021f19f3e3deb2cff15cabf4">__construct</a> (private string $class, private ?<a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">HandlerList</a> $parentList)</td></tr>
-<tr class="separator:a45f07472021f19f3e3deb2cff15cabf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a14b52638bc7914af248d00d74fd2a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a1a14b52638bc7914af248d00d74fd2a0">__construct</a> (private string $class, private ?<a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">HandlerList</a> $parentList, private <a class="el" href="../../de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html">RegisteredListenerCache</a> $handlerCache=new <a class="el" href="../../de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html">RegisteredListenerCache</a>())</td></tr>
+<tr class="separator:a1a14b52638bc7914af248d00d74fd2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b65d54ced27643b49605491eeef49c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a4b65d54ced27643b49605491eeef49c7">clear</a> ()</td></tr>
 <tr class="separator:a4b65d54ced27643b49605491eeef49c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9135c11aebc4e754e6eddc7c63dffc1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a9135c11aebc4e754e6eddc7c63dffc1a">getListenerList</a> ()</td></tr>
@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00032">32</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a45f07472021f19f3e3deb2cff15cabf4" name="a45f07472021f19f3e3deb2cff15cabf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45f07472021f19f3e3deb2cff15cabf4">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a1a14b52638bc7914af248d00d74fd2a0" name="a1a14b52638bc7914af248d00d74fd2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a14b52638bc7914af248d00d74fd2a0">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">private ?<a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">HandlerList</a>&#160;</td>
-          <td class="paramname"><em>$parentList</em>&#160;</td>
+          <td class="paramname"><em>$parentList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">private <a class="el" href="../../de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html">RegisteredListenerCache</a>&#160;</td>
+          <td class="paramname"><em>$handlerCache</em> = <code>new&#160;<a class="el" href="../../de/d35/classpocketmine_1_1event_1_1_registered_listener_cache.html">RegisteredListenerCache</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,7 +160,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@phpstan-template TEvent of <a class="el" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a> @phpstan-param class-string&lt;TEvent&gt; $class </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00045">45</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00043">43</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -174,7 +180,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00093">93</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00091">91</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -194,7 +200,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d4/d94/classpocketmine_1_1event_1_1_registered_listener.html">RegisteredListener</a>[] @phpstan-return list&lt;RegisteredListener&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00122">122</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00120">120</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -215,7 +221,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d4/d94/classpocketmine_1_1event_1_1_registered_listener.html">RegisteredListener</a>[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00101">101</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00099">99</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -234,7 +240,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00105">105</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00103">103</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -261,7 +267,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Exception </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00058">58</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00056">56</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -287,7 +293,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00069">69</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00067">67</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -307,7 +313,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00076">76</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00074">74</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>

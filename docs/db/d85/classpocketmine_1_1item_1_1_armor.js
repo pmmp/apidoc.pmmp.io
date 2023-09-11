@@ -1,5 +1,6 @@
 var classpocketmine_1_1item_1_1_armor =
 [
+    [ "__construct", "db/d85/classpocketmine_1_1item_1_1_armor.html#a7285f683cbcc3715086e845c9b6134ba", null ],
     [ "applyDamage", "db/d85/classpocketmine_1_1item_1_1_armor.html#a66d8aa38bb8fd5197eed6335fc48453a", null ],
     [ "canStackWith", "db/d85/classpocketmine_1_1item_1_1_armor.html#a49a05b01faaaf071449c97060fe44926", null ],
     [ "clearCustomBlockData", "db/d85/classpocketmine_1_1item_1_1_armor.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
@@ -20,7 +21,9 @@ var classpocketmine_1_1item_1_1_armor =
     [ "getCooldownTicks", "db/d85/classpocketmine_1_1item_1_1_armor.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getCustomColor", "db/d85/classpocketmine_1_1item_1_1_armor.html#a6264d5648518e33e9789b91cdded4a34", null ],
     [ "getDefensePoints", "db/d85/classpocketmine_1_1item_1_1_armor.html#a07896da81fb0dbdc0d6c7d08187421be", null ],
+    [ "getEnchantability", "db/d85/classpocketmine_1_1item_1_1_armor.html#a7dd04d05b6f85aef3d23e1bb5c8266c4", null ],
     [ "getEnchantmentProtectionFactor", "db/d85/classpocketmine_1_1item_1_1_armor.html#a421d2b2620b0d04ccc672115c404b770", null ],
+    [ "getEnchantmentTags", "db/d85/classpocketmine_1_1item_1_1_armor.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "db/d85/classpocketmine_1_1item_1_1_armor.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "db/d85/classpocketmine_1_1item_1_1_armor.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
     [ "getLore", "db/d85/classpocketmine_1_1item_1_1_armor.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

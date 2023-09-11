@@ -74,6 +74,8 @@ var dir_8c559a8bd664375b6611e00b162a8314 =
     [ "PopSound.php", "d1/de1/_pop_sound_8php_source.html", null ],
     [ "PotionFinishBrewingSound.php", "d2/d45/_potion_finish_brewing_sound_8php_source.html", null ],
     [ "PotionSplashSound.php", "df/de8/_potion_splash_sound_8php_source.html", null ],
+    [ "PressurePlateActivateSound.php", "dc/dde/_pressure_plate_activate_sound_8php_source.html", null ],
+    [ "PressurePlateDeactivateSound.php", "d9/d70/_pressure_plate_deactivate_sound_8php_source.html", null ],
     [ "RecordSound.php", "d9/d5e/_record_sound_8php_source.html", null ],
     [ "RecordStopSound.php", "df/d5c/_record_stop_sound_8php_source.html", null ],
     [ "RedstonePowerOffSound.php", "d9/dab/_redstone_power_off_sound_8php_source.html", null ],

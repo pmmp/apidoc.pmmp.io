@@ -12,6 +12,7 @@ var classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event =
     [ "getOriginalBaseDamage", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#ab85b2c10a6d07dd32f7b0bae2e5416b3", null ],
     [ "getOriginalModifiers", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#a1101a9056f8403897cc065084fb0b51e", null ],
     [ "getVerticalKnockBackLimit", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#a7d25f40d484225c60e0d68f6d5854061", null ],
+    [ "hasHandlers", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
     [ "isCancelled", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
     [ "setAttackCooldown", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#ac8debf34386dc271b819cddd0f88f389", null ],
     [ "setBaseDamage", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html#aae9beb4f56a92a138291b4a554aec092", null ],

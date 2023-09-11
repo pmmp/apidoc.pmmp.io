@@ -16,7 +16,9 @@ var namespacepocketmine_1_1event_1_1block =
     [ "BrewingFuelUseEvent", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event.html", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event" ],
     [ "BrewItemEvent", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event" ],
     [ "ChestPairEvent", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event.html", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event" ],
+    [ "FarmlandHydrationChangeEvent", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event.html", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event" ],
     [ "LeavesDecayEvent", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event.html", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event" ],
+    [ "PressurePlateUpdateEvent", "dd/de2/classpocketmine_1_1event_1_1block_1_1_pressure_plate_update_event.html", "dd/de2/classpocketmine_1_1event_1_1block_1_1_pressure_plate_update_event" ],
     [ "SignChangeEvent", "dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html", "dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event" ],
     [ "StructureGrowEvent", "dd/d17/classpocketmine_1_1event_1_1block_1_1_structure_grow_event.html", "dd/d17/classpocketmine_1_1event_1_1block_1_1_structure_grow_event" ]
 ];

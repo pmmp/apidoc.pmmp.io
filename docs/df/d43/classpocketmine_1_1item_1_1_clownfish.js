@@ -17,6 +17,8 @@ var classpocketmine_1_1item_1_1_clownfish =
     [ "getCanPlaceOn", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
+    [ "getEnchantmentTags", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
     [ "getLore", "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

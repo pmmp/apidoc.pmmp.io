@@ -2,6 +2,7 @@ var dir_0072c29217f03547b57a41ead6d94585 =
 [
     [ "action", "dir_04034b0bd6d53aa53682255ddd0bdeff.html", "dir_04034b0bd6d53aa53682255ddd0bdeff" ],
     [ "CraftingTransaction.php", "d4/dee/_crafting_transaction_8php_source.html", null ],
+    [ "EnchantingTransaction.php", "d9/dad/_enchanting_transaction_8php_source.html", null ],
     [ "InventoryTransaction.php", "dc/d6c/_inventory_transaction_8php_source.html", null ],
     [ "TransactionBuilder.php", "d2/d51/_transaction_builder_8php_source.html", null ],
     [ "TransactionBuilderInventory.php", "d3/d91/_transaction_builder_inventory_8php_source.html", null ],

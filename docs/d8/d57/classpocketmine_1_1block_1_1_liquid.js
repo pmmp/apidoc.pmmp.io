@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_liquid =
     [ "getDrops", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#ac1851e83978e72971a81987e819217a1", null ],
     [ "getDropsForIncompatibleTool", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFlowDecayPerBlock", "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a71b5f41768ae38c3dc5160b857a4925c", null ],

@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_sweet_berry_bush =
     [ "getDrops", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#aa88c9f1456260741e45da643062dc97b", null ],
     [ "getDropsForIncompatibleTool", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

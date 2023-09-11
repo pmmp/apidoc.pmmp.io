@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -117,11 +117,21 @@ $(document).ready(function(){initNavTree('d4/d09/_stone_pressure_plate_8php_sour
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html">StonePressurePlate</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html">SimplePressurePlate</a>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_simple_pressure_plate_html"><div class="ttname"><a href="../../dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html">pocketmine\block\SimplePressurePlate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/_simple_pressure_plate_8php_source.html#l00028">SimplePressurePlate.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_stone_pressure_plate_html"><div class="ttname"><a href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html">pocketmine\block\StonePressurePlate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_stone_pressure_plate_8php_source.html#l00026">StonePressurePlate.php:26</a></div></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> array_filter;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html">StonePressurePlate</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html">SimplePressurePlate</a>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b">   32</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b">filterIrrelevantEntities</a>(array $entities) : array{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        return array_filter($entities, fn(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $e) =&gt; $e instanceof <a class="code hl_class" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">Living</a>); <span class="comment">//TODO: armor stands should activate stone plates too</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_simple_pressure_plate_html"><div class="ttname"><a href="../../dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html">pocketmine\block\SimplePressurePlate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/_simple_pressure_plate_8php_source.html#l00029">SimplePressurePlate.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_stone_pressure_plate_html"><div class="ttname"><a href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html">pocketmine\block\StonePressurePlate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_stone_pressure_plate_8php_source.html#l00030">StonePressurePlate.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_stone_pressure_plate_html_abe0027ac41c0ad5ccf2408731edfb19b"><div class="ttname"><a href="../../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b">pocketmine\block\StonePressurePlate\filterIrrelevantEntities</a></div><div class="ttdeci">filterIrrelevantEntities(array $entities)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/_stone_pressure_plate_8php_source.html#l00032">StonePressurePlate.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00082">Entity.php:82</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00080">Living.php:80</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

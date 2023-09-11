@@ -11,6 +11,7 @@ var dir_e64dd50e80ee3730265ab587bc10b64e =
     [ "EffectIds.php", "da/dd9/_effect_ids_8php_source.html", null ],
     [ "EnchantmentIdMap.php", "d1/d3b/_enchantment_id_map_8php_source.html", null ],
     [ "EnchantmentIds.php", "d8/d93/_enchantment_ids_8php_source.html", null ],
+    [ "IntSaveIdMapTrait.php", "dd/db6/_int_save_id_map_trait_8php_source.html", null ],
     [ "ItemTagToIdMap.php", "d7/db6/_item_tag_to_id_map_8php_source.html", null ],
     [ "LegacyBiomeIdToStringIdMap.php", "d3/da7/_legacy_biome_id_to_string_id_map_8php_source.html", null ],
     [ "LegacyEntityIdToStringIdMap.php", "d3/de1/_legacy_entity_id_to_string_id_map_8php_source.html", null ],

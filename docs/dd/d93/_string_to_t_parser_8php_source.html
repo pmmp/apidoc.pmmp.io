@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -138,26 +138,39 @@ $(document).ready(function(){initNavTree('dd/d93/_string_to_t_parser_8php_source
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $this-&gt;callbackMap[$this-&gt;reprocess($alias)] = $callback;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a8ababe0e0416587312bdf382e7ad8d24">   65</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a8ababe0e0416587312bdf382e7ad8d24">parse</a>(<span class="keywordtype">string</span> $input){</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $key = $this-&gt;reprocess($input);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">if</span>(isset($this-&gt;callbackMap[$key])){</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">return</span> ($this-&gt;callbackMap[$key])($input);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">protected</span> <span class="keyword">function</span> reprocess(<span class="keywordtype">string</span> $input) : string{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        return strtolower(str_replace([<span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot;minecraft:&quot;</span>], [<span class="stringliteral">&quot;_&quot;</span>, <span class="stringliteral">&quot;&quot;</span>], trim($input)));</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#acbed028c72517571d021a8c2bdacb1e8">   79</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#acbed028c72517571d021a8c2bdacb1e8">getKnownAliases</a>() : array{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        return array_keys($this-&gt;callbackMap);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a80661dc43e2a4931cfc304390dba4e5b">   64</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a80661dc43e2a4931cfc304390dba4e5b">registerAlias</a>(<span class="keywordtype">string</span> $existing, <span class="keywordtype">string</span> $alias) : void{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $existingKey = $this-&gt;reprocess($existing);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">if</span>(!isset($this-&gt;callbackMap[$existingKey])){</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Cannot register new alias for unknown existing alias \&quot;$existing\&quot;&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $newKey = $this-&gt;reprocess($alias);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span>(isset($this-&gt;callbackMap[$newKey])){</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Alias \&quot;$newKey\&quot; is already registered&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $this-&gt;callbackMap[$newKey] = $this-&gt;callbackMap[$existingKey];</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a8ababe0e0416587312bdf382e7ad8d24">   80</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a8ababe0e0416587312bdf382e7ad8d24">parse</a>(<span class="keywordtype">string</span> $input){</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $key = $this-&gt;reprocess($input);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span>(isset($this-&gt;callbackMap[$key])){</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> ($this-&gt;callbackMap[$key])($input);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">protected</span> <span class="keyword">function</span> reprocess(<span class="keywordtype">string</span> $input) : string{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        return strtolower(str_replace([<span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot;minecraft:&quot;</span>], [<span class="stringliteral">&quot;_&quot;</span>, <span class="stringliteral">&quot;&quot;</span>], trim($input)));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#acbed028c72517571d021a8c2bdacb1e8">   94</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#acbed028c72517571d021a8c2bdacb1e8">getKnownAliases</a>() : array{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        return array_keys($this-&gt;callbackMap);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_string_to_t_parser_html"><div class="ttname"><a href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html">pocketmine\utils\StringToTParser</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d93/_string_to_t_parser_8php_source.html#l00039">StringToTParser.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_string_to_t_parser_html_a8ababe0e0416587312bdf382e7ad8d24"><div class="ttname"><a href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a8ababe0e0416587312bdf382e7ad8d24">pocketmine\utils\StringToTParser\parse</a></div><div class="ttdeci">parse(string $input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d93/_string_to_t_parser_8php_source.html#l00065">StringToTParser.php:65</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_string_to_t_parser_html_acbed028c72517571d021a8c2bdacb1e8"><div class="ttname"><a href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#acbed028c72517571d021a8c2bdacb1e8">pocketmine\utils\StringToTParser\getKnownAliases</a></div><div class="ttdeci">getKnownAliases()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d93/_string_to_t_parser_8php_source.html#l00079">StringToTParser.php:79</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_string_to_t_parser_html_a80661dc43e2a4931cfc304390dba4e5b"><div class="ttname"><a href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a80661dc43e2a4931cfc304390dba4e5b">pocketmine\utils\StringToTParser\registerAlias</a></div><div class="ttdeci">registerAlias(string $existing, string $alias)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d93/_string_to_t_parser_8php_source.html#l00064">StringToTParser.php:64</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_string_to_t_parser_html_a8ababe0e0416587312bdf382e7ad8d24"><div class="ttname"><a href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#a8ababe0e0416587312bdf382e7ad8d24">pocketmine\utils\StringToTParser\parse</a></div><div class="ttdeci">parse(string $input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d93/_string_to_t_parser_8php_source.html#l00080">StringToTParser.php:80</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_string_to_t_parser_html_acbed028c72517571d021a8c2bdacb1e8"><div class="ttname"><a href="../../d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html#acbed028c72517571d021a8c2bdacb1e8">pocketmine\utils\StringToTParser\getKnownAliases</a></div><div class="ttdeci">getKnownAliases()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d93/_string_to_t_parser_8php_source.html#l00094">StringToTParser.php:94</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_wooden_fence =
     [ "getDrops", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#a8286f65854c6998a5309e2f7f674deda", null ],
     [ "getFlammability", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#a4e8273f77a77e1c783d196d2136e1c10", null ],
     [ "getFrictionFactor", "d3/de8/classpocketmine_1_1block_1_1_wooden_fence.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_coal =
     [ "getDrops", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#a933719b4e55e8802018d3cb5c8ca7fc3", null ],
     [ "getFlammability", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#a50dbddc8639aadecf2f38c1feca32ec0", null ],
     [ "getFrictionFactor", "dc/d4c/classpocketmine_1_1block_1_1_coal.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

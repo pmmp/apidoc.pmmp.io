@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('de/dc3/classpocketmine_1_1nbt_1_1_base
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/classpocketmine_1_1nbt_1_1_base_nbt_serializer__coll__graph.svg" width="430" height="566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d36/classpocketmine_1_1nbt_1_1_base_nbt_serializer__coll__graph.svg" width="430" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9429edeaba3b6d693b7e1b10d743639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e77e502f65b5c08a476814ca358c9e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html#a0e77e502f65b5c08a476814ca358c9e6">readFloat</a> ()</td></tr>
 <tr class="separator:a0e77e502f65b5c08a476814ca358c9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6145a6d924b192576612fb364dfb66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc3/classpocketmine_1_1nbt_1_1_base_nbt_serializer.html#a8b6145a6d924b192576612fb364dfb66">readHeadless</a> (string $buffer, int $rootType, int &amp;$offset=0, int $maxDepth=0)</td></tr>
+<tr class="separator:a8b6145a6d924b192576612fb364dfb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79919871e8718124793c91bc311fcf38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html#a79919871e8718124793c91bc311fcf38">readInt</a> ()</td></tr>
 <tr class="separator:a79919871e8718124793c91bc311fcf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89696f46788fde8bc81e9d40b533409"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html#ae89696f46788fde8bc81e9d40b533409">readIntArray</a> ()</td></tr>
@@ -154,6 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a000ef55062982c3ea93bcacb639f7662"><td class="memItemLeft" align="right" valign="top"><a id="a000ef55062982c3ea93bcacb639f7662" name="a000ef55062982c3ea93bcacb639f7662"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>writeFloat</b> (float $v)</td></tr>
 <tr class="separator:a000ef55062982c3ea93bcacb639f7662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5484f8798e35c2d3c858b48925c0d0e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc3/classpocketmine_1_1nbt_1_1_base_nbt_serializer.html#a5484f8798e35c2d3c858b48925c0d0e0">writeHeadless</a> (<a class="el" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> $data)</td></tr>
+<tr class="separator:a5484f8798e35c2d3c858b48925c0d0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13a534e6b1e257204a912ec345323f61"><td class="memItemLeft" align="right" valign="top"><a id="a13a534e6b1e257204a912ec345323f61" name="a13a534e6b1e257204a912ec345323f61"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>writeInt</b> (int $v)</td></tr>
 <tr class="separator:a13a534e6b1e257204a912ec345323f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,7 +189,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base Named Binary Tag encoder/decoder </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00034">34</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00035">35</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af49ee3c8af054ded4e787370e8239c4b" name="af49ee3c8af054ded4e787370e8239c4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af49ee3c8af054ded4e787370e8239c4b">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -202,7 +206,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00038">38</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00039">39</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -237,7 +241,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00153">153</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00185">185</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -272,7 +276,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00163">163</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00195">195</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -321,7 +325,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00063">63</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00064">64</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -348,7 +352,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html#a186b90aba9cfcf06af88dff5d39c984e">pocketmine\nbt\NbtStreamReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00125">125</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00157">157</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -375,7 +379,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html#a16f2046b784b45b8ba52ac8bdada95eb">pocketmine\nbt\NbtStreamReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00137">137</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00169">169</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -442,6 +446,56 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer.html#a83ebddb08fb3a002c138123f23b66838">pocketmine\network\mcpe\protocol\serializer\NetworkNbtSerializer</a>, <a class="el" href="../../d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#a449f6faefb93e8f51d8a1b5133923e6c">pocketmine\nbt\BigEndianNbtSerializer</a>, and <a class="el" href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a910d2ce70c4c1b32aab03596bacfa55d">pocketmine\nbt\LittleEndianNbtSerializer</a>.</p>
+
+</div>
+</div>
+<a id="a8b6145a6d924b192576612fb364dfb66" name="a8b6145a6d924b192576612fb364dfb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b6145a6d924b192576612fb364dfb66">&#9670;&nbsp;</a></span>readHeadless()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\nbt\BaseNbtSerializer::readHeadless </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$rootType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>$offset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$maxDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Reads a tag without a header from the buffer and returns it. The tag does not have a name, and the type is not specified by the binary data. Only the tag's raw binary value is present. This could be used if the expected root type is always the same.</p>
+<p >This format is not usually seen in the wild, but it is used in some places in the Minecraft: Bedrock network protocol.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">NbtDataException</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00087">87</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -580,7 +634,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00084">84</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00104">104</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -640,7 +694,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html#a6bc9d8de2d5572125fb3a1fe0b2cc61f">pocketmine\nbt\NbtStreamReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00129">129</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00161">161</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -702,7 +756,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer.html#ad638bfff343cb30711c50863bb65cd5b">pocketmine\network\mcpe\protocol\serializer\NetworkNbtSerializer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00170">170</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00202">202</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -722,7 +776,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00106">106</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00126">126</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -744,7 +798,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d36/interfacepocketmine_1_1nbt_1_1_nbt_stream_writer.html">pocketmine\nbt\NbtStreamWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00133">133</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00165">165</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -766,7 +820,29 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d36/interfacepocketmine_1_1nbt_1_1_nbt_stream_writer.html">pocketmine\nbt\NbtStreamWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00145">145</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00177">177</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+
+</div>
+</div>
+<a id="a5484f8798e35c2d3c858b48925c0d0e0" name="a5484f8798e35c2d3c858b48925c0d0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5484f8798e35c2d3c858b48925c0d0e0">&#9670;&nbsp;</a></span>writeHeadless()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\nbt\BaseNbtSerializer::writeHeadless </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a>&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Writes a nameless tag without any header information. The reader of the data must know what type to expect, as it is not specified in the data.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/dc3/classpocketmine_1_1nbt_1_1_base_nbt_serializer.html#a8b6145a6d924b192576612fb364dfb66">BaseNbtSerializer::readHeadless()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00140">140</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -826,7 +902,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00117">117</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00149">149</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -857,7 +933,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer.html#aa66917d76a56dab75df8b4c78676b612">pocketmine\network\mcpe\protocol\serializer\NetworkNbtSerializer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00177">177</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00209">209</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>
@@ -882,7 +958,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00036">36</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html#l00037">37</a> of file <a class="el" href="../../de/d86/_base_nbt_serializer_8php_source.html">BaseNbtSerializer.php</a>.</p>
 
 </div>
 </div>

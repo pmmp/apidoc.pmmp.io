@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -117,9 +117,9 @@ $(document).ready(function(){initNavTree('d5/d89/_glow_lichen_8php_source.html',
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">pocketmine\event\block\BlockSpreadEvent</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html">pocketmine\block\utils\BlockEventHelper</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">pocketmine\item\Fertilizer</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a>;</div>
@@ -250,117 +250,110 @@ $(document).ready(function(){initNavTree('d5/d89/_glow_lichen_8php_source.html',
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        }</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        $ev = <span class="keyword">new</span> BlockSpreadEvent($replacedBlock, $this, $replacementBlock);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">if</span>(!$ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            $world-&gt;setBlock($replacedBlock-&gt;getPosition(), $ev-&gt;getNewState());</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> getShuffledSpreadFaces(<span class="keywordtype">int</span> $sourceFace) : \Generator{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $skipAxis = Facing::axis($sourceFace);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        $faces = Facing::ALL;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        shuffle($faces);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">foreach</span>($faces as $spreadFace){</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keywordflow">if</span>(Facing::axis($spreadFace) !== $skipAxis){</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                yield $spreadFace;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">private</span> <span class="keyword">function</span> spreadAroundSupport(<span class="keywordtype">int</span> $sourceFace) : bool{</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $world = $this-&gt;position-&gt;getWorld();</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        $supportPos = $this-&gt;position-&gt;getSide($sourceFace);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">foreach</span>(self::getShuffledSpreadFaces($sourceFace) as $spreadFace){</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            $replacePos = $supportPos-&gt;getSide($spreadFace);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <span class="keywordflow">if</span>($this-&gt;spread($world, $replacePos, Facing::opposite($spreadFace))){</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">private</span> <span class="keyword">function</span> spreadAdjacentToSupport(<span class="keywordtype">int</span> $sourceFace) : bool{</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        $world = $this-&gt;position-&gt;getWorld();</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">foreach</span>(self::getShuffledSpreadFaces($sourceFace) as $spreadFace){</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            $replacePos = $this-&gt;position-&gt;getSide($spreadFace);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            <span class="keywordflow">if</span>($this-&gt;spread($world, $replacePos, $sourceFace)){</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            }</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span> BlockEventHelper::spread($replacedBlock, $replacementBlock, $this);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> getShuffledSpreadFaces(<span class="keywordtype">int</span> $sourceFace) : \Generator{</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        $skipAxis = Facing::axis($sourceFace);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        $faces = Facing::ALL;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        shuffle($faces);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">foreach</span>($faces as $spreadFace){</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="keywordflow">if</span>(Facing::axis($spreadFace) !== $skipAxis){</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                yield $spreadFace;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">private</span> <span class="keyword">function</span> spreadAroundSupport(<span class="keywordtype">int</span> $sourceFace) : bool{</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        $supportPos = $this-&gt;position-&gt;getSide($sourceFace);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">foreach</span>(self::getShuffledSpreadFaces($sourceFace) as $spreadFace){</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            $replacePos = $supportPos-&gt;getSide($spreadFace);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span>($this-&gt;spread($world, $replacePos, Facing::opposite($spreadFace))){</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">private</span> <span class="keyword">function</span> spreadAdjacentToSupport(<span class="keywordtype">int</span> $sourceFace) : bool{</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">foreach</span>(self::getShuffledSpreadFaces($sourceFace) as $spreadFace){</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            $replacePos = $this-&gt;position-&gt;getSide($spreadFace);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">if</span>($this-&gt;spread($world, $replacePos, $sourceFace)){</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keyword">private</span> <span class="keyword">function</span> spreadWithinSelf(<span class="keywordtype">int</span> $sourceFace) : bool{</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        foreach(self::getShuffledSpreadFaces($sourceFace) as $spreadFace){</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keywordflow">if</span>(!$this-&gt;hasFace($spreadFace) &amp;&amp; $this-&gt;spread($this-&gt;position-&gt;getWorld(), $this-&gt;position, $spreadFace)){</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        }</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">private</span> <span class="keyword">function</span> spreadWithinSelf(<span class="keywordtype">int</span> $sourceFace) : bool{</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        foreach(self::getShuffledSpreadFaces($sourceFace) as $spreadFace){</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <span class="keywordflow">if</span>(!$this-&gt;hasFace($spreadFace) &amp;&amp; $this-&gt;spread($this-&gt;position-&gt;getWorld(), $this-&gt;position, $spreadFace)){</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9f1a594e1821b190423f067b6f151940">  230</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9f1a594e1821b190423f067b6f151940">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>, array &amp;$returnedItems = []) : bool{</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        if($item instanceof <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">Fertilizer</a> &amp;&amp; count($this-&gt;faces) &gt; 0){</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            $shuffledFaces = $this-&gt;faces;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            shuffle($shuffledFaces);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9f1a594e1821b190423f067b6f151940">  223</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9f1a594e1821b190423f067b6f151940">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>, array &amp;$returnedItems = []) : bool{</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        if($item instanceof <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">Fertilizer</a> &amp;&amp; count($this-&gt;faces) &gt; 0){</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            $shuffledFaces = $this-&gt;faces;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            shuffle($shuffledFaces);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            $spreadMethods = [</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                $this-&gt;spreadAroundSupport(...),</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                $this-&gt;spreadAdjacentToSupport(...),</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                $this-&gt;spreadWithinSelf(...),</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            ];</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            shuffle($spreadMethods);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            $spreadMethods = [</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                $this-&gt;spreadAroundSupport(...),</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                $this-&gt;spreadAdjacentToSupport(...),</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                $this-&gt;spreadWithinSelf(...),</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            ];</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            shuffle($spreadMethods);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">foreach</span>($shuffledFaces as $sourceFace){</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                <span class="keywordflow">foreach</span>($spreadMethods as $spreadMethod){</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    <span class="keywordflow">if</span>($spreadMethod($sourceFace)){</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                        $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a67b44433c553602d7c851b1ca23e6e5e">pop</a>();</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                        <span class="keywordflow">break</span> 2;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                    }</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">foreach</span>($shuffledFaces as $sourceFace){</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                <span class="keywordflow">foreach</span>($spreadMethods as $spreadMethod){</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    <span class="keywordflow">if</span>($spreadMethod($sourceFace)){</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                        $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a67b44433c553602d7c851b1ca23e6e5e">pop</a>();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                        <span class="keywordflow">break</span> 2;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669">  249</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669">getDrops</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        if(($item-&gt;getBlockToolType() &amp; <a class="code hl_class" href="../../dd/d5a/classpocketmine_1_1block_1_1_block_tool_type.html">BlockToolType</a>::SHEARS) !== 0){</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keywordflow">return</span> $this-&gt;getDropsForCompatibleTool($item);</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        }</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669">  256</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669">getDrops</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        if(($item-&gt;getBlockToolType() &amp; <a class="code hl_class" href="../../dd/d5a/classpocketmine_1_1block_1_1_block_tool_type.html">BlockToolType</a>::SHEARS) !== 0){</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <span class="keywordflow">return</span> $this-&gt;getDropsForCompatibleTool($item);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">return</span> [];</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda">  257</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda">getFlameEncouragement</a>() : int{</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        return 15;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">return</span> [];</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    }</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda">  264</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda">getFlameEncouragement</a>() : int{</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        return 15;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc">  268</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc">getFlammability</a>() : int{</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        return 100;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    }</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keyword">private</span> <span class="keyword">function</span> getAvailableFaces() : array{</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        $faces = [];</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <span class="keywordflow">foreach</span>(Facing::ALL as $face){</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">if</span>(!$this-&gt;hasFace($face) &amp;&amp; $this-&gt;getAdjacentSupportType($face)-&gt;equals(SupportType::FULL())){</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                $faces[$face] = $face;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <span class="keywordflow">return</span> $faces;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00058">Block.php:58</a></div></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc">  261</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc">getFlammability</a>() : int{</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        return 100;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keyword">private</span> <span class="keyword">function</span> getAvailableFaces() : array{</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        $faces = [];</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordflow">foreach</span>(Facing::ALL as $face){</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">if</span>(!$this-&gt;hasFace($face) &amp;&amp; $this-&gt;getAdjacentSupportType($face)-&gt;equals(SupportType::FULL())){</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                $faces[$face] = $face;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">return</span> $faces;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00061">Block.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_tool_type_html"><div class="ttname"><a href="../../dd/d5a/classpocketmine_1_1block_1_1_block_tool_type.html">pocketmine\block\BlockToolType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d37/_block_tool_type_8php_source.html#l00030">BlockToolType.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html">pocketmine\block\GlowLichen</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00041">GlowLichen.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a44382e3a60b71504f2dd0891bf80080b"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a44382e3a60b71504f2dd0891bf80080b">pocketmine\block\GlowLichen\describeBlockOnlyState</a></div><div class="ttdeci">describeBlockOnlyState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00046">GlowLichen.php:46</a></div></div>
@@ -369,26 +362,26 @@ $(document).ready(function(){initNavTree('d5/d89/_glow_lichen_8php_source.html',
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a5fce0dba05d878b3836c3492868b6798"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a5fce0dba05d878b3836c3492868b6798">pocketmine\block\GlowLichen\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00093">GlowLichen.php:93</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a6393586a23a9f3531a9f00238bf9ce43"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a6393586a23a9f3531a9f00238bf9ce43">pocketmine\block\GlowLichen\place</a></div><div class="ttdeci">place(BlockTransaction $tx, Item $item, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00105">GlowLichen.php:105</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a66c0370bca3d08230ee560b3dede7362"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a66c0370bca3d08230ee560b3dede7362">pocketmine\block\GlowLichen\setFace</a></div><div class="ttdeci">setFace(int $face, bool $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00072">GlowLichen.php:72</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a7bf80112d0fcb7b576abc45775527fda"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda">pocketmine\block\GlowLichen\getFlameEncouragement</a></div><div class="ttdeci">getFlameEncouragement()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00264">GlowLichen.php:264</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a7bf80112d0fcb7b576abc45775527fda"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda">pocketmine\block\GlowLichen\getFlameEncouragement</a></div><div class="ttdeci">getFlameEncouragement()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00257">GlowLichen.php:257</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a7d6188d81109419b369b66af2d7fe2e8"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7d6188d81109419b369b66af2d7fe2e8">pocketmine\block\GlowLichen\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00097">GlowLichen.php:97</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a802c400109b8be7314170f427125f669"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669">pocketmine\block\GlowLichen\getDrops</a></div><div class="ttdeci">getDrops(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00256">GlowLichen.php:256</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a802c400109b8be7314170f427125f669"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a802c400109b8be7314170f427125f669">pocketmine\block\GlowLichen\getDrops</a></div><div class="ttdeci">getDrops(Item $item)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00249">GlowLichen.php:249</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a976e8666c96fcc4fc02cb4d800072e33"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a976e8666c96fcc4fc02cb4d800072e33">pocketmine\block\GlowLichen\canBeReplaced</a></div><div class="ttdeci">canBeReplaced()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00101">GlowLichen.php:101</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a9f1a594e1821b190423f067b6f151940"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9f1a594e1821b190423f067b6f151940">pocketmine\block\GlowLichen\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00230">GlowLichen.php:230</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_a9f1a594e1821b190423f067b6f151940"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9f1a594e1821b190423f067b6f151940">pocketmine\block\GlowLichen\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00223">GlowLichen.php:223</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_aa829e409491aa75e7cb1949c4af66c0c"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#aa829e409491aa75e7cb1949c4af66c0c">pocketmine\block\GlowLichen\setFaces</a></div><div class="ttdeci">setFaces(array $faces)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00061">GlowLichen.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_ab577287957bc7ec3a8a1708d77aae413"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#ab577287957bc7ec3a8a1708d77aae413">pocketmine\block\GlowLichen\getFaces</a></div><div class="ttdeci">getFaces()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00051">GlowLichen.php:51</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_abb40b151e3cbf6247cb1ec1c5f28d5bc"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc">pocketmine\block\GlowLichen\getFlammability</a></div><div class="ttdeci">getFlammability()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00268">GlowLichen.php:268</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_glow_lichen_html_abb40b151e3cbf6247cb1ec1c5f28d5bc"><div class="ttname"><a href="../../d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc">pocketmine\block\GlowLichen\getFlammability</a></div><div class="ttdeci">getFlammability()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d89/_glow_lichen_8php_source.html#l00261">GlowLichen.php:261</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_block_event_helper_html"><div class="ttname"><a href="../../d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html">pocketmine\block\utils\BlockEventHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de3/_block_event_helper_8php_source.html#l00039">BlockEventHelper.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_support_type_html"><div class="ttname"><a href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da3/_support_type_8php_source.html#l00039">SupportType.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_block_spread_event_html"><div class="ttname"><a href="../../d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html">pocketmine\event\block\BlockSpreadEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5e/_block_spread_event_8php_source.html#l00031">BlockSpreadEvent.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_fertilizer_html"><div class="ttname"><a href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">pocketmine\item\Fertilizer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_fertilizer_8php_source.html#l00026">Fertilizer.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html_a67b44433c553602d7c851b1ca23e6e5e"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a67b44433c553602d7c851b1ca23e6e5e">pocketmine\item\Item\pop</a></div><div class="ttdeci">pop(int $count=1)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00427">Item.php:427</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html_a67b44433c553602d7c851b1ca23e6e5e"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a67b44433c553602d7c851b1ca23e6e5e">pocketmine\item\Item\pop</a></div><div class="ttdeci">pop(int $count=1)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00430">Item.php:430</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_aligned_b_b_html"><div class="ttname"><a href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d87/_axis_aligned_b_b_8php_source.html#l00029">AxisAlignedBB.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00166">Player.php:166</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00168">Player.php:168</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_block_transaction_html"><div class="ttname"><a href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">pocketmine\world\BlockTransaction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/_block_transaction_8php_source.html#l00030">BlockTransaction.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00145">World.php:145</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d88/_world_8php_source.html#l00147">World.php:147</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer_html"><div class="ttname"><a href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3f/_runtime_data_describer_8php_source.html#l00038">RuntimeDataDescriber.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

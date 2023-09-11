@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_snow_layer =
     [ "getDrops", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a2e9ceecbe64d2829f0e6747b800956dd", null ],
     [ "getDropsForIncompatibleTool", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFallDamagePerBlock", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ae18457fbe5b8124d151afb07c0176628", null ],
     [ "getFlameEncouragement", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],

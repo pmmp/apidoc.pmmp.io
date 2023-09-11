@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_nether_wart_plant =
     [ "getDrops", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad", null ],
     [ "getDropsForIncompatibleTool", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

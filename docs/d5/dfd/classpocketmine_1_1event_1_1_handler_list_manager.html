@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d5/dfd/classpocketmine_1_1event_1_1_ha
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d2c/classpocketmine_1_1event_1_1_handler_list_manager__coll__graph.svg" width="206" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d2c/classpocketmine_1_1event_1_1_handler_list_manager__coll__graph.svg" width="206" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -109,6 +109,8 @@ $(document).ready(function(){initNavTree('d5/dfd/classpocketmine_1_1event_1_1_ha
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac32cd66f6b5669d57c16998c9c4e1166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html#ac32cd66f6b5669d57c16998c9c4e1166">getAll</a> ()</td></tr>
 <tr class="separator:ac32cd66f6b5669d57c16998c9c4e1166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c828a2ff7a62bae0c5d71e0d925347"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html#aa4c828a2ff7a62bae0c5d71e0d925347">getHandlersFor</a> (string $event)</td></tr>
+<tr class="separator:aa4c828a2ff7a62bae0c5d71e0d925347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84fb27ff29fdbac1660d64aaed43d65a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html#a84fb27ff29fdbac1660d64aaed43d65a">getListFor</a> (string $event)</td></tr>
 <tr class="separator:a84fb27ff29fdbac1660d64aaed43d65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b05842928f5d063b6882f4b556f434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html#af5b05842928f5d063b6882f4b556f434">unregisterAll</a> (<a class="el" href="../../d4/d94/classpocketmine_1_1event_1_1_registered_listener.html">RegisteredListener</a>|<a class="el" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a>|<a class="el" href="../../d2/d5e/interfacepocketmine_1_1event_1_1_listener.html">Listener</a>|null $object=null)</td></tr>
@@ -139,7 +141,29 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html">HandlerList</a>[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00107">107</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00130">130</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+
+</div>
+</div>
+<a id="aa4c828a2ff7a62bae0c5d71e0d925347" name="aa4c828a2ff7a62bae0c5d71e0d925347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c828a2ff7a62bae0c5d71e0d925347">&#9670;&nbsp;</a></span>getHandlersFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\event\HandlerListManager::getHandlersFor </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >@phpstan-template TEvent of <a class="el" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a> @phpstan-param class-string&lt;TEvent&gt; $event</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d4/d94/classpocketmine_1_1event_1_1_registered_listener.html">RegisteredListener</a>[] </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00121">121</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>
@@ -175,7 +199,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00090">90</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00095">95</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>
@@ -223,7 +247,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Unregisters all the listeners If a Plugin or <a class="el" href="../../d2/d5e/interfacepocketmine_1_1event_1_1_listener.html">Listener</a> is passed, all the listeners with that object will be removed </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00044">44</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00049">49</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>

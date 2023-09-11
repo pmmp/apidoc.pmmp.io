@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.4.4 git-19e3d339f6c119fb30b49e2a502b69882fee310f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
    </div>
   </td>
  </tr>
@@ -118,43 +118,50 @@ $(document).ready(function(){initNavTree('d4/dee/_event_8php_source.html','../..
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d3/daf/namespacepocketmine_1_1event.html">pocketmine\event</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> get_class;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">   32</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> <span class="keyword">const</span> MAX_EVENT_CALL_DEPTH = 50;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $eventCallDepth = 1;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">protected</span> ?<span class="keywordtype">string</span> $eventName = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">function</span> getEventName() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> $this-&gt;eventName ?? get_class($this);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">call</a>() : void{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        if(self::$eventCallDepth &gt;= self::MAX_EVENT_CALL_DEPTH){</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="comment">//this exception will be caught by the parent event call if all else fails</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Recursive event call detected (reached max depth of &quot;</span> . self::MAX_EVENT_CALL_DEPTH . <span class="stringliteral">&quot; calls)&quot;</span>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $timings = Timings::getEventTimings($this);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $timings-&gt;startTiming();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $handlerList = HandlerListManager::global()-&gt;getListFor(get_class($this));</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        ++self::$eventCallDepth;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">foreach</span>($handlerList-&gt;getListenerList() as $registration){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                $registration-&gt;callEvent($this);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }<span class="keywordflow">finally</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            --self::$eventCallDepth;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $timings-&gt;stopTiming();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">pocketmine\event\Event</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00032">Event.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html_a3d979a673428c9ae66e1039bf796e945"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">pocketmine\event\Event\call</a></div><div class="ttdeci">call()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00048">Event.php:48</a></div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> get_class;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">   33</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">Event</a>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keyword">const</span> MAX_EVENT_CALL_DEPTH = 50;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $eventCallDepth = 1;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">protected</span> ?<span class="keywordtype">string</span> $eventName = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">function</span> getEventName() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this-&gt;eventName ?? get_class($this);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">call</a>() : void{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        if(self::$eventCallDepth &gt;= self::MAX_EVENT_CALL_DEPTH){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="comment">//this exception will be caught by the parent event call if all else fails</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Recursive event call detected (reached max depth of &quot;</span> . self::MAX_EVENT_CALL_DEPTH . <span class="stringliteral">&quot; calls)&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $timings = Timings::getEventTimings($this);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $timings-&gt;startTiming();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $handlers = HandlerListManager::global()-&gt;getHandlersFor(static::class);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        ++self::$eventCallDepth;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">foreach</span>($handlers as $registration){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                $registration-&gt;callEvent($this);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }<span class="keywordflow">finally</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            --self::$eventCallDepth;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            $timings-&gt;stopTiming();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a9720c24a4971d7d2b9838e567ce7ec91">   77</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a9720c24a4971d7d2b9838e567ce7ec91">hasHandlers</a>() : bool{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        return count(<a class="code hl_class" href="../../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html">HandlerListManager</a>::global()-&gt;getHandlersFor(static::class)) &gt; 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html">pocketmine\event\Event</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00033">Event.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html_a3d979a673428c9ae66e1039bf796e945"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">pocketmine\event\Event\call</a></div><div class="ttdeci">call()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00049">Event.php:49</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1_event_html_a9720c24a4971d7d2b9838e567ce7ec91"><div class="ttname"><a href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a9720c24a4971d7d2b9838e567ce7ec91">pocketmine\event\Event\hasHandlers</a></div><div class="ttdeci">static hasHandlers()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/_event_8php_source.html#l00077">Event.php:77</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1_handler_list_manager_html"><div class="ttname"><a href="../../d5/dfd/classpocketmine_1_1event_1_1_handler_list_manager.html">pocketmine\event\HandlerListManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da6/_handler_list_manager_8php_source.html#l00029">HandlerListManager.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_html"><div class="ttname"><a href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da0/_timings_8php_source.html#l00037">Timings.php:37</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html">pocketmine\event</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

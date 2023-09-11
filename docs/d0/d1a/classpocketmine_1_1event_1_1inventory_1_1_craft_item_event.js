@@ -7,5 +7,6 @@ var classpocketmine_1_1event_1_1inventory_1_1_craft_item_event =
     [ "getRecipe", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a85a11a83b458c1f26d838ee2640b3255", null ],
     [ "getRepetitions", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a4b0c38d5a2b276770cc269a027cb2596", null ],
     [ "getTransaction", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a158450ab1922fe39b322b9c9e9e92dc8", null ],
+    [ "hasHandlers", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
     [ "isCancelled", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html#a90efcab0d539a5cb5b17968dfa164017", null ]
 ];

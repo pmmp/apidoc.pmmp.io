@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_diamond_ore =
     [ "getDrops", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#abf51498c2c3a0db10742859888a125f5", null ],
     [ "getDropsForIncompatibleTool", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

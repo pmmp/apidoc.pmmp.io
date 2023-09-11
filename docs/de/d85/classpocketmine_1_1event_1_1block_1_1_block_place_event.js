@@ -4,5 +4,6 @@ var classpocketmine_1_1event_1_1block_1_1_block_place_event =
     [ "getItem", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#ab02d04685762f60601967c920566605b", null ],
     [ "getPlayer", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#aad2f55c09d5ab65313386cbcf9c0f602", null ],
     [ "getTransaction", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#ae1e9ee158a7b2e1f3097216ee6e11070", null ],
+    [ "hasHandlers", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
     [ "isCancelled", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a90efcab0d539a5cb5b17968dfa164017", null ]
 ];

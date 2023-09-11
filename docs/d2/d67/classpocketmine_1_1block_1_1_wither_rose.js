@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_wither_rose =
     [ "getDrops", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#a8289e6dd87d88b2237da36cb9bd4164e", null ],
     [ "getFlammability", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#a755b53fc95f6f35fbb823b00be529c92", null ],
     [ "getFrictionFactor", "d2/d67/classpocketmine_1_1block_1_1_wither_rose.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

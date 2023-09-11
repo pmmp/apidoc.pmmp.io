@@ -16,6 +16,8 @@ var classpocketmine_1_1item_1_1_bamboo =
     [ "getCanPlaceOn", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#a2ce778f940de9e172cd268f378893b8f", null ],
     [ "getCooldownTicks", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
+    [ "getEnchantability", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
+    [ "getEnchantmentTags", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
     [ "getFuelTime", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#ad5c6364cdb15311d03c2516960790c2c", null ],
     [ "getLore", "d8/d07/classpocketmine_1_1item_1_1_bamboo.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],

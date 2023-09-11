@@ -192,6 +192,8 @@ var namespacepocketmine_1_1world =
       [ "PopSound", "dd/d55/classpocketmine_1_1world_1_1sound_1_1_pop_sound.html", "dd/d55/classpocketmine_1_1world_1_1sound_1_1_pop_sound" ],
       [ "PotionFinishBrewingSound", "d8/de9/classpocketmine_1_1world_1_1sound_1_1_potion_finish_brewing_sound.html", "d8/de9/classpocketmine_1_1world_1_1sound_1_1_potion_finish_brewing_sound" ],
       [ "PotionSplashSound", "de/d02/classpocketmine_1_1world_1_1sound_1_1_potion_splash_sound.html", "de/d02/classpocketmine_1_1world_1_1sound_1_1_potion_splash_sound" ],
+      [ "PressurePlateActivateSound", "d1/dc5/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_activate_sound.html", "d1/dc5/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_activate_sound" ],
+      [ "PressurePlateDeactivateSound", "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound.html", "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound" ],
       [ "RecordSound", "d1/d36/classpocketmine_1_1world_1_1sound_1_1_record_sound.html", "d1/d36/classpocketmine_1_1world_1_1sound_1_1_record_sound" ],
       [ "RecordStopSound", "d7/d19/classpocketmine_1_1world_1_1sound_1_1_record_stop_sound.html", "d7/d19/classpocketmine_1_1world_1_1sound_1_1_record_stop_sound" ],
       [ "RedstonePowerOffSound", "d6/d02/classpocketmine_1_1world_1_1sound_1_1_redstone_power_off_sound.html", "d6/d02/classpocketmine_1_1world_1_1sound_1_1_redstone_power_off_sound" ],

@@ -22,6 +22,7 @@ var classpocketmine_1_1block_1_1_water_lily =
     [ "getDrops", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
     [ "getDropsForCompatibleTool", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
+    [ "getEnchantmentTags", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d5/dd1/classpocketmine_1_1block_1_1_water_lily.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],

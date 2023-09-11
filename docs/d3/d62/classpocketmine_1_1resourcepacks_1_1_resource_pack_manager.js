@@ -8,5 +8,6 @@ var classpocketmine_1_1resourcepacks_1_1_resource_pack_manager =
     [ "getResourceStack", "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#a4ce0d2f8ffe46e419cf2cd7462d0c74f", null ],
     [ "resourcePacksRequired", "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#a78dbf2cda79c69b7319ca96e8493e85d", null ],
     [ "setPackEncryptionKey", "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#a7708fc76fbf4dba42646ed9d0dbdf43e", null ],
+    [ "setResourcePacksRequired", "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#a8068fd36aed54903d4f8b12672209b40", null ],
     [ "setResourceStack", "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#ac09e132937e19e20c443051f93001a0d", null ]
 ];

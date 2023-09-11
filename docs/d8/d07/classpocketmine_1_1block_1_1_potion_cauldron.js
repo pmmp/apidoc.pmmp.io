@@ -26,6 +26,7 @@ var classpocketmine_1_1block_1_1_potion_cauldron =
     [ "getDropsForCompatibleTool", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEmptySound", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#ade2936561febddb459fb9c03930837cf", null ],
+    [ "getEnchantmentTags", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFillSound", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#ac364d6fa2be045c1fb7993de75f1939a", null ],
     [ "getFlameEncouragement", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d8/d07/classpocketmine_1_1block_1_1_potion_cauldron.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],

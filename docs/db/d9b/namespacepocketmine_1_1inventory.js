@@ -9,6 +9,7 @@ var namespacepocketmine_1_1inventory =
         [ "SlotChangeAction", "d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html", "d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action" ]
       ] ],
       [ "CraftingTransaction", "db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction.html", "db/d5b/classpocketmine_1_1inventory_1_1transaction_1_1_crafting_transaction" ],
+      [ "EnchantingTransaction", "d1/d68/classpocketmine_1_1inventory_1_1transaction_1_1_enchanting_transaction.html", "d1/d68/classpocketmine_1_1inventory_1_1transaction_1_1_enchanting_transaction" ],
       [ "InventoryTransaction", "d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html", "d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction" ],
       [ "TransactionBuilder", "d6/de0/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder.html", "d6/de0/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder" ],
       [ "TransactionBuilderInventory", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory" ],
