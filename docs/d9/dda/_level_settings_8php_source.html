@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.1 git-c028bb9055c28aa9e64349fc42cd341d4a2e930c</span>
    </div>
   </td>
  </tr>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('d9/dda/_level_settings_8php_source.htm
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $difficulty;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">BlockPosition</a> $spawnPosition;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> $hasAchievementsDisabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> $isEditorMode = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $editorWorldType = EditorWorldType::NON_EDITOR;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> $createdInEditorMode = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> $exportedFromEditorMode = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $time = -1;</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('d9/dda/_level_settings_8php_source.htm
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $this-&gt;difficulty = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0">getVarInt</a>();</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $this-&gt;spawnPosition = $in-&gt;<a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a1f67255e9fe2b2a45dd552e5ba3a923d">getBlockPosition</a>();</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $this-&gt;hasAchievementsDisabled = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a31a2d6addba82aec1e16dc5d7dfcf560">getBool</a>();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $this-&gt;isEditorMode = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a31a2d6addba82aec1e16dc5d7dfcf560">getBool</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $this-&gt;editorWorldType = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0">getVarInt</a>();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $this-&gt;createdInEditorMode = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a31a2d6addba82aec1e16dc5d7dfcf560">getBool</a>();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $this-&gt;exportedFromEditorMode = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a31a2d6addba82aec1e16dc5d7dfcf560">getBool</a>();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $this-&gt;time = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0">getVarInt</a>();</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('d9/dda/_level_settings_8php_source.htm
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        $out-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a2629b368a7eb0d0c6834944345b5d7aa">putVarInt</a>($this-&gt;difficulty);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        $out-&gt;<a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#adb3eefa448f9b00450f5cbde5c8a75be">putBlockPosition</a>($this-&gt;spawnPosition);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        $out-&gt;putBool($this-&gt;hasAchievementsDisabled);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $out-&gt;putBool($this-&gt;isEditorMode);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $out-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a2629b368a7eb0d0c6834944345b5d7aa">putVarInt</a>($this-&gt;editorWorldType);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        $out-&gt;putBool($this-&gt;createdInEditorMode);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        $out-&gt;putBool($this-&gt;exportedFromEditorMode);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        $out-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a2629b368a7eb0d0c6834944345b5d7aa">putVarInt</a>($this-&gt;time);</div>

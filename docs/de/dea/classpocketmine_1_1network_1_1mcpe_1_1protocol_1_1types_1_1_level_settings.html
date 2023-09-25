@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.1 git-c028bb9055c28aa9e64349fc42cd341d4a2e930c</span>
    </div>
   </td>
  </tr>
@@ -134,6 +134,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:abe0764429f3e1cf81b4810e9815de993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c4aeb5264b32bbea00803c34556f6eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#a9c4aeb5264b32bbea00803c34556f6eb">$disablePlayerInteractions</a> = false</td></tr>
 <tr class="separator:a9c4aeb5264b32bbea00803c34556f6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0647147b64c4adc1870291c5a2d4cdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#af0647147b64c4adc1870291c5a2d4cdb">$editorWorldType</a> = EditorWorldType::NON_EDITOR</td></tr>
+<tr class="separator:af0647147b64c4adc1870291c5a2d4cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6505abe141e5a44e3f4c40bfe30e4a0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#a6505abe141e5a44e3f4c40bfe30e4a0e">$eduEditionOffer</a> = EducationEditionOffer::NONE</td></tr>
 <tr class="separator:a6505abe141e5a44e3f4c40bfe30e4a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a48ee437e759cfd7d459f8002f3c168"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#a9a48ee437e759cfd7d459f8002f3c168">$eduProductUUID</a> = &quot;&quot;</td></tr>
@@ -166,8 +168,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2c94861a771f53b70aeaa746e07d8bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a887c054397780478cf59f3469cd80b58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#a887c054397780478cf59f3469cd80b58">$hasStartWithMapEnabled</a> = false</td></tr>
 <tr class="separator:a887c054397780478cf59f3469cd80b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc172c483925deb513c02e17a2a21910"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#abc172c483925deb513c02e17a2a21910">$isEditorMode</a> = false</td></tr>
-<tr class="separator:abc172c483925deb513c02e17a2a21910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e10b3dd11e0030f59e07d64eac8d37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#a47e10b3dd11e0030f59e07d64eac8d37">$isFromLockedWorldTemplate</a> = false</td></tr>
 <tr class="separator:a47e10b3dd11e0030f59e07d64eac8d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ee353e18bb2efbb0b2c514421cd27e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html#a59ee353e18bb2efbb0b2c514421cd27e">$isFromWorldTemplate</a> = false</td></tr>
@@ -398,6 +398,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dda/_level_settings_8php_source.html#l00076">76</a> of file <a class="el" href="../../d9/dda/_level_settings_8php_source.html">LevelSettings.php</a>.</p>
+
+</div>
+</div>
+<a id="af0647147b64c4adc1870291c5a2d4cdb" name="af0647147b64c4adc1870291c5a2d4cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0647147b64c4adc1870291c5a2d4cdb">&#9670;&nbsp;</a></span>$editorWorldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\types\LevelSettings::$editorWorldType = EditorWorldType::NON_EDITOR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/_level_settings_8php_source.html#l00031">31</a> of file <a class="el" href="../../d9/dda/_level_settings_8php_source.html">LevelSettings.php</a>.</p>
 
 </div>
 </div>
@@ -654,22 +670,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dda/_level_settings_8php_source.html#l00054">54</a> of file <a class="el" href="../../d9/dda/_level_settings_8php_source.html">LevelSettings.php</a>.</p>
-
-</div>
-</div>
-<a id="abc172c483925deb513c02e17a2a21910" name="abc172c483925deb513c02e17a2a21910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc172c483925deb513c02e17a2a21910">&#9670;&nbsp;</a></span>$isEditorMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pocketmine\network\mcpe\protocol\types\LevelSettings::$isEditorMode = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/_level_settings_8php_source.html#l00031">31</a> of file <a class="el" href="../../d9/dda/_level_settings_8php_source.html">LevelSettings.php</a>.</p>
 
 </div>
 </div>

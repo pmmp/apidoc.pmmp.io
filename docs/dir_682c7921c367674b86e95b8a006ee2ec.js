@@ -133,6 +133,7 @@ var dir_682c7921c367674b86e95b8a006ee2ec =
     [ "PositionTrackingDBServerBroadcastPacket.php", "d6/d32/_position_tracking_d_b_server_broadcast_packet_8php_source.html", null ],
     [ "ProtocolInfo.php", "d4/d97/_protocol_info_8php_source.html", null ],
     [ "PurchaseReceiptPacket.php", "de/dc3/_purchase_receipt_packet_8php_source.html", null ],
+    [ "RefreshEntitlementsPacket.php", "d2/dc5/_refresh_entitlements_packet_8php_source.html", null ],
     [ "RemoveActorPacket.php", "d5/ded/_remove_actor_packet_8php_source.html", null ],
     [ "RemoveEntityPacket.php", "dd/d34/_remove_entity_packet_8php_source.html", null ],
     [ "RemoveObjectivePacket.php", "d7/dc5/_remove_objective_packet_8php_source.html", null ],

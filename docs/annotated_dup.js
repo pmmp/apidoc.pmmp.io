@@ -1068,6 +1068,16 @@ var annotated_dup =
               [ "PacketSerializerContext", "da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html", null ]
             ] ],
             [ "types", null, [
+              [ "camera", null, [
+                [ "CameraFadeInstruction", "d7/d08/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction.html", null ],
+                [ "CameraFadeInstructionColor", "da/d63/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_color.html", null ],
+                [ "CameraFadeInstructionTime", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_time.html", null ],
+                [ "CameraPreset", "d1/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset.html", null ],
+                [ "CameraSetInstruction", "dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html", null ],
+                [ "CameraSetInstructionEase", "d4/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease.html", "d4/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease" ],
+                [ "CameraSetInstructionEaseType", "d4/dfe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease_type.html", null ],
+                [ "CameraSetInstructionRotation", "d4/d65/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_rotation.html", null ]
+              ] ],
               [ "command", null, [
                 [ "ChainedSubCommandData", "d9/d55/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_data.html", "d9/d55/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_data" ],
                 [ "ChainedSubCommandValue", "dc/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_value.html", "dc/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_value" ],
@@ -1217,6 +1227,7 @@ var annotated_dup =
               [ "DimensionData", "d7/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_data.html", null ],
               [ "DimensionIds", "d5/db4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_ids.html", null ],
               [ "DimensionNameIds", "d0/df7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_name_ids.html", null ],
+              [ "EditorWorldType", "dd/d69/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_editor_world_type.html", null ],
               [ "EducationEditionOffer", "d4/dd8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_edition_offer.html", null ],
               [ "EducationSettingsAgentCapabilities", "de/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_settings_agent_capabilities.html", null ],
               [ "EducationSettingsExternalLinkSettings", "dc/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_settings_external_link_settings.html", null ],
@@ -1406,6 +1417,7 @@ var annotated_dup =
             [ "PositionTrackingDBServerBroadcastPacket", "dc/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_position_tracking_d_b_server_broadcast_packet.html", "dc/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_position_tracking_d_b_server_broadcast_packet" ],
             [ "ProtocolInfo", "db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html", "db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info" ],
             [ "PurchaseReceiptPacket", "da/d7d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_purchase_receipt_packet.html", "da/d7d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_purchase_receipt_packet" ],
+            [ "RefreshEntitlementsPacket", "de/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_refresh_entitlements_packet.html", "de/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_refresh_entitlements_packet" ],
             [ "RemoveActorPacket", "de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html", "de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet" ],
             [ "RemoveEntityPacket", "d9/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_entity_packet.html", "d9/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_entity_packet" ],
             [ "RemoveObjectivePacket", "db/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_objective_packet.html", "db/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_objective_packet" ],

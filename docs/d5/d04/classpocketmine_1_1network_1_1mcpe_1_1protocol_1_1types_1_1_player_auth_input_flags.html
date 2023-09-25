@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.1 git-c028bb9055c28aa9e64349fc42cd341d4a2e930c</span>
    </div>
   </td>
  </tr>
@@ -156,6 +156,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1f4a5091799df3ebfdab5574d297849e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799467e9a4634d9ac82afc1b7c9be661"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a799467e9a4634d9ac82afc1b7c9be661">START_CRAWLING</a> = 40</td></tr>
 <tr class="separator:a799467e9a4634d9ac82afc1b7c9be661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7719400d21084dbba5a8328724956d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a2c7719400d21084dbba5a8328724956d">START_FLYING</a> = 42</td></tr>
+<tr class="separator:a2c7719400d21084dbba5a8328724956d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2753d20f52323c47d2aef994e5c519"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#adb2753d20f52323c47d2aef994e5c519">START_GLIDING</a> = 32</td></tr>
 <tr class="separator:adb2753d20f52323c47d2aef994e5c519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9866f3aa8f5c5af9f4b5ace7c451668"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#af9866f3aa8f5c5af9f4b5ace7c451668">START_JUMPING</a> = 31</td></tr>
@@ -168,6 +170,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afcb9923f0c891bb518ce786055579898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64da4dab54934c08c5b6b2ff863b8fde"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a64da4dab54934c08c5b6b2ff863b8fde">STOP_CRAWLING</a> = 41</td></tr>
 <tr class="separator:a64da4dab54934c08c5b6b2ff863b8fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1651d3342eaeed114558f6a551cb70f0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a1651d3342eaeed114558f6a551cb70f0">STOP_FLYING</a> = 43</td></tr>
+<tr class="separator:a1651d3342eaeed114558f6a551cb70f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43dd5eefd107d5da540ba4d06747b96a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a43dd5eefd107d5da540ba4d06747b96a">STOP_GLIDING</a> = 33</td></tr>
 <tr class="separator:a43dd5eefd107d5da540ba4d06747b96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eba45d5b868b3744354dc65a86161a1"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a7eba45d5b868b3744354dc65a86161a1">STOP_SNEAKING</a> = 28</td></tr>
@@ -616,6 +620,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2c7719400d21084dbba5a8328724956d" name="a2c7719400d21084dbba5a8328724956d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7719400d21084dbba5a8328724956d">&#9670;&nbsp;</a></span>START_FLYING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\types\PlayerAuthInputFlags::START_FLYING = 42</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dda/_player_auth_input_flags_8php_source.html#l00098">98</a> of file <a class="el" href="../../d1/dda/_player_auth_input_flags_8php_source.html">PlayerAuthInputFlags.php</a>.</p>
+
+</div>
+</div>
 <a id="adb2753d20f52323c47d2aef994e5c519" name="adb2753d20f52323c47d2aef994e5c519"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb2753d20f52323c47d2aef994e5c519">&#9670;&nbsp;</a></span>START_GLIDING</h2>
 
@@ -710,6 +730,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dda/_player_auth_input_flags_8php_source.html#l00097">97</a> of file <a class="el" href="../../d1/dda/_player_auth_input_flags_8php_source.html">PlayerAuthInputFlags.php</a>.</p>
+
+</div>
+</div>
+<a id="a1651d3342eaeed114558f6a551cb70f0" name="a1651d3342eaeed114558f6a551cb70f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1651d3342eaeed114558f6a551cb70f0">&#9670;&nbsp;</a></span>STOP_FLYING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\types\PlayerAuthInputFlags::STOP_FLYING = 43</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dda/_player_auth_input_flags_8php_source.html#l00099">99</a> of file <a class="el" href="../../d1/dda/_player_auth_input_flags_8php_source.html">PlayerAuthInputFlags.php</a>.</p>
 
 </div>
 </div>

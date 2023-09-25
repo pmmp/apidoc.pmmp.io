@@ -1,5 +1,6 @@
 var dir_55bc17615453bf062ec3fe223a89c893 =
 [
+    [ "camera", "dir_a084c78965e105250c47f67113e6cfdd.html", "dir_a084c78965e105250c47f67113e6cfdd" ],
     [ "command", "dir_2c6ad4f7f4a1db9d3c4e822d2ca8ce5d.html", "dir_2c6ad4f7f4a1db9d3c4e822d2ca8ce5d" ],
     [ "entity", "dir_bbe04a070578765a2b532af946e544b1.html", "dir_bbe04a070578765a2b532af946e544b1" ],
     [ "inventory", "dir_726e1d057d028db5f6ccfa3c4388f5b5.html", "dir_726e1d057d028db5f6ccfa3c4388f5b5" ],
@@ -24,6 +25,7 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "DimensionData.php", "dc/dab/_dimension_data_8php_source.html", null ],
     [ "DimensionIds.php", "d9/d28/_dimension_ids_8php_source.html", null ],
     [ "DimensionNameIds.php", "d3/d9f/_dimension_name_ids_8php_source.html", null ],
+    [ "EditorWorldType.php", "d0/da1/_editor_world_type_8php_source.html", null ],
     [ "EducationEditionOffer.php", "dc/d48/_education_edition_offer_8php_source.html", null ],
     [ "EducationSettingsAgentCapabilities.php", "df/dee/_education_settings_agent_capabilities_8php_source.html", null ],
     [ "EducationSettingsExternalLinkSettings.php", "d9/d89/_education_settings_external_link_settings_8php_source.html", null ],

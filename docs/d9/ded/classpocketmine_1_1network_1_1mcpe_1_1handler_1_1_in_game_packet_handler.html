@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.1 git-c028bb9055c28aa9e64349fc42cd341d4a2e930c</span>
    </div>
   </td>
  </tr>
@@ -456,6 +456,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cdccdebe3f37e9f0337bc70dc10e1e4"><td class="memItemLeft" align="right" valign="top"><a id="a6cdccdebe3f37e9f0337bc70dc10e1e4" name="a6cdccdebe3f37e9f0337bc70dc10e1e4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handlePurchaseReceipt</b> (PurchaseReceiptPacket $packet)</td></tr>
 <tr class="separator:a6cdccdebe3f37e9f0337bc70dc10e1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbc3a3b8b04a6f3475dc2f206695634"><td class="memItemLeft" align="right" valign="top"><a id="a8fbc3a3b8b04a6f3475dc2f206695634" name="a8fbc3a3b8b04a6f3475dc2f206695634"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleRefreshEntitlements</b> (RefreshEntitlementsPacket $packet)</td></tr>
+<tr class="separator:a8fbc3a3b8b04a6f3475dc2f206695634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe52844216d58c8a1330984e44c03b0b"><td class="memItemLeft" align="right" valign="top"><a id="afe52844216d58c8a1330984e44c03b0b" name="afe52844216d58c8a1330984e44c03b0b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleRemoveActor</b> (<a class="el" href="../../de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html">RemoveActorPacket</a> $packet)</td></tr>
 <tr class="separator:afe52844216d58c8a1330984e44c03b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -468,8 +471,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a95e6196de64456082336be7ef959890c"><td class="memItemLeft" align="right" valign="top"><a id="a95e6196de64456082336be7ef959890c" name="a95e6196de64456082336be7ef959890c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleRemoveVolumeEntity</b> (RemoveVolumeEntityPacket $packet)</td></tr>
 <tr class="separator:a95e6196de64456082336be7ef959890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39cbb834540d1a0bc07a2d98f8e6aa39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html#a39cbb834540d1a0bc07a2d98f8e6aa39">handleRequestAbility</a> (<a class="el" href="../../d4/da9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_ability_packet.html">RequestAbilityPacket</a> $packet)</td></tr>
-<tr class="separator:a39cbb834540d1a0bc07a2d98f8e6aa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86e05b6587d372a230cee05aec47cdb"><td class="memItemLeft" align="right" valign="top"><a id="ae86e05b6587d372a230cee05aec47cdb" name="ae86e05b6587d372a230cee05aec47cdb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleRequestAbility</b> (RequestAbilityPacket $packet)</td></tr>
+<tr class="separator:ae86e05b6587d372a230cee05aec47cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae36d6b305337584667304d752985e05e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html#ae36d6b305337584667304d752985e05e">handleRequestChunkRadius</a> (<a class="el" href="../../d5/dfc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_chunk_radius_packet.html">RequestChunkRadiusPacket</a> $packet)</td></tr>
 <tr class="separator:ae36d6b305337584667304d752985e05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac939bb4ef33250379b450c1885027d32"><td class="memItemLeft" align="right" valign="top"><a id="ac939bb4ef33250379b450c1885027d32" name="ac939bb4ef33250379b450c1885027d32"></a>
@@ -691,7 +695,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This handler handles packets related to general gameplay. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00134">134</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00132">132</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add31944342f947442314b6f39e833dd0" name="add31944342f947442314b6f39e833dd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add31944342f947442314b6f39e833dd0">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -725,7 +729,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00149">149</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00147">147</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1280,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00163">163</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00161">161</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1346,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00179">179</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00177">177</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1409,28 +1413,6 @@ Protected Attributes</h2></td></tr>
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00836">836</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
-
-</div>
-</div>
-<a id="a39cbb834540d1a0bc07a2d98f8e6aa39" name="a39cbb834540d1a0bc07a2d98f8e6aa39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39cbb834540d1a0bc07a2d98f8e6aa39">&#9670;&nbsp;</a></span>handleRequestAbility()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\network\mcpe\handler\InGamePacketHandler::handleRequestAbility </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/da9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_request_ability_packet.html">RequestAbilityPacket</a>&#160;</td>
-          <td class="paramname"><em>$packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l01036">1036</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1588,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00155">155</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00153">153</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1650,7 +1632,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00145">145</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00143">143</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1674,7 +1656,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00143">143</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00141">141</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1698,7 +1680,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00142">142</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00140">140</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1722,7 +1704,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00140">140</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00138">138</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1746,7 +1728,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00141">141</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00139">139</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1770,7 +1752,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00147">147</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00145">145</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1794,7 +1776,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00138">138</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00136">136</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -1818,7 +1800,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00137">137</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00135">135</a> of file <a class="el" href="../../db/dc4/_in_game_packet_handler_8php_source.html">InGamePacketHandler.php</a>.</p>
 
 </div>
 </div>

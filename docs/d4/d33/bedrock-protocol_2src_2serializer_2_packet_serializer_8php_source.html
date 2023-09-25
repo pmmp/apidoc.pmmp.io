@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.5.1 git-efafc2c6cac353585707d6ac8340097f2754ca3b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.1 git-c028bb9055c28aa9e64349fc42cd341d4a2e930c</span>
    </div>
   </td>
  </tr>
@@ -752,7 +752,7 @@ $(document).ready(function(){initNavTree('d4/d33/bedrock-protocol_2src_2serializ
 <div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span> </div>
 <div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        $result-&gt;structureBlockType = $this-&gt;getVarInt();</div>
 <div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        $result-&gt;structureSettings = $this-&gt;getStructureSettings();</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        $result-&gt;structureRedstoneSaveMove = $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        $result-&gt;structureRedstoneSaveMode = $this-&gt;getVarInt();</div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
 <div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        <span class="keywordflow">return</span> $result;</div>
 <div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    }</div>
@@ -766,7 +766,7 @@ $(document).ready(function(){initNavTree('d4/d33/bedrock-protocol_2src_2serializ
 <div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span> </div>
 <div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureBlockType);</div>
 <div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        $this-&gt;putStructureSettings($structureEditorData-&gt;structureSettings);</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureRedstoneSaveMove);</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureRedstoneSaveMode);</div>
 <div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    }</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNbtRoot() : TreeRoot{</div>
