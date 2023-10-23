@@ -284,7 +284,7 @@ var NAVTREEINDEX =
 "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a36afea9f0214193963f75577e8d48c26",
 "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a52fccda7253fbc3c5e3fcfd2e93e6c34",
 "de/df1/classpocketmine_1_1world_1_1biome_1_1_forest_biome.html#a3bd95c376c2ca535cb932b700bde38dc",
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a561942a73af5f1c7764ef50db4e6cefc",
+"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a550cf6f105cc6faf733087a716b19e1a",
 "df/d0d/classpocketmine_1_1world_1_1sound_1_1_ink_sac_use_sound.html#af50ba0238746673980c08e6fbf96b9ea",
 "df/d1c/classpocketmine_1_1block_1_1_cake.html#ab6b90601adfc9732893dcffe256514a9",
 "df/d22/classpocketmine_1_1block_1_1_cactus.html#a3bffed15a0b8de5f9df11e6f4b407163",

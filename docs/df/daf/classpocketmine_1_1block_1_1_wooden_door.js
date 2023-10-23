@@ -26,7 +26,7 @@ var classpocketmine_1_1block_1_1_wooden_door =
     [ "getFlameEncouragement", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
-    [ "getFuelTime", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#ab92353cf0aa5c05ad26535f98a2b1dca", null ],
+    [ "getFuelTime", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a9dcbe7a3c98b103cc76f9282974801ce", null ],
     [ "getHorizontalSides", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#afeb38d89fa6f5f5912a1b0e6d131fa3b", null ],
     [ "getIdInfo", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#a85746252cd6a5f1e81cb4c4ebccb52e3", null ],
     [ "getLightFilter", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#afcc19c437c8bef4487f5ecb956ae9a1a", null ],
