@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.2 git-e4888d71028feb604b330b7a14c6b178bb97dec9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
    </div>
   </td>
  </tr>
@@ -1176,7 +1176,7 @@ $(document).ready(function(){initNavTree('db/d64/_block_object_to_state_serializ
 <div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>        });</div>
 <div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>        $this-&gt;map(Blocks::CHEST(), <span class="keyword">function</span>(Chest $block) : Writer{</div>
 <div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>            <span class="keywordflow">return</span> Writer::create(Ids::CHEST)</div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>                -&gt;writeHorizontalFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>                -&gt;writeCardinalHorizontalFacing($block-&gt;getFacing());</div>
 <div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>        });</div>
 <div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>        $this-&gt;map(Blocks::CHISELED_QUARTZ(), fn(SimplePillar $block) =&gt; Helper::encodeQuartz(StringValues::CHISEL_TYPE_CHISELED, $block-&gt;getAxis()));</div>
 <div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>        $this-&gt;map(Blocks::CHISELED_RED_SANDSTONE(), fn() =&gt; Helper::encodeSandstone(Ids::RED_SANDSTONE, StringValues::SAND_STONE_TYPE_HEIROGLYPHS));</div>
@@ -1337,7 +1337,7 @@ $(document).ready(function(){initNavTree('db/d64/_block_object_to_state_serializ
 <div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>        $this-&gt;map(Blocks::ELEMENT_CONSTRUCTOR(), fn(ChemistryTable $block) =&gt; Helper::encodeChemistryTable($block, StringValues::CHEMISTRY_TABLE_TYPE_ELEMENT_CONSTRUCTOR, <span class="keyword">new</span> Writer(Ids::CHEMISTRY_TABLE)));</div>
 <div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>        $this-&gt;map(Blocks::ENDER_CHEST(), <span class="keyword">function</span>(EnderChest $block) : Writer{</div>
 <div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>            <span class="keywordflow">return</span> Writer::create(Ids::ENDER_CHEST)</div>
-<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>                -&gt;writeHorizontalFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>                -&gt;writeCardinalHorizontalFacing($block-&gt;getFacing());</div>
 <div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>        });</div>
 <div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>        $this-&gt;map(Blocks::END_PORTAL_FRAME(), <span class="keyword">function</span>(EndPortalFrame $block) : Writer{</div>
 <div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>            <span class="keywordflow">return</span> Writer::create(Ids::END_PORTAL_FRAME)</div>
@@ -1669,7 +1669,7 @@ $(document).ready(function(){initNavTree('db/d64/_block_object_to_state_serializ
 <div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span>        });</div>
 <div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>        $this-&gt;map(Blocks::STONE(), fn() =&gt; Helper::encodeStone(StringValues::STONE_TYPE_STONE));</div>
 <div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>        $this-&gt;map(Blocks::STONECUTTER(), fn(Stonecutter $block) =&gt; Writer::create(Ids::STONECUTTER_BLOCK)</div>
-<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>            -&gt;writeHorizontalFacing($block-&gt;getFacing()));</div>
+<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>            -&gt;writeCardinalHorizontalFacing($block-&gt;getFacing()));</div>
 <div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>        $this-&gt;map(Blocks::STONE_BRICKS(), fn() =&gt; Helper::encodeStoneBricks(StringValues::STONE_BRICK_TYPE_DEFAULT));</div>
 <div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span>        $this-&gt;map(Blocks::STONE_BRICK_SLAB(), fn(Slab $block) =&gt; Helper::encodeStoneSlab1($block, StringValues::STONE_SLAB_TYPE_STONE_BRICK));</div>
 <div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>        $this-&gt;mapStairs(Blocks::STONE_BRICK_STAIRS(), Ids::STONE_BRICK_STAIRS);</div>
@@ -1700,7 +1700,7 @@ $(document).ready(function(){initNavTree('db/d64/_block_object_to_state_serializ
 <div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>        });</div>
 <div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>        $this-&gt;map(Blocks::TRAPPED_CHEST(), <span class="keyword">function</span>(TrappedChest $block) : Writer{</div>
 <div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>            <span class="keywordflow">return</span> Writer::create(Ids::TRAPPED_CHEST)</div>
-<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span>                -&gt;writeHorizontalFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span>                -&gt;writeCardinalHorizontalFacing($block-&gt;getFacing());</div>
 <div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>        });</div>
 <div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>        $this-&gt;map(Blocks::TRIPWIRE(), <span class="keyword">function</span>(Tripwire $block) : Writer{</div>
 <div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>            <span class="keywordflow">return</span> Writer::create(Ids::TRIP_WIRE)</div>

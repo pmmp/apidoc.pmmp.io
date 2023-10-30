@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.2 git-e4888d71028feb604b330b7a14c6b178bb97dec9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
    </div>
   </td>
  </tr>
@@ -136,13 +136,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abaa3026b219a31bd3abb7c7d98b77d53"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_disconnect_packet.html#abaa3026b219a31bd3abb7c7d98b77d53">create</a> (?string $message)</td></tr>
-<tr class="separator:abaa3026b219a31bd3abb7c7d98b77d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac845d9865d328e9efe343876fa93784d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_disconnect_packet.html#ac845d9865d328e9efe343876fa93784d">create</a> (int $reason, ?string $message)</td></tr>
+<tr class="separator:ac845d9865d328e9efe343876fa93784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a931b1f3bb38e8fefaed2e33dae593817"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_disconnect_packet.html#a931b1f3bb38e8fefaed2e33dae593817">$message</a></td></tr>
 <tr class="separator:a931b1f3bb38e8fefaed2e33dae593817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d59b77ca2eff57041652d61812aa73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_disconnect_packet.html#a34d59b77ca2eff57041652d61812aa73">$reason</a></td></tr>
+<tr class="separator:a34d59b77ca2eff57041652d61812aa73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#aa8f8e8ec577e46952ad065c9ede0943a">$recipientSubId</a> = 0</td></tr>
 <tr class="separator:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#adaad4a5e300a6eefe7bd9cb321626ba6">$senderSubId</a> = 0</td></tr>
@@ -264,12 +266,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
 
 </div>
 </div>
-<a id="abaa3026b219a31bd3abb7c7d98b77d53" name="abaa3026b219a31bd3abb7c7d98b77d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaa3026b219a31bd3abb7c7d98b77d53">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ac845d9865d328e9efe343876fa93784d" name="ac845d9865d328e9efe343876fa93784d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac845d9865d328e9efe343876fa93784d">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,9 +282,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\DisconnectPacket::create </td>
           <td>(</td>
-          <td class="paramtype">?string&#160;</td>
-          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -293,7 +305,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -402,7 +414,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00089">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getString()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -501,7 +513,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00047">47</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -562,7 +574,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00051">51</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00055">55</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -604,6 +616,22 @@ Protected Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">string pocketmine\network\mcpe\protocol\DisconnectPacket::$message</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html#l00023">23</a> of file <a class="el" href="../../d0/d2c/_disconnect_packet_8php_source.html">DisconnectPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a34d59b77ca2eff57041652d61812aa73" name="a34d59b77ca2eff57041652d61812aa73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d59b77ca2eff57041652d61812aa73">&#9670;&nbsp;</a></span>$reason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\DisconnectPacket::$reason</td>
         </tr>
       </table>
 </div><div class="memdoc">

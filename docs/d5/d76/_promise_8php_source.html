@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.6.2 git-e4888d71028feb604b330b7a14c6b178bb97dec9</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
    </div>
   </td>
  </tr>
@@ -123,18 +123,23 @@ $(document).ready(function(){initNavTree('d5/d76/_promise_8php_source.html','../
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<span class="keyword">private</span> <a class="code hl_class" href="../../d2/d15/classpocketmine_1_1promise_1_1_promise_shared_data.html">PromiseSharedData</a> $shared){}</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html#a8c3963ca240c82cf314d94381d8578d9">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html#a8c3963ca240c82cf314d94381d8578d9">onCompletion</a>(\Closure $onSuccess, \Closure $onFailure) : void{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        if($this-&gt;shared-&gt;resolved){</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            $this-&gt;shared-&gt;result === <span class="keyword">null</span> ? $onFailure() : $onSuccess($this-&gt;shared-&gt;result);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            $this-&gt;shared-&gt;onSuccess[spl_object_id($onSuccess)] = $onSuccess;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $this-&gt;shared-&gt;onFailure[spl_object_id($onFailure)] = $onFailure;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> isResolved() : bool{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return $this-&gt;shared-&gt;resolved;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $state = $this-&gt;shared-&gt;state;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">if</span>($state === <span class="keyword">true</span>){</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            $onSuccess($this-&gt;shared-&gt;result);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }elseif($state === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $onFailure();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $this-&gt;shared-&gt;onSuccess[spl_object_id($onSuccess)] = $onSuccess;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $this-&gt;shared-&gt;onFailure[spl_object_id($onFailure)] = $onFailure;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">public</span> <span class="keyword">function</span> isResolved() : bool{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="comment">//TODO: perhaps this should return true when rejected? currently there&#39;s no way to tell if a promise was</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="comment">//rejected or just hasn&#39;t been resolved yet</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        return $this-&gt;shared-&gt;state === true;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_html"><div class="ttname"><a href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">pocketmine\promise\Promise</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d76/_promise_8php_source.html#l00031">Promise.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_html_a8c3963ca240c82cf314d94381d8578d9"><div class="ttname"><a href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html#a8c3963ca240c82cf314d94381d8578d9">pocketmine\promise\Promise\onCompletion</a></div><div class="ttdeci">onCompletion(\Closure $onSuccess, \Closure $onFailure)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d76/_promise_8php_source.html#l00043">Promise.php:43</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_shared_data_html"><div class="ttname"><a href="../../d2/d15/classpocketmine_1_1promise_1_1_promise_shared_data.html">pocketmine\promise\PromiseSharedData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d53/_promise_shared_data_8php_source.html#l00031">PromiseSharedData.php:31</a></div></div>
