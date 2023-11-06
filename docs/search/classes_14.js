@@ -33,11 +33,10 @@ var searchData=
   ['upnp_30',['UPnP',['../d2/d96/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p.html',1,'pocketmine::network::upnp']]],
   ['upnpexception_31',['UPnPException',['../db/d7a/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_exception.html',1,'pocketmine::network::upnp']]],
   ['upnpnetworkinterface_32',['UPnPNetworkInterface',['../d0/d45/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_network_interface.html',1,'pocketmine::network::upnp']]],
-  ['usedchunkstatus_33',['UsedChunkStatus',['../dd/d8a/classpocketmine_1_1player_1_1_used_chunk_status.html',1,'pocketmine::player']]],
-  ['useitemonentitytransactiondata_34',['UseItemOnEntityTransactionData',['../d7/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_on_entity_transaction_data.html',1,'pocketmine::network::mcpe::protocol::types::inventory']]],
-  ['useitemtransactiondata_35',['UseItemTransactionData',['../dd/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_transaction_data.html',1,'pocketmine::network::mcpe::protocol::types::inventory']]],
-  ['usertoraklibthreadmessageprotocol_36',['UserToRakLibThreadMessageProtocol',['../d6/dd5/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_protocol.html',1,'raklib::server::ipc']]],
-  ['usertoraklibthreadmessagereceiver_37',['UserToRakLibThreadMessageReceiver',['../dc/d9f/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_receiver.html',1,'raklib::server::ipc']]],
-  ['usertoraklibthreadmessagesender_38',['UserToRakLibThreadMessageSender',['../d4/d78/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_sender.html',1,'raklib::server::ipc']]],
-  ['utils_39',['Utils',['../dc/d1a/classpocketmine_1_1utils_1_1_utils.html',1,'pocketmine::utils']]]
+  ['useitemonentitytransactiondata_33',['UseItemOnEntityTransactionData',['../d7/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_on_entity_transaction_data.html',1,'pocketmine::network::mcpe::protocol::types::inventory']]],
+  ['useitemtransactiondata_34',['UseItemTransactionData',['../dd/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_transaction_data.html',1,'pocketmine::network::mcpe::protocol::types::inventory']]],
+  ['usertoraklibthreadmessageprotocol_35',['UserToRakLibThreadMessageProtocol',['../d6/dd5/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_protocol.html',1,'raklib::server::ipc']]],
+  ['usertoraklibthreadmessagereceiver_36',['UserToRakLibThreadMessageReceiver',['../dc/d9f/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_receiver.html',1,'raklib::server::ipc']]],
+  ['usertoraklibthreadmessagesender_37',['UserToRakLibThreadMessageSender',['../d4/d78/classraklib_1_1server_1_1ipc_1_1_user_to_rak_lib_thread_message_sender.html',1,'raklib::server::ipc']]],
+  ['utils_38',['Utils',['../dc/d1a/classpocketmine_1_1utils_1_1_utils.html',1,'pocketmine::utils']]]
 ];

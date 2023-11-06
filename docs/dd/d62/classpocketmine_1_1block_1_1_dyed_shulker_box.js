@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_dyed_shulker_box =
 [
-    [ "__construct", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#ab2589b864d75afae8f5ba2881376b27f", null ],
     [ "__toString", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a286fc64348f13417dcb6106c2695911b", null ],

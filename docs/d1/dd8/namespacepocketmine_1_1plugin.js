@@ -9,7 +9,6 @@ var namespacepocketmine_1_1plugin =
     [ "PluginDescription", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html", "d3/d16/classpocketmine_1_1plugin_1_1_plugin_description" ],
     [ "PluginDescriptionCommandEntry", "d7/d0b/classpocketmine_1_1plugin_1_1_plugin_description_command_entry.html", "d7/d0b/classpocketmine_1_1plugin_1_1_plugin_description_command_entry" ],
     [ "PluginDescriptionParseException", "d0/d47/classpocketmine_1_1plugin_1_1_plugin_description_parse_exception.html", null ],
-    [ "PluginEnableOrder", "de/dc4/classpocketmine_1_1plugin_1_1_plugin_enable_order.html", "de/dc4/classpocketmine_1_1plugin_1_1_plugin_enable_order" ],
     [ "PluginException", "d0/d7b/classpocketmine_1_1plugin_1_1_plugin_exception.html", null ],
     [ "PluginGraylist", "de/ddf/classpocketmine_1_1plugin_1_1_plugin_graylist.html", "de/ddf/classpocketmine_1_1plugin_1_1_plugin_graylist" ],
     [ "PluginLoadabilityChecker", "dd/d86/classpocketmine_1_1plugin_1_1_plugin_loadability_checker.html", null ],
@@ -21,5 +20,8 @@ var namespacepocketmine_1_1plugin =
     [ "PluginOwned", "d0/dcc/interfacepocketmine_1_1plugin_1_1_plugin_owned.html", null ],
     [ "ResourceProvider", "de/d0d/interfacepocketmine_1_1plugin_1_1_resource_provider.html", "de/d0d/interfacepocketmine_1_1plugin_1_1_resource_provider" ],
     [ "ScriptPluginLoader", "d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader.html", "d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader" ],
+    [ "PluginEnableOrder", "d1/dd8/namespacepocketmine_1_1plugin.html#afc5ce7d3489354e196d650dd64e9faf6", [
+      [ "fromString", "d1/dd8/namespacepocketmine_1_1plugin.html#afc5ce7d3489354e196d650dd64e9faf6af78e2cf71a133da58254bb8f61b4801d", null ]
+    ] ],
     [ "PluginOwnedTrait", "d1/dd8/namespacepocketmine_1_1plugin.html#a765c2f413a4fa914c11812f29f153151", null ]
 ];

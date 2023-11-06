@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_stained_glass_pane =
 [
-    [ "__construct", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#a9af492be8f8461153250576dfc284a14", null ],
     [ "__toString", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#a286fc64348f13417dcb6106c2695911b", null ],

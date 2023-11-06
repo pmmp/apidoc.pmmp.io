@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_stained_hardened_glass =
 [
-    [ "__construct", "dd/dbf/classpocketmine_1_1block_1_1_stained_hardened_glass.html#ad45718ac93bf2c7e61d0a8a8d9589605", null ],
     [ "__toString", "dd/dbf/classpocketmine_1_1block_1_1_stained_hardened_glass.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "dd/dbf/classpocketmine_1_1block_1_1_stained_hardened_glass.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "dd/dbf/classpocketmine_1_1block_1_1_stained_hardened_glass.html#a286fc64348f13417dcb6106c2695911b", null ],

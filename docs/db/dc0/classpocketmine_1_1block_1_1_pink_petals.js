@@ -54,7 +54,7 @@ var classpocketmine_1_1block_1_1_pink_petals =
     [ "onEntityLand", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a5c103dd12f2f2a138eec2f26dc2dfe9d", null ],
-    [ "onNearbyBlockChange", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#af3914ba934014e5223bd37a8f33a0929", null ],
+    [ "onNearbyBlockChange", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onPostPlace", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a36afea9f0214193963f75577e8d48c26", null ],

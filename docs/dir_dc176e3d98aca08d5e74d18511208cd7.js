@@ -114,6 +114,7 @@ var dir_dc176e3d98aca08d5e74d18511208cd7 =
     [ "TieredTool.php", "d4/de7/_tiered_tool_8php_source.html", null ],
     [ "Tool.php", "d8/d4d/_tool_8php_source.html", null ],
     [ "ToolTier.php", "db/d8a/_tool_tier_8php_source.html", null ],
+    [ "TorchflowerSeeds.php", "d1/d83/_torchflower_seeds_8php_source.html", null ],
     [ "Totem.php", "df/da1/_totem_8php_source.html", null ],
     [ "TurtleHelmet.php", "d3/d81/_turtle_helmet_8php_source.html", null ],
     [ "VanillaArmorMaterials.php", "d0/d3b/_vanilla_armor_materials_8php_source.html", null ],

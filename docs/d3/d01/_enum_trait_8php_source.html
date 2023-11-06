@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,60 +117,60 @@ $(document).ready(function(){initNavTree('d3/d01/_enum_trait_8php_source.html','
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">   33</a></span>trait <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">EnumTrait</a>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838">RegistryTrait</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use NotCloneable;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use NotSerializable;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c">   43</a></span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keyword">self</span> $member) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        self::_registryRegister($member-&gt;name(), $member);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> registerAll(<span class="keyword">self</span> ...$members) : void{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        foreach($members as $member){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c">self::register</a>($member);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#ae1bb8379641f1444faf119197f9acf06">   60</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#ae1bb8379641f1444faf119197f9acf06">getAll</a>() : array{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">//phpstan doesn&#39;t support generic traits yet :(</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span>        $result = self::_registryGetAll();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span> <span class="keyword">static</span> $nextId = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">   36</a></span>trait <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">EnumTrait</a>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838">RegistryTrait</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    use NotCloneable;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    use NotSerializable;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c">   46</a></span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keyword">self</span> $member) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        self::_registryRegister($member-&gt;name(), $member);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> registerAll(<span class="keyword">self</span> ...$members) : void{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        foreach($members as $member){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c">self::register</a>($member);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#ae1bb8379641f1444faf119197f9acf06">   63</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#ae1bb8379641f1444faf119197f9acf06">getAll</a>() : array{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">//phpstan doesn&#39;t support generic traits yet :(</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span>        $result = self::_registryGetAll();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">private</span> $enumName;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">private</span> $runtimeId;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $enumName){</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        self::verifyName($enumName);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $this-&gt;enumName = $enumName;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span>(self::$nextId === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            self::$nextId = Process::pid(); <span class="comment">//this provides enough base entropy to prevent hardcoding</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $this-&gt;runtimeId = self::$nextId++;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">function</span> name() : string{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        return $this-&gt;enumName;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">   96</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">id</a>() : int{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        return $this-&gt;runtimeId;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">equals</a>(<span class="keyword">self</span> $other) : bool{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        return $this-&gt;enumName === $other-&gt;enumName;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">private</span> <span class="keyword">static</span> $nextId = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">private</span> $enumName;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">private</span> $runtimeId;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $enumName){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        self::verifyName($enumName);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $this-&gt;enumName = $enumName;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span>(self::$nextId === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            self::$nextId = Process::pid(); <span class="comment">//this provides enough base entropy to prevent hardcoding</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;runtimeId = self::$nextId++;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">public</span> <span class="keyword">function</span> name() : string{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        return $this-&gt;enumName;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">   99</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">id</a>() : int{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        return $this-&gt;runtimeId;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">  106</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">equals</a>(<span class="keyword">self</span> $other) : bool{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        return $this-&gt;enumName === $other-&gt;enumName;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_a05015e083bded840b56fa8c835714c1c"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c">pocketmine\utils\register</a></div><div class="ttdeci">static register(self $member)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00043">EnumTrait.php:43</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_a09dc5203e4dcab3b0be72f3d9efd2a6b"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">pocketmine\utils\id</a></div><div class="ttdeci">id()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00096">EnumTrait.php:96</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_a3c002b3b600e269d41628e7e8cb0cf94"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">pocketmine\utils\equals</a></div><div class="ttdeci">equals(self $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00103">EnumTrait.php:103</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1utils_html_a05015e083bded840b56fa8c835714c1c"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a05015e083bded840b56fa8c835714c1c">pocketmine\utils\register</a></div><div class="ttdeci">static register(self $member)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00046">EnumTrait.php:46</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1utils_html_a09dc5203e4dcab3b0be72f3d9efd2a6b"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">pocketmine\utils\id</a></div><div class="ttdeci">id()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00099">EnumTrait.php:99</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1utils_html_a3c002b3b600e269d41628e7e8cb0cf94"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">pocketmine\utils\equals</a></div><div class="ttdeci">equals(self $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00106">EnumTrait.php:106</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html_a567edfa557749f22f42f6a2df53b5838"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838">pocketmine\utils\RegistryTrait</a></div><div class="ttdeci">trait RegistryTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_registry_trait_8php_source.html#l00038">RegistryTrait.php:38</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_ae1bb8379641f1444faf119197f9acf06"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#ae1bb8379641f1444faf119197f9acf06">pocketmine\utils\getAll</a></div><div class="ttdeci">static getAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00060">EnumTrait.php:60</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1utils_html_ae1bb8379641f1444faf119197f9acf06"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#ae1bb8379641f1444faf119197f9acf06">pocketmine\utils\getAll</a></div><div class="ttdeci">static getAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00063">EnumTrait.php:63</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00036">EnumTrait.php:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

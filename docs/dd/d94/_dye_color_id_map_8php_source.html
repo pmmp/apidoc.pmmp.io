@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,63 +117,63 @@ $(document).ready(function(){initNavTree('dd/d94/_dye_color_id_map_8php_source.h
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\data\bedrock;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">pocketmine\block\utils\DyeColor</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\DyeColor;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d5/d77/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_item_type_names.html">pocketmine\data\bedrock\item\ItemTypeNames</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\utils\SingletonTrait;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">DyeColorIdMap</a>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    use SingletonTrait;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    use IntSaveIdMapTrait {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">register</span> as registerInt;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> array $itemIdToEnum = [];</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> array $enumToItemId = [];</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;<span class="keyword">register</span>(0, ItemTypeNames::WHITE_DYE, DyeColor::WHITE());</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;<span class="keyword">register</span>(1, ItemTypeNames::ORANGE_DYE, DyeColor::ORANGE());</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;<span class="keyword">register</span>(2, ItemTypeNames::MAGENTA_DYE, DyeColor::MAGENTA());</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;<span class="keyword">register</span>(3, ItemTypeNames::LIGHT_BLUE_DYE, DyeColor::LIGHT_BLUE());</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;<span class="keyword">register</span>(4, ItemTypeNames::YELLOW_DYE, DyeColor::YELLOW());</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;<span class="keyword">register</span>(5, ItemTypeNames::LIME_DYE, DyeColor::LIME());</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;<span class="keyword">register</span>(6, ItemTypeNames::PINK_DYE, DyeColor::PINK());</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;<span class="keyword">register</span>(7, ItemTypeNames::GRAY_DYE, DyeColor::GRAY());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $this-&gt;<span class="keyword">register</span>(8, ItemTypeNames::LIGHT_GRAY_DYE, DyeColor::LIGHT_GRAY());</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $this-&gt;<span class="keyword">register</span>(9, ItemTypeNames::CYAN_DYE, DyeColor::CYAN());</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $this-&gt;<span class="keyword">register</span>(10, ItemTypeNames::PURPLE_DYE, DyeColor::PURPLE());</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;<span class="keyword">register</span>(11, ItemTypeNames::BLUE_DYE, DyeColor::BLUE());</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;<span class="keyword">register</span>(12, ItemTypeNames::BROWN_DYE, DyeColor::BROWN());</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;<span class="keyword">register</span>(13, ItemTypeNames::GREEN_DYE, DyeColor::GREEN());</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;<span class="keyword">register</span>(14, ItemTypeNames::RED_DYE, DyeColor::RED());</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;<span class="keyword">register</span>(15, ItemTypeNames::BLACK_DYE, DyeColor::BLACK());</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keywordtype">int</span> $id, <span class="keywordtype">string</span> $itemId, <a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">DyeColor</a> $color) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;registerInt($id, $color);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;itemIdToEnum[$itemId] = $color;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;enumToItemId[$color-&gt;id()] = $itemId;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">function</span> toInvertedId(<a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">DyeColor</a> $color) : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> ~$this-&gt;toId($color) &amp; 0xf;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">function</span> toItemId(<a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">DyeColor</a> $color) : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> $this-&gt;enumToItemId[$color-&gt;id()];</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">function</span> fromInvertedId(<span class="keywordtype">int</span> $id) : ?<a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">DyeColor</a>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> $this-&gt;fromId(~$id &amp; 0xf);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">public</span> <span class="keyword">function</span> fromItemId(<span class="keywordtype">string</span> $itemId) : ?<a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">DyeColor</a>{</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">return</span> $this-&gt;itemIdToEnum[$itemId] ?? <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_dye_color_html"><div class="ttname"><a href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">pocketmine\block\utils\DyeColor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d89/_dye_color_8php_source.html#l00052">DyeColor.php:52</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map_html"><div class="ttname"><a href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">pocketmine\data\bedrock\DyeColorIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d94/_dye_color_id_map_8php_source.html#l00030">DyeColorIdMap.php:30</a></div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> spl_object_id;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">   31</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">DyeColorIdMap</a>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use SingletonTrait;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use IntSaveIdMapTrait {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">register</span> as registerInt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> array $itemIdToEnum = [];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> array $enumToItemId = [];</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;<span class="keyword">register</span>(0, ItemTypeNames::WHITE_DYE, DyeColor::WHITE);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;<span class="keyword">register</span>(1, ItemTypeNames::ORANGE_DYE, DyeColor::ORANGE);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;<span class="keyword">register</span>(2, ItemTypeNames::MAGENTA_DYE, DyeColor::MAGENTA);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;<span class="keyword">register</span>(3, ItemTypeNames::LIGHT_BLUE_DYE, DyeColor::LIGHT_BLUE);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;<span class="keyword">register</span>(4, ItemTypeNames::YELLOW_DYE, DyeColor::YELLOW);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;<span class="keyword">register</span>(5, ItemTypeNames::LIME_DYE, DyeColor::LIME);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;<span class="keyword">register</span>(6, ItemTypeNames::PINK_DYE, DyeColor::PINK);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $this-&gt;<span class="keyword">register</span>(7, ItemTypeNames::GRAY_DYE, DyeColor::GRAY);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $this-&gt;<span class="keyword">register</span>(8, ItemTypeNames::LIGHT_GRAY_DYE, DyeColor::LIGHT_GRAY);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $this-&gt;<span class="keyword">register</span>(9, ItemTypeNames::CYAN_DYE, DyeColor::CYAN);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;<span class="keyword">register</span>(10, ItemTypeNames::PURPLE_DYE, DyeColor::PURPLE);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;<span class="keyword">register</span>(11, ItemTypeNames::BLUE_DYE, DyeColor::BLUE);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;<span class="keyword">register</span>(12, ItemTypeNames::BROWN_DYE, DyeColor::BROWN);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;<span class="keyword">register</span>(13, ItemTypeNames::GREEN_DYE, DyeColor::GREEN);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;<span class="keyword">register</span>(14, ItemTypeNames::RED_DYE, DyeColor::RED);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $this-&gt;<span class="keyword">register</span>(15, ItemTypeNames::BLACK_DYE, DyeColor::BLACK);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">private</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keywordtype">int</span> $id, <span class="keywordtype">string</span> $itemId, DyeColor $color) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;registerInt($id, $color);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;itemIdToEnum[$itemId] = $color;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;enumToItemId[spl_object_id($color)] = $itemId;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> toInvertedId(DyeColor $color) : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> ~$this-&gt;toId($color) &amp; 0xf;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> toItemId(DyeColor $color) : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> $this-&gt;enumToItemId[spl_object_id($color)];</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">public</span> <span class="keyword">function</span> fromInvertedId(<span class="keywordtype">int</span> $id) : ?DyeColor{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> $this-&gt;fromId(~$id &amp; 0xf);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">function</span> fromItemId(<span class="keywordtype">string</span> $itemId) : ?DyeColor{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> $this-&gt;itemIdToEnum[$itemId] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map_html"><div class="ttname"><a href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">pocketmine\data\bedrock\DyeColorIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d94/_dye_color_id_map_8php_source.html#l00031">DyeColorIdMap.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1item_1_1_item_type_names_html"><div class="ttname"><a href="../../d5/d77/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_item_type_names.html">pocketmine\data\bedrock\item\ItemTypeNames</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de7/_item_type_names_8php_source.html#l00029">ItemTypeNames.php:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_froglight =
 [
-    [ "__construct", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a69ce37faeac78654da1fc6d30b0e7f6f", null ],
     [ "__toString", "de/d96/classpocketmine_1_1block_1_1_froglight.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "de/d96/classpocketmine_1_1block_1_1_froglight.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a286fc64348f13417dcb6106c2695911b", null ],

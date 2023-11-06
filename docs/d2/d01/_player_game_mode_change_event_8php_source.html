@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d2/d01/_player_game_mode_change_event_
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">pocketmine\event\CancellableTrait</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d1/d27/classpocketmine_1_1player_1_1_game_mode.html">pocketmine\player\GameMode</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\player\GameMode;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../db/d3e/classpocketmine_1_1event_1_1player_1_1_player_game_mode_change_event.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/d3e/classpocketmine_1_1event_1_1player_1_1_player_game_mode_change_event.html">PlayerGameModeChangeEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">PlayerEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
@@ -127,18 +127,17 @@ $(document).ready(function(){initNavTree('d2/d01/_player_game_mode_change_event_
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">protected</span> <a class="code hl_class" href="../../d1/d27/classpocketmine_1_1player_1_1_game_mode.html">GameMode</a> $newGamemode</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">protected</span> GameMode $newGamemode</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ){</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;player = $player;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNewGamemode() : <a class="code hl_class" href="../../d1/d27/classpocketmine_1_1player_1_1_game_mode.html">GameMode</a>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNewGamemode() : GameMode{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> $this-&gt;newGamemode;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_event_html"><div class="ttname"><a href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">pocketmine\event\player\PlayerEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/da2/_player_event_8php_source.html#l00032">PlayerEvent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_game_mode_change_event_html"><div class="ttname"><a href="../../db/d3e/classpocketmine_1_1event_1_1player_1_1_player_game_mode_change_event.html">pocketmine\event\player\PlayerGameModeChangeEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d01/_player_game_mode_change_event_8php_source.html#l00034">PlayerGameModeChangeEvent.php:34</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_game_mode_html"><div class="ttname"><a href="../../d1/d27/classpocketmine_1_1player_1_1_game_mode.html">pocketmine\player\GameMode</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d9b/src_2player_2_game_mode_8php_source.html#l00042">src/player/GameMode.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00168">Player.php:168</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1player_html"><div class="ttname"><a href="../../de/d7b/namespacepocketmine_1_1event_1_1player.html">pocketmine\event\player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d76/_player_bed_enter_event_8php_source.html#l00024">PlayerBedEnterEvent.php:24</a></div></div>

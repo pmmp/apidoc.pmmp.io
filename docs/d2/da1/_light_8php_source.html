@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d2/da1/_light_8php_source.html','../..
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $level = self::MAX_LIGHT_LEVEL;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../de/d0f/classpocketmine_1_1block_1_1_light.html#aa48bd9df5d930574b2d66c05930a90dd">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d0f/classpocketmine_1_1block_1_1_light.html#aa48bd9df5d930574b2d66c05930a90dd">describeBlockItemState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $w-&gt;boundedInt(4, self::MIN_LIGHT_LEVEL, self::MAX_LIGHT_LEVEL, $this-&gt;level);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $w-&gt;boundedIntAuto(self::MIN_LIGHT_LEVEL, self::MAX_LIGHT_LEVEL, $this-&gt;level);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../de/d0f/classpocketmine_1_1block_1_1_light.html#aef1c4eaf2e94e00140e873f5ee76fa8f">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d0f/classpocketmine_1_1block_1_1_light.html#aef1c4eaf2e94e00140e873f5ee76fa8f">getLightLevel</a>() : int{ return $this-&gt;level; }</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('d2/da1/_light_8php_source.html','../..
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00061">Block.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/_flowable_8php_source.html#l00033">Flowable.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_light_html"><div class="ttname"><a href="../../de/d0f/classpocketmine_1_1block_1_1_light.html">pocketmine\block\Light</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da1/_light_8php_source.html#l00031">Light.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_light_html_a1f263e216a3eb4a6dd4fa0e74bb918e5"><div class="ttname"><a href="../../de/d0f/classpocketmine_1_1block_1_1_light.html#a1f263e216a3eb4a6dd4fa0e74bb918e5">pocketmine\block\Light\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da1/_light_8php_source.html#l00059">Light.php:59</a></div></div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,29 +117,23 @@ $(document).ready(function(){initNavTree('dd/d02/_mushroom_block_type_8php_sourc
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\block\utils;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\utils\LegacyEnumShimTrait;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../de/d72/classpocketmine_1_1block_1_1utils_1_1_mushroom_block_type.html">   46</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d72/classpocketmine_1_1block_1_1utils_1_1_mushroom_block_type.html">MushroomBlockType</a>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    use EnumTrait;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        self::registerAll(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;PORES&quot;</span>),</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_NORTHWEST&quot;</span>),</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_NORTH&quot;</span>),</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_NORTHEAST&quot;</span>),</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_WEST&quot;</span>),</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_MIDDLE&quot;</span>),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_EAST&quot;</span>),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_SOUTHWEST&quot;</span>),</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_SOUTH&quot;</span>),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;CAP_SOUTHEAST&quot;</span>),</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;ALL_CAP&quot;</span>)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        );</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_mushroom_block_type_html"><div class="ttname"><a href="../../de/d72/classpocketmine_1_1block_1_1utils_1_1_mushroom_block_type.html">pocketmine\block\utils\MushroomBlockType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d02/_mushroom_block_type_8php_source.html#l00046">MushroomBlockType.php:46</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">enum</span> MushroomBlockType{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    use LegacyEnumShimTrait;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">case</span> PORES;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">case</span> CAP_NORTHWEST;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> CAP_NORTH;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">case</span> CAP_NORTHEAST;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">case</span> CAP_WEST;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">case</span> CAP_MIDDLE;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">case</span> CAP_EAST;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">case</span> CAP_SOUTHWEST;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">case</span> CAP_SOUTH;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">case</span> CAP_SOUTHEAST;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">case</span> ALL_CAP;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -12,6 +12,7 @@ var dir_313caf1132e152dd9b58bea13a4052ca =
     [ "Internet.php", "d7/d4f/_internet_8php_source.html", null ],
     [ "InternetException.php", "da/d1a/_internet_exception_8php_source.html", null ],
     [ "InternetRequestResult.php", "d1/d37/_internet_request_result_8php_source.html", null ],
+    [ "LegacyEnumShimTrait.php", "d5/df1/_legacy_enum_shim_trait_8php_source.html", null ],
     [ "MainLogger.php", "de/d0e/_main_logger_8php_source.html", null ],
     [ "MainLoggerThread.php", "d6/d41/_main_logger_thread_8php_source.html", null ],
     [ "NotCloneable.php", "d2/de6/_not_cloneable_8php_source.html", null ],

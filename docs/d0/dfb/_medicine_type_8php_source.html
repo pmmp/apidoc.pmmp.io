@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -119,39 +119,35 @@ $(document).ready(function(){initNavTree('d0/dfb/_medicine_type_8php_source.html
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">pocketmine\entity\effect\Effect</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">pocketmine\entity\effect\VanillaEffects</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\utils\LegacyEnumShimTrait;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../da/de1/classpocketmine_1_1item_1_1_medicine_type.html">   41</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../da/de1/classpocketmine_1_1item_1_1_medicine_type.html">MedicineType</a>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    use EnumTrait {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        __construct as Enum___construct;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        self::registerAll(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&#39;antidote&#39;</span>, <span class="stringliteral">&#39;Antidote&#39;</span>, VanillaEffects::POISON()),</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&#39;elixir&#39;</span>, <span class="stringliteral">&#39;Elixir&#39;</span>, VanillaEffects::WEAKNESS()),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&#39;eye_drops&#39;</span>, <span class="stringliteral">&#39;Eye Drops&#39;</span>, VanillaEffects::BLINDNESS()),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&#39;tonic&#39;</span>, <span class="stringliteral">&#39;Tonic&#39;</span>, VanillaEffects::NAUSEA())</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        );</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordtype">string</span> $enumName,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $displayName,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">Effect</a> $curedEffect</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    ){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $this-&gt;Enum___construct($enumName);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;displayName; }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCuredEffect() : <a class="code hl_class" href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">Effect</a>{ <span class="keywordflow">return</span> $this-&gt;curedEffect; }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d0/dec/namespacepocketmine_1_1item.html#a1a8161163ff591511b03228458c683dd">   39</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#a1a8161163ff591511b03228458c683dd">MedicineType</a>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    use LegacyEnumShimTrait;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">case</span> ANTIDOTE;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">case</span> ELIXIR;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">case</span> EYE_DROPS;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">case</span> TONIC;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keyword">function</span> <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>() : array{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">//cache not required here - VanillaEffects always returns the same object</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> match($this){</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            self::ANTIDOTE =&gt; [<span class="stringliteral">&#39;Antidote&#39;</span>, VanillaEffects::POISON()],</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            self::ELIXIR =&gt; [<span class="stringliteral">&#39;Elixir&#39;</span>, VanillaEffects::WEAKNESS()],</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            self::EYE_DROPS =&gt; [<span class="stringliteral">&#39;Eye Drops&#39;</span>, VanillaEffects::BLINDNESS()],</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            self::TONIC =&gt; [<span class="stringliteral">&#39;Tonic&#39;</span>, VanillaEffects::NAUSEA()]</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        };</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[0]; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCuredEffect() : <a class="code hl_class" href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">Effect</a>{ <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[1]; }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">   63</a></span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1effect_1_1_effect_html"><div class="ttname"><a href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">pocketmine\entity\effect\Effect</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcc/_effect_8php_source.html#l00033">Effect.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1effect_1_1_vanilla_effects_html"><div class="ttname"><a href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">pocketmine\entity\effect\VanillaEffects</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0d/_vanilla_effects_8php_source.html#l00064">VanillaEffects.php:64</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_medicine_type_html"><div class="ttname"><a href="../../da/de1/classpocketmine_1_1item_1_1_medicine_type.html">pocketmine\item\MedicineType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_medicine_type_8php_source.html#l00041">MedicineType.php:41</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1item_html_a1a8161163ff591511b03228458c683dd"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a1a8161163ff591511b03228458c683dd">pocketmine\item\MedicineType</a></div><div class="ttdeci">MedicineType</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_medicine_type_8php_source.html#l00039">MedicineType.php:39</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1item_html_ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">pocketmine\item\getMetadata</a></div><div class="ttdeci">@ getMetadata</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_medicine_type_8php_source.html#l00063">MedicineType.php:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

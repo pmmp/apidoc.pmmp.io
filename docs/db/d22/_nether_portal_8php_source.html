@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('db/d22/_nether_portal_8php_source.html
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\SupportType;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
@@ -156,8 +156,8 @@ $(document).ready(function(){initNavTree('db/d22/_nether_portal_8php_source.html
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        return [];</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a1734863a4502deb9a07910179047597f">   72</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a1734863a4502deb9a07910179047597f">getSupportType</a>(<span class="keywordtype">int</span> $facing) : <a class="code hl_class" href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">SupportType</a>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        return <a class="code hl_class" href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">SupportType</a>::NONE();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a1734863a4502deb9a07910179047597f">   72</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a1734863a4502deb9a07910179047597f">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        return SupportType::NONE;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4e0444bc4ad86dedb99167f43458eba1">   76</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4e0444bc4ad86dedb99167f43458eba1">getDrops</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
@@ -178,7 +178,6 @@ $(document).ready(function(){initNavTree('db/d22/_nether_portal_8php_source.html
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_portal_html_ac067b339ddf1dedbba981d80978a32f9"><div class="ttname"><a href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#ac067b339ddf1dedbba981d80978a32f9">pocketmine\block\NetherPortal\setAxis</a></div><div class="ttdeci">setAxis(int $axis)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/_nether_portal_8php_source.html#l00049">NetherPortal.php:49</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_portal_html_adf110f86af26f722a96d8b5d31f2e7d3"><div class="ttname"><a href="../../d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#adf110f86af26f722a96d8b5d31f2e7d3">pocketmine\block\NetherPortal\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/_nether_portal_8php_source.html#l00068">NetherPortal.php:68</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_support_type_html"><div class="ttname"><a href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da3/_support_type_8php_source.html#l00039">SupportType.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00082">Entity.php:82</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_aligned_b_b_html"><div class="ttname"><a href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d87/_axis_aligned_b_b_8php_source.html#l00029">AxisAlignedBB.php:29</a></div></div>

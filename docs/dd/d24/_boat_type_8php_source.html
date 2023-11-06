@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,43 +117,38 @@ $(document).ready(function(){initNavTree('dd/d24/_boat_type_8php_source.html','.
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d8/d35/classpocketmine_1_1block_1_1utils_1_1_wood_type.html">pocketmine\block\utils\WoodType</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\WoodType;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\utils\LegacyEnumShimTrait;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d85/classpocketmine_1_1item_1_1_boat_type.html">   43</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d85/classpocketmine_1_1item_1_1_boat_type.html">BoatType</a>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    use EnumTrait {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        __construct as Enum___construct;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        self::registerAll(</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;oak&quot;</span>, WoodType::OAK()),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;spruce&quot;</span>, WoodType::SPRUCE()),</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;birch&quot;</span>, WoodType::BIRCH()),</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;jungle&quot;</span>, WoodType::JUNGLE()),</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;acacia&quot;</span>, WoodType::ACACIA()),</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;dark_oak&quot;</span>, WoodType::DARK_OAK()),</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;mangrove&quot;</span>, WoodType::MANGROVE()),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        );</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">string</span> $enumName,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d8/d35/classpocketmine_1_1block_1_1utils_1_1_wood_type.html">WoodType</a> $woodType,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    ){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $this-&gt;Enum___construct($enumName);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> getWoodType() : <a class="code hl_class" href="../../d8/d35/classpocketmine_1_1block_1_1utils_1_1_wood_type.html">WoodType</a>{ <span class="keywordflow">return</span> $this-&gt;woodType; }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> $this-&gt;woodType-&gt;getDisplayName();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_wood_type_html"><div class="ttname"><a href="../../d8/d35/classpocketmine_1_1block_1_1utils_1_1_wood_type.html">pocketmine\block\utils\WoodType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4c/_wood_type_8php_source.html#l00045">WoodType.php:45</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_boat_type_html"><div class="ttname"><a href="../../d3/d85/classpocketmine_1_1item_1_1_boat_type.html">pocketmine\item\BoatType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/_boat_type_8php_source.html#l00043">BoatType.php:43</a></div></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224de">   41</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224de">BoatType</a>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    use LegacyEnumShimTrait;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">case</span> OAK;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">case</span> SPRUCE;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">case</span> BIRCH;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">case</span> JUNGLE;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">case</span> ACACIA;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> DARK_OAK;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">case</span> MANGROVE;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getWoodType() : WoodType{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> match($this){</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            self::OAK =&gt; WoodType::OAK,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            self::SPRUCE =&gt; WoodType::SPRUCE,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            self::BIRCH =&gt; WoodType::BIRCH,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            self::JUNGLE =&gt; WoodType::JUNGLE,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            self::ACACIA =&gt; WoodType::ACACIA,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            self::DARK_OAK =&gt; WoodType::DARK_OAK,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            self::MANGROVE =&gt; WoodType::MANGROVE,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDisplayName() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> $this-&gt;getWoodType()-&gt;getDisplayName();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1item_html_afe460b21511aa8ad76e531b450a224de"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224de">pocketmine\item\BoatType</a></div><div class="ttdeci">BoatType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/_boat_type_8php_source.html#l00041">BoatType.php:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

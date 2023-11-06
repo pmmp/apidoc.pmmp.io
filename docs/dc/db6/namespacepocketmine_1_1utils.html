@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -315,7 +315,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether the two objects are equivalent. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00103">103</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00106">106</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ Variables</h2></td></tr>
 <p >Returns all members of the enum. This is overridden to change the return typehint.</p>
 <dl class="section return"><dt>Returns</dt><dd>self[] @phpstan-return array&lt;string, self&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00060">60</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00063">63</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns a runtime-only identifier for this enum member. This will be different with each run, so don't try to hardcode it. This can be useful for switches or array indexing. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00096">96</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00099">99</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00087">87</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00090">90</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Variables</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00043">43</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00046">46</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>
@@ -550,7 +550,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00047">47</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00050">50</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>
@@ -711,9 +711,10 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838">RegistryTrait</a></div>
 </div><!-- fragment --><p >This trait allows a class to simulate a Java-style enum. Members are exposed as static methods and handled via <a class="el" href="../../dc/db6/namespacepocketmine_1_1utils.html#a48b537d68e3fadb3f2ab4b76deb01589">__callStatic()</a>.</p>
-<p >Classes using this trait need to include @method tags in their class docblock for every enum member. Alternatively, just put @generate-registry-docblock in the docblock and run tools/generate-registry-annotations.php </p>
+<p >Classes using this trait need to include @method tags in their class docblock for every enum member. Alternatively, just put @generate-registry-docblock in the docblock and run tools/generate-registry-annotations.php</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>Use native PHP 8.1 enums instead. Use <code><a class="el" href="../../">LegacyEnumShimTrait</a></code> if you need to provide backwards compatible EnumTrait-like API for migrated enums. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00033">33</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d01/_enum_trait_8php_source.html#l00036">36</a> of file <a class="el" href="../../d3/d01/_enum_trait_8php_source.html">EnumTrait.php</a>.</p>
 
 </div>
 </div>

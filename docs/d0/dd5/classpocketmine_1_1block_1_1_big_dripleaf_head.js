@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_big_dripleaf_head =
 [
-    [ "__construct", "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#a036d04d3e30ce8ba7e89917c71731f47", null ],
     [ "__toString", "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#a286fc64348f13417dcb6106c2695911b", null ],

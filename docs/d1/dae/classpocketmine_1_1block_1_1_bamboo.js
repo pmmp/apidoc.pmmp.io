@@ -54,7 +54,7 @@ var classpocketmine_1_1block_1_1_bamboo =
     [ "onEntityLand", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#a86b636e543cc443407c3b0c6347444a1", null ],
-    [ "onNearbyBlockChange", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#ad0347f7da79af32d94b8215887e215c8", null ],
+    [ "onNearbyBlockChange", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onPostPlace", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "d1/dae/classpocketmine_1_1block_1_1_bamboo.html#a82fdac7efb92a7d2eaaf5db7def67ba3", null ],

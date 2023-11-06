@@ -54,7 +54,7 @@ var classpocketmine_1_1block_1_1_redstone_repeater =
     [ "onEntityLand", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a0c8a40a04cb107111ebe6b0d2e06bc98", null ],
-    [ "onNearbyBlockChange", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a7ec5e7493cae4666f73e0110c88969d9", null ],
+    [ "onNearbyBlockChange", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onPostPlace", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a36afea9f0214193963f75577e8d48c26", null ],

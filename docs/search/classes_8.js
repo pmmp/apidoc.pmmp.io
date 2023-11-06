@@ -111,6 +111,5 @@ var searchData=
   ['itemtypeids_108',['ItemTypeIds',['../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html',1,'pocketmine::item']]],
   ['itemtypenames_109',['ItemTypeNames',['../d5/d77/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_item_type_names.html',1,'pocketmine::data::bedrock::item']]],
   ['itemtypeserializeexception_110',['ItemTypeSerializeException',['../d5/d0f/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_item_type_serialize_exception.html',1,'pocketmine::data::bedrock::item']]],
-  ['itemuseonblocksound_111',['ItemUseOnBlockSound',['../d5/d62/classpocketmine_1_1world_1_1sound_1_1_item_use_on_block_sound.html',1,'pocketmine::world::sound']]],
-  ['itemuseresult_112',['ItemUseResult',['../db/d64/classpocketmine_1_1item_1_1_item_use_result.html',1,'pocketmine::item']]]
+  ['itemuseonblocksound_111',['ItemUseOnBlockSound',['../d5/d62/classpocketmine_1_1world_1_1sound_1_1_item_use_on_block_sound.html',1,'pocketmine::world::sound']]]
 ];

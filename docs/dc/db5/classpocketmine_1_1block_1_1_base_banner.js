@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_base_banner =
 [
-    [ "__construct", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a8ea0420d13e85fd10817f16c2be0dd2e", null ],
     [ "__toString", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a1d1c2efbbe29c555ae01fd9a5a39aaee", null ],

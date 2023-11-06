@@ -30,14 +30,12 @@ var namespacepocketmine =
       [ "ExactRecipeIngredient", "da/dae/classpocketmine_1_1crafting_1_1_exact_recipe_ingredient.html", null ],
       [ "FurnaceRecipe", "da/d41/classpocketmine_1_1crafting_1_1_furnace_recipe.html", null ],
       [ "FurnaceRecipeManager", "d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html", "d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager" ],
-      [ "FurnaceType", "dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html", null ],
       [ "MetaWildcardRecipeIngredient", "dd/d47/classpocketmine_1_1crafting_1_1_meta_wildcard_recipe_ingredient.html", null ],
       [ "PotionContainerChangeRecipe", "d1/d65/classpocketmine_1_1crafting_1_1_potion_container_change_recipe.html", null ],
       [ "PotionTypeRecipe", "d8/dfb/classpocketmine_1_1crafting_1_1_potion_type_recipe.html", null ],
       [ "RecipeIngredient", "dd/d65/interfacepocketmine_1_1crafting_1_1_recipe_ingredient.html", null ],
       [ "ShapedRecipe", "d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe.html", "d6/dbb/classpocketmine_1_1crafting_1_1_shaped_recipe" ],
       [ "ShapelessRecipe", "dd/d02/classpocketmine_1_1crafting_1_1_shapeless_recipe.html", "dd/d02/classpocketmine_1_1crafting_1_1_shapeless_recipe" ],
-      [ "ShapelessRecipeType", "df/d32/classpocketmine_1_1crafting_1_1_shapeless_recipe_type.html", null ],
       [ "TagWildcardRecipeIngredient", "d4/d64/classpocketmine_1_1crafting_1_1_tag_wildcard_recipe_ingredient.html", null ]
     ] ],
     [ "crash", null, [
@@ -142,7 +140,8 @@ var namespacepocketmine =
         [ "RuntimeDataReader", "de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html", "de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader" ],
         [ "RuntimeDataSizeCalculator", "db/dff/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_size_calculator.html", "db/dff/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_size_calculator" ],
         [ "RuntimeDataWriter", "dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer.html", "dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer" ],
-        [ "RuntimeEnumDescriber", "dc/d84/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_enum_describer.html", null ]
+        [ "RuntimeEnumDescriber", "dc/d84/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_enum_describer.html", null ],
+        [ "RuntimeEnumMetadata", "dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html", "dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata" ]
       ] ],
       [ "SavedDataLoadingException", "d5/db4/classpocketmine_1_1data_1_1_saved_data_loading_exception.html", null ]
     ] ],
@@ -178,7 +177,6 @@ var namespacepocketmine =
       ] ],
       [ "ChunkSelector", "d4/db4/classpocketmine_1_1player_1_1_chunk_selector.html", "d4/db4/classpocketmine_1_1player_1_1_chunk_selector" ],
       [ "DatFilePlayerDataProvider", "d5/db7/classpocketmine_1_1player_1_1_dat_file_player_data_provider.html", "d5/db7/classpocketmine_1_1player_1_1_dat_file_player_data_provider" ],
-      [ "GameMode", "d1/d27/classpocketmine_1_1player_1_1_game_mode.html", "d1/d27/classpocketmine_1_1player_1_1_game_mode" ],
       [ "IPlayer", "d2/df5/interfacepocketmine_1_1player_1_1_i_player.html", null ],
       [ "OfflinePlayer", "dd/d09/classpocketmine_1_1player_1_1_offline_player.html", null ],
       [ "Player", "d0/d6f/classpocketmine_1_1player_1_1_player.html", "d0/d6f/classpocketmine_1_1player_1_1_player" ],
@@ -187,7 +185,6 @@ var namespacepocketmine =
       [ "PlayerDataSaveException", "dc/d86/classpocketmine_1_1player_1_1_player_data_save_exception.html", null ],
       [ "PlayerInfo", "d2/d93/classpocketmine_1_1player_1_1_player_info.html", "d2/d93/classpocketmine_1_1player_1_1_player_info" ],
       [ "SurvivalBlockBreakHandler", "db/dcb/classpocketmine_1_1player_1_1_survival_block_break_handler.html", null ],
-      [ "UsedChunkStatus", "dd/d8a/classpocketmine_1_1player_1_1_used_chunk_status.html", null ],
       [ "XboxLivePlayerInfo", "d7/da2/classpocketmine_1_1player_1_1_xbox_live_player_info.html", "d7/da2/classpocketmine_1_1player_1_1_xbox_live_player_info" ]
     ] ],
     [ "plugin", "d1/dd8/namespacepocketmine_1_1plugin.html", "d1/dd8/namespacepocketmine_1_1plugin" ],

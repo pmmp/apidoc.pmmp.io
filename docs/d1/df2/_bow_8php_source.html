@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        return 385;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae1727de5238036de0ff9338867998283">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae1727de5238036de0ff9338867998283">onReleaseUsing</a>(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, array &amp;$returnedItems) : <a class="code hl_class" href="../../db/d64/classpocketmine_1_1item_1_1_item_use_result.html">ItemUseResult</a>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae1727de5238036de0ff9338867998283">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae1727de5238036de0ff9338867998283">onReleaseUsing</a>(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player, array &amp;$returnedItems) : <a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#a3a25a1f468133b0dfb8804138dd9633f">ItemUseResult</a>{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $arrow = <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">VanillaItems</a>::ARROW();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $inventory = match(<span class="keyword">true</span>){</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $player-&gt;getOffHandInventory()-&gt;contains($arrow) =&gt; $player-&gt;getOffHandInventory(),</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        };</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span>($player-&gt;<a class="code hl_function" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a00e01c4d202f1ed69d570d16382ba733">hasFiniteResources</a>() &amp;&amp; $inventory === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> ItemUseResult::FAIL();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> ItemUseResult::FAIL;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $location = $player-&gt;getLocation();</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            $entity-&gt;flagForDespawn();</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">return</span> ItemUseResult::FAIL();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">return</span> ItemUseResult::FAIL;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $entity-&gt;setMotion($entity-&gt;getMotion()-&gt;multiply($ev-&gt;getForce()));</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            $projectileEv-&gt;call();</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">if</span>($projectileEv-&gt;isCancelled()){</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                $ev-&gt;getProjectile()-&gt;flagForDespawn();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordflow">return</span> ItemUseResult::FAIL();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordflow">return</span> ItemUseResult::FAIL;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $ev-&gt;getProjectile()-&gt;spawnToAll();</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            $this-&gt;applyDamage(1);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> ItemUseResult::SUCCESS();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> ItemUseResult::SUCCESS;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">public</span> <span class="keyword">function</span> canStartUsingItem(Player $player) : bool{</div>
@@ -231,9 +231,8 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_bow_html_a04ca063f264f18ba61b3822048aa442b"><div class="ttname"><a href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#a04ca063f264f18ba61b3822048aa442b">pocketmine\item\Bow\getMaxDurability</a></div><div class="ttdeci">getMaxDurability()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df2/_bow_8php_source.html#l00043">Bow.php:43</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_bow_html_ae1727de5238036de0ff9338867998283"><div class="ttname"><a href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae1727de5238036de0ff9338867998283">pocketmine\item\Bow\onReleaseUsing</a></div><div class="ttdeci">onReleaseUsing(Player $player, array &amp;$returnedItems)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df2/_bow_8php_source.html#l00047">Bow.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_bow_html_afc015522500bec180553ac4bec23e91c"><div class="ttname"><a href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#afc015522500bec180553ac4bec23e91c">pocketmine\item\Bow\getFuelTime</a></div><div class="ttdeci">getFuelTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df2/_bow_8php_source.html#l00039">Bow.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_use_result_html"><div class="ttname"><a href="../../db/d64/classpocketmine_1_1item_1_1_item_use_result.html">pocketmine\item\ItemUseResult</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1c/_item_use_result_8php_source.html#l00038">ItemUseResult.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_tool_html"><div class="ttname"><a href="../../da/de7/classpocketmine_1_1item_1_1_tool.html">pocketmine\item\Tool</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d4d/_tool_8php_source.html#l00028">Tool.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00315">VanillaItems.php:315</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00316">VanillaItems.php:316</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments_html"><div class="ttname"><a href="../../d3/dfc/classpocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments.html">pocketmine\item\enchantment\VanillaEnchantments</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d89/_vanilla_enchantments_8php_source.html#l00058">VanillaEnchantments.php:58</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00168">Player.php:168</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html_a00e01c4d202f1ed69d570d16382ba733"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html#a00e01c4d202f1ed69d570d16382ba733">pocketmine\player\Player\hasFiniteResources</a></div><div class="ttdeci">hasFiniteResources()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l01201">Player.php:1201</a></div></div>
@@ -242,6 +241,7 @@ $(document).ready(function(){initNavTree('d1/df2/_bow_8php_source.html','../../'
 <div class="ttc" id="ainterfacepocketmine_1_1item_1_1_releasable_html"><div class="ttname"><a href="../../d4/d35/interfacepocketmine_1_1item_1_1_releasable.html">pocketmine\item\Releasable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/_releasable_8php_source.html#l00031">Releasable.php:31</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html_a01b5f486b8f53048ef2db5e96f716387"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a01b5f486b8f53048ef2db5e96f716387">pocketmine\item\getEnchantmentLevel</a></div><div class="ttdeci">getEnchantmentLevel(Enchantment $enchantment)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/daa/_item_enchantment_handling_trait_8php_source.html#l00091">ItemEnchantmentHandlingTrait.php:91</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1item_html_a3a25a1f468133b0dfb8804138dd9633f"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a3a25a1f468133b0dfb8804138dd9633f">pocketmine\item\ItemUseResult</a></div><div class="ttdeci">ItemUseResult</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1c/_item_use_result_8php_source.html#l00036">ItemUseResult.php:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

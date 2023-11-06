@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gamemode_0',['GameMode',['../d6/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_mode.html',1,'pocketmine\network\mcpe\protocol\types\GameMode'],['../d1/d27/classpocketmine_1_1player_1_1_game_mode.html',1,'pocketmine\player\GameMode']]],
+  ['gamemode_0',['GameMode',['../d6/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_mode.html',1,'pocketmine::network::mcpe::protocol::types']]],
   ['gamemodecommand_1',['GamemodeCommand',['../d7/de4/classpocketmine_1_1command_1_1defaults_1_1_gamemode_command.html',1,'pocketmine::command::defaults']]],
   ['gamemodeidmap_2',['GameModeIdMap',['../d9/d1c/classpocketmine_1_1data_1_1java_1_1_game_mode_id_map.html',1,'pocketmine::data::java']]],
   ['gamerule_3',['GameRule',['../da/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_rule.html',1,'pocketmine::network::mcpe::protocol::types']]],

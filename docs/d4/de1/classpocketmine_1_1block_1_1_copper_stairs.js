@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_copper_stairs =
 [
-    [ "__construct", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a030442a62b7bd7a2df54a4e8889a1724", null ],
     [ "__toString", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a286fc64348f13417dcb6106c2695911b", null ],

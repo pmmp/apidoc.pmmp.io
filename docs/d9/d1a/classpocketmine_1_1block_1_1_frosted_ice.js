@@ -13,7 +13,7 @@ var classpocketmine_1_1block_1_1_frosted_ice =
     [ "canClimb", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a912c0f3a42aefc049e119f931a2ec86e", null ],
     [ "describeBlockItemState", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#aba71bdae8759a0f2dc0bb44aeafc96e4", null ],
-    [ "describeBlockOnlyState", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acde0dc9a29b1ed29fc17a6050c5a5647", null ],
+    [ "describeBlockOnlyState", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a444028c60ad6c7afacda1a6cc3065e59", null ],
     [ "generateStatePermutations", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
@@ -62,7 +62,6 @@ var classpocketmine_1_1block_1_1_frosted_ice =
     [ "place", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
-    [ "setAge", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a60cb17baa9de6d5627549961cfd78814", null ],
     [ "ticksRandomly", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad22cce43d6d98bf006980c355179ef41", null ],
     [ "writeStateToWorld", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

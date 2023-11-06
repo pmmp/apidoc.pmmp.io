@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_dyed_candle =
 [
-    [ "__construct", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#ab92115198d3faf64798094d88c1bd9cb", null ],
     [ "__toString", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a286fc64348f13417dcb6106c2695911b", null ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('d1/dd8/namespacepocketmine_1_1plugin.h
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">pocketmine\plugin Namespace Reference</div></div>
@@ -117,8 +118,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d47/classpocketmine_1_1plugin_1_1_plugin_description_parse_exception.html">PluginDescriptionParseException</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc4/classpocketmine_1_1plugin_1_1_plugin_enable_order.html">PluginEnableOrder</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7b/classpocketmine_1_1plugin_1_1_plugin_exception.html">PluginException</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddf/classpocketmine_1_1plugin_1_1_plugin_graylist.html">PluginGraylist</a></td></tr>
@@ -142,6 +141,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader.html">ScriptPluginLoader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:afc5ce7d3489354e196d650dd64e9faf6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd8/namespacepocketmine_1_1plugin.html#afc5ce7d3489354e196d650dd64e9faf6">PluginEnableOrder</a> { <b>fromString</b>
+ }</td></tr>
+<tr class="separator:afc5ce7d3489354e196d650dd64e9faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1372c774b5615955d6aa57bf3f48a206"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd8/namespacepocketmine_1_1plugin.html#a1372c774b5615955d6aa57bf3f48a206">__construct</a> (<a class="el" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> $owningPlugin)</td></tr>
@@ -156,7 +161,26 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> related classes </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="afc5ce7d3489354e196d650dd64e9faf6" name="afc5ce7d3489354e196d650dd64e9faf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5ce7d3489354e196d650dd64e9faf6">&#9670;&nbsp;</a></span>PluginEnableOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/dd8/namespacepocketmine_1_1plugin.html#afc5ce7d3489354e196d650dd64e9faf6">pocketmine::plugin::PluginEnableOrder</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >TODO: These tags need to be removed once we get rid of LegacyEnumShimTrait (PM6) These are retained for backwards compatibility only.</p>
+<p >@method static PluginEnableOrder POSTWORLD() @method static PluginEnableOrder STARTUP() </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d47/_plugin_enable_order_8php_source.html#l00036">36</a> of file <a class="el" href="../../d6/d47/_plugin_enable_order_8php_source.html">PluginEnableOrder.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a1372c774b5615955d6aa57bf3f48a206" name="a1372c774b5615955d6aa57bf3f48a206"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1372c774b5615955d6aa57bf3f48a206">&#9670;&nbsp;</a></span>__construct()</h2>
 

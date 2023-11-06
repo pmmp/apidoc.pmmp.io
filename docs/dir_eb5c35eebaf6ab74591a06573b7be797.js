@@ -1,5 +1,7 @@
 var dir_eb5c35eebaf6ab74591a06573b7be797 =
 [
+    [ "AgeableTrait.php", "da/de2/_ageable_trait_8php_source.html", null ],
+    [ "AmethystTrait.php", "d1/d40/_amethyst_trait_8php_source.html", null ],
     [ "AnalogRedstoneSignalEmitterTrait.php", "d9/d5e/_analog_redstone_signal_emitter_trait_8php_source.html", null ],
     [ "AnyFacingTrait.php", "db/de1/_any_facing_trait_8php_source.html", null ],
     [ "BannerPatternLayer.php", "df/db7/_banner_pattern_layer_8php_source.html", null ],
@@ -8,6 +10,7 @@ var dir_eb5c35eebaf6ab74591a06573b7be797 =
     [ "BlockEventHelper.php", "d1/de3/_block_event_helper_8php_source.html", null ],
     [ "BrewingStandSlot.php", "d8/daf/_brewing_stand_slot_8php_source.html", null ],
     [ "CandleTrait.php", "d0/d3d/_candle_trait_8php_source.html", null ],
+    [ "ChiseledBookshelfSlot.php", "db/dce/_chiseled_bookshelf_slot_8php_source.html", null ],
     [ "ColoredTrait.php", "dd/d40/_colored_trait_8php_source.html", null ],
     [ "CopperOxidation.php", "d8/de5/_copper_oxidation_8php_source.html", null ],
     [ "CopperTrait.php", "d0/d43/_copper_trait_8php_source.html", null ],
@@ -37,6 +40,7 @@ var dir_eb5c35eebaf6ab74591a06573b7be797 =
     [ "SignText.php", "d5/d96/_sign_text_8php_source.html", null ],
     [ "SlabType.php", "d7/d23/_slab_type_8php_source.html", null ],
     [ "StairShape.php", "d0/dbc/_stair_shape_8php_source.html", null ],
+    [ "StaticSupportTrait.php", "d2/d92/_static_support_trait_8php_source.html", null ],
     [ "SupportType.php", "dd/da3/_support_type_8php_source.html", null ],
     [ "TallGrassTrait.php", "d8/d91/_tall_grass_trait_8php_source.html", null ],
     [ "WallConnectionType.php", "d5/d7a/_wall_connection_type_8php_source.html", null ],

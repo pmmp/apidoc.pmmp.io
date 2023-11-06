@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -646,10 +646,10 @@ $(document).ready(function(){initNavTree('d8/dbd/_block_type_ids_8php_source.htm
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="keyword">public</span> <span class="keyword">const</span> WEIGHTED_PRESSURE_PLATE_HEAVY = 10532;</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="keyword">public</span> <span class="keyword">const</span> WEIGHTED_PRESSURE_PLATE_LIGHT = 10533;</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keyword">public</span> <span class="keyword">const</span> WHEAT = 10534;</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    <span class="keyword">public</span> <span class="keyword">const</span> BUDDING_AMETHYST = 10535;</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    <span class="keyword">public</span> <span class="keyword">const</span> WHITE_TULIP = 10536;</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="keyword">public</span> <span class="keyword">const</span> WOOL = 10537;</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMETHYST_CLUSTER = 10538;</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="keyword">public</span> <span class="keyword">const</span> GLAZED_TERRACOTTA = 10539;</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMETHYST = 10540;</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <span class="keyword">public</span> <span class="keyword">const</span> ANCIENT_DEBRIS = 10541;</div>
@@ -821,17 +821,25 @@ $(document).ready(function(){initNavTree('d8/dbd/_block_type_ids_8php_source.htm
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIG_DRIPLEAF_HEAD = 10707;</div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIG_DRIPLEAF_STEM = 10708;</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keyword">public</span> <span class="keyword">const</span> PINK_PETALS = 10709;</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10710;</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  748</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        return self::$nextDynamicId++;</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    }</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>}</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keyword">public</span> <span class="keyword">const</span> CRIMSON_ROOTS = 10710;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARPED_ROOTS = 10711;</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHISELED_BOOKSHELF = 10712;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keyword">public</span> <span class="keyword">const</span> TORCHFLOWER = 10713;</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keyword">public</span> <span class="keyword">const</span> TORCHFLOWER_CROP = 10714;</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keyword">public</span> <span class="keyword">const</span> PITCHER_PLANT = 10715;</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keyword">public</span> <span class="keyword">const</span> PITCHER_CROP = 10716;</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="keyword">public</span> <span class="keyword">const</span> DOUBLE_PITCHER_CROP = 10717;</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10718;</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  756</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>        return self::$nextDynamicId++;</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    }</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00036">BlockTypeIds.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00748">BlockTypeIds.php:748</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00756">BlockTypeIds.php:756</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html">pocketmine\block\TNT</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00044">TNT.php:44</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

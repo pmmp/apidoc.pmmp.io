@@ -21,7 +21,7 @@ var searchData=
   ['filegetcontents_18',['fileGetContents',['../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a4d10c13c08994d33c947f5174ec967b5',1,'pocketmine::utils::Filesystem']]],
   ['filesystem_19',['Filesystem',['../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html',1,'pocketmine::utils']]],
   ['fillablecauldron_20',['FillableCauldron',['../d8/dce/classpocketmine_1_1block_1_1_fillable_cauldron.html',1,'pocketmine::block']]],
-  ['filterirrelevantentities_21',['filterIrrelevantEntities',['../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b',1,'pocketmine\block\StonePressurePlate\filterIrrelevantEntities()'],['../de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a3f7f216b87cf31a3209f87f7ac631bf3',1,'pocketmine\block\PressurePlate\filterIrrelevantEntities()']]],
+  ['filterirrelevantentities_21',['filterIrrelevantEntities',['../de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a3f7f216b87cf31a3209f87f7ac631bf3',1,'pocketmine\block\PressurePlate\filterIrrelevantEntities()'],['../d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b',1,'pocketmine\block\StonePressurePlate\filterIrrelevantEntities()']]],
   ['filtertextpacket_22',['FilterTextPacket',['../dd/d0e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_filter_text_packet.html',1,'pocketmine::network::mcpe::protocol']]],
   ['findclass_23',['findClass',['../df/d2b/classpocketmine_1_1thread_1_1_thread_safe_class_loader.html#aae97429ca039b314bad1e83058a57c38',1,'pocketmine::thread::ThreadSafeClassLoader']]],
   ['findentity_24',['findEntity',['../d8/d70/classpocketmine_1_1world_1_1_world_manager.html#a8ccce211f975d7d070bdade8b7688b0b',1,'pocketmine::world::WorldManager']]],
@@ -61,13 +61,13 @@ var searchData=
   ['forciblydisconnect_58',['forciblyDisconnect',['../dd/dca/classraklib_1_1generic_1_1_session.html#aaafee10e90e9e793b322c8506181a07f',1,'raklib::generic::Session']]],
   ['forestbiome_59',['ForestBiome',['../de/df1/classpocketmine_1_1world_1_1biome_1_1_forest_biome.html',1,'pocketmine::world::biome']]],
   ['form_60',['Form',['../d5/d7b/interfacepocketmine_1_1form_1_1_form.html',1,'pocketmine::form']]],
-  ['format_61',['format',['../d0/db6/interfacepocketmine_1_1player_1_1chat_1_1_chat_formatter.html#a3c80c76273e94d510cf038ab3b80f8b8',1,'pocketmine\player\chat\ChatFormatter\format()'],['../d6/d17/classpocketmine_1_1player_1_1chat_1_1_standard_chat_formatter.html#ad713a1ee09d3f9c58a4012c467631f73',1,'pocketmine\player\chat\StandardChatFormatter\format()'],['../d4/d87/classpocketmine_1_1player_1_1chat_1_1_legacy_raw_chat_formatter.html#a6885c24e1f0450c63a76bae496beb28c',1,'pocketmine\player\chat\LegacyRawChatFormatter\format()']]],
+  ['format_61',['format',['../d0/db6/interfacepocketmine_1_1player_1_1chat_1_1_chat_formatter.html#a3c80c76273e94d510cf038ab3b80f8b8',1,'pocketmine\player\chat\ChatFormatter\format()'],['../d4/d87/classpocketmine_1_1player_1_1chat_1_1_legacy_raw_chat_formatter.html#a6885c24e1f0450c63a76bae496beb28c',1,'pocketmine\player\chat\LegacyRawChatFormatter\format()'],['../d6/d17/classpocketmine_1_1player_1_1chat_1_1_standard_chat_formatter.html#ad713a1ee09d3f9c58a4012c467631f73',1,'pocketmine\player\chat\StandardChatFormatter\format()']]],
   ['formatconverter_62',['FormatConverter',['../dd/dc7/classpocketmine_1_1world_1_1format_1_1io_1_1_format_converter.html',1,'pocketmine::world::format::io']]],
   ['formattedcommandalias_63',['FormattedCommandAlias',['../d7/d80/classpocketmine_1_1command_1_1_formatted_command_alias.html',1,'pocketmine::command']]],
   ['formvalidationexception_64',['FormValidationException',['../d7/d79/classpocketmine_1_1form_1_1_form_validation_exception.html',1,'pocketmine::form']]],
   ['fortunedrophelper_65',['FortuneDropHelper',['../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html',1,'pocketmine::block::utils']]],
   ['froglight_66',['Froglight',['../de/d96/classpocketmine_1_1block_1_1_froglight.html',1,'pocketmine::block']]],
-  ['froglighttype_67',['FroglightType',['../de/df4/classpocketmine_1_1block_1_1utils_1_1_froglight_type.html',1,'pocketmine::block::utils']]],
+  ['from_67',['from',['../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348',1,'pocketmine::data::runtime::RuntimeEnumMetadata']]],
   ['fromargb_68',['fromARGB',['../dd/d00/classpocketmine_1_1color_1_1_color.html#a4ba4b7a49fefbcf0e5301b839e5d02e5',1,'pocketmine::color::Color']]],
   ['fromarray_69',['fromArray',['../de/ddf/classpocketmine_1_1plugin_1_1_plugin_graylist.html#a44c8d93105f20d44f292832a15001c92',1,'pocketmine::plugin::PluginGraylist']]],
   ['frombinary_70',['fromBinary',['../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html#a745465d1c8d330a06932ac14c50c5deb',1,'raklib::protocol::EncapsulatedPacket']]],
@@ -94,6 +94,5 @@ var searchData=
   ['furnacerecipedata_91',['FurnaceRecipeData',['../d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html',1,'pocketmine::crafting::json']]],
   ['furnacerecipemanager_92',['FurnaceRecipeManager',['../d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html',1,'pocketmine::crafting']]],
   ['furnacesmeltevent_93',['FurnaceSmeltEvent',['../d8/df1/classpocketmine_1_1event_1_1inventory_1_1_furnace_smelt_event.html',1,'pocketmine::event::inventory']]],
-  ['furnacesound_94',['FurnaceSound',['../dd/d28/classpocketmine_1_1world_1_1sound_1_1_furnace_sound.html',1,'pocketmine::world::sound']]],
-  ['furnacetype_95',['FurnaceType',['../dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html',1,'pocketmine::crafting']]]
+  ['furnacesound_94',['FurnaceSound',['../dd/d28/classpocketmine_1_1world_1_1sound_1_1_furnace_sound.html',1,'pocketmine::world::sound']]]
 ];

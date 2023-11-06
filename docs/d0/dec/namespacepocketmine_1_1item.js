@@ -34,7 +34,6 @@ var namespacepocketmine_1_1item =
     [ "BeetrootSoup", "df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html", "df/d75/classpocketmine_1_1item_1_1_beetroot_soup" ],
     [ "BlazeRod", "d8/d16/classpocketmine_1_1item_1_1_blaze_rod.html", "d8/d16/classpocketmine_1_1item_1_1_blaze_rod" ],
     [ "Boat", "d6/d41/classpocketmine_1_1item_1_1_boat.html", "d6/d41/classpocketmine_1_1item_1_1_boat" ],
-    [ "BoatType", "d3/d85/classpocketmine_1_1item_1_1_boat_type.html", null ],
     [ "Book", "d3/d6c/classpocketmine_1_1item_1_1_book.html", "d3/d6c/classpocketmine_1_1item_1_1_book" ],
     [ "Bow", "d5/dbc/classpocketmine_1_1item_1_1_bow.html", "d5/dbc/classpocketmine_1_1item_1_1_bow" ],
     [ "Bowl", "db/d8c/classpocketmine_1_1item_1_1_bowl.html", "db/d8c/classpocketmine_1_1item_1_1_bowl" ],
@@ -81,12 +80,10 @@ var namespacepocketmine_1_1item =
     [ "ItemBlockWallOrFloor", "d8/d23/classpocketmine_1_1item_1_1_item_block_wall_or_floor.html", "d8/d23/classpocketmine_1_1item_1_1_item_block_wall_or_floor" ],
     [ "ItemIdentifier", "d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html", null ],
     [ "ItemTypeIds", "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html", "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids" ],
-    [ "ItemUseResult", "db/d64/classpocketmine_1_1item_1_1_item_use_result.html", null ],
     [ "LegacyStringToItemParser", "d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser.html", "d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser" ],
     [ "LegacyStringToItemParserException", "db/d85/classpocketmine_1_1item_1_1_legacy_string_to_item_parser_exception.html", null ],
     [ "LiquidBucket", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket" ],
     [ "Medicine", "d9/db1/classpocketmine_1_1item_1_1_medicine.html", "d9/db1/classpocketmine_1_1item_1_1_medicine" ],
-    [ "MedicineType", "da/de1/classpocketmine_1_1item_1_1_medicine_type.html", null ],
     [ "Melon", "d7/da1/classpocketmine_1_1item_1_1_melon.html", "d7/da1/classpocketmine_1_1item_1_1_melon" ],
     [ "MelonSeeds", "de/da4/classpocketmine_1_1item_1_1_melon_seeds.html", "de/da4/classpocketmine_1_1item_1_1_melon_seeds" ],
     [ "MilkBucket", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket" ],
@@ -97,7 +94,6 @@ var namespacepocketmine_1_1item =
     [ "PoisonousPotato", "d4/dfa/classpocketmine_1_1item_1_1_poisonous_potato.html", "d4/dfa/classpocketmine_1_1item_1_1_poisonous_potato" ],
     [ "Potato", "db/d9d/classpocketmine_1_1item_1_1_potato.html", "db/d9d/classpocketmine_1_1item_1_1_potato" ],
     [ "Potion", "d3/d00/classpocketmine_1_1item_1_1_potion.html", "d3/d00/classpocketmine_1_1item_1_1_potion" ],
-    [ "PotionType", "d2/d51/classpocketmine_1_1item_1_1_potion_type.html", "d2/d51/classpocketmine_1_1item_1_1_potion_type" ],
     [ "ProjectileItem", "d4/ddb/classpocketmine_1_1item_1_1_projectile_item.html", "d4/ddb/classpocketmine_1_1item_1_1_projectile_item" ],
     [ "Pufferfish", "d6/d29/classpocketmine_1_1item_1_1_pufferfish.html", "d6/d29/classpocketmine_1_1item_1_1_pufferfish" ],
     [ "PumpkinPie", "d3/da8/classpocketmine_1_1item_1_1_pumpkin_pie.html", "d3/da8/classpocketmine_1_1item_1_1_pumpkin_pie" ],
@@ -126,12 +122,11 @@ var namespacepocketmine_1_1item =
     [ "StringItem", "df/db6/classpocketmine_1_1item_1_1_string_item.html", "df/db6/classpocketmine_1_1item_1_1_string_item" ],
     [ "StringToItemParser", "de/d75/classpocketmine_1_1item_1_1_string_to_item_parser.html", "de/d75/classpocketmine_1_1item_1_1_string_to_item_parser" ],
     [ "SuspiciousStew", "d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html", "d5/d12/classpocketmine_1_1item_1_1_suspicious_stew" ],
-    [ "SuspiciousStewType", "db/db9/classpocketmine_1_1item_1_1_suspicious_stew_type.html", "db/db9/classpocketmine_1_1item_1_1_suspicious_stew_type" ],
     [ "SweetBerries", "d6/da0/classpocketmine_1_1item_1_1_sweet_berries.html", "d6/da0/classpocketmine_1_1item_1_1_sweet_berries" ],
     [ "Sword", "d6/d74/classpocketmine_1_1item_1_1_sword.html", "d6/d74/classpocketmine_1_1item_1_1_sword" ],
     [ "TieredTool", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html", "de/dee/classpocketmine_1_1item_1_1_tiered_tool" ],
     [ "Tool", "da/de7/classpocketmine_1_1item_1_1_tool.html", "da/de7/classpocketmine_1_1item_1_1_tool" ],
-    [ "ToolTier", "d8/df8/classpocketmine_1_1item_1_1_tool_tier.html", "d8/df8/classpocketmine_1_1item_1_1_tool_tier" ],
+    [ "TorchflowerSeeds", "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html", "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds" ],
     [ "Totem", "d2/d09/classpocketmine_1_1item_1_1_totem.html", "d2/d09/classpocketmine_1_1item_1_1_totem" ],
     [ "TurtleHelmet", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet" ],
     [ "VanillaArmorMaterials", "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html", "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials" ],
@@ -141,6 +136,24 @@ var namespacepocketmine_1_1item =
     [ "WritableBookBase", "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html", "d7/d37/classpocketmine_1_1item_1_1_writable_book_base" ],
     [ "WritableBookPage", "d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html", null ],
     [ "WrittenBook", "d1/d4b/classpocketmine_1_1item_1_1_written_book.html", "d1/d4b/classpocketmine_1_1item_1_1_written_book" ],
+    [ "BoatType", "d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224de", [
+      [ "getWoodType", "d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224deaec86ce87fec11ae450647b9f401ba332", null ]
+    ] ],
+    [ "ItemUseResult", "d0/dec/namespacepocketmine_1_1item.html#a3a25a1f468133b0dfb8804138dd9633f", [
+      [ "SUCCESS", "d0/dec/namespacepocketmine_1_1item.html#a3a25a1f468133b0dfb8804138dd9633fa72f4ff13f3972ef8bdae69efbe4261f4", null ]
+    ] ],
+    [ "MedicineType", "d0/dec/namespacepocketmine_1_1item.html#a1a8161163ff591511b03228458c683dd", [
+      [ "getMetadata", "d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e", null ]
+    ] ],
+    [ "PotionType", "d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52", [
+      [ "getMetadata", "d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e", null ]
+    ] ],
+    [ "SuspiciousStewType", "d0/dec/namespacepocketmine_1_1item.html#a5eff4130b27df798bb3a2d9d15d10118", [
+      [ "getEffects", "d0/dec/namespacepocketmine_1_1item.html#a5eff4130b27df798bb3a2d9d15d10118a162b4c3f1c88e218b8d1613df7e20527", null ]
+    ] ],
+    [ "ToolTier", "d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12", [
+      [ "meta", "d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87", null ]
+    ] ],
     [ "addEnchantment", "d0/dec/namespacepocketmine_1_1item.html#ab13053621c144eb8c1363ed58425e788", null ],
     [ "getEnchantmentLevel", "d0/dec/namespacepocketmine_1_1item.html#a01b5f486b8f53048ef2db5e96f716387", null ],
     [ "getEnchantments", "d0/dec/namespacepocketmine_1_1item.html#a30910f783ed957d99a1d00cbb5f7587e", null ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -848,7 +848,7 @@ $(document).ready(function(){initNavTree('d1/d1d/_entity_8php_source.html','../.
 <div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    <span class="keyword">protected</span> <span class="keyword">function</span> checkObstruction(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $y, <span class="keywordtype">float</span> $z) : bool{</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        $world = $this-&gt;getWorld();</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>        <span class="keywordflow">if</span>(count($world-&gt;getCollisionBoxes($this, $this-&gt;getBoundingBox(), <span class="keyword">false</span>)) === 0){</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>        <span class="keywordflow">if</span>(count($world-&gt;getBlockCollisionBoxes($this-&gt;boundingBox)) === 0){</div>
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>        }</div>
 <div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
@@ -1129,7 +1129,7 @@ $(document).ready(function(){initNavTree('d1/d1d/_entity_8php_source.html','../.
 <div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span> </div>
 <div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>            assert(abs($dx) &lt;= 20 &amp;&amp; abs($dy) &lt;= 20 &amp;&amp; abs($dz) &lt;= 20, <span class="stringliteral">&quot;Movement distance is excessive: dx=$dx, dy=$dy, dz=$dz&quot;</span>);</div>
 <div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span> </div>
-<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>            $list = $this-&gt;getWorld()-&gt;getCollisionBoxes($this, $moveBB-&gt;addCoord($dx, $dy, $dz), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>            $list = $this-&gt;getWorld()-&gt;getBlockCollisionBoxes($moveBB-&gt;addCoord($dx, $dy, $dz));</div>
 <div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span> </div>
 <div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>            <span class="keywordflow">foreach</span>($list as $bb){</div>
 <div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>                $dy = $bb-&gt;calculateYOffset($moveBB, $dy);</div>
@@ -1161,7 +1161,7 @@ $(document).ready(function(){initNavTree('d1/d1d/_entity_8php_source.html','../.
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span> </div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>                $stepBB = clone $this-&gt;boundingBox;</div>
 <div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span> </div>
-<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>                $list = $this-&gt;getWorld()-&gt;getCollisionBoxes($this, $stepBB-&gt;addCoord($dx, $dy, $dz), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>                $list = $this-&gt;getWorld()-&gt;getBlockCollisionBoxes($stepBB-&gt;addCoord($dx, $dy, $dz));</div>
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>                <span class="keywordflow">foreach</span>($list as $bb){</div>
 <div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>                    $dy = $bb-&gt;calculateYOffset($stepBB, $dy);</div>
 <div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>                }</div>
@@ -1612,7 +1612,7 @@ $(document).ready(function(){initNavTree('d1/d1d/_entity_8php_source.html','../.
 <div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00177">src/Server.php:177</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_version_info_html"><div class="ttname"><a href="../../d4/db7/classpocketmine_1_1_version_info.html">pocketmine\VersionInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ded/_version_info_8php_source.html#l00032">VersionInfo.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00061">Block.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">pocketmine\block\Water</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d90/_water_8php_source.html#l00031">Water.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_attribute_html"><div class="ttname"><a href="../../d1/d8b/classpocketmine_1_1entity_1_1_attribute.html">pocketmine\entity\Attribute</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dba/src_2entity_2_attribute_8php_source.html#l00029">src/entity/Attribute.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_attribute_map_html"><div class="ttname"><a href="../../d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html">pocketmine\entity\AttributeMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dba/_attribute_map_8php_source.html#l00028">AttributeMap.php:28</a></div></div>
@@ -1708,7 +1708,7 @@ $(document).ready(function(){initNavTree('d1/d1d/_entity_8php_source.html','../.
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1sound_1_1_sound_html"><div class="ttname"><a href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">pocketmine\world\sound\Sound</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db3/_sound_8php_source.html#l00029">Sound.php:29</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_1_1tile_html_a038dc192c49ffb08dd35be026126841a"><div class="ttname"><a href="../../db/dba/namespacepocketmine_1_1block_1_1tile.html#a038dc192c49ffb08dd35be026126841a">pocketmine\block\tile\getPosition</a></div><div class="ttdeci">getPosition()</div></div>
 <div class="ttc" id="anamespacepocketmine_1_1entity_html"><div class="ttname"><a href="../../d7/db9/namespacepocketmine_1_1entity.html">pocketmine\entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcd/_ageable_8php_source.html#l00024">Ageable.php:24</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_a09dc5203e4dcab3b0be72f3d9efd2a6b"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">pocketmine\utils\id</a></div><div class="ttdeci">id()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00096">EnumTrait.php:96</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1utils_html_a09dc5203e4dcab3b0be72f3d9efd2a6b"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a09dc5203e4dcab3b0be72f3d9efd2a6b">pocketmine\utils\id</a></div><div class="ttdeci">id()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00099">EnumTrait.php:99</a></div></div>
 <div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00224">PocketMine.php:224</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -54,7 +54,7 @@ var classpocketmine_1_1block_1_1_redstone_comparator =
     [ "onEntityLand", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#af63954d6b6fc62a20330379619fc98a9", null ],
-    [ "onNearbyBlockChange", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a7d3569f17cab2f6101db7de720707712", null ],
+    [ "onNearbyBlockChange", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onPostPlace", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a36afea9f0214193963f75577e8d48c26", null ],

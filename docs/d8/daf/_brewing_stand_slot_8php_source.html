@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -118,31 +118,24 @@ $(document).ready(function(){initNavTree('d8/daf/_brewing_stand_slot_8php_source
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\block\utils;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html">pocketmine\block\inventory\BrewingStandInventory</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\utils\LegacyEnumShimTrait;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html">   39</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html">BrewingStandSlot</a>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    use EnumTrait {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        __construct as Enum___construct;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">enum</span> BrewingStandSlot{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    use LegacyEnumShimTrait;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">case</span> EAST;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">case</span> NORTHWEST;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">case</span> SOUTHWEST;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        self::registerAll(</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;east&quot;</span>, BrewingStandInventory::SLOT_BOTTLE_LEFT),</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;northwest&quot;</span>, BrewingStandInventory::SLOT_BOTTLE_MIDDLE),</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;southwest&quot;</span>, BrewingStandInventory::SLOT_BOTTLE_RIGHT)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        );</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(<span class="keywordtype">string</span> $enumName, <span class="keyword">private</span> <span class="keywordtype">int</span> $slotNumber){</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;Enum___construct($enumName);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html#a05d3bfea3d0ef1f9ec6801824cfbe60c">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html#a05d3bfea3d0ef1f9ec6801824cfbe60c">getSlotNumber</a>() : int{ return $this-&gt;slotNumber; }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSlotNumber() : int{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return match($this){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            self::EAST =&gt; BrewingStandInventory::SLOT_BOTTLE_LEFT,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            self::NORTHWEST =&gt; BrewingStandInventory::SLOT_BOTTLE_MIDDLE,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            self::SOUTHWEST =&gt; BrewingStandInventory::SLOT_BOTTLE_RIGHT</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        };</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory_html"><div class="ttname"><a href="../../db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html">pocketmine\block\inventory\BrewingStandInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d97/_brewing_stand_inventory_8php_source.html#l00029">BrewingStandInventory.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_brewing_stand_slot_html"><div class="ttname"><a href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html">pocketmine\block\utils\BrewingStandSlot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/daf/_brewing_stand_slot_8php_source.html#l00039">BrewingStandSlot.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_brewing_stand_slot_html_a05d3bfea3d0ef1f9ec6801824cfbe60c"><div class="ttname"><a href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html#a05d3bfea3d0ef1f9ec6801824cfbe60c">pocketmine\block\utils\BrewingStandSlot\getSlotNumber</a></div><div class="ttdeci">getSlotNumber()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/daf/_brewing_stand_slot_8php_source.html#l00059">BrewingStandSlot.php:59</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

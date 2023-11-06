@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -118,32 +118,22 @@ $(document).ready(function(){initNavTree('d1/d3c/_wool_8php_source.html','../../
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\ColoredTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">pocketmine\block\utils\DyeColor</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html">Wool</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    use ColoredTrait;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#af933b6fe6ac80e61e85846b283848c4d">   32</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#af933b6fe6ac80e61e85846b283848c4d">__construct</a>(<a class="code hl_class" href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">BlockIdentifier</a> $idInfo, <span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">BlockTypeInfo</a> $typeInfo){</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $this-&gt;color = DyeColor::WHITE();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        parent::__construct($idInfo, $name, $typeInfo);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1">getFlameEncouragement</a>() : int{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return 30;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23">getFlammability</a>() : int{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        return 60;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_identifier_html"><div class="ttname"><a href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">pocketmine\block\BlockIdentifier</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0b/_block_identifier_8php_source.html#l00029">BlockIdentifier.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_info_html"><div class="ttname"><a href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">pocketmine\block\BlockTypeInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/_block_type_info_8php_source.html#l00029">BlockTypeInfo.php:29</a></div></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html">Wool</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    use ColoredTrait;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1">   31</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1">getFlameEncouragement</a>() : int{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        return 30;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23">   35</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23">getFlammability</a>() : int{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        return 60;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_opaque_html"><div class="ttname"><a href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">pocketmine\block\Opaque</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbc/_opaque_8php_source.html#l00030">Opaque.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html">pocketmine\block\Wool</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00029">Wool.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html_a9dc2e08fb0b7e1d566bc760567aa2b23"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23">pocketmine\block\Wool\getFlammability</a></div><div class="ttdeci">getFlammability()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00041">Wool.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html_aeb181801732c57bada33ec02e76692a1"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1">pocketmine\block\Wool\getFlameEncouragement</a></div><div class="ttdeci">getFlameEncouragement()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00037">Wool.php:37</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html_af933b6fe6ac80e61e85846b283848c4d"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#af933b6fe6ac80e61e85846b283848c4d">pocketmine\block\Wool\__construct</a></div><div class="ttdeci">__construct(BlockIdentifier $idInfo, string $name, BlockTypeInfo $typeInfo)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00032">Wool.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_dye_color_html"><div class="ttname"><a href="../../d0/d5a/classpocketmine_1_1block_1_1utils_1_1_dye_color.html">pocketmine\block\utils\DyeColor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d89/_dye_color_8php_source.html#l00052">DyeColor.php:52</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html">pocketmine\block\Wool</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00028">Wool.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html_a9dc2e08fb0b7e1d566bc760567aa2b23"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#a9dc2e08fb0b7e1d566bc760567aa2b23">pocketmine\block\Wool\getFlammability</a></div><div class="ttdeci">getFlammability()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00035">Wool.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_wool_html_aeb181801732c57bada33ec02e76692a1"><div class="ttname"><a href="../../da/d71/classpocketmine_1_1block_1_1_wool.html#aeb181801732c57bada33ec02e76692a1">pocketmine\block\Wool\getFlameEncouragement</a></div><div class="ttdeci">getFlameEncouragement()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3c/_wool_8php_source.html#l00031">Wool.php:31</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

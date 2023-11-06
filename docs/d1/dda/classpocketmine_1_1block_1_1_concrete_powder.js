@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_concrete_powder =
 [
-    [ "__construct", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#aa3a43e517206036679d439666091012a", null ],
     [ "__toString", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#a286fc64348f13417dcb6106c2695911b", null ],

@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_stained_glass =
 [
-    [ "__construct", "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a90bd861132300e1e99496b8627403913", null ],
     [ "__toString", "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a286fc64348f13417dcb6106c2695911b", null ],

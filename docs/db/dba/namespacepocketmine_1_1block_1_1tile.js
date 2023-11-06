@@ -9,6 +9,7 @@ var namespacepocketmine_1_1block_1_1tile =
     [ "BrewingStand", "d3/d41/classpocketmine_1_1block_1_1tile_1_1_brewing_stand.html", "d3/d41/classpocketmine_1_1block_1_1tile_1_1_brewing_stand" ],
     [ "Cauldron", "d6/dbc/classpocketmine_1_1block_1_1tile_1_1_cauldron.html", "d6/dbc/classpocketmine_1_1block_1_1tile_1_1_cauldron" ],
     [ "Chest", "d9/d64/classpocketmine_1_1block_1_1tile_1_1_chest.html", "d9/d64/classpocketmine_1_1block_1_1tile_1_1_chest" ],
+    [ "ChiseledBookshelf", "d5/ddf/classpocketmine_1_1block_1_1tile_1_1_chiseled_bookshelf.html", "d5/ddf/classpocketmine_1_1block_1_1tile_1_1_chiseled_bookshelf" ],
     [ "Comparator", "df/de7/classpocketmine_1_1block_1_1tile_1_1_comparator.html", "df/de7/classpocketmine_1_1block_1_1tile_1_1_comparator" ],
     [ "Container", "d9/de1/interfacepocketmine_1_1block_1_1tile_1_1_container.html", "d9/de1/interfacepocketmine_1_1block_1_1tile_1_1_container" ],
     [ "DaylightSensor", "de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html", "de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor" ],

@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_lever =
 [
-    [ "__construct", "d4/d31/classpocketmine_1_1block_1_1_lever.html#a53d163a0c98b8e71e32dbb9cbe5cdc24", null ],
     [ "__toString", "d4/d31/classpocketmine_1_1block_1_1_lever.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d4/d31/classpocketmine_1_1block_1_1_lever.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d4/d31/classpocketmine_1_1block_1_1_lever.html#a286fc64348f13417dcb6106c2695911b", null ],

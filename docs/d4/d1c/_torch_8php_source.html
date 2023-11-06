@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('d4/d1c/_torch_8php_source.html','../..
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\SupportType;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
@@ -177,10 +177,10 @@ $(document).ready(function(){initNavTree('d4/d1c/_torch_8php_source.html','../..
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(Block $block, <span class="keywordtype">int</span> $face) : bool{</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        return $face === Facing::DOWN ?</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            $block-&gt;getAdjacentSupportType($face)-&gt;hasCenterSupport() :</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $block-&gt;getAdjacentSupportType($face)-&gt;<a class="code hl_function" href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">equals</a>(SupportType::FULL());</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $block-&gt;getAdjacentSupportType($face) === SupportType::FULL;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00061">Block.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/_flowable_8php_source.html#l00033">Flowable.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_torch_html"><div class="ttname"><a href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html">pocketmine\block\Torch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/_torch_8php_source.html#l00034">Torch.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_torch_html_a2a8cdd2e0048ba0feb8420787b3f045b"><div class="ttname"><a href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html#a2a8cdd2e0048ba0feb8420787b3f045b">pocketmine\block\Torch\setFacing</a></div><div class="ttdeci">setFacing(int $facing)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/_torch_8php_source.html#l00045">Torch.php:45</a></div></div>
@@ -188,7 +188,6 @@ $(document).ready(function(){initNavTree('d4/d1c/_torch_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_torch_html_ad08add840b54a9494c2f636fdd39db8b"><div class="ttname"><a href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html#ad08add840b54a9494c2f636fdd39db8b">pocketmine\block\Torch\place</a></div><div class="ttdeci">place(BlockTransaction $tx, Item $item, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/_torch_8php_source.html#l00063">Torch.php:63</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_torch_html_ad7f4d0973ebc76cec1c419c48dca0ffb"><div class="ttname"><a href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html#ad7f4d0973ebc76cec1c419c48dca0ffb">pocketmine\block\Torch\describeBlockOnlyState</a></div><div class="ttdeci">describeBlockOnlyState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/_torch_8php_source.html#l00038">Torch.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_torch_html_ad9b5cabd3a549bf60dbb882e9f91bd6d"><div class="ttname"><a href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html#ad9b5cabd3a549bf60dbb882e9f91bd6d">pocketmine\block\Torch\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/_torch_8php_source.html#l00057">Torch.php:57</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_support_type_html"><div class="ttname"><a href="../../d2/dbe/classpocketmine_1_1block_1_1utils_1_1_support_type.html">pocketmine\block\utils\SupportType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da3/_support_type_8php_source.html#l00039">SupportType.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
@@ -196,7 +195,6 @@ $(document).ready(function(){initNavTree('d4/d1c/_torch_8php_source.html','../..
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_block_transaction_html"><div class="ttname"><a href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">pocketmine\world\BlockTransaction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/_block_transaction_8php_source.html#l00030">BlockTransaction.php:30</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer_html"><div class="ttname"><a href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3f/_runtime_data_describer_8php_source.html#l00038">RuntimeDataDescriber.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_a3c002b3b600e269d41628e7e8cb0cf94"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#a3c002b3b600e269d41628e7e8cb0cf94">pocketmine\utils\equals</a></div><div class="ttdeci">equals(self $other)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00103">EnumTrait.php:103</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

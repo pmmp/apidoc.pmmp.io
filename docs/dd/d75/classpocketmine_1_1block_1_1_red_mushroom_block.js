@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_red_mushroom_block =
 [
-    [ "__construct", "dd/d75/classpocketmine_1_1block_1_1_red_mushroom_block.html#a57847c37fe8f2756b7b78bc57e11ddaa", null ],
     [ "__toString", "dd/d75/classpocketmine_1_1block_1_1_red_mushroom_block.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "dd/d75/classpocketmine_1_1block_1_1_red_mushroom_block.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "dd/d75/classpocketmine_1_1block_1_1_red_mushroom_block.html#a286fc64348f13417dcb6106c2695911b", null ],

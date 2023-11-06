@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,34 +117,28 @@ $(document).ready(function(){initNavTree('d8/d2b/_note_instrument_8php_source.ht
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\world\sound;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_variable" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\utils\LegacyEnumShimTrait;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d1/dab/classpocketmine_1_1world_1_1sound_1_1_note_instrument.html">   51</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/dab/classpocketmine_1_1world_1_1sound_1_1_note_instrument.html">NoteInstrument</a>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    use EnumTrait;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        self::registerAll(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;piano&quot;</span>),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;bass_drum&quot;</span>),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;snare&quot;</span>),</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;clicks_and_sticks&quot;</span>),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;double_bass&quot;</span>),</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;bell&quot;</span>),</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;flute&quot;</span>),</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;chime&quot;</span>),</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;guitar&quot;</span>),</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;xylophone&quot;</span>),</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;iron_xylophone&quot;</span>),</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;cow_bell&quot;</span>),</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;didgeridoo&quot;</span>),</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;bit&quot;</span>),</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;banjo&quot;</span>),</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keyword">new</span> <span class="keyword">self</span>(<span class="stringliteral">&quot;pling&quot;</span>)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        );</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1sound_1_1_note_instrument_html"><div class="ttname"><a href="../../d1/dab/classpocketmine_1_1world_1_1sound_1_1_note_instrument.html">pocketmine\world\sound\NoteInstrument</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d2b/_note_instrument_8php_source.html#l00051">NoteInstrument.php:51</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1utils_html_af2f53ef1ec175cd5613025a0513a3d97"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine\utils\EnumTrait</a></div><div class="ttdeci">trait EnumTrait</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_enum_trait_8php_source.html#l00033">EnumTrait.php:33</a></div></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">enum</span> NoteInstrument{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    use LegacyEnumShimTrait;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">case</span> PIANO;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">case</span> BASS_DRUM;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">case</span> SNARE;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">case</span> CLICKS_AND_STICKS;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">case</span> DOUBLE_BASS;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">case</span> BELL;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">case</span> FLUTE;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">case</span> CHIME;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">case</span> GUITAR;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">case</span> XYLOPHONE;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">case</span> IRON_XYLOPHONE;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">case</span> COW_BELL;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">case</span> DIDGERIDOO;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">case</span> BIT;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">case</span> BANJO;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">case</span> PLING;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

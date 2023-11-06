@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -117,193 +117,217 @@ $(document).ready(function(){initNavTree('d9/db2/_runtime_data_reader_8php_sourc
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\data\runtime;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html">pocketmine\block\utils\BrewingStandSlot</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\BrewingStandSlot;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d7/df9/classpocketmine_1_1block_1_1utils_1_1_rail_connection_info.html">pocketmine\block\utils\RailConnectionInfo</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d1/dfb/classpocketmine_1_1block_1_1utils_1_1_wall_connection_type.html">pocketmine\block\utils\WallConnectionType</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\block\utils\WallConnectionType;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">pocketmine\math\Axis</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> intdiv;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html">   34</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html">RuntimeDataReader</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use RuntimeEnumDeserializerTrait;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> get_class;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> intdiv;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> log;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> spl_object_id;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $offset = 0;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $maxBits,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $value</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ){}</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> readInt(<span class="keywordtype">int</span> $bits) : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $bitsLeft = $this-&gt;maxBits - $this-&gt;offset;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span>($bits &gt; $bitsLeft){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;No bits left in buffer (need $bits, have $bitsLeft&quot;</span>);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $value = ($this-&gt;value &gt;&gt; $this-&gt;offset) &amp; ~(~0 &lt;&lt; $bits);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;offset += $bits;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> $value;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">public</span> <span class="keyword">function</span> int(<span class="keywordtype">int</span> $bits, <span class="keywordtype">int</span> &amp;$value) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $value = $this-&gt;readInt($bits);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">protected</span> <span class="keyword">function</span> readBoundedInt(<span class="keywordtype">int</span> $bits, <span class="keywordtype">int</span> $min, <span class="keywordtype">int</span> $max) : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $result = $this-&gt;readInt($bits) + $min;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>($result &lt; $min || $result &gt; $max){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d29/classpocketmine_1_1data_1_1runtime_1_1_invalid_serialized_runtime_data_exception.html">InvalidSerializedRuntimeDataException</a>(<span class="stringliteral">&quot;Value is outside the range $min - $max&quot;</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> boundedInt(<span class="keywordtype">int</span> $bits, <span class="keywordtype">int</span> $min, <span class="keywordtype">int</span> $max, <span class="keywordtype">int</span> &amp;$value) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $value = $this-&gt;readBoundedInt($bits, $min, $max);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">protected</span> <span class="keyword">function</span> readBool() : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> $this-&gt;readInt(1) === 1;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> bool(<span class="keywordtype">bool</span> &amp;$value) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $value = $this-&gt;readBool();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> horizontalFacing(<span class="keywordtype">int</span> &amp;$facing) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $facing = match($this-&gt;readInt(2)){</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            0 =&gt; Facing::NORTH,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            1 =&gt; Facing::EAST,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            2 =&gt; Facing::SOUTH,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            3 =&gt; Facing::WEST,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Unreachable&quot;</span>)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        };</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a67251731ae3c8a5a96317a39504b1768">   92</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a67251731ae3c8a5a96317a39504b1768">facingFlags</a>(array &amp;$faces) : void{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $result = [];</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">foreach</span>(Facing::ALL as $facing){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">if</span>($this-&gt;readBool()){</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                $result[$facing] = $facing;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $faces = $result;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a1319449d56999d8c7698cf876dcf6c8d">  106</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a1319449d56999d8c7698cf876dcf6c8d">horizontalFacingFlags</a>(array &amp;$faces) : void{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $result = [];</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">foreach</span>(Facing::HORIZONTAL as $facing){</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">if</span>($this-&gt;readBool()){</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                $result[$facing] = $facing;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $faces = $result;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">public</span> <span class="keyword">function</span> facing(<span class="keywordtype">int</span> &amp;$facing) : void{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $facing = match($this-&gt;readInt(3)){</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            0 =&gt; Facing::DOWN,</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            1 =&gt; Facing::UP,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            2 =&gt; Facing::NORTH,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            3 =&gt; Facing::SOUTH,</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            4 =&gt; Facing::WEST,</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            5 =&gt; Facing::EAST,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Invalid facing value&quot;</span>)</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        };</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">public</span> <span class="keyword">function</span> facingExcept(<span class="keywordtype">int</span> &amp;$facing, <span class="keywordtype">int</span> $except) : void{</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $result = 0;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        $this-&gt;facing($result);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">if</span>($result === $except){</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Illegal facing value&quot;</span>);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        $facing = $result;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">public</span> <span class="keyword">function</span> axis(<span class="keywordtype">int</span> &amp;$axis) : void{</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        $axis = match($this-&gt;readInt(2)){</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            0 =&gt; Axis::X,</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            1 =&gt; Axis::Z,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            2 =&gt; Axis::Y,</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Invalid axis value&quot;</span>)</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        };</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">public</span> <span class="keyword">function</span> horizontalAxis(<span class="keywordtype">int</span> &amp;$axis) : void{</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        $axis = match($this-&gt;readInt(1)){</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            0 =&gt; Axis::X,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            1 =&gt; Axis::Z,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Unreachable&quot;</span>)</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        };</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#af546899e24adccc0c0c14d56e3124411">  160</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#af546899e24adccc0c0c14d56e3124411">wallConnections</a>(array &amp;$connections) : void{</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        $result = [];</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        $offset = 0;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        $packed = $this-&gt;readBoundedInt(7, 0, (3 ** 4) - 1);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">foreach</span>(Facing::HORIZONTAL as $facing){</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            $type = intdiv($packed,  (3 ** $offset)) % 3;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="keywordflow">if</span>($type !== 0){</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                $result[$facing] = match($type){</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    1 =&gt; WallConnectionType::SHORT(),</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    2 =&gt; WallConnectionType::TALL(),</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Unreachable&quot;</span>)</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                };</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            $offset++;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        $connections = $result;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">  183</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">brewingStandSlots</a>(array &amp;$slots) : void{</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        $result = [];</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">foreach</span>([</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            BrewingStandSlot::EAST(),</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            BrewingStandSlot::NORTHWEST(),</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            BrewingStandSlot::SOUTHWEST(),</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        ] as $member){</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <span class="keywordflow">if</span>($this-&gt;readBool()){</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                $result[$member-&gt;id()] = $member;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html">   37</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html">RuntimeDataReader</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    use LegacyRuntimeEnumDescriberTrait;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $offset = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $maxBits,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $value</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ){}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> readInt(<span class="keywordtype">int</span> $bits) : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $bitsLeft = $this-&gt;maxBits - $this-&gt;offset;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span>($bits &gt; $bitsLeft){</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;No bits left in buffer (need $bits, have $bitsLeft&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $value = ($this-&gt;value &gt;&gt; $this-&gt;offset) &amp; ~(~0 &lt;&lt; $bits);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;offset += $bits;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> $value;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> int(<span class="keywordtype">int</span> $bits, <span class="keywordtype">int</span> &amp;$value) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $value = $this-&gt;readInt($bits);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a77d0214f3df0532b5b438751caea0536">   65</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a77d0214f3df0532b5b438751caea0536">boundedInt</a>(<span class="keywordtype">int</span> $bits, <span class="keywordtype">int</span> $min, <span class="keywordtype">int</span> $max, <span class="keywordtype">int</span> &amp;$value) : void{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $offset = $this-&gt;offset;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;<a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a43d1b1f03178bab1505b282e30d9c6b0">boundedIntAuto</a>($min, $max, $value);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $actualBits = $this-&gt;offset - $offset;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span>($this-&gt;offset !== $offset + $bits){</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Bits should be $actualBits for the given bounds, but received $bits. Use boundedIntAuto() for automatic bits calculation.&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">private</span> <span class="keyword">function</span> readBoundedIntAuto(<span class="keywordtype">int</span> $min, <span class="keywordtype">int</span> $max) : int{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $bits = ((int) log($max - $min, 2)) + 1;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $result = $this-&gt;readInt($bits) + $min;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span>($result &lt; $min || $result &gt; $max){</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Value is outside the range $min - $max&quot;</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a43d1b1f03178bab1505b282e30d9c6b0">   83</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a43d1b1f03178bab1505b282e30d9c6b0">boundedIntAuto</a>(<span class="keywordtype">int</span> $min, <span class="keywordtype">int</span> $max, <span class="keywordtype">int</span> &amp;$value) : void{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $value = $this-&gt;readBoundedIntAuto($min, $max);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">protected</span> <span class="keyword">function</span> readBool() : bool{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        return $this-&gt;readInt(1) === 1;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">public</span> <span class="keyword">function</span> bool(<span class="keywordtype">bool</span> &amp;$value) : void{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $value = $this-&gt;readBool();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">public</span> <span class="keyword">function</span> horizontalFacing(<span class="keywordtype">int</span> &amp;$facing) : void{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $facing = match($this-&gt;readInt(2)){</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            0 =&gt; Facing::NORTH,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            1 =&gt; Facing::EAST,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            2 =&gt; Facing::SOUTH,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            3 =&gt; Facing::WEST,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Unreachable&quot;</span>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        };</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a67251731ae3c8a5a96317a39504b1768">  108</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a67251731ae3c8a5a96317a39504b1768">facingFlags</a>(array &amp;$faces) : void{</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $result = [];</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">foreach</span>(Facing::ALL as $facing){</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">if</span>($this-&gt;readBool()){</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                $result[$facing] = $facing;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        $faces = $result;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a1319449d56999d8c7698cf876dcf6c8d">  122</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a1319449d56999d8c7698cf876dcf6c8d">horizontalFacingFlags</a>(array &amp;$faces) : void{</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $result = [];</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">foreach</span>(Facing::HORIZONTAL as $facing){</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">if</span>($this-&gt;readBool()){</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                $result[$facing] = $facing;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $faces = $result;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">public</span> <span class="keyword">function</span> facing(<span class="keywordtype">int</span> &amp;$facing) : void{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        $facing = match($this-&gt;readInt(3)){</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            0 =&gt; Facing::DOWN,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            1 =&gt; Facing::UP,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            2 =&gt; Facing::NORTH,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            3 =&gt; Facing::SOUTH,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            4 =&gt; Facing::WEST,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            5 =&gt; Facing::EAST,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Invalid facing value&quot;</span>)</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        };</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">public</span> <span class="keyword">function</span> facingExcept(<span class="keywordtype">int</span> &amp;$facing, <span class="keywordtype">int</span> $except) : void{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        $result = 0;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        $this-&gt;facing($result);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">if</span>($result === $except){</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Illegal facing value&quot;</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $facing = $result;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">public</span> <span class="keyword">function</span> axis(<span class="keywordtype">int</span> &amp;$axis) : void{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        $axis = match($this-&gt;readInt(2)){</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            0 =&gt; Axis::X,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            1 =&gt; Axis::Z,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            2 =&gt; Axis::Y,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Invalid axis value&quot;</span>)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        };</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">public</span> <span class="keyword">function</span> horizontalAxis(<span class="keywordtype">int</span> &amp;$axis) : void{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        $axis = match($this-&gt;readInt(1)){</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            0 =&gt; Axis::X,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            1 =&gt; Axis::Z,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;Unreachable&quot;</span>)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        };</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#af546899e24adccc0c0c14d56e3124411">  176</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#af546899e24adccc0c0c14d56e3124411">wallConnections</a>(array &amp;$connections) : void{</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        $result = [];</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        $offset = 0;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        $packed = $this-&gt;readBoundedIntAuto(0, (3 ** 4) - 1);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">foreach</span>(Facing::HORIZONTAL as $facing){</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            $type = intdiv($packed,  (3 ** $offset)) % 3;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keywordflow">if</span>($type !== 0){</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                $result[$facing] = match($type){</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    1 =&gt; WallConnectionType::SHORT,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                    2 =&gt; WallConnectionType::TALL,</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                    <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Unreachable&quot;</span>)</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                };</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            $offset++;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        $connections = $result;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    }</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $slots = $result;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">public</span> <span class="keyword">function</span> railShape(<span class="keywordtype">int</span> &amp;$railShape) : void{</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        $result = $this-&gt;readInt(4);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordflow">if</span>(!isset(RailConnectionInfo::CONNECTIONS[$result]) &amp;&amp; !isset(RailConnectionInfo::CURVE_CONNECTIONS[$result])){</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;Invalid rail shape $result&quot;</span>);</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $railShape = $result;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">public</span> <span class="keyword">function</span> straightOnlyRailShape(<span class="keywordtype">int</span> &amp;$railShape) : void{</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        $result = $this-&gt;readInt(3);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keywordflow">if</span>(!isset(RailConnectionInfo::CONNECTIONS[$result])){</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;No rail shape matches meta $result&quot;</span>);</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        $railShape = $result;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOffset() : int{ return $this-&gt;offset; }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_brewing_stand_slot_html"><div class="ttname"><a href="../../dc/dbd/classpocketmine_1_1block_1_1utils_1_1_brewing_stand_slot.html">pocketmine\block\utils\BrewingStandSlot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/daf/_brewing_stand_slot_8php_source.html#l00039">BrewingStandSlot.php:39</a></div></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">  201</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">brewingStandSlots</a>(array &amp;$slots) : void{</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        $this-&gt;enumSet($slots, BrewingStandSlot::cases());</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keyword">public</span> <span class="keyword">function</span> railShape(<span class="keywordtype">int</span> &amp;$railShape) : void{</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        $result = $this-&gt;readInt(4);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span>(!isset(RailConnectionInfo::CONNECTIONS[$result]) &amp;&amp; !isset(RailConnectionInfo::CURVE_CONNECTIONS[$result])){</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d29/classpocketmine_1_1data_1_1runtime_1_1_invalid_serialized_runtime_data_exception.html">InvalidSerializedRuntimeDataException</a>(<span class="stringliteral">&quot;Invalid rail shape $result&quot;</span>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        $railShape = $result;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keyword">public</span> <span class="keyword">function</span> straightOnlyRailShape(<span class="keywordtype">int</span> &amp;$railShape) : void{</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        $result = $this-&gt;readInt(3);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">if</span>(!isset(RailConnectionInfo::CONNECTIONS[$result])){</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidSerializedRuntimeDataException(<span class="stringliteral">&quot;No rail shape matches meta $result&quot;</span>);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        $railShape = $result;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a7bb3228a539fee6b1b7f3d8c89bce8c0">  223</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">enum</span>(\UnitEnum &amp;$case) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        $metadata = RuntimeEnumMetadata::from($case);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        $raw = $this-&gt;readInt($metadata-&gt;bits);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        $result = $metadata-&gt;intToEnum($raw);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">if</span>($result === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d29/classpocketmine_1_1data_1_1runtime_1_1_invalid_serialized_runtime_data_exception.html">InvalidSerializedRuntimeDataException</a>(<span class="stringliteral">&quot;Invalid serialized value $raw for &quot;</span> . get_class($case));</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        $case = $result;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#ab24c32663d89b11bdedbbcdc96d1e20e">  234</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#ab24c32663d89b11bdedbbcdc96d1e20e">enumSet</a>(array &amp;$set, array $allCases) : void{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        $result = [];</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">foreach</span>($allCases as $case){</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keywordflow">if</span>($this-&gt;readBool()){</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                $result[spl_object_id($case)] = $case;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        $set = $result;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOffset() : int{ return $this-&gt;offset; }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_rail_connection_info_html"><div class="ttname"><a href="../../d7/df9/classpocketmine_1_1block_1_1utils_1_1_rail_connection_info.html">pocketmine\block\utils\RailConnectionInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc8/_rail_connection_info_8php_source.html#l00029">RailConnectionInfo.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_wall_connection_type_html"><div class="ttname"><a href="../../d1/dfb/classpocketmine_1_1block_1_1utils_1_1_wall_connection_type.html">pocketmine\block\utils\WallConnectionType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7a/_wall_connection_type_8php_source.html#l00037">WallConnectionType.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_invalid_serialized_runtime_data_exception_html"><div class="ttname"><a href="../../de/d29/classpocketmine_1_1data_1_1runtime_1_1_invalid_serialized_runtime_data_exception.html">pocketmine\data\runtime\InvalidSerializedRuntimeDataException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/_invalid_serialized_runtime_data_exception_8php_source.html#l00026">InvalidSerializedRuntimeDataException.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html">pocketmine\data\runtime\RuntimeDataReader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00034">RuntimeDataReader.php:34</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_a1319449d56999d8c7698cf876dcf6c8d"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a1319449d56999d8c7698cf876dcf6c8d">pocketmine\data\runtime\RuntimeDataReader\horizontalFacingFlags</a></div><div class="ttdeci">horizontalFacingFlags(array &amp;$faces)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00106">RuntimeDataReader.php:106</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_a67251731ae3c8a5a96317a39504b1768"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a67251731ae3c8a5a96317a39504b1768">pocketmine\data\runtime\RuntimeDataReader\facingFlags</a></div><div class="ttdeci">facingFlags(array &amp;$faces)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00092">RuntimeDataReader.php:92</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_aa09fc4d5f553e61c0184aa84587e7c66"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">pocketmine\data\runtime\RuntimeDataReader\brewingStandSlots</a></div><div class="ttdeci">brewingStandSlots(array &amp;$slots)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00183">RuntimeDataReader.php:183</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_af546899e24adccc0c0c14d56e3124411"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#af546899e24adccc0c0c14d56e3124411">pocketmine\data\runtime\RuntimeDataReader\wallConnections</a></div><div class="ttdeci">wallConnections(array &amp;$connections)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00160">RuntimeDataReader.php:160</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html">pocketmine\data\runtime\RuntimeDataReader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00037">RuntimeDataReader.php:37</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_a1319449d56999d8c7698cf876dcf6c8d"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a1319449d56999d8c7698cf876dcf6c8d">pocketmine\data\runtime\RuntimeDataReader\horizontalFacingFlags</a></div><div class="ttdeci">horizontalFacingFlags(array &amp;$faces)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00122">RuntimeDataReader.php:122</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_a43d1b1f03178bab1505b282e30d9c6b0"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a43d1b1f03178bab1505b282e30d9c6b0">pocketmine\data\runtime\RuntimeDataReader\boundedIntAuto</a></div><div class="ttdeci">boundedIntAuto(int $min, int $max, int &amp;$value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00083">RuntimeDataReader.php:83</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_a67251731ae3c8a5a96317a39504b1768"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a67251731ae3c8a5a96317a39504b1768">pocketmine\data\runtime\RuntimeDataReader\facingFlags</a></div><div class="ttdeci">facingFlags(array &amp;$faces)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00108">RuntimeDataReader.php:108</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_a77d0214f3df0532b5b438751caea0536"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a77d0214f3df0532b5b438751caea0536">pocketmine\data\runtime\RuntimeDataReader\boundedInt</a></div><div class="ttdeci">boundedInt(int $bits, int $min, int $max, int &amp;$value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00065">RuntimeDataReader.php:65</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_aa09fc4d5f553e61c0184aa84587e7c66"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">pocketmine\data\runtime\RuntimeDataReader\brewingStandSlots</a></div><div class="ttdeci">brewingStandSlots(array &amp;$slots)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00201">RuntimeDataReader.php:201</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_ab24c32663d89b11bdedbbcdc96d1e20e"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#ab24c32663d89b11bdedbbcdc96d1e20e">pocketmine\data\runtime\RuntimeDataReader\enumSet</a></div><div class="ttdeci">enumSet(array &amp;$set, array $allCases)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00234">RuntimeDataReader.php:234</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_data_reader_html_af546899e24adccc0c0c14d56e3124411"><div class="ttname"><a href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#af546899e24adccc0c0c14d56e3124411">pocketmine\data\runtime\RuntimeDataReader\wallConnections</a></div><div class="ttdeci">wallConnections(array &amp;$connections)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db2/_runtime_data_reader_8php_source.html#l00176">RuntimeDataReader.php:176</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_html"><div class="ttname"><a href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">pocketmine\math\Axis</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_axis_8php_source.html#l00026">Axis.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>

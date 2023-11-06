@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_bell =
 [
-    [ "__construct", "df/d78/classpocketmine_1_1block_1_1_bell.html#a084d1d1373dba539e73947c5bc783e07", null ],
     [ "__toString", "df/d78/classpocketmine_1_1block_1_1_bell.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "df/d78/classpocketmine_1_1block_1_1_bell.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "df/d78/classpocketmine_1_1block_1_1_bell.html#a286fc64348f13417dcb6106c2695911b", null ],

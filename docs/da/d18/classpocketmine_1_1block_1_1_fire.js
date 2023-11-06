@@ -13,7 +13,7 @@ var classpocketmine_1_1block_1_1_fire =
     [ "canClimb", "da/d18/classpocketmine_1_1block_1_1_fire.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "da/d18/classpocketmine_1_1block_1_1_fire.html#a912c0f3a42aefc049e119f931a2ec86e", null ],
     [ "describeBlockItemState", "da/d18/classpocketmine_1_1block_1_1_fire.html#aba71bdae8759a0f2dc0bb44aeafc96e4", null ],
-    [ "describeBlockOnlyState", "da/d18/classpocketmine_1_1block_1_1_fire.html#a55f49d5d8a6714a9865c7a2805ab4a43", null ],
+    [ "describeBlockOnlyState", "da/d18/classpocketmine_1_1block_1_1_fire.html#a444028c60ad6c7afacda1a6cc3065e59", null ],
     [ "generateStatePermutations", "da/d18/classpocketmine_1_1block_1_1_fire.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "da/d18/classpocketmine_1_1block_1_1_fire.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "da/d18/classpocketmine_1_1block_1_1_fire.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
@@ -62,7 +62,6 @@ var classpocketmine_1_1block_1_1_fire =
     [ "place", "da/d18/classpocketmine_1_1block_1_1_fire.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "da/d18/classpocketmine_1_1block_1_1_fire.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/d18/classpocketmine_1_1block_1_1_fire.html#a097af4a935135a8524d812f497373075", null ],
-    [ "setAge", "da/d18/classpocketmine_1_1block_1_1_fire.html#ab4471299c7a8c8ed74a453b5076d77b6", null ],
     [ "ticksRandomly", "da/d18/classpocketmine_1_1block_1_1_fire.html#a9b796dfb5a552f39dc977b9404c31836", null ],
     [ "writeStateToWorld", "da/d18/classpocketmine_1_1block_1_1_fire.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

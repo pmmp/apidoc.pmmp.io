@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d1/d5e/_biome_registry_8php_source.htm
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html">pocketmine\data\bedrock\BiomeIds</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\utils\SingletonTrait;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d6/d14/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_type.html">pocketmine\world\generator\object\TreeType</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\world\generator\object\TreeType;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d4/db3/classpocketmine_1_1world_1_1biome_1_1_biome_registry.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d4/db3/classpocketmine_1_1world_1_1biome_1_1_biome_registry.html">BiomeRegistry</a>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    use SingletonTrait;</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('d1/d5e/_biome_registry_8php_source.htm
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;<span class="keyword">register</span>(BiomeIds::EXTREME_HILLS_EDGE, <span class="keyword">new</span> <a class="code hl_class" href="../../d9/dae/classpocketmine_1_1world_1_1biome_1_1_small_mountains_biome.html">SmallMountainsBiome</a>());</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;<span class="keyword">register</span>(BiomeIds::BIRCH_FOREST, <span class="keyword">new</span> <a class="code hl_class" href="../../de/df1/classpocketmine_1_1world_1_1biome_1_1_forest_biome.html">ForestBiome</a>(TreeType::BIRCH()));</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;<span class="keyword">register</span>(BiomeIds::BIRCH_FOREST, <span class="keyword">new</span> <a class="code hl_class" href="../../de/df1/classpocketmine_1_1world_1_1biome_1_1_forest_biome.html">ForestBiome</a>(TreeType::BIRCH));</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keywordtype">int</span> $id, <a class="code hl_class" href="../../d8/d20/classpocketmine_1_1world_1_1biome_1_1_biome.html">Biome</a> $biome) : <span class="keywordtype">void</span>{</div>
@@ -175,7 +175,6 @@ $(document).ready(function(){initNavTree('d1/d5e/_biome_registry_8php_source.htm
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_swamp_biome_html"><div class="ttname"><a href="../../d1/dd8/classpocketmine_1_1world_1_1biome_1_1_swamp_biome.html">pocketmine\world\biome\SwampBiome</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9b/_swamp_biome_8php_source.html#l00026">SwampBiome.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_taiga_biome_html"><div class="ttname"><a href="../../da/d14/classpocketmine_1_1world_1_1biome_1_1_taiga_biome.html">pocketmine\world\biome\TaigaBiome</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd8/_taiga_biome_8php_source.html#l00030">TaigaBiome.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1biome_1_1_unknown_biome_html"><div class="ttname"><a href="../../d8/d8c/classpocketmine_1_1world_1_1biome_1_1_unknown_biome.html">pocketmine\world\biome\UnknownBiome</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5b/_unknown_biome_8php_source.html#l00029">UnknownBiome.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1object_1_1_tree_type_html"><div class="ttname"><a href="../../d6/d14/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_type.html">pocketmine\world\generator\object\TreeType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d67/_tree_type_8php_source.html#l00041">TreeType.php:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

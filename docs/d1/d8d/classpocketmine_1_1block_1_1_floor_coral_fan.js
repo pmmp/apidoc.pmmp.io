@@ -54,7 +54,7 @@ var classpocketmine_1_1block_1_1_floor_coral_fan =
     [ "onEntityLand", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#abce48b40feb225f4ce9b7cf2e02a9336", null ],
-    [ "onNearbyBlockChange", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#a604e90bef5e5d7508e1493b64a8df735", null ],
+    [ "onNearbyBlockChange", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#a02a5826f4ba53d047da1b64b81ced6a8", null ],
     [ "onPostPlace", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "d1/d8d/classpocketmine_1_1block_1_1_floor_coral_fan.html#a36afea9f0214193963f75577e8d48c26", null ],

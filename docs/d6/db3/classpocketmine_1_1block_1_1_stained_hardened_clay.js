@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_stained_hardened_clay =
 [
-    [ "__construct", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a2b36e7c6d9f993a4fd1063f463054b8d", null ],
     [ "__toString", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a286fc64348f13417dcb6106c2695911b", null ],

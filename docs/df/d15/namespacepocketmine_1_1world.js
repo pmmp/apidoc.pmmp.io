@@ -186,7 +186,6 @@ var namespacepocketmine_1_1world =
       [ "ItemUseOnBlockSound", "d5/d62/classpocketmine_1_1world_1_1sound_1_1_item_use_on_block_sound.html", "d5/d62/classpocketmine_1_1world_1_1sound_1_1_item_use_on_block_sound" ],
       [ "LaunchSound", "d2/ddc/classpocketmine_1_1world_1_1sound_1_1_launch_sound.html", "d2/ddc/classpocketmine_1_1world_1_1sound_1_1_launch_sound" ],
       [ "LecternPlaceBookSound", "da/d6e/classpocketmine_1_1world_1_1sound_1_1_lectern_place_book_sound.html", "da/d6e/classpocketmine_1_1world_1_1sound_1_1_lectern_place_book_sound" ],
-      [ "NoteInstrument", "d1/dab/classpocketmine_1_1world_1_1sound_1_1_note_instrument.html", null ],
       [ "NoteSound", "d6/d38/classpocketmine_1_1world_1_1sound_1_1_note_sound.html", "d6/d38/classpocketmine_1_1world_1_1sound_1_1_note_sound" ],
       [ "PaintingPlaceSound", "da/dad/classpocketmine_1_1world_1_1sound_1_1_painting_place_sound.html", "da/dad/classpocketmine_1_1world_1_1sound_1_1_painting_place_sound" ],
       [ "PopSound", "dd/d55/classpocketmine_1_1world_1_1sound_1_1_pop_sound.html", "dd/d55/classpocketmine_1_1world_1_1sound_1_1_pop_sound" ],

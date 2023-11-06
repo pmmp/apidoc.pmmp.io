@@ -18,6 +18,7 @@ var classpocketmine_1_1world_1_1_world =
     [ "getBlock", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a3d2c176b58e60d7f8228ebeb57961118", null ],
     [ "getBlockAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a489c46e71074c77c8c2d751f21aec0c5", null ],
     [ "getBlockAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a2918e74505925e8d80690ea329a0013c", null ],
+    [ "getBlockCollisionBoxes", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a9316f2b8d9e016ccdce8b57d78d9f9e2", null ],
     [ "getBlockLightAt", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a313897aff31fc38f41f76e67990678d9", null ],
     [ "getBlockXYZ", "d4/d2b/classpocketmine_1_1world_1_1_world.html#af5918ff22a47148b317898cdbe0de2ce", null ],
     [ "getChunkEntities", "d4/d2b/classpocketmine_1_1world_1_1_world.html#a2c428c401333adc84e6935615db8b736", null ],

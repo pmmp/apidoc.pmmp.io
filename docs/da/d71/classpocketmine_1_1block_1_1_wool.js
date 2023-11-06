@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_wool =
 [
-    [ "__construct", "da/d71/classpocketmine_1_1block_1_1_wool.html#af933b6fe6ac80e61e85846b283848c4d", null ],
     [ "__toString", "da/d71/classpocketmine_1_1block_1_1_wool.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "da/d71/classpocketmine_1_1block_1_1_wool.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "da/d71/classpocketmine_1_1block_1_1_wool.html#a286fc64348f13417dcb6106c2695911b", null ],

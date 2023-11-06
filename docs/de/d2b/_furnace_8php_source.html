@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.7.1 git-0b2fc8482761db987ecf13cbe680ee39c0bb7ede</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('de/d2b/_furnace_8php_source.html','../
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../db/d1f/classpocketmine_1_1block_1_1tile_1_1_furnace.html">pocketmine\block\tile\Furnace</a> as TileFurnace;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\FacesOppositePlacingPlayerTrait;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html">pocketmine\crafting\FurnaceType</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\crafting\FurnaceType;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
@@ -129,11 +129,11 @@ $(document).ready(function(){initNavTree('de/d2b/_furnace_8php_source.html','../
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html">Furnace</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use FacesOppositePlacingPlayerTrait;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">protected</span> <a class="code hl_class" href="../../dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html">FurnaceType</a> $furnaceType;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">protected</span> FurnaceType $furnaceType;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">protected</span> <span class="keywordtype">bool</span> $lit = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">BlockIdentifier</a> $idInfo, <span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">BlockTypeInfo</a> $typeInfo, <a class="code hl_class" href="../../dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html">FurnaceType</a> $furnaceType){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">BlockIdentifier</a> $idInfo, <span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">BlockTypeInfo</a> $typeInfo, FurnaceType $furnaceType){</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;furnaceType = $furnaceType;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        parent::__construct($idInfo, $name, $typeInfo);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('de/d2b/_furnace_8php_source.html','../
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $w-&gt;bool($this-&gt;lit);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFurnaceType() : <a class="code hl_class" href="../../dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html">FurnaceType</a>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFurnaceType() : FurnaceType{</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return $this-&gt;furnaceType;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
@@ -192,7 +192,6 @@ $(document).ready(function(){initNavTree('de/d2b/_furnace_8php_source.html','../
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_furnace_html_aedf30f88f806d6f45f69be1d6605e5a7"><div class="ttname"><a href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html#aedf30f88f806d6f45f69be1d6605e5a7">pocketmine\block\Furnace\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d2b/_furnace_8php_source.html#l00072">Furnace.php:72</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_opaque_html"><div class="ttname"><a href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">pocketmine\block\Opaque</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbc/_opaque_8php_source.html#l00030">Opaque.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_furnace_html"><div class="ttname"><a href="../../db/d1f/classpocketmine_1_1block_1_1tile_1_1_furnace.html">pocketmine\block\tile\Furnace</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/tile_2_furnace_8php_source.html#l00043">tile/Furnace.php:43</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1_furnace_type_html"><div class="ttname"><a href="../../dd/dfe/classpocketmine_1_1crafting_1_1_furnace_type.html">pocketmine\crafting\FurnaceType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/_furnace_type_8php_source.html#l00042">FurnaceType.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d76/_player_8php_source.html#l00168">Player.php:168</a></div></div>

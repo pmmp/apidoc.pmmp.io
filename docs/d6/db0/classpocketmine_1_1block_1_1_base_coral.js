@@ -1,6 +1,5 @@
 var classpocketmine_1_1block_1_1_base_coral =
 [
-    [ "__construct", "d6/db0/classpocketmine_1_1block_1_1_base_coral.html#a07af5614c9b7b6c9fc12ddbf3dec97f0", null ],
     [ "__toString", "d6/db0/classpocketmine_1_1block_1_1_base_coral.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d6/db0/classpocketmine_1_1block_1_1_base_coral.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d6/db0/classpocketmine_1_1block_1_1_base_coral.html#a286fc64348f13417dcb6106c2695911b", null ],
