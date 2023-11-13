@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.2 git-3385087c569744e314b9171ab87629488fd54371</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.8.3 git-bd43ff657952349859aaf24d576791ce69ae0fc4</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('d3/d98/_block_state_upgrader_8php_sour
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    <span class="keywordflow">if</span>(is_string($remap-&gt;newName)){</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                        $newName = $remap-&gt;newName;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        $flattenedValue = $oldState[$remap-&gt;newName-&gt;flattenedProperty];</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        $flattenedValue = $oldState[$remap-&gt;newName-&gt;flattenedProperty] ?? <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                        <span class="keywordflow">if</span>($flattenedValue instanceof StringTag){</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                            $newName = sprintf(<span class="stringliteral">&quot;%s%s%s&quot;</span>, $remap-&gt;newName-&gt;prefix, $flattenedValue-&gt;getValue(), $remap-&gt;newName-&gt;suffix);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            unset($oldState[$remap-&gt;newName-&gt;flattenedProperty]);</div>
