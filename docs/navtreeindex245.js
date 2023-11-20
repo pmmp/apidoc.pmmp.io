@@ -1,7 +1,5 @@
 var NAVTREEINDEX245 =
 {
-"df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a9404d9040389f3ff2462f86d9a181160":[2,0,2,0,208,63],
-"df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,208,63],
 "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,208,38],
 "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a994b80e9138156e5b90a803def57c7db":[2,0,2,0,208,38],
 "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,2,0,208,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX245 =
 "df/d82/classpocketmine_1_1world_1_1sound_1_1_water_splash_sound.html#a71319327d82465298cc21f20b518cd13":[3,0,1,30,5,86,0],
 "df/d82/classpocketmine_1_1world_1_1sound_1_1_water_splash_sound.html#a71319327d82465298cc21f20b518cd13":[2,0,2,30,5,86,0],
 "df/d85/_invalid_callback_exception_8php_source.html":[4,0,1,0,3,0,2],
-"df/d86/generate-level-sound-ids_8php_source.html":[4,0,1,0,1,1,2]
+"df/d86/generate-level-sound-ids_8php_source.html":[4,0,1,0,1,1,2],
+"df/d88/_player_toggle_sprint_event_8php_source.html":[4,0,0,7,3,41],
+"df/d89/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_sub_chunk_position.html":[2,0,2,16,0,6,1,77]
 };

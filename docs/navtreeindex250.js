@@ -1,7 +1,5 @@
 var NAVTREEINDEX250 =
 {
-"df/db6/classpocketmine_1_1item_1_1_string_item.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,100,47],
-"df/db6/classpocketmine_1_1item_1_1_string_item.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,2,12,100,47],
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,100,39],
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,2,12,100,39],
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,100,37],
@@ -249,5 +247,7 @@ var NAVTREEINDEX250 =
 "df/dca/classpocketmine_1_1thread_1_1_thread_manager.html":[3,0,1,25,7],
 "df/dca/classpocketmine_1_1thread_1_1_thread_manager.html#a6902b9a778a3585875cd5de8d4850bda":[2,0,2,25,7,0],
 "df/dca/classpocketmine_1_1thread_1_1_thread_manager.html#a6902b9a778a3585875cd5de8d4850bda":[3,0,1,25,7,0],
-"df/dcd/_saved_item_data_8php_source.html":[4,0,0,5,0,1,8]
+"df/dcd/_saved_item_data_8php_source.html":[4,0,0,5,0,1,8],
+"df/dd0/classpocketmine_1_1command_1_1defaults_1_1_enchant_command.html":[2,0,2,2,0,9],
+"df/dd0/classpocketmine_1_1command_1_1defaults_1_1_enchant_command.html":[3,0,1,2,0,9]
 };

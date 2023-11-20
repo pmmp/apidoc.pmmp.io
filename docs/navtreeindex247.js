@@ -1,7 +1,5 @@
 var NAVTREEINDEX247 =
 {
-"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,169,39],
-"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a63a59c516524bff04f00d01320264add":[2,0,2,0,169,37],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a63a59c516524bff04f00d01320264add":[3,0,1,0,169,37],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a6c9da7f1ae5d2201f833497a2d8e915f":[3,0,1,0,169,53],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a6c9da7f1ae5d2201f833497a2d8e915f":[2,0,2,0,169,53],
@@ -249,5 +247,7 @@ var NAVTREEINDEX247 =
 "df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#afb8bb0941b3f9cb6423aff663219843f":[2,0,2,30,1,0,3,9,8],
 "df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#afb8bb0941b3f9cb6423aff663219843f":[3,0,1,30,1,0,3,9,8],
 "df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#afc331435c144a9526e7b473bb2f6abf6":[2,0,2,30,1,0,3,9,0],
-"df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#afc331435c144a9526e7b473bb2f6abf6":[3,0,1,30,1,0,3,9,0]
+"df/da7/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_writable_region_world_provider.html#afc331435c144a9526e7b473bb2f6abf6":[3,0,1,30,1,0,3,9,0],
+"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html":[2,0,2,12,11],
+"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html":[3,0,1,12,11]
 };

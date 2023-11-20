@@ -1,7 +1,5 @@
 var NAVTREEINDEX248 =
 {
-"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html":[2,0,2,12,11],
-"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html":[3,0,1,12,11],
 "df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,11,29],
 "df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html#a0a422a89abd427286bc2f312100f968c":[2,0,2,12,11,29],
 "df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,11,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX248 =
 "df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,40,43],
 "df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,2,12,40,43],
 "df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,40,0],
-"df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a49a05b01faaaf071449c97060fe44926":[2,0,2,12,40,0]
+"df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a49a05b01faaaf071449c97060fe44926":[2,0,2,12,40,0],
+"df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,2,12,40,6],
+"df/dad/classpocketmine_1_1item_1_1_enchanted_book.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,40,6]
 };
