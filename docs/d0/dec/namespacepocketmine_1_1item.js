@@ -91,6 +91,7 @@ var namespacepocketmine_1_1item =
     [ "MushroomStew", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew" ],
     [ "PaintingItem", "d3/d77/classpocketmine_1_1item_1_1_painting_item.html", "d3/d77/classpocketmine_1_1item_1_1_painting_item" ],
     [ "Pickaxe", "de/d6f/classpocketmine_1_1item_1_1_pickaxe.html", "de/d6f/classpocketmine_1_1item_1_1_pickaxe" ],
+    [ "PitcherPod", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod.html", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod" ],
     [ "PoisonousPotato", "d4/dfa/classpocketmine_1_1item_1_1_poisonous_potato.html", "d4/dfa/classpocketmine_1_1item_1_1_poisonous_potato" ],
     [ "Potato", "db/d9d/classpocketmine_1_1item_1_1_potato.html", "db/d9d/classpocketmine_1_1item_1_1_potato" ],
     [ "Potion", "d3/d00/classpocketmine_1_1item_1_1_potion.html", "d3/d00/classpocketmine_1_1item_1_1_potion" ],

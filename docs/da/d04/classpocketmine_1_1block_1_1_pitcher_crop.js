@@ -2,7 +2,7 @@ var classpocketmine_1_1block_1_1_pitcher_crop =
 [
     [ "__toString", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
-    [ "asItem", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#a286fc64348f13417dcb6106c2695911b", null ],
+    [ "asItem", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#a8454c8fe4083bc8c86362e349ea0da11", null ],
     [ "blocksDirectSkyLight", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#a2127737ad69279d366e4462b54f693f2", null ],
     [ "burnsForever", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#aa09e248dd611c0ebb95cf2adf2d6d31c", null ],
     [ "calculateIntercept", "da/d04/classpocketmine_1_1block_1_1_pitcher_crop.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],

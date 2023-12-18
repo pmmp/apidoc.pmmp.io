@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.9.1 git-b4838f5b4e99119062a57d94769440d457705b10</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-a03013d582881feacc0fb42b3cbdf1368a27d4ff</span>
    </div>
   </td>
  </tr>
@@ -198,8 +198,8 @@ $(document).ready(function(){initNavTree('d2/d8e/_stair_8php_source.html','../..
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d7/d95/classpocketmine_1_1block_1_1_stair.html#a23bc4b0476e9e41f330285a50aabd5d7">  107</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d95/classpocketmine_1_1block_1_1_stair.html#a23bc4b0476e9e41f330285a50aabd5d7">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        if(</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            $facing === <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP &amp;&amp; $this-&gt;isUpsideDown() ||</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $facing === <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::DOWN &amp;&amp; !$this-&gt;isUpsideDown() ||</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            $facing === <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP &amp;&amp; $this-&gt;upsideDown ||</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $facing === <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::DOWN &amp;&amp; !$this-&gt;upsideDown ||</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            ($facing === $this-&gt;facing &amp;&amp; $this-&gt;shape !== StairShape::OUTER_LEFT &amp;&amp; $this-&gt;shape !== StairShape::OUTER_RIGHT) ||</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            ($facing === <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::rotate($this-&gt;facing, <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::Y, false) &amp;&amp; $this-&gt;shape === StairShape::INNER_LEFT) ||</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            ($facing === <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::rotate($this-&gt;facing, <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">Axis</a>::Y, true) &amp;&amp; $this-&gt;shape === StairShape::INNER_RIGHT)</div>

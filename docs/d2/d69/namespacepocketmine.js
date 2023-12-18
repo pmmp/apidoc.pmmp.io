@@ -244,6 +244,7 @@ var namespacepocketmine =
     [ "utils", "dc/db6/namespacepocketmine_1_1utils.html", "dc/db6/namespacepocketmine_1_1utils" ],
     [ "wizard", "d1/d0f/namespacepocketmine_1_1wizard.html", "d1/d0f/namespacepocketmine_1_1wizard" ],
     [ "world", "df/d15/namespacepocketmine_1_1world.html", "df/d15/namespacepocketmine_1_1world" ],
+    [ "BootstrapOptions", "d7/dbe/classpocketmine_1_1_bootstrap_options.html", "d7/dbe/classpocketmine_1_1_bootstrap_options" ],
     [ "MemoryManager", "d3/df7/classpocketmine_1_1_memory_manager.html", "d3/df7/classpocketmine_1_1_memory_manager" ],
     [ "Server", "d5/df7/classpocketmine_1_1_server.html", "d5/df7/classpocketmine_1_1_server" ],
     [ "ServerConfigGroup", "d1/d84/classpocketmine_1_1_server_config_group.html", null ],

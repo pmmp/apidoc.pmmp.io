@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.9.1 git-b4838f5b4e99119062a57d94769440d457705b10</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-a03013d582881feacc0fb42b3cbdf1368a27d4ff</span>
    </div>
   </td>
  </tr>
@@ -791,13 +791,13 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>            $this-&gt;usedChunks[$index] = UsedChunkStatus::REQUESTED_GENERATION;</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>            $this-&gt;activeChunkGenerationRequests[$index] = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>            unset($this-&gt;loadQueue[$index]);</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>            $this-&gt;getWorld()-&gt;registerChunkLoader($this-&gt;chunkLoader, $X, $Z, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>            $this-&gt;getWorld()-&gt;registerChunkListener($this, $X, $Z);</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>            $world-&gt;registerChunkLoader($this-&gt;chunkLoader, $X, $Z, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>            $world-&gt;registerChunkListener($this, $X, $Z);</div>
 <div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            <span class="keywordflow">if</span>(isset($this-&gt;tickingChunks[$index])){</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                $this-&gt;getWorld()-&gt;registerTickingChunk($this-&gt;chunkTicker, $X, $Z);</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                $world-&gt;registerTickingChunk($this-&gt;chunkTicker, $X, $Z);</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>            }</div>
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span> </div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            $this-&gt;getWorld()-&gt;requestChunkPopulation($X, $Z, $this-&gt;chunkLoader)-&gt;onCompletion(</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            $world-&gt;requestChunkPopulation($X, $Z, $this-&gt;chunkLoader)-&gt;onCompletion(</div>
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                <span class="keyword">function</span>() use ($X, $Z, $index, $world) : <span class="keywordtype">void</span>{</div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>                    <span class="keywordflow">if</span>(!$this-&gt;isConnected() || !isset($this-&gt;usedChunks[$index]) || $world !== $this-&gt;getWorld()){</div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>                        <span class="keywordflow">return</span>;</div>
@@ -2526,7 +2526,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a464983b3197549219cb5db0efda3c8e5"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">pocketmine\nbt\tag\CompoundTag\getTag</a></div><div class="ttdeci">getTag(string $name)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00084">CompoundTag.php:84</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a573a8720852895cefad5a0163d31bc63"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">pocketmine\nbt\tag\CompoundTag\setLong</a></div><div class="ttdeci">setLong(string $name, int $value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00235">CompoundTag.php:235</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_int_tag_html"><div class="ttname"><a href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">pocketmine\nbt\tag\IntTag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4a/_int_tag_8php_source.html#l00030">IntTag.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00131">NetworkSession.php:131</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00132">NetworkSession.php:132</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_animate_packet_html"><div class="ttname"><a href="../../d6/dcd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_animate_packet.html">pocketmine\network\mcpe\protocol\AnimatePacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d71/_animate_packet_8php_source.html#l00019">AnimatePacket.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet_html"><div class="ttname"><a href="../../d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet.html">pocketmine\network\mcpe\protocol\MovePlayerPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d04/_move_player_packet_8php_source.html#l00020">MovePlayerPacket.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_motion_packet_html"><div class="ttname"><a href="../../dd/d75/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_actor_motion_packet.html">pocketmine\network\mcpe\protocol\SetActorMotionPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de6/_set_actor_motion_packet_8php_source.html#l00020">SetActorMotionPacket.php:20</a></div></div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.9.1 git-b4838f5b4e99119062a57d94769440d457705b10</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-a03013d582881feacc0fb42b3cbdf1368a27d4ff</span>
    </div>
   </td>
  </tr>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('d8/d17/_crafting_data_cache_8php_sourc
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        $potionContainerChangeRecipes = [];</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        $itemTypeDictionary = TypeConverter::getInstance()-&gt;getItemTypeDictionary();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        $itemTypeDictionary = $converter-&gt;getItemTypeDictionary();</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">foreach</span>($manager-&gt;<a class="code hl_function" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a1be861963b7f04e0f653ffd978cf9616">getPotionContainerChangeRecipes</a>() as $recipe){</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            $input = $itemTypeDictionary-&gt;fromStringId($recipe-&gt;getInputItemId());</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            $ingredient = $converter-&gt;coreRecipeIngredientToNet($recipe-&gt;getIngredient())-&gt;getDescriptor();</div>

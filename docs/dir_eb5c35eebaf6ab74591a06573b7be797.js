@@ -16,6 +16,7 @@ var dir_eb5c35eebaf6ab74591a06573b7be797 =
     [ "CopperTrait.php", "d0/d43/_copper_trait_8php_source.html", null ],
     [ "CoralType.php", "d9/d93/_coral_type_8php_source.html", null ],
     [ "CoralTypeTrait.php", "d7/db6/_coral_type_trait_8php_source.html", null ],
+    [ "CropGrowthHelper.php", "dd/dfe/_crop_growth_helper_8php_source.html", null ],
     [ "DirtType.php", "d5/d5b/_dirt_type_8php_source.html", null ],
     [ "DripleafState.php", "d4/d5e/_dripleaf_state_8php_source.html", null ],
     [ "DyeColor.php", "d3/d89/_dye_color_8php_source.html", null ],

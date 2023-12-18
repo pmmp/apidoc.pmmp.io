@@ -26,6 +26,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "utils", "dir_313caf1132e152dd9b58bea13a4052ca.html", "dir_313caf1132e152dd9b58bea13a4052ca" ],
     [ "wizard", "dir_e09032bb770e6e0f4355f890c3180c4a.html", "dir_e09032bb770e6e0f4355f890c3180c4a" ],
     [ "world", "dir_6826d79532171ff2338799cfd298b875.html", "dir_6826d79532171ff2338799cfd298b875" ],
+    [ "BootstrapOptions.php", "de/d41/_bootstrap_options_8php_source.html", null ],
     [ "CoreConstants.php", "d8/d03/_core_constants_8php_source.html", null ],
     [ "MemoryManager.php", "db/d45/_memory_manager_8php_source.html", null ],
     [ "PocketMine.php", "de/d55/_pocket_mine_8php_source.html", null ],

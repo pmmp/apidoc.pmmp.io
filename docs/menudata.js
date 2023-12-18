@@ -109,6 +109,7 @@ var menudata={children:[
 {text:"a",url:"functions_vars_a.html#index_a"},
 {text:"c",url:"functions_vars_c.html#index_c"},
 {text:"d",url:"functions_vars_d.html#index_d"},
+{text:"e",url:"functions_vars_e.html#index_e"},
 {text:"h",url:"functions_vars_h.html#index_h"},
 {text:"i",url:"functions_vars_i.html#index_i"},
 {text:"j",url:"functions_vars_j.html#index_j"},

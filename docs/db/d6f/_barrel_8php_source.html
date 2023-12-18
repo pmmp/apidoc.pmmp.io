@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.9.1 git-b4838f5b4e99119062a57d94769440d457705b10</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-a03013d582881feacc0fb42b3cbdf1368a27d4ff</span>
    </div>
   </td>
  </tr>
@@ -148,12 +148,12 @@ $(document).ready(function(){initNavTree('db/d6f/_barrel_8php_source.html','../.
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../da/d36/classpocketmine_1_1block_1_1_barrel.html#a721bc98619c49e6b9a7a3a622b7033c2">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d36/classpocketmine_1_1block_1_1_barrel.html#a721bc98619c49e6b9a7a3a622b7033c2">place</a>(<a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">BlockTransaction</a> $tx, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockClicked, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        if($player !== null){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span>(abs($player-&gt;getPosition()-&gt;getX() - $this-&gt;position-&gt;getX()) &lt; 2 &amp;&amp; abs($player-&gt;getPosition()-&gt;getZ() - $this-&gt;position-&gt;getZ()) &lt; 2){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                $y = $player-&gt;getEyePos()-&gt;getY();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span>(abs($player-&gt;getPosition()-&gt;x - $this-&gt;position-&gt;x) &lt; 2 &amp;&amp; abs($player-&gt;getPosition()-&gt;z - $this-&gt;position-&gt;z) &lt; 2){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                $y = $player-&gt;getEyePos()-&gt;y;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">if</span>($y - $this-&gt;position-&gt;getY() &gt; 2){</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">if</span>($y - $this-&gt;position-&gt;y &gt; 2){</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    $this-&gt;facing = Facing::UP;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                }elseif($this-&gt;position-&gt;getY() - $y &gt; 0){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                }elseif($this-&gt;position-&gt;y - $y &gt; 0){</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    $this-&gt;facing = Facing::DOWN;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                }<span class="keywordflow">else</span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    $this-&gt;facing = Facing::opposite($player-&gt;getHorizontalFacing());</div>

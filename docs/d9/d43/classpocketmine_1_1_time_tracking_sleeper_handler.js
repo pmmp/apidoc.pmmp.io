@@ -1,6 +1,6 @@
 var classpocketmine_1_1_time_tracking_sleeper_handler =
 [
-    [ "addNotifier", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#a4e25188cb03a3b82653d9a61f06bc00c", null ],
+    [ "addNotifier", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#a6d589abb3c92164dc9f529f312d5c47a", null ],
     [ "getNotificationProcessingTime", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#aa10912fdfaae796250b3815e5abc6c80", null ],
     [ "processNotifications", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#ac3975a74471cef882ed6f55fbf3d6447", null ],
     [ "removeNotifier", "d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#a04e4b325df3590310bdccb730ebf973c", null ],

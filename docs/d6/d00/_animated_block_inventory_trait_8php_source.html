@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.9.1 git-b4838f5b4e99119062a57d94769440d457705b10</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-a03013d582881feacc0fb42b3cbdf1368a27d4ff</span>
    </div>
   </td>
  </tr>
@@ -137,20 +137,20 @@ $(document).ready(function(){initNavTree('d6/d00/_animated_block_inventory_trait
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> onOpen(Player $who) : void{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        parent::onOpen($who);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>($this-&gt;getHolder()-&gt;isValid() &amp;&amp; $this-&gt;getViewerCount() === 1){</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>($this-&gt;holder-&gt;isValid() &amp;&amp; $this-&gt;getViewerCount() === 1){</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="comment">//TODO: this crap really shouldn&#39;t be managed by the inventory</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $this-&gt;animateBlock(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $this-&gt;getHolder()-&gt;getWorld()-&gt;addSound($this-&gt;getHolder()-&gt;add(0.5, 0.5, 0.5), $this-&gt;getOpenSound());</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $this-&gt;holder-&gt;getWorld()-&gt;addSound($this-&gt;holder-&gt;add(0.5, 0.5, 0.5), $this-&gt;getOpenSound());</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">function</span> animateBlock(<span class="keywordtype">bool</span> $isOpen) : void;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">function</span> onClose(Player $who) : void{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        if($this-&gt;getHolder()-&gt;isValid() &amp;&amp; $this-&gt;getViewerCount() === 1){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        if($this-&gt;holder-&gt;isValid() &amp;&amp; $this-&gt;getViewerCount() === 1){</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="comment">//TODO: this crap really shouldn&#39;t be managed by the inventory</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $this-&gt;animateBlock(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;getHolder()-&gt;getWorld()-&gt;addSound($this-&gt;getHolder()-&gt;add(0.5, 0.5, 0.5), $this-&gt;getCloseSound());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;holder-&gt;getWorld()-&gt;addSound($this-&gt;holder-&gt;add(0.5, 0.5, 0.5), $this-&gt;getCloseSound());</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        parent::onClose($who);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>

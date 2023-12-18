@@ -212,5 +212,6 @@ var searchData=
   ['creativeinventorycache_209',['CreativeInventoryCache',['../dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html',1,'pocketmine::network::mcpe::cache']]],
   ['criticalhitanimation_210',['CriticalHitAnimation',['../dd/d0b/classpocketmine_1_1entity_1_1animation_1_1_critical_hit_animation.html',1,'pocketmine::entity::animation']]],
   ['criticalparticle_211',['CriticalParticle',['../de/d96/classpocketmine_1_1world_1_1particle_1_1_critical_particle.html',1,'pocketmine::world::particle']]],
-  ['crops_212',['Crops',['../d2/d70/classpocketmine_1_1block_1_1_crops.html',1,'pocketmine::block']]]
+  ['cropgrowthhelper_212',['CropGrowthHelper',['../da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper.html',1,'pocketmine::block::utils']]],
+  ['crops_213',['Crops',['../d2/d70/classpocketmine_1_1block_1_1_crops.html',1,'pocketmine::block']]]
 ];

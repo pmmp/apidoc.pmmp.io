@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.9.1 git-b4838f5b4e99119062a57d94769440d457705b10</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-a03013d582881feacc0fb42b3cbdf1368a27d4ff</span>
    </div>
   </td>
  </tr>
@@ -181,9 +181,9 @@ $(document).ready(function(){initNavTree('d5/d6e/_standard_packet_broadcaster_8p
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_function" href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html#ac52f6e9e1e8fa320f474cfdfcdd6707c">PacketBatch::encodeRaw</a>($stream, $packetBuffers);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                $batchBuffer = $stream-&gt;getBuffer();</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                $promise = $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;prepareBatch($batchBuffer, $compressor, timings: Timings::$playerNetworkSendCompressBroadcast);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                $batch = $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;prepareBatch($batchBuffer, $compressor, timings: Timings::$playerNetworkSendCompressBroadcast);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="keywordflow">foreach</span>($compressorTargets as $target){</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    $target-&gt;queueCompressed($promise);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    $target-&gt;queueCompressed($batch);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }<span class="keywordflow">else</span>{</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">foreach</span>($compressorTargets as $target){</div>

@@ -2,7 +2,7 @@ var classpocketmine_1_1block_1_1_double_pitcher_crop =
 [
     [ "__toString", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
-    [ "asItem", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a286fc64348f13417dcb6106c2695911b", null ],
+    [ "asItem", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a68c654524633c98d4e63dcc09e198108", null ],
     [ "blocksDirectSkyLight", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a2127737ad69279d366e4462b54f693f2", null ],
     [ "burnsForever", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#aa09e248dd611c0ebb95cf2adf2d6d31c", null ],
     [ "calculateIntercept", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
@@ -20,7 +20,7 @@ var classpocketmine_1_1block_1_1_double_pitcher_crop =
     [ "getBreakInfo", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#aa4773f0153324728a2f41820fa52442d", null ],
     [ "getCollisionBoxes", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a104403fbe0f0d27d8a5ac667cd1a89ef", null ],
     [ "getDrops", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#abc2cbf6176586e86f2e0f70c9bb7ec4a", null ],
-    [ "getDropsForCompatibleTool", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
+    [ "getDropsForCompatibleTool", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#aaf1e76f235119a3d9667d227e5ae2158", null ],
     [ "getDropsForIncompatibleTool", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
     [ "getFlameEncouragement", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a3d865c31d128c45f03ff6d1c1c8c1ca2", null ],

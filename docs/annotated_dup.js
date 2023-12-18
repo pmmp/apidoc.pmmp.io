@@ -70,6 +70,7 @@ var annotated_dup =
         [ "utils", null, [
           [ "BannerPatternLayer", "da/dd4/classpocketmine_1_1block_1_1utils_1_1_banner_pattern_layer.html", null ],
           [ "BlockEventHelper", "d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html", null ],
+          [ "CropGrowthHelper", "da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper.html", "da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper" ],
           [ "Fallable", "dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable.html", "dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable" ],
           [ "FortuneDropHelper", "dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html", "dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper" ],
           [ "MinimumCostFlowCalculator", "db/d5b/classpocketmine_1_1block_1_1utils_1_1_minimum_cost_flow_calculator.html", "db/d5b/classpocketmine_1_1block_1_1utils_1_1_minimum_cost_flow_calculator" ],
@@ -894,6 +895,7 @@ var annotated_dup =
         [ "MushroomStew", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew" ],
         [ "PaintingItem", "d3/d77/classpocketmine_1_1item_1_1_painting_item.html", "d3/d77/classpocketmine_1_1item_1_1_painting_item" ],
         [ "Pickaxe", "de/d6f/classpocketmine_1_1item_1_1_pickaxe.html", "de/d6f/classpocketmine_1_1item_1_1_pickaxe" ],
+        [ "PitcherPod", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod.html", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod" ],
         [ "PoisonousPotato", "d4/dfa/classpocketmine_1_1item_1_1_poisonous_potato.html", "d4/dfa/classpocketmine_1_1item_1_1_poisonous_potato" ],
         [ "Potato", "db/d9d/classpocketmine_1_1item_1_1_potato.html", "db/d9d/classpocketmine_1_1item_1_1_potato" ],
         [ "Potion", "d3/d00/classpocketmine_1_1item_1_1_potion.html", "d3/d00/classpocketmine_1_1item_1_1_potion" ],
@@ -1949,6 +1951,7 @@ var annotated_dup =
         [ "WorldManager", "d8/d70/classpocketmine_1_1world_1_1_world_manager.html", "d8/d70/classpocketmine_1_1world_1_1_world_manager" ],
         [ "WorldTimings", "d7/d08/classpocketmine_1_1world_1_1_world_timings.html", null ]
       ] ],
+      [ "BootstrapOptions", "d7/dbe/classpocketmine_1_1_bootstrap_options.html", "d7/dbe/classpocketmine_1_1_bootstrap_options" ],
       [ "MemoryManager", "d3/df7/classpocketmine_1_1_memory_manager.html", "d3/df7/classpocketmine_1_1_memory_manager" ],
       [ "Server", "d5/df7/classpocketmine_1_1_server.html", "d5/df7/classpocketmine_1_1_server" ],
       [ "ServerConfigGroup", "d1/d84/classpocketmine_1_1_server_config_group.html", null ],
