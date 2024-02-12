@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-81d5b9ba0676ee520cb9a80a45965952055bc2dc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.1 git-eaab1a87847422c0fc83843de4db2bc6d2a773cb</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('d3/d33/interfacepocketmine_1_1network_
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d1c/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor__inherit__graph.svg" width="299" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d1c/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor__inherit__graph.svg" width="299" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('d3/d33/interfacepocketmine_1_1network_
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/da0/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor__coll__graph.svg" width="242" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/da0/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor__coll__graph.svg" width="242" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -121,10 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a091740691fd6debe0cc242e5c21967ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49ca1a3962b0926dd5aa11875e96168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#ac49ca1a3962b0926dd5aa11875e96168">getCompressionThreshold</a> ()</td></tr>
 <tr class="separator:ac49ca1a3962b0926dd5aa11875e96168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa686638057bcc9babbba38d41fd922"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#aaaa686638057bcc9babbba38d41fd922">getNetworkId</a> ()</td></tr>
+<tr class="separator:aaaa686638057bcc9babbba38d41fd922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d6/d51/_compressor_8php_source.html#l00026">26</a> of file <a class="el" href="../../d6/d51/_compressor_8php_source.html">Compressor.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d51/_compressor_8php_source.html#l00028">28</a> of file <a class="el" href="../../d6/d51/_compressor_8php_source.html">Compressor.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a091740691fd6debe0cc242e5c21967ff" name="a091740691fd6debe0cc242e5c21967ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a091740691fd6debe0cc242e5c21967ff">&#9670;&nbsp;</a></span>decompress()</h2>
@@ -170,6 +172,27 @@ Public Member Functions</h2></td></tr>
 <p >The compressor's output <b>MUST</b> still be valid input for the decompressor even if the compressor input is below this threshold. However, it may choose to use a cheaper compression option (e.g. zlib level 0, which simply wraps the data and doesn't attempt to compress it) to avoid wasting CPU time. </p>
 
 <p>Implemented in <a class="el" href="../../d2/db8/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_zlib_compressor.html#af386ea111199ed5cc16fefbce1c40f88">pocketmine\network\mcpe\compression\ZlibCompressor</a>.</p>
+
+</div>
+</div>
+<a id="aaaa686638057bcc9babbba38d41fd922" name="aaaa686638057bcc9babbba38d41fd922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa686638057bcc9babbba38d41fd922">&#9670;&nbsp;</a></span>getNetworkId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\compression\Compressor::getNetworkId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the canonical ID of this compressor, used to tell the remote end how to decompress a packet compressed with this compressor.</p>
+<dl class="section return"><dt>Returns</dt><dd>CompressionAlgorithm::* </dd></dl>
+
+<p>Implemented in <a class="el" href="../../d2/db8/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_zlib_compressor.html#a1690c3a9a7025244fb7c2ff076154360">pocketmine\network\mcpe\compression\ZlibCompressor</a>.</p>
 
 </div>
 </div>

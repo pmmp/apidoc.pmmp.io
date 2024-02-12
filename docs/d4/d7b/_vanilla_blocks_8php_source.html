@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-81d5b9ba0676ee520cb9a80a45965952055bc2dc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.1 git-eaab1a87847422c0fc83843de4db2bc6d2a773cb</span>
    </div>
   </td>
  </tr>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('d4/d7b/_vanilla_blocks_8php_source.htm
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    }</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">function</span> setup() : void{</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        $railBreakInfo = new Info(new <a class="code hl_class" href="../../d3/d10/classpocketmine_1_1block_1_1_block_break_info.html">BlockBreakInfo</a>(0.7));</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        $railBreakInfo = new Info(new BreakInfo(0.7));</div>
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        self::register(<span class="stringliteral">&quot;activator_rail&quot;</span>, <span class="keyword">new</span> <a class="code hl_class" href="../../d6/d7d/classpocketmine_1_1block_1_1_activator_rail.html">ActivatorRail</a>(<span class="keyword">new</span> BID(Ids::ACTIVATOR_RAIL), <span class="stringliteral">&quot;Activator Rail&quot;</span>, $railBreakInfo));</div>
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>        self::register(<span class="stringliteral">&quot;air&quot;</span>, <span class="keyword">new</span> <a class="code hl_class" href="../../d7/d31/classpocketmine_1_1block_1_1_air.html">Air</a>(<span class="keyword">new</span> BID(Ids::AIR), <span class="stringliteral">&quot;Air&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::indestructible(-1.0))));</div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        self::register(<span class="stringliteral">&quot;anvil&quot;</span>, <span class="keyword">new</span> <a class="code hl_class" href="../../df/d58/classpocketmine_1_1block_1_1_anvil.html">Anvil</a>(<span class="keyword">new</span> BID(Ids::ANVIL), <span class="stringliteral">&quot;Anvil&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::pickaxe(5.0, ToolTier::WOOD, 6000.0))));</div>
@@ -1030,7 +1030,7 @@ $(document).ready(function(){initNavTree('d4/d7b/_vanilla_blocks_8php_source.htm
 <div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span> </div>
 <div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>        self::register(<span class="stringliteral">&quot;cave_vines&quot;</span>, <span class="keyword">new</span> CaveVines(<span class="keyword">new</span> BID(Ids::CAVE_VINES), <span class="stringliteral">&quot;Cave Vines&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::instant())));</div>
 <div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span> </div>
-<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>        self::register(<span class="stringliteral">&quot;small_dripleaf&quot;</span>, <span class="keyword">new</span> SmallDripleaf(<span class="keyword">new</span> BID(Ids::SMALL_DRIPLEAF), <span class="stringliteral">&quot;Small Dripleaf&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::instant(BlockToolType::SHEARS, toolHarvestLevel: 1))));</div>
+<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>        self::register(<span class="stringliteral">&quot;small_dripleaf&quot;</span>, <span class="keyword">new</span> SmallDripleaf(<span class="keyword">new</span> BID(Ids::SMALL_DRIPLEAF), <span class="stringliteral">&quot;Small Dripleaf&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::instant(ToolType::SHEARS, toolHarvestLevel: 1))));</div>
 <div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>        self::register(<span class="stringliteral">&quot;big_dripleaf_head&quot;</span>, <span class="keyword">new</span> BigDripleafHead(<span class="keyword">new</span> BID(Ids::BIG_DRIPLEAF_HEAD), <span class="stringliteral">&quot;Big Dripleaf&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::instant())));</div>
 <div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>        self::register(<span class="stringliteral">&quot;big_dripleaf_stem&quot;</span>, <span class="keyword">new</span> BigDripleafStem(<span class="keyword">new</span> BID(Ids::BIG_DRIPLEAF_STEM), <span class="stringliteral">&quot;Big Dripleaf Stem&quot;</span>, <span class="keyword">new</span> Info(BreakInfo::instant())));</div>
 <div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>    }</div>

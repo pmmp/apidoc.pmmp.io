@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-81d5b9ba0676ee520cb9a80a45965952055bc2dc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.1 git-eaab1a87847422c0fc83843de4db2bc6d2a773cb</span>
    </div>
   </td>
  </tr>
@@ -129,9 +129,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73f212a0d36bb1a00c3038a8f70604c4"><td class="memItemLeft" align="right" valign="top"><a id="a73f212a0d36bb1a00c3038a8f70604c4" name="a73f212a0d36bb1a00c3038a8f70604c4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleAddBehaviorTree</b> (AddBehaviorTreePacket $packet)</td></tr>
 <tr class="separator:a73f212a0d36bb1a00c3038a8f70604c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc1706624fd4a3b2a61125c470a72141"><td class="memItemLeft" align="right" valign="top"><a id="adc1706624fd4a3b2a61125c470a72141" name="adc1706624fd4a3b2a61125c470a72141"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleAddEntity</b> (AddEntityPacket $packet)</td></tr>
-<tr class="separator:adc1706624fd4a3b2a61125c470a72141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac02543e73603646daa2b8245982cb49"><td class="memItemLeft" align="right" valign="top"><a id="aac02543e73603646daa2b8245982cb49" name="aac02543e73603646daa2b8245982cb49"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleAddItemActor</b> (AddItemActorPacket $packet)</td></tr>
 <tr class="separator:aac02543e73603646daa2b8245982cb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,9 +488,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe52844216d58c8a1330984e44c03b0b"><td class="memItemLeft" align="right" valign="top"><a id="afe52844216d58c8a1330984e44c03b0b" name="afe52844216d58c8a1330984e44c03b0b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleRemoveActor</b> (<a class="el" href="../../de/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_remove_actor_packet.html">RemoveActorPacket</a> $packet)</td></tr>
 <tr class="separator:afe52844216d58c8a1330984e44c03b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9b4a9fc9e07174199c81a8561f990bf"><td class="memItemLeft" align="right" valign="top"><a id="af9b4a9fc9e07174199c81a8561f990bf" name="af9b4a9fc9e07174199c81a8561f990bf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleRemoveEntity</b> (RemoveEntityPacket $packet)</td></tr>
-<tr class="separator:af9b4a9fc9e07174199c81a8561f990bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bcea4b033e3e9fcf884758fa02a8de8"><td class="memItemLeft" align="right" valign="top"><a id="a7bcea4b033e3e9fcf884758fa02a8de8" name="a7bcea4b033e3e9fcf884758fa02a8de8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleRemoveObjective</b> (RemoveObjectivePacket $packet)</td></tr>
 <tr class="separator:a7bcea4b033e3e9fcf884758fa02a8de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -536,6 +530,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a819a1a6e0be6f553475f05f2d952a2e4"><td class="memItemLeft" align="right" valign="top"><a id="a819a1a6e0be6f553475f05f2d952a2e4" name="a819a1a6e0be6f553475f05f2d952a2e4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleScriptMessage</b> (ScriptMessagePacket $packet)</td></tr>
 <tr class="separator:a819a1a6e0be6f553475f05f2d952a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e7cbd947e71a408558e1841e873b0a"><td class="memItemLeft" align="right" valign="top"><a id="a21e7cbd947e71a408558e1841e873b0a" name="a21e7cbd947e71a408558e1841e873b0a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleServerPlayerPostMovePosition</b> (ServerPlayerPostMovePositionPacket $packet)</td></tr>
+<tr class="separator:a21e7cbd947e71a408558e1841e873b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28195af258c8a26216dbfc6565bc828c"><td class="memItemLeft" align="right" valign="top"><a id="a28195af258c8a26216dbfc6565bc828c" name="a28195af258c8a26216dbfc6565bc828c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleServerSettingsRequest</b> (<a class="el" href="../../d8/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_request_packet.html">ServerSettingsRequestPacket</a> $packet)</td></tr>
 <tr class="separator:a28195af258c8a26216dbfc6565bc828c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -572,6 +569,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6449560dad2d09568d63bcc1754871ae"><td class="memItemLeft" align="right" valign="top"><a id="a6449560dad2d09568d63bcc1754871ae" name="a6449560dad2d09568d63bcc1754871ae"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleSetHealth</b> (SetHealthPacket $packet)</td></tr>
 <tr class="separator:a6449560dad2d09568d63bcc1754871ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6087a525e5fc2d700740f0bb893817e"><td class="memItemLeft" align="right" valign="top"><a id="ab6087a525e5fc2d700740f0bb893817e" name="ab6087a525e5fc2d700740f0bb893817e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleSetHud</b> (SetHudPacket $packet)</td></tr>
+<tr class="separator:ab6087a525e5fc2d700740f0bb893817e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace519765e1d3096a9a86c55d4f80e70d"><td class="memItemLeft" align="right" valign="top"><a id="ace519765e1d3096a9a86c55d4f80e70d" name="ace519765e1d3096a9a86c55d4f80e70d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleSetLastHurtBy</b> (SetLastHurtByPacket $packet)</td></tr>
 <tr class="separator:ace519765e1d3096a9a86c55d4f80e70d"><td class="memSeparator" colspan="2">&#160;</td></tr>

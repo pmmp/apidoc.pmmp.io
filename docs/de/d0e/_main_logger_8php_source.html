@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.10.1 git-81d5b9ba0676ee520cb9a80a45965952055bc2dc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.1 git-eaab1a87847422c0fc83843de4db2bc6d2a773cb</span>
    </div>
   </td>
  </tr>
@@ -117,190 +117,188 @@ $(document).ready(function(){initNavTree('de/d0e/_main_logger_8php_source.html',
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../dd/de7/interface_log_level.html">LogLevel</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pmmp\thread\Thread as NativeThread;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d8/daf/classpocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger.html">pocketmine\thread\log\AttachableThreadSafeLogger</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html">pocketmine\thread\log\ThreadSafeLoggerAttachment</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">pocketmine\thread\Thread</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> implode;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> sprintf;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">const</span> PHP_EOL;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">MainLogger</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d8/daf/classpocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger.html">AttachableThreadSafeLogger</a> implements <a class="code hl_interface" href="../../d3/d4b/interface_buffered_logger.html">\BufferedLogger</a>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">protected</span> <span class="keywordtype">bool</span> $logDebug;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $format = TextFormat::AQUA . <span class="stringliteral">&quot;[%s] &quot;</span> . TextFormat::RESET . <span class="stringliteral">&quot;%s[%s/%s]: %s&quot;</span> . TextFormat::RESET;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <span class="keywordtype">bool</span> $useFormattingCodes = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $mainThreadName;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $timezone;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html">MainLoggerThread</a> $logWriterThread;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a">__construct</a>(<span class="keywordtype">string</span> $logFile, <span class="keywordtype">bool</span> $useFormattingCodes, <span class="keywordtype">string</span> $mainThreadName, \DateTimeZone $timezone, <span class="keywordtype">bool</span> $logDebug = <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        parent::__construct();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;logDebug = $logDebug;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;useFormattingCodes = $useFormattingCodes;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;mainThreadName = $mainThreadName;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;timezone = $timezone-&gt;getName();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;logWriterThread = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html">MainLoggerThread</a>($logFile);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;logWriterThread-&gt;start(NativeThread::INHERIT_NONE);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397">getFormat</a>() : string{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return $this-&gt;format;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a32637791c83624c6b129e757e8fec165">   78</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a32637791c83624c6b129e757e8fec165">setFormat</a>(<span class="keywordtype">string</span> $format) : void{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $this-&gt;format = $format;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d">emergency</a>($message){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $this-&gt;send($message, \LogLevel::EMERGENCY, <span class="stringliteral">&quot;EMERGENCY&quot;</span>, TextFormat::RED);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195">   86</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195">alert</a>($message){</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;send($message, \LogLevel::ALERT, <span class="stringliteral">&quot;ALERT&quot;</span>, TextFormat::RED);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e">   90</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e">critical</a>($message){</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $this-&gt;send($message, \LogLevel::CRITICAL, <span class="stringliteral">&quot;CRITICAL&quot;</span>, TextFormat::RED);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645">   94</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645">error</a>($message){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;send($message, \LogLevel::ERROR, <span class="stringliteral">&quot;ERROR&quot;</span>, TextFormat::DARK_RED);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be">   98</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be">warning</a>($message){</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $this-&gt;send($message, \LogLevel::WARNING, <span class="stringliteral">&quot;WARNING&quot;</span>, TextFormat::YELLOW);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4">  102</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4">notice</a>($message){</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $this-&gt;send($message, \LogLevel::NOTICE, <span class="stringliteral">&quot;NOTICE&quot;</span>, TextFormat::AQUA);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45">  106</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45">info</a>($message){</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $this-&gt;send($message, \LogLevel::INFO, <span class="stringliteral">&quot;INFO&quot;</span>, TextFormat::WHITE);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">function</span> debug($message, <span class="keywordtype">bool</span> $force = <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">if</span>(!$this-&gt;logDebug &amp;&amp; !$force){</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $this-&gt;send($message, \LogLevel::DEBUG, <span class="stringliteral">&quot;DEBUG&quot;</span>, TextFormat::GRAY);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">public</span> <span class="keyword">function</span> setLogDebug(<span class="keywordtype">bool</span> $logDebug) : void{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $this-&gt;logDebug = $logDebug;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66">  127</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66">logException</a>(\Throwable $e, $trace = <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        $this-&gt;critical(implode(<span class="stringliteral">&quot;\n&quot;</span>, Utils::printableExceptionInfo($e, $trace)));</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $this-&gt;syncFlushBuffer();</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a31eb87c7c4b8fccefc4e60a2cc914e71">  133</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a31eb87c7c4b8fccefc4e60a2cc914e71">log</a>($level, $message){</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">switch</span>($level){</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">case</span> LogLevel::EMERGENCY:</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                $this-&gt;emergency($message);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keywordflow">case</span> LogLevel::ALERT:</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                $this-&gt;alert($message);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">case</span> LogLevel::CRITICAL:</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                $this-&gt;critical($message);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordflow">case</span> LogLevel::ERROR:</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                $this-&gt;error($message);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">case</span> LogLevel::WARNING:</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                $this-&gt;warning($message);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">case</span> LogLevel::NOTICE:</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                $this-&gt;notice($message);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">case</span> LogLevel::INFO:</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                $this-&gt;info($message);</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">case</span> LogLevel::DEBUG:</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                $this-&gt;debug($message);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e">  165</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e">buffer</a>(\Closure $c) : void{</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        $this-&gt;synchronized($c);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">public</span> <span class="keyword">function</span> shutdownLogWriterThread() : void{</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        if(NativeThread::getCurrentThreadId() === $this-&gt;logWriterThread-&gt;getCreatorId()){</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            $this-&gt;logWriterThread-&gt;shutdown();</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Only the creator thread can shutdown the logger thread&quot;</span>);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">protected</span> <span class="keyword">function</span> send(<span class="keywordtype">string</span> $message, <span class="keywordtype">string</span> $level, <span class="keywordtype">string</span> $prefix, <span class="keywordtype">string</span> $color) : void{</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        $time = new \DateTime(<span class="stringliteral">&#39;now&#39;</span>, new \DateTimeZone($this-&gt;timezone));</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        $thread = NativeThread::getCurrentThread();</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="keywordflow">if</span>($thread === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            $threadName = $this-&gt;mainThreadName . <span class="stringliteral">&quot; thread&quot;</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }elseif($thread instanceof Thread || $thread instanceof Worker){</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            $threadName = $thread-&gt;getThreadName() . <span class="stringliteral">&quot; thread&quot;</span>;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            $threadName = (new \ReflectionClass($thread))-&gt;getShortName() . <span class="stringliteral">&quot; thread&quot;</span>;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        }</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        $message = sprintf($this-&gt;format, $time-&gt;format(<span class="stringliteral">&quot;H:i:s.v&quot;</span>), $color, $threadName, $prefix, TextFormat::addBase($color, TextFormat::clean($message, <span class="keyword">false</span>)));</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span>(!Terminal::isInit()){</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            Terminal::init($this-&gt;useFormattingCodes); <span class="comment">//lazy-init colour codes because we don&#39;t know if they&#39;ve been registered on this thread</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() use ($message, $level, $time) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            Terminal::writeLine($message);</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            $this-&gt;logWriterThread-&gt;write($time-&gt;format(<span class="stringliteral">&quot;Y-m-d&quot;</span>) . <span class="stringliteral">&quot; &quot;</span> . TextFormat::clean($message) . PHP_EOL);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="keywordflow">foreach</span>($this-&gt;attachments as $attachment){</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                $attachment-&gt;log($level, $message);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        });</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncFlushBuffer() : void{</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        $this-&gt;logWriterThread-&gt;syncFlushBuffer();</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keywordflow">if</span>(!$this-&gt;logWriterThread-&gt;isJoined() &amp;&amp; NativeThread::getCurrentThreadId() === $this-&gt;logWriterThread-&gt;getCreatorId()){</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            $this-&gt;shutdownLogWriterThread();</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        }</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pmmp\thread\Thread as NativeThread;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d8/daf/classpocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger.html">pocketmine\thread\log\AttachableThreadSafeLogger</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html">pocketmine\thread\log\ThreadSafeLoggerAttachment</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">pocketmine\thread\Thread</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> implode;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> sprintf;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">const</span> PHP_EOL;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">MainLogger</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d8/daf/classpocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger.html">AttachableThreadSafeLogger</a> implements <a class="code hl_interface" href="../../d3/d4b/interface_buffered_logger.html">\BufferedLogger</a>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">protected</span> <span class="keywordtype">bool</span> $logDebug;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $format = TextFormat::AQUA . <span class="stringliteral">&quot;[%s] &quot;</span> . TextFormat::RESET . <span class="stringliteral">&quot;%s[%s/%s]: %s&quot;</span> . TextFormat::RESET;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> <span class="keywordtype">bool</span> $useFormattingCodes = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $mainThreadName;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $timezone;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html">MainLoggerThread</a> $logWriterThread;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a">__construct</a>(<span class="keywordtype">string</span> $logFile, <span class="keywordtype">bool</span> $useFormattingCodes, <span class="keywordtype">string</span> $mainThreadName, \DateTimeZone $timezone, <span class="keywordtype">bool</span> $logDebug = <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        parent::__construct();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;logDebug = $logDebug;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;useFormattingCodes = $useFormattingCodes;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;mainThreadName = $mainThreadName;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;timezone = $timezone-&gt;getName();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;logWriterThread = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html">MainLoggerThread</a>($logFile);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;logWriterThread-&gt;start(NativeThread::INHERIT_NONE);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397">getFormat</a>() : string{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        return $this-&gt;format;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a32637791c83624c6b129e757e8fec165">   77</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a32637791c83624c6b129e757e8fec165">setFormat</a>(<span class="keywordtype">string</span> $format) : void{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $this-&gt;format = $format;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d">   81</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d">emergency</a>($message){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $this-&gt;send($message, \LogLevel::EMERGENCY, <span class="stringliteral">&quot;EMERGENCY&quot;</span>, TextFormat::RED);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195">   85</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195">alert</a>($message){</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;send($message, \LogLevel::ALERT, <span class="stringliteral">&quot;ALERT&quot;</span>, TextFormat::RED);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e">   89</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e">critical</a>($message){</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $this-&gt;send($message, \LogLevel::CRITICAL, <span class="stringliteral">&quot;CRITICAL&quot;</span>, TextFormat::RED);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645">   93</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645">error</a>($message){</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $this-&gt;send($message, \LogLevel::ERROR, <span class="stringliteral">&quot;ERROR&quot;</span>, TextFormat::DARK_RED);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be">   97</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be">warning</a>($message){</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $this-&gt;send($message, \LogLevel::WARNING, <span class="stringliteral">&quot;WARNING&quot;</span>, TextFormat::YELLOW);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4">  101</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4">notice</a>($message){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $this-&gt;send($message, \LogLevel::NOTICE, <span class="stringliteral">&quot;NOTICE&quot;</span>, TextFormat::AQUA);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45">  105</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45">info</a>($message){</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $this-&gt;send($message, \LogLevel::INFO, <span class="stringliteral">&quot;INFO&quot;</span>, TextFormat::WHITE);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">public</span> <span class="keyword">function</span> debug($message, <span class="keywordtype">bool</span> $force = <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span>(!$this-&gt;logDebug &amp;&amp; !$force){</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $this-&gt;send($message, \LogLevel::DEBUG, <span class="stringliteral">&quot;DEBUG&quot;</span>, TextFormat::GRAY);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">public</span> <span class="keyword">function</span> setLogDebug(<span class="keywordtype">bool</span> $logDebug) : void{</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        $this-&gt;logDebug = $logDebug;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66">  126</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66">logException</a>(\Throwable $e, $trace = <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        $this-&gt;critical(implode(<span class="stringliteral">&quot;\n&quot;</span>, Utils::printableExceptionInfo($e, $trace)));</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        $this-&gt;syncFlushBuffer();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a31eb87c7c4b8fccefc4e60a2cc914e71">  132</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a31eb87c7c4b8fccefc4e60a2cc914e71">log</a>($level, $message){</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">switch</span>($level){</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            case \LogLevel::EMERGENCY:</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                $this-&gt;emergency($message);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            case \LogLevel::ALERT:</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                $this-&gt;alert($message);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            case \LogLevel::CRITICAL:</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                $this-&gt;critical($message);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            case \LogLevel::ERROR:</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                $this-&gt;error($message);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            case \LogLevel::WARNING:</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                $this-&gt;warning($message);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            case \LogLevel::NOTICE:</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                $this-&gt;notice($message);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            case \LogLevel::INFO:</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                $this-&gt;info($message);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            case \LogLevel::DEBUG:</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                $this-&gt;debug($message);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e">  164</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e">buffer</a>(\Closure $c) : void{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        $this-&gt;synchronized($c);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">public</span> <span class="keyword">function</span> shutdownLogWriterThread() : void{</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        if(NativeThread::getCurrentThreadId() === $this-&gt;logWriterThread-&gt;getCreatorId()){</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            $this-&gt;logWriterThread-&gt;shutdown();</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Only the creator thread can shutdown the logger thread&quot;</span>);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">protected</span> <span class="keyword">function</span> send(<span class="keywordtype">string</span> $message, <span class="keywordtype">string</span> $level, <span class="keywordtype">string</span> $prefix, <span class="keywordtype">string</span> $color) : void{</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        $time = new \DateTime(<span class="stringliteral">&#39;now&#39;</span>, new \DateTimeZone($this-&gt;timezone));</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        $thread = NativeThread::getCurrentThread();</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">if</span>($thread === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            $threadName = $this-&gt;mainThreadName . <span class="stringliteral">&quot; thread&quot;</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        }elseif($thread instanceof Thread || $thread instanceof Worker){</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            $threadName = $thread-&gt;getThreadName() . <span class="stringliteral">&quot; thread&quot;</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            $threadName = (new \ReflectionClass($thread))-&gt;getShortName() . <span class="stringliteral">&quot; thread&quot;</span>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        $message = sprintf($this-&gt;format, $time-&gt;format(<span class="stringliteral">&quot;H:i:s.v&quot;</span>), $color, $threadName, $prefix, TextFormat::addBase($color, TextFormat::clean($message, <span class="keyword">false</span>)));</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span>(!Terminal::isInit()){</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            Terminal::init($this-&gt;useFormattingCodes); <span class="comment">//lazy-init colour codes because we don&#39;t know if they&#39;ve been registered on this thread</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() use ($message, $level, $time) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            Terminal::writeLine($message);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            $this-&gt;logWriterThread-&gt;write($time-&gt;format(<span class="stringliteral">&quot;Y-m-d&quot;</span>) . <span class="stringliteral">&quot; &quot;</span> . TextFormat::clean($message) . PHP_EOL);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordflow">foreach</span>($this-&gt;attachments as $attachment){</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                $attachment-&gt;log($level, $message);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        });</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncFlushBuffer() : void{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        $this-&gt;logWriterThread-&gt;syncFlushBuffer();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">if</span>(!$this-&gt;logWriterThread-&gt;isJoined() &amp;&amp; NativeThread::getCurrentThreadId() === $this-&gt;logWriterThread-&gt;getCreatorId()){</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            $this-&gt;shutdownLogWriterThread();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_html"><div class="ttname"><a href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">pocketmine\thread\Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d47/_thread_8php_source.html#l00038">Thread.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_worker_html"><div class="ttname"><a href="../../d2/d42/classpocketmine_1_1thread_1_1_worker.html">pocketmine\thread\Worker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfe/_worker_8php_source.html#l00040">Worker.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger_html"><div class="ttname"><a href="../../d8/daf/classpocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger.html">pocketmine\thread\log\AttachableThreadSafeLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d24/_attachable_thread_safe_logger_8php_source.html#l00028">AttachableThreadSafeLogger.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment_html"><div class="ttname"><a href="../../df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html">pocketmine\thread\log\ThreadSafeLoggerAttachment</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d7d/_thread_safe_logger_attachment_8php_source.html#l00028">ThreadSafeLoggerAttachment.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">pocketmine\utils\MainLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00036">MainLogger.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a12cd2a28feb6d4347adfdc21d650bf45"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45">pocketmine\utils\MainLogger\info</a></div><div class="ttdeci">info($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00106">MainLogger.php:106</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a31eb87c7c4b8fccefc4e60a2cc914e71"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a31eb87c7c4b8fccefc4e60a2cc914e71">pocketmine\utils\MainLogger\log</a></div><div class="ttdeci">log($level, $message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00133">MainLogger.php:133</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a32637791c83624c6b129e757e8fec165"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a32637791c83624c6b129e757e8fec165">pocketmine\utils\MainLogger\setFormat</a></div><div class="ttdeci">setFormat(string $format)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00078">MainLogger.php:78</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a5d496bba9068ecbae72b00889af0a645"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645">pocketmine\utils\MainLogger\error</a></div><div class="ttdeci">error($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00094">MainLogger.php:94</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a665907f48b3cfa6a61f7e37135021397"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397">pocketmine\utils\MainLogger\getFormat</a></div><div class="ttdeci">getFormat()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00063">MainLogger.php:63</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a7815ce47f10336df6fdc92badf5ca9be"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be">pocketmine\utils\MainLogger\warning</a></div><div class="ttdeci">warning($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00098">MainLogger.php:98</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a7f32d187305bcfdfbda2e7bfe09afbd4"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4">pocketmine\utils\MainLogger\notice</a></div><div class="ttdeci">notice($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00102">MainLogger.php:102</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_abbb5ae5278f33c24e1a1498c56f75e1e"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e">pocketmine\utils\MainLogger\buffer</a></div><div class="ttdeci">buffer(\Closure $c)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00165">MainLogger.php:165</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_ac8a9d9fc975ce080645320830844196e"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e">pocketmine\utils\MainLogger\critical</a></div><div class="ttdeci">critical($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00090">MainLogger.php:90</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_ae335a2e31d890df2d71571a42b8ac195"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195">pocketmine\utils\MainLogger\alert</a></div><div class="ttdeci">alert($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00086">MainLogger.php:86</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_ae4a49fde8e829546c928b56311998a1a"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a">pocketmine\utils\MainLogger\__construct</a></div><div class="ttdeci">__construct(string $logFile, bool $useFormattingCodes, string $mainThreadName, \DateTimeZone $timezone, bool $logDebug=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00048">MainLogger.php:48</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_aedee2f70097923ef959b793d05d94e66"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66">pocketmine\utils\MainLogger\logException</a></div><div class="ttdeci">logException(\Throwable $e, $trace=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00127">MainLogger.php:127</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_aef11b3c3b4d498e4e4cd037cf4ef7b9d"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d">pocketmine\utils\MainLogger\emergency</a></div><div class="ttdeci">emergency($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00082">MainLogger.php:82</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">pocketmine\utils\MainLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00035">MainLogger.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a12cd2a28feb6d4347adfdc21d650bf45"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45">pocketmine\utils\MainLogger\info</a></div><div class="ttdeci">info($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00105">MainLogger.php:105</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a31eb87c7c4b8fccefc4e60a2cc914e71"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a31eb87c7c4b8fccefc4e60a2cc914e71">pocketmine\utils\MainLogger\log</a></div><div class="ttdeci">log($level, $message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00132">MainLogger.php:132</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a32637791c83624c6b129e757e8fec165"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a32637791c83624c6b129e757e8fec165">pocketmine\utils\MainLogger\setFormat</a></div><div class="ttdeci">setFormat(string $format)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00077">MainLogger.php:77</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a5d496bba9068ecbae72b00889af0a645"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645">pocketmine\utils\MainLogger\error</a></div><div class="ttdeci">error($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00093">MainLogger.php:93</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a665907f48b3cfa6a61f7e37135021397"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397">pocketmine\utils\MainLogger\getFormat</a></div><div class="ttdeci">getFormat()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00062">MainLogger.php:62</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a7815ce47f10336df6fdc92badf5ca9be"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be">pocketmine\utils\MainLogger\warning</a></div><div class="ttdeci">warning($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00097">MainLogger.php:97</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_a7f32d187305bcfdfbda2e7bfe09afbd4"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4">pocketmine\utils\MainLogger\notice</a></div><div class="ttdeci">notice($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00101">MainLogger.php:101</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_abbb5ae5278f33c24e1a1498c56f75e1e"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e">pocketmine\utils\MainLogger\buffer</a></div><div class="ttdeci">buffer(\Closure $c)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00164">MainLogger.php:164</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_ac8a9d9fc975ce080645320830844196e"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e">pocketmine\utils\MainLogger\critical</a></div><div class="ttdeci">critical($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00089">MainLogger.php:89</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_ae335a2e31d890df2d71571a42b8ac195"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195">pocketmine\utils\MainLogger\alert</a></div><div class="ttdeci">alert($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00085">MainLogger.php:85</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_ae4a49fde8e829546c928b56311998a1a"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a">pocketmine\utils\MainLogger\__construct</a></div><div class="ttdeci">__construct(string $logFile, bool $useFormattingCodes, string $mainThreadName, \DateTimeZone $timezone, bool $logDebug=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00047">MainLogger.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_aedee2f70097923ef959b793d05d94e66"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66">pocketmine\utils\MainLogger\logException</a></div><div class="ttdeci">logException(\Throwable $e, $trace=null)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00126">MainLogger.php:126</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html_aef11b3c3b4d498e4e4cd037cf4ef7b9d"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d">pocketmine\utils\MainLogger\emergency</a></div><div class="ttdeci">emergency($message)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00081">MainLogger.php:81</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_thread_html"><div class="ttname"><a href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html">pocketmine\utils\MainLoggerThread</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d41/_main_logger_thread_8php_source.html#l00034">MainLoggerThread.php:34</a></div></div>
 <div class="ttc" id="ainterface_buffered_logger_html"><div class="ttname"><a href="../../d3/d4b/interface_buffered_logger.html">BufferedLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d3d/_buffered_logger_8php_source.html#l00020">BufferedLogger.php:20</a></div></div>
-<div class="ttc" id="ainterface_log_level_html"><div class="ttname"><a href="../../dd/de7/interface_log_level.html">LogLevel</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d20/_log_level_8php_source.html#l00018">LogLevel.php:18</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -5,7 +5,6 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_write
     [ "writeBlockFace", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae488d819f4bd07d1888f2a85f1e6fab1", null ],
     [ "writeBool", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#af9afcc083e91d17fe59e0c1956edfded", null ],
     [ "writeCardinalHorizontalFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a62034674fed6ea11e7b7911d9c2a766f", null ],
-    [ "writeColor", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae192dfbf3231e8fab230b980279f9929", null ],
     [ "writeCoralFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a0c1a39801da888944d24bc495a790fe9", null ],
     [ "writeCoralType", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a1a74ae0957c403e0abd09eea46229349", null ],
     [ "writeEndRodFacingDirection", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a557dfc8909241bac75d543c665f826e4", null ],

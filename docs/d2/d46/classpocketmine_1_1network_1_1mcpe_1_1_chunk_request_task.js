@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task =
 [
+    [ "__construct", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#ad3515eb75f8bfd133d11464da8230730", null ],
     [ "cancelRun", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
     [ "fetchLocal", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
