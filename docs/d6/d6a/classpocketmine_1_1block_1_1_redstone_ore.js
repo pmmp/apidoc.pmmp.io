@@ -13,7 +13,7 @@ var classpocketmine_1_1block_1_1_redstone_ore =
     [ "canClimb", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a912c0f3a42aefc049e119f931a2ec86e", null ],
     [ "describeBlockItemState", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#aba71bdae8759a0f2dc0bb44aeafc96e4", null ],
-    [ "describeBlockOnlyState", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a86ca624b2def01a1063ffe4105191070", null ],
+    [ "describeBlockOnlyState", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a444028c60ad6c7afacda1a6cc3065e59", null ],
     [ "generateStatePermutations", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_redstone_ore =
     [ "isAffectedBySilkTouch", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9", null ],
     [ "isFlammable", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae6f3cdb7eeee27448b561fa3f8323916", null ],
+    [ "isTransparent", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#af97d045122137ac415425b45e7b22a36", null ],
     [ "onAttack", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a49395de82d025ca78745a17528049f18", null ],
@@ -62,7 +64,6 @@ var classpocketmine_1_1block_1_1_redstone_ore =
     [ "place", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
-    [ "setLit", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#af75e1e8cf78a48ea0aa1ef7a92460f6c", null ],
     [ "ticksRandomly", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d", null ],
     [ "writeStateToWorld", "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

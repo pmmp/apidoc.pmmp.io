@@ -893,6 +893,7 @@ var annotated_dup =
         [ "MilkBucket", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket" ],
         [ "Minecart", "dc/dac/classpocketmine_1_1item_1_1_minecart.html", "dc/dac/classpocketmine_1_1item_1_1_minecart" ],
         [ "MushroomStew", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew" ],
+        [ "NameTag", "d3/d79/classpocketmine_1_1item_1_1_name_tag.html", "d3/d79/classpocketmine_1_1item_1_1_name_tag" ],
         [ "PaintingItem", "d3/d77/classpocketmine_1_1item_1_1_painting_item.html", "d3/d77/classpocketmine_1_1item_1_1_painting_item" ],
         [ "Pickaxe", "de/d6f/classpocketmine_1_1item_1_1_pickaxe.html", "de/d6f/classpocketmine_1_1item_1_1_pickaxe" ],
         [ "PitcherPod", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod.html", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod" ],
@@ -1048,8 +1049,7 @@ var annotated_dup =
               [ "ItemTypeDictionary", "da/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_item_type_dictionary.html", "da/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_item_type_dictionary" ],
               [ "NetworkNbtSerializer", "d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer.html", "d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer" ],
               [ "PacketBatch", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch" ],
-              [ "PacketSerializer", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer" ],
-              [ "PacketSerializerContext", "da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html", null ]
+              [ "PacketSerializer", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer" ]
             ] ],
             [ "types", null, [
               [ "camera", null, [
@@ -1135,6 +1135,8 @@ var annotated_dup =
                 [ "CreativeContentEntry", "d8/d72/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_creative_content_entry.html", null ],
                 [ "InventoryTransactionChangedSlotsHack", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack" ],
                 [ "ItemStack", "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html", "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack" ],
+                [ "ItemStackExtraData", "dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data.html", "dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data" ],
+                [ "ItemStackExtraDataShield", "db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html", "db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield" ],
                 [ "ItemStackWrapper", "dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html", null ],
                 [ "MismatchTransactionData", "d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html", "d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data" ],
                 [ "NetworkInventoryAction", "d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action.html", "d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action" ],
@@ -1627,14 +1629,14 @@ var annotated_dup =
           [ "ThreadSafeLoggerAttachment", "df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html", null ]
         ] ],
         [ "NonThreadSafeValue", "d4/d69/classpocketmine_1_1thread_1_1_non_thread_safe_value.html", "d4/d69/classpocketmine_1_1thread_1_1_non_thread_safe_value" ],
-        [ "Thread", "d0/d6e/classpocketmine_1_1thread_1_1_thread.html", "d0/d6e/classpocketmine_1_1thread_1_1_thread" ],
+        [ "Thread", "d0/d6e/classpocketmine_1_1thread_1_1_thread.html", null ],
         [ "ThreadCrashException", "d4/dd1/classpocketmine_1_1thread_1_1_thread_crash_exception.html", null ],
         [ "ThreadCrashInfo", "d4/dd3/classpocketmine_1_1thread_1_1_thread_crash_info.html", "d4/dd3/classpocketmine_1_1thread_1_1_thread_crash_info" ],
         [ "ThreadCrashInfoFrame", "d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html", null ],
         [ "ThreadException", "d0/df0/classpocketmine_1_1thread_1_1_thread_exception.html", null ],
         [ "ThreadManager", "df/dca/classpocketmine_1_1thread_1_1_thread_manager.html", "df/dca/classpocketmine_1_1thread_1_1_thread_manager" ],
         [ "ThreadSafeClassLoader", "df/d2b/classpocketmine_1_1thread_1_1_thread_safe_class_loader.html", "df/d2b/classpocketmine_1_1thread_1_1_thread_safe_class_loader" ],
-        [ "Worker", "d2/d42/classpocketmine_1_1thread_1_1_worker.html", "d2/d42/classpocketmine_1_1thread_1_1_worker" ]
+        [ "Worker", "d2/d42/classpocketmine_1_1thread_1_1_worker.html", null ]
       ] ],
       [ "timings", null, [
         [ "Timings", "de/d8c/classpocketmine_1_1timings_1_1_timings.html", "de/d8c/classpocketmine_1_1timings_1_1_timings" ],
@@ -1661,13 +1663,13 @@ var annotated_dup =
         [ "InternetRequestResult", "d0/d36/classpocketmine_1_1utils_1_1_internet_request_result.html", "d0/d36/classpocketmine_1_1utils_1_1_internet_request_result" ],
         [ "Limits", "db/da7/classpocketmine_1_1utils_1_1_limits.html", null ],
         [ "MainLogger", "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html", "d9/d27/classpocketmine_1_1utils_1_1_main_logger" ],
-        [ "MainLoggerThread", "d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html", "d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread" ],
+        [ "MainLoggerThread", "d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html", null ],
         [ "ObjectSet", "dd/de5/classpocketmine_1_1utils_1_1_object_set.html", "dd/de5/classpocketmine_1_1utils_1_1_object_set" ],
         [ "Process", "d8/d9e/classpocketmine_1_1utils_1_1_process.html", "d8/d9e/classpocketmine_1_1utils_1_1_process" ],
         [ "Random", "db/dcb/classpocketmine_1_1utils_1_1_random.html", "db/dcb/classpocketmine_1_1utils_1_1_random" ],
         [ "ReversePriorityQueue", "df/dad/classpocketmine_1_1utils_1_1_reverse_priority_queue.html", "df/dad/classpocketmine_1_1utils_1_1_reverse_priority_queue" ],
         [ "ServerException", "d8/d65/classpocketmine_1_1utils_1_1_server_exception.html", null ],
-        [ "ServerKiller", "d2/d87/classpocketmine_1_1utils_1_1_server_killer.html", "d2/d87/classpocketmine_1_1utils_1_1_server_killer" ],
+        [ "ServerKiller", "d2/d87/classpocketmine_1_1utils_1_1_server_killer.html", null ],
         [ "SignalHandler", "df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html", "df/d2e/classpocketmine_1_1utils_1_1_signal_handler" ],
         [ "StringToTParser", "d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser.html", "d7/d64/classpocketmine_1_1utils_1_1_string_to_t_parser" ],
         [ "Terminal", "da/d57/classpocketmine_1_1utils_1_1_terminal.html", "da/d57/classpocketmine_1_1utils_1_1_terminal" ],

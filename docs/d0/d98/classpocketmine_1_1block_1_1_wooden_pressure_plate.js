@@ -52,6 +52,8 @@ var classpocketmine_1_1block_1_1_wooden_pressure_plate =
     [ "isAffectedBySilkTouch", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a31b789765ede98d12bc821a64ea7c60f", null ],
+    [ "isTransparent", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a60fbeee5c491ef33041066e07ba1ca8c", null ],

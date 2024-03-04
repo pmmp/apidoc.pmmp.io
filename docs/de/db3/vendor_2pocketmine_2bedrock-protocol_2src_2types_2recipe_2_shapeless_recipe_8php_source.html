@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('de/db3/vendor_2pocketmine_2bedrock-pro
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $uuid = $in-&gt;getUUID();</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $block = $in-&gt;getString();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $priority = $in-&gt;getVarInt();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $recipeNetId = $in-&gt;readGenericTypeNetworkId();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $recipeNetId = $in-&gt;readRecipeNetId();</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($recipeType, $recipeId, $input, $output, $uuid, $block, $priority, $recipeNetId);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
@@ -188,11 +188,11 @@ $(document).ready(function(){initNavTree('de/db3/vendor_2pocketmine_2bedrock-pro
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $out-&gt;putUUID($this-&gt;uuid);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $out-&gt;putString($this-&gt;blockName);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $out-&gt;putVarInt($this-&gt;priority);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $out-&gt;writeGenericTypeNetworkId($this-&gt;recipeNetId);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $out-&gt;writeRecipeNetId($this-&gt;recipeNetId);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00067">bedrock-protocol/src/serializer/PacketSerializer.php:67</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_html"><div class="ttname"><a href="../../d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStack</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/_item_stack_8php_source.html#l00023">ItemStack.php:23</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_html"><div class="ttname"><a href="../../d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStack</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/_item_stack_8php_source.html#l00019">ItemStack.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_recipe_with_type_id_html"><div class="ttname"><a href="../../dc/d76/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_recipe_with_type_id.html">pocketmine\network\mcpe\protocol\types\recipe\RecipeWithTypeId</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/_recipe_with_type_id_8php_source.html#l00019">RecipeWithTypeId.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe_html"><div class="ttname"><a href="../../da/d6d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe.html">pocketmine\network\mcpe\protocol\types\recipe\ShapelessRecipe</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/db3/vendor_2pocketmine_2bedrock-protocol_2src_2types_2recipe_2_shapeless_recipe_8php_source.html#l00022">vendor/pocketmine/bedrock-protocol/src/types/recipe/ShapelessRecipe.php:22</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe_html_a13ae1db401809e41b09dce2d6bec7aa7"><div class="ttname"><a href="../../da/d6d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_shapeless_recipe.html#a13ae1db401809e41b09dce2d6bec7aa7">pocketmine\network\mcpe\protocol\types\recipe\ShapelessRecipe\__construct</a></div><div class="ttdeci">__construct(int $typeId, private string $recipeId, private array $inputs, private array $outputs, private UuidInterface $uuid, private string $blockName, private int $priority, private int $recipeNetId)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/db3/vendor_2pocketmine_2bedrock-protocol_2src_2types_2recipe_2_shapeless_recipe_8php_source.html#l00027">vendor/pocketmine/bedrock-protocol/src/types/recipe/ShapelessRecipe.php:27</a></div></div>

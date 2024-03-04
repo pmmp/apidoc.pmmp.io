@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_dead_bush =
     [ "isAffectedBySilkTouch", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a97074e166dd523d4e2af0db6752c0855", null ],
     [ "isFlammable", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#af85e45eff3ed9638a49da08745b5244e", null ],
+    [ "isTransparent", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a49395de82d025ca78745a17528049f18", null ],

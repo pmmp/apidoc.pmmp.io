@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_ender_chest =
     [ "isAffectedBySilkTouch", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a9293de0a00cd9b719785d3ed0b7a4527", null ],
     [ "isFlammable", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a028afd613a6f42370ede9aec4c9796d6", null ],
+    [ "isTransparent", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a49395de82d025ca78745a17528049f18", null ],

@@ -49,6 +49,8 @@ var classpocketmine_1_1block_1_1_copper_slab =
     [ "isAffectedBySilkTouch", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a028afd613a6f42370ede9aec4c9796d6", null ],
+    [ "isTransparent", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#ac5b3cc31f90247f6492b21f9a9964db3", null ],
     [ "onAttack", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a49395de82d025ca78745a17528049f18", null ],

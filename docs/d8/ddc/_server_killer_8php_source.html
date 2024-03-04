@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -143,22 +143,21 @@ $(document).ready(function(){initNavTree('d8/ddc/_server_killer_8php_source.html
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d2/d87/classpocketmine_1_1utils_1_1_server_killer.html#aaecc004832320427a1b430ee1bf74551">   52</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d87/classpocketmine_1_1utils_1_1_server_killer.html#aaecc004832320427a1b430ee1bf74551">quit</a>() : void{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;synchronized(function() : void{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;stopped = true;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> quit() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;<span class="keyword">synchronized</span>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;stopped = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $this-&gt;notify();</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        });</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        parent::quit();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThreadName() : string{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        return <span class="stringliteral">&quot;Server Killer&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThreadName() : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Server Killer&quot;</span>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_html"><div class="ttname"><a href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">pocketmine\thread\Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d47/_thread_8php_source.html#l00038">Thread.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_process_html_a1ae6452e6e1b5e8ab6e135f649ba8e28"><div class="ttname"><a href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">pocketmine\utils\Process\kill</a></div><div class="ttdeci">static kill(int $pid, bool $subprocesses=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dcb/_process_8php_source.html#l00131">Process.php:131</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_server_killer_html"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1utils_1_1_server_killer.html">pocketmine\utils\ServerKiller</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/_server_killer_8php_source.html#l00030">ServerKiller.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_server_killer_html_aaecc004832320427a1b430ee1bf74551"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1utils_1_1_server_killer.html#aaecc004832320427a1b430ee1bf74551">pocketmine\utils\ServerKiller\quit</a></div><div class="ttdeci">quit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/_server_killer_8php_source.html#l00052">ServerKiller.php:52</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -130,29 +130,33 @@ $(document).ready(function(){initNavTree('d8/d9b/_game_mode_id_map_8php_source.h
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> array $enumToId = [];</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;<span class="keyword">register</span>(0, GameMode::SURVIVAL);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;<span class="keyword">register</span>(1, GameMode::CREATIVE);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;<span class="keyword">register</span>(2, GameMode::ADVENTURE);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;<span class="keyword">register</span>(3, GameMode::SPECTATOR);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keywordtype">int</span> $id, GameMode $type) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;idToEnum[$id] = $type;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;enumToId[spl_object_id($type)] = $id;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> fromId(<span class="keywordtype">int</span> $id) : ?GameMode{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $this-&gt;idToEnum[$id] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">foreach</span>(GameMode::cases() as $case){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $this-&gt;<span class="keyword">register</span>(match($case){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                GameMode::SURVIVAL =&gt; 0,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                GameMode::CREATIVE =&gt; 1,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                GameMode::ADVENTURE =&gt; 2,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                GameMode::SPECTATOR =&gt; 3,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }, $case);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">private</span> <span class="keyword">function</span> <span class="keyword">register</span>(<span class="keywordtype">int</span> $id, GameMode $type) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $this-&gt;idToEnum[$id] = $type;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $this-&gt;enumToId[spl_object_id($type)] = $id;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> toId(GameMode $type) : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $k = spl_object_id($type);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span>(!array_key_exists($k, $this-&gt;enumToId)){</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Game mode $type-&gt;name does not have a mapped ID&quot;</span>); <span class="comment">//this should never happen</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> $this-&gt;enumToId[$k];</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> fromId(<span class="keywordtype">int</span> $id) : ?GameMode{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> $this-&gt;idToEnum[$id] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">public</span> <span class="keyword">function</span> toId(GameMode $type) : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $k = spl_object_id($type);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span>(!array_key_exists($k, $this-&gt;enumToId)){</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Game mode $type-&gt;name does not have a mapped ID&quot;</span>); <span class="comment">//this should never happen</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> $this-&gt;enumToId[$k];</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1java_1_1_game_mode_id_map_html"><div class="ttname"><a href="../../d9/d1c/classpocketmine_1_1data_1_1java_1_1_game_mode_id_map.html">pocketmine\data\java\GameModeIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9b/_game_mode_id_map_8php_source.html#l00031">GameModeIdMap.php:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

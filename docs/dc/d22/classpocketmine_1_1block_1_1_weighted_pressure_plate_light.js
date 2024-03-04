@@ -52,6 +52,8 @@ var classpocketmine_1_1block_1_1_weighted_pressure_plate_light =
     [ "isAffectedBySilkTouch", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a31b789765ede98d12bc821a64ea7c60f", null ],
+    [ "isTransparent", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a60fbeee5c491ef33041066e07ba1ca8c", null ],

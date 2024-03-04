@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d4/da2/_craft_recipe_auto_stack_reques
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action.html#abd70d2f06f3afbe068fddf8005f72907">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_auto_stack_request_action.html#abd70d2f06f3afbe068fddf8005f72907">getIngredients</a>() : array{ return $this-&gt;ingredients; }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in) : self{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $recipeId = $in-&gt;readGenericTypeNetworkId();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $recipeId = $in-&gt;readRecipeNetId();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $repetitions = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a497527b313376da198103cc400302f7d">getByte</a>();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $ingredients = [];</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">for</span>($i = 0, $count = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a497527b313376da198103cc400302f7d">getByte</a>(); $i &lt; $count; ++$i){</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('d4/da2/_craft_recipe_auto_stack_reques
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out) : void{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $out-&gt;writeGenericTypeNetworkId($this-&gt;recipeId);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $out-&gt;writeRecipeNetId($this-&gt;recipeId);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $out-&gt;putByte($this-&gt;repetitions);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $out-&gt;putByte(count($this-&gt;ingredients));</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">foreach</span>($this-&gt;ingredients as $ingredient){</div>

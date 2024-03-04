@@ -51,6 +51,8 @@ var classpocketmine_1_1block_1_1_water =
     [ "isAffectedBySilkTouch", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a65a7cb189da66109275b71a4b930f45d", null ],
+    [ "isTransparent", "d2/d3e/classpocketmine_1_1block_1_1_water.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d2/d3e/classpocketmine_1_1block_1_1_water.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27", null ],

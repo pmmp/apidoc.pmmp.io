@@ -51,6 +51,8 @@ var classpocketmine_1_1block_1_1_gravel =
     [ "isAffectedBySilkTouch", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#aeaea10a6b7de48cf3a78e29d43de5a9b", null ],
     [ "isFlammable", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#ae6f3cdb7eeee27448b561fa3f8323916", null ],
+    [ "isTransparent", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#af97d045122137ac415425b45e7b22a36", null ],
     [ "onAttack", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d1/d31/classpocketmine_1_1block_1_1_gravel.html#a49395de82d025ca78745a17528049f18", null ],

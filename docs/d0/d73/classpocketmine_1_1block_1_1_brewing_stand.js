@@ -49,6 +49,8 @@ var classpocketmine_1_1block_1_1_brewing_stand =
     [ "isAffectedBySilkTouch", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a028afd613a6f42370ede9aec4c9796d6", null ],
+    [ "isTransparent", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a49395de82d025ca78745a17528049f18", null ],

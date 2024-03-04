@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -120,93 +120,86 @@ $(document).ready(function(){initNavTree('d5/d6e/_standard_packet_broadcaster_8p
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html">pocketmine\event\server\DataPacketSendEvent</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html">pocketmine\network\mcpe\protocol\serializer\PacketBatch</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializerContext</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> log;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> spl_object_id;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> strlen;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">   38</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">StandardPacketBroadcaster</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster.html">PacketBroadcaster</a>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> $server,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html">PacketSerializerContext</a> $protocolContext</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ){}</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html#a3425892949c1b4003b42064cfb7999c2">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html#a3425892949c1b4003b42064cfb7999c2">broadcastPackets</a>(array $recipients, array $packets) : void{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="comment">//TODO: this shouldn&#39;t really be called here, since the broadcaster might be replaced by an alternative</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">//implementation that doesn&#39;t fire events</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        if(<a class="code hl_class" href="../../d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html">DataPacketSendEvent</a>::hasHandlers()){</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html">DataPacketSendEvent</a>($recipients, $packets);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            $ev-&gt;call();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $packets = $ev-&gt;getPackets();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> log;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> spl_object_id;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> strlen;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">   37</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">StandardPacketBroadcaster</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster.html">PacketBroadcaster</a>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> $server</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ){}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html#a3425892949c1b4003b42064cfb7999c2">   42</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html#a3425892949c1b4003b42064cfb7999c2">broadcastPackets</a>(array $recipients, array $packets) : void{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="comment">//TODO: this shouldn&#39;t really be called here, since the broadcaster might be replaced by an alternative</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">//implementation that doesn&#39;t fire events</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        if(<a class="code hl_class" href="../../d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html">DataPacketSendEvent</a>::hasHandlers()){</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            $ev = <span class="keyword">new</span> <a class="code hl_class" href="../../d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html">DataPacketSendEvent</a>($recipients, $packets);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            $ev-&gt;call();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">if</span>($ev-&gt;isCancelled()){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $packets = $ev-&gt;getPackets();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $compressors = [];</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $compressors = [];</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $targetsByCompressor = [];</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">foreach</span>($recipients as $recipient){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">if</span>($recipient-&gt;getPacketSerializerContext() !== $this-&gt;protocolContext){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Only recipients with the same protocol context as the broadcaster can be broadcast to by this broadcaster&quot;</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="comment">//TODO: different compressors might be compatible, it might not be necessary to split them up by object</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $compressor = $recipient-&gt;getCompressor();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            $compressors[spl_object_id($compressor)] = $compressor;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            $targetsByCompressor[spl_object_id($compressor)][] = $recipient;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $totalLength = 0;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $packetBuffers = [];</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">foreach</span>($packets as $packet){</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            $buffer = NetworkSession::encodePacketTimed(PacketSerializer::encoder($this-&gt;protocolContext), $packet);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="comment">//varint length prefix + packet buffer</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            $totalLength += (((int) log(strlen($buffer), 128)) + 1) + strlen($buffer);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            $packetBuffers[] = $buffer;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">foreach</span>($targetsByCompressor as $compressorId =&gt; $compressorTargets){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            $compressor = $compressors[$compressorId];</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $threshold = $compressor-&gt;getCompressionThreshold();</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span>(count($compressorTargets) &gt; 1 &amp;&amp; $threshold !== <span class="keyword">null</span> &amp;&amp; $totalLength &gt;= $threshold){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="comment">//do not prepare shared batch unless we&#39;re sure it will be compressed</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                $stream = <span class="keyword">new</span> BinaryStream();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_function" href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html#ac52f6e9e1e8fa320f474cfdfcdd6707c">PacketBatch::encodeRaw</a>($stream, $packetBuffers);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                $batchBuffer = $stream-&gt;getBuffer();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                $batch = $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;prepareBatch($batchBuffer, $compressor, timings: Timings::$playerNetworkSendCompressBroadcast);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="keywordflow">foreach</span>($compressorTargets as $target){</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    $target-&gt;queueCompressed($batch);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $targetsByCompressor = [];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">foreach</span>($recipients as $recipient){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="comment">//TODO: different compressors might be compatible, it might not be necessary to split them up by object</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $compressor = $recipient-&gt;getCompressor();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $compressors[spl_object_id($compressor)] = $compressor;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $targetsByCompressor[spl_object_id($compressor)][] = $recipient;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $totalLength = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $packetBuffers = [];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">foreach</span>($packets as $packet){</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            $buffer = NetworkSession::encodePacketTimed(PacketSerializer::encoder(), $packet);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="comment">//varint length prefix + packet buffer</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            $totalLength += (((int) log(strlen($buffer), 128)) + 1) + strlen($buffer);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            $packetBuffers[] = $buffer;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">foreach</span>($targetsByCompressor as $compressorId =&gt; $compressorTargets){</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            $compressor = $compressors[$compressorId];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            $threshold = $compressor-&gt;getCompressionThreshold();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">if</span>(count($compressorTargets) &gt; 1 &amp;&amp; $threshold !== <span class="keyword">null</span> &amp;&amp; $totalLength &gt;= $threshold){</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="comment">//do not prepare shared batch unless we&#39;re sure it will be compressed</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                $stream = <span class="keyword">new</span> BinaryStream();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <a class="code hl_function" href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html#ac52f6e9e1e8fa320f474cfdfcdd6707c">PacketBatch::encodeRaw</a>($stream, $packetBuffers);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                $batchBuffer = $stream-&gt;getBuffer();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                $batch = $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;prepareBatch($batchBuffer, $compressor, timings: Timings::$playerNetworkSendCompressBroadcast);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">foreach</span>($compressorTargets as $target){</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    $target-&gt;queueCompressed($batch);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">foreach</span>($compressorTargets as $target){</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    <span class="keywordflow">foreach</span>($packetBuffers as $packetBuffer){</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                        $target-&gt;addToSendBuffer($packetBuffer);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    }</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">foreach</span>($compressorTargets as $target){</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordflow">foreach</span>($packetBuffers as $packetBuffer){</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                        $target-&gt;addToSendBuffer($packetBuffer);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00179">src/Server.php:179</a></div></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+<div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00178">src/Server.php:178</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_data_packet_send_event_html"><div class="ttname"><a href="../../d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html">pocketmine\event\server\DataPacketSendEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/_data_packet_send_event_8php_source.html#l00035">DataPacketSendEvent.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster_html"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">pocketmine\network\mcpe\StandardPacketBroadcaster</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/_standard_packet_broadcaster_8php_source.html#l00038">StandardPacketBroadcaster.php:38</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster_html_a3425892949c1b4003b42064cfb7999c2"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html#a3425892949c1b4003b42064cfb7999c2">pocketmine\network\mcpe\StandardPacketBroadcaster\broadcastPackets</a></div><div class="ttdeci">broadcastPackets(array $recipients, array $packets)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/_standard_packet_broadcaster_8php_source.html#l00044">StandardPacketBroadcaster.php:44</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster_html"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">pocketmine\network\mcpe\StandardPacketBroadcaster</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/_standard_packet_broadcaster_8php_source.html#l00037">StandardPacketBroadcaster.php:37</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster_html_a3425892949c1b4003b42064cfb7999c2"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html#a3425892949c1b4003b42064cfb7999c2">pocketmine\network\mcpe\StandardPacketBroadcaster\broadcastPackets</a></div><div class="ttdeci">broadcastPackets(array $recipients, array $packets)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/_standard_packet_broadcaster_8php_source.html#l00042">StandardPacketBroadcaster.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch_html"><div class="ttname"><a href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html">pocketmine\network\mcpe\protocol\serializer\PacketBatch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d74/_packet_batch_8php_source.html#l00024">PacketBatch.php:24</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch_html_ac52f6e9e1e8fa320f474cfdfcdd6707c"><div class="ttname"><a href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html#ac52f6e9e1e8fa320f474cfdfcdd6707c">pocketmine\network\mcpe\protocol\serializer\PacketBatch\encodeRaw</a></div><div class="ttdeci">static encodeRaw(BinaryStream $stream, array $packets)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d74/_packet_batch_8php_source.html#l00048">PacketBatch.php:48</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context_html"><div class="ttname"><a href="../../da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializerContext</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1f/_packet_serializer_context_8php_source.html#l00021">PacketSerializerContext.php:21</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch_html_ac52f6e9e1e8fa320f474cfdfcdd6707c"><div class="ttname"><a href="../../d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html#ac52f6e9e1e8fa320f474cfdfcdd6707c">pocketmine\network\mcpe\protocol\serializer\PacketBatch\encodeRaw</a></div><div class="ttdeci">static encodeRaw(BinaryStream $stream, array $packets)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d74/_packet_batch_8php_source.html#l00052">PacketBatch.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00067">bedrock-protocol/src/serializer/PacketSerializer.php:67</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_html"><div class="ttname"><a href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da0/_timings_8php_source.html#l00037">Timings.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00033">BinaryStream.php:33</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster_html"><div class="ttname"><a href="../../d8/d1f/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_broadcaster.html">pocketmine\network\mcpe\PacketBroadcaster</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc8/_packet_broadcaster_8php_source.html#l00028">PacketBroadcaster.php:28</a></div></div>
-<div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00231">PocketMine.php:231</a></div></div>
+<div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00235">PocketMine.php:235</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

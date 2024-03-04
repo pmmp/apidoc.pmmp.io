@@ -4,6 +4,7 @@ var classpocketmine_1_1entity_1_1object_1_1_experience_orb =
     [ "broadcastAnimation", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a654116dd48f7df842204bdc9958b44c2", null ],
     [ "broadcastSound", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a5afd6597d16c2bbfb8842a3df2ac8d0a", null ],
     [ "canBeMovedByCurrents", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
+    [ "canBeRenamed", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a6713726bec4a4eb990c7ed3868fc7a2b", null ],
     [ "canClimb", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a23093e6281aba70471af5c5e34051667", null ],
     [ "canSaveWithChunk", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#af9c9f94d4c46643cbdaeb7d06d3e44b1", null ],

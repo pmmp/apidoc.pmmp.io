@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_spore_blossom =
     [ "isAffectedBySilkTouch", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#af85e45eff3ed9638a49da08745b5244e", null ],
+    [ "isTransparent", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d8/d74/classpocketmine_1_1block_1_1_spore_blossom.html#a49395de82d025ca78745a17528049f18", null ],

@@ -7,6 +7,7 @@ var classpocketmine_1_1entity_1_1_zombie =
     [ "broadcastAnimation", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a654116dd48f7df842204bdc9958b44c2", null ],
     [ "broadcastSound", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a5afd6597d16c2bbfb8842a3df2ac8d0a", null ],
     [ "canBeMovedByCurrents", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
+    [ "canBeRenamed", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ae19e777d73c9df539048227ea31658f2", null ],
     [ "canBreathe", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a80b35509d294ca1b7ca463167c6e85f7", null ],
     [ "canClimb", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a23093e6281aba70471af5c5e34051667", null ],

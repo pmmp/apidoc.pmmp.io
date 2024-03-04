@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('d9/db4/classpocketmine_1_1promise_1_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d6/d3e/classpocketmine_1_1promise_1_1_promise-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">pocketmine\promise\Promise Class Reference</div></div>
 </div><!--header-->
@@ -100,7 +101,7 @@ $(document).ready(function(){initNavTree('d9/db4/classpocketmine_1_1promise_1_1_
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d5b/classpocketmine_1_1promise_1_1_promise__coll__graph.svg" width="166" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d5b/classpocketmine_1_1promise_1_1_promise__coll__graph.svg" width="166" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -112,11 +113,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac30e1e113096e0a8a67190fea51d7eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3963ca240c82cf314d94381d8578d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html#a8c3963ca240c82cf314d94381d8578d9">onCompletion</a> (\Closure $onSuccess, \Closure $onFailure)</td></tr>
 <tr class="separator:a8c3963ca240c82cf314d94381d8578d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5aca19f330d75e4e0816ccde00afec4e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html#a5aca19f330d75e4e0816ccde00afec4e">all</a> (array $promises)</td></tr>
+<tr class="separator:a5aca19f330d75e4e0816ccde00afec4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >@phpstan-template TValue </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00031">31</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00032">32</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae94e9c9cc43335d6eda430f29dfcb388" name="ae94e9c9cc43335d6eda430f29dfcb388"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae94e9c9cc43335d6eda430f29dfcb388">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -134,11 +140,48 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00037">37</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00038">38</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5aca19f330d75e4e0816ccde00afec4e" name="a5aca19f330d75e4e0816ccde00afec4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aca19f330d75e4e0816ccde00afec4e">&#9670;&nbsp;</a></span>all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\promise\Promise::all </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$promises</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Returns a promise that will resolve only once all the Promises in <code>$promises</code> have resolved. The resolution value of the returned promise will be an array containing the resolution values of each Promises in <code>$promises</code> indexed by the respective Promises' array keys.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">Promise</a>[]</td><td class="paramname">$promises</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>@phpstan-template TPromiseValue @phpstan-template TKey of array-key @phpstan-param non-empty-array&lt;TKey, Promise&lt;TPromiseValue&gt;&gt; $promises</p>
+<p >@phpstan-return Promise&lt;array&lt;TKey, TPromiseValue&gt;&gt; </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00076">76</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
+
+</div>
+</div>
 <a id="ac30e1e113096e0a8a67190fea51d7eb4" name="ac30e1e113096e0a8a67190fea51d7eb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac30e1e113096e0a8a67190fea51d7eb4">&#9670;&nbsp;</a></span>isResolved()</h2>
 
@@ -154,7 +197,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00055">55</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00056">56</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
 
 </div>
 </div>
@@ -185,7 +228,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@phpstan-param \Closure(TValue) : void $onSuccess @phpstan-param \Closure() : void $onFailure </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00043">43</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d76/_promise_8php_source.html#l00044">44</a> of file <a class="el" href="../../d5/d76/_promise_8php_source.html">Promise.php</a>.</p>
 
 </div>
 </div>

@@ -10,6 +10,8 @@ var dir_726e1d057d028db5f6ccfa3c4388f5b5 =
     [ "InventoryRightTab.php", "dc/d58/_inventory_right_tab_8php_source.html", null ],
     [ "InventoryTransactionChangedSlotsHack.php", "d1/d9f/_inventory_transaction_changed_slots_hack_8php_source.html", null ],
     [ "ItemStack.php", "da/d1e/_item_stack_8php_source.html", null ],
+    [ "ItemStackExtraData.php", "d6/d87/_item_stack_extra_data_8php_source.html", null ],
+    [ "ItemStackExtraDataShield.php", "db/d56/_item_stack_extra_data_shield_8php_source.html", null ],
     [ "ItemStackWrapper.php", "d2/d18/_item_stack_wrapper_8php_source.html", null ],
     [ "MismatchTransactionData.php", "db/d98/_mismatch_transaction_data_8php_source.html", null ],
     [ "NetworkInventoryAction.php", "d5/d8f/_network_inventory_action_8php_source.html", null ],

@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_nether_gold_ore =
     [ "isAffectedBySilkTouch", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a1745b5534a72b9f4c97a7b5616fbcc80", null ],
     [ "isFlammable", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#ae6f3cdb7eeee27448b561fa3f8323916", null ],
+    [ "isTransparent", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#af97d045122137ac415425b45e7b22a36", null ],
     [ "onAttack", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "de/d43/classpocketmine_1_1block_1_1_nether_gold_ore.html#a49395de82d025ca78745a17528049f18", null ],

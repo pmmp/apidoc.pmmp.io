@@ -222,14 +222,14 @@ var namespacepocketmine =
         [ "ThreadSafeLoggerAttachment", "df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html", null ]
       ] ],
       [ "NonThreadSafeValue", "d4/d69/classpocketmine_1_1thread_1_1_non_thread_safe_value.html", "d4/d69/classpocketmine_1_1thread_1_1_non_thread_safe_value" ],
-      [ "Thread", "d0/d6e/classpocketmine_1_1thread_1_1_thread.html", "d0/d6e/classpocketmine_1_1thread_1_1_thread" ],
+      [ "Thread", "d0/d6e/classpocketmine_1_1thread_1_1_thread.html", null ],
       [ "ThreadCrashException", "d4/dd1/classpocketmine_1_1thread_1_1_thread_crash_exception.html", null ],
       [ "ThreadCrashInfo", "d4/dd3/classpocketmine_1_1thread_1_1_thread_crash_info.html", "d4/dd3/classpocketmine_1_1thread_1_1_thread_crash_info" ],
       [ "ThreadCrashInfoFrame", "d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html", null ],
       [ "ThreadException", "d0/df0/classpocketmine_1_1thread_1_1_thread_exception.html", null ],
       [ "ThreadManager", "df/dca/classpocketmine_1_1thread_1_1_thread_manager.html", "df/dca/classpocketmine_1_1thread_1_1_thread_manager" ],
       [ "ThreadSafeClassLoader", "df/d2b/classpocketmine_1_1thread_1_1_thread_safe_class_loader.html", "df/d2b/classpocketmine_1_1thread_1_1_thread_safe_class_loader" ],
-      [ "Worker", "d2/d42/classpocketmine_1_1thread_1_1_worker.html", "d2/d42/classpocketmine_1_1thread_1_1_worker" ]
+      [ "Worker", "d2/d42/classpocketmine_1_1thread_1_1_worker.html", null ]
     ] ],
     [ "timings", null, [
       [ "Timings", "de/d8c/classpocketmine_1_1timings_1_1_timings.html", "de/d8c/classpocketmine_1_1timings_1_1_timings" ],

@@ -4,6 +4,7 @@ var classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t =
     [ "broadcastAnimation", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a654116dd48f7df842204bdc9958b44c2", null ],
     [ "broadcastSound", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a5afd6597d16c2bbfb8842a3df2ac8d0a", null ],
     [ "canBeMovedByCurrents", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
+    [ "canBeRenamed", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a6713726bec4a4eb990c7ed3868fc7a2b", null ],
     [ "canClimb", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a23093e6281aba70471af5c5e34051667", null ],
     [ "canSaveWithChunk", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#af9c9f94d4c46643cbdaeb7d06d3e44b1", null ],

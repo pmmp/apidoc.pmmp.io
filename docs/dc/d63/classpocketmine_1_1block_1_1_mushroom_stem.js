@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_mushroom_stem =
     [ "isAffectedBySilkTouch", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#ad4c27e4f62b97f70e855f20643ef0337", null ],
     [ "isFlammable", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#ae6f3cdb7eeee27448b561fa3f8323916", null ],
+    [ "isTransparent", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#af97d045122137ac415425b45e7b22a36", null ],
     [ "onAttack", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html#a49395de82d025ca78745a17528049f18", null ],

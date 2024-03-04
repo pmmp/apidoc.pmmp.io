@@ -89,6 +89,7 @@ var namespacepocketmine_1_1item =
     [ "MilkBucket", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket" ],
     [ "Minecart", "dc/dac/classpocketmine_1_1item_1_1_minecart.html", "dc/dac/classpocketmine_1_1item_1_1_minecart" ],
     [ "MushroomStew", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew" ],
+    [ "NameTag", "d3/d79/classpocketmine_1_1item_1_1_name_tag.html", "d3/d79/classpocketmine_1_1item_1_1_name_tag" ],
     [ "PaintingItem", "d3/d77/classpocketmine_1_1item_1_1_painting_item.html", "d3/d77/classpocketmine_1_1item_1_1_painting_item" ],
     [ "Pickaxe", "de/d6f/classpocketmine_1_1item_1_1_pickaxe.html", "de/d6f/classpocketmine_1_1item_1_1_pickaxe" ],
     [ "PitcherPod", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod.html", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod" ],

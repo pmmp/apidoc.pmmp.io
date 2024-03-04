@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -89,9 +89,6 @@ $(document).ready(function(){initNavTree('d0/d6e/classpocketmine_1_1thread_1_1_t
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="../../d0/d09/classpocketmine_1_1thread_1_1_thread-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">pocketmine\thread\Thread Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -108,66 +105,15 @@ $(document).ready(function(){initNavTree('d0/d6e/classpocketmine_1_1thread_1_1_t
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d74/classpocketmine_1_1thread_1_1_thread__coll__graph.svg" width="204" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d74/classpocketmine_1_1thread_1_1_thread__coll__graph.svg" width="204" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a69a8b0b83ae457416d5178ca6f41164e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html#a69a8b0b83ae457416d5178ca6f41164e">quit</a> ()</td></tr>
-<tr class="separator:a69a8b0b83ae457416d5178ca6f41164e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa22bfaa03f09955e9f2932fdf916367c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html#aa22bfaa03f09955e9f2932fdf916367c">start</a> (int $options=NativeThread::INHERIT_NONE)</td></tr>
-<tr class="separator:aa22bfaa03f09955e9f2932fdf916367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Specialized <a class="el" href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">Thread</a> class aimed at PocketMine-MP-related usages. It handles setting up autoloading and error handling.</p>
 <p >Note: You probably don't need a thread unless you're doing something in it that's expected to last a long time (or indefinitely). For CPU-demanding tasks that take a short amount of time, consider using AsyncTasks instead to make better use of the CPU. </p><dl class="section see"><dt>See also</dt><dd>AsyncTask </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d47/_thread_8php_source.html#l00038">38</a> of file <a class="el" href="../../d7/d47/_thread_8php_source.html">Thread.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69a8b0b83ae457416d5178ca6f41164e" name="a69a8b0b83ae457416d5178ca6f41164e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a8b0b83ae457416d5178ca6f41164e">&#9670;&nbsp;</a></span>quit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\thread\Thread::quit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Stops the thread using the best way possible. Try to stop it yourself before calling this. </p>
-
-<p>Reimplemented in <a class="el" href="../../d2/d87/classpocketmine_1_1utils_1_1_server_killer.html#aaecc004832320427a1b430ee1bf74551">pocketmine\utils\ServerKiller</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d47/_thread_8php_source.html#l00054">54</a> of file <a class="el" href="../../d7/d47/_thread_8php_source.html">Thread.php</a>.</p>
-
-</div>
-</div>
-<a id="aa22bfaa03f09955e9f2932fdf916367c" name="aa22bfaa03f09955e9f2932fdf916367c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa22bfaa03f09955e9f2932fdf916367c">&#9670;&nbsp;</a></span>start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\thread\Thread::start </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$options</em> = <code>NativeThread::INHERIT_NONE</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d47/_thread_8php_source.html#l00041">41</a> of file <a class="el" href="../../d7/d47/_thread_8php_source.html">Thread.php</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="../../d7/d47/_thread_8php_source.html">Thread.php</a></li>
 </ul>
 </div><!-- contents -->

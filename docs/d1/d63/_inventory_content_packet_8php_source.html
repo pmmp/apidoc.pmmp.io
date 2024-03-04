@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d1/d63/_inventory_content_packet_8php_
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;windowId = $in-&gt;getUnsignedVarInt();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $count = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab51e507a9f4baec0713ff4007ce192b8">getUnsignedVarInt</a>();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; $count; ++$i){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            $this-&gt;items[] = ItemStackWrapper::read($in);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            $this-&gt;items[] = $in-&gt;getItemStackWrapper();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d1/d63/_inventory_content_packet_8php_
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $out-&gt;putUnsignedVarInt($this-&gt;windowId);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $out-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad3a3175fe24f3aea110f1732af4aa62f">putUnsignedVarInt</a>(count($this-&gt;items));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">foreach</span>($this-&gt;items as $item){</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $item-&gt;write($out);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $out-&gt;putItemStackWrapper($item);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d1/d63/_inventory_content_packet_8php_
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet_html_a3640f319c3c188f19982e659b93b78aa"><div class="ttname"><a href="../../d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html#a3640f319c3c188f19982e659b93b78aa">pocketmine\network\mcpe\protocol\InventoryContentPacket\decodePayload</a></div><div class="ttdeci">decodePayload(PacketSerializer $in)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d63/_inventory_content_packet_8php_source.html#l00039">InventoryContentPacket.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet_html_a99d36e599116d00dff51622e513294ae"><div class="ttname"><a href="../../d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html#a99d36e599116d00dff51622e513294ae">pocketmine\network\mcpe\protocol\InventoryContentPacket\encodePayload</a></div><div class="ttdeci">encodePayload(PacketSerializer $out)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d63/_inventory_content_packet_8php_source.html#l00047">InventoryContentPacket.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00067">bedrock-protocol/src/serializer/PacketSerializer.php:67</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper_html"><div class="ttname"><a href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d18/_item_stack_wrapper_8php_source.html#l00019">ItemStackWrapper.php:19</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper_html"><div class="ttname"><a href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d18/_item_stack_wrapper_8php_source.html#l00017">ItemStackWrapper.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_ab51e507a9f4baec0713ff4007ce192b8"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab51e507a9f4baec0713ff4007ce192b8">pocketmine\utils\BinaryStream\getUnsignedVarInt</a></div><div class="ttdeci">getUnsignedVarInt()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00309">BinaryStream.php:309</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_ad3a3175fe24f3aea110f1732af4aa62f"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad3a3175fe24f3aea110f1732af4aa62f">pocketmine\utils\BinaryStream\putUnsignedVarInt</a></div><div class="ttdeci">putUnsignedVarInt(int $v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00316">BinaryStream.php:316</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet_html"><div class="ttname"><a href="../../da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet.html">pocketmine\network\mcpe\protocol\ClientboundPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d49/_clientbound_packet_8php_source.html#l00017">ClientboundPacket.php:17</a></div></div>

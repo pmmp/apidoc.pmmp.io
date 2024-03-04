@@ -49,6 +49,8 @@ var classpocketmine_1_1block_1_1_vine =
     [ "isAffectedBySilkTouch", "d1/de5/classpocketmine_1_1block_1_1_vine.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d1/de5/classpocketmine_1_1block_1_1_vine.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d1/de5/classpocketmine_1_1block_1_1_vine.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d1/de5/classpocketmine_1_1block_1_1_vine.html#af85e45eff3ed9638a49da08745b5244e", null ],
+    [ "isTransparent", "d1/de5/classpocketmine_1_1block_1_1_vine.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d1/de5/classpocketmine_1_1block_1_1_vine.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d1/de5/classpocketmine_1_1block_1_1_vine.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d1/de5/classpocketmine_1_1block_1_1_vine.html#af30a24825c95abcc6e982a2bec48b656", null ],

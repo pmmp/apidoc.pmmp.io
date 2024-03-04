@@ -11,6 +11,7 @@ var classpocketmine_1_1player_1_1_player =
     [ "broadcastAnimation", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a6a4c705217d9b84f7fc4e3a2552a12c6", null ],
     [ "broadcastSound", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ae76249dc30f455cba8812d3e76ba2e52", null ],
     [ "canBeMovedByCurrents", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a5181c0e0f66d4f3cab77bfd4a5249d28", null ],
+    [ "canBeRenamed", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a4df0c940983921044ad01e513d7e9f68", null ],
     [ "canBreathe", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a0310238c7649195027e1a30d77a5229b", null ],
     [ "canClimb", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a23093e6281aba70471af5c5e34051667", null ],

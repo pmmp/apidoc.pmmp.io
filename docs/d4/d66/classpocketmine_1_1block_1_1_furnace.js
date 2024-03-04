@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_furnace =
     [ "isAffectedBySilkTouch", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#ae6f3cdb7eeee27448b561fa3f8323916", null ],
+    [ "isTransparent", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#af97d045122137ac415425b45e7b22a36", null ],
     [ "onAttack", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a49395de82d025ca78745a17528049f18", null ],
@@ -62,7 +64,6 @@ var classpocketmine_1_1block_1_1_furnace =
     [ "place", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
-    [ "setLit", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a8137327075f0f19cef44a7f19b9ce164", null ],
     [ "ticksRandomly", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

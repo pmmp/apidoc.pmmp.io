@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_gold_ore =
     [ "isAffectedBySilkTouch", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#accaa9491297ba7b9e817ea4ebc5eaab0", null ],
     [ "isFlammable", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#ae6f3cdb7eeee27448b561fa3f8323916", null ],
+    [ "isTransparent", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af97d045122137ac415425b45e7b22a36", null ],
     [ "onAttack", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a49395de82d025ca78745a17528049f18", null ],

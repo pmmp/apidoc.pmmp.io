@@ -1,5 +1,6 @@
 var classpocketmine_1_1block_1_1_redstone_torch =
 [
+    [ "__construct", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#aacdabd2c5e994cb07fe04c915f77f003", null ],
     [ "__toString", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a286fc64348f13417dcb6106c2695911b", null ],
@@ -48,6 +49,8 @@ var classpocketmine_1_1block_1_1_redstone_torch =
     [ "isAffectedBySilkTouch", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#af85e45eff3ed9638a49da08745b5244e", null ],
+    [ "isTransparent", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a49395de82d025ca78745a17528049f18", null ],
@@ -63,7 +66,6 @@ var classpocketmine_1_1block_1_1_redstone_torch =
     [ "readStateFromWorld", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a097af4a935135a8524d812f497373075", null ],
     [ "setFacing", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a2a8cdd2e0048ba0feb8420787b3f045b", null ],
-    [ "setLit", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#ad48c48af89f4761fd84ccf122984fd5c", null ],
     [ "ticksRandomly", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

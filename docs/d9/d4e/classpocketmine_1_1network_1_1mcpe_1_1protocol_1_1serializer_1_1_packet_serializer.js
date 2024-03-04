@@ -15,7 +15,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_seri
     [ "getFloat", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a359e381de00b5d985f010b4605c5871b", null ],
     [ "getGameRules", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a2f87c88a47ca53f807fd15b5bef6f957", null ],
     [ "getInt", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a781e3deac30c65f6350e4658814d0555", null ],
-    [ "getItemStack", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a92ebc0dc48ea69d19c30d29a430e4d6f", null ],
     [ "getItemStackWithoutStackId", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a02e1d515f49726c1a5bb54eade4e7b75", null ],
     [ "getLDouble", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a028dcbf67ed13e1067c07c2bfe3c2783", null ],
     [ "getLFloat", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a83a855cea104ba6fd883bd92084c3bbb", null ],
@@ -44,7 +43,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_seri
     [ "putBlockPosition", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#adb3eefa448f9b00450f5cbde5c8a75be", null ],
     [ "putEntityMetadata", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a3f4ac981eca12e80eca6652281c011b1", null ],
     [ "putGameRules", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a414601fcdac203459bd2e5798f117bf7", null ],
-    [ "putItemStack", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a5e6e12a62281022e7072c3caa969e4da", null ],
     [ "putSignedBlockPosition", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a2db84944082785fd4b7f596bc6f87dcc", null ],
     [ "putUnsignedVarInt", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#ad3a3175fe24f3aea110f1732af4aa62f", null ],
     [ "putUnsignedVarLong", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#ab29123c00a34d0cf488fa36cc0e0de27", null ],
@@ -52,7 +50,9 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_seri
     [ "putVarLong", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a3c3434058ab67359f28c6d76ef16d3e9", null ],
     [ "putVector3", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#aa4a64c376839f96be44d7a389e211725", null ],
     [ "putVector3Nullable", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a1b728b1ff0ff741238eafeb000b9b1cf", null ],
+    [ "readItemStackNetIdVariant", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85", null ],
     [ "readOptional", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c", null ],
     [ "rewind", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a9a544acb5b5614cdedfe2f91d250361c", null ],
+    [ "writeItemStackNetIdVariant", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2", null ],
     [ "writeOptional", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085", null ]
 ];

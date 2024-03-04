@@ -7,6 +7,7 @@ var classpocketmine_1_1entity_1_1_squid =
     [ "broadcastAnimation", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a654116dd48f7df842204bdc9958b44c2", null ],
     [ "broadcastSound", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a5afd6597d16c2bbfb8842a3df2ac8d0a", null ],
     [ "canBeMovedByCurrents", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
+    [ "canBeRenamed", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#ae19e777d73c9df539048227ea31658f2", null ],
     [ "canBreathe", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a54a27a695ba157ddf7d551a683f86762", null ],
     [ "canClimb", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a23093e6281aba70471af5c5e34051667", null ],

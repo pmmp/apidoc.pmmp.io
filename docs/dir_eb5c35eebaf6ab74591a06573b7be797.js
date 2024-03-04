@@ -28,6 +28,7 @@ var dir_eb5c35eebaf6ab74591a06573b7be797 =
     [ "HorizontalFacingTrait.php", "d9/d2f/_horizontal_facing_trait_8php_source.html", null ],
     [ "LeavesType.php", "d7/d01/_leaves_type_8php_source.html", null ],
     [ "LeverFacing.php", "db/da1/_lever_facing_8php_source.html", null ],
+    [ "LightableTrait.php", "d1/dc3/_lightable_trait_8php_source.html", null ],
     [ "MinimumCostFlowCalculator.php", "d5/de0/_minimum_cost_flow_calculator_8php_source.html", null ],
     [ "MobHeadType.php", "d7/d21/_mob_head_type_8php_source.html", null ],
     [ "MushroomBlockType.php", "dd/d02/_mushroom_block_type_8php_source.html", null ],

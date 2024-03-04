@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -125,12 +125,16 @@ $(document).ready(function(){initNavTree('de/d6f/_medicine_type_id_map_8php_sour
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use IntSaveIdMapTrait;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;<span class="keyword">register</span>(MedicineTypeIds::ANTIDOTE, MedicineType::ANTIDOTE);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;<span class="keyword">register</span>(MedicineTypeIds::ELIXIR, MedicineType::ELIXIR);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;<span class="keyword">register</span>(MedicineTypeIds::EYE_DROPS, MedicineType::EYE_DROPS);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;<span class="keyword">register</span>(MedicineTypeIds::TONIC, MedicineType::TONIC);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">foreach</span>(MedicineType::cases() as $case){</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $this-&gt;<span class="keyword">register</span>(match($case){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                MedicineType::ANTIDOTE =&gt; MedicineTypeIds::ANTIDOTE,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                MedicineType::ELIXIR =&gt; MedicineTypeIds::ELIXIR,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                MedicineType::EYE_DROPS =&gt; MedicineTypeIds::EYE_DROPS,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                MedicineType::TONIC =&gt; MedicineTypeIds::TONIC,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }, $case);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_medicine_type_id_map_html"><div class="ttname"><a href="../../d2/d53/classpocketmine_1_1data_1_1bedrock_1_1_medicine_type_id_map.html">pocketmine\data\bedrock\MedicineTypeIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6f/_medicine_type_id_map_8php_source.html#l00029">MedicineTypeIdMap.php:29</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html_a1a8161163ff591511b03228458c683dd"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a1a8161163ff591511b03228458c683dd">pocketmine\item\MedicineType</a></div><div class="ttdeci">MedicineType</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_medicine_type_8php_source.html#l00039">MedicineType.php:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

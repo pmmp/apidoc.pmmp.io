@@ -74,6 +74,7 @@ var dir_dc176e3d98aca08d5e74d18511208cd7 =
     [ "MilkBucket.php", "d1/d5c/_milk_bucket_8php_source.html", null ],
     [ "Minecart.php", "dd/d58/_minecart_8php_source.html", null ],
     [ "MushroomStew.php", "dd/d21/_mushroom_stew_8php_source.html", null ],
+    [ "NameTag.php", "dc/d75/_name_tag_8php_source.html", null ],
     [ "PaintingItem.php", "d6/ddf/_painting_item_8php_source.html", null ],
     [ "Pickaxe.php", "d9/d69/_pickaxe_8php_source.html", null ],
     [ "PitcherPod.php", "d9/d34/_pitcher_pod_8php_source.html", null ],

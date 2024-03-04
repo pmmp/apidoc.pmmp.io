@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_double_pitcher_crop =
     [ "isAffectedBySilkTouch", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#af85e45eff3ed9638a49da08745b5244e", null ],
+    [ "isTransparent", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "isValidHalfPlant", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a7a96862c4acea38e58c372cebe25df67", null ],
     [ "onAttack", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "da/d01/classpocketmine_1_1block_1_1_double_pitcher_crop.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],

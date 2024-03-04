@@ -5,6 +5,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_arrow =
     [ "broadcastSound", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a5afd6597d16c2bbfb8842a3df2ac8d0a", null ],
     [ "calculateInterceptWithBlock", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a5caf50e1a6dadd4f34b0f72cad3edeb9", null ],
     [ "canBeMovedByCurrents", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
+    [ "canBeRenamed", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a6713726bec4a4eb990c7ed3868fc7a2b", null ],
     [ "canClimb", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a23093e6281aba70471af5c5e34051667", null ],
     [ "canSaveWithChunk", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#af9c9f94d4c46643cbdaeb7d06d3e44b1", null ],

@@ -49,6 +49,8 @@ var classpocketmine_1_1block_1_1_cake =
     [ "isAffectedBySilkTouch", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a028afd613a6f42370ede9aec4c9796d6", null ],
+    [ "isTransparent", "df/d1c/classpocketmine_1_1block_1_1_cake.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "df/d1c/classpocketmine_1_1block_1_1_cake.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onConsume", "df/d1c/classpocketmine_1_1block_1_1_cake.html#a00db1a6182c18738e6b9f74e4ff21598", null ],

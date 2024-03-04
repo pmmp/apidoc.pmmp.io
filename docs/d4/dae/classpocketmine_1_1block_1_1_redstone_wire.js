@@ -48,6 +48,8 @@ var classpocketmine_1_1block_1_1_redstone_wire =
     [ "isAffectedBySilkTouch", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#af85e45eff3ed9638a49da08745b5244e", null ],
+    [ "isTransparent", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49395de82d025ca78745a17528049f18", null ],

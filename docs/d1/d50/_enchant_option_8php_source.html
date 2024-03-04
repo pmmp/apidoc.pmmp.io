@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('d1/d50/_enchant_option_8php_source.htm
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $selfActivatedEnchants = self::readEnchantList($in);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $name = $in-&gt;getString();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $optionId = $in-&gt;readGenericTypeNetworkId();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $optionId = $in-&gt;readRecipeNetId();</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($cost, $slotFlags, $equipActivatedEnchants, $heldActivatedEnchants, $selfActivatedEnchants, $name, $optionId);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('d1/d50/_enchant_option_8php_source.htm
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        self::writeEnchantList($out, $this-&gt;selfActivatedEnchantments);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $out-&gt;putString($this-&gt;name);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $out-&gt;writeGenericTypeNetworkId($this-&gt;optionId);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $out-&gt;writeRecipeNetId($this-&gt;optionId);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00067">bedrock-protocol/src/serializer/PacketSerializer.php:67</a></div></div>

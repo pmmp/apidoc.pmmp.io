@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.11.2 git-b744e09352a714d89220719ab6948a010ac636fc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-72f3c0b4b9a4c6b5d1bc79a3b31d0568ccc2baa9</span>
    </div>
   </td>
  </tr>
@@ -125,24 +125,28 @@ $(document).ready(function(){initNavTree('da/d32/_note_instrument_id_map_8php_so
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use IntSaveIdMapTrait;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;<span class="keyword">register</span>(0, NoteInstrument::PIANO);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;<span class="keyword">register</span>(1, NoteInstrument::BASS_DRUM);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;<span class="keyword">register</span>(2, NoteInstrument::SNARE);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;<span class="keyword">register</span>(3, NoteInstrument::CLICKS_AND_STICKS);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $this-&gt;<span class="keyword">register</span>(4, NoteInstrument::DOUBLE_BASS);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;<span class="keyword">register</span>(5, NoteInstrument::BELL);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;<span class="keyword">register</span>(6, NoteInstrument::FLUTE);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;<span class="keyword">register</span>(7, NoteInstrument::CHIME);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;<span class="keyword">register</span>(8, NoteInstrument::GUITAR);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;<span class="keyword">register</span>(9, NoteInstrument::XYLOPHONE);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;<span class="keyword">register</span>(10, NoteInstrument::IRON_XYLOPHONE);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;<span class="keyword">register</span>(11, NoteInstrument::COW_BELL);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;<span class="keyword">register</span>(12, NoteInstrument::DIDGERIDOO);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;<span class="keyword">register</span>(13, NoteInstrument::BIT);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;<span class="keyword">register</span>(14, NoteInstrument::BANJO);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;<span class="keyword">register</span>(15, NoteInstrument::PLING);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">foreach</span>(NoteInstrument::cases() as $case){</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $this-&gt;<span class="keyword">register</span>(match($case){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                NoteInstrument::PIANO =&gt; 0,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                NoteInstrument::BASS_DRUM =&gt; 1,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                NoteInstrument::SNARE =&gt; 2,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                NoteInstrument::CLICKS_AND_STICKS =&gt; 3,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                NoteInstrument::DOUBLE_BASS =&gt; 4,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                NoteInstrument::BELL =&gt; 5,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                NoteInstrument::FLUTE =&gt; 6,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                NoteInstrument::CHIME =&gt; 7,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                NoteInstrument::GUITAR =&gt; 8,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                NoteInstrument::XYLOPHONE =&gt; 9,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                NoteInstrument::IRON_XYLOPHONE =&gt; 10,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                NoteInstrument::COW_BELL =&gt; 11,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                NoteInstrument::DIDGERIDOO =&gt; 12,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                NoteInstrument::BIT =&gt; 13,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                NoteInstrument::BANJO =&gt; 14,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                NoteInstrument::PLING =&gt; 15,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }, $case);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_note_instrument_id_map_html"><div class="ttname"><a href="../../d7/d8a/classpocketmine_1_1data_1_1bedrock_1_1_note_instrument_id_map.html">pocketmine\data\bedrock\NoteInstrumentIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d32/_note_instrument_id_map_8php_source.html#l00029">NoteInstrumentIdMap.php:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

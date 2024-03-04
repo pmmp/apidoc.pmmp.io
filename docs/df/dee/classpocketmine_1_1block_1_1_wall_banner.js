@@ -49,6 +49,8 @@ var classpocketmine_1_1block_1_1_wall_banner =
     [ "isAffectedBySilkTouch", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a8307fc850da5c3f36e9dfc7ce639fe55", null ],
     [ "isFlammable", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a1ce2444f76246982cfbb507fed99a48e", null ],
+    [ "isSolid", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#aa565751032a5bb087bac9089f9e8438c", null ],
+    [ "isTransparent", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#ac34d7d0bd5e5173f331e56f6b97ca796", null ],
     [ "onAttack", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a6d937579e316caf0a9f92c20753a66cb", null ],
     [ "onBreak", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#ac85f12ad4e4d729db9f27ecb8e97998b", null ],
     [ "onEntityInside", "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a49395de82d025ca78745a17528049f18", null ],

@@ -201,7 +201,6 @@ var hierarchy =
         [ "pocketmine\\block\\Chest", "d8/d5c/classpocketmine_1_1block_1_1_chest.html", [
           [ "pocketmine\\block\\TrappedChest", "d0/dd3/classpocketmine_1_1block_1_1_trapped_chest.html", null ]
         ] ],
-        [ "pocketmine\\block\\CocoaBlock", "d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html", null ],
         [ "pocketmine\\block\\DaylightSensor", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html", null ],
         [ "pocketmine\\block\\Door", "d9/d20/classpocketmine_1_1block_1_1_door.html", [
           [ "pocketmine\\block\\WoodenDoor", "df/daf/classpocketmine_1_1block_1_1_wooden_door.html", null ]
@@ -243,6 +242,7 @@ var hierarchy =
           [ "pocketmine\\block\\ChorusFlower", "d8/d5a/classpocketmine_1_1block_1_1_chorus_flower.html", null ],
           [ "pocketmine\\block\\ChorusPlant", "d8/dd4/classpocketmine_1_1block_1_1_chorus_plant.html", null ],
           [ "pocketmine\\block\\Cobweb", "db/ddc/classpocketmine_1_1block_1_1_cobweb.html", null ],
+          [ "pocketmine\\block\\CocoaBlock", "d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html", null ],
           [ "pocketmine\\block\\Crops", "d2/d70/classpocketmine_1_1block_1_1_crops.html", [
             [ "pocketmine\\block\\Beetroot", "d7/da3/classpocketmine_1_1block_1_1_beetroot.html", null ],
             [ "pocketmine\\block\\Carrot", "da/dd7/classpocketmine_1_1block_1_1_carrot.html", null ],
@@ -1111,6 +1111,9 @@ var hierarchy =
     [ "pocketmine\\data\\bedrock\\item\\ItemSerializerDeserializerRegistrar", "d9/dea/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_item_serializer_deserializer_registrar.html", null ],
     [ "pocketmine\\network\\mcpe\\handler\\ItemStackContainerIdTranslator", "d7/d96/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator.html", null ],
     [ "pocketmine\\crafting\\json\\ItemStackData", "d2/d0d/classpocketmine_1_1crafting_1_1json_1_1_item_stack_data.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\inventory\\ItemStackExtraData", "dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data.html", [
+      [ "pocketmine\\network\\mcpe\\protocol\\types\\inventory\\ItemStackExtraDataShield", "db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html", null ]
+    ] ],
     [ "pocketmine\\network\\mcpe\\ItemStackInfo", "db/dd0/classpocketmine_1_1network_1_1mcpe_1_1_item_stack_info.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\inventory\\stackrequest\\ItemStackRequest", "df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\inventory\\stackrequest\\ItemStackRequestAction", "d8/d3b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request_action.html", [
@@ -1208,6 +1211,7 @@ var hierarchy =
         [ "pocketmine\\item\\MelonSeeds", "de/da4/classpocketmine_1_1item_1_1_melon_seeds.html", null ],
         [ "pocketmine\\item\\MilkBucket", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html", null ],
         [ "pocketmine\\item\\Minecart", "dc/dac/classpocketmine_1_1item_1_1_minecart.html", null ],
+        [ "pocketmine\\item\\NameTag", "d3/d79/classpocketmine_1_1item_1_1_name_tag.html", null ],
         [ "pocketmine\\item\\PaintingItem", "d3/d77/classpocketmine_1_1item_1_1_painting_item.html", null ],
         [ "pocketmine\\item\\PitcherPod", "d9/d5b/classpocketmine_1_1item_1_1_pitcher_pod.html", null ],
         [ "pocketmine\\item\\Potion", "d3/d00/classpocketmine_1_1item_1_1_potion.html", null ],
@@ -1855,7 +1859,6 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\PacketSender", "d4/d6a/interfacepocketmine_1_1network_1_1mcpe_1_1_packet_sender.html", [
       [ "pocketmine\\network\\mcpe\\raklib\\RakLibPacketSender", "dc/d49/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_packet_sender.html", null ]
     ] ],
-    [ "pocketmine\\network\\mcpe\\protocol\\serializer\\PacketSerializerContext", "da/dc6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_context.html", null ],
     [ "pocketmine\\entity\\object\\PaintingMotive", "de/d26/classpocketmine_1_1entity_1_1object_1_1_painting_motive.html", null ],
     [ "pocketmine\\world\\particle\\Particle", "d1/dac/interfacepocketmine_1_1world_1_1particle_1_1_particle.html", [
       [ "pocketmine\\world\\particle\\AngryVillagerParticle", "d9/dc1/classpocketmine_1_1world_1_1particle_1_1_angry_villager_particle.html", null ],

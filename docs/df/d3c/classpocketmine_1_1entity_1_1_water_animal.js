@@ -7,6 +7,7 @@ var classpocketmine_1_1entity_1_1_water_animal =
     [ "broadcastAnimation", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a654116dd48f7df842204bdc9958b44c2", null ],
     [ "broadcastSound", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a5afd6597d16c2bbfb8842a3df2ac8d0a", null ],
     [ "canBeMovedByCurrents", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a53b0d6d1b15c35b58e83c959ffec384c", null ],
+    [ "canBeRenamed", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#ae19e777d73c9df539048227ea31658f2", null ],
     [ "canBreathe", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a54a27a695ba157ddf7d551a683f86762", null ],
     [ "canClimb", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a4101d0cffe7303801b827969c461ed8b", null ],
     [ "canClimbWalls", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a23093e6281aba70471af5c5e34051667", null ],
