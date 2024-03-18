@@ -15,7 +15,6 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_write
     [ "writeHorizontalFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ad460dddf54667e24486fa7750644e2bf", null ],
     [ "writeInt", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#afee467a6463a551bc06f1425fc5f13d9", null ],
     [ "writeLegacyHorizontalFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a158eec70083340377eac0362e855009b", null ],
-    [ "writeLegacyWoodType", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ad0c58cecf3492988d60b4a2aea4e2deb", null ],
     [ "writePillarAxis", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae8f38f066b6f6c49c26cbb45dfc8a1e9", null ],
     [ "writeSlabPosition", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a3f9c52c386900aed5f6354a7cc34f240", null ],
     [ "writeString", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#af2c790e7eb922a0da615abd7631eaf52", null ],

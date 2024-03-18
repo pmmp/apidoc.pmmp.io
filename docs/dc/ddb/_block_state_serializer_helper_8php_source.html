@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-b0390a39fd1eb2d5b524f834fd0866057574d34f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-2d24fac067a5a577882f859571cb7bb463f48510</span>
    </div>
   </td>
  </tr>
@@ -150,235 +150,212 @@ $(document).ready(function(){initNavTree('dc/ddb/_block_state_serializer_helper_
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html">   58</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html">BlockStateSerializerHelper</a>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeAllSidedLog(<a class="code hl_class" href="../../dc/d9e/classpocketmine_1_1block_1_1_wood.html">Wood</a> $block) : Writer{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> Writer::create(Ids::WOOD)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            -&gt;writeBool(BlockStateNames::STRIPPED_BIT, $block-&gt;isStripped())</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            -&gt;writePillarAxis($block-&gt;getAxis())</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            -&gt;writeLegacyWoodType($block-&gt;getWoodType());</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeButton(<a class="code hl_class" href="../../d2/da2/classpocketmine_1_1block_1_1_button.html">Button</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            -&gt;writeFacingDirection($block-&gt;getFacing())</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            -&gt;writeBool(BlockStateNames::BUTTON_PRESSED_BIT, $block-&gt;isPressed());</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeCandle(<a class="code hl_class" href="../../d6/dd1/classpocketmine_1_1block_1_1_candle.html">Candle</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            -&gt;writeBool(StateNames::LIT, $block-&gt;isLit())</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            -&gt;writeInt(StateNames::CANDLES, $block-&gt;getCount() - 1);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeChemistryTable(<a class="code hl_class" href="../../dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html">ChemistryTable</a> $block, <span class="keywordtype">string</span> $chemistryTableType, Writer $out) : Writer{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            -&gt;writeString(BlockStateNames::CHEMISTRY_TABLE_TYPE, $chemistryTableType)</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            -&gt;writeLegacyHorizontalFacing(<a class="code hl_function" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#adb0c50bed6e2a948367c7c9ca6b0831d">Facing::opposite</a>($block-&gt;getFacing()));</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeCrops(<a class="code hl_class" href="../../d2/d70/classpocketmine_1_1block_1_1_crops.html">Crops</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> $out-&gt;writeInt(BlockStateNames::GROWTH, $block-&gt;getAge());</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeColoredTorch(<a class="code hl_class" href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html">Torch</a> $block, <span class="keywordtype">bool</span> $highBit, Writer $out) : Writer{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            -&gt;writeBool(BlockStateNames::COLOR_BIT, $highBit)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            -&gt;writeTorchFacing($block-&gt;getFacing());</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeCauldron(<span class="keywordtype">string</span> $liquid, <span class="keywordtype">int</span> $fillLevel) : Writer{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">return</span> Writer::create(Ids::CAULDRON)</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            -&gt;writeString(BlockStateNames::CAULDRON_LIQUID, $liquid)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            -&gt;writeInt(BlockStateNames::FILL_LEVEL, $fillLevel);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> selectCopperId(CopperOxidation $oxidation, <span class="keywordtype">string</span> $noneId, <span class="keywordtype">string</span> $exposedId, <span class="keywordtype">string</span> $weatheredId, <span class="keywordtype">string</span> $oxidizedId) : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> match($oxidation){</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            CopperOxidation::NONE =&gt; $noneId,</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            CopperOxidation::EXPOSED =&gt; $exposedId,</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            CopperOxidation::WEATHERED =&gt; $weatheredId,</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            CopperOxidation::OXIDIZED =&gt; $oxidizedId,</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        };</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeButton(<a class="code hl_class" href="../../d2/da2/classpocketmine_1_1block_1_1_button.html">Button</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            -&gt;writeFacingDirection($block-&gt;getFacing())</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            -&gt;writeBool(BlockStateNames::BUTTON_PRESSED_BIT, $block-&gt;isPressed());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeCandle(<a class="code hl_class" href="../../d6/dd1/classpocketmine_1_1block_1_1_candle.html">Candle</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            -&gt;writeBool(StateNames::LIT, $block-&gt;isLit())</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            -&gt;writeInt(StateNames::CANDLES, $block-&gt;getCount() - 1);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeChemistryTable(<a class="code hl_class" href="../../dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html">ChemistryTable</a> $block, <span class="keywordtype">string</span> $chemistryTableType, Writer $out) : Writer{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            -&gt;writeString(BlockStateNames::CHEMISTRY_TABLE_TYPE, $chemistryTableType)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            -&gt;writeLegacyHorizontalFacing(<a class="code hl_function" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#adb0c50bed6e2a948367c7c9ca6b0831d">Facing::opposite</a>($block-&gt;getFacing()));</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeCrops(<a class="code hl_class" href="../../d2/d70/classpocketmine_1_1block_1_1_crops.html">Crops</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">return</span> $out-&gt;writeInt(BlockStateNames::GROWTH, $block-&gt;getAge());</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeColoredTorch(<a class="code hl_class" href="../../d2/d00/classpocketmine_1_1block_1_1_torch.html">Torch</a> $block, <span class="keywordtype">bool</span> $highBit, Writer $out) : Writer{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            -&gt;writeBool(BlockStateNames::COLOR_BIT, $highBit)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            -&gt;writeTorchFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeCauldron(<span class="keywordtype">string</span> $liquid, <span class="keywordtype">int</span> $fillLevel) : Writer{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> Writer::create(Ids::CAULDRON)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            -&gt;writeString(BlockStateNames::CAULDRON_LIQUID, $liquid)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            -&gt;writeInt(BlockStateNames::FILL_LEVEL, $fillLevel);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> selectCopperId(CopperOxidation $oxidation, <span class="keywordtype">string</span> $noneId, <span class="keywordtype">string</span> $exposedId, <span class="keywordtype">string</span> $weatheredId, <span class="keywordtype">string</span> $oxidizedId) : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> match($oxidation){</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            CopperOxidation::NONE =&gt; $noneId,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            CopperOxidation::EXPOSED =&gt; $exposedId,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            CopperOxidation::WEATHERED =&gt; $weatheredId,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            CopperOxidation::OXIDIZED =&gt; $oxidizedId,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        };</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeDoor(<a class="code hl_class" href="../../d9/d20/classpocketmine_1_1block_1_1_door.html">Door</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            -&gt;writeBool(BlockStateNames::UPPER_BLOCK_BIT, $block-&gt;isTop())</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            -&gt;writeLegacyHorizontalFacing(<a class="code hl_function" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#af155aa5bbe442c6ba91635278d191efa">Facing::rotateY</a>($block-&gt;getFacing(), <span class="keyword">true</span>))</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            -&gt;writeBool(BlockStateNames::DOOR_HINGE_BIT, $block-&gt;isHingeRight())</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            -&gt;writeBool(BlockStateNames::OPEN_BIT, $block-&gt;isOpen());</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeDoor(<a class="code hl_class" href="../../d9/d20/classpocketmine_1_1block_1_1_door.html">Door</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeDoublePlant(<a class="code hl_class" href="../../dd/d6a/classpocketmine_1_1block_1_1_double_plant.html">DoublePlant</a> $block, <span class="keywordtype">string</span> $doublePlantType, Writer $out) : Writer{</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">return</span> $out</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            -&gt;writeBool(BlockStateNames::UPPER_BLOCK_BIT, $block-&gt;isTop())</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            -&gt;writeLegacyHorizontalFacing(<a class="code hl_function" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#af155aa5bbe442c6ba91635278d191efa">Facing::rotateY</a>($block-&gt;getFacing(), <span class="keyword">true</span>))</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            -&gt;writeBool(BlockStateNames::DOOR_HINGE_BIT, $block-&gt;isHingeRight())</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            -&gt;writeBool(BlockStateNames::OPEN_BIT, $block-&gt;isOpen());</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeDoublePlant(<a class="code hl_class" href="../../dd/d6a/classpocketmine_1_1block_1_1_double_plant.html">DoublePlant</a> $block, <span class="keywordtype">string</span> $doublePlantType, Writer $out) : Writer{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            -&gt;writeBool(BlockStateNames::UPPER_BLOCK_BIT, $block-&gt;isTop())</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            -&gt;writeString(BlockStateNames::DOUBLE_PLANT_TYPE, $doublePlantType);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeFenceGate(<a class="code hl_class" href="../../d7/dd3/classpocketmine_1_1block_1_1_fence_gate.html">FenceGate</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            -&gt;writeLegacyHorizontalFacing($block-&gt;getFacing())</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            -&gt;writeBool(BlockStateNames::IN_WALL_BIT, $block-&gt;isInWall())</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            -&gt;writeBool(BlockStateNames::OPEN_BIT, $block-&gt;isOpen());</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeFloorSign(<a class="code hl_class" href="../../dd/de8/classpocketmine_1_1block_1_1_floor_sign.html">FloorSign</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            -&gt;writeInt(BlockStateNames::GROUND_SIGN_DIRECTION, $block-&gt;getRotation());</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeFurnace(<a class="code hl_class" href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html">Furnace</a> $block, <span class="keywordtype">string</span> $unlitId, <span class="keywordtype">string</span> $litId) : Writer{</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">return</span> Writer::create($block-&gt;isLit() ? $litId : $unlitId)</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            -&gt;writeCardinalHorizontalFacing($block-&gt;getFacing());</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeItemFrame(<a class="code hl_class" href="../../d9/dc4/classpocketmine_1_1block_1_1_item_frame.html">ItemFrame</a> $block, <span class="keywordtype">string</span> $id) : Writer{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">return</span> Writer::create($id)</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            -&gt;writeBool(StateNames::ITEM_FRAME_MAP_BIT, $block-&gt;hasMap())</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            -&gt;writeBool(StateNames::ITEM_FRAME_PHOTO_BIT, <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            -&gt;writeFacingDirection($block-&gt;getFacing());</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLeaves(<a class="code hl_class" href="../../d8/deb/classpocketmine_1_1block_1_1_leaves.html">Leaves</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            -&gt;writeBool(BlockStateNames::PERSISTENT_BIT, $block-&gt;isNoDecay())</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            -&gt;writeBool(BlockStateNames::UPDATE_BIT, $block-&gt;isCheckDecay());</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLeaves1(<a class="code hl_class" href="../../d8/deb/classpocketmine_1_1block_1_1_leaves.html">Leaves</a> $block, <span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">return</span> self::encodeLeaves($block, Writer::create(Ids::LEAVES)</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            -&gt;writeString(BlockStateNames::OLD_LEAF_TYPE, $type));</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            -&gt;writeString(BlockStateNames::DOUBLE_PLANT_TYPE, $doublePlantType);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeFenceGate(<a class="code hl_class" href="../../d7/dd3/classpocketmine_1_1block_1_1_fence_gate.html">FenceGate</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            -&gt;writeLegacyHorizontalFacing($block-&gt;getFacing())</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            -&gt;writeBool(BlockStateNames::IN_WALL_BIT, $block-&gt;isInWall())</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            -&gt;writeBool(BlockStateNames::OPEN_BIT, $block-&gt;isOpen());</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeFloorSign(<a class="code hl_class" href="../../dd/de8/classpocketmine_1_1block_1_1_floor_sign.html">FloorSign</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            -&gt;writeInt(BlockStateNames::GROUND_SIGN_DIRECTION, $block-&gt;getRotation());</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeFurnace(<a class="code hl_class" href="../../d4/d66/classpocketmine_1_1block_1_1_furnace.html">Furnace</a> $block, <span class="keywordtype">string</span> $unlitId, <span class="keywordtype">string</span> $litId) : Writer{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> Writer::create($block-&gt;isLit() ? $litId : $unlitId)</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            -&gt;writeCardinalHorizontalFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeItemFrame(<a class="code hl_class" href="../../d9/dc4/classpocketmine_1_1block_1_1_item_frame.html">ItemFrame</a> $block, <span class="keywordtype">string</span> $id) : Writer{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">return</span> Writer::create($id)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            -&gt;writeBool(StateNames::ITEM_FRAME_MAP_BIT, $block-&gt;hasMap())</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            -&gt;writeBool(StateNames::ITEM_FRAME_PHOTO_BIT, <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            -&gt;writeFacingDirection($block-&gt;getFacing());</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLeaves(<a class="code hl_class" href="../../d8/deb/classpocketmine_1_1block_1_1_leaves.html">Leaves</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            -&gt;writeBool(BlockStateNames::PERSISTENT_BIT, $block-&gt;isNoDecay())</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            -&gt;writeBool(BlockStateNames::UPDATE_BIT, $block-&gt;isCheckDecay());</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLiquid(<a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a> $block, <span class="keywordtype">string</span> $stillId, <span class="keywordtype">string</span> $flowingId) : Writer{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">return</span> Writer::create($block-&gt;isStill() ? $stillId : $flowingId)</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            -&gt;writeInt(BlockStateNames::LIQUID_DEPTH, $block-&gt;getDecay() | ($block-&gt;isFalling() ? 0x8 : 0));</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLog(<a class="code hl_class" href="../../dc/d9e/classpocketmine_1_1block_1_1_wood.html">Wood</a> $block, <span class="keywordtype">string</span> $unstrippedId, <span class="keywordtype">string</span> $strippedId) : Writer{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $out = $block-&gt;isStripped() ?</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            Writer::create($strippedId) :</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            Writer::create($unstrippedId);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            -&gt;writePillarAxis($block-&gt;getAxis());</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLeaves2(<a class="code hl_class" href="../../d8/deb/classpocketmine_1_1block_1_1_leaves.html">Leaves</a> $block, <span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> self::encodeLeaves($block, Writer::create(Ids::LEAVES2)</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            -&gt;writeString(BlockStateNames::NEW_LEAF_TYPE, $type));</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeMushroomBlock(<a class="code hl_class" href="../../dd/d75/classpocketmine_1_1block_1_1_red_mushroom_block.html">RedMushroomBlock</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            -&gt;writeInt(BlockStateNames::HUGE_MUSHROOM_BITS, MushroomBlockTypeIdMap::getInstance()-&gt;toId($block-&gt;getMushroomBlockType()));</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLiquid(<a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a> $block, <span class="keywordtype">string</span> $stillId, <span class="keywordtype">string</span> $flowingId) : Writer{</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">return</span> Writer::create($block-&gt;isStill() ? $stillId : $flowingId)</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            -&gt;writeInt(BlockStateNames::LIQUID_DEPTH, $block-&gt;getDecay() | ($block-&gt;isFalling() ? 0x8 : 0));</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLog(<a class="code hl_class" href="../../dc/d9e/classpocketmine_1_1block_1_1_wood.html">Wood</a> $block, <span class="keywordtype">string</span> $unstrippedId, <span class="keywordtype">string</span> $strippedId) : Writer{</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        $out = $block-&gt;isStripped() ?</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            Writer::create($strippedId) :</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            Writer::create($unstrippedId);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            -&gt;writePillarAxis($block-&gt;getAxis());</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeMushroomBlock(<a class="code hl_class" href="../../dd/d75/classpocketmine_1_1block_1_1_red_mushroom_block.html">RedMushroomBlock</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            -&gt;writeInt(BlockStateNames::HUGE_MUSHROOM_BITS, MushroomBlockTypeIdMap::getInstance()-&gt;toId($block-&gt;getMushroomBlockType()));</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeQuartz(<span class="keywordtype">string</span> $type, <span class="keywordtype">int</span> $axis) : Writer{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">return</span> Writer::create(Ids::QUARTZ_BLOCK)</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            -&gt;writeString(BlockStateNames::CHISEL_TYPE, $type)</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            -&gt;writePillarAxis($axis); <span class="comment">//this isn&#39;t needed for all types, but we have to write it anyway</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeRedFlower(<span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">return</span> Writer::create(Ids::RED_FLOWER)-&gt;writeString(BlockStateNames::FLOWER_TYPE, $type);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSandstone(<span class="keywordtype">string</span> $id, <span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">return</span> Writer::create($id)-&gt;writeString(BlockStateNames::SAND_STONE_TYPE, $type);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSapling(<a class="code hl_class" href="../../d6/d87/classpocketmine_1_1block_1_1_sapling.html">Sapling</a> $block, <span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">return</span> Writer::create(Ids::SAPLING)</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            -&gt;writeBool(BlockStateNames::AGE_BIT, $block-&gt;isReady())</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            -&gt;writeString(BlockStateNames::SAPLING_TYPE, $type);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSimplePressurePlate(<a class="code hl_class" href="../../dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html">SimplePressurePlate</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="comment">//TODO: not sure what the deal is here ... seems like a mojang bug / artifact of bad implementation?</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="comment">//best to keep this separate from weighted plates anyway...</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            -&gt;writeInt(BlockStateNames::REDSTONE_SIGNAL, $block-&gt;isPressed() ? 15 : 0);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSlab(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $singleId, <span class="keywordtype">string</span> $doubleId) : Writer{</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        $slabType = $block-&gt;getSlabType();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> Writer::create($slabType === SlabType::DOUBLE ? $doubleId : $singleId)</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="comment">//this is (intentionally) also written for double slabs (as zero) to maintain bug parity with MCPE</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            -&gt;writeSlabPosition($slabType === SlabType::DOUBLE ? SlabType::BOTTOM : $slabType);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStairs(<a class="code hl_class" href="../../d7/d95/classpocketmine_1_1block_1_1_stair.html">Stair</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            -&gt;writeBool(BlockStateNames::UPSIDE_DOWN_BIT, $block-&gt;isUpsideDown())</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            -&gt;writeWeirdoHorizontalFacing($block-&gt;getFacing());</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStem(<a class="code hl_class" href="../../dc/d0c/classpocketmine_1_1block_1_1_stem.html">Stem</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="comment">//In PM, we use Facing::UP to indicate that the stem is not attached to a pumpkin/melon, since this makes the</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="comment">//most intuitive sense (the stem is pointing at the sky). However, Bedrock uses the DOWN state for this, which</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="comment">//is absurd, and I refuse to make our API similarly absurd.</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        $facing = $block-&gt;getFacing();</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">return</span> self::encodeCrops($block, $out)</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            -&gt;writeFacingWithoutUp($facing === Facing::UP ? Facing::DOWN : $facing);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeQuartz(<span class="keywordtype">string</span> $type, <span class="keywordtype">int</span> $axis) : Writer{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">return</span> Writer::create(Ids::QUARTZ_BLOCK)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            -&gt;writeString(BlockStateNames::CHISEL_TYPE, $type)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            -&gt;writePillarAxis($axis); <span class="comment">//this isn&#39;t needed for all types, but we have to write it anyway</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeRedFlower(<span class="keywordtype">string</span> $type) : Writer{</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> Writer::create(Ids::RED_FLOWER)-&gt;writeString(BlockStateNames::FLOWER_TYPE, $type);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSandstone(<span class="keywordtype">string</span> $id, <span class="keywordtype">string</span> $type) : Writer{</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">return</span> Writer::create($id)-&gt;writeString(BlockStateNames::SAND_STONE_TYPE, $type);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSapling(<a class="code hl_class" href="../../d6/d87/classpocketmine_1_1block_1_1_sapling.html">Sapling</a> $block, <span class="keywordtype">string</span> $type) : Writer{</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">return</span> Writer::create(Ids::SAPLING)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            -&gt;writeBool(BlockStateNames::AGE_BIT, $block-&gt;isReady())</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            -&gt;writeString(BlockStateNames::SAPLING_TYPE, $type);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSimplePressurePlate(<a class="code hl_class" href="../../dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html">SimplePressurePlate</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="comment">//TODO: not sure what the deal is here ... seems like a mojang bug / artifact of bad implementation?</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="comment">//best to keep this separate from weighted plates anyway...</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            -&gt;writeInt(BlockStateNames::REDSTONE_SIGNAL, $block-&gt;isPressed() ? 15 : 0);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeSlab(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $singleId, <span class="keywordtype">string</span> $doubleId) : Writer{</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        $slabType = $block-&gt;getSlabType();</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">return</span> Writer::create($slabType === SlabType::DOUBLE ? $doubleId : $singleId)</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="comment">//this is (intentionally) also written for double slabs (as zero) to maintain bug parity with MCPE</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            -&gt;writeSlabPosition($slabType === SlabType::DOUBLE ? SlabType::BOTTOM : $slabType);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStairs(<a class="code hl_class" href="../../d7/d95/classpocketmine_1_1block_1_1_stair.html">Stair</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            -&gt;writeBool(BlockStateNames::UPSIDE_DOWN_BIT, $block-&gt;isUpsideDown())</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            -&gt;writeWeirdoHorizontalFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStem(<a class="code hl_class" href="../../dc/d0c/classpocketmine_1_1block_1_1_stem.html">Stem</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="comment">//In PM, we use Facing::UP to indicate that the stem is not attached to a pumpkin/melon, since this makes the</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="comment">//most intuitive sense (the stem is pointing at the sky). However, Bedrock uses the DOWN state for this, which</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="comment">//is absurd, and I refuse to make our API similarly absurd.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        $facing = $block-&gt;getFacing();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keywordflow">return</span> self::encodeCrops($block, $out)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            -&gt;writeFacingWithoutUp($facing === Facing::UP ? Facing::DOWN : $facing);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneBricks(<span class="keywordtype">string</span> $type) : Writer{</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordflow">return</span> Writer::create(Ids::STONEBRICK)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            -&gt;writeString(BlockStateNames::STONE_BRICK_TYPE, $type);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $singleId, <span class="keywordtype">string</span> $doubleId, <span class="keywordtype">string</span> $typeKey, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordflow">return</span> self::encodeSlab($block, $singleId, $doubleId)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            -&gt;writeString($typeKey, $typeValue);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab1(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB, Ids::DOUBLE_STONE_BLOCK_SLAB, BlockStateNames::STONE_SLAB_TYPE, $typeValue);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab2(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB2, Ids::DOUBLE_STONE_BLOCK_SLAB2, BlockStateNames::STONE_SLAB_TYPE_2, $typeValue);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneBricks(<span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">return</span> Writer::create(Ids::STONEBRICK)</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            -&gt;writeString(BlockStateNames::STONE_BRICK_TYPE, $type);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $singleId, <span class="keywordtype">string</span> $doubleId, <span class="keywordtype">string</span> $typeKey, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">return</span> self::encodeSlab($block, $singleId, $doubleId)</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            -&gt;writeString($typeKey, $typeValue);</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab1(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB, Ids::DOUBLE_STONE_BLOCK_SLAB, BlockStateNames::STONE_SLAB_TYPE, $typeValue);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab2(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB2, Ids::DOUBLE_STONE_BLOCK_SLAB2, BlockStateNames::STONE_SLAB_TYPE_2, $typeValue);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab3(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB3, Ids::DOUBLE_STONE_BLOCK_SLAB3, BlockStateNames::STONE_SLAB_TYPE_3, $typeValue);</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab4(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB4, Ids::DOUBLE_STONE_BLOCK_SLAB4, BlockStateNames::STONE_SLAB_TYPE_4, $typeValue);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeTrapdoor(<a class="code hl_class" href="../../d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html">Trapdoor</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            -&gt;write5MinusHorizontalFacing($block-&gt;getFacing())</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            -&gt;writeBool(BlockStateNames::UPSIDE_DOWN_BIT, $block-&gt;isTop())</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            -&gt;writeBool(BlockStateNames::OPEN_BIT, $block-&gt;isOpen());</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    }</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeWall(<a class="code hl_class" href="../../d0/d73/classpocketmine_1_1block_1_1_wall.html">Wall</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            -&gt;writeBool(BlockStateNames::WALL_POST_BIT, $block-&gt;isPost())</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_EAST, $block-&gt;getConnection(Facing::EAST))</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_NORTH, $block-&gt;getConnection(Facing::NORTH))</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_SOUTH, $block-&gt;getConnection(Facing::SOUTH))</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_WEST, $block-&gt;getConnection(Facing::WEST));</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    }</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLegacyWall(<a class="code hl_class" href="../../d0/d73/classpocketmine_1_1block_1_1_wall.html">Wall</a> $block, <span class="keywordtype">string</span> $type) : Writer{</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">return</span> self::encodeWall($block, Writer::create(Ids::COBBLESTONE_WALL))</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            -&gt;writeString(BlockStateNames::WALL_BLOCK_TYPE, $type);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeWallSign(<a class="code hl_class" href="../../df/d74/classpocketmine_1_1block_1_1_wall_sign.html">WallSign</a> $block, Writer $out) : Writer{</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        <span class="keywordflow">return</span> $out</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            -&gt;writeHorizontalFacing($block-&gt;getFacing());</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeWoodenSlab(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">return</span> self::encodeSlab($block, Ids::WOODEN_SLAB, Ids::DOUBLE_WOODEN_SLAB)</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            -&gt;writeString(BlockStateNames::WOOD_TYPE, $typeValue);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab3(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB3, Ids::DOUBLE_STONE_BLOCK_SLAB3, BlockStateNames::STONE_SLAB_TYPE_3, $typeValue);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeStoneSlab4(<a class="code hl_class" href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">Slab</a> $block, <span class="keywordtype">string</span> $typeValue) : Writer{</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">return</span> self::encodeStoneSlab($block, Ids::STONE_BLOCK_SLAB4, Ids::DOUBLE_STONE_BLOCK_SLAB4, BlockStateNames::STONE_SLAB_TYPE_4, $typeValue);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeTrapdoor(<a class="code hl_class" href="../../d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html">Trapdoor</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            -&gt;write5MinusHorizontalFacing($block-&gt;getFacing())</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            -&gt;writeBool(BlockStateNames::UPSIDE_DOWN_BIT, $block-&gt;isTop())</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            -&gt;writeBool(BlockStateNames::OPEN_BIT, $block-&gt;isOpen());</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeWall(<a class="code hl_class" href="../../d0/d73/classpocketmine_1_1block_1_1_wall.html">Wall</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            -&gt;writeBool(BlockStateNames::WALL_POST_BIT, $block-&gt;isPost())</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_EAST, $block-&gt;getConnection(Facing::EAST))</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_NORTH, $block-&gt;getConnection(Facing::NORTH))</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_SOUTH, $block-&gt;getConnection(Facing::SOUTH))</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            -&gt;writeWallConnectionType(BlockStateNames::WALL_CONNECTION_TYPE_WEST, $block-&gt;getConnection(Facing::WEST));</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    }</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeLegacyWall(<a class="code hl_class" href="../../d0/d73/classpocketmine_1_1block_1_1_wall.html">Wall</a> $block, <span class="keywordtype">string</span> $type) : Writer{</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <span class="keywordflow">return</span> self::encodeWall($block, Writer::create(Ids::COBBLESTONE_WALL))</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            -&gt;writeString(BlockStateNames::WALL_BLOCK_TYPE, $type);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> encodeWallSign(<a class="code hl_class" href="../../df/d74/classpocketmine_1_1block_1_1_wall_sign.html">WallSign</a> $block, Writer $out) : Writer{</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">return</span> $out</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            -&gt;writeHorizontalFacing($block-&gt;getFacing());</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_button_html"><div class="ttname"><a href="../../d2/da2/classpocketmine_1_1block_1_1_button.html">pocketmine\block\Button</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_button_8php_source.html#l00036">Button.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_candle_html"><div class="ttname"><a href="../../d6/dd1/classpocketmine_1_1block_1_1_candle.html">pocketmine\block\Candle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d3b/_candle_8php_source.html#l00038">Candle.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_chemistry_table_html"><div class="ttname"><a href="../../dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html">pocketmine\block\ChemistryTable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d19/_chemistry_table_8php_source.html#l00031">ChemistryTable.php:31</a></div></div>
@@ -406,7 +383,7 @@ $(document).ready(function(){initNavTree('dc/ddb/_block_state_serializer_helper_
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_names_html"><div class="ttname"><a href="../../d3/de7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_names.html">pocketmine\data\bedrock\block\BlockStateNames</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d81/_block_state_names_8php_source.html#l00029">BlockStateNames.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_type_names_html"><div class="ttname"><a href="../../d1/ddc/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_type_names.html">pocketmine\data\bedrock\block\BlockTypeNames</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/de4/_block_type_names_8php_source.html#l00029">BlockTypeNames.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/ddb/_block_state_serializer_helper_8php_source.html#l00058">BlockStateSerializerHelper.php:58</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer_html"><div class="ttname"><a href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html">pocketmine\data\bedrock\block\convert\BlockStateWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d31/_block_state_writer_8php_source.html#l00044">BlockStateWriter.php:44</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer_html"><div class="ttname"><a href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html">pocketmine\data\bedrock\block\convert\BlockStateWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d31/_block_state_writer_8php_source.html#l00043">BlockStateWriter.php:43</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html_adb0c50bed6e2a948367c7c9ca6b0831d"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#adb0c50bed6e2a948367c7c9ca6b0831d">pocketmine\math\Facing\opposite</a></div><div class="ttdeci">static opposite(int $direction)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00108">Facing.php:108</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html_af155aa5bbe442c6ba91635278d191efa"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html#af155aa5bbe442c6ba91635278d191efa">pocketmine\math\Facing\rotateY</a></div><div class="ttdeci">static rotateY(int $direction, bool $clockwise)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0d/_facing_8php_source.html#l00132">Facing.php:132</a></div></div>

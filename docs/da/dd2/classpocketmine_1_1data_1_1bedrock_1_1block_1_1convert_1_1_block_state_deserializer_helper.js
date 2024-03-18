@@ -27,6 +27,5 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deser
     [ "mapStoneSlab1Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a5deb9c36c91b6ef36c341191d6497b97", null ],
     [ "mapStoneSlab2Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a135f9c49abd1299d02760db983953002", null ],
     [ "mapStoneSlab3Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a14da2452f47bbb20a3730f79b829f602", null ],
-    [ "mapStoneSlab4Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#aaab0e4dd8f43dfe8459e228d07faf321", null ],
-    [ "mapWoodenSlabType", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a6cb0938a5b9d5e960583f4af28edaa45", null ]
+    [ "mapStoneSlab4Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#aaab0e4dd8f43dfe8459e228d07faf321", null ]
 ];

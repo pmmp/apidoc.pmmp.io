@@ -623,6 +623,7 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\protocol\\types\\command\\CommandOutputMessage", "d4/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_output_message.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\command\\CommandOverload", "d8/dc1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_overload.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\command\\CommandParameter", "d1/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\command\\CommandParameterTypes", "db/d73/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter_types.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\command\\CommandPermissions", "d1/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_permissions.html", null ],
     [ "pocketmine\\command\\utils\\CommandStringHelper", "d7/ddc/classpocketmine_1_1command_1_1utils_1_1_command_string_helper.html", null ],
     [ "pocketmine\\network\\mcpe\\ComplexInventoryMapEntry", "da/d18/classpocketmine_1_1network_1_1mcpe_1_1_complex_inventory_map_entry.html", null ],
@@ -1601,7 +1602,6 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\InventorySlotPacket", "da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\InventoryTransactionPacket", "d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ItemComponentPacket", "d1/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_component_packet.html", null ],
-        [ "pocketmine\\network\\mcpe\\protocol\\ItemFrameDropItemPacket", "db/df9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_frame_drop_item_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ItemStackRequestPacket", "d8/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ItemStackResponsePacket", "d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\LabTablePacket", "dd/d36/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_lab_table_packet.html", null ],
@@ -1755,7 +1755,6 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\GameTestRequestPacket", "da/d1b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_test_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\InteractPacket", "d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\InventoryTransactionPacket", "d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html", null ],
-        [ "pocketmine\\network\\mcpe\\protocol\\ItemFrameDropItemPacket", "db/df9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_frame_drop_item_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ItemStackRequestPacket", "d8/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\LabTablePacket", "dd/d36/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_lab_table_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\LecternUpdatePacket", "d0/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_lectern_update_packet.html", null ],
@@ -1917,6 +1916,7 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\protocol\\types\\skin\\PersonaSkinPiece", "d3/d5d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1skin_1_1_persona_skin_piece.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\PlayerAction", "de/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_action.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\PlayerAuthInputFlags", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\PlayerAuthInputVehicleInfo", "df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\PlayerBlockAction", "d7/df2/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action.html", [
       [ "pocketmine\\network\\mcpe\\protocol\\types\\PlayerBlockActionStopBreak", "db/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_stop_break.html", null ],
       [ "pocketmine\\network\\mcpe\\protocol\\types\\PlayerBlockActionWithBlockInfo", "d4/d34/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info.html", null ]

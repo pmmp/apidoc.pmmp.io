@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.12.1 git-b0390a39fd1eb2d5b524f834fd0866057574d34f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-2d24fac067a5a577882f859571cb7bb463f48510</span>
    </div>
   </td>
  </tr>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aecfd88d5243b5569cebdb121fe348cc5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#aecfd88d5243b5569cebdb121fe348cc5">create</a> (array $resourcePackEntries, array $behaviorPackEntries, bool $mustAccept, bool $hasScripts, bool $forceServerPacks, array $cdnUrls)</td></tr>
-<tr class="separator:aecfd88d5243b5569cebdb121fe348cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8c283fa767c6066529d2347c09c550"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#abe8c283fa767c6066529d2347c09c550">create</a> (array $resourcePackEntries, array $behaviorPackEntries, bool $mustAccept, bool $hasAddons, bool $hasScripts, bool $forceServerPacks, array $cdnUrls,)</td></tr>
+<tr class="separator:abe8c283fa767c6066529d2347c09c550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,6 +147,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac6eb35b51126f632bde122bb7dcb5d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04f573f635bb2788126d81b7362ce338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a04f573f635bb2788126d81b7362ce338">$forceServerPacks</a> = false</td></tr>
 <tr class="separator:a04f573f635bb2788126d81b7362ce338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0d57921d9358e934121a10743c3721"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a6d0d57921d9358e934121a10743c3721">$hasAddons</a> = false</td></tr>
+<tr class="separator:a6d0d57921d9358e934121a10743c3721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76f8fb4f99f6303a975ad6765b2c9636"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a76f8fb4f99f6303a975ad6765b2c9636">$hasScripts</a> = false</td></tr>
 <tr class="separator:a76f8fb4f99f6303a975ad6765b2c9636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebacf4cd57f934e47f981e587fa0879f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#aebacf4cd57f934e47f981e587fa0879f">$mustAccept</a> = false</td></tr>
@@ -286,8 +288,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aecfd88d5243b5569cebdb121fe348cc5" name="aecfd88d5243b5569cebdb121fe348cc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecfd88d5243b5569cebdb121fe348cc5">&#9670;&nbsp;</a></span>create()</h2>
+<a id="abe8c283fa767c6066529d2347c09c550" name="abe8c283fa767c6066529d2347c09c550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8c283fa767c6066529d2347c09c550">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,6 +314,12 @@ Protected Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>$mustAccept</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$hasAddons</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -352,7 +360,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00046">46</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
@@ -461,7 +469,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00056">56</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00066">66</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
@@ -550,7 +558,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00078">78</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00089">89</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
@@ -611,7 +619,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00097">97</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00109">109</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
@@ -673,7 +681,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00036">36</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
@@ -689,7 +697,23 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a6d0d57921d9358e934121a10743c3721" name="a6d0d57921d9358e934121a10743c3721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0d57921d9358e934121a10743c3721">&#9670;&nbsp;</a></span>$hasAddons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pocketmine\network\mcpe\protocol\ResourcePacksInfoPacket::$hasAddons = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00030">30</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
@@ -705,7 +729,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00030">30</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../dc/d11/_resource_packs_info_packet_8php_source.html">ResourcePacksInfoPacket.php</a>.</p>
 
 </div>
 </div>
