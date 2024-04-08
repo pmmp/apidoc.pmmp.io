@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('d7/d71/classpocketmine_1_1utils_1_1_ma
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a061078d43976d1b11c29e1888af04bf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html#a061078d43976d1b11c29e1888af04bf4">__construct</a> (private string $logFile)</td></tr>
-<tr class="separator:a061078d43976d1b11c29e1888af04bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5c69237d303dd39b68435dc0c23b12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html#ada5c69237d303dd39b68435dc0c23b12">__construct</a> (private string $logFile, private ?string $archiveDir, private readonly int $maxFileSize=32 *1024 *1024)</td></tr>
+<tr class="separator:ada5c69237d303dd39b68435dc0c23b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aff5318e286054ad2db03174e423481"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html#a2aff5318e286054ad2db03174e423481">run</a> ()</td></tr>
 <tr class="separator:a2aff5318e286054ad2db03174e423481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d041fe216a50ba87daf4dfc9e0a2ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d71/classpocketmine_1_1utils_1_1_main_logger_thread.html#ab6d041fe216a50ba87daf4dfc9e0a2ee">shutdown</a> ()</td></tr>
@@ -127,10 +127,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00034">34</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00046">46</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a061078d43976d1b11c29e1888af04bf4" name="a061078d43976d1b11c29e1888af04bf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a061078d43976d1b11c29e1888af04bf4">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="ada5c69237d303dd39b68435dc0c23b12" name="ada5c69237d303dd39b68435dc0c23b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5c69237d303dd39b68435dc0c23b12">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,13 +139,29 @@ Public Member Functions</h2></td></tr>
           <td class="memname">pocketmine\utils\MainLoggerThread::__construct </td>
           <td>(</td>
           <td class="paramtype">private string&#160;</td>
-          <td class="paramname"><em>$logFile</em></td><td>)</td>
+          <td class="paramname"><em>$logFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">private ?string&#160;</td>
+          <td class="paramname"><em>$archiveDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">private readonly int&#160;</td>
+          <td class="paramname"><em>$maxFileSize</em> = <code>32&#160;*&#160;1024&#160;*&#160;1024</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00040">40</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00053">53</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
 
 </div>
 </div>
@@ -165,7 +181,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00090">90</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00161">161</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
 
 </div>
 </div>
@@ -184,7 +200,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00066">66</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00085">85</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
 
 </div>
 </div>
@@ -203,7 +219,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00054">54</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00073">73</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
 
 </div>
 </div>
@@ -223,7 +239,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00047">47</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html#l00066">66</a> of file <a class="el" href="../../d6/d41/_main_logger_thread_8php_source.html">MainLoggerThread.php</a>.</p>
 
 </div>
 </div>

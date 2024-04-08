@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('dd/dca/classraklib_1_1generic_1_1_sess
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4d2b180145a748293ad030b457b4263"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#aa4d2b180145a748293ad030b457b4263">__construct</a> (\<a class="el" href="../../d4/d00/interface_logger.html">Logger</a> $logger, <a class="el" href="../../d3/d0a/classraklib_1_1utils_1_1_internet_address.html">InternetAddress</a> $address, int $clientId, int $mtuSize)</td></tr>
-<tr class="separator:aa4d2b180145a748293ad030b457b4263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90571d767bc2d833266b1e064ab3bf89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#a90571d767bc2d833266b1e064ab3bf89">__construct</a> (\<a class="el" href="../../d4/d00/interface_logger.html">Logger</a> $logger, <a class="el" href="../../d3/d0a/classraklib_1_1utils_1_1_internet_address.html">InternetAddress</a> $address, int $clientId, int $mtuSize, int $recvMaxSplitParts=PHP_INT_MAX, int $recvMaxConcurrentSplits=PHP_INT_MAX)</td></tr>
+<tr class="separator:a90571d767bc2d833266b1e064ab3bf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206c4a5cfd8df7538f134bd6ca890483"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#a206c4a5cfd8df7538f134bd6ca890483">addEncapsulatedToQueue</a> (<a class="el" href="../../d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html">EncapsulatedPacket</a> $packet, bool $immediate)</td></tr>
 <tr class="separator:a206c4a5cfd8df7538f134bd6ca890483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaafee10e90e9e793b322c8506181a07f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#aaafee10e90e9e793b322c8506181a07f">forciblyDisconnect</a> (int $reason)</td></tr>
@@ -144,10 +144,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af5e1eed953b7b13d994da8a51904bd54"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#af5e1eed953b7b13d994da8a51904bd54">MAX_CONCURRENT_SPLIT_COUNT</a> = 4</td></tr>
-<tr class="separator:af5e1eed953b7b13d994da8a51904bd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c602d33f39c4b70f2127b2d41c080b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#ac0c602d33f39c4b70f2127b2d41c080b">MAX_SPLIT_PART_COUNT</a> = 128</td></tr>
-<tr class="separator:ac0c602d33f39c4b70f2127b2d41c080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077ea358bc24fcdf76db384967ea2267"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#a077ea358bc24fcdf76db384967ea2267">MIN_MTU_SIZE</a> = 400</td></tr>
 <tr class="separator:a077ea358bc24fcdf76db384967ea2267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22bd08f4071ff00955adf3aeb89fbf3f"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#a22bd08f4071ff00955adf3aeb89fbf3f">STATE_CONNECTED</a> = 1</td></tr>
@@ -191,10 +187,10 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00038">38</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00039">39</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa4d2b180145a748293ad030b457b4263" name="aa4d2b180145a748293ad030b457b4263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4d2b180145a748293ad030b457b4263">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a90571d767bc2d833266b1e064ab3bf89" name="a90571d767bc2d833266b1e064ab3bf89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90571d767bc2d833266b1e064ab3bf89">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +217,19 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$mtuSize</em>&#160;</td>
+          <td class="paramname"><em>$mtuSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$recvMaxSplitParts</em> = <code>PHP_INT_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$recvMaxConcurrentSplits</em> = <code>PHP_INT_MAX</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -230,8 +238,19 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >@phpstan-param positive-int $recvMaxSplitParts @phpstan-param positive-int $recvMaxConcurrentSplits </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00071">71</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00073">73</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#a678474a4323145067d975c242c8bc4d9">raklib\generic\Session\onPacketAck()</a>, and <a class="el" href="../../dd/dca/classraklib_1_1generic_1_1_session.html#a19b588929dccae818d217ff976489c2a">raklib\generic\Session\sendPacket()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dca/classraklib_1_1generic_1_1_session_a90571d767bc2d833266b1e064ab3bf89_cgraph.svg" width="390" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -262,7 +281,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00221">221</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00230">230</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -290,7 +309,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d33/classraklib_1_1generic_1_1_disconnect_reason.html">DisconnectReason</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00307">307</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00316">316</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -309,7 +328,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00149">149</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00158">158</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -328,7 +347,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00153">153</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00162">162</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -356,7 +375,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns a monotonically increasing timestamp. It does not need to match UNIX time. This is used to calculate ping. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00145">145</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00154">154</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -375,7 +394,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00157">157</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00166">166</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -395,7 +414,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00269">269</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00278">278</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -452,7 +471,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d33/classraklib_1_1generic_1_1_disconnect_reason.html">DisconnectReason</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00290">290</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00299">299</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -471,7 +490,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00165">165</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00174">174</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -491,7 +510,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Returns whether the session is ready to be destroyed (either properly cleaned up or forcibly terminated) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00330">330</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00339">339</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -510,7 +529,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00161">161</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00170">170</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -576,6 +595,16 @@ Protected Attributes</h2></td></tr>
 <p >Called when a packet for which an ACK was requested is ACKed. </p>
 
 <p>Reimplemented in <a class="el" href="../../d6/d79/classraklib_1_1server_1_1_server_session.html#a3dfc91ad1b7bdd273dcc4b65a793913e">raklib\server\ServerSession</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d17/_session_8php_source.html#l00073">raklib\generic\Session\__construct()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dca/classraklib_1_1generic_1_1_session_a678474a4323145067d975c242c8bc4d9_icgraph.svg" width="390" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -684,7 +713,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00209">209</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00218">218</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -715,6 +744,16 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d6/d79/classraklib_1_1server_1_1_server_session.html#aa97d02ff9d5be87bfc8f7e9bf4416fe9">raklib\server\ServerSession</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../df/d17/_session_8php_source.html#l00073">raklib\generic\Session\__construct()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dca/classraklib_1_1generic_1_1_session_a19b588929dccae818d217ff976489c2a_icgraph.svg" width="390" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ac9fe9f3a701735a7e9f28201eca3a9f7" name="ac9fe9f3a701735a7e9f28201eca3a9f7"></a>
@@ -741,7 +780,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00225">225</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00234">234</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -761,7 +800,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00172">172</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00181">181</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -786,7 +825,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00052">52</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00050">50</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -810,39 +849,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00054">54</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
-
-</div>
-</div>
-<a id="af5e1eed953b7b13d994da8a51904bd54" name="af5e1eed953b7b13d994da8a51904bd54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e1eed953b7b13d994da8a51904bd54">&#9670;&nbsp;</a></span>MAX_CONCURRENT_SPLIT_COUNT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const raklib\generic\Session::MAX_CONCURRENT_SPLIT_COUNT = 4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00040">40</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
-
-</div>
-</div>
-<a id="ac0c602d33f39c4b70f2127b2d41c080b" name="ac0c602d33f39c4b70f2127b2d41c080b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0c602d33f39c4b70f2127b2d41c080b">&#9670;&nbsp;</a></span>MAX_SPLIT_PART_COUNT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const raklib\generic\Session::MAX_SPLIT_PART_COUNT = 128</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00039">39</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00052">52</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -858,7 +865,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00048">48</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00046">46</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -874,7 +881,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00043">43</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00041">41</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -890,7 +897,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00042">42</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00040">40</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -906,7 +913,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00045">45</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00043">43</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -922,7 +929,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00044">44</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00042">42</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>
@@ -938,7 +945,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00046">46</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d17/_session_8php_source.html#l00044">44</a> of file <a class="el" href="../../df/d17/_session_8php_source.html">Session.php</a>.</p>
 
 </div>
 </div>

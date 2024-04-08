@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -152,48 +152,44 @@ $(document).ready(function(){initNavTree('d1/d62/_error_to_exception_handler_8ph
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> $result;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a6f6d362254f31df4b2979395e49be484">   69</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">set</span>() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        set_error_handler([self::class, <span class="stringliteral">&#39;handle&#39;</span>]);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aff8479335cdc6700233da6667b7649f4">   69</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">set</span>(<span class="keywordtype">int</span> $levels = E_WARNING | E_NOTICE) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        set_error_handler([self::class, <span class="stringliteral">&#39;handle&#39;</span>], $levels);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> handleNoticeAndWarning(<span class="keywordtype">int</span> $severities) : \Closure{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        return function(int $severity, string $message, string $file, int $line) use ($severities) : bool{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            if(($severities &amp; $severity) !== 0){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">throw</span> new \ErrorException($message, 0, $severity, $file, $line);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> throwAll() : \Closure{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        return function(int $severity, string $message, string $file, int $line): bool{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            throw new \ErrorException($message, 0, $severity, $file, $line);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        };</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        };</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">  100</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">trap</a>(\Closure $closure, <span class="keywordtype">int</span> $levels = E_WARNING | E_NOTICE){</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        set_error_handler(self::handleNoticeAndWarning($levels));</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">return</span> $closure();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }<span class="keywordflow">finally</span>{</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            restore_error_handler();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a4464fb5c19463be857f774e1d36dfcd0">  119</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a4464fb5c19463be857f774e1d36dfcd0">trapAndRemoveFalse</a>(\Closure $closure, <span class="keywordtype">int</span> $levels = E_WARNING | E_NOTICE){</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        set_error_handler(self::handleNoticeAndWarning($levels));</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            $result = $closure();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span>($result === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Block must not return false when no error occurred. Use trap() if the block may return false.&quot;</span>);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }<span class="keywordflow">finally</span>{</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            restore_error_handler();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">   96</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">trap</a>(\Closure $closure, <span class="keywordtype">int</span> $levels = E_WARNING | E_NOTICE){</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        set_error_handler(self::throwAll(), $levels);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">return</span> $closure();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }<span class="keywordflow">finally</span>{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            restore_error_handler();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a4464fb5c19463be857f774e1d36dfcd0">  115</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a4464fb5c19463be857f774e1d36dfcd0">trapAndRemoveFalse</a>(\Closure $closure, <span class="keywordtype">int</span> $levels = E_WARNING | E_NOTICE){</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        set_error_handler(self::throwAll(), $levels);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            $result = $closure();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">if</span>($result === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Block must not return false when no error occurred. Use trap() if the block may return false.&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }<span class="keywordflow">finally</span>{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            restore_error_handler();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_record_html"><div class="ttname"><a href="../../df/db5/classpocketmine_1_1errorhandler_1_1_error_record.html">pocketmine\errorhandler\ErrorRecord</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d62/_error_record_8php_source.html#l00007">ErrorRecord.php:7</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html">pocketmine\errorhandler\ErrorToExceptionHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00028">ErrorToExceptionHandler.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_a24f4a4702575f5868ed1ae268830bb25"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a24f4a4702575f5868ed1ae268830bb25">pocketmine\errorhandler\ErrorToExceptionHandler\getAndClearLastSilencedError</a></div><div class="ttdeci">static getAndClearLastSilencedError()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00060">ErrorToExceptionHandler.php:60</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_a4464fb5c19463be857f774e1d36dfcd0"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a4464fb5c19463be857f774e1d36dfcd0">pocketmine\errorhandler\ErrorToExceptionHandler\trapAndRemoveFalse</a></div><div class="ttdeci">static trapAndRemoveFalse(\Closure $closure, int $levels=E_WARNING|E_NOTICE)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00119">ErrorToExceptionHandler.php:119</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_a4464fb5c19463be857f774e1d36dfcd0"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a4464fb5c19463be857f774e1d36dfcd0">pocketmine\errorhandler\ErrorToExceptionHandler\trapAndRemoveFalse</a></div><div class="ttdeci">static trapAndRemoveFalse(\Closure $closure, int $levels=E_WARNING|E_NOTICE)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00115">ErrorToExceptionHandler.php:115</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_a84003081391ea9f742f5f24823b81ab9"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a84003081391ea9f742f5f24823b81ab9">pocketmine\errorhandler\ErrorToExceptionHandler\handle</a></div><div class="ttdeci">static handle(int $severity, string $message, string $file, int $line)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00039">ErrorToExceptionHandler.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_aa2e0c0b6435c0885f0799d5c1a95d53b"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">pocketmine\errorhandler\ErrorToExceptionHandler\trap</a></div><div class="ttdeci">static trap(\Closure $closure, int $levels=E_WARNING|E_NOTICE)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00100">ErrorToExceptionHandler.php:100</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_aa2e0c0b6435c0885f0799d5c1a95d53b"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aa2e0c0b6435c0885f0799d5c1a95d53b">pocketmine\errorhandler\ErrorToExceptionHandler\trap</a></div><div class="ttdeci">static trap(\Closure $closure, int $levels=E_WARNING|E_NOTICE)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00096">ErrorToExceptionHandler.php:96</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

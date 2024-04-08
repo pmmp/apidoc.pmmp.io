@@ -2,7 +2,7 @@ var classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider
 [
     [ "calculateChunkCount", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#afc331435c144a9526e7b473bb2f6abf6", null ],
     [ "close", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#aefc1ac4cdcb1fddb1eaa84ba904fe628", null ],
-    [ "deserializeChunk", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#a2074ad55468a9d64a9d09efc15659869", null ],
+    [ "deserializeChunk", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#aa8899e8f876014fbfe3c703a3d7e9e77", null ],
     [ "doGarbageCollection", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#ad570a19857dda18ddb67c9de1a8fb9a1", null ],
     [ "getAllChunks", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#a15ad5a9cc801fe8a5f86239e2edc4aa5", null ],
     [ "getCompoundList", "d6/d16/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_world_provider.html#abc05038b5160f5675fd52ddb989e7b56", null ],

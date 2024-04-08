@@ -1,6 +1,6 @@
 var classpocketmine_1_1utils_1_1_main_logger =
 [
-    [ "__construct", "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae4a49fde8e829546c928b56311998a1a", null ],
+    [ "__construct", "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a858bcdc56d24ba75b488727832dec640", null ],
     [ "alert", "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195", null ],
     [ "buffer", "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e", null ],
     [ "critical", "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e", null ],

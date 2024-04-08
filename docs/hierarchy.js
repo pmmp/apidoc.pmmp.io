@@ -403,7 +403,6 @@ var hierarchy =
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchemaBlockRemap", "d7/d03/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_block_remap.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchemaFlattenedName", "dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelBlockRemap", "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html", null ],
-    [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelFlattenedName", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelTag", "d0/d06/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_tag.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelValueRemap", "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html", null ],
     [ "pocketmine\\data\\bedrock\\block\\upgrade\\BlockStateUpgradeSchemaUtils", "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html", null ],
@@ -903,6 +902,7 @@ var hierarchy =
         [ "pocketmine\\event\\player\\PlayerViewDistanceChangeEvent", "d9/d54/classpocketmine_1_1event_1_1player_1_1_player_view_distance_change_event.html", null ]
       ] ],
       [ "pocketmine\\event\\player\\PlayerPreLoginEvent", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html", null ],
+      [ "pocketmine\\event\\player\\PlayerResourcePackOfferEvent", "da/d2e/classpocketmine_1_1event_1_1player_1_1_player_resource_pack_offer_event.html", null ],
       [ "pocketmine\\event\\plugin\\PluginEvent", "de/d58/classpocketmine_1_1event_1_1plugin_1_1_plugin_event.html", [
         [ "pocketmine\\event\\plugin\\PluginDisableEvent", "d6/d6d/classpocketmine_1_1event_1_1plugin_1_1_plugin_disable_event.html", null ],
         [ "pocketmine\\event\\plugin\\PluginEnableEvent", "d9/dca/classpocketmine_1_1event_1_1plugin_1_1_plugin_enable_event.html", null ]
@@ -1164,6 +1164,7 @@ var hierarchy =
     [ "JsonSerializable", null, [
       [ "pocketmine\\crash\\CrashDumpData", "d8/da3/classpocketmine_1_1crash_1_1_crash_dump_data.html", null ],
       [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModel", "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html", null ],
+      [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelFlattenedName", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name.html", null ],
       [ "pocketmine\\form\\Form", "d5/d7b/interfacepocketmine_1_1form_1_1_form.html", null ],
       [ "pocketmine\\item\\Item", "d5/d8a/classpocketmine_1_1item_1_1_item.html", [
         [ "pocketmine\\item\\Arrow", "de/d22/classpocketmine_1_1item_1_1_arrow.html", null ],
@@ -2137,6 +2138,13 @@ var hierarchy =
       [ "pocketmine\\world\\sound\\AnvilBreakSound", "d1/db6/classpocketmine_1_1world_1_1sound_1_1_anvil_break_sound.html", null ],
       [ "pocketmine\\world\\sound\\AnvilFallSound", "d0/d5b/classpocketmine_1_1world_1_1sound_1_1_anvil_fall_sound.html", null ],
       [ "pocketmine\\world\\sound\\AnvilUseSound", "db/d93/classpocketmine_1_1world_1_1sound_1_1_anvil_use_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipChainSound", "de/d6e/classpocketmine_1_1world_1_1sound_1_1_armor_equip_chain_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipDiamondSound", "d3/d7c/classpocketmine_1_1world_1_1sound_1_1_armor_equip_diamond_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipGenericSound", "d9/da1/classpocketmine_1_1world_1_1sound_1_1_armor_equip_generic_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipGoldSound", "d3/d89/classpocketmine_1_1world_1_1sound_1_1_armor_equip_gold_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipIronSound", "d7/d34/classpocketmine_1_1world_1_1sound_1_1_armor_equip_iron_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipLeatherSound", "d3/d80/classpocketmine_1_1world_1_1sound_1_1_armor_equip_leather_sound.html", null ],
+      [ "pocketmine\\world\\sound\\ArmorEquipNetheriteSound", "d4/dc5/classpocketmine_1_1world_1_1sound_1_1_armor_equip_netherite_sound.html", null ],
       [ "pocketmine\\world\\sound\\ArrowHitSound", "d6/d62/classpocketmine_1_1world_1_1sound_1_1_arrow_hit_sound.html", null ],
       [ "pocketmine\\world\\sound\\BarrelCloseSound", "d6/dcc/classpocketmine_1_1world_1_1sound_1_1_barrel_close_sound.html", null ],
       [ "pocketmine\\world\\sound\\BarrelOpenSound", "d7/d06/classpocketmine_1_1world_1_1sound_1_1_barrel_open_sound.html", null ],
@@ -2216,6 +2224,7 @@ var hierarchy =
       [ "pocketmine\\world\\sound\\ShulkerBoxCloseSound", "d2/d06/classpocketmine_1_1world_1_1sound_1_1_shulker_box_close_sound.html", null ],
       [ "pocketmine\\world\\sound\\ShulkerBoxOpenSound", "d6/db0/classpocketmine_1_1world_1_1sound_1_1_shulker_box_open_sound.html", null ],
       [ "pocketmine\\world\\sound\\SmokerSound", "de/d81/classpocketmine_1_1world_1_1sound_1_1_smoker_sound.html", null ],
+      [ "pocketmine\\world\\sound\\SweetBerriesPickSound", "d3/dd4/classpocketmine_1_1world_1_1sound_1_1_sweet_berries_pick_sound.html", null ],
       [ "pocketmine\\world\\sound\\ThrowSound", "d9/d18/classpocketmine_1_1world_1_1sound_1_1_throw_sound.html", null ],
       [ "pocketmine\\world\\sound\\TotemUseSound", "de/dbd/classpocketmine_1_1world_1_1sound_1_1_totem_use_sound.html", null ],
       [ "pocketmine\\world\\sound\\WaterSplashSound", "df/d82/classpocketmine_1_1world_1_1sound_1_1_water_splash_sound.html", null ],

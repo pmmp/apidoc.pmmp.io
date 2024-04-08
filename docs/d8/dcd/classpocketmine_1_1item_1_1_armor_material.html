@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -100,23 +100,25 @@ $(document).ready(function(){initNavTree('d8/dcd/classpocketmine_1_1item_1_1_arm
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d27/classpocketmine_1_1item_1_1_armor_material__coll__graph.svg" width="242" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d27/classpocketmine_1_1item_1_1_armor_material__coll__graph.svg" width="242" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d285c9fa54d22a9d9b171c5067e36e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcd/classpocketmine_1_1item_1_1_armor_material.html#a0d285c9fa54d22a9d9b171c5067e36e1">__construct</a> (private readonly int $enchantability)</td></tr>
-<tr class="separator:a0d285c9fa54d22a9d9b171c5067e36e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fee30c3f15a53d34ecd56aeba30818c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcd/classpocketmine_1_1item_1_1_armor_material.html#a3fee30c3f15a53d34ecd56aeba30818c">__construct</a> (private readonly int $enchantability, private readonly ?<a class="el" href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">Sound</a> $equipSound=null)</td></tr>
+<tr class="separator:a3fee30c3f15a53d34ecd56aeba30818c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf2ee19a785915aa400d03eede3f0331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcd/classpocketmine_1_1item_1_1_armor_material.html#adf2ee19a785915aa400d03eede3f0331">getEnchantability</a> ()</td></tr>
 <tr class="separator:adf2ee19a785915aa400d03eede3f0331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50677e3f2913e0635c5b240eea0a3c78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcd/classpocketmine_1_1item_1_1_armor_material.html#a50677e3f2913e0635c5b240eea0a3c78">getEquipSound</a> ()</td></tr>
+<tr class="separator:a50677e3f2913e0635c5b240eea0a3c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00026">26</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00028">28</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0d285c9fa54d22a9d9b171c5067e36e1" name="a0d285c9fa54d22a9d9b171c5067e36e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d285c9fa54d22a9d9b171c5067e36e1">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a3fee30c3f15a53d34ecd56aeba30818c" name="a3fee30c3f15a53d34ecd56aeba30818c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fee30c3f15a53d34ecd56aeba30818c">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,13 +127,23 @@ Public Member Functions</h2></td></tr>
           <td class="memname">pocketmine\item\ArmorMaterial::__construct </td>
           <td>(</td>
           <td class="paramtype">private readonly int&#160;</td>
-          <td class="paramname"><em>$enchantability</em></td><td>)</td>
+          <td class="paramname"><em>$enchantability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">private readonly ?<a class="el" href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>$equipSound</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00028">28</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00030">30</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
 
 </div>
 </div>
@@ -153,7 +165,27 @@ Public Member Functions</h2></td></tr>
 <p >Returns the value that defines how enchantable the item is.</p>
 <p >The higher an item's enchantability is, the more likely it will be to gain high-level enchantments or multiple enchantments upon being enchanted in an enchanting table. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00039">39</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00042">42</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
+
+</div>
+</div>
+<a id="a50677e3f2913e0635c5b240eea0a3c78" name="a50677e3f2913e0635c5b240eea0a3c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50677e3f2913e0635c5b240eea0a3c78">&#9670;&nbsp;</a></span>getEquipSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\item\ArmorMaterial::getEquipSound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the sound that plays when equipping the armor </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d31/_armor_material_8php_source.html#l00049">49</a> of file <a class="el" href="../../dd/d31/_armor_material_8php_source.html">ArmorMaterial.php</a>.</p>
 
 </div>
 </div>

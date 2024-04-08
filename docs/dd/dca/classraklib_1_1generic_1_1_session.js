@@ -1,5 +1,6 @@
 var classraklib_1_1generic_1_1_session =
 [
+    [ "__construct", "dd/dca/classraklib_1_1generic_1_1_session.html#a90571d767bc2d833266b1e064ab3bf89", null ],
     [ "forciblyDisconnect", "dd/dca/classraklib_1_1generic_1_1_session.html#aaafee10e90e9e793b322c8506181a07f", null ],
     [ "getRakNetTimeMS", "dd/dca/classraklib_1_1generic_1_1_session.html#a859fe2edae3c788d54045b1b8af4f203", null ],
     [ "handleRakNetConnectionPacket", "dd/dca/classraklib_1_1generic_1_1_session.html#a00ae8b59f6935e1cca48c8499e2a9805", null ],

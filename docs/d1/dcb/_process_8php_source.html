@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('d1/dcb/_process_8php_source.html','../
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../df/dca/classpocketmine_1_1thread_1_1_thread_manager.html">pocketmine\thread\ThreadManager</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">pocketmine\thread\Thread</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">function</span> count;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> exec;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> fclose;</div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('d1/dcb/_process_8php_source.html','../
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="comment">//TODO: more OS</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> count(ThreadManager::getInstance()-&gt;getAll()) + 2; <span class="comment">//MainLogger + Main Thread</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> Thread::getRunningCount() + 1; <span class="comment">//pmmpthread doesn&#39;t count the main thread</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">  131</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">kill</a>(<span class="keywordtype">int</span> $pid, <span class="keywordtype">bool</span> $subprocesses = <span class="keyword">false</span>) : void{</div>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('d1/dcb/_process_8php_source.html','../
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>}</div>
 <div class="ttc" id="aclass_global_logger_html"><div class="ttname"><a href="../../df/db6/class_global_logger.html">GlobalLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d2a/_global_logger_8php_source.html#l00024">GlobalLogger.php:24</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_manager_html"><div class="ttname"><a href="../../df/dca/classpocketmine_1_1thread_1_1_thread_manager.html">pocketmine\thread\ThreadManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d38/_thread_manager_8php_source.html#l00030">ThreadManager.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_html"><div class="ttname"><a href="../../d0/d6e/classpocketmine_1_1thread_1_1_thread.html">pocketmine\thread\Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d47/_thread_8php_source.html#l00038">Thread.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_main_logger_html"><div class="ttname"><a href="../../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html">pocketmine\utils\MainLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_main_logger_8php_source.html#l00035">MainLogger.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_process_html"><div class="ttname"><a href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">pocketmine\utils\Process</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dcb/_process_8php_source.html#l00045">Process.php:45</a></div></div>

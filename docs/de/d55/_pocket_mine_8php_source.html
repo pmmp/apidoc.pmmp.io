@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -211,8 +211,8 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">if</span>(($pmmpthread_version = phpversion(<span class="stringliteral">&quot;pmmpthread&quot;</span>)) !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">if</span>(version_compare($pmmpthread_version, <span class="stringliteral">&quot;6.0.7&quot;</span>) &lt; 0 || version_compare($pmmpthread_version, <span class="stringliteral">&quot;7.0.0&quot;</span>) &gt;= 0){</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                $messages[] = <span class="stringliteral">&quot;pmmpthread ^6.0.7 is required, while you have $pmmpthread_version.&quot;</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">if</span>(version_compare($pmmpthread_version, <span class="stringliteral">&quot;6.1.0&quot;</span>) &lt; 0 || version_compare($pmmpthread_version, <span class="stringliteral">&quot;7.0.0&quot;</span>) &gt;= 0){</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                $messages[] = <span class="stringliteral">&quot;pmmpthread ^6.1.0 is required, while you have $pmmpthread_version.&quot;</span>;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            }</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
@@ -353,7 +353,7 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            }</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a6f6d362254f31df4b2979395e49be484">ErrorToExceptionHandler::set</a>();</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <a class="code hl_function" href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aff8479335cdc6700233da6667b7649f4">ErrorToExceptionHandler::set</a>();</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span>(count(getopt(<span class="stringliteral">&quot;&quot;</span>, [<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a03ef9280ab0ac44437039fb81fc65c2c">BootstrapOptions::VERSION</a>])) &gt; 0){</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            printf(<span class="stringliteral">&quot;%s %s (git hash %s) for Minecraft: Bedrock Edition %s\n&quot;</span>, VersionInfo::NAME, VersionInfo::VERSION()-&gt;getFullVersion(<span class="keyword">true</span>), VersionInfo::GIT_HASH(), <a class="code hl_variable" href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#a36a85ec061c7b725a2c2d792b5399e98">ProtocolInfo::MINECRAFT_VERSION</a>);</div>
@@ -395,7 +395,7 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <span class="comment">//Logger has a dependency on timezone</span></div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        Timezone::init();</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        $opts = getopt(<span class="stringliteral">&quot;&quot;</span>, [<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a5c10a88a206e866c9a75913876830efa">BootstrapOptions::NO_WIZARD</a>, <a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a8ff03d51067767a3e4b89e18a9701140">BootstrapOptions::ENABLE_ANSI</a>, <a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a26388a62b5ecd73cbaa5295261ee679f">BootstrapOptions::DISABLE_ANSI</a>]);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        $opts = getopt(<span class="stringliteral">&quot;&quot;</span>, [<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a5c10a88a206e866c9a75913876830efa">BootstrapOptions::NO_WIZARD</a>, <a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a8ff03d51067767a3e4b89e18a9701140">BootstrapOptions::ENABLE_ANSI</a>, <a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a26388a62b5ecd73cbaa5295261ee679f">BootstrapOptions::DISABLE_ANSI</a>, <a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a59b270492ebd9a47e0a06e302101e2e4">BootstrapOptions::NO_LOG_FILE</a>]);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordflow">if</span>(isset($opts[<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a8ff03d51067767a3e4b89e18a9701140">BootstrapOptions::ENABLE_ANSI</a>])){</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            Terminal::init(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        }elseif(isset($opts[<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a26388a62b5ecd73cbaa5295261ee679f">BootstrapOptions::DISABLE_ANSI</a>])){</div>
@@ -403,61 +403,67 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        }<span class="keywordflow">else</span>{</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            Terminal::init();</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        }</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        $logger = <span class="keyword">new</span> MainLogger(Path::join($dataPath, <span class="stringliteral">&quot;server.log&quot;</span>), Terminal::hasFormattingCodes(), <span class="stringliteral">&quot;Server&quot;</span>, <span class="keyword">new</span> \DateTimeZone(Timezone::get()));</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        \GlobalLogger::set($logger);</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#acc028521d7480726dbb9f9c4b6aecb83">emit_performance_warnings</a>($logger);</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        $exitCode = 0;</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">do</span>{</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <span class="keywordflow">if</span>(!file_exists(Path::join($dataPath, <span class="stringliteral">&quot;server.properties&quot;</span>)) &amp;&amp; !isset($opts[<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a5c10a88a206e866c9a75913876830efa">BootstrapOptions::NO_WIZARD</a>])){</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                $installer = <span class="keyword">new</span> SetupWizard($dataPath);</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                <span class="keywordflow">if</span>(!$installer-&gt;run()){</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                    $exitCode = -1;</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                }</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            }</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <span class="comment">/*</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">             * We now use the Composer autoloader, but this autoloader is still for loading plugins.</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">             */</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            $autoloader = <span class="keyword">new</span> ThreadSafeClassLoader();</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            $autoloader-&gt;register(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <span class="keyword">new</span> Server($autoloader, $logger, $dataPath, $pluginPath);</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#aa4d33ee7970ea31d82718dec8e1be1f9">info</a>(<span class="stringliteral">&quot;Stopping other threads&quot;</span>);</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            $killer = <span class="keyword">new</span> ServerKiller(8);</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            $killer-&gt;start();</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            usleep(10000); <span class="comment">//Fixes ServerKiller not being able to start on single-core machines</span></div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            <span class="keywordflow">if</span>(ThreadManager::getInstance()-&gt;stopAll() &gt; 0){</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#a292490915449087879e8250c5d66bfd2">debug</a>(<span class="stringliteral">&quot;Some threads could not be stopped, performing a force-kill&quot;</span>);</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">Process::kill</a>(Process::pid());</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            }</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        }<span class="keywordflow">while</span>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        $logger-&gt;shutdownLogWriterThread();</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        echo Terminal::$FORMAT_RESET . PHP_EOL;</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">Filesystem::releaseLockFile</a>($lockFilePath);</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        exit($exitCode);</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        $logFile = isset($opts[<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a59b270492ebd9a47e0a06e302101e2e4">BootstrapOptions::NO_LOG_FILE</a>]) ? null : Path::join($dataPath, <span class="stringliteral">&quot;server.log&quot;</span>);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        $logger = <span class="keyword">new</span> MainLogger($logFile, Terminal::hasFormattingCodes(), <span class="stringliteral">&quot;Server&quot;</span>, <span class="keyword">new</span> \DateTimeZone(Timezone::get()), <span class="keyword">false</span>, Path::join($dataPath, <span class="stringliteral">&quot;log_archive&quot;</span>));</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keywordflow">if</span>($logFile === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#a54be4b7ff0c72b3fa4b88624a6d4742e">notice</a>(<span class="stringliteral">&quot;Logging to file disabled. Ensure logs are collected by other means (e.g. Docker logs).&quot;</span>);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        }</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        \GlobalLogger::set($logger);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#acc028521d7480726dbb9f9c4b6aecb83">emit_performance_warnings</a>($logger);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        $exitCode = 0;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">do</span>{</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="keywordflow">if</span>(!file_exists(Path::join($dataPath, <span class="stringliteral">&quot;server.properties&quot;</span>)) &amp;&amp; !isset($opts[<a class="code hl_variable" href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a5c10a88a206e866c9a75913876830efa">BootstrapOptions::NO_WIZARD</a>])){</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                $installer = <span class="keyword">new</span> SetupWizard($dataPath);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                <span class="keywordflow">if</span>(!$installer-&gt;run()){</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                    $exitCode = -1;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            }</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            <span class="comment">/*</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">             * We now use the Composer autoloader, but this autoloader is still for loading plugins.</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">             */</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            $autoloader = <span class="keyword">new</span> ThreadSafeClassLoader();</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            $autoloader-&gt;register(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            <span class="keyword">new</span> Server($autoloader, $logger, $dataPath, $pluginPath);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#aa4d33ee7970ea31d82718dec8e1be1f9">info</a>(<span class="stringliteral">&quot;Stopping other threads&quot;</span>);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            $killer = <span class="keyword">new</span> ServerKiller(8);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            $killer-&gt;start();</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            usleep(10000); <span class="comment">//Fixes ServerKiller not being able to start on single-core machines</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            <span class="keywordflow">if</span>(ThreadManager::getInstance()-&gt;stopAll() &gt; 0){</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                $logger-&gt;<a class="code hl_function" href="../../d4/d00/interface_logger.html#a292490915449087879e8250c5d66bfd2">debug</a>(<span class="stringliteral">&quot;Some threads could not be stopped, performing a force-kill&quot;</span>);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">Process::kill</a>(Process::pid());</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            }</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        }<span class="keywordflow">while</span>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        $logger-&gt;shutdownLogWriterThread();</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        echo Terminal::$FORMAT_RESET . PHP_EOL;</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    \pocketmine\server();</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <a class="code hl_function" href="../../da/ddd/classpocketmine_1_1utils_1_1_filesystem.html#a711896a81412dc85c2d66fc8f7ac3fd7">Filesystem::releaseLockFile</a>($lockFilePath);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        exit($exitCode);</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    }</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    \pocketmine\server();</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_a03ef9280ab0ac44437039fb81fc65c2c"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a03ef9280ab0ac44437039fb81fc65c2c">pocketmine\BootstrapOptions\VERSION</a></div><div class="ttdeci">const VERSION</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00049">BootstrapOptions.php:49</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_a26388a62b5ecd73cbaa5295261ee679f"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a26388a62b5ecd73cbaa5295261ee679f">pocketmine\BootstrapOptions\DISABLE_ANSI</a></div><div class="ttdeci">const DISABLE_ANSI</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00041">BootstrapOptions.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_a59b270492ebd9a47e0a06e302101e2e4"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a59b270492ebd9a47e0a06e302101e2e4">pocketmine\BootstrapOptions\NO_LOG_FILE</a></div><div class="ttdeci">const NO_LOG_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00051">BootstrapOptions.php:51</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_a5c10a88a206e866c9a75913876830efa"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a5c10a88a206e866c9a75913876830efa">pocketmine\BootstrapOptions\NO_WIZARD</a></div><div class="ttdeci">const NO_WIZARD</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00039">BootstrapOptions.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_a7b54ac127eff1ec81baca04f1147d3d4"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a7b54ac127eff1ec81baca04f1147d3d4">pocketmine\BootstrapOptions\DATA</a></div><div class="ttdeci">const DATA</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00047">BootstrapOptions.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_a8ff03d51067767a3e4b89e18a9701140"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a8ff03d51067767a3e4b89e18a9701140">pocketmine\BootstrapOptions\ENABLE_ANSI</a></div><div class="ttdeci">const ENABLE_ANSI</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00043">BootstrapOptions.php:43</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_bootstrap_options_html_ad4735a0d96f29428629ff3c386b6d9d4"><div class="ttname"><a href="../../d7/dbe/classpocketmine_1_1_bootstrap_options.html#ad4735a0d96f29428629ff3c386b6d9d4">pocketmine\BootstrapOptions\PLUGINS</a></div><div class="ttdeci">const PLUGINS</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d41/_bootstrap_options_8php_source.html#l00045">BootstrapOptions.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html">pocketmine\errorhandler\ErrorToExceptionHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00028">ErrorToExceptionHandler.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_a6f6d362254f31df4b2979395e49be484"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#a6f6d362254f31df4b2979395e49be484">pocketmine\errorhandler\ErrorToExceptionHandler\set</a></div><div class="ttdeci">static set()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00069">ErrorToExceptionHandler.php:69</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_to_exception_handler_html_aff8479335cdc6700233da6667b7649f4"><div class="ttname"><a href="../../df/d6a/classpocketmine_1_1errorhandler_1_1_error_to_exception_handler.html#aff8479335cdc6700233da6667b7649f4">pocketmine\errorhandler\ErrorToExceptionHandler\set</a></div><div class="ttdeci">static set(int $levels=E_WARNING|E_NOTICE)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/_error_to_exception_handler_8php_source.html#l00069">ErrorToExceptionHandler.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info_html"><div class="ttname"><a href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html">pocketmine\network\mcpe\protocol\ProtocolInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d97/_protocol_info_8php_source.html#l00020">ProtocolInfo.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info_html_a36a85ec061c7b725a2c2d792b5399e98"><div class="ttname"><a href="../../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#a36a85ec061c7b725a2c2d792b5399e98">pocketmine\network\mcpe\protocol\ProtocolInfo\MINECRAFT_VERSION</a></div><div class="ttdeci">const MINECRAFT_VERSION</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d97/_protocol_info_8php_source.html#l00037">ProtocolInfo.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_manager_html"><div class="ttname"><a href="../../df/dca/classpocketmine_1_1thread_1_1_thread_manager.html">pocketmine\thread\ThreadManager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d38/_thread_manager_8php_source.html#l00030">ThreadManager.php:30</a></div></div>
@@ -476,6 +482,7 @@ $(document).ready(function(){initNavTree('de/d55/_pocket_mine_8php_source.html',
 <div class="ttc" id="aclasspocketmine_1_1wizard_1_1_setup_wizard_html"><div class="ttname"><a href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html">pocketmine\wizard\SetupWizard</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcd/_setup_wizard_8php_source.html#l00050">SetupWizard.php:50</a></div></div>
 <div class="ttc" id="ainterface_logger_html"><div class="ttname"><a href="../../d4/d00/interface_logger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d41/_logger_8php_source.html#l00018">Logger.php:18</a></div></div>
 <div class="ttc" id="ainterface_logger_html_a292490915449087879e8250c5d66bfd2"><div class="ttname"><a href="../../d4/d00/interface_logger.html#a292490915449087879e8250c5d66bfd2">Logger\debug</a></div><div class="ttdeci">debug($message)</div></div>
+<div class="ttc" id="ainterface_logger_html_a54be4b7ff0c72b3fa4b88624a6d4742e"><div class="ttname"><a href="../../d4/d00/interface_logger.html#a54be4b7ff0c72b3fa4b88624a6d4742e">Logger\notice</a></div><div class="ttdeci">notice($message)</div></div>
 <div class="ttc" id="ainterface_logger_html_aa4d33ee7970ea31d82718dec8e1be1f9"><div class="ttname"><a href="../../d4/d00/interface_logger.html#aa4d33ee7970ea31d82718dec8e1be1f9">Logger\info</a></div><div class="ttdeci">info($message)</div></div>
 <div class="ttc" id="ainterface_logger_html_ad54bbff79aa1516f11f01b47b6a0486f"><div class="ttname"><a href="../../d4/d00/interface_logger.html#ad54bbff79aa1516f11f01b47b6a0486f">Logger\warning</a></div><div class="ttdeci">warning($message)</div></div>
 <div class="ttc" id="anamespacepocketmine_html"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html">pocketmine</a></div></div>

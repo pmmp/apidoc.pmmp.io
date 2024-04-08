@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('d4/d06/classpocketmine_1_1network_1_1m
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c006a6e0e3c5fc31120df56d9086926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d06/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler.html#a7c006a6e0e3c5fc31120df56d9086926">__construct</a> (private <a class="el" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session, private <a class="el" href="../../d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html">ResourcePackManager</a> $resourcePackManager, private \Closure $completionCallback)</td></tr>
-<tr class="separator:a7c006a6e0e3c5fc31120df56d9086926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5923bba406c30385243ed1952adb23f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d06/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler.html#a5923bba406c30385243ed1952adb23f5">__construct</a> (private <a class="el" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session, private array $resourcePackStack, private array $encryptionKeys, private bool $mustAccept, private \Closure $completionCallback)</td></tr>
+<tr class="separator:a5923bba406c30385243ed1952adb23f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a842b7199f3eadadf8a112f1c9a58f642"><td class="memItemLeft" align="right" valign="top"><a id="a842b7199f3eadadf8a112f1c9a58f642" name="a842b7199f3eadadf8a112f1c9a58f642"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleActorEvent</b> (<a class="el" href="../../d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html">ActorEventPacket</a> $packet)</td></tr>
 <tr class="separator:a842b7199f3eadadf8a112f1c9a58f642"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -708,10 +708,10 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Handler used for the resource packs sequence phase of the session. This handler takes care of downloading resource packs to the client. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00052">52</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00053">53</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7c006a6e0e3c5fc31120df56d9086926" name="a7c006a6e0e3c5fc31120df56d9086926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c006a6e0e3c5fc31120df56d9086926">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a5923bba406c30385243ed1952adb23f5" name="a5923bba406c30385243ed1952adb23f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5923bba406c30385243ed1952adb23f5">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -725,8 +725,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">private <a class="el" href="../../d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html">ResourcePackManager</a>&#160;</td>
-          <td class="paramname"><em>$resourcePackManager</em>, </td>
+          <td class="paramtype">private array&#160;</td>
+          <td class="paramname"><em>$resourcePackStack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">private array&#160;</td>
+          <td class="paramname"><em>$encryptionKeys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">private bool&#160;</td>
+          <td class="paramname"><em>$mustAccept</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -741,9 +753,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >@phpstan-param \Closure() : void $completionCallback </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">ResourcePack[]</td><td class="paramname">$resourcePackStack</td><td></td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$encryptionKeys</td><td>pack UUID =&gt; key, leave unset for any packs that are not encrypted</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>@phpstan-param list&lt;ResourcePack&gt; $resourcePackStack @phpstan-param array&lt;string, string&gt; $encryptionKeys @phpstan-param \Closure() : void $completionCallback </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00061">61</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00084">84</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -766,7 +785,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00161">161</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00194">194</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -788,7 +807,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00102">102</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00135">135</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -809,7 +828,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html">pocketmine\network\mcpe\handler\PacketHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00067">67</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00101">101</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 
 </div>
 </div>

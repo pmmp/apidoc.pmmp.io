@@ -208,7 +208,8 @@ var searchData=
   ['swampbiome_205',['SwampBiome',['../d1/dd8/classpocketmine_1_1world_1_1biome_1_1_swamp_biome.html',1,'pocketmine::world::biome']]],
   ['swapstackrequestaction_206',['SwapStackRequestAction',['../de/db2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_swap_stack_request_action.html',1,'pocketmine::network::mcpe::protocol::types::inventory::stackrequest']]],
   ['sweetberries_207',['SweetBerries',['../d6/da0/classpocketmine_1_1item_1_1_sweet_berries.html',1,'pocketmine::item']]],
-  ['sweetberrybush_208',['SweetBerryBush',['../d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html',1,'pocketmine::block']]],
-  ['sword_209',['Sword',['../d6/d74/classpocketmine_1_1item_1_1_sword.html',1,'pocketmine::item']]],
-  ['syncactorpropertypacket_210',['SyncActorPropertyPacket',['../dc/d98/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sync_actor_property_packet.html',1,'pocketmine::network::mcpe::protocol']]]
+  ['sweetberriespicksound_208',['SweetBerriesPickSound',['../d3/dd4/classpocketmine_1_1world_1_1sound_1_1_sweet_berries_pick_sound.html',1,'pocketmine::world::sound']]],
+  ['sweetberrybush_209',['SweetBerryBush',['../d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html',1,'pocketmine::block']]],
+  ['sword_210',['Sword',['../d6/d74/classpocketmine_1_1item_1_1_sword.html',1,'pocketmine::item']]],
+  ['syncactorpropertypacket_211',['SyncActorPropertyPacket',['../dc/d98/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sync_actor_property_packet.html',1,'pocketmine::network::mcpe::protocol']]]
 ];

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.13.1 git-11f119551dec2771f0af8b9ae25e88a67d854b16</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-55cf24aa02ae0f46cc5741ea0964cdeaaa318c15</span>
    </div>
   </td>
  </tr>
@@ -106,17 +106,17 @@ $(document).ready(function(){initNavTree('dc/d0d/classpocketmine_1_1data_1_1bedr
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16bc90fa8fa1b8ed888ade1bbccf7929"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html#a16bc90fa8fa1b8ed888ade1bbccf7929">__construct</a> (public string $prefix, public string $flattenedProperty, public string $suffix)</td></tr>
-<tr class="separator:a16bc90fa8fa1b8ed888ade1bbccf7929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b2b6356a7b3f422f32ae51e44a5f53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html#a44b2b6356a7b3f422f32ae51e44a5f53">__construct</a> (public string $prefix, public string $flattenedProperty, public string $suffix, public array $flattenedValueRemaps)</td></tr>
+<tr class="separator:a44b2b6356a7b3f422f32ae51e44a5f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cdc000885dbf216aaa2185c31f490e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html#a9cdc000885dbf216aaa2185c31f490e8">equals</a> (self $that)</td></tr>
 <tr class="separator:a9cdc000885dbf216aaa2185c31f490e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html#l00026">26</a> of file <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html">BlockStateUpgradeSchemaFlattenedName.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html#l00029">29</a> of file <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html">BlockStateUpgradeSchemaFlattenedName.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a16bc90fa8fa1b8ed888ade1bbccf7929" name="a16bc90fa8fa1b8ed888ade1bbccf7929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16bc90fa8fa1b8ed888ade1bbccf7929">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a44b2b6356a7b3f422f32ae51e44a5f53" name="a44b2b6356a7b3f422f32ae51e44a5f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b2b6356a7b3f422f32ae51e44a5f53">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +137,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">public string&#160;</td>
-          <td class="paramname"><em>$suffix</em>&#160;</td>
+          <td class="paramname"><em>$suffix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">public array&#160;</td>
+          <td class="paramname"><em>$flattenedValueRemaps</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -146,8 +152,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string[]</td><td class="paramname">$flattenedValueRemaps</td><td>@phpstan-param array&lt;string, string&gt; $flattenedValueRemaps </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html#l00028">28</a> of file <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html">BlockStateUpgradeSchemaFlattenedName.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html#l00035">35</a> of file <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html">BlockStateUpgradeSchemaFlattenedName.php</a>.</p>
 
 </div>
 </div>
@@ -168,7 +180,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html#l00034">34</a> of file <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html">BlockStateUpgradeSchemaFlattenedName.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html#l00044">44</a> of file <a class="el" href="../../db/dae/_block_state_upgrade_schema_flattened_name_8php_source.html">BlockStateUpgradeSchemaFlattenedName.php</a>.</p>
 
 </div>
 </div>
