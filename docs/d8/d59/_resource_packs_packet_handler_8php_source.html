@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-50e2c469a547a16a23b2dc691e70a51d34e29395</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-be6754494fdbbb9dd57c058ba0e33a4a78c4581f</span>
    </div>
   </td>
  </tr>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('d8/d59/_resource_packs_packet_handler_
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                <span class="comment">//we don&#39;t force here, because it doesn&#39;t have user-facing effects</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <span class="comment">//but it does have an annoying side-effect when true: it makes</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                <span class="comment">//the client remove its own non-server-supplied resource packs.</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                $this-&gt;session-&gt;sendDataPacket(ResourcePackStackPacket::create($stack, [], <span class="keyword">false</span>, ProtocolInfo::MINECRAFT_VERSION_NETWORK, <span class="keyword">new</span> Experiments([], <span class="keyword">false</span>)));</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                $this-&gt;session-&gt;sendDataPacket(ResourcePackStackPacket::create($stack, [], <span class="keyword">false</span>, ProtocolInfo::MINECRAFT_VERSION_NETWORK, <span class="keyword">new</span> Experiments([], <span class="keyword">false</span>), <span class="keyword">false</span>));</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                $this-&gt;session-&gt;getLogger()-&gt;debug(<span class="stringliteral">&quot;Applying resource pack stack&quot;</span>);</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            <span class="keywordflow">case</span> ResourcePackClientResponsePacket::STATUS_COMPLETED:</div>

@@ -15,6 +15,7 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deser
     [ "decodeLog", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a83e6cf108c417be2b09cbb80aea5b5e6", null ],
     [ "decodeMushroomBlock", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a1b9ba4581490639f47d4d0de01dcf2e2", null ],
     [ "decodeRepeater", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a0a746602d0a15a3c8d18510247aef41d", null ],
+    [ "decodeSapling", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a9b3807f8379596818b156d6fe188747d", null ],
     [ "decodeSimplePressurePlate", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ad966e2452a792a28fb7b0496d525e634", null ],
     [ "decodeStairs", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a50d914f1667dfbc46013aa46dc1dc26e", null ],
     [ "decodeStem", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a76af9af8bc188b92a21c782ced89d7e8", null ],

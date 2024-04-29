@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-50e2c469a547a16a23b2dc691e70a51d34e29395</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-be6754494fdbbb9dd57c058ba0e33a4a78c4581f</span>
    </div>
   </td>
  </tr>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1d349f72ac99bee19350358fe8745ab"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_pack_stack_packet.html#ae1d349f72ac99bee19350358fe8745ab">create</a> (array $resourcePackStack, array $behaviorPackStack, bool $mustAccept, string $baseGameVersion, <a class="el" href="../../db/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_experiments.html">Experiments</a> $experiments)</td></tr>
-<tr class="separator:ae1d349f72ac99bee19350358fe8745ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35eea1c9a905a15e11e170688e3d1efd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_pack_stack_packet.html#a35eea1c9a905a15e11e170688e3d1efd">create</a> (array $resourcePackStack, array $behaviorPackStack, bool $mustAccept, string $baseGameVersion, <a class="el" href="../../db/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_experiments.html">Experiments</a> $experiments, bool $useVanillaEditorPacks)</td></tr>
+<tr class="separator:a35eea1c9a905a15e11e170688e3d1efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -155,6 +155,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a478f45581bedaed76cec5f3ba5069119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#adaad4a5e300a6eefe7bd9cb321626ba6">$senderSubId</a> = 0</td></tr>
 <tr class="separator:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5689d4f3b4d4f7378b6d6cdb1dde9602"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_pack_stack_packet.html#a5689d4f3b4d4f7378b6d6cdb1dde9602">$useVanillaEditorPacks</a></td></tr>
+<tr class="separator:a5689d4f3b4d4f7378b6d6cdb1dde9602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6587b05ef15607b3e2ad4957d03b9d4c"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_pack_stack_packet.html#a6587b05ef15607b3e2ad4957d03b9d4c">NETWORK_ID</a> = ProtocolInfo::RESOURCE_PACK_STACK_PACKET</td></tr>
 <tr class="separator:a6587b05ef15607b3e2ad4957d03b9d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3431ad9592d959cbe302d5706b8cad82"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a3431ad9592d959cbe302d5706b8cad82">PID_MASK</a> = 0x3ff</td></tr>
@@ -284,8 +286,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1d349f72ac99bee19350358fe8745ab" name="ae1d349f72ac99bee19350358fe8745ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1d349f72ac99bee19350358fe8745ab">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a35eea1c9a905a15e11e170688e3d1efd" name="a35eea1c9a905a15e11e170688e3d1efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35eea1c9a905a15e11e170688e3d1efd">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +323,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../db/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_experiments.html">Experiments</a>&#160;</td>
-          <td class="paramname"><em>$experiments</em>&#160;</td>
+          <td class="paramname"><em>$experiments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$useVanillaEditorPacks</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -343,7 +351,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00038">38</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
 
 </div>
 </div>
@@ -452,7 +460,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00050">50</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
 
 </div>
 </div>
@@ -541,7 +549,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00064">64</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00067">67</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
 
 </div>
 </div>
@@ -602,7 +610,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00081">81</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00085">85</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
 
 </div>
 </div>
@@ -761,6 +769,22 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/db7/_data_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../d1/db7/_data_packet_8php_source.html">DataPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a5689d4f3b4d4f7378b6d6cdb1dde9602" name="a5689d4f3b4d4f7378b6d6cdb1dde9602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5689d4f3b4d4f7378b6d6cdb1dde9602">&#9670;&nbsp;</a></span>$useVanillaEditorPacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pocketmine\network\mcpe\protocol\ResourcePackStackPacket::$useVanillaEditorPacks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d2/d24/_resource_pack_stack_packet_8php_source.html">ResourcePackStackPacket.php</a>.</p>
 
 </div>
 </div>

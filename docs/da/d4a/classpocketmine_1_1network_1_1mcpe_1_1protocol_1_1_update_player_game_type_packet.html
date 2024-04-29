@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.14.2 git-50e2c469a547a16a23b2dc691e70a51d34e29395</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-be6754494fdbbb9dd57c058ba0e33a4a78c4581f</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b93c373711df34306f6fa98ded5d78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html#ac6b93c373711df34306f6fa98ded5d78">getPlayerActorUniqueId</a> ()</td></tr>
 <tr class="separator:ac6b93c373711df34306f6fa98ded5d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138cba8c98c50072253bc93a03eb767c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html#a138cba8c98c50072253bc93a03eb767c">getTick</a> ()</td></tr>
+<tr class="separator:a138cba8c98c50072253bc93a03eb767c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab322c0fbe02efc63929dc2bf38a1f6d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html#ab322c0fbe02efc63929dc2bf38a1f6d4">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
 <tr class="separator:ab322c0fbe02efc63929dc2bf38a1f6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a42c2432f23e1c1b69a82f90588c1dbf5">pid</a> ()</td></tr>
@@ -140,8 +142,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3111f3e6a4b7907be280c049b43627d2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html#a3111f3e6a4b7907be280c049b43627d2">create</a> (int $gameMode, int $playerActorUniqueId)</td></tr>
-<tr class="separator:a3111f3e6a4b7907be280c049b43627d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0169562bbcbf78ce00f59554391b7847"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_player_game_type_packet.html#a0169562bbcbf78ce00f59554391b7847">create</a> (int $gameMode, int $playerActorUniqueId, int $tick)</td></tr>
+<tr class="separator:a0169562bbcbf78ce00f59554391b7847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -278,8 +280,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3111f3e6a4b7907be280c049b43627d2" name="a3111f3e6a4b7907be280c049b43627d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3111f3e6a4b7907be280c049b43627d2">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a0169562bbcbf78ce00f59554391b7847" name="a0169562bbcbf78ce00f59554391b7847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0169562bbcbf78ce00f59554391b7847">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +299,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$playerActorUniqueId</em>&#160;</td>
+          <td class="paramname"><em>$playerActorUniqueId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$tick</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,7 +321,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00030">30</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
 
 </div>
 </div>
@@ -422,7 +430,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
 
 </div>
 </div>
@@ -511,7 +519,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00046">46</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00051">51</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
 
 </div>
 </div>
@@ -530,7 +538,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
 
 </div>
 </div>
@@ -578,7 +586,26 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a138cba8c98c50072253bc93a03eb767c" name="a138cba8c98c50072253bc93a03eb767c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138cba8c98c50072253bc93a03eb767c">&#9670;&nbsp;</a></span>getTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\UpdatePlayerGameTypePacket::getTick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
 
 </div>
 </div>
@@ -610,7 +637,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00051">51</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d6/d0b/_update_player_game_type_packet_8php_source.html">UpdatePlayerGameTypePacket.php</a>.</p>
 
 </div>
 </div>

@@ -341,7 +341,6 @@ var namespacepocketmine_1_1network =
         [ "EmoteListPacket", "dc/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_list_packet.html", "dc/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_list_packet" ],
         [ "EmotePacket", "d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet.html", "d7/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_emote_packet" ],
         [ "FeatureRegistryPacket", "d5/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_feature_registry_packet.html", "d5/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_feature_registry_packet" ],
-        [ "FilterTextPacket", "dd/d0e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_filter_text_packet.html", "dd/d0e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_filter_text_packet" ],
         [ "GameRulesChangedPacket", "db/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_rules_changed_packet.html", "db/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_rules_changed_packet" ],
         [ "GameTestRequestPacket", "da/d1b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_test_request_packet.html", "da/d1b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_test_request_packet" ],
         [ "GameTestResultsPacket", "d8/d79/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_test_results_packet.html", "d8/d79/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_game_test_results_packet" ],
