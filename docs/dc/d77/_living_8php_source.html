@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-be6754494fdbbb9dd57c058ba0e33a4a78c4581f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-ed158f8a1b0cfe334ac5f45febc0f633602014f2</span>
    </div>
   </td>
  </tr>
@@ -602,304 +602,311 @@ $(document).ready(function(){initNavTree('dc/d77/_living_8php_source.html','../.
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        }</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        $this-&gt;attackTime = $source-&gt;getAttackCooldown();</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        <span class="keywordflow">if</span>($source instanceof EntityDamageByChildEntityEvent){</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>            $e = $source-&gt;getChild();</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>            <span class="keywordflow">if</span>($e !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                $motion = $e-&gt;getMotion();</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                $this-&gt;knockBack($motion-&gt;x, $motion-&gt;z, $source-&gt;getKnockBack(), $source-&gt;getVerticalKnockBackLimit());</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>            }</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        }elseif($source instanceof EntityDamageByEntityEvent){</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>            $e = $source-&gt;getDamager();</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>            <span class="keywordflow">if</span>($e !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                $deltaX = $this-&gt;location-&gt;x - $e-&gt;location-&gt;x;</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                $deltaZ = $this-&gt;location-&gt;z - $e-&gt;location-&gt;z;</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                $this-&gt;knockBack($deltaX, $deltaZ, $source-&gt;getKnockBack(), $source-&gt;getVerticalKnockBackLimit());</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>            }</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>        }</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        <span class="keywordflow">if</span>($this-&gt;isAlive()){</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>            $this-&gt;applyPostDamageEffects($source);</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>            $this-&gt;doHitAnimation();</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        }</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    }</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    <span class="keyword">protected</span> <span class="keyword">function</span> doHitAnimation() : void{</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        $this-&gt;broadcastAnimation(new HurtAnimation($this));</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="keyword">public</span> <span class="keyword">function</span> knockBack(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z, <span class="keywordtype">float</span> $force = self::DEFAULT_KNOCKBACK_FORCE, ?<span class="keywordtype">float</span> $verticalLimit = self::DEFAULT_KNOCKBACK_VERTICAL_LIMIT) : void{</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        $f = sqrt($x * $x + $z * $z);</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        <span class="keywordflow">if</span>($f &lt;= 0){</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        }</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        <span class="keywordflow">if</span>(mt_rand() / mt_getrandmax() &gt; $this-&gt;knockbackResistanceAttr-&gt;getValue()){</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>            $f = 1 / $f;</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>            $motionX = $this-&gt;motion-&gt;x / 2;</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>            $motionY = $this-&gt;motion-&gt;y / 2;</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>            $motionZ = $this-&gt;motion-&gt;z / 2;</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>            $motionX += $x * $f * $force;</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>            $motionY += $force;</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>            $motionZ += $z * $f * $force;</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        <span class="keywordflow">if</span>($this-&gt;attackTime &lt;= 0){</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>            <span class="comment">//this logic only applies if the entity was cold attacked</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>            $this-&gt;attackTime = $source-&gt;getAttackCooldown();</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>            <span class="keywordflow">if</span>($source instanceof EntityDamageByChildEntityEvent){</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                $e = $source-&gt;getChild();</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                <span class="keywordflow">if</span>($e !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                    $motion = $e-&gt;getMotion();</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>                    $this-&gt;knockBack($motion-&gt;x, $motion-&gt;z, $source-&gt;getKnockBack(), $source-&gt;getVerticalKnockBackLimit());</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                }</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>            }elseif($source instanceof EntityDamageByEntityEvent){</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                $e = $source-&gt;getDamager();</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                <span class="keywordflow">if</span>($e !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                    $deltaX = $this-&gt;location-&gt;x - $e-&gt;location-&gt;x;</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    $deltaZ = $this-&gt;location-&gt;z - $e-&gt;location-&gt;z;</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                    $this-&gt;knockBack($deltaX, $deltaZ, $source-&gt;getKnockBack(), $source-&gt;getVerticalKnockBackLimit());</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                }</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>            }</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>            <span class="keywordflow">if</span>($this-&gt;isAlive()){</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                $this-&gt;doHitAnimation();</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>            }</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        }</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        <span class="keywordflow">if</span>($this-&gt;isAlive()){</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            $this-&gt;applyPostDamageEffects($source);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        }</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    }</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    <span class="keyword">protected</span> <span class="keyword">function</span> doHitAnimation() : void{</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        $this-&gt;broadcastAnimation(new HurtAnimation($this));</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    }</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="keyword">public</span> <span class="keyword">function</span> knockBack(<span class="keywordtype">float</span> $x, <span class="keywordtype">float</span> $z, <span class="keywordtype">float</span> $force = self::DEFAULT_KNOCKBACK_FORCE, ?<span class="keywordtype">float</span> $verticalLimit = self::DEFAULT_KNOCKBACK_VERTICAL_LIMIT) : void{</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        $f = sqrt($x * $x + $z * $z);</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="keywordflow">if</span>($f &lt;= 0){</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        }</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        <span class="keywordflow">if</span>(mt_rand() / mt_getrandmax() &gt; $this-&gt;knockbackResistanceAttr-&gt;getValue()){</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>            $f = 1 / $f;</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            $verticalLimit ??= $force;</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            <span class="keywordflow">if</span>($motionY &gt; $verticalLimit){</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                $motionY = $verticalLimit;</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            }</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            $this-&gt;setMotion(<span class="keyword">new</span> Vector3($motionX, $motionY, $motionZ));</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        }</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    }</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">  609</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">onDeath</a>() : void{</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        $ev = new <a class="code hl_class" href="../../d7/d1e/classpocketmine_1_1event_1_1entity_1_1_entity_death_event.html">EntityDeathEvent</a>($this, $this-&gt;getDrops(), $this-&gt;getXpDropAmount());</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        $ev-&gt;<a class="code hl_function" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">call</a>();</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        <span class="keywordflow">foreach</span>($ev-&gt;getDrops() as $item){</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>            $this-&gt;getWorld()-&gt;dropItem($this-&gt;location, $item);</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        }</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            $motionX = $this-&gt;motion-&gt;x / 2;</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            $motionY = $this-&gt;motion-&gt;y / 2;</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>            $motionZ = $this-&gt;motion-&gt;z / 2;</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            $motionX += $x * $f * $force;</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            $motionY += $force;</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            $motionZ += $z * $f * $force;</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>            $verticalLimit ??= $force;</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            <span class="keywordflow">if</span>($motionY &gt; $verticalLimit){</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                $motionY = $verticalLimit;</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>            }</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>            $this-&gt;setMotion(<span class="keyword">new</span> Vector3($motionX, $motionY, $motionZ));</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        }</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    }</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        <span class="comment">//TODO: check death conditions (must have been damaged by player &lt; 5 seconds from death)</span></div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        $this-&gt;getWorld()-&gt;dropExperience($this-&gt;location, $ev-&gt;getXpDropAmount());</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        $this-&gt;startDeathAnimation();</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    }</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">  622</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">onDeathUpdate</a>(<span class="keywordtype">int</span> $tickDiff) : bool{</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        if($this-&gt;deadTicks &lt; $this-&gt;maxDeadTicks){</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            $this-&gt;deadTicks += $tickDiff;</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>            <span class="keywordflow">if</span>($this-&gt;deadTicks &gt;= $this-&gt;maxDeadTicks){</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                $this-&gt;endDeathAnimation();</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>            }</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        }</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        <span class="keywordflow">return</span> $this-&gt;deadTicks &gt;= $this-&gt;maxDeadTicks;</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    }</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="keyword">protected</span> <span class="keyword">function</span> startDeathAnimation() : void{</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>        $this-&gt;broadcastAnimation(new DeathAnimation($this));</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    }</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">  616</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">onDeath</a>() : void{</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        $ev = new <a class="code hl_class" href="../../d7/d1e/classpocketmine_1_1event_1_1entity_1_1_entity_death_event.html">EntityDeathEvent</a>($this, $this-&gt;getDrops(), $this-&gt;getXpDropAmount());</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        $ev-&gt;<a class="code hl_function" href="../../d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945">call</a>();</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        <span class="keywordflow">foreach</span>($ev-&gt;getDrops() as $item){</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>            $this-&gt;getWorld()-&gt;dropItem($this-&gt;location, $item);</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        }</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span> </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        <span class="comment">//TODO: check death conditions (must have been damaged by player &lt; 5 seconds from death)</span></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>        $this-&gt;getWorld()-&gt;dropExperience($this-&gt;location, $ev-&gt;getXpDropAmount());</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        $this-&gt;startDeathAnimation();</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    }</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">  629</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">onDeathUpdate</a>(<span class="keywordtype">int</span> $tickDiff) : bool{</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        if($this-&gt;deadTicks &lt; $this-&gt;maxDeadTicks){</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>            $this-&gt;deadTicks += $tickDiff;</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>            <span class="keywordflow">if</span>($this-&gt;deadTicks &gt;= $this-&gt;maxDeadTicks){</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                $this-&gt;endDeathAnimation();</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>            }</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        }</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keyword">protected</span> <span class="keyword">function</span> endDeathAnimation() : void{</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        $this-&gt;despawnFromAll();</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    }</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="keyword">protected</span> <span class="keyword">function</span> entityBaseTick(<span class="keywordtype">int</span> $tickDiff = 1) : bool{</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        Timings::$livingEntityBaseTick-&gt;startTiming();</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        <span class="keywordflow">return</span> $this-&gt;deadTicks &gt;= $this-&gt;maxDeadTicks;</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    }</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keyword">protected</span> <span class="keyword">function</span> startDeathAnimation() : void{</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        $this-&gt;broadcastAnimation(new DeathAnimation($this));</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    }</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        $hasUpdate = parent::entityBaseTick($tickDiff);</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        <span class="keywordflow">if</span>($this-&gt;isAlive()){</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>            <span class="keywordflow">if</span>($this-&gt;effectManager-&gt;tick($tickDiff)){</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                $hasUpdate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>            }</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keyword">protected</span> <span class="keyword">function</span> endDeathAnimation() : void{</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        $this-&gt;despawnFromAll();</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    }</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="keyword">protected</span> <span class="keyword">function</span> entityBaseTick(<span class="keywordtype">int</span> $tickDiff = 1) : bool{</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        Timings::$livingEntityBaseTick-&gt;startTiming();</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>            <span class="keywordflow">if</span>($this-&gt;isInsideOfSolid()){</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>                $hasUpdate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                $ev = <span class="keyword">new</span> EntityDamageEvent($this, EntityDamageEvent::CAUSE_SUFFOCATION, 1);</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>                $this-&gt;attack($ev);</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>            }</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>            <span class="keywordflow">if</span>($this-&gt;doAirSupplyTick($tickDiff)){</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                $hasUpdate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>            }</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>            <span class="keywordflow">foreach</span>($this-&gt;armorInventory-&gt;getContents() as $index =&gt; $item){</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>                $oldItem = clone $item;</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>                <span class="keywordflow">if</span>($item-&gt;onTickWorn($this)){</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>                    $hasUpdate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                    <span class="keywordflow">if</span>(!$item-&gt;equalsExact($oldItem)){</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>                        $this-&gt;armorInventory-&gt;setItem($index, $item);</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>                    }</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                }</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>            }</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        }</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        <span class="keywordflow">if</span>($this-&gt;attackTime &gt; 0){</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>            $this-&gt;attackTime -= $tickDiff;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        }</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        Timings::$livingEntityBaseTick-&gt;stopTiming();</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        <span class="keywordflow">return</span> $hasUpdate;</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    }</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#acf169f2d54e0084902937105bbc94b84">  684</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#acf169f2d54e0084902937105bbc94b84">doAirSupplyTick</a>(<span class="keywordtype">int</span> $tickDiff) : bool{</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        $ticks = $this-&gt;getAirSupplyTicks();</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        $oldTicks = $ticks;</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>        <span class="keywordflow">if</span>(!$this-&gt;canBreathe()){</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            $this-&gt;setBreathing(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <span class="keywordflow">if</span>(($respirationLevel = $this-&gt;armorInventory-&gt;getHelmet()-&gt;getEnchantmentLevel(VanillaEnchantments::RESPIRATION())) &lt;= 0 ||</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                lcg_value() &lt;= (1 / ($respirationLevel + 1))</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>            ){</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>                $ticks -= $tickDiff;</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                <span class="keywordflow">if</span>($ticks &lt;= -20){</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>                    $ticks = 0;</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>                    $this-&gt;onAirExpired();</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>                }</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            }</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        }elseif(!$this-&gt;isBreathing()){</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            <span class="keywordflow">if</span>($ticks &lt; ($max = $this-&gt;getMaxAirSupplyTicks())){</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>                $ticks += $tickDiff * 5;</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>            }</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>            <span class="keywordflow">if</span>($ticks &gt;= $max){</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                $ticks = $max;</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                $this-&gt;setBreathing(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>            }</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        }</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        <span class="keywordflow">if</span>($ticks !== $oldTicks){</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>            $this-&gt;setAirSupplyTicks($ticks);</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        }</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>        <span class="keywordflow">return</span> $ticks !== $oldTicks;</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    }</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>        $hasUpdate = parent::entityBaseTick($tickDiff);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        <span class="keywordflow">if</span>($this-&gt;isAlive()){</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>            <span class="keywordflow">if</span>($this-&gt;effectManager-&gt;tick($tickDiff)){</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>                $hasUpdate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>            }</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>            <span class="keywordflow">if</span>($this-&gt;isInsideOfSolid()){</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                $hasUpdate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                $ev = <span class="keyword">new</span> EntityDamageEvent($this, EntityDamageEvent::CAUSE_SUFFOCATION, 1);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>                $this-&gt;attack($ev);</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>            }</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>            <span class="keywordflow">if</span>($this-&gt;doAirSupplyTick($tickDiff)){</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                $hasUpdate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>            }</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>            <span class="keywordflow">foreach</span>($this-&gt;armorInventory-&gt;getContents() as $index =&gt; $item){</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>                $oldItem = clone $item;</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>                <span class="keywordflow">if</span>($item-&gt;onTickWorn($this)){</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>                    $hasUpdate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>                    <span class="keywordflow">if</span>(!$item-&gt;equalsExact($oldItem)){</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>                        $this-&gt;armorInventory-&gt;setItem($index, $item);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                    }</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                }</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            }</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        }</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        <span class="keywordflow">if</span>($this-&gt;attackTime &gt; 0){</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            $this-&gt;attackTime -= $tickDiff;</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>        }</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        Timings::$livingEntityBaseTick-&gt;stopTiming();</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        <span class="keywordflow">return</span> $hasUpdate;</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    }</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#acf169f2d54e0084902937105bbc94b84">  691</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#acf169f2d54e0084902937105bbc94b84">doAirSupplyTick</a>(<span class="keywordtype">int</span> $tickDiff) : bool{</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        $ticks = $this-&gt;getAirSupplyTicks();</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        $oldTicks = $ticks;</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <span class="keywordflow">if</span>(!$this-&gt;canBreathe()){</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>            $this-&gt;setBreathing(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>            <span class="keywordflow">if</span>(($respirationLevel = $this-&gt;armorInventory-&gt;getHelmet()-&gt;getEnchantmentLevel(VanillaEnchantments::RESPIRATION())) &lt;= 0 ||</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                lcg_value() &lt;= (1 / ($respirationLevel + 1))</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>            ){</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>                $ticks -= $tickDiff;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>                <span class="keywordflow">if</span>($ticks &lt;= -20){</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>                    $ticks = 0;</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>                    $this-&gt;onAirExpired();</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                }</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>            }</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>        }elseif(!$this-&gt;isBreathing()){</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>            <span class="keywordflow">if</span>($ticks &lt; ($max = $this-&gt;getMaxAirSupplyTicks())){</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                $ticks += $tickDiff * 5;</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>            }</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>            <span class="keywordflow">if</span>($ticks &gt;= $max){</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>                $ticks = $max;</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>                $this-&gt;setBreathing(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>            }</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        }</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span> </div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">  719</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">canBreathe</a>() : bool{</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        return $this-&gt;effectManager-&gt;has(<a class="code hl_class" href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">VanillaEffects</a>::WATER_BREATHING()) || $this-&gt;effectManager-&gt;has(<a class="code hl_class" href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">VanillaEffects</a>::CONDUIT_POWER()) || !$this-&gt;isUnderwater();</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        <span class="keywordflow">if</span>($ticks !== $oldTicks){</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>            $this-&gt;setAirSupplyTicks($ticks);</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        }</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        <span class="keywordflow">return</span> $ticks !== $oldTicks;</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    }</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#af412cd40918d6a86e39b9f5348ea105c">  726</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#af412cd40918d6a86e39b9f5348ea105c">isBreathing</a>() : bool{</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        return $this-&gt;breathing;</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">  726</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">canBreathe</a>() : bool{</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        return $this-&gt;effectManager-&gt;has(<a class="code hl_class" href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">VanillaEffects</a>::WATER_BREATHING()) || $this-&gt;effectManager-&gt;has(<a class="code hl_class" href="../../d9/d5f/classpocketmine_1_1entity_1_1effect_1_1_vanilla_effects.html">VanillaEffects</a>::CONDUIT_POWER()) || !$this-&gt;isUnderwater();</div>
 <div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    }</div>
 <div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2eaaae362cb4990882b3db3f7b15864b">  734</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2eaaae362cb4990882b3db3f7b15864b">setBreathing</a>(<span class="keywordtype">bool</span> $value = <span class="keyword">true</span>) : void{</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>        $this-&gt;breathing = $value;</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        $this-&gt;networkPropertiesDirty = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    }</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span> </div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a489f597d6709091a6f9c250886b6ee65">  743</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a489f597d6709091a6f9c250886b6ee65">getAirSupplyTicks</a>() : int{</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        return $this-&gt;breathTicks;</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    }</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab06340b6659167cd843d92e0a24bae7e">  750</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab06340b6659167cd843d92e0a24bae7e">setAirSupplyTicks</a>(<span class="keywordtype">int</span> $ticks) : void{</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        $this-&gt;breathTicks = $ticks;</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        $this-&gt;networkPropertiesDirty = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    }</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aa1f0a3a68610eb735693198e77a04f45">  758</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aa1f0a3a68610eb735693198e77a04f45">getMaxAirSupplyTicks</a>() : int{</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        return $this-&gt;maxBreathTicks;</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#af412cd40918d6a86e39b9f5348ea105c">  733</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#af412cd40918d6a86e39b9f5348ea105c">isBreathing</a>() : bool{</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>        return $this-&gt;breathing;</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    }</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2eaaae362cb4990882b3db3f7b15864b">  741</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2eaaae362cb4990882b3db3f7b15864b">setBreathing</a>(<span class="keywordtype">bool</span> $value = <span class="keyword">true</span>) : void{</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        $this-&gt;breathing = $value;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        $this-&gt;networkPropertiesDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    }</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span> </div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a489f597d6709091a6f9c250886b6ee65">  750</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a489f597d6709091a6f9c250886b6ee65">getAirSupplyTicks</a>() : int{</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        return $this-&gt;breathTicks;</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    }</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab06340b6659167cd843d92e0a24bae7e">  757</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab06340b6659167cd843d92e0a24bae7e">setAirSupplyTicks</a>(<span class="keywordtype">int</span> $ticks) : void{</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        $this-&gt;breathTicks = $ticks;</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        $this-&gt;networkPropertiesDirty = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    }</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2dd0b61975dd1ccdf2d0ddc161f85013">  765</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2dd0b61975dd1ccdf2d0ddc161f85013">setMaxAirSupplyTicks</a>(<span class="keywordtype">int</span> $ticks) : void{</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        $this-&gt;maxBreathTicks = $ticks;</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        $this-&gt;networkPropertiesDirty = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    }</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae1aee29c6e41e00628698b302030b9bf">  774</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae1aee29c6e41e00628698b302030b9bf">onAirExpired</a>() : void{</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        $ev = new <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($this, <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>::CAUSE_DROWNING, 2);</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        $this-&gt;attack($ev);</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    }</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span> </div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133">  782</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133">getDrops</a>() : array{</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        return [];</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aa1f0a3a68610eb735693198e77a04f45">  765</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aa1f0a3a68610eb735693198e77a04f45">getMaxAirSupplyTicks</a>() : int{</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        return $this-&gt;maxBreathTicks;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span> </div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2dd0b61975dd1ccdf2d0ddc161f85013">  772</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2dd0b61975dd1ccdf2d0ddc161f85013">setMaxAirSupplyTicks</a>(<span class="keywordtype">int</span> $ticks) : void{</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        $this-&gt;maxBreathTicks = $ticks;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        $this-&gt;networkPropertiesDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    }</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span> </div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae1aee29c6e41e00628698b302030b9bf">  781</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae1aee29c6e41e00628698b302030b9bf">onAirExpired</a>() : void{</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        $ev = new <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>($this, <a class="code hl_class" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html">EntityDamageEvent</a>::CAUSE_DROWNING, 2);</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        $this-&gt;attack($ev);</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    }</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#afeda8ddcc77181100f2934068c76facb">  789</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#afeda8ddcc77181100f2934068c76facb">getXpDropAmount</a>() : int{</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        return 0;</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133">  789</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133">getDrops</a>() : array{</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        return [];</div>
 <div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    }</div>
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6ccbbde23a4ce48ec0820bc8527050db">  799</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6ccbbde23a4ce48ec0820bc8527050db">getLineOfSight</a>(<span class="keywordtype">int</span> $maxDistance, <span class="keywordtype">int</span> $maxLength = 0, array $transparent = []) : array{</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        if($maxDistance &gt; 120){</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            $maxDistance = 120;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        }</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>        <span class="keywordflow">if</span>(count($transparent) === 0){</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>            $transparent = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>        }</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span> </div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        $blocks = [];</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        $nextIndex = 0;</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#afeda8ddcc77181100f2934068c76facb">  796</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#afeda8ddcc77181100f2934068c76facb">getXpDropAmount</a>() : int{</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>        return 0;</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    }</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span> </div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6ccbbde23a4ce48ec0820bc8527050db">  806</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6ccbbde23a4ce48ec0820bc8527050db">getLineOfSight</a>(<span class="keywordtype">int</span> $maxDistance, <span class="keywordtype">int</span> $maxLength = 0, array $transparent = []) : array{</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        if($maxDistance &gt; 120){</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>            $maxDistance = 120;</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        }</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        <span class="keywordflow">foreach</span>(VoxelRayTrace::inDirection($this-&gt;location-&gt;add(0, $this-&gt;size-&gt;getEyeHeight(), 0), $this-&gt;getDirectionVector(), $maxDistance) as $vector3){</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>            $block = $this-&gt;getWorld()-&gt;getBlockAt($vector3-&gt;x, $vector3-&gt;y, $vector3-&gt;z);</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>            $blocks[$nextIndex++] = $block;</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        <span class="keywordflow">if</span>(count($transparent) === 0){</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>            $transparent = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        }</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span> </div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>            <span class="keywordflow">if</span>($maxLength !== 0 &amp;&amp; count($blocks) &gt; $maxLength){</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>                array_shift($blocks);</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>                --$nextIndex;</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            }</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>            $id = $block-&gt;getTypeId();</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        $blocks = [];</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        $nextIndex = 0;</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span> </div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>        <span class="keywordflow">foreach</span>(VoxelRayTrace::inDirection($this-&gt;location-&gt;add(0, $this-&gt;size-&gt;getEyeHeight(), 0), $this-&gt;getDirectionVector(), $maxDistance) as $vector3){</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>            $block = $this-&gt;getWorld()-&gt;getBlockAt($vector3-&gt;x, $vector3-&gt;y, $vector3-&gt;z);</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>            $blocks[$nextIndex++] = $block;</div>
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span> </div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            <span class="keywordflow">if</span>($transparent === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                <span class="keywordflow">if</span>($id !== BlockTypeIds::AIR){</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>                }</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>                <span class="keywordflow">if</span>(!isset($transparent[$id])){</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>                }</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>            }</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>        }</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span> </div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>        <span class="keywordflow">return</span> $blocks;</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    }</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80611cafb3218eaedf17031a133bbeef">  840</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80611cafb3218eaedf17031a133bbeef">getTargetBlock</a>(<span class="keywordtype">int</span> $maxDistance, array $transparent = []) : ?<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>        $line = $this-&gt;getLineOfSight($maxDistance, 1, $transparent);</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        <span class="keywordflow">if</span>(count($line) &gt; 0){</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>            <span class="keywordflow">return</span> array_shift($line);</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        }</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    }</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a3c11bfc681ed5ee937345d05c9a8fbae">  853</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a3c11bfc681ed5ee937345d05c9a8fbae">lookAt</a>(<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $target) : void{</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>        $horizontal = sqrt(($target-&gt;x - $this-&gt;location-&gt;x) ** 2 + ($target-&gt;z - $this-&gt;location-&gt;z) ** 2);</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>        $vertical = $target-&gt;y - ($this-&gt;location-&gt;y + $this-&gt;getEyeHeight());</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>        $pitch = -atan2($vertical, $horizontal) / M_PI * 180; <span class="comment">//negative is up, positive is down</span></div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>        $xDist = $target-&gt;x - $this-&gt;location-&gt;x;</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>        $zDist = $target-&gt;z - $this-&gt;location-&gt;z;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>        $yaw = atan2($zDist, $xDist) / M_PI * 180 - 90;</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        <span class="keywordflow">if</span>($yaw &lt; 0){</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>            $yaw += 360.0;</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        }</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        $this-&gt;setRotation($yaw, $pitch);</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    }</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span> </div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a29d0dc231dadf07f25377dcf67aa3b3d">  869</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a29d0dc231dadf07f25377dcf67aa3b3d">sendSpawnPacket</a>(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : void{</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        parent::sendSpawnPacket($player);</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span> </div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>        $networkSession = $player-&gt;getNetworkSession();</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        $networkSession-&gt;getEntityEventBroadcaster()-&gt;onMobArmorChange([$networkSession], $this);</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            <span class="keywordflow">if</span>($maxLength !== 0 &amp;&amp; count($blocks) &gt; $maxLength){</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                array_shift($blocks);</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>                --$nextIndex;</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>            }</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span> </div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>            $id = $block-&gt;getTypeId();</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span> </div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            <span class="keywordflow">if</span>($transparent === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>                <span class="keywordflow">if</span>($id !== BlockTypeIds::AIR){</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>                }</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>                <span class="keywordflow">if</span>(!isset($transparent[$id])){</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>                }</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>            }</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>        }</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>        <span class="keywordflow">return</span> $blocks;</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    }</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80611cafb3218eaedf17031a133bbeef">  847</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80611cafb3218eaedf17031a133bbeef">getTargetBlock</a>(<span class="keywordtype">int</span> $maxDistance, array $transparent = []) : ?<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>        $line = $this-&gt;getLineOfSight($maxDistance, 1, $transparent);</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>        <span class="keywordflow">if</span>(count($line) &gt; 0){</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>            <span class="keywordflow">return</span> array_shift($line);</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>        }</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span> </div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    }</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span> </div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a3c11bfc681ed5ee937345d05c9a8fbae">  860</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a3c11bfc681ed5ee937345d05c9a8fbae">lookAt</a>(<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $target) : void{</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>        $horizontal = sqrt(($target-&gt;x - $this-&gt;location-&gt;x) ** 2 + ($target-&gt;z - $this-&gt;location-&gt;z) ** 2);</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        $vertical = $target-&gt;y - ($this-&gt;location-&gt;y + $this-&gt;getEyeHeight());</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        $pitch = -atan2($vertical, $horizontal) / M_PI * 180; <span class="comment">//negative is up, positive is down</span></div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        $xDist = $target-&gt;x - $this-&gt;location-&gt;x;</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        $zDist = $target-&gt;z - $this-&gt;location-&gt;z;</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span> </div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>        $yaw = atan2($zDist, $xDist) / M_PI * 180 - 90;</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>        <span class="keywordflow">if</span>($yaw &lt; 0){</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>            $yaw += 360.0;</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>        }</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span> </div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        $this-&gt;setRotation($yaw, $pitch);</div>
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    }</div>
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span> </div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    <span class="keyword">protected</span> <span class="keyword">function</span> syncNetworkData(<a class="code hl_class" href="../../d1/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_entity_metadata_collection.html">EntityMetadataCollection</a> $properties) : void{</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        parent::syncNetworkData($properties);</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a29d0dc231dadf07f25377dcf67aa3b3d">  876</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a29d0dc231dadf07f25377dcf67aa3b3d">sendSpawnPacket</a>(<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player) : void{</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        parent::sendSpawnPacket($player);</div>
 <div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>        $properties-&gt;setByte(EntityMetadataProperties::POTION_AMBIENT, $this-&gt;effectManager-&gt;hasOnlyAmbientEffects() ? 1 : 0);</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>        $properties-&gt;setInt(EntityMetadataProperties::POTION_COLOR, Binary::signInt($this-&gt;effectManager-&gt;getBubbleColor()-&gt;toARGB()));</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>        $properties-&gt;setShort(EntityMetadataProperties::AIR, $this-&gt;breathTicks);</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>        $properties-&gt;setShort(EntityMetadataProperties::MAX_AIR, $this-&gt;maxBreathTicks);</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::BREATHING, $this-&gt;breathing);</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::SNEAKING, $this-&gt;sneaking);</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::SPRINTING, $this-&gt;sprinting);</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::GLIDING, $this-&gt;gliding);</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::SWIMMING, $this-&gt;swimming);</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    }</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>        $networkSession = $player-&gt;getNetworkSession();</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>        $networkSession-&gt;getEntityEventBroadcaster()-&gt;onMobArmorChange([$networkSession], $this);</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    }</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <span class="keyword">protected</span> <span class="keyword">function</span> syncNetworkData(<a class="code hl_class" href="../../d1/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_entity_metadata_collection.html">EntityMetadataCollection</a> $properties) : void{</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>        parent::syncNetworkData($properties);</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>        $properties-&gt;setByte(EntityMetadataProperties::POTION_AMBIENT, $this-&gt;effectManager-&gt;hasOnlyAmbientEffects() ? 1 : 0);</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>        $properties-&gt;setInt(EntityMetadataProperties::POTION_COLOR, Binary::signInt($this-&gt;effectManager-&gt;getBubbleColor()-&gt;toARGB()));</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>        $properties-&gt;setShort(EntityMetadataProperties::AIR, $this-&gt;breathTicks);</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>        $properties-&gt;setShort(EntityMetadataProperties::MAX_AIR, $this-&gt;maxBreathTicks);</div>
 <div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6cffe11212563e8784ead553fa08bf23">  891</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6cffe11212563e8784ead553fa08bf23">onDispose</a>() : void{</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        $this-&gt;armorInventory-&gt;removeAllViewers();</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>        $this-&gt;effectManager-&gt;getEffectAddHooks()-&gt;clear();</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        $this-&gt;effectManager-&gt;getEffectRemoveHooks()-&gt;clear();</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>        parent::onDispose();</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::BREATHING, $this-&gt;breathing);</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::SNEAKING, $this-&gt;sneaking);</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::SPRINTING, $this-&gt;sprinting);</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::GLIDING, $this-&gt;gliding);</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>        $properties-&gt;setGenericFlag(EntityMetadataFlags::SWIMMING, $this-&gt;swimming);</div>
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>    }</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span> </div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55">  898</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55">destroyCycles</a>() : void{</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>        unset(</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>            $this-&gt;armorInventory,</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>            $this-&gt;effectManager</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        );</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        parent::destroyCycles();</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    }</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>}</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6cffe11212563e8784ead553fa08bf23">  898</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6cffe11212563e8784ead553fa08bf23">onDispose</a>() : void{</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>        $this-&gt;armorInventory-&gt;removeAllViewers();</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>        $this-&gt;effectManager-&gt;getEffectAddHooks()-&gt;clear();</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>        $this-&gt;effectManager-&gt;getEffectRemoveHooks()-&gt;clear();</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        parent::onDispose();</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    }</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno"><a class="line" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55">  905</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55">destroyCycles</a>() : void{</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>        unset(</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>            $this-&gt;armorInventory,</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>            $this-&gt;effectManager</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>        );</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        parent::destroyCycles();</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    }</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00036">BlockTypeIds.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_effect_id_map_html"><div class="ttname"><a href="../../dc/d70/classpocketmine_1_1data_1_1bedrock_1_1_effect_id_map.html">pocketmine\data\bedrock\EffectIdMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc8/_effect_id_map_8php_source.html#l00030">EffectIdMap.php:30</a></div></div>
@@ -907,41 +914,41 @@ $(document).ready(function(){initNavTree('dc/d77/_living_8php_source.html','../.
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00082">Entity.php:82</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00080">Living.php:80</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a0f92f1f7b5b4abc1f9edca2f1c6e330a"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a0f92f1f7b5b4abc1f9edca2f1c6e330a">pocketmine\entity\Living\getJumpVelocity</a></div><div class="ttdeci">getJumpVelocity()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00346">Living.php:346</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a230565075093f60685b2a9f602489133"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133">pocketmine\entity\Living\getDrops</a></div><div class="ttdeci">getDrops()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00782">Living.php:782</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a230565075093f60685b2a9f602489133"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133">pocketmine\entity\Living\getDrops</a></div><div class="ttdeci">getDrops()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00789">Living.php:789</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a273bd4bd28a437291326bf1546e7f5cd"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a273bd4bd28a437291326bf1546e7f5cd">pocketmine\entity\Living\applyPostDamageEffects</a></div><div class="ttdeci">applyPostDamageEffects(EntityDamageEvent $source)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00462">Living.php:462</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a29d0dc231dadf07f25377dcf67aa3b3d"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a29d0dc231dadf07f25377dcf67aa3b3d">pocketmine\entity\Living\sendSpawnPacket</a></div><div class="ttdeci">sendSpawnPacket(Player $player)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00869">Living.php:869</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a2dd0b61975dd1ccdf2d0ddc161f85013"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2dd0b61975dd1ccdf2d0ddc161f85013">pocketmine\entity\Living\setMaxAirSupplyTicks</a></div><div class="ttdeci">setMaxAirSupplyTicks(int $ticks)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00765">Living.php:765</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a2eaaae362cb4990882b3db3f7b15864b"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2eaaae362cb4990882b3db3f7b15864b">pocketmine\entity\Living\setBreathing</a></div><div class="ttdeci">setBreathing(bool $value=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00734">Living.php:734</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a3c11bfc681ed5ee937345d05c9a8fbae"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a3c11bfc681ed5ee937345d05c9a8fbae">pocketmine\entity\Living\lookAt</a></div><div class="ttdeci">lookAt(Vector3 $target)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00853">Living.php:853</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a489f597d6709091a6f9c250886b6ee65"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a489f597d6709091a6f9c250886b6ee65">pocketmine\entity\Living\getAirSupplyTicks</a></div><div class="ttdeci">getAirSupplyTicks()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00743">Living.php:743</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a29d0dc231dadf07f25377dcf67aa3b3d"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a29d0dc231dadf07f25377dcf67aa3b3d">pocketmine\entity\Living\sendSpawnPacket</a></div><div class="ttdeci">sendSpawnPacket(Player $player)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00876">Living.php:876</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a2dd0b61975dd1ccdf2d0ddc161f85013"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2dd0b61975dd1ccdf2d0ddc161f85013">pocketmine\entity\Living\setMaxAirSupplyTicks</a></div><div class="ttdeci">setMaxAirSupplyTicks(int $ticks)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00772">Living.php:772</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a2eaaae362cb4990882b3db3f7b15864b"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2eaaae362cb4990882b3db3f7b15864b">pocketmine\entity\Living\setBreathing</a></div><div class="ttdeci">setBreathing(bool $value=true)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00741">Living.php:741</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a3c11bfc681ed5ee937345d05c9a8fbae"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a3c11bfc681ed5ee937345d05c9a8fbae">pocketmine\entity\Living\lookAt</a></div><div class="ttdeci">lookAt(Vector3 $target)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00860">Living.php:860</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a489f597d6709091a6f9c250886b6ee65"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a489f597d6709091a6f9c250886b6ee65">pocketmine\entity\Living\getAirSupplyTicks</a></div><div class="ttdeci">getAirSupplyTicks()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00750">Living.php:750</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a4e8978f8b3b0896c5279379b1b950099"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a4e8978f8b3b0896c5279379b1b950099">pocketmine\entity\Living\DEFAULT_KNOCKBACK_FORCE</a></div><div class="ttdeci">const DEFAULT_KNOCKBACK_FORCE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00087">Living.php:87</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a51f179f6856625792527dd3c2b201003"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">pocketmine\entity\Living\onDeathUpdate</a></div><div class="ttdeci">onDeathUpdate(int $tickDiff)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00622">Living.php:622</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a51f179f6856625792527dd3c2b201003"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">pocketmine\entity\Living\onDeathUpdate</a></div><div class="ttdeci">onDeathUpdate(int $tickDiff)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00629">Living.php:629</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a56bed8e6a96647b01c68b7eac0dbe1d7"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a56bed8e6a96647b01c68b7eac0dbe1d7">pocketmine\entity\Living\onHitGround</a></div><div class="ttdeci">onHitGround()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00363">Living.php:363</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a5e1cfa8b2d94b3a2d4d327fc8e47041b"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a5e1cfa8b2d94b3a2d4d327fc8e47041b">pocketmine\entity\Living\damageArmor</a></div><div class="ttdeci">damageArmor(float $damage)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00502">Living.php:502</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a611283432404a91c42a84307659e471f"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">pocketmine\entity\Living\onDeath</a></div><div class="ttdeci">onDeath()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00609">Living.php:609</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a611283432404a91c42a84307659e471f"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">pocketmine\entity\Living\onDeath</a></div><div class="ttdeci">onDeath()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00616">Living.php:616</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a640ba4e1b113e3f857306a3d6d12f4d9"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a640ba4e1b113e3f857306a3d6d12f4d9">pocketmine\entity\Living\setHealth</a></div><div class="ttdeci">setHealth(float $amount)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00203">Living.php:203</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a6ccbbde23a4ce48ec0820bc8527050db"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6ccbbde23a4ce48ec0820bc8527050db">pocketmine\entity\Living\getLineOfSight</a></div><div class="ttdeci">getLineOfSight(int $maxDistance, int $maxLength=0, array $transparent=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00799">Living.php:799</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a6cffe11212563e8784ead553fa08bf23"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6cffe11212563e8784ead553fa08bf23">pocketmine\entity\Living\onDispose</a></div><div class="ttdeci">onDispose()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00891">Living.php:891</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a6ccbbde23a4ce48ec0820bc8527050db"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6ccbbde23a4ce48ec0820bc8527050db">pocketmine\entity\Living\getLineOfSight</a></div><div class="ttdeci">getLineOfSight(int $maxDistance, int $maxLength=0, array $transparent=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00806">Living.php:806</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a6cffe11212563e8784ead553fa08bf23"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a6cffe11212563e8784ead553fa08bf23">pocketmine\entity\Living\onDispose</a></div><div class="ttdeci">onDispose()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00898">Living.php:898</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a72313b6172199315104d3a77a86d3b9d"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a72313b6172199315104d3a77a86d3b9d">pocketmine\entity\Living\DEFAULT_KNOCKBACK_VERTICAL_LIMIT</a></div><div class="ttdeci">const DEFAULT_KNOCKBACK_VERTICAL_LIMIT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00092">Living.php:92</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a755bb02c83a70658de4339e2c97affa1"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a755bb02c83a70658de4339e2c97affa1">pocketmine\entity\Living\applyDamageModifiers</a></div><div class="ttdeci">applyDamageModifiers(EntityDamageEvent $source)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00425">Living.php:425</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a80611cafb3218eaedf17031a133bbeef"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80611cafb3218eaedf17031a133bbeef">pocketmine\entity\Living\getTargetBlock</a></div><div class="ttdeci">getTargetBlock(int $maxDistance, array $transparent=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00840">Living.php:840</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a80b35509d294ca1b7ca463167c6e85f7"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">pocketmine\entity\Living\canBreathe</a></div><div class="ttdeci">canBreathe()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00719">Living.php:719</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a80611cafb3218eaedf17031a133bbeef"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80611cafb3218eaedf17031a133bbeef">pocketmine\entity\Living\getTargetBlock</a></div><div class="ttdeci">getTargetBlock(int $maxDistance, array $transparent=[])</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00847">Living.php:847</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a80b35509d294ca1b7ca463167c6e85f7"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">pocketmine\entity\Living\canBreathe</a></div><div class="ttdeci">canBreathe()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00726">Living.php:726</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a8cbade5804cac7d6e0c1a6d9d7629e0d"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a8cbade5804cac7d6e0c1a6d9d7629e0d">pocketmine\entity\Living\getArmorPoints</a></div><div class="ttdeci">getArmorPoints()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00392">Living.php:392</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a93bd0790bfc8daa6017e9945addb34ef"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a93bd0790bfc8daa6017e9945addb34ef">pocketmine\entity\Living\getInitialGravity</a></div><div class="ttdeci">getInitialGravity()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00131">Living.php:131</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a98908641c26a276c076192ac4bf047e0"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a98908641c26a276c076192ac4bf047e0">pocketmine\entity\Living\consumeObject</a></div><div class="ttdeci">consumeObject(Consumable $consumable)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00323">Living.php:323</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_a9d16ec84dd237006f958f64a049100a6"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a9d16ec84dd237006f958f64a049100a6">pocketmine\entity\Living\applyConsumptionResults</a></div><div class="ttdeci">applyConsumptionResults(Consumable $consumable)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00332">Living.php:332</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_aa1f0a3a68610eb735693198e77a04f45"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aa1f0a3a68610eb735693198e77a04f45">pocketmine\entity\Living\getMaxAirSupplyTicks</a></div><div class="ttdeci">getMaxAirSupplyTicks()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00758">Living.php:758</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ab06340b6659167cd843d92e0a24bae7e"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab06340b6659167cd843d92e0a24bae7e">pocketmine\entity\Living\setAirSupplyTicks</a></div><div class="ttdeci">setAirSupplyTicks(int $ticks)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00750">Living.php:750</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_aa1f0a3a68610eb735693198e77a04f45"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aa1f0a3a68610eb735693198e77a04f45">pocketmine\entity\Living\getMaxAirSupplyTicks</a></div><div class="ttdeci">getMaxAirSupplyTicks()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00765">Living.php:765</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ab06340b6659167cd843d92e0a24bae7e"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab06340b6659167cd843d92e0a24bae7e">pocketmine\entity\Living\setAirSupplyTicks</a></div><div class="ttdeci">setAirSupplyTicks(int $ticks)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00757">Living.php:757</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ab86b239e5e24b16efed3ba0e19895616"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab86b239e5e24b16efed3ba0e19895616">pocketmine\entity\Living\getDisplayName</a></div><div class="ttdeci">getDisplayName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00199">Living.php:199</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ac0c27111bd6d9156c3ec1a055b6962eb"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ac0c27111bd6d9156c3ec1a055b6962eb">pocketmine\entity\Living\getInitialDragMultiplier</a></div><div class="ttdeci">getInitialDragMultiplier()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00129">Living.php:129</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_acf169f2d54e0084902937105bbc94b84"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#acf169f2d54e0084902937105bbc94b84">pocketmine\entity\Living\doAirSupplyTick</a></div><div class="ttdeci">doAirSupplyTick(int $tickDiff)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00684">Living.php:684</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_acf169f2d54e0084902937105bbc94b84"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#acf169f2d54e0084902937105bbc94b84">pocketmine\entity\Living\doAirSupplyTick</a></div><div class="ttdeci">doAirSupplyTick(int $tickDiff)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00691">Living.php:691</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ad0800b31de14ef7ebb1354eb01588010"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ad0800b31de14ef7ebb1354eb01588010">pocketmine\entity\Living\jump</a></div><div class="ttdeci">jump()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00353">Living.php:353</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ad79f9505c6859c4241a95ba52e0002bd"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ad79f9505c6859c4241a95ba52e0002bd">pocketmine\entity\Living\getHighestArmorEnchantmentLevel</a></div><div class="ttdeci">getHighestArmorEnchantmentLevel(Enchantment $enchantment)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00404">Living.php:404</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ae19e777d73c9df539048227ea31658f2"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae19e777d73c9df539048227ea31658f2">pocketmine\entity\Living\canBeRenamed</a></div><div class="ttdeci">canBeRenamed()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00135">Living.php:135</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ae1aee29c6e41e00628698b302030b9bf"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae1aee29c6e41e00628698b302030b9bf">pocketmine\entity\Living\onAirExpired</a></div><div class="ttdeci">onAirExpired()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00774">Living.php:774</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_aecbf08b9c016e79822cd3c7ad71c7f55"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55">pocketmine\entity\Living\destroyCycles</a></div><div class="ttdeci">destroyCycles()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00898">Living.php:898</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_af412cd40918d6a86e39b9f5348ea105c"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#af412cd40918d6a86e39b9f5348ea105c">pocketmine\entity\Living\isBreathing</a></div><div class="ttdeci">isBreathing()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00726">Living.php:726</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_afeda8ddcc77181100f2934068c76facb"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#afeda8ddcc77181100f2934068c76facb">pocketmine\entity\Living\getXpDropAmount</a></div><div class="ttdeci">getXpDropAmount()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00789">Living.php:789</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_ae1aee29c6e41e00628698b302030b9bf"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae1aee29c6e41e00628698b302030b9bf">pocketmine\entity\Living\onAirExpired</a></div><div class="ttdeci">onAirExpired()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00781">Living.php:781</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_aecbf08b9c016e79822cd3c7ad71c7f55"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55">pocketmine\entity\Living\destroyCycles</a></div><div class="ttdeci">destroyCycles()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00905">Living.php:905</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_af412cd40918d6a86e39b9f5348ea105c"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#af412cd40918d6a86e39b9f5348ea105c">pocketmine\entity\Living\isBreathing</a></div><div class="ttdeci">isBreathing()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00733">Living.php:733</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_living_html_afeda8ddcc77181100f2934068c76facb"><div class="ttname"><a href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#afeda8ddcc77181100f2934068c76facb">pocketmine\entity\Living\getXpDropAmount</a></div><div class="ttdeci">getXpDropAmount()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d77/_living_8php_source.html#l00796">Living.php:796</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_death_animation_html"><div class="ttname"><a href="../../d5/d2e/classpocketmine_1_1entity_1_1animation_1_1_death_animation.html">pocketmine\entity\animation\DeathAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d78/_death_animation_8php_source.html#l00030">DeathAnimation.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_hurt_animation_html"><div class="ttname"><a href="../../d5/de7/classpocketmine_1_1entity_1_1animation_1_1_hurt_animation.html">pocketmine\entity\animation\HurtAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5e/_hurt_animation_8php_source.html#l00030">HurtAnimation.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1animation_1_1_respawn_animation_html"><div class="ttname"><a href="../../d3/d4f/classpocketmine_1_1entity_1_1animation_1_1_respawn_animation.html">pocketmine\entity\animation\RespawnAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d01/_respawn_animation_8php_source.html#l00030">RespawnAnimation.php:30</a></div></div>
