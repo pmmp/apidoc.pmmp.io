@@ -26,7 +26,7 @@ var classpocketmine_1_1block_1_1_wooden_stairs =
     [ "getFlameEncouragement", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a710c72da6ad375093186200bb174c942", null ],
     [ "getFlammability", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ab4f5d1c7d123e8238cdca4aa6b8a5844", null ],
     [ "getFrictionFactor", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
-    [ "getFuelTime", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ab92353cf0aa5c05ad26535f98a2b1dca", null ],
+    [ "getFuelTime", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a4d4a91142eaf1aed402f3784981b66aa", null ],
     [ "getHorizontalSides", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#afeb38d89fa6f5f5912a1b0e6d131fa3b", null ],
     [ "getIdInfo", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#a85746252cd6a5f1e81cb4c4ebccb52e3", null ],
     [ "getLightFilter", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#afcc19c437c8bef4487f5ecb956ae9a1a", null ],
