@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-fb9a74e8799c71ed8292cfa53abe7a4c9204629d</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-08c6e63aac45a450fe3b437616ee8aa2500e04e2</span>
    </div>
   </td>
  </tr>
@@ -1514,7 +1514,7 @@ $(document).ready(function(){initNavTree('d4/d68/_block_state_to_object_deserial
 <div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span>                    $in-&gt;ignored(StateNames::PILLAR_AXIS);</div>
 <div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span>                    return Blocks::SMOOTH_QUARTZ();</div>
 <div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>                default:</div>
-<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>                    return throw $in-&gt;badValueException(StateNames::CHISEL_TYPE, $type);</div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>                    throw $in-&gt;badValueException(StateNames::CHISEL_TYPE, $type);</div>
 <div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>            }</div>
 <div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>        });</div>
 <div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>        $this-&gt;mapStairs(Ids::QUARTZ_STAIRS, fn() =&gt; Blocks::QUARTZ_STAIRS());</div>
