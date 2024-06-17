@@ -1162,6 +1162,8 @@ var hierarchy =
     [ "JsonMapper", "df/d33/class_json_mapper.html", null ],
     [ "pocketmine\\nbt\\JsonNbtParser", "d7/dca/classpocketmine_1_1nbt_1_1_json_nbt_parser.html", null ],
     [ "JsonSerializable", null, [
+      [ "pocketmine\\crafting\\json\\ShapedRecipeData", "d2/db2/classpocketmine_1_1crafting_1_1json_1_1_shaped_recipe_data.html", null ],
+      [ "pocketmine\\crafting\\json\\ShapelessRecipeData", "d6/d3c/classpocketmine_1_1crafting_1_1json_1_1_shapeless_recipe_data.html", null ],
       [ "pocketmine\\crash\\CrashDumpData", "d8/da3/classpocketmine_1_1crash_1_1_crash_dump_data.html", null ],
       [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModel", "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html", null ],
       [ "pocketmine\\data\\bedrock\\block\\upgrade\\model\\BlockStateUpgradeSchemaModelFlattenedName", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name.html", null ],
@@ -1392,6 +1394,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\AutomationClientConnectPacket", "db/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_automation_client_connect_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\AvailableActorIdentifiersPacket", "d9/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_actor_identifiers_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\AvailableCommandsPacket", "d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\AwardAchievementPacket", "df/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_award_achievement_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BiomeDefinitionListPacket", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BlockActorDataPacket", "d1/d56/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_actor_data_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BlockEventPacket", "dd/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_event_packet.html", null ],
@@ -1512,7 +1515,6 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\SyncActorPropertyPacket", "dc/d98/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sync_actor_property_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TakeItemActorPacket", "df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TextPacket", "db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html", null ],
-        [ "pocketmine\\network\\mcpe\\protocol\\TickSyncPacket", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TickingAreasLoadStatusPacket", "d1/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_ticking_areas_load_status_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ToastRequestPacket", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TransferPacket", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html", null ],
@@ -1548,6 +1550,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\AutomationClientConnectPacket", "db/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_automation_client_connect_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\AvailableActorIdentifiersPacket", "d9/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_actor_identifiers_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\AvailableCommandsPacket", "d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_available_commands_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\AwardAchievementPacket", "df/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_award_achievement_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BiomeDefinitionListPacket", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BlockActorDataPacket", "d1/d56/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_actor_data_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\BlockEventPacket", "dd/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_event_packet.html", null ],
@@ -1710,7 +1713,6 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\SyncActorPropertyPacket", "dc/d98/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sync_actor_property_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TakeItemActorPacket", "df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TextPacket", "db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html", null ],
-        [ "pocketmine\\network\\mcpe\\protocol\\TickSyncPacket", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TickingAreasLoadStatusPacket", "d1/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_ticking_areas_load_status_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ToastRequestPacket", "df/d6a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_toast_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\TransferPacket", "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html", null ],
@@ -1803,8 +1805,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\StructureTemplateDataRequestPacket", "d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\SubChunkRequestPacket", "d3/d9f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sub_chunk_request_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\SubClientLoginPacket", "d1/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sub_client_login_packet.html", null ],
-        [ "pocketmine\\network\\mcpe\\protocol\\TextPacket", "db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html", null ],
-        [ "pocketmine\\network\\mcpe\\protocol\\TickSyncPacket", "dc/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_tick_sync_packet.html", null ]
+        [ "pocketmine\\network\\mcpe\\protocol\\TextPacket", "db/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_text_packet.html", null ]
       ] ]
     ] ],
     [ "raklib\\protocol\\Packet", "d6/d53/classraklib_1_1protocol_1_1_packet.html", [
@@ -1988,6 +1989,7 @@ var hierarchy =
     [ "raklib\\generic\\ReceiveReliabilityLayer", "dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\RecipeIngredient", "dd/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_recipe_ingredient.html", null ],
     [ "pocketmine\\crafting\\json\\RecipeIngredientData", "d2/de3/classpocketmine_1_1crafting_1_1json_1_1_recipe_ingredient_data.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\RecipeUnlockingRequirement", "d8/d8b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_recipe_unlocking_requirement.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\RecipeWithTypeId", "dc/d76/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_recipe_with_type_id.html", [
       [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\FurnaceRecipe", "db/d68/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_furnace_recipe.html", null ],
       [ "pocketmine\\network\\mcpe\\protocol\\types\\recipe\\MultiRecipe", "d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html", null ],
@@ -2109,8 +2111,6 @@ var hierarchy =
       [ "raklib\\server\\ServerSession", "d6/d79/classraklib_1_1server_1_1_server_session.html", null ]
     ] ],
     [ "pocketmine\\wizard\\SetupWizard", "d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html", null ],
-    [ "pocketmine\\crafting\\json\\ShapedRecipeData", "d2/db2/classpocketmine_1_1crafting_1_1json_1_1_shaped_recipe_data.html", null ],
-    [ "pocketmine\\crafting\\json\\ShapelessRecipeData", "d6/d3c/classpocketmine_1_1crafting_1_1json_1_1_shapeless_recipe_data.html", null ],
     [ "pocketmine\\utils\\SignalHandler", "df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html", null ],
     [ "pocketmine\\block\\utils\\SignText", "d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html", null ],
     [ "pocketmine\\entity\\Skin", "d8/d49/classpocketmine_1_1entity_1_1_skin.html", null ],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.15.1 git-08c6e63aac45a450fe3b437616ee8aa2500e04e2</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.16.1 git-585aee9386a787c95e73dd0a05ffca8329606b68</span>
    </div>
   </td>
  </tr>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a959f4968520cf3ae46f1cf305a66bc31"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html#a959f4968520cf3ae46f1cf305a66bc31">create</a> (int $windowId, bool $<a class="el" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>)</td></tr>
-<tr class="separator:a959f4968520cf3ae46f1cf305a66bc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98e7577af9d7f94fd188f56b5839b91"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html#ac98e7577af9d7f94fd188f56b5839b91">create</a> (int $windowId, int $windowType, bool $<a class="el" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>)</td></tr>
+<tr class="separator:ac98e7577af9d7f94fd188f56b5839b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -149,6 +149,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8ed1ef8e3c7c190b506a43e38c85e8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fb241c0405485895742b4d31ed1efaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html#a0fb241c0405485895742b4d31ed1efaa">$windowId</a></td></tr>
 <tr class="separator:a0fb241c0405485895742b4d31ed1efaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7781b4f47c4ec15e3789faecde83ffd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html#af7781b4f47c4ec15e3789faecde83ffd">$windowType</a></td></tr>
+<tr class="separator:af7781b4f47c4ec15e3789faecde83ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2dbbccaf420dd3894fab4ab44af10f"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html#a4d2dbbccaf420dd3894fab4ab44af10f">NETWORK_ID</a> = ProtocolInfo::CONTAINER_CLOSE_PACKET</td></tr>
 <tr class="separator:a4d2dbbccaf420dd3894fab4ab44af10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3431ad9592d959cbe302d5706b8cad82"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a3431ad9592d959cbe302d5706b8cad82">PID_MASK</a> = 0x3ff</td></tr>
@@ -278,8 +280,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a959f4968520cf3ae46f1cf305a66bc31" name="a959f4968520cf3ae46f1cf305a66bc31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a959f4968520cf3ae46f1cf305a66bc31">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ac98e7577af9d7f94fd188f56b5839b91" name="ac98e7577af9d7f94fd188f56b5839b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98e7577af9d7f94fd188f56b5839b91">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,6 +294,12 @@ Protected Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$windowId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$windowType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -313,7 +321,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00029">29</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
 
 </div>
 </div>
@@ -422,7 +430,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
 
 </div>
 </div>
@@ -511,7 +519,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00040">40</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
 
 </div>
 </div>
@@ -572,7 +580,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00049">49</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
 
 </div>
 </div>
@@ -666,7 +674,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00023">23</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00024">24</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
 
 </div>
 </div>
@@ -683,6 +691,22 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
+
+</div>
+</div>
+<a id="af7781b4f47c4ec15e3789faecde83ffd" name="af7781b4f47c4ec15e3789faecde83ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7781b4f47c4ec15e3789faecde83ffd">&#9670;&nbsp;</a></span>$windowType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\ContainerClosePacket::$windowType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html#l00023">23</a> of file <a class="el" href="../../dd/d36/_container_close_packet_8php_source.html">ContainerClosePacket.php</a>.</p>
 
 </div>
 </div>
