@@ -19,7 +19,7 @@ var classpocketmine_1_1item_1_1_bowl =
     [ "getEnchantability", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],
     [ "getEnchantmentTags", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#abe253aa6fbfe2fc36389edadb753ffc7", null ],
     [ "getFuelResidue", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#a23c827b82179f8a57b786a6fa38d08e8", null ],
-    [ "getFuelTime", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#a51b97f07ff97887a144198bb3dba6fc4", null ],
+    [ "getFuelTime", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#a1a0a57da67167b34807a91dd442d5ae2", null ],
     [ "getLore", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#a2bcaa528592d9ae259e2e6d0b89f375d", null ],
     [ "getMaxStackSize", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#ad981d95fce9c8a14832dc5fabbf4f3e4", null ],
     [ "getName", "db/d8c/classpocketmine_1_1item_1_1_bowl.html#a2ee3936259ed3fd96fa07dcbcc4797c1", null ],
