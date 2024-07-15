@@ -20,6 +20,7 @@ var classpocketmine_1_1player_1_1_player =
     [ "changeSkin", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a60f667d93c36fbad77a28388ab455c42", null ],
     [ "chat", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ad0eea32e77150b1914f71a9f5d15f878", null ],
     [ "close", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a02eb3401e4fe566c7a2528aeb7b0222a", null ],
+    [ "closeAllForms", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a334c50f0b061020bc77c890b23639e37", null ],
     [ "consumeHeldItem", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ad7b73a64bfd555d2d574bf3af61c025c", null ],
     [ "consumeObject", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ad0d59edd92d09786b274b1e867efb244", null ],
     [ "damageArmor", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a5e1cfa8b2d94b3a2d4d327fc8e47041b", null ],

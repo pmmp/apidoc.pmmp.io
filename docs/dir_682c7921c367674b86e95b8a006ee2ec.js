@@ -32,6 +32,7 @@ var dir_682c7921c367674b86e95b8a006ee2ec =
     [ "ChangeDimensionPacket.php", "dd/dca/_change_dimension_packet_8php_source.html", null ],
     [ "ChangeMobPropertyPacket.php", "d9/d6f/_change_mob_property_packet_8php_source.html", null ],
     [ "ChunkRadiusUpdatedPacket.php", "de/da3/_chunk_radius_updated_packet_8php_source.html", null ],
+    [ "ClientboundCloseFormPacket.php", "d4/d54/_clientbound_close_form_packet_8php_source.html", null ],
     [ "ClientboundDebugRendererPacket.php", "d3/d65/_clientbound_debug_renderer_packet_8php_source.html", null ],
     [ "ClientboundMapItemDataPacket.php", "d2/db2/_clientbound_map_item_data_packet_8php_source.html", null ],
     [ "ClientboundPacket.php", "d1/d49/_clientbound_packet_8php_source.html", null ],
