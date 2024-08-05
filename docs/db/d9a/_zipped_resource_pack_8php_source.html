@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.17.1 git-df4ada81e5d74a14046f27cf44a37dcee69d657e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.17.1 git-54e7749c0bb02ce64a3dac75bed2f45f9a7086cb</span>
    </div>
   </td>
  </tr>
@@ -242,13 +242,16 @@ $(document).ready(function(){initNavTree('db/d9a/_zipped_resource_pack_8php_sour
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../d3/da4/classpocketmine_1_1resourcepacks_1_1_zipped_resource_pack.html#a3e6a6a2d29054788c23928e15f7213f2">  156</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/da4/classpocketmine_1_1resourcepacks_1_1_zipped_resource_pack.html#a3e6a6a2d29054788c23928e15f7213f2">getPackChunk</a>(<span class="keywordtype">int</span> $start, <span class="keywordtype">int</span> $length) : string{</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        fseek($this-&gt;fileResource, $start);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">if</span>(feof($this-&gt;fileResource)){</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Requested a resource pack chunk with invalid start offset&quot;</span>);</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> Utils::assumeNotFalse(fread($this-&gt;fileResource, $length), <span class="stringliteral">&quot;Already checked that we&#39;re not at EOF&quot;</span>);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        if($length &lt; 1){</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Pack length must be positive&quot;</span>);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        fseek($this-&gt;fileResource, $start);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span>(feof($this-&gt;fileResource)){</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Requested a resource pack chunk with invalid start offset&quot;</span>);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">return</span> Utils::assumeNotFalse(fread($this-&gt;fileResource, $length), <span class="stringliteral">&quot;Already checked that we&#39;re not at EOF&quot;</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 <div class="ttc" id="aclass_json_mapper___exception_html"><div class="ttname"><a href="../../d4/d67/class_json_mapper___exception.html">JsonMapper_Exception</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d12/_exception_8php_source.html#l00023">Exception.php:24</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1resourcepacks_1_1_resource_pack_exception_html"><div class="ttname"><a href="../../de/da2/classpocketmine_1_1resourcepacks_1_1_resource_pack_exception.html">pocketmine\resourcepacks\ResourcePackException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d90/_resource_pack_exception_8php_source.html#l00026">ResourcePackException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1resourcepacks_1_1_zipped_resource_pack_html"><div class="ttname"><a href="../../d3/da4/classpocketmine_1_1resourcepacks_1_1_zipped_resource_pack.html">pocketmine\resourcepacks\ZippedResourcePack</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9a/_zipped_resource_pack_8php_source.html#l00043">ZippedResourcePack.php:43</a></div></div>

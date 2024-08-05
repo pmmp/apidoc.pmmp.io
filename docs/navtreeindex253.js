@@ -1,5 +1,7 @@
 var NAVTREEINDEX253 =
 {
+"df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html#aa064d23077830ab265f931c3385a3e0d":[2,0,2,16,0,6,189,3],
+"df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html#ab3d72af6d98e7a9238f7df937dd7ecb1":[2,0,2,16,0,6,189,2],
 "df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html#ab3d72af6d98e7a9238f7df937dd7ecb1":[3,0,1,16,0,6,189,2],
 "df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[2,0,2,16,0,6,189,1],
 "df/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_take_item_actor_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,189,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX253 =
 "df/dac/classpocketmine_1_1item_1_1_steak.html#ad2d004e5063f6ca465ed956b024217b1":[3,0,1,12,100,27],
 "df/dac/classpocketmine_1_1item_1_1_steak.html#ad2d004e5063f6ca465ed956b024217b1":[2,0,2,12,100,27],
 "df/dac/classpocketmine_1_1item_1_1_steak.html#ad981d95fce9c8a14832dc5fabbf4f3e4":[2,0,2,12,100,22],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#ad981d95fce9c8a14832dc5fabbf4f3e4":[3,0,1,12,100,22],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#ae0735ccc1dee85d0c095aaa4109f40fb":[3,0,1,12,100,13],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#ae0735ccc1dee85d0c095aaa4109f40fb":[2,0,2,12,100,13]
+"df/dac/classpocketmine_1_1item_1_1_steak.html#ad981d95fce9c8a14832dc5fabbf4f3e4":[3,0,1,12,100,22]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX248 =
 {
+"df/d72/classpocketmine_1_1block_1_1_hardened_glass_pane.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,120,57],
+"df/d72/classpocketmine_1_1block_1_1_hardened_glass_pane.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,2,0,120,57],
 "df/d72/classpocketmine_1_1block_1_1_hardened_glass_pane.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,120,43],
 "df/d72/classpocketmine_1_1block_1_1_hardened_glass_pane.html#acfa7766036568571b645ae89ceb1029e":[2,0,2,0,120,43],
 "df/d72/classpocketmine_1_1block_1_1_hardened_glass_pane.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,120,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX248 =
 "df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a568624515bba5ff57e21ec8c828ade56":[2,0,2,12,12,5],
 "df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a56bc59582baf2faf3412ca7044831e3b":[2,0,2,12,12,36],
 "df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a56bc59582baf2faf3412ca7044831e3b":[3,0,1,12,12,36],
-"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,2,12,12,51],
-"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,12,51],
-"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,12,43]
+"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,2,12,12,51]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX251 =
 {
+"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa":[3,0,1,9,3,35,4],
+"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3aea575bc25658fe57943fa29d208c8b":[2,0,2,9,3,35,2],
 "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3aea575bc25658fe57943fa29d208c8b":[3,0,1,9,3,35,2],
 "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,3,35,0],
 "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,2,9,3,35,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX251 =
 "df/da1/_totem_8php_source.html":[4,0,0,10,117],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html":[2,0,2,0,169],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html":[3,0,1,0,169],
-"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a00b17b6ab2ea033f777b0819343c5498":[2,0,2,0,169,64],
-"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a00b17b6ab2ea033f777b0819343c5498":[3,0,1,0,169,64],
-"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a0931c682312473fc2540464b7a4747c0":[2,0,2,0,169,58]
+"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a00b17b6ab2ea033f777b0819343c5498":[2,0,2,0,169,64]
 };

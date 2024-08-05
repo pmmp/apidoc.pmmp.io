@@ -1,5 +1,7 @@
 var NAVTREEINDEX255 =
 {
+"df/daf/classpocketmine_1_1block_1_1_wooden_door.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,242,16],
+"df/daf/classpocketmine_1_1block_1_1_wooden_door.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,2,0,242,27],
 "df/daf/classpocketmine_1_1block_1_1_wooden_door.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,242,27],
 "df/db1/_listener_8php_source.html":[4,0,0,7,13],
 "df/db3/_chorus_fruit_8php_source.html":[4,0,0,10,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX255 =
 "df/dc5/classpocketmine_1_1block_1_1_redstone.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,2,0,173,51],
 "df/dc5/classpocketmine_1_1block_1_1_redstone.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,173,51],
 "df/dc5/classpocketmine_1_1block_1_1_redstone.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,173,0],
-"df/dc5/classpocketmine_1_1block_1_1_redstone.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,2,0,173,0],
-"df/dc5/classpocketmine_1_1block_1_1_redstone.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,173,24],
-"df/dc5/classpocketmine_1_1block_1_1_redstone.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,2,0,173,24]
+"df/dc5/classpocketmine_1_1block_1_1_redstone.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,2,0,173,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX250 =
 {
+"df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,208,20],
+"df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,2,0,208,20],
 "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,2,0,208,50],
 "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,208,50],
 "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,2,0,208,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX250 =
 "df/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_award_achievement_packet.html#ad897b4a5083108a5ab7445bfd70069a6":[3,0,1,16,0,6,18,2],
 "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html":[2,0,2,9,3,35],
 "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html":[3,0,1,9,3,35],
-"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa":[2,0,2,9,3,35,4],
-"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa":[3,0,1,9,3,35,4],
-"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a3aea575bc25658fe57943fa29d208c8b":[2,0,2,9,3,35,2]
+"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a2e8087e1f9e841174477a266884efaaa":[2,0,2,9,3,35,4]
 };

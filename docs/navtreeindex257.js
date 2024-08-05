@@ -1,5 +1,7 @@
 var NAVTREEINDEX257 =
 {
+"df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,229,59],
+"df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a0931c682312473fc2540464b7a4747c0":[2,0,2,0,229,59],
 "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a09f4667329f89292dd319d56c4243b59":[3,0,1,0,229,30],
 "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a09f4667329f89292dd319d56c4243b59":[2,0,2,0,229,30],
 "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,229,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX257 =
 "df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#ad53358136d2834427c096078f598fa31":[2,0,2,7,16,1],
 "df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#ad53358136d2834427c096078f598fa31":[3,0,1,7,16,1],
 "df/dfe/_projectile_8php_source.html":[4,0,0,6,3,4],
-"df/dff/item_2_coal_8php_source.html":[4,0,0,10,25],
-"dir_0003aa60d4a21aee354b5b2fa826bf4b.html":[4,0,0,12,0,5],
-"dir_0072c29217f03547b57a41ead6d94585.html":[4,0,0,9,0]
+"df/dff/item_2_coal_8php_source.html":[4,0,0,10,25]
 };
