@@ -27,9 +27,5 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deser
     [ "decodeWallCoralFan", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a61239e3c35c5e25a1197acdb8becfd52", null ],
     [ "decodeWallSign", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a3413365106e39750ae20b7729d220651", null ],
     [ "decodeWaxedCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a523192294c1a612b45b355720f70b7fb", null ],
-    [ "mapLegacyWallType", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a9d63f0c1d88190a43d36686773678177", null ],
-    [ "mapStoneSlab1Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a5deb9c36c91b6ef36c341191d6497b97", null ],
-    [ "mapStoneSlab2Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a135f9c49abd1299d02760db983953002", null ],
-    [ "mapStoneSlab3Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a14da2452f47bbb20a3730f79b829f602", null ],
-    [ "mapStoneSlab4Type", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#aaab0e4dd8f43dfe8459e228d07faf321", null ]
+    [ "mapLegacyWallType", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a9d63f0c1d88190a43d36686773678177", null ]
 ];

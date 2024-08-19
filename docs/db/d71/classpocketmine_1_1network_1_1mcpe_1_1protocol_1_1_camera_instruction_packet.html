@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.17.1 git-5a926a79cb97f284c64c754d3f60fba8348435b8</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.1 git-c32744ebc70ab6cd4d5c58ed0f3f896da544817c</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83827b909347fd1627c5edb2475a7779"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html#a83827b909347fd1627c5edb2475a7779">getSet</a> ()</td></tr>
 <tr class="separator:a83827b909347fd1627c5edb2475a7779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a55071afb18c8851f6a080a268a0d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html#a77a55071afb18c8851f6a080a268a0d0">getTarget</a> ()</td></tr>
+<tr class="separator:a77a55071afb18c8851f6a080a268a0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63fd36f5e27821d22c597718b6ae7b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html#ae63fd36f5e27821d22c597718b6ae7b2">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
 <tr class="separator:ae63fd36f5e27821d22c597718b6ae7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a42c2432f23e1c1b69a82f90588c1dbf5">pid</a> ()</td></tr>
@@ -142,8 +144,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afffbc76d5a9d901d1ab1b3ebb044d05c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html#afffbc76d5a9d901d1ab1b3ebb044d05c">create</a> (?<a class="el" href="../../dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html">CameraSetInstruction</a> $set, ?bool $clear, ?<a class="el" href="../../d7/d08/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction.html">CameraFadeInstruction</a> $fade)</td></tr>
-<tr class="separator:afffbc76d5a9d901d1ab1b3ebb044d05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80198f6728e332237b3d4fc4171572ff"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html#a80198f6728e332237b3d4fc4171572ff">create</a> (?<a class="el" href="../../dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html">CameraSetInstruction</a> $set, ?bool $clear, ?<a class="el" href="../../d7/d08/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction.html">CameraFadeInstruction</a> $fade, ?<a class="el" href="../../d1/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_target_instruction.html">CameraTargetInstruction</a> $target, ?bool $removeTarget)</td></tr>
+<tr class="separator:a80198f6728e332237b3d4fc4171572ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -169,7 +171,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00021">21</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9e53bcf6c12eab41fd619f5d812c1be2" name="a9e53bcf6c12eab41fd619f5d812c1be2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e53bcf6c12eab41fd619f5d812c1be2">&#9670;&nbsp;</a></span>__get()</h2>
@@ -280,8 +282,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afffbc76d5a9d901d1ab1b3ebb044d05c" name="afffbc76d5a9d901d1ab1b3ebb044d05c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afffbc76d5a9d901d1ab1b3ebb044d05c">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a80198f6728e332237b3d4fc4171572ff" name="a80198f6728e332237b3d4fc4171572ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80198f6728e332237b3d4fc4171572ff">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +307,19 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?<a class="el" href="../../d7/d08/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction.html">CameraFadeInstruction</a>&#160;</td>
-          <td class="paramname"><em>$fade</em>&#160;</td>
+          <td class="paramname"><em>$fade</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?<a class="el" href="../../d1/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_target_instruction.html">CameraTargetInstruction</a>&#160;</td>
+          <td class="paramname"><em>$target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?bool&#160;</td>
+          <td class="paramname"><em>$removeTarget</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -321,7 +335,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00034">34</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -430,7 +444,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00052">52</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -519,7 +533,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00051">51</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00060">60</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -538,7 +552,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00046">46</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -557,7 +571,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -605,7 +619,26 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a77a55071afb18c8851f6a080a268a0d0" name="a77a55071afb18c8851f6a080a268a0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a55071afb18c8851f6a080a268a0d0">&#9670;&nbsp;</a></span>getTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\CameraInstructionPacket::getTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00050">50</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -637,7 +670,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00068">68</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>
@@ -731,7 +764,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00022">22</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html#l00023">23</a> of file <a class="el" href="../../dc/d4e/_camera_instruction_packet_8php_source.html">CameraInstructionPacket.php</a>.</p>
 
 </div>
 </div>

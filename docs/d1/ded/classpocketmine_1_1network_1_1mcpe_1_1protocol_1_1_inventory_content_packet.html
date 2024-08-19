@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.17.1 git-5a926a79cb97f284c64c754d3f60fba8348435b8</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.1 git-c32744ebc70ab6cd4d5c58ed0f3f896da544817c</span>
    </div>
   </td>
  </tr>
@@ -136,11 +136,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a273b1be9d2b534a9c5cd9c29d5715418"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html#a273b1be9d2b534a9c5cd9c29d5715418">create</a> (int $windowId, array $items)</td></tr>
-<tr class="separator:a273b1be9d2b534a9c5cd9c29d5715418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dddfc9fe82e6ddde2b6a54b643b2b8d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html#a9dddfc9fe82e6ddde2b6a54b643b2b8d">create</a> (int $windowId, array $items, int $dynamicContainerId)</td></tr>
+<tr class="separator:a9dddfc9fe82e6ddde2b6a54b643b2b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:aece4fc23f26c18406c8ff66ba83d0a72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html#aece4fc23f26c18406c8ff66ba83d0a72">$dynamicContainerId</a></td></tr>
+<tr class="separator:aece4fc23f26c18406c8ff66ba83d0a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dc1bba133b6167e1d8f74b200a9dce3"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html#a3dc1bba133b6167e1d8f74b200a9dce3">$items</a> = []</td></tr>
 <tr class="separator:a3dc1bba133b6167e1d8f74b200a9dce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#aa8f8e8ec577e46952ad065c9ede0943a">$recipientSubId</a> = 0</td></tr>
@@ -278,8 +280,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a273b1be9d2b534a9c5cd9c29d5715418" name="a273b1be9d2b534a9c5cd9c29d5715418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a273b1be9d2b534a9c5cd9c29d5715418">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a9dddfc9fe82e6ddde2b6a54b643b2b8d" name="a9dddfc9fe82e6ddde2b6a54b643b2b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dddfc9fe82e6ddde2b6a54b643b2b8d">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +299,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$items</em>&#160;</td>
+          <td class="paramname"><em>$items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$dynamicContainerId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -318,7 +326,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
 
 </div>
 </div>
@@ -427,7 +435,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
 
 </div>
 </div>
@@ -516,7 +524,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00047">47</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00050">50</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
 
 </div>
 </div>
@@ -577,7 +585,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00055">55</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00059">59</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
 
 </div>
 </div>
@@ -611,6 +619,22 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aece4fc23f26c18406c8ff66ba83d0a72" name="aece4fc23f26c18406c8ff66ba83d0a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece4fc23f26c18406c8ff66ba83d0a72">&#9670;&nbsp;</a></span>$dynamicContainerId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\InventoryContentPacket::$dynamicContainerId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../d1/d63/_inventory_content_packet_8php_source.html">InventoryContentPacket.php</a>.</p>
+
+</div>
+</div>
 <a id="a3dc1bba133b6167e1d8f74b200a9dce3" name="a3dc1bba133b6167e1d8f74b200a9dce3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3dc1bba133b6167e1d8f74b200a9dce3">&#9670;&nbsp;</a></span>$items</h2>
 

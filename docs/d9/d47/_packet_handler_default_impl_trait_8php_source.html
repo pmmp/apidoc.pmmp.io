@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.17.1 git-5a926a79cb97f284c64c754d3f60fba8348435b8</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.1 git-c32744ebc70ab6cd4d5c58ed0f3f896da544817c</span>
    </div>
   </td>
  </tr>
@@ -890,10 +890,26 @@ $(document).ready(function(){initNavTree('d9/d47/_packet_handler_default_impl_tr
 <div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        return false;</div>
 <div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    }</div>
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleCloseForm(ClientboundCloseFormPacket $packet) : bool{</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleClientboundCloseForm(ClientboundCloseFormPacket $packet) : bool{</div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>        return false;</div>
 <div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    }</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>}</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleServerboundLoadingScreen(ServerboundLoadingScreenPacket $packet) : bool{</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>        return false;</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    }</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span> </div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleJigsawStructureData(JigsawStructureDataPacket $packet) : bool{</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>        return false;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    }</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleCurrentStructureFeature(CurrentStructureFeaturePacket $packet) : bool{</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>        return false;</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    }</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span> </div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleServerboundDiagnostics(ServerboundDiagnosticsPacket $packet) : bool{</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        return false;</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    }</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
