@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.1 git-c32744ebc70ab6cd4d5c58ed0f3f896da544817c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.1 git-ede363eb0fd98b51b5da307c79339e7de68e62d8</span>
    </div>
   </td>
  </tr>
@@ -401,7 +401,7 @@ $(document).ready(function(){initNavTree('dd/dd9/_item_stack_request_executor_8p
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    $this-&gt;setNextCreatedItem($window-&gt;getOutput($optionId));</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                }</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                $this-&gt;beginCrafting($action-&gt;getRecipeId(), 1);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                $this-&gt;beginCrafting($action-&gt;getRecipeId(), $action-&gt;getRepetitions());</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            }</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        }elseif($action instanceof CraftRecipeAutoStackRequestAction){</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            $this-&gt;beginCrafting($action-&gt;getRecipeId(), $action-&gt;getRepetitions());</div>
