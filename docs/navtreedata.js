@@ -201,7 +201,7 @@ var NAVTREEINDEX =
 "d8/dd4/classpocketmine_1_1block_1_1_chorus_plant.html",
 "d8/dd5/classpocketmine_1_1block_1_1_gilded_blackstone.html#ad925607ef09026804dbbf059583e3add",
 "d8/dee/classpocketmine_1_1block_1_1_powered_rail.html#a1ce2444f76246982cfbb507fed99a48e",
-"d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#ad57a8bddf87431ff034f3a96e7219d63",
+"d8/df2/classpocketmine_1_1block_1_1_blue_ice.html#ad925607ef09026804dbbf059583e3add",
 "d9/d07/classpocketmine_1_1block_1_1_carved_pumpkin.html#af97d045122137ac415425b45e7b22a36",
 "d9/d0e/classpocketmine_1_1item_1_1_honey_bottle.html#ae0735ccc1dee85d0c095aaa4109f40fb",
 "d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#ae6f3cdb7eeee27448b561fa3f8323916",
