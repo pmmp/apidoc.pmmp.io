@@ -1099,6 +1099,7 @@ var annotated_dup =
                 [ "PropertySyncData", "d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data.html", "d5/d6c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_property_sync_data" ],
                 [ "ShortMetadataProperty", "d3/d52/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_short_metadata_property.html", null ],
                 [ "StringMetadataProperty", "da/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_string_metadata_property.html", null ],
+                [ "UpdateAttribute", "d5/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_update_attribute.html", "d5/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_update_attribute" ],
                 [ "Vec3MetadataProperty", "df/d8e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_vec3_metadata_property.html", null ]
               ] ],
               [ "inventory", null, [
@@ -1187,7 +1188,6 @@ var annotated_dup =
                 [ "TagItemDescriptor", "d2/daa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_tag_item_descriptor.html", null ]
               ] ],
               [ "resourcepacks", null, [
-                [ "BehaviorPackInfoEntry", "da/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1resourcepacks_1_1_behavior_pack_info_entry.html", null ],
                 [ "ResourcePackInfoEntry", "d2/d76/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1resourcepacks_1_1_resource_pack_info_entry.html", null ],
                 [ "ResourcePackStackEntry", "d1/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1resourcepacks_1_1_resource_pack_stack_entry.html", null ],
                 [ "ResourcePackType", "d6/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1resourcepacks_1_1_resource_pack_type.html", null ]
@@ -1299,6 +1299,7 @@ var annotated_dup =
             [ "BlockPickRequestPacket", "df/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_pick_request_packet.html", "df/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_pick_request_packet" ],
             [ "BookEditPacket", "d1/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_book_edit_packet.html", "d1/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_book_edit_packet" ],
             [ "BossEventPacket", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet.html", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet" ],
+            [ "CameraAimAssistPacket", "d4/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_packet.html", "d4/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_packet" ],
             [ "CameraInstructionPacket", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet" ],
             [ "CameraPacket", "de/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_packet.html", "de/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_packet" ],
             [ "CameraPresetsPacket", "df/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_presets_packet.html", "df/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_presets_packet" ],
@@ -1323,6 +1324,7 @@ var annotated_dup =
             [ "CompressedBiomeDefinitionListPacket", "d0/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_compressed_biome_definition_list_packet.html", "d0/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_compressed_biome_definition_list_packet" ],
             [ "ContainerClosePacket", "d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html", "d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet" ],
             [ "ContainerOpenPacket", "d7/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet.html", "d7/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet" ],
+            [ "ContainerRegistryCleanupPacket", "d6/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_registry_cleanup_packet.html", "d6/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_registry_cleanup_packet" ],
             [ "ContainerSetDataPacket", "db/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_set_data_packet.html", "db/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_set_data_packet" ],
             [ "CorrectPlayerMovePredictionPacket", "d7/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_correct_player_move_prediction_packet.html", "d7/d59/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_correct_player_move_prediction_packet" ],
             [ "CraftingDataPacket", "d1/d7f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_crafting_data_packet.html", "d1/d7f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_crafting_data_packet" ],

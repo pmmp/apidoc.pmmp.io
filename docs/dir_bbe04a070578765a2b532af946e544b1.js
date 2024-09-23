@@ -22,5 +22,6 @@ var dir_bbe04a070578765a2b532af946e544b1 =
     [ "PropertySyncData.php", "d3/d0f/_property_sync_data_8php_source.html", null ],
     [ "ShortMetadataProperty.php", "db/dd6/_short_metadata_property_8php_source.html", null ],
     [ "StringMetadataProperty.php", "d7/df4/_string_metadata_property_8php_source.html", null ],
+    [ "UpdateAttribute.php", "dc/d01/_update_attribute_8php_source.html", null ],
     [ "Vec3MetadataProperty.php", "df/da3/_vec3_metadata_property_8php_source.html", null ]
 ];

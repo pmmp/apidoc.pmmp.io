@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.2 git-00e39821f06a4b6d728d35053c2621dbb19369ff</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.19.1 git-0a7cbdd56df893c1778b72ca0bd452555ccf7c4d</span>
    </div>
   </td>
  </tr>
@@ -188,6 +188,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7bfd58c36a5650d0b91cb010a311be70"><td class="memItemLeft" align="right" valign="top"><a id="a7bfd58c36a5650d0b91cb010a311be70" name="a7bfd58c36a5650d0b91cb010a311be70"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleCamera</b> (CameraPacket $packet)</td></tr>
 <tr class="separator:a7bfd58c36a5650d0b91cb010a311be70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4568662a2ef21db0895785b656c6a1"><td class="memItemLeft" align="right" valign="top"><a id="aad4568662a2ef21db0895785b656c6a1" name="aad4568662a2ef21db0895785b656c6a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleCameraAimAssist</b> (CameraAimAssistPacket $packet)</td></tr>
+<tr class="separator:aad4568662a2ef21db0895785b656c6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e031707aaea3f301e2e6a1973a4b318"><td class="memItemLeft" align="right" valign="top"><a id="a2e031707aaea3f301e2e6a1973a4b318" name="a2e031707aaea3f301e2e6a1973a4b318"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleCameraInstruction</b> (CameraInstructionPacket $packet)</td></tr>
 <tr class="separator:a2e031707aaea3f301e2e6a1973a4b318"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +257,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae0a84ebb8c81aeeabdadc92333bacb71"><td class="memItemLeft" align="right" valign="top"><a id="ae0a84ebb8c81aeeabdadc92333bacb71" name="ae0a84ebb8c81aeeabdadc92333bacb71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleContainerOpen</b> (<a class="el" href="../../d7/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet.html">ContainerOpenPacket</a> $packet)</td></tr>
 <tr class="separator:ae0a84ebb8c81aeeabdadc92333bacb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868159a730dd0c69a6d5520ef61e4528"><td class="memItemLeft" align="right" valign="top"><a id="a868159a730dd0c69a6d5520ef61e4528" name="a868159a730dd0c69a6d5520ef61e4528"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleContainerRegistryCleanup</b> (ContainerRegistryCleanupPacket $packet)</td></tr>
+<tr class="separator:a868159a730dd0c69a6d5520ef61e4528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f70a0f7d5b0a7d9d5cd4b6b875bc110"><td class="memItemLeft" align="right" valign="top"><a id="a5f70a0f7d5b0a7d9d5cd4b6b875bc110" name="a5f70a0f7d5b0a7d9d5cd4b6b875bc110"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleContainerSetData</b> (<a class="el" href="../../db/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_set_data_packet.html">ContainerSetDataPacket</a> $packet)</td></tr>
 <tr class="separator:a5f70a0f7d5b0a7d9d5cd4b6b875bc110"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -797,7 +803,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00194">194</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00192">192</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -819,7 +825,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00135">135</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00133">133</a> of file <a class="el" href="../../d8/d59/_resource_packs_packet_handler_8php_source.html">ResourcePacksPacketHandler.php</a>.</p>
 
 </div>
 </div>

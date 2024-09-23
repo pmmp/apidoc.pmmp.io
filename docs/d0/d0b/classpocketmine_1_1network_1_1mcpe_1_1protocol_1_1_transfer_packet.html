@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.2 git-00e39821f06a4b6d728d35053c2621dbb19369ff</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.19.1 git-0a7cbdd56df893c1778b72ca0bd452555ccf7c4d</span>
    </div>
   </td>
  </tr>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6d6c4ab0e513883ccc46dbc831cf9e5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html#ad6d6c4ab0e513883ccc46dbc831cf9e5">create</a> (string $address, int $port)</td></tr>
-<tr class="separator:ad6d6c4ab0e513883ccc46dbc831cf9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44db24c61a2e6f4a31f2f4b1beb8e1bd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html#a44db24c61a2e6f4a31f2f4b1beb8e1bd">create</a> (string $address, int $port, bool $reloadWorld)</td></tr>
+<tr class="separator:a44db24c61a2e6f4a31f2f4b1beb8e1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,6 +147,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac0f3353dc85090a186141b05c113b828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#aa8f8e8ec577e46952ad065c9ede0943a">$recipientSubId</a> = 0</td></tr>
 <tr class="separator:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66dca54218c31e6033e0500795042969"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html#a66dca54218c31e6033e0500795042969">$reloadWorld</a></td></tr>
+<tr class="separator:a66dca54218c31e6033e0500795042969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#adaad4a5e300a6eefe7bd9cb321626ba6">$senderSubId</a> = 0</td></tr>
 <tr class="separator:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af27a0abea27122bc43579a9fbc404cbe"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html#af27a0abea27122bc43579a9fbc404cbe">NETWORK_ID</a> = ProtocolInfo::TRANSFER_PACKET</td></tr>
@@ -278,8 +280,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6d6c4ab0e513883ccc46dbc831cf9e5" name="ad6d6c4ab0e513883ccc46dbc831cf9e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d6c4ab0e513883ccc46dbc831cf9e5">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a44db24c61a2e6f4a31f2f4b1beb8e1bd" name="a44db24c61a2e6f4a31f2f4b1beb8e1bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44db24c61a2e6f4a31f2f4b1beb8e1bd">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +299,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$port</em>&#160;</td>
+          <td class="paramname"><em>$port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$reloadWorld</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,7 +321,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00029">29</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
 
 </div>
 </div>
@@ -422,7 +430,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
 
 </div>
 </div>
@@ -511,7 +519,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00040">40</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
 
 </div>
 </div>
@@ -572,7 +580,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00049">49</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
 
 </div>
 </div>
@@ -659,6 +667,22 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/db7/_data_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d1/db7/_data_packet_8php_source.html">DataPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a66dca54218c31e6033e0500795042969" name="a66dca54218c31e6033e0500795042969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66dca54218c31e6033e0500795042969">&#9670;&nbsp;</a></span>$reloadWorld</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pocketmine\network\mcpe\protocol\TransferPacket::$reloadWorld</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/def/_transfer_packet_8php_source.html#l00024">24</a> of file <a class="el" href="../../dc/def/_transfer_packet_8php_source.html">TransferPacket.php</a>.</p>
 
 </div>
 </div>

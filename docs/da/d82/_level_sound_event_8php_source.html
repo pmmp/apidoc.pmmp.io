@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.18.2 git-00e39821f06a4b6d728d35053c2621dbb19369ff</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.19.1 git-0a7cbdd56df893c1778b72ca0bd452555ccf7c4d</span>
    </div>
   </td>
  </tr>
@@ -419,7 +419,7 @@ $(document).ready(function(){initNavTree('da/d82/_level_sound_event_8php_source.
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMBIENT_WARPED_FOREST_MOOD = 303;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMBIENT_SOULSAND_VALLEY_MOOD = 304;</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMBIENT_NETHER_WASTES_MOOD = 305;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keyword">public</span> <span class="keyword">const</span> RESPAWN_ANCHOR_BASALT_DELTAS_MOOD = 306;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMBIENT_BASALT_DELTAS_MOOD = 306;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMBIENT_CRIMSON_FOREST_MOOD = 307;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keyword">public</span> <span class="keyword">const</span> RESPAWN_ANCHOR_CHARGE = 308;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keyword">public</span> <span class="keyword">const</span> RESPAWN_ANCHOR_DEPLETE = 309;</div>
@@ -610,30 +610,33 @@ $(document).ready(function(){initNavTree('da/d82/_level_sound_event_8php_source.
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    <span class="keyword">public</span> <span class="keyword">const</span> RECORD_CREATOR_MUSIC_BOX = 528;</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    <span class="keyword">public</span> <span class="keyword">const</span> RECORD_PRECIPICE = 529;</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="keyword">public</span> <span class="keyword">const</span> VAULT_REJECT_REWARDED_PLAYER = 530;</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <span class="comment">//The following aliases are kept for backwards compatibility only</span></div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_SENSOR_POWER_ON = self::POWER_ON_SCULK_SENSOR;</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_SENSOR_POWER_OFF = self::POWER_OFF_SCULK_SENSOR;</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_CAULDRON_DRIP_WATER = self::CAULDRON_DRIP_WATER_POINTED_DRIPSTONE;</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_CAULDRON_DRIP_LAVA = self::CAULDRON_DRIP_LAVA_POINTED_DRIPSTONE;</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_DRIP_WATER = self::DRIP_WATER_POINTED_DRIPSTONE;</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_DRIP_LAVA = self::DRIP_LAVA_POINTED_DRIPSTONE;</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAVE_VINES_PICK_BERRIES = self::PICK_BERRIES_CAVE_VINES;</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIG_DRIPLEAF_TILT_DOWN = self::TILT_DOWN_BIG_DRIPLEAF;</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIG_DRIPLEAF_TILT_UP = self::TILT_UP_BIG_DRIPLEAF;</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYER_HURT_DROWN = self::MOB_PLAYER_HURT_DROWN;</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYER_HURT_ON_FIRE = self::MOB_PLAYER_HURT_ON_FIRE;</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYER_HURT_FREEZE = self::MOB_PLAYER_HURT_FREEZE;</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    <span class="keyword">public</span> <span class="keyword">const</span> USE_SPYGLASS = self::ITEM_SPYGLASS_USE;</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="keyword">public</span> <span class="keyword">const</span> STOP_USING_SPYGLASS = self::ITEM_SPYGLASS_STOP_USING;</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMETHYST_BLOCK_CHIME = self::CHIME_AMETHYST_BLOCK;</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_CATALYST_BLOOM = self::BLOCK_SCULK_CATALYST_BLOOM;</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_SHRIEKER_SHRIEK = self::BLOCK_SCULK_SHRIEKER_SHRIEK;</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_NEARBY_CLOSE = self::NEARBY_CLOSE;</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_NEARBY_CLOSER = self::NEARBY_CLOSER;</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_NEARBY_CLOSEST = self::NEARBY_CLOSEST;</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_SLIGHTLY_ANGRY = self::AGITATED;</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>}</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="keyword">public</span> <span class="keyword">const</span> IMITATE_DROWNED = 531;</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    <span class="keyword">public</span> <span class="keyword">const</span> BUNDLE_INSERT_FAIL = 533;</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    <span class="comment">//The following aliases are kept for backwards compatibility only</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_SENSOR_POWER_ON = self::POWER_ON_SCULK_SENSOR;</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_SENSOR_POWER_OFF = self::POWER_OFF_SCULK_SENSOR;</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_CAULDRON_DRIP_WATER = self::CAULDRON_DRIP_WATER_POINTED_DRIPSTONE;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_CAULDRON_DRIP_LAVA = self::CAULDRON_DRIP_LAVA_POINTED_DRIPSTONE;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_DRIP_WATER = self::DRIP_WATER_POINTED_DRIPSTONE;</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    <span class="keyword">public</span> <span class="keyword">const</span> POINTED_DRIPSTONE_DRIP_LAVA = self::DRIP_LAVA_POINTED_DRIPSTONE;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAVE_VINES_PICK_BERRIES = self::PICK_BERRIES_CAVE_VINES;</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIG_DRIPLEAF_TILT_DOWN = self::TILT_DOWN_BIG_DRIPLEAF;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIG_DRIPLEAF_TILT_UP = self::TILT_UP_BIG_DRIPLEAF;</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYER_HURT_DROWN = self::MOB_PLAYER_HURT_DROWN;</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYER_HURT_ON_FIRE = self::MOB_PLAYER_HURT_ON_FIRE;</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="keyword">public</span> <span class="keyword">const</span> PLAYER_HURT_FREEZE = self::MOB_PLAYER_HURT_FREEZE;</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="keyword">public</span> <span class="keyword">const</span> USE_SPYGLASS = self::ITEM_SPYGLASS_USE;</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keyword">public</span> <span class="keyword">const</span> STOP_USING_SPYGLASS = self::ITEM_SPYGLASS_STOP_USING;</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <span class="keyword">public</span> <span class="keyword">const</span> AMETHYST_BLOCK_CHIME = self::CHIME_AMETHYST_BLOCK;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_CATALYST_BLOOM = self::BLOCK_SCULK_CATALYST_BLOOM;</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="keyword">public</span> <span class="keyword">const</span> SCULK_SHRIEKER_SHRIEK = self::BLOCK_SCULK_SHRIEKER_SHRIEK;</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_NEARBY_CLOSE = self::NEARBY_CLOSE;</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_NEARBY_CLOSER = self::NEARBY_CLOSER;</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_NEARBY_CLOSEST = self::NEARBY_CLOSEST;</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARDEN_SLIGHTLY_ANGRY = self::AGITATED;</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_sound_event_html"><div class="ttname"><a href="../../d5/ddc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_sound_event.html">pocketmine\network\mcpe\protocol\types\LevelSoundEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d82/_level_sound_event_8php_source.html#l00021">LevelSoundEvent.php:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
