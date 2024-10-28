@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PocketMine-MP: PlayerMovementType.php Source File</title>
+<title>PocketMine-MP: ServerAuthMovementMode.php Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.19.1 git-f1b1a7022d7dc67d012d8891bc4c23c2652c825e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.20.1 git-8ef5e737de5689ba83a9bf66b6efa147171452ce</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d3/d20/_player_movement_type_8php_source.html','../../'); initResizable(); });
+$(document).ready(function(){initNavTree('d5/d28/_server_auth_movement_mode_8php_source.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('d3/d20/_player_movement_type_8php_sour
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">PlayerMovementType.php</div></div>
+  <div class="headertitle"><div class="title">ServerAuthMovementMode.php</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
@@ -108,19 +108,19 @@ $(document).ready(function(){initNavTree('d3/d20/_player_movement_type_8php_sour
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol\types;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../de/d3e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_type.html">   17</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d3e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_type.html">PlayerMovementType</a>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span> <span class="keyword">const</span> LEGACY = 0; <span class="comment">//MovePlayerPacket</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span> <span class="keyword">const</span> SERVER_AUTHORITATIVE_V1 = 1; <span class="comment">//PlayerAuthInputPacket</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span> <span class="keyword">const</span> SERVER_AUTHORITATIVE_V2_REWIND = 2; <span class="comment">//PlayerAuthInputPacket + movement replay (used for server authoritative knockback)</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_type_html"><div class="ttname"><a href="../../de/d3e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_movement_type.html">pocketmine\network\mcpe\protocol\types\PlayerMovementType</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d20/_player_movement_type_8php_source.html#l00017">PlayerMovementType.php:17</a></div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">enum</span> ServerAuthMovementMode : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    use PacketIntEnumTrait;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">case</span> LEGACY_CLIENT_AUTHORITATIVE_V1 = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">case</span> SERVER_AUTHORITATIVE_V2 = 1;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">case</span> SERVER_AUTHORITATIVE_V3 = 2;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_c5da75fdc1d6c57999112ed830c87a3c.html">vendor</a></li><li class="navelem"><a class="el" href="../../dir_67ec95640dccd85af7425ce27c77136c.html">pocketmine</a></li><li class="navelem"><a class="el" href="../../dir_35c25ee8b73bfc2a0e7ec3dc66e7b1c9.html">bedrock-protocol</a></li><li class="navelem"><a class="el" href="../../dir_682c7921c367674b86e95b8a006ee2ec.html">src</a></li><li class="navelem"><a class="el" href="../../dir_55bc17615453bf062ec3fe223a89c893.html">types</a></li><li class="navelem"><b>PlayerMovementType.php</b></li>
+    <li class="navelem"><a class="el" href="../../dir_c5da75fdc1d6c57999112ed830c87a3c.html">vendor</a></li><li class="navelem"><a class="el" href="../../dir_67ec95640dccd85af7425ce27c77136c.html">pocketmine</a></li><li class="navelem"><a class="el" href="../../dir_35c25ee8b73bfc2a0e7ec3dc66e7b1c9.html">bedrock-protocol</a></li><li class="navelem"><a class="el" href="../../dir_682c7921c367674b86e95b8a006ee2ec.html">src</a></li><li class="navelem"><a class="el" href="../../dir_55bc17615453bf062ec3fe223a89c893.html">types</a></li><li class="navelem"><b>ServerAuthMovementMode.php</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>

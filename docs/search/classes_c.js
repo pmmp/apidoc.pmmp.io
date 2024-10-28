@@ -52,12 +52,13 @@ var searchData=
   ['mountainsbiome_49',['MountainsBiome',['../d8/da8/classpocketmine_1_1world_1_1biome_1_1_mountains_biome.html',1,'pocketmine::world::biome']]],
   ['moveactorabsolutepacket_50',['MoveActorAbsolutePacket',['../d9/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_absolute_packet.html',1,'pocketmine::network::mcpe::protocol']]],
   ['moveactordeltapacket_51',['MoveActorDeltaPacket',['../d0/db0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_delta_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['moveplayerpacket_52',['MovePlayerPacket',['../d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['multiplayergamevisibility_53',['MultiplayerGameVisibility',['../d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html',1,'pocketmine::network::mcpe::protocol::types']]],
-  ['multiplayersettingspacket_54',['MultiplayerSettingsPacket',['../dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['multirecipe_55',['MultiRecipe',['../d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html',1,'pocketmine::network::mcpe::protocol::types::recipe']]],
-  ['mushroomblocktypeidmap_56',['MushroomBlockTypeIdMap',['../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html',1,'pocketmine::data::bedrock']]],
-  ['mushroomstem_57',['MushroomStem',['../dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html',1,'pocketmine::block']]],
-  ['mushroomstew_58',['MushroomStew',['../dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html',1,'pocketmine::item']]],
-  ['mycelium_59',['Mycelium',['../d1/d9b/classpocketmine_1_1block_1_1_mycelium.html',1,'pocketmine::block']]]
+  ['movementeffectpacket_52',['MovementEffectPacket',['../da/dbc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_movement_effect_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['moveplayerpacket_53',['MovePlayerPacket',['../d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['multiplayergamevisibility_54',['MultiplayerGameVisibility',['../d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html',1,'pocketmine::network::mcpe::protocol::types']]],
+  ['multiplayersettingspacket_55',['MultiplayerSettingsPacket',['../dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html',1,'pocketmine::network::mcpe::protocol']]],
+  ['multirecipe_56',['MultiRecipe',['../d1/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_multi_recipe.html',1,'pocketmine::network::mcpe::protocol::types::recipe']]],
+  ['mushroomblocktypeidmap_57',['MushroomBlockTypeIdMap',['../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html',1,'pocketmine::data::bedrock']]],
+  ['mushroomstem_58',['MushroomStem',['../dc/d63/classpocketmine_1_1block_1_1_mushroom_stem.html',1,'pocketmine::block']]],
+  ['mushroomstew_59',['MushroomStew',['../dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html',1,'pocketmine::item']]],
+  ['mycelium_60',['Mycelium',['../d1/d9b/classpocketmine_1_1block_1_1_mycelium.html',1,'pocketmine::block']]]
 ];

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.19.1 git-f1b1a7022d7dc67d012d8891bc4c23c2652c825e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.20.1 git-8ef5e737de5689ba83a9bf66b6efa147171452ce</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('df/da6/_crafting_data_packet_8php_sour
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_FURNACE = 2;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_FURNACE_DATA = 3;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_MULTI = 4;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_SHULKER_BOX = 5;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_USER_DATA_SHAPELESS = 5;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_SHAPELESS_CHEMISTRY = 6;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_SHAPED_CHEMISTRY = 7;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">const</span> ENTRY_SMITHING_TRANSFORM = 8;</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('df/da6/_crafting_data_packet_8php_sour
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            $recipeType = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0">getVarInt</a>();</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            $this-&gt;recipesWithTypeIds[] = match($recipeType){</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                self::ENTRY_SHAPELESS, self::ENTRY_SHULKER_BOX, self::ENTRY_SHAPELESS_CHEMISTRY =&gt; ShapelessRecipe::decode($recipeType, $in),</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                self::ENTRY_SHAPELESS, self::ENTRY_USER_DATA_SHAPELESS, self::ENTRY_SHAPELESS_CHEMISTRY =&gt; ShapelessRecipe::decode($recipeType, $in),</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                self::ENTRY_SHAPED, self::ENTRY_SHAPED_CHEMISTRY =&gt; ShapedRecipe::decode($recipeType, $in),</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                self::ENTRY_FURNACE, self::ENTRY_FURNACE_DATA =&gt; FurnaceRecipe::decode($recipeType, $in),</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                self::ENTRY_MULTI =&gt; MultiRecipe::decode($recipeType, $in),</div>
