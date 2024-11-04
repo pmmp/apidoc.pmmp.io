@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.20.1 git-8ef5e737de5689ba83a9bf66b6efa147171452ce</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-e598364f0695495cbe71ddf0b62f134b51091c6e</span>
    </div>
   </td>
  </tr>
@@ -388,12 +388,12 @@ $(document).ready(function(){initNavTree('df/da6/_vanilla_items_8php_source.html
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>            }</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        });</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        self::register(<span class="stringliteral">&quot;squid_spawn_egg&quot;</span>, <span class="keyword">new</span> <span class="keyword">class</span>(<span class="keyword">new</span> IID(Ids::SQUID_SPAWN_EGG), <span class="stringliteral">&quot;Squid Spawn Egg&quot;</span>) extends SpawnEgg{</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>            <span class="keyword">public</span> <span class="keyword">function</span> createEntity(World $world, Vector3 $pos, <span class="keywordtype">float</span> $yaw, <span class="keywordtype">float</span> $pitch) : Entity{</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>            <span class="keyword">protected</span> <span class="keyword">function</span> createEntity(World $world, Vector3 $pos, <span class="keywordtype">float</span> $yaw, <span class="keywordtype">float</span> $pitch) : Entity{</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>                return new Squid(Location::fromObject($pos, $world, $yaw, $pitch));</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>            }</div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        });</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        self::register(<span class="stringliteral">&quot;villager_spawn_egg&quot;</span>, <span class="keyword">new</span> <span class="keyword">class</span>(<span class="keyword">new</span> IID(Ids::VILLAGER_SPAWN_EGG), <span class="stringliteral">&quot;Villager Spawn Egg&quot;</span>) extends SpawnEgg{</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            <span class="keyword">public</span> <span class="keyword">function</span> createEntity(World $world, Vector3 $pos, <span class="keywordtype">float</span> $yaw, <span class="keywordtype">float</span> $pitch) : Entity{</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            <span class="keyword">protected</span> <span class="keyword">function</span> createEntity(World $world, Vector3 $pos, <span class="keywordtype">float</span> $yaw, <span class="keywordtype">float</span> $pitch) : Entity{</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                return new Villager(Location::fromObject($pos, $world, $yaw, $pitch));</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            }</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        });</div>
@@ -484,13 +484,13 @@ $(document).ready(function(){initNavTree('df/da6/_vanilla_items_8php_source.html
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    }</div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>}</div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00768">VanillaBlocks.php:768</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00789">VanillaBlocks.php:789</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00082">Entity.php:82</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_squid_html"><div class="ttname"><a href="../../d5/d49/classpocketmine_1_1entity_1_1_squid.html">pocketmine\entity\Squid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df8/_squid_8php_source.html#l00038">Squid.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_villager_html"><div class="ttname"><a href="../../d9/d6b/classpocketmine_1_1entity_1_1_villager.html">pocketmine\entity\Villager</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d93/_villager_8php_source.html#l00032">Villager.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_zombie_html"><div class="ttname"><a href="../../d0/da7/classpocketmine_1_1entity_1_1_zombie.html">pocketmine\entity\Zombie</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd8/_zombie_8php_source.html#l00030">Zombie.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_armor_inventory_html"><div class="ttname"><a href="../../d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html">pocketmine\inventory\ArmorInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d2c/_armor_inventory_8php_source.html#l00029">ArmorInventory.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_armor_inventory_html"><div class="ttname"><a href="../../d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html">pocketmine\inventory\ArmorInventory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d2c/_armor_inventory_8php_source.html#l00034">ArmorInventory.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_apple_html"><div class="ttname"><a href="../../dd/dd1/classpocketmine_1_1item_1_1_apple.html">pocketmine\item\Apple</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/_apple_8php_source.html#l00026">Apple.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_arrow_html"><div class="ttname"><a href="../../de/d22/classpocketmine_1_1item_1_1_arrow.html">pocketmine\item\Arrow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9b/item_2_arrow_8php_source.html#l00026">item/Arrow.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_baked_potato_html"><div class="ttname"><a href="../../d2/d25/classpocketmine_1_1item_1_1_baked_potato.html">pocketmine\item\BakedPotato</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de3/_baked_potato_8php_source.html#l00026">BakedPotato.php:26</a></div></div>

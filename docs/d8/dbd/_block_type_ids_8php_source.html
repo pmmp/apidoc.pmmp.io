@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.20.1 git-8ef5e737de5689ba83a9bf66b6efa147171452ce</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-e598364f0695495cbe71ddf0b62f134b51091c6e</span>
    </div>
   </td>
  </tr>
@@ -829,17 +829,37 @@ $(document).ready(function(){initNavTree('d8/dbd/_block_type_ids_8php_source.htm
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keyword">public</span> <span class="keyword">const</span> PITCHER_PLANT = 10715;</div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keyword">public</span> <span class="keyword">const</span> PITCHER_CROP = 10716;</div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="keyword">public</span> <span class="keyword">const</span> DOUBLE_PITCHER_CROP = 10717;</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10718;</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  756</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>        return self::$nextDynamicId++;</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    }</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>}</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    <span class="keyword">public</span> <span class="keyword">const</span> CAMPFIRE = 10718;</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="keyword">public</span> <span class="keyword">const</span> SOUL_CAMPFIRE = 10719;</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_SLAB = 10720;</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_STAIRS = 10721;</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_WALL = 10722;</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHISELED_TUFF = 10723;</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_BRICKS = 10724;</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_BRICK_SLAB = 10725;</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_BRICK_STAIRS = 10726;</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keyword">public</span> <span class="keyword">const</span> TUFF_BRICK_WALL = 10727;</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHISELED_TUFF_BRICKS = 10728;</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keyword">public</span> <span class="keyword">const</span> POLISHED_TUFF = 10729;</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keyword">public</span> <span class="keyword">const</span> POLISHED_TUFF_SLAB = 10730;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <span class="keyword">public</span> <span class="keyword">const</span> POLISHED_TUFF_STAIRS = 10731;</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keyword">public</span> <span class="keyword">const</span> POLISHED_TUFF_WALL = 10732;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <span class="keyword">public</span> <span class="keyword">const</span> COPPER_BULB = 10733;</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keyword">public</span> <span class="keyword">const</span> COPPER_DOOR = 10734;</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keyword">public</span> <span class="keyword">const</span> COPPER_TRAPDOOR = 10735;</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHISELED_COPPER = 10736;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keyword">public</span> <span class="keyword">const</span> COPPER_GRATE = 10737;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span> </div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10738;</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span> </div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  776</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        return self::$nextDynamicId++;</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    }</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>}</div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00036">BlockTypeIds.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00756">BlockTypeIds.php:756</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00776">BlockTypeIds.php:776</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html">pocketmine\block\TNT</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00044">TNT.php:44</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

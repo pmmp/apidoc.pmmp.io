@@ -18,6 +18,7 @@ var classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory =
     [ "getRecipeHeight", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#aa2045dd45c5d85624fd00afe01b7b11e", null ],
     [ "getRecipeWidth", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a18e623fb966824524eb1251e150b611c", null ],
     [ "getSize", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ad20602c8437154b4c4a201d6798e90fd", null ],
+    [ "getSlotValidators", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a83250db989d4fc9aa1fd598dce6255e6", null ],
     [ "getViewers", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],
     [ "internalSetContents", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a0d82853303c17a6f720b487287092395", null ],
     [ "isSlotEmpty", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#aa5d3e9ecb42223e9dc728316a7a3c206", null ],
@@ -30,5 +31,6 @@ var classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory =
     [ "setItem", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ac03457c1ba3291c468797d3e6c259bc2", null ],
     [ "setMaxStackSize", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a7296a52c88addd5eefe215276200b6e3", null ],
     [ "slotExists", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87", null ],
-    [ "swap", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ab4558205396b6e9a38bd25c809616320", null ]
+    [ "swap", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ab4558205396b6e9a38bd25c809616320", null ],
+    [ "$validators", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ad9f449415dce59a49e0ee2609222b9e2", null ]
 ];

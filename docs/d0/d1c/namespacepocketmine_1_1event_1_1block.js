@@ -15,6 +15,7 @@ var namespacepocketmine_1_1event_1_1block =
     [ "BlockUpdateEvent", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event.html", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event" ],
     [ "BrewingFuelUseEvent", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event.html", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event" ],
     [ "BrewItemEvent", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event" ],
+    [ "CampfireCookEvent", "d8/dfa/classpocketmine_1_1event_1_1block_1_1_campfire_cook_event.html", "d8/dfa/classpocketmine_1_1event_1_1block_1_1_campfire_cook_event" ],
     [ "ChestPairEvent", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event.html", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event" ],
     [ "FarmlandHydrationChangeEvent", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event.html", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event" ],
     [ "LeavesDecayEvent", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event.html", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event" ],

@@ -15,5 +15,6 @@ var dir_8aa3e05b3c778144162028379a6046fd =
     [ "PlayerInventory.php", "df/da6/_player_inventory_8php_source.html", null ],
     [ "PlayerOffHandInventory.php", "dc/d85/_player_off_hand_inventory_8php_source.html", null ],
     [ "SimpleInventory.php", "da/d6d/_simple_inventory_8php_source.html", null ],
+    [ "SlotValidatedInventory.php", "d4/d71/_slot_validated_inventory_8php_source.html", null ],
     [ "TemporaryInventory.php", "db/d25/_temporary_inventory_8php_source.html", null ]
 ];

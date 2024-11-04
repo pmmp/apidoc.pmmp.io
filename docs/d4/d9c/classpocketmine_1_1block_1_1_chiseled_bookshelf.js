@@ -29,6 +29,7 @@ var classpocketmine_1_1block_1_1_chiseled_bookshelf =
     [ "getFuelTime", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#ab92353cf0aa5c05ad26535f98a2b1dca", null ],
     [ "getHorizontalSides", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#afeb38d89fa6f5f5912a1b0e6d131fa3b", null ],
     [ "getIdInfo", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a85746252cd6a5f1e81cb4c4ebccb52e3", null ],
+    [ "getLastInteractedSlot", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#ad1ed69ba8098c83d32677f81e34e7d83", null ],
     [ "getLightFilter", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#afcc19c437c8bef4487f5ecb956ae9a1a", null ],
     [ "getLightLevel", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a09f4667329f89292dd319d56c4243b59", null ],
     [ "getMaxStackSize", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#aaeaa1c5f259e28087e09db0a9b1ba39f", null ],
@@ -64,9 +65,10 @@ var classpocketmine_1_1block_1_1_chiseled_bookshelf =
     [ "onRandomTick", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a36afea9f0214193963f75577e8d48c26", null ],
     [ "onScheduledUpdate", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a1a1a2b2adf423738289d296198f044e1", null ],
     [ "place", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
-    [ "readStateFromWorld", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
+    [ "readStateFromWorld", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a7ced148fefe18981dda6b0c6a4474afc", null ],
     [ "recalculateCollisionBoxes", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setLastInteractedSlot", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#af80ff7f38107d61c1a14506089e28451", null ],
     [ "setSlot", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a1dd9cd995ebe6aa3f7c44c529e33bf94", null ],
     [ "ticksRandomly", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#ab6b90601adfc9732893dcffe256514a9", null ],
-    [ "writeStateToWorld", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a9404d9040389f3ff2462f86d9a181160", null ]
+    [ "writeStateToWorld", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a94f042b69b4218372b202ea233eaeed0", null ]
 ];

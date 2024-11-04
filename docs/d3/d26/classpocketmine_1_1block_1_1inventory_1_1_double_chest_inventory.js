@@ -15,6 +15,7 @@ var classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory =
     [ "getMatchingItemCount", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a9d09d6857c9b54d9f1e5ce847d53e8b5", null ],
     [ "getMaxStackSize", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getSize", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ab1a7a21cbea42e80ecc6a99a6625af80", null ],
+    [ "getSlotValidators", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a83250db989d4fc9aa1fd598dce6255e6", null ],
     [ "getViewers", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],
     [ "internalSetContents", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ad9d5950315bc88e0ab14f8026388aabf", null ],
     [ "isSlotEmpty", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a8522f6e5d264a3fec0eb616e3467d8cd", null ],
@@ -27,5 +28,6 @@ var classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory =
     [ "setItem", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5", null ],
     [ "setMaxStackSize", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a7296a52c88addd5eefe215276200b6e3", null ],
     [ "slotExists", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87", null ],
-    [ "swap", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ab4558205396b6e9a38bd25c809616320", null ]
+    [ "swap", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ab4558205396b6e9a38bd25c809616320", null ],
+    [ "$validators", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ad9f449415dce59a49e0ee2609222b9e2", null ]
 ];

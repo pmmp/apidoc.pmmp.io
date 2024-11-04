@@ -144,6 +144,7 @@ var namespacepocketmine_1_1world =
       [ "BucketFillLavaSound", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound" ],
       [ "BucketFillWaterSound", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound" ],
       [ "BurpSound", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound.html", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound" ],
+      [ "CampfireSound", "d6/d22/classpocketmine_1_1world_1_1sound_1_1_campfire_sound.html", "d6/d22/classpocketmine_1_1world_1_1sound_1_1_campfire_sound" ],
       [ "CauldronAddDyeSound", "d2/d9e/classpocketmine_1_1world_1_1sound_1_1_cauldron_add_dye_sound.html", "d2/d9e/classpocketmine_1_1world_1_1sound_1_1_cauldron_add_dye_sound" ],
       [ "CauldronCleanItemSound", "dc/d08/classpocketmine_1_1world_1_1sound_1_1_cauldron_clean_item_sound.html", "dc/d08/classpocketmine_1_1world_1_1sound_1_1_cauldron_clean_item_sound" ],
       [ "CauldronDyeItemSound", "de/d4d/classpocketmine_1_1world_1_1sound_1_1_cauldron_dye_item_sound.html", "de/d4d/classpocketmine_1_1world_1_1sound_1_1_cauldron_dye_item_sound" ],

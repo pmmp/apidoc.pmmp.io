@@ -18,6 +18,7 @@ var annotated_dup =
           [ "BarrelInventory", "d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory.html", "d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory" ],
           [ "BlockInventory", "d4/d3a/interfacepocketmine_1_1block_1_1inventory_1_1_block_inventory.html", null ],
           [ "BrewingStandInventory", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory" ],
+          [ "CampfireInventory", "da/d73/classpocketmine_1_1block_1_1inventory_1_1_campfire_inventory.html", "da/d73/classpocketmine_1_1block_1_1inventory_1_1_campfire_inventory" ],
           [ "CartographyTableInventory", "db/d85/classpocketmine_1_1block_1_1inventory_1_1_cartography_table_inventory.html", "db/d85/classpocketmine_1_1block_1_1inventory_1_1_cartography_table_inventory" ],
           [ "ChestInventory", "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html", "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory" ],
           [ "CraftingTableInventory", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory" ],
@@ -39,6 +40,7 @@ var annotated_dup =
           [ "Bell", "d3/d26/classpocketmine_1_1block_1_1tile_1_1_bell.html", "d3/d26/classpocketmine_1_1block_1_1tile_1_1_bell" ],
           [ "BlastFurnace", "dc/dd8/classpocketmine_1_1block_1_1tile_1_1_blast_furnace.html", "dc/dd8/classpocketmine_1_1block_1_1tile_1_1_blast_furnace" ],
           [ "BrewingStand", "d3/d41/classpocketmine_1_1block_1_1tile_1_1_brewing_stand.html", "d3/d41/classpocketmine_1_1block_1_1tile_1_1_brewing_stand" ],
+          [ "Campfire", "d5/d8b/classpocketmine_1_1block_1_1tile_1_1_campfire.html", "d5/d8b/classpocketmine_1_1block_1_1tile_1_1_campfire" ],
           [ "Cauldron", "d6/dbc/classpocketmine_1_1block_1_1tile_1_1_cauldron.html", "d6/dbc/classpocketmine_1_1block_1_1tile_1_1_cauldron" ],
           [ "Chest", "d9/d64/classpocketmine_1_1block_1_1tile_1_1_chest.html", "d9/d64/classpocketmine_1_1block_1_1tile_1_1_chest" ],
           [ "ChiseledBookshelf", "d5/ddf/classpocketmine_1_1block_1_1tile_1_1_chiseled_bookshelf.html", "d5/ddf/classpocketmine_1_1block_1_1tile_1_1_chiseled_bookshelf" ],
@@ -70,6 +72,7 @@ var annotated_dup =
         [ "utils", null, [
           [ "BannerPatternLayer", "da/dd4/classpocketmine_1_1block_1_1utils_1_1_banner_pattern_layer.html", null ],
           [ "BlockEventHelper", "d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html", null ],
+          [ "CopperMaterial", "d3/d54/interfacepocketmine_1_1block_1_1utils_1_1_copper_material.html", null ],
           [ "CropGrowthHelper", "da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper.html", "da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper" ],
           [ "Fallable", "dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable.html", "dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable" ],
           [ "FortuneDropHelper", "dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html", "dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper" ],
@@ -117,6 +120,7 @@ var annotated_dup =
         [ "Cake", "df/d1c/classpocketmine_1_1block_1_1_cake.html", "df/d1c/classpocketmine_1_1block_1_1_cake" ],
         [ "CakeWithCandle", "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html", "da/d60/classpocketmine_1_1block_1_1_cake_with_candle" ],
         [ "CakeWithDyedCandle", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle" ],
+        [ "Campfire", "d7/d9a/classpocketmine_1_1block_1_1_campfire.html", "d7/d9a/classpocketmine_1_1block_1_1_campfire" ],
         [ "Candle", "d6/dd1/classpocketmine_1_1block_1_1_candle.html", "d6/dd1/classpocketmine_1_1block_1_1_candle" ],
         [ "Carpet", "d8/d55/classpocketmine_1_1block_1_1_carpet.html", "d8/d55/classpocketmine_1_1block_1_1_carpet" ],
         [ "Carrot", "da/dd7/classpocketmine_1_1block_1_1_carrot.html", "da/dd7/classpocketmine_1_1block_1_1_carrot" ],
@@ -139,9 +143,13 @@ var annotated_dup =
         [ "Concrete", "d8/d25/classpocketmine_1_1block_1_1_concrete.html", "d8/d25/classpocketmine_1_1block_1_1_concrete" ],
         [ "ConcretePowder", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder" ],
         [ "Copper", "d7/d18/classpocketmine_1_1block_1_1_copper.html", "d7/d18/classpocketmine_1_1block_1_1_copper" ],
+        [ "CopperBulb", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb" ],
+        [ "CopperDoor", "df/d58/classpocketmine_1_1block_1_1_copper_door.html", "df/d58/classpocketmine_1_1block_1_1_copper_door" ],
+        [ "CopperGrate", "d0/d03/classpocketmine_1_1block_1_1_copper_grate.html", "d0/d03/classpocketmine_1_1block_1_1_copper_grate" ],
         [ "CopperOre", "de/d68/classpocketmine_1_1block_1_1_copper_ore.html", "de/d68/classpocketmine_1_1block_1_1_copper_ore" ],
         [ "CopperSlab", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html", "d1/d66/classpocketmine_1_1block_1_1_copper_slab" ],
         [ "CopperStairs", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs" ],
+        [ "CopperTrapdoor", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor" ],
         [ "Coral", "dc/dc9/classpocketmine_1_1block_1_1_coral.html", "dc/dc9/classpocketmine_1_1block_1_1_coral" ],
         [ "CoralBlock", "d5/df9/classpocketmine_1_1block_1_1_coral_block.html", "d5/df9/classpocketmine_1_1block_1_1_coral_block" ],
         [ "CraftingTable", "d5/dfb/classpocketmine_1_1block_1_1_crafting_table.html", "d5/dfb/classpocketmine_1_1block_1_1_crafting_table" ],
@@ -270,6 +278,7 @@ var annotated_dup =
         [ "SmithingTable", "d4/d35/classpocketmine_1_1block_1_1_smithing_table.html", "d4/d35/classpocketmine_1_1block_1_1_smithing_table" ],
         [ "Snow", "d4/d1a/classpocketmine_1_1block_1_1_snow.html", "d4/d1a/classpocketmine_1_1block_1_1_snow" ],
         [ "SnowLayer", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer" ],
+        [ "SoulCampfire", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire" ],
         [ "SoulFire", "d9/d23/classpocketmine_1_1block_1_1_soul_fire.html", "d9/d23/classpocketmine_1_1block_1_1_soul_fire" ],
         [ "SoulSand", "d2/d33/classpocketmine_1_1block_1_1_soul_sand.html", "d2/d33/classpocketmine_1_1block_1_1_soul_sand" ],
         [ "Sponge", "d4/d2f/classpocketmine_1_1block_1_1_sponge.html", "d4/d2f/classpocketmine_1_1block_1_1_sponge" ],
@@ -441,7 +450,7 @@ var annotated_dup =
               [ "model", null, [
                 [ "BlockStateUpgradeSchemaModel", "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html", "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model" ],
                 [ "BlockStateUpgradeSchemaModelBlockRemap", "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html", "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap" ],
-                [ "BlockStateUpgradeSchemaModelFlattenedName", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name.html", "d8/db7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flattened_name" ],
+                [ "BlockStateUpgradeSchemaModelFlattenInfo", "da/d0a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flatten_info.html", "da/d0a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_flatten_info" ],
                 [ "BlockStateUpgradeSchemaModelTag", "d0/d06/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_tag.html", null ],
                 [ "BlockStateUpgradeSchemaModelValueRemap", "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html", "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap" ]
               ] ],
@@ -450,7 +459,7 @@ var annotated_dup =
               [ "BlockStateUpgrader", "d3/d19/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrader.html", "d3/d19/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrader" ],
               [ "BlockStateUpgradeSchema", "de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema.html", "de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema" ],
               [ "BlockStateUpgradeSchemaBlockRemap", "d7/d03/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_block_remap.html", "d7/d03/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_block_remap" ],
-              [ "BlockStateUpgradeSchemaFlattenedName", "dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html", "dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name" ],
+              [ "BlockStateUpgradeSchemaFlattenInfo", "d6/d29/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flatten_info.html", "d6/d29/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flatten_info" ],
               [ "BlockStateUpgradeSchemaUtils", "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html", "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils" ],
               [ "BlockStateUpgradeSchemaValueRemap", "d9/dfe/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_value_remap.html", null ],
               [ "LegacyBlockIdToStringIdMap", "d1/d10/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_legacy_block_id_to_string_id_map.html", "d1/d10/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_legacy_block_id_to_string_id_map" ]
@@ -627,6 +636,7 @@ var annotated_dup =
           [ "BlockUpdateEvent", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event.html", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event" ],
           [ "BrewingFuelUseEvent", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event.html", "d6/d91/classpocketmine_1_1event_1_1block_1_1_brewing_fuel_use_event" ],
           [ "BrewItemEvent", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html", "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event" ],
+          [ "CampfireCookEvent", "d8/dfa/classpocketmine_1_1event_1_1block_1_1_campfire_cook_event.html", "d8/dfa/classpocketmine_1_1event_1_1block_1_1_campfire_cook_event" ],
           [ "ChestPairEvent", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event.html", "de/dd7/classpocketmine_1_1event_1_1block_1_1_chest_pair_event" ],
           [ "FarmlandHydrationChangeEvent", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event.html", "d1/dd3/classpocketmine_1_1event_1_1block_1_1_farmland_hydration_change_event" ],
           [ "LeavesDecayEvent", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event.html", "d1/d8d/classpocketmine_1_1event_1_1block_1_1_leaves_decay_event" ],
@@ -773,6 +783,10 @@ var annotated_dup =
       [ "inventory", "db/d9b/namespacepocketmine_1_1inventory.html", [
         [ "transaction", null, [
           [ "action", null, [
+            [ "validator", null, [
+              [ "CallbackSlotValidator", "d3/d6d/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_callback_slot_validator.html", "d3/d6d/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_callback_slot_validator" ],
+              [ "SlotValidator", "d1/dd3/interfacepocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_slot_validator.html", "d1/dd3/interfacepocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_slot_validator" ]
+            ] ],
             [ "CreateItemAction", "d8/dcd/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_create_item_action.html", "d8/dcd/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_create_item_action" ],
             [ "DestroyItemAction", "d1/d7b/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action.html", "d1/d7b/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action" ],
             [ "DropItemAction", "d1/dbe/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_drop_item_action.html", "d1/dbe/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_drop_item_action" ],
@@ -802,6 +816,7 @@ var annotated_dup =
         [ "PlayerInventory", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory" ],
         [ "PlayerOffHandInventory", "d0/d89/classpocketmine_1_1inventory_1_1_player_off_hand_inventory.html", "d0/d89/classpocketmine_1_1inventory_1_1_player_off_hand_inventory" ],
         [ "SimpleInventory", "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html", "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory" ],
+        [ "SlotValidatedInventory", "dd/d33/interfacepocketmine_1_1inventory_1_1_slot_validated_inventory.html", "dd/d33/interfacepocketmine_1_1inventory_1_1_slot_validated_inventory" ],
         [ "TemporaryInventory", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory" ]
       ] ],
       [ "item", "d0/dec/namespacepocketmine_1_1item.html", [
@@ -883,6 +898,7 @@ var annotated_dup =
         [ "Item", "d5/d8a/classpocketmine_1_1item_1_1_item.html", "d5/d8a/classpocketmine_1_1item_1_1_item" ],
         [ "ItemBlock", "dd/d08/classpocketmine_1_1item_1_1_item_block.html", "dd/d08/classpocketmine_1_1item_1_1_item_block" ],
         [ "ItemBlockWallOrFloor", "d8/d23/classpocketmine_1_1item_1_1_item_block_wall_or_floor.html", "d8/d23/classpocketmine_1_1item_1_1_item_block_wall_or_floor" ],
+        [ "ItemCooldownTags", "d5/dd1/classpocketmine_1_1item_1_1_item_cooldown_tags.html", null ],
         [ "ItemIdentifier", "d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html", null ],
         [ "ItemTypeIds", "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html", "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids" ],
         [ "LegacyStringToItemParser", "d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser.html", "d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser" ],
@@ -1880,6 +1896,7 @@ var annotated_dup =
           [ "BucketFillLavaSound", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html", "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound" ],
           [ "BucketFillWaterSound", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html", "d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound" ],
           [ "BurpSound", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound.html", "d3/d67/classpocketmine_1_1world_1_1sound_1_1_burp_sound" ],
+          [ "CampfireSound", "d6/d22/classpocketmine_1_1world_1_1sound_1_1_campfire_sound.html", "d6/d22/classpocketmine_1_1world_1_1sound_1_1_campfire_sound" ],
           [ "CauldronAddDyeSound", "d2/d9e/classpocketmine_1_1world_1_1sound_1_1_cauldron_add_dye_sound.html", "d2/d9e/classpocketmine_1_1world_1_1sound_1_1_cauldron_add_dye_sound" ],
           [ "CauldronCleanItemSound", "dc/d08/classpocketmine_1_1world_1_1sound_1_1_cauldron_clean_item_sound.html", "dc/d08/classpocketmine_1_1world_1_1sound_1_1_cauldron_clean_item_sound" ],
           [ "CauldronDyeItemSound", "de/d4d/classpocketmine_1_1world_1_1sound_1_1_cauldron_dye_item_sound.html", "de/d4d/classpocketmine_1_1world_1_1sound_1_1_cauldron_dye_item_sound" ],

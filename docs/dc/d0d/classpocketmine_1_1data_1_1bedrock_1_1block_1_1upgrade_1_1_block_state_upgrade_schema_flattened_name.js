@@ -1,4 +1,0 @@
-var classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name =
-[
-    [ "__construct", "dc/d0d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_flattened_name.html#a44b2b6356a7b3f422f32ae51e44a5f53", null ]
-];

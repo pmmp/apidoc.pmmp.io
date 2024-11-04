@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.20.1 git-8ef5e737de5689ba83a9bf66b6efa147171452ce</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-e598364f0695495cbe71ddf0b62f134b51091c6e</span>
    </div>
   </td>
  </tr>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('de/dd7/_water_cauldron_8php_source.htm
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            $world-&gt;addSound($this-&gt;position-&gt;add(0.5, 0.5, 0.5), <span class="keyword">new</span> <a class="code hl_class" href="../../d2/d9e/classpocketmine_1_1world_1_1sound_1_1_cauldron_add_dye_sound.html">CauldronAddDyeSound</a>());</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a67b44433c553602d7c851b1ca23e6e5e">pop</a>();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }elseif($item instanceof <a class="code hl_class" href="../../d3/d00/classpocketmine_1_1item_1_1_potion.html">Potion</a> || $item instanceof <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html">SplashPotion</a>){ <span class="comment">//TODO: lingering potion</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }elseif($item instanceof <a class="code hl_class" href="../../d3/d00/classpocketmine_1_1item_1_1_potion.html">Potion</a> || $item instanceof <a class="code hl_class" href="../../d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html">SplashPotion</a>){ <span class="comment">//TODO: lingering potion</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">if</span>($item-&gt;getType() === PotionType::WATER){</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                $this-&gt;setCustomWaterColor(<span class="keyword">null</span>)-&gt;addFillLevels(self::WATER_BOTTLE_FILL_AMOUNT, $item, VanillaItems::GLASS_BOTTLE(), $returnedItems);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }<span class="keywordflow">else</span>{</div>
@@ -314,6 +314,7 @@ $(document).ready(function(){initNavTree('de/dd7/_water_cauldron_8php_source.htm
 <div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_cauldron_html"><div class="ttname"><a href="../../d6/dbc/classpocketmine_1_1block_1_1tile_1_1_cauldron.html">pocketmine\block\tile\Cauldron</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/ddf/tile_2_cauldron_8php_source.html#l00042">tile/Cauldron.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1color_1_1_color_html"><div class="ttname"><a href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">pocketmine\color\Color</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd6/_color_8php_source.html#l00029">Color.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/_entity_8php_source.html#l00082">Entity.php:82</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1projectile_1_1_splash_potion_html"><div class="ttname"><a href="../../d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html">pocketmine\entity\projectile\SplashPotion</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/entity_2projectile_2_splash_potion_8php_source.html#l00051">entity/projectile/SplashPotion.php:51</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_armor_html"><div class="ttname"><a href="../../db/d85/classpocketmine_1_1item_1_1_armor.html">pocketmine\item\Armor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da6/_armor_8php_source.html#l00039">Armor.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_banner_html"><div class="ttname"><a href="../../d8/d7a/classpocketmine_1_1item_1_1_banner.html">pocketmine\item\Banner</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d4a/item_2_banner_8php_source.html#l00037">item/Banner.php:37</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_dye_html"><div class="ttname"><a href="../../d4/d96/classpocketmine_1_1item_1_1_dye.html">pocketmine\item\Dye</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d1a/_dye_8php_source.html#l00029">Dye.php:29</a></div></div>

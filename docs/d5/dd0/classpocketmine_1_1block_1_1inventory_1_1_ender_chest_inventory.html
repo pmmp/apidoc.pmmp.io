@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.20.1 git-8ef5e737de5689ba83a9bf66b6efa147171452ce</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-e598364f0695495cbe71ddf0b62f134b51091c6e</span>
    </div>
   </td>
  </tr>
@@ -152,6 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b07e7dec2523174411fb7762c69bf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d34eeb86b4a16b22bc775d8f1d11762"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html#a0d34eeb86b4a16b22bc775d8f1d11762">getSize</a> ()</td></tr>
 <tr class="separator:a0d34eeb86b4a16b22bc775d8f1d11762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83250db989d4fc9aa1fd598dce6255e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a83250db989d4fc9aa1fd598dce6255e6">getSlotValidators</a> ()</td></tr>
+<tr class="separator:a83250db989d4fc9aa1fd598dce6255e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52fdc5b9d2b8be715c26e5ae67185131"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html#a52fdc5b9d2b8be715c26e5ae67185131">getViewerCount</a> ()</td></tr>
 <tr class="separator:a52fdc5b9d2b8be715c26e5ae67185131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859793c26ba95c1963747b3c08be98bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a859793c26ba95c1963747b3c08be98bc">getViewers</a> ()</td></tr>
@@ -209,6 +211,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8bfc5d6898374494e90ed355666acd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376076c70f45abf1c44e84c1e615a458"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a376076c70f45abf1c44e84c1e615a458">$maxStackSize</a> = Inventory::MAX_STACK</td></tr>
 <tr class="separator:a376076c70f45abf1c44e84c1e615a458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f449415dce59a49e0ee2609222b9e2"><td class="memItemLeft" align="right" valign="top">ObjectSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ad9f449415dce59a49e0ee2609222b9e2">$validators</a></td></tr>
+<tr class="separator:ad9f449415dce59a49e0ee2609222b9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9d426af7b42dadec8576833e645852"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#afe9d426af7b42dadec8576833e645852">$viewers</a> = []</td></tr>
 <tr class="separator:afe9d426af7b42dadec8576833e645852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -277,7 +281,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a72691e6cfe15314dd9089d6396ca4565">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00205">205</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00210">210</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -310,7 +314,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#abb666489d4b5edc982ec5184b2f21e76">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00135">135</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00140">140</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -371,7 +375,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory.html#a9ecaaee99c099194076e0c86f99223eb">pocketmine\block\inventory\ShulkerBoxInventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00179">179</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00184">184</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#afa74f77e2f99137ca0dfa36df40f2f7d">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00321">321</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00326">326</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d91/_transaction_builder_inventory_8php_source.html#l00057">pocketmine\inventory\transaction\TransactionBuilderInventory\internalSetContents()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -442,7 +446,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#af0626e527590e121741e4b24c3708c09">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00325">325</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00330">330</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -474,7 +478,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a3acb1f8291cba5c03232a0ed266cefa6">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00119">119</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00124">124</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -516,7 +520,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ab2b2eeb4190301c01e26a96180399b16">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00147">147</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00152">152</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -546,7 +550,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a164b3a2fe01600376fa7d082621b459b">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00161">161</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00166">166</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -577,7 +581,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a19de6c1bc1050a753769991eab469313">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00183">183</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00188">188</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -716,7 +720,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a7fa8a9062b18f34b531ef5f7edb9bd01">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00398">398</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00403">403</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -763,7 +767,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a9d09d6857c9b54d9f1e5ce847d53e8b5">pocketmine\block\inventory\DoubleChestInventory</a>, and <a class="el" href="../../d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#aaa1a88b2b7f93d073538fb993a508e2c">pocketmine\inventory\SimpleInventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00114">114</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00119">119</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -793,7 +797,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#afb45f7fcff5c1f84c613b8d2833f3370">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00054">54</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p>Reimplemented in <a class="el" href="../../da/d73/classpocketmine_1_1block_1_1inventory_1_1_campfire_inventory.html#ab17d3e63e06c9bf2730153eeb63bb431">pocketmine\block\inventory\CampfireInventory</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00059">59</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -854,6 +860,38 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a83250db989d4fc9aa1fd598dce6255e6" name="a83250db989d4fc9aa1fd598dce6255e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83250db989d4fc9aa1fd598dce6255e6">&#9670;&nbsp;</a></span>getSlotValidators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\inventory\BaseInventory::getSlotValidators </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Returns a set of validators that will be used to determine whether an item can be placed in a particular slot. All validators need to return null for the transaction to be allowed. If one of the validators returns an exception, the transaction will be cancelled.</p>
+<p >There is no guarantee that the validators will be called in any particular order.</p>
+<p >@phpstan-return SlotValidators </p>
+
+<p>Implements <a class="el" href="../../dd/d33/interfacepocketmine_1_1inventory_1_1_slot_validated_inventory.html#a38655bf63ee2483cb99e8ae3fb48eb00">pocketmine\inventory\SlotValidatedInventory</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00407">407</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+
+</div>
+</div>
 <a id="a52fdc5b9d2b8be715c26e5ae67185131" name="a52fdc5b9d2b8be715c26e5ae67185131"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52fdc5b9d2b8be715c26e5ae67185131">&#9670;&nbsp;</a></span>getViewerCount()</h2>
 
@@ -899,7 +937,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ae56d3d6221cdca3b0ff012499ea7da4c">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00339">339</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00344">344</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1133,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a55dc7b08c52d68ebc838321ac13310e1">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00355">355</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00360">360</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +1205,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#aea5495912b12da4b7649c1ab6690e02f">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00273">273</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00278">278</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1233,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Removes the inventory window from all players currently viewing it. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00346">346</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00351">351</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1266,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a77cae2400b8893acc15bfcfad0a7607e">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00283">283</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00288">288</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1302,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a34fee0e70cbcd7a3e2e81fa31bbb1dc6">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00087">87</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00092">92</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1345,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#ac03457c1ba3291c468797d3e6c259bc2">pocketmine\crafting\CraftingGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00064">64</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00069">69</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d91/_transaction_builder_inventory_8php_source.html#l00057">pocketmine\inventory\transaction\TransactionBuilderInventory\internalSetContents()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1348,7 +1386,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a25ae1b1cb80ef6f0968a49baac087b68">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00058">58</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00063">63</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1417,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a0b608497167e82f4c487c6085dc1c80f">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00394">394</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00399">399</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1458,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ab97a3e13f66c2d200a567ef85f12b372">pocketmine\inventory\Inventory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00329">329</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00334">334</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1483,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00048">48</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00050">50</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +1507,32 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00041">41</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00043">43</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+
+</div>
+</div>
+<a id="ad9f449415dce59a49e0ee2609222b9e2" name="ad9f449415dce59a49e0ee2609222b9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f449415dce59a49e0ee2609222b9e2">&#9670;&nbsp;</a></span>$validators</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectSet pocketmine\inventory\BaseInventory::$validators</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >@phpstan-var SlotValidators </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00052">52</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>
@@ -1493,7 +1556,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00043">43</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00045">45</a> of file <a class="el" href="../../d9/d64/_base_inventory_8php_source.html">BaseInventory.php</a>.</p>
 
 </div>
 </div>

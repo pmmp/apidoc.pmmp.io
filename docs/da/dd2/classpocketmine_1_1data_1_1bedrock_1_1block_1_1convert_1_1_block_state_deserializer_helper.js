@@ -3,7 +3,7 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deser
     [ "decodeButton", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#af4dcabf1dff822e1158816900afde3dc", null ],
     [ "decodeCandle", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a57fb8b7973a8043fd215863a3c4969aa", null ],
     [ "decodeComparator", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#af0fed566211f83f0d2de7d1fbc8d9d08", null ],
-    [ "decodeCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#aea5bc3b744e8180f0c372927746b1e71", null ],
+    [ "decodeCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a116acb499872e8ae6e9b655c9c82eee7", null ],
     [ "decodeCrops", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a0eebc427cc1b92cca7bf0ed547867a3f", null ],
     [ "decodeDaylightSensor", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ab4064aecd1ff553b74f0c2cbb8e890ce", null ],
     [ "decodeDoor", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ac29498aa872fdb5dd341a3a6607334c6", null ],
@@ -25,5 +25,5 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deser
     [ "decodeTrapdoor", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a754d346d0d1aff0a9299a319e8903da5", null ],
     [ "decodeWall", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a5cc8f0e4a0ae56d3eda8c3eed6bc4fdd", null ],
     [ "decodeWallSign", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a3413365106e39750ae20b7729d220651", null ],
-    [ "decodeWaxedCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a523192294c1a612b45b355720f70b7fb", null ]
+    [ "decodeWaxedCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#abc453c0f2d83ba3ffdd95d2ce7edd91b", null ]
 ];

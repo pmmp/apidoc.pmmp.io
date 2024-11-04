@@ -78,6 +78,7 @@ var namespacepocketmine_1_1item =
     [ "Item", "d5/d8a/classpocketmine_1_1item_1_1_item.html", "d5/d8a/classpocketmine_1_1item_1_1_item" ],
     [ "ItemBlock", "dd/d08/classpocketmine_1_1item_1_1_item_block.html", "dd/d08/classpocketmine_1_1item_1_1_item_block" ],
     [ "ItemBlockWallOrFloor", "d8/d23/classpocketmine_1_1item_1_1_item_block_wall_or_floor.html", "d8/d23/classpocketmine_1_1item_1_1_item_block_wall_or_floor" ],
+    [ "ItemCooldownTags", "d5/dd1/classpocketmine_1_1item_1_1_item_cooldown_tags.html", null ],
     [ "ItemIdentifier", "d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html", null ],
     [ "ItemTypeIds", "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html", "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids" ],
     [ "LegacyStringToItemParser", "d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser.html", "d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser" ],

@@ -16,6 +16,7 @@ var classpocketmine_1_1item_1_1_tiered_tool =
     [ "getBlockToolType", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#a7d45886d40860e24fb4c18d02a3d1a32", null ],
     [ "getCooldownTicks", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "de/dee/classpocketmine_1_1item_1_1_tiered_tool.html#a89878fd01a089991ee271eff92dc95b9", null ],

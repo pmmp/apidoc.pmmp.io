@@ -16,6 +16,7 @@ var classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventor
     [ "getMatchingItemCount", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a2a05a685333ffc7a4832103d395eb74a", null ],
     [ "getMaxStackSize", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a5b07e7dec2523174411fb7762c69bf3f", null ],
     [ "getSize", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a01a674e8cc4f35482babfbbbb67d1e53", null ],
+    [ "getSlotValidators", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a83250db989d4fc9aa1fd598dce6255e6", null ],
     [ "getViewers", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a859793c26ba95c1963747b3c08be98bc", null ],
     [ "internalSetContents", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a9fa8edba13de24c63c8388c4d211887a", null ],
     [ "isSlotEmpty", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a7032110ecf181d3fbbc863c5f45270b0", null ],
@@ -28,5 +29,6 @@ var classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventor
     [ "setItem", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5", null ],
     [ "setMaxStackSize", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a7296a52c88addd5eefe215276200b6e3", null ],
     [ "slotExists", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87", null ],
-    [ "swap", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#ab4558205396b6e9a38bd25c809616320", null ]
+    [ "swap", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#ab4558205396b6e9a38bd25c809616320", null ],
+    [ "$validators", "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#ad9f449415dce59a49e0ee2609222b9e2", null ]
 ];

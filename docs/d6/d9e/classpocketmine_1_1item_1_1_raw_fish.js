@@ -15,6 +15,7 @@ var classpocketmine_1_1item_1_1_raw_fish =
     [ "getBlockToolType", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a7d45886d40860e24fb4c18d02a3d1a32", null ],
     [ "getCooldownTicks", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],

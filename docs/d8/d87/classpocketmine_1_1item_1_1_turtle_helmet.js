@@ -17,6 +17,7 @@ var classpocketmine_1_1item_1_1_turtle_helmet =
     [ "getBlockToolType", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#a7d45886d40860e24fb4c18d02a3d1a32", null ],
     [ "getCooldownTicks", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getCustomColor", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#a6264d5648518e33e9789b91cdded4a34", null ],
     [ "getDefensePoints", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html#a07896da81fb0dbdc0d6c7d08187421be", null ],

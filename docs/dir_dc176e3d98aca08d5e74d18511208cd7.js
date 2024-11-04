@@ -60,6 +60,7 @@ var dir_dc176e3d98aca08d5e74d18511208cd7 =
     [ "Item.php", "db/d98/_item_8php_source.html", null ],
     [ "ItemBlock.php", "da/da2/_item_block_8php_source.html", null ],
     [ "ItemBlockWallOrFloor.php", "dd/d40/_item_block_wall_or_floor_8php_source.html", null ],
+    [ "ItemCooldownTags.php", "d2/de7/_item_cooldown_tags_8php_source.html", null ],
     [ "ItemEnchantmentHandlingTrait.php", "d7/daa/_item_enchantment_handling_trait_8php_source.html", null ],
     [ "ItemIdentifier.php", "d9/dd2/_item_identifier_8php_source.html", null ],
     [ "ItemTypeIds.php", "d4/d6d/_item_type_ids_8php_source.html", null ],

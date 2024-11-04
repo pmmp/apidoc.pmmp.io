@@ -14,6 +14,7 @@ var classpocketmine_1_1item_1_1_ender_pearl =
     [ "getBlockToolType", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#afb8b72cf7f604691019ea69cdd54f5aa", null ],
     [ "getCooldownTicks", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#a518d9f39b4d156841340e3cf081de480", null ],
     [ "getDefensePoints", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],

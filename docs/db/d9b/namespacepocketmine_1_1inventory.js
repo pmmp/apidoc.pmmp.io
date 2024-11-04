@@ -2,6 +2,10 @@ var namespacepocketmine_1_1inventory =
 [
     [ "transaction", null, [
       [ "action", null, [
+        [ "validator", null, [
+          [ "CallbackSlotValidator", "d3/d6d/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_callback_slot_validator.html", "d3/d6d/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_callback_slot_validator" ],
+          [ "SlotValidator", "d1/dd3/interfacepocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_slot_validator.html", "d1/dd3/interfacepocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_slot_validator" ]
+        ] ],
         [ "CreateItemAction", "d8/dcd/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_create_item_action.html", "d8/dcd/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_create_item_action" ],
         [ "DestroyItemAction", "d1/d7b/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action.html", "d1/d7b/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action" ],
         [ "DropItemAction", "d1/dbe/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_drop_item_action.html", "d1/dbe/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_drop_item_action" ],
@@ -31,5 +35,6 @@ var namespacepocketmine_1_1inventory =
     [ "PlayerInventory", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory" ],
     [ "PlayerOffHandInventory", "d0/d89/classpocketmine_1_1inventory_1_1_player_off_hand_inventory.html", "d0/d89/classpocketmine_1_1inventory_1_1_player_off_hand_inventory" ],
     [ "SimpleInventory", "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html", "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory" ],
+    [ "SlotValidatedInventory", "dd/d33/interfacepocketmine_1_1inventory_1_1_slot_validated_inventory.html", "dd/d33/interfacepocketmine_1_1inventory_1_1_slot_validated_inventory" ],
     [ "TemporaryInventory", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory.html", "d5/d7b/interfacepocketmine_1_1inventory_1_1_temporary_inventory" ]
 ];

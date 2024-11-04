@@ -26,6 +26,7 @@ var dir_8c559a8bd664375b6611e00b162a8314 =
     [ "BucketFillLavaSound.php", "d6/d2a/_bucket_fill_lava_sound_8php_source.html", null ],
     [ "BucketFillWaterSound.php", "de/d17/_bucket_fill_water_sound_8php_source.html", null ],
     [ "BurpSound.php", "de/d44/_burp_sound_8php_source.html", null ],
+    [ "CampfireSound.php", "db/d25/_campfire_sound_8php_source.html", null ],
     [ "CauldronAddDyeSound.php", "dd/d21/_cauldron_add_dye_sound_8php_source.html", null ],
     [ "CauldronCleanItemSound.php", "dd/df2/_cauldron_clean_item_sound_8php_source.html", null ],
     [ "CauldronDyeItemSound.php", "d5/d0f/_cauldron_dye_item_sound_8php_source.html", null ],

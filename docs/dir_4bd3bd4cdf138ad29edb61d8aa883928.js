@@ -15,6 +15,7 @@ var dir_4bd3bd4cdf138ad29edb61d8aa883928 =
     [ "BlockUpdateEvent.php", "dd/df6/_block_update_event_8php_source.html", null ],
     [ "BrewingFuelUseEvent.php", "dc/d6f/_brewing_fuel_use_event_8php_source.html", null ],
     [ "BrewItemEvent.php", "d0/d87/_brew_item_event_8php_source.html", null ],
+    [ "CampfireCookEvent.php", "da/d3d/_campfire_cook_event_8php_source.html", null ],
     [ "ChestPairEvent.php", "d3/dfe/_chest_pair_event_8php_source.html", null ],
     [ "FarmlandHydrationChangeEvent.php", "d3/dfb/_farmland_hydration_change_event_8php_source.html", null ],
     [ "LeavesDecayEvent.php", "da/d78/_leaves_decay_event_8php_source.html", null ],

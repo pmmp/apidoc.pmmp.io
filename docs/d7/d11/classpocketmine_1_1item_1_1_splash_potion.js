@@ -14,6 +14,7 @@ var classpocketmine_1_1item_1_1_splash_potion =
     [ "getBlockToolType", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a7d45886d40860e24fb4c18d02a3d1a32", null ],
     [ "getCooldownTicks", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],

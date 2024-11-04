@@ -15,6 +15,7 @@ var classpocketmine_1_1item_1_1_mushroom_stew =
     [ "getBlockToolType", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a7d45886d40860e24fb4c18d02a3d1a32", null ],
     [ "getCooldownTicks", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],

@@ -15,6 +15,7 @@ var classpocketmine_1_1item_1_1_shovel =
     [ "getBlockToolType", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#acf5c445c36aa30e0117564eef673bcd2", null ],
     [ "getCanDestroy", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a7d45886d40860e24fb4c18d02a3d1a32", null ],
     [ "getCooldownTicks", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a7b5c1e7e496c3077658212aaacec4b56", null ],
     [ "getDefensePoints", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a89878fd01a089991ee271eff92dc95b9", null ],

@@ -7,6 +7,7 @@ var dir_046b3d45760c1b746efcebdccdb0c4e6 =
     [ "tile/Bell.php", "d6/da7/tile_2_bell_8php_source.html", null ],
     [ "BlastFurnace.php", "de/df0/_blast_furnace_8php_source.html", null ],
     [ "tile/BrewingStand.php", "d6/d58/tile_2_brewing_stand_8php_source.html", null ],
+    [ "tile/Campfire.php", "df/d82/tile_2_campfire_8php_source.html", null ],
     [ "tile/Cauldron.php", "da/ddf/tile_2_cauldron_8php_source.html", null ],
     [ "tile/Chest.php", "dc/db3/tile_2_chest_8php_source.html", null ],
     [ "tile/ChiseledBookshelf.php", "d1/d15/tile_2_chiseled_bookshelf_8php_source.html", null ],

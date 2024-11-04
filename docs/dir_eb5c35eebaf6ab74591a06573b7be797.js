@@ -12,6 +12,7 @@ var dir_eb5c35eebaf6ab74591a06573b7be797 =
     [ "CandleTrait.php", "d0/d3d/_candle_trait_8php_source.html", null ],
     [ "ChiseledBookshelfSlot.php", "db/dce/_chiseled_bookshelf_slot_8php_source.html", null ],
     [ "ColoredTrait.php", "dd/d40/_colored_trait_8php_source.html", null ],
+    [ "CopperMaterial.php", "df/d8d/_copper_material_8php_source.html", null ],
     [ "CopperOxidation.php", "d8/de5/_copper_oxidation_8php_source.html", null ],
     [ "CopperTrait.php", "d0/d43/_copper_trait_8php_source.html", null ],
     [ "CoralType.php", "d9/d93/_coral_type_8php_source.html", null ],

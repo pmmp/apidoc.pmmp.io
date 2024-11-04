@@ -15,6 +15,7 @@ var classpocketmine_1_1item_1_1_chorus_fruit =
     [ "getBlockToolType", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a95cfab40de7390593990a239f8e4af73", null ],
     [ "getCanDestroy", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#ae0735ccc1dee85d0c095aaa4109f40fb", null ],
     [ "getCanPlaceOn", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a2ce778f940de9e172cd268f378893b8f", null ],
+    [ "getCooldownTag", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a5f55d01301a1fce4e15a511615bb0f14", null ],
     [ "getCooldownTicks", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#ac80de8f4dd57b58811abeb08c4989a6b", null ],
     [ "getDefensePoints", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a2e7d9e107f4f24de4aabc19764dc7dc2", null ],
     [ "getEnchantability", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#aabd7c38d2f74e537da5bcc6149570fd8", null ],

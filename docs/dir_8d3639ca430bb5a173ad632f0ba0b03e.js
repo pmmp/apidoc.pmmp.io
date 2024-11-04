@@ -6,6 +6,7 @@ var dir_8d3639ca430bb5a173ad632f0ba0b03e =
     [ "BlockInventory.php", "d5/d8b/_block_inventory_8php_source.html", null ],
     [ "BlockInventoryTrait.php", "db/d64/_block_inventory_trait_8php_source.html", null ],
     [ "BrewingStandInventory.php", "d2/d97/_brewing_stand_inventory_8php_source.html", null ],
+    [ "CampfireInventory.php", "d2/d06/_campfire_inventory_8php_source.html", null ],
     [ "CartographyTableInventory.php", "df/d14/_cartography_table_inventory_8php_source.html", null ],
     [ "ChestInventory.php", "dd/d50/_chest_inventory_8php_source.html", null ],
     [ "CraftingTableInventory.php", "dd/dbf/_crafting_table_inventory_8php_source.html", null ],
