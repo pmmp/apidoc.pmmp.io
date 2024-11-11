@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-e598364f0695495cbe71ddf0b62f134b51091c6e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-2ff647079265e7c600203af4fd902b15e99d49a4</span>
    </div>
   </td>
  </tr>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d6/d5c/_entity_damage_by_entity_event_
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                $this-&gt;setModifier($this-&gt;<a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">getBaseDamage</a>() * 0.3 * $strength-&gt;getEffectLevel(), self::MODIFIER_STRENGTH);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span>(($weakness = $effects-&gt;get(VanillaEffects::WEAKNESS())) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span>(($weakness = $effects-&gt;get(VanillaEffects::WEAKNESS())) !== <span class="keyword">null</span> &amp;&amp; $this-&gt;getCause() === EntityDamageEvent::CAUSE_ENTITY_ATTACK){</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                $this-&gt;setModifier(-($this-&gt;<a class="code hl_function" href="../../d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html#adc24bf28628c62322cfcc83928e36fdc">getBaseDamage</a>() * 0.2 * $weakness-&gt;getEffectLevel()), self::MODIFIER_WEAKNESS);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-e598364f0695495cbe71ddf0b62f134b51091c6e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.1 git-2ff647079265e7c600203af4fd902b15e99d49a4</span>
    </div>
   </td>
  </tr>
@@ -1507,7 +1507,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span>        }</div>
 <div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span> </div>
-<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span>        $this-&gt;resetItemCooldown($item);</div>
+<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span>        $this-&gt;resetItemCooldown($oldItem);</div>
 <div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span>        $this-&gt;returnItemsFromAction($oldItem, $item, $returnedItems);</div>
 <div class="line"><a id="l01630" name="l01630"></a><span class="lineno"> 1630</span> </div>
 <div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>        $this-&gt;setUsingItem($item instanceof Releasable &amp;&amp; $item-&gt;canStartUsingItem($this));</div>
@@ -1531,7 +1531,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01654" name="l01654"></a><span class="lineno"> 1654</span>            }</div>
 <div class="line"><a id="l01655" name="l01655"></a><span class="lineno"> 1655</span> </div>
 <div class="line"><a id="l01656" name="l01656"></a><span class="lineno"> 1656</span>            $this-&gt;setUsingItem(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l01657" name="l01657"></a><span class="lineno"> 1657</span>            $this-&gt;resetItemCooldown($slot);</div>
+<div class="line"><a id="l01657" name="l01657"></a><span class="lineno"> 1657</span>            $this-&gt;resetItemCooldown($oldItem);</div>
 <div class="line"><a id="l01658" name="l01658"></a><span class="lineno"> 1658</span> </div>
 <div class="line"><a id="l01659" name="l01659"></a><span class="lineno"> 1659</span>            $slot-&gt;pop();</div>
 <div class="line"><a id="l01660" name="l01660"></a><span class="lineno"> 1660</span>            $this-&gt;returnItemsFromAction($oldItem, $slot, [$slot-&gt;getResidue()]);</div>
@@ -1554,7 +1554,7 @@ $(document).ready(function(){initNavTree('d9/d76/_player_8php_source.html','../.
 <div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>            $returnedItems = [];</div>
 <div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>            $result = $item-&gt;onReleaseUsing($this, $returnedItems);</div>
 <div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span>            <span class="keywordflow">if</span>($result === ItemUseResult::SUCCESS){</div>
-<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>                $this-&gt;resetItemCooldown($item);</div>
+<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>                $this-&gt;resetItemCooldown($oldItem);</div>
 <div class="line"><a id="l01686" name="l01686"></a><span class="lineno"> 1686</span>                $this-&gt;returnItemsFromAction($oldItem, $item, $returnedItems);</div>
 <div class="line"><a id="l01687" name="l01687"></a><span class="lineno"> 1687</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l01688" name="l01688"></a><span class="lineno"> 1688</span>            }</div>
