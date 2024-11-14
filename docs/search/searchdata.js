@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "$acdehijlmnoprstuvw",
   5: "bimpst",
   6: "gm",
-  7: "dp"
+  7: "adlmp"
 };
 
 var indexSectionNames =

@@ -1,25 +1,5 @@
 var namespacepocketmine_1_1item =
 [
-    [ "enchantment", null, [
-      [ "AvailableEnchantmentRegistry", "db/d9d/classpocketmine_1_1item_1_1enchantment_1_1_available_enchantment_registry.html", "db/d9d/classpocketmine_1_1item_1_1enchantment_1_1_available_enchantment_registry" ],
-      [ "EnchantingHelper", "df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper.html", "df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper" ],
-      [ "EnchantingOption", "d3/dac/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_option.html", "d3/dac/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_option" ],
-      [ "Enchantment", "dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html", "dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment" ],
-      [ "EnchantmentInstance", "d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance.html", "d5/d0a/classpocketmine_1_1item_1_1enchantment_1_1_enchantment_instance" ],
-      [ "FireAspectEnchantment", "d0/de0/classpocketmine_1_1item_1_1enchantment_1_1_fire_aspect_enchantment.html", "d0/de0/classpocketmine_1_1item_1_1enchantment_1_1_fire_aspect_enchantment" ],
-      [ "IncompatibleEnchantmentGroups", "da/d7a/classpocketmine_1_1item_1_1enchantment_1_1_incompatible_enchantment_groups.html", null ],
-      [ "IncompatibleEnchantmentRegistry", "de/dbf/classpocketmine_1_1item_1_1enchantment_1_1_incompatible_enchantment_registry.html", "de/dbf/classpocketmine_1_1item_1_1enchantment_1_1_incompatible_enchantment_registry" ],
-      [ "ItemEnchantmentTagRegistry", "d3/ddb/classpocketmine_1_1item_1_1enchantment_1_1_item_enchantment_tag_registry.html", "d3/ddb/classpocketmine_1_1item_1_1enchantment_1_1_item_enchantment_tag_registry" ],
-      [ "ItemEnchantmentTags", "d9/d03/classpocketmine_1_1item_1_1enchantment_1_1_item_enchantment_tags.html", null ],
-      [ "ItemFlags", "d2/da7/classpocketmine_1_1item_1_1enchantment_1_1_item_flags.html", null ],
-      [ "KnockbackEnchantment", "d3/d46/classpocketmine_1_1item_1_1enchantment_1_1_knockback_enchantment.html", "d3/d46/classpocketmine_1_1item_1_1enchantment_1_1_knockback_enchantment" ],
-      [ "MeleeWeaponEnchantment", "d3/da7/classpocketmine_1_1item_1_1enchantment_1_1_melee_weapon_enchantment.html", "d3/da7/classpocketmine_1_1item_1_1enchantment_1_1_melee_weapon_enchantment" ],
-      [ "ProtectionEnchantment", "d2/d67/classpocketmine_1_1item_1_1enchantment_1_1_protection_enchantment.html", "d2/d67/classpocketmine_1_1item_1_1enchantment_1_1_protection_enchantment" ],
-      [ "Rarity", "d4/db2/classpocketmine_1_1item_1_1enchantment_1_1_rarity.html", null ],
-      [ "SharpnessEnchantment", "d3/d36/classpocketmine_1_1item_1_1enchantment_1_1_sharpness_enchantment.html", "d3/d36/classpocketmine_1_1item_1_1enchantment_1_1_sharpness_enchantment" ],
-      [ "StringToEnchantmentParser", "d7/dbc/classpocketmine_1_1item_1_1enchantment_1_1_string_to_enchantment_parser.html", "d7/dbc/classpocketmine_1_1item_1_1enchantment_1_1_string_to_enchantment_parser" ],
-      [ "VanillaEnchantments", "d3/dfc/classpocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments.html", "d3/dfc/classpocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments" ]
-    ] ],
     [ "Apple", "dd/dd1/classpocketmine_1_1item_1_1_apple.html", "dd/dd1/classpocketmine_1_1item_1_1_apple" ],
     [ "Armor", "db/d85/classpocketmine_1_1item_1_1_armor.html", "db/d85/classpocketmine_1_1item_1_1_armor" ],
     [ "ArmorMaterial", "d8/dcd/classpocketmine_1_1item_1_1_armor_material.html", "d8/dcd/classpocketmine_1_1item_1_1_armor_material" ],

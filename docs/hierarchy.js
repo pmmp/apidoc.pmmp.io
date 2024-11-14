@@ -1028,6 +1028,10 @@ var hierarchy =
       [ "pocketmine\\network\\mcpe\\raklib\\PthreadsChannelWriter", "dc/da4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_writer.html", null ],
       [ "pocketmine\\network\\mcpe\\raklib\\SnoozeAwarePthreadsChannelWriter", "d0/dcd/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_snooze_aware_pthreads_channel_writer.html", null ]
     ] ],
+    [ "InvalidArgumentException", null, [
+      [ "pocketmine\\entity\\InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ],
+      [ "pocketmine\\nbt\\InvalidTagValueException", "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html", null ]
+    ] ],
     [ "pocketmine\\inventory\\Inventory", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html", [
       [ "pocketmine\\inventory\\BaseInventory", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html", [
         [ "pocketmine\\block\\inventory\\DoubleChestInventory", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html", null ],
@@ -2459,10 +2463,6 @@ var hierarchy =
     [ "pocketmine\\world\\WorldTimings", "d7/d08/classpocketmine_1_1world_1_1_world_timings.html", null ],
     [ "pocketmine\\item\\WritableBookPage", "d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html", null ],
     [ "pocketmine\\YmlServerProperties", "db/d88/classpocketmine_1_1_yml_server_properties.html", null ],
-    [ "InvalidArgumentException", null, [
-      [ "pocketmine\\entity\\InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ],
-      [ "pocketmine\\nbt\\InvalidTagValueException", "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html", null ]
-    ] ],
     [ "Runnable", null, [
       [ "pocketmine\\scheduler\\AsyncTask", "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html", [
         [ "pocketmine\\network\\mcpe\\ChunkRequestTask", "d2/d46/classpocketmine_1_1network_1_1mcpe_1_1_chunk_request_task.html", null ],

@@ -1,36 +1,6 @@
 var namespacepocketmine_1_1block =
 [
-    [ "inventory", null, [
-      [ "AnvilInventory", "d6/d6d/classpocketmine_1_1block_1_1inventory_1_1_anvil_inventory.html", "d6/d6d/classpocketmine_1_1block_1_1inventory_1_1_anvil_inventory" ],
-      [ "BarrelInventory", "d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory.html", "d6/d7b/classpocketmine_1_1block_1_1inventory_1_1_barrel_inventory" ],
-      [ "BlockInventory", "d4/d3a/interfacepocketmine_1_1block_1_1inventory_1_1_block_inventory.html", null ],
-      [ "BrewingStandInventory", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory.html", "db/d3b/classpocketmine_1_1block_1_1inventory_1_1_brewing_stand_inventory" ],
-      [ "CampfireInventory", "da/d73/classpocketmine_1_1block_1_1inventory_1_1_campfire_inventory.html", "da/d73/classpocketmine_1_1block_1_1inventory_1_1_campfire_inventory" ],
-      [ "CartographyTableInventory", "db/d85/classpocketmine_1_1block_1_1inventory_1_1_cartography_table_inventory.html", "db/d85/classpocketmine_1_1block_1_1inventory_1_1_cartography_table_inventory" ],
-      [ "ChestInventory", "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html", "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory" ],
-      [ "CraftingTableInventory", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html", "de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory" ],
-      [ "DoubleChestInventory", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html", "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory" ],
-      [ "EnchantInventory", "d6/d4e/classpocketmine_1_1block_1_1inventory_1_1_enchant_inventory.html", "d6/d4e/classpocketmine_1_1block_1_1inventory_1_1_enchant_inventory" ],
-      [ "EnderChestInventory", "d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html", "d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory" ],
-      [ "FurnaceInventory", "d8/d69/classpocketmine_1_1block_1_1inventory_1_1_furnace_inventory.html", "d8/d69/classpocketmine_1_1block_1_1inventory_1_1_furnace_inventory" ],
-      [ "HopperInventory", "d0/dc5/classpocketmine_1_1block_1_1inventory_1_1_hopper_inventory.html", "d0/dc5/classpocketmine_1_1block_1_1inventory_1_1_hopper_inventory" ],
-      [ "LoomInventory", "db/d8d/classpocketmine_1_1block_1_1inventory_1_1_loom_inventory.html", "db/d8d/classpocketmine_1_1block_1_1inventory_1_1_loom_inventory" ],
-      [ "ShulkerBoxInventory", "d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory.html", "d4/db4/classpocketmine_1_1block_1_1inventory_1_1_shulker_box_inventory" ],
-      [ "SmithingTableInventory", "dd/d95/classpocketmine_1_1block_1_1inventory_1_1_smithing_table_inventory.html", "dd/d95/classpocketmine_1_1block_1_1inventory_1_1_smithing_table_inventory" ],
-      [ "StonecutterInventory", "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html", "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory" ]
-    ] ],
     [ "tile", "db/dba/namespacepocketmine_1_1block_1_1tile.html", "db/dba/namespacepocketmine_1_1block_1_1tile" ],
-    [ "utils", null, [
-      [ "BannerPatternLayer", "da/dd4/classpocketmine_1_1block_1_1utils_1_1_banner_pattern_layer.html", null ],
-      [ "BlockEventHelper", "d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html", null ],
-      [ "CopperMaterial", "d3/d54/interfacepocketmine_1_1block_1_1utils_1_1_copper_material.html", null ],
-      [ "CropGrowthHelper", "da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper.html", "da/d21/classpocketmine_1_1block_1_1utils_1_1_crop_growth_helper" ],
-      [ "Fallable", "dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable.html", "dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable" ],
-      [ "FortuneDropHelper", "dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html", "dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper" ],
-      [ "MinimumCostFlowCalculator", "db/d5b/classpocketmine_1_1block_1_1utils_1_1_minimum_cost_flow_calculator.html", "db/d5b/classpocketmine_1_1block_1_1utils_1_1_minimum_cost_flow_calculator" ],
-      [ "RailConnectionInfo", "d7/df9/classpocketmine_1_1block_1_1utils_1_1_rail_connection_info.html", null ],
-      [ "SignText", "d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html", "d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text" ]
-    ] ],
     [ "ActivatorRail", "d6/d7d/classpocketmine_1_1block_1_1_activator_rail.html", "d6/d7d/classpocketmine_1_1block_1_1_activator_rail" ],
     [ "Air", "d7/d31/classpocketmine_1_1block_1_1_air.html", "d7/d31/classpocketmine_1_1block_1_1_air" ],
     [ "AmethystCluster", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster" ],
