@@ -248,6 +248,6 @@ var NAVTREEINDEX58 =
 "d4/d42/classpocketmine_1_1block_1_1_potato.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,169,23],
 "d4/d42/classpocketmine_1_1block_1_1_potato.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,1,0,167,31],
 "d4/d42/classpocketmine_1_1block_1_1_potato.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,169,31],
-"d4/d42/classpocketmine_1_1block_1_1_potato.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,1,0,167,19],
-"d4/d42/classpocketmine_1_1block_1_1_potato.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,169,19]
+"d4/d42/classpocketmine_1_1block_1_1_potato.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,1,0,167,8],
+"d4/d42/classpocketmine_1_1block_1_1_potato.html#ab05ed23d3ff256f3f64cf6d86563c947":[3,0,1,0,169,8]
 };

@@ -8,7 +8,7 @@ var classpocketmine_1_1block_1_1_sweet_berry_bush =
     [ "calculateIntercept", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
     [ "canBeFlowedInto", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#ac7c6b2cf8fdce0bf501dc62d06b04aff", null ],
     [ "canBePlaced", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a9b788631c97edb0ea441d4f0e1a5f7b4", null ],
-    [ "canBePlacedAt", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#ab51ea2314ed5df2163bca971a462fb72", null ],
+    [ "canBePlacedAt", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#ab05ed23d3ff256f3f64cf6d86563c947", null ],
     [ "canBeReplaced", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a30a070aa7befb02f9fff5cbf2693c01e", null ],
     [ "canBeSupportedBy", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#aa8240b691c99d2c835bd340a8239db8e", null ],
     [ "canClimb", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],

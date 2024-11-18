@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-09bf203267aca9b83a09640e17bfac0fc7b58ff8</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-b2aa6396c3cc2cafdd815eacc360e1ad89599899</span>
    </div>
   </td>
  </tr>
@@ -133,42 +133,54 @@ $(function(){initNavTree('da/d33/_flowable_8php_source.html','../../'); initResi
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\SupportType;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">   33</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ac7c6b2cf8fdce0bf501dc62d06b04aff">   35</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ac7c6b2cf8fdce0bf501dc62d06b04aff">canBeFlowedInto</a>() : bool{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        return true;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">   34</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ac7c6b2cf8fdce0bf501dc62d06b04aff">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ac7c6b2cf8fdce0bf501dc62d06b04aff">canBeFlowedInto</a>() : bool{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        return true;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#af85e45eff3ed9638a49da08745b5244e">   39</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#af85e45eff3ed9638a49da08745b5244e">isSolid</a>() : bool{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        return false;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#af85e45eff3ed9638a49da08745b5244e">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#af85e45eff3ed9638a49da08745b5244e">isSolid</a>() : bool{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        return false;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a097af4a935135a8524d812f497373075">   46</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a097af4a935135a8524d812f497373075">recalculateCollisionBoxes</a>() : array{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        return [];</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ab05ed23d3ff256f3f64cf6d86563c947">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ab05ed23d3ff256f3f64cf6d86563c947">canBePlacedAt</a>(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, <span class="keywordtype">int</span> $face, <span class="keywordtype">bool</span> $isClickedBlock) : bool{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        return (!$this-&gt;canBeFlowedInto() || !$blockReplace instanceof <a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a>) &amp;&amp;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            parent::canBePlacedAt($blockReplace, $clickVector, $face, $isClickedBlock);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a63a59c516524bff04f00d01320264add">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a63a59c516524bff04f00d01320264add">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        return SupportType::NONE;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a097af4a935135a8524d812f497373075">   52</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a097af4a935135a8524d812f497373075">recalculateCollisionBoxes</a>() : array{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return [];</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a63a59c516524bff04f00d01320264add">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a63a59c516524bff04f00d01320264add">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        return SupportType::NONE;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">Flowable.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_a097af4a935135a8524d812f497373075"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a097af4a935135a8524d812f497373075">pocketmine\block\Flowable\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00046">Flowable.php:46</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_a63a59c516524bff04f00d01320264add"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a63a59c516524bff04f00d01320264add">pocketmine\block\Flowable\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00050">Flowable.php:50</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_ac7c6b2cf8fdce0bf501dc62d06b04aff"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ac7c6b2cf8fdce0bf501dc62d06b04aff">pocketmine\block\Flowable\canBeFlowedInto</a></div><div class="ttdeci">canBeFlowedInto()</div><div class="ttdef"><b>Definition</b> <a href="#l00035">Flowable.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_af85e45eff3ed9638a49da08745b5244e"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#af85e45eff3ed9638a49da08745b5244e">pocketmine\block\Flowable\isSolid</a></div><div class="ttdeci">isSolid()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">Flowable.php:39</a></div></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+</div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">Flowable.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_a097af4a935135a8524d812f497373075"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a097af4a935135a8524d812f497373075">pocketmine\block\Flowable\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00052">Flowable.php:52</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_a63a59c516524bff04f00d01320264add"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a63a59c516524bff04f00d01320264add">pocketmine\block\Flowable\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00056">Flowable.php:56</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_ab05ed23d3ff256f3f64cf6d86563c947"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ab05ed23d3ff256f3f64cf6d86563c947">pocketmine\block\Flowable\canBePlacedAt</a></div><div class="ttdeci">canBePlacedAt(Block $blockReplace, Vector3 $clickVector, int $face, bool $isClickedBlock)</div><div class="ttdef"><b>Definition</b> <a href="#l00044">Flowable.php:44</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_ac7c6b2cf8fdce0bf501dc62d06b04aff"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ac7c6b2cf8fdce0bf501dc62d06b04aff">pocketmine\block\Flowable\canBeFlowedInto</a></div><div class="ttdeci">canBeFlowedInto()</div><div class="ttdef"><b>Definition</b> <a href="#l00036">Flowable.php:36</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html_af85e45eff3ed9638a49da08745b5244e"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html#af85e45eff3ed9638a49da08745b5244e">pocketmine\block\Flowable\isSolid</a></div><div class="ttdeci">isSolid()</div><div class="ttdef"><b>Definition</b> <a href="#l00040">Flowable.php:40</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">pocketmine\block\Liquid</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00040">Liquid.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_aligned_b_b_html"><div class="ttname"><a href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d87/_axis_aligned_b_b_8php_source.html#l00029">AxisAlignedBB.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

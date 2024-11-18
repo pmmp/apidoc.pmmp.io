@@ -8,7 +8,7 @@ var classpocketmine_1_1block_1_1_snow_layer =
     [ "calculateIntercept", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
     [ "canBeFlowedInto", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ac7c6b2cf8fdce0bf501dc62d06b04aff", null ],
     [ "canBePlaced", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a9b788631c97edb0ea441d4f0e1a5f7b4", null ],
-    [ "canBePlacedAt", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ab51ea2314ed5df2163bca971a462fb72", null ],
+    [ "canBePlacedAt", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ab05ed23d3ff256f3f64cf6d86563c947", null ],
     [ "canBeReplaced", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ac58d9c90b9fd419b5a30afb426b8af3d", null ],
     [ "canClimb", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a912c0f3a42aefc049e119f931a2ec86e", null ],

@@ -8,7 +8,7 @@ var classpocketmine_1_1block_1_1_air =
     [ "calculateIntercept", "d7/d31/classpocketmine_1_1block_1_1_air.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
     [ "canBeFlowedInto", "d7/d31/classpocketmine_1_1block_1_1_air.html#ac7c6b2cf8fdce0bf501dc62d06b04aff", null ],
     [ "canBePlaced", "d7/d31/classpocketmine_1_1block_1_1_air.html#a5ebe9e92545615f60ed9fc9dcfc40005", null ],
-    [ "canBePlacedAt", "d7/d31/classpocketmine_1_1block_1_1_air.html#ab51ea2314ed5df2163bca971a462fb72", null ],
+    [ "canBePlacedAt", "d7/d31/classpocketmine_1_1block_1_1_air.html#ab05ed23d3ff256f3f64cf6d86563c947", null ],
     [ "canBeReplaced", "d7/d31/classpocketmine_1_1block_1_1_air.html#a3f17d46fd355703d50fb1db892a395f6", null ],
     [ "canClimb", "d7/d31/classpocketmine_1_1block_1_1_air.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "d7/d31/classpocketmine_1_1block_1_1_air.html#a912c0f3a42aefc049e119f931a2ec86e", null ],

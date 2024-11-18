@@ -8,7 +8,7 @@ var classpocketmine_1_1block_1_1_red_mushroom =
     [ "calculateIntercept", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
     [ "canBeFlowedInto", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ac7c6b2cf8fdce0bf501dc62d06b04aff", null ],
     [ "canBePlaced", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a9b788631c97edb0ea441d4f0e1a5f7b4", null ],
-    [ "canBePlacedAt", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab51ea2314ed5df2163bca971a462fb72", null ],
+    [ "canBePlacedAt", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab05ed23d3ff256f3f64cf6d86563c947", null ],
     [ "canBeReplaced", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a30a070aa7befb02f9fff5cbf2693c01e", null ],
     [ "canClimb", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a912c0f3a42aefc049e119f931a2ec86e", null ],

@@ -8,7 +8,7 @@ var classpocketmine_1_1block_1_1_cave_vines =
     [ "calculateIntercept", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
     [ "canBeFlowedInto", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#ac7c6b2cf8fdce0bf501dc62d06b04aff", null ],
     [ "canBePlaced", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a9b788631c97edb0ea441d4f0e1a5f7b4", null ],
-    [ "canBePlacedAt", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#ab51ea2314ed5df2163bca971a462fb72", null ],
+    [ "canBePlacedAt", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#ab05ed23d3ff256f3f64cf6d86563c947", null ],
     [ "canBeReplaced", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a30a070aa7befb02f9fff5cbf2693c01e", null ],
     [ "canClimb", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a9e5f97430e064fc2489e3cf0c518631b", null ],
     [ "collidesWithBB", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a912c0f3a42aefc049e119f931a2ec86e", null ],

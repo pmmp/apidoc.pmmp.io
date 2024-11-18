@@ -8,7 +8,7 @@ var classpocketmine_1_1block_1_1_underwater_torch =
     [ "calculateIntercept", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#add4d4fd4fecc779dee9c9f94b8a556e5", null ],
     [ "canBeFlowedInto", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#ae5faa1c1b64c8e2e8699718783f6b8d1", null ],
     [ "canBePlaced", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#a9b788631c97edb0ea441d4f0e1a5f7b4", null ],
-    [ "canBePlacedAt", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#ab51ea2314ed5df2163bca971a462fb72", null ],
+    [ "canBePlacedAt", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#ab05ed23d3ff256f3f64cf6d86563c947", null ],
     [ "canBeReplaced", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#a30a070aa7befb02f9fff5cbf2693c01e", null ],
     [ "canClimb", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#a3bffed15a0b8de5f9df11e6f4b407163", null ],
     [ "collidesWithBB", "da/dd1/classpocketmine_1_1block_1_1_underwater_torch.html#a912c0f3a42aefc049e119f931a2ec86e", null ],
