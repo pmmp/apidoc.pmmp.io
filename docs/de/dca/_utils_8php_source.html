@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-b2aa6396c3cc2cafdd815eacc360e1ad89599899</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
    </div>
   </td>
  </tr>
@@ -184,7 +184,7 @@ $(function(){initNavTree('de/dca/_utils_8php_source.html','../../'); initResizab
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>use <span class="keyword">function</span> preg_replace;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>use <span class="keyword">function</span> shell_exec;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>use <span class="keyword">function</span> spl_object_id;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>use <span class="keyword">function</span> str_ends_with;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>use <span class="keyword">function</span> str_contains;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>use <span class="keyword">function</span> str_pad;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>use <span class="keyword">function</span> str_split;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>use <span class="keyword">function</span> str_starts_with;</div>
@@ -218,7 +218,7 @@ $(function(){initNavTree('de/dca/_utils_8php_source.html','../../'); initResizab
 <div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">  122</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">getNiceClosureName</a>(\Closure $closure) : string{</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $func = new \ReflectionFunction($closure);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">if</span>(!str_ends_with($func-&gt;getName(), <span class="stringliteral">&#39;{closure}&#39;</span>)){</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">if</span>(!str_contains($func-&gt;getName(), <span class="stringliteral">&#39;{closure&#39;</span>)){</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="comment">//closure wraps a named function, can be done with reflection or fromCallable()</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="comment">//isClosure() is useless here because it just tells us if $func is reflecting a Closure object</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>

@@ -61,7 +61,7 @@ var searchData=
   ['upnp_58',['UPnP',['../d2/d96/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p.html',1,'pocketmine::network::upnp']]],
   ['upnpexception_59',['UPnPException',['../db/d7a/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_exception.html',1,'pocketmine::network::upnp']]],
   ['upnpnetworkinterface_60',['UPnPNetworkInterface',['../d0/d45/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_network_interface.html',1,'pocketmine::network::upnp']]],
-  ['usebreakon_61',['useBreakOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1e582510a552bb3b6065dde74da1ac16',1,'pocketmine::world::World']]],
+  ['usebreakon_61',['useBreakOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a9b5a4da614249e28d3fc98a81a88fb9f',1,'pocketmine::world::World']]],
   ['usehelditem_62',['useHeldItem',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#acb1c1056567862abccfc2e51b98d3e32',1,'pocketmine::player::Player']]],
   ['useitemon_63',['useItemOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab3173b7c869185b74e47b652252268e4',1,'pocketmine::world::World']]],
   ['useitemonentitytransactiondata_64',['UseItemOnEntityTransactionData',['../d7/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_on_entity_transaction_data.html',1,'pocketmine::network::mcpe::protocol::types::inventory']]],

@@ -24,7 +24,7 @@ var searchData=
   ['upgradeitemtypedataint_21',['upgradeItemTypeDataInt',['../d3/d27/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_data_upgrader.html#a7ce8c2cee2561c3116947cbffa8d81e4',1,'pocketmine::data::bedrock::item::upgrade::ItemDataUpgrader']]],
   ['upgradeitemtypedatastring_22',['upgradeItemTypeDataString',['../d3/d27/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_data_upgrader.html#a75697ef5258aea4d094852d5e0ff069b',1,'pocketmine::data::bedrock::item::upgrade::ItemDataUpgrader']]],
   ['upgradestringidmeta_23',['upgradeStringIdMeta',['../d2/dcf/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_data_upgrader.html#a2d7985ad8a72c01aed0cd5cb4378c302',1,'pocketmine::data::bedrock::block::upgrade::BlockDataUpgrader']]],
-  ['usebreakon_24',['useBreakOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a1e582510a552bb3b6065dde74da1ac16',1,'pocketmine::world::World']]],
+  ['usebreakon_24',['useBreakOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a9b5a4da614249e28d3fc98a81a88fb9f',1,'pocketmine::world::World']]],
   ['usehelditem_25',['useHeldItem',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#acb1c1056567862abccfc2e51b98d3e32',1,'pocketmine::player::Player']]],
   ['useitemon_26',['useItemOn',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#ab3173b7c869185b74e47b652252268e4',1,'pocketmine::world::World']]]
 ];
