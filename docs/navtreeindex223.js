@@ -1,5 +1,7 @@
 var NAVTREEINDEX223 =
 {
+"df/d22/classpocketmine_1_1block_1_1_cactus.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,39,36],
+"df/d22/classpocketmine_1_1block_1_1_cactus.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,1,0,37,61],
 "df/d22/classpocketmine_1_1block_1_1_cactus.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,39,61],
 "df/d22/classpocketmine_1_1block_1_1_cactus.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,1,0,37,46],
 "df/d22/classpocketmine_1_1block_1_1_cactus.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,39,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX223 =
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a2dd0b61975dd1ccdf2d0ddc161f85013":[2,0,1,2,20,67],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a2dd0b61975dd1ccdf2d0ddc161f85013":[3,0,1,7,25,67],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a2eaaae362cb4990882b3db3f7b15864b":[2,0,1,2,20,60],
-"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a2eaaae362cb4990882b3db3f7b15864b":[3,0,1,7,25,60],
-"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a3c11bfc681ed5ee937345d05c9a8fbae":[2,0,1,2,20,47],
-"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a3c11bfc681ed5ee937345d05c9a8fbae":[3,0,1,7,25,47]
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a2eaaae362cb4990882b3db3f7b15864b":[3,0,1,7,25,60]
 };

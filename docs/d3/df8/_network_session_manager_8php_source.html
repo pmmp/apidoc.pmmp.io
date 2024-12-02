@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
    </div>
   </td>
  </tr>
@@ -139,77 +139,77 @@ $(function(){initNavTree('d3/df8/_network_session_manager_8php_source.html','../
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html">NetworkSessionManager</a>{</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> array $sessions = [];</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> array $pendingLoginSessions = [];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> array $sessions = [];</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#afa1b6a4c0bba82a0dbf8c2d7790ed327">   42</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#afa1b6a4c0bba82a0dbf8c2d7790ed327">add</a>(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session) : void{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $idx = spl_object_id($session);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;sessions[$idx] = $session;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;pendingLoginSessions[$idx] = $session;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> array $pendingLoginSessions = [];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#afa1b6a4c0bba82a0dbf8c2d7790ed327">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#afa1b6a4c0bba82a0dbf8c2d7790ed327">add</a>(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session) : void{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $idx = spl_object_id($session);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;sessions[$idx] = $session;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;pendingLoginSessions[$idx] = $session;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a74b74146139069b1cb27444704a9be74">   52</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a74b74146139069b1cb27444704a9be74">markLoginReceived</a>(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session) : void{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $idx = spl_object_id($session);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        unset($this-&gt;pendingLoginSessions[$idx]);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a74b74146139069b1cb27444704a9be74">   58</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a74b74146139069b1cb27444704a9be74">markLoginReceived</a>(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session) : void{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $idx = spl_object_id($session);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        unset($this-&gt;pendingLoginSessions[$idx]);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a581249259b9367c9ddfe0d6a087accf6">   61</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">remove</span>(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session) : void{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $idx = spl_object_id($session);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        unset($this-&gt;sessions[$idx]);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        unset($this-&gt;pendingLoginSessions[$idx]);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a581249259b9367c9ddfe0d6a087accf6">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">remove</span>(<a class="code hl_class" href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">NetworkSession</a> $session) : void{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $idx = spl_object_id($session);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        unset($this-&gt;sessions[$idx]);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        unset($this-&gt;pendingLoginSessions[$idx]);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abdcac13d9a6e3737c578a5c675b672b9">   70</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abdcac13d9a6e3737c578a5c675b672b9">getSessionCount</a>() : int{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        return count($this-&gt;sessions);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abdcac13d9a6e3737c578a5c675b672b9">   76</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abdcac13d9a6e3737c578a5c675b672b9">getSessionCount</a>() : int{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        return count($this-&gt;sessions);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abfe6a121a7968a2d0c3e075a16ba14ea">   78</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abfe6a121a7968a2d0c3e075a16ba14ea">getValidSessionCount</a>() : int{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        return count($this-&gt;sessions) - count($this-&gt;pendingLoginSessions);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abfe6a121a7968a2d0c3e075a16ba14ea">   84</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abfe6a121a7968a2d0c3e075a16ba14ea">getValidSessionCount</a>() : int{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        return count($this-&gt;sessions) - count($this-&gt;pendingLoginSessions);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a55edecad5ef62d75386a3dc12b2e0db2">   83</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a55edecad5ef62d75386a3dc12b2e0db2">getSessions</a>() : array{ return $this-&gt;sessions; }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#ae7b422b97780b934d0848b2704171c22">   88</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#ae7b422b97780b934d0848b2704171c22">tick</a>() : void{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        foreach($this-&gt;sessions as $k =&gt; $session){</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            $session-&gt;tick();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">if</span>(!$session-&gt;isConnected()){</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                unset($this-&gt;sessions[$k]);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a55edecad5ef62d75386a3dc12b2e0db2">   89</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a55edecad5ef62d75386a3dc12b2e0db2">getSessions</a>() : array{ return $this-&gt;sessions; }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#ae7b422b97780b934d0848b2704171c22">   94</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#ae7b422b97780b934d0848b2704171c22">tick</a>() : void{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        foreach($this-&gt;sessions as $k =&gt; $session){</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            $session-&gt;tick();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span>(!$session-&gt;isConnected()){</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                unset($this-&gt;sessions[$k]);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a53ffc9303e97f65deee05f9f1ac551dc">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a53ffc9303e97f65deee05f9f1ac551dc">close</a>(<a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span> $reason = <span class="stringliteral">&quot;&quot;</span>, <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span>|<span class="keyword">null</span> $disconnectScreenMessage = <span class="keyword">null</span>) : void{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        foreach($this-&gt;sessions as $session){</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            $session-&gt;disconnect($reason, $disconnectScreenMessage);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $this-&gt;sessions = [];</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a53ffc9303e97f65deee05f9f1ac551dc">  109</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a53ffc9303e97f65deee05f9f1ac551dc">close</a>(<a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span> $reason = <span class="stringliteral">&quot;&quot;</span>, <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|<span class="keywordtype">string</span>|<span class="keyword">null</span> $disconnectScreenMessage = <span class="keyword">null</span>) : void{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        foreach($this-&gt;sessions as $session){</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $session-&gt;disconnect($reason, $disconnectScreenMessage);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $this-&gt;sessions = [];</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
 </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00026">Translatable.php:26</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00028">Translatable.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html">pocketmine\network\NetworkSessionManager</a></div><div class="ttdef"><b>Definition</b> <a href="#l00031">NetworkSessionManager.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_a53ffc9303e97f65deee05f9f1ac551dc"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a53ffc9303e97f65deee05f9f1ac551dc">pocketmine\network\NetworkSessionManager\close</a></div><div class="ttdeci">close(Translatable|string $reason=&quot;&quot;, Translatable|string|null $disconnectScreenMessage=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00103">NetworkSessionManager.php:103</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_a55edecad5ef62d75386a3dc12b2e0db2"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a55edecad5ef62d75386a3dc12b2e0db2">pocketmine\network\NetworkSessionManager\getSessions</a></div><div class="ttdeci">getSessions()</div><div class="ttdef"><b>Definition</b> <a href="#l00083">NetworkSessionManager.php:83</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_a74b74146139069b1cb27444704a9be74"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a74b74146139069b1cb27444704a9be74">pocketmine\network\NetworkSessionManager\markLoginReceived</a></div><div class="ttdeci">markLoginReceived(NetworkSession $session)</div><div class="ttdef"><b>Definition</b> <a href="#l00052">NetworkSessionManager.php:52</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_abdcac13d9a6e3737c578a5c675b672b9"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abdcac13d9a6e3737c578a5c675b672b9">pocketmine\network\NetworkSessionManager\getSessionCount</a></div><div class="ttdeci">getSessionCount()</div><div class="ttdef"><b>Definition</b> <a href="#l00070">NetworkSessionManager.php:70</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_abfe6a121a7968a2d0c3e075a16ba14ea"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abfe6a121a7968a2d0c3e075a16ba14ea">pocketmine\network\NetworkSessionManager\getValidSessionCount</a></div><div class="ttdeci">getValidSessionCount()</div><div class="ttdef"><b>Definition</b> <a href="#l00078">NetworkSessionManager.php:78</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_ae7b422b97780b934d0848b2704171c22"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#ae7b422b97780b934d0848b2704171c22">pocketmine\network\NetworkSessionManager\tick</a></div><div class="ttdeci">tick()</div><div class="ttdef"><b>Definition</b> <a href="#l00088">NetworkSessionManager.php:88</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_afa1b6a4c0bba82a0dbf8c2d7790ed327"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#afa1b6a4c0bba82a0dbf8c2d7790ed327">pocketmine\network\NetworkSessionManager\add</a></div><div class="ttdeci">add(NetworkSession $session)</div><div class="ttdef"><b>Definition</b> <a href="#l00042">NetworkSessionManager.php:42</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_a53ffc9303e97f65deee05f9f1ac551dc"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a53ffc9303e97f65deee05f9f1ac551dc">pocketmine\network\NetworkSessionManager\close</a></div><div class="ttdeci">close(Translatable|string $reason=&quot;&quot;, Translatable|string|null $disconnectScreenMessage=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00109">NetworkSessionManager.php:109</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_a55edecad5ef62d75386a3dc12b2e0db2"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a55edecad5ef62d75386a3dc12b2e0db2">pocketmine\network\NetworkSessionManager\getSessions</a></div><div class="ttdeci">getSessions()</div><div class="ttdef"><b>Definition</b> <a href="#l00089">NetworkSessionManager.php:89</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_a74b74146139069b1cb27444704a9be74"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#a74b74146139069b1cb27444704a9be74">pocketmine\network\NetworkSessionManager\markLoginReceived</a></div><div class="ttdeci">markLoginReceived(NetworkSession $session)</div><div class="ttdef"><b>Definition</b> <a href="#l00058">NetworkSessionManager.php:58</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_abdcac13d9a6e3737c578a5c675b672b9"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abdcac13d9a6e3737c578a5c675b672b9">pocketmine\network\NetworkSessionManager\getSessionCount</a></div><div class="ttdeci">getSessionCount()</div><div class="ttdef"><b>Definition</b> <a href="#l00076">NetworkSessionManager.php:76</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_abfe6a121a7968a2d0c3e075a16ba14ea"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#abfe6a121a7968a2d0c3e075a16ba14ea">pocketmine\network\NetworkSessionManager\getValidSessionCount</a></div><div class="ttdeci">getValidSessionCount()</div><div class="ttdef"><b>Definition</b> <a href="#l00084">NetworkSessionManager.php:84</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_ae7b422b97780b934d0848b2704171c22"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#ae7b422b97780b934d0848b2704171c22">pocketmine\network\NetworkSessionManager\tick</a></div><div class="ttdeci">tick()</div><div class="ttdef"><b>Definition</b> <a href="#l00094">NetworkSessionManager.php:94</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1_network_session_manager_html_afa1b6a4c0bba82a0dbf8c2d7790ed327"><div class="ttname"><a href="../../dd/db0/classpocketmine_1_1network_1_1_network_session_manager.html#afa1b6a4c0bba82a0dbf8c2d7790ed327">pocketmine\network\NetworkSessionManager\add</a></div><div class="ttdeci">add(NetworkSession $session)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">NetworkSessionManager.php:48</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00140">NetworkSession.php:140</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1network_html"><div class="ttname"><a href="../../db/dd0/namespacepocketmine_1_1network.html">pocketmine\network</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/df4/_advanced_network_interface_8php_source.html#l00027">AdvancedNetworkInterface.php:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

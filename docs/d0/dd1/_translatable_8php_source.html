@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
    </div>
   </td>
  </tr>
@@ -131,55 +131,58 @@ $(function(){initNavTree('d0/dd1/_translatable_8php_source.html','../../'); init
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\lang;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">   26</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">protected</span> array $params = [];</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a3a6edbb12e2e8950d0f0c7703f94327b">   33</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a3a6edbb12e2e8950d0f0c7703f94327b">__construct</a>(</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">protected</span> <span class="keywordtype">string</span> $text,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        array $params = []</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ){</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">foreach</span>($params as $k =&gt; $param){</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span>(!($param instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>)){</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                $this-&gt;params[$k] = (string) $param;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                $this-&gt;params[$k] = $param;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">   28</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">protected</span> array $params = [];</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a3a6edbb12e2e8950d0f0c7703f94327b">   35</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a3a6edbb12e2e8950d0f0c7703f94327b">__construct</a>(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">protected</span> <span class="keywordtype">string</span> $text,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        array $params = []</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">foreach</span>(Utils::promoteKeys($params) as $k =&gt; $param){</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span>(!($param instanceof <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>)){</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                $this-&gt;params[$k] = (string) $param;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                $this-&gt;params[$k] = $param;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : string{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        return $this-&gt;text;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a4de411c13b5f72df1401b9f415e2bf91">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a4de411c13b5f72df1401b9f415e2bf91">getParameters</a>() : array{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        return $this-&gt;params;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : string{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        return $this-&gt;text;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a4de411c13b5f72df1401b9f415e2bf91">   55</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a4de411c13b5f72df1401b9f415e2bf91">getParameters</a>() : array{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        return $this-&gt;params;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">public</span> <span class="keyword">function</span> getParameter(<span class="keywordtype">int</span>|<span class="keywordtype">string</span> $i) : <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|string|null{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        return $this-&gt;params[$i] ?? null;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span> <span class="keyword">function</span> format(<span class="keywordtype">string</span> $before, <span class="keywordtype">string</span> $after) : self{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        return new self(<span class="stringliteral">&quot;$before%$this-&gt;text$after&quot;</span>, $this-&gt;params);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">public</span> <span class="keyword">function</span> prefix(<span class="keywordtype">string</span> $prefix) : self{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        return new self(<span class="stringliteral">&quot;$prefix%$this-&gt;text&quot;</span>, $this-&gt;params);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span> <span class="keyword">function</span> postfix(<span class="keywordtype">string</span> $postfix) : self{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        return new self(<span class="stringliteral">&quot;%$this-&gt;text&quot;</span> . $postfix);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">function</span> getParameter(<span class="keywordtype">int</span>|<span class="keywordtype">string</span> $i) : <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>|string|null{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        return $this-&gt;params[$i] ?? null;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">public</span> <span class="keyword">function</span> format(<span class="keywordtype">string</span> $before, <span class="keywordtype">string</span> $after) : self{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return new self(<span class="stringliteral">&quot;$before%$this-&gt;text$after&quot;</span>, $this-&gt;params);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> prefix(<span class="keywordtype">string</span> $prefix) : self{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return new self(<span class="stringliteral">&quot;$prefix%$this-&gt;text&quot;</span>, $this-&gt;params);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">function</span> postfix(<span class="keywordtype">string</span> $postfix) : self{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        return new self(<span class="stringliteral">&quot;%$this-&gt;text&quot;</span> . $postfix);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="#l00026">Translatable.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html_a3a6edbb12e2e8950d0f0c7703f94327b"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a3a6edbb12e2e8950d0f0c7703f94327b">pocketmine\lang\Translatable\__construct</a></div><div class="ttdeci">__construct(protected string $text, array $params=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Translatable.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html_a4de411c13b5f72df1401b9f415e2bf91"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a4de411c13b5f72df1401b9f415e2bf91">pocketmine\lang\Translatable\getParameters</a></div><div class="ttdeci">getParameters()</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Translatable.php:53</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="#l00028">Translatable.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html_a3a6edbb12e2e8950d0f0c7703f94327b"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a3a6edbb12e2e8950d0f0c7703f94327b">pocketmine\lang\Translatable\__construct</a></div><div class="ttdeci">__construct(protected string $text, array $params=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00035">Translatable.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html_a4de411c13b5f72df1401b9f415e2bf91"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html#a4de411c13b5f72df1401b9f415e2bf91">pocketmine\lang\Translatable\getParameters</a></div><div class="ttdeci">getParameters()</div><div class="ttdef"><b>Definition</b> <a href="#l00055">Translatable.php:55</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00103">Utils.php:103</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

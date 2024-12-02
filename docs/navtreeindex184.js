@@ -1,5 +1,7 @@
 var NAVTREEINDEX184 =
 {
+"dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,11,12,36],
+"dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aea00deec1dff34be27e648a71f3cfaa3":[2,0,1,4,11,32],
 "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aea00deec1dff34be27e648a71f3cfaa3":[3,0,1,11,12,32],
 "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[2,0,1,4,11,3],
 "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[3,0,1,11,12,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX184 =
 "dc/da4/_sub_chunk_packet_8php_source.html":[4,0,1,0,1,0,194],
 "dc/da4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_writer.html":[3,0,1,16,0,7,1],
 "dc/da4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_pthreads_channel_writer.html#a78cff77248adcb07962d4db046723a82":[3,0,1,16,0,7,1,0],
-"dc/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_settings_external_link_settings.html":[3,0,1,16,0,6,1,28],
-"dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html":[3,0,1,2,0,20],
-"dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html#a14e8789988e0db2de380c86e7bc0586f":[3,0,1,2,0,20,0]
+"dc/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_settings_external_link_settings.html":[3,0,1,16,0,6,1,28]
 };

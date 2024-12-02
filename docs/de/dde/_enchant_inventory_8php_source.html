@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
    </div>
   </td>
  </tr>
@@ -148,49 +148,49 @@ $(function(){initNavTree('de/dde/_enchant_inventory_8php_source.html','../../');
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">const</span> SLOT_INPUT = 0;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">const</span> SLOT_LAPIS = 1;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> array $options = [];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a> $holder){</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;holder = $holder;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        parent::__construct(2);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">protected</span> <span class="keyword">function</span> onSlotChange(<span class="keywordtype">int</span> $index, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $before) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span>($index === self::SLOT_INPUT){</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">foreach</span>($this-&gt;viewers as $viewer){</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                $this-&gt;options = [];</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                $item = $this-&gt;getInput();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                $options = <a class="code hl_function" href="../../df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper.html#ab074b750f748d0c5985cae3016260bd1">Helper::generateOptions</a>($this-&gt;holder, $item, $viewer-&gt;getEnchantmentSeed());</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                $event = <span class="keyword">new</span> <a class="code hl_class" href="../../d4/db8/classpocketmine_1_1event_1_1player_1_1_player_enchanting_options_request_event.html">PlayerEnchantingOptionsRequestEvent</a>($viewer, $this, $options);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $event-&gt;call();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">if</span>(!$event-&gt;isCancelled() &amp;&amp; count($event-&gt;getOptions()) &gt; 0){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    $this-&gt;options = array_values($event-&gt;getOptions());</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    $viewer-&gt;getNetworkSession()-&gt;getInvManager()?-&gt;syncEnchantingTableOptions($this-&gt;options);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        parent::onSlotChange($index, $before);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> array $options = [];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a> $holder){</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;holder = $holder;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        parent::__construct(2);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">protected</span> <span class="keyword">function</span> onSlotChange(<span class="keywordtype">int</span> $index, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $before) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span>($index === self::SLOT_INPUT){</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">foreach</span>($this-&gt;viewers as $viewer){</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                $this-&gt;options = [];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                $item = $this-&gt;getInput();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                $options = <a class="code hl_function" href="../../df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper.html#ab074b750f748d0c5985cae3016260bd1">Helper::generateOptions</a>($this-&gt;holder, $item, $viewer-&gt;getEnchantmentSeed());</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                $event = <span class="keyword">new</span> <a class="code hl_class" href="../../d4/db8/classpocketmine_1_1event_1_1player_1_1_player_enchanting_options_request_event.html">PlayerEnchantingOptionsRequestEvent</a>($viewer, $this, $options);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                $event-&gt;call();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">if</span>(!$event-&gt;isCancelled() &amp;&amp; count($event-&gt;getOptions()) &gt; 0){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    $this-&gt;options = array_values($event-&gt;getOptions());</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    $viewer-&gt;getNetworkSession()-&gt;getInvManager()?-&gt;syncEnchantingTableOptions($this-&gt;options);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInput() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7">getItem</a>(self::SLOT_INPUT);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLapis() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7">getItem</a>(self::SLOT_LAPIS);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOutput(<span class="keywordtype">int</span> $optionId) : ?<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $option = $this-&gt;getOption($optionId);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> $option === <span class="keyword">null</span> ? null : <a class="code hl_function" href="../../df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper.html#afb174dfaeac93c60672bfec473cd6822">Helper::enchantItem</a>($this-&gt;getInput(), $option-&gt;getEnchantments());</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOption(<span class="keywordtype">int</span> $optionId) : ?<a class="code hl_class" href="../../d3/dac/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_option.html">EnchantingOption</a>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> $this-&gt;options[$optionId] ?? <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        parent::onSlotChange($index, $before);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInput() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7">getItem</a>(self::SLOT_INPUT);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLapis() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7">getItem</a>(self::SLOT_LAPIS);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOutput(<span class="keywordtype">int</span> $optionId) : ?<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $option = $this-&gt;getOption($optionId);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> $option === <span class="keyword">null</span> ? null : <a class="code hl_function" href="../../df/de2/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_helper.html#afb174dfaeac93c60672bfec473cd6822">Helper::enchantItem</a>($this-&gt;getInput(), $option-&gt;getEnchantments());</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOption(<span class="keywordtype">int</span> $optionId) : ?<a class="code hl_class" href="../../d3/dac/classpocketmine_1_1item_1_1enchantment_1_1_enchanting_option.html">EnchantingOption</a>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> $this-&gt;options[$optionId] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1inventory_1_1_enchant_inventory_html"><div class="ttname"><a href="../../d6/d4e/classpocketmine_1_1block_1_1inventory_1_1_enchant_inventory.html">pocketmine\block\inventory\EnchantInventory</a></div><div class="ttdef"><b>Definition</b> <a href="#l00036">EnchantInventory.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_enchanting_options_request_event_html"><div class="ttname"><a href="../../d4/db8/classpocketmine_1_1event_1_1player_1_1_player_enchanting_options_request_event.html">pocketmine\event\player\PlayerEnchantingOptionsRequestEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d70/_player_enchanting_options_request_event_8php_source.html#l00039">PlayerEnchantingOptionsRequestEvent.php:39</a></div></div>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX177 =
 {
+"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,114,11],
+"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a9404d9040389f3ff2462f86d9a181160":[2,0,1,0,112,65],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,114,65],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a994b80e9138156e5b90a803def57c7db":[2,0,1,0,112,38],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,114,38],
@@ -247,7 +249,5 @@ var NAVTREEINDEX177 =
 "dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aedfea63e9a82bee4b73d39e3fc429ebc":[3,0,1,16,0,6,104,7],
 "dc/d37/_block_death_event_8php_source.html":[4,0,0,7,0,3],
 "dc/d37/_huge_explode_seed_particle_8php_source.html":[4,0,0,25,4,18],
-"dc/d3a/_packet_handling_exception_8php_source.html":[4,0,0,12,10],
-"dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html":[3,0,1,16,0,6,1,0,4],
-"dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html":[2,0,1,0,199]
+"dc/d3a/_packet_handling_exception_8php_source.html":[4,0,0,12,10]
 };

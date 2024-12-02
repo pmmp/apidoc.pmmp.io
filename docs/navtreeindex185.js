@@ -1,5 +1,7 @@
 var NAVTREEINDEX185 =
 {
+"dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html":[3,0,1,2,0,20],
+"dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html#a14e8789988e0db2de380c86e7bc0586f":[3,0,1,2,0,20,0],
 "dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html#a425117ae5e7bab32cc824f19f82b613b":[3,0,1,2,0,20,2],
 "dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html#a57c09d1063bc811e24bdc3d750e882d5":[3,0,1,2,0,20,4],
 "dc/da7/classpocketmine_1_1command_1_1defaults_1_1_pardon_ip_command.html#a8c40c93db847fcf02c3e7b19a729dd10":[3,0,1,2,0,20,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX185 =
 "dc/db1/classpocketmine_1_1item_1_1_cooked_porkchop.html#af85accbedba28b67bb66d5f12d329585":[2,0,1,5,30,40],
 "dc/db1/classpocketmine_1_1item_1_1_cooked_porkchop.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,31,40],
 "dc/db3/tile_2_chest_8php_source.html":[4,0,0,0,1,9],
-"dc/db5/classpocketmine_1_1block_1_1_base_banner.html":[2,0,1,0,8],
-"dc/db5/classpocketmine_1_1block_1_1_base_banner.html":[3,0,1,0,10],
-"dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a070e29c4b875936366ea322bbb9a3ed8":[2,0,1,0,8,20]
+"dc/db5/classpocketmine_1_1block_1_1_base_banner.html":[2,0,1,0,8]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX204 =
 {
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#af6cd0b6690ff09dac13f0af27eb61aa2":[3,0,1,0,194,67],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,1,0,192,32],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#afcc19c437c8bef4487f5ecb956ae9a1a":[3,0,1,0,194,32],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#afe4928a6da38d63eccea78bd1a2fdcd3":[2,0,1,0,192,24],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#afe4928a6da38d63eccea78bd1a2fdcd3":[3,0,1,0,194,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX204 =
 "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a56bc59582baf2faf3412ca7044831e3b":[3,0,1,12,1,37],
 "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,1,5,0,52],
 "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,1,52],
-"dd/dd1/classpocketmine_1_1item_1_1_apple.html#a653a8fbd8da17b08be95a985d857c4fc":[2,0,1,5,0,44],
-"dd/dd1/classpocketmine_1_1item_1_1_apple.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,1,44],
-"dd/dd1/classpocketmine_1_1item_1_1_apple.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,1,5,0,43]
+"dd/dd1/classpocketmine_1_1item_1_1_apple.html#a653a8fbd8da17b08be95a985d857c4fc":[2,0,1,5,0,44]
 };

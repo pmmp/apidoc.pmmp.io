@@ -1,5 +1,7 @@
 var NAVTREEINDEX224 =
 {
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a3c11bfc681ed5ee937345d05c9a8fbae":[2,0,1,2,20,47],
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a3c11bfc681ed5ee937345d05c9a8fbae":[3,0,1,7,25,47],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a4087e033dc45159d7379699024657047":[2,0,1,2,20,24],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a4087e033dc45159d7379699024657047":[3,0,1,7,25,24],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a4101d0cffe7303801b827969c461ed8b":[2,0,1,2,20,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX224 =
 "df/d4c/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_level_d_b.html#ad1e05b62d1c0efb8eb5b33911362fa7c":[3,0,1,30,1,0,2,2,12],
 "df/d4d/_soul_sand_8php_source.html":[4,0,0,0,203],
 "df/d4f/_block_state_dictionary_entry_8php_source.html":[4,0,0,12,0,3,1],
-"df/d4f/_tag_wildcard_recipe_ingredient_8php_source.html":[4,0,0,3,17],
-"df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_gui_data_pick_item_packet.html":[3,0,1,16,0,6,71],
-"df/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_gui_data_pick_item_packet.html#a3f00b7be84de1015f43dbb7bf1129d0f":[3,0,1,16,0,6,71,7]
+"df/d4f/_tag_wildcard_recipe_ingredient_8php_source.html":[4,0,0,3,17]
 };

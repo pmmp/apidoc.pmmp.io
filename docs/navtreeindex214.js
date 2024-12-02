@@ -1,5 +1,7 @@
 var NAVTREEINDEX214 =
 {
+"de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,172,50],
+"de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,1,0,170,57],
 "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,172,57],
 "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,1,0,170,16],
 "de/d89/classpocketmine_1_1block_1_1_pressure_plate.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,172,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX214 =
 "de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,1,0,222,27],
 "de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,224,27],
 "de/d92/_language_not_found_exception_8php_source.html":[4,0,0,11,3],
-"de/d92/_raw_mutton_8php_source.html":[4,0,0,10,91],
-"de/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_settings_agent_capabilities.html":[3,0,1,16,0,6,1,27],
-"de/d96/_cancel_task_exception_8php_source.html":[4,0,0,18,6]
+"de/d92/_raw_mutton_8php_source.html":[4,0,0,10,91]
 };

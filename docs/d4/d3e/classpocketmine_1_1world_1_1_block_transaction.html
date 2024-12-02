@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00040">40</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00043">43</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 <p>Adds a block to the transaction at the given position.</p>
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00051">51</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00054">54</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d93/_bed_8php_source.html#l00176">pocketmine\block\Bed\place()</a>, and <a class="el" href="../../d9/d5b/_door_8php_source.html#l00116">pocketmine\block\Door\place()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -227,7 +227,7 @@ Public Member Functions</h2></td></tr>
 <p>Adds a block to the batch at the given coordinates.</p>
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00060">60</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00063">63</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ Public Member Functions</h2></td></tr>
 <p>Add a validation predicate which will be used to validate every block. The callable signature should be the same as the below dummy function. </p><dl class="section see"><dt>See also</dt><dd>BlockTransaction::dummyValidator()</dd></dl>
 <p>@phpstan-param \Closure(ChunkManager $world, int $x, int $y, int $z) : bool $validator </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00126">126</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00129">129</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ Public Member Functions</h2></td></tr>
 <p>Validates and attempts to apply the transaction to the given world. If any part of the transaction fails to validate, no changes will be made to the world.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if the application was successful </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00086">86</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00089">89</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
 <p>Dummy function demonstrating the required closure signature for validators. </p><dl class="section see"><dt>See also</dt><dd>BlockTransaction::addValidator()</dd></dl>
 <p>@dummy </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00137">137</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00140">140</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Reads a block from the given world, masked by the blocks in this transaction. This can be useful if you want to add blocks to the transaction that depend on previous blocks should they exist. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00069">69</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00072">72</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -353,7 +353,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd>BlockTransaction::fetchBlock() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00076">76</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00079">79</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>\Generator|mixed[] [int $x, int $y, int $z, Block $block] @phpstan-return \Generator&lt;int, array{int, int, int, Block}, void, void&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00109">109</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html#l00112">112</a> of file <a class="el" href="../../d9/d1f/_block_transaction_8php_source.html">BlockTransaction.php</a>.</p>
 
 </div>
 </div>

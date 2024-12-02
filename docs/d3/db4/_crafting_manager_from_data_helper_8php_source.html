@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
    </div>
   </td>
  </tr>
@@ -280,7 +280,7 @@ $(function(){initNavTree('d3/db4/_crafting_manager_from_data_helper_8php_source.
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> loadJsonObjectListIntoModel(\<a class="code hl_namespace" href="../../d6/d57/namespace_json_mapper.html">JsonMapper</a> $mapper, <span class="keywordtype">string</span> $modelClass, array $data) : array{</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $result = [];</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">foreach</span>($data as $i =&gt; $item){</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">foreach</span>(Utils::promoteKeys($data) as $i =&gt; $item){</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="keywordflow">if</span>(!is_object($item)){</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> SavedDataLoadingException(<span class="stringliteral">&quot;Invalid entry at index $i: expected object, got &quot;</span> . get_debug_type($item));</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            }</div>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.2 git-aef4fa71747b1773541bc7a294c98b8a40565127</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
    </div>
   </td>
  </tr>
@@ -185,9 +185,10 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Note: Recipes <b>do not</b> need to be square. Do NOT add padding for empty rows/columns. </p>
+<p>Note: Recipes <b>do not</b> need to be square. Do NOT add padding for empty rows/columns.</p>
+<p>@phpstan-param list&lt;string&gt; $shape @phpstan-param array&lt;string, RecipeIngredient&gt; $ingredients @phpstan-param list&lt;Item&gt; $results </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00060">60</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00073">73</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -207,7 +208,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00102">102</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00115">115</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -230,7 +231,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00153">153</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00166">166</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -248,11 +249,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>RecipeIngredient[] </dd></dl>
+<p>Returns a list of items needed to craft this recipe. This MUST NOT include Air items or items with a zero count.</p>
+<dl class="section return"><dt>Returns</dt><dd>RecipeIngredient[] @phpstan-return list&lt;RecipeIngredient&gt; </dd></dl>
 
 <p>Implements <a class="el" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html#ae3e9d962d6fad20c906b59bcf65fb76e">pocketmine\crafting\CraftingRecipe</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00138">138</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00151">151</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -270,9 +272,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>(RecipeIngredient|null)[][] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>(RecipeIngredient|null)[][] @phpstan-return list&lt;list&lt;RecipeIngredient|null&gt;&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00123">123</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00139">139</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -290,9 +292,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Item[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Item[] @phpstan-return list&lt;Item&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00109">109</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00123">123</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -310,11 +312,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Item[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Item[] @phpstan-return list&lt;Item&gt; </dd></dl>
 
 <p>Implements <a class="el" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html#ab25c59f25d8aae98bcfd67650c6587f8">pocketmine\crafting\CraftingRecipe</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00116">116</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00131">131</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -332,9 +334,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns an array of strings containing characters representing the recipe's shape. </p><dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
+<p>Returns an array of strings containing characters representing the recipe's shape. </p><dl class="section return"><dt>Returns</dt><dd>string[] @phpstan-return list&lt;string&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00161">161</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00175">175</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -353,7 +355,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00098">98</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00111">111</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
@@ -375,7 +377,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/dd6/interfacepocketmine_1_1crafting_1_1_crafting_recipe.html#a5a12e9f6a6d40b1bdef7e4209081d687">pocketmine\crafting\CraftingRecipe</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00185">185</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html#l00199">199</a> of file <a class="el" href="../../d3/d88/src_2crafting_2_shaped_recipe_8php_source.html">src/crafting/ShapedRecipe.php</a>.</p>
 
 </div>
 </div>
