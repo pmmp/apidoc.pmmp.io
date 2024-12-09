@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -175,6 +175,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a928926ca6589c8c1d3fa17ddb961f41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f4458197cfb1557da41ae0b08f3aa8" id="r_a21f4458197cfb1557da41ae0b08f3aa8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f4458197cfb1557da41ae0b08f3aa8">getPosition</a> ()</td></tr>
 <tr class="separator:a21f4458197cfb1557da41ae0b08f3aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb17e2f4e7b8368c3a00f5aabf1fd58" id="r_a3fb17e2f4e7b8368c3a00f5aabf1fd58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fb17e2f4e7b8368c3a00f5aabf1fd58">getRawMove</a> ()</td></tr>
+<tr class="separator:a3fb17e2f4e7b8368c3a00f5aabf1fd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea74b16801baae4c9ddac6e4cf160b6" id="r_a0ea74b16801baae4c9ddac6e4cf160b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ea74b16801baae4c9ddac6e4cf160b6">getTick</a> ()</td></tr>
 <tr class="separator:a0ea74b16801baae4c9ddac6e4cf160b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6854caeb527e3562608d58cb429e926c" id="r_a6854caeb527e3562608d58cb429e926c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6854caeb527e3562608d58cb429e926c">getVehicleInfo</a> ()</td></tr>
@@ -183,15 +185,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae3c76089cb6afbfe1e88668d270c3513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b2a3f7ffc88dae034b416488a3405a" id="r_a62b2a3f7ffc88dae034b416488a3405a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62b2a3f7ffc88dae034b416488a3405a">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
 <tr class="separator:a62b2a3f7ffc88dae034b416488a3405a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a502b225f76c28112da96cc0c2f60af6a" id="r_a502b225f76c28112da96cc0c2f60af6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a502b225f76c28112da96cc0c2f60af6a">hasFlag</a> (int $flag)</td></tr>
-<tr class="separator:a502b225f76c28112da96cc0c2f60af6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2432f23e1c1b69a82f90588c1dbf5" id="r_a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a42c2432f23e1c1b69a82f90588c1dbf5">pid</a> ()</td></tr>
 <tr class="separator:a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b9c3e4a5eb7a62fc13d27924135d894" id="r_a6b9c3e4a5eb7a62fc13d27924135d894"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b9c3e4a5eb7a62fc13d27924135d894">create</a> (<a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position, float $pitch, float $yaw, float $headYaw, float $moveVecX, float $moveVecZ, int $inputFlags, int $inputMode, int $playMode, int $interactionMode, <a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation, int $tick, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta, ?<a class="el" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData, ?<a class="el" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest, ?array $blockActions, ?<a class="el" href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo, float $analogMoveVecX, float $analogMoveVecZ, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation)</td></tr>
-<tr class="separator:a6b9c3e4a5eb7a62fc13d27924135d894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb62982e60bdd0719c8ab07d28dbce27" id="r_aeb62982e60bdd0719c8ab07d28dbce27"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb62982e60bdd0719c8ab07d28dbce27">create</a> (<a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position, float $pitch, float $yaw, float $headYaw, float $moveVecX, float $moveVecZ, <a class="el" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags, int $inputMode, int $playMode, int $interactionMode, <a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation, int $tick, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta, ?<a class="el" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData, ?<a class="el" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest, ?array $blockActions, ?<a class="el" href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo, float $analogMoveVecX, float $analogMoveVecZ, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation, <a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove)</td></tr>
+<tr class="separator:aeb62982e60bdd0719c8ab07d28dbce27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -217,7 +217,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9e53bcf6c12eab41fd619f5d812c1be2" name="a9e53bcf6c12eab41fd619f5d812c1be2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e53bcf6c12eab41fd619f5d812c1be2">&#9670;&#160;</a></span>__get()</h2>
@@ -320,8 +320,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b9c3e4a5eb7a62fc13d27924135d894" name="a6b9c3e4a5eb7a62fc13d27924135d894"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b9c3e4a5eb7a62fc13d27924135d894">&#9670;&#160;</a></span>create()</h2>
+<a id="aeb62982e60bdd0719c8ab07d28dbce27" name="aeb62982e60bdd0719c8ab07d28dbce27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb62982e60bdd0719c8ab07d28dbce27">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,7 +362,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$inputFlags</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a></td>          <td class="paramname"><span class="paramname"><em>$inputFlags</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -427,7 +427,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>$cameraOrientation</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>$cameraOrientation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>$rawMove</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -438,7 +443,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$inputFlags</td><td></td></tr>
+    <tr><td class="paramtype">BitSet</td><td class="paramname">$inputFlags</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -471,7 +476,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00114">114</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00118">118</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -577,7 +582,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00263">263</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00262">262</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -682,7 +687,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00253">253</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00254">254</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -701,7 +706,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00255">255</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00256">256</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -721,7 +726,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>PlayerBlockAction[]|null </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00247">247</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00248">248</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -740,7 +745,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00257">257</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00258">258</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -759,7 +764,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00232">232</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00233">233</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -778,7 +783,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00186">186</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00187">187</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -798,7 +803,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd>PlayerAuthInputFlags </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00201">201</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00202">202</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -818,7 +823,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd>InputMode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00208">208</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00209">209</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -838,7 +843,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd>InteractionMode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00222">222</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00223">223</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -857,7 +862,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00226">226</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00227">227</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -876,7 +881,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00236">236</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00237">237</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -895,7 +900,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00240">240</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00241">241</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -914,7 +919,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00190">190</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00191">191</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -933,7 +938,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00194">194</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00195">195</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -981,7 +986,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00178">178</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00179">179</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1006,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd>PlayMode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00215">215</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00216">216</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1025,26 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00174">174</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00175">175</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a3fb17e2f4e7b8368c3a00f5aabf1fd58" name="a3fb17e2f4e7b8368c3a00f5aabf1fd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb17e2f4e7b8368c3a00f5aabf1fd58">&#9670;&#160;</a></span>getRawMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket::getRawMove </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00260">260</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1063,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00228">228</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00229">229</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1082,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00251">251</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00252">252</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1101,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00182">182</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00183">183</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1108,26 +1132,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00338">338</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
-
-</div>
-</div>
-<a id="a502b225f76c28112da96cc0c2f60af6a" name="a502b225f76c28112da96cc0c2f60af6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a502b225f76c28112da96cc0c2f60af6a">&#9670;&#160;</a></span>hasFlag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket::hasFlag </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$flag</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00259">259</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00339">339</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1226,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html#l00034">34</a> of file <a class="el" href="../../d8/d80/_player_auth_input_packet_8php_source.html">PlayerAuthInputPacket.php</a>.</p>
 
 </div>
 </div>

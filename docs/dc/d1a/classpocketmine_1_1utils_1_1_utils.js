@@ -9,6 +9,7 @@ var classpocketmine_1_1utils_1_1_utils =
     [ "getNiceClosureName", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019", null ],
     [ "getOpcacheJitMode", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a", null ],
     [ "getOS", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67", null ],
+    [ "getRandomFloat", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#adec7b8e3efe887faaacd68dac025154a", null ],
     [ "hexdump", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e", null ],
     [ "parseDocComment", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6", null ],
     [ "printable", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a", null ],

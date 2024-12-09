@@ -24,6 +24,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_snowball =
     [ "getInitialGravity", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#aaefa59ebb908d039d33433bc096d4bfb", null ],
     [ "getOwningEntity", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a75141c6ee2a98bd8b3f1ab49998b455c", null ],
     [ "getResultDamage", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a64cfa5fada1a72013be637976da13f56", null ],
     [ "getTargetEntity", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

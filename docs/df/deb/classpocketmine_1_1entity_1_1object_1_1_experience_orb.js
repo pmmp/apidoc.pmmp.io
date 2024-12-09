@@ -23,6 +23,7 @@ var classpocketmine_1_1entity_1_1object_1_1_experience_orb =
     [ "getMaxOrbSize", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#abc9ade3c67ec664051a5daa0d9742aa3", null ],
     [ "getOwningEntity", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a75141c6ee2a98bd8b3f1ab49998b455c", null ],
     [ "getTargetEntity", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],
     [ "getViewers", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#acaced48bc41cc13b10c1e99ba76bdabd", null ],

@@ -24,6 +24,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_arrow =
     [ "getInitialGravity", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#abc8417e04e6e176e65b910ec1bc5cc75", null ],
     [ "getOwningEntity", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a75141c6ee2a98bd8b3f1ab49998b455c", null ],
     [ "getResultDamage", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a46286db3fc0aa1c28f87c5099fa07630", null ],
     [ "getTargetEntity", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d9/dac/classpocketmine_1_1entity_1_1projectile_1_1_arrow.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

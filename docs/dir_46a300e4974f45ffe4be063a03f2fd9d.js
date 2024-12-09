@@ -254,6 +254,5 @@ var dir_46a300e4974f45ffe4be063a03f2fd9d =
     [ "WoodenSlab.php", "de/d9b/_wooden_slab_8php_source.html", null ],
     [ "WoodenStairs.php", "d4/d29/_wooden_stairs_8php_source.html", null ],
     [ "WoodenTrapdoor.php", "d5/ddd/_wooden_trapdoor_8php_source.html", null ],
-    [ "WoodLikeBlockIdHelper.php", "d1/d36/_wood_like_block_id_helper_8php_source.html", null ],
     [ "Wool.php", "d1/d3c/_wool_8php_source.html", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -199,7 +199,7 @@ $(function(){initNavTree('d0/d88/_item_id_meta_upgrade_schema_utils_8php_source.
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $jsonMapper-&gt;bStrictObjectTypeChecking = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">try</span>{</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $model = $jsonMapper-&gt;map($json, <span class="keyword">new</span> ItemIdMetaUpgradeSchemaModel());</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }<span class="keywordflow">catch</span>(\<a class="code hl_class" href="../../d4/d67/class_json_mapper___exception.html">JsonMapper_Exception</a> $e){</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }<span class="keywordflow">catch</span>(\JsonMapper_Exception $e){</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">throw</span> new \RuntimeException($e-&gt;getMessage(), 0, $e);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
@@ -207,7 +207,6 @@ $(function(){initNavTree('d0/d88/_item_id_meta_upgrade_schema_utils_8php_source.
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 </div>
-<div class="ttc" id="aclass_json_mapper___exception_html"><div class="ttname"><a href="../../d4/d67/class_json_mapper___exception.html">JsonMapper_Exception</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d12/_exception_8php_source.html#l00023">Exception.php:24</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrade_schema_utils_html"><div class="ttname"><a href="../../d2/da5/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrade_schema_utils.html">pocketmine\data\bedrock\item\upgrade\ItemIdMetaUpgradeSchemaUtils</a></div><div class="ttdef"><b>Definition</b> <a href="#l00036">ItemIdMetaUpgradeSchemaUtils.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrade_schema_utils_html_ac64e1b8f8f956e9bb3e84a486057cfc9"><div class="ttname"><a href="../../d2/da5/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrade_schema_utils.html#ac64e1b8f8f956e9bb3e84a486057cfc9">pocketmine\data\bedrock\item\upgrade\ItemIdMetaUpgradeSchemaUtils\loadSchemas</a></div><div class="ttdeci">static loadSchemas(string $path, int $maxSchemaId)</div><div class="ttdef"><b>Definition</b> <a href="#l00042">ItemIdMetaUpgradeSchemaUtils.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1model_1_1_item_id_meta_upgrade_schema_model_html"><div class="ttname"><a href="../../db/d31/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1model_1_1_item_id_meta_upgrade_schema_model.html">pocketmine\data\bedrock\item\upgrade\model\ItemIdMetaUpgradeSchemaModel</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d03/_item_id_meta_upgrade_schema_model_8php_source.html#l00026">ItemIdMetaUpgradeSchemaModel.php:26</a></div></div>

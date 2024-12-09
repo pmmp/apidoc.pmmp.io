@@ -1,6 +1,7 @@
 var classpocketmine_1_1scheduler_1_1_async_task =
 [
     [ "cancelRun", "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
+    [ "checkProgressUpdates", "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129", null ],
     [ "fetchLocal", "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
     [ "hasCancelledRun", "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a31a5f710f3a68f80c5daa945dc4642e2", null ],

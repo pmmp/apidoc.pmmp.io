@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -137,99 +137,110 @@ $(function(){initNavTree('de/d0a/_console_reader_child_process_daemon_8php_sourc
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> base64_encode;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> fgets;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> fopen;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> preg_replace;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> proc_close;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> proc_open;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> proc_terminate;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> sprintf;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <span class="keyword">function</span> stream_select;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <span class="keyword">function</span> stream_socket_accept;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> stream_socket_get_name;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <span class="keyword">function</span> stream_socket_server;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use <span class="keyword">function</span> stream_socket_shutdown;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>use <span class="keyword">function</span> trim;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>use <span class="keyword">const</span> PHP_BINARY;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>use <span class="keyword">const</span> STREAM_SHUT_RDWR;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../dc/d82/classpocketmine_1_1console_1_1_console_reader_child_process_daemon.html">   60</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/d82/classpocketmine_1_1console_1_1_console_reader_child_process_daemon.html">ConsoleReaderChildProcessDaemon</a>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> mt_rand;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> preg_replace;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> proc_close;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> proc_open;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> proc_terminate;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <span class="keyword">function</span> rtrim;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <span class="keyword">function</span> sprintf;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> stream_select;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <span class="keyword">function</span> trim;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>use <span class="keyword">const</span> PHP_BINARY;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../dc/d82/classpocketmine_1_1console_1_1_console_reader_child_process_daemon.html">   57</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/d82/classpocketmine_1_1console_1_1_console_reader_child_process_daemon.html">ConsoleReaderChildProcessDaemon</a>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">const</span> TOKEN_DELIMITER = <span class="stringliteral">&quot;:&quot;</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">const</span> TOKEN_HASH_ALGO = <span class="stringliteral">&quot;xxh3&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    private \PrefixedLogger $logger;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">private</span> $subprocess;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">private</span> $socket;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        \<a class="code hl_interface" href="../../d4/d00/interface_logger.html">Logger</a> $logger</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    ){</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;logger = new \PrefixedLogger($logger, <span class="stringliteral">&quot;Console Reader Daemon&quot;</span>);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;prepareSubprocess();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">private</span> <span class="keyword">function</span> prepareSubprocess() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $server = stream_socket_server(<span class="stringliteral">&quot;tcp://127.0.0.1:0&quot;</span>);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">if</span>($server === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Failed to open console reader socket server&quot;</span>);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $address = Utils::assumeNotFalse(stream_socket_get_name($server, <span class="keyword">false</span>), <span class="stringliteral">&quot;stream_socket_get_name() shouldn&#39;t return false here&quot;</span>);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">//Windows sucks, and likes to corrupt UTF-8 file paths when they travel to the subprocess, so we base64 encode</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">//the path to avoid the problem. This is an abysmally shitty hack, but here we are :(</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $sub = Utils::assumeNotFalse(proc_open(</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            [PHP_BINARY, <span class="stringliteral">&#39;-dopcache.enable_cli=0&#39;</span>, <span class="stringliteral">&#39;-r&#39;</span>, sprintf(<span class="stringliteral">&#39;require base64_decode(&quot;%s&quot;, true);&#39;</span>, base64_encode(Path::join(__DIR__, <span class="stringliteral">&#39;ConsoleReaderChildProcess.php&#39;</span>))), $address],</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            [</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                2 =&gt; fopen(<span class="stringliteral">&quot;php://stderr&quot;</span>, <span class="stringliteral">&quot;w&quot;</span>),</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            ],</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $pipes</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        ), <span class="stringliteral">&quot;Something has gone horribly wrong&quot;</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $client = stream_socket_accept($server, 15);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span>($client === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;stream_socket_accept() returned false&quot;</span>);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        stream_socket_shutdown($server, STREAM_SHUT_RDWR);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $this-&gt;subprocess = $sub;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $this-&gt;socket = $client;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">private</span> <span class="keyword">function</span> shutdownSubprocess() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">//we have no way to signal to the subprocess to shut down gracefully; besides, Windows sucks, and the subprocess</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="comment">//gets stuck in a blocking fgets() read because stream_select() is a hunk of junk (hence the separate process in</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">//the first place).</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        proc_terminate($this-&gt;subprocess);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        proc_close($this-&gt;subprocess);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        stream_socket_shutdown($this-&gt;socket, STREAM_SHUT_RDWR);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">function</span> readLine() : ?<span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $r = [$this-&gt;socket];</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        $w = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $e = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">if</span>(stream_select($r, $w, $e, 0, 0) === 1){</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            $command = fgets($this-&gt;socket);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">if</span>($command === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Lost connection to subprocess, restarting (maybe the child process was killed from outside?)&quot;</span>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                $this-&gt;shutdownSubprocess();</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                $this-&gt;prepareSubprocess();</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            $command = preg_replace(<span class="stringliteral">&quot;#\\x1b\\x5b([^\\x1b]*\\x7e|[\\x40-\\x50])#&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, trim($command)) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;This regex is assumed to be valid&quot;</span>);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            $command = preg_replace(<span class="stringliteral">&#39;/[[:cntrl:]]/&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, $command) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;This regex is assumed to be valid&quot;</span>);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">return</span> $command !== <span class="stringliteral">&quot;&quot;</span> ? $command : <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">public</span> <span class="keyword">function</span> quit() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $this-&gt;shutdownSubprocess();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $commandTokenSeed;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        \<a class="code hl_interface" href="../../d4/d00/interface_logger.html">Logger</a> $logger</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    ){</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;logger = new \PrefixedLogger($logger, <span class="stringliteral">&quot;Console Reader Daemon&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;commandTokenSeed = mt_rand();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $this-&gt;prepareSubprocess();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">private</span> <span class="keyword">function</span> prepareSubprocess() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">//Windows sucks, and likes to corrupt UTF-8 file paths when they travel to the subprocess, so we base64 encode</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">//the path to avoid the problem. This is an abysmally shitty hack, but here we are :(</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $sub = Utils::assumeNotFalse(proc_open(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            [</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                PHP_BINARY,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="stringliteral">&#39;-dopcache.enable_cli=0&#39;</span>,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="stringliteral">&#39;-r&#39;</span>,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                sprintf(<span class="stringliteral">&#39;require base64_decode(&quot;%s&quot;, true);&#39;</span>, base64_encode(Path::join(__DIR__, <span class="stringliteral">&#39;ConsoleReaderChildProcess.php&#39;</span>))),</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                (<span class="keywordtype">string</span>) $this-&gt;commandTokenSeed</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            ],</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            [</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                1 =&gt; [<span class="stringliteral">&#39;socket&#39;</span>],</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                2 =&gt; fopen(<span class="stringliteral">&quot;php://stderr&quot;</span>, <span class="stringliteral">&quot;w&quot;</span>),</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            ],</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $pipes</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        ), <span class="stringliteral">&quot;Something has gone horribly wrong&quot;</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $this-&gt;subprocess = $sub;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;socket = $pipes[1];</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">private</span> <span class="keyword">function</span> shutdownSubprocess() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">//we have no way to signal to the subprocess to shut down gracefully; besides, Windows sucks, and the subprocess</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">//gets stuck in a blocking fgets() read because stream_select() is a hunk of junk (hence the separate process in</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">//the first place).</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        proc_terminate($this-&gt;subprocess);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        proc_close($this-&gt;subprocess);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">public</span> <span class="keyword">function</span> readLine() : ?<span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $r = [$this-&gt;socket];</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $w = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $e = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span>(stream_select($r, $w, $e, 0, 0) === 1){</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $line = fgets($this-&gt;socket);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">if</span>($line === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Lost connection to subprocess, restarting (maybe the child process was killed from outside?)&quot;</span>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                $this-&gt;shutdownSubprocess();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                $this-&gt;prepareSubprocess();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            $line = rtrim($line, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keywordflow">if</span>($line === <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="comment">//keepalive</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            $command = <a class="code hl_function" href="../../d4/da8/classpocketmine_1_1console_1_1_console_reader_child_process_utils.html#a1e04acb11a85bc01118c27dbc7c63a97">ConsoleReaderChildProcessUtils::parseMessage</a>($line, $this-&gt;commandTokenSeed);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">if</span>($command === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <span class="comment">//this is not a command - it may be some kind of error output from the subprocess</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                <span class="comment">//write it directly to the console</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;Unexpected output from child process: $line&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            $command = preg_replace(<span class="stringliteral">&quot;#\\x1b\\x5b([^\\x1b]*\\x7e|[\\x40-\\x50])#&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, trim($command)) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;This regex is assumed to be valid&quot;</span>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            $command = preg_replace(<span class="stringliteral">&#39;/[[:cntrl:]]/&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, $command) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;This regex is assumed to be valid&quot;</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">return</span> $command !== <span class="stringliteral">&quot;&quot;</span> ? $command : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">public</span> <span class="keyword">function</span> quit() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        $this-&gt;shutdownSubprocess();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1console_1_1_console_reader_child_process_daemon_html"><div class="ttname"><a href="../../dc/d82/classpocketmine_1_1console_1_1_console_reader_child_process_daemon.html">pocketmine\console\ConsoleReaderChildProcessDaemon</a></div><div class="ttdef"><b>Definition</b> <a href="#l00060">ConsoleReaderChildProcessDaemon.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1console_1_1_console_reader_child_process_daemon_html"><div class="ttname"><a href="../../dc/d82/classpocketmine_1_1console_1_1_console_reader_child_process_daemon.html">pocketmine\console\ConsoleReaderChildProcessDaemon</a></div><div class="ttdef"><b>Definition</b> <a href="#l00057">ConsoleReaderChildProcessDaemon.php:57</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1console_1_1_console_reader_child_process_utils_html_a1e04acb11a85bc01118c27dbc7c63a97"><div class="ttname"><a href="../../d4/da8/classpocketmine_1_1console_1_1_console_reader_child_process_utils.html#a1e04acb11a85bc01118c27dbc7c63a97">pocketmine\console\ConsoleReaderChildProcessUtils\parseMessage</a></div><div class="ttdeci">static parseMessage(string $message, int &amp;$counter)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d51/_console_reader_child_process_utils_8php_source.html#l00056">ConsoleReaderChildProcessUtils.php:56</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00103">Utils.php:103</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00105">Utils.php:105</a></div></div>
 <div class="ttc" id="ainterface_logger_html"><div class="ttname"><a href="../../d4/d00/interface_logger.html">Logger</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d41/_logger_8php_source.html#l00018">Logger.php:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

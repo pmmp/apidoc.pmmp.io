@@ -24,6 +24,7 @@ var classpocketmine_1_1entity_1_1object_1_1_painting =
     [ "getMotive", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#ae15e803d48b428964aa6fd2d69dcbfce", null ],
     [ "getOwningEntity", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a16ae762217db35bd4ff6cd1ed988ff12", null ],
     [ "getTargetEntity", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],
     [ "getViewers", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html#acaced48bc41cc13b10c1e99ba76bdabd", null ],

@@ -19,6 +19,7 @@ var dir_23c847fc118655650d80ee30437441f9 =
     [ "PlayerEmoteEvent.php", "d5/d83/_player_emote_event_8php_source.html", null ],
     [ "PlayerEnchantingOptionsRequestEvent.php", "da/d70/_player_enchanting_options_request_event_8php_source.html", null ],
     [ "PlayerEntityInteractEvent.php", "d8/d64/_player_entity_interact_event_8php_source.html", null ],
+    [ "PlayerEntityPickEvent.php", "d6/d2d/_player_entity_pick_event_8php_source.html", null ],
     [ "PlayerEvent.php", "d3/da2/_player_event_8php_source.html", null ],
     [ "PlayerExhaustEvent.php", "d0/d10/_player_exhaust_event_8php_source.html", null ],
     [ "PlayerExperienceChangeEvent.php", "de/d37/_player_experience_change_event_8php_source.html", null ],

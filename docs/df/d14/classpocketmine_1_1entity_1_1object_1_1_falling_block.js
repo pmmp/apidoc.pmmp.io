@@ -22,6 +22,7 @@ var classpocketmine_1_1entity_1_1object_1_1_falling_block =
     [ "getInitialGravity", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a78d573d9e654f94a6608de69ca1dbc1f", null ],
     [ "getOwningEntity", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a0b14ae0fcc5c6a8e3e0292fe62edb7a6", null ],
     [ "getTargetEntity", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],
     [ "getViewers", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html#acaced48bc41cc13b10c1e99ba76bdabd", null ],

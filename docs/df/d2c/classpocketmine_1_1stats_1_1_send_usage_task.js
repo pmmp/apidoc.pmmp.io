@@ -2,6 +2,7 @@ var classpocketmine_1_1stats_1_1_send_usage_task =
 [
     [ "__construct", "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ad947e698302d120097b81c11169dfdb3", null ],
     [ "cancelRun", "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#a54da2298c61d0b04e6c7f058b0591250", null ],
+    [ "checkProgressUpdates", "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ab4ce5f03047e2ba85b4e17abd775e129", null ],
     [ "fetchLocal", "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#a1ba680fdef8ef3e5832322b56dc460f0", null ],
     [ "getResult", "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#aa5a040d7bd6023185e91387c526f8527", null ],
     [ "hasCancelledRun", "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#a31a5f710f3a68f80c5daa945dc4642e2", null ],

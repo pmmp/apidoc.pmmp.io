@@ -24,6 +24,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle =
     [ "getInitialGravity", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#a39f2a972fe56f7dcc13266285855789d", null ],
     [ "getOwningEntity", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#a75141c6ee2a98bd8b3f1ab49998b455c", null ],
     [ "getResultDamage", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#ae85f16c67b85b5805b78b63d0ff1862b", null ],
     [ "getTargetEntity", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d6/d1e/classpocketmine_1_1entity_1_1projectile_1_1_experience_bottle.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

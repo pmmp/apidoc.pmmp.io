@@ -40,5 +40,6 @@ var dir_3bb61118b712c682ac18a1a005592738 =
     [ "TransferServerCommand.php", "de/ddf/_transfer_server_command_8php_source.html", null ],
     [ "VanillaCommand.php", "df/d10/_vanilla_command_8php_source.html", null ],
     [ "VersionCommand.php", "de/dd1/_version_command_8php_source.html", null ],
-    [ "WhitelistCommand.php", "d9/dfe/_whitelist_command_8php_source.html", null ]
+    [ "WhitelistCommand.php", "d9/dfe/_whitelist_command_8php_source.html", null ],
+    [ "XpCommand.php", "d9/da7/_xp_command_8php_source.html", null ]
 ];

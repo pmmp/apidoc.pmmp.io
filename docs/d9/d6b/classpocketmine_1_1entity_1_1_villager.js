@@ -37,6 +37,7 @@ var classpocketmine_1_1entity_1_1_villager =
     [ "getMaxAirSupplyTicks", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#aa1f0a3a68610eb735693198e77a04f45", null ],
     [ "getOwningEntity", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ae3fd480c4036d5eef65525dadccad707", null ],
     [ "getTargetBlock", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#a80611cafb3218eaedf17031a133bbeef", null ],
     [ "getTargetEntity", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

@@ -37,6 +37,7 @@ var classpocketmine_1_1entity_1_1_squid =
     [ "getMaxAirSupplyTicks", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#aa1f0a3a68610eb735693198e77a04f45", null ],
     [ "getOwningEntity", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a9d2ce4f96f3da0013aab0116c31f2508", null ],
     [ "getTargetBlock", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a80611cafb3218eaedf17031a133bbeef", null ],
     [ "getTargetEntity", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

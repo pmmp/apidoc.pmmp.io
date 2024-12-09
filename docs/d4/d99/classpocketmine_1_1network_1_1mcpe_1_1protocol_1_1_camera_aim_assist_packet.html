@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a587ef883d3ad38b87ceff7f7e3c1f12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c94c78d92e3be9720d4f5d1c5352ff3" id="r_a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5c94c78d92e3be9720d4f5d1c5352ff3">getName</a> ()</td></tr>
 <tr class="separator:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf131079c3b26aabc8672848508934ec" id="r_aaf131079c3b26aabc8672848508934ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf131079c3b26aabc8672848508934ec">getPresetId</a> ()</td></tr>
+<tr class="separator:aaf131079c3b26aabc8672848508934ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f666a6ed3c5eae4ca79ba2c0545980d" id="r_a8f666a6ed3c5eae4ca79ba2c0545980d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f666a6ed3c5eae4ca79ba2c0545980d">getTargetMode</a> ()</td></tr>
 <tr class="separator:a8f666a6ed3c5eae4ca79ba2c0545980d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8549596e901bbfd74295d7c2ecb0374f" id="r_a8549596e901bbfd74295d7c2ecb0374f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8549596e901bbfd74295d7c2ecb0374f">getViewAngle</a> ()</td></tr>
@@ -156,8 +158,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a84a3543f3627abd521879f08ac20d844" id="r_a84a3543f3627abd521879f08ac20d844"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84a3543f3627abd521879f08ac20d844">create</a> (<a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $viewAngle, float $distance, CameraAimAssistTargetMode $targetMode, CameraAimAssistActionType $actionType)</td></tr>
-<tr class="separator:a84a3543f3627abd521879f08ac20d844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2115796b072c1bcfd4256ef3b707cba2" id="r_a2115796b072c1bcfd4256ef3b707cba2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2115796b072c1bcfd4256ef3b707cba2">create</a> (string $presetId, <a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $viewAngle, float $distance, CameraAimAssistTargetMode $targetMode, CameraAimAssistActionType $actionType)</td></tr>
+<tr class="separator:a2115796b072c1bcfd4256ef3b707cba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -286,8 +288,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a84a3543f3627abd521879f08ac20d844" name="a84a3543f3627abd521879f08ac20d844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84a3543f3627abd521879f08ac20d844">&#9670;&#160;</a></span>create()</h2>
+<a id="a2115796b072c1bcfd4256ef3b707cba2" name="a2115796b072c1bcfd4256ef3b707cba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2115796b072c1bcfd4256ef3b707cba2">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,6 +300,11 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\CameraAimAssistPacket::create </td>
           <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$presetId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>$viewAngle</em></span>, </td>
         </tr>
         <tr>
@@ -324,7 +331,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00034">34</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -430,7 +437,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a44a76521db1b8930fae09a8e97932f63">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00050">50</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00054">54</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -516,7 +523,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a7194f20b77e53ce0ad44737c7ab10794">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00062">62</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -535,7 +542,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00052">52</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -554,7 +561,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -587,6 +594,25 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf131079c3b26aabc8672848508934ec" name="aaf131079c3b26aabc8672848508934ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf131079c3b26aabc8672848508934ec">&#9670;&#160;</a></span>getPresetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\CameraAimAssistPacket::getPresetId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00044">44</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+
+</div>
+</div>
 <a id="a8f666a6ed3c5eae4ca79ba2c0545980d" name="a8f666a6ed3c5eae4ca79ba2c0545980d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f666a6ed3c5eae4ca79ba2c0545980d">&#9670;&#160;</a></span>getTargetMode()</h2>
 
@@ -602,7 +628,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00046">46</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00050">50</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -621,7 +647,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00042">42</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00046">46</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>
@@ -652,7 +678,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00064">64</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html#l00070">70</a> of file <a class="el" href="../../d6/db4/_camera_aim_assist_packet_8php_source.html">CameraAimAssistPacket.php</a>.</p>
 
 </div>
 </div>

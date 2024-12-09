@@ -26,6 +26,7 @@ var dir_682c7921c367674b86e95b8a006ee2ec =
     [ "BookEditPacket.php", "d1/d3d/_book_edit_packet_8php_source.html", null ],
     [ "BossEventPacket.php", "d9/d60/_boss_event_packet_8php_source.html", null ],
     [ "CameraAimAssistPacket.php", "d6/db4/_camera_aim_assist_packet_8php_source.html", null ],
+    [ "CameraAimAssistPresetsPacket.php", "d0/d97/_camera_aim_assist_presets_packet_8php_source.html", null ],
     [ "CameraInstructionPacket.php", "dc/d4e/_camera_instruction_packet_8php_source.html", null ],
     [ "CameraPacket.php", "db/dac/_camera_packet_8php_source.html", null ],
     [ "CameraPresetsPacket.php", "db/d8f/_camera_presets_packet_8php_source.html", null ],

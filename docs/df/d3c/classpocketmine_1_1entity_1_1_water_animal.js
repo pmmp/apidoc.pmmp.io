@@ -37,6 +37,7 @@ var classpocketmine_1_1entity_1_1_water_animal =
     [ "getMaxAirSupplyTicks", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#aa1f0a3a68610eb735693198e77a04f45", null ],
     [ "getOwningEntity", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a75141c6ee2a98bd8b3f1ab49998b455c", null ],
     [ "getTargetBlock", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a80611cafb3218eaedf17031a133bbeef", null ],
     [ "getTargetEntity", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

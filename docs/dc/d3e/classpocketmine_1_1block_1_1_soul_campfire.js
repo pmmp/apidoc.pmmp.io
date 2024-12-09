@@ -30,6 +30,7 @@ var classpocketmine_1_1block_1_1_soul_campfire =
     [ "getFuelTime", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#ab92353cf0aa5c05ad26535f98a2b1dca", null ],
     [ "getHorizontalSides", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#afeb38d89fa6f5f5912a1b0e6d131fa3b", null ],
     [ "getIdInfo", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a85746252cd6a5f1e81cb4c4ebccb52e3", null ],
+    [ "getInventory", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a4546508b1d31f8091f12aa83a8ecbc32", null ],
     [ "getLightFilter", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#afcc19c437c8bef4487f5ecb956ae9a1a", null ],
     [ "getLightLevel", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a0e2857d11c521a884e50e5ef56b059be", null ],
     [ "getMaxStackSize", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#aaeaa1c5f259e28087e09db0a9b1ba39f", null ],
@@ -67,5 +68,6 @@ var classpocketmine_1_1block_1_1_soul_campfire =
     [ "recalculateCollisionBoxes", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a4cf9d206e4c05add6ebbb00bc3d25cc0", null ],
     [ "setCookingTime", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a975bac67e2f668e4a1a4964cf82ab54f", null ],
     [ "ticksRandomly", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#ab6b90601adfc9732893dcffe256514a9", null ],
-    [ "writeStateToWorld", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#aea0f9fb1389bd102d1da8e07eecf1db9", null ]
+    [ "writeStateToWorld", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#aea0f9fb1389bd102d1da8e07eecf1db9", null ],
+    [ "$inventory", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#acdd2f630f36ebd234f03c65425632417", null ]
 ];

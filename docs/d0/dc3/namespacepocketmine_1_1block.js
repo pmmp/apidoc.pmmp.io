@@ -252,6 +252,5 @@ var namespacepocketmine_1_1block =
     [ "WoodenSlab", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html", "df/d7b/classpocketmine_1_1block_1_1_wooden_slab" ],
     [ "WoodenStairs", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html", "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs" ],
     [ "WoodenTrapdoor", "d3/da4/classpocketmine_1_1block_1_1_wooden_trapdoor.html", "d3/da4/classpocketmine_1_1block_1_1_wooden_trapdoor" ],
-    [ "WoodLikeBlockIdHelper", "d9/de8/classpocketmine_1_1block_1_1_wood_like_block_id_helper.html", "d9/de8/classpocketmine_1_1block_1_1_wood_like_block_id_helper" ],
     [ "Wool", "da/d71/classpocketmine_1_1block_1_1_wool.html", "da/d71/classpocketmine_1_1block_1_1_wool" ]
 ];

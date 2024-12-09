@@ -1,5 +1,6 @@
 var namespacepocketmine_1_1command =
 [
+    [ "ClosureCommand", "d7/d03/classpocketmine_1_1command_1_1_closure_command.html", "d7/d03/classpocketmine_1_1command_1_1_closure_command" ],
     [ "Command", "d6/df1/classpocketmine_1_1command_1_1_command.html", "d6/df1/classpocketmine_1_1command_1_1_command" ],
     [ "CommandExecutor", "d4/d5f/interfacepocketmine_1_1command_1_1_command_executor.html", "d4/d5f/interfacepocketmine_1_1command_1_1_command_executor" ],
     [ "CommandMap", "de/d06/interfacepocketmine_1_1command_1_1_command_map.html", "de/d06/interfacepocketmine_1_1command_1_1_command_map" ],

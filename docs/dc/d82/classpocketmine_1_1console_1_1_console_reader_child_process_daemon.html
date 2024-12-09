@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,7 @@ $(function(){initNavTree('dc/d82/classpocketmine_1_1console_1_1_console_reader_c
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d9/d83/classpocketmine_1_1console_1_1_console_reader_child_process_daemon-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">pocketmine\console\ConsoleReaderChildProcessDaemon Class Reference</div></div>
 </div><!--header-->
@@ -114,7 +115,7 @@ $(function(){initNavTree('dc/d82/classpocketmine_1_1console_1_1_console_reader_c
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/de1/classpocketmine_1_1console_1_1_console_reader_child_process_daemon__coll__graph.svg" width="210" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/de1/classpocketmine_1_1console_1_1_console_reader_child_process_daemon__coll__graph.svg" width="210" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -125,13 +126,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2cfa51ad5b16a434f08655712fb7b862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4912681ea3dcfa515c3595f9ce8590c8" id="r_a4912681ea3dcfa515c3595f9ce8590c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4912681ea3dcfa515c3595f9ce8590c8">readLine</a> ()</td></tr>
 <tr class="separator:a4912681ea3dcfa515c3595f9ce8590c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a636f4b194e51f99e55e22070e7296f95" id="r_a636f4b194e51f99e55e22070e7296f95"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a636f4b194e51f99e55e22070e7296f95">TOKEN_DELIMITER</a> = &quot;:&quot;</td></tr>
+<tr class="separator:a636f4b194e51f99e55e22070e7296f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4bfa646844a603a3cfd0f69c38bb71" id="r_a2c4bfa646844a603a3cfd0f69c38bb71"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c4bfa646844a603a3cfd0f69c38bb71">TOKEN_HASH_ALGO</a> = &quot;xxh3&quot;</td></tr>
+<tr class="separator:a2c4bfa646844a603a3cfd0f69c38bb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This pile of shit exists because PHP on Windows is broken, and can't handle stream_select() on stdin or pipes properly - stdin native triggers stream_select() when a key is pressed, causing it to get stuck in fgets() waiting for a line that might never come (and Windows doesn't support character-based reading either), and pipes just constantly trigger stream_select() instead of only when data is returned, rendering it useless.</p>
 <p>This results in whichever process reads stdin getting stuck on shutdown, which previously forced us to kill the entire server process to make it go away.</p>
 <p>To get around this problem, we delegate the responsibility of reading stdin to a subprocess, which we can then brutally murder when the server shuts down, without killing the entire server process. Thankfully, stream_select() actually works properly on sockets, so we can use them for inter-process communication. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00060">60</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00057">57</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad145a2be48562dd98b430382f97a5ec0" name="ad145a2be48562dd98b430382f97a5ec0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad145a2be48562dd98b430382f97a5ec0">&#9670;&#160;</a></span>__construct()</h2>
@@ -148,7 +156,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00067">67</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00068">68</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
 
 </div>
 </div>
@@ -168,7 +176,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00132">132</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00142">142</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
 
 </div>
 </div>
@@ -187,7 +195,40 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00110">110</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00106">106</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a636f4b194e51f99e55e22070e7296f95" name="a636f4b194e51f99e55e22070e7296f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636f4b194e51f99e55e22070e7296f95">&#9670;&#160;</a></span>TOKEN_DELIMITER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\console\ConsoleReaderChildProcessDaemon::TOKEN_DELIMITER = &quot;:&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00058">58</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
+
+</div>
+</div>
+<a id="a2c4bfa646844a603a3cfd0f69c38bb71" name="a2c4bfa646844a603a3cfd0f69c38bb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4bfa646844a603a3cfd0f69c38bb71">&#9670;&#160;</a></span>TOKEN_HASH_ALGO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\console\ConsoleReaderChildProcessDaemon::TOKEN_HASH_ALGO = &quot;xxh3&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html#l00059">59</a> of file <a class="el" href="../../de/d0a/_console_reader_child_process_daemon_8php_source.html">ConsoleReaderChildProcessDaemon.php</a>.</p>
 
 </div>
 </div>

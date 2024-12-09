@@ -37,6 +37,7 @@ var classpocketmine_1_1entity_1_1_zombie =
     [ "getMaxAirSupplyTicks", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#aa1f0a3a68610eb735693198e77a04f45", null ],
     [ "getOwningEntity", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a826cae5bee1c9be79bfcd124d831e086", null ],
     [ "getTargetBlock", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a80611cafb3218eaedf17031a133bbeef", null ],
     [ "getTargetEntity", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],

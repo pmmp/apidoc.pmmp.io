@@ -24,6 +24,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_splash_potion =
     [ "getInitialGravity", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a8b5aa08d20bb8762f720833b75618e03", null ],
     [ "getOwningEntity", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a75141c6ee2a98bd8b3f1ab49998b455c", null ],
     [ "getPotionEffects", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a0fc1539dbcfab15804ab8a73590bf9c3", null ],
     [ "getPotionType", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a52444387f624a2268d45447c9591aa7d", null ],
     [ "getResultDamage", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#afb812d7f22d278d1ac35fc063ea63df7", null ],

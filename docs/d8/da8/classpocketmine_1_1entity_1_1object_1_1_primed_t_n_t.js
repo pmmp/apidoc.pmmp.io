@@ -22,6 +22,7 @@ var classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t =
     [ "getInitialGravity", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a3322b69ff2e9964bbc33bf20217009da", null ],
     [ "getOwningEntity", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#afdd4efc12fe21730ceb104af111f576d", null ],
     [ "getOwningEntityId", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7", null ],
+    [ "getPickedItem", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#abc6d8d8c81dad068c7ccf9559ad8b2fb", null ],
     [ "getTargetEntity", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#aadf061fdcc839a812188363a4a9dc3b5", null ],
     [ "getTargetEntityId", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b", null ],
     [ "getViewers", "d8/da8/classpocketmine_1_1entity_1_1object_1_1_primed_t_n_t.html#acaced48bc41cc13b10c1e99ba76bdabd", null ],

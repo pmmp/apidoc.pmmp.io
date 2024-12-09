@@ -56,7 +56,7 @@ var classpocketmine_1_1block_1_1_sugarcane =
     [ "onEntityLand", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
     [ "onInteract", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a7442fd80109d1e73aa4d62a0d1b85a6b", null ],
-    [ "onNearbyBlockChange", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a863a7a7c27f111cc622ebb10711807c2", null ],
+    [ "onNearbyBlockChange", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a6c06cf00633feefc1a75746fe8575686", null ],
     [ "onPostPlace", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a0931c682312473fc2540464b7a4747c0", null ],
     [ "onRandomTick", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#ae975864e5866e44878b1f57da2bd0393", null ],

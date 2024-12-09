@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -171,536 +171,544 @@ $(function(){initNavTree('de/dca/_utils_8php_source.html','../../'); initResizab
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>use <span class="keyword">function</span> is_object;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>use <span class="keyword">function</span> is_string;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>use <span class="keyword">function</span> mb_check_encoding;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>use <span class="keyword">function</span> ob_end_clean;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>use <span class="keyword">function</span> ob_get_contents;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>use <span class="keyword">function</span> ob_start;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>use <span class="keyword">function</span> opcache_get_status;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>use <span class="keyword">function</span> ord;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>use <span class="keyword">function</span> php_uname;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>use <span class="keyword">function</span> phpversion;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>use <span class="keyword">function</span> preg_grep;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>use <span class="keyword">function</span> preg_match;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>use <span class="keyword">function</span> preg_match_all;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>use <span class="keyword">function</span> preg_replace;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>use <span class="keyword">function</span> shell_exec;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>use <span class="keyword">function</span> spl_object_id;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>use <span class="keyword">function</span> str_contains;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>use <span class="keyword">function</span> str_pad;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>use <span class="keyword">function</span> str_split;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>use <span class="keyword">function</span> str_starts_with;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>use <span class="keyword">function</span> stripos;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>use <span class="keyword">function</span> strlen;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>use <span class="keyword">function</span> substr;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>use <span class="keyword">function</span> sys_get_temp_dir;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>use <span class="keyword">function</span> trim;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>use <span class="keyword">function</span> xdebug_get_function_stack;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>use <span class="keyword">const</span> PHP_EOL;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>use <span class="keyword">const</span> PHP_INT_MAX;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>use <span class="keyword">const</span> PHP_INT_SIZE;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>use <span class="keyword">const</span> PHP_MAXPATHLEN;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>use <span class="keyword">const</span> STR_PAD_LEFT;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>use <span class="keyword">const</span> STR_PAD_RIGHT;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="foldopen" id="foldopen00103" data-start="{" data-end="};">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">  103</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_WINDOWS = <span class="stringliteral">&quot;win&quot;</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_IOS = <span class="stringliteral">&quot;ios&quot;</span>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_MACOS = <span class="stringliteral">&quot;mac&quot;</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_ANDROID = <span class="stringliteral">&quot;android&quot;</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_LINUX = <span class="stringliteral">&quot;linux&quot;</span>;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_BSD = <span class="stringliteral">&quot;bsd&quot;</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_UNKNOWN = <span class="stringliteral">&quot;other&quot;</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?<span class="keywordtype">string</span> $os = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?UuidInterface $serverUniqueId = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?<span class="keywordtype">int</span> $cpuCores = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">  122</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">getNiceClosureName</a>(\Closure $closure) : string{</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $func = new \ReflectionFunction($closure);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">if</span>(!str_contains($func-&gt;getName(), <span class="stringliteral">&#39;{closure&#39;</span>)){</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="comment">//closure wraps a named function, can be done with reflection or fromCallable()</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="comment">//isClosure() is useless here because it just tells us if $func is reflecting a Closure object</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            $scope = $func-&gt;getClosureScopeClass();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            if($scope !== null){ <span class="comment">//class method</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                return</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                    $scope-&gt;getName() .</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                    ($func-&gt;getClosureThis() !== null ? <span class="stringliteral">&quot;-&gt;&quot;</span> : <span class="stringliteral">&quot;::&quot;</span>) .</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                    $func-&gt;getName(); <span class="comment">//name doesn&#39;t include class in this case</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="comment">//non-class function</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordflow">return</span> $func-&gt;getName();</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        $filename = $func-&gt;getFileName();</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;closure@&quot;</span> . ($filename !== <span class="keyword">false</span> ?</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                Filesystem::cleanPath($filename) . <span class="stringliteral">&quot;#L&quot;</span> . $func-&gt;getStartLine() :</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="stringliteral">&quot;internal&quot;</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            );</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>use <span class="keyword">function</span> mt_getrandmax;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>use <span class="keyword">function</span> mt_rand;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>use <span class="keyword">function</span> ob_end_clean;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>use <span class="keyword">function</span> ob_get_contents;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>use <span class="keyword">function</span> ob_start;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>use <span class="keyword">function</span> opcache_get_status;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>use <span class="keyword">function</span> ord;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>use <span class="keyword">function</span> php_uname;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>use <span class="keyword">function</span> phpversion;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>use <span class="keyword">function</span> preg_grep;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>use <span class="keyword">function</span> preg_match;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>use <span class="keyword">function</span> preg_match_all;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>use <span class="keyword">function</span> preg_replace;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>use <span class="keyword">function</span> shell_exec;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>use <span class="keyword">function</span> spl_object_id;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>use <span class="keyword">function</span> str_contains;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>use <span class="keyword">function</span> str_pad;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>use <span class="keyword">function</span> str_split;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>use <span class="keyword">function</span> str_starts_with;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>use <span class="keyword">function</span> stripos;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>use <span class="keyword">function</span> strlen;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>use <span class="keyword">function</span> substr;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>use <span class="keyword">function</span> sys_get_temp_dir;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>use <span class="keyword">function</span> trim;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>use <span class="keyword">function</span> xdebug_get_function_stack;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>use <span class="keyword">const</span> PHP_EOL;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>use <span class="keyword">const</span> PHP_INT_MAX;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>use <span class="keyword">const</span> PHP_INT_SIZE;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>use <span class="keyword">const</span> PHP_MAXPATHLEN;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>use <span class="keyword">const</span> STR_PAD_LEFT;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>use <span class="keyword">const</span> STR_PAD_RIGHT;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="};">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">  105</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_WINDOWS = <span class="stringliteral">&quot;win&quot;</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_IOS = <span class="stringliteral">&quot;ios&quot;</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_MACOS = <span class="stringliteral">&quot;mac&quot;</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_ANDROID = <span class="stringliteral">&quot;android&quot;</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_LINUX = <span class="stringliteral">&quot;linux&quot;</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_BSD = <span class="stringliteral">&quot;bsd&quot;</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">public</span> <span class="keyword">const</span> OS_UNKNOWN = <span class="stringliteral">&quot;other&quot;</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?<span class="keywordtype">string</span> $os = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?UuidInterface $serverUniqueId = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?<span class="keywordtype">int</span> $cpuCores = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">  124</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">getNiceClosureName</a>(\Closure $closure) : string{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        $func = new \ReflectionFunction($closure);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">if</span>(!str_contains($func-&gt;getName(), <span class="stringliteral">&#39;{closure&#39;</span>)){</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="comment">//closure wraps a named function, can be done with reflection or fromCallable()</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="comment">//isClosure() is useless here because it just tells us if $func is reflecting a Closure object</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            $scope = $func-&gt;getClosureScopeClass();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            if($scope !== null){ <span class="comment">//class method</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                return</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                    $scope-&gt;getName() .</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                    ($func-&gt;getClosureThis() !== null ? <span class="stringliteral">&quot;-&gt;&quot;</span> : <span class="stringliteral">&quot;::&quot;</span>) .</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                    $func-&gt;getName(); <span class="comment">//name doesn&#39;t include class in this case</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="comment">//non-class function</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">return</span> $func-&gt;getName();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        $filename = $func-&gt;getFileName();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;closure@&quot;</span> . ($filename !== <span class="keyword">false</span> ?</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                Filesystem::cleanPath($filename) . <span class="stringliteral">&quot;#L&quot;</span> . $func-&gt;getStartLine() :</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="stringliteral">&quot;internal&quot;</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            );</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
 </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="foldopen" id="foldopen00152" data-start="{" data-end="}">
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d">  152</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d">getNiceClassName</a>(<span class="keywordtype">object</span> $obj) : string{</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        $reflect = new \ReflectionClass($obj);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">if</span>($reflect-&gt;isAnonymous()){</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            $filename = $reflect-&gt;getFileName();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            return <span class="stringliteral">&quot;anonymous@&quot;</span> . ($filename !== false ?</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                    Filesystem::cleanPath($filename) . <span class="stringliteral">&quot;#L&quot;</span> . $reflect-&gt;getStartLine() :</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                    <span class="stringliteral">&quot;internal&quot;</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                );</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        }</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> $reflect-&gt;getName();</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d">  154</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d">getNiceClassName</a>(<span class="keywordtype">object</span> $obj) : string{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        $reflect = new \ReflectionClass($obj);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">if</span>($reflect-&gt;isAnonymous()){</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            $filename = $reflect-&gt;getFileName();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            return <span class="stringliteral">&quot;anonymous@&quot;</span> . ($filename !== false ?</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                    Filesystem::cleanPath($filename) . <span class="stringliteral">&quot;#L&quot;</span> . $reflect-&gt;getStartLine() :</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                    <span class="stringliteral">&quot;internal&quot;</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                );</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">return</span> $reflect-&gt;getName();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
 </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">  169</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">cloneCallback</a>() : \Closure{</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        return static function(object $o){</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="keywordflow">return</span> clone $o;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        };</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">  171</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">cloneCallback</a>() : \Closure{</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        return static function(object $o){</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordflow">return</span> clone $o;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        };</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
 </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada3d8be004e77d96080c3201394084c8">  185</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada3d8be004e77d96080c3201394084c8">cloneObjectArray</a>(array $array) : array{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        $callback = self::cloneCallback();</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">return</span> array_map($callback, $array);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="foldopen" id="foldopen00187" data-start="{" data-end="}">
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada3d8be004e77d96080c3201394084c8">  187</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada3d8be004e77d96080c3201394084c8">cloneObjectArray</a>(array $array) : array{</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        $callback = self::cloneCallback();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">return</span> array_map($callback, $array);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
 </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1">  199</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1">getMachineUniqueId</a>(<span class="keywordtype">string</span> $extra = <span class="stringliteral">&quot;&quot;</span>) : UuidInterface{</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        if(self::$serverUniqueId !== null &amp;&amp; $extra === <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordflow">return</span> self::$serverUniqueId;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $machine = php_uname(<span class="stringliteral">&quot;a&quot;</span>);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        $cpuinfo = @file(<span class="stringliteral">&quot;/proc/cpuinfo&quot;</span>);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">if</span>($cpuinfo !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            $cpuinfoLines = preg_grep(<span class="stringliteral">&quot;/(model name|Processor|Serial)/&quot;</span>, $cpuinfo);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keywordflow">if</span>($cpuinfoLines === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Pattern is valid, so this shouldn&#39;t fail ...&quot;</span>);</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            }</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            $machine .= implode(<span class="stringliteral">&quot;&quot;</span>, $cpuinfoLines);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        $machine .= sys_get_temp_dir();</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        $machine .= $extra;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        $os = Utils::getOS();</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">if</span>($os === Utils::OS_WINDOWS){</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            @exec(<span class="stringliteral">&quot;ipconfig /ALL&quot;</span>, $mac);</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            $mac = implode(<span class="stringliteral">&quot;\n&quot;</span>, $mac);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&quot;#Physical Address[. ]{1,}: ([0-9A-F\\-]{17})#&quot;</span>, $mac, $matches) &gt; 0){</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                <span class="keywordflow">foreach</span>($matches[1] as $i =&gt; $v){</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                    <span class="keywordflow">if</span>($v == <span class="stringliteral">&quot;00-00-00-00-00-00&quot;</span>){</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                        unset($matches[1][$i]);</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    }</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                $machine .= implode(<span class="stringliteral">&quot; &quot;</span>, $matches[1]); <span class="comment">//Mac Addresses</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        }elseif($os === Utils::OS_LINUX){</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">if</span>(file_exists(<span class="stringliteral">&quot;/etc/machine-id&quot;</span>)){</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                $machine .= file_get_contents(<span class="stringliteral">&quot;/etc/machine-id&quot;</span>);</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                @exec(<span class="stringliteral">&quot;ifconfig 2&gt;/dev/null&quot;</span>, $mac);</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                $mac = implode(<span class="stringliteral">&quot;\n&quot;</span>, $mac);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&quot;#HWaddr[ \t]{1,}([0-9a-f:]{17})#&quot;</span>, $mac, $matches) &gt; 0){</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                    <span class="keywordflow">foreach</span>($matches[1] as $i =&gt; $v){</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                        <span class="keywordflow">if</span>($v == <span class="stringliteral">&quot;00:00:00:00:00:00&quot;</span>){</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                            unset($matches[1][$i]);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                        }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    }</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                    $machine .= implode(<span class="stringliteral">&quot; &quot;</span>, $matches[1]); <span class="comment">//Mac Addresses</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                }</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            }</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }elseif($os === Utils::OS_ANDROID){</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            $machine .= @file_get_contents(<span class="stringliteral">&quot;/system/build.prop&quot;</span>);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }elseif($os === Utils::OS_MACOS){</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            $machine .= shell_exec(<span class="stringliteral">&quot;system_profiler SPHardwareDataType | grep UUID&quot;</span>);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        $data = $machine . PHP_MAXPATHLEN;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        $data .= PHP_INT_MAX;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        $data .= PHP_INT_SIZE;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        $data .= get_current_user();</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">foreach</span>(get_loaded_extensions() as $ext){</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            $data .= $ext . <span class="stringliteral">&quot;:&quot;</span> . phpversion($ext);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        }</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="comment">//TODO: use of NIL as namespace is a hack; it works for now, but we should have a proper namespace UUID</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        $uuid = Uuid::uuid3(Uuid::NIL, $data);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">if</span>($extra === <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            self::$serverUniqueId = $uuid;</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">return</span> $uuid;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="foldopen" id="foldopen00201" data-start="{" data-end="}">
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1">  201</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1">getMachineUniqueId</a>(<span class="keywordtype">string</span> $extra = <span class="stringliteral">&quot;&quot;</span>) : UuidInterface{</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        if(self::$serverUniqueId !== null &amp;&amp; $extra === <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">return</span> self::$serverUniqueId;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        $machine = php_uname(<span class="stringliteral">&quot;a&quot;</span>);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        $cpuinfo = @file(<span class="stringliteral">&quot;/proc/cpuinfo&quot;</span>);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">if</span>($cpuinfo !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            $cpuinfoLines = preg_grep(<span class="stringliteral">&quot;/(model name|Processor|Serial)/&quot;</span>, $cpuinfo);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">if</span>($cpuinfoLines === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Pattern is valid, so this shouldn&#39;t fail ...&quot;</span>);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            $machine .= implode(<span class="stringliteral">&quot;&quot;</span>, $cpuinfoLines);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        $machine .= sys_get_temp_dir();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        $machine .= $extra;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        $os = Utils::getOS();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">if</span>($os === Utils::OS_WINDOWS){</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            @exec(<span class="stringliteral">&quot;ipconfig /ALL&quot;</span>, $mac);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            $mac = implode(<span class="stringliteral">&quot;\n&quot;</span>, $mac);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&quot;#Physical Address[. ]{1,}: ([0-9A-F\\-]{17})#&quot;</span>, $mac, $matches) &gt; 0){</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                <span class="keywordflow">foreach</span>($matches[1] as $i =&gt; $v){</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    <span class="keywordflow">if</span>($v == <span class="stringliteral">&quot;00-00-00-00-00-00&quot;</span>){</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                        unset($matches[1][$i]);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                    }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                }</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                $machine .= implode(<span class="stringliteral">&quot; &quot;</span>, $matches[1]); <span class="comment">//Mac Addresses</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }elseif($os === Utils::OS_LINUX){</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="keywordflow">if</span>(file_exists(<span class="stringliteral">&quot;/etc/machine-id&quot;</span>)){</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                $machine .= file_get_contents(<span class="stringliteral">&quot;/etc/machine-id&quot;</span>);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                @exec(<span class="stringliteral">&quot;ifconfig 2&gt;/dev/null&quot;</span>, $mac);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                $mac = implode(<span class="stringliteral">&quot;\n&quot;</span>, $mac);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&quot;#HWaddr[ \t]{1,}([0-9a-f:]{17})#&quot;</span>, $mac, $matches) &gt; 0){</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                    <span class="keywordflow">foreach</span>($matches[1] as $i =&gt; $v){</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                        <span class="keywordflow">if</span>($v == <span class="stringliteral">&quot;00:00:00:00:00:00&quot;</span>){</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                            unset($matches[1][$i]);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                        }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                    $machine .= implode(<span class="stringliteral">&quot; &quot;</span>, $matches[1]); <span class="comment">//Mac Addresses</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }elseif($os === Utils::OS_ANDROID){</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            $machine .= @file_get_contents(<span class="stringliteral">&quot;/system/build.prop&quot;</span>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }elseif($os === Utils::OS_MACOS){</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            $machine .= shell_exec(<span class="stringliteral">&quot;system_profiler SPHardwareDataType | grep UUID&quot;</span>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        $data = $machine . PHP_MAXPATHLEN;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        $data .= PHP_INT_MAX;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        $data .= PHP_INT_SIZE;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        $data .= get_current_user();</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keywordflow">foreach</span>(get_loaded_extensions() as $ext){</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            $data .= $ext . <span class="stringliteral">&quot;:&quot;</span> . phpversion($ext);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="comment">//TODO: use of NIL as namespace is a hack; it works for now, but we should have a proper namespace UUID</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        $uuid = Uuid::uuid3(Uuid::NIL, $data);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">if</span>($extra === <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            self::$serverUniqueId = $uuid;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keywordflow">return</span> $uuid;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
 </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="foldopen" id="foldopen00275" data-start="{" data-end="}">
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">  275</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">getOS</a>(<span class="keywordtype">bool</span> $recalculate = <span class="keyword">false</span>) : string{</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        if(self::$os === null || $recalculate){</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            $uname = php_uname(<span class="stringliteral">&quot;s&quot;</span>);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">if</span>(stripos($uname, <span class="stringliteral">&quot;Darwin&quot;</span>) !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                <span class="keywordflow">if</span>(str_starts_with(php_uname(<span class="stringliteral">&quot;m&quot;</span>), <span class="stringliteral">&quot;iP&quot;</span>)){</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                    self::$os = self::OS_IOS;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                    self::$os = self::OS_MACOS;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            }elseif(stripos($uname, <span class="stringliteral">&quot;Win&quot;</span>) !== <span class="keyword">false</span> || $uname === <span class="stringliteral">&quot;Msys&quot;</span>){</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                self::$os = self::OS_WINDOWS;</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            }elseif(stripos($uname, <span class="stringliteral">&quot;Linux&quot;</span>) !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                <span class="keywordflow">if</span>(@file_exists(<span class="stringliteral">&quot;/system/build.prop&quot;</span>)){</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                    self::$os = self::OS_ANDROID;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    self::$os = self::OS_LINUX;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                }</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            }elseif(stripos($uname, <span class="stringliteral">&quot;BSD&quot;</span>) !== <span class="keyword">false</span> || $uname === <span class="stringliteral">&quot;DragonFly&quot;</span>){</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                self::$os = self::OS_BSD;</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                self::$os = self::OS_UNKNOWN;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            }</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordflow">return</span> self::$os;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="foldopen" id="foldopen00277" data-start="{" data-end="}">
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">  277</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">getOS</a>(<span class="keywordtype">bool</span> $recalculate = <span class="keyword">false</span>) : string{</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        if(self::$os === null || $recalculate){</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            $uname = php_uname(<span class="stringliteral">&quot;s&quot;</span>);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            <span class="keywordflow">if</span>(stripos($uname, <span class="stringliteral">&quot;Darwin&quot;</span>) !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                <span class="keywordflow">if</span>(str_starts_with(php_uname(<span class="stringliteral">&quot;m&quot;</span>), <span class="stringliteral">&quot;iP&quot;</span>)){</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                    self::$os = self::OS_IOS;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                    self::$os = self::OS_MACOS;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                }</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            }elseif(stripos($uname, <span class="stringliteral">&quot;Win&quot;</span>) !== <span class="keyword">false</span> || $uname === <span class="stringliteral">&quot;Msys&quot;</span>){</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                self::$os = self::OS_WINDOWS;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            }elseif(stripos($uname, <span class="stringliteral">&quot;Linux&quot;</span>) !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                <span class="keywordflow">if</span>(@file_exists(<span class="stringliteral">&quot;/system/build.prop&quot;</span>)){</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    self::$os = self::OS_ANDROID;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                    self::$os = self::OS_LINUX;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            }elseif(stripos($uname, <span class="stringliteral">&quot;BSD&quot;</span>) !== <span class="keyword">false</span> || $uname === <span class="stringliteral">&quot;DragonFly&quot;</span>){</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                self::$os = self::OS_BSD;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                self::$os = self::OS_UNKNOWN;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        }</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <span class="keywordflow">return</span> self::$os;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    }</div>
 </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getCoreCount(<span class="keywordtype">bool</span> $recalculate = <span class="keyword">false</span>) : int{</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        if(self::$cpuCores !== null &amp;&amp; !$recalculate){</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            <span class="keywordflow">return</span> self::$cpuCores;</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        }</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        $processors = 0;</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keywordflow">switch</span>(Utils::getOS()){</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            <span class="keywordflow">case</span> Utils::OS_LINUX:</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            <span class="keywordflow">case</span> Utils::OS_ANDROID:</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                <span class="keywordflow">if</span>(($cpuinfo = @file(<span class="stringliteral">&#39;/proc/cpuinfo&#39;</span>)) !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                    <span class="keywordflow">foreach</span>($cpuinfo as $l){</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^processor[ \t]*:[ \t]*[0-9]+$/m&#39;</span>, $l) &gt; 0){</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                            ++$processors;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                        }</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                    }</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                }elseif(($cpuPresent = @file_get_contents(<span class="stringliteral">&quot;/sys/devices/system/cpu/present&quot;</span>)) !== <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/^([0-9]+)\\-([0-9]+)$/&quot;</span>, trim($cpuPresent), $matches) &gt; 0){</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                        $processors = ((int) $matches[2]) - ((<span class="keywordtype">int</span>) $matches[1]);</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                    }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                }</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            <span class="keywordflow">case</span> Utils::OS_BSD:</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            <span class="keywordflow">case</span> Utils::OS_MACOS:</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                $processors = (int) shell_exec(<span class="stringliteral">&quot;sysctl -n hw.ncpu&quot;</span>);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            <span class="keywordflow">case</span> Utils::OS_WINDOWS:</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                $processors = (int) getenv(<span class="stringliteral">&quot;NUMBER_OF_PROCESSORS&quot;</span>);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        }</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keywordflow">return</span> self::$cpuCores = $processors;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    }</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="foldopen" id="foldopen00337" data-start="{" data-end="}">
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e">  337</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e">hexdump</a>(<span class="keywordtype">string</span> $bin) : string{</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        $output = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        $bin = str_split($bin, 16);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">foreach</span>($bin as $counter =&gt; $line){</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            $hex = chunk_split(chunk_split(str_pad(bin2hex($line), 32, <span class="stringliteral">&quot; &quot;</span>, STR_PAD_RIGHT), 2, <span class="stringliteral">&quot; &quot;</span>), 24, <span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            $ascii = preg_replace(<span class="stringliteral">&#39;#([^\x20-\x7E])#&#39;</span>, <span class="stringliteral">&quot;.&quot;</span>, $line);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            $output .= str_pad(dechex($counter &lt;&lt; 4), 4, <span class="stringliteral">&quot;0&quot;</span>, STR_PAD_LEFT) . <span class="stringliteral">&quot;  &quot;</span> . $hex . <span class="stringliteral">&quot; &quot;</span> . $ascii . PHP_EOL;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        }</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        <span class="keywordflow">return</span> $output;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getCoreCount(<span class="keywordtype">bool</span> $recalculate = <span class="keyword">false</span>) : int{</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        if(self::$cpuCores !== null &amp;&amp; !$recalculate){</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <span class="keywordflow">return</span> self::$cpuCores;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        $processors = 0;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordflow">switch</span>(Utils::getOS()){</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <span class="keywordflow">case</span> Utils::OS_LINUX:</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <span class="keywordflow">case</span> Utils::OS_ANDROID:</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                <span class="keywordflow">if</span>(($cpuinfo = @file(<span class="stringliteral">&#39;/proc/cpuinfo&#39;</span>)) !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                    <span class="keywordflow">foreach</span>($cpuinfo as $l){</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^processor[ \t]*:[ \t]*[0-9]+$/m&#39;</span>, $l) &gt; 0){</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                            ++$processors;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                        }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    }</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                }elseif(($cpuPresent = @file_get_contents(<span class="stringliteral">&quot;/sys/devices/system/cpu/present&quot;</span>)) !== <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                    <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/^([0-9]+)\\-([0-9]+)$/&quot;</span>, trim($cpuPresent), $matches) &gt; 0){</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                        $processors = ((int) $matches[2]) - ((<span class="keywordtype">int</span>) $matches[1]);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                    }</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <span class="keywordflow">case</span> Utils::OS_BSD:</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            <span class="keywordflow">case</span> Utils::OS_MACOS:</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                $processors = (int) shell_exec(<span class="stringliteral">&quot;sysctl -n hw.ncpu&quot;</span>);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="keywordflow">case</span> Utils::OS_WINDOWS:</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                $processors = (int) getenv(<span class="stringliteral">&quot;NUMBER_OF_PROCESSORS&quot;</span>);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <span class="keywordflow">return</span> self::$cpuCores = $processors;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="foldopen" id="foldopen00339" data-start="{" data-end="}">
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e">  339</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e">hexdump</a>(<span class="keywordtype">string</span> $bin) : string{</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        $output = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        $bin = str_split($bin, 16);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">foreach</span>($bin as $counter =&gt; $line){</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            $hex = chunk_split(chunk_split(str_pad(bin2hex($line), 32, <span class="stringliteral">&quot; &quot;</span>, STR_PAD_RIGHT), 2, <span class="stringliteral">&quot; &quot;</span>), 24, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            $ascii = preg_replace(<span class="stringliteral">&#39;#([^\x20-\x7E])#&#39;</span>, <span class="stringliteral">&quot;.&quot;</span>, $line);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            $output .= str_pad(dechex($counter &lt;&lt; 4), 4, <span class="stringliteral">&quot;0&quot;</span>, STR_PAD_LEFT) . <span class="stringliteral">&quot;  &quot;</span> . $hex . <span class="stringliteral">&quot; &quot;</span> . $ascii . PHP_EOL;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="keywordflow">return</span> $output;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    }</div>
 </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="foldopen" id="foldopen00352" data-start="{" data-end="}">
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a">  352</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a">printable</a>(mixed $str) : string{</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        if(!is_string($str)){</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            <span class="keywordflow">return</span> gettype($str);</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        }</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <span class="keywordflow">return</span> preg_replace(<span class="stringliteral">&#39;#([^\x20-\x7E])#&#39;</span>, <span class="charliteral">&#39;.&#39;</span>, $str);</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="foldopen" id="foldopen00354" data-start="{" data-end="}">
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a">  354</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a">printable</a>(mixed $str) : string{</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        if(!is_string($str)){</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            <span class="keywordflow">return</span> gettype($str);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        }</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <span class="keywordflow">return</span> preg_replace(<span class="stringliteral">&#39;#([^\x20-\x7E])#&#39;</span>, <span class="charliteral">&#39;.&#39;</span>, $str);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    }</div>
 </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> javaStringHash(<span class="keywordtype">string</span> $string) : int{</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        $hash = 0;</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        <span class="keywordflow">for</span>($i = 0, $len = strlen($string); $i &lt; $len; $i++){</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            $ord = ord($string[$i]);</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            <span class="keywordflow">if</span>(($ord &amp; 0x80) !== 0){</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                $ord -= 0x100;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            }</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            $hash = 31 * $hash + $ord;</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            $hash &amp;= 0xFFFFFFFF;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        }</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        <span class="keywordflow">return</span> $hash;</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    }</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getReferenceCount(<span class="keywordtype">object</span> $value, <span class="keywordtype">bool</span> $includeCurrent = <span class="keyword">true</span>) : int{</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        ob_start();</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        debug_zval_dump($value);</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        $contents = ob_get_contents();</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        <span class="keywordflow">if</span>($contents === <span class="keyword">false</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;ob_get_contents() should never return false here&quot;</span>);</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        $ret = explode(<span class="stringliteral">&quot;\n&quot;</span>, $contents);</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        ob_end_clean();</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^.* refcount\\(([0-9]+)\\)\\{$/&#39;</span>, trim($ret[0]), $m) &gt; 0){</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>            <span class="keywordflow">return</span> ((<span class="keywordtype">int</span>) $m[1]) - ($includeCurrent ? 3 : 4); <span class="comment">//$value + zval call + extra call</span></div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        }</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> printableExceptionMessage(\Throwable $e) : string{</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        $errstr = preg_replace(<span class="stringliteral">&#39;/\s+/&#39;</span>, <span class="stringliteral">&#39; &#39;</span>, trim($e-&gt;getMessage()));</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        $errno = $e-&gt;getCode();</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        <span class="keywordflow">if</span>(is_int($errno)){</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>            <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                $errno = ErrorTypeToStringMap::get($errno);</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            }<span class="keywordflow">catch</span>(\InvalidArgumentException $ex){</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                <span class="comment">//pass</span></div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            }</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        }</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        $errfile = Filesystem::cleanPath($e-&gt;getFile());</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        $errline = $e-&gt;getLine();</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        <span class="keywordflow">return</span> get_class($e) . <span class="stringliteral">&quot;: \&quot;$errstr\&quot; ($errno) in \&quot;$errfile\&quot; at line $errline&quot;</span>;</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    }</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
-<div class="foldopen" id="foldopen00409" data-start="{" data-end="}">
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9">  409</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9">printableExceptionInfo</a>(\Throwable $e, $trace = <span class="keyword">null</span>) : array{</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        if($trace === null){</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>            $trace = $e-&gt;getTrace();</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        }</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        $lines = [self::printableExceptionMessage($e)];</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        $lines[] = <span class="stringliteral">&quot;--- Stack trace ---&quot;</span>;</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        <span class="keywordflow">foreach</span>(Utils::printableTrace($trace) as $line){</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>            $lines[] = <span class="stringliteral">&quot;  &quot;</span> . $line;</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        }</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        <span class="keywordflow">for</span>($prev = $e-&gt;getPrevious(); $prev !== <span class="keyword">null</span>; $prev = $prev-&gt;getPrevious()){</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            $lines[] = <span class="stringliteral">&quot;--- Previous ---&quot;</span>;</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>            $lines[] = self::printableExceptionMessage($prev);</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>            foreach(Utils::printableTrace($prev-&gt;getTrace()) as $line){</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>                $lines[] = <span class="stringliteral">&quot;  &quot;</span> . $line;</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>            }</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        }</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        $lines[] = <span class="stringliteral">&quot;--- End of exception information ---&quot;</span>;</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        <span class="keywordflow">return</span> $lines;</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    }</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> javaStringHash(<span class="keywordtype">string</span> $string) : int{</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        $hash = 0;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <span class="keywordflow">for</span>($i = 0, $len = strlen($string); $i &lt; $len; $i++){</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            $ord = ord($string[$i]);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            <span class="keywordflow">if</span>(($ord &amp; 0x80) !== 0){</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                $ord -= 0x100;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            }</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            $hash = 31 * $hash + $ord;</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            $hash &amp;= 0xFFFFFFFF;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        }</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="keywordflow">return</span> $hash;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getReferenceCount(<span class="keywordtype">object</span> $value, <span class="keywordtype">bool</span> $includeCurrent = <span class="keyword">true</span>) : int{</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        ob_start();</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        debug_zval_dump($value);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        $contents = ob_get_contents();</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <span class="keywordflow">if</span>($contents === <span class="keyword">false</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;ob_get_contents() should never return false here&quot;</span>);</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        $ret = explode(<span class="stringliteral">&quot;\n&quot;</span>, $contents);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        ob_end_clean();</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^.* refcount\\(([0-9]+)\\)\\{$/&#39;</span>, trim($ret[0]), $m) &gt; 0){</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>            <span class="keywordflow">return</span> ((<span class="keywordtype">int</span>) $m[1]) - ($includeCurrent ? 3 : 4); <span class="comment">//$value + zval call + extra call</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        }</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    }</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> printableExceptionMessage(\Throwable $e) : string{</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        $errstr = preg_replace(<span class="stringliteral">&#39;/\s+/&#39;</span>, <span class="stringliteral">&#39; &#39;</span>, trim($e-&gt;getMessage()));</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        $errno = $e-&gt;getCode();</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        <span class="keywordflow">if</span>(is_int($errno)){</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                $errno = ErrorTypeToStringMap::get($errno);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            }<span class="keywordflow">catch</span>(\InvalidArgumentException $ex){</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                <span class="comment">//pass</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        }</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        $errfile = Filesystem::cleanPath($e-&gt;getFile());</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        $errline = $e-&gt;getLine();</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>        <span class="keywordflow">return</span> get_class($e) . <span class="stringliteral">&quot;: \&quot;$errstr\&quot; ($errno) in \&quot;$errfile\&quot; at line $errline&quot;</span>;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    }</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="foldopen" id="foldopen00411" data-start="{" data-end="}">
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9">  411</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9">printableExceptionInfo</a>(\Throwable $e, $trace = <span class="keyword">null</span>) : array{</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        if($trace === null){</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            $trace = $e-&gt;getTrace();</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        }</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        $lines = [self::printableExceptionMessage($e)];</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        $lines[] = <span class="stringliteral">&quot;--- Stack trace ---&quot;</span>;</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">foreach</span>(Utils::printableTrace($trace) as $line){</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>            $lines[] = <span class="stringliteral">&quot;  &quot;</span> . $line;</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        }</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        <span class="keywordflow">for</span>($prev = $e-&gt;getPrevious(); $prev !== <span class="keyword">null</span>; $prev = $prev-&gt;getPrevious()){</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>            $lines[] = <span class="stringliteral">&quot;--- Previous ---&quot;</span>;</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>            $lines[] = self::printableExceptionMessage($prev);</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>            foreach(Utils::printableTrace($prev-&gt;getTrace()) as $line){</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>                $lines[] = <span class="stringliteral">&quot;  &quot;</span> . $line;</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>            }</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        }</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        $lines[] = <span class="stringliteral">&quot;--- End of exception information ---&quot;</span>;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        <span class="keywordflow">return</span> $lines;</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    }</div>
 </div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> stringifyValueForTrace(mixed $value, <span class="keywordtype">int</span> $maxStringLength) : string{</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>        return match(true){</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            is_object($value) =&gt; <span class="stringliteral">&quot;object &quot;</span> . self::getNiceClassName($value) . <span class="stringliteral">&quot;#&quot;</span> . spl_object_id($value),</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>            is_array($value) =&gt; <span class="stringliteral">&quot;array[&quot;</span> . count($value) . <span class="stringliteral">&quot;]&quot;</span>,</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>            is_string($value) =&gt; <span class="stringliteral">&quot;string[&quot;</span> . strlen($value) . <span class="stringliteral">&quot;] &quot;</span> . substr(Utils::printable($value), 0, $maxStringLength),</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>            is_bool($value) =&gt; $value ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>,</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            is_int($value) =&gt; <span class="stringliteral">&quot;int &quot;</span> . $value,</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>            is_float($value) =&gt; <span class="stringliteral">&quot;float &quot;</span> . $value,</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>            $value === <span class="keyword">null</span> =&gt; <span class="stringliteral">&quot;null&quot;</span>,</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>            <span class="keywordflow">default</span> =&gt; gettype($value) . <span class="stringliteral">&quot; &quot;</span> . Utils::printable((<span class="keywordtype">string</span>) $value)</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        };</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    }</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
-<div class="foldopen" id="foldopen00450" data-start="{" data-end="}">
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd">  450</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd">printableTrace</a>(array $trace, <span class="keywordtype">int</span> $maxStringLength = 80) : array{</div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        $messages = [];</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        <span class="keywordflow">for</span>($i = 0; isset($trace[$i]); ++$i){</div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>            $params = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>            <span class="keywordflow">if</span>(isset($trace[$i][<span class="stringliteral">&quot;args&quot;</span>]) || isset($trace[$i][<span class="stringliteral">&quot;params&quot;</span>])){</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                <span class="keywordflow">if</span>(isset($trace[$i][<span class="stringliteral">&quot;args&quot;</span>])){</div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>                    $args = $trace[$i][<span class="stringliteral">&quot;args&quot;</span>];</div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>                }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                    $args = $trace[$i][<span class="stringliteral">&quot;params&quot;</span>];</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>                }</div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>                $paramsList = [];</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>                $offset = 0;</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>                <span class="keywordflow">foreach</span>($args as $argId =&gt; $value){</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>                    $paramsList[] = ($argId === $offset ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;$argId: &quot;</span>) . self::stringifyValueForTrace($value, $maxStringLength);</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>                    $offset++;</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>                }</div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>                $params = implode(<span class="stringliteral">&quot;, &quot;</span>, $paramsList);</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>            }</div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>            $messages[] = <span class="stringliteral">&quot;#$i &quot;</span> . (isset($trace[$i][<span class="stringliteral">&quot;file&quot;</span>]) ? Filesystem::cleanPath($trace[$i][<span class="stringliteral">&quot;file&quot;</span>]) : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;(&quot;</span> . (isset($trace[$i][<span class="stringliteral">&quot;line&quot;</span>]) ? $trace[$i][<span class="stringliteral">&quot;line&quot;</span>] : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;): &quot;</span> . (isset($trace[$i][<span class="stringliteral">&quot;class&quot;</span>]) ? $trace[$i][<span class="stringliteral">&quot;class&quot;</span>] . (($trace[$i][<span class="stringliteral">&quot;type&quot;</span>] === <span class="stringliteral">&quot;dynamic&quot;</span> || $trace[$i][<span class="stringliteral">&quot;type&quot;</span>] === <span class="stringliteral">&quot;-&gt;&quot;</span>) ? <span class="stringliteral">&quot;-&gt;&quot;</span> : <span class="stringliteral">&quot;::&quot;</span>) : <span class="stringliteral">&quot;&quot;</span>) . $trace[$i][<span class="stringliteral">&quot;function&quot;</span>] . <span class="stringliteral">&quot;(&quot;</span> . Utils::printable($params) . <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>        }</div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>        <span class="keywordflow">return</span> $messages;</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    }</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> stringifyValueForTrace(mixed $value, <span class="keywordtype">int</span> $maxStringLength) : string{</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        return match(true){</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>            is_object($value) =&gt; <span class="stringliteral">&quot;object &quot;</span> . self::getNiceClassName($value) . <span class="stringliteral">&quot;#&quot;</span> . spl_object_id($value),</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>            is_array($value) =&gt; <span class="stringliteral">&quot;array[&quot;</span> . count($value) . <span class="stringliteral">&quot;]&quot;</span>,</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            is_string($value) =&gt; <span class="stringliteral">&quot;string[&quot;</span> . strlen($value) . <span class="stringliteral">&quot;] &quot;</span> . substr(Utils::printable($value), 0, $maxStringLength),</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>            is_bool($value) =&gt; $value ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>,</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>            is_int($value) =&gt; <span class="stringliteral">&quot;int &quot;</span> . $value,</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>            is_float($value) =&gt; <span class="stringliteral">&quot;float &quot;</span> . $value,</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>            $value === <span class="keyword">null</span> =&gt; <span class="stringliteral">&quot;null&quot;</span>,</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>            <span class="keywordflow">default</span> =&gt; gettype($value) . <span class="stringliteral">&quot; &quot;</span> . Utils::printable((<span class="keywordtype">string</span>) $value)</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        };</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    }</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
+<div class="foldopen" id="foldopen00452" data-start="{" data-end="}">
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd">  452</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd">printableTrace</a>(array $trace, <span class="keywordtype">int</span> $maxStringLength = 80) : array{</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        $messages = [];</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        <span class="keywordflow">for</span>($i = 0; isset($trace[$i]); ++$i){</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>            $params = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>            <span class="keywordflow">if</span>(isset($trace[$i][<span class="stringliteral">&quot;args&quot;</span>]) || isset($trace[$i][<span class="stringliteral">&quot;params&quot;</span>])){</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>                <span class="keywordflow">if</span>(isset($trace[$i][<span class="stringliteral">&quot;args&quot;</span>])){</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                    $args = $trace[$i][<span class="stringliteral">&quot;args&quot;</span>];</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>                    $args = $trace[$i][<span class="stringliteral">&quot;params&quot;</span>];</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>                }</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>                $paramsList = [];</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>                $offset = 0;</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>                <span class="keywordflow">foreach</span>($args as $argId =&gt; $value){</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>                    $paramsList[] = ($argId === $offset ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;$argId: &quot;</span>) . self::stringifyValueForTrace($value, $maxStringLength);</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>                    $offset++;</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>                }</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>                $params = implode(<span class="stringliteral">&quot;, &quot;</span>, $paramsList);</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>            }</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>            $messages[] = <span class="stringliteral">&quot;#$i &quot;</span> . (isset($trace[$i][<span class="stringliteral">&quot;file&quot;</span>]) ? Filesystem::cleanPath($trace[$i][<span class="stringliteral">&quot;file&quot;</span>]) : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;(&quot;</span> . (isset($trace[$i][<span class="stringliteral">&quot;line&quot;</span>]) ? $trace[$i][<span class="stringliteral">&quot;line&quot;</span>] : <span class="stringliteral">&quot;&quot;</span>) . <span class="stringliteral">&quot;): &quot;</span> . (isset($trace[$i][<span class="stringliteral">&quot;class&quot;</span>]) ? $trace[$i][<span class="stringliteral">&quot;class&quot;</span>] . (($trace[$i][<span class="stringliteral">&quot;type&quot;</span>] === <span class="stringliteral">&quot;dynamic&quot;</span> || $trace[$i][<span class="stringliteral">&quot;type&quot;</span>] === <span class="stringliteral">&quot;-&gt;&quot;</span>) ? <span class="stringliteral">&quot;-&gt;&quot;</span> : <span class="stringliteral">&quot;::&quot;</span>) : <span class="stringliteral">&quot;&quot;</span>) . $trace[$i][<span class="stringliteral">&quot;function&quot;</span>] . <span class="stringliteral">&quot;(&quot;</span> . Utils::printable($params) . <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>        }</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>        <span class="keywordflow">return</span> $messages;</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    }</div>
 </div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span> </div>
-<div class="foldopen" id="foldopen00484" data-start="{" data-end="}">
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f">  484</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f">printableTraceWithMetadata</a>(array $rawTrace, <span class="keywordtype">int</span> $maxStringLength = 80) : array{</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>        $printableTrace = self::printableTrace($rawTrace, $maxStringLength);</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        $safeTrace = [];</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>        <span class="keywordflow">foreach</span>($printableTrace as $frameId =&gt; $printableFrame){</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>            $rawFrame = $rawTrace[$frameId];</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>            $safeTrace[$frameId] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html">ThreadCrashInfoFrame</a>(</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                $printableFrame,</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>                $rawFrame[<span class="stringliteral">&quot;file&quot;</span>] ?? <span class="stringliteral">&quot;unknown&quot;</span>,</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                $rawFrame[<span class="stringliteral">&quot;line&quot;</span>] ?? 0</div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>            );</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>        }</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        <span class="keywordflow">return</span> $safeTrace;</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    }</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
+<div class="foldopen" id="foldopen00486" data-start="{" data-end="}">
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f">  486</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f">printableTraceWithMetadata</a>(array $rawTrace, <span class="keywordtype">int</span> $maxStringLength = 80) : array{</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>        $printableTrace = self::printableTrace($rawTrace, $maxStringLength);</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>        $safeTrace = [];</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keywordflow">foreach</span>($printableTrace as $frameId =&gt; $printableFrame){</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>            $rawFrame = $rawTrace[$frameId];</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>            $safeTrace[$frameId] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html">ThreadCrashInfoFrame</a>(</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                $printableFrame,</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>                $rawFrame[<span class="stringliteral">&quot;file&quot;</span>] ?? <span class="stringliteral">&quot;unknown&quot;</span>,</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>                $rawFrame[<span class="stringliteral">&quot;line&quot;</span>] ?? 0</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>            );</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        }</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>        <span class="keywordflow">return</span> $safeTrace;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    }</div>
 </div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span> </div>
-<div class="foldopen" id="foldopen00503" data-start="{" data-end="}">
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67">  503</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67">currentTrace</a>(<span class="keywordtype">int</span> $skipFrames = 0) : array{</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        ++$skipFrames; <span class="comment">//omit this frame from trace, in addition to other skipped frames</span></div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>        <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&quot;xdebug_get_function_stack&quot;</span>) &amp;&amp; count($trace = @xdebug_get_function_stack()) !== 0){</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>            $trace = array_reverse($trace);</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>            $e = new \Exception();</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>            $trace = $e-&gt;getTrace();</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>        }</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; $skipFrames; ++$i){</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>            unset($trace[$i]);</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        }</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>        <span class="keywordflow">return</span> array_values($trace);</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    }</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
+<div class="foldopen" id="foldopen00505" data-start="{" data-end="}">
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67">  505</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67">currentTrace</a>(<span class="keywordtype">int</span> $skipFrames = 0) : array{</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>        ++$skipFrames; <span class="comment">//omit this frame from trace, in addition to other skipped frames</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>        <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&quot;xdebug_get_function_stack&quot;</span>) &amp;&amp; count($trace = @xdebug_get_function_stack()) !== 0){</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>            $trace = array_reverse($trace);</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>            $e = new \Exception();</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>            $trace = $e-&gt;getTrace();</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        }</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; $skipFrames; ++$i){</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            unset($trace[$i]);</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>        }</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>        <span class="keywordflow">return</span> array_values($trace);</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    }</div>
 </div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="foldopen" id="foldopen00520" data-start="{" data-end="}">
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb">  520</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb">printableCurrentTrace</a>(<span class="keywordtype">int</span> $skipFrames = 0) : array{</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        return self::printableTrace(self::currentTrace(++$skipFrames));</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    }</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span> </div>
+<div class="foldopen" id="foldopen00522" data-start="{" data-end="}">
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb">  522</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb">printableCurrentTrace</a>(<span class="keywordtype">int</span> $skipFrames = 0) : array{</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        return self::printableTrace(self::currentTrace(++$skipFrames));</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    }</div>
 </div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
-<div class="foldopen" id="foldopen00529" data-start="{" data-end="}">
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6">  529</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6">parseDocComment</a>(<span class="keywordtype">string</span> $docComment) : array{</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        $rawDocComment = substr($docComment, 3, -2); <span class="comment">//remove the opening and closing markers</span></div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>        preg_match_all(<span class="stringliteral">&#39;/(*ANYCRLF)^[\t ]*(?:\* )?@([a-zA-Z\-]+)(?:[\t ]+(.+?))?[\t ]*$/m&#39;</span>, $rawDocComment, $matches);</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordflow">return</span> array_combine($matches[1], $matches[2]);</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    }</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span> </div>
+<div class="foldopen" id="foldopen00531" data-start="{" data-end="}">
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6">  531</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6">parseDocComment</a>(<span class="keywordtype">string</span> $docComment) : array{</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        $rawDocComment = substr($docComment, 3, -2); <span class="comment">//remove the opening and closing markers</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        preg_match_all(<span class="stringliteral">&#39;/(*ANYCRLF)^[\t ]*(?:\* )?@([a-zA-Z\-]+)(?:[\t ]+(.+?))?[\t ]*$/m&#39;</span>, $rawDocComment, $matches);</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        <span class="keywordflow">return</span> array_combine($matches[1], $matches[2]);</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    }</div>
 </div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
-<div class="foldopen" id="foldopen00540" data-start="{" data-end="}">
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60">  540</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60">testValidInstance</a>(<span class="keywordtype">string</span> $className, <span class="keywordtype">string</span> $baseName) : void{</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        $baseInterface = false;</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        <span class="keywordflow">if</span>(!class_exists($baseName)){</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>            <span class="keywordflow">if</span>(!interface_exists($baseName)){</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>                <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Base class $baseName does not exist&quot;</span>);</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>            }</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>            $baseInterface = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        }</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>        <span class="keywordflow">if</span>(!class_exists($className)){</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Class $className does not exist or is not a class&quot;</span>);</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        }</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        <span class="keywordflow">if</span>(!is_a($className, $baseName, <span class="keyword">true</span>)){</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Class $className does not &quot;</span> . ($baseInterface ? <span class="stringliteral">&quot;implement&quot;</span> : <span class="stringliteral">&quot;extend&quot;</span>) . <span class="stringliteral">&quot; $baseName&quot;</span>);</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        }</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        $class = new \ReflectionClass($className);</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        <span class="keywordflow">if</span>(!$class-&gt;isInstantiable()){</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Class $className cannot be constructed&quot;</span>);</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        }</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    }</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
+<div class="foldopen" id="foldopen00542" data-start="{" data-end="}">
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60">  542</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60">testValidInstance</a>(<span class="keywordtype">string</span> $className, <span class="keywordtype">string</span> $baseName) : void{</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        $baseInterface = false;</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        <span class="keywordflow">if</span>(!class_exists($baseName)){</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>            <span class="keywordflow">if</span>(!interface_exists($baseName)){</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>                <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Base class $baseName does not exist&quot;</span>);</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>            }</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>            $baseInterface = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        }</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        <span class="keywordflow">if</span>(!class_exists($className)){</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Class $className does not exist or is not a class&quot;</span>);</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        }</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        <span class="keywordflow">if</span>(!is_a($className, $baseName, <span class="keyword">true</span>)){</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Class $className does not &quot;</span> . ($baseInterface ? <span class="stringliteral">&quot;implement&quot;</span> : <span class="stringliteral">&quot;extend&quot;</span>) . <span class="stringliteral">&quot; $baseName&quot;</span>);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        }</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        $class = new \ReflectionClass($className);</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="keywordflow">if</span>(!$class-&gt;isInstantiable()){</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Class $className cannot be constructed&quot;</span>);</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        }</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    }</div>
 </div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="foldopen" id="foldopen00572" data-start="{" data-end="}">
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">  572</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">validateCallableSignature</a>(callable|<a class="code hl_class" href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">CallbackType</a> $signature, callable $subject) : void{</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>        if(!($signature instanceof <a class="code hl_class" href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">CallbackType</a>)){</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>            $signature = CallbackType::createFromCallable($signature);</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        }</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        <span class="keywordflow">if</span>(!$signature-&gt;isSatisfiedBy($subject)){</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>            <span class="keywordflow">throw</span> new \TypeError(<span class="stringliteral">&quot;Declaration of callable `&quot;</span> . CallbackType::createFromCallable($subject) . <span class="stringliteral">&quot;` must be compatible with `&quot;</span> . $signature . <span class="stringliteral">&quot;`&quot;</span>);</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        }</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    }</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
+<div class="foldopen" id="foldopen00574" data-start="{" data-end="}">
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">  574</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">validateCallableSignature</a>(callable|<a class="code hl_class" href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">CallbackType</a> $signature, callable $subject) : void{</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        if(!($signature instanceof <a class="code hl_class" href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">CallbackType</a>)){</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>            $signature = CallbackType::createFromCallable($signature);</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        }</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        <span class="keywordflow">if</span>(!$signature-&gt;isSatisfiedBy($subject)){</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            <span class="keywordflow">throw</span> new \TypeError(<span class="stringliteral">&quot;Declaration of callable `&quot;</span> . CallbackType::createFromCallable($subject) . <span class="stringliteral">&quot;` must be compatible with `&quot;</span> . $signature . <span class="stringliteral">&quot;`&quot;</span>);</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        }</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    }</div>
 </div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
-<div class="foldopen" id="foldopen00586" data-start="{" data-end="}">
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d">  586</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d">validateArrayValueType</a>(array $array, \Closure $validator) : void{</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        foreach($array as $k =&gt; $v){</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>            <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                $validator($v);</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>            }<span class="keywordflow">catch</span>(\TypeError $e){</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>                <span class="keywordflow">throw</span> new \TypeError(<span class="stringliteral">&quot;Incorrect type of element at \&quot;$k\&quot;: &quot;</span> . $e-&gt;getMessage(), 0, $e);</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>            }</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        }</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="foldopen" id="foldopen00588" data-start="{" data-end="}">
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d">  588</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d">validateArrayValueType</a>(array $array, \Closure $validator) : void{</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        foreach($array as $k =&gt; $v){</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>            <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>                $validator($v);</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>            }<span class="keywordflow">catch</span>(\TypeError $e){</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>                <span class="keywordflow">throw</span> new \TypeError(<span class="stringliteral">&quot;Incorrect type of element at \&quot;$k\&quot;: &quot;</span> . $e-&gt;getMessage(), 0, $e);</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>            }</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        }</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    }</div>
 </div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
-<div class="foldopen" id="foldopen00606" data-start="{" data-end="}">
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">  606</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">stringifyKeys</a>(array $array) : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        foreach($array as $key =&gt; $value){ <span class="comment">// @phpstan-ignore-line - this is where we fix the stupid bullshit with array keys :)</span></div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            yield (<span class="keywordtype">string</span>) $key =&gt; $value;</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        }</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    }</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
+<div class="foldopen" id="foldopen00608" data-start="{" data-end="}">
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">  608</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">stringifyKeys</a>(array $array) : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        foreach($array as $key =&gt; $value){ <span class="comment">// @phpstan-ignore-line - this is where we fix the stupid bullshit with array keys :)</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>            yield (<span class="keywordtype">string</span>) $key =&gt; $value;</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        }</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    }</div>
 </div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
-<div class="foldopen" id="foldopen00620" data-start="{" data-end="}">
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afcafffb0ea3cd0c64bce46a119d6855c">  620</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afcafffb0ea3cd0c64bce46a119d6855c">promoteKeys</a>(array $array) : array{</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        return $array;</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    }</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
+<div class="foldopen" id="foldopen00622" data-start="{" data-end="}">
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afcafffb0ea3cd0c64bce46a119d6855c">  622</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afcafffb0ea3cd0c64bce46a119d6855c">promoteKeys</a>(array $array) : array{</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        return $array;</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    }</div>
 </div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkUTF8(<span class="keywordtype">string</span> $string) : void{</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        if(!mb_check_encoding($string, <span class="stringliteral">&#39;UTF-8&#39;</span>)){</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Text must be valid UTF-8&quot;</span>);</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        }</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    }</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
-<div class="foldopen" id="foldopen00636" data-start="{" data-end="}">
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">  636</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">assumeNotFalse</a>(mixed $value, \Closure|<span class="keywordtype">string</span> $context = <span class="stringliteral">&quot;This should never be false&quot;</span>) : mixed{</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        if($value === false){</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Assumption failure: &quot;</span> . (is_string($context) ? $context : $context()) . <span class="stringliteral">&quot; (THIS IS A BUG)&quot;</span>);</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        }</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        <span class="keywordflow">return</span> $value;</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    }</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkUTF8(<span class="keywordtype">string</span> $string) : void{</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        if(!mb_check_encoding($string, <span class="stringliteral">&#39;UTF-8&#39;</span>)){</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Text must be valid UTF-8&quot;</span>);</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        }</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    }</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
+<div class="foldopen" id="foldopen00638" data-start="{" data-end="}">
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">  638</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">assumeNotFalse</a>(mixed $value, \Closure|<span class="keywordtype">string</span> $context = <span class="stringliteral">&quot;This should never be false&quot;</span>) : mixed{</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        if($value === false){</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Assumption failure: &quot;</span> . (is_string($context) ? $context : $context()) . <span class="stringliteral">&quot; (THIS IS A BUG)&quot;</span>);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        }</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        <span class="keywordflow">return</span> $value;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    }</div>
 </div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkFloatNotInfOrNaN(<span class="keywordtype">string</span> $name, <span class="keywordtype">float</span> $float) : void{</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        if(is_nan($float)){</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;$name cannot be NaN&quot;</span>);</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        }</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <span class="keywordflow">if</span>(is_infinite($float)){</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;$name cannot be infinite&quot;</span>);</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        }</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    }</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkVector3NotInfOrNaN(Vector3 $vector3) : void{</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        if($vector3 instanceof Location){ <span class="comment">//location could be masquerading as vector3</span></div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>            self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;yaw&quot;</span>, $vector3-&gt;yaw);</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>            self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;pitch&quot;</span>, $vector3-&gt;pitch);</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        }</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;x&quot;</span>, $vector3-&gt;x);</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>        self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;y&quot;</span>, $vector3-&gt;y);</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;z&quot;</span>, $vector3-&gt;z);</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    }</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkLocationNotInfOrNaN(Location $location) : void{</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        self::checkVector3NotInfOrNaN($location);</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    }</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
-<div class="foldopen" id="foldopen00670" data-start="{" data-end="}">
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a">  670</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a">getOpcacheJitMode</a>() : ?int{</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        if(</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>            function_exists(<span class="stringliteral">&#39;opcache_get_status&#39;</span>) &amp;&amp;</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>            ($opcacheStatus = opcache_get_status(false)) !== false &amp;&amp;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>            isset($opcacheStatus[<span class="stringliteral">&quot;jit&quot;</span>][<span class="stringliteral">&quot;on&quot;</span>])</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        ){</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            $jit = $opcacheStatus[<span class="stringliteral">&quot;jit&quot;</span>];</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            <span class="keywordflow">if</span>($jit[<span class="stringliteral">&quot;on&quot;</span>] === <span class="keyword">true</span>){</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                <span class="keywordflow">return</span> (($jit[<span class="stringliteral">&quot;opt_flags&quot;</span>] &gt;&gt; 2) * 1000) +</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>                    (($jit[<span class="stringliteral">&quot;opt_flags&quot;</span>] &amp; 0x03) * 100) +</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                    ($jit[<span class="stringliteral">&quot;kind&quot;</span>] * 10) +</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>                    $jit[<span class="stringliteral">&quot;opt_level&quot;</span>];</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            }</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span> </div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>            <span class="comment">//jit available, but disabled</span></div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        }</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        <span class="comment">//jit not available</span></div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    }</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkFloatNotInfOrNaN(<span class="keywordtype">string</span> $name, <span class="keywordtype">float</span> $float) : void{</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        if(is_nan($float)){</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;$name cannot be NaN&quot;</span>);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        }</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        <span class="keywordflow">if</span>(is_infinite($float)){</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;$name cannot be infinite&quot;</span>);</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>        }</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    }</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkVector3NotInfOrNaN(Vector3 $vector3) : void{</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        if($vector3 instanceof Location){ <span class="comment">//location could be masquerading as vector3</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>            self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;yaw&quot;</span>, $vector3-&gt;yaw);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>            self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;pitch&quot;</span>, $vector3-&gt;pitch);</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>        }</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;x&quot;</span>, $vector3-&gt;x);</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;y&quot;</span>, $vector3-&gt;y);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        self::checkFloatNotInfOrNaN(<span class="stringliteral">&quot;z&quot;</span>, $vector3-&gt;z);</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    }</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> checkLocationNotInfOrNaN(Location $location) : void{</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        self::checkVector3NotInfOrNaN($location);</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    }</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
+<div class="foldopen" id="foldopen00672" data-start="{" data-end="}">
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a">  672</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a">getOpcacheJitMode</a>() : ?int{</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        if(</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>            function_exists(<span class="stringliteral">&#39;opcache_get_status&#39;</span>) &amp;&amp;</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>            ($opcacheStatus = opcache_get_status(false)) !== false &amp;&amp;</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            isset($opcacheStatus[<span class="stringliteral">&quot;jit&quot;</span>][<span class="stringliteral">&quot;on&quot;</span>])</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        ){</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            $jit = $opcacheStatus[<span class="stringliteral">&quot;jit&quot;</span>];</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            <span class="keywordflow">if</span>($jit[<span class="stringliteral">&quot;on&quot;</span>] === <span class="keyword">true</span>){</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                <span class="keywordflow">return</span> (($jit[<span class="stringliteral">&quot;opt_flags&quot;</span>] &gt;&gt; 2) * 1000) +</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>                    (($jit[<span class="stringliteral">&quot;opt_flags&quot;</span>] &amp; 0x03) * 100) +</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>                    ($jit[<span class="stringliteral">&quot;kind&quot;</span>] * 10) +</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>                    $jit[<span class="stringliteral">&quot;opt_level&quot;</span>];</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>            }</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>            <span class="comment">//jit available, but disabled</span></div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        }</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        <span class="comment">//jit not available</span></div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    }</div>
 </div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>}</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="foldopen" id="foldopen00698" data-start="{" data-end="}">
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno"><a class="line" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#adec7b8e3efe887faaacd68dac025154a">  698</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#adec7b8e3efe887faaacd68dac025154a">getRandomFloat</a>() : float{</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        return mt_rand() / mt_getrandmax();</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    }</div>
+</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>}</div>
 </div>
 <div class="ttc" id="aclass_dave_random_1_1_callback_validator_1_1_callback_type_html"><div class="ttname"><a href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">DaveRandom\CallbackValidator\CallbackType</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/db9/_callback_type_8php_source.html#l00005">CallbackType.php:6</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
@@ -708,28 +716,29 @@ $(function(){initNavTree('de/dca/_utils_8php_source.html','../../'); initResizab
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_crash_info_frame_html"><div class="ttname"><a href="../../d8/d9f/classpocketmine_1_1thread_1_1_thread_crash_info_frame.html">pocketmine\thread\ThreadCrashInfoFrame</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/dea/_thread_crash_info_frame_8php_source.html#l00028">ThreadCrashInfoFrame.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="#l00103">Utils.php:103</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a24eef638f5ab45d661ecd6a9403aa8b9"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9">pocketmine\utils\Utils\printableExceptionInfo</a></div><div class="ttdeci">static printableExceptionInfo(\Throwable $e, $trace=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00409">Utils.php:409</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a2575f0e6acaedaf1d7a4fbe78329eec6"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6">pocketmine\utils\Utils\parseDocComment</a></div><div class="ttdeci">static parseDocComment(string $docComment)</div><div class="ttdef"><b>Definition</b> <a href="#l00529">Utils.php:529</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a292c99eeb9f5c7baac8531811ec237de"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">pocketmine\utils\Utils\assumeNotFalse</a></div><div class="ttdeci">static assumeNotFalse(mixed $value, \Closure|string $context=&quot;This should never be false&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00636">Utils.php:636</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a36c8869416d8f0672e18858f34ec533d"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d">pocketmine\utils\Utils\validateArrayValueType</a></div><div class="ttdeci">static validateArrayValueType(array $array, \Closure $validator)</div><div class="ttdef"><b>Definition</b> <a href="#l00586">Utils.php:586</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a496f1c43cf987c01fa66621672465bd1"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">pocketmine\utils\Utils\validateCallableSignature</a></div><div class="ttdeci">static validateCallableSignature(callable|CallbackType $signature, callable $subject)</div><div class="ttdef"><b>Definition</b> <a href="#l00572">Utils.php:572</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a5011dae1b141d5d2a263c794bb5e62d1"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1">pocketmine\utils\Utils\getMachineUniqueId</a></div><div class="ttdeci">static getMachineUniqueId(string $extra=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00199">Utils.php:199</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a61fa28abdb615125801308a857e76db7"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">pocketmine\utils\Utils\stringifyKeys</a></div><div class="ttdeci">static stringifyKeys(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00606">Utils.php:606</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a6554668929420cbb0739b8ac43ebef4e"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e">pocketmine\utils\Utils\hexdump</a></div><div class="ttdeci">static hexdump(string $bin)</div><div class="ttdef"><b>Definition</b> <a href="#l00337">Utils.php:337</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a6f0b324a58b2f53f75bd04f02f0f5019"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">pocketmine\utils\Utils\getNiceClosureName</a></div><div class="ttdeci">static getNiceClosureName(\Closure $closure)</div><div class="ttdef"><b>Definition</b> <a href="#l00122">Utils.php:122</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a713aab61da011ccfcd4bea3e6349fc67"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">pocketmine\utils\Utils\getOS</a></div><div class="ttdeci">static getOS(bool $recalculate=false)</div><div class="ttdef"><b>Definition</b> <a href="#l00275">Utils.php:275</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a73a9e68983fb530aaa371c800b498d67"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67">pocketmine\utils\Utils\currentTrace</a></div><div class="ttdeci">static currentTrace(int $skipFrames=0)</div><div class="ttdef"><b>Definition</b> <a href="#l00503">Utils.php:503</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a7efc8f01d6c7034ff0c32ad3c999bb4a"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a">pocketmine\utils\Utils\printable</a></div><div class="ttdeci">static printable(mixed $str)</div><div class="ttdef"><b>Definition</b> <a href="#l00352">Utils.php:352</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a80cbcb26d19c538cfe02a9ae3883517f"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f">pocketmine\utils\Utils\printableTraceWithMetadata</a></div><div class="ttdeci">static printableTraceWithMetadata(array $rawTrace, int $maxStringLength=80)</div><div class="ttdef"><b>Definition</b> <a href="#l00484">Utils.php:484</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a82b8d8de5245778093dd85feea8aee60"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60">pocketmine\utils\Utils\testValidInstance</a></div><div class="ttdeci">static testValidInstance(string $className, string $baseName)</div><div class="ttdef"><b>Definition</b> <a href="#l00540">Utils.php:540</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a8ff42d7f21873dd15c3c4f9ea21f8d4a"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a">pocketmine\utils\Utils\getOpcacheJitMode</a></div><div class="ttdeci">static getOpcacheJitMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00670">Utils.php:670</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_aa33b4389f5f0e9c4683cfffa1d6a897d"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d">pocketmine\utils\Utils\getNiceClassName</a></div><div class="ttdeci">static getNiceClassName(object $obj)</div><div class="ttdef"><b>Definition</b> <a href="#l00152">Utils.php:152</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_aac62997164a42bfbaa201b2d66a27c55"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">pocketmine\utils\Utils\cloneCallback</a></div><div class="ttdeci">static cloneCallback()</div><div class="ttdef"><b>Definition</b> <a href="#l00169">Utils.php:169</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_ada3d8be004e77d96080c3201394084c8"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada3d8be004e77d96080c3201394084c8">pocketmine\utils\Utils\cloneObjectArray</a></div><div class="ttdeci">static cloneObjectArray(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00185">Utils.php:185</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_ae326bf6e866851a1413f942560a8b5bd"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd">pocketmine\utils\Utils\printableTrace</a></div><div class="ttdeci">static printableTrace(array $trace, int $maxStringLength=80)</div><div class="ttdef"><b>Definition</b> <a href="#l00450">Utils.php:450</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_af00138324d8edeb90ebddacf4ec65bfb"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb">pocketmine\utils\Utils\printableCurrentTrace</a></div><div class="ttdeci">static printableCurrentTrace(int $skipFrames=0)</div><div class="ttdef"><b>Definition</b> <a href="#l00520">Utils.php:520</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_afcafffb0ea3cd0c64bce46a119d6855c"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afcafffb0ea3cd0c64bce46a119d6855c">pocketmine\utils\Utils\promoteKeys</a></div><div class="ttdeci">static promoteKeys(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00620">Utils.php:620</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="#l00105">Utils.php:105</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a24eef638f5ab45d661ecd6a9403aa8b9"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a24eef638f5ab45d661ecd6a9403aa8b9">pocketmine\utils\Utils\printableExceptionInfo</a></div><div class="ttdeci">static printableExceptionInfo(\Throwable $e, $trace=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00411">Utils.php:411</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a2575f0e6acaedaf1d7a4fbe78329eec6"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a2575f0e6acaedaf1d7a4fbe78329eec6">pocketmine\utils\Utils\parseDocComment</a></div><div class="ttdeci">static parseDocComment(string $docComment)</div><div class="ttdef"><b>Definition</b> <a href="#l00531">Utils.php:531</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a292c99eeb9f5c7baac8531811ec237de"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">pocketmine\utils\Utils\assumeNotFalse</a></div><div class="ttdeci">static assumeNotFalse(mixed $value, \Closure|string $context=&quot;This should never be false&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00638">Utils.php:638</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a36c8869416d8f0672e18858f34ec533d"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a36c8869416d8f0672e18858f34ec533d">pocketmine\utils\Utils\validateArrayValueType</a></div><div class="ttdeci">static validateArrayValueType(array $array, \Closure $validator)</div><div class="ttdef"><b>Definition</b> <a href="#l00588">Utils.php:588</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a496f1c43cf987c01fa66621672465bd1"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a496f1c43cf987c01fa66621672465bd1">pocketmine\utils\Utils\validateCallableSignature</a></div><div class="ttdeci">static validateCallableSignature(callable|CallbackType $signature, callable $subject)</div><div class="ttdef"><b>Definition</b> <a href="#l00574">Utils.php:574</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a5011dae1b141d5d2a263c794bb5e62d1"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1">pocketmine\utils\Utils\getMachineUniqueId</a></div><div class="ttdeci">static getMachineUniqueId(string $extra=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00201">Utils.php:201</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a61fa28abdb615125801308a857e76db7"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7">pocketmine\utils\Utils\stringifyKeys</a></div><div class="ttdeci">static stringifyKeys(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00608">Utils.php:608</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a6554668929420cbb0739b8ac43ebef4e"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e">pocketmine\utils\Utils\hexdump</a></div><div class="ttdeci">static hexdump(string $bin)</div><div class="ttdef"><b>Definition</b> <a href="#l00339">Utils.php:339</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a6f0b324a58b2f53f75bd04f02f0f5019"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6f0b324a58b2f53f75bd04f02f0f5019">pocketmine\utils\Utils\getNiceClosureName</a></div><div class="ttdeci">static getNiceClosureName(\Closure $closure)</div><div class="ttdef"><b>Definition</b> <a href="#l00124">Utils.php:124</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a713aab61da011ccfcd4bea3e6349fc67"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">pocketmine\utils\Utils\getOS</a></div><div class="ttdeci">static getOS(bool $recalculate=false)</div><div class="ttdef"><b>Definition</b> <a href="#l00277">Utils.php:277</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a73a9e68983fb530aaa371c800b498d67"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67">pocketmine\utils\Utils\currentTrace</a></div><div class="ttdeci">static currentTrace(int $skipFrames=0)</div><div class="ttdef"><b>Definition</b> <a href="#l00505">Utils.php:505</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a7efc8f01d6c7034ff0c32ad3c999bb4a"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a7efc8f01d6c7034ff0c32ad3c999bb4a">pocketmine\utils\Utils\printable</a></div><div class="ttdeci">static printable(mixed $str)</div><div class="ttdef"><b>Definition</b> <a href="#l00354">Utils.php:354</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a80cbcb26d19c538cfe02a9ae3883517f"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a80cbcb26d19c538cfe02a9ae3883517f">pocketmine\utils\Utils\printableTraceWithMetadata</a></div><div class="ttdeci">static printableTraceWithMetadata(array $rawTrace, int $maxStringLength=80)</div><div class="ttdef"><b>Definition</b> <a href="#l00486">Utils.php:486</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a82b8d8de5245778093dd85feea8aee60"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a82b8d8de5245778093dd85feea8aee60">pocketmine\utils\Utils\testValidInstance</a></div><div class="ttdeci">static testValidInstance(string $className, string $baseName)</div><div class="ttdef"><b>Definition</b> <a href="#l00542">Utils.php:542</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a8ff42d7f21873dd15c3c4f9ea21f8d4a"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a8ff42d7f21873dd15c3c4f9ea21f8d4a">pocketmine\utils\Utils\getOpcacheJitMode</a></div><div class="ttdeci">static getOpcacheJitMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00672">Utils.php:672</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_aa33b4389f5f0e9c4683cfffa1d6a897d"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aa33b4389f5f0e9c4683cfffa1d6a897d">pocketmine\utils\Utils\getNiceClassName</a></div><div class="ttdeci">static getNiceClassName(object $obj)</div><div class="ttdef"><b>Definition</b> <a href="#l00154">Utils.php:154</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_aac62997164a42bfbaa201b2d66a27c55"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">pocketmine\utils\Utils\cloneCallback</a></div><div class="ttdeci">static cloneCallback()</div><div class="ttdef"><b>Definition</b> <a href="#l00171">Utils.php:171</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_ada3d8be004e77d96080c3201394084c8"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada3d8be004e77d96080c3201394084c8">pocketmine\utils\Utils\cloneObjectArray</a></div><div class="ttdeci">static cloneObjectArray(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00187">Utils.php:187</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_adec7b8e3efe887faaacd68dac025154a"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#adec7b8e3efe887faaacd68dac025154a">pocketmine\utils\Utils\getRandomFloat</a></div><div class="ttdeci">static getRandomFloat()</div><div class="ttdef"><b>Definition</b> <a href="#l00698">Utils.php:698</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_ae326bf6e866851a1413f942560a8b5bd"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae326bf6e866851a1413f942560a8b5bd">pocketmine\utils\Utils\printableTrace</a></div><div class="ttdeci">static printableTrace(array $trace, int $maxStringLength=80)</div><div class="ttdef"><b>Definition</b> <a href="#l00452">Utils.php:452</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_af00138324d8edeb90ebddacf4ec65bfb"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#af00138324d8edeb90ebddacf4ec65bfb">pocketmine\utils\Utils\printableCurrentTrace</a></div><div class="ttdeci">static printableCurrentTrace(int $skipFrames=0)</div><div class="ttdef"><b>Definition</b> <a href="#l00522">Utils.php:522</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_afcafffb0ea3cd0c64bce46a119d6855c"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afcafffb0ea3cd0c64bce46a119d6855c">pocketmine\utils\Utils\promoteKeys</a></div><div class="ttdeci">static promoteKeys(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00622">Utils.php:622</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_html"><div class="ttname"><a href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">pocketmine\world\generator\Generator</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9c/_generator_8php_source.html#l00034">Generator.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

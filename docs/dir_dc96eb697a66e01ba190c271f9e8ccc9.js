@@ -12,5 +12,7 @@ var dir_dc96eb697a66e01ba190c271f9e8ccc9 =
     [ "GarbageCollectionTask.php", "da/d12/_garbage_collection_task_8php_source.html", null ],
     [ "Task.php", "df/d19/_task_8php_source.html", null ],
     [ "TaskHandler.php", "d9/d3d/_task_handler_8php_source.html", null ],
-    [ "TaskScheduler.php", "db/dd3/_task_scheduler_8php_source.html", null ]
+    [ "TaskScheduler.php", "db/dd3/_task_scheduler_8php_source.html", null ],
+    [ "TimingsCollectionTask.php", "d2/d83/_timings_collection_task_8php_source.html", null ],
+    [ "TimingsControlTask.php", "dd/d19/_timings_control_task_8php_source.html", null ]
 ];

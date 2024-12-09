@@ -2,7 +2,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet 
 [
     [ "__get", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2", null ],
     [ "__set", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ab869f6f8d246ff2f83744b48f43c4b54", null ],
-    [ "create", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a6b9c3e4a5eb7a62fc13d27924135d894", null ],
+    [ "create", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27", null ],
     [ "decode", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aa064d23077830ab265f931c3385a3e0d", null ],
     [ "decodeHeader", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a7f34ca0fc75361b63314614a92d08b49", null ],
     [ "decodePayload", "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#af64a069804def0ae9e5097f75bfa3b36", null ],

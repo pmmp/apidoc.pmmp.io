@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.21.3 git-fcef015f32c0b0709cfd4d6f1b3c32f484b25bde</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.2 git-45917d495c14f3ce37bbf0848262ad8a470030f3</span>
    </div>
   </td>
  </tr>
@@ -142,11 +142,12 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Task implementation which allows closures to be called by a scheduler.</p>
 <p>Example usage:</p>
-<div class="fragment"><div class="line"><a class="code hl_class" href="../../db/d5a/classpocketmine_1_1scheduler_1_1_task_scheduler.html">TaskScheduler</a>-&gt;scheduleTask(<span class="keyword">new</span> <a class="code hl_class" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html">ClosureTask</a>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
+<div class="fragment"><div class="line"><a class="code hl_class" href="../../db/d5a/classpocketmine_1_1scheduler_1_1_task_scheduler.html">TaskScheduler</a>-&gt;<a class="code hl_function" href="../../db/d5a/classpocketmine_1_1scheduler_1_1_task_scheduler.html#afbc354dac0d2683ac4a857636f1017f6">scheduleTask</a>(<span class="keyword">new</span> <a class="code hl_class" href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html">ClosureTask</a>(<span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
 <div class="line">    echo <span class="stringliteral">&quot;HI\n&quot;</span>;</div>
 <div class="line">});</div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_closure_task_html"><div class="ttname"><a href="../../d3/df3/classpocketmine_1_1scheduler_1_1_closure_task.html">pocketmine\scheduler\ClosureTask</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dff/_closure_task_8php_source.html#l00041">ClosureTask.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_task_scheduler_html"><div class="ttname"><a href="../../db/d5a/classpocketmine_1_1scheduler_1_1_task_scheduler.html">pocketmine\scheduler\TaskScheduler</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/dd3/_task_scheduler_8php_source.html#l00033">TaskScheduler.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_task_scheduler_html_afbc354dac0d2683ac4a857636f1017f6"><div class="ttname"><a href="../../db/d5a/classpocketmine_1_1scheduler_1_1_task_scheduler.html#afbc354dac0d2683ac4a857636f1017f6">pocketmine\scheduler\TaskScheduler\scheduleTask</a></div><div class="ttdeci">scheduleTask(Task $task)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dd3/_task_scheduler_8php_source.html#l00060">TaskScheduler.php:60</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="../../d2/dff/_closure_task_8php_source.html#l00041">41</a> of file <a class="el" href="../../d2/dff/_closure_task_8php_source.html">ClosureTask.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -198,8 +199,18 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>@phpstan-return TaskHandler&lt;static&gt;|null </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d19/_task_8php_source.html#l00031">31</a> of file <a class="el" href="../../df/d19/_task_8php_source.html">Task.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d19/_task_8php_source.html#l00035">35</a> of file <a class="el" href="../../df/d19/_task_8php_source.html">Task.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d3d/_task_handler_8php_source.html#l00045">pocketmine\scheduler\TaskHandler\__construct()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d5e/classpocketmine_1_1scheduler_1_1_task_a153c9206c78219aa5ce67f6397bd385e_icgraph.svg" width="408" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -248,7 +259,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Actions to execute if the Task is cancelled </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d19/_task_8php_source.html#l00055">55</a> of file <a class="el" href="../../df/d19/_task_8php_source.html">Task.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d19/_task_8php_source.html#l00062">62</a> of file <a class="el" href="../../df/d19/_task_8php_source.html">Task.php</a>.</p>
 
 </div>
 </div>
@@ -302,8 +313,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>@phpstan-param TaskHandler&lt;static&gt;|null $taskHandler </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d19/_task_8php_source.html#l00039">39</a> of file <a class="el" href="../../df/d19/_task_8php_source.html">Task.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d19/_task_8php_source.html#l00046">46</a> of file <a class="el" href="../../df/d19/_task_8php_source.html">Task.php</a>.</p>
 
 </div>
 </div>

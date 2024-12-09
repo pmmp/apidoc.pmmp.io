@@ -9,7 +9,6 @@ var dir_67ec95640dccd85af7425ce27c77136c =
     [ "log", "dir_efb60bdb276935829773856a552a996d.html", "dir_efb60bdb276935829773856a552a996d" ],
     [ "math", "dir_6af29372318209bdbb325ad6a4576b13.html", "dir_6af29372318209bdbb325ad6a4576b13" ],
     [ "nbt", "dir_1a17901ef04850eab3788e99ea4fdab1.html", "dir_1a17901ef04850eab3788e99ea4fdab1" ],
-    [ "netresearch-jsonmapper", "dir_ddf2ec4225a8d97a61f2f8009b7ec006.html", "dir_ddf2ec4225a8d97a61f2f8009b7ec006" ],
     [ "raklib", "dir_b8c246ef830a7a3f40b614f5ad5d50aa.html", "dir_b8c246ef830a7a3f40b614f5ad5d50aa" ],
     [ "raklib-ipc", "dir_b1b6a6773bf528619d8e5723c685dbd0.html", "dir_b1b6a6773bf528619d8e5723c685dbd0" ],
     [ "snooze", "dir_54570eb7b05a375cad27a3697bad1cc0.html", "dir_54570eb7b05a375cad27a3697bad1cc0" ]
