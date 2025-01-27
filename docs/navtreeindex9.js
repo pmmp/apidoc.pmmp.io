@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,43,28],
+"d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,42,39],
 "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aba073e91196cf2978057ec4d3842aa76":[3,0,1,12,43,39],
 "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#abd2688f008221d4c5fcdacac754d807e":[2,0,0,5,42,36],
 "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#abd2688f008221d4c5fcdacac754d807e":[3,0,1,12,43,36],
@@ -164,7 +166,7 @@ var NAVTREEINDEX9 =
 "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#afb8b72cf7f604691019ea69cdd54f5aa":[2,0,0,5,41,14],
 "d0/db1/classpocketmine_1_1item_1_1_ender_pearl.html#afb8b72cf7f604691019ea69cdd54f5aa":[3,0,1,12,42,14],
 "d0/db4/_deprecated_crafting_results_stack_request_action_8php_source.html":[4,0,1,0,1,0,1,4,0,8],
-"d0/db4/_wither_rose_8php_source.html":[4,0,0,0,245],
+"d0/db4/_wither_rose_8php_source.html":[4,0,0,0,246],
 "d0/db5/classpocketmine_1_1world_1_1format_1_1_chunk_exception.html":[3,0,1,30,1,2],
 "d0/db6/_dyed_shulker_box_8php_source.html":[4,0,0,0,89],
 "d0/db6/interfacepocketmine_1_1player_1_1chat_1_1_chat_formatter.html":[3,0,1,18,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,158,11],
 "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,160,11],
 "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,158,65],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,160,65],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,158,38],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,160,38]
+"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,160,65]
 };

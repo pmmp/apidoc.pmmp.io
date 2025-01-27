@@ -6,5 +6,6 @@ var searchData=
   ['source_5ftype_5fcrafting_5fresult_3',['SOURCE_TYPE_CRAFTING_RESULT',['../d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action.html#ad9346d7c46042dbc23c3ca68bccb8d48',1,'pocketmine::network::mcpe::protocol::types::inventory::NetworkInventoryAction']]],
   ['sprint_5fdown_4',['SPRINT_DOWN',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a3c615a13f55cc8901a01ec33190ed3bd',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
   ['sprinting_5',['SPRINTING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a1f4a5091799df3ebfdab5574d297849e',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['start_5fjumping_6',['START_JUMPING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#af9866f3aa8f5c5af9f4b5ace7c451668',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]]
+  ['start_5fjumping_6',['START_JUMPING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#af9866f3aa8f5c5af9f4b5ace7c451668',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
+  ['strikethrough_7',['STRIKETHROUGH',['../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0671e59be6d7188889a00867161762c1',1,'pocketmine::utils::TextFormat']]]
 ];

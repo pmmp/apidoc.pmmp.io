@@ -2,7 +2,7 @@ var NAVTREEINDEX0 =
 {
 "annotated.html":[3,0],
 "classes.html":[3,1],
-"d0/d03/_torchflower_crop_8php_source.html":[4,0,0,0,224],
+"d0/d03/_torchflower_crop_8php_source.html":[4,0,0,0,225],
 "d0/d03/classpocketmine_1_1block_1_1_copper_grate.html":[2,0,0,0,66],
 "d0/d03/classpocketmine_1_1block_1_1_copper_grate.html":[3,0,1,0,68],
 "d0/d03/classpocketmine_1_1block_1_1_copper_grate.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,66,48],
@@ -150,7 +150,7 @@ var NAVTREEINDEX0 =
 "d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html#af9eccc96a6d64967f5555fd117b8cab5":[2,0,0,14,5,1],
 "d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html#af9eccc96a6d64967f5555fd117b8cab5":[3,0,1,30,11,1],
 "d0/d04/_permission_attachment_info_8php_source.html":[4,0,0,13,10],
-"d0/d05/src_2_server_8php_source.html":[4,0,0,30],
+"d0/d05/src_2_server_8php_source.html":[4,0,0,32],
 "d0/d06/_player_pre_login_event_8php_source.html":[4,0,0,7,3,36],
 "d0/d06/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_tag.html":[3,0,1,6,0,0,1,0,3],
 "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html":[3,0,1,16,0,6,202],

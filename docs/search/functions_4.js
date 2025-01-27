@@ -74,6 +74,6 @@ var searchData=
   ['dropexperience_71',['dropExperience',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#ae88d3a62ea6d1672edd83e176faab98c',1,'pocketmine::world::World']]],
   ['dropitem_72',['dropItem',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#a255499dccf90a1ab4ab52598dbda73d1',1,'pocketmine::player::Player']]],
   ['dummyvalidator_73',['dummyValidator',['../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html#aaff0e19c83dbe54f54a63d275035d4e7',1,'pocketmine::world::BlockTransaction']]],
-  ['dumpmemory_74',['dumpMemory',['../d3/df7/classpocketmine_1_1_memory_manager.html#a2a420ac63120c701f02f024ef3b8ae11',1,'pocketmine::MemoryManager']]],
+  ['dumpmemory_74',['dumpMemory',['../dc/da9/classpocketmine_1_1_memory_dump.html#a4489ea78bb006a293a65ee517ab8e2f5',1,'pocketmine\MemoryDump\dumpMemory()'],['../d3/df7/classpocketmine_1_1_memory_manager.html#a2a420ac63120c701f02f024ef3b8ae11',1,'pocketmine\MemoryManager\dumpMemory(mixed $startingObject, string $outputFolder, int $maxNesting, int $maxStringSize, \Logger $logger)']]],
   ['dumpservermemory_75',['dumpServerMemory',['../d3/df7/classpocketmine_1_1_memory_manager.html#a07d9abf4acf752df9d2b4d996a6aceca',1,'pocketmine::MemoryManager']]]
 ];

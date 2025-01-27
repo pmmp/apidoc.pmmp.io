@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -144,7 +144,7 @@ $(function(){initNavTree('d0/dbe/_git_8php_source.html','../../'); initResizable
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/db8/classpocketmine_1_1utils_1_1_git.html#af75498621cc2e98f0753114d37f6e82c">   41</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/db8/classpocketmine_1_1utils_1_1_git.html#af75498621cc2e98f0753114d37f6e82c">getRepositoryState</a>(<span class="keywordtype">string</span> $dir, <span class="keywordtype">bool</span> &amp;$dirty) : ?string{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        if(<a class="code hl_class" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">Process</a>::execute(<span class="stringliteral">&quot;git -C \&quot;$dir\&quot; rev-parse HEAD&quot;</span>, $out) === 0 &amp;&amp; $out !== false &amp;&amp; strlen($out = trim($out)) === 40){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        if(<a class="code hl_class" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html">Process</a>::execute(<span class="stringliteral">&quot;git -C \&quot;$dir\&quot; rev-parse HEAD&quot;</span>, $out) === 0 &amp;&amp; strlen($out = trim($out)) === 40){</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a4141db8bcbf43c610e3b2894f8c8e2dc">Process::execute</a>(<span class="stringliteral">&quot;git -C \&quot;$dir\&quot; diff --quiet&quot;</span>) === 1 || <a class="code hl_function" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a4141db8bcbf43c610e3b2894f8c8e2dc">Process::execute</a>(<span class="stringliteral">&quot;git -C \&quot;$dir\&quot; diff --cached --quiet&quot;</span>) === 1){ <span class="comment">//Locally-modified</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                $dirty = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>

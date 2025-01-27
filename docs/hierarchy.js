@@ -335,6 +335,7 @@ var hierarchy =
             [ "pocketmine\\block\\WeightedPressurePlateLight", "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html", null ]
           ] ]
         ] ],
+        [ "pocketmine\\block\\ResinClump", "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html", null ],
         [ "pocketmine\\block\\SeaLantern", "d2/d6d/classpocketmine_1_1block_1_1_sea_lantern.html", null ],
         [ "pocketmine\\block\\SeaPickle", "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html", null ],
         [ "pocketmine\\block\\Slab", "dc/d60/classpocketmine_1_1block_1_1_slab.html", [
@@ -1012,6 +1013,7 @@ var hierarchy =
       [ "pocketmine\\network\\mcpe\\protocol\\types\\IntGameRule", "d5/db4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_int_game_rule.html", null ]
     ] ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\GameRuleType", "dd/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_rule_type.html", null ],
+    [ "pocketmine\\GarbageCollectorManager", "d5/df8/classpocketmine_1_1_garbage_collector_manager.html", null ],
     [ "pocketmine\\world\\generator\\Gaussian", "d4/d82/classpocketmine_1_1world_1_1generator_1_1_gaussian.html", null ],
     [ "pocketmine\\world\\generator\\Generator", "d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html", [
       [ "pocketmine\\world\\generator\\Flat", "d1/dd4/classpocketmine_1_1world_1_1generator_1_1_flat.html", null ],
@@ -1354,6 +1356,7 @@ var hierarchy =
     [ "pocketmine\\math\\Math", "d4/db7/classpocketmine_1_1math_1_1_math.html", null ],
     [ "pocketmine\\data\\bedrock\\MedicineTypeIdMap", "d2/d53/classpocketmine_1_1data_1_1bedrock_1_1_medicine_type_id_map.html", null ],
     [ "pocketmine\\data\\bedrock\\MedicineTypeIds", "d9/df2/classpocketmine_1_1data_1_1bedrock_1_1_medicine_type_ids.html", null ],
+    [ "pocketmine\\MemoryDump", "dc/da9/classpocketmine_1_1_memory_dump.html", null ],
     [ "pocketmine\\MemoryManager", "d3/df7/classpocketmine_1_1_memory_manager.html", null ],
     [ "raklib\\protocol\\MessageIdentifiers", "dd/d22/interfaceraklib_1_1protocol_1_1_message_identifiers.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\entity\\MetadataProperty", "d0/d15/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_metadata_property.html", [

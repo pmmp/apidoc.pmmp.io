@@ -263,6 +263,7 @@ var annotated_dup =
         [ "RedstoneTorch", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch" ],
         [ "RedstoneWire", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire" ],
         [ "Reserved6", "dd/dec/classpocketmine_1_1block_1_1_reserved6.html", "dd/dec/classpocketmine_1_1block_1_1_reserved6" ],
+        [ "ResinClump", "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html", "d1/da4/classpocketmine_1_1block_1_1_resin_clump" ],
         [ "RuntimeBlockStateRegistry", "de/d2c/classpocketmine_1_1block_1_1_runtime_block_state_registry.html", "de/d2c/classpocketmine_1_1block_1_1_runtime_block_state_registry" ],
         [ "Sand", "d3/d39/classpocketmine_1_1block_1_1_sand.html", "d3/d39/classpocketmine_1_1block_1_1_sand" ],
         [ "Sapling", "d6/d87/classpocketmine_1_1block_1_1_sapling.html", "d6/d87/classpocketmine_1_1block_1_1_sapling" ],
@@ -2013,6 +2014,8 @@ var annotated_dup =
         [ "WorldTimings", "d7/d08/classpocketmine_1_1world_1_1_world_timings.html", null ]
       ] ],
       [ "BootstrapOptions", "d7/dbe/classpocketmine_1_1_bootstrap_options.html", "d7/dbe/classpocketmine_1_1_bootstrap_options" ],
+      [ "GarbageCollectorManager", "d5/df8/classpocketmine_1_1_garbage_collector_manager.html", null ],
+      [ "MemoryDump", "dc/da9/classpocketmine_1_1_memory_dump.html", "dc/da9/classpocketmine_1_1_memory_dump" ],
       [ "MemoryManager", "d3/df7/classpocketmine_1_1_memory_manager.html", "d3/df7/classpocketmine_1_1_memory_manager" ],
       [ "Server", "d5/df7/classpocketmine_1_1_server.html", "d5/df7/classpocketmine_1_1_server" ],
       [ "ServerConfigGroup", "d1/d84/classpocketmine_1_1_server_config_group.html", null ],

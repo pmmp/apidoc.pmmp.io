@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -318,33 +318,34 @@ $(function(){initNavTree('d2/dbd/_u_pn_p_8php_source.html','../../'); initResiza
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="stringliteral">&#39;SOAPAction: &quot;urn:schemas-upnp-org:service:WANIPConnection:1#AddPortMapping&quot;&#39;</span></div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        ];</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">if</span>(Internet::postURL($serviceURL, $contents, 3, $headers, $err) === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../db/d7a/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_exception.html">UPnPException</a>(<span class="stringliteral">&quot;Failed to portforward using UPnP: &quot;</span> . $err);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        $err = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordflow">if</span>(Internet::postURL($serviceURL, $contents, 3, $headers, $err) === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../db/d7a/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_exception.html">UPnPException</a>(<span class="stringliteral">&quot;Failed to portforward using UPnP: &quot;</span> . $err);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
 </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> removePortForward(<span class="keywordtype">string</span> $serviceURL, <span class="keywordtype">int</span> $externalPort) : void{</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        $body =</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="stringliteral">&#39;&lt;u:DeletePortMapping xmlns:u=&quot;urn:schemas-upnp-org:service:WANIPConnection:1&quot;&gt;&#39;</span> .</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                <span class="stringliteral">&#39;&lt;NewRemoteHost&gt;&lt;/NewRemoteHost&gt;&#39;</span> .</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="stringliteral">&#39;&lt;NewExternalPort&gt;&#39;</span> . $externalPort . <span class="stringliteral">&#39;&lt;/NewExternalPort&gt;&#39;</span> .</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="stringliteral">&#39;&lt;NewProtocol&gt;UDP&lt;/NewProtocol&gt;&#39;</span> .</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="stringliteral">&#39;&lt;/u:DeletePortMapping&gt;&#39;</span>;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        $contents =</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="stringliteral">&#39;&lt;?xml version=&quot;1.0&quot;?&gt;&#39;</span> .</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <span class="stringliteral">&#39;&lt;s:Envelope xmlns:s=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; s:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;&#39;</span> .</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <span class="stringliteral">&#39;&lt;s:Body&gt;&#39;</span> . $body . <span class="stringliteral">&#39;&lt;/s:Body&gt;&lt;/s:Envelope&gt;&#39;</span>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        $headers = [</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="stringliteral">&#39;Content-Type: text/xml&#39;</span>,</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="stringliteral">&#39;SOAPAction: &quot;urn:schemas-upnp-org:service:WANIPConnection:1#DeletePortMapping&quot;&#39;</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        ];</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        Internet::postURL($serviceURL, $contents, 3, $headers);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>}</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> removePortForward(<span class="keywordtype">string</span> $serviceURL, <span class="keywordtype">int</span> $externalPort) : void{</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        $body =</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="stringliteral">&#39;&lt;u:DeletePortMapping xmlns:u=&quot;urn:schemas-upnp-org:service:WANIPConnection:1&quot;&gt;&#39;</span> .</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="stringliteral">&#39;&lt;NewRemoteHost&gt;&lt;/NewRemoteHost&gt;&#39;</span> .</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="stringliteral">&#39;&lt;NewExternalPort&gt;&#39;</span> . $externalPort . <span class="stringliteral">&#39;&lt;/NewExternalPort&gt;&#39;</span> .</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <span class="stringliteral">&#39;&lt;NewProtocol&gt;UDP&lt;/NewProtocol&gt;&#39;</span> .</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="stringliteral">&#39;&lt;/u:DeletePortMapping&gt;&#39;</span>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        $contents =</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <span class="stringliteral">&#39;&lt;?xml version=&quot;1.0&quot;?&gt;&#39;</span> .</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <span class="stringliteral">&#39;&lt;s:Envelope xmlns:s=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; s:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;&#39;</span> .</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="stringliteral">&#39;&lt;s:Body&gt;&#39;</span> . $body . <span class="stringliteral">&#39;&lt;/s:Body&gt;&lt;/s:Envelope&gt;&#39;</span>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        $headers = [</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="stringliteral">&#39;Content-Type: text/xml&#39;</span>,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="stringliteral">&#39;SOAPAction: &quot;urn:schemas-upnp-org:service:WANIPConnection:1#DeletePortMapping&quot;&#39;</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        ];</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        Internet::postURL($serviceURL, $contents, 3, $headers);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1upnp_1_1_u_pn_p_exception_html"><div class="ttname"><a href="../../db/d7a/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_exception.html">pocketmine\network\upnp\UPnPException</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/dba/_u_pn_p_exception_8php_source.html#l00026">UPnPException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1upnp_1_1_u_pn_p_html"><div class="ttname"><a href="../../d2/d96/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p.html">pocketmine\network\upnp\UPnP</a></div><div class="ttdef"><b>Definition</b> <a href="#l00088">UPnP.php:88</a></div></div>

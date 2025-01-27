@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -205,7 +205,7 @@ $(function(){initNavTree('db/d9a/_zipped_resource_pack_8php_source.html','../../
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">try</span>{</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            $manifest = (<span class="keyword">new</span> CommentedJsonDecoder())-&gt;decode($manifestData);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }<span class="keywordflow">catch</span>(\RuntimeException $e){</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/da2/classpocketmine_1_1resourcepacks_1_1_resource_pack_exception.html">ResourcePackException</a>(<span class="stringliteral">&quot;Failed to parse manifest.json: &quot;</span> . $e-&gt;getMessage(), $e-&gt;getCode(), $e);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/da2/classpocketmine_1_1resourcepacks_1_1_resource_pack_exception.html">ResourcePackException</a>(<span class="stringliteral">&quot;Failed to parse manifest.json: &quot;</span> . $e-&gt;getMessage(), 0, $e);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span>(!($manifest instanceof \stdClass)){</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/da2/classpocketmine_1_1resourcepacks_1_1_resource_pack_exception.html">ResourcePackException</a>(<span class="stringliteral">&quot;manifest.json should contain a JSON object, not &quot;</span> . gettype($manifest));</div>

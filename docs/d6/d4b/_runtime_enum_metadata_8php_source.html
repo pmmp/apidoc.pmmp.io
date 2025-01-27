@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -131,71 +131,70 @@ $(function(){initNavTree('d6/d4b/_runtime_enum_metadata_8php_source.html','../..
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\data\runtime;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <span class="keyword">function</span> array_values;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">function</span> ceil;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> log;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> spl_object_id;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> usort;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html">   39</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html">RuntimeEnumMetadata</a>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> readonly <span class="keywordtype">int</span> $bits;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> readonly array $intToEnum;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> readonly array $enumToInt;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a730e6cf8585f321fdd9d3b7754bd1695">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a730e6cf8585f321fdd9d3b7754bd1695">__construct</a>(</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        array $members</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    ){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        usort($members, fn(\UnitEnum $a, \UnitEnum $b) =&gt; $a-&gt;name &lt;=&gt; $b-&gt;name); <span class="comment">//sort by name to ensure consistent ordering (and thus consistent bit assignments)</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;bits = (int) ceil(log(count($members), 2));</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a> = array_values($members);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $reversed = [];</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">foreach</span>($this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a> as $int =&gt; $enum){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            $reversed[spl_object_id($enum)] = $int;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">enumToInt</a> = $reversed;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <span class="keyword">function</span> ceil;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> log;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> spl_object_id;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> usort;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html">   38</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html">RuntimeEnumMetadata</a>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> readonly <span class="keywordtype">int</span> $bits;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> readonly array $intToEnum;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> readonly array $enumToInt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a730e6cf8585f321fdd9d3b7754bd1695">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a730e6cf8585f321fdd9d3b7754bd1695">__construct</a>(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        array $members</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    ){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        usort($members, fn(\UnitEnum $a, \UnitEnum $b) =&gt; $a-&gt;name &lt;=&gt; $b-&gt;name); <span class="comment">//sort by name to ensure consistent ordering (and thus consistent bit assignments)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;bits = (int) ceil(log(count($members), 2));</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a> = $members; <span class="comment">//usort strips keys so this is already a list</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $reversed = [];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">foreach</span>($this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a> as $int =&gt; $enum){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $reversed[spl_object_id($enum)] = $int;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">enumToInt</a> = $reversed;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">   76</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a>(<span class="keywordtype">int</span> $value) : ?object{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        return $this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a>[$value] ?? null;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">   75</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a>(<span class="keywordtype">int</span> $value) : ?object{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        return $this-&gt;<a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">intToEnum</a>[$value] ?? null;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">   83</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">enumToInt</a>(<span class="keywordtype">object</span> $enum) : int{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        return $this-&gt;enumToInt[spl_object_id($enum)];</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">enumToInt</a>(<span class="keywordtype">object</span> $enum) : int{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        return $this-&gt;enumToInt[spl_object_id($enum)];</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">private</span> <span class="keyword">static</span> array $cache = [];</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348">   99</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348">from</a>(\UnitEnum $case) : self{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $class = $case::class;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $metadata = self::$cache[$class] ?? <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span>($metadata === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            $cases = $case::cases();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            self::$cache[$class] = $metadata = <span class="keyword">new</span> <span class="keyword">self</span>($cases);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> $metadata;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">private</span> <span class="keyword">static</span> array $cache = [];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348">   98</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348">from</a>(\UnitEnum $case) : self{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $class = $case::class;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $metadata = self::$cache[$class] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span>($metadata === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $cases = $case::cases();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            self::$cache[$class] = $metadata = <span class="keyword">new</span> <span class="keyword">self</span>($cases);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">return</span> $metadata;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
 </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html">pocketmine\data\runtime\RuntimeEnumMetadata</a></div><div class="ttdef"><b>Definition</b> <a href="#l00039">RuntimeEnumMetadata.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a6fda7b01f37be6169ec8ff5dbba21d51"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">pocketmine\data\runtime\RuntimeEnumMetadata\enumToInt</a></div><div class="ttdeci">enumToInt(object $enum)</div><div class="ttdef"><b>Definition</b> <a href="#l00083">RuntimeEnumMetadata.php:83</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a72a4be999634166a6c0f27dd3aebd6a3"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">pocketmine\data\runtime\RuntimeEnumMetadata\intToEnum</a></div><div class="ttdeci">intToEnum(int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00076">RuntimeEnumMetadata.php:76</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a730e6cf8585f321fdd9d3b7754bd1695"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a730e6cf8585f321fdd9d3b7754bd1695">pocketmine\data\runtime\RuntimeEnumMetadata\__construct</a></div><div class="ttdeci">__construct(array $members)</div><div class="ttdef"><b>Definition</b> <a href="#l00057">RuntimeEnumMetadata.php:57</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a7c38545c649ff1853048bd7df543c348"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348">pocketmine\data\runtime\RuntimeEnumMetadata\from</a></div><div class="ttdeci">static from(\UnitEnum $case)</div><div class="ttdef"><b>Definition</b> <a href="#l00099">RuntimeEnumMetadata.php:99</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html">pocketmine\data\runtime\RuntimeEnumMetadata</a></div><div class="ttdef"><b>Definition</b> <a href="#l00038">RuntimeEnumMetadata.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a6fda7b01f37be6169ec8ff5dbba21d51"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a6fda7b01f37be6169ec8ff5dbba21d51">pocketmine\data\runtime\RuntimeEnumMetadata\enumToInt</a></div><div class="ttdeci">enumToInt(object $enum)</div><div class="ttdef"><b>Definition</b> <a href="#l00082">RuntimeEnumMetadata.php:82</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a72a4be999634166a6c0f27dd3aebd6a3"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a72a4be999634166a6c0f27dd3aebd6a3">pocketmine\data\runtime\RuntimeEnumMetadata\intToEnum</a></div><div class="ttdeci">intToEnum(int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00075">RuntimeEnumMetadata.php:75</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a730e6cf8585f321fdd9d3b7754bd1695"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a730e6cf8585f321fdd9d3b7754bd1695">pocketmine\data\runtime\RuntimeEnumMetadata\__construct</a></div><div class="ttdeci">__construct(array $members)</div><div class="ttdef"><b>Definition</b> <a href="#l00056">RuntimeEnumMetadata.php:56</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata_html_a7c38545c649ff1853048bd7df543c348"><div class="ttname"><a href="../../dc/db7/classpocketmine_1_1data_1_1runtime_1_1_runtime_enum_metadata.html#a7c38545c649ff1853048bd7df543c348">pocketmine\data\runtime\RuntimeEnumMetadata\from</a></div><div class="ttdeci">static from(\UnitEnum $case)</div><div class="ttdef"><b>Definition</b> <a href="#l00098">RuntimeEnumMetadata.php:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

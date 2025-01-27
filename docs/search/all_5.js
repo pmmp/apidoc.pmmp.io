@@ -143,7 +143,7 @@ var searchData=
   ['dropitemaction_140',['DropItemAction',['../d1/dbe/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_drop_item_action.html',1,'pocketmine::inventory::transaction::action']]],
   ['dropstackrequestaction_141',['DropStackRequestAction',['../d8/d13/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_drop_stack_request_action.html',1,'pocketmine::network::mcpe::protocol::types::inventory::stackrequest']]],
   ['dummyvalidator_142',['dummyValidator',['../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html#aaff0e19c83dbe54f54a63d275035d4e7',1,'pocketmine::world::BlockTransaction']]],
-  ['dumpmemory_143',['dumpMemory',['../d3/df7/classpocketmine_1_1_memory_manager.html#a2a420ac63120c701f02f024ef3b8ae11',1,'pocketmine::MemoryManager']]],
+  ['dumpmemory_143',['dumpMemory',['../dc/da9/classpocketmine_1_1_memory_dump.html#a4489ea78bb006a293a65ee517ab8e2f5',1,'pocketmine\MemoryDump\dumpMemory()'],['../d3/df7/classpocketmine_1_1_memory_manager.html#a2a420ac63120c701f02f024ef3b8ae11',1,'pocketmine\MemoryManager\dumpMemory()']]],
   ['dumpmemorycommand_144',['DumpMemoryCommand',['../dc/d4c/classpocketmine_1_1command_1_1defaults_1_1_dump_memory_command.html',1,'pocketmine::command::defaults']]],
   ['dumpservermemory_145',['dumpServerMemory',['../d3/df7/classpocketmine_1_1_memory_manager.html#a07d9abf4acf752df9d2b4d996a6aceca',1,'pocketmine::MemoryManager']]],
   ['dumpworkermemorytask_146',['DumpWorkerMemoryTask',['../d7/d53/classpocketmine_1_1scheduler_1_1_dump_worker_memory_task.html',1,'pocketmine::scheduler']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html#aa9a5e421f9ac781930dd93bd5ed1fe37":[3,0,1,7,14,6],
+"d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html#ab0c662560b55c92c4cbed0ddab55cb16":[2,0,0,2,9,8],
 "d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html#ab0c662560b55c92c4cbed0ddab55cb16":[3,0,1,7,14,8],
 "d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html#acb1463675e64a7063819ca4afcf28060":[2,0,0,2,9,11],
 "d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html#acb1463675e64a7063819ca4afcf28060":[3,0,1,7,14,11],
@@ -165,7 +167,7 @@ var NAVTREEINDEX15 =
 "d1/d29/classpocketmine_1_1world_1_1particle_1_1_portal_particle.html":[3,0,1,30,4,26],
 "d1/d29/classpocketmine_1_1world_1_1particle_1_1_portal_particle.html#afe0227d3ad3d0c19fcb04336e32b2a12":[3,0,1,30,4,26,0],
 "d1/d2b/_simple_event_packet_8php_source.html":[4,0,1,0,1,0,186],
-"d1/d2c/_yml_server_properties_8php_source.html":[4,0,0,35],
+"d1/d2c/_yml_server_properties_8php_source.html":[4,0,0,37],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html":[2,0,0,0,40],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html":[3,0,1,0,42],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,40,50],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,40,8],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,42,8],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a9f71fe3134778019466a863d7995e5c0":[2,0,0,0,40,16],
-"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a9f71fe3134778019466a863d7995e5c0":[3,0,1,0,42,16],
-"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,40,5],
-"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,42,5]
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a9f71fe3134778019466a863d7995e5c0":[3,0,1,0,42,16]
 };

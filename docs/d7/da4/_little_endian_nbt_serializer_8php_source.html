@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -202,23 +202,23 @@ $(function(){initNavTree('d7/da4/_little_endian_nbt_serializer_8php_source.html'
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">if</span>($len &lt; 0){</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d5/de9/classpocketmine_1_1nbt_1_1_nbt_data_exception.html">NbtDataException</a>(<span class="stringliteral">&quot;Array length cannot be less than zero ($len &lt; 0)&quot;</span>);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $unpacked = unpack(<span class="stringliteral">&quot;V*&quot;</span>, $this-&gt;buffer-&gt;get($len * 4));</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        assert($unpacked !== <span class="keyword">false</span>, <span class="stringliteral">&quot;The formatting string is valid, and we gave a multiple of 4 bytes&quot;</span>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> array_values($unpacked);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $unpacked = unpack(<span class="stringliteral">&quot;V*&quot;</span>, $this-&gt;buffer-&gt;get($len * 4));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        assert($unpacked !== <span class="keyword">false</span>, <span class="stringliteral">&quot;The formatting string is valid, and we gave a multiple of 4 bytes&quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> array_values($unpacked);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a010a1d2092df6b5a81075df65af0609d">   88</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a010a1d2092df6b5a81075df65af0609d">writeIntArray</a>(array $array) : void{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $this-&gt;writeInt(count($array));</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $this-&gt;buffer-&gt;put(pack(<span class="stringliteral">&quot;V*&quot;</span>, ...$array));</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a010a1d2092df6b5a81075df65af0609d">   89</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a010a1d2092df6b5a81075df65af0609d">writeIntArray</a>(array $array) : void{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $this-&gt;writeInt(count($array));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $this-&gt;buffer-&gt;put(pack(<span class="stringliteral">&quot;V*&quot;</span>, ...$array));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_base_nbt_serializer_html"><div class="ttname"><a href="../../de/dc3/classpocketmine_1_1nbt_1_1_base_nbt_serializer.html">pocketmine\nbt\BaseNbtSerializer</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d86/_base_nbt_serializer_8php_source.html#l00035">BaseNbtSerializer.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html">pocketmine\nbt\LittleEndianNbtSerializer</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">LittleEndianNbtSerializer.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html_a010a1d2092df6b5a81075df65af0609d"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a010a1d2092df6b5a81075df65af0609d">pocketmine\nbt\LittleEndianNbtSerializer\writeIntArray</a></div><div class="ttdeci">writeIntArray(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00088">LittleEndianNbtSerializer.php:88</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html_a010a1d2092df6b5a81075df65af0609d"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a010a1d2092df6b5a81075df65af0609d">pocketmine\nbt\LittleEndianNbtSerializer\writeIntArray</a></div><div class="ttdeci">writeIntArray(array $array)</div><div class="ttdef"><b>Definition</b> <a href="#l00089">LittleEndianNbtSerializer.php:89</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html_a183f5fca11f01f3d4c2822e7c61a736a"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a183f5fca11f01f3d4c2822e7c61a736a">pocketmine\nbt\LittleEndianNbtSerializer\readDouble</a></div><div class="ttdeci">readDouble()</div><div class="ttdef"><b>Definition</b> <a href="#l00070">LittleEndianNbtSerializer.php:70</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html_a4fb0cfd3bad5c161cdf7a0aade1f71be"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a4fb0cfd3bad5c161cdf7a0aade1f71be">pocketmine\nbt\LittleEndianNbtSerializer\readSignedShort</a></div><div class="ttdeci">readSignedShort()</div><div class="ttdef"><b>Definition</b> <a href="#l00038">LittleEndianNbtSerializer.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_little_endian_nbt_serializer_html_a910d2ce70c4c1b32aab03596bacfa55d"><div class="ttname"><a href="../../df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a910d2ce70c4c1b32aab03596bacfa55d">pocketmine\nbt\LittleEndianNbtSerializer\readFloat</a></div><div class="ttdeci">readFloat()</div><div class="ttdef"><b>Definition</b> <a href="#l00062">LittleEndianNbtSerializer.php:62</a></div></div>

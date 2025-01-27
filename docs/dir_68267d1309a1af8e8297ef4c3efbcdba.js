@@ -28,6 +28,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "world", "dir_6826d79532171ff2338799cfd298b875.html", "dir_6826d79532171ff2338799cfd298b875" ],
     [ "BootstrapOptions.php", "de/d41/_bootstrap_options_8php_source.html", null ],
     [ "CoreConstants.php", "d8/d03/_core_constants_8php_source.html", null ],
+    [ "GarbageCollectorManager.php", "de/dc8/_garbage_collector_manager_8php_source.html", null ],
+    [ "MemoryDump.php", "d3/d02/_memory_dump_8php_source.html", null ],
     [ "MemoryManager.php", "db/d45/_memory_manager_8php_source.html", null ],
     [ "PocketMine.php", "de/d55/_pocket_mine_8php_source.html", null ],
     [ "src/Server.php", "d0/d05/src_2_server_8php_source.html", null ],

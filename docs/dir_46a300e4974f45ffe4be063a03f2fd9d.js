@@ -186,6 +186,7 @@ var dir_46a300e4974f45ffe4be063a03f2fd9d =
     [ "RedstoneTorch.php", "d0/d3a/_redstone_torch_8php_source.html", null ],
     [ "RedstoneWire.php", "d3/d4b/_redstone_wire_8php_source.html", null ],
     [ "Reserved6.php", "d3/d05/_reserved6_8php_source.html", null ],
+    [ "ResinClump.php", "d5/d48/_resin_clump_8php_source.html", null ],
     [ "RuntimeBlockStateRegistry.php", "dd/d85/_runtime_block_state_registry_8php_source.html", null ],
     [ "Sand.php", "db/d83/_sand_8php_source.html", null ],
     [ "Sapling.php", "de/d30/_sapling_8php_source.html", null ],

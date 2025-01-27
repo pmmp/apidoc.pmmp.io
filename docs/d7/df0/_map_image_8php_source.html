@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -197,15 +197,17 @@ $(function(){initNavTree('d7/df0/_map_image_8php_source.html','../../'); initRes
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $pixels = [];</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">for</span>($y = 0; $y &lt; $height; ++$y){</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">for</span>($x = 0; $x &lt; $width; ++$x){</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                $pixels[$y][$x] = Color::fromRGBA(Binary::flipIntEndianness($input-&gt;getUnsignedVarInt()));</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($pixels);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            $row = [];</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">for</span>($x = 0; $x &lt; $width; ++$x){</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                $row[] = Color::fromRGBA(Binary::flipIntEndianness($input-&gt;getUnsignedVarInt()));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            $pixels[] = $row;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($pixels);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
 </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1color_1_1_color_html"><div class="ttname"><a href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">pocketmine\color\Color</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dd6/_color_8php_source.html#l00029">Color.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception_html"><div class="ttname"><a href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dc6/_packet_decode_exception_8php_source.html#l00017">PacketDecodeException.php:17</a></div></div>

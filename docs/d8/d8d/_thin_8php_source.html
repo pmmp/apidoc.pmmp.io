@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -164,54 +164,54 @@ $(function(){initNavTree('d8/d8d/_thin_8php_source.html','../../'); initResizabl
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#aeb29d78d84483905346d3c777f860ed5">   56</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#aeb29d78d84483905346d3c777f860ed5">recalculateCollisionBoxes</a>() : array{</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $inset = 7 / 16;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $bbs = [];</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span>(isset($this-&gt;connections[Facing::WEST]) || isset($this-&gt;connections[Facing::EAST])){</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $bb = AxisAlignedBB::one()-&gt;squash(Axis::Z, $inset);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">if</span>(!isset($this-&gt;connections[Facing::WEST])){</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                $bb-&gt;trim(Facing::WEST, $inset);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }elseif(!isset($this-&gt;connections[Facing::EAST])){</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                $bb-&gt;trim(Facing::EAST, $inset);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            $bbs[] = $bb;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>(isset($this-&gt;connections[Facing::NORTH]) || isset($this-&gt;connections[Facing::SOUTH])){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $bb = AxisAlignedBB::one()-&gt;squash(Axis::X, $inset);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span>(!isset($this-&gt;connections[Facing::NORTH])){</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                $bb-&gt;trim(Facing::NORTH, $inset);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }elseif(!isset($this-&gt;connections[Facing::SOUTH])){</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                $bb-&gt;trim(Facing::SOUTH, $inset);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            $bbs[] = $bb;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span>(count($bbs) === 0){</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="comment">//centre post AABB (only needed if not connected on any axis - other BBs overlapping will do this if any connections are made)</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">return</span> [</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                AxisAlignedBB::one()-&gt;contract($inset, 0, $inset)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            ];</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> $bbs;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $bbs = [];</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>(isset($this-&gt;connections[Facing::WEST]) || isset($this-&gt;connections[Facing::EAST])){</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $bb = AxisAlignedBB::one()-&gt;squash(Axis::Z, $inset);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">if</span>(!isset($this-&gt;connections[Facing::WEST])){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                $bb-&gt;trim(Facing::WEST, $inset);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }elseif(!isset($this-&gt;connections[Facing::EAST])){</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                $bb-&gt;trim(Facing::EAST, $inset);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            $bbs[] = $bb;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">if</span>(isset($this-&gt;connections[Facing::NORTH]) || isset($this-&gt;connections[Facing::SOUTH])){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            $bb = AxisAlignedBB::one()-&gt;squash(Axis::X, $inset);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span>(!isset($this-&gt;connections[Facing::NORTH])){</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                $bb-&gt;trim(Facing::NORTH, $inset);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }elseif(!isset($this-&gt;connections[Facing::SOUTH])){</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                $bb-&gt;trim(Facing::SOUTH, $inset);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $bbs[] = $bb;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span>(count($bbs) === 0){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="comment">//centre post AABB (only needed if not connected on any axis - other BBs overlapping will do this if any connections are made)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">return</span> [</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                AxisAlignedBB::one()-&gt;contract($inset, 0, $inset)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            ];</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> $bbs;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#afbd77c01c0fd577e9e46231bb58b199c">   94</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#afbd77c01c0fd577e9e46231bb58b199c">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        return SupportType::NONE;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#afbd77c01c0fd577e9e46231bb58b199c">   93</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#afbd77c01c0fd577e9e46231bb58b199c">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        return SupportType::NONE;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
 </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a6f13ff76dad934b1b2e078a5b57dd7a5"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">pocketmine\block\Block\getSide</a></div><div class="ttdeci">getSide(int $side, int $step=1)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00770">Block.php:770</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a6f13ff76dad934b1b2e078a5b57dd7a5"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">pocketmine\block\Block\getSide</a></div><div class="ttdeci">getSide(int $side, int $step=1)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00773">Block.php:773</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_thin_html"><div class="ttname"><a href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html">pocketmine\block\Thin</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">Thin.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_thin_html_a61d53e088798a8cbbe8cb5f2155943a1"><div class="ttname"><a href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#a61d53e088798a8cbbe8cb5f2155943a1">pocketmine\block\Thin\readStateFromWorld</a></div><div class="ttdeci">readStateFromWorld()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">Thin.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_thin_html_aeb29d78d84483905346d3c777f860ed5"><div class="ttname"><a href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#aeb29d78d84483905346d3c777f860ed5">pocketmine\block\Thin\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00056">Thin.php:56</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_thin_html_afbd77c01c0fd577e9e46231bb58b199c"><div class="ttname"><a href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#afbd77c01c0fd577e9e46231bb58b199c">pocketmine\block\Thin\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00094">Thin.php:94</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_thin_html_afbd77c01c0fd577e9e46231bb58b199c"><div class="ttname"><a href="../../d2/d75/classpocketmine_1_1block_1_1_thin.html#afbd77c01c0fd577e9e46231bb58b199c">pocketmine\block\Thin\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00093">Thin.php:93</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_wall_html"><div class="ttname"><a href="../../d0/d73/classpocketmine_1_1block_1_1_wall.html">pocketmine\block\Wall</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/df8/_wall_8php_source.html#l00036">Wall.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_wall_html_a35e81a2b9fecf82a57e51f53cd6b4069"><div class="ttname"><a href="../../d0/d73/classpocketmine_1_1block_1_1_wall.html#a35e81a2b9fecf82a57e51f53cd6b4069">pocketmine\block\Wall\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/df8/_wall_8php_source.html#l00154">Wall.php:154</a></div></div>

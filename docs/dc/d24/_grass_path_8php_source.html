@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -138,42 +138,42 @@ $(function(){initNavTree('dc/d24/_grass_path_8php_source.html','../../'); initRe
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html">GrassPath</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2e946ecb84d3d58257f6806b02329fd2">   35</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2e946ecb84d3d58257f6806b02329fd2">recalculateCollisionBoxes</a>() : array{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        return [<a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">AxisAlignedBB</a>::one()-&gt;trim(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP, 1 / 16)];</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2e946ecb84d3d58257f6806b02329fd2">   32</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2e946ecb84d3d58257f6806b02329fd2">recalculateCollisionBoxes</a>() : array{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        return [<a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">AxisAlignedBB</a>::one()-&gt;trim(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP, 1 / 16)];</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#afff045f25d291e0cdf69795b5c2c2a59">   39</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#afff045f25d291e0cdf69795b5c2c2a59">onNearbyBlockChange</a>() : void{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        if($this-&gt;getSide(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP)-&gt;isSolid()){</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, VanillaBlocks::DIRT());</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#afff045f25d291e0cdf69795b5c2c2a59">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#afff045f25d291e0cdf69795b5c2c2a59">onNearbyBlockChange</a>() : void{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        if($this-&gt;getSide(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::UP)-&gt;isSolid()){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, VanillaBlocks::DIRT());</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2a6a460fd2b7f08de2c814eadb12beec">   45</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2a6a460fd2b7f08de2c814eadb12beec">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        return [</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::DIRT()-&gt;asItem()</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        ];</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2a6a460fd2b7f08de2c814eadb12beec">   42</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2a6a460fd2b7f08de2c814eadb12beec">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        return [</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_class" href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">VanillaBlocks</a>::DIRT()-&gt;asItem()</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        ];</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#ab12e0f2c0480aee6ebeed230372fe4d7">   51</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#ab12e0f2c0480aee6ebeed230372fe4d7">isAffectedBySilkTouch</a>() : bool{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        return true;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#ab12e0f2c0480aee6ebeed230372fe4d7">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#ab12e0f2c0480aee6ebeed230372fe4d7">isAffectedBySilkTouch</a>() : bool{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        return true;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html">pocketmine\block\GrassPath</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">GrassPath.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_a2a6a460fd2b7f08de2c814eadb12beec"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2a6a460fd2b7f08de2c814eadb12beec">pocketmine\block\GrassPath\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">GrassPath.php:45</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_a2e946ecb84d3d58257f6806b02329fd2"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2e946ecb84d3d58257f6806b02329fd2">pocketmine\block\GrassPath\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00035">GrassPath.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_ab12e0f2c0480aee6ebeed230372fe4d7"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#ab12e0f2c0480aee6ebeed230372fe4d7">pocketmine\block\GrassPath\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition</b> <a href="#l00051">GrassPath.php:51</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_afff045f25d291e0cdf69795b5c2c2a59"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#afff045f25d291e0cdf69795b5c2c2a59">pocketmine\block\GrassPath\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">GrassPath.php:39</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_a2a6a460fd2b7f08de2c814eadb12beec"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2a6a460fd2b7f08de2c814eadb12beec">pocketmine\block\GrassPath\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00042">GrassPath.php:42</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_a2e946ecb84d3d58257f6806b02329fd2"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#a2e946ecb84d3d58257f6806b02329fd2">pocketmine\block\GrassPath\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">GrassPath.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_ab12e0f2c0480aee6ebeed230372fe4d7"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#ab12e0f2c0480aee6ebeed230372fe4d7">pocketmine\block\GrassPath\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition</b> <a href="#l00048">GrassPath.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_grass_path_html_afff045f25d291e0cdf69795b5c2c2a59"><div class="ttname"><a href="../../d9/d5d/classpocketmine_1_1block_1_1_grass_path.html#afff045f25d291e0cdf69795b5c2c2a59">pocketmine\block\GrassPath\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition</b> <a href="#l00036">GrassPath.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00793">VanillaBlocks.php:793</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00814">VanillaBlocks.php:814</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_aligned_b_b_html"><div class="ttname"><a href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d87/_axis_aligned_b_b_8php_source.html#l00029">AxisAlignedBB.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>

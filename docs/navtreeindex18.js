@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a428cb509ce7bbe12bdedb1b97bcb47d3":[2,0,0,5,121,62],
+"d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a428cb509ce7bbe12bdedb1b97bcb47d3":[3,0,1,12,122,62],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a46e9597cc1a492c84e5f32d006a4a1d3":[2,0,0,5,121,5],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a46e9597cc1a492c84e5f32d006a4a1d3":[3,0,1,12,122,5],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,121,1],
@@ -204,7 +206,7 @@ var NAVTREEINDEX18 =
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#af85accbedba28b67bb66d5f12d329585":[2,0,0,5,29,40],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,30,40],
 "d1/d50/classpocketmine_1_1world_1_1format_1_1io_1_1exception_1_1_unsupported_world_format_exception.html":[3,0,1,30,1,0,1,2],
-"d1/d52/_stained_hardened_glass_8php_source.html":[4,0,0,0,209],
+"d1/d52/_stained_hardened_glass_8php_source.html":[4,0,0,0,210],
 "d1/d52/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_block_item_id_map.html":[3,0,1,6,0,1,1],
 "d1/d52/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_block_item_id_map.html#a7ec946cc5ed04526db0bb9885bdcf80a":[3,0,1,6,0,1,1,0],
 "d1/d53/_promise_shared_data_8php_source.html":[4,0,0,16,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,155,10],
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,153,44],
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,155,44],
-"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,153,36],
-"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,155,36],
-"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,153,61]
+"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,153,36]
 };

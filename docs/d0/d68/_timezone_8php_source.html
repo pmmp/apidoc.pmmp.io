@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.23.3 git-0b60a47cdecd9ab84a4e6edcbd13b5abf634b14c</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-fc86d3a44e54e2720e886de83b5e6c6ee8934045</span>
    </div>
   </td>
  </tr>
@@ -243,7 +243,7 @@ $(function(){initNavTree('d0/d68/_timezone_8php_source.html','../../'); initResi
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                $offset = $matches[2];</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <span class="keywordflow">if</span>($offset == <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <span class="keywordflow">if</span>($offset === <span class="stringliteral">&quot;&quot;</span>){</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;UTC&quot;</span>;</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                }</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
@@ -265,7 +265,7 @@ $(function(){initNavTree('d0/d68/_timezone_8php_source.html','../../'); initResi
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                $offset = trim(exec(<span class="stringliteral">&#39;date +%:z&#39;</span>));</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">if</span>($offset == <span class="stringliteral">&quot;+00:00&quot;</span>){</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">if</span>($offset === <span class="stringliteral">&quot;+00:00&quot;</span>){</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;UTC&quot;</span>;</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                }</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
@@ -301,7 +301,7 @@ $(function(){initNavTree('d0/d68/_timezone_8php_source.html','../../'); initResi
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $offset = $parsed[<span class="stringliteral">&#39;hour&#39;</span>] * 3600 + $parsed[<span class="stringliteral">&#39;minute&#39;</span>] * 60 + $parsed[<span class="stringliteral">&#39;second&#39;</span>];</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="comment">//After date_parse is done, put the sign back</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">if</span>($negative_offset == <span class="keyword">true</span>){</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">if</span>($negative_offset){</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            $offset = -abs($offset);</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
@@ -310,7 +310,7 @@ $(function(){initNavTree('d0/d68/_timezone_8php_source.html','../../'); initResi
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="comment">//That&#39;s been a bug in PHP since 2008!</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">foreach</span>(timezone_abbreviations_list() as $zones){</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">foreach</span>($zones as $timezone){</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <span class="keywordflow">if</span>($timezone[<span class="stringliteral">&#39;timezone_id&#39;</span>] !== <span class="keyword">null</span> &amp;&amp; $timezone[<span class="stringliteral">&#39;offset&#39;</span>] == $offset){</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <span class="keywordflow">if</span>($timezone[<span class="stringliteral">&#39;timezone_id&#39;</span>] !== <span class="keyword">null</span> &amp;&amp; $timezone[<span class="stringliteral">&#39;offset&#39;</span>] === $offset){</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    <span class="keywordflow">return</span> $timezone[<span class="stringliteral">&#39;timezone_id&#39;</span>];</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                }</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            }</div>
@@ -323,8 +323,8 @@ $(function(){initNavTree('d0/d68/_timezone_8php_source.html','../../'); initResi
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_internet_html_a63e8e989fb52afa7cf08e5ee8d24b9f1"><div class="ttname"><a href="../../df/d1b/classpocketmine_1_1utils_1_1_internet.html#a63e8e989fb52afa7cf08e5ee8d24b9f1">pocketmine\utils\Internet\getURL</a></div><div class="ttdeci">static getURL(string $page, int $timeout=10, array $extraHeaders=[], &amp;$err=null)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d4f/_internet_8php_source.html#l00147">Internet.php:147</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_timezone_html"><div class="ttname"><a href="../../dc/dc1/classpocketmine_1_1utils_1_1_timezone.html">pocketmine\utils\Timezone</a></div><div class="ttdef"><b>Definition</b> <a href="#l00048">Timezone.php:48</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a292c99eeb9f5c7baac8531811ec237de"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">pocketmine\utils\Utils\assumeNotFalse</a></div><div class="ttdeci">static assumeNotFalse(mixed $value, \Closure|string $context=&quot;This should never be false&quot;)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00638">Utils.php:638</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a713aab61da011ccfcd4bea3e6349fc67"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">pocketmine\utils\Utils\getOS</a></div><div class="ttdeci">static getOS(bool $recalculate=false)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00277">Utils.php:277</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a292c99eeb9f5c7baac8531811ec237de"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a292c99eeb9f5c7baac8531811ec237de">pocketmine\utils\Utils\assumeNotFalse</a></div><div class="ttdeci">static assumeNotFalse(mixed $value, \Closure|string $context=&quot;This should never be false&quot;)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00646">Utils.php:646</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html_a713aab61da011ccfcd4bea3e6349fc67"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a713aab61da011ccfcd4bea3e6349fc67">pocketmine\utils\Utils\getOS</a></div><div class="ttdeci">static getOS(bool $recalculate=false)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00276">Utils.php:276</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1utils_html"><div class="ttname"><a href="../../dc/db6/namespacepocketmine_1_1utils.html">pocketmine\utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00024">AssumptionFailedError.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
