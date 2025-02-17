@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -201,6 +201,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad4568662a2ef21db0895785b656c6a1" id="r_aad4568662a2ef21db0895785b656c6a1"><td class="memItemLeft" align="right" valign="top"><a id="aad4568662a2ef21db0895785b656c6a1" name="aad4568662a2ef21db0895785b656c6a1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleCameraAimAssist</b> (CameraAimAssistPacket $packet)</td></tr>
 <tr class="separator:aad4568662a2ef21db0895785b656c6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d5c839a03df8ede7db2b117c72243c" id="r_a83d5c839a03df8ede7db2b117c72243c"><td class="memItemLeft" align="right" valign="top"><a id="a83d5c839a03df8ede7db2b117c72243c" name="a83d5c839a03df8ede7db2b117c72243c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleCameraAimAssistInstruction</b> (CameraAimAssistInstructionPacket $packet)</td></tr>
+<tr class="separator:a83d5c839a03df8ede7db2b117c72243c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548d5b1baaa368b38e90a028c87f2080" id="r_a548d5b1baaa368b38e90a028c87f2080"><td class="memItemLeft" align="right" valign="top"><a id="a548d5b1baaa368b38e90a028c87f2080" name="a548d5b1baaa368b38e90a028c87f2080"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleCameraAimAssistPresets</b> (CameraAimAssistPresetsPacket $packet)</td></tr>
 <tr class="separator:a548d5b1baaa368b38e90a028c87f2080"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,9 +351,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1d6d8db84fcdf574fc75313d0207f0f" id="r_ad1d6d8db84fcdf574fc75313d0207f0f"><td class="memItemLeft" align="right" valign="top"><a id="ad1d6d8db84fcdf574fc75313d0207f0f" name="ad1d6d8db84fcdf574fc75313d0207f0f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleInventoryTransaction</b> (<a class="el" href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">InventoryTransactionPacket</a> $packet)</td></tr>
 <tr class="separator:ad1d6d8db84fcdf574fc75313d0207f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3699de851fca56d779ef19bddd34b4fc" id="r_a3699de851fca56d779ef19bddd34b4fc"><td class="memItemLeft" align="right" valign="top"><a id="a3699de851fca56d779ef19bddd34b4fc" name="a3699de851fca56d779ef19bddd34b4fc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleItemComponent</b> (ItemComponentPacket $packet)</td></tr>
-<tr class="separator:a3699de851fca56d779ef19bddd34b4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f40d72033f7bf7f2224925cd50ca530" id="r_a9f40d72033f7bf7f2224925cd50ca530"><td class="memItemLeft" align="right" valign="top"><a id="a9f40d72033f7bf7f2224925cd50ca530" name="a9f40d72033f7bf7f2224925cd50ca530"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleItemRegistry</b> (<a class="el" href="../../dc/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_registry_packet.html">ItemRegistryPacket</a> $packet)</td></tr>
+<tr class="separator:a9f40d72033f7bf7f2224925cd50ca530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bd4bd3a3d6728d5451d1222a03c3e43" id="r_a6bd4bd3a3d6728d5451d1222a03c3e43"><td class="memItemLeft" align="right" valign="top"><a id="a6bd4bd3a3d6728d5451d1222a03c3e43" name="a6bd4bd3a3d6728d5451d1222a03c3e43"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleItemStackRequest</b> (<a class="el" href="../../d8/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_request_packet.html">ItemStackRequestPacket</a> $packet)</td></tr>
 <tr class="separator:a6bd4bd3a3d6728d5451d1222a03c3e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,6 +429,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae58efebb4607f0ea84b32b273115e313" id="r_ae58efebb4607f0ea84b32b273115e313"><td class="memItemLeft" align="right" valign="top"><a id="ae58efebb4607f0ea84b32b273115e313" name="ae58efebb4607f0ea84b32b273115e313"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleMovementEffect</b> (MovementEffectPacket $packet)</td></tr>
 <tr class="separator:ae58efebb4607f0ea84b32b273115e313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea1a203b27b2e59c4e33cae0edee967" id="r_a8ea1a203b27b2e59c4e33cae0edee967"><td class="memItemLeft" align="right" valign="top"><a id="a8ea1a203b27b2e59c4e33cae0edee967" name="a8ea1a203b27b2e59c4e33cae0edee967"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleMovementPredictionSync</b> (MovementPredictionSyncPacket $packet)</td></tr>
+<tr class="separator:a8ea1a203b27b2e59c4e33cae0edee967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976688b9fee2348331e10f3f251008cb" id="r_a976688b9fee2348331e10f3f251008cb"><td class="memItemLeft" align="right" valign="top"><a id="a976688b9fee2348331e10f3f251008cb" name="a976688b9fee2348331e10f3f251008cb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleMovePlayer</b> (<a class="el" href="../../d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet.html">MovePlayerPacket</a> $packet)</td></tr>
 <tr class="separator:a976688b9fee2348331e10f3f251008cb"><td class="memSeparator" colspan="2">&#160;</td></tr>

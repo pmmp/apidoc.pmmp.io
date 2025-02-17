@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -739,7 +739,7 @@ $(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.html','../../');
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    }</div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    <span class="keyword">public</span> <span class="keyword">function</span> syncCreative() : void{</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        $this-&gt;session-&gt;sendDataPacket(CreativeInventoryCache::getInstance()-&gt;getCache($this-&gt;player-&gt;getCreativeInventory()));</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        $this-&gt;session-&gt;sendDataPacket(CreativeInventoryCache::getInstance()-&gt;buildPacket($this-&gt;player-&gt;getCreativeInventory(), $this-&gt;session));</div>
 <div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    }</div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
 <div class="foldopen" id="foldopen00700" data-start="{" data-end="}">
@@ -817,7 +817,7 @@ $(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.html','../../');
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_inventory_manager_html_aeb7866a25f98493b2faa36150503e3aa"><div class="ttname"><a href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html#aeb7866a25f98493b2faa36150503e3aa">pocketmine\network\mcpe\InventoryManager\addRawPredictedSlotChanges</a></div><div class="ttdeci">addRawPredictedSlotChanges(array $networkInventoryActions)</div><div class="ttdef"><b>Definition</b> <a href="#l00250">InventoryManager.php:250</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_inventory_manager_html_af42863a1696bf568c6986ac0d3174591"><div class="ttname"><a href="../../d3/da1/classpocketmine_1_1network_1_1mcpe_1_1_inventory_manager.html#af42863a1696bf568c6986ac0d3174591">pocketmine\network\mcpe\InventoryManager\syncEnchantingTableOptions</a></div><div class="ttdeci">syncEnchantingTableOptions(array $options)</div><div class="ttdef"><b>Definition</b> <a href="#l00700">InventoryManager.php:700</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00140">NetworkSession.php:140</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache_html"><div class="ttname"><a href="../../dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html">pocketmine\network\mcpe\cache\CreativeInventoryCache</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/da4/_creative_inventory_cache_8php_source.html#l00033">CreativeInventoryCache.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache_html"><div class="ttname"><a href="../../dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html">pocketmine\network\mcpe\cache\CreativeInventoryCache</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/da4/_creative_inventory_cache_8php_source.html#l00040">CreativeInventoryCache.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet_html"><div class="ttname"><a href="../../d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html">pocketmine\network\mcpe\protocol\ContainerClosePacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d36/_container_close_packet_8php_source.html#l00019">ContainerClosePacket.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet_html"><div class="ttname"><a href="../../d7/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet.html">pocketmine\network\mcpe\protocol\ContainerOpenPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d12/_container_open_packet_8php_source.html#l00020">ContainerOpenPacket.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_set_data_packet_html"><div class="ttname"><a href="../../db/d82/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_set_data_packet.html">pocketmine\network\mcpe\protocol\ContainerSetDataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/da5/_container_set_data_packet_8php_source.html#l00019">ContainerSetDataPacket.php:19</a></div></div>

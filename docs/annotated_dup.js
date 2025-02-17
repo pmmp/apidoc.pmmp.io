@@ -789,6 +789,9 @@ var annotated_dup =
         [ "FormValidationException", "d7/d79/classpocketmine_1_1form_1_1_form_validation_exception.html", null ]
       ] ],
       [ "inventory", "db/d9b/namespacepocketmine_1_1inventory.html", [
+        [ "json", null, [
+          [ "CreativeGroupData", "dc/d55/classpocketmine_1_1inventory_1_1json_1_1_creative_group_data.html", "dc/d55/classpocketmine_1_1inventory_1_1json_1_1_creative_group_data" ]
+        ] ],
         [ "transaction", null, [
           [ "action", null, [
             [ "validator", null, [
@@ -813,7 +816,9 @@ var annotated_dup =
         [ "ArmorInventory", "d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html", "d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory" ],
         [ "BaseInventory", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory" ],
         [ "CallbackInventoryListener", "da/d3b/classpocketmine_1_1inventory_1_1_callback_inventory_listener.html", "da/d3b/classpocketmine_1_1inventory_1_1_callback_inventory_listener" ],
+        [ "CreativeGroup", "df/d51/classpocketmine_1_1inventory_1_1_creative_group.html", "df/d51/classpocketmine_1_1inventory_1_1_creative_group" ],
         [ "CreativeInventory", "d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html", "d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory" ],
+        [ "CreativeInventoryEntry", "da/d8c/classpocketmine_1_1inventory_1_1_creative_inventory_entry.html", null ],
         [ "DelegateInventory", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory.html", "d2/d0e/classpocketmine_1_1inventory_1_1_delegate_inventory" ],
         [ "Inventory", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory" ],
         [ "InventoryHolder", "d2/d91/interfacepocketmine_1_1inventory_1_1_inventory_holder.html", null ],
@@ -1031,6 +1036,7 @@ var annotated_dup =
             [ "ChunkCache", "d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache.html", "d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache" ],
             [ "CraftingDataCache", "d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html", null ],
             [ "CreativeInventoryCache", "dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html", null ],
+            [ "CreativeInventoryCacheEntry", "d2/ddf/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache_entry.html", "d2/ddf/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache_entry" ],
             [ "StaticPacketCache", "df/dc5/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_static_packet_cache.html", null ]
           ] ],
           [ "compression", null, [
@@ -1093,6 +1099,7 @@ var annotated_dup =
                 [ "CameraFadeInstructionColor", "da/d63/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_color.html", null ],
                 [ "CameraFadeInstructionTime", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_time.html", null ],
                 [ "CameraPreset", "d1/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset.html", null ],
+                [ "CameraPresetAimAssist", "d7/dec/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset_aim_assist.html", null ],
                 [ "CameraSetInstruction", "dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html", null ],
                 [ "CameraSetInstructionEase", "d4/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease.html", "d4/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease" ],
                 [ "CameraSetInstructionEaseType", "d4/dfe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease_type.html", null ],
@@ -1169,7 +1176,8 @@ var annotated_dup =
                 ] ],
                 [ "ContainerIds", "d0/d3b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_ids.html", null ],
                 [ "ContainerUIIds", "db/d4b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_u_i_ids.html", null ],
-                [ "CreativeContentEntry", "d8/d72/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_creative_content_entry.html", null ],
+                [ "CreativeGroupEntry", "d5/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_creative_group_entry.html", null ],
+                [ "CreativeItemEntry", "d3/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_creative_item_entry.html", null ],
                 [ "FullContainerName", "d6/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_full_container_name.html", null ],
                 [ "InventoryTransactionChangedSlotsHack", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack.html", "dd/d7e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_inventory_transaction_changed_slots_hack" ],
                 [ "ItemStack", "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html", "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack" ],
@@ -1268,9 +1276,8 @@ var annotated_dup =
               [ "InputMode", "dc/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_input_mode.html", null ],
               [ "InteractionMode", "da/d76/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_interaction_mode.html", null ],
               [ "IntGameRule", "d5/db4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_int_game_rule.html", null ],
-              [ "ItemComponentPacketEntry", "df/d92/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_component_packet_entry.html", "df/d92/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_component_packet_entry" ],
               [ "ItemInteractionData", "dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html", "dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data" ],
-              [ "ItemTypeEntry", "d3/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_type_entry.html", null ],
+              [ "ItemTypeEntry", "d3/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_type_entry.html", "d3/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_type_entry" ],
               [ "LevelEvent", "d4/d4b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_event.html", null ],
               [ "LevelSettings", "de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings.html", "de/dea/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_settings" ],
               [ "LevelSoundEvent", "d5/ddc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_sound_event.html", null ],
@@ -1333,6 +1340,7 @@ var annotated_dup =
             [ "BlockPickRequestPacket", "df/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_pick_request_packet.html", "df/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_block_pick_request_packet" ],
             [ "BookEditPacket", "d1/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_book_edit_packet.html", "d1/db1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_book_edit_packet" ],
             [ "BossEventPacket", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet.html", "da/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_boss_event_packet" ],
+            [ "CameraAimAssistInstructionPacket", "d1/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_instruction_packet.html", "d1/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_instruction_packet" ],
             [ "CameraAimAssistPacket", "d4/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_packet.html", "d4/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_packet" ],
             [ "CameraAimAssistPresetsPacket", "d7/d38/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_presets_packet.html", "d7/d38/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_aim_assist_presets_packet" ],
             [ "CameraInstructionPacket", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet.html", "db/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_camera_instruction_packet" ],
@@ -1386,7 +1394,7 @@ var annotated_dup =
             [ "InventoryContentPacket", "d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet.html", "d1/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_content_packet" ],
             [ "InventorySlotPacket", "da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html", "da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet" ],
             [ "InventoryTransactionPacket", "d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html", "d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet" ],
-            [ "ItemComponentPacket", "d1/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_component_packet.html", "d1/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_component_packet" ],
+            [ "ItemRegistryPacket", "dc/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_registry_packet.html", "dc/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_registry_packet" ],
             [ "ItemStackRequestPacket", "d8/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_request_packet.html", "d8/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_request_packet" ],
             [ "ItemStackResponsePacket", "d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html", "d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet" ],
             [ "JigsawStructureDataPacket", "d7/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_jigsaw_structure_data_packet.html", "d7/dda/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_jigsaw_structure_data_packet" ],
@@ -1412,6 +1420,7 @@ var annotated_dup =
             [ "MoveActorAbsolutePacket", "d9/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_absolute_packet.html", "d9/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_absolute_packet" ],
             [ "MoveActorDeltaPacket", "d0/db0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_delta_packet.html", "d0/db0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_delta_packet" ],
             [ "MovementEffectPacket", "da/dbc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_movement_effect_packet.html", "da/dbc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_movement_effect_packet" ],
+            [ "MovementPredictionSyncPacket", "da/df3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_movement_prediction_sync_packet.html", "da/df3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_movement_prediction_sync_packet" ],
             [ "MovePlayerPacket", "d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet.html", "d3/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_player_packet" ],
             [ "MultiplayerSettingsPacket", "dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html", "dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet" ],
             [ "NetworkChunkPublisherUpdatePacket", "d7/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_network_chunk_publisher_update_packet.html", "d7/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_network_chunk_publisher_update_packet" ],

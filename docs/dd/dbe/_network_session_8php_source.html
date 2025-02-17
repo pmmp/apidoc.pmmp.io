@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -1108,7 +1108,7 @@ $(function(){initNavTree('dd/dbe/_network_session_8php_source.html','../../'); i
 <div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>        ];</div>
 <div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span> </div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>        $layers = [</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>            <span class="keyword">new</span> AbilitiesLayer(AbilitiesLayer::LAYER_BASE, $boolAbilities, $for-&gt;getFlightSpeedMultiplier(), 0.1),</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>            <span class="keyword">new</span> AbilitiesLayer(AbilitiesLayer::LAYER_BASE, $boolAbilities, $for-&gt;getFlightSpeedMultiplier(), 1, 0.1),</div>
 <div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>        ];</div>
 <div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        <span class="keywordflow">if</span>(!$for-&gt;hasBlockCollision()){</div>
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>            <span class="comment">//TODO: HACK! In 1.19.80, the client starts falling in our faux spectator mode when it clips into a</span></div>
@@ -1118,7 +1118,7 @@ $(function(){initNavTree('dd/dbe/_network_session_8php_source.html','../../'); i
 <div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span> </div>
 <div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>            $layers[] = new AbilitiesLayer(AbilitiesLayer::LAYER_SPECTATOR, [</div>
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>                AbilitiesLayer::ABILITY_FLYING =&gt; true,</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>            ], null, null);</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>            ], null, null, null);</div>
 <div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>        }</div>
 <div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span> </div>
 <div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>        $this-&gt;sendDataPacket(UpdateAbilitiesPacket::create(<span class="keyword">new</span> AbilitiesData(</div>
@@ -1390,7 +1390,7 @@ $(function(){initNavTree('dd/dbe/_network_session_8php_source.html','../../'); i
 <div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>    }</div>
 <div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00181">src/Server.php:181</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00182">src/Server.php:182</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_yml_server_properties_html"><div class="ttname"><a href="../../db/d88/classpocketmine_1_1_yml_server_properties.html">pocketmine\YmlServerProperties</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/_yml_server_properties_8php_source.html#l00032">YmlServerProperties.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1effect_1_1_effect_instance_html"><div class="ttname"><a href="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance.html">pocketmine\entity\effect\EffectInstance</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/db0/_effect_instance_8php_source.html#l00030">EffectInstance.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_duplicate_login_event_html"><div class="ttname"><a href="../../d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html">pocketmine\event\player\PlayerDuplicateLoginEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/df9/_player_duplicate_login_event_8php_source.html#l00036">PlayerDuplicateLoginEvent.php:36</a></div></div>
@@ -1433,7 +1433,7 @@ $(function(){initNavTree('dd/dbe/_network_session_8php_source.html','../../'); i
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler_html"><div class="ttname"><a href="../../d9/ded/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_in_game_packet_handler.html">pocketmine\network\mcpe\handler\InGamePacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/dc4/_in_game_packet_handler_8php_source.html#l00130">InGamePacketHandler.php:130</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler_html"><div class="ttname"><a href="../../d7/d77/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_login_packet_handler.html">pocketmine\network\mcpe\handler\LoginPacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d07/_login_packet_handler_8php_source.html#l00050">LoginPacketHandler.php:50</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler_html"><div class="ttname"><a href="../../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html">pocketmine\network\mcpe\handler\PacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d8a/_packet_handler_8php_source.html#l00035">PacketHandler.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler_html"><div class="ttname"><a href="../../d0/d3c/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler.html">pocketmine\network\mcpe\handler\PreSpawnPacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00054">PreSpawnPacketHandler.php:54</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler_html"><div class="ttname"><a href="../../d0/d3c/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_pre_spawn_packet_handler.html">pocketmine\network\mcpe\handler\PreSpawnPacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00055">PreSpawnPacketHandler.php:55</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler_html"><div class="ttname"><a href="../../d4/d06/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler.html">pocketmine\network\mcpe\handler\ResourcePacksPacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d59/_resource_packs_packet_handler_8php_source.html#l00054">ResourcePacksPacketHandler.php:54</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_session_start_packet_handler_html"><div class="ttname"><a href="../../dd/ddd/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_session_start_packet_handler.html">pocketmine\network\mcpe\handler\SessionStartPacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d7a/_session_start_packet_handler_8php_source.html#l00031">SessionStartPacketHandler.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1handler_1_1_spawn_response_packet_handler_html"><div class="ttname"><a href="../../d0/dd8/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_spawn_response_packet_handler.html">pocketmine\network\mcpe\handler\SpawnResponsePacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d0a/_spawn_response_packet_handler_8php_source.html#l00030">SpawnResponsePacketHandler.php:30</a></div></div>

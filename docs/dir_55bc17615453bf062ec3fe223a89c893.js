@@ -44,7 +44,6 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "InputMode.php", "d6/d4b/_input_mode_8php_source.html", null ],
     [ "InteractionMode.php", "d3/df6/_interaction_mode_8php_source.html", null ],
     [ "IntGameRule.php", "dd/db2/_int_game_rule_8php_source.html", null ],
-    [ "ItemComponentPacketEntry.php", "d0/d45/_item_component_packet_entry_8php_source.html", null ],
     [ "ItemInteractionData.php", "d8/d87/_item_interaction_data_8php_source.html", null ],
     [ "ItemTypeEntry.php", "d3/d83/_item_type_entry_8php_source.html", null ],
     [ "LevelEvent.php", "dd/d5b/_level_event_8php_source.html", null ],

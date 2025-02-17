@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -116,13 +116,13 @@ $(function(){initNavTree('d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d65/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer__coll__graph.svg" width="252" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d65/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer__coll__graph.svg" width="252" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c7550c742bd69fee5e54f6519ba44ad" id="r_a0c7550c742bd69fee5e54f6519ba44ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c7550c742bd69fee5e54f6519ba44ad">__construct</a> (private int $layerId, private array $boolAbilities, private ?float $flySpeed, private ?float $walkSpeed)</td></tr>
-<tr class="separator:a0c7550c742bd69fee5e54f6519ba44ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab651e0bd36306677d71593963a7ed5a" id="r_aab651e0bd36306677d71593963a7ed5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab651e0bd36306677d71593963a7ed5a">__construct</a> (private int $layerId, private array $boolAbilities, private ?float $flySpeed, private ?float $verticalFlySpeed, private ?float $walkSpeed)</td></tr>
+<tr class="separator:aab651e0bd36306677d71593963a7ed5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868c377d4899088ee5533795f6a044aa" id="r_a868c377d4899088ee5533795f6a044aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a868c377d4899088ee5533795f6a044aa">encode</a> (<a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out)</td></tr>
 <tr class="separator:a868c377d4899088ee5533795f6a044aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e12a2e1f16bd53caec1287d3ef6bf3" id="r_ac4e12a2e1f16bd53caec1287d3ef6bf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4e12a2e1f16bd53caec1287d3ef6bf3">getBoolAbilities</a> ()</td></tr>
@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abd06ff9e1df7366e4977d7a199997860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8594a015782b9c269f85947ac5994c83" id="r_a8594a015782b9c269f85947ac5994c83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8594a015782b9c269f85947ac5994c83">getLayerId</a> ()</td></tr>
 <tr class="separator:a8594a015782b9c269f85947ac5994c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bcf91bc86c8906fabcf0c9d05b81ab" id="r_a28bcf91bc86c8906fabcf0c9d05b81ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28bcf91bc86c8906fabcf0c9d05b81ab">getVerticalFlySpeed</a> ()</td></tr>
+<tr class="separator:a28bcf91bc86c8906fabcf0c9d05b81ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af29570428a7cff5d74315bf49a68199a" id="r_af29570428a7cff5d74315bf49a68199a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af29570428a7cff5d74315bf49a68199a">getWalkSpeed</a> ()</td></tr>
 <tr class="separator:af29570428a7cff5d74315bf49a68199a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,6 +175,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5a268ff5edc4b7649e1b5909cb5e9c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43709589e1c42c5ccb0fb35dc70c123d" id="r_a43709589e1c42c5ccb0fb35dc70c123d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43709589e1c42c5ccb0fb35dc70c123d">ABILITY_TELEPORT</a> = 7</td></tr>
 <tr class="separator:a43709589e1c42c5ccb0fb35dc70c123d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5edc5668b9a04ee585ad5df516e870" id="r_a0d5edc5668b9a04ee585ad5df516e870"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d5edc5668b9a04ee585ad5df516e870">ABILITY_VERTICAL_FLY_SPEED</a> = 19</td></tr>
+<tr class="separator:a0d5edc5668b9a04ee585ad5df516e870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b0ed787511b41a4409ea5c20be9539" id="r_a59b0ed787511b41a4409ea5c20be9539"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b0ed787511b41a4409ea5c20be9539">ABILITY_WORLD_BUILDER</a> = 16</td></tr>
 <tr class="separator:a59b0ed787511b41a4409ea5c20be9539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc66f06427c5e0d2e98ed32214ad8065" id="r_afc66f06427c5e0d2e98ed32214ad8065"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc66f06427c5e0d2e98ed32214ad8065">LAYER_BASE</a> = 1</td></tr>
@@ -187,15 +191,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:adfb8685c5c1f022f06d46404fbc80087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768c606a9b722498ab36717d01a2abe8" id="r_a768c606a9b722498ab36717d01a2abe8"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a768c606a9b722498ab36717d01a2abe8">LAYER_SPECTATOR</a> = 2</td></tr>
 <tr class="separator:a768c606a9b722498ab36717d01a2abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf0b8cd057228ea0e30dc2a022e36b0" id="r_accf0b8cd057228ea0e30dc2a022e36b0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf0b8cd057228ea0e30dc2a022e36b0">NUMBER_OF_ABILITIES</a> = 19</td></tr>
+<tr class="memitem:accf0b8cd057228ea0e30dc2a022e36b0" id="r_accf0b8cd057228ea0e30dc2a022e36b0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf0b8cd057228ea0e30dc2a022e36b0">NUMBER_OF_ABILITIES</a> = 20</td></tr>
 <tr class="separator:accf0b8cd057228ea0e30dc2a022e36b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00020">20</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0c7550c742bd69fee5e54f6519ba44ad" name="a0c7550c742bd69fee5e54f6519ba44ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7550c742bd69fee5e54f6519ba44ad">&#9670;&#160;</a></span>__construct()</h2>
+<a id="aab651e0bd36306677d71593963a7ed5a" name="aab651e0bd36306677d71593963a7ed5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab651e0bd36306677d71593963a7ed5a">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,6 +222,11 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">private ?float</td>          <td class="paramname"><span class="paramname"><em>$verticalFlySpeed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">private ?float</td>          <td class="paramname"><span class="paramname"><em>$walkSpeed</em></span>&#160;)</td>
         </tr>
       </table>
@@ -229,7 +238,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00055">55</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00056">56</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -257,7 +266,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00075">75</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00079">79</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -276,7 +285,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00107">107</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00118">118</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -296,7 +305,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a list of abilities set/overridden by this layer. If the ability value is not set, the index is omitted. </p><dl class="section return"><dt>Returns</dt><dd>bool[] @phpstan-return array&lt;self::ABILITY_*, bool&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00069">69</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00071">71</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -315,7 +324,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00071">71</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00073">73</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -334,7 +343,26 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00062">62</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00064">64</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+
+</div>
+</div>
+<a id="a28bcf91bc86c8906fabcf0c9d05b81ab" name="a28bcf91bc86c8906fabcf0c9d05b81ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bcf91bc86c8906fabcf0c9d05b81ab">&#9670;&#160;</a></span>getVerticalFlySpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\types\AbilitiesLayer::getVerticalFlySpeed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00075">75</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -353,7 +381,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00073">73</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00077">77</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>
@@ -614,6 +642,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0d5edc5668b9a04ee585ad5df516e870" name="a0d5edc5668b9a04ee585ad5df516e870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5edc5668b9a04ee585ad5df516e870">&#9670;&#160;</a></span>ABILITY_VERTICAL_FLY_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\types\AbilitiesLayer::ABILITY_VERTICAL_FLY_SPEED = 19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00048">48</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+
+</div>
+</div>
 <a id="a59b0ed787511b41a4409ea5c20be9539" name="a59b0ed787511b41a4409ea5c20be9539"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59b0ed787511b41a4409ea5c20be9539">&#9670;&#160;</a></span>ABILITY_WORLD_BUILDER</h2>
 
@@ -733,12 +777,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\network\mcpe\protocol\types\AbilitiesLayer::NUMBER_OF_ABILITIES = 19</td>
+          <td class="memname">const pocketmine\network\mcpe\protocol\types\AbilitiesLayer::NUMBER_OF_ABILITIES = 20</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00049">49</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html#l00050">50</a> of file <a class="el" href="../../d7/dc0/_abilities_layer_8php_source.html">AbilitiesLayer.php</a>.</p>
 
 </div>
 </div>

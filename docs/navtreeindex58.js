@@ -1,5 +1,13 @@
 var NAVTREEINDEX58 =
 {
+"d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20":[2,0,0,14,10,88],
+"d4/d2b/classpocketmine_1_1world_1_1_world.html#afdeb436c4017e94817b06f926652ec20":[3,0,1,30,16,88],
+"d4/d2e/_base_world_provider_8php_source.html":[4,0,0,25,1,0,4],
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html":[2,0,0,0,203],
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html":[3,0,1,0,205],
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,203,58],
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,205,58],
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a09f4667329f89292dd319d56c4243b59":[2,0,0,0,203,30],
 "d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a09f4667329f89292dd319d56c4243b59":[3,0,1,0,205,30],
 "d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[2,0,0,0,203,18],
 "d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,205,18],
@@ -241,13 +249,5 @@ var NAVTREEINDEX58 =
 "d4/d31/classpocketmine_1_1block_1_1_lever.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,138,24],
 "d4/d31/classpocketmine_1_1block_1_1_lever.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,140,24],
 "d4/d31/classpocketmine_1_1block_1_1_lever.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,138,57],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,140,57],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,138,43],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,140,43],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,138,15],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,140,15],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,138,42],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,140,42],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,138,1],
-"d4/d31/classpocketmine_1_1block_1_1_lever.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,140,1]
+"d4/d31/classpocketmine_1_1block_1_1_lever.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,140,57]
 };

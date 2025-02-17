@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -733,121 +733,123 @@ $(function(){initNavTree('d4/d33/bedrock-protocol_2src_2serializer_2_packet_seri
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        $result = new StructureEditorData();</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        $result-&gt;structureName = $this-&gt;getString();</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        $result-&gt;structureDataField = $this-&gt;getString();</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        $result-&gt;includePlayers = $this-&gt;getBool();</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        $result-&gt;showBoundingBox = $this-&gt;getBool();</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        $result-&gt;structureBlockType = $this-&gt;getVarInt();</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        $result-&gt;structureSettings = $this-&gt;getStructureSettings();</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        $result-&gt;structureRedstoneSaveMode = $this-&gt;getVarInt();</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    }</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <span class="keyword">public</span> <span class="keyword">function</span> putStructureEditorData(StructureEditorData $structureEditorData) : void{</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        $this-&gt;putString($structureEditorData-&gt;structureName);</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        $this-&gt;putString($structureEditorData-&gt;structureDataField);</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        $this-&gt;putBool($structureEditorData-&gt;includePlayers);</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        $this-&gt;putBool($structureEditorData-&gt;showBoundingBox);</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureBlockType);</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>        $this-&gt;putStructureSettings($structureEditorData-&gt;structureSettings);</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureRedstoneSaveMode);</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    }</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNbtRoot() : TreeRoot{</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        $offset = $this-&gt;getOffset();</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>            <span class="keywordflow">return</span> (<span class="keyword">new</span> NetworkNbtSerializer())-&gt;read($this-&gt;getBuffer(), $offset, 512);</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>            <span class="keywordflow">throw</span> PacketDecodeException::wrap($e, <span class="stringliteral">&quot;Failed decoding NBT root&quot;</span>);</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        }<span class="keywordflow">finally</span>{</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>            $this-&gt;setOffset($offset);</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        }</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    }</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span> </div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNbtCompoundRoot() : CompoundTag{</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>        try{</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>            return $this-&gt;getNbtRoot()-&gt;mustGetCompoundTag();</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>            <span class="keywordflow">throw</span> PacketDecodeException::wrap($e, <span class="stringliteral">&quot;Expected TAG_Compound NBT root&quot;</span>);</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        }</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    }</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    <span class="keyword">public</span> <span class="keyword">function</span> readRecipeNetId() : int{</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>        return $this-&gt;getUnsignedVarInt();</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    }</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span> </div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeRecipeNetId(<span class="keywordtype">int</span> $id) : void{</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>        $this-&gt;putUnsignedVarInt($id);</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    }</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    <span class="keyword">public</span> <span class="keyword">function</span> readCreativeItemNetId() : int{</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>        return $this-&gt;getUnsignedVarInt();</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    }</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeCreativeItemNetId(<span class="keywordtype">int</span> $id) : void{</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        $this-&gt;putUnsignedVarInt($id);</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    }</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
-<div class="foldopen" id="foldopen00755" data-start="{" data-end="}">
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85">  755</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85">readItemStackNetIdVariant</a>() : int{</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        return $this-&gt;getVarInt();</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    }</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        $result-&gt;filteredStructureName = $this-&gt;getString();</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>        $result-&gt;structureDataField = $this-&gt;getString();</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        $result-&gt;includePlayers = $this-&gt;getBool();</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        $result-&gt;showBoundingBox = $this-&gt;getBool();</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        $result-&gt;structureBlockType = $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        $result-&gt;structureSettings = $this-&gt;getStructureSettings();</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        $result-&gt;structureRedstoneSaveMode = $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>    }</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span> </div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    <span class="keyword">public</span> <span class="keyword">function</span> putStructureEditorData(StructureEditorData $structureEditorData) : void{</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        $this-&gt;putString($structureEditorData-&gt;structureName);</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        $this-&gt;putString($structureEditorData-&gt;filteredStructureName);</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        $this-&gt;putString($structureEditorData-&gt;structureDataField);</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>        $this-&gt;putBool($structureEditorData-&gt;includePlayers);</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        $this-&gt;putBool($structureEditorData-&gt;showBoundingBox);</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureBlockType);</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        $this-&gt;putStructureSettings($structureEditorData-&gt;structureSettings);</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        $this-&gt;putVarInt($structureEditorData-&gt;structureRedstoneSaveMode);</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    }</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNbtRoot() : TreeRoot{</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>        $offset = $this-&gt;getOffset();</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>            <span class="keywordflow">return</span> (<span class="keyword">new</span> NetworkNbtSerializer())-&gt;read($this-&gt;getBuffer(), $offset, 512);</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>            <span class="keywordflow">throw</span> PacketDecodeException::wrap($e, <span class="stringliteral">&quot;Failed decoding NBT root&quot;</span>);</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        }<span class="keywordflow">finally</span>{</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>            $this-&gt;setOffset($offset);</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        }</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    }</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNbtCompoundRoot() : CompoundTag{</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        try{</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>            return $this-&gt;getNbtRoot()-&gt;mustGetCompoundTag();</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        }<span class="keywordflow">catch</span>(NbtDataException $e){</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>            <span class="keywordflow">throw</span> PacketDecodeException::wrap($e, <span class="stringliteral">&quot;Expected TAG_Compound NBT root&quot;</span>);</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>        }</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    }</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="keyword">public</span> <span class="keyword">function</span> readRecipeNetId() : int{</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>        return $this-&gt;getUnsignedVarInt();</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    }</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeRecipeNetId(<span class="keywordtype">int</span> $id) : void{</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        $this-&gt;putUnsignedVarInt($id);</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    }</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span> </div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keyword">public</span> <span class="keyword">function</span> readCreativeItemNetId() : int{</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        return $this-&gt;getUnsignedVarInt();</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    }</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeCreativeItemNetId(<span class="keywordtype">int</span> $id) : void{</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        $this-&gt;putUnsignedVarInt($id);</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    }</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="foldopen" id="foldopen00757" data-start="{" data-end="}">
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85">  757</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85">readItemStackNetIdVariant</a>() : int{</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        return $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    }</div>
 </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span> </div>
-<div class="foldopen" id="foldopen00764" data-start="{" data-end="}">
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2">  764</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2">writeItemStackNetIdVariant</a>(<span class="keywordtype">int</span> $id) : void{</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        $this-&gt;putVarInt($id);</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    }</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span> </div>
+<div class="foldopen" id="foldopen00766" data-start="{" data-end="}">
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2">  766</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2">writeItemStackNetIdVariant</a>(<span class="keywordtype">int</span> $id) : void{</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        $this-&gt;putVarInt($id);</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    }</div>
 </div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keyword">public</span> <span class="keyword">function</span> readItemStackRequestId() : int{</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        return $this-&gt;getVarInt();</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    }</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span> </div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeItemStackRequestId(<span class="keywordtype">int</span> $id) : void{</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        $this-&gt;putVarInt($id);</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    }</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="keyword">public</span> <span class="keyword">function</span> readLegacyItemStackRequestId() : int{</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        return $this-&gt;getVarInt();</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    }</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span> </div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeLegacyItemStackRequestId(<span class="keywordtype">int</span> $id) : void{</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        $this-&gt;putVarInt($id);</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    }</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span> </div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keyword">public</span> <span class="keyword">function</span> readServerItemStackId() : int{</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        return $this-&gt;getVarInt();</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    }</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeServerItemStackId(<span class="keywordtype">int</span> $id) : void{</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        $this-&gt;putVarInt($id);</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    }</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
-<div class="foldopen" id="foldopen00797" data-start="{" data-end="}">
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c">  797</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c">readOptional</a>(\Closure $reader) : mixed{</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>        if($this-&gt;getBool()){</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            <span class="keywordflow">return</span> $reader();</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        }</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    }</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    <span class="keyword">public</span> <span class="keyword">function</span> readItemStackRequestId() : int{</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        return $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    }</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeItemStackRequestId(<span class="keywordtype">int</span> $id) : void{</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        $this-&gt;putVarInt($id);</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    }</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    <span class="keyword">public</span> <span class="keyword">function</span> readLegacyItemStackRequestId() : int{</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>        return $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    }</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeLegacyItemStackRequestId(<span class="keywordtype">int</span> $id) : void{</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        $this-&gt;putVarInt($id);</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    }</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    <span class="keyword">public</span> <span class="keyword">function</span> readServerItemStackId() : int{</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>        return $this-&gt;getVarInt();</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    }</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keyword">public</span> <span class="keyword">function</span> writeServerItemStackId(<span class="keywordtype">int</span> $id) : void{</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        $this-&gt;putVarInt($id);</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    }</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
+<div class="foldopen" id="foldopen00799" data-start="{" data-end="}">
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c">  799</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c">readOptional</a>(\Closure $reader) : mixed{</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        if($this-&gt;getBool()){</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            <span class="keywordflow">return</span> $reader();</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        }</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    }</div>
 </div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
-<div class="foldopen" id="foldopen00809" data-start="{" data-end="}">
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085">  809</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085">writeOptional</a>(mixed $value, \Closure $writer) : void{</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>        if($value !== null){</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>            $this-&gt;putBool(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>            $writer($value);</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>            $this-&gt;putBool(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        }</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    }</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
+<div class="foldopen" id="foldopen00811" data-start="{" data-end="}">
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno"><a class="line" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085">  811</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085">writeOptional</a>(mixed $value, \Closure $writer) : void{</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        if($value !== null){</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>            $this-&gt;putBool(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>            $writer($value);</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>            $this-&gt;putBool(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        }</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    }</div>
 </div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>}</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector2_html"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">pocketmine\math\Vector2</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d7f/_vector2_8php_source.html#l00032">Vector2.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
@@ -870,8 +872,8 @@ $(function(){initNavTree('d4/d33/bedrock-protocol_2src_2serializer_2_packet_seri
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a4422362716d1330111535838be2f2776"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a4422362716d1330111535838be2f2776">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getUUID</a></div><div class="ttdeci">getUUID()</div><div class="ttdef"><b>Definition</b> <a href="#l00095">bedrock-protocol/src/serializer/PacketSerializer.php:95</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a50da20908fda976f3fc1c85f19ed9536"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a50da20908fda976f3fc1c85f19ed9536">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getActorRuntimeId</a></div><div class="ttdeci">getActorRuntimeId()</div><div class="ttdef"><b>Definition</b> <a href="#l00423">bedrock-protocol/src/serializer/PacketSerializer.php:423</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a5aef1eceaaff4e95404ff4c4c75e7b09"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a5aef1eceaaff4e95404ff4c4c75e7b09">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\putVector2</a></div><div class="ttdeci">putVector2(Vector2 $vector2)</div><div class="ttdef"><b>Definition</b> <a href="#l00526">bedrock-protocol/src/serializer/PacketSerializer.php:526</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a72b36c05b8fd5f4ac4b46cd627345a85"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\readItemStackNetIdVariant</a></div><div class="ttdeci">readItemStackNetIdVariant()</div><div class="ttdef"><b>Definition</b> <a href="#l00755">bedrock-protocol/src/serializer/PacketSerializer.php:755</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a8e109f3e8a067c0a367165d81f324085"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\writeOptional</a></div><div class="ttdeci">writeOptional(mixed $value, \Closure $writer)</div><div class="ttdef"><b>Definition</b> <a href="#l00809">bedrock-protocol/src/serializer/PacketSerializer.php:809</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a72b36c05b8fd5f4ac4b46cd627345a85"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a72b36c05b8fd5f4ac4b46cd627345a85">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\readItemStackNetIdVariant</a></div><div class="ttdeci">readItemStackNetIdVariant()</div><div class="ttdef"><b>Definition</b> <a href="#l00757">bedrock-protocol/src/serializer/PacketSerializer.php:757</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a8e109f3e8a067c0a367165d81f324085"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a8e109f3e8a067c0a367165d81f324085">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\writeOptional</a></div><div class="ttdeci">writeOptional(mixed $value, \Closure $writer)</div><div class="ttdef"><b>Definition</b> <a href="#l00811">bedrock-protocol/src/serializer/PacketSerializer.php:811</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_a9542907ceee668bd464e965242c4ee2e"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#a9542907ceee668bd464e965242c4ee2e">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getCommandOriginData</a></div><div class="ttdeci">getCommandOriginData()</div><div class="ttdef"><b>Definition</b> <a href="#l00614">bedrock-protocol/src/serializer/PacketSerializer.php:614</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_aa4a64c376839f96be44d7a389e211725"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#aa4a64c376839f96be44d7a389e211725">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\putVector3</a></div><div class="ttdeci">putVector3(Vector3 $vector)</div><div class="ttdef"><b>Definition</b> <a href="#l00517">bedrock-protocol/src/serializer/PacketSerializer.php:517</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_abb51bcfd60b5f0ce60607a5966702299"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#abb51bcfd60b5f0ce60607a5966702299">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getActorUniqueId</a></div><div class="ttdeci">getActorUniqueId()</div><div class="ttdef"><b>Definition</b> <a href="#l00412">bedrock-protocol/src/serializer/PacketSerializer.php:412</a></div></div>
@@ -879,8 +881,8 @@ $(function(){initNavTree('d4/d33/bedrock-protocol_2src_2serializer_2_packet_seri
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_adb3eefa448f9b00450f5cbde5c8a75be"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#adb3eefa448f9b00450f5cbde5c8a75be">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\putBlockPosition</a></div><div class="ttdeci">putBlockPosition(BlockPosition $blockPosition)</div><div class="ttdef"><b>Definition</b> <a href="#l00446">bedrock-protocol/src/serializer/PacketSerializer.php:446</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_ae1bedf1a79e26eb799fe8e50026560c4"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#ae1bedf1a79e26eb799fe8e50026560c4">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getString</a></div><div class="ttdeci">getString()</div><div class="ttdef"><b>Definition</b> <a href="#l00083">bedrock-protocol/src/serializer/PacketSerializer.php:83</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_af9cae9c4aafeb3c8e98ff6bec1fd761e"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#af9cae9c4aafeb3c8e98ff6bec1fd761e">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getEntityMetadata</a></div><div class="ttdeci">getEntityMetadata()</div><div class="ttdef"><b>Definition</b> <a href="#l00365">bedrock-protocol/src/serializer/PacketSerializer.php:365</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_afd3101b0f83bdf6dda93ecd93da079f2"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\writeItemStackNetIdVariant</a></div><div class="ttdeci">writeItemStackNetIdVariant(int $id)</div><div class="ttdef"><b>Definition</b> <a href="#l00764">bedrock-protocol/src/serializer/PacketSerializer.php:764</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_afdf9528d2c1e218adfeae66915c2c85c"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\readOptional</a></div><div class="ttdeci">readOptional(\Closure $reader)</div><div class="ttdef"><b>Definition</b> <a href="#l00797">bedrock-protocol/src/serializer/PacketSerializer.php:797</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_afd3101b0f83bdf6dda93ecd93da079f2"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afd3101b0f83bdf6dda93ecd93da079f2">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\writeItemStackNetIdVariant</a></div><div class="ttdeci">writeItemStackNetIdVariant(int $id)</div><div class="ttdef"><b>Definition</b> <a href="#l00766">bedrock-protocol/src/serializer/PacketSerializer.php:766</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_afdf9528d2c1e218adfeae66915c2c85c"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#afdf9528d2c1e218adfeae66915c2c85c">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\readOptional</a></div><div class="ttdeci">readOptional(\Closure $reader)</div><div class="ttdef"><b>Definition</b> <a href="#l00799">bedrock-protocol/src/serializer/PacketSerializer.php:799</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position_html"><div class="ttname"><a href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">pocketmine\network\mcpe\protocol\types\BlockPosition</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d80/_block_position_8php_source.html#l00019">BlockPosition.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule_html"><div class="ttname"><a href="../../d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html">pocketmine\network\mcpe\protocol\types\BoolGameRule</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d8d/_bool_game_rule_8php_source.html#l00019">BoolGameRule.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_float_game_rule_html"><div class="ttname"><a href="../../d0/d39/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_float_game_rule.html">pocketmine\network\mcpe\protocol\types\FloatGameRule</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d32/_float_game_rule_8php_source.html#l00019">FloatGameRule.php:19</a></div></div>

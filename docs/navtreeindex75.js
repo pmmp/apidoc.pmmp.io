@@ -1,5 +1,14 @@
 var NAVTREEINDEX75 =
 {
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,150,57],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,148,43],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,150,43],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,148,15],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,150,15],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,148,42],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,150,42],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,148,1],
+"d5/d56/classpocketmine_1_1block_1_1_mob_head.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,150,1],
 "d5/d56/classpocketmine_1_1block_1_1_mob_head.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,148,5],
 "d5/d56/classpocketmine_1_1block_1_1_mob_head.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,150,5],
 "d5/d56/classpocketmine_1_1block_1_1_mob_head.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,148,33],
@@ -18,7 +27,7 @@ var NAVTREEINDEX75 =
 "d5/d56/classpocketmine_1_1block_1_1_mob_head.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,150,16],
 "d5/d56/classpocketmine_1_1block_1_1_mob_head.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,148,27],
 "d5/d56/classpocketmine_1_1block_1_1_mob_head.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,150,27],
-"d5/d58/_camera_set_instruction_ease_8php_source.html":[4,0,1,0,1,0,1,0,14],
+"d5/d58/_camera_set_instruction_ease_8php_source.html":[4,0,1,0,1,0,1,0,15],
 "d5/d59/_element_8php_source.html":[4,0,0,0,90],
 "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html":[2,0,0,0,9],
 "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html":[3,0,1,0,11],
@@ -157,7 +166,7 @@ var NAVTREEINDEX75 =
 "d5/d5b/_dirt_type_8php_source.html":[4,0,0,0,2,18],
 "d5/d5d/classpocketmine_1_1world_1_1particle_1_1_spore_particle.html":[3,0,1,30,4,33],
 "d5/d5d/classpocketmine_1_1world_1_1particle_1_1_spore_particle.html#ab7213a36bf6de26617e7219482e93800":[3,0,1,30,4,33,0],
-"d5/d5e/_client_cache_miss_response_packet_8php_source.html":[4,0,1,0,1,0,39],
+"d5/d5e/_client_cache_miss_response_packet_8php_source.html":[4,0,1,0,1,0,40],
 "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html":[3,0,1,6,0,0,1,0,4],
 "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html#a08bbc3eb70713d5bbd42080968bc0deb":[3,0,1,6,0,0,1,0,4,1],
 "d5/d5f/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_value_remap.html#a5c3d2322f835da67c0f828b9655b5e4c":[3,0,1,6,0,0,1,0,4,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX75 =
 "d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,51,17],
 "d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,52,17],
 "d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,51,28],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,52,28],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#ab469eb09163aafacb949cc1cf2e520a1":[2,0,0,5,51,34],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#ab469eb09163aafacb949cc1cf2e520a1":[3,0,1,12,52,34],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,51,39],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aba073e91196cf2978057ec4d3842aa76":[3,0,1,12,52,39],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#abd2688f008221d4c5fcdacac754d807e":[2,0,0,5,51,36],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#abd2688f008221d4c5fcdacac754d807e":[3,0,1,12,52,36],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#abe253aa6fbfe2fc36389edadb753ffc7":[2,0,0,5,51,18],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#abe253aa6fbfe2fc36389edadb753ffc7":[3,0,1,12,52,18],
-"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#ac534c116a4d2291a8d67f15c4b485b74":[2,0,0,5,51,25]
+"d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,52,28]
 };

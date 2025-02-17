@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -132,113 +132,145 @@ $(function(){initNavTree('dc/dd9/_creative_inventory_8php_source.html','../../')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../db/d9b/namespacepocketmine_1_1inventory.html">pocketmine\inventory</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d4/d9f/classpocketmine_1_1crafting_1_1_crafting_manager_from_data_helper.html">pocketmine\crafting\CraftingManagerFromDataHelper</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d2/d0d/classpocketmine_1_1crafting_1_1json_1_1_item_stack_data.html">pocketmine\crafting\json\ItemStackData</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d3/dfa/classpocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files.html">pocketmine\data\bedrock\BedrockDataFiles</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d3/dfa/classpocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files.html">pocketmine\data\bedrock\BedrockDataFiles</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dc/d55/classpocketmine_1_1inventory_1_1json_1_1_creative_group_data.html">pocketmine\inventory\json\CreativeGroupData</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use pocketmine\utils\DestructorCallbackTrait;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">pocketmine\utils\ObjectSet</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use pocketmine\utils\SingletonTrait;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html">   35</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html">CreativeInventory</a>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use SingletonTrait;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    use DestructorCallbackTrait;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> array $creative = [];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a> $contentChangedCallbacks;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use pocketmine\utils\DestructorCallbackTrait;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">pocketmine\utils\ObjectSet</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use pocketmine\utils\SingletonTrait;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use Symfony\Component\Filesystem\Path;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> array_filter;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> array_map;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html">   38</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html">CreativeInventory</a>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    use SingletonTrait;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    use DestructorCallbackTrait;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> array $creative = [];</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;contentChangedCallbacks = <span class="keyword">new</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $creativeItems = <a class="code hl_function" href="../../d4/d9f/classpocketmine_1_1crafting_1_1_crafting_manager_from_data_helper.html#a69e89bd5c1ddf4d1b2f97e6ee14460d0">CraftingManagerFromDataHelper::loadJsonArrayOfObjectsFile</a>(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            BedrockDataFiles::CREATIVEITEMS_JSON,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            ItemStackData::class</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        );</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">foreach</span>($creativeItems as $data){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $item = CraftingManagerFromDataHelper::deserializeItemStack($data);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span>($item === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="comment">//unknown item</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $this-&gt;<a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a3b114aca3635fe189aefa2cddf3a5ca3">add</a>($item);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#af3a3d804bf0032fdf6d5bed68c493478">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#af3a3d804bf0032fdf6d5bed68c493478">clear</a>() : void{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;creative = [];</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;onContentChange();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a> $contentChangedCallbacks;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;contentChangedCallbacks = <span class="keyword">new</span> <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">foreach</span>([</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="stringliteral">&quot;construction&quot;</span> =&gt; CreativeCategory::CONSTRUCTION,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="stringliteral">&quot;nature&quot;</span> =&gt; CreativeCategory::NATURE,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="stringliteral">&quot;equipment&quot;</span> =&gt; CreativeCategory::EQUIPMENT,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="stringliteral">&quot;items&quot;</span> =&gt; CreativeCategory::ITEMS,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        ] as $categoryId =&gt; $categoryEnum){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $groups = <a class="code hl_function" href="../../d4/d9f/classpocketmine_1_1crafting_1_1_crafting_manager_from_data_helper.html#a69e89bd5c1ddf4d1b2f97e6ee14460d0">CraftingManagerFromDataHelper::loadJsonArrayOfObjectsFile</a>(</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                Path::join(BedrockDataFiles::CREATIVE, $categoryId . <span class="stringliteral">&quot;.json&quot;</span>),</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                CreativeGroupData::class</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">foreach</span>($groups as $groupData){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                $icon = $groupData-&gt;group_icon === <span class="keyword">null</span> ? null : CraftingManagerFromDataHelper::deserializeItemStack($groupData-&gt;group_icon);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                $group = $icon === <span class="keyword">null</span> ? null : <span class="keyword">new</span> <a class="code hl_class" href="../../df/d51/classpocketmine_1_1inventory_1_1_creative_group.html">CreativeGroup</a>(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <span class="keyword">new</span> <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">Translatable</a>($groupData-&gt;group_name),</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    $icon</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                );</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a71dbc1812ec0e1b719cd38a8c90761f9">   77</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a71dbc1812ec0e1b719cd38a8c90761f9">getAll</a>() : array{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        return <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::cloneObjectArray($this-&gt;creative);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                $items = array_filter(array_map(<span class="keyword">static</span> fn($itemStack) =&gt; CraftingManagerFromDataHelper::deserializeItemStack($itemStack), $groupData-&gt;items));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">foreach</span>($items as $item){</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    $this-&gt;<a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5e101726cdda9b556b3d195e4e4d6b6e">add</a>($item, $categoryEnum, $group);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#af3a3d804bf0032fdf6d5bed68c493478">   86</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#af3a3d804bf0032fdf6d5bed68c493478">clear</a>() : void{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;creative = [];</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;onContentChange();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
 </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItem(<span class="keywordtype">int</span> $index) : ?<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        return isset($this-&gt;creative[$index]) ? clone $this-&gt;creative[$index] : null;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemIndex(Item $item) : int{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        foreach($this-&gt;creative as $i =&gt; $d){</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">if</span>($item-&gt;equals($d, <span class="keyword">true</span>, <span class="keyword">false</span>)){</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                return $i;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a3b114aca3635fe189aefa2cddf3a5ca3">   99</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a3b114aca3635fe189aefa2cddf3a5ca3">add</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : void{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $this-&gt;creative[] = clone $item;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $this-&gt;onContentChange();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a71dbc1812ec0e1b719cd38a8c90761f9">   95</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a71dbc1812ec0e1b719cd38a8c90761f9">getAll</a>() : array{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        return array_map(fn(<a class="code hl_class" href="../../da/d8c/classpocketmine_1_1inventory_1_1_creative_inventory_entry.html">CreativeInventoryEntry</a> $entry) =&gt; $entry-&gt;getItem(), $this-&gt;creative);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5b4817d862c5a5a227d7a089bc500bdd">  108</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">remove</span>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : void{</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $index = $this-&gt;getItemIndex($item);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span>($index !== -1){</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            unset($this-&gt;creative[$index]);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            $this-&gt;onContentChange();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a921fec46b2f36b2d0822ba9dd1441f8c">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a921fec46b2f36b2d0822ba9dd1441f8c">getAllEntries</a>() : array{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        return $this-&gt;creative;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
 </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">public</span> <span class="keyword">function</span> contains(Item $item) : bool{</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        return $this-&gt;getItemIndex($item) !== -1;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a9914a4295b8bde14311231087ab438a4">  121</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a9914a4295b8bde14311231087ab438a4">getContentChangedCallbacks</a>() : <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        return $this-&gt;contentChangedCallbacks;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItem(<span class="keywordtype">int</span> $index) : ?<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        return $this-&gt;getEntry($index)?-&gt;getItem();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">public</span> <span class="keyword">function</span> getEntry(<span class="keywordtype">int</span> $index) : ?CreativeInventoryEntry{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        return $this-&gt;creative[$index] ?? null;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemIndex(Item $item) : int{</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        foreach($this-&gt;creative as $i =&gt; $d){</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">if</span>($d-&gt;matchesItem($item)){</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                return $i;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
-</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">private</span> <span class="keyword">function</span> onContentChange() : void{</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        foreach($this-&gt;contentChangedCallbacks as $callback){</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            $callback();</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5e101726cdda9b556b3d195e4e4d6b6e">  129</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5e101726cdda9b556b3d195e4e4d6b6e">add</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <a class="code hl_enumeration" href="../../db/d9b/namespacepocketmine_1_1inventory.html#a10b8fd4fd42e48951a80042e1d1b9e9f">CreativeCategory</a> $category = CreativeCategory::ITEMS, ?<a class="code hl_class" href="../../df/d51/classpocketmine_1_1inventory_1_1_creative_group.html">CreativeGroup</a> $group = <span class="keyword">null</span>) : void{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $this-&gt;creative[] = new <a class="code hl_class" href="../../da/d8c/classpocketmine_1_1inventory_1_1_creative_inventory_entry.html">CreativeInventoryEntry</a>($item, $category, $group);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        $this-&gt;onContentChange();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5b4817d862c5a5a227d7a089bc500bdd">  138</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">remove</span>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : void{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        $index = $this-&gt;getItemIndex($item);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">if</span>($index !== -1){</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            unset($this-&gt;creative[$index]);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            $this-&gt;onContentChange();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">public</span> <span class="keyword">function</span> contains(Item $item) : bool{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        return $this-&gt;getItemIndex($item) !== -1;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a9914a4295b8bde14311231087ab438a4">  151</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a9914a4295b8bde14311231087ab438a4">getContentChangedCallbacks</a>() : <a class="code hl_class" href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">ObjectSet</a>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        return $this-&gt;contentChangedCallbacks;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">private</span> <span class="keyword">function</span> onContentChange() : void{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        foreach($this-&gt;contentChangedCallbacks as $callback){</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            $callback();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_from_data_helper_html"><div class="ttname"><a href="../../d4/d9f/classpocketmine_1_1crafting_1_1_crafting_manager_from_data_helper.html">pocketmine\crafting\CraftingManagerFromDataHelper</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/db4/_crafting_manager_from_data_helper_8php_source.html#l00052">CraftingManagerFromDataHelper.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1crafting_1_1_crafting_manager_from_data_helper_html_a69e89bd5c1ddf4d1b2f97e6ee14460d0"><div class="ttname"><a href="../../d4/d9f/classpocketmine_1_1crafting_1_1_crafting_manager_from_data_helper.html#a69e89bd5c1ddf4d1b2f97e6ee14460d0">pocketmine\crafting\CraftingManagerFromDataHelper\loadJsonArrayOfObjectsFile</a></div><div class="ttdeci">static loadJsonArrayOfObjectsFile(string $filePath, string $modelCLass)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db4/_crafting_manager_from_data_helper_8php_source.html#l00158">CraftingManagerFromDataHelper.php:158</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1crafting_1_1json_1_1_item_stack_data_html"><div class="ttname"><a href="../../d2/d0d/classpocketmine_1_1crafting_1_1json_1_1_item_stack_data.html">pocketmine\crafting\json\ItemStackData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/dbb/_item_stack_data_8php_source.html#l00026">ItemStackData.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files_html"><div class="ttname"><a href="../../d3/dfa/classpocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files.html">pocketmine\data\bedrock\BedrockDataFiles</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db3/_bedrock_data_files_8php_source.html#l00028">BedrockDataFiles.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html">pocketmine\inventory\CreativeInventory</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">CreativeInventory.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a3b114aca3635fe189aefa2cddf3a5ca3"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a3b114aca3635fe189aefa2cddf3a5ca3">pocketmine\inventory\CreativeInventory\add</a></div><div class="ttdeci">add(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00099">CreativeInventory.php:99</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a71dbc1812ec0e1b719cd38a8c90761f9"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a71dbc1812ec0e1b719cd38a8c90761f9">pocketmine\inventory\CreativeInventory\getAll</a></div><div class="ttdeci">getAll()</div><div class="ttdef"><b>Definition</b> <a href="#l00077">CreativeInventory.php:77</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a9914a4295b8bde14311231087ab438a4"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a9914a4295b8bde14311231087ab438a4">pocketmine\inventory\CreativeInventory\getContentChangedCallbacks</a></div><div class="ttdeci">getContentChangedCallbacks()</div><div class="ttdef"><b>Definition</b> <a href="#l00121">CreativeInventory.php:121</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_af3a3d804bf0032fdf6d5bed68c493478"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#af3a3d804bf0032fdf6d5bed68c493478">pocketmine\inventory\CreativeInventory\clear</a></div><div class="ttdeci">clear()</div><div class="ttdef"><b>Definition</b> <a href="#l00068">CreativeInventory.php:68</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_group_html"><div class="ttname"><a href="../../df/d51/classpocketmine_1_1inventory_1_1_creative_group.html">pocketmine\inventory\CreativeGroup</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d39/_creative_group_8php_source.html#l00033">CreativeGroup.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_entry_html"><div class="ttname"><a href="../../da/d8c/classpocketmine_1_1inventory_1_1_creative_inventory_entry.html">pocketmine\inventory\CreativeInventoryEntry</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/dcc/_creative_inventory_entry_8php_source.html#l00028">CreativeInventoryEntry.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html">pocketmine\inventory\CreativeInventory</a></div><div class="ttdef"><b>Definition</b> <a href="#l00038">CreativeInventory.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a5e101726cdda9b556b3d195e4e4d6b6e"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5e101726cdda9b556b3d195e4e4d6b6e">pocketmine\inventory\CreativeInventory\add</a></div><div class="ttdeci">add(Item $item, CreativeCategory $category=CreativeCategory::ITEMS, ?CreativeGroup $group=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00129">CreativeInventory.php:129</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a71dbc1812ec0e1b719cd38a8c90761f9"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a71dbc1812ec0e1b719cd38a8c90761f9">pocketmine\inventory\CreativeInventory\getAll</a></div><div class="ttdeci">getAll()</div><div class="ttdef"><b>Definition</b> <a href="#l00095">CreativeInventory.php:95</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a921fec46b2f36b2d0822ba9dd1441f8c"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a921fec46b2f36b2d0822ba9dd1441f8c">pocketmine\inventory\CreativeInventory\getAllEntries</a></div><div class="ttdeci">getAllEntries()</div><div class="ttdef"><b>Definition</b> <a href="#l00103">CreativeInventory.php:103</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_a9914a4295b8bde14311231087ab438a4"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a9914a4295b8bde14311231087ab438a4">pocketmine\inventory\CreativeInventory\getContentChangedCallbacks</a></div><div class="ttdeci">getContentChangedCallbacks()</div><div class="ttdef"><b>Definition</b> <a href="#l00151">CreativeInventory.php:151</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1_creative_inventory_html_af3a3d804bf0032fdf6d5bed68c493478"><div class="ttname"><a href="../../d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#af3a3d804bf0032fdf6d5bed68c493478">pocketmine\inventory\CreativeInventory\clear</a></div><div class="ttdeci">clear()</div><div class="ttdef"><b>Definition</b> <a href="#l00086">CreativeInventory.php:86</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1inventory_1_1json_1_1_creative_group_data_html"><div class="ttname"><a href="../../dc/d55/classpocketmine_1_1inventory_1_1json_1_1_creative_group_data.html">pocketmine\inventory\json\CreativeGroupData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d99/_creative_group_data_8php_source.html#l00028">CreativeGroupData.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00028">Translatable.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_object_set_html"><div class="ttname"><a href="../../dd/de5/classpocketmine_1_1utils_1_1_object_set.html">pocketmine\utils\ObjectSet</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da1/_object_set_8php_source.html#l00033">ObjectSet.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00105">Utils.php:105</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1inventory_html"><div class="ttname"><a href="../../db/d9b/namespacepocketmine_1_1inventory.html">pocketmine\inventory</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d2c/_armor_inventory_8php_source.html#l00024">ArmorInventory.php:24</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1inventory_html_a10b8fd4fd42e48951a80042e1d1b9e9f"><div class="ttname"><a href="../../db/d9b/namespacepocketmine_1_1inventory.html#a10b8fd4fd42e48951a80042e1d1b9e9f">pocketmine\inventory\CreativeCategory</a></div><div class="ttdeci">CreativeCategory</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d7d/_creative_category_8php_source.html#l00029">CreativeCategory.php:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

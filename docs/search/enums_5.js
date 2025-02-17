@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tooltier_0',['ToolTier',['../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12',1,'pocketmine::item']]]
+  ['suspiciousstewtype_0',['SuspiciousStewType',['../d0/dec/namespacepocketmine_1_1item.html#a5eff4130b27df798bb3a2d9d15d10118',1,'pocketmine::item']]]
 ];

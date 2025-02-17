@@ -1,7 +1,9 @@
 var NAVTREEINDEX42 =
 {
-"d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html#abc7d59087ccbf899d85b5f9c212a6ec8":[3,0,1,16,0,6,192,6],
-"d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html#aeec91e91211dc71d0444bae0553f20cf":[3,0,1,16,0,6,192,5],
+"d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html#ab3944caceb8aaa31d3c4edc4a7cab5d2":[3,0,1,16,0,6,194,2],
+"d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,194,1],
+"d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html#abc7d59087ccbf899d85b5f9c212a6ec8":[3,0,1,16,0,6,194,6],
+"d2/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_template_data_request_packet.html#aeec91e91211dc71d0444bae0553f20cf":[3,0,1,16,0,6,194,5],
 "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html":[2,0,0,5,26],
 "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html":[3,0,1,12,27],
 "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html#a7266cdfccb87991ebabf1de3be51e90a":[2,0,0,5,26,1],
@@ -10,7 +12,7 @@ var NAVTREEINDEX42 =
 "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html#accd40cba3eefb1d5886f203da75aa5b8":[3,0,1,12,27,0],
 "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html#ad53358136d2834427c096078f598fa31":[2,0,0,5,26,2],
 "d2/de2/interfacepocketmine_1_1item_1_1_consumable_item.html#ad53358136d2834427c096078f598fa31":[3,0,1,12,27,2],
-"d2/de3/_death_info_packet_8php_source.html":[4,0,1,0,1,0,59],
+"d2/de3/_death_info_packet_8php_source.html":[4,0,1,0,1,0,60],
 "d2/de3/classpocketmine_1_1crafting_1_1json_1_1_recipe_ingredient_data.html":[3,0,1,4,0,4],
 "d2/de5/_dripleaf_tilt_up_sound_8php_source.html":[4,0,0,25,5,50],
 "d2/de6/_not_cloneable_8php_source.html":[4,0,0,23,15],
@@ -188,7 +190,7 @@ var NAVTREEINDEX42 =
 "d2/deb/classpocketmine_1_1entity_1_1effect_1_1_string_to_effect_parser.html#afab043597a2b35ff13864a8b41fa9337":[3,0,1,7,1,16,2],
 "d2/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_generator_type.html":[3,0,1,16,0,6,1,38],
 "d2/dee/_attachable_logger_8php_source.html":[4,0,1,0,6,0,0],
-"d2/def/_on_screen_texture_animation_packet_8php_source.html":[4,0,1,0,1,0,111],
+"d2/def/_on_screen_texture_animation_packet_8php_source.html":[4,0,1,0,1,0,113],
 "d2/df0/_loaded_chunk_data_8php_source.html":[4,0,0,25,1,0,11],
 "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html":[3,0,1,16,0,6,1,4,1],
 "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#a0400a51789f854ec2586b0df486fc4fb":[3,0,1,16,0,6,1,4,1,10],
@@ -234,7 +236,7 @@ var NAVTREEINDEX42 =
 "d2/df0/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_corrupted_region_exception.html":[3,0,1,30,1,0,3,1],
 "d2/df1/_shulker_box_inventory_8php_source.html":[4,0,0,0,0,16],
 "d2/df1/_spawnable_8php_source.html":[4,0,0,0,1,33],
-"d2/df2/_education_settings_packet_8php_source.html":[4,0,1,0,1,0,64],
+"d2/df2/_education_settings_packet_8php_source.html":[4,0,1,0,1,0,65],
 "d2/df3/_plugin_owned_trait_8php_source.html":[4,0,0,15,19],
 "d2/df3/classpocketmine_1_1world_1_1format_1_1io_1_1_global_item_data_handlers.html":[3,0,1,30,1,0,10],
 "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html":[2,0,0,5,43],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,44,1],
 "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,43,27],
 "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a1179a3b7a49461ede413b50c82b5684a":[3,0,1,12,44,27],
-"d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,43,4],
-"d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a1df151eb419168f838e6d927c50f9210":[3,0,1,12,44,4],
-"d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a23c827b82179f8a57b786a6fa38d08e8":[2,0,0,5,43,19]
+"d2/df4/classpocketmine_1_1item_1_1_fertilizer.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,43,4]
 };

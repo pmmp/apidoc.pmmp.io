@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.24.1 git-39e69276a1bbe86ebd583e834381e5bc73948564</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
    </div>
   </td>
  </tr>
@@ -724,7 +724,7 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        return false;</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    }</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleItemComponent(ItemComponentPacket $packet) : bool{</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleItemRegistry(ItemRegistryPacket $packet) : bool{</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        return false;</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    }</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
@@ -943,7 +943,15 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleCameraAimAssistPresets(CameraAimAssistPresetsPacket $packet) : bool{</div>
 <div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        return false;</div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    }</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>}</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleCameraAimAssistInstruction(CameraAimAssistInstructionPacket $packet) : bool{</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        return false;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    }</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleMovementPredictionSync(MovementPredictionSyncPacket $packet) : bool{</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>        return false;</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    }</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
