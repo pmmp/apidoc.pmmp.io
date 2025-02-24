@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-3df2bdb87979aa699d17e5b82ec2368e123a1411</span>
    </div>
   </td>
  </tr>
@@ -233,7 +233,7 @@ $(function(){initNavTree('d9/d61/_block_break_info_8php_source.html','../../'); 
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        $efficiency = $item-&gt;getMiningEfficiency(($this-&gt;toolType &amp; $item-&gt;<a class="code hl_function" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a95cfab40de7390593990a239f8e4af73">getBlockToolType</a>()) !== 0);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">if</span>($efficiency &lt;= 0){</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(get_class($item) . <span class="stringliteral">&quot; has invalid mining efficiency: expected &gt;= 0, got $efficiency&quot;</span>);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(get_class($item) . <span class="stringliteral">&quot; must have a positive mining efficiency, but got $efficiency&quot;</span>);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        $base /= $efficiency;</div>

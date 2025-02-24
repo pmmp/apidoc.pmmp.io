@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-34f801ee3c6d8c99dfd928b19fc58597b5b997ea</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.1 git-3df2bdb87979aa699d17e5b82ec2368e123a1411</span>
    </div>
   </td>
  </tr>
@@ -751,7 +751,7 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
 <div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    <span class="keyword">public</span> <span class="keyword">function</span> removeOp(<span class="keywordtype">string</span> $name) : void{</div>
 <div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        $lowercaseName = strtolower($name);</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        <span class="keywordflow">foreach</span>($this-&gt;operators-&gt;getAll() as $operatorName =&gt; $_){</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        <span class="keywordflow">foreach</span>(Utils::promoteKeys($this-&gt;operators-&gt;getAll()) as $operatorName =&gt; $_){</div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>            $operatorName = (string) $operatorName;</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>            if($lowercaseName === strtolower($operatorName)){</div>
 <div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                $this-&gt;operators-&gt;remove($operatorName);</div>
@@ -2021,7 +2021,7 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_script_plugin_loader_html"><div class="ttname"><a href="../../d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader.html">pocketmine\plugin\ScriptPluginLoader</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db3/_script_plugin_loader_8php_source.html#l00040">ScriptPluginLoader.php:40</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_html"><div class="ttname"><a href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">pocketmine\promise\Promise</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d76/_promise_8php_source.html#l00033">Promise.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_resolver_html"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html">pocketmine\promise\PromiseResolver</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d06/_promise_resolver_8php_source.html#l00029">PromiseResolver.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1resourcepacks_1_1_resource_pack_manager_html"><div class="ttname"><a href="../../d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html">pocketmine\resourcepacks\ResourcePackManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dad/_resource_pack_manager_8php_source.html#l00046">ResourcePackManager.php:46</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1resourcepacks_1_1_resource_pack_manager_html"><div class="ttname"><a href="../../d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html">pocketmine\resourcepacks\ResourcePackManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dad/_resource_pack_manager_8php_source.html#l00047">ResourcePackManager.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_pool_html"><div class="ttname"><a href="../../d8/db6/classpocketmine_1_1scheduler_1_1_async_pool.html">pocketmine\scheduler\AsyncPool</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d27/_async_pool_8php_source.html#l00047">AsyncPool.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_timings_collection_task_html"><div class="ttname"><a href="../../df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html">pocketmine\scheduler\TimingsCollectionTask</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d83/_timings_collection_task_8php_source.html#l00032">TimingsCollectionTask.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_timings_control_task_html"><div class="ttname"><a href="../../de/d2e/classpocketmine_1_1scheduler_1_1_timings_control_task.html">pocketmine\scheduler\TimingsControlTask</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d19/_timings_control_task_8php_source.html#l00028">TimingsControlTask.php:28</a></div></div>
