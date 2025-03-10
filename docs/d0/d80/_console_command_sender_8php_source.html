@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.2 git-e3e0c14275ad715ee71dc36d8acbe1c5b00ba511</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
    </div>
   </td>
  </tr>
@@ -170,7 +170,7 @@ $(function(){initNavTree('d0/d80/_console_command_sender_8php_source.html','../.
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $message = $this-&gt;getLanguage()-&gt;translate($message);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">foreach</span>(explode(<span class="stringliteral">&quot;\n&quot;</span>, trim($message)) as $line){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">foreach</span>(explode(<span class="stringliteral">&quot;\n&quot;</span>, trim($message), limit: PHP_INT_MAX) as $line){</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Terminal::writeLine(TextFormat::GREEN . <span class="stringliteral">&quot;Command output | &quot;</span> . TextFormat::addBase(TextFormat::WHITE, $line));</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>

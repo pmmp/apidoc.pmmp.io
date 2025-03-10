@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.2 git-e3e0c14275ad715ee71dc36d8acbe1c5b00ba511</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
    </div>
   </td>
  </tr>
@@ -240,28 +240,30 @@ $(function(){initNavTree('dc/d0a/_ban_entry_8php_source.html','../../'); initRes
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        }</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        $parts = explode(<span class="stringliteral">&quot;|&quot;</span>, trim($str));</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $entry = <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html">BanEntry</a>(trim(array_shift($parts)));</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            $entry-&gt;setCreated(self::parseDate(array_shift($parts)));</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        }</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            $entry-&gt;setSource(trim(array_shift($parts)));</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            $expire = trim(array_shift($parts));</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">if</span>($expire !== <span class="stringliteral">&quot;&quot;</span> &amp;&amp; strtolower($expire) !== <span class="stringliteral">&quot;forever&quot;</span>){</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                $entry-&gt;setExpires(self::parseDate($expire));</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            }</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            $entry-&gt;setReason(trim(array_shift($parts)));</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span> $entry;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="comment">//we expect at most 5 parts, but accept 6 in case of an extra unexpected delimiter</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="comment">//we don&#39;t want to include unexpected data into the ban reason</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        $parts = explode(<span class="stringliteral">&quot;|&quot;</span>, trim($str), limit: 6);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        $entry = <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html">BanEntry</a>(trim(array_shift($parts)));</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            $entry-&gt;setCreated(self::parseDate(array_shift($parts)));</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            $entry-&gt;setSource(trim(array_shift($parts)));</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            $expire = trim(array_shift($parts));</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">if</span>($expire !== <span class="stringliteral">&quot;&quot;</span> &amp;&amp; strtolower($expire) !== <span class="stringliteral">&quot;forever&quot;</span>){</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                $entry-&gt;setExpires(self::parseDate($expire));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span>(count($parts) &gt; 0){</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            $entry-&gt;setReason(trim(array_shift($parts)));</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> $entry;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
 </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_ban_entry_html"><div class="ttname"><a href="../../d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html">pocketmine\permission\BanEntry</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">BanEntry.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_ban_entry_html_a3272fd93194d5bda79648dcd5c6c20a6"><div class="ttname"><a href="../../d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#a3272fd93194d5bda79648dcd5c6c20a6">pocketmine\permission\BanEntry\setCreated</a></div><div class="ttdeci">setCreated(\DateTime $date)</div><div class="ttdef"><b>Definition</b> <a href="#l00061">BanEntry.php:61</a></div></div>

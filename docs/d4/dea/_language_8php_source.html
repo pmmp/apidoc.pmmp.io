@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.2 git-e3e0c14275ad715ee71dc36d8acbe1c5b00ba511</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ $(function(){initNavTree('d4/dea/_language_8php_source.html','../../'); initResi
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordflow">foreach</span>($files as $file){</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        $code = explode(<span class="stringliteral">&quot;.&quot;</span>, $file)[0];</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        $code = explode(<span class="stringliteral">&quot;.&quot;</span>, $file, limit: 2)[0];</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                        $strings = <a class="code hl_function" href="../../d8/d53/classpocketmine_1_1lang_1_1_language.html#a3d5b7eb29eae2ea022e2fbcefa52990e">self::loadLang</a>($path, $code);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                        <span class="keywordflow">if</span>(isset($strings[KnownTranslationKeys::LANGUAGE_NAME])){</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                            $result[$code] = $strings[KnownTranslationKeys::LANGUAGE_NAME];</div>

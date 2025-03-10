@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.2 git-e3e0c14275ad715ee71dc36d8acbe1c5b00ba511</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
    </div>
   </td>
  </tr>
@@ -330,22 +330,26 @@ $(function(){initNavTree('d8/d84/_particle_command_8php_source.html','../../'); 
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;blockdust&quot;</span>:</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                <span class="keywordflow">if</span>($data !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    $d = explode(<span class="stringliteral">&quot;_&quot;</span>, $data);</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    <span class="keywordflow">if</span>(count($d) &gt;= 3){</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> DustParticle(<span class="keyword">new</span> Color(</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                            ((<span class="keywordtype">int</span>) $d[0]) &amp; 0xff,</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                            ((<span class="keywordtype">int</span>) $d[1]) &amp; 0xff,</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                            ((<span class="keywordtype">int</span>) $d[2]) &amp; 0xff,</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                            ((<span class="keywordtype">int</span>) ($d[3] ?? 255)) &amp; 0xff</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                        ));</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                    }</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                }</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    <span class="comment">//to preserve the old unlimited explode behaviour, allow this to split into at most 5 parts</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    <span class="comment">//this allows the 4th argument to be processed normally if given without forcing it to also consume</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                    <span class="comment">//any unexpected parts</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                    <span class="comment">//we probably ought to error in this case, but this will do for now</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                    $d = explode(<span class="stringliteral">&quot;_&quot;</span>, $data, limit: 5);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                    <span class="keywordflow">if</span>(count($d) &gt;= 3){</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> DustParticle(<span class="keyword">new</span> Color(</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                            ((<span class="keywordtype">int</span>) $d[0]) &amp; 0xff,</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                            ((<span class="keywordtype">int</span>) $d[1]) &amp; 0xff,</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                            ((<span class="keywordtype">int</span>) $d[2]) &amp; 0xff,</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                            ((<span class="keywordtype">int</span>) ($d[3] ?? 255)) &amp; 0xff</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                        ));</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00036">BlockTypeIds.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1color_1_1_color_html"><div class="ttname"><a href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">pocketmine\color\Color</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dd6/_color_8php_source.html#l00029">Color.php:29</a></div></div>

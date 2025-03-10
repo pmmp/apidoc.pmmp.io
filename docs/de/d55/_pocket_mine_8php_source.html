@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.2 git-e3e0c14275ad715ee71dc36d8acbe1c5b00ba511</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
    </div>
   </td>
  </tr>
@@ -365,7 +365,7 @@ $(function(){initNavTree('de/d55/_pocket_mine_8php_source.html','../../'); initR
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="stringliteral">        $composerGitHash = InstalledVersions::getReference(&#39;</span><a class="code hl_namespace" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>/<a class="code hl_namespace" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>-mp<span class="stringliteral">&#39;);</span></div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="stringliteral">        if($composerGitHash !== null){</span></div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="stringliteral">            //we can&#39;</span>t verify dependency versions <span class="keywordflow">if</span> we were installed without <span class="keyword">using</span> git</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            $currentGitHash = explode(<span class="stringliteral">&quot;-&quot;</span>, VersionInfo::GIT_HASH())[0];</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            $currentGitHash = explode(<span class="stringliteral">&quot;-&quot;</span>, VersionInfo::GIT_HASH(), 2)[0];</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="keywordflow">if</span>($currentGitHash !== $composerGitHash){</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;Composer dependencies and/or autoloader are out of sync.&quot;</span>);</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69">critical_error</a>(<span class="stringliteral">&quot;- Current revision is $currentGitHash&quot;</span>);</div>

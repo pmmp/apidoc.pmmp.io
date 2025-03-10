@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.2 git-e3e0c14275ad715ee71dc36d8acbe1c5b00ba511</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
    </div>
   </td>
  </tr>
@@ -173,7 +173,7 @@ $(function(){initNavTree('d5/d96/_sign_text_8php_source.html','../../'); initRes
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html#acd44da6b85ba4ce27a5f0bcebe970973">   81</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html#acd44da6b85ba4ce27a5f0bcebe970973">fromBlob</a>(<span class="keywordtype">string</span> $blob, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $baseColor = <span class="keyword">null</span>, <span class="keywordtype">bool</span> $glowing = <span class="keyword">false</span>) : <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        return new self(array_slice(array_pad(explode(<span class="stringliteral">&quot;\n&quot;</span>, $blob), self::LINE_COUNT, <span class="stringliteral">&quot;&quot;</span>), 0, self::LINE_COUNT), $baseColor, $glowing);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        return new self(array_slice(array_pad(explode(<span class="stringliteral">&quot;\n&quot;</span>, $blob, limit: self::LINE_COUNT + 1), self::LINE_COUNT, <span class="stringliteral">&quot;&quot;</span>), 0, self::LINE_COUNT), $baseColor, $glowing);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
