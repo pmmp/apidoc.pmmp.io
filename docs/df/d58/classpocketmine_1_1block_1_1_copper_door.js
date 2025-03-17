@@ -66,7 +66,9 @@ var classpocketmine_1_1block_1_1_copper_door =
     [ "recalculateCollisionBoxes", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#ab3e3cf9e398ef56e1f322df6ab68413e", null ],
     [ "setHingeRight", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a2694b09ef415f28eb7910ef3c5629e40", null ],
     [ "setOpen", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#add8c99a94851c500db7cc3a0b79bb40b", null ],
+    [ "setOxidation", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a5589a4f36e3f44cf11120116b93b0802", null ],
     [ "setTop", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a15c9110197ae4e360ff34d87481138e3", null ],
+    [ "setWaxed", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#ace264e4db5ba15d3f7f2072f79d77023", null ],
     [ "ticksRandomly", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -65,7 +65,9 @@ var classpocketmine_1_1block_1_1_copper_slab =
     [ "place", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#aac7dd761d0e9e81aea1ca49d12e9629c", null ],
     [ "readStateFromWorld", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a3c13a6eae4fd3096529f08936687f41e", null ],
+    [ "setOxidation", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a5589a4f36e3f44cf11120116b93b0802", null ],
     [ "setSlabType", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#abc90cb12d0bc098f7c614cb247847782", null ],
+    [ "setWaxed", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#ace264e4db5ba15d3f7f2072f79d77023", null ],
     [ "ticksRandomly", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-afc4a3c7f18d42b41cbfde84ab6a2e4dd7c03045</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-463be36b72d4f519674ec472ca492773c197dbce</span>
    </div>
   </td>
  </tr>
@@ -139,73 +139,84 @@ $(function(){initNavTree('de/dc8/_garbage_collector_manager_8php_source.html','.
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> max;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> min;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> number_format;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d5/df8/classpocketmine_1_1_garbage_collector_manager.html">   41</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/df8/classpocketmine_1_1_garbage_collector_manager.html">GarbageCollectorManager</a>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//TODO: These values could be adjusted to better suit PM, but for now we just want to mirror PHP GC to minimize</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//behavioural changes.</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_TRIGGER = 100;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_MAX = 1_000_000_000;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_DEFAULT = 10_001;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_STEP = 10_000;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $threshold = self::GC_THRESHOLD_DEFAULT;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $collectionTimeTotalNs = 0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    private \Logger $logger;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">TimingsHandler</a> $timings;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        \<a class="code hl_interface" href="../../d4/d00/interface_logger.html">Logger</a> $logger,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        ?<a class="code hl_class" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">TimingsHandler</a> $parentTimings,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    ){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        gc_disable();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $this-&gt;logger = new \PrefixedLogger($logger, <span class="stringliteral">&quot;Cyclic Garbage Collector&quot;</span>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;timings = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">TimingsHandler</a>(<span class="stringliteral">&quot;Cyclic Garbage Collector&quot;</span>, $parentTimings);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">private</span> <span class="keyword">function</span> adjustGcThreshold(<span class="keywordtype">int</span> $cyclesCollected, <span class="keywordtype">int</span> $rootsAfterGC) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">//TODO Very simple heuristic for dynamic GC buffer resizing:</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">//If there are &quot;too few&quot; collections, increase the collection threshold</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">//by a fixed step</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">//Adapted from zend_gc.c/gc_adjust_threshold() as of PHP 8.3.14</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span>($cyclesCollected &lt; self::GC_THRESHOLD_TRIGGER || $rootsAfterGC &gt;= $this-&gt;threshold){</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            $this-&gt;threshold = min(self::GC_THRESHOLD_MAX, $this-&gt;threshold + self::GC_THRESHOLD_STEP);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }elseif($this-&gt;threshold &gt; self::GC_THRESHOLD_DEFAULT){</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            $this-&gt;threshold = max(self::GC_THRESHOLD_DEFAULT, $this-&gt;threshold - self::GC_THRESHOLD_STEP);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThreshold() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;threshold; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> sprintf;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d5/df8/classpocketmine_1_1_garbage_collector_manager.html">   42</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/df8/classpocketmine_1_1_garbage_collector_manager.html">GarbageCollectorManager</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//TODO: These values could be adjusted to better suit PM, but for now we just want to mirror PHP GC to minimize</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">//behavioural changes.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_TRIGGER = 100;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_MAX = 1_000_000_000;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_DEFAULT = 10_001;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> <span class="keyword">const</span> GC_THRESHOLD_STEP = 10_000;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $threshold = self::GC_THRESHOLD_DEFAULT;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $collectionTimeTotalNs = 0;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $runs = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    private \Logger $logger;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">TimingsHandler</a> $timings;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        \<a class="code hl_interface" href="../../d4/d00/interface_logger.html">Logger</a> $logger,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        ?<a class="code hl_class" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">TimingsHandler</a> $parentTimings,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    ){</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        gc_disable();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;logger = new \PrefixedLogger($logger, <span class="stringliteral">&quot;Cyclic Garbage Collector&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;timings = <span class="keyword">new</span> <a class="code hl_class" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">TimingsHandler</a>(<span class="stringliteral">&quot;Cyclic Garbage Collector&quot;</span>, $parentTimings);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">private</span> <span class="keyword">function</span> adjustGcThreshold(<span class="keywordtype">int</span> $cyclesCollected, <span class="keywordtype">int</span> $rootsAfterGC) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">//TODO Very simple heuristic for dynamic GC buffer resizing:</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">//If there are &quot;too few&quot; collections, increase the collection threshold</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment">//by a fixed step</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">//Adapted from zend_gc.c/gc_adjust_threshold() as of PHP 8.3.14</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span>($cyclesCollected &lt; self::GC_THRESHOLD_TRIGGER || $rootsAfterGC &gt;= $this-&gt;threshold){</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            $this-&gt;threshold = min(self::GC_THRESHOLD_MAX, $this-&gt;threshold + self::GC_THRESHOLD_STEP);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }elseif($this-&gt;threshold &gt; self::GC_THRESHOLD_DEFAULT){</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $this-&gt;threshold = max(self::GC_THRESHOLD_DEFAULT, $this-&gt;threshold - self::GC_THRESHOLD_STEP);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCollectionTimeTotalNs() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;collectionTimeTotalNs; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThreshold() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;threshold; }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">function</span> maybeCollectCycles() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $rootsBefore = gc_status()[<span class="stringliteral">&quot;roots&quot;</span>];</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span>($rootsBefore &lt; $this-&gt;threshold){</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;timings-&gt;startTiming();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCollectionTimeTotalNs() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;collectionTimeTotalNs; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">function</span> maybeCollectCycles() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $rootsBefore = gc_status()[<span class="stringliteral">&quot;roots&quot;</span>];</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span>($rootsBefore &lt; $this-&gt;threshold){</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $start = hrtime(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $cycles = gc_collect_cycles();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $end = hrtime(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $rootsAfter = gc_status()[<span class="stringliteral">&quot;roots&quot;</span>];</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;adjustGcThreshold($cycles, $rootsAfter);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;timings-&gt;stopTiming();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;timings-&gt;startTiming();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $start = hrtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $cycles = gc_collect_cycles();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $end = hrtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $rootsAfter = gc_status()[<span class="stringliteral">&quot;roots&quot;</span>];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;adjustGcThreshold($cycles, $rootsAfter);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $time = $end - $start;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $this-&gt;collectionTimeTotalNs += $time;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;gc_collect_cycles: &quot;</span> . number_format($time) . <span class="stringliteral">&quot; ns ($rootsBefore -&gt; $rootsAfter roots, $cycles cycles collected) - total GC time: &quot;</span> . number_format($this-&gt;collectionTimeTotalNs) . <span class="stringliteral">&quot; ns&quot;</span>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> $cycles;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $this-&gt;timings-&gt;stopTiming();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $time = $end - $start;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $this-&gt;collectionTimeTotalNs += $time;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $this-&gt;runs++;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $this-&gt;logger-&gt;info(sprintf(</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="stringliteral">&quot;Run #%d took %s ms (%s -&gt; %s roots, %s cycles collected) - cumulative GC time: %s ms&quot;</span>,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            $this-&gt;runs,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            number_format($time / 1_000_000, 2),</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            $rootsBefore,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            $rootsAfter,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            $cycles,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            number_format($this-&gt;collectionTimeTotalNs / 1_000_000, 2)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        ));</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> $cycles;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1_garbage_collector_manager_html"><div class="ttname"><a href="../../d5/df8/classpocketmine_1_1_garbage_collector_manager.html">pocketmine\GarbageCollectorManager</a></div><div class="ttdef"><b>Definition</b> <a href="#l00041">GarbageCollectorManager.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1_garbage_collector_manager_html"><div class="ttname"><a href="../../d5/df8/classpocketmine_1_1_garbage_collector_manager.html">pocketmine\GarbageCollectorManager</a></div><div class="ttdef"><b>Definition</b> <a href="#l00042">GarbageCollectorManager.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_handler_html"><div class="ttname"><a href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">pocketmine\timings\TimingsHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/df7/_timings_handler_8php_source.html#l00041">TimingsHandler.php:41</a></div></div>
 <div class="ttc" id="ainterface_logger_html"><div class="ttname"><a href="../../d4/d00/interface_logger.html">Logger</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d41/_logger_8php_source.html#l00018">Logger.php:18</a></div></div>
 <div class="ttc" id="anamespacepocketmine_html"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html">pocketmine</a></div></div>

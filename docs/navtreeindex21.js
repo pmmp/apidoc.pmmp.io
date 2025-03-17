@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aa1ed22b4e9be2bbbeb8292fb0008aa88":[2,0,0,0,75,60],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aa1ed22b4e9be2bbbeb8292fb0008aa88":[3,0,1,0,77,60],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,75,17],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,77,17],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aaa24275efa17e66109a4859cf94fb28f":[2,0,0,0,75,13],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aaa24275efa17e66109a4859cf94fb28f":[3,0,1,0,77,13],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,75,34],
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,77,34],
 "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,75,23],
 "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,77,23],
 "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,75,31],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "d1/d79/classpocketmine_1_1world_1_1sound_1_1_entity_attack_sound.html":[3,0,1,30,5,56],
 "d1/d79/classpocketmine_1_1world_1_1sound_1_1_entity_attack_sound.html#a1258d4a09a34ca647cc14b11993f2b64":[3,0,1,30,5,56,0],
 "d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html":[3,0,1,30,5,24],
-"d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html#ae3ce55ca6fb4ae790fe53eea167f83d0":[3,0,1,30,5,24,0],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html":[2,0,0,0,134],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html":[3,0,1,0,136],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,134,61],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,136,61],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a0e06498810709cd9b0b6441aff9ff176":[2,0,0,0,134,65],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a0e06498810709cd9b0b6441aff9ff176":[3,0,1,0,136,65],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a0f7e42d98be15838ea8c0d64fa4d86b1":[2,0,0,0,134,1],
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a0f7e42d98be15838ea8c0d64fa4d86b1":[3,0,1,0,136,1]
+"d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html#ae3ce55ca6fb4ae790fe53eea167f83d0":[3,0,1,30,5,24,0]
 };

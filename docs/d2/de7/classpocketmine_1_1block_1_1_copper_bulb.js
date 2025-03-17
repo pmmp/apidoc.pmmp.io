@@ -64,6 +64,8 @@ var classpocketmine_1_1block_1_1_copper_bulb =
     [ "place", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setOxidation", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#a5589a4f36e3f44cf11120116b93b0802", null ],
+    [ "setWaxed", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#ace264e4db5ba15d3f7f2072f79d77023", null ],
     [ "ticksRandomly", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "togglePowered", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#a86567adce2ed110ea08a2d1da4ac8b8c", null ],
     [ "writeStateToWorld", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html#a9404d9040389f3ff2462f86d9a181160", null ]

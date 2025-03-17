@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a954c4b61c6444766ac5dd3e083c4eb98":[3,0,1,9,1,27,2],
+"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,1,27,4],
+"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,1,27,4],
+"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#ab97cc2fd3a3b6659cbef9db246ef891e":[2,0,0,3,1,27,1],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#ab97cc2fd3a3b6659cbef9db246ef891e":[3,0,1,9,1,27,1],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#addf6091efc06869f310cfcdc937d1e6d":[2,0,0,3,1,27,3],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#addf6091efc06869f310cfcdc937d1e6d":[3,0,1,9,1,27,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,0,0,174,8],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab05ed23d3ff256f3f64cf6d86563c947":[3,0,1,0,176,8],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,174,19],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,176,19],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab6f623b466f3a77da4394a9ddb27edb6":[2,0,0,0,174,56],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab6f623b466f3a77da4394a9ddb27edb6":[3,0,1,0,176,56],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,174,26],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,176,26]
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,176,19]
 };

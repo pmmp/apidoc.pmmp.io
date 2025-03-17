@@ -1,5 +1,13 @@
 var NAVTREEINDEX24 =
 {
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,58,15],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,56,42],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,58,42],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,56,1],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,58,1],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,56,5],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,58,5],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,56,33],
 "d1/d96/classpocketmine_1_1block_1_1_clay.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,58,33],
 "d1/d96/classpocketmine_1_1block_1_1_clay.html#ae6f3cdb7eeee27448b561fa3f8323916":[2,0,0,0,56,48],
 "d1/d96/classpocketmine_1_1block_1_1_clay.html#ae6f3cdb7eeee27448b561fa3f8323916":[3,0,1,0,58,48],
@@ -241,13 +249,5 @@ var NAVTREEINDEX24 =
 "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,186,53],
 "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,184,37],
 "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,186,37],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,184,62],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,186,62],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,184,47],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,186,47],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,184,54],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,186,54],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,184,14],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,186,14],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de":[2,0,0,0,184,64]
+"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,184,62]
 };

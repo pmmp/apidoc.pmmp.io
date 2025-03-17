@@ -65,7 +65,9 @@ var classpocketmine_1_1block_1_1_copper_trapdoor =
     [ "readStateFromWorld", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#aab90087967229f1456a93718f2938ea9", null ],
     [ "setOpen", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ae3137e6ed2b1cbc30ea8c58d7a861f7e", null ],
+    [ "setOxidation", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#a5589a4f36e3f44cf11120116b93b0802", null ],
     [ "setTop", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#a6d16a2fbc4e8bde8bd4335a1d996da9d", null ],
+    [ "setWaxed", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ace264e4db5ba15d3f7f2072f79d77023", null ],
     [ "ticksRandomly", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

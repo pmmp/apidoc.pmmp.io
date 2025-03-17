@@ -64,8 +64,10 @@ var classpocketmine_1_1block_1_1_copper_stairs =
     [ "place", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a96389f87118c4ee5dd82fcfc6bdc62e2", null ],
     [ "readStateFromWorld", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a54fbd67942d9417f42f19c1a94402047", null ],
     [ "recalculateCollisionBoxes", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#afb3007464141e25a26aee6952d60c95c", null ],
+    [ "setOxidation", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a5589a4f36e3f44cf11120116b93b0802", null ],
     [ "setShape", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a8a62436917d8d665941798542dd695fe", null ],
     [ "setUpsideDown", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#ad71b08caa3e598efe71ca24b9c7484d9", null ],
+    [ "setWaxed", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#ace264e4db5ba15d3f7f2072f79d77023", null ],
     [ "ticksRandomly", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];
