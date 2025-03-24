@@ -1,5 +1,7 @@
 var NAVTREEINDEX43 =
 {
+"d2/df2/_education_settings_packet_8php_source.html":[4,0,1,0,1,0,65],
+"d2/df3/_plugin_owned_trait_8php_source.html":[4,0,0,15,19],
 "d2/df3/classpocketmine_1_1world_1_1format_1_1io_1_1_global_item_data_handlers.html":[3,0,1,30,1,0,10],
 "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html":[2,0,0,5,43],
 "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html":[3,0,1,12,44],
@@ -247,7 +249,5 @@ var NAVTREEINDEX43 =
 "d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#a88024c63ab765c000941251ba2463711":[3,0,1,2,0,32,0],
 "d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#a8c40c93db847fcf02c3e7b19a729dd10":[3,0,1,2,0,32,5],
 "d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#ac9790f6d386568af660860ceb824ee9a":[3,0,1,2,0,32,3],
-"d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#acbccfc9431699f8cefb66e359419e1df":[3,0,1,2,0,32,1],
-"d3/d05/_cauldron_empty_powder_snow_sound_8php_source.html":[4,0,0,25,5,33],
-"d3/d05/_reserved6_8php_source.html":[4,0,0,0,185]
+"d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#acbccfc9431699f8cefb66e359419e1df":[3,0,1,2,0,32,1]
 };

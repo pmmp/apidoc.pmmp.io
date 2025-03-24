@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,85,41],
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,86,41],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,85,16],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,86,16],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,85,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,101,53],
 "d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,99,14],
 "d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,101,14],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,99,39],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,101,39],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,99,20]
+"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,99,39]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX175 =
 {
+"db/df1/_smithing_transform_recipe_8php_source.html":[4,0,1,0,1,0,1,6,18],
+"db/df5/_cocoa_block_8php_source.html":[4,0,0,0,62],
 "db/df5/classpocketmine_1_1world_1_1particle_1_1_block_break_particle.html":[3,0,1,30,4,1],
 "db/df5/classpocketmine_1_1world_1_1particle_1_1_block_break_particle.html#a3204bf12f6a33c50f92512e09c77b369":[3,0,1,30,4,1,0],
 "db/df7/_nether_gold_ore_8php_source.html":[4,0,0,0,154],
@@ -247,7 +249,5 @@ var NAVTREEINDEX175 =
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,49,3],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a246df6e02e3bce42909c6a68a2621700":[2,0,0,0,47,63],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a246df6e02e3bce42909c6a68a2621700":[3,0,1,0,49,63],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,47,22],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,49,22],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,47,2]
+"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,47,22]
 };

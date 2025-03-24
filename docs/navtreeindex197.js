@@ -1,5 +1,7 @@
 var NAVTREEINDEX197 =
 {
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a27ef1db0d41125973529fb720b06a00d":[2,0,0,5,95,34],
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a27ef1db0d41125973529fb720b06a00d":[3,0,1,12,96,34],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2b35e6f346e5955b086fcc07ead985a7":[2,0,0,5,95,25],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2b35e6f346e5955b086fcc07ead985a7":[3,0,1,12,96,25],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2bcaa528592d9ae259e2e6d0b89f375d":[2,0,0,5,95,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX197 =
 "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a2fc2dcb62ac854780b586524f55ed369":[3,0,1,7,1,12,1],
 "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a47e78434ab3294753bc42572711b3d49":[3,0,1,7,1,12,6],
 "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a69015c65f2aba533b51af67f3a7d3b51":[3,0,1,7,1,12,2],
-"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,12,5],
-"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[3,0,1,7,1,12,3],
-"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a73cf76481b94b56fcbb5ea04b5c29293":[3,0,1,7,1,12,0]
+"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,12,5]
 };

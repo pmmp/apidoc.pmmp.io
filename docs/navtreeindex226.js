@@ -1,5 +1,7 @@
 var NAVTREEINDEX226 =
 {
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,143,31],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,145,31],
 "df/d1f/classpocketmine_1_1block_1_1_loom.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,143,19],
 "df/d1f/classpocketmine_1_1block_1_1_loom.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,145,19],
 "df/d1f/classpocketmine_1_1block_1_1_loom.html#ab51ea2314ed5df2163bca971a462fb72":[2,0,0,0,143,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX226 =
 "df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html":[3,0,1,25,0,2],
 "df/d2c/classpocketmine_1_1world_1_1_chunk_lock_id.html":[2,0,0,14,4],
 "df/d2c/classpocketmine_1_1world_1_1_chunk_lock_id.html":[3,0,1,30,10],
-"df/d2d/_connected_pong_8php_source.html":[4,0,1,0,9,0,2,5],
-"df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html":[2,0,0,12,21],
-"df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html":[3,0,1,28,21]
+"df/d2d/_connected_pong_8php_source.html":[4,0,1,0,9,0,2,5]
 };

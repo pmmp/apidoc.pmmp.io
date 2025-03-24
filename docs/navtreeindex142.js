@@ -1,5 +1,7 @@
 var NAVTREEINDEX142 =
 {
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66":[2,0,0,12,13,11],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66":[3,0,1,28,13,11],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d":[2,0,0,12,13,5],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d":[3,0,1,28,13,5],
 "d9/d28/_dimension_ids_8php_source.html":[4,0,1,0,1,0,1,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX142 =
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a653a8fbd8da17b08be95a985d857c4fc":[2,0,0,5,85,44],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,86,44],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,0,5,85,43],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,86,43],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,85,41],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,86,41]
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,86,43]
 };

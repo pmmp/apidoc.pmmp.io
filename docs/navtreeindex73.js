@@ -1,5 +1,7 @@
 var NAVTREEINDEX73 =
 {
+"d5/d20/classpocketmine_1_1block_1_1_glowstone.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,115,0],
+"d5/d20/classpocketmine_1_1block_1_1_glowstone.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,117,0],
 "d5/d20/classpocketmine_1_1block_1_1_glowstone.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,115,24],
 "d5/d20/classpocketmine_1_1block_1_1_glowstone.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,117,24],
 "d5/d20/classpocketmine_1_1block_1_1_glowstone.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,115,57],
@@ -247,7 +249,5 @@ var NAVTREEINDEX73 =
 "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a180ddec765d91d56a76789284587ac89":[2,0,0,2,18,58],
 "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a180ddec765d91d56a76789284587ac89":[3,0,1,7,23,58],
 "d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7":[2,0,0,2,18,36],
-"d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7":[3,0,1,7,23,36],
-"d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1c05137f3b4e08df3be0b372726021b1":[2,0,0,2,18,63],
-"d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1c05137f3b4e08df3be0b372726021b1":[3,0,1,7,23,63]
+"d5/d49/classpocketmine_1_1entity_1_1_squid.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7":[3,0,1,7,23,36]
 };

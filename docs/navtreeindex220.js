@@ -1,5 +1,7 @@
 var NAVTREEINDEX220 =
 {
+"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,149,0],
+"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,151,0],
 "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,149,24],
 "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,151,24],
 "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,149,57],
@@ -247,7 +249,5 @@ var NAVTREEINDEX220 =
 "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,182,14],
 "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,180,39],
 "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,182,39],
-"de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a63a59c516524bff04f00d01320264add":[2,0,0,0,180,37],
-"de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a63a59c516524bff04f00d01320264add":[3,0,1,0,182,37],
-"de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,180,20]
+"de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a63a59c516524bff04f00d01320264add":[2,0,0,0,180,37]
 };

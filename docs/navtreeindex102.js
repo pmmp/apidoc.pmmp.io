@@ -1,5 +1,7 @@
 var NAVTREEINDEX102 =
 {
+"d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,154,13],
+"d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a444028c60ad6c7afacda1a6cc3065e59":[3,0,1,0,156,13],
 "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,154,52],
 "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,156,52],
 "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,154,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX102 =
 "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a24341e79fef18f9a68eac21a571a1b30":[2,0,0,0,199,13],
 "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a24341e79fef18f9a68eac21a571a1b30":[3,0,1,0,201,13],
 "d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,199,22],
-"d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,201,22],
-"d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,199,2],
-"d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a286fc64348f13417dcb6106c2695911b":[3,0,1,0,201,2]
+"d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,201,22]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"d4/d96/classpocketmine_1_1item_1_1_dye.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,37,0],
+"d4/d96/classpocketmine_1_1item_1_1_dye.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,38,0],
 "d4/d96/classpocketmine_1_1item_1_1_dye.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,37,6],
 "d4/d96/classpocketmine_1_1item_1_1_dye.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,38,6],
 "d4/d96/classpocketmine_1_1item_1_1_dye.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,37,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "d4/d9f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_block_update_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,193,1],
 "d4/d9f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_structure_block_update_packet.html#acd36e511741db6114729b69b2fed2d01":[3,0,1,16,0,6,193,2],
 "d4/da1/_block_state_upgrade_schema_flatten_info_8php_source.html":[4,0,0,5,0,0,1,6],
-"d4/da2/_craft_recipe_auto_stack_request_action_8php_source.html":[4,0,1,0,1,0,1,4,0,3],
-"d4/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_map_create_locked_copy_packet.html":[3,0,1,16,0,6,94],
-"d4/da2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_map_create_locked_copy_packet.html#a1211705ae3cdc29c328e3dcea338053d":[3,0,1,16,0,6,94,2]
+"d4/da2/_craft_recipe_auto_stack_request_action_8php_source.html":[4,0,1,0,1,0,1,4,0,3]
 };

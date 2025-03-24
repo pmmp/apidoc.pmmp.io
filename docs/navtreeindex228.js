@@ -1,5 +1,7 @@
 var NAVTREEINDEX228 =
 {
+"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,23,41],
+"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,22,16],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,23,16],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,22,15],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a7d45886d40860e24fb4c18d02a3d1a32":[3,0,1,12,23,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX228 =
 "df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a1c2a97df88a52df75b944f65112966be":[3,0,1,15,5,18],
 "df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a298e44866a7dc311ba782af3bdc7821c":[2,0,0,7,4,3],
 "df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a298e44866a7dc311ba782af3bdc7821c":[3,0,1,15,5,3],
-"df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a4e3f681b4251ea64da8f24a4849415c7":[2,0,0,7,4,2],
-"df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a4e3f681b4251ea64da8f24a4849415c7":[3,0,1,15,5,2],
-"df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a4fb0cfd3bad5c161cdf7a0aade1f71be":[2,0,0,7,4,14]
+"df/d56/classpocketmine_1_1nbt_1_1_little_endian_nbt_serializer.html#a4e3f681b4251ea64da8f24a4849415c7":[2,0,0,7,4,2]
 };

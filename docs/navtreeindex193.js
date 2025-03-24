@@ -1,5 +1,7 @@
 var NAVTREEINDEX193 =
 {
+"dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,221,16],
+"dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,223,16],
 "dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,221,27],
 "dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,223,27],
 "dc/dce/classpocketmine_1_1data_1_1bedrock_1_1_biome_ids.html":[3,0,1,6,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX193 =
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,212,31],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,214,31],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,0,0,212,8],
-"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab05ed23d3ff256f3f64cf6d86563c947":[3,0,1,0,214,8],
-"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,212,19],
-"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,214,19]
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab05ed23d3ff256f3f64cf6d86563c947":[3,0,1,0,214,8]
 };

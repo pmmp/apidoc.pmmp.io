@@ -192,12 +192,13 @@ var NAVTREEINDEX24 =
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,153,27],
 "d1/d9c/_suspicious_stew_type_ids_8php_source.html":[4,0,0,5,0,26],
 "d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html":[3,0,1,6,0,0,0,4],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a1b1d2d286a0a8276f90c7064f2061b6f":[3,0,1,6,0,0,0,4,5],
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a1b1d2d286a0a8276f90c7064f2061b6f":[3,0,1,6,0,0,0,4,6],
 "d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0":[3,0,1,6,0,0,0,4,1],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a38702414de2f194f64fa6697d37ada58":[3,0,1,6,0,0,0,4,4],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a4dfe05657ef194ccc3d602b7b2cdc12b":[3,0,1,6,0,0,0,4,3],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a5bf17959ad41a9d9deac61ddae372e10":[3,0,1,6,0,0,0,4,2],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a76862f1af20a2c109224dfaca2dcb867":[3,0,1,6,0,0,0,4,6],
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a38702414de2f194f64fa6697d37ada58":[3,0,1,6,0,0,0,4,5],
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a4dfe05657ef194ccc3d602b7b2cdc12b":[3,0,1,6,0,0,0,4,4],
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a5bf17959ad41a9d9deac61ddae372e10":[3,0,1,6,0,0,0,4,3],
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a76862f1af20a2c109224dfaca2dcb867":[3,0,1,6,0,0,0,4,7],
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a7ae0b0de47891ef8136939c1ce8941b8":[3,0,1,6,0,0,0,4,2],
 "d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a97fff696d9921f374e9f0d84311b2921":[3,0,1,6,0,0,0,4,0],
 "d1/d9e/_player_crafting_inventory_8php_source.html":[4,0,0,9,13],
 "d1/d9f/_inventory_transaction_changed_slots_hack_8php_source.html":[4,0,1,0,1,0,1,4,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,184,53],
 "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,186,53],
 "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,184,37],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,186,37],
-"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,184,62]
+"d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,186,37]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"d3/d6c/classpocketmine_1_1item_1_1_book.html#af737301b899b7a7c9e9b0bb9a234a119":[3,0,1,12,15,7],
+"d3/d6c/classpocketmine_1_1item_1_1_book.html#af85accbedba28b67bb66d5f12d329585":[2,0,0,5,14,37],
 "d3/d6c/classpocketmine_1_1item_1_1_book.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,15,37],
 "d3/d6d/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_callback_slot_validator.html":[3,0,1,11,1,0,0,0],
 "d3/d6d/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1validator_1_1_callback_slot_validator.html#a96385e967c0eaeafa4efbf800450b075":[3,0,1,11,1,0,0,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "d3/d80/classpocketmine_1_1world_1_1sound_1_1_armor_equip_leather_sound.html":[3,0,1,30,5,9],
 "d3/d80/classpocketmine_1_1world_1_1sound_1_1_armor_equip_leather_sound.html#ac529bcc0d44ac41b5ee337199a670184":[3,0,1,30,5,9,0],
 "d3/d81/_turtle_helmet_8php_source.html":[4,0,0,10,123],
-"d3/d83/_item_type_entry_8php_source.html":[4,0,1,0,1,0,1,45],
-"d3/d85/_simple_logger_8php_source.html":[4,0,1,0,6,0,6],
-"d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html":[3,0,1,6,0,0,1,0,0]
+"d3/d83/_item_type_entry_8php_source.html":[4,0,1,0,1,0,1,45]
 };

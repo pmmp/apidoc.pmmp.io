@@ -1,5 +1,7 @@
 var NAVTREEINDEX80 =
 {
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,214,59],
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,216,59],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b":[2,0,0,0,214,15],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abe0027ac41c0ad5ccf2408731edfb19b":[3,0,1,0,216,15],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,214,53],
@@ -247,7 +249,5 @@ var NAVTREEINDEX80 =
 "d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,83,38],
 "d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,84,38],
 "d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,83,15],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,84,15],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,83,14],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a7d45886d40860e24fb4c18d02a3d1a32":[3,0,1,12,84,14]
+"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,84,15]
 };

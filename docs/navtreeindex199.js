@@ -1,5 +1,7 @@
 var NAVTREEINDEX199 =
 {
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[3,0,1,12,33,3],
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a9dd9484fe3ab1afcbd2627860e01973a":[2,0,0,5,32,47],
 "dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,33,47],
 "dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[2,0,0,5,32,9],
 "dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[3,0,1,12,33,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX199 =
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,51,62],
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,53,62],
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,51,10],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,53,10],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,51,44],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,53,44]
+"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,53,10]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX148 =
 {
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,21,5],
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,22,5],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,21,48],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,22,48],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,0,5,21,40],
@@ -247,7 +249,5 @@ var NAVTREEINDEX148 =
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa33af26a81458b48069bad8db68deb4a":[3,0,1,12,68,23],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,67,45],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,68,45],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa8f16ccef7f24435bc1fd68e64fade00":[2,0,0,5,67,37],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa8f16ccef7f24435bc1fd68e64fade00":[3,0,1,12,68,37],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#aaaf34960605ca5fc0bcd7ce31f9e9e50":[2,0,0,5,67,4]
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa8f16ccef7f24435bc1fd68e64fade00":[2,0,0,5,67,37]
 };

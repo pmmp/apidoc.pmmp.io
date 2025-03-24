@@ -1,5 +1,7 @@
 var NAVTREEINDEX177 =
 {
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,213,19],
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,211,26],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,213,26],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,211,12],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,213,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX177 =
 "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,50,39],
 "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a683eda77c4935af49c74d218ed830702":[2,0,0,0,48,64],
 "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a683eda77c4935af49c74d218ed830702":[3,0,1,0,50,64],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6b0a848bc2aaa035c8453cac9e3ff518":[2,0,0,0,48,59],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6b0a848bc2aaa035c8453cac9e3ff518":[3,0,1,0,50,59],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,48,50]
+"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6b0a848bc2aaa035c8453cac9e3ff518":[2,0,0,0,48,59]
 };

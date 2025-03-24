@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,64,4],
+"d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,64,0],
 "d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,64,3],
 "d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,64,1],
 "d2/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_editor_network_packet.html#ae31ad8bc70de50fc6cb2fbb4b5d72b2d":[3,0,1,16,0,6,64,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html#af37a63f88039e84508bdc7c3eac62d5d":[3,0,1,16,0,6,1,4,1,29],
 "d2/df0/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_corrupted_region_exception.html":[3,0,1,30,1,0,3,1],
 "d2/df1/_shulker_box_inventory_8php_source.html":[4,0,0,0,0,16],
-"d2/df1/_spawnable_8php_source.html":[4,0,0,0,1,33],
-"d2/df2/_education_settings_packet_8php_source.html":[4,0,1,0,1,0,65],
-"d2/df3/_plugin_owned_trait_8php_source.html":[4,0,0,15,19]
+"d2/df1/_spawnable_8php_source.html":[4,0,0,0,1,33]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX194 =
 {
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,212,19],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,214,19],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,212,65],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,214,65],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,212,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX194 =
 "dc/df4/classpocketmine_1_1entity_1_1effect_1_1_invisibility_effect.html#aa8327bd087f9863ba29cfad57f8f8c0c":[3,0,1,7,1,9,1],
 "dc/df4/classpocketmine_1_1entity_1_1effect_1_1_invisibility_effect.html#ad8531e42059f72e6315e1157c87c1e7a":[3,0,1,7,1,9,2],
 "dc/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_potion_type_recipe.html":[3,0,1,16,0,6,1,5,12],
-"dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html":[3,0,1,30,4,30],
-"dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html#a72589f93dbaa73a24253cc5139ba2f92":[3,0,1,30,4,30,0],
-"dc/df5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_stack_request_action.html":[3,0,1,16,0,6,1,3,0,5]
+"dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html":[3,0,1,30,4,30]
 };

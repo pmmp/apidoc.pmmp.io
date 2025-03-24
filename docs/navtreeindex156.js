@@ -1,5 +1,7 @@
 var NAVTREEINDEX156 =
 {
+"da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,80,33],
+"da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#ae6f3cdb7eeee27448b561fa3f8323916":[2,0,0,0,78,48],
 "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#ae6f3cdb7eeee27448b561fa3f8323916":[3,0,1,0,80,48],
 "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,78,32],
 "da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,80,32],
@@ -247,7 +249,5 @@ var NAVTREEINDEX156 =
 "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,39,55],
 "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,41,55],
 "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,39,14],
-"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,41,14],
-"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,39,40],
-"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,41,40]
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,41,14]
 };

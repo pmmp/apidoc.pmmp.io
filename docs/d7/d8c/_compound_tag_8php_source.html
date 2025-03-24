@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.25.3 git-463be36b72d4f519674ec472ca492773c197dbce</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.26.1 git-c80a4d5b550b6e2ecbcfecb041477309fb8a0e24</span>
    </div>
   </td>
  </tr>
@@ -137,307 +137,313 @@ $(function(){initNavTree('d7/d8c/_compound_tag_8php_source.html','../../'); init
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../da/df5/classpocketmine_1_1nbt_1_1_no_such_tag_exception.html">pocketmine\nbt\NoSuchTagException</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../dc/d21/classpocketmine_1_1nbt_1_1_reader_tracker.html">pocketmine\nbt\ReaderTracker</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../de/d5d/classpocketmine_1_1nbt_1_1_unexpected_tag_type_exception.html">pocketmine\nbt\UnexpectedTagTypeException</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> func_num_args;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> get_class;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> is_int;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> str_repeat;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <span class="keyword">function</span> strval;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">   42</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> implements \Countable, \IteratorAggregate{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    use NoDynamicFieldsTrait;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> $value = [];</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../db/da7/classpocketmine_1_1utils_1_1_limits.html">pocketmine\utils\Limits</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> func_num_args;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> get_class;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> is_int;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <span class="keyword">function</span> sprintf;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <span class="keyword">function</span> str_repeat;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> strlen;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <span class="keyword">function</span> strval;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">   45</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> implements \Countable, \IteratorAggregate{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    use NoDynamicFieldsTrait;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        self::restrictArgCount(__METHOD__, func_num_args(), 0);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a6a9f48ceb0ebe6587ace8b252a39120e">   55</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a6a9f48ceb0ebe6587ace8b252a39120e">create</a>() : self{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        return new self;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> $value = [];</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self::restrictArgCount(__METHOD__, func_num_args(), 0);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a6a9f48ceb0ebe6587ace8b252a39120e">   58</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a6a9f48ceb0ebe6587ace8b252a39120e">create</a>() : self{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        return new self;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">function</span> count() : int{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        return count($this-&gt;value);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a981fa3468b22b8bc3e55b397af21cdad">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a981fa3468b22b8bc3e55b397af21cdad">getCount</a>(){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> count($this-&gt;value);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> count() : int{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        return count($this-&gt;value);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a981fa3468b22b8bc3e55b397af21cdad">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a981fa3468b22b8bc3e55b397af21cdad">getCount</a>(){</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> count($this-&gt;value);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#afad30f768dbfcfa0951e20be29e53d95">   73</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#afad30f768dbfcfa0951e20be29e53d95">getValue</a>(){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> $this-&gt;value;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#afad30f768dbfcfa0951e20be29e53d95">   76</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#afad30f768dbfcfa0951e20be29e53d95">getValue</a>(){</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> $this-&gt;value;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     * Here follows many functions of misery for the sake of type safety. We really needs generics in PHP :(</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">   84</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">getTag</a>(<span class="keywordtype">string</span> $name) : ?<a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        return $this-&gt;value[$name] ?? null;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">     * Here follows many functions of misery for the sake of type safety. We really needs generics in PHP :(</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">   87</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">getTag</a>(<span class="keywordtype">string</span> $name) : ?<a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        return $this-&gt;value[$name] ?? null;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">   92</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">getListTag</a>(<span class="keywordtype">string</span> $name) : ?<a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">ListTag</a>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $tag = $this-&gt;getTag($name);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span>($tag !== <span class="keyword">null</span> &amp;&amp; !($tag instanceof <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">ListTag</a>)){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d5d/classpocketmine_1_1nbt_1_1_unexpected_tag_type_exception.html">UnexpectedTagTypeException</a>(<span class="stringliteral">&quot;Expected a tag of type &quot;</span> . ListTag::class . <span class="stringliteral">&quot;, got &quot;</span> . get_class($tag));</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">return</span> $tag;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">   95</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">getListTag</a>(<span class="keywordtype">string</span> $name) : ?<a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">ListTag</a>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $tag = $this-&gt;getTag($name);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span>($tag !== <span class="keyword">null</span> &amp;&amp; !($tag instanceof <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">ListTag</a>)){</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d5d/classpocketmine_1_1nbt_1_1_unexpected_tag_type_exception.html">UnexpectedTagTypeException</a>(<span class="stringliteral">&quot;Expected a tag of type &quot;</span> . ListTag::class . <span class="stringliteral">&quot;, got &quot;</span> . get_class($tag));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">return</span> $tag;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">  104</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">getCompoundTag</a>(<span class="keywordtype">string</span> $name) : ?<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>{</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $tag = $this-&gt;getTag($name);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">if</span>($tag !== <span class="keyword">null</span> &amp;&amp; !($tag instanceof <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>)){</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d5d/classpocketmine_1_1nbt_1_1_unexpected_tag_type_exception.html">UnexpectedTagTypeException</a>(<span class="stringliteral">&quot;Expected a tag of type &quot;</span> . CompoundTag::class . <span class="stringliteral">&quot;, got &quot;</span> . get_class($tag));</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">return</span> $tag;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">  107</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">getCompoundTag</a>(<span class="keywordtype">string</span> $name) : ?<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $tag = $this-&gt;getTag($name);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span>($tag !== <span class="keyword">null</span> &amp;&amp; !($tag instanceof <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>)){</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../de/d5d/classpocketmine_1_1nbt_1_1_unexpected_tag_type_exception.html">UnexpectedTagTypeException</a>(<span class="stringliteral">&quot;Expected a tag of type &quot;</span> . CompoundTag::class . <span class="stringliteral">&quot;, got &quot;</span> . get_class($tag));</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> $tag;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">  117</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">setTag</a>(<span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> $tag) : self{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $this-&gt;value[$name] = $tag;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">  120</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">setTag</a>(<span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> $tag) : self{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        if(strlen($name) &gt; <a class="code hl_class" href="../../db/da7/classpocketmine_1_1utils_1_1_limits.html">Limits</a>::INT16_MAX){</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(sprintf(<span class="stringliteral">&quot;Tag name must be at most %d bytes, but got %d bytes&quot;</span>, Limits::INT16_MAX, strlen($name)));</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        $this-&gt;value[$name] = $tag;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
 </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">  126</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">removeTag</a>(<span class="keywordtype">string</span> ...$names) : void{</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        foreach($names as $name){</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            unset($this-&gt;value[$name]);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">  132</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">removeTag</a>(<span class="keywordtype">string</span> ...$names) : void{</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        foreach($names as $name){</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            unset($this-&gt;value[$name]);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
 </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">private</span> <span class="keyword">function</span> getTagValue(<span class="keywordtype">string</span> $name, <span class="keywordtype">string</span> $expectedClass, $default = <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        $tag = $this-&gt;getTag($name);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">if</span>($tag instanceof $expectedClass){</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="keywordflow">return</span> $tag-&gt;getValue();</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">if</span>($tag !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnexpectedTagTypeException(<span class="stringliteral">&quot;Expected a tag of type $expectedClass, got &quot;</span> . get_class($tag));</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span>($default === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> NoSuchTagException(<span class="stringliteral">&quot;Tag \&quot;$name\&quot; does not exist&quot;</span>);</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">return</span> $default;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">     * The following methods are wrappers around getTagValue() with type safety.</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">public</span> <span class="keyword">function</span> getByte(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        return $this-&gt;getTagValue($name, ByteTag::class, $default);</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">public</span> <span class="keyword">function</span> getShort(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        return $this-&gt;getTagValue($name, ShortTag::class, $default);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInt(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        return $this-&gt;getTagValue($name, IntTag::class, $default);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLong(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        return $this-&gt;getTagValue($name, LongTag::class, $default);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFloat(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">float</span> $default = <span class="keyword">null</span>) : float{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        return $this-&gt;getTagValue($name, FloatTag::class, $default);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDouble(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">float</span> $default = <span class="keyword">null</span>) : float{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        return $this-&gt;getTagValue($name, DoubleTag::class, $default);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">public</span> <span class="keyword">function</span> getByteArray(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">string</span> $default = <span class="keyword">null</span>) : string{</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        return $this-&gt;getTagValue($name, ByteArrayTag::class, $default);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">public</span> <span class="keyword">function</span> getString(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">string</span> $default = <span class="keyword">null</span>) : string{</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        return $this-&gt;getTagValue($name, StringTag::class, $default);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a4ef23471f309941ac94e5b1f4bc9567e">  203</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a4ef23471f309941ac94e5b1f4bc9567e">getIntArray</a>(<span class="keywordtype">string</span> $name, ?array $default = <span class="keyword">null</span>) : array{</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        return $this-&gt;getTagValue($name, <a class="code hl_class" href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">IntArrayTag</a>::class, $default);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">private</span> <span class="keyword">function</span> getTagValue(<span class="keywordtype">string</span> $name, <span class="keywordtype">string</span> $expectedClass, $default = <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        $tag = $this-&gt;getTag($name);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">if</span>($tag instanceof $expectedClass){</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">return</span> $tag-&gt;getValue();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">if</span>($tag !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnexpectedTagTypeException(<span class="stringliteral">&quot;Expected a tag of type $expectedClass, got &quot;</span> . get_class($tag));</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span>($default === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> NoSuchTagException(<span class="stringliteral">&quot;Tag \&quot;$name\&quot; does not exist&quot;</span>);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">return</span> $default;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">     * The following methods are wrappers around getTagValue() with type safety.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">public</span> <span class="keyword">function</span> getByte(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        return $this-&gt;getTagValue($name, ByteTag::class, $default);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">public</span> <span class="keyword">function</span> getShort(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        return $this-&gt;getTagValue($name, ShortTag::class, $default);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInt(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        return $this-&gt;getTagValue($name, IntTag::class, $default);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLong(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">int</span> $default = <span class="keyword">null</span>) : int{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        return $this-&gt;getTagValue($name, LongTag::class, $default);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFloat(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">float</span> $default = <span class="keyword">null</span>) : float{</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        return $this-&gt;getTagValue($name, FloatTag::class, $default);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDouble(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">float</span> $default = <span class="keyword">null</span>) : float{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        return $this-&gt;getTagValue($name, DoubleTag::class, $default);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">public</span> <span class="keyword">function</span> getByteArray(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">string</span> $default = <span class="keyword">null</span>) : string{</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        return $this-&gt;getTagValue($name, ByteArrayTag::class, $default);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keyword">public</span> <span class="keyword">function</span> getString(<span class="keywordtype">string</span> $name, ?<span class="keywordtype">string</span> $default = <span class="keyword">null</span>) : string{</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        return $this-&gt;getTagValue($name, StringTag::class, $default);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a4ef23471f309941ac94e5b1f4bc9567e">  209</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a4ef23471f309941ac94e5b1f4bc9567e">getIntArray</a>(<span class="keywordtype">string</span> $name, ?array $default = <span class="keyword">null</span>) : array{</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        return $this-&gt;getTagValue($name, <a class="code hl_class" href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">IntArrayTag</a>::class, $default);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
 </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">     * The following methods are wrappers around setTag() which create appropriate tag objects on the fly.</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1fb86011ad0f937ca9d3ac4cec83eaf4">  214</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1fb86011ad0f937ca9d3ac4cec83eaf4">setByte</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d1/d0a/classpocketmine_1_1nbt_1_1tag_1_1_byte_tag.html">ByteTag</a>($value));</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">     * The following methods are wrappers around setTag() which create appropriate tag objects on the fly.</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1fb86011ad0f937ca9d3ac4cec83eaf4">  220</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1fb86011ad0f937ca9d3ac4cec83eaf4">setByte</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d1/d0a/classpocketmine_1_1nbt_1_1tag_1_1_byte_tag.html">ByteTag</a>($value));</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
 </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">  221</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../db/d53/classpocketmine_1_1nbt_1_1tag_1_1_short_tag.html">ShortTag</a>($value));</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">  227</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">setShort</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../db/d53/classpocketmine_1_1nbt_1_1tag_1_1_short_tag.html">ShortTag</a>($value));</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
 </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a37a17d15453a0dcd702cce422a977158">  228</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a37a17d15453a0dcd702cce422a977158">setInt</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">IntTag</a>($value));</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="foldopen" id="foldopen00234" data-start="{" data-end="}">
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a37a17d15453a0dcd702cce422a977158">  234</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a37a17d15453a0dcd702cce422a977158">setInt</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">IntTag</a>($value));</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
 </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">  235</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">setLong</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d1/d29/classpocketmine_1_1nbt_1_1tag_1_1_long_tag.html">LongTag</a>($value));</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="foldopen" id="foldopen00241" data-start="{" data-end="}">
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">  241</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">setLong</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">int</span> $value) : self{</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d1/d29/classpocketmine_1_1nbt_1_1tag_1_1_long_tag.html">LongTag</a>($value));</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
 </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="foldopen" id="foldopen00242" data-start="{" data-end="}">
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a8c9e47de41af9156023b27ab2633e02b">  242</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a8c9e47de41af9156023b27ab2633e02b">setFloat</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">float</span> $value) : self{</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d7/d9e/classpocketmine_1_1nbt_1_1tag_1_1_float_tag.html">FloatTag</a>($value));</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="foldopen" id="foldopen00248" data-start="{" data-end="}">
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a8c9e47de41af9156023b27ab2633e02b">  248</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a8c9e47de41af9156023b27ab2633e02b">setFloat</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">float</span> $value) : self{</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d7/d9e/classpocketmine_1_1nbt_1_1tag_1_1_float_tag.html">FloatTag</a>($value));</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    }</div>
 </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="foldopen" id="foldopen00249" data-start="{" data-end="}">
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a824ccc41972f3bef9362ef441ec31a5a">  249</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a824ccc41972f3bef9362ef441ec31a5a">setDouble</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">float</span> $value) : self{</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../de/d4a/classpocketmine_1_1nbt_1_1tag_1_1_double_tag.html">DoubleTag</a>($value));</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="foldopen" id="foldopen00255" data-start="{" data-end="}">
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a824ccc41972f3bef9362ef441ec31a5a">  255</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a824ccc41972f3bef9362ef441ec31a5a">setDouble</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">float</span> $value) : self{</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../de/d4a/classpocketmine_1_1nbt_1_1tag_1_1_double_tag.html">DoubleTag</a>($value));</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    }</div>
 </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="foldopen" id="foldopen00256" data-start="{" data-end="}">
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aadcd6dadb59e74dd6a2585c247b58d54">  256</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aadcd6dadb59e74dd6a2585c247b58d54">setByteArray</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">string</span> $value) : self{</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../dd/dec/classpocketmine_1_1nbt_1_1tag_1_1_byte_array_tag.html">ByteArrayTag</a>($value));</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="foldopen" id="foldopen00262" data-start="{" data-end="}">
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aadcd6dadb59e74dd6a2585c247b58d54">  262</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aadcd6dadb59e74dd6a2585c247b58d54">setByteArray</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">string</span> $value) : self{</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../dd/dec/classpocketmine_1_1nbt_1_1tag_1_1_byte_array_tag.html">ByteArrayTag</a>($value));</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    }</div>
 </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">  263</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">setString</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">string</span> $value) : self{</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">StringTag</a>($value));</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="foldopen" id="foldopen00269" data-start="{" data-end="}">
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">  269</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">setString</a>(<span class="keywordtype">string</span> $name, <span class="keywordtype">string</span> $value) : self{</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">StringTag</a>($value));</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    }</div>
 </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a34c2cb7ea2eaff74bf38aac5f160538d">  273</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a34c2cb7ea2eaff74bf38aac5f160538d">setIntArray</a>(<span class="keywordtype">string</span> $name, array $value) : self{</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">IntArrayTag</a>($value));</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="foldopen" id="foldopen00279" data-start="{" data-end="}">
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a34c2cb7ea2eaff74bf38aac5f160538d">  279</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a34c2cb7ea2eaff74bf38aac5f160538d">setIntArray</a>(<span class="keywordtype">string</span> $name, array $value) : self{</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        return $this-&gt;setTag($name, new <a class="code hl_class" href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">IntArrayTag</a>($value));</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    }</div>
 </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keyword">protected</span> <span class="keyword">function</span> getTypeName() : string{</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        return <span class="stringliteral">&quot;Compound&quot;</span>;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    }</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : int{</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        return <a class="code hl_class" href="../../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html">NBT</a>::TAG_Compound;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(NbtStreamReader $reader, ReaderTracker $tracker) : self{</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        $result = new self;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        $tracker-&gt;protectDepth(<span class="keyword">static</span> <span class="keyword">function</span>() use($reader, $tracker, $result) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="keywordflow">for</span>($type = $reader-&gt;readByte(); $type !== NBT::TAG_End; $type = $reader-&gt;readByte()){</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                $name = $reader-&gt;readString();</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                $tag = NBT::createTag($type, $reader, $tracker);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                <span class="keywordflow">if</span>($result-&gt;getTag($name) !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                    <span class="comment">//this is technically a corruption case, but it&#39;s very common on older PM worlds (pretty much every</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    <span class="comment">//furnace in PM worlds prior to 2017 is affected), and since we can&#39;t extricate this borked data</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                    <span class="comment">//from the rest in Anvil/McRegion worlds, we can&#39;t barf on this - it would result in complete loss</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                    <span class="comment">//of the chunk.</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                    <span class="comment">//TODO: add a flag to enable throwing on this (strict mode)</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                }</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                $result-&gt;setTag($name, $tag);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            }</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        });</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    }</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(NbtStreamWriter $writer) : void{</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        foreach($this-&gt;value as $name =&gt; $tag){</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            <span class="keywordflow">if</span>(is_int($name)){</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                <span class="comment">//PHP sucks</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                <span class="comment">//we only cast on seeing an int, because forcibly casting other types might conceal bugs.</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                $name = (string) $name;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            }</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            $writer-&gt;writeByte($tag-&gt;getType());</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            $writer-&gt;writeString($name);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            $tag-&gt;write($writer);</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        }</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        $writer-&gt;writeByte(NBT::TAG_End);</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    }</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keyword">protected</span> <span class="keyword">function</span> stringifyValue(<span class="keywordtype">int</span> $indentation) : string{</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        $str = <span class="stringliteral">&quot;{\n&quot;</span>;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordflow">foreach</span>($this-&gt;value as $name =&gt; $tag){</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            $str .= str_repeat(<span class="stringliteral">&quot;  &quot;</span>, $indentation + 1) . <span class="stringliteral">&quot;\&quot;$name\&quot; =&gt; &quot;</span> . $tag-&gt;toString($indentation + 1) . <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        }</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">return</span> $str . str_repeat(<span class="stringliteral">&quot;  &quot;</span>, $indentation) . <span class="stringliteral">&quot;}&quot;</span>;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keyword">public</span> <span class="keyword">function</span> __clone(){</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">foreach</span>($this-&gt;value as $key =&gt; $tag){</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            $this-&gt;value[$key] = $tag-&gt;safeClone();</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        }</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keyword">protected</span> <span class="keyword">function</span> getTypeName() : string{</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        return <span class="stringliteral">&quot;Compound&quot;</span>;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : int{</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        return <a class="code hl_class" href="../../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html">NBT</a>::TAG_Compound;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    }</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(NbtStreamReader $reader, ReaderTracker $tracker) : self{</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        $result = new self;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        $tracker-&gt;protectDepth(<span class="keyword">static</span> <span class="keyword">function</span>() use($reader, $tracker, $result) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="keywordflow">for</span>($type = $reader-&gt;readByte(); $type !== NBT::TAG_End; $type = $reader-&gt;readByte()){</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                $name = $reader-&gt;readString();</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                $tag = NBT::createTag($type, $reader, $tracker);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                <span class="keywordflow">if</span>($result-&gt;getTag($name) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    <span class="comment">//this is technically a corruption case, but it&#39;s very common on older PM worlds (pretty much every</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                    <span class="comment">//furnace in PM worlds prior to 2017 is affected), and since we can&#39;t extricate this borked data</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    <span class="comment">//from the rest in Anvil/McRegion worlds, we can&#39;t barf on this - it would result in complete loss</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                    <span class="comment">//of the chunk.</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                    <span class="comment">//TODO: add a flag to enable throwing on this (strict mode)</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                $result-&gt;setTag($name, $tag);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        });</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    }</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(NbtStreamWriter $writer) : void{</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        foreach($this-&gt;value as $name =&gt; $tag){</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <span class="keywordflow">if</span>(is_int($name)){</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                <span class="comment">//PHP sucks</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                <span class="comment">//we only cast on seeing an int, because forcibly casting other types might conceal bugs.</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                $name = (string) $name;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            $writer-&gt;writeByte($tag-&gt;getType());</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            $writer-&gt;writeString($name);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            $tag-&gt;write($writer);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        }</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        $writer-&gt;writeByte(NBT::TAG_End);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keyword">protected</span> <span class="keyword">function</span> stringifyValue(<span class="keywordtype">int</span> $indentation) : string{</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        $str = <span class="stringliteral">&quot;{\n&quot;</span>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="keywordflow">foreach</span>($this-&gt;value as $name =&gt; $tag){</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            $str .= str_repeat(<span class="stringliteral">&quot;  &quot;</span>, $indentation + 1) . <span class="stringliteral">&quot;\&quot;$name\&quot; =&gt; &quot;</span> . $tag-&gt;toString($indentation + 1) . <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keywordflow">return</span> $str . str_repeat(<span class="stringliteral">&quot;  &quot;</span>, $indentation) . <span class="stringliteral">&quot;}&quot;</span>;</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    }</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ab1a0a92a55af473cc0f6c41b8bf941e3">  333</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ab1a0a92a55af473cc0f6c41b8bf941e3">makeCopy</a>(){</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keywordflow">return</span> clone $this;</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keyword">public</span> <span class="keyword">function</span> __clone(){</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keywordflow">foreach</span>($this-&gt;value as $key =&gt; $tag){</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            $this-&gt;value[$key] = $tag-&gt;safeClone();</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        }</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    }</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="foldopen" id="foldopen00339" data-start="{" data-end="}">
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ab1a0a92a55af473cc0f6c41b8bf941e3">  339</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ab1a0a92a55af473cc0f6c41b8bf941e3">makeCopy</a>(){</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">return</span> clone $this;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    }</div>
 </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
-<div class="foldopen" id="foldopen00341" data-start="{" data-end="}">
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aa4c95686bee17b99c2424a51bf85851c">  341</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aa4c95686bee17b99c2424a51bf85851c">getIterator</a>() : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        foreach($this-&gt;value as $name =&gt; $tag){</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            <span class="comment">// PHP arrays are idiotic and cast keys like &quot;1&quot; to int(1)</span></div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <span class="comment">// this also stops us using &quot;yield from&quot;. REEEEEEEEEE</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            yield strval($name) =&gt; $tag;</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    }</div>
-</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="foldopen" id="foldopen00349" data-start="{" data-end="}">
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ad662736f2ea203f66ef07cabcc8b504e">  349</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ad662736f2ea203f66ef07cabcc8b504e">equals</a>(<a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> $that) : bool{</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        if(!($that instanceof $this) or $this-&gt;count() !== $that-&gt;count()){</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="foldopen" id="foldopen00347" data-start="{" data-end="}">
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aa4c95686bee17b99c2424a51bf85851c">  347</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aa4c95686bee17b99c2424a51bf85851c">getIterator</a>() : \<a class="code hl_class" href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">Generator</a>{</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        foreach($this-&gt;value as $name =&gt; $tag){</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            <span class="comment">// PHP arrays are idiotic and cast keys like &quot;1&quot; to int(1)</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <span class="comment">// this also stops us using &quot;yield from&quot;. REEEEEEEEEE</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            yield strval($name) =&gt; $tag;</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        }</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">foreach</span>($this as $k =&gt; $v){</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            $other = $that-&gt;getTag($k);</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            <span class="keywordflow">if</span>($other === <span class="keyword">null</span> or !$v-&gt;equals($other)){</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            }</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        }</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    }</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    }</div>
 </div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="foldopen" id="foldopen00370" data-start="{" data-end="}">
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4">  370</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4">merge</a>(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $other) : <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>{</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        $new = clone $this;</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <span class="keywordflow">foreach</span>($other as $k =&gt; $namedTag){</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            $new-&gt;setTag($k, clone $namedTag);</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        <span class="keywordflow">return</span> $new;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="foldopen" id="foldopen00355" data-start="{" data-end="}">
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ad662736f2ea203f66ef07cabcc8b504e">  355</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ad662736f2ea203f66ef07cabcc8b504e">equals</a>(<a class="code hl_class" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> $that) : bool{</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        if(!($that instanceof $this) or count($this-&gt;value) !== count($that-&gt;value)){</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">foreach</span>($this-&gt;value as $k =&gt; $v){</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            $other = $that-&gt;value[$k] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>            <span class="keywordflow">if</span>($other === <span class="keyword">null</span> or !$v-&gt;equals($other)){</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            }</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    }</div>
 </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>}</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="foldopen" id="foldopen00376" data-start="{" data-end="}">
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4">  376</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4">merge</a>(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $other) : <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a>{</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        $new = clone $this;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <span class="keywordflow">foreach</span>($other as $k =&gt; $namedTag){</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            $new-&gt;setTag($k, clone $namedTag);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        }</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        <span class="keywordflow">return</span> $new;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    }</div>
+</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_n_b_t_html"><div class="ttname"><a href="../../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html">pocketmine\nbt\NBT</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/da2/_n_b_t_8php_source.html#l00042">NBT.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_no_such_tag_exception_html"><div class="ttname"><a href="../../da/df5/classpocketmine_1_1nbt_1_1_no_such_tag_exception.html">pocketmine\nbt\NoSuchTagException</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d34/_no_such_tag_exception_8php_source.html#l00026">NoSuchTagException.php:26</a></div></div>
@@ -445,38 +451,39 @@ $(function(){initNavTree('d7/d8c/_compound_tag_8php_source.html','../../'); init
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1_unexpected_tag_type_exception_html"><div class="ttname"><a href="../../de/d5d/classpocketmine_1_1nbt_1_1_unexpected_tag_type_exception.html">pocketmine\nbt\UnexpectedTagTypeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/de3/_unexpected_tag_type_exception_8php_source.html#l00026">UnexpectedTagTypeException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_byte_array_tag_html"><div class="ttname"><a href="../../dd/dec/classpocketmine_1_1nbt_1_1tag_1_1_byte_array_tag.html">pocketmine\nbt\tag\ByteArrayTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/db0/_byte_array_tag_8php_source.html#l00032">ByteArrayTag.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_byte_tag_html"><div class="ttname"><a href="../../d1/d0a/classpocketmine_1_1nbt_1_1tag_1_1_byte_tag.html">pocketmine\nbt\tag\ByteTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d7b/_byte_tag_8php_source.html#l00030">ByteTag.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="#l00042">CompoundTag.php:42</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a01e8e98864b43888cd2f0d4fa66a8ef8"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">pocketmine\nbt\tag\CompoundTag\setString</a></div><div class="ttdeci">setString(string $name, string $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00263">CompoundTag.php:263</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a1394545e652ca41b3d3793201049862e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">pocketmine\nbt\tag\CompoundTag\getListTag</a></div><div class="ttdeci">getListTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00092">CompoundTag.php:92</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a1fb86011ad0f937ca9d3ac4cec83eaf4"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1fb86011ad0f937ca9d3ac4cec83eaf4">pocketmine\nbt\tag\CompoundTag\setByte</a></div><div class="ttdeci">setByte(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00214">CompoundTag.php:214</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a34c2cb7ea2eaff74bf38aac5f160538d"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a34c2cb7ea2eaff74bf38aac5f160538d">pocketmine\nbt\tag\CompoundTag\setIntArray</a></div><div class="ttdeci">setIntArray(string $name, array $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00273">CompoundTag.php:273</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a37a17d15453a0dcd702cce422a977158"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a37a17d15453a0dcd702cce422a977158">pocketmine\nbt\tag\CompoundTag\setInt</a></div><div class="ttdeci">setInt(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00228">CompoundTag.php:228</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a464983b3197549219cb5db0efda3c8e5"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">pocketmine\nbt\tag\CompoundTag\getTag</a></div><div class="ttdeci">getTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00084">CompoundTag.php:84</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a49173ac32d93c67570cde49859042651"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">pocketmine\nbt\tag\CompoundTag\getCompoundTag</a></div><div class="ttdeci">getCompoundTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00104">CompoundTag.php:104</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a4ef23471f309941ac94e5b1f4bc9567e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a4ef23471f309941ac94e5b1f4bc9567e">pocketmine\nbt\tag\CompoundTag\getIntArray</a></div><div class="ttdeci">getIntArray(string $name, ?array $default=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00203">CompoundTag.php:203</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a52af581f97f4bd8ccf924f2f1681baf4"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4">pocketmine\nbt\tag\CompoundTag\merge</a></div><div class="ttdeci">merge(CompoundTag $other)</div><div class="ttdef"><b>Definition</b> <a href="#l00370">CompoundTag.php:370</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a573a8720852895cefad5a0163d31bc63"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">pocketmine\nbt\tag\CompoundTag\setLong</a></div><div class="ttdeci">setLong(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00235">CompoundTag.php:235</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a69f8ea4b1a4c873d848da47c155845f6"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">pocketmine\nbt\tag\CompoundTag\setTag</a></div><div class="ttdeci">setTag(string $name, Tag $tag)</div><div class="ttdef"><b>Definition</b> <a href="#l00117">CompoundTag.php:117</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a6a9f48ceb0ebe6587ace8b252a39120e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a6a9f48ceb0ebe6587ace8b252a39120e">pocketmine\nbt\tag\CompoundTag\create</a></div><div class="ttdeci">static create()</div><div class="ttdef"><b>Definition</b> <a href="#l00055">CompoundTag.php:55</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a714ad7c1eb7921e14f684524a66e5e17"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">pocketmine\nbt\tag\CompoundTag\removeTag</a></div><div class="ttdeci">removeTag(string ... $names)</div><div class="ttdef"><b>Definition</b> <a href="#l00126">CompoundTag.php:126</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a824ccc41972f3bef9362ef441ec31a5a"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a824ccc41972f3bef9362ef441ec31a5a">pocketmine\nbt\tag\CompoundTag\setDouble</a></div><div class="ttdeci">setDouble(string $name, float $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00249">CompoundTag.php:249</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a8c9e47de41af9156023b27ab2633e02b"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a8c9e47de41af9156023b27ab2633e02b">pocketmine\nbt\tag\CompoundTag\setFloat</a></div><div class="ttdeci">setFloat(string $name, float $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00242">CompoundTag.php:242</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a981fa3468b22b8bc3e55b397af21cdad"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a981fa3468b22b8bc3e55b397af21cdad">pocketmine\nbt\tag\CompoundTag\getCount</a></div><div class="ttdeci">getCount()</div><div class="ttdef"><b>Definition</b> <a href="#l00066">CompoundTag.php:66</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a9d00667afd24ca6840a8d2a58f994087"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">pocketmine\nbt\tag\CompoundTag\setShort</a></div><div class="ttdeci">setShort(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00221">CompoundTag.php:221</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_aa4c95686bee17b99c2424a51bf85851c"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aa4c95686bee17b99c2424a51bf85851c">pocketmine\nbt\tag\CompoundTag\getIterator</a></div><div class="ttdeci">getIterator()</div><div class="ttdef"><b>Definition</b> <a href="#l00341">CompoundTag.php:341</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_aadcd6dadb59e74dd6a2585c247b58d54"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aadcd6dadb59e74dd6a2585c247b58d54">pocketmine\nbt\tag\CompoundTag\setByteArray</a></div><div class="ttdeci">setByteArray(string $name, string $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00256">CompoundTag.php:256</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_ab1a0a92a55af473cc0f6c41b8bf941e3"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ab1a0a92a55af473cc0f6c41b8bf941e3">pocketmine\nbt\tag\CompoundTag\makeCopy</a></div><div class="ttdeci">makeCopy()</div><div class="ttdef"><b>Definition</b> <a href="#l00333">CompoundTag.php:333</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_ad662736f2ea203f66ef07cabcc8b504e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ad662736f2ea203f66ef07cabcc8b504e">pocketmine\nbt\tag\CompoundTag\equals</a></div><div class="ttdeci">equals(Tag $that)</div><div class="ttdef"><b>Definition</b> <a href="#l00349">CompoundTag.php:349</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_afad30f768dbfcfa0951e20be29e53d95"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#afad30f768dbfcfa0951e20be29e53d95">pocketmine\nbt\tag\CompoundTag\getValue</a></div><div class="ttdeci">getValue()</div><div class="ttdef"><b>Definition</b> <a href="#l00073">CompoundTag.php:73</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="#l00045">CompoundTag.php:45</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a01e8e98864b43888cd2f0d4fa66a8ef8"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a01e8e98864b43888cd2f0d4fa66a8ef8">pocketmine\nbt\tag\CompoundTag\setString</a></div><div class="ttdeci">setString(string $name, string $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00269">CompoundTag.php:269</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a1394545e652ca41b3d3793201049862e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">pocketmine\nbt\tag\CompoundTag\getListTag</a></div><div class="ttdeci">getListTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00095">CompoundTag.php:95</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a1fb86011ad0f937ca9d3ac4cec83eaf4"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1fb86011ad0f937ca9d3ac4cec83eaf4">pocketmine\nbt\tag\CompoundTag\setByte</a></div><div class="ttdeci">setByte(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00220">CompoundTag.php:220</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a34c2cb7ea2eaff74bf38aac5f160538d"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a34c2cb7ea2eaff74bf38aac5f160538d">pocketmine\nbt\tag\CompoundTag\setIntArray</a></div><div class="ttdeci">setIntArray(string $name, array $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00279">CompoundTag.php:279</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a37a17d15453a0dcd702cce422a977158"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a37a17d15453a0dcd702cce422a977158">pocketmine\nbt\tag\CompoundTag\setInt</a></div><div class="ttdeci">setInt(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00234">CompoundTag.php:234</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a464983b3197549219cb5db0efda3c8e5"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">pocketmine\nbt\tag\CompoundTag\getTag</a></div><div class="ttdeci">getTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00087">CompoundTag.php:87</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a49173ac32d93c67570cde49859042651"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">pocketmine\nbt\tag\CompoundTag\getCompoundTag</a></div><div class="ttdeci">getCompoundTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00107">CompoundTag.php:107</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a4ef23471f309941ac94e5b1f4bc9567e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a4ef23471f309941ac94e5b1f4bc9567e">pocketmine\nbt\tag\CompoundTag\getIntArray</a></div><div class="ttdeci">getIntArray(string $name, ?array $default=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00209">CompoundTag.php:209</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a52af581f97f4bd8ccf924f2f1681baf4"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a52af581f97f4bd8ccf924f2f1681baf4">pocketmine\nbt\tag\CompoundTag\merge</a></div><div class="ttdeci">merge(CompoundTag $other)</div><div class="ttdef"><b>Definition</b> <a href="#l00376">CompoundTag.php:376</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a573a8720852895cefad5a0163d31bc63"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a573a8720852895cefad5a0163d31bc63">pocketmine\nbt\tag\CompoundTag\setLong</a></div><div class="ttdeci">setLong(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00241">CompoundTag.php:241</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a69f8ea4b1a4c873d848da47c155845f6"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">pocketmine\nbt\tag\CompoundTag\setTag</a></div><div class="ttdeci">setTag(string $name, Tag $tag)</div><div class="ttdef"><b>Definition</b> <a href="#l00120">CompoundTag.php:120</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a6a9f48ceb0ebe6587ace8b252a39120e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a6a9f48ceb0ebe6587ace8b252a39120e">pocketmine\nbt\tag\CompoundTag\create</a></div><div class="ttdeci">static create()</div><div class="ttdef"><b>Definition</b> <a href="#l00058">CompoundTag.php:58</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a714ad7c1eb7921e14f684524a66e5e17"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">pocketmine\nbt\tag\CompoundTag\removeTag</a></div><div class="ttdeci">removeTag(string ... $names)</div><div class="ttdef"><b>Definition</b> <a href="#l00132">CompoundTag.php:132</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a824ccc41972f3bef9362ef441ec31a5a"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a824ccc41972f3bef9362ef441ec31a5a">pocketmine\nbt\tag\CompoundTag\setDouble</a></div><div class="ttdeci">setDouble(string $name, float $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00255">CompoundTag.php:255</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a8c9e47de41af9156023b27ab2633e02b"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a8c9e47de41af9156023b27ab2633e02b">pocketmine\nbt\tag\CompoundTag\setFloat</a></div><div class="ttdeci">setFloat(string $name, float $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00248">CompoundTag.php:248</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a981fa3468b22b8bc3e55b397af21cdad"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a981fa3468b22b8bc3e55b397af21cdad">pocketmine\nbt\tag\CompoundTag\getCount</a></div><div class="ttdeci">getCount()</div><div class="ttdef"><b>Definition</b> <a href="#l00069">CompoundTag.php:69</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a9d00667afd24ca6840a8d2a58f994087"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a9d00667afd24ca6840a8d2a58f994087">pocketmine\nbt\tag\CompoundTag\setShort</a></div><div class="ttdeci">setShort(string $name, int $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00227">CompoundTag.php:227</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_aa4c95686bee17b99c2424a51bf85851c"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aa4c95686bee17b99c2424a51bf85851c">pocketmine\nbt\tag\CompoundTag\getIterator</a></div><div class="ttdeci">getIterator()</div><div class="ttdef"><b>Definition</b> <a href="#l00347">CompoundTag.php:347</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_aadcd6dadb59e74dd6a2585c247b58d54"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#aadcd6dadb59e74dd6a2585c247b58d54">pocketmine\nbt\tag\CompoundTag\setByteArray</a></div><div class="ttdeci">setByteArray(string $name, string $value)</div><div class="ttdef"><b>Definition</b> <a href="#l00262">CompoundTag.php:262</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_ab1a0a92a55af473cc0f6c41b8bf941e3"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ab1a0a92a55af473cc0f6c41b8bf941e3">pocketmine\nbt\tag\CompoundTag\makeCopy</a></div><div class="ttdeci">makeCopy()</div><div class="ttdef"><b>Definition</b> <a href="#l00339">CompoundTag.php:339</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_ad662736f2ea203f66ef07cabcc8b504e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#ad662736f2ea203f66ef07cabcc8b504e">pocketmine\nbt\tag\CompoundTag\equals</a></div><div class="ttdeci">equals(Tag $that)</div><div class="ttdef"><b>Definition</b> <a href="#l00355">CompoundTag.php:355</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_afad30f768dbfcfa0951e20be29e53d95"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#afad30f768dbfcfa0951e20be29e53d95">pocketmine\nbt\tag\CompoundTag\getValue</a></div><div class="ttdeci">getValue()</div><div class="ttdef"><b>Definition</b> <a href="#l00076">CompoundTag.php:76</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_double_tag_html"><div class="ttname"><a href="../../de/d4a/classpocketmine_1_1nbt_1_1tag_1_1_double_tag.html">pocketmine\nbt\tag\DoubleTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d64/_double_tag_8php_source.html#l00031">DoubleTag.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_float_tag_html"><div class="ttname"><a href="../../d7/d9e/classpocketmine_1_1nbt_1_1tag_1_1_float_tag.html">pocketmine\nbt\tag\FloatTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d74/_float_tag_8php_source.html#l00032">FloatTag.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_int_array_tag_html"><div class="ttname"><a href="../../da/dc3/classpocketmine_1_1nbt_1_1tag_1_1_int_array_tag.html">pocketmine\nbt\tag\IntArrayTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d0f/_int_array_tag_8php_source.html#l00035">IntArrayTag.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_int_tag_html"><div class="ttname"><a href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">pocketmine\nbt\tag\IntTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d4a/_int_tag_8php_source.html#l00030">IntTag.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_list_tag_html"><div class="ttname"><a href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0f/_list_tag_8php_source.html#l00039">ListTag.php:39</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_list_tag_html"><div class="ttname"><a href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0f/_list_tag_8php_source.html#l00047">ListTag.php:47</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_long_tag_html"><div class="ttname"><a href="../../d1/d29/classpocketmine_1_1nbt_1_1tag_1_1_long_tag.html">pocketmine\nbt\tag\LongTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d73/_long_tag_8php_source.html#l00030">LongTag.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_short_tag_html"><div class="ttname"><a href="../../db/d53/classpocketmine_1_1nbt_1_1tag_1_1_short_tag.html">pocketmine\nbt\tag\ShortTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d74/_short_tag_8php_source.html#l00030">ShortTag.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_string_tag_html"><div class="ttname"><a href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">pocketmine\nbt\tag\StringTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d19/_string_tag_8php_source.html#l00033">StringTag.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_tag_html"><div class="ttname"><a href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">pocketmine\nbt\tag\Tag</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dd2/_tag_8php_source.html#l00028">Tag.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_limits_html"><div class="ttname"><a href="../../db/da7/classpocketmine_1_1utils_1_1_limits.html">pocketmine\utils\Limits</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/da2/_limits_8php_source.html#l00026">Limits.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_html"><div class="ttname"><a href="../../d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html">pocketmine\world\generator\Generator</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9c/_generator_8php_source.html#l00034">Generator.php:34</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1nbt_1_1_nbt_stream_reader_html"><div class="ttname"><a href="../../d1/d97/interfacepocketmine_1_1nbt_1_1_nbt_stream_reader.html">pocketmine\nbt\NbtStreamReader</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/db1/_nbt_stream_reader_8php_source.html#l00031">NbtStreamReader.php:31</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1nbt_1_1_nbt_stream_writer_html"><div class="ttname"><a href="../../d7/d36/interfacepocketmine_1_1nbt_1_1_nbt_stream_writer.html">pocketmine\nbt\NbtStreamWriter</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dbc/_nbt_stream_writer_8php_source.html#l00029">NbtStreamWriter.php:29</a></div></div>

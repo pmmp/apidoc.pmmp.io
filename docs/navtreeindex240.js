@@ -1,5 +1,7 @@
 var NAVTREEINDEX240 =
 {
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#abe953c1c8dcf8d46428ae977b112aaac":[3,0,1,7,2,1,51],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ac028a6475bf09f61ce9dfb952d4a5d65":[3,0,1,7,2,1,17],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#acaced48bc41cc13b10c1e99ba76bdabd":[3,0,1,7,2,1,26],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ad52d796618bbd28ffa2f90b368f2dd0c":[3,0,1,7,2,1,34],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#adc9119ef662d43a499aab07adf30b2c0":[3,0,1,7,2,1,53],
@@ -247,7 +249,5 @@ var NAVTREEINDEX240 =
 "df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#ad53358136d2834427c096078f598fa31":[2,0,0,2,11,1],
 "df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#ad53358136d2834427c096078f598fa31":[3,0,1,7,16,1],
 "df/dfe/_projectile_8php_source.html":[4,0,0,6,3,5],
-"df/dff/item_2_coal_8php_source.html":[4,0,0,10,25],
-"dir_0003aa60d4a21aee354b5b2fa826bf4b.html":[4,0,0,12,0,5],
-"dir_0072c29217f03547b57a41ead6d94585.html":[4,0,0,9,1]
+"df/dff/item_2_coal_8php_source.html":[4,0,0,10,25]
 };

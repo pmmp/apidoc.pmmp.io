@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af45a3d45c4ab6528c6641915722b9de8":[2,0,0,0,116,6],
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af45a3d45c4ab6528c6641915722b9de8":[3,0,1,0,118,6],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af97d045122137ac415425b45e7b22a36":[2,0,0,0,116,49],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af97d045122137ac415425b45e7b22a36":[3,0,1,0,118,49],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,116,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,105,17],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,104,28],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,105,28],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,104,39],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#aba073e91196cf2978057ec4d3842aa76":[3,0,1,12,105,39],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#abd2688f008221d4c5fcdacac754d807e":[2,0,0,5,104,36]
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,104,39]
 };

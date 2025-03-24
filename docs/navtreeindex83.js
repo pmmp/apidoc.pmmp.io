@@ -1,5 +1,7 @@
 var NAVTREEINDEX83 =
 {
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4b1a5210337efa1cbc001cd937cc6723":[3,0,1,7,3,7,46],
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a53b0d6d1b15c35b58e83c959ffec384c":[3,0,1,7,3,7,4],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a5661f8a252c5324dd54ed3534ab47a6b":[3,0,1,7,3,7,55],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a5a122ae10d347948d919332654042417":[3,0,1,7,3,7,34],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a5afd6597d16c2bbfb8842a3df2ac8d0a":[3,0,1,7,3,7,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX83 =
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a3333215ddaffdedcd9a1d0c37367802a":[2,0,0,14,8,21],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a3333215ddaffdedcd9a1d0c37367802a":[3,0,1,30,14,21],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a3501ceefd98b2e50c99ebf3c02e33ccc":[2,0,0,14,8,11],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a3501ceefd98b2e50c99ebf3c02e33ccc":[3,0,1,30,14,11],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a4a1fb0292bfdef06f9eaa2c7548cc527":[2,0,0,14,8,13],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a4a1fb0292bfdef06f9eaa2c7548cc527":[3,0,1,30,14,13]
+"d5/dd2/classpocketmine_1_1world_1_1_position.html#a3501ceefd98b2e50c99ebf3c02e33ccc":[3,0,1,30,14,11]
 };

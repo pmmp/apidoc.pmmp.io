@@ -1,5 +1,7 @@
 var NAVTREEINDEX174 =
 {
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,163,64],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,161,26],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,163,26],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,161,12],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,163,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX174 =
 "db/dea/_cauldron_fill_powder_snow_sound_8php_source.html":[4,0,0,25,5,37],
 "db/dea/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_validation_exception.html":[3,0,1,11,1,8],
 "db/deb/_explosion_8php_source.html":[4,0,0,25,14],
-"db/dee/_block_state_upgrade_schema_block_remap_8php_source.html":[4,0,0,5,0,0,1,5],
-"db/df1/_smithing_transform_recipe_8php_source.html":[4,0,1,0,1,0,1,6,18],
-"db/df5/_cocoa_block_8php_source.html":[4,0,0,0,62]
+"db/dee/_block_state_upgrade_schema_block_remap_8php_source.html":[4,0,0,5,0,0,1,5]
 };

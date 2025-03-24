@@ -1,5 +1,7 @@
 var NAVTREEINDEX82 =
 {
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,11,12,32],
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[2,0,0,4,10,3],
 "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[3,0,1,11,12,3],
 "d5/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_feature_registry_packet.html":[3,0,1,16,0,6,69],
 "d5/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_feature_registry_packet.html#a3c37bffdc8d75d6615b31a254d931146":[3,0,1,16,0,6,69,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX82 =
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a2bd1fab41c3720c1ec9f75997958c223":[3,0,1,7,3,7,42],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a3710089794f8a7cabba26cf8cad2b79b":[3,0,1,7,3,7,29],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4087e033dc45159d7379699024657047":[3,0,1,7,3,7,17],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4101d0cffe7303801b827969c461ed8b":[3,0,1,7,3,7,6],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4b1a5210337efa1cbc001cd937cc6723":[3,0,1,7,3,7,46],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a53b0d6d1b15c35b58e83c959ffec384c":[3,0,1,7,3,7,4]
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4101d0cffe7303801b827969c461ed8b":[3,0,1,7,3,7,6]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX196 =
 {
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,73,40],
+"dd/d05/_bandwidth_stats_tracker_8php_source.html":[4,0,0,12,4],
 "dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html":[2,0,0,3,6,0],
 "dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html":[3,0,1,9,6,0],
 "dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,6,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX196 =
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,95,4],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a1df151eb419168f838e6d927c50f9210":[3,0,1,12,96,4],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a23c827b82179f8a57b786a6fa38d08e8":[2,0,0,5,95,20],
-"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a23c827b82179f8a57b786a6fa38d08e8":[3,0,1,12,96,20],
-"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a27ef1db0d41125973529fb720b06a00d":[2,0,0,5,95,34],
-"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a27ef1db0d41125973529fb720b06a00d":[3,0,1,12,96,34]
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a23c827b82179f8a57b786a6fa38d08e8":[3,0,1,12,96,20]
 };

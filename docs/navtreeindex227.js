@@ -1,5 +1,7 @@
 var NAVTREEINDEX227 =
 {
+"df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html":[2,0,0,12,21],
+"df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html":[3,0,1,28,21],
 "df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html#a50ab109328032c935981f8f0c52158d3":[2,0,0,12,21,0],
 "df/d2e/classpocketmine_1_1utils_1_1_signal_handler.html#a50ab109328032c935981f8f0c52158d3":[3,0,1,28,21,0],
 "df/d31/_desert_biome_8php_source.html":[4,0,0,25,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX227 =
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,23,44],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,0,5,22,43],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,23,43],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,22,41],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,23,41],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,22,16]
+"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,22,41]
 };

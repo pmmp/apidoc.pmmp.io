@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"d1/dae/classpocketmine_1_1block_1_1_bamboo.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,7,27],
 "d1/db1/_chunk_8php_source.html":[4,0,0,25,1,1],
 "d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html":[2,0,0,3,3,19],
 "d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html":[3,0,1,9,3,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,64,12],
 "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,62,59],
 "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,64,59],
-"d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,62,54],
-"d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,64,54]
+"d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,62,54]
 };

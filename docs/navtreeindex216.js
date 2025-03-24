@@ -1,5 +1,7 @@
 var NAVTREEINDEX216 =
 {
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,69,5],
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,67,33],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,69,33],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#ae6f3cdb7eeee27448b561fa3f8323916":[2,0,0,0,67,48],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#ae6f3cdb7eeee27448b561fa3f8323916":[3,0,1,0,69,48],
@@ -247,7 +249,5 @@ var NAVTREEINDEX216 =
 "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3":[3,0,1,16,0,6,124,10],
 "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,124,0],
 "de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,124,3],
-"de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,124,1],
-"de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f":[3,0,1,16,0,6,124,7],
-"de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c":[3,0,1,16,0,6,124,8]
+"de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,124,1]
 };

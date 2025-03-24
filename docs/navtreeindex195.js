@@ -1,5 +1,7 @@
 var NAVTREEINDEX195 =
 {
+"dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html#a72589f93dbaa73a24253cc5139ba2f92":[3,0,1,30,4,30,0],
+"dc/df5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_stack_request_action.html":[3,0,1,16,0,6,1,3,0,5],
 "dc/df5/world_2format_2io_2region_2_anvil_8php_source.html":[4,0,0,25,1,0,3,0],
 "dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html":[3,0,1,16,0,1,2],
 "dc/df7/_lantern_8php_source.html":[4,0,0,0,134],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,73,49],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af737301b899b7a7c9e9b0bb9a234a119":[2,0,0,5,72,7],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af737301b899b7a7c9e9b0bb9a234a119":[3,0,1,12,73,7],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af85accbedba28b67bb66d5f12d329585":[2,0,0,5,72,40],
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,73,40],
-"dd/d05/_bandwidth_stats_tracker_8php_source.html":[4,0,0,12,4]
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af85accbedba28b67bb66d5f12d329585":[2,0,0,5,72,40]
 };
