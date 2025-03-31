@@ -1,5 +1,8 @@
 var NAVTREEINDEX235 =
 {
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,87,47],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[2,0,0,5,86,9],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[3,0,1,12,87,9],
 "df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,86,50],
 "df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#aa27432059ecfd201a3cec74253b21fa9":[3,0,1,12,87,50],
 "df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#aa2834fb1656bc61244f5a24091aaa600":[2,0,0,5,86,36],
@@ -37,7 +40,7 @@ var NAVTREEINDEX235 =
 "df/d8c/classpocketmine_1_1world_1_1particle_1_1_enderman_teleport_particle.html":[3,0,1,30,4,10],
 "df/d8c/classpocketmine_1_1world_1_1particle_1_1_enderman_teleport_particle.html#a78cc603b58bc916b3c23a415ecb2bb39":[3,0,1,30,4,10,0],
 "df/d8d/_copper_material_8php_source.html":[4,0,0,0,2,12],
-"df/d8d/_jigsaw_structure_data_packet_8php_source.html":[4,0,1,0,1,0,82],
+"df/d8d/_jigsaw_structure_data_packet_8php_source.html":[4,0,1,0,1,0,83],
 "df/d8e/_wheat_seeds_8php_source.html":[4,0,0,10,126],
 "df/d8e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_vec3_metadata_property.html":[3,0,1,16,0,6,1,2,22],
 "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event.html":[2,0,0,3,3,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX235 =
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,91,10],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,92,10],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,91,1],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,92,1],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,91,29],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a1179a3b7a49461ede413b50c82b5684a":[3,0,1,12,92,29],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,91,4]
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,92,1]
 };

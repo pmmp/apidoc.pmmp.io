@@ -1,5 +1,7 @@
 var NAVTREEINDEX84 =
 {
+"d5/dd2/classpocketmine_1_1world_1_1_position.html#a3501ceefd98b2e50c99ebf3c02e33ccc":[2,0,0,14,8,11],
+"d5/dd2/classpocketmine_1_1world_1_1_position.html#a3501ceefd98b2e50c99ebf3c02e33ccc":[3,0,1,30,14,11],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a4a1fb0292bfdef06f9eaa2c7548cc527":[2,0,0,14,8,13],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a4a1fb0292bfdef06f9eaa2c7548cc527":[3,0,1,30,14,13],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a5d8e9b62367219f84eb7438f19be4f88":[2,0,0,14,8,0],
@@ -172,7 +174,7 @@ var NAVTREEINDEX84 =
 "d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html#afb1af1669b4289d6aaf41cc06e5596f8":[2,0,0,3,5,3,2],
 "d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html#afb1af1669b4289d6aaf41cc06e5596f8":[3,0,1,9,5,3,2],
 "d5/dd6/world_2generator_2populator_2_tall_grass_8php_source.html":[4,0,0,25,2,5,3],
-"d5/ddb/_lectern_update_packet_8php_source.html":[4,0,1,0,1,0,84],
+"d5/ddb/_lectern_update_packet_8php_source.html":[4,0,1,0,1,0,85],
 "d5/ddc/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_level_sound_event.html":[3,0,1,16,0,6,1,46],
 "d5/ddd/_amethyst_cluster_8php_source.html":[4,0,0,0,5],
 "d5/ddd/_wooden_trapdoor_8php_source.html":[4,0,0,0,254],
@@ -247,7 +249,5 @@ var NAVTREEINDEX84 =
 "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afc1ef00264a5352737a3ddfeae7ec035":[3,0,1,6,0,0,0,2,9],
 "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afecfc67d26c96eb963438588d6be1b63":[3,0,1,6,0,0,0,2,19],
 "d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aff25248c87fd7d165eaafa7d5b46ac94":[3,0,1,6,0,0,0,2,10],
-"d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html":[3,0,1,16,0,6,170],
-"d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#a2b5db2f85a67cc1c7054c16656e1ed87":[3,0,1,16,0,6,170,2],
-"d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,170,4]
+"d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html":[3,0,1,16,0,6,170]
 };

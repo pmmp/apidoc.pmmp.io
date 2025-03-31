@@ -1,5 +1,6 @@
 var NAVTREEINDEX123 =
 {
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,240,44],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a771a30c30a36b0992f54c57dc63af10d":[2,0,0,0,238,43],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a771a30c30a36b0992f54c57dc63af10d":[3,0,1,0,240,43],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a77cfc20015bad47453ab96bf78da0dd3":[2,0,0,0,238,72],
@@ -199,15 +200,15 @@ var NAVTREEINDEX123 =
 "d8/d2b/_note_instrument_8php_source.html":[4,0,0,25,5,79],
 "d8/d2f/_block_place_event_8php_source.html":[4,0,0,7,0,9],
 "d8/d2f/_unsupported_world_format_exception_8php_source.html":[4,0,0,25,1,0,1,2],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html":[3,0,1,16,0,6,111],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a02f242e4c32668d326d392b465ed9cae":[3,0,1,16,0,6,111,5],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a645b94b5dd06987cdae37be46a14fb56":[3,0,1,16,0,6,111,7],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,111,4],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,111,0],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,111,3],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,111,1],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#ab9d426ff28702d2f3f3a94c8c56a6965":[3,0,1,16,0,6,111,6],
-"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#abadf927988e02b6cf1142dd5d5894f1f":[3,0,1,16,0,6,111,2],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html":[3,0,1,16,0,6,109],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a02f242e4c32668d326d392b465ed9cae":[3,0,1,16,0,6,109,5],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a645b94b5dd06987cdae37be46a14fb56":[3,0,1,16,0,6,109,7],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,109,4],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,109,0],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,109,3],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,109,1],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#ab9d426ff28702d2f3f3a94c8c56a6965":[3,0,1,16,0,6,109,6],
+"d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html#abadf927988e02b6cf1142dd5d5894f1f":[3,0,1,16,0,6,109,2],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html":[2,0,0,5,97],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html":[3,0,1,12,98],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,97,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX123 =
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,98,1],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,97,7],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,98,7],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4ffd014f09b6f93acd8b08975ab58485":[2,0,0,5,97,24],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4ffd014f09b6f93acd8b08975ab58485":[3,0,1,12,98,24]
+"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4ffd014f09b6f93acd8b08975ab58485":[2,0,0,5,97,24]
 };

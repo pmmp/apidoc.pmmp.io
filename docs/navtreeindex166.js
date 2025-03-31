@@ -1,5 +1,8 @@
 var NAVTREEINDEX166 =
 {
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ad20602c8437154b4c4a201d6798e90fd":[3,0,1,0,0,16,14],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ad61d0fa541f73c0387c81dc3c46def67":[3,0,1,0,0,16,20],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,0,0,16,29],
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[3,0,1,0,0,16,3],
 "db/d22/_nether_portal_8php_source.html":[4,0,0,0,155],
 "db/d25/_campfire_sound_8php_source.html":[4,0,0,25,5,27],
@@ -246,8 +249,5 @@ var NAVTREEINDEX166 =
 "db/d38/classpocketmine_1_1block_1_1_slime.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,195,51],
 "db/d38/classpocketmine_1_1block_1_1_slime.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,197,51],
 "db/d38/classpocketmine_1_1block_1_1_slime.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,195,0],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,197,0],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,195,24],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,197,24],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,195,57]
+"db/d38/classpocketmine_1_1block_1_1_slime.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,197,0]
 };

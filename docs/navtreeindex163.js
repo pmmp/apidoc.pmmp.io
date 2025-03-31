@@ -1,5 +1,16 @@
 var NAVTREEINDEX163 =
 {
+"da/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute.html#a6fd0e42c7ef8451479863516c6d4108b":[3,0,1,16,0,6,1,2,0,0],
+"da/de1/_stained_glass_pane_8php_source.html":[4,0,0,0,208],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html":[2,0,0,3,1,12],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html":[3,0,1,9,1,12],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,12,4],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,12,4],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,12,0],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,1,12,0],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,1,12,3],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a90efcab0d539a5cb5b17968dfa164017":[3,0,1,9,1,12,3],
+"da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,1,12,2],
 "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,1,12,2],
 "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#aa105cba08f6aa75722b2716a4887a477":[2,0,0,3,1,12,1],
 "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html#aa105cba08f6aa75722b2716a4887a477":[3,0,1,9,1,12,1],
@@ -132,7 +143,7 @@ var NAVTREEINDEX163 =
 "da/de7/classpocketmine_1_1item_1_1_tool.html#afeeecf923ffec0b2cf16e9a571fc0d38":[3,0,1,12,112,38],
 "da/de7/classpocketmine_1_1world_1_1particle_1_1_dust_particle.html":[3,0,1,30,4,7],
 "da/de7/classpocketmine_1_1world_1_1particle_1_1_dust_particle.html#a4511e57ffb5474b595fc18e7730e6501":[3,0,1,30,4,7,0],
-"da/de9/_player_list_packet_8php_source.html":[4,0,1,0,1,0,131],
+"da/de9/_player_list_packet_8php_source.html":[4,0,1,0,1,0,129],
 "da/dea/_simulation_type_packet_8php_source.html":[4,0,1,0,1,0,189],
 "da/dea/_thread_crash_info_frame_8php_source.html":[4,0,0,20,6],
 "da/dea/_world_exception_8php_source.html":[4,0,0,25,19],
@@ -238,16 +249,5 @@ var NAVTREEINDEX163 =
 "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,72,12],
 "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,70,49],
 "da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,72,49],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac7481eaa4ff5a9375e2a62a171fec25b":[2,0,0,0,70,61],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac7481eaa4ff5a9375e2a62a171fec25b":[3,0,1,0,72,61],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,70,51],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,72,51],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,70,0],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,72,0],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,70,24],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,72,24],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ace264e4db5ba15d3f7f2072f79d77023":[2,0,0,0,70,67],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ace264e4db5ba15d3f7f2072f79d77023":[3,0,1,0,72,67],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,70,57],
-"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,72,57]
+"da/deb/classpocketmine_1_1block_1_1_copper_trapdoor.html#ac7481eaa4ff5a9375e2a62a171fec25b":[2,0,0,0,70,61]
 };

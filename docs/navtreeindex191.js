@@ -1,12 +1,5 @@
 var NAVTREEINDEX191 =
 {
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,179,44],
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4877cc9d6c4bdf4ce2cb16b9f7bb6e5c":[2,0,0,0,177,66],
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4877cc9d6c4bdf4ce2cb16b9f7bb6e5c":[3,0,1,0,179,66],
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,177,52],
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,179,52],
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,177,36],
-"dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,179,36],
 "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,177,46],
 "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,179,46],
 "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,177,53],
@@ -249,5 +242,12 @@ var NAVTREEINDEX191 =
 "dc/dc9/classpocketmine_1_1block_1_1_coral.html#a36afea9f0214193963f75577e8d48c26":[3,0,1,0,73,59],
 "dc/dc9/classpocketmine_1_1block_1_1_coral.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,71,62],
 "dc/dc9/classpocketmine_1_1block_1_1_coral.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,73,62],
-"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,71,10]
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,71,10],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,73,10],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,71,44],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,73,44],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,71,13],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a444028c60ad6c7afacda1a6cc3065e59":[3,0,1,0,73,13],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,71,52],
+"dc/dc9/classpocketmine_1_1block_1_1_coral.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,73,52]
 };

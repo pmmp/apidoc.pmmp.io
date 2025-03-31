@@ -1,10 +1,5 @@
 var NAVTREEINDEX213 =
 {
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#af45a3d45c4ab6528c6641915722b9de8":[3,0,1,0,134,6],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,132,29],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afcc19c437c8bef4487f5ecb956ae9a1a":[3,0,1,0,134,29],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afe4928a6da38d63eccea78bd1a2fdcd3":[2,0,0,0,132,21],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afe4928a6da38d63eccea78bd1a2fdcd3":[3,0,1,0,134,21],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,132,16],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,134,16],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,132,27],
@@ -249,5 +244,10 @@ var NAVTREEINDEX213 =
 "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a6dccda700707bb2c292f5be3b164fd81":[3,0,1,16,0,18,5],
 "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a804917dc4576498edea5c314421adb23":[3,0,1,16,0,18,9],
 "de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a83932edce28e5dd2a1890c20be2dd55c":[3,0,1,16,0,18,1],
-"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87ce8edf8f282e7dfd01683a51663a27":[3,0,1,16,0,18,7]
+"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a87ce8edf8f282e7dfd01683a51663a27":[3,0,1,16,0,18,7],
+"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#a91335ad3f1961e905987d4d486e9105c":[3,0,1,16,0,18,4],
+"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#ab800167a0be1a8abce0b9d3e15c8e8ad":[3,0,1,16,0,18,3],
+"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#ac19ef4cb6da3fc1b6a6040c043153bcc":[3,0,1,16,0,18,10],
+"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#ac3513c04252c5de20de324c4605c28ba":[3,0,1,16,0,18,0],
+"de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html#af527369413104478aa6e8df1a58cb67c":[3,0,1,16,0,18,8]
 };

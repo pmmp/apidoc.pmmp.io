@@ -1,5 +1,7 @@
 var NAVTREEINDEX101 =
 {
+"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad068b3be574049db538e015f546ec142":[3,0,1,28,3,10],
+"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad25d95e4f44757203a4f0de163cf64e4":[2,0,0,12,3,14],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad25d95e4f44757203a4f0de163cf64e4":[3,0,1,28,3,14],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad3a3175fe24f3aea110f1732af4aa62f":[2,0,0,12,3,25],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad3a3175fe24f3aea110f1732af4aa62f":[3,0,1,28,3,25],
@@ -9,16 +11,16 @@ var NAVTREEINDEX101 =
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#af545f4fe6d3d03b2ca93c58eea43d8e2":[3,0,1,28,3,24],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#afc6ed67469ec930ba28a541f05cf622f":[2,0,0,12,3,9],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#afc6ed67469ec930ba28a541f05cf622f":[3,0,1,28,3,9],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html":[3,0,1,16,0,6,81],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a4fabc59313ffa4d23cbdce686ff09ac2":[3,0,1,16,0,6,81,8],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,81,4],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a90030798a2916cbaff1d09059c5f06cc":[3,0,1,16,0,6,81,2],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,81,0],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,81,3],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#aa72a2e2f1e14ee929ab0a00ffcfd37da":[3,0,1,16,0,6,81,7],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,81,1],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#ac579050f95f99ca37190fa32c4aebdfb":[3,0,1,16,0,6,81,6],
-"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#acb2eb693902905ebd2d71e1536ad7b4c":[3,0,1,16,0,6,81,5],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html":[3,0,1,16,0,6,82],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a4fabc59313ffa4d23cbdce686ff09ac2":[3,0,1,16,0,6,82,8],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,82,4],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a90030798a2916cbaff1d09059c5f06cc":[3,0,1,16,0,6,82,2],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,82,0],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,82,3],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#aa72a2e2f1e14ee929ab0a00ffcfd37da":[3,0,1,16,0,6,82,7],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,82,1],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#ac579050f95f99ca37190fa32c4aebdfb":[3,0,1,16,0,6,82,6],
+"d6/dc7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_item_stack_response_packet.html#acb2eb693902905ebd2d71e1536ad7b4c":[3,0,1,16,0,6,82,5],
 "d6/dc8/_packet_broadcaster_8php_source.html":[4,0,0,12,0,18],
 "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html":[3,0,1,16,0,6,1,3,8],
 "d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html#a000990f5f7c273259796e38be721ed55":[3,0,1,16,0,6,1,3,8,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX101 =
 "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,154,62],
 "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,156,62],
 "d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,154,10],
-"d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,156,10],
-"d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,154,44],
-"d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,156,44]
+"d6/dd1/classpocketmine_1_1block_1_1_nether_quartz_ore.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,156,10]
 };

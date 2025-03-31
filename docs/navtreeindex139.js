@@ -1,5 +1,16 @@
 var NAVTREEINDEX139 =
 {
+"d9/d13/classpocketmine_1_1item_1_1_fire_charge.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,45,37],
+"d9/d13/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackresponse_1_1_item_stack_response.html":[3,0,1,16,0,6,1,3,1,0],
+"d9/d13/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackresponse_1_1_item_stack_response.html#a213fbd1e15a363ada61a7e18b53ad543":[3,0,1,16,0,6,1,3,1,0,0],
+"d9/d13/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackresponse_1_1_item_stack_response.html#a2e35452238ccbc6b0a4b3dab3b301f70":[3,0,1,16,0,6,1,3,1,0,1],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html":[2,0,0,0,162],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html":[3,0,1,0,164],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,162,58],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,164,58],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a09f4667329f89292dd319d56c4243b59":[2,0,0,0,162,30],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a09f4667329f89292dd319d56c4243b59":[3,0,1,0,164,30],
+"d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[2,0,0,0,162,18],
 "d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,164,18],
 "d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a1a1a2b2adf423738289d296198f044e1":[2,0,0,0,162,60],
 "d9/d15/classpocketmine_1_1block_1_1_packed_ice.html#a1a1a2b2adf423738289d296198f044e1":[3,0,1,0,164,60],
@@ -135,7 +146,7 @@ var NAVTREEINDEX139 =
 "d9/d18/classpocketmine_1_1world_1_1sound_1_1_chorus_flower_die_sound.html#afa253e9e37d0036daa9de04e0a783071":[3,0,1,30,5,41,0],
 "d9/d18/classpocketmine_1_1world_1_1sound_1_1_throw_sound.html":[3,0,1,30,5,96],
 "d9/d18/classpocketmine_1_1world_1_1sound_1_1_throw_sound.html#a08f6b1d6e9ff0015099d6ab2b1401935":[3,0,1,30,5,96,0],
-"d9/d19/_multiplayer_settings_packet_8php_source.html":[4,0,1,0,1,0,107],
+"d9/d19/_multiplayer_settings_packet_8php_source.html":[4,0,1,0,1,0,105],
 "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html":[2,0,0,0,107],
 "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html":[3,0,1,0,109],
 "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,107,48],
@@ -238,16 +249,5 @@ var NAVTREEINDEX139 =
 "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,109,55],
 "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,107,49],
 "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,109,49],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,107,0],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,109,0],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,107,24],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,109,24],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,107,57],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,109,57],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,107,43],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,109,43],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad22cce43d6d98bf006980c355179ef41":[2,0,0,0,107,64],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad22cce43d6d98bf006980c355179ef41":[3,0,1,0,109,64],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,107,15],
-"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,109,15]
+"d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,107,0]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX240 =
 {
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a81725faf49c2b6fb3314cac3f6a11e3c":[3,0,1,7,2,1,36],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a89a01723e97021d54e83c24d1b74670f":[3,0,1,7,2,1,11],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a8db17c4dcd6375fe3b610841c2b189bf":[3,0,1,7,2,1,47],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a8e8d7ab0bf7a9de85e23b1202e9bb496":[3,0,1,7,2,1,43],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a902a93c1b861c0738e47c2f1070023db":[3,0,1,7,2,1,33],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a946caa299ca329c2793e649d81a704f5":[3,0,1,7,2,1,0],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a99366099f1f673cfcf93a585e10c5f4e":[3,0,1,7,2,1,27],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#aac17dc3f3f88b2f3bcd614503d9a34ae":[3,0,1,7,2,1,31],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#aadf061fdcc839a812188363a4a9dc3b5":[3,0,1,7,2,1,24],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ab3c11dd444626eb5ef1d2ab666ce5def":[3,0,1,7,2,1,13],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#abc9ade3c67ec664051a5daa0d9742aa3":[3,0,1,7,2,1,20],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#abe953c1c8dcf8d46428ae977b112aaac":[3,0,1,7,2,1,51],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#ac028a6475bf09f61ce9dfb952d4a5d65":[3,0,1,7,2,1,17],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#acaced48bc41cc13b10c1e99ba76bdabd":[3,0,1,7,2,1,26],
@@ -238,16 +249,5 @@ var NAVTREEINDEX240 =
 "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef":[3,0,1,22,2,9],
 "df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html":[3,0,1,30,6,1],
 "df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#a88a6968f37829f922caff971d3450910":[3,0,1,30,6,1,1],
-"df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#a9f691c6b6dcd7d25779a1d73892eda9d":[3,0,1,30,6,1,0],
-"df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#ab84ecd36be98d804f8e8fa3119175646":[3,0,1,30,6,1,2],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html":[2,0,0,2,11],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html":[3,0,1,7,16],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#a6749b3c6b45f7d1b192b60ccc8c9a832":[2,0,0,2,11,2],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#a6749b3c6b45f7d1b192b60ccc8c9a832":[3,0,1,7,16,2],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#accd40cba3eefb1d5886f203da75aa5b8":[2,0,0,2,11,0],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#accd40cba3eefb1d5886f203da75aa5b8":[3,0,1,7,16,0],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#ad53358136d2834427c096078f598fa31":[2,0,0,2,11,1],
-"df/dfd/interfacepocketmine_1_1entity_1_1_food_source.html#ad53358136d2834427c096078f598fa31":[3,0,1,7,16,1],
-"df/dfe/_projectile_8php_source.html":[4,0,0,6,3,5],
-"df/dff/item_2_coal_8php_source.html":[4,0,0,10,25]
+"df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#a9f691c6b6dcd7d25779a1d73892eda9d":[3,0,1,30,6,1,0]
 };

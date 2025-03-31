@@ -1,9 +1,5 @@
 var NAVTREEINDEX218 =
 {
-"de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,223,20],
-"de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,225,20],
-"de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,223,50],
-"de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,225,50],
 "de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,0,0,223,35],
 "de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,225,35],
 "de/d91/classpocketmine_1_1block_1_1_torchflower_crop.html#a75b16ca6e22355cf632466a969e79211":[2,0,0,0,223,41],
@@ -92,7 +88,7 @@ var NAVTREEINDEX218 =
 "de/d92/_raw_mutton_8php_source.html":[4,0,0,10,95],
 "de/d95/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_education_settings_agent_capabilities.html":[3,0,1,16,0,6,1,27],
 "de/d96/_cancel_task_exception_8php_source.html":[4,0,0,18,6],
-"de/d96/_client_cache_blob_status_packet_8php_source.html":[4,0,1,0,1,0,39],
+"de/d96/_client_cache_blob_status_packet_8php_source.html":[4,0,1,0,1,0,38],
 "de/d96/_heart_particle_8php_source.html":[4,0,0,25,4,16],
 "de/d96/classpocketmine_1_1block_1_1_froglight.html":[2,0,0,0,106],
 "de/d96/classpocketmine_1_1block_1_1_froglight.html":[3,0,1,0,108],
@@ -249,5 +245,9 @@ var NAVTREEINDEX218 =
 "de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a296dc806b8ece2cb4d5470aa866b8022":[2,0,0,9,4,0],
 "de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a296dc806b8ece2cb4d5470aa866b8022":[3,0,1,17,4,0],
 "de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a481d2f2b49d22a23cacc71576d73ecb5":[2,0,0,9,4,4],
-"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a481d2f2b49d22a23cacc71576d73ecb5":[3,0,1,17,4,4]
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a481d2f2b49d22a23cacc71576d73ecb5":[3,0,1,17,4,4],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a56ca3af23c90116ceb2673db28c8a6f8":[2,0,0,9,4,1],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a56ca3af23c90116ceb2673db28c8a6f8":[3,0,1,17,4,1],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a8b7b223af5887da270b6e15bde3ecc3c":[2,0,0,9,4,2],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a8b7b223af5887da270b6e15bde3ecc3c":[3,0,1,17,4,2]
 };

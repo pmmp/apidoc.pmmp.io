@@ -194,7 +194,7 @@ var NAVTREEINDEX17 =
 "d1/d47/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_u_i_profile.html":[3,0,1,16,0,6,1,80],
 "d1/d48/_smithing_transform_recipe_data_8php_source.html":[4,0,0,3,0,7],
 "d1/d48/_text_packet_8php_source.html":[4,0,1,0,1,0,202],
-"d1/d49/_clientbound_packet_8php_source.html":[4,0,1,0,1,0,38],
+"d1/d49/_clientbound_packet_8php_source.html":[4,0,1,0,1,0,37],
 "d1/d4a/classpocketmine_1_1world_1_1sound_1_1_item_frame_add_item_sound.html":[3,0,1,30,5,73],
 "d1/d4a/classpocketmine_1_1world_1_1sound_1_1_item_frame_add_item_sound.html#afd248bd909ae0233dbf0281decfbd071":[3,0,1,30,5,73,0],
 "d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html":[3,0,1,4,0,0],

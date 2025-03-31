@@ -1,10 +1,5 @@
 var NAVTREEINDEX206 =
 {
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aa2834fb1656bc61244f5a24091aaa600":[2,0,0,5,70,36],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,71,36],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aa44f62edd166ff537f2c707b3c2fb87a":[2,0,0,5,70,37],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aa44f62edd166ff537f2c707b3c2fb87a":[3,0,1,12,71,37],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,70,45],
 "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,71,45],
 "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,70,18],
 "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,71,18],
@@ -249,5 +244,10 @@ var NAVTREEINDEX206 =
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,193,70],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,195,70],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a958f14f5e4a89eed895bc64f05246fff":[2,0,0,0,193,6],
-"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a958f14f5e4a89eed895bc64f05246fff":[3,0,1,0,195,6]
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a958f14f5e4a89eed895bc64f05246fff":[3,0,1,0,195,6],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,193,41],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,195,41],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,193,8],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,195,8],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,193,4]
 };

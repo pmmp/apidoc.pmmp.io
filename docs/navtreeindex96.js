@@ -1,5 +1,7 @@
 var NAVTREEINDEX96 =
 {
+"d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a23c827b82179f8a57b786a6fa38d08e8":[3,0,1,12,88,20],
+"d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a27ef1db0d41125973529fb720b06a00d":[2,0,0,5,87,34],
 "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a27ef1db0d41125973529fb720b06a00d":[3,0,1,12,88,34],
 "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a2b35e6f346e5955b086fcc07ead985a7":[2,0,0,5,87,25],
 "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#a2b35e6f346e5955b086fcc07ead985a7":[3,0,1,12,88,25],
@@ -216,7 +218,7 @@ var NAVTREEINDEX96 =
 "d6/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_position_tracking_d_b_client_request_packet.html#ab4330b916b0fd1a2da77019328e7c246":[3,0,1,16,0,6,136,6],
 "d6/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_position_tracking_d_b_client_request_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,136,1],
 "d6/da4/_writable_book_base_8php_source.html":[4,0,0,10,128],
-"d6/da6/_interact_packet_8php_source.html":[4,0,1,0,1,0,75],
+"d6/da6/_interact_packet_8php_source.html":[4,0,1,0,1,0,76],
 "d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html":[3,0,1,16,0,6,1,3,16],
 "d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html#a954074932eb09da327d24b3e39fc2088":[3,0,1,16,0,6,1,3,16,0],
 "d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html#aadc4b7cabfdcd2f9752d89f6c3926ca7":[3,0,1,16,0,6,1,3,16,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX96 =
 "d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,8,3],
 "d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a23ba6e3b4f462bdcf9f01a172beb6676":[2,0,0,0,6,13],
 "d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a23ba6e3b4f462bdcf9f01a172beb6676":[3,0,1,0,8,13],
-"d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,6,22],
-"d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,8,22],
-"d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[2,0,0,0,6,25]
+"d6/dae/classpocketmine_1_1block_1_1_bamboo_sapling.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,6,22]
 };

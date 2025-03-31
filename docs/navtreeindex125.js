@@ -1,11 +1,12 @@
 var NAVTREEINDEX125 =
 {
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#afc698fb58dc0eb1fd4eaf07680769280":[3,0,1,16,0,6,126,6],
 "d8/d46/tile_2_flower_pot_8php_source.html":[4,0,0,0,1,17],
 "d8/d47/_set_health_packet_8php_source.html":[4,0,1,0,1,0,172],
 "d8/d49/classpocketmine_1_1entity_1_1_skin.html":[2,0,0,2,17],
 "d8/d49/classpocketmine_1_1entity_1_1_skin.html":[3,0,1,7,22],
 "d8/d4a/_enderman_teleport_particle_8php_source.html":[4,0,0,25,4,10],
-"d8/d4a/_player_start_item_cooldown_packet_8php_source.html":[4,0,1,0,1,0,133],
+"d8/d4a/_player_start_item_cooldown_packet_8php_source.html":[4,0,1,0,1,0,131],
 "d8/d4c/class_client_session.html":[3,0,5],
 "d8/d4d/_tool_8php_source.html":[4,0,0,10,119],
 "d8/d4e/_callback_slot_validator_8php_source.html":[4,0,0,9,1,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a8c35a082da3055d637f0ff28decbc171":[3,0,1,0,143,9],
 "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a908b0d2be46ed6be8d8d16cd1db02924":[2,0,0,0,141,26],
 "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a908b0d2be46ed6be8d8d16cd1db02924":[3,0,1,0,143,26],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,141,11],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,143,11]
+"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,141,11]
 };

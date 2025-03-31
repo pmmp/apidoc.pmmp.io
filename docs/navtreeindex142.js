@@ -1,5 +1,16 @@
 var NAVTREEINDEX142 =
 {
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be":[3,0,1,28,13,14],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4":[2,0,0,12,13,12],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4":[3,0,1,28,13,12],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a858bcdc56d24ba75b488727832dec640":[2,0,0,12,13,0],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a858bcdc56d24ba75b488727832dec640":[3,0,1,28,13,0],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e":[2,0,0,12,13,2],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e":[3,0,1,28,13,2],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e":[2,0,0,12,13,3],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e":[3,0,1,28,13,3],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195":[2,0,0,12,13,1],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195":[3,0,1,28,13,1],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66":[2,0,0,12,13,11],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aedee2f70097923ef959b793d05d94e66":[3,0,1,28,13,11],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d":[2,0,0,12,13,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX142 =
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4f8f013f507342e2208dc8b4c3da964b":[3,0,1,12,86,26],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,85,21],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,86,21],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,85,31],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,86,31],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,85,5],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,86,5],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a56bc59582baf2faf3412ca7044831e3b":[2,0,0,5,85,37],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a56bc59582baf2faf3412ca7044831e3b":[3,0,1,12,86,37],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,85,52],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,86,52],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a653a8fbd8da17b08be95a985d857c4fc":[2,0,0,5,85,44],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,86,44],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,0,5,85,43],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,86,43]
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,85,31]
 };

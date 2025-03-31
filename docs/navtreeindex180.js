@@ -1,5 +1,7 @@
 var NAVTREEINDEX180 =
 {
+"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,112,51],
+"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,114,51],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,112,0],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,114,0],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,112,24],
@@ -207,15 +209,15 @@ var NAVTREEINDEX180 =
 "dc/d34/_clownfish_8php_source.html":[4,0,0,10,24],
 "dc/d34/_end_portal_frame_8php_source.html":[4,0,0,0,94],
 "dc/d34/_no_such_tag_exception_8php_source.html":[4,0,1,0,8,0,11],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html":[3,0,1,16,0,6,107],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#a786e2e1f2d9b52a2e66b8ff7f0aba4a9":[3,0,1,16,0,6,107,5],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,107,4],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,107,0],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,107,3],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aa2ad9fb41dd59f6ee6f213af45917526":[3,0,1,16,0,6,107,2],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#ab1644c6005863d21a2c912c214a8ce72":[3,0,1,16,0,6,107,6],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,107,1],
-"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aedfea63e9a82bee4b73d39e3fc429ebc":[3,0,1,16,0,6,107,7],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html":[3,0,1,16,0,6,105],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#a786e2e1f2d9b52a2e66b8ff7f0aba4a9":[3,0,1,16,0,6,105,5],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,105,4],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,105,0],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,105,3],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aa2ad9fb41dd59f6ee6f213af45917526":[3,0,1,16,0,6,105,2],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#ab1644c6005863d21a2c912c214a8ce72":[3,0,1,16,0,6,105,6],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,105,1],
+"dc/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_multiplayer_settings_packet.html#aedfea63e9a82bee4b73d39e3fc429ebc":[3,0,1,16,0,6,105,7],
 "dc/d37/_block_death_event_8php_source.html":[4,0,0,7,0,3],
 "dc/d37/_huge_explode_seed_particle_8php_source.html":[4,0,0,25,4,18],
 "dc/d3a/_packet_handling_exception_8php_source.html":[4,0,0,12,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX180 =
 "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a36afea9f0214193963f75577e8d48c26":[2,0,0,0,200,61],
 "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a36afea9f0214193963f75577e8d48c26":[3,0,1,0,202,61],
 "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,200,10],
-"dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,202,10],
-"dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a41d5a4c06b5bea06efa0492f993ad673":[2,0,0,0,200,64],
-"dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a41d5a4c06b5bea06efa0492f993ad673":[3,0,1,0,202,64]
+"dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,202,10]
 };

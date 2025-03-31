@@ -1,5 +1,7 @@
 var NAVTREEINDEX106 =
 {
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,205,61],
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,207,61],
 "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,205,46],
 "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,207,46],
 "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,205,53],
@@ -228,7 +230,7 @@ var NAVTREEINDEX106 =
 "d7/d27/classpocketmine_1_1block_1_1_block.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,24,17],
 "d7/d27/classpocketmine_1_1block_1_1_block.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,22,28],
 "d7/d27/classpocketmine_1_1block_1_1_block.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,24,28],
-"d7/d28/_spawn_settings_8php_source.html":[4,0,1,0,1,0,1,71],
+"d7/d28/_spawn_settings_8php_source.html":[4,0,1,0,1,0,1,73],
 "d7/d29/_squid_ink_cloud_animation_8php_source.html":[4,0,0,6,0,9],
 "d7/d29/classpocketmine_1_1world_1_1sound_1_1_chest_open_sound.html":[3,0,1,30,5,40],
 "d7/d29/classpocketmine_1_1world_1_1sound_1_1_chest_open_sound.html#a53b196c91a82b94c9a7f7a6a447224ba":[3,0,1,30,5,40,0],
@@ -240,14 +242,12 @@ var NAVTREEINDEX106 =
 "d7/d2d/classpocketmine_1_1world_1_1light_1_1_sky_light_update.html#a7dc289d590a7319a980cc541496f092a":[3,0,1,30,3,4,0],
 "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html":[3,0,1,6,0,0,1,7],
 "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html#a3865aac65fe5d24f9ea6445115fd8fcc":[3,0,1,6,0,0,1,7,0],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html":[3,0,1,16,0,6,131],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a5482cb567e98d2ac399037752e2a6525":[3,0,1,16,0,6,131,7],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,131,4],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,131,0],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,131,3],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa8204a9d6918584715d360bfdae34e85":[3,0,1,16,0,6,131,5],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,131,1],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ad8e2486d48babe8ec9f3f835cfaa4ae6":[3,0,1,16,0,6,131,2],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ae8a4d016f2857a1e241f3bfea1650024":[3,0,1,16,0,6,131,6],
-"d7/d30/_entity_teleport_event_8php_source.html":[4,0,0,7,1,21]
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html":[3,0,1,16,0,6,129],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a5482cb567e98d2ac399037752e2a6525":[3,0,1,16,0,6,129,7],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,129,4],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,129,0],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,129,3],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa8204a9d6918584715d360bfdae34e85":[3,0,1,16,0,6,129,5],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,129,1],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ad8e2486d48babe8ec9f3f835cfaa4ae6":[3,0,1,16,0,6,129,2]
 };

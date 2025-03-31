@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html":[3,0,0,0,4],
+"d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a43afeae9b6d89fb8a941cd8f4fdd8bf1":[3,0,0,0,4,5],
 "d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a449dacdbae80cf0ea07d110b902a5998":[3,0,0,0,4,2],
 "d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a4aa79ff2930e07dea7ad7476bf7e30d2":[3,0,0,0,4,8],
 "d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a52a82976c269b2fae333169b9e369a93":[3,0,0,0,4,4],
@@ -13,7 +15,7 @@ var NAVTREEINDEX70 =
 "d4/dea/_language_8php_source.html":[4,0,0,11,2],
 "d4/dee/_crafting_transaction_8php_source.html":[4,0,0,9,1,1],
 "d4/dee/_event_8php_source.html":[4,0,0,7,9],
-"d4/dee/_player_fog_packet_8php_source.html":[4,0,1,0,1,0,128],
+"d4/dee/_player_fog_packet_8php_source.html":[4,0,1,0,1,0,126],
 "d4/def/classpocketmine_1_1world_1_1sound_1_1_ender_chest_close_sound.html":[3,0,1,30,5,52],
 "d4/def/classpocketmine_1_1world_1_1sound_1_1_ender_chest_close_sound.html#ace5c5e3854496ea1654722bf0cac94e7":[3,0,1,30,5,52,0],
 "d4/df0/classpocketmine_1_1event_1_1world_1_1_world_difficulty_change_event.html":[2,0,0,3,6,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX70 =
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a67a06ed88b5bbe909c7425f30c6923e9":[3,0,1,16,0,6,1,55,16],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a938ce7a264224cc80067899eac9ae9b7":[3,0,1,16,0,6,1,55,23],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#aac99b60ab5004e88d4b349b107160c66":[3,0,1,16,0,6,1,55,20],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab22da76c9a93a7b1e4e46f6c1a431568":[3,0,1,16,0,6,1,55,25],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab3c36400bf08f4b06fe77340f6fb52fa":[3,0,1,16,0,6,1,55,7],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab424c7b52c88abd418d3cba43aa61d41":[3,0,1,16,0,6,1,55,24]
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab22da76c9a93a7b1e4e46f6c1a431568":[3,0,1,16,0,6,1,55,25]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX79 =
 {
+"d5/d8a/classpocketmine_1_1item_1_1_item.html#a1179a3b7a49461ede413b50c82b5684a":[3,0,1,12,59,28],
+"d5/d8a/classpocketmine_1_1item_1_1_item.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,58,5],
 "d5/d8a/classpocketmine_1_1item_1_1_item.html#a1df151eb419168f838e6d927c50f9210":[3,0,1,12,59,5],
 "d5/d8a/classpocketmine_1_1item_1_1_item.html#a23c827b82179f8a57b786a6fa38d08e8":[2,0,0,5,58,20],
 "d5/d8a/classpocketmine_1_1item_1_1_item.html#a23c827b82179f8a57b786a6fa38d08e8":[3,0,1,12,59,20],
@@ -145,7 +147,7 @@ var NAVTREEINDEX79 =
 "d5/d8c/classpocketmine_1_1entity_1_1effect_1_1_instant_damage_effect.html#a7b2e804f2bd6d6f11acae88699ccec85":[3,0,1,7,1,6,4],
 "d5/d8c/classpocketmine_1_1entity_1_1effect_1_1_instant_damage_effect.html#a82dc77059128b4399e33b999b765b6e9":[3,0,1,7,1,6,1],
 "d5/d8c/classpocketmine_1_1entity_1_1effect_1_1_instant_damage_effect.html#ae4622599c73e72cb6a898e4fdf34d978":[3,0,1,7,1,6,8],
-"d5/d8e/_code_builder_packet_8php_source.html":[4,0,1,0,1,0,43],
+"d5/d8e/_code_builder_packet_8php_source.html":[4,0,1,0,1,0,44],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html":[2,0,0,0,214],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html":[3,0,1,0,216],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,214,62],
@@ -247,7 +249,5 @@ var NAVTREEINDEX79 =
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,214,69],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,216,69],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,214,29],
-"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,216,29],
-"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,214,13],
-"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,216,13]
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,216,29]
 };

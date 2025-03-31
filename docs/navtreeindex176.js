@@ -1,5 +1,7 @@
 var NAVTREEINDEX176 =
 {
+"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a246df6e02e3bce42909c6a68a2621700":[3,0,1,0,49,63],
+"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,47,22],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,49,22],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,47,2],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a286fc64348f13417dcb6106c2695911b":[3,0,1,0,49,2],
@@ -116,7 +118,7 @@ var NAVTREEINDEX176 =
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,47,27],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,49,27],
 "dc/d06/_packet_sender_8php_source.html":[4,0,0,12,0,20],
-"dc/d06/_sub_chunk_packet_height_map_type_8php_source.html":[4,0,1,0,1,0,1,80],
+"dc/d06/_sub_chunk_packet_height_map_type_8php_source.html":[4,0,1,0,1,0,1,82],
 "dc/d06/classpocketmine_1_1event_1_1entity_1_1_entity_despawn_event.html":[2,0,0,3,1,9],
 "dc/d06/classpocketmine_1_1event_1_1entity_1_1_entity_despawn_event.html":[3,0,1,9,1,9],
 "dc/d06/classpocketmine_1_1event_1_1entity_1_1_entity_despawn_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,9,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX176 =
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,213,23],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,211,31],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,213,31],
-"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,0,0,211,8],
-"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab05ed23d3ff256f3f64cf6d86563c947":[3,0,1,0,213,8],
-"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,211,19]
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,0,0,211,8]
 };

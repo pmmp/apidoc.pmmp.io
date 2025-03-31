@@ -160,7 +160,7 @@ var NAVTREEINDEX3 =
 "d0/d51/_glass_bottle_8php_source.html":[4,0,0,10,51],
 "d0/d52/_poison_effect_8php_source.html":[4,0,0,6,1,11],
 "d0/d52/_simple_command_map_8php_source.html":[4,0,0,1,9],
-"d0/d53/_multiplayer_game_visibility_8php_source.html":[4,0,1,0,1,0,1,54],
+"d0/d53/_multiplayer_game_visibility_8php_source.html":[4,0,1,0,1,0,1,55],
 "d0/d58/_effect_command_8php_source.html":[4,0,0,1,0,8],
 "d0/d59/namespacepocketmine_1_1nbt.html":[2,0,0,7],
 "d0/d5a/_player_respawn_event_8php_source.html":[4,0,0,7,3,39],

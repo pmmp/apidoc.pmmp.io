@@ -1,5 +1,6 @@
 var NAVTREEINDEX112 =
 {
+"d7/d95/classpocketmine_1_1block_1_1_stair.html":[2,0,0,0,210],
 "d7/d95/classpocketmine_1_1block_1_1_stair.html":[3,0,1,0,212],
 "d7/d95/classpocketmine_1_1block_1_1_stair.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,210,48],
 "d7/d95/classpocketmine_1_1block_1_1_stair.html#a028afd613a6f42370ede9aec4c9796d6":[3,0,1,0,212,48],
@@ -141,7 +142,7 @@ var NAVTREEINDEX112 =
 "d7/d96/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator.html":[3,0,1,16,0,5,3],
 "d7/d96/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_container_id_translator.html#a03a0e9510d5a8afca72e6b9c4190ca0c":[3,0,1,16,0,5,3,0],
 "d7/d98/_crash_dump_8php_source.html":[4,0,0,4,0],
-"d7/d98/_sub_chunk_packet_height_map_info_8php_source.html":[4,0,1,0,1,0,1,79],
+"d7/d98/_sub_chunk_packet_height_map_info_8php_source.html":[4,0,1,0,1,0,1,81],
 "d7/d98/classpocketmine_1_1entity_1_1animation_1_1_squid_ink_cloud_animation.html":[3,0,1,7,0,9],
 "d7/d98/classpocketmine_1_1entity_1_1animation_1_1_squid_ink_cloud_animation.html#ada71c43f80f65ad442dddb12b7b47e34":[3,0,1,7,0,9,0],
 "d7/d99/_copper_grate_8php_source.html":[4,0,0,0,68],
@@ -248,6 +249,5 @@ var NAVTREEINDEX112 =
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,41,51],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,43,51],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,41,53],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,43,53],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,41,0]
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,43,53]
 };

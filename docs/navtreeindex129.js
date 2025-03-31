@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,101,41],
 "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,100,16],
 "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,101,16],
 "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,100,15],
@@ -55,7 +56,7 @@ var NAVTREEINDEX129 =
 "d8/d84/_particle_command_8php_source.html":[4,0,0,1,0,21],
 "d8/d85/_brown_mushroom_block_8php_source.html":[4,0,0,0,36],
 "d8/d87/_axis_aligned_b_b_8php_source.html":[4,0,1,0,7,0,1],
-"d8/d87/_item_interaction_data_8php_source.html":[4,0,1,0,1,0,1,44],
+"d8/d87/_item_interaction_data_8php_source.html":[4,0,1,0,1,0,1,45],
 "d8/d87/_material_reducer_recipe_8php_source.html":[4,0,1,0,1,0,1,6,7],
 "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html":[2,0,0,5,114],
 "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html":[3,0,1,12,115],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "d8/d97/classpocketmine_1_1block_1_1_sculk.html#a286fc64348f13417dcb6106c2695911b":[3,0,1,0,190,2],
 "d8/d97/classpocketmine_1_1block_1_1_sculk.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[2,0,0,0,188,25],
 "d8/d97/classpocketmine_1_1block_1_1_sculk.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[3,0,1,0,190,25],
-"d8/d97/classpocketmine_1_1block_1_1_sculk.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[2,0,0,0,188,37],
-"d8/d97/classpocketmine_1_1block_1_1_sculk.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[3,0,1,0,190,37]
+"d8/d97/classpocketmine_1_1block_1_1_sculk.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[2,0,0,0,188,37]
 };

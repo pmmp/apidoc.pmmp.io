@@ -1,5 +1,7 @@
 var NAVTREEINDEX85 =
 {
+"d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#a2b5db2f85a67cc1c7054c16656e1ed87":[3,0,1,16,0,6,170,2],
+"d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,170,4],
 "d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,170,0],
 "d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,170,3],
 "d5/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_display_objective_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,170,1],
@@ -183,14 +185,14 @@ var NAVTREEINDEX85 =
 "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#afc803b69ef00a05c6cbec1d613d4fa30":[3,0,1,15,0,8,13],
 "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#afc8fcf42ffa47b2de0603de6d79e11c4":[3,0,1,15,0,8,12],
 "d5/df6/_request_chunk_radius_packet_8php_source.html":[4,0,1,0,1,0,146],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html":[3,0,1,16,0,6,85],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#a52445daeeaa651da715a65e4a39fb4a5":[3,0,1,16,0,6,85,6],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,85,3],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,85,0],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,85,2],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,85,1],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#acc38492dee536e8230de8d95ce010907":[3,0,1,16,0,6,85,5],
-"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#acde2fdd8de606b54558f2a5aea688b9e":[3,0,1,16,0,6,85,4],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html":[3,0,1,16,0,6,86],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#a52445daeeaa651da715a65e4a39fb4a5":[3,0,1,16,0,6,86,6],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,86,3],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,86,0],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,86,2],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,86,1],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#acc38492dee536e8230de8d95ce010907":[3,0,1,16,0,6,86,5],
+"d5/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_legacy_telemetry_event_packet.html#acde2fdd8de606b54558f2a5aea688b9e":[3,0,1,16,0,6,86,4],
 "d5/df7/_client_data_animation_frame_8php_source.html":[4,0,1,0,1,0,1,5,2],
 "d5/df7/classpocketmine_1_1_server.html":[2,0,0,19],
 "d5/df7/classpocketmine_1_1_server.html":[3,0,1,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX85 =
 "d5/df7/classpocketmine_1_1_server.html#ac73d85e2d8fb3ec1cae21376c9b3f5c6":[2,0,0,19,5],
 "d5/df7/classpocketmine_1_1_server.html#ac73d85e2d8fb3ec1cae21376c9b3f5c6":[3,0,1,35,5],
 "d5/df7/classpocketmine_1_1_server.html#ac88d77be813ab3529599b0fed66f1354":[2,0,0,19,2],
-"d5/df7/classpocketmine_1_1_server.html#ac88d77be813ab3529599b0fed66f1354":[3,0,1,35,2],
-"d5/df7/classpocketmine_1_1_server.html#acf9ae8acb41723959bd8fd6293d95b89":[2,0,0,19,26],
-"d5/df7/classpocketmine_1_1_server.html#acf9ae8acb41723959bd8fd6293d95b89":[3,0,1,35,26]
+"d5/df7/classpocketmine_1_1_server.html#ac88d77be813ab3529599b0fed66f1354":[3,0,1,35,2]
 };

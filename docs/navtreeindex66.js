@@ -1,11 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#ad2f13c74ba1a2adc38cc29642a6bd23c":[2,0,0,0,77,36],
-"d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#ad2f13c74ba1a2adc38cc29642a6bd23c":[3,0,1,0,79,36],
-"d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,77,15],
-"d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,79,15],
-"d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,77,44],
-"d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,79,44],
 "d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,77,1],
 "d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,79,1],
 "d4/dba/classpocketmine_1_1block_1_1_detector_rail.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,77,5],
@@ -249,5 +243,11 @@ var NAVTREEINDEX66 =
 "d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,88,50],
 "d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa27432059ecfd201a3cec74253b21fa9":[3,0,1,12,89,50],
 "d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa2834fb1656bc61244f5a24091aaa600":[2,0,0,5,88,36],
-"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,89,36]
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,89,36],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,88,46],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,89,46],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa8e6d5b0a8cc541423f4785fa3f4acdc":[2,0,0,5,88,8],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa8e6d5b0a8cc541423f4785fa3f4acdc":[3,0,1,12,89,8],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,88,18],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,89,18]
 };

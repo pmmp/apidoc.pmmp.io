@@ -1,5 +1,8 @@
 var NAVTREEINDEX171 =
 {
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,118,32],
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,116,54],
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,118,54],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af45a3d45c4ab6528c6641915722b9de8":[2,0,0,0,116,6],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af45a3d45c4ab6528c6641915722b9de8":[3,0,1,0,118,6],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#af97d045122137ac415425b45e7b22a36":[2,0,0,0,116,49],
@@ -15,7 +18,7 @@ var NAVTREEINDEX171 =
 "db/d9b/namespacepocketmine_1_1inventory.html":[2,0,0,4],
 "db/d9b/namespacepocketmine_1_1inventory.html#a10b8fd4fd42e48951a80042e1d1b9e9f":[2,0,0,4,18],
 "db/d9b/namespacepocketmine_1_1inventory.html#a10b8fd4fd42e48951a80042e1d1b9e9faad0a64bcb74aaf904e0a416093798d83":[2,0,0,4,18,0],
-"db/d9c/_packet_int_enum_trait_8php_source.html":[4,0,1,0,1,0,1,56],
+"db/d9c/_packet_int_enum_trait_8php_source.html":[4,0,1,0,1,0,1,58],
 "db/d9c/_receive_reliability_layer_8php_source.html":[4,0,1,0,9,0,1,1],
 "db/d9d/classpocketmine_1_1item_1_1_potato.html":[2,0,0,5,78],
 "db/d9d/classpocketmine_1_1item_1_1_potato.html":[3,0,1,12,79],
@@ -135,7 +138,7 @@ var NAVTREEINDEX171 =
 "db/d9d/classpocketmine_1_1item_1_1enchantment_1_1_available_enchantment_registry.html#ae796a06a6ef8076618f23d887ca8c19c":[3,0,1,12,0,0,1],
 "db/d9d/classpocketmine_1_1item_1_1enchantment_1_1_available_enchantment_registry.html#aefae4f403456e13d0e729914cd30712b":[3,0,1,12,0,0,0],
 "db/d9d/classpocketmine_1_1item_1_1enchantment_1_1_available_enchantment_registry.html#afea93263ad6efe860681e6edfb43b758":[3,0,1,12,0,0,7],
-"db/d9e/_player_action_packet_8php_source.html":[4,0,1,0,1,0,123],
+"db/d9e/_player_action_packet_8php_source.html":[4,0,1,0,1,0,121],
 "db/d9e/_spider_eye_8php_source.html":[4,0,0,10,107],
 "db/da1/_lever_facing_8php_source.html":[4,0,0,0,2,28],
 "db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html":[2,0,0,3,2,5],
@@ -168,10 +171,9 @@ var NAVTREEINDEX171 =
 "db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#a36a85ec061c7b725a2c2d792b5399e98":[3,0,1,16,0,6,138,1],
 "db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#a790ceabc53505b3ca3c0474ea67670fc":[3,0,1,16,0,6,138,2],
 "db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#ae46f498b2bb241bfb097d104dde58b0e":[3,0,1,16,0,6,138,0],
-"db/dac/_camera_packet_8php_source.html":[4,0,1,0,1,0,29],
+"db/dac/_camera_packet_8php_source.html":[4,0,1,0,1,0,28],
 "db/dad/_query_handler_8php_source.html":[4,0,0,12,1,1],
 "db/db0/_effect_instance_8php_source.html":[4,0,0,6,1,2],
-"db/db0/_level_sound_event_packet_v1_8php_source.html":[4,0,1,0,1,0,91],
 "db/db2/_persona_skin_piece_8php_source.html":[4,0,1,0,1,0,1,8,1],
 "db/db3/classpocketmine_1_1world_1_1particle_1_1_entity_flame_particle.html":[3,0,1,30,4,11],
 "db/db3/classpocketmine_1_1world_1_1particle_1_1_entity_flame_particle.html#a4b1e67bc0f60aa95b5b370c8cb215d62":[3,0,1,30,4,11,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,105,42],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,104,17],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,105,17],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,104,28],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,105,28],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,104,39]
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,104,28]
 };

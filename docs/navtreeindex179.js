@@ -1,5 +1,7 @@
 var NAVTREEINDEX179 =
 {
+"dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1":[2,0,0,12,26,4],
+"dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5011dae1b141d5d2a263c794bb5e62d1":[3,0,1,28,26,4],
 "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7":[2,0,0,12,26,18],
 "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a61fa28abdb615125801308a857e76db7":[3,0,1,28,26,18],
 "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6554668929420cbb0739b8ac43ebef4e":[2,0,0,12,26,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX179 =
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,112,12],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,114,12],
 "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,112,55],
-"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,114,55],
-"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,112,51],
-"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,114,51]
+"dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,114,55]
 };
