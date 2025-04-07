@@ -1,5 +1,11 @@
 var NAVTREEINDEX172 =
 {
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,105,34],
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,104,42],
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,105,42],
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,104,17],
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,105,17],
+"db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,104,28],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,105,28],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,104,39],
 "db/db5/classpocketmine_1_1item_1_1_stick.html#aba073e91196cf2978057ec4d3842aa76":[3,0,1,12,105,39],
@@ -243,11 +249,5 @@ var NAVTREEINDEX172 =
 "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,66,48],
 "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,67,48],
 "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,0,5,66,40],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,67,40],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,66,38],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,67,38],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,66,15],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,67,15],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,66,14],
-"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a7d45886d40860e24fb4c18d02a3d1a32":[3,0,1,12,67,14]
+"db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,67,40]
 };

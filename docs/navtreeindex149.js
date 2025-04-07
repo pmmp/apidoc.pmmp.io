@@ -1,5 +1,11 @@
 var NAVTREEINDEX149 =
 {
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9866a7ab362cec28252d67f6382a4ad4":[2,0,0,5,67,33],
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9866a7ab362cec28252d67f6382a4ad4":[3,0,1,12,68,33],
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[2,0,0,5,67,3],
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[3,0,1,12,68,3],
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9dd9484fe3ab1afcbd2627860e01973a":[2,0,0,5,67,46],
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,68,46],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[2,0,0,5,67,9],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[3,0,1,12,68,9],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,67,49],
@@ -243,11 +249,5 @@ var NAVTREEINDEX149 =
 "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#ae4ffb25339a7c56f5af9981496eaad21":[3,0,1,16,0,7,2,3],
 "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#ae8f5dbdc5e72591856dd154940b1d98e":[3,0,1,16,0,7,2,6],
 "d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#af78eaaa21491925872584299d3d7a096":[3,0,1,16,0,7,2,4],
-"d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#afc62f0ad9e7ccdb4c3326282a3a9fdd8":[3,0,1,16,0,7,2,0],
-"d9/dc5/_item_frame_8php_source.html":[4,0,0,0,131],
-"d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event.html":[2,0,0,3,0,11],
-"d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event.html":[3,0,1,9,0,11],
-"d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,0,11,0],
-"d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,0,11,0],
-"d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,0,11,2]
+"d9/dc4/classpocketmine_1_1network_1_1mcpe_1_1raklib_1_1_rak_lib_interface.html#afc62f0ad9e7ccdb4c3326282a3a9fdd8":[3,0,1,16,0,7,2,0]
 };

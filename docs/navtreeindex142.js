@@ -1,5 +1,11 @@
 var NAVTREEINDEX142 =
 {
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a3bb92a51a0c267da0f0e07b4d0d38336":[3,0,1,28,13,7],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645":[2,0,0,12,13,6],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645":[3,0,1,28,13,6],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397":[2,0,0,12,13,8],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a665907f48b3cfa6a61f7e37135021397":[3,0,1,28,13,8],
+"d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be":[2,0,0,12,13,14],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be":[3,0,1,28,13,14],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4":[2,0,0,12,13,12],
 "d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4":[3,0,1,28,13,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX142 =
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,86,48],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,85,0],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,86,0],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,85,6],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,86,6],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4f8f013f507342e2208dc8b4c3da964b":[2,0,0,5,85,26],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4f8f013f507342e2208dc8b4c3da964b":[3,0,1,12,86,26],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,85,21],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,86,21],
-"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,85,31]
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,85,6]
 };

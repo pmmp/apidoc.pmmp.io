@@ -1,5 +1,11 @@
 var NAVTREEINDEX157 =
 {
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a444028c60ad6c7afacda1a6cc3065e59":[3,0,1,0,41,13],
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,39,54],
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,41,54],
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,39,37],
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,41,37],
+"da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,39,63],
 "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,41,63],
 "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,39,47],
 "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,41,47],
@@ -243,11 +249,5 @@ var NAVTREEINDEX157 =
 "da/d71/classpocketmine_1_1block_1_1_wool.html#af45a3d45c4ab6528c6641915722b9de8":[2,0,0,0,253,6],
 "da/d71/classpocketmine_1_1block_1_1_wool.html#af45a3d45c4ab6528c6641915722b9de8":[3,0,1,0,255,6],
 "da/d71/classpocketmine_1_1block_1_1_wool.html#af97d045122137ac415425b45e7b22a36":[2,0,0,0,253,49],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#af97d045122137ac415425b45e7b22a36":[3,0,1,0,255,49],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,253,29],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#afcc19c437c8bef4487f5ecb956ae9a1a":[3,0,1,0,255,29],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#afe4928a6da38d63eccea78bd1a2fdcd3":[2,0,0,0,253,21],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#afe4928a6da38d63eccea78bd1a2fdcd3":[3,0,1,0,255,21],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,253,16],
-"da/d71/classpocketmine_1_1block_1_1_wool.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,255,16]
+"da/d71/classpocketmine_1_1block_1_1_wool.html#af97d045122137ac415425b45e7b22a36":[3,0,1,0,255,49]
 };

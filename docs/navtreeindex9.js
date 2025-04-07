@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,42,46],
+"d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aa27432059ecfd201a3cec74253b21fa9":[3,0,1,12,43,46],
+"d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,42,42],
 "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,43,42],
 "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,42,17],
 "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,43,17],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a7d30e4c3aeab4716cbf14f0ca83664eb":[3,0,1,0,160,45],
 "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,158,28],
 "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,160,28],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a863a7a7c27f111cc622ebb10711807c2":[2,0,0,0,158,56],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a863a7a7c27f111cc622ebb10711807c2":[3,0,1,0,160,56],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a90ff5d1b71d1e477548a35ba64626c5b":[2,0,0,0,158,61],
-"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a90ff5d1b71d1e477548a35ba64626c5b":[3,0,1,0,160,61]
+"d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a863a7a7c27f111cc622ebb10711807c2":[2,0,0,0,158,56]
 };

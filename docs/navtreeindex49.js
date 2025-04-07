@@ -1,5 +1,10 @@
 var NAVTREEINDEX49 =
 {
+"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html":[3,0,1,7,1,0],
+"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a125c11ecf3e80cdb71ecc6e07f162da4":[3,0,1,7,1,0,7],
+"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a265c29ee2de6bff1da8ae153d2b0d3dc":[3,0,1,7,1,0,0],
+"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a47e78434ab3294753bc42572711b3d49":[3,0,1,7,1,0,6],
+"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,0,5],
 "d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[3,0,1,7,1,0,3],
 "d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a7b2e804f2bd6d6f11acae88699ccec85":[3,0,1,7,1,0,4],
 "d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#aa8327bd087f9863ba29cfad57f8f8c0c":[3,0,1,7,1,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX49 =
 "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html#a50c72119aec9064302dd2aa8642f18f1":[3,0,1,6,0,0,1,0,0,0],
 "d3/d85/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model.html#ad7679a484cd6f58696919ae609356821":[3,0,1,6,0,0,1,0,0,1],
 "d3/d86/_sub_client_login_packet_8php_source.html":[4,0,1,0,1,0,199],
-"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html":[2,0,0,5,54],
-"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html":[3,0,1,12,55],
-"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,54,32],
-"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,55,32],
-"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,54,10],
-"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,55,10]
+"d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html":[2,0,0,5,54]
 };

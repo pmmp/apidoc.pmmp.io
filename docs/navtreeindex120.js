@@ -1,5 +1,11 @@
 var NAVTREEINDEX120 =
 {
+"d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,91,3],
+"d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,93,3],
+"d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,91,22],
+"d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,93,22],
+"d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,91,2],
+"d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a286fc64348f13417dcb6106c2695911b":[3,0,1,0,93,2],
 "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[2,0,0,0,91,25],
 "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[3,0,1,0,93,25],
 "d8/d15/classpocketmine_1_1block_1_1_ender_chest.html#a30a070aa7befb02f9fff5cbf2693c01e":[2,0,0,0,91,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX120 =
 "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a4fceac950447dcfd38be70d35998f1e1":[3,0,1,28,1,4],
 "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5a6e5359bc940374bd3fc9cd4540cd40":[2,0,0,12,1,20],
 "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5a6e5359bc940374bd3fc9cd4540cd40":[3,0,1,28,1,20],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5d4af396abe1eb5e113f1d96cc2301fd":[2,0,0,12,1,37],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5d4af396abe1eb5e113f1d96cc2301fd":[3,0,1,28,1,37],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5f8854cb56e8b83f883674adb3304161":[2,0,0,12,1,5],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5f8854cb56e8b83f883674adb3304161":[3,0,1,28,1,5],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a613a9c6bf72418473423883ac23fbe93":[2,0,0,12,1,18],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a613a9c6bf72418473423883ac23fbe93":[3,0,1,28,1,18],
-"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a638589ab1a63478a053433b932b4d755":[2,0,0,12,1,32]
+"d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a5d4af396abe1eb5e113f1d96cc2301fd":[2,0,0,12,1,37]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX115 =
 {
+"d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,5,23],
+"d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914":[2,0,0,0,3,45],
+"d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914":[3,0,1,0,5,45],
+"d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,3,31],
+"d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,5,31],
+"d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b":[2,0,0,0,3,21],
 "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b":[3,0,1,0,5,21],
 "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,3,19],
 "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,5,19],
@@ -243,11 +249,5 @@ var NAVTREEINDEX115 =
 "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a319a186a07d166461600dd4a639eb86f":[2,0,0,5,53,11],
 "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a319a186a07d166461600dd4a639eb86f":[3,0,1,12,54,11],
 "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a336d6f91be72079853413f5b4036a57d":[2,0,0,5,53,2],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a336d6f91be72079853413f5b4036a57d":[3,0,1,12,54,2],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,53,48],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,54,48],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,53,0],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,54,0],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,53,6],
-"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,54,6]
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a336d6f91be72079853413f5b4036a57d":[3,0,1,12,54,2]
 };

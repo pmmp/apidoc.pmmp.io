@@ -1,5 +1,12 @@
 var NAVTREEINDEX236 =
 {
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html":[3,0,1,12,92],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,91,32],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,92,32],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,91,10],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,92,10],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,91,1],
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,92,1],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,91,29],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a1179a3b7a49461ede413b50c82b5684a":[3,0,1,12,92,29],
 "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,91,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX236 =
 "df/dac/classpocketmine_1_1item_1_1_steak.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,104,32],
 "df/dac/classpocketmine_1_1item_1_1_steak.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,103,10],
 "df/dac/classpocketmine_1_1item_1_1_steak.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,104,10],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,103,1],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,104,1],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,103,29],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a1179a3b7a49461ede413b50c82b5684a":[3,0,1,12,104,29],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,103,4],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a1df151eb419168f838e6d927c50f9210":[3,0,1,12,104,4],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a23c827b82179f8a57b786a6fa38d08e8":[2,0,0,5,103,20],
-"df/dac/classpocketmine_1_1item_1_1_steak.html#a23c827b82179f8a57b786a6fa38d08e8":[3,0,1,12,104,20]
+"df/dac/classpocketmine_1_1item_1_1_steak.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,103,1]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX240 =
 {
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a669dd4d0d107ea87a447816f3f0e52c8":[3,0,1,7,2,1,39],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a6713726bec4a4eb990c7ed3868fc7a2b":[3,0,1,7,2,1,4],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a70cf8b292934a30414b3eb55340652b6":[3,0,1,7,2,1,54],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a75141c6ee2a98bd8b3f1ab49998b455c":[3,0,1,7,2,1,23],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a79a0066b72b3a0fef69256548a8ce228":[3,0,1,7,2,1,49],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a7a0ab51bbdfe50c4c8c58424974b47a7":[3,0,1,7,2,1,30],
+"df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a7b2b97ba4ef36a9896c6c00f0997c7d5":[3,0,1,7,2,1,44],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a81725faf49c2b6fb3314cac3f6a11e3c":[3,0,1,7,2,1,36],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a89a01723e97021d54e83c24d1b74670f":[3,0,1,7,2,1,11],
 "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html#a8db17c4dcd6375fe3b610841c2b189bf":[3,0,1,7,2,1,47],
@@ -242,12 +249,5 @@ var NAVTREEINDEX240 =
 "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b":[2,0,0,11,2,13],
 "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b":[3,0,1,22,2,13],
 "df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf":[2,0,0,11,2,12],
-"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf":[3,0,1,22,2,12],
-"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae387a6b494c63a70c82924a05e90875d":[2,0,0,11,2,8],
-"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae387a6b494c63a70c82924a05e90875d":[3,0,1,22,2,8],
-"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef":[2,0,0,11,2,9],
-"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef":[3,0,1,22,2,9],
-"df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html":[3,0,1,30,6,1],
-"df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#a88a6968f37829f922caff971d3450910":[3,0,1,30,6,1,1],
-"df/dfa/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer_status.html#a9f691c6b6dcd7d25779a1d73892eda9d":[3,0,1,30,6,1,0]
+"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf":[3,0,1,22,2,12]
 };

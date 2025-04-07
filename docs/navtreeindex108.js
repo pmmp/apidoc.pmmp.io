@@ -1,5 +1,11 @@
 var NAVTREEINDEX108 =
 {
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80":[2,0,0,5,119,28],
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80":[3,0,1,12,120,28],
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,119,48],
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,120,48],
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,119,19],
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,120,19],
 "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,119,33],
 "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,120,33],
 "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d":[2,0,0,5,119,55],
@@ -243,11 +249,5 @@ var NAVTREEINDEX108 =
 "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[2,0,0,0,142,37],
 "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[3,0,1,0,144,37],
 "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a30a070aa7befb02f9fff5cbf2693c01e":[2,0,0,0,142,9],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a30a070aa7befb02f9fff5cbf2693c01e":[3,0,1,0,144,9],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a36afea9f0214193963f75577e8d48c26":[2,0,0,0,142,59],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a36afea9f0214193963f75577e8d48c26":[3,0,1,0,144,59],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,142,62],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,144,62],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,142,10],
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,144,10]
+"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a30a070aa7befb02f9fff5cbf2693c01e":[3,0,1,0,144,9]
 };

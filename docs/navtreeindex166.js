@@ -1,5 +1,11 @@
 var NAVTREEINDEX166 =
 {
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5":[3,0,1,0,0,16,25],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aa5d3e9ecb42223e9dc728316a7a3c206":[3,0,1,0,0,16,18],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aaa1a88b2b7f93d073538fb993a508e2c":[3,0,1,0,0,16,12],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7":[3,0,1,0,0,16,10],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ab4558205396b6e9a38bd25c809616320":[3,0,1,0,0,16,28],
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ab91f0a13cfec22468eb5e6bfed9a9a80":[3,0,1,0,0,16,7],
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ad20602c8437154b4c4a201d6798e90fd":[3,0,1,0,0,16,14],
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ad61d0fa541f73c0387c81dc3c46def67":[3,0,1,0,0,16,20],
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,0,0,16,29],
@@ -243,11 +249,5 @@ var NAVTREEINDEX166 =
 "db/d38/classpocketmine_1_1block_1_1_slime.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,195,12],
 "db/d38/classpocketmine_1_1block_1_1_slime.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,197,12],
 "db/d38/classpocketmine_1_1block_1_1_slime.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,195,55],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,197,55],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,195,49],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,197,49],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,195,51],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,197,51],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,195,0],
-"db/d38/classpocketmine_1_1block_1_1_slime.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,197,0]
+"db/d38/classpocketmine_1_1block_1_1_slime.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,197,55]
 };

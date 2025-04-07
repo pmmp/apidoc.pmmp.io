@@ -2040,6 +2040,7 @@ var annotated_dup =
       ] ],
       [ "generic", null, [
         [ "DisconnectReason", "d7/d33/classraklib_1_1generic_1_1_disconnect_reason.html", null ],
+        [ "PacketHandlingException", "d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception.html", "d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception" ],
         [ "ReceiveReliabilityLayer", "dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer.html", "dd/dd7/classraklib_1_1generic_1_1_receive_reliability_layer" ],
         [ "ReliableCacheEntry", "d2/d87/classraklib_1_1generic_1_1_reliable_cache_entry.html", "d2/d87/classraklib_1_1generic_1_1_reliable_cache_entry" ],
         [ "SendReliabilityLayer", "d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer.html", "d8/dc9/classraklib_1_1generic_1_1_send_reliability_layer" ],

@@ -2166,6 +2166,7 @@ var hierarchy =
       [ "pocketmine\\world\\format\\io\\region\\RegionException", "d2/db9/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_exception.html", [
         [ "pocketmine\\world\\format\\io\\region\\CorruptedRegionException", "d2/df0/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_corrupted_region_exception.html", null ]
       ] ],
+      [ "raklib\\generic\\PacketHandlingException", "d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception.html", null ],
       [ "raklib\\generic\\SocketException", "df/d21/classraklib_1_1generic_1_1_socket_exception.html", null ]
     ] ],
     [ "pocketmine\\data\\bedrock\\item\\SavedItemData", "df/d33/classpocketmine_1_1data_1_1bedrock_1_1item_1_1_saved_item_data.html", null ],

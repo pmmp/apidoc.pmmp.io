@@ -1,5 +1,11 @@
 var NAVTREEINDEX165 =
 {
+"db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a4c58fc3d97b59245d73157c09b3bbe03":[3,0,1,11,1,5,24],
+"db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a4c7aef211a9628f380e7de98b49c4551":[3,0,1,11,1,5,4],
+"db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a5b07e7dec2523174411fb7762c69bf3f":[3,0,1,11,1,5,14],
+"db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a5c676080faee6eaecdc04a70fcedf142":[3,0,1,11,1,5,22],
+"db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a62e8a8891e7940a3b14878c3b46cbdd0":[3,0,1,11,1,5,9],
+"db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a641c15404415baf0e78a87f9c3ff5364":[3,0,1,11,1,5,10],
 "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a6a079a7248296bc592b391ad6d5d56bf":[3,0,1,11,1,5,0],
 "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a7032110ecf181d3fbbc863c5f45270b0":[3,0,1,11,1,5,19],
 "db/d05/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_builder_inventory.html#a7296a52c88addd5eefe215276200b6e3":[3,0,1,11,1,5,27],
@@ -243,11 +249,5 @@ var NAVTREEINDEX165 =
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#a859793c26ba95c1963747b3c08be98bc":[3,0,1,0,0,16,16],
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87":[3,0,1,0,0,16,27],
 "db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#a9e8a9a58178c93680c225de229606fec":[3,0,1,0,0,16,1],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aa2d57d9cb0e9cbb043329c99539706ef":[3,0,1,0,0,16,5],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5":[3,0,1,0,0,16,25],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aa5d3e9ecb42223e9dc728316a7a3c206":[3,0,1,0,0,16,18],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aaa1a88b2b7f93d073538fb993a508e2c":[3,0,1,0,0,16,12],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ab1f0c179abf5fe72f3690a3f4863acc7":[3,0,1,0,0,16,10],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ab4558205396b6e9a38bd25c809616320":[3,0,1,0,0,16,28],
-"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#ab91f0a13cfec22468eb5e6bfed9a9a80":[3,0,1,0,0,16,7]
+"db/d21/classpocketmine_1_1block_1_1inventory_1_1_stonecutter_inventory.html#aa2d57d9cb0e9cbb043329c99539706ef":[3,0,1,0,0,16,5]
 };

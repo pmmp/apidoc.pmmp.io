@@ -1,5 +1,11 @@
 var NAVTREEINDEX143 =
 {
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,86,6],
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4f8f013f507342e2208dc8b4c3da964b":[2,0,0,5,85,26],
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a4f8f013f507342e2208dc8b4c3da964b":[3,0,1,12,86,26],
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,85,21],
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,86,21],
+"d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,85,31],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,86,31],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,85,5],
 "d9/d44/classpocketmine_1_1item_1_1_raw_beef.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,86,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX143 =
 "d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,99,62],
 "d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,101,62],
 "d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,99,10],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,101,10],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,99,44],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,101,44],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,99,13],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a444028c60ad6c7afacda1a6cc3065e59":[3,0,1,0,101,13],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,99,52],
-"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,101,52]
+"d9/d56/classpocketmine_1_1block_1_1_fletching_table.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,101,10]
 };

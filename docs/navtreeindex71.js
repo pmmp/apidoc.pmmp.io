@@ -1,5 +1,10 @@
 var NAVTREEINDEX71 =
 {
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a42c7ea10d59b24aff475d51e11db7684":[3,0,1,16,0,6,1,55,3],
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a67a06ed88b5bbe909c7425f30c6923e9":[3,0,1,16,0,6,1,55,16],
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a938ce7a264224cc80067899eac9ae9b7":[3,0,1,16,0,6,1,55,23],
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#aac99b60ab5004e88d4b349b107160c66":[3,0,1,16,0,6,1,55,20],
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab22da76c9a93a7b1e4e46f6c1a431568":[3,0,1,16,0,6,1,55,25],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab3c36400bf08f4b06fe77340f6fb52fa":[3,0,1,16,0,6,1,55,7],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab424c7b52c88abd418d3cba43aa61d41":[3,0,1,16,0,6,1,55,24],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#abd34d78e56102d7d04238449e3f91808":[3,0,1,16,0,6,1,55,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX71 =
 "d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#abe253aa6fbfe2fc36389edadb753ffc7":[3,0,1,12,108,19],
 "d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ac534c116a4d2291a8d67f15c4b485b74":[2,0,0,5,107,27],
 "d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ac534c116a4d2291a8d67f15c4b485b74":[3,0,1,12,108,27],
-"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ac7e878537e8ea68cc0d4d565f9f25062":[2,0,0,5,107,45],
-"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ac7e878537e8ea68cc0d4d565f9f25062":[3,0,1,12,108,45],
-"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ad2d004e5063f6ca465ed956b024217b1":[2,0,0,5,107,28],
-"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ad2d004e5063f6ca465ed956b024217b1":[3,0,1,12,108,28],
-"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ad65ef3c1922ae92fd600a117a6086a77":[2,0,0,5,107,26],
-"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ad65ef3c1922ae92fd600a117a6086a77":[3,0,1,12,108,26]
+"d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html#ac7e878537e8ea68cc0d4d565f9f25062":[2,0,0,5,107,45]
 };

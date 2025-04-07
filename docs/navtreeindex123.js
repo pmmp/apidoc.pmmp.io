@@ -1,5 +1,11 @@
 var NAVTREEINDEX123 =
 {
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,240,21],
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,238,54],
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,240,54],
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,0,0,238,38],
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,240,38],
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a75b16ca6e22355cf632466a969e79211":[2,0,0,0,238,44],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,240,44],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a771a30c30a36b0992f54c57dc63af10d":[2,0,0,0,238,43],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#a771a30c30a36b0992f54c57dc63af10d":[3,0,1,0,240,43],
@@ -243,11 +249,5 @@ var NAVTREEINDEX123 =
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,98,49],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a40f57ea1d37fba8d60bf520baf93d4e0":[2,0,0,5,97,31],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#a40f57ea1d37fba8d60bf520baf93d4e0":[3,0,1,12,98,31],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a444bab7a652a1dc604048e392f5887cd":[2,0,0,5,97,6],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a444bab7a652a1dc604048e392f5887cd":[3,0,1,12,98,6],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,97,1],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,98,1],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,97,7],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,98,7],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a4ffd014f09b6f93acd8b08975ab58485":[2,0,0,5,97,24]
+"d8/d37/classpocketmine_1_1item_1_1_shovel.html#a444bab7a652a1dc604048e392f5887cd":[2,0,0,5,97,6]
 };

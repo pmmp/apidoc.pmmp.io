@@ -1,5 +1,11 @@
 var NAVTREEINDEX174 =
 {
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,163,23],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,161,31],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,163,31],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,161,19],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,163,19],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab51ea2314ed5df2163bca971a462fb72":[2,0,0,0,161,8],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab51ea2314ed5df2163bca971a462fb72":[3,0,1,0,163,8],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,161,64],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,163,64],
@@ -243,11 +249,5 @@ var NAVTREEINDEX174 =
 "db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html#a0b5df1670b0dd69f8a507b6133537568":[3,0,1,16,0,6,1,0,4,2],
 "db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html#a6b26c189192189985ab84578c9677c0b":[3,0,1,16,0,6,1,0,4,1],
 "db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html#ae942c4f772f96b5b5338fd8dc001180c":[3,0,1,16,0,6,1,0,4,0],
-"db/de9/_item_stack_response_8php_source.html":[4,0,1,0,1,0,1,4,1,0],
-"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html":[3,0,1,16,0,6,1,3,10],
-"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5":[3,0,1,16,0,6,1,3,10,0],
-"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a37bed104605fb1839ab8409251a4ce0c":[3,0,1,16,0,6,1,3,10,2],
-"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a910e4cd8433ad48507c3049de577e560":[3,0,1,16,0,6,1,3,10,1],
-"db/dea/_cauldron_fill_powder_snow_sound_8php_source.html":[4,0,0,25,5,37],
-"db/dea/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_validation_exception.html":[3,0,1,11,1,8]
+"db/de9/_item_stack_response_8php_source.html":[4,0,1,0,1,0,1,4,1,0]
 };

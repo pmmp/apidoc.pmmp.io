@@ -1,5 +1,11 @@
 var NAVTREEINDEX177 =
 {
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,213,34],
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,211,23],
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,213,23],
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,211,31],
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,213,31],
+"dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,0,0,211,8],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab05ed23d3ff256f3f64cf6d86563c947":[3,0,1,0,213,8],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,211,19],
 "dc/d0c/classpocketmine_1_1block_1_1_stem.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,213,19],
@@ -243,11 +249,5 @@ var NAVTREEINDEX177 =
 "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,50,36],
 "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,48,46],
 "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,50,46],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,48,53],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,50,53],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,48,14],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,50,14],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,48,39],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,50,39],
-"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a683eda77c4935af49c74d218ed830702":[2,0,0,0,48,64]
+"dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,48,53]
 };

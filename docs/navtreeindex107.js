@@ -1,5 +1,11 @@
 var NAVTREEINDEX107 =
 {
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,129,4],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,129,0],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,129,3],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa8204a9d6918584715d360bfdae34e85":[3,0,1,16,0,6,129,5],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,129,1],
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ad8e2486d48babe8ec9f3f835cfaa4ae6":[3,0,1,16,0,6,129,2],
 "d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ae8a4d016f2857a1e241f3bfea1650024":[3,0,1,16,0,6,129,6],
 "d7/d30/_entity_teleport_event_8php_source.html":[4,0,0,7,1,21],
 "d7/d31/classpocketmine_1_1block_1_1_air.html":[2,0,0,0,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX107 =
 "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,119,52],
 "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa27432059ecfd201a3cec74253b21fa9":[3,0,1,12,120,52],
 "d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa2834fb1656bc61244f5a24091aaa600":[2,0,0,5,119,39],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,120,39],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80":[2,0,0,5,119,28],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80":[3,0,1,12,120,28],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa807b0fa5751723fed80570a4de1231b":[2,0,0,5,119,48],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,120,48],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,119,19],
-"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,120,19]
+"d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,120,39]
 };

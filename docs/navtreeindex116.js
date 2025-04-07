@@ -1,5 +1,11 @@
 var NAVTREEINDEX116 =
 {
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,53,48],
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,54,48],
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,53,0],
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,54,0],
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,53,6],
+"d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,54,6],
 "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a4f8f013f507342e2208dc8b4c3da964b":[2,0,0,5,53,26],
 "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a4f8f013f507342e2208dc8b4c3da964b":[3,0,1,12,54,26],
 "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,53,21],
@@ -243,11 +249,5 @@ var NAVTREEINDEX116 =
 "d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,156,57],
 "d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,158,57],
 "d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,156,43],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,158,43],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,156,15],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,158,15],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,156,42],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,158,42],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,156,1],
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,158,1]
+"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,158,43]
 };

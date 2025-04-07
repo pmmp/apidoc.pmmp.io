@@ -1,5 +1,10 @@
 var NAVTREEINDEX68 =
 {
+"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html":[2,0,0,3,1,17],
+"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html":[3,0,1,9,1,17],
+"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,17,4],
+"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,17,4],
+"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,17,0],
 "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,1,17,0],
 "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,1,17,3],
 "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a90efcab0d539a5cb5b17968dfa164017":[3,0,1,9,1,17,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX68 =
 "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a583068d43f1e6f225ce3f1ee5ef47121":[3,0,1,7,17,56],
 "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5841a9cfba413ed333a6af78a93bb4dd":[2,0,0,2,12,50],
 "d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5841a9cfba413ed333a6af78a93bb4dd":[3,0,1,7,17,50],
-"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5a73d2d90fae06273a6cb67232a6ef25":[2,0,0,2,12,11],
-"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5a73d2d90fae06273a6cb67232a6ef25":[3,0,1,7,17,11],
-"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5afd6597d16c2bbfb8842a3df2ac8d0a":[2,0,0,2,12,5],
-"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5afd6597d16c2bbfb8842a3df2ac8d0a":[3,0,1,7,17,5],
-"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5b11cea1af3147e9c0d32de66651e602":[2,0,0,2,12,47],
-"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5b11cea1af3147e9c0d32de66651e602":[3,0,1,7,17,47]
+"d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5a73d2d90fae06273a6cb67232a6ef25":[2,0,0,2,12,11]
 };

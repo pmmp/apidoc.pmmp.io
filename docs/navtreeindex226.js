@@ -1,5 +1,12 @@
 var NAVTREEINDEX226 =
 {
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,143,7],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,145,7],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,143,4],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,145,4],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,143,17],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,145,17],
+"df/d1f/classpocketmine_1_1block_1_1_loom.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,143,34],
 "df/d1f/classpocketmine_1_1block_1_1_loom.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,145,34],
 "df/d1f/classpocketmine_1_1block_1_1_loom.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,143,23],
 "df/d1f/classpocketmine_1_1block_1_1_loom.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,145,23],
@@ -62,7 +69,7 @@ var NAVTREEINDEX226 =
 "df/d21/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_start_item_cooldown_packet.html#ab376c7679f90e657ba4b12c3e4098101":[3,0,1,16,0,6,130,5],
 "df/d21/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_start_item_cooldown_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,130,1],
 "df/d21/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_start_item_cooldown_packet.html#aba730038af4d5ef9a06623d3074f1d25":[3,0,1,16,0,6,130,6],
-"df/d21/classraklib_1_1generic_1_1_socket_exception.html":[3,0,2,1,6],
+"df/d21/classraklib_1_1generic_1_1_socket_exception.html":[3,0,2,1,7],
 "df/d22/classpocketmine_1_1block_1_1_cactus.html":[2,0,0,0,37],
 "df/d22/classpocketmine_1_1block_1_1_cactus.html":[3,0,1,0,39],
 "df/d22/classpocketmine_1_1block_1_1_cactus.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,37,48],
@@ -242,12 +249,5 @@ var NAVTREEINDEX226 =
 "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#a3cf7454be9911ea585af23c81846c4f2":[3,0,1,24,0,7],
 "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#a54da2298c61d0b04e6c7f058b0591250":[3,0,1,24,0,1],
 "df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#aa5a040d7bd6023185e91387c526f8527":[3,0,1,24,0,4],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ab4ce5f03047e2ba85b4e17abd775e129":[3,0,1,24,0,2],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b":[3,0,1,24,0,14],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ad947e698302d120097b81c11169dfdb3":[3,0,1,24,0,0],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#adad32212908878d6e70423161dbae0bf":[3,0,1,24,0,13],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ae387a6b494c63a70c82924a05e90875d":[3,0,1,24,0,9],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ae3aa1ef734e82c49e25962e56eaf76ef":[3,0,1,24,0,10],
-"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#af8914420730ca9dc8c03527512c82eda":[3,0,1,24,0,11],
-"df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html":[3,0,1,25,0,2]
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ab4ce5f03047e2ba85b4e17abd775e129":[3,0,1,24,0,2]
 };

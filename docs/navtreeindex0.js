@@ -167,6 +167,9 @@ var NAVTREEINDEX0 =
 "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html#abe94eae6f75dd45ad4fa19c142a28516":[3,0,1,16,0,6,204,6],
 "d0/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_transfer_packet.html#ac0873512a442521b2814cece4a36004a":[3,0,1,16,0,6,204,5],
 "d0/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_deprecaefa0492a6ebcaf5ef294483e9302a020.html":[3,0,1,16,0,6,1,3,0,7],
+"d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception.html":[3,0,2,1,1],
+"d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception.html#a23076cefe7f9be7cd3c322fe0be80ec4":[3,0,2,1,1,1],
+"d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception.html#a4be57af519994697bb2aac6ecb498cb5":[3,0,2,1,1,0],
 "d0/d0e/_mc_region_8php_source.html":[4,0,0,25,1,0,3,3],
 "d0/d10/_player_exhaust_event_8php_source.html":[4,0,0,7,3,21],
 "d0/d10/classpocketmine_1_1event_1_1_listener_method_tags.html":[2,0,0,3,13],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "d0/d14/classpocketmine_1_1block_1_1_dirt.html#a771a30c30a36b0992f54c57dc63af10d":[3,0,1,0,81,40],
 "d0/d14/classpocketmine_1_1block_1_1_dirt.html#a8307fc850da5c3f36e9dfc7ce639fe55":[2,0,0,0,79,45],
 "d0/d14/classpocketmine_1_1block_1_1_dirt.html#a8307fc850da5c3f36e9dfc7ce639fe55":[3,0,1,0,81,45],
-"d0/d14/classpocketmine_1_1block_1_1_dirt.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,79,28],
-"d0/d14/classpocketmine_1_1block_1_1_dirt.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,81,28],
-"d0/d14/classpocketmine_1_1block_1_1_dirt.html#a863a7a7c27f111cc622ebb10711807c2":[2,0,0,0,79,56],
-"d0/d14/classpocketmine_1_1block_1_1_dirt.html#a863a7a7c27f111cc622ebb10711807c2":[3,0,1,0,81,56]
+"d0/d14/classpocketmine_1_1block_1_1_dirt.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,79,28]
 };

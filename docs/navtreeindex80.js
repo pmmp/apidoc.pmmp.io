@@ -1,5 +1,10 @@
 var NAVTREEINDEX80 =
 {
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab51ea2314ed5df2163bca971a462fb72":[3,0,1,0,216,9],
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,214,69],
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,216,69],
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,214,29],
+"d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,216,29],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,214,13],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,216,13],
 "d5/d8e/classpocketmine_1_1block_1_1_stone_pressure_plate.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,214,59],
@@ -244,10 +249,5 @@ var NAVTREEINDEX80 =
 "d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,84,29],
 "d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,83,5],
 "d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,84,5],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,83,48],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,84,48],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a67b44433c553602d7c851b1ca23e6e5e":[2,0,0,5,83,40],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a67b44433c553602d7c851b1ca23e6e5e":[3,0,1,12,84,40],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a71289362f9d561347b5c8c2717eb0512":[2,0,0,5,83,38],
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,84,38]
+"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,83,48]
 };

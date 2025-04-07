@@ -1,5 +1,10 @@
 var NAVTREEINDEX82 =
 {
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ac03457c1ba3291c468797d3e6c259bc2":[2,0,0,4,10,28],
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ac03457c1ba3291c468797d3e6c259bc2":[3,0,1,11,12,28],
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad20602c8437154b4c4a201d6798e90fd":[2,0,0,4,10,17],
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad20602c8437154b4c4a201d6798e90fd":[3,0,1,11,12,17],
+"d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad61d0fa541f73c0387c81dc3c46def67":[2,0,0,4,10,23],
 "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad61d0fa541f73c0387c81dc3c46def67":[3,0,1,11,12,23],
 "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[2,0,0,4,10,32],
 "d5/db9/classpocketmine_1_1inventory_1_1_player_crafting_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,11,12,32],
@@ -244,10 +249,5 @@ var NAVTREEINDEX82 =
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7":[3,0,1,7,3,7,23],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a1c05137f3b4e08df3be0b372726021b1":[3,0,1,7,3,7,47],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b":[3,0,1,7,3,7,27],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a22a098fc4892820db7d15a73edea64ca":[3,0,1,7,3,7,11],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a23093e6281aba70471af5c5e34051667":[3,0,1,7,3,7,7],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a25ad669890dc24d70b8cdad878cd6449":[3,0,1,7,3,7,40],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a265cb93031a89ccc4a4236b3702c690b":[3,0,1,7,3,7,30],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a2bd1fab41c3720c1ec9f75997958c223":[3,0,1,7,3,7,42],
-"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a3710089794f8a7cabba26cf8cad2b79b":[3,0,1,7,3,7,29]
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a22a098fc4892820db7d15a73edea64ca":[3,0,1,7,3,7,11]
 };

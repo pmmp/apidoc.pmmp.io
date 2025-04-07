@@ -1,5 +1,11 @@
 var NAVTREEINDEX113 =
 {
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac2be83330b0940f74859dd328ce174d3":[2,0,0,0,41,54],
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac2be83330b0940f74859dd328ce174d3":[3,0,1,0,43,54],
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,41,51],
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,43,51],
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,41,53],
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,43,53],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,41,0],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,43,0],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,41,25],
@@ -243,11 +249,5 @@ var NAVTREEINDEX113 =
 "d7/da3/classpocketmine_1_1block_1_1_beetroot.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,18,38],
 "d7/da3/classpocketmine_1_1block_1_1_beetroot.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,20,38],
 "d7/da3/classpocketmine_1_1block_1_1_beetroot.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,18,7],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,20,7],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,18,4],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,20,4],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,18,17],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,20,17],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,18,34],
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,20,34]
+"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,20,7]
 };

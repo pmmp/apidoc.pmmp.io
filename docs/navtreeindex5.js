@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,34,20],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,32,51],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,34,51],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,0,0,32,35],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,34,35],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a725e89f71ec18c38219a187f6253cdf2":[2,0,0,0,32,38],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "d0/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_player_metadata_flags.html":[3,0,1,16,0,6,1,2,17],
 "d0/d7b/classpocketmine_1_1plugin_1_1_plugin_exception.html":[2,0,0,10,9],
 "d0/d7b/classpocketmine_1_1plugin_1_1_plugin_exception.html":[3,0,1,19,9],
-"d0/d7f/_potion_type_8php_source.html":[4,0,0,10,86],
-"d0/d80/_console_command_sender_8php_source.html":[4,0,0,2,0],
-"d0/d80/object_2_tree_8php_source.html":[4,0,0,25,2,4,8],
-"d0/d82/_long_metadata_property_8php_source.html":[4,0,1,0,1,0,1,2,16]
+"d0/d7f/_potion_type_8php_source.html":[4,0,0,10,86]
 };

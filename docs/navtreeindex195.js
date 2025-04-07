@@ -1,5 +1,10 @@
 var NAVTREEINDEX195 =
 {
+"dc/df5/world_2format_2io_2region_2_anvil_8php_source.html":[4,0,0,25,1,0,3,0],
+"dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html":[3,0,1,16,0,1,2],
+"dc/df7/_lantern_8php_source.html":[4,0,0,0,134],
+"dc/df8/_wall_8php_source.html":[4,0,0,0,235],
+"dc/dfc/_furnace_inventory_8php_source.html":[4,0,0,0,0,13],
 "dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html":[3,0,1,30,1,0,2,3],
 "dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#a1eccd46a43c5559aa2905c285267aea2":[3,0,1,30,1,0,2,3,0],
 "dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#a6af9657d3eed3f5801aaf18358f5248e":[3,0,1,30,1,0,2,3,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX195 =
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af737301b899b7a7c9e9b0bb9a234a119":[3,0,1,12,73,7],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af85accbedba28b67bb66d5f12d329585":[2,0,0,5,72,40],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,73,40],
-"dd/d05/_bandwidth_stats_tracker_8php_source.html":[4,0,0,12,4],
-"dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html":[2,0,0,3,6,0],
-"dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html":[3,0,1,9,6,0],
-"dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,6,0,0],
-"dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,6,0,0],
-"dd/d06/classpocketmine_1_1event_1_1world_1_1_chunk_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,6,0,1]
+"dd/d05/_bandwidth_stats_tracker_8php_source.html":[4,0,0,12,4]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX148 =
 {
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[3,0,1,12,22,23],
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a30c23cf281199b48fbbe0f4c45c01fb9":[2,0,0,5,21,33],
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a30c23cf281199b48fbbe0f4c45c01fb9":[3,0,1,12,22,33],
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a319a186a07d166461600dd4a639eb86f":[2,0,0,5,21,10],
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a319a186a07d166461600dd4a639eb86f":[3,0,1,12,22,10],
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a336d6f91be72079853413f5b4036a57d":[2,0,0,5,21,2],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a336d6f91be72079853413f5b4036a57d":[3,0,1,12,22,2],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,21,44],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,22,44],
@@ -243,11 +249,5 @@ var NAVTREEINDEX148 =
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9492c83a6cb651026b45dea9a6cb93c1":[2,0,0,5,67,8],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9492c83a6cb651026b45dea9a6cb93c1":[3,0,1,12,68,8],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#a95cfab40de7390593990a239f8e4af73":[2,0,0,5,67,12],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a95cfab40de7390593990a239f8e4af73":[3,0,1,12,68,12],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9866a7ab362cec28252d67f6382a4ad4":[2,0,0,5,67,33],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9866a7ab362cec28252d67f6382a4ad4":[3,0,1,12,68,33],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[2,0,0,5,67,3],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[3,0,1,12,68,3],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9dd9484fe3ab1afcbd2627860e01973a":[2,0,0,5,67,46],
-"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,68,46]
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#a95cfab40de7390593990a239f8e4af73":[3,0,1,12,68,12]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"d0/d80/_console_command_sender_8php_source.html":[4,0,0,2,0],
+"d0/d80/object_2_tree_8php_source.html":[4,0,0,25,2,4,8],
+"d0/d82/_long_metadata_property_8php_source.html":[4,0,1,0,1,0,1,2,16],
 "d0/d84/_fallable_trait_8php_source.html":[4,0,0,0,2,23],
 "d0/d84/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context.html":[3,0,1,16,0,4,1],
 "d0/d84/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context.html#a927e3d948e106c0e6873fc15d5974c91":[3,0,1,16,0,4,1,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a60fbeee5c491ef33041066e07ba1ca8c":[3,0,1,0,251,56],
 "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,249,42],
 "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,251,42],
-"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,249,23],
-"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,251,23],
-"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,249,54],
-"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,251,54]
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,249,23]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX194 =
 {
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,212,65],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,214,65],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,212,26],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,214,26],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,212,12],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,214,12],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,212,49],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,214,49],
@@ -244,10 +249,5 @@ var NAVTREEINDEX194 =
 "dc/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_potion_type_recipe.html":[3,0,1,16,0,6,1,5,12],
 "dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html":[3,0,1,30,4,30],
 "dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html#a72589f93dbaa73a24253cc5139ba2f92":[3,0,1,30,4,30,0],
-"dc/df5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_stack_request_action.html":[3,0,1,16,0,6,1,3,0,5],
-"dc/df5/world_2format_2io_2region_2_anvil_8php_source.html":[4,0,0,25,1,0,3,0],
-"dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html":[3,0,1,16,0,1,2],
-"dc/df7/_lantern_8php_source.html":[4,0,0,0,134],
-"dc/df8/_wall_8php_source.html":[4,0,0,0,235],
-"dc/dfc/_furnace_inventory_8php_source.html":[4,0,0,0,0,13]
+"dc/df5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_craft_recipe_stack_request_action.html":[3,0,1,16,0,6,1,3,0,5]
 };

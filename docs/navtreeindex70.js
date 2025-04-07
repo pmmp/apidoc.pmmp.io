@@ -1,5 +1,10 @@
 var NAVTREEINDEX70 =
 {
+"d4/de4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_pack_chunk_data_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,148,1],
+"d4/de6/_server_to_client_handshake_packet_8php_source.html":[4,0,1,0,1,0,164],
+"d4/de6/_set_actor_motion_packet_8php_source.html":[4,0,1,0,1,0,167],
+"d4/de7/_tiered_tool_8php_source.html":[4,0,0,10,118],
+"d4/de8/_legacy_raw_chat_formatter_8php_source.html":[4,0,0,14,0,1],
 "d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html":[3,0,0,0,4],
 "d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a43afeae9b6d89fb8a941cd8f4fdd8bf1":[3,0,0,0,4,5],
 "d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a449dacdbae80cf0ea07d110b902a5998":[3,0,0,0,4,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX70 =
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a2d28fa2f36d19969c54036cc7f91af1d":[3,0,1,16,0,6,1,55,14],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a33fa35f6af1243949e85d72790fde561":[3,0,1,16,0,6,1,55,2],
 "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a3c615a13f55cc8901a01ec33190ed3bd":[3,0,1,16,0,6,1,55,17],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a3f68c49f7ba456178eeee2fe0486fd54":[3,0,1,16,0,6,1,55,6],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a42c7ea10d59b24aff475d51e11db7684":[3,0,1,16,0,6,1,55,3],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a67a06ed88b5bbe909c7425f30c6923e9":[3,0,1,16,0,6,1,55,16],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a938ce7a264224cc80067899eac9ae9b7":[3,0,1,16,0,6,1,55,23],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#aac99b60ab5004e88d4b349b107160c66":[3,0,1,16,0,6,1,55,20],
-"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ab22da76c9a93a7b1e4e46f6c1a431568":[3,0,1,16,0,6,1,55,25]
+"d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a3f68c49f7ba456178eeee2fe0486fd54":[3,0,1,16,0,6,1,55,6]
 };

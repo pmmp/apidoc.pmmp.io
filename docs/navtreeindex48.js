@@ -1,5 +1,9 @@
 var NAVTREEINDEX48 =
 {
+"d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[2,0,0,5,90,24],
+"d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[3,0,1,12,91,24],
+"d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a30c23cf281199b48fbbe0f4c45c01fb9":[2,0,0,5,90,35],
+"d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a30c23cf281199b48fbbe0f4c45c01fb9":[3,0,1,12,91,35],
 "d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a319a186a07d166461600dd4a639eb86f":[2,0,0,5,90,11],
 "d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a319a186a07d166461600dd4a639eb86f":[3,0,1,12,91,11],
 "d3/d58/classpocketmine_1_1item_1_1_raw_rabbit.html#a336d6f91be72079853413f5b4036a57d":[2,0,0,5,90,2],
@@ -117,6 +121,7 @@ var NAVTREEINDEX48 =
 "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#ac09e132937e19e20c443051f93001a0d":[3,0,1,21,3,9],
 "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#acd134a5ec268e158bb8a4a5efdb6afa6":[3,0,1,21,3,4],
 "d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html#af7a4d64f40e0246ccfbd6475c48b8756":[3,0,1,21,3,2],
+"d3/d63/src_2network_2_packet_handling_exception_8php_source.html":[4,0,0,12,10],
 "d3/d64/_block_state_upgrade_schema_model_tag_8php_source.html":[4,0,0,5,0,0,1,0,3],
 "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html":[2,0,0,9,0],
 "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html":[3,0,1,17,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX48 =
 "d3/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_type_entry.html":[3,0,1,16,0,6,1,43],
 "d3/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_type_entry.html#a40b7778627b782a2e77f70054c8a5996":[3,0,1,16,0,6,1,43,0],
 "d3/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_type_entry.html#ac2ac5bf00a5a9126face26d01c9eddd7":[3,0,1,16,0,6,1,43,1],
-"d3/d70/_projectile_item_8php_source.html":[4,0,0,10,87],
-"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html":[3,0,1,7,1,0],
-"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a125c11ecf3e80cdb71ecc6e07f162da4":[3,0,1,7,1,0,7],
-"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a265c29ee2de6bff1da8ae153d2b0d3dc":[3,0,1,7,1,0,0],
-"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a47e78434ab3294753bc42572711b3d49":[3,0,1,7,1,0,6],
-"d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,0,5]
+"d3/d70/_projectile_item_8php_source.html":[4,0,0,10,87]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,124,44],
+"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,122,13],
+"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a444028c60ad6c7afacda1a6cc3065e59":[3,0,1,0,124,13],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,122,52],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,124,52],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,122,36],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "d0/d41/classpocketmine_1_1event_1_1entity_1_1_entity_trample_farmland_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,1,22,2],
 "d0/d41/classpocketmine_1_1event_1_1entity_1_1_entity_trample_farmland_event.html#aa105cba08f6aa75722b2716a4887a477":[2,0,0,3,1,22,1],
 "d0/d41/classpocketmine_1_1event_1_1entity_1_1_entity_trample_farmland_event.html#aa105cba08f6aa75722b2716a4887a477":[3,0,1,9,1,22,1],
-"d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html":[2,0,0,3,3,13],
-"d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html":[3,0,1,9,3,13],
-"d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,3,13,0],
-"d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,3,13,0]
+"d0/d41/classpocketmine_1_1event_1_1player_1_1_player_duplicate_login_event.html":[2,0,0,3,3,13]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX212 =
 {
+"de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,3,38,1],
+"de/d1d/_small_dripleaf_8php_source.html":[4,0,0,0,198],
+"de/d1f/_explode_particle_8php_source.html":[4,0,0,25,4,12],
+"de/d22/_camera_target_instruction_8php_source.html":[4,0,1,0,1,0,1,0,18],
+"de/d22/classpocketmine_1_1item_1_1_arrow.html":[2,0,0,5,4],
+"de/d22/classpocketmine_1_1item_1_1_arrow.html":[3,0,1,12,5],
+"de/d22/classpocketmine_1_1item_1_1_arrow.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,4,30],
 "de/d22/classpocketmine_1_1item_1_1_arrow.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,5,30],
 "de/d22/classpocketmine_1_1item_1_1_arrow.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,4,9],
 "de/d22/classpocketmine_1_1item_1_1_arrow.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,5,9],
@@ -242,12 +249,5 @@ var NAVTREEINDEX212 =
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,134,32],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,132,54],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,134,54],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#af310fcccd4207af66084f76dfcc812f1":[2,0,0,0,132,64],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#af310fcccd4207af66084f76dfcc812f1":[3,0,1,0,134,64],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#af45a3d45c4ab6528c6641915722b9de8":[2,0,0,0,132,6],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#af45a3d45c4ab6528c6641915722b9de8":[3,0,1,0,134,6],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,132,29],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afcc19c437c8bef4487f5ecb956ae9a1a":[3,0,1,0,134,29],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afe4928a6da38d63eccea78bd1a2fdcd3":[2,0,0,0,132,21],
-"de/d29/classpocketmine_1_1block_1_1_lantern.html#afe4928a6da38d63eccea78bd1a2fdcd3":[3,0,1,0,134,21]
+"de/d29/classpocketmine_1_1block_1_1_lantern.html#af310fcccd4207af66084f76dfcc812f1":[2,0,0,0,132,64]
 };

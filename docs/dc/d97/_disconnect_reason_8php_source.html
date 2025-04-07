@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.27.1 git-e88b81a4cbd9274aa3b6faa0b3f847c13ca0ecd5</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.27.2 git-835c383d4e126df6f38000e3217ad6a325b7a1f7</span>
    </div>
   </td>
  </tr>
@@ -131,18 +131,26 @@ $(function(){initNavTree('dc/d97/_disconnect_reason_8php_source.html','../../');
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span> <span class="keyword">const</span> PEER_TIMEOUT = 2;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span> <span class="keyword">const</span> CLIENT_RECONNECT = 3;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span> <span class="keyword">const</span> SERVER_SHUTDOWN = 4; <span class="comment">//TODO: do we really need a separate reason for this in addition to SERVER_DISCONNECT?</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> toString(<span class="keywordtype">int</span> $reason) : <span class="keywordtype">string</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> match($reason){</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            self::CLIENT_DISCONNECT =&gt; <span class="stringliteral">&quot;client disconnect&quot;</span>,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            self::SERVER_DISCONNECT =&gt; <span class="stringliteral">&quot;server disconnect&quot;</span>,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            self::PEER_TIMEOUT =&gt; <span class="stringliteral">&quot;timeout&quot;</span>,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            self::CLIENT_RECONNECT =&gt; <span class="stringliteral">&quot;new session established on same address and port&quot;</span>,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            self::SERVER_SHUTDOWN =&gt; <span class="stringliteral">&quot;server shutdown&quot;</span>,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">default</span> =&gt; <span class="stringliteral">&quot;Unknown reason $reason&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        };</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPLIT_PACKET_TOO_LARGE = 5;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPLIT_PACKET_TOO_MANY_CONCURRENT = 6;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPLIT_PACKET_INVALID_PART_INDEX = 7;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPLIT_PACKET_INCONSISTENT_HEADER = 8;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> toString(<span class="keywordtype">int</span> $reason) : <span class="keywordtype">string</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> match($reason){</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            self::CLIENT_DISCONNECT =&gt; <span class="stringliteral">&quot;client disconnect&quot;</span>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            self::SERVER_DISCONNECT =&gt; <span class="stringliteral">&quot;server disconnect&quot;</span>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            self::PEER_TIMEOUT =&gt; <span class="stringliteral">&quot;timeout&quot;</span>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            self::CLIENT_RECONNECT =&gt; <span class="stringliteral">&quot;new session established on same address and port&quot;</span>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            self::SERVER_SHUTDOWN =&gt; <span class="stringliteral">&quot;server shutdown&quot;</span>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            self::SPLIT_PACKET_TOO_LARGE =&gt; <span class="stringliteral">&quot;received packet split into more parts than allowed&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            self::SPLIT_PACKET_TOO_MANY_CONCURRENT =&gt; <span class="stringliteral">&quot;too many received split packets being reassembled at once&quot;</span>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            self::SPLIT_PACKET_INVALID_PART_INDEX =&gt; <span class="stringliteral">&quot;invalid split packet part index&quot;</span>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            self::SPLIT_PACKET_INCONSISTENT_HEADER =&gt; <span class="stringliteral">&quot;received split packet header inconsistent with previous fragments&quot;</span>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">default</span> =&gt; <span class="stringliteral">&quot;Unknown reason $reason&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        };</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 </div>
 <div class="ttc" id="aclassraklib_1_1generic_1_1_disconnect_reason_html"><div class="ttname"><a href="../../d7/d33/classraklib_1_1generic_1_1_disconnect_reason.html">raklib\generic\DisconnectReason</a></div><div class="ttdef"><b>Definition</b> <a href="#l00019">DisconnectReason.php:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

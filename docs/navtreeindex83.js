@@ -1,5 +1,10 @@
 var NAVTREEINDEX83 =
 {
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a23093e6281aba70471af5c5e34051667":[3,0,1,7,3,7,7],
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a25ad669890dc24d70b8cdad878cd6449":[3,0,1,7,3,7,40],
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a265cb93031a89ccc4a4236b3702c690b":[3,0,1,7,3,7,30],
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a2bd1fab41c3720c1ec9f75997958c223":[3,0,1,7,3,7,42],
+"d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a3710089794f8a7cabba26cf8cad2b79b":[3,0,1,7,3,7,29],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4087e033dc45159d7379699024657047":[3,0,1,7,3,7,17],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4101d0cffe7303801b827969c461ed8b":[3,0,1,7,3,7,6],
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#a4b1a5210337efa1cbc001cd937cc6723":[3,0,1,7,3,7,46],
@@ -244,10 +249,5 @@ var NAVTREEINDEX83 =
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a298ffd1f76195d1c6aabf0eabdaa91a3":[3,0,1,30,14,9],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a29b73bde9e41b39346aad70456e33f4c":[2,0,0,14,8,10],
 "d5/dd2/classpocketmine_1_1world_1_1_position.html#a29b73bde9e41b39346aad70456e33f4c":[3,0,1,30,14,10],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a2c5e440af846d5fde49be5459fe2db8a":[2,0,0,14,8,15],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a2c5e440af846d5fde49be5459fe2db8a":[3,0,1,30,14,15],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a33139a6ee53fd623982069aabc85c651":[2,0,0,14,8,14],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a33139a6ee53fd623982069aabc85c651":[3,0,1,30,14,14],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a3333215ddaffdedcd9a1d0c37367802a":[2,0,0,14,8,21],
-"d5/dd2/classpocketmine_1_1world_1_1_position.html#a3333215ddaffdedcd9a1d0c37367802a":[3,0,1,30,14,21]
+"d5/dd2/classpocketmine_1_1world_1_1_position.html#a2c5e440af846d5fde49be5459fe2db8a":[2,0,0,14,8,15]
 };

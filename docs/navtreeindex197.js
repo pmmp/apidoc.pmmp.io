@@ -1,5 +1,10 @@
 var NAVTREEINDEX197 =
 {
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2b35e6f346e5955b086fcc07ead985a7":[2,0,0,5,95,25],
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2b35e6f346e5955b086fcc07ead985a7":[3,0,1,12,96,25],
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2bcaa528592d9ae259e2e6d0b89f375d":[2,0,0,5,95,22],
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2bcaa528592d9ae259e2e6d0b89f375d":[3,0,1,12,96,22],
+"dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2ce778f940de9e172cd268f378893b8f":[2,0,0,5,95,14],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2ce778f940de9e172cd268f378893b8f":[3,0,1,12,96,14],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2e7d9e107f4f24de4aabc19764dc7dc2":[2,0,0,5,95,17],
 "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html#a2e7d9e107f4f24de4aabc19764dc7dc2":[3,0,1,12,96,17],
@@ -244,10 +249,5 @@ var NAVTREEINDEX197 =
 "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a69015c65f2aba533b51af67f3a7d3b51":[3,0,1,7,1,12,2],
 "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,12,5],
 "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[3,0,1,7,1,12,3],
-"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a73cf76481b94b56fcbb5ea04b5c29293":[3,0,1,7,1,12,0],
-"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a7b2e804f2bd6d6f11acae88699ccec85":[3,0,1,7,1,12,4],
-"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#ae4622599c73e72cb6a898e4fdf34d978":[3,0,1,7,1,12,8],
-"dd/d27/_drop_stack_request_action_8php_source.html":[4,0,1,0,1,0,1,4,0,11],
-"dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable.html":[3,0,1,0,2,4],
-"dd/d27/interfacepocketmine_1_1block_1_1utils_1_1_fallable.html#a46f022e6c5e15321bef2cafa1c7e475a":[3,0,1,0,2,4,2]
+"dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a73cf76481b94b56fcbb5ea04b5c29293":[3,0,1,7,1,12,0]
 };

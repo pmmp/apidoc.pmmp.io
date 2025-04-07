@@ -1,5 +1,11 @@
 var NAVTREEINDEX175 =
 {
+"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html":[3,0,1,16,0,6,1,3,10],
+"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5":[3,0,1,16,0,6,1,3,10,0],
+"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a37bed104605fb1839ab8409251a4ce0c":[3,0,1,16,0,6,1,3,10,2],
+"db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a910e4cd8433ad48507c3049de577e560":[3,0,1,16,0,6,1,3,10,1],
+"db/dea/_cauldron_fill_powder_snow_sound_8php_source.html":[4,0,0,25,5,37],
+"db/dea/classpocketmine_1_1inventory_1_1transaction_1_1_transaction_validation_exception.html":[3,0,1,11,1,8],
 "db/deb/_explosion_8php_source.html":[4,0,0,25,14],
 "db/dee/_block_state_upgrade_schema_block_remap_8php_source.html":[4,0,0,5,0,0,1,5],
 "db/df1/_smithing_transform_recipe_8php_source.html":[4,0,1,0,1,0,1,6,18],
@@ -243,11 +249,5 @@ var NAVTREEINDEX175 =
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a09f4667329f89292dd319d56c4243b59":[3,0,1,0,49,30],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[2,0,0,0,47,18],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,49,18],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a1a1a2b2adf423738289d296198f044e1":[2,0,0,0,47,60],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a1a1a2b2adf423738289d296198f044e1":[3,0,1,0,49,60],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a1ce2444f76246982cfbb507fed99a48e":[2,0,0,0,47,47],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a1ce2444f76246982cfbb507fed99a48e":[3,0,1,0,49,47],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,47,3],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,49,3],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a246df6e02e3bce42909c6a68a2621700":[2,0,0,0,47,63]
+"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a1a1a2b2adf423738289d296198f044e1":[2,0,0,0,47,60]
 };

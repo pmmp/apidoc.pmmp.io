@@ -1,5 +1,12 @@
 var NAVTREEINDEX227 =
 {
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b":[3,0,1,24,0,14],
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ad947e698302d120097b81c11169dfdb3":[3,0,1,24,0,0],
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#adad32212908878d6e70423161dbae0bf":[3,0,1,24,0,13],
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ae387a6b494c63a70c82924a05e90875d":[3,0,1,24,0,9],
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#ae3aa1ef734e82c49e25962e56eaf76ef":[3,0,1,24,0,10],
+"df/d2c/classpocketmine_1_1stats_1_1_send_usage_task.html#af8914420730ca9dc8c03527512c82eda":[3,0,1,24,0,11],
+"df/d2c/classpocketmine_1_1thread_1_1log_1_1_thread_safe_logger_attachment.html":[3,0,1,25,0,2],
 "df/d2c/classpocketmine_1_1world_1_1_chunk_lock_id.html":[2,0,0,14,4],
 "df/d2c/classpocketmine_1_1world_1_1_chunk_lock_id.html":[3,0,1,30,10],
 "df/d2d/_connected_pong_8php_source.html":[4,0,1,0,9,0,2,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX227 =
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,23,21],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,22,31],
 "df/d43/classpocketmine_1_1item_1_1_clownfish.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,23,31],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,22,5],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,23,5],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a56bc59582baf2faf3412ca7044831e3b":[2,0,0,5,22,37],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a56bc59582baf2faf3412ca7044831e3b":[3,0,1,12,23,37],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,22,52],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a5b53d78436bbdb5d53102fda463be4e6":[3,0,1,12,23,52],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a653a8fbd8da17b08be95a985d857c4fc":[2,0,0,5,22,44],
-"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a653a8fbd8da17b08be95a985d857c4fc":[3,0,1,12,23,44]
+"df/d43/classpocketmine_1_1item_1_1_clownfish.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,22,5]
 };

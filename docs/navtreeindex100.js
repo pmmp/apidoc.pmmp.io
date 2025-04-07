@@ -1,5 +1,11 @@
 var NAVTREEINDEX100 =
 {
+"d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a295a782543c002623d01ec47a6e93329":[3,0,1,11,17,24],
+"d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a43e646d154a8134eb1e7294d158d576d":[2,0,0,4,15,9],
+"d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a43e646d154a8134eb1e7294d158d576d":[3,0,1,11,17,9],
+"d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a46ca31398256b2a5fecddd025587579b":[2,0,0,4,15,2],
+"d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a46ca31398256b2a5fecddd025587579b":[3,0,1,11,17,2],
+"d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a4c58fc3d97b59245d73157c09b3bbe03":[2,0,0,4,15,23],
 "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a4c58fc3d97b59245d73157c09b3bbe03":[3,0,1,11,17,23],
 "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a4c7aef211a9628f380e7de98b49c4551":[2,0,0,4,15,4],
 "d6/dc1/classpocketmine_1_1inventory_1_1_simple_inventory.html#a4c7aef211a9628f380e7de98b49c4551":[3,0,1,11,17,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX100 =
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab29123c00a34d0cf488fa36cc0e0de27":[3,0,1,28,3,26],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab51e507a9f4baec0713ff4007ce192b8":[2,0,0,12,3,21],
 "d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab51e507a9f4baec0713ff4007ce192b8":[3,0,1,28,3,21],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0":[2,0,0,12,3,23],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0":[3,0,1,28,3,23],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac9f7478eba1ba25e78ad57fa10f32545":[2,0,0,12,3,17],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac9f7478eba1ba25e78ad57fa10f32545":[3,0,1,28,3,17],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#acab32dd1f8d07324b5f143f21d89a06e":[2,0,0,12,3,22],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#acab32dd1f8d07324b5f143f21d89a06e":[3,0,1,28,3,22],
-"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad068b3be574049db538e015f546ec142":[2,0,0,12,3,10]
+"d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ac5ff381ba808345e8ae8dcf0ec4e3da0":[2,0,0,12,3,23]
 };

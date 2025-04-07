@@ -1,5 +1,10 @@
 var NAVTREEINDEX67 =
 {
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa807b0fa5751723fed80570a4de1231b":[3,0,1,12,89,46],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa8e6d5b0a8cc541423f4785fa3f4acdc":[2,0,0,5,88,8],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aa8e6d5b0a8cc541423f4785fa3f4acdc":[3,0,1,12,89,8],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aabd7c38d2f74e537da5bcc6149570fd8":[2,0,0,5,88,18],
+"d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,89,18],
 "d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,88,30],
 "d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,89,30],
 "d4/dc8/classpocketmine_1_1item_1_1_raw_mutton.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,88,42],
@@ -244,10 +249,5 @@ var NAVTREEINDEX67 =
 "d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html#af52c173dc057335f93c4f796272de3aa":[3,0,1,16,0,6,2,6],
 "d4/dd0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_actor_event_packet.html#af54037312d7cb7a62830f3b55b2d9e9a":[3,0,1,16,0,6,2,5],
 "d4/dd1/classpocketmine_1_1thread_1_1_thread_crash_exception.html":[3,0,1,25,3],
-"d4/dd2/_camera_aim_assist_preset_item_settings_8php_source.html":[4,0,1,0,1,0,1,0,7],
-"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html":[2,0,0,3,1,17],
-"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html":[3,0,1,9,1,17],
-"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,17,4],
-"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,17,4],
-"d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,17,0]
+"d4/dd2/_camera_aim_assist_preset_item_settings_8php_source.html":[4,0,1,0,1,0,1,0,7]
 };

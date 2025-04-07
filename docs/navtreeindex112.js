@@ -1,5 +1,11 @@
 var NAVTREEINDEX112 =
 {
+"d7/d94/classpocketmine_1_1event_1_1player_1_1_player_block_pick_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,3,2,0],
+"d7/d94/classpocketmine_1_1event_1_1player_1_1_player_block_pick_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,3,2,0],
+"d7/d94/classpocketmine_1_1event_1_1player_1_1_player_block_pick_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,3,2,2],
+"d7/d94/classpocketmine_1_1event_1_1player_1_1_player_block_pick_event.html#a90efcab0d539a5cb5b17968dfa164017":[3,0,1,9,3,2,2],
+"d7/d94/classpocketmine_1_1event_1_1player_1_1_player_block_pick_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,3,2,1],
+"d7/d94/classpocketmine_1_1event_1_1player_1_1_player_block_pick_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,3,2,1],
 "d7/d95/classpocketmine_1_1block_1_1_stair.html":[2,0,0,0,210],
 "d7/d95/classpocketmine_1_1block_1_1_stair.html":[3,0,1,0,212],
 "d7/d95/classpocketmine_1_1block_1_1_stair.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,210,48],
@@ -243,11 +249,5 @@ var NAVTREEINDEX112 =
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,41,27],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,43,27],
 "d7/d9a/classpocketmine_1_1block_1_1_campfire.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,41,12],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,43,12],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac2be83330b0940f74859dd328ce174d3":[2,0,0,0,41,54],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac2be83330b0940f74859dd328ce174d3":[3,0,1,0,43,54],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,41,51],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,43,51],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,41,53],
-"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,43,53]
+"d7/d9a/classpocketmine_1_1block_1_1_campfire.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,43,12]
 };

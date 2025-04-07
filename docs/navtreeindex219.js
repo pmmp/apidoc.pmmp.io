@@ -1,5 +1,12 @@
 var NAVTREEINDEX219 =
 {
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a296dc806b8ece2cb4d5470aa866b8022":[3,0,1,17,4,0],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a481d2f2b49d22a23cacc71576d73ecb5":[2,0,0,9,4,4],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a481d2f2b49d22a23cacc71576d73ecb5":[3,0,1,17,4,4],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a56ca3af23c90116ceb2673db28c8a6f8":[2,0,0,9,4,1],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a56ca3af23c90116ceb2673db28c8a6f8":[3,0,1,17,4,1],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a8b7b223af5887da270b6e15bde3ecc3c":[2,0,0,9,4,2],
+"de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#a8b7b223af5887da270b6e15bde3ecc3c":[3,0,1,17,4,2],
 "de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#ab811d359621f6d634eaf165917f43d2b":[2,0,0,9,4,6],
 "de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#ab811d359621f6d634eaf165917f43d2b":[3,0,1,17,4,6],
 "de/da0/interfacepocketmine_1_1permission_1_1_permissible.html#ac91194cce6091b9ab1e205840c14c5e1":[2,0,0,9,4,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX219 =
 "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,151,19],
 "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab51ea2314ed5df2163bca971a462fb72":[2,0,0,0,149,8],
 "de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab51ea2314ed5df2163bca971a462fb72":[3,0,1,0,151,8],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,149,64],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,151,64],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,149,26],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,151,26],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,149,12],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,151,12],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,149,55],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,151,55]
+"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,149,64]
 };

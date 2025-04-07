@@ -1,5 +1,11 @@
 var NAVTREEINDEX106 =
 {
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,205,13],
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a444028c60ad6c7afacda1a6cc3065e59":[3,0,1,0,207,13],
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,205,52],
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,207,52],
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,205,36],
+"d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,207,36],
 "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,205,61],
 "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,207,61],
 "d7/d26/classpocketmine_1_1block_1_1_stained_glass.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,205,46],
@@ -243,11 +249,5 @@ var NAVTREEINDEX106 =
 "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html":[3,0,1,6,0,0,1,7],
 "d7/d2e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_utils.html#a3865aac65fe5d24f9ea6445115fd8fcc":[3,0,1,6,0,0,1,7,0],
 "d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html":[3,0,1,16,0,6,129],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a5482cb567e98d2ac399037752e2a6525":[3,0,1,16,0,6,129,7],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,129,4],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,129,0],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,129,3],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#aa8204a9d6918584715d360bfdae34e85":[3,0,1,16,0,6,129,5],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,129,1],
-"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#ad8e2486d48babe8ec9f3f835cfaa4ae6":[3,0,1,16,0,6,129,2]
+"d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html#a5482cb567e98d2ac399037752e2a6525":[3,0,1,16,0,6,129,7]
 };

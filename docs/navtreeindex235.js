@@ -1,5 +1,12 @@
 var NAVTREEINDEX235 =
 {
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a95cfab40de7390593990a239f8e4af73":[2,0,0,5,86,12],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a95cfab40de7390593990a239f8e4af73":[3,0,1,12,87,12],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9866a7ab362cec28252d67f6382a4ad4":[2,0,0,5,86,33],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9866a7ab362cec28252d67f6382a4ad4":[3,0,1,12,87,33],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[2,0,0,5,86,3],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a":[3,0,1,12,87,3],
+"df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9dd9484fe3ab1afcbd2627860e01973a":[2,0,0,5,86,47],
 "df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,87,47],
 "df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[2,0,0,5,86,9],
 "df/d8a/classpocketmine_1_1item_1_1_raw_chicken.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[3,0,1,12,87,9],
@@ -242,12 +249,5 @@ var NAVTREEINDEX235 =
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,174,16],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,172,27],
 "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,174,27],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html":[2,0,0,5,91],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html":[3,0,1,12,92],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,91,32],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,92,32],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,91,10],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,92,10],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,91,1],
-"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,92,1]
+"df/da2/classpocketmine_1_1item_1_1_raw_salmon.html":[2,0,0,5,91]
 };

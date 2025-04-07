@@ -10,6 +10,6 @@ var dir_fc4c7f03e1a69a98c370fae55a743828 =
     [ "NetworkInterface.php", "dd/d5c/_network_interface_8php_source.html", null ],
     [ "NetworkInterfaceStartException.php", "d3/d2a/_network_interface_start_exception_8php_source.html", null ],
     [ "NetworkSessionManager.php", "d3/df8/_network_session_manager_8php_source.html", null ],
-    [ "PacketHandlingException.php", "dc/d3a/_packet_handling_exception_8php_source.html", null ],
+    [ "src/network/PacketHandlingException.php", "d3/d63/src_2network_2_packet_handling_exception_8php_source.html", null ],
     [ "RawPacketHandler.php", "dd/d50/_raw_packet_handler_8php_source.html", null ]
 ];

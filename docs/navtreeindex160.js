@@ -1,5 +1,11 @@
 var NAVTREEINDEX160 =
 {
+"da/dad/classpocketmine_1_1world_1_1sound_1_1_painting_place_sound.html#af577dc179b388ea904e963f558d2de84":[3,0,1,30,5,80,0],
+"da/dae/classpocketmine_1_1crafting_1_1_exact_recipe_ingredient.html":[3,0,1,4,6],
+"da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html":[3,0,1,16,0,6,78],
+"da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html#a4aa11158f05f3cdf48e85b70abecb41b":[3,0,1,16,0,6,78,5],
+"da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html#a7f34ca0fc75361b63314614a92d08b49":[3,0,1,16,0,6,78,4],
+"da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,78,0],
 "da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,78,3],
 "da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html#aaf7af6c14e073d3c0e0e6f1f039d4a59":[3,0,1,16,0,6,78,2],
 "da/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_slot_packet.html#ab7225300f3ee1a99f33716170dea485e":[3,0,1,16,0,6,78,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX160 =
 "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#ac7c6b2cf8fdce0bf501dc62d06b04aff":[3,0,1,0,248,6],
 "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,246,51],
 "da/dba/classpocketmine_1_1block_1_1_wooden_button.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,248,51],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,246,0],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,248,0],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,246,24],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,248,24],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,246,57],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,248,57],
-"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,246,43]
+"da/dba/classpocketmine_1_1block_1_1_wooden_button.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,246,0]
 };

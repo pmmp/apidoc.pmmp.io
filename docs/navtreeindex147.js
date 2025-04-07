@@ -1,5 +1,11 @@
 var NAVTREEINDEX147 =
 {
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ab3c11dd444626eb5ef1d2ab666ce5def":[3,0,1,7,24,20],
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ab86b239e5e24b16efed3ba0e19895616":[2,0,0,2,19,27],
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ab86b239e5e24b16efed3ba0e19895616":[3,0,1,7,24,27],
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ac028a6475bf09f61ce9dfb952d4a5d65":[2,0,0,2,19,26],
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ac028a6475bf09f61ce9dfb952d4a5d65":[3,0,1,7,24,26],
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ac0c27111bd6d9156c3ec1a055b6962eb":[2,0,0,2,19,30],
 "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#ac0c27111bd6d9156c3ec1a055b6962eb":[3,0,1,7,24,30],
 "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#acaced48bc41cc13b10c1e99ba76bdabd":[2,0,0,2,19,41],
 "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#acaced48bc41cc13b10c1e99ba76bdabd":[3,0,1,7,24,41],
@@ -243,11 +249,5 @@ var NAVTREEINDEX147 =
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a2ce778f940de9e172cd268f378893b8f":[3,0,1,12,22,13],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a2e7d9e107f4f24de4aabc19764dc7dc2":[2,0,0,5,21,16],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a2e7d9e107f4f24de4aabc19764dc7dc2":[3,0,1,12,22,16],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[2,0,0,5,21,23],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[3,0,1,12,22,23],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a30c23cf281199b48fbbe0f4c45c01fb9":[2,0,0,5,21,33],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a30c23cf281199b48fbbe0f4c45c01fb9":[3,0,1,12,22,33],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a319a186a07d166461600dd4a639eb86f":[2,0,0,5,21,10],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a319a186a07d166461600dd4a639eb86f":[3,0,1,12,22,10],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a336d6f91be72079853413f5b4036a57d":[2,0,0,5,21,2]
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[2,0,0,5,21,23]
 };

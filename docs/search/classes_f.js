@@ -7,7 +7,7 @@ var searchData=
   ['packetdecodeexception_4',['PacketDecodeException',['../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html',1,'pocketmine::network::mcpe::protocol']]],
   ['packethandler_5',['PacketHandler',['../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html',1,'pocketmine::network::mcpe::handler']]],
   ['packethandlerinterface_6',['PacketHandlerInterface',['../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html',1,'pocketmine::network::mcpe::protocol']]],
-  ['packethandlingexception_7',['PacketHandlingException',['../d1/d78/classpocketmine_1_1network_1_1_packet_handling_exception.html',1,'pocketmine::network']]],
+  ['packethandlingexception_7',['PacketHandlingException',['../d1/d78/classpocketmine_1_1network_1_1_packet_handling_exception.html',1,'pocketmine\network\PacketHandlingException'],['../d0/d0c/classraklib_1_1generic_1_1_packet_handling_exception.html',1,'raklib\generic\PacketHandlingException']]],
   ['packetpool_8',['PacketPool',['../d9/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_pool.html',1,'pocketmine::network::mcpe::protocol']]],
   ['packetratelimiter_9',['PacketRateLimiter',['../db/d44/classpocketmine_1_1network_1_1mcpe_1_1_packet_rate_limiter.html',1,'pocketmine::network::mcpe']]],
   ['packetreliability_10',['PacketReliability',['../d3/db9/classraklib_1_1protocol_1_1_packet_reliability.html',1,'raklib::protocol']]],

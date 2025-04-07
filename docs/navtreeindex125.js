@@ -1,5 +1,11 @@
 var NAVTREEINDEX125 =
 {
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#a8068291872972a6f717e5e1bf34975c6":[3,0,1,16,0,6,126,7],
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,126,0],
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#aa064d23077830ab265f931c3385a3e0d":[3,0,1,16,0,6,126,3],
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#ab191e181d2ade10abcf3c9a3631974d4":[3,0,1,16,0,6,126,2],
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,126,1],
+"d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#aeda5f55f3b450ab13c4abcb8cba20241":[3,0,1,16,0,6,126,5],
 "d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html#afc698fb58dc0eb1fd4eaf07680769280":[3,0,1,16,0,6,126,6],
 "d8/d46/tile_2_flower_pot_8php_source.html":[4,0,0,0,1,17],
 "d8/d47/_set_health_packet_8php_source.html":[4,0,1,0,1,0,172],
@@ -243,11 +249,5 @@ var NAVTREEINDEX125 =
 "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a82da394fb1a54a7fc2e1a972cd49b6fa":[3,0,1,0,143,34],
 "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a8307fc850da5c3f36e9dfc7ce639fe55":[2,0,0,0,141,48],
 "d8/d57/classpocketmine_1_1block_1_1_liquid.html#a8307fc850da5c3f36e9dfc7ce639fe55":[3,0,1,0,143,48],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,141,30],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,143,30],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a8c35a082da3055d637f0ff28decbc171":[2,0,0,0,141,9],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a8c35a082da3055d637f0ff28decbc171":[3,0,1,0,143,9],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a908b0d2be46ed6be8d8d16cd1db02924":[2,0,0,0,141,26],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a908b0d2be46ed6be8d8d16cd1db02924":[3,0,1,0,143,26],
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,141,11]
+"d8/d57/classpocketmine_1_1block_1_1_liquid.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,141,30]
 };
