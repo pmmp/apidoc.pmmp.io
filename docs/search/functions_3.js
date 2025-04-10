@@ -89,7 +89,7 @@ var searchData=
   ['createnotifier_86',['createNotifier',['../d8/d3f/classpocketmine_1_1snooze_1_1_sleeper_handler_entry.html#aa031f7fa8d0c311cac9da2cacdce4ac9',1,'pocketmine::snooze::SleeperHandlerEntry']]],
   ['createplayer_87',['createPlayer',['../d5/df7/classpocketmine_1_1_server.html#ac73d85e2d8fb3ec1cae21376c9b3f5c6',1,'pocketmine::Server']]],
   ['createtag_88',['createTag',['../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html#a4c7090c27f581d8f15fd9e262fee1279',1,'pocketmine::nbt::NBT']]],
-  ['critical_89',['critical',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e',1,'pocketmine\utils\MainLogger\critical()'],['../d4/d00/interface_logger.html#ab3bd0b53727682715458c676943f8e98',1,'Logger\critical()'],['../d9/df4/class_simple_logger.html#a025da7129259570211e72094ea4c9944',1,'SimpleLogger\critical()']]],
+  ['critical_89',['critical',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e',1,'pocketmine\\utils\MainLogger\critical()'],['../d4/d00/interface_logger.html#ab3bd0b53727682715458c676943f8e98',1,'Logger\critical()'],['../d9/df4/class_simple_logger.html#a025da7129259570211e72094ea4c9944',1,'SimpleLogger\critical()']]],
   ['critical_5ferror_90',['critical_error',['../d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69',1,'pocketmine']]],
   ['current_91',['current',['../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html#ad8532b8785c971d65e325e2ed0073ae7',1,'pocketmine::data::bedrock::block::BlockStateData']]],
   ['currenttrace_92',['currentTrace',['../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a73a9e68983fb530aaa371c800b498d67',1,'pocketmine::utils::Utils']]]

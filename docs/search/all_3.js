@@ -178,7 +178,7 @@ var searchData=
   ['bucketfilllavasound_175',['BucketFillLavaSound',['../d1/d7a/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_lava_sound.html',1,'pocketmine::world::sound']]],
   ['bucketfillwatersound_176',['BucketFillWaterSound',['../d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html',1,'pocketmine::world::sound']]],
   ['buddingamethyst_177',['BuddingAmethyst',['../dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html',1,'pocketmine::block']]],
-  ['buffer_178',['buffer',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e',1,'pocketmine\utils\MainLogger\buffer()'],['../d3/d4b/interface_buffered_logger.html#a19ad2f070db4de19c4a46a24990f2b99',1,'BufferedLogger\buffer()']]],
+  ['buffer_178',['buffer',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#abbb5ae5278f33c24e1a1498c56f75e1e',1,'pocketmine\\utils\MainLogger\buffer()'],['../d3/d4b/interface_buffered_logger.html#a19ad2f070db4de19c4a46a24990f2b99',1,'BufferedLogger\buffer()']]],
   ['bufferedlogger_179',['BufferedLogger',['../d3/d4b/interface_buffered_logger.html',1,'']]],
   ['buildfromlocationtable_180',['buildFromLocationTable',['../d1/dd5/classpocketmine_1_1world_1_1format_1_1io_1_1region_1_1_region_garbage_map.html#ab88766c77e68dabc77512d923cc21abc',1,'pocketmine::world::format::io::region::RegionGarbageMap']]],
   ['builtintypes_181',['BuiltInTypes',['../de/d3c/class_dave_random_1_1_callback_validator_1_1_built_in_types.html',1,'DaveRandom::CallbackValidator']]],

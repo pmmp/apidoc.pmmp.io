@@ -16,6 +16,6 @@ var searchData=
   ['noise2d_13',['noise2D',['../d2/dd0/classpocketmine_1_1world_1_1generator_1_1noise_1_1_noise.html#ab2ee843c2cf4cb7c4f4f4d75988d0187',1,'pocketmine::world::generator::noise::Noise']]],
   ['noise3d_14',['noise3D',['../d2/dd0/classpocketmine_1_1world_1_1generator_1_1noise_1_1_noise.html#a1e792c08e3c5071d7de1e9ba346e2575',1,'pocketmine::world::generator::noise::Noise']]],
   ['north_15',['north',['../d2/d90/classpocketmine_1_1math_1_1_vector3.html#a4a1fb0292bfdef06f9eaa2c7548cc527',1,'pocketmine::math::Vector3']]],
-  ['notice_16',['notice',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4',1,'pocketmine\utils\MainLogger\notice()'],['../d4/d00/interface_logger.html#a54be4b7ff0c72b3fa4b88624a6d4742e',1,'Logger\notice()'],['../d9/df4/class_simple_logger.html#a7ac1aa95a08676d825b73abb4ea2d235',1,'SimpleLogger\notice()']]],
+  ['notice_16',['notice',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4',1,'pocketmine\\utils\MainLogger\notice()'],['../d4/d00/interface_logger.html#a54be4b7ff0c72b3fa4b88624a6d4742e',1,'Logger\notice()'],['../d9/df4/class_simple_logger.html#a7ac1aa95a08676d825b73abb4ea2d235',1,'SimpleLogger\notice()']]],
   ['notifyneighbourblockupdate_17',['notifyNeighbourBlockUpdate',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a0760f9b660cabe2649ea685ed579df49',1,'pocketmine::world::World']]]
 ];

@@ -63,7 +63,7 @@ var searchData=
   ['note_60',['Note',['../d3/df5/classpocketmine_1_1block_1_1_note.html',1,'pocketmine\block\Note'],['../d8/dab/classpocketmine_1_1block_1_1tile_1_1_note.html',1,'pocketmine\block\tile\Note']]],
   ['noteinstrumentidmap_61',['NoteInstrumentIdMap',['../d7/d8a/classpocketmine_1_1data_1_1bedrock_1_1_note_instrument_id_map.html',1,'pocketmine::data::bedrock']]],
   ['notesound_62',['NoteSound',['../d6/d38/classpocketmine_1_1world_1_1sound_1_1_note_sound.html',1,'pocketmine::world::sound']]],
-  ['notice_63',['notice',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4',1,'pocketmine\utils\MainLogger\notice()'],['../d4/d00/interface_logger.html#a54be4b7ff0c72b3fa4b88624a6d4742e',1,'Logger\notice()'],['../d9/df4/class_simple_logger.html#a7ac1aa95a08676d825b73abb4ea2d235',1,'SimpleLogger\notice()']]],
+  ['notice_63',['notice',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4',1,'pocketmine\\utils\MainLogger\notice()'],['../d4/d00/interface_logger.html#a54be4b7ff0c72b3fa4b88624a6d4742e',1,'Logger\notice()'],['../d9/df4/class_simple_logger.html#a7ac1aa95a08676d825b73abb4ea2d235',1,'SimpleLogger\notice()']]],
   ['notifyneighbourblockupdate_64',['notifyNeighbourBlockUpdate',['../d4/d2b/classpocketmine_1_1world_1_1_world.html#a0760f9b660cabe2649ea685ed579df49',1,'pocketmine::world::World']]],
   ['npcdialoguepacket_65',['NpcDialoguePacket',['../d8/d30/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_dialogue_packet.html',1,'pocketmine::network::mcpe::protocol']]],
   ['npcrequestpacket_66',['NpcRequestPacket',['../dc/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_npc_request_packet.html',1,'pocketmine::network::mcpe::protocol']]],
