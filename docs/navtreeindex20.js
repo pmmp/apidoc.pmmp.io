@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#ae3137e6ed2b1cbc30ea8c58d7a861f7e":[2,0,0,0,225,64],
+"d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#ae3137e6ed2b1cbc30ea8c58d7a861f7e":[3,0,1,0,227,64],
 "d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,225,32],
 "d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,227,32],
 "d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,225,54],
@@ -14,7 +16,7 @@ var NAVTREEINDEX20 =
 "d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,227,16],
 "d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,225,27],
 "d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,227,27],
-"d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html":[3,0,1,16,0,6,1,13],
+"d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html":[3,0,1,16,0,6,1,14],
 "d1/d60/_entity_motion_event_8php_source.html":[4,0,0,7,1,16],
 "d1/d62/_entity_death_event_8php_source.html":[4,0,0,7,1,8],
 "d1/d62/_error_to_exception_handler_8php_source.html":[4,0,1,0,5,0,1],
@@ -164,7 +166,7 @@ var NAVTREEINDEX20 =
 "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,70,16],
 "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,68,27],
 "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,70,27],
-"d1/d67/_item_descriptor_8php_source.html":[4,0,1,0,1,0,1,6,5],
+"d1/d67/_item_descriptor_8php_source.html":[4,0,1,0,1,0,1,7,5],
 "d1/d68/classpocketmine_1_1inventory_1_1transaction_1_1_enchanting_transaction.html":[3,0,1,11,1,2],
 "d1/d68/classpocketmine_1_1inventory_1_1transaction_1_1_enchanting_transaction.html#a19eca710abe2264e3de36b3159e0e559":[3,0,1,11,1,2,1],
 "d1/d68/classpocketmine_1_1inventory_1_1transaction_1_1_enchanting_transaction.html#a4d540a5050aa431c59bdafc915362715":[3,0,1,11,1,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,77,11],
 "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,75,66],
 "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,77,66],
-"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,75,38],
-"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,77,38],
-"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,75,7]
+"d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,75,38]
 };

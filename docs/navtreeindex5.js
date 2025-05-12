@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,34,47],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,32,54],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,34,54],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,32,14],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,34,14],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,32,40],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,34,40],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a626203ec321c2e07948e152b9fd27a4a":[2,0,0,0,32,64],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a626203ec321c2e07948e152b9fd27a4a":[3,0,1,0,34,64],
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,32,20],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d3cefce63d654d994f2e1b5dcc11c54":[3,0,1,0,34,20],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,32,51],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,34,51],
@@ -239,15 +249,5 @@ var NAVTREEINDEX5 =
 "d0/d74/classpocketmine_1_1command_1_1defaults_1_1_difficulty_command.html#ac9790f6d386568af660860ceb824ee9a":[3,0,1,2,0,6,3],
 "d0/d74/classpocketmine_1_1command_1_1defaults_1_1_difficulty_command.html#acbccfc9431699f8cefb66e359419e1df":[3,0,1,2,0,6,1],
 "d0/d74/classpocketmine_1_1command_1_1defaults_1_1_difficulty_command.html#adbf0fdcd3084738f031b7cd892b43556":[3,0,1,2,0,6,0],
-"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html":[2,0,0,2,3],
-"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html":[3,0,1,7,8],
-"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html#a462b54b5cef43f9b9fba4f1ff36de9cf":[2,0,0,2,3,0],
-"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html#a462b54b5cef43f9b9fba4f1ff36de9cf":[3,0,1,7,8,0],
-"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html#a67006b8cbca63709d9459250fac2915b":[2,0,0,2,3,1],
-"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html#a67006b8cbca63709d9459250fac2915b":[3,0,1,7,8,1],
-"d0/d7a/_biome_ids_8php_source.html":[4,0,0,5,0,4],
-"d0/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_player_metadata_flags.html":[3,0,1,16,0,6,1,2,17],
-"d0/d7b/classpocketmine_1_1plugin_1_1_plugin_exception.html":[2,0,0,10,9],
-"d0/d7b/classpocketmine_1_1plugin_1_1_plugin_exception.html":[3,0,1,19,9],
-"d0/d7f/_potion_type_8php_source.html":[4,0,0,10,86]
+"d0/d76/classpocketmine_1_1entity_1_1_attribute_map.html":[2,0,0,2,3]
 };

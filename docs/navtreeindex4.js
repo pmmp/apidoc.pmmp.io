@@ -1,5 +1,15 @@
 var NAVTREEINDEX4 =
 {
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a26507d3b66dc3c15d3906920c6f70ad5":[3,0,1,18,5,5],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a265cb93031a89ccc4a4236b3702c690b":[3,0,1,18,5,82],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a296dc806b8ece2cb4d5470aa866b8022":[3,0,1,18,5,46],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a2bd1fab41c3720c1ec9f75997958c223":[3,0,1,18,5,114],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a2c30613bdef2e05bc1b3a9e6fd5e5014":[3,0,1,18,5,94],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a2dd0b61975dd1ccdf2d0ddc161f85013":[3,0,1,18,5,153],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a2eaaae362cb4990882b3db3f7b15864b":[3,0,1,18,5,140],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a2ef09a1904508f912a48285607429f3b":[3,0,1,18,5,146],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a2fd60d632450b33aab4f31906ab1870d":[3,0,1,18,5,57],
+"d0/d6f/classpocketmine_1_1player_1_1_player.html#a306dc1bc8f98091c2c5e2c83b4f6771b":[3,0,1,18,5,55],
 "d0/d6f/classpocketmine_1_1player_1_1_player.html#a306e51a1a6e7cc0976cc859c7149472c":[3,0,1,18,5,156],
 "d0/d6f/classpocketmine_1_1player_1_1_player.html#a334c50f0b061020bc77c890b23639e37":[3,0,1,18,5,21],
 "d0/d6f/classpocketmine_1_1player_1_1_player.html#a347ad45f10f29552bca3ecec79408a9f":[3,0,1,18,5,71],
@@ -239,15 +249,5 @@ var NAVTREEINDEX4 =
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,34,36],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,32,62],
 "d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,34,62],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,32,47],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,34,47],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,32,54],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,34,54],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,32,14],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,34,14],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,32,40],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,34,40],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a626203ec321c2e07948e152b9fd27a4a":[2,0,0,0,32,64],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a626203ec321c2e07948e152b9fd27a4a":[3,0,1,0,34,64],
-"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,32,20]
+"d0/d73/classpocketmine_1_1block_1_1_brewing_stand.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,32,47]
 };

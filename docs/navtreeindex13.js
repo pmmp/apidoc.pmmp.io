@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,27,5],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,27,0],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,1,27,0],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a954c4b61c6444766ac5dd3e083c4eb98":[2,0,0,3,1,27,2],
@@ -166,7 +167,7 @@ var NAVTREEINDEX13 =
 "d1/d01/_a_c_k_8php_source.html":[4,0,1,0,9,0,2,0],
 "d1/d02/_ghast_shoot_sound_8php_source.html":[4,0,0,25,5,65],
 "d1/d02/item_2_dried_kelp_8php_source.html":[4,0,0,10,37],
-"d1/d03/_material_reducer_recipe_output_8php_source.html":[4,0,1,0,1,0,1,6,8],
+"d1/d03/_material_reducer_recipe_output_8php_source.html":[4,0,1,0,1,0,1,7,8],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html":[2,0,0,0,174],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html":[3,0,1,0,176],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,174,58],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,174,23],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,176,23],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,174,31],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,176,31],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ab05ed23d3ff256f3f64cf6d86563c947":[2,0,0,0,174,8]
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,176,31]
 };

@@ -1,0 +1,5 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_surface_material_adjustment_data =
+[
+    [ "__construct", "d7/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_surface_material_adjustment_data.html#a1fe8409452680418e457d232bc7c5ff5", null ],
+    [ "getAdjustments", "d7/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_surface_material_adjustment_data.html#a15146aa8df897c80ae70d7fdb13fc08d", null ]
+];

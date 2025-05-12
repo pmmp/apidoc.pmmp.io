@@ -1,0 +1,5 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_legacy_world_gen_rules_data =
+[
+    [ "__construct", "df/d61/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_legacy_world_gen_rules_data.html#aff72d9e6f4662df61c1e221aa08a169b", null ],
+    [ "getLegacyPreHills", "df/d61/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_legacy_world_gen_rules_data.html#a45fa3decfe5f6c88680f7fb88d65e269", null ]
+];

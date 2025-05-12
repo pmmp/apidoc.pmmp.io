@@ -1,5 +1,6 @@
 var dir_4ce0d017c9acf66d411d2a18e1dfe1d4 =
 [
+    [ "model", "dir_86add4642adc3ba5add8dc7466e2b7f9.html", "dir_86add4642adc3ba5add8dc7466e2b7f9" ],
     [ "Biome.php", "d5/d93/_biome_8php_source.html", null ],
     [ "BiomeRegistry.php", "d1/d5e/_biome_registry_8php_source.html", null ],
     [ "DesertBiome.php", "df/d31/_desert_biome_8php_source.html", null ],

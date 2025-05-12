@@ -1,0 +1,5 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_conditional_transformation_data =
+[
+    [ "__construct", "d7/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_conditional_transformation_data.html#a8ab31e7c8904bb0a6a555f6f635cfa82", null ],
+    [ "getWeightedBiomes", "d7/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_conditional_transformation_data.html#a8600db21c9cd3f1da73596f7c26ca275", null ]
+];

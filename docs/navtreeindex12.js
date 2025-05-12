@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#ae033a4a477927934840e497140ee73db":[3,0,1,0,22,64],
 "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,20,32],
 "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,22,32],
 "d0/dd5/classpocketmine_1_1block_1_1_big_dripleaf_head.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,20,54],
@@ -213,9 +214,9 @@ var NAVTREEINDEX12 =
 "d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224de":[2,0,0,5,122],
 "d0/dec/namespacepocketmine_1_1item.html#afe460b21511aa8ad76e531b450a224deaec86ce87fec11ae450647b9f401ba332":[2,0,0,5,122,0],
 "d0/ded/_version_info_8php_source.html":[4,0,0,36],
-"d0/dee/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_int_id_meta_item_descriptor.html":[3,0,1,16,0,6,1,5,4],
+"d0/dee/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_int_id_meta_item_descriptor.html":[3,0,1,16,0,6,1,6,4],
 "d0/df0/classpocketmine_1_1thread_1_1_thread_exception.html":[3,0,1,25,6],
-"d0/df2/_sub_chunk_request_result_8php_source.html":[4,0,1,0,1,0,1,85],
+"d0/df2/_sub_chunk_request_result_8php_source.html":[4,0,1,0,1,0,1,88],
 "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html":[2,0,0,3,0,14],
 "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html":[3,0,1,9,0,14],
 "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,0,14,0],
@@ -234,9 +235,9 @@ var NAVTREEINDEX12 =
 "d0/df2/classpocketmine_1_1plugin_1_1_api_version.html#afdfe7b406b546cc84f7d02c73dd4ef53":[3,0,1,19,0,0],
 "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound.html":[3,0,1,30,5,85],
 "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound.html#a106f24b33b9a955039d4b9e04753106a":[3,0,1,30,5,85,0],
-"d0/df3/_player_toggle_crafter_slot_request_packet_8php_source.html":[4,0,1,0,1,0,132],
+"d0/df3/_player_toggle_crafter_slot_request_packet_8php_source.html":[4,0,1,0,1,0,131],
 "d0/df4/_advanced_network_interface_8php_source.html":[4,0,0,12,3],
-"d0/df7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_name_ids.html":[3,0,1,16,0,6,1,24],
+"d0/df7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_name_ids.html":[3,0,1,16,0,6,1,25],
 "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html":[2,0,0,3,0,0],
 "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html":[3,0,1,9,0,0],
 "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "d0/dfb/_medicine_type_8php_source.html":[4,0,0,10,73],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html":[2,0,0,3,1,27],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html":[3,0,1,9,1,27],
-"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,27,5],
-"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,27,5]
+"d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,27,5]
 };

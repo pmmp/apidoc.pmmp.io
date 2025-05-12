@@ -1087,8 +1087,31 @@ var annotated_dup =
               [ "PacketSerializer", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer" ]
             ] ],
             [ "types", null, [
+              [ "biome", null, [
+                [ "chunkgen", null, [
+                  [ "BiomeCappedSurfaceData", "dd/d6f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_capped_surface_data.html", "dd/d6f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_capped_surface_data" ],
+                  [ "BiomeClimateData", "d2/d86/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_climate_data.html", null ],
+                  [ "BiomeConditionalTransformationData", "d7/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_conditional_transformation_data.html", "d7/de1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_conditional_transformation_data" ],
+                  [ "BiomeConsolidatedFeatureData", "d6/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_consolidated_feature_data.html", null ],
+                  [ "BiomeConsolidatedFeaturesData", "d3/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_consolidated_features_data.html", "d3/d71/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_consolidated_features_data" ],
+                  [ "BiomeCoordinateData", "d5/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_coordinate_data.html", null ],
+                  [ "BiomeDefinitionChunkGenData", "df/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_definition_chunk_gen_data.html", null ],
+                  [ "BiomeElementData", "d2/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_element_data.html", null ],
+                  [ "BiomeLegacyWorldGenRulesData", "df/d61/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_legacy_world_gen_rules_data.html", "df/d61/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_legacy_world_gen_rules_data" ],
+                  [ "BiomeMesaSurfaceData", "d5/d89/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_mesa_surface_data.html", null ],
+                  [ "BiomeMountainParamsData", "df/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_mountain_params_data.html", null ],
+                  [ "BiomeMultinoiseGenRulesData", "db/d4c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_multinoise_gen_rules_data.html", null ],
+                  [ "BiomeOverworldGenRulesData", "d0/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_overworld_gen_rules_data.html", "d0/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_overworld_gen_rules_data" ],
+                  [ "BiomeScatterParamData", "d3/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_scatter_param_data.html", "d3/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_scatter_param_data" ],
+                  [ "BiomeSurfaceMaterialAdjustmentData", "d7/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_surface_material_adjustment_data.html", "d7/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_surface_material_adjustment_data" ],
+                  [ "BiomeSurfaceMaterialData", "da/d8e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_surface_material_data.html", null ],
+                  [ "BiomeWeightedData", "de/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_weighted_data.html", null ],
+                  [ "BiomeWeightedTemperatureData", "d2/dbb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_weighted_temperature_data.html", null ]
+                ] ],
+                [ "BiomeDefinitionData", "d2/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1_biome_definition_data.html", "d2/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1_biome_definition_data" ],
+                [ "BiomeDefinitionEntry", "dc/dc1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1_biome_definition_entry.html", "dc/dc1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1_biome_definition_entry" ]
+              ] ],
               [ "camera", null, [
-                [ "CameraAimAssistCategories", "d9/d64/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_categories.html", "d9/d64/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_categories" ],
                 [ "CameraAimAssistCategory", "dc/db2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category.html", null ],
                 [ "CameraAimAssistCategoryBlockPriority", "db/d20/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_block_priority.html", null ],
                 [ "CameraAimAssistCategoryEntityPriority", "d9/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_entity_priority.html", null ],
@@ -1350,6 +1373,7 @@ var annotated_dup =
             [ "ChangeMobPropertyPacket", "df/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_mob_property_packet.html", "df/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_change_mob_property_packet" ],
             [ "ChunkRadiusUpdatedPacket", "da/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_chunk_radius_updated_packet.html", "da/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_chunk_radius_updated_packet" ],
             [ "ClientboundCloseFormPacket", "d0/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_close_form_packet.html", "d0/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_close_form_packet" ],
+            [ "ClientboundControlSchemeSetPacket", "dc/dcd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_control_scheme_set_packet.html", "dc/dcd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_control_scheme_set_packet" ],
             [ "ClientboundDebugRendererPacket", "da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html", "da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet" ],
             [ "ClientboundMapItemDataPacket", "d6/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet.html", "d6/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet" ],
             [ "ClientboundPacket", "da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet.html", "da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet" ],
@@ -1365,7 +1389,6 @@ var annotated_dup =
             [ "CommandOutputPacket", "d0/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_command_output_packet.html", "d0/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_command_output_packet" ],
             [ "CommandRequestPacket", "dd/d5b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_command_request_packet.html", "dd/d5b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_command_request_packet" ],
             [ "CompletedUsingItemPacket", "db/d15/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_completed_using_item_packet.html", "db/d15/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_completed_using_item_packet" ],
-            [ "CompressedBiomeDefinitionListPacket", "d0/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_compressed_biome_definition_list_packet.html", "d0/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_compressed_biome_definition_list_packet" ],
             [ "ContainerClosePacket", "d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet.html", "d7/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_close_packet" ],
             [ "ContainerOpenPacket", "d7/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet.html", "d7/de2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_open_packet" ],
             [ "ContainerRegistryCleanupPacket", "d6/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_registry_cleanup_packet.html", "d6/d0d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_container_registry_cleanup_packet" ],
@@ -1433,7 +1456,6 @@ var annotated_dup =
             [ "PacketHandlerInterface", "d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html", null ],
             [ "PacketPool", "d9/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_pool.html", "d9/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_pool" ],
             [ "PacketViolationWarningPacket", "da/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_violation_warning_packet.html", "da/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_violation_warning_packet" ],
-            [ "PassengerJumpPacket", "db/d1c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_passenger_jump_packet.html", "db/d1c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_passenger_jump_packet" ],
             [ "PhotoTransferPacket", "dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet.html", "dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet" ],
             [ "PlayerActionPacket", "dd/d5d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_action_packet.html", "dd/d5d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_action_packet" ],
             [ "PlayerArmorDamagePacket", "da/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_armor_damage_packet.html", "da/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_armor_damage_packet" ],
@@ -1442,8 +1464,8 @@ var annotated_dup =
             [ "PlayerEnchantOptionsPacket", "d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html", "d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet" ],
             [ "PlayerFogPacket", "d7/d72/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_fog_packet.html", "d7/d72/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_fog_packet" ],
             [ "PlayerHotbarPacket", "d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet.html", "d8/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_hotbar_packet" ],
-            [ "PlayerInputPacket", "d4/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_input_packet.html", "d4/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_input_packet" ],
             [ "PlayerListPacket", "d2/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_list_packet.html", "d2/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_list_packet" ],
+            [ "PlayerLocationPacket", "d8/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_location_packet.html", "d8/d4a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_location_packet" ],
             [ "PlayerSkinPacket", "d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet.html", "d7/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_skin_packet" ],
             [ "PlayerStartItemCooldownPacket", "df/d21/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_start_item_cooldown_packet.html", "df/d21/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_start_item_cooldown_packet" ],
             [ "PlayerToggleCrafterSlotRequestPacket", "db/d6f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_toggle_crafter_slot_request_packet.html", "db/d6f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_toggle_crafter_slot_request_packet" ],
@@ -1741,6 +1763,10 @@ var annotated_dup =
       ] ],
       [ "world", "df/d15/namespacepocketmine_1_1world.html", [
         [ "biome", null, [
+          [ "model", null, [
+            [ "BiomeDefinitionEntryData", "d2/d09/classpocketmine_1_1world_1_1biome_1_1model_1_1_biome_definition_entry_data.html", "d2/d09/classpocketmine_1_1world_1_1biome_1_1model_1_1_biome_definition_entry_data" ],
+            [ "ColorData", "d2/d97/classpocketmine_1_1world_1_1biome_1_1model_1_1_color_data.html", "d2/d97/classpocketmine_1_1world_1_1biome_1_1model_1_1_color_data" ]
+          ] ],
           [ "Biome", "d8/d20/classpocketmine_1_1world_1_1biome_1_1_biome.html", "d8/d20/classpocketmine_1_1world_1_1biome_1_1_biome" ],
           [ "BiomeRegistry", "d4/db3/classpocketmine_1_1world_1_1biome_1_1_biome_registry.html", null ],
           [ "DesertBiome", "d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html", "d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome" ],

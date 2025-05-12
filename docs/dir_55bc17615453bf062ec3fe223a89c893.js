@@ -1,5 +1,6 @@
 var dir_55bc17615453bf062ec3fe223a89c893 =
 [
+    [ "biome", "dir_fa867b55f5553ed8d140d4f7db04fc66.html", "dir_fa867b55f5553ed8d140d4f7db04fc66" ],
     [ "camera", "dir_a084c78965e105250c47f67113e6cfdd.html", "dir_a084c78965e105250c47f67113e6cfdd" ],
     [ "command", "dir_2c6ad4f7f4a1db9d3c4e822d2ca8ce5d.html", "dir_2c6ad4f7f4a1db9d3c4e822d2ca8ce5d" ],
     [ "entity", "dir_bbe04a070578765a2b532af946e544b1.html", "dir_bbe04a070578765a2b532af946e544b1" ],
@@ -22,6 +23,7 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "ChunkCacheBlob.php", "db/d3a/_chunk_cache_blob_8php_source.html", null ],
     [ "ChunkPosition.php", "d6/de6/_chunk_position_8php_source.html", null ],
     [ "CompressionAlgorithm.php", "dd/d0a/_compression_algorithm_8php_source.html", null ],
+    [ "ControlScheme.php", "de/d6d/_control_scheme_8php_source.html", null ],
     [ "DeviceOS.php", "dc/d03/_device_o_s_8php_source.html", null ],
     [ "DimensionData.php", "dc/dab/_dimension_data_8php_source.html", null ],
     [ "DimensionIds.php", "d9/d28/_dimension_ids_8php_source.html", null ],
@@ -66,6 +68,7 @@ var dir_55bc17615453bf062ec3fe223a89c893 =
     [ "PlayerBlockActionStopBreak.php", "dd/d94/_player_block_action_stop_break_8php_source.html", null ],
     [ "PlayerBlockActionWithBlockInfo.php", "d5/d70/_player_block_action_with_block_info_8php_source.html", null ],
     [ "PlayerListEntry.php", "d9/d1f/_player_list_entry_8php_source.html", null ],
+    [ "PlayerLocationType.php", "d1/d71/_player_location_type_8php_source.html", null ],
     [ "PlayerMovementSettings.php", "df/dc8/_player_movement_settings_8php_source.html", null ],
     [ "PlayerPermissions.php", "da/d04/_player_permissions_8php_source.html", null ],
     [ "PlayMode.php", "d3/db4/_play_mode_8php_source.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a428cb509ce7bbe12bdedb1b97bcb47d3":[2,0,0,5,121,62],
+"d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a428cb509ce7bbe12bdedb1b97bcb47d3":[3,0,1,12,122,62],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a46e9597cc1a492c84e5f32d006a4a1d3":[2,0,0,5,121,5],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a46e9597cc1a492c84e5f32d006a4a1d3":[3,0,1,12,122,5],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,121,1],
@@ -84,7 +86,7 @@ var NAVTREEINDEX18 =
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,122,45],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#afdec798add5eb1e740abffb45245ebc9":[2,0,0,5,121,61],
 "d1/d4b/classpocketmine_1_1item_1_1_written_book.html#afdec798add5eb1e740abffb45245ebc9":[3,0,1,12,122,61],
-"d1/d4c/_camera_aim_assist_category_block_priority_8php_source.html":[4,0,1,0,1,0,1,0,3],
+"d1/d4c/_camera_aim_assist_category_block_priority_8php_source.html":[4,0,1,0,1,0,1,1,2],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html":[2,0,0,11,3],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html":[3,0,1,22,3],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#a75770eb28002e31779b92e86a29cb4e9":[2,0,0,11,3,0],
@@ -93,7 +95,7 @@ var NAVTREEINDEX18 =
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#abb31f220a09e40bb22c29bb68a693e7c":[3,0,1,22,3,1],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#adf6cfa9e72379b162d462a2e9dc8d301":[2,0,0,11,3,2],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#adf6cfa9e72379b162d462a2e9dc8d301":[3,0,1,22,3,2],
-"d1/d50/_enchant_option_8php_source.html":[4,0,1,0,1,0,1,32],
+"d1/d50/_enchant_option_8php_source.html":[4,0,1,0,1,0,1,34],
 "d1/d50/_written_book_8php_source.html":[4,0,0,10,130],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html":[2,0,0,5,29],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html":[3,0,1,12,30],
@@ -210,7 +212,7 @@ var NAVTREEINDEX18 =
 "d1/d53/_promise_shared_data_8php_source.html":[4,0,0,16,2],
 "d1/d53/classpocketmine_1_1plugin_1_1_plugin_load_triage.html":[2,0,0,10,13],
 "d1/d53/classpocketmine_1_1plugin_1_1_plugin_load_triage.html":[3,0,1,19,13],
-"d1/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_string_id_meta_item_descriptor.html":[3,0,1,16,0,6,1,5,20],
+"d1/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_string_id_meta_item_descriptor.html":[3,0,1,16,0,6,1,6,20],
 "d1/d55/_disk_resource_provider_8php_source.html":[4,0,0,15,2],
 "d1/d55/_player_death_event_8php_source.html":[4,0,0,7,3,10],
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html":[2,0,0,0,153],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,155,10],
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,153,44],
 "d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,155,44],
-"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,153,36],
-"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,155,36],
-"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,153,61]
+"d1/d55/classpocketmine_1_1block_1_1_nether_portal.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,153,36]
 };
