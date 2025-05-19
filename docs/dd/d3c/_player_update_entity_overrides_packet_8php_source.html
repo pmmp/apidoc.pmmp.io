@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.1 git-04de72e85ec8c8da36e1d527db3cbe4ee855a124</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-94fb5d95b92604840dabb719f04327efa559cf94</span>
    </div>
   </td>
  </tr>
@@ -191,12 +191,12 @@ $(function(){initNavTree('dd/d3c/_player_update_entity_overrides_packet_8php_sou
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $out-&gt;putByte($this-&gt;updateType-&gt;value);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span>($this-&gt;updateType === OverrideUpdateType::SET_INT_OVERRIDE){</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            if($this-&gt;intOverrideValue === null){ <span class="comment">// this should never be the case</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                throw new \LogicException(<span class="stringliteral">&quot;PlayerUpdateEntityOverridesPacket with type SET_INT_OVERRIDE require an intOverrideValue to be provided&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                throw new \LogicException(<span class="stringliteral">&quot;PlayerUpdateEntityOverridesPacket with type SET_INT_OVERRIDE requires intOverrideValue to be provided&quot;</span>);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            $out-&gt;putLInt($this-&gt;intOverrideValue);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }elseif($this-&gt;updateType === OverrideUpdateType::SET_FLOAT_OVERRIDE){</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span>($this-&gt;floatOverrideValue === <span class="keyword">null</span>){ <span class="comment">// this should never be the case</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;PlayerUpdateEntityOverridesPacket with type SET_INT_OVERRIDE require an intOverrideValue to be provided&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;PlayerUpdateEntityOverridesPacket with type SET_FLOAT_OVERRIDE requires floatOverrideValue to be provided&quot;</span>);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $out-&gt;putLFloat($this-&gt;floatOverrideValue);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
