@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -132,54 +132,56 @@ $(function(){initNavTree('d7/d90/_water_8php_source.html','../../'); initResizab
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../de/d5e/classpocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound.html">pocketmine\world\sound\BucketEmptyWaterSound</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html">pocketmine\world\sound\BucketFillWaterSound</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_interface" href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">pocketmine\world\sound\Sound</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">Water</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a7b1679d7d712b16597f7b237460d23e0">   33</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a7b1679d7d712b16597f7b237460d23e0">getLightFilter</a>() : int{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        return 2;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d7/d5a/classpocketmine_1_1event_1_1entity_1_1_entity_extinguish_event.html">pocketmine\event\entity\EntityExtinguishEvent</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../de/d5e/classpocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound.html">pocketmine\world\sound\BucketEmptyWaterSound</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html">pocketmine\world\sound\BucketFillWaterSound</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_interface" href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">pocketmine\world\sound\Sound</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">Water</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a7b1679d7d712b16597f7b237460d23e0">   34</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a7b1679d7d712b16597f7b237460d23e0">getLightFilter</a>() : int{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        return 2;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBucketFillSound() : <a class="code hl_interface" href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">Sound</a>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return new <a class="code hl_class" href="../../d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html">BucketFillWaterSound</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBucketEmptySound() : Sound{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        return new BucketEmptyWaterSound();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> tickRate() : int{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        return 5;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a587ed7be02d38ecce968383d1aa7a0a5">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a587ed7be02d38ecce968383d1aa7a0a5">getMinAdjacentSourcesToFormSource</a>() : ?int{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        return 2;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBucketFillSound() : <a class="code hl_interface" href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">Sound</a>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        return new <a class="code hl_class" href="../../d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html">BucketFillWaterSound</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBucketEmptySound() : Sound{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        return new BucketEmptyWaterSound();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> tickRate() : int{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        return 5;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a587ed7be02d38ecce968383d1aa7a0a5">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a587ed7be02d38ecce968383d1aa7a0a5">getMinAdjacentSourcesToFormSource</a>() : ?int{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        return 2;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27">onEntityInside</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity) : bool{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $entity-&gt;resetFallDistance();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span>($entity-&gt;isOnFire()){</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $entity-&gt;extinguish();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27">   54</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27">onEntityInside</a>(<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity) : bool{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $entity-&gt;resetFallDistance();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span>($entity-&gt;isOnFire()){</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $entity-&gt;extinguish(EntityExtinguishEvent::CAUSE_WATER);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">pocketmine\block\Liquid</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00039">Liquid.php:39</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">pocketmine\block\Water</a></div><div class="ttdef"><b>Definition</b> <a href="#l00031">Water.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html_a587ed7be02d38ecce968383d1aa7a0a5"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a587ed7be02d38ecce968383d1aa7a0a5">pocketmine\block\Water\getMinAdjacentSourcesToFormSource</a></div><div class="ttdeci">getMinAdjacentSourcesToFormSource()</div><div class="ttdef"><b>Definition</b> <a href="#l00049">Water.php:49</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html_a669a839a096ecd3e7da4e48c69fdab27"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27">pocketmine\block\Water\onEntityInside</a></div><div class="ttdeci">onEntityInside(Entity $entity)</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Water.php:53</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html_a7b1679d7d712b16597f7b237460d23e0"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a7b1679d7d712b16597f7b237460d23e0">pocketmine\block\Water\getLightFilter</a></div><div class="ttdeci">getLightFilter()</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Water.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d1d/_entity_8php_source.html#l00085">Entity.php:85</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html">pocketmine\block\Water</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">Water.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html_a587ed7be02d38ecce968383d1aa7a0a5"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a587ed7be02d38ecce968383d1aa7a0a5">pocketmine\block\Water\getMinAdjacentSourcesToFormSource</a></div><div class="ttdeci">getMinAdjacentSourcesToFormSource()</div><div class="ttdef"><b>Definition</b> <a href="#l00050">Water.php:50</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html_a669a839a096ecd3e7da4e48c69fdab27"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a669a839a096ecd3e7da4e48c69fdab27">pocketmine\block\Water\onEntityInside</a></div><div class="ttdeci">onEntityInside(Entity $entity)</div><div class="ttdef"><b>Definition</b> <a href="#l00054">Water.php:54</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_water_html_a7b1679d7d712b16597f7b237460d23e0"><div class="ttname"><a href="../../d2/d3e/classpocketmine_1_1block_1_1_water.html#a7b1679d7d712b16597f7b237460d23e0">pocketmine\block\Water\getLightFilter</a></div><div class="ttdeci">getLightFilter()</div><div class="ttdef"><b>Definition</b> <a href="#l00034">Water.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d1d/_entity_8php_source.html#l00086">Entity.php:86</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1entity_1_1_entity_extinguish_event_html"><div class="ttname"><a href="../../d7/d5a/classpocketmine_1_1event_1_1entity_1_1_entity_extinguish_event.html">pocketmine\event\entity\EntityExtinguishEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d90/_entity_extinguish_event_8php_source.html#l00033">EntityExtinguishEvent.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound_html"><div class="ttname"><a href="../../de/d5e/classpocketmine_1_1world_1_1sound_1_1_bucket_empty_water_sound.html">pocketmine\world\sound\BucketEmptyWaterSound</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d98/_bucket_empty_water_sound_8php_source.html#l00030">BucketEmptyWaterSound.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound_html"><div class="ttname"><a href="../../d7/dfe/classpocketmine_1_1world_1_1sound_1_1_bucket_fill_water_sound.html">pocketmine\world\sound\BucketFillWaterSound</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d17/_bucket_fill_water_sound_8php_source.html#l00030">BucketFillWaterSound.php:30</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1sound_1_1_sound_html"><div class="ttname"><a href="../../d7/dbd/interfacepocketmine_1_1world_1_1sound_1_1_sound.html">pocketmine\world\sound\Sound</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/db3/_sound_8php_source.html#l00029">Sound.php:29</a></div></div>

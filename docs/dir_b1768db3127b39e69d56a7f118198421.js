@@ -1,6 +1,8 @@
 var dir_b1768db3127b39e69d56a7f118198421 =
 [
     [ "AuthenticationData.php", "d1/d58/_authentication_data_8php_source.html", null ],
+    [ "AuthenticationInfo.php", "d2/d38/_authentication_info_8php_source.html", null ],
+    [ "AuthenticationType.php", "d9/dd3/_authentication_type_8php_source.html", null ],
     [ "ClientData.php", "d6/da0/_client_data_8php_source.html", null ],
     [ "ClientDataAnimationFrame.php", "d5/df7/_client_data_animation_frame_8php_source.html", null ],
     [ "ClientDataPersonaPieceTintColor.php", "d2/d99/_client_data_persona_piece_tint_color_8php_source.html", null ],

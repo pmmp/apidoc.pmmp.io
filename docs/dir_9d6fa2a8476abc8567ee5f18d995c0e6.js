@@ -15,6 +15,8 @@ var dir_9d6fa2a8476abc8567ee5f18d995c0e6 =
     [ "EntityEffectRemoveEvent.php", "d3/d8a/_entity_effect_remove_event_8php_source.html", null ],
     [ "EntityEvent.php", "d3/d55/_entity_event_8php_source.html", null ],
     [ "EntityExplodeEvent.php", "d7/de4/_entity_explode_event_8php_source.html", null ],
+    [ "EntityExtinguishEvent.php", "d8/d90/_entity_extinguish_event_8php_source.html", null ],
+    [ "EntityFrostWalkerEvent.php", "d0/d00/_entity_frost_walker_event_8php_source.html", null ],
     [ "EntityItemPickupEvent.php", "d0/dfc/_entity_item_pickup_event_8php_source.html", null ],
     [ "EntityMotionEvent.php", "d1/d60/_entity_motion_event_8php_source.html", null ],
     [ "EntityPreExplodeEvent.php", "d3/d15/_entity_pre_explode_event_8php_source.html", null ],

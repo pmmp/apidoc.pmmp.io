@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['data_0',['DATA',['../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a7b54ac127eff1ec81baca04f1147d3d4',1,'pocketmine::BootstrapOptions']]],
-  ['default_5fknockback_5fforce_1',['DEFAULT_KNOCKBACK_FORCE',['../df/d0c/classpocketmine_1_1entity_1_1_living.html#a4e8978f8b3b0896c5279379b1b950099',1,'pocketmine::entity::Living']]],
-  ['default_5fknockback_5fvertical_5flimit_2',['DEFAULT_KNOCKBACK_VERTICAL_LIMIT',['../df/d0c/classpocketmine_1_1entity_1_1_living.html#a72313b6172199315104d3a77a86d3b9d',1,'pocketmine::entity::Living']]],
-  ['default_5fname_3',['DEFAULT_NAME',['../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a29cc61d550f0851f92c81e6de5b22137',1,'pocketmine::wizard::SetupWizard']]],
-  ['default_5fplayers_4',['DEFAULT_PLAYERS',['../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a56f5764f3c3646e79bc25c2f0a09b033',1,'pocketmine::wizard::SetupWizard']]],
-  ['default_5fport_5',['DEFAULT_PORT',['../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#aca92aa8fd97856d4aa6bbc74fa7efccf',1,'pocketmine::wizard::SetupWizard']]],
-  ['default_5fprotocol_5fversion_6',['DEFAULT_PROTOCOL_VERSION',['../d8/df8/classraklib_1_1_rak_lib.html#abe0576f55dd8e96f068b950983c480c5',1,'raklib::RakLib']]],
-  ['descend_7',['DESCEND',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#ae5f5835fafc1982076f18b4e3e5526fe',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['descend_5fblock_8',['DESCEND_BLOCK',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#aef2c1851b5f15202a1270aa6a659c207',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['destructorcallbacktrait_9',['DestructorCallbackTrait',['../dc/db6/namespacepocketmine_1_1utils.html#ad98db57f3818da64908f44911e58a54d',1,'pocketmine::utils']]],
-  ['disable_5fansi_10',['DISABLE_ANSI',['../d7/dbe/classpocketmine_1_1_bootstrap_options.html#a26388a62b5ecd73cbaa5295261ee679f',1,'pocketmine::BootstrapOptions']]],
-  ['down_11',['DOWN',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a3f68c49f7ba456178eeee2fe0486fd54',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]]
+  ['cancel_5freason_5fuser_5fbusy_0',['CANCEL_REASON_USER_BUSY',['../db/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_modal_form_response_packet.html#a7371a432fa83388518bea160d8ab8489',1,'pocketmine::network::mcpe::protocol::ModalFormResponsePacket']]],
+  ['cancellabletrait_1',['CancellableTrait',['../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa',1,'pocketmine::event']]],
+  ['cap_2',['CAP',['../d3/da7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute_modifier_operation.html#af8c7cbf6dbcdc2908c74c03a455e2b0c',1,'pocketmine::network::mcpe::protocol::types::entity::AttributeModifierOperation']]],
+  ['change_5fheight_3',['CHANGE_HEIGHT',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a42c7ea10d59b24aff475d51e11db7684',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
+  ['classic_4',['CLASSIC',['../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#a1eccd46a43c5559aa2905c285267aea2',1,'pocketmine::world::format::io::leveldb::SubChunkVersion']]],
+  ['cloningregistrytrait_5',['CloningRegistryTrait',['../dc/db6/namespacepocketmine_1_1utils.html#ac8a9451e10503894f63193bcb2785ef5',1,'pocketmine::utils']]],
+  ['compatible_5ftool_5fmultiplier_6',['COMPATIBLE_TOOL_MULTIPLIER',['../d3/d10/classpocketmine_1_1block_1_1_block_break_info.html#a179f5cc0dee61f10436213c8b0ee12ac',1,'pocketmine::block::BlockBreakInfo']]],
+  ['containertrait_7',['ContainerTrait',['../db/dba/namespacepocketmine_1_1block_1_1tile.html#ae569096e2d912dc5e923d0330da10368',1,'pocketmine::block::tile']]],
+  ['contravariant_8',['CONTRAVARIANT',['../d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a52a82976c269b2fae333169b9e369a93',1,'DaveRandom\CallbackValidator\ParameterType\CONTRAVARIANT'],['../d9/d22/class_dave_random_1_1_callback_validator_1_1_return_type.html#a82f3b115f8730f457292ebeae410cb85',1,'DaveRandom\CallbackValidator\ReturnType\CONTRAVARIANT']]],
+  ['covariant_9',['COVARIANT',['../d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html#a43afeae9b6d89fb8a941cd8f4fdd8bf1',1,'DaveRandom\CallbackValidator\ParameterType\COVARIANT'],['../d9/d22/class_dave_random_1_1_callback_validator_1_1_return_type.html#af940787cab773ac9050caad86caeb5a2',1,'DaveRandom\CallbackValidator\ReturnType\COVARIANT']]],
+  ['current_5fprotocol_10',['CURRENT_PROTOCOL',['../db/dab/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_protocol_info.html#ae46f498b2bb241bfb097d104dde58b0e',1,'pocketmine::network::mcpe::protocol::ProtocolInfo']]]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -196,9 +196,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1ba9aff09cc1ea7dfe1eb68f0c95e5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049048f931ffa40ebfc2c3bf866fdbc6" id="r_a049048f931ffa40ebfc2c3bf866fdbc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d4e/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_data.html">WorldData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfa/classpocketmine_1_1world_1_1format_1_1io_1_1_base_world_provider.html#a049048f931ffa40ebfc2c3bf866fdbc6">$worldData</a></td></tr>
 <tr class="separator:a049048f931ffa40ebfc2c3bf866fdbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464b57e1b0e9e6af7f3b7e709ea6edeb" id="r_a464b57e1b0e9e6af7f3b7e709ea6edeb"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a464b57e1b0e9e6af7f3b7e709ea6edeb">CURRENT_LEVEL_CHUNK_VERSION</a> = ChunkVersion::v1_21_40</td></tr>
+<tr class="memitem:a464b57e1b0e9e6af7f3b7e709ea6edeb" id="r_a464b57e1b0e9e6af7f3b7e709ea6edeb"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a464b57e1b0e9e6af7f3b7e709ea6edeb">CURRENT_LEVEL_CHUNK_VERSION</a> = WorldDataVersions::CHUNK</td></tr>
 <tr class="separator:a464b57e1b0e9e6af7f3b7e709ea6edeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a984ca79c8330289ee86042e233417ed8" id="r_a984ca79c8330289ee86042e233417ed8"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a984ca79c8330289ee86042e233417ed8">CURRENT_LEVEL_SUBCHUNK_VERSION</a> = <a class="el" href="../../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#adcde846e62dd7d2e55688d42c2dcb510">SubChunkVersion::PALETTED_MULTI</a></td></tr>
+<tr class="memitem:a984ca79c8330289ee86042e233417ed8" id="r_a984ca79c8330289ee86042e233417ed8"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a984ca79c8330289ee86042e233417ed8">CURRENT_LEVEL_SUBCHUNK_VERSION</a> = WorldDataVersions::SUBCHUNK</td></tr>
 <tr class="separator:a984ca79c8330289ee86042e233417ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee52ae7f696609b304942f3a17d82cd" id="r_aaee52ae7f696609b304942f3a17d82cd"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee52ae7f696609b304942f3a17d82cd">ENTRY_FLAT_WORLD_LAYERS</a> = &quot;game_flatworldlayers&quot;</td></tr>
 <tr class="separator:aaee52ae7f696609b304942f3a17d82cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +211,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00073">73</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00075">75</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0f9d3ac98c5718de73db0f6f7500dee8" name="a0f9d3ac98c5718de73db0f6f7500dee8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f9d3ac98c5718de73db0f6f7500dee8">&#9670;&#160;</a></span>__construct()</h2>
@@ -232,7 +232,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00108">108</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00110">110</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#a7644843370cbc80adf8596ee50110656">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00849">849</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00857">857</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00816">816</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00824">824</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#ad2fd7628b6f7bb1950dcd98c4dc162cc">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00824">824</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00832">832</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00150">150</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00152">152</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/d34/_binary_stream_8php_source.html#l00067">pocketmine\utils\BinaryStream\get()</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -401,7 +401,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>@phpstan-param-out int $x @phpstan-param-out int $y @phpstan-param-out int $z </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00351">351</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00359">359</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -438,7 +438,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>PalettedBlockArray[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00366">366</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00374">374</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -460,7 +460,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#a089284b1e35b697cb95b78cdefd46bae">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00820">820</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00828">828</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00136">136</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00138">138</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -529,7 +529,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#aa6fdc6b347541aebca6f1d39d1455193">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00828">828</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00836">836</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d00/interface_logger.html#a711b6da57691871ad09531bae84d7c5e">Logger\error()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -557,7 +557,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00812">812</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00820">820</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#adecb4b899e7dff6ca40b52c54fdf5c52">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00128">128</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00130">130</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -660,7 +660,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#af3a46f69a8b5e19ad69ded22a7b91ef9">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00124">124</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00126">126</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00132">132</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00134">134</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d94/interfacepocketmine_1_1world_1_1format_1_1io_1_1_world_provider.html#ac05ecc799aa5743ffe20d3ab41fc7a0f">pocketmine\world\format\io\WorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00641">641</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00649">649</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d6/dfa/classpocketmine_1_1world_1_1format_1_1io_1_1_base_world_provider.html#ab7889251117bee905ffd7501818c726c">pocketmine\world\format\io\BaseWorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00120">120</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00122">122</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -903,7 +903,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d1b/interfacepocketmine_1_1world_1_1format_1_1io_1_1_writable_world_provider.html#af2dc3ab158864164b856f6617fc52038">pocketmine\world\format\io\WritableWorldProvider</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00749">749</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00757">757</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1000,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00086">86</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00088">88</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\world\format\io\leveldb\LevelDB::CURRENT_LEVEL_CHUNK_VERSION = ChunkVersion::v1_21_40</td>
+          <td class="memname">const pocketmine\world\format\io\leveldb\LevelDB::CURRENT_LEVEL_CHUNK_VERSION = WorldDataVersions::CHUNK</td>
         </tr>
       </table>
   </td>
@@ -1048,7 +1048,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00081">81</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00083">83</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\world\format\io\leveldb\LevelDB::CURRENT_LEVEL_SUBCHUNK_VERSION = <a class="el" href="../../dc/dfe/classpocketmine_1_1world_1_1format_1_1io_1_1leveldb_1_1_sub_chunk_version.html#adcde846e62dd7d2e55688d42c2dcb510">SubChunkVersion::PALETTED_MULTI</a></td>
+          <td class="memname">const pocketmine\world\format\io\leveldb\LevelDB::CURRENT_LEVEL_SUBCHUNK_VERSION = WorldDataVersions::SUBCHUNK</td>
         </tr>
       </table>
   </td>
@@ -1072,7 +1072,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00082">82</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00084">84</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1096,7 +1096,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00079">79</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00081">81</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1120,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00077">77</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00079">79</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1144,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00075">75</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00077">77</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1168,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00076">76</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d16/_level_d_b_8php_source.html#l00078">78</a> of file <a class="el" href="../../df/d16/_level_d_b_8php_source.html">LevelDB.php</a>.</p>
 
 </div>
 </div>

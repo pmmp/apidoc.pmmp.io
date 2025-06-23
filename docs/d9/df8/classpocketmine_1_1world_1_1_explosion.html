@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -120,12 +120,14 @@ $(function(){initNavTree('d9/df8/classpocketmine_1_1world_1_1_explosion.html','.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade8cb8a31d082f5f47e1d34005928c02" id="r_ade8cb8a31d082f5f47e1d34005928c02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8cb8a31d082f5f47e1d34005928c02">__construct</a> (public <a class="el" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a> $source, public float $radius, private <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a>|<a class="el" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>|null $what=null)</td></tr>
-<tr class="separator:ade8cb8a31d082f5f47e1d34005928c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e77ab19d3a21841c9f5643359f26eb" id="r_a59e77ab19d3a21841c9f5643359f26eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59e77ab19d3a21841c9f5643359f26eb">__construct</a> (public <a class="el" href="../../d5/dd2/classpocketmine_1_1world_1_1_position.html">Position</a> $source, public float $radius, private <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a>|<a class="el" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>|null $what=null, private float $fireChance=0.0)</td></tr>
+<tr class="separator:a59e77ab19d3a21841c9f5643359f26eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed8a045f9c5b92f43d61066d03421bc" id="r_afed8a045f9c5b92f43d61066d03421bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afed8a045f9c5b92f43d61066d03421bc">explodeA</a> ()</td></tr>
 <tr class="separator:afed8a045f9c5b92f43d61066d03421bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad68b706732575363a6004a43661a823f" id="r_ad68b706732575363a6004a43661a823f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad68b706732575363a6004a43661a823f">explodeB</a> ()</td></tr>
 <tr class="separator:ad68b706732575363a6004a43661a823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764e2344e96597402c63a666e67c6474" id="r_a764e2344e96597402c63a666e67c6474"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a764e2344e96597402c63a666e67c6474">setFireChance</a> (float $fireChance)</td></tr>
+<tr class="separator:a764e2344e96597402c63a666e67c6474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -135,13 +137,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac44cb95efc8a9c9644fe2a90776f1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab67495ea1ac0e15e4f60ea9a25649b3" id="r_aab67495ea1ac0e15e4f60ea9a25649b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab67495ea1ac0e15e4f60ea9a25649b3">$world</a></td></tr>
 <tr class="separator:aab67495ea1ac0e15e4f60ea9a25649b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9e99e781c080ccb0f263d61e63f380" id="r_a5d9e99e781c080ccb0f263d61e63f380"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d9e99e781c080ccb0f263d61e63f380">DEFAULT_FIRE_CHANCE</a> = 1.0 / 3.0</td></tr>
+<tr class="separator:a5d9e99e781c080ccb0f263d61e63f380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00050">50</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00054">54</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ade8cb8a31d082f5f47e1d34005928c02" name="ade8cb8a31d082f5f47e1d34005928c02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8cb8a31d082f5f47e1d34005928c02">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a59e77ab19d3a21841c9f5643359f26eb" name="a59e77ab19d3a21841c9f5643359f26eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e77ab19d3a21841c9f5643359f26eb">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,12 +163,17 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">private <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a>|<a class="el" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>|null</td>          <td class="paramname"><span class="paramname"><em>$what</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">private <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a>|<a class="el" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>|null</td>          <td class="paramname"><span class="paramname"><em>$what</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">private float</td>          <td class="paramname"><span class="paramname"><em>$fireChance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00060">60</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00071">71</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 
 </div>
 </div>
@@ -185,7 +194,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculates which blocks will be destroyed by this explosion. If explodeB() is called without calling this, no blocks will be destroyed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00080">80</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00095">95</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 
 </div>
 </div>
@@ -205,7 +214,33 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Executes the explosion's effects on the world. This includes destroying blocks (if any), harming and knocking back entities, and creating sounds and particles. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00148">148</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00169">169</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+
+</div>
+</div>
+<a id="a764e2344e96597402c63a666e67c6474" name="a764e2344e96597402c63a666e67c6474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764e2344e96597402c63a666e67c6474">&#9670;&#160;</a></span>setFireChance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\world\Explosion::setFireChance </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$fireChance</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a chance between 0 and 1 of creating a fire. For example, if the chance is 1/3, then that amount of affected blocks will be ignited.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">float</td><td class="paramname">$fireChance</td><td>0 ... 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00278">278</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 
 </div>
 </div>
@@ -222,7 +257,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00055">55</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00064">64</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 
 </div>
 </div>
@@ -238,7 +273,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00056">56</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00065">65</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 
 </div>
 </div>
@@ -254,7 +289,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00052">52</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00058">58</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
+
+</div>
+</div>
+<a id="a5d9e99e781c080ccb0f263d61e63f380" name="a5d9e99e781c080ccb0f263d61e63f380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9e99e781c080ccb0f263d61e63f380">&#9670;&#160;</a></span>DEFAULT_FIRE_CHANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\world\Explosion::DEFAULT_FIRE_CHANCE = 1.0 / 3.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/deb/_explosion_8php_source.html#l00055">55</a> of file <a class="el" href="../../db/deb/_explosion_8php_source.html">Explosion.php</a>.</p>
 
 </div>
 </div>

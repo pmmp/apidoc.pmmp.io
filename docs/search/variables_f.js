@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['sneak_5fdown_0',['SNEAK_DOWN',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a2d28fa2f36d19969c54036cc7f91af1d',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['sneak_5ftoggle_5fdown_1',['SNEAK_TOGGLE_DOWN',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a0b1ed713fa748ca5b4a3476cb2e967d7',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['sneaking_2',['SNEAKING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a67a06ed88b5bbe909c7425f30c6923e9',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['source_5ftype_5fcrafting_5fresult_3',['SOURCE_TYPE_CRAFTING_RESULT',['../d5/da8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_network_inventory_action.html#ad9346d7c46042dbc23c3ca68bccb8d48',1,'pocketmine::network::mcpe::protocol::types::inventory::NetworkInventoryAction']]],
-  ['sprint_5fdown_4',['SPRINT_DOWN',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a3c615a13f55cc8901a01ec33190ed3bd',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['sprinting_5',['SPRINTING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a1f4a5091799df3ebfdab5574d297849e',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['start_5fjumping_6',['START_JUMPING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#af9866f3aa8f5c5af9f4b5ace7c451668',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
-  ['strikethrough_7',['STRIKETHROUGH',['../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0671e59be6d7188889a00867161762c1',1,'pocketmine::utils::TextFormat']]]
+  ['reference_0',['REFERENCE',['../d6/d33/class_dave_random_1_1_callback_validator_1_1_type.html#a4aa79ff2930e07dea7ad7476bf7e30d2',1,'DaveRandom::CallbackValidator::Type']]],
+  ['registrytrait_1',['RegistryTrait',['../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838',1,'pocketmine::utils']]],
+  ['right_2',['RIGHT',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#adbd96e22f852fd91b4250d0a6bca6b30',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]]
 ];

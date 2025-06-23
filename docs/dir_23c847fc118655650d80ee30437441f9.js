@@ -39,6 +39,7 @@ var dir_23c847fc118655650d80ee30437441f9 =
     [ "PlayerPreLoginEvent.php", "d0/d06/_player_pre_login_event_8php_source.html", null ],
     [ "PlayerQuitEvent.php", "de/df5/_player_quit_event_8php_source.html", null ],
     [ "PlayerResourcePackOfferEvent.php", "d2/d43/_player_resource_pack_offer_event_8php_source.html", null ],
+    [ "PlayerRespawnAnchorUseEvent.php", "d0/d25/_player_respawn_anchor_use_event_8php_source.html", null ],
     [ "PlayerRespawnEvent.php", "d0/d5a/_player_respawn_event_8php_source.html", null ],
     [ "PlayerToggleFlightEvent.php", "d7/d75/_player_toggle_flight_event_8php_source.html", null ],
     [ "PlayerToggleGlideEvent.php", "df/da0/_player_toggle_glide_event_8php_source.html", null ],

@@ -185,6 +185,7 @@ var namespacepocketmine_1_1block =
     [ "RedstoneWire", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire" ],
     [ "Reserved6", "dd/dec/classpocketmine_1_1block_1_1_reserved6.html", "dd/dec/classpocketmine_1_1block_1_1_reserved6" ],
     [ "ResinClump", "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html", "d1/da4/classpocketmine_1_1block_1_1_resin_clump" ],
+    [ "RespawnAnchor", "d3/dfe/classpocketmine_1_1block_1_1_respawn_anchor.html", "d3/dfe/classpocketmine_1_1block_1_1_respawn_anchor" ],
     [ "RuntimeBlockStateRegistry", "de/d2c/classpocketmine_1_1block_1_1_runtime_block_state_registry.html", "de/d2c/classpocketmine_1_1block_1_1_runtime_block_state_registry" ],
     [ "Sand", "d3/d39/classpocketmine_1_1block_1_1_sand.html", "d3/d39/classpocketmine_1_1block_1_1_sand" ],
     [ "Sapling", "d6/d87/classpocketmine_1_1block_1_1_sapling.html", "d6/d87/classpocketmine_1_1block_1_1_sapling" ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -305,46 +305,52 @@ $(function(){initNavTree('de/df1/_entity_factory_8php_source.html','../../'); in
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    }</div>
 </div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a140262fc8d6039b274a4ede9e453dbed">  228</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a140262fc8d6039b274a4ede9e453dbed">createFromData</a>(<a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a> $world, <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : ?<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a>{</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        try{</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            $saveId = $nbt-&gt;getTag(self::TAG_IDENTIFIER) ?? $nbt-&gt;getTag(self::TAG_LEGACY_ID);</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            $func = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordflow">if</span>($saveId instanceof <a class="code hl_class" href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">StringTag</a>){</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                $func = $this-&gt;creationFuncs[$saveId-&gt;getValue()] ?? <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            }elseif($saveId instanceof <a class="code hl_class" href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">IntTag</a>){ <span class="comment">//legacy MCPE format</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                $stringId = LegacyEntityIdToStringIdMap::getInstance()-&gt;legacyToString($saveId-&gt;getValue() &amp; 0xff);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                $func = $stringId !== <span class="keyword">null</span> ? $this-&gt;creationFuncs[$stringId] ?? null : <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="keywordflow">if</span>($func === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            }</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            $entity = $func($world, $nbt);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            <span class="keywordflow">return</span> $entity;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }<span class="keywordflow">catch</span>(NbtException $e){</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> SavedDataLoadingException($e-&gt;getMessage(), 0, $e);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    }</div>
+<div class="foldopen" id="foldopen00225" data-start="{" data-end="}">
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a0416af7eb54cf9b3c2641db5809d2f47">  225</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a0416af7eb54cf9b3c2641db5809d2f47">isRegistered</a>(<span class="keywordtype">string</span> $class) : bool{</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        return isset($this-&gt;saveNames[$class]);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    }</div>
 </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keyword">public</span> <span class="keyword">function</span> injectSaveId(<span class="keywordtype">string</span> $class, CompoundTag $saveData) : void{</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        if(isset($this-&gt;saveNames[$class])){</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            $saveData-&gt;setTag(self::TAG_IDENTIFIER, <span class="keyword">new</span> StringTag($this-&gt;saveNames[$class]));</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Entity $class is not registered&quot;</span>);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        }</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a4954fbc4022782addae15e9cbb88a888">  261</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a4954fbc4022782addae15e9cbb88a888">getSaveId</a>(<span class="keywordtype">string</span> $class) : string{</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        if(isset($this-&gt;saveNames[$class])){</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">return</span> $this-&gt;saveNames[$class];</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        }</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Entity $class is not registered&quot;</span>);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a140262fc8d6039b274a4ede9e453dbed">  235</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a140262fc8d6039b274a4ede9e453dbed">createFromData</a>(<a class="code hl_class" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">World</a> $world, <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : ?<a class="code hl_class" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a>{</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        try{</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            $saveId = $nbt-&gt;getTag(self::TAG_IDENTIFIER) ?? $nbt-&gt;getTag(self::TAG_LEGACY_ID);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            $func = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">if</span>($saveId instanceof <a class="code hl_class" href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">StringTag</a>){</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                $func = $this-&gt;creationFuncs[$saveId-&gt;getValue()] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            }elseif($saveId instanceof <a class="code hl_class" href="../../d1/dca/classpocketmine_1_1nbt_1_1tag_1_1_int_tag.html">IntTag</a>){ <span class="comment">//legacy MCPE format</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                $stringId = LegacyEntityIdToStringIdMap::getInstance()-&gt;legacyToString($saveId-&gt;getValue() &amp; 0xff);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                $func = $stringId !== <span class="keyword">null</span> ? $this-&gt;creationFuncs[$stringId] ?? null : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keywordflow">if</span>($func === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            }</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            $entity = $func($world, $nbt);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keywordflow">return</span> $entity;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        }<span class="keywordflow">catch</span>(NbtException $e){</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> SavedDataLoadingException($e-&gt;getMessage(), 0, $e);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
 </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>}</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">public</span> <span class="keyword">function</span> injectSaveId(<span class="keywordtype">string</span> $class, CompoundTag $saveData) : void{</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        if(isset($this-&gt;saveNames[$class])){</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            $saveData-&gt;setTag(self::TAG_IDENTIFIER, <span class="keyword">new</span> StringTag($this-&gt;saveNames[$class]));</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Entity $class is not registered&quot;</span>);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="foldopen" id="foldopen00268" data-start="{" data-end="}">
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a4954fbc4022782addae15e9cbb88a888">  268</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a4954fbc4022782addae15e9cbb88a888">getSaveId</a>(<span class="keywordtype">string</span> $class) : string{</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        if(isset($this-&gt;saveNames[$class])){</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keywordflow">return</span> $this-&gt;saveNames[$class];</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        }</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Entity $class is not registered&quot;</span>);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
+</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
 </div>
 <div class="ttc" id="aclass_dave_random_1_1_callback_validator_1_1_callback_type_html"><div class="ttname"><a href="../../d6/dae/class_dave_random_1_1_callback_validator_1_1_callback_type.html">DaveRandom\CallbackValidator\CallbackType</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/db9/_callback_type_8php_source.html#l00005">CallbackType.php:6</a></div></div>
 <div class="ttc" id="aclass_dave_random_1_1_callback_validator_1_1_parameter_type_html"><div class="ttname"><a href="../../d4/de9/class_dave_random_1_1_callback_validator_1_1_parameter_type.html">DaveRandom\CallbackValidator\ParameterType</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d4c/_parameter_type_8php_source.html#l00005">ParameterType.php:6</a></div></div>
@@ -356,9 +362,10 @@ $(function(){initNavTree('de/df1/_entity_factory_8php_source.html','../../'); in
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_potion_type_ids_html"><div class="ttname"><a href="../../d2/dff/classpocketmine_1_1data_1_1bedrock_1_1_potion_type_ids.html">pocketmine\data\bedrock\PotionTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d8e/_potion_type_ids_8php_source.html#l00026">PotionTypeIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_data_helper_html"><div class="ttname"><a href="../../d5/dbd/classpocketmine_1_1entity_1_1_entity_data_helper.html">pocketmine\entity\EntityDataHelper</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d77/_entity_data_helper_8php_source.html#l00038">EntityDataHelper.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html">pocketmine\entity\EntityFactory</a></div><div class="ttdef"><b>Definition</b> <a href="#l00068">EntityFactory.php:68</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html_a140262fc8d6039b274a4ede9e453dbed"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a140262fc8d6039b274a4ede9e453dbed">pocketmine\entity\EntityFactory\createFromData</a></div><div class="ttdeci">createFromData(World $world, CompoundTag $nbt)</div><div class="ttdef"><b>Definition</b> <a href="#l00228">EntityFactory.php:228</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html_a4954fbc4022782addae15e9cbb88a888"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a4954fbc4022782addae15e9cbb88a888">pocketmine\entity\EntityFactory\getSaveId</a></div><div class="ttdeci">getSaveId(string $class)</div><div class="ttdef"><b>Definition</b> <a href="#l00261">EntityFactory.php:261</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d1d/_entity_8php_source.html#l00085">Entity.php:85</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html_a0416af7eb54cf9b3c2641db5809d2f47"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a0416af7eb54cf9b3c2641db5809d2f47">pocketmine\entity\EntityFactory\isRegistered</a></div><div class="ttdeci">isRegistered(string $class)</div><div class="ttdef"><b>Definition</b> <a href="#l00225">EntityFactory.php:225</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html_a140262fc8d6039b274a4ede9e453dbed"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a140262fc8d6039b274a4ede9e453dbed">pocketmine\entity\EntityFactory\createFromData</a></div><div class="ttdeci">createFromData(World $world, CompoundTag $nbt)</div><div class="ttdef"><b>Definition</b> <a href="#l00235">EntityFactory.php:235</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_factory_html_a4954fbc4022782addae15e9cbb88a888"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1entity_1_1_entity_factory.html#a4954fbc4022782addae15e9cbb88a888">pocketmine\entity\EntityFactory\getSaveId</a></div><div class="ttdeci">getSaveId(string $class)</div><div class="ttdef"><b>Definition</b> <a href="#l00268">EntityFactory.php:268</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1entity_1_1_entity_html"><div class="ttname"><a href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d1d/_entity_8php_source.html#l00086">Entity.php:86</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d3c/_human_8php_source.html#l00081">Human.php:81</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_human_html_a3951eae5207d661583a15363e2f14f3d"><div class="ttname"><a href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a3951eae5207d661583a15363e2f14f3d">pocketmine\entity\Human\parseSkinNBT</a></div><div class="ttdeci">static parseSkinNBT(CompoundTag $nbt)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d3c/_human_8php_source.html#l00128">Human.php:128</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_squid_html"><div class="ttname"><a href="../../d5/d49/classpocketmine_1_1entity_1_1_squid.html">pocketmine\entity\Squid</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/df8/_squid_8php_source.html#l00039">Squid.php:39</a></div></div>
@@ -388,7 +395,7 @@ $(function(){initNavTree('de/df1/_entity_factory_8php_source.html','../../'); in
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_short_tag_html"><div class="ttname"><a href="../../db/d53/classpocketmine_1_1nbt_1_1tag_1_1_short_tag.html">pocketmine\nbt\tag\ShortTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d74/_short_tag_8php_source.html#l00030">ShortTag.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_string_tag_html"><div class="ttname"><a href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">pocketmine\nbt\tag\StringTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d19/_string_tag_8php_source.html#l00033">StringTag.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00105">Utils.php:105</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d88/_world_8php_source.html#l00148">World.php:148</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d88/_world_8php_source.html#l00150">World.php:150</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1entity_html"><div class="ttname"><a href="../../d7/db9/namespacepocketmine_1_1entity.html">pocketmine\entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcd/_ageable_8php_source.html#l00024">Ageable.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

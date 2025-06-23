@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -1814,174 +1814,178 @@ $(function(){initNavTree('d4/d68/_block_state_to_object_deserializer_8php_source
 <div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span>        $this-&gt;mapStairs(Ids::RESIN_BRICK_STAIRS, fn() =&gt; Blocks::RESIN_BRICK_STAIRS());</div>
 <div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>        $this-&gt;map(Ids::RESIN_BRICK_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::RESIN_BRICK_WALL(), $in));</div>
 <div class="line"><a id="l01719" name="l01719"></a><span class="lineno"> 1719</span>        $this-&gt;map(Ids::RESIN_CLUMP, fn(Reader $in) =&gt; Blocks::RESIN_CLUMP()-&gt;setFaces($in-&gt;readFacingFlags()));</div>
-<div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span>        $this-&gt;mapSlab(Ids::SANDSTONE_SLAB, Ids::SANDSTONE_DOUBLE_SLAB, fn() =&gt; Blocks::SANDSTONE_SLAB());</div>
-<div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>        $this-&gt;mapStairs(Ids::SANDSTONE_STAIRS, fn() =&gt; Blocks::SANDSTONE_STAIRS());</div>
-<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>        $this-&gt;map(Ids::SANDSTONE_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::SANDSTONE_WALL(), $in));</div>
-<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>        $this-&gt;map(Ids::SEA_PICKLE, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>            <span class="keywordflow">return</span> Blocks::SEA_PICKLE()</div>
-<div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>                -&gt;setCount($in-&gt;readBoundedInt(StateNames::CLUSTER_COUNT, 0, 3) + 1)</div>
-<div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span>                -&gt;setUnderwater(!$in-&gt;readBool(StateNames::DEAD_BIT));</div>
-<div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>        });</div>
-<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>        $this-&gt;map(Ids::SMOKER, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span>            <span class="keywordflow">return</span> Blocks::SMOKER()</div>
-<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing())</div>
-<div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>                -&gt;setLit(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>        });</div>
-<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>        $this-&gt;map(Ids::SMALL_AMETHYST_BUD, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>            <span class="keywordflow">return</span> Blocks::AMETHYST_CLUSTER()</div>
-<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>                -&gt;setStage(AmethystCluster::STAGE_SMALL_BUD)</div>
-<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>                -&gt;setFacing($in-&gt;readBlockFace());</div>
-<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>        });</div>
-<div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>        $this-&gt;map(Ids::SMALL_DRIPLEAF_BLOCK, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>            <span class="keywordflow">return</span> Blocks::SMALL_DRIPLEAF()</div>
-<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing())</div>
-<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>                -&gt;setTop($in-&gt;readBool(StateNames::UPPER_BLOCK_BIT));</div>
-<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>        });</div>
-<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>        $this-&gt;map(Ids::SMOOTH_QUARTZ, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>            $in-&gt;ignored(StateNames::PILLAR_AXIS);</div>
-<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>            <span class="keywordflow">return</span> Blocks::SMOOTH_QUARTZ();</div>
+<div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span>        $this-&gt;map(Ids::RESPAWN_ANCHOR, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>            <span class="keywordflow">return</span> Blocks::RESPAWN_ANCHOR()</div>
+<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>                -&gt;setCharges($in-&gt;readBoundedInt(StateNames::RESPAWN_ANCHOR_CHARGE, 0, 4));</div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>        });</div>
+<div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>        $this-&gt;mapSlab(Ids::SANDSTONE_SLAB, Ids::SANDSTONE_DOUBLE_SLAB, fn() =&gt; Blocks::SANDSTONE_SLAB());</div>
+<div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>        $this-&gt;mapStairs(Ids::SANDSTONE_STAIRS, fn() =&gt; Blocks::SANDSTONE_STAIRS());</div>
+<div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span>        $this-&gt;map(Ids::SANDSTONE_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::SANDSTONE_WALL(), $in));</div>
+<div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>        $this-&gt;map(Ids::SEA_PICKLE, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>            <span class="keywordflow">return</span> Blocks::SEA_PICKLE()</div>
+<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span>                -&gt;setCount($in-&gt;readBoundedInt(StateNames::CLUSTER_COUNT, 0, 3) + 1)</div>
+<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>                -&gt;setUnderwater(!$in-&gt;readBool(StateNames::DEAD_BIT));</div>
+<div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>        });</div>
+<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>        $this-&gt;map(Ids::SMOKER, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>            <span class="keywordflow">return</span> Blocks::SMOKER()</div>
+<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing())</div>
+<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>                -&gt;setLit(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>        });</div>
+<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>        $this-&gt;map(Ids::SMALL_AMETHYST_BUD, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>            <span class="keywordflow">return</span> Blocks::AMETHYST_CLUSTER()</div>
+<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>                -&gt;setStage(AmethystCluster::STAGE_SMALL_BUD)</div>
+<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>                -&gt;setFacing($in-&gt;readBlockFace());</div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>        });</div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>        $this-&gt;map(Ids::SMALL_DRIPLEAF_BLOCK, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>            <span class="keywordflow">return</span> Blocks::SMALL_DRIPLEAF()</div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing())</div>
+<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>                -&gt;setTop($in-&gt;readBool(StateNames::UPPER_BLOCK_BIT));</div>
 <div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>        });</div>
-<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>        $this-&gt;mapSlab(Ids::SMOOTH_QUARTZ_SLAB, Ids::SMOOTH_QUARTZ_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_QUARTZ_SLAB());</div>
-<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>        $this-&gt;mapStairs(Ids::SMOOTH_QUARTZ_STAIRS, fn() =&gt; Blocks::SMOOTH_QUARTZ_STAIRS());</div>
-<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>        $this-&gt;mapSlab(Ids::SMOOTH_RED_SANDSTONE_SLAB, Ids::SMOOTH_RED_SANDSTONE_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_RED_SANDSTONE_SLAB());</div>
-<div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>        $this-&gt;mapStairs(Ids::SMOOTH_RED_SANDSTONE_STAIRS, fn() =&gt; Blocks::SMOOTH_RED_SANDSTONE_STAIRS());</div>
-<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>        $this-&gt;mapSlab(Ids::SMOOTH_SANDSTONE_SLAB, Ids::SMOOTH_SANDSTONE_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_SANDSTONE_SLAB());</div>
-<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>        $this-&gt;mapStairs(Ids::SMOOTH_SANDSTONE_STAIRS, fn() =&gt; Blocks::SMOOTH_SANDSTONE_STAIRS());</div>
-<div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>        $this-&gt;mapSlab(Ids::SMOOTH_STONE_SLAB, Ids::SMOOTH_STONE_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_STONE_SLAB());</div>
-<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        $this-&gt;map(Ids::SNOW_LAYER, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span>            $in-&gt;ignored(StateNames::COVERED_BIT); <span class="comment">//seems to be useless</span></div>
-<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>            <span class="keywordflow">return</span> Blocks::SNOW_LAYER()-&gt;setLayers($in-&gt;readBoundedInt(StateNames::HEIGHT, 0, 7) + 1);</div>
-<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>        });</div>
-<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>        $this-&gt;map(Ids::SOUL_CAMPFIRE, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>            <span class="keywordflow">return</span> Blocks::SOUL_CAMPFIRE()</div>
-<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing())</div>
-<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span>                -&gt;setLit(!$in-&gt;readBool(StateNames::EXTINGUISHED));</div>
-<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>        });</div>
-<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span>        $this-&gt;map(Ids::SOUL_FIRE, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>            $in-&gt;ignored(StateNames::AGE); <span class="comment">//this is useless for soul fire, since it doesn&#39;t have the logic associated</span></div>
-<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>            <span class="keywordflow">return</span> Blocks::SOUL_FIRE();</div>
+<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>        $this-&gt;map(Ids::SMOOTH_QUARTZ, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>            $in-&gt;ignored(StateNames::PILLAR_AXIS);</div>
+<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>            <span class="keywordflow">return</span> Blocks::SMOOTH_QUARTZ();</div>
+<div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>        });</div>
+<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>        $this-&gt;mapSlab(Ids::SMOOTH_QUARTZ_SLAB, Ids::SMOOTH_QUARTZ_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_QUARTZ_SLAB());</div>
+<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>        $this-&gt;mapStairs(Ids::SMOOTH_QUARTZ_STAIRS, fn() =&gt; Blocks::SMOOTH_QUARTZ_STAIRS());</div>
+<div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>        $this-&gt;mapSlab(Ids::SMOOTH_RED_SANDSTONE_SLAB, Ids::SMOOTH_RED_SANDSTONE_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_RED_SANDSTONE_SLAB());</div>
+<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        $this-&gt;mapStairs(Ids::SMOOTH_RED_SANDSTONE_STAIRS, fn() =&gt; Blocks::SMOOTH_RED_SANDSTONE_STAIRS());</div>
+<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span>        $this-&gt;mapSlab(Ids::SMOOTH_SANDSTONE_SLAB, Ids::SMOOTH_SANDSTONE_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_SANDSTONE_SLAB());</div>
+<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>        $this-&gt;mapStairs(Ids::SMOOTH_SANDSTONE_STAIRS, fn() =&gt; Blocks::SMOOTH_SANDSTONE_STAIRS());</div>
+<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>        $this-&gt;mapSlab(Ids::SMOOTH_STONE_SLAB, Ids::SMOOTH_STONE_DOUBLE_SLAB, fn() =&gt; Blocks::SMOOTH_STONE_SLAB());</div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>        $this-&gt;map(Ids::SNOW_LAYER, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>            $in-&gt;ignored(StateNames::COVERED_BIT); <span class="comment">//seems to be useless</span></div>
+<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>            <span class="keywordflow">return</span> Blocks::SNOW_LAYER()-&gt;setLayers($in-&gt;readBoundedInt(StateNames::HEIGHT, 0, 7) + 1);</div>
+<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span>        });</div>
+<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>        $this-&gt;map(Ids::SOUL_CAMPFIRE, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span>            <span class="keywordflow">return</span> Blocks::SOUL_CAMPFIRE()</div>
+<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing())</div>
+<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>                -&gt;setLit(!$in-&gt;readBool(StateNames::EXTINGUISHED));</div>
 <div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>        });</div>
-<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>        $this-&gt;map(Ids::SOUL_LANTERN, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>            <span class="keywordflow">return</span> Blocks::SOUL_LANTERN()</div>
-<div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>                -&gt;setHanging($in-&gt;readBool(StateNames::HANGING));</div>
+<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>        $this-&gt;map(Ids::SOUL_FIRE, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>            $in-&gt;ignored(StateNames::AGE); <span class="comment">//this is useless for soul fire, since it doesn&#39;t have the logic associated</span></div>
+<div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>            <span class="keywordflow">return</span> Blocks::SOUL_FIRE();</div>
 <div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>        });</div>
-<div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>        $this-&gt;map(Ids::SOUL_TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>            <span class="keywordflow">return</span> Blocks::SOUL_TORCH()</div>
-<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>                -&gt;setFacing($in-&gt;readTorchFacing());</div>
+<div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>        $this-&gt;map(Ids::SOUL_LANTERN, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>            <span class="keywordflow">return</span> Blocks::SOUL_LANTERN()</div>
+<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>                -&gt;setHanging($in-&gt;readBool(StateNames::HANGING));</div>
 <div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>        });</div>
-<div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>        $this-&gt;map(Ids::STANDING_BANNER, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>            <span class="keywordflow">return</span> Blocks::BANNER()</div>
-<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>                -&gt;setRotation($in-&gt;readBoundedInt(StateNames::GROUND_SIGN_DIRECTION, 0, 15));</div>
+<div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>        $this-&gt;map(Ids::SOUL_TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>            <span class="keywordflow">return</span> Blocks::SOUL_TORCH()</div>
+<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>                -&gt;setFacing($in-&gt;readTorchFacing());</div>
 <div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span>        });</div>
-<div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span>        $this-&gt;mapSlab(Ids::STONE_BRICK_SLAB, Ids::STONE_BRICK_DOUBLE_SLAB, fn() =&gt; Blocks::STONE_BRICK_SLAB());</div>
-<div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>        $this-&gt;mapStairs(Ids::STONE_BRICK_STAIRS, fn() =&gt; Blocks::STONE_BRICK_STAIRS());</div>
-<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span>        $this-&gt;map(Ids::STONE_BRICK_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::STONE_BRICK_WALL(), $in));</div>
-<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>        $this-&gt;map(Ids::STONE_BUTTON, fn(Reader $in) =&gt; Helper::decodeButton(Blocks::STONE_BUTTON(), $in));</div>
-<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>        $this-&gt;map(Ids::STONE_PRESSURE_PLATE, fn(Reader $in) =&gt; Helper::decodeSimplePressurePlate(Blocks::STONE_PRESSURE_PLATE(), $in));</div>
-<div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>        $this-&gt;mapStairs(Ids::STONE_STAIRS, fn() =&gt; Blocks::COBBLESTONE_STAIRS());</div>
-<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>        $this-&gt;map(Ids::STONECUTTER_BLOCK, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span>            <span class="keywordflow">return</span> Blocks::STONECUTTER()</div>
-<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing());</div>
-<div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>        });</div>
-<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>        $this-&gt;map(Ids::SWEET_BERRY_BUSH, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>            <span class="comment">//berry bush only wants 0-3, but it can be bigger in MCPE due to misuse of GROWTH state which goes up to 7</span></div>
-<div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>            $growth = $in-&gt;readBoundedInt(StateNames::GROWTH, 0, 7);</div>
-<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>            <span class="keywordflow">return</span> Blocks::SWEET_BERRY_BUSH()</div>
-<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>                -&gt;setAge(min($growth, SweetBerryBush::STAGE_MATURE));</div>
-<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>        });</div>
-<div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span>        $this-&gt;map(Ids::TNT, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>            <span class="keywordflow">return</span> Blocks::TNT()</div>
-<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>                -&gt;setUnstable($in-&gt;readBool(StateNames::EXPLODE_BIT))</div>
-<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>                -&gt;setWorksUnderwater(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>        });</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        $this-&gt;map(Ids::TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>            <span class="keywordflow">return</span> Blocks::TORCH()</div>
-<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>                -&gt;setFacing($in-&gt;readTorchFacing());</div>
+<div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span>        $this-&gt;map(Ids::STANDING_BANNER, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>            <span class="keywordflow">return</span> Blocks::BANNER()</div>
+<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span>                -&gt;setRotation($in-&gt;readBoundedInt(StateNames::GROUND_SIGN_DIRECTION, 0, 15));</div>
+<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>        });</div>
+<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>        $this-&gt;mapSlab(Ids::STONE_BRICK_SLAB, Ids::STONE_BRICK_DOUBLE_SLAB, fn() =&gt; Blocks::STONE_BRICK_SLAB());</div>
+<div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>        $this-&gt;mapStairs(Ids::STONE_BRICK_STAIRS, fn() =&gt; Blocks::STONE_BRICK_STAIRS());</div>
+<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>        $this-&gt;map(Ids::STONE_BRICK_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::STONE_BRICK_WALL(), $in));</div>
+<div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span>        $this-&gt;map(Ids::STONE_BUTTON, fn(Reader $in) =&gt; Helper::decodeButton(Blocks::STONE_BUTTON(), $in));</div>
+<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>        $this-&gt;map(Ids::STONE_PRESSURE_PLATE, fn(Reader $in) =&gt; Helper::decodeSimplePressurePlate(Blocks::STONE_PRESSURE_PLATE(), $in));</div>
+<div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>        $this-&gt;mapStairs(Ids::STONE_STAIRS, fn() =&gt; Blocks::COBBLESTONE_STAIRS());</div>
+<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>        $this-&gt;map(Ids::STONECUTTER_BLOCK, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>            <span class="keywordflow">return</span> Blocks::STONECUTTER()</div>
+<div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing());</div>
+<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>        });</div>
+<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>        $this-&gt;map(Ids::SWEET_BERRY_BUSH, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>            <span class="comment">//berry bush only wants 0-3, but it can be bigger in MCPE due to misuse of GROWTH state which goes up to 7</span></div>
+<div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span>            $growth = $in-&gt;readBoundedInt(StateNames::GROWTH, 0, 7);</div>
+<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>            <span class="keywordflow">return</span> Blocks::SWEET_BERRY_BUSH()</div>
+<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>                -&gt;setAge(min($growth, SweetBerryBush::STAGE_MATURE));</div>
+<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>        });</div>
+<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>        $this-&gt;map(Ids::TNT, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>            <span class="keywordflow">return</span> Blocks::TNT()</div>
+<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>                -&gt;setUnstable($in-&gt;readBool(StateNames::EXPLODE_BIT))</div>
+<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>                -&gt;setWorksUnderwater(<span class="keyword">false</span>);</div>
 <div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>        });</div>
-<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>        $this-&gt;map(Ids::TORCHFLOWER_CROP, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>            <span class="keywordflow">return</span> Blocks::TORCHFLOWER_CROP()</div>
-<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>                <span class="comment">//this property can have values 0-7, but only 0-1 are valid</span></div>
-<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>                -&gt;setReady($in-&gt;readBoundedInt(StateNames::GROWTH, 0, 7) !== 0);</div>
-<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>        });</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>        $this-&gt;map(Ids::TRAPPED_CHEST, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>            <span class="keywordflow">return</span> Blocks::TRAPPED_CHEST()</div>
-<div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing());</div>
+<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>        $this-&gt;map(Ids::TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>            <span class="keywordflow">return</span> Blocks::TORCH()</div>
+<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>                -&gt;setFacing($in-&gt;readTorchFacing());</div>
+<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>        });</div>
+<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>        $this-&gt;map(Ids::TORCHFLOWER_CROP, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>            <span class="keywordflow">return</span> Blocks::TORCHFLOWER_CROP()</div>
+<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>                <span class="comment">//this property can have values 0-7, but only 0-1 are valid</span></div>
+<div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>                -&gt;setReady($in-&gt;readBoundedInt(StateNames::GROWTH, 0, 7) !== 0);</div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>        });</div>
-<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>        $this-&gt;map(Ids::TRIP_WIRE, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>            <span class="keywordflow">return</span> Blocks::TRIPWIRE()</div>
-<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>                -&gt;setConnected($in-&gt;readBool(StateNames::ATTACHED_BIT))</div>
-<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>                -&gt;setDisarmed($in-&gt;readBool(StateNames::DISARMED_BIT))</div>
-<div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>                -&gt;setSuspended($in-&gt;readBool(StateNames::SUSPENDED_BIT))</div>
-<div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>                -&gt;setTriggered($in-&gt;readBool(StateNames::POWERED_BIT));</div>
-<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>        });</div>
-<div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span>        $this-&gt;map(Ids::TRIPWIRE_HOOK, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>            <span class="keywordflow">return</span> Blocks::TRIPWIRE_HOOK()</div>
-<div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span>                -&gt;setConnected($in-&gt;readBool(StateNames::ATTACHED_BIT))</div>
-<div class="line"><a id="l01823" name="l01823"></a><span class="lineno"> 1823</span>                -&gt;setFacing($in-&gt;readLegacyHorizontalFacing())</div>
-<div class="line"><a id="l01824" name="l01824"></a><span class="lineno"> 1824</span>                -&gt;setPowered($in-&gt;readBool(StateNames::POWERED_BIT));</div>
-<div class="line"><a id="l01825" name="l01825"></a><span class="lineno"> 1825</span>        });</div>
-<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span>        $this-&gt;mapSlab(Ids::TUFF_BRICK_SLAB, Ids::TUFF_BRICK_DOUBLE_SLAB, fn() =&gt; Blocks::TUFF_BRICK_SLAB());</div>
-<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span>        $this-&gt;mapStairs(Ids::TUFF_BRICK_STAIRS, fn() =&gt; Blocks::TUFF_BRICK_STAIRS());</div>
-<div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span>        $this-&gt;map(Ids::TUFF_BRICK_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::TUFF_BRICK_WALL(), $in));</div>
-<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>        $this-&gt;mapSlab(Ids::TUFF_SLAB, Ids::TUFF_DOUBLE_SLAB, fn() =&gt; Blocks::TUFF_SLAB());</div>
-<div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>        $this-&gt;mapStairs(Ids::TUFF_STAIRS, fn() =&gt; Blocks::TUFF_STAIRS());</div>
-<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>        $this-&gt;map(Ids::TUFF_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::TUFF_WALL(), $in));</div>
-<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>        $this-&gt;map(Ids::TWISTING_VINES, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>            <span class="keywordflow">return</span> Blocks::TWISTING_VINES()</div>
-<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>                -&gt;setAge($in-&gt;readBoundedInt(StateNames::TWISTING_VINES_AGE, 0, 25));</div>
-<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>        });</div>
-<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>        $this-&gt;map(Ids::UNDERWATER_TNT, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>            <span class="keywordflow">return</span> Blocks::TNT()</div>
-<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>                -&gt;setUnstable($in-&gt;readBool(StateNames::EXPLODE_BIT))</div>
-<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>                -&gt;setWorksUnderwater(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>        });</div>
-<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>        $this-&gt;map(Ids::UNDERWATER_TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>            <span class="keywordflow">return</span> Blocks::UNDERWATER_TORCH()</div>
-<div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span>                -&gt;setFacing($in-&gt;readTorchFacing());</div>
+<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>        $this-&gt;map(Ids::TRAPPED_CHEST, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>            <span class="keywordflow">return</span> Blocks::TRAPPED_CHEST()</div>
+<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>                -&gt;setFacing($in-&gt;readCardinalHorizontalFacing());</div>
+<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>        });</div>
+<div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>        $this-&gt;map(Ids::TRIP_WIRE, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>            <span class="keywordflow">return</span> Blocks::TRIPWIRE()</div>
+<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>                -&gt;setConnected($in-&gt;readBool(StateNames::ATTACHED_BIT))</div>
+<div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span>                -&gt;setDisarmed($in-&gt;readBool(StateNames::DISARMED_BIT))</div>
+<div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>                -&gt;setSuspended($in-&gt;readBool(StateNames::SUSPENDED_BIT))</div>
+<div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span>                -&gt;setTriggered($in-&gt;readBool(StateNames::POWERED_BIT));</div>
+<div class="line"><a id="l01823" name="l01823"></a><span class="lineno"> 1823</span>        });</div>
+<div class="line"><a id="l01824" name="l01824"></a><span class="lineno"> 1824</span>        $this-&gt;map(Ids::TRIPWIRE_HOOK, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01825" name="l01825"></a><span class="lineno"> 1825</span>            <span class="keywordflow">return</span> Blocks::TRIPWIRE_HOOK()</div>
+<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span>                -&gt;setConnected($in-&gt;readBool(StateNames::ATTACHED_BIT))</div>
+<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span>                -&gt;setFacing($in-&gt;readLegacyHorizontalFacing())</div>
+<div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span>                -&gt;setPowered($in-&gt;readBool(StateNames::POWERED_BIT));</div>
+<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>        });</div>
+<div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>        $this-&gt;mapSlab(Ids::TUFF_BRICK_SLAB, Ids::TUFF_BRICK_DOUBLE_SLAB, fn() =&gt; Blocks::TUFF_BRICK_SLAB());</div>
+<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>        $this-&gt;mapStairs(Ids::TUFF_BRICK_STAIRS, fn() =&gt; Blocks::TUFF_BRICK_STAIRS());</div>
+<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>        $this-&gt;map(Ids::TUFF_BRICK_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::TUFF_BRICK_WALL(), $in));</div>
+<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>        $this-&gt;mapSlab(Ids::TUFF_SLAB, Ids::TUFF_DOUBLE_SLAB, fn() =&gt; Blocks::TUFF_SLAB());</div>
+<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>        $this-&gt;mapStairs(Ids::TUFF_STAIRS, fn() =&gt; Blocks::TUFF_STAIRS());</div>
+<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>        $this-&gt;map(Ids::TUFF_WALL, fn(Reader $in) =&gt; Helper::decodeWall(Blocks::TUFF_WALL(), $in));</div>
+<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>        $this-&gt;map(Ids::TWISTING_VINES, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>            <span class="keywordflow">return</span> Blocks::TWISTING_VINES()</div>
+<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>                -&gt;setAge($in-&gt;readBoundedInt(StateNames::TWISTING_VINES_AGE, 0, 25));</div>
+<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>        });</div>
+<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>        $this-&gt;map(Ids::UNDERWATER_TNT, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>            <span class="keywordflow">return</span> Blocks::TNT()</div>
+<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>                -&gt;setUnstable($in-&gt;readBool(StateNames::EXPLODE_BIT))</div>
+<div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span>                -&gt;setWorksUnderwater(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>        });</div>
-<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>        $this-&gt;map(Ids::UNLIT_REDSTONE_TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>            <span class="keywordflow">return</span> Blocks::REDSTONE_TORCH()</div>
-<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>                -&gt;setFacing($in-&gt;readTorchFacing())</div>
-<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>                -&gt;setLit(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>        });</div>
-<div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span>        $this-&gt;map(Ids::UNPOWERED_COMPARATOR, fn(Reader $in) =&gt; Helper::decodeComparator(Blocks::REDSTONE_COMPARATOR(), $in));</div>
-<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>        $this-&gt;map(Ids::UNPOWERED_REPEATER, fn(Reader $in) =&gt; Helper::decodeRepeater(Blocks::REDSTONE_REPEATER(), $in)</div>
-<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>                -&gt;setPowered(<span class="keyword">false</span>));</div>
-<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>        $this-&gt;map(Ids::VERDANT_FROGLIGHT, fn(Reader $in) =&gt; Blocks::FROGLIGHT()-&gt;setFroglightType(FroglightType::VERDANT)-&gt;setAxis($in-&gt;readPillarAxis()));</div>
-<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span>        $this-&gt;map(Ids::VINE, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span>            $vineDirectionFlags = $in-&gt;readBoundedInt(StateNames::VINE_DIRECTION_BITS, 0, 15);</div>
-<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span>            <span class="keywordflow">return</span> Blocks::VINES()</div>
-<div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span>                -&gt;setFace(Facing::NORTH, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_NORTH) !== 0)</div>
-<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>                -&gt;setFace(Facing::SOUTH, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_SOUTH) !== 0)</div>
-<div class="line"><a id="l01859" name="l01859"></a><span class="lineno"> 1859</span>                -&gt;setFace(Facing::WEST, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_WEST) !== 0)</div>
-<div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span>                -&gt;setFace(Facing::EAST, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_EAST) !== 0);</div>
-<div class="line"><a id="l01861" name="l01861"></a><span class="lineno"> 1861</span>        });</div>
-<div class="line"><a id="l01862" name="l01862"></a><span class="lineno"> 1862</span>        $this-&gt;map(Ids::WALL_BANNER, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01863" name="l01863"></a><span class="lineno"> 1863</span>            <span class="keywordflow">return</span> Blocks::WALL_BANNER()</div>
-<div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>                -&gt;setFacing($in-&gt;readHorizontalFacing());</div>
+<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>        $this-&gt;map(Ids::UNDERWATER_TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>            <span class="keywordflow">return</span> Blocks::UNDERWATER_TORCH()</div>
+<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>                -&gt;setFacing($in-&gt;readTorchFacing());</div>
+<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>        });</div>
+<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>        $this-&gt;map(Ids::UNLIT_REDSTONE_TORCH, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span>            <span class="keywordflow">return</span> Blocks::REDSTONE_TORCH()</div>
+<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>                -&gt;setFacing($in-&gt;readTorchFacing())</div>
+<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>                -&gt;setLit(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>        });</div>
+<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span>        $this-&gt;map(Ids::UNPOWERED_COMPARATOR, fn(Reader $in) =&gt; Helper::decodeComparator(Blocks::REDSTONE_COMPARATOR(), $in));</div>
+<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span>        $this-&gt;map(Ids::UNPOWERED_REPEATER, fn(Reader $in) =&gt; Helper::decodeRepeater(Blocks::REDSTONE_REPEATER(), $in)</div>
+<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span>                -&gt;setPowered(<span class="keyword">false</span>));</div>
+<div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span>        $this-&gt;map(Ids::VERDANT_FROGLIGHT, fn(Reader $in) =&gt; Blocks::FROGLIGHT()-&gt;setFroglightType(FroglightType::VERDANT)-&gt;setAxis($in-&gt;readPillarAxis()));</div>
+<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>        $this-&gt;map(Ids::VINE, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01859" name="l01859"></a><span class="lineno"> 1859</span>            $vineDirectionFlags = $in-&gt;readBoundedInt(StateNames::VINE_DIRECTION_BITS, 0, 15);</div>
+<div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span>            <span class="keywordflow">return</span> Blocks::VINES()</div>
+<div class="line"><a id="l01861" name="l01861"></a><span class="lineno"> 1861</span>                -&gt;setFace(Facing::NORTH, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_NORTH) !== 0)</div>
+<div class="line"><a id="l01862" name="l01862"></a><span class="lineno"> 1862</span>                -&gt;setFace(Facing::SOUTH, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_SOUTH) !== 0)</div>
+<div class="line"><a id="l01863" name="l01863"></a><span class="lineno"> 1863</span>                -&gt;setFace(Facing::WEST, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_WEST) !== 0)</div>
+<div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>                -&gt;setFace(Facing::EAST, ($vineDirectionFlags &amp; BlockLegacyMetadata::VINE_FLAG_EAST) !== 0);</div>
 <div class="line"><a id="l01865" name="l01865"></a><span class="lineno"> 1865</span>        });</div>
-<div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span>        $this-&gt;map(Ids::WATER, fn(Reader $in) =&gt; Helper::decodeStillLiquid(Blocks::WATER(), $in));</div>
-<div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span> </div>
-<div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>        $this-&gt;map(Ids::WEEPING_VINES, <span class="keyword">function</span>(Reader $in) : Block{</div>
-<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>            <span class="keywordflow">return</span> Blocks::WEEPING_VINES()</div>
-<div class="line"><a id="l01870" name="l01870"></a><span class="lineno"> 1870</span>                -&gt;setAge($in-&gt;readBoundedInt(StateNames::WEEPING_VINES_AGE, 0, 25));</div>
-<div class="line"><a id="l01871" name="l01871"></a><span class="lineno"> 1871</span>        });</div>
-<div class="line"><a id="l01872" name="l01872"></a><span class="lineno"> 1872</span>        $this-&gt;map(Ids::WHEAT, fn(Reader $in) =&gt; Helper::decodeCrops(Blocks::WHEAT(), $in));</div>
-<div class="line"><a id="l01873" name="l01873"></a><span class="lineno"> 1873</span>    }</div>
-<div class="line"><a id="l01874" name="l01874"></a><span class="lineno"> 1874</span> </div>
-<div class="foldopen" id="foldopen01876" data-start="{" data-end="}">
-<div class="line"><a id="l01876" name="l01876"></a><span class="lineno"><a class="line" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0"> 1876</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0">deserializeBlock</a>(<a class="code hl_class" href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html">BlockStateData</a> $blockStateData) : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
-<div class="line"><a id="l01877" name="l01877"></a><span class="lineno"> 1877</span>        $id = $blockStateData-&gt;getName();</div>
-<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span>        <span class="keywordflow">if</span>(!array_key_exists($id, $this-&gt;deserializeFuncs)){</div>
-<div class="line"><a id="l01879" name="l01879"></a><span class="lineno"> 1879</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d56/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_unsupported_block_state_exception.html">UnsupportedBlockStateException</a>(<span class="stringliteral">&quot;Unknown block ID \&quot;$id\&quot;&quot;</span>);</div>
-<div class="line"><a id="l01880" name="l01880"></a><span class="lineno"> 1880</span>        }</div>
-<div class="line"><a id="l01881" name="l01881"></a><span class="lineno"> 1881</span>        $reader = <span class="keyword">new</span> Reader($blockStateData);</div>
-<div class="line"><a id="l01882" name="l01882"></a><span class="lineno"> 1882</span>        $block = $this-&gt;deserializeFuncs[$id]($reader);</div>
-<div class="line"><a id="l01883" name="l01883"></a><span class="lineno"> 1883</span>        $reader-&gt;checkUnreadProperties();</div>
-<div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span>        <span class="keywordflow">return</span> $block;</div>
-<div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span>    }</div>
+<div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span>        $this-&gt;map(Ids::WALL_BANNER, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span>            <span class="keywordflow">return</span> Blocks::WALL_BANNER()</div>
+<div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>                -&gt;setFacing($in-&gt;readHorizontalFacing());</div>
+<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>        });</div>
+<div class="line"><a id="l01870" name="l01870"></a><span class="lineno"> 1870</span>        $this-&gt;map(Ids::WATER, fn(Reader $in) =&gt; Helper::decodeStillLiquid(Blocks::WATER(), $in));</div>
+<div class="line"><a id="l01871" name="l01871"></a><span class="lineno"> 1871</span> </div>
+<div class="line"><a id="l01872" name="l01872"></a><span class="lineno"> 1872</span>        $this-&gt;map(Ids::WEEPING_VINES, <span class="keyword">function</span>(Reader $in) : Block{</div>
+<div class="line"><a id="l01873" name="l01873"></a><span class="lineno"> 1873</span>            <span class="keywordflow">return</span> Blocks::WEEPING_VINES()</div>
+<div class="line"><a id="l01874" name="l01874"></a><span class="lineno"> 1874</span>                -&gt;setAge($in-&gt;readBoundedInt(StateNames::WEEPING_VINES_AGE, 0, 25));</div>
+<div class="line"><a id="l01875" name="l01875"></a><span class="lineno"> 1875</span>        });</div>
+<div class="line"><a id="l01876" name="l01876"></a><span class="lineno"> 1876</span>        $this-&gt;map(Ids::WHEAT, fn(Reader $in) =&gt; Helper::decodeCrops(Blocks::WHEAT(), $in));</div>
+<div class="line"><a id="l01877" name="l01877"></a><span class="lineno"> 1877</span>    }</div>
+<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span> </div>
+<div class="foldopen" id="foldopen01880" data-start="{" data-end="}">
+<div class="line"><a id="l01880" name="l01880"></a><span class="lineno"><a class="line" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0"> 1880</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0">deserializeBlock</a>(<a class="code hl_class" href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html">BlockStateData</a> $blockStateData) : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
+<div class="line"><a id="l01881" name="l01881"></a><span class="lineno"> 1881</span>        $id = $blockStateData-&gt;getName();</div>
+<div class="line"><a id="l01882" name="l01882"></a><span class="lineno"> 1882</span>        <span class="keywordflow">if</span>(!array_key_exists($id, $this-&gt;deserializeFuncs)){</div>
+<div class="line"><a id="l01883" name="l01883"></a><span class="lineno"> 1883</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d56/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_unsupported_block_state_exception.html">UnsupportedBlockStateException</a>(<span class="stringliteral">&quot;Unknown block ID \&quot;$id\&quot;&quot;</span>);</div>
+<div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span>        }</div>
+<div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span>        $reader = <span class="keyword">new</span> Reader($blockStateData);</div>
+<div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>        $block = $this-&gt;deserializeFuncs[$id]($reader);</div>
+<div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span>        $reader-&gt;checkUnreadProperties();</div>
+<div class="line"><a id="l01888" name="l01888"></a><span class="lineno"> 1888</span>        <span class="keywordflow">return</span> $block;</div>
+<div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>    }</div>
 </div>
-<div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>}</div>
+<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">pocketmine\block\AmethystCluster</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/ddd/_amethyst_cluster_8php_source.html#l00041">AmethystCluster.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_anvil_html"><div class="ttname"><a href="../../df/d58/classpocketmine_1_1block_1_1_anvil.html">pocketmine\block\Anvil</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d8f/block_2_anvil_8php_source.html#l00044">block/Anvil.php:44</a></div></div>
@@ -1997,10 +2001,10 @@ $(function(){initNavTree('d4/d68/_block_state_to_object_deserializer_8php_source
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_slab_html"><div class="ttname"><a href="../../dc/d60/classpocketmine_1_1block_1_1_slab.html">pocketmine\block\Slab</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d9d/_slab_8php_source.html#l00036">Slab.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_stair_html"><div class="ttname"><a href="../../d7/d95/classpocketmine_1_1block_1_1_stair.html">pocketmine\block\Stair</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d8e/_stair_8php_source.html#l00038">Stair.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_sweet_berry_bush_html"><div class="ttname"><a href="../../d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html">pocketmine\block\SweetBerryBush</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/dab/_sweet_berry_bush_8php_source.html#l00042">SweetBerryBush.php:42</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00814">VanillaBlocks.php:814</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00815">VanillaBlocks.php:815</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_wood_html"><div class="ttname"><a href="../../dc/d9e/classpocketmine_1_1block_1_1_wood.html">pocketmine\block\Wood</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/da4/_wood_8php_source.html#l00035">Wood.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_legacy_metadata_html"><div class="ttname"><a href="../../df/d5e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_legacy_metadata.html">pocketmine\data\bedrock\block\BlockLegacyMetadata</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_block_legacy_metadata_8php_source.html#l00029">BlockLegacyMetadata.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data_html"><div class="ttname"><a href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html">pocketmine\data\bedrock\block\BlockStateData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d1e/_block_state_data_8php_source.html#l00038">BlockStateData.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data_html"><div class="ttname"><a href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html">pocketmine\data\bedrock\block\BlockStateData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d1e/_block_state_data_8php_source.html#l00039">BlockStateData.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_deserialize_exception_html"><div class="ttname"><a href="../../d9/d39/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_deserialize_exception.html">pocketmine\data\bedrock\block\BlockStateDeserializeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d67/_block_state_deserialize_exception_8php_source.html#l00026">BlockStateDeserializeException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_names_html"><div class="ttname"><a href="../../d3/de7/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_names.html">pocketmine\data\bedrock\block\BlockStateNames</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d81/_block_state_names_8php_source.html#l00029">BlockStateNames.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_string_values_html"><div class="ttname"><a href="../../d6/d24/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_string_values.html">pocketmine\data\bedrock\block\BlockStateStringValues</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d56/_block_state_string_values_8php_source.html#l00029">BlockStateStringValues.php:29</a></div></div>
@@ -2009,7 +2013,7 @@ $(function(){initNavTree('d4/d68/_block_state_to_object_deserializer_8php_source
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader_html"><div class="ttname"><a href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">pocketmine\data\bedrock\block\convert\BlockStateReader</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d73/_block_state_reader_8php_source.html#l00045">BlockStateReader.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer</a></div><div class="ttdef"><b>Definition</b> <a href="#l00069">BlockStateToObjectDeserializer.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html_a1b1d2d286a0a8276f90c7064f2061b6f"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a1b1d2d286a0a8276f90c7064f2061b6f">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer\mapSlab</a></div><div class="ttdeci">mapSlab(string $singleId, string $doubleId, \Closure $getBlock)</div><div class="ttdef"><b>Definition</b> <a href="#l00142">BlockStateToObjectDeserializer.php:142</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html_a23db89238928e222daf74ebbb1fa65d0"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer\deserializeBlock</a></div><div class="ttdeci">deserializeBlock(BlockStateData $blockStateData)</div><div class="ttdef"><b>Definition</b> <a href="#l01876">BlockStateToObjectDeserializer.php:1876</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html_a23db89238928e222daf74ebbb1fa65d0"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer\deserializeBlock</a></div><div class="ttdeci">deserializeBlock(BlockStateData $blockStateData)</div><div class="ttdef"><b>Definition</b> <a href="#l01880">BlockStateToObjectDeserializer.php:1880</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html_a38702414de2f194f64fa6697d37ada58"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a38702414de2f194f64fa6697d37ada58">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer\mapSimple</a></div><div class="ttdeci">mapSimple(string $id, \Closure $getBlock)</div><div class="ttdef"><b>Definition</b> <a href="#l00135">BlockStateToObjectDeserializer.php:135</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html_a4dfe05657ef194ccc3d602b7b2cdc12b"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a4dfe05657ef194ccc3d602b7b2cdc12b">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer\mapLog</a></div><div class="ttdeci">mapLog(string $unstrippedId, string $strippedId, \Closure $getBlock)</div><div class="ttdef"><b>Definition</b> <a href="#l00155">BlockStateToObjectDeserializer.php:155</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer_html_a5bf17959ad41a9d9deac61ddae372e10"><div class="ttname"><a href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a5bf17959ad41a9d9deac61ddae372e10">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer\map</a></div><div class="ttdeci">map(string $id, \Closure $c)</div><div class="ttdef"><b>Definition</b> <a href="#l00119">BlockStateToObjectDeserializer.php:119</a></div></div>

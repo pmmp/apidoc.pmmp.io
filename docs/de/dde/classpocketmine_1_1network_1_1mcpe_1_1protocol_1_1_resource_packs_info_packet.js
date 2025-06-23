@@ -2,7 +2,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packe
 [
     [ "__get", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2", null ],
     [ "__set", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#ab869f6f8d246ff2f83744b48f43c4b54", null ],
-    [ "create", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#ae02c9caf20cb891ab62597eb999435eb", null ],
+    [ "create", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a4ad49530121ac4b4fe75af1096d10eed", null ],
     [ "decode", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#aa064d23077830ab265f931c3385a3e0d", null ],
     [ "decodeHeader", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a7f34ca0fc75361b63314614a92d08b49", null ],
     [ "decodePayload", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a52fccda7253fbc3c5e3fcfd2e93e6c34", null ],

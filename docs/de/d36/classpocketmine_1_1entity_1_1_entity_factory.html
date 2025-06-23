@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(function(){initNavTree('de/d36/classpocketmine_1_1entity_1_1_entity_factory.ht
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/deb/classpocketmine_1_1entity_1_1_entity_factory__coll__graph.svg" width="186" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/deb/classpocketmine_1_1entity_1_1_entity_factory__coll__graph.svg" width="186" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4954fbc4022782addae15e9cbb88a888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e93b5712b2dd0172f7b00f135f18dd" id="r_a86e93b5712b2dd0172f7b00f135f18dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e93b5712b2dd0172f7b00f135f18dd">injectSaveId</a> (string $class, <a class="el" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $saveData)</td></tr>
 <tr class="separator:a86e93b5712b2dd0172f7b00f135f18dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0416af7eb54cf9b3c2641db5809d2f47" id="r_a0416af7eb54cf9b3c2641db5809d2f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0416af7eb54cf9b3c2641db5809d2f47">isRegistered</a> (string $class)</td></tr>
+<tr class="separator:a0416af7eb54cf9b3c2641db5809d2f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae448ccecfa0baa549482369552b58ef4" id="r_ae448ccecfa0baa549482369552b58ef4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae448ccecfa0baa549482369552b58ef4">register</a> (string $className, \Closure $creationFunc, array $saveNames)</td></tr>
 <tr class="separator:ae448ccecfa0baa549482369552b58ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -187,7 +189,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00228">228</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00235">235</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>
@@ -207,7 +209,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>@phpstan-param class-string&lt;Entity&gt; $class </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00261">261</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00268">268</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>
@@ -230,7 +232,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00250">250</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00257">257</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
+
+</div>
+</div>
+<a id="a0416af7eb54cf9b3c2641db5809d2f47" name="a0416af7eb54cf9b3c2641db5809d2f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0416af7eb54cf9b3c2641db5809d2f47">&#9670;&#160;</a></span>isRegistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\entity\EntityFactory::isRegistered </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$class</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@phpstan-param class-string&lt;Entity&gt; $class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/df1/_entity_factory_8php_source.html#l00225">225</a> of file <a class="el" href="../../de/df1/_entity_factory_8php_source.html">EntityFactory.php</a>.</p>
 
 </div>
 </div>

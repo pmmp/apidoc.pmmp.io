@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -570,6 +570,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21e7cbd947e71a408558e1841e873b0a" id="r_a21e7cbd947e71a408558e1841e873b0a"><td class="memItemLeft" align="right" valign="top"><a id="a21e7cbd947e71a408558e1841e873b0a" name="a21e7cbd947e71a408558e1841e873b0a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleServerPlayerPostMovePosition</b> (ServerPlayerPostMovePositionPacket $packet)</td></tr>
 <tr class="separator:a21e7cbd947e71a408558e1841e873b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4d8415435cb20562ccf9dd56f80845" id="r_a5b4d8415435cb20562ccf9dd56f80845"><td class="memItemLeft" align="right" valign="top"><a id="a5b4d8415435cb20562ccf9dd56f80845" name="a5b4d8415435cb20562ccf9dd56f80845"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>handleServerScriptDebugDrawer</b> (ServerScriptDebugDrawerPacket $packet)</td></tr>
+<tr class="separator:a5b4d8415435cb20562ccf9dd56f80845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28195af258c8a26216dbfc6565bc828c" id="r_a28195af258c8a26216dbfc6565bc828c"><td class="memItemLeft" align="right" valign="top"><a id="a28195af258c8a26216dbfc6565bc828c" name="a28195af258c8a26216dbfc6565bc828c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleServerSettingsRequest</b> (<a class="el" href="../../d8/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_request_packet.html">ServerSettingsRequestPacket</a> $packet)</td></tr>
 <tr class="separator:a28195af258c8a26216dbfc6565bc828c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,9 +618,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9279b8e99b19d648498428c095356fea" id="r_a9279b8e99b19d648498428c095356fea"><td class="memItemLeft" align="right" valign="top"><a id="a9279b8e99b19d648498428c095356fea" name="a9279b8e99b19d648498428c095356fea"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleSetLocalPlayerAsInitialized</b> (<a class="el" href="../../d5/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_local_player_as_initialized_packet.html">SetLocalPlayerAsInitializedPacket</a> $packet)</td></tr>
 <tr class="separator:a9279b8e99b19d648498428c095356fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e20c82236fe4b19c63feee9f2acddc3" id="r_a3e20c82236fe4b19c63feee9f2acddc3"><td class="memItemLeft" align="right" valign="top"><a id="a3e20c82236fe4b19c63feee9f2acddc3" name="a3e20c82236fe4b19c63feee9f2acddc3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handleSetMovementAuthority</b> (SetMovementAuthorityPacket $packet)</td></tr>
-<tr class="separator:a3e20c82236fe4b19c63feee9f2acddc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0780a319705f22a5f5a4cbf4a3078e0a" id="r_a0780a319705f22a5f5a4cbf4a3078e0a"><td class="memItemLeft" align="right" valign="top"><a id="a0780a319705f22a5f5a4cbf4a3078e0a" name="a0780a319705f22a5f5a4cbf4a3078e0a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>handleSetPlayerGameType</b> (<a class="el" href="../../d5/da1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_player_game_type_packet.html">SetPlayerGameTypePacket</a> $packet)</td></tr>
 <tr class="separator:a0780a319705f22a5f5a4cbf4a3078e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -753,7 +753,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handler used for the pre-spawn phase of the session. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00055">55</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00054">54</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ef2f809bc892dd66ffb182f4303f034" name="a4ef2f809bc892dd66ffb182f4303f034"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ef2f809bc892dd66ffb182f4303f034">&#9670;&#160;</a></span>__construct()</h2>
@@ -784,7 +784,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00056">56</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00055">55</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -806,7 +806,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00166">166</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00165">165</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -827,7 +827,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00160">160</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00159">159</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d5/d23/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_packet_handler.html">pocketmine\network\mcpe\handler\PacketHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00063">63</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html#l00062">62</a> of file <a class="el" href="../../dd/dbe/_pre_spawn_packet_handler_8php_source.html">PreSpawnPacketHandler.php</a>.</p>
 
 </div>
 </div>

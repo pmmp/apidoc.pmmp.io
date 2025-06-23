@@ -15,6 +15,8 @@ var namespacepocketmine_1_1event_1_1entity =
     [ "EntityEffectRemoveEvent", "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html", "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event" ],
     [ "EntityEvent", "de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html", "de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event" ],
     [ "EntityExplodeEvent", "d9/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_explode_event.html", "d9/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_explode_event" ],
+    [ "EntityExtinguishEvent", "d7/d5a/classpocketmine_1_1event_1_1entity_1_1_entity_extinguish_event.html", "d7/d5a/classpocketmine_1_1event_1_1entity_1_1_entity_extinguish_event" ],
+    [ "EntityFrostWalkerEvent", "d8/dfb/classpocketmine_1_1event_1_1entity_1_1_entity_frost_walker_event.html", "d8/dfb/classpocketmine_1_1event_1_1entity_1_1_entity_frost_walker_event" ],
     [ "EntityItemPickupEvent", "dc/d5b/classpocketmine_1_1event_1_1entity_1_1_entity_item_pickup_event.html", "dc/d5b/classpocketmine_1_1event_1_1entity_1_1_entity_item_pickup_event" ],
     [ "EntityMotionEvent", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event" ],
     [ "EntityPreExplodeEvent", "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html", "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event" ],

@@ -264,6 +264,7 @@ var annotated_dup =
         [ "RedstoneWire", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire" ],
         [ "Reserved6", "dd/dec/classpocketmine_1_1block_1_1_reserved6.html", "dd/dec/classpocketmine_1_1block_1_1_reserved6" ],
         [ "ResinClump", "d1/da4/classpocketmine_1_1block_1_1_resin_clump.html", "d1/da4/classpocketmine_1_1block_1_1_resin_clump" ],
+        [ "RespawnAnchor", "d3/dfe/classpocketmine_1_1block_1_1_respawn_anchor.html", "d3/dfe/classpocketmine_1_1block_1_1_respawn_anchor" ],
         [ "RuntimeBlockStateRegistry", "de/d2c/classpocketmine_1_1block_1_1_runtime_block_state_registry.html", "de/d2c/classpocketmine_1_1block_1_1_runtime_block_state_registry" ],
         [ "Sand", "d3/d39/classpocketmine_1_1block_1_1_sand.html", "d3/d39/classpocketmine_1_1block_1_1_sand" ],
         [ "Sapling", "d6/d87/classpocketmine_1_1block_1_1_sapling.html", "d6/d87/classpocketmine_1_1block_1_1_sapling" ],
@@ -523,7 +524,8 @@ var annotated_dup =
           [ "PotionTypeIdMap", "d9/d5d/classpocketmine_1_1data_1_1bedrock_1_1_potion_type_id_map.html", null ],
           [ "PotionTypeIds", "d2/dff/classpocketmine_1_1data_1_1bedrock_1_1_potion_type_ids.html", null ],
           [ "SuspiciousStewTypeIdMap", "d9/d16/classpocketmine_1_1data_1_1bedrock_1_1_suspicious_stew_type_id_map.html", null ],
-          [ "SuspiciousStewTypeIds", "d8/de5/classpocketmine_1_1data_1_1bedrock_1_1_suspicious_stew_type_ids.html", null ]
+          [ "SuspiciousStewTypeIds", "d8/de5/classpocketmine_1_1data_1_1bedrock_1_1_suspicious_stew_type_ids.html", null ],
+          [ "WorldDataVersions", "d2/d20/classpocketmine_1_1data_1_1bedrock_1_1_world_data_versions.html", "d2/d20/classpocketmine_1_1data_1_1bedrock_1_1_world_data_versions" ]
         ] ],
         [ "java", null, [
           [ "GameModeIdMap", "d9/d1c/classpocketmine_1_1data_1_1java_1_1_game_mode_id_map.html", null ]
@@ -633,11 +635,13 @@ var annotated_dup =
           [ "BlockBurnEvent", "db/da8/classpocketmine_1_1event_1_1block_1_1_block_burn_event.html", "db/da8/classpocketmine_1_1event_1_1block_1_1_block_burn_event" ],
           [ "BlockDeathEvent", "df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event.html", "df/d82/classpocketmine_1_1event_1_1block_1_1_block_death_event" ],
           [ "BlockEvent", "df/d69/classpocketmine_1_1event_1_1block_1_1_block_event.html", "df/d69/classpocketmine_1_1event_1_1block_1_1_block_event" ],
+          [ "BlockExplodeEvent", "da/d0e/classpocketmine_1_1event_1_1block_1_1_block_explode_event.html", "da/d0e/classpocketmine_1_1event_1_1block_1_1_block_explode_event" ],
           [ "BlockFormEvent", "dc/d51/classpocketmine_1_1event_1_1block_1_1_block_form_event.html", "dc/d51/classpocketmine_1_1event_1_1block_1_1_block_form_event" ],
           [ "BlockGrowEvent", "db/d04/classpocketmine_1_1event_1_1block_1_1_block_grow_event.html", "db/d04/classpocketmine_1_1event_1_1block_1_1_block_grow_event" ],
           [ "BlockItemPickupEvent", "d6/dfa/classpocketmine_1_1event_1_1block_1_1_block_item_pickup_event.html", "d6/dfa/classpocketmine_1_1event_1_1block_1_1_block_item_pickup_event" ],
           [ "BlockMeltEvent", "d1/d80/classpocketmine_1_1event_1_1block_1_1_block_melt_event.html", "d1/d80/classpocketmine_1_1event_1_1block_1_1_block_melt_event" ],
           [ "BlockPlaceEvent", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event" ],
+          [ "BlockPreExplodeEvent", "da/dc2/classpocketmine_1_1event_1_1block_1_1_block_pre_explode_event.html", "da/dc2/classpocketmine_1_1event_1_1block_1_1_block_pre_explode_event" ],
           [ "BlockSpreadEvent", "d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event.html", "d7/dd6/classpocketmine_1_1event_1_1block_1_1_block_spread_event" ],
           [ "BlockTeleportEvent", "d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event.html", "d9/dc5/classpocketmine_1_1event_1_1block_1_1_block_teleport_event" ],
           [ "BlockUpdateEvent", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event.html", "d2/dfc/classpocketmine_1_1event_1_1block_1_1_block_update_event" ],
@@ -667,6 +671,8 @@ var annotated_dup =
           [ "EntityEffectRemoveEvent", "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event.html", "da/de1/classpocketmine_1_1event_1_1entity_1_1_entity_effect_remove_event" ],
           [ "EntityEvent", "de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html", "de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event" ],
           [ "EntityExplodeEvent", "d9/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_explode_event.html", "d9/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_explode_event" ],
+          [ "EntityExtinguishEvent", "d7/d5a/classpocketmine_1_1event_1_1entity_1_1_entity_extinguish_event.html", "d7/d5a/classpocketmine_1_1event_1_1entity_1_1_entity_extinguish_event" ],
+          [ "EntityFrostWalkerEvent", "d8/dfb/classpocketmine_1_1event_1_1entity_1_1_entity_frost_walker_event.html", "d8/dfb/classpocketmine_1_1event_1_1entity_1_1_entity_frost_walker_event" ],
           [ "EntityItemPickupEvent", "dc/d5b/classpocketmine_1_1event_1_1entity_1_1_entity_item_pickup_event.html", "dc/d5b/classpocketmine_1_1event_1_1entity_1_1_entity_item_pickup_event" ],
           [ "EntityMotionEvent", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event" ],
           [ "EntityPreExplodeEvent", "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event.html", "d4/dd2/classpocketmine_1_1event_1_1entity_1_1_entity_pre_explode_event" ],
@@ -731,6 +737,7 @@ var annotated_dup =
           [ "PlayerPreLoginEvent", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event" ],
           [ "PlayerQuitEvent", "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html", "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event" ],
           [ "PlayerResourcePackOfferEvent", "da/d2e/classpocketmine_1_1event_1_1player_1_1_player_resource_pack_offer_event.html", "da/d2e/classpocketmine_1_1event_1_1player_1_1_player_resource_pack_offer_event" ],
+          [ "PlayerRespawnAnchorUseEvent", "d1/daf/classpocketmine_1_1event_1_1player_1_1_player_respawn_anchor_use_event.html", "d1/daf/classpocketmine_1_1event_1_1player_1_1_player_respawn_anchor_use_event" ],
           [ "PlayerRespawnEvent", "de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event.html", "de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event" ],
           [ "PlayerToggleFlightEvent", "df/d48/classpocketmine_1_1event_1_1player_1_1_player_toggle_flight_event.html", "df/d48/classpocketmine_1_1event_1_1player_1_1_player_toggle_flight_event" ],
           [ "PlayerToggleGlideEvent", "d7/d32/classpocketmine_1_1event_1_1player_1_1_player_toggle_glide_event.html", "d7/d32/classpocketmine_1_1event_1_1player_1_1_player_toggle_glide_event" ],
@@ -1219,6 +1226,7 @@ var annotated_dup =
               ] ],
               [ "login", null, [
                 [ "AuthenticationData", "d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data.html", "d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data" ],
+                [ "AuthenticationInfo", "dd/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_info.html", "dd/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_info" ],
                 [ "ClientData", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data" ],
                 [ "ClientDataAnimationFrame", "dc/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_animation_frame.html", "dc/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_animation_frame" ],
                 [ "ClientDataPersonaPieceTintColor", "dc/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_persona_piece_tint_color.html", "dc/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_persona_piece_tint_color" ],
@@ -1310,6 +1318,7 @@ var annotated_dup =
               [ "MapTrackedObject", "d2/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_tracked_object.html", "d2/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_tracked_object" ],
               [ "MultiplayerGameVisibility", "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html", null ],
               [ "NetworkPermissions", "d9/dfb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_network_permissions.html", null ],
+              [ "PacketShapeData", "df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html", null ],
               [ "ParticleIds", "d6/dca/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_particle_ids.html", null ],
               [ "PlayerAction", "de/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_action.html", null ],
               [ "PlayerAuthInputFlags", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html", "d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags" ],
@@ -1497,6 +1506,7 @@ var annotated_dup =
             [ "ServerboundLoadingScreenPacket", "d3/daa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_loading_screen_packet.html", "d3/daa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_loading_screen_packet" ],
             [ "ServerboundPacket", "dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html", "dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet" ],
             [ "ServerPlayerPostMovePositionPacket", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_player_post_move_position_packet.html", "d7/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_player_post_move_position_packet" ],
+            [ "ServerScriptDebugDrawerPacket", "de/daf/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_script_debug_drawer_packet.html", "de/daf/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_script_debug_drawer_packet" ],
             [ "ServerSettingsRequestPacket", "d8/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_request_packet.html", "d8/da3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_request_packet" ],
             [ "ServerSettingsResponsePacket", "d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html", "d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet" ],
             [ "ServerStatsPacket", "d3/ddd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_stats_packet.html", "d3/ddd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_stats_packet" ],
@@ -1512,7 +1522,6 @@ var annotated_dup =
             [ "SetHudPacket", "dc/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_hud_packet.html", "dc/da0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_hud_packet" ],
             [ "SetLastHurtByPacket", "d4/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_last_hurt_by_packet.html", "d4/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_last_hurt_by_packet" ],
             [ "SetLocalPlayerAsInitializedPacket", "d5/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_local_player_as_initialized_packet.html", "d5/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_local_player_as_initialized_packet" ],
-            [ "SetMovementAuthorityPacket", "de/d38/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_movement_authority_packet.html", "de/d38/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_movement_authority_packet" ],
             [ "SetPlayerGameTypePacket", "d5/da1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_player_game_type_packet.html", "d5/da1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_player_game_type_packet" ],
             [ "SetPlayerInventoryOptionsPacket", "d8/d7b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_player_inventory_options_packet.html", "d8/d7b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_player_inventory_options_packet" ],
             [ "SetScoreboardIdentityPacket", "dd/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_scoreboard_identity_packet.html", "dd/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_set_scoreboard_identity_packet" ],
@@ -1840,6 +1849,15 @@ var annotated_dup =
           [ "biome", null, [
             [ "BiomeSelector", "d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector.html", "d9/d3b/classpocketmine_1_1world_1_1generator_1_1biome_1_1_biome_selector" ]
           ] ],
+          [ "executor", null, [
+            [ "AsyncGeneratorExecutor", "d3/d18/classpocketmine_1_1world_1_1generator_1_1executor_1_1_async_generator_executor.html", "d3/d18/classpocketmine_1_1world_1_1generator_1_1executor_1_1_async_generator_executor" ],
+            [ "AsyncGeneratorRegisterTask", "d5/d0f/classpocketmine_1_1world_1_1generator_1_1executor_1_1_async_generator_register_task.html", "d5/d0f/classpocketmine_1_1world_1_1generator_1_1executor_1_1_async_generator_register_task" ],
+            [ "AsyncGeneratorUnregisterTask", "de/da7/classpocketmine_1_1world_1_1generator_1_1executor_1_1_async_generator_unregister_task.html", "de/da7/classpocketmine_1_1world_1_1generator_1_1executor_1_1_async_generator_unregister_task" ],
+            [ "GeneratorExecutor", "d4/da3/interfacepocketmine_1_1world_1_1generator_1_1executor_1_1_generator_executor.html", "d4/da3/interfacepocketmine_1_1world_1_1generator_1_1executor_1_1_generator_executor" ],
+            [ "GeneratorExecutorSetupParameters", "d1/d0b/classpocketmine_1_1world_1_1generator_1_1executor_1_1_generator_executor_setup_parameters.html", "d1/d0b/classpocketmine_1_1world_1_1generator_1_1executor_1_1_generator_executor_setup_parameters" ],
+            [ "SyncGeneratorExecutor", "da/d96/classpocketmine_1_1world_1_1generator_1_1executor_1_1_sync_generator_executor.html", "da/d96/classpocketmine_1_1world_1_1generator_1_1executor_1_1_sync_generator_executor" ],
+            [ "ThreadLocalGeneratorContext", "dc/d02/classpocketmine_1_1world_1_1generator_1_1executor_1_1_thread_local_generator_context.html", null ]
+          ] ],
           [ "hell", null, [
             [ "Nether", "d8/d74/classpocketmine_1_1world_1_1generator_1_1hell_1_1_nether.html", "d8/d74/classpocketmine_1_1world_1_1generator_1_1hell_1_1_nether" ]
           ] ],
@@ -1875,11 +1893,9 @@ var annotated_dup =
           [ "Generator", "d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator.html", "d3/df9/classpocketmine_1_1world_1_1generator_1_1_generator" ],
           [ "GeneratorManager", "d6/dc2/classpocketmine_1_1world_1_1generator_1_1_generator_manager.html", "d6/dc2/classpocketmine_1_1world_1_1generator_1_1_generator_manager" ],
           [ "GeneratorManagerEntry", "da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html", "da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry" ],
-          [ "GeneratorRegisterTask", "d2/d88/classpocketmine_1_1world_1_1generator_1_1_generator_register_task.html", "d2/d88/classpocketmine_1_1world_1_1generator_1_1_generator_register_task" ],
-          [ "GeneratorUnregisterTask", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task.html", "d0/dac/classpocketmine_1_1world_1_1generator_1_1_generator_unregister_task" ],
           [ "InvalidGeneratorOptionsException", "dc/d83/classpocketmine_1_1world_1_1generator_1_1_invalid_generator_options_exception.html", null ],
           [ "PopulationTask", "d9/d4a/classpocketmine_1_1world_1_1generator_1_1_population_task.html", "d9/d4a/classpocketmine_1_1world_1_1generator_1_1_population_task" ],
-          [ "ThreadLocalGeneratorContext", "d0/d9d/classpocketmine_1_1world_1_1generator_1_1_thread_local_generator_context.html", null ]
+          [ "PopulationUtils", "d7/d7c/classpocketmine_1_1world_1_1generator_1_1_population_utils.html", "d7/d7c/classpocketmine_1_1world_1_1generator_1_1_population_utils" ]
         ] ],
         [ "light", null, [
           [ "BlockLightUpdate", "d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update.html", "d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update" ],
@@ -2018,6 +2034,9 @@ var annotated_dup =
           [ "RecordStopSound", "d7/d19/classpocketmine_1_1world_1_1sound_1_1_record_stop_sound.html", "d7/d19/classpocketmine_1_1world_1_1sound_1_1_record_stop_sound" ],
           [ "RedstonePowerOffSound", "d6/d02/classpocketmine_1_1world_1_1sound_1_1_redstone_power_off_sound.html", "d6/d02/classpocketmine_1_1world_1_1sound_1_1_redstone_power_off_sound" ],
           [ "RedstonePowerOnSound", "d8/df1/classpocketmine_1_1world_1_1sound_1_1_redstone_power_on_sound.html", "d8/df1/classpocketmine_1_1world_1_1sound_1_1_redstone_power_on_sound" ],
+          [ "RespawnAnchorChargeSound", "d8/d50/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_charge_sound.html", "d8/d50/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_charge_sound" ],
+          [ "RespawnAnchorDepleteSound", "d3/d27/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_deplete_sound.html", "d3/d27/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_deplete_sound" ],
+          [ "RespawnAnchorSetSpawnSound", "dc/d5f/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_set_spawn_sound.html", "dc/d5f/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_set_spawn_sound" ],
           [ "ScrapeSound", "d1/d7b/classpocketmine_1_1world_1_1sound_1_1_scrape_sound.html", "d1/d7b/classpocketmine_1_1world_1_1sound_1_1_scrape_sound" ],
           [ "ShulkerBoxCloseSound", "d2/d06/classpocketmine_1_1world_1_1sound_1_1_shulker_box_close_sound.html", "d2/d06/classpocketmine_1_1world_1_1sound_1_1_shulker_box_close_sound" ],
           [ "ShulkerBoxOpenSound", "d6/db0/classpocketmine_1_1world_1_1sound_1_1_shulker_box_open_sound.html", "d6/db0/classpocketmine_1_1world_1_1sound_1_1_shulker_box_open_sound" ],

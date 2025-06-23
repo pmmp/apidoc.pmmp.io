@@ -38,6 +38,7 @@ var namespacepocketmine_1_1event_1_1player =
     [ "PlayerPreLoginEvent", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event" ],
     [ "PlayerQuitEvent", "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html", "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event" ],
     [ "PlayerResourcePackOfferEvent", "da/d2e/classpocketmine_1_1event_1_1player_1_1_player_resource_pack_offer_event.html", "da/d2e/classpocketmine_1_1event_1_1player_1_1_player_resource_pack_offer_event" ],
+    [ "PlayerRespawnAnchorUseEvent", "d1/daf/classpocketmine_1_1event_1_1player_1_1_player_respawn_anchor_use_event.html", "d1/daf/classpocketmine_1_1event_1_1player_1_1_player_respawn_anchor_use_event" ],
     [ "PlayerRespawnEvent", "de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event.html", "de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event" ],
     [ "PlayerToggleFlightEvent", "df/d48/classpocketmine_1_1event_1_1player_1_1_player_toggle_flight_event.html", "df/d48/classpocketmine_1_1event_1_1player_1_1_player_toggle_flight_event" ],
     [ "PlayerToggleGlideEvent", "d7/d32/classpocketmine_1_1event_1_1player_1_1_player_toggle_glide_event.html", "d7/d32/classpocketmine_1_1event_1_1player_1_1_player_toggle_glide_event" ],

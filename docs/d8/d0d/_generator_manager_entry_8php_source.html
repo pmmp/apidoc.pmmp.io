@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.28.3 git-95b4db5169db52777b826f3ea804c42c52c42100</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
    </div>
   </td>
  </tr>
@@ -135,27 +135,30 @@ $(function(){initNavTree('d8/d0d/_generator_manager_entry_8php_source.html','../
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html">   26</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html">GeneratorManagerEntry</a>{</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a4aba7a715177e475fffaa28b1a69fefe">   32</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a4aba7a715177e475fffaa28b1a69fefe">__construct</a>(</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a8e0f068293a3d7e91d8f8dc70dc10d29">   32</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a8e0f068293a3d7e91d8f8dc70dc10d29">__construct</a>(</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $generatorClass,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> \Closure $presetValidator</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    ){}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> \Closure $presetValidator,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> readonly <span class="keywordtype">bool</span> $fast</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ){}</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a444c92b15d609e1d557dac8028acfc7a">   38</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a444c92b15d609e1d557dac8028acfc7a">getGeneratorClass</a>() : string{ return $this-&gt;generatorClass; }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a21e5db3b3b4ccd9699c1263e557b9a8d">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a21e5db3b3b4ccd9699c1263e557b9a8d">validateGeneratorOptions</a>(<span class="keywordtype">string</span> $generatorOptions) : void{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        if(($exception = ($this-&gt;presetValidator)($generatorOptions)) !== null){</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">throw</span> $exception;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a444c92b15d609e1d557dac8028acfc7a">   39</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a444c92b15d609e1d557dac8028acfc7a">getGeneratorClass</a>() : string{ return $this-&gt;generatorClass; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> isFast() : bool{ return $this-&gt;fast; }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a21e5db3b3b4ccd9699c1263e557b9a8d">   46</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a21e5db3b3b4ccd9699c1263e557b9a8d">validateGeneratorOptions</a>(<span class="keywordtype">string</span> $generatorOptions) : void{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        if(($exception = ($this-&gt;presetValidator)($generatorOptions)) !== null){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">throw</span> $exception;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html">pocketmine\world\generator\GeneratorManagerEntry</a></div><div class="ttdef"><b>Definition</b> <a href="#l00026">GeneratorManagerEntry.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html_a21e5db3b3b4ccd9699c1263e557b9a8d"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a21e5db3b3b4ccd9699c1263e557b9a8d">pocketmine\world\generator\GeneratorManagerEntry\validateGeneratorOptions</a></div><div class="ttdeci">validateGeneratorOptions(string $generatorOptions)</div><div class="ttdef"><b>Definition</b> <a href="#l00043">GeneratorManagerEntry.php:43</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html_a444c92b15d609e1d557dac8028acfc7a"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a444c92b15d609e1d557dac8028acfc7a">pocketmine\world\generator\GeneratorManagerEntry\getGeneratorClass</a></div><div class="ttdeci">getGeneratorClass()</div><div class="ttdef"><b>Definition</b> <a href="#l00038">GeneratorManagerEntry.php:38</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html_a4aba7a715177e475fffaa28b1a69fefe"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a4aba7a715177e475fffaa28b1a69fefe">pocketmine\world\generator\GeneratorManagerEntry\__construct</a></div><div class="ttdeci">__construct(private string $generatorClass, private \Closure $presetValidator)</div><div class="ttdef"><b>Definition</b> <a href="#l00032">GeneratorManagerEntry.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html_a21e5db3b3b4ccd9699c1263e557b9a8d"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a21e5db3b3b4ccd9699c1263e557b9a8d">pocketmine\world\generator\GeneratorManagerEntry\validateGeneratorOptions</a></div><div class="ttdeci">validateGeneratorOptions(string $generatorOptions)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">GeneratorManagerEntry.php:46</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html_a444c92b15d609e1d557dac8028acfc7a"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a444c92b15d609e1d557dac8028acfc7a">pocketmine\world\generator\GeneratorManagerEntry\getGeneratorClass</a></div><div class="ttdeci">getGeneratorClass()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">GeneratorManagerEntry.php:39</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1_generator_manager_entry_html_a8e0f068293a3d7e91d8f8dc70dc10d29"><div class="ttname"><a href="../../da/d06/classpocketmine_1_1world_1_1generator_1_1_generator_manager_entry.html#a8e0f068293a3d7e91d8f8dc70dc10d29">pocketmine\world\generator\GeneratorManagerEntry\__construct</a></div><div class="ttdeci">__construct(private string $generatorClass, private \Closure $presetValidator, private readonly bool $fast)</div><div class="ttdef"><b>Definition</b> <a href="#l00032">GeneratorManagerEntry.php:32</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1world_1_1generator_html"><div class="ttname"><a href="../../db/d3f/namespacepocketmine_1_1world_1_1generator.html">pocketmine\world\generator</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
