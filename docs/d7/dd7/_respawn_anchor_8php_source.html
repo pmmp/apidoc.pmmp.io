@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.1 git-04494e845c8ec9ae174604b6dde6c1cc6c22953a</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.30.2 git-7ea0f2ff43c2edebc694604f3a82b029d9fa51b5</span>
    </div>
   </td>
  </tr>
@@ -200,7 +200,7 @@ $(function(){initNavTree('d7/dd7/_respawn_anchor_8php_source.html','../../'); in
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">switch</span>($ev-&gt;getAction()){</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">case</span> PlayerRespawnAnchorUseEvent::ACTION_EXPLODE:</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    $this-&gt;explode($player);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">case</span> PlayerRespawnAnchorUseEvent::ACTION_SET_SPAWN:</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    <span class="keywordflow">if</span>($player-&gt;getSpawn() !== <span class="keyword">null</span> &amp;&amp; $player-&gt;getSpawn()-&gt;equals($this-&gt;position)){</div>
