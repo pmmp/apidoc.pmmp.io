@@ -1,5 +1,7 @@
 var NAVTREEINDEX150 =
 {
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#ae2543fd294d689ca6850d5bc78710522":[3,0,1,12,68,38],
+"d9/db1/classpocketmine_1_1item_1_1_medicine.html#aec8070c04112770e0d01a3c56b252e81":[2,0,0,5,67,48],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,68,48],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#af737301b899b7a7c9e9b0bb9a234a119":[2,0,0,5,67,7],
 "d9/db1/classpocketmine_1_1item_1_1_medicine.html#af737301b899b7a7c9e9b0bb9a234a119":[3,0,1,12,68,7],
@@ -29,7 +31,7 @@ var NAVTREEINDEX150 =
 "d9/db4/classpocketmine_1_1promise_1_1_promise.html#a5aca19f330d75e4e0816ccde00afec4e":[3,0,1,20,0,0],
 "d9/db4/classpocketmine_1_1promise_1_1_promise.html#a8c3963ca240c82cf314d94381d8578d9":[3,0,1,20,0,1],
 "d9/db7/tile_2_mob_head_8php_source.html":[4,0,0,0,1,24],
-"d9/db8/_camera_set_instruction_rotation_8php_source.html":[4,0,1,0,1,0,1,1,16],
+"d9/db8/_camera_set_instruction_rotation_8php_source.html":[4,0,1,0,1,0,1,1,17],
 "d9/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_absolute_packet.html":[3,0,1,16,0,6,101],
 "d9/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_absolute_packet.html#a503c0ca04021484ade460826d733118a":[3,0,1,16,0,6,101,7],
 "d9/db8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_move_actor_absolute_packet.html#a581a428bcf2c74c2e45daf3e9e42ca3f":[3,0,1,16,0,6,101,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX150 =
 "d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a0930059237ea6dbfdd6d0e660fd5d53e":[3,0,1,11,1,0,5,6],
 "d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a3cef8acc6859c9021e0644d972cbd86c":[3,0,1,11,1,0,5,3],
 "d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a5844aac564a59f0536edd155a536642d":[3,0,1,11,1,0,5,5],
-"d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a69c056a479869af54741ff6b6b8bae71":[3,0,1,11,1,0,5,2],
-"d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a87f81a86e25aa38e9eb36ef02ed72e30":[3,0,1,11,1,0,5,0],
-"d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a88fcedb50abc9a4765bbc125dd6c8041":[3,0,1,11,1,0,5,7]
+"d9/dc8/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_slot_change_action.html#a69c056a479869af54741ff6b6b8bae71":[3,0,1,11,1,0,5,2]
 };

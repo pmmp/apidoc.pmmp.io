@@ -1,5 +1,11 @@
 var NAVTREEINDEX224 =
 {
+"de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html":[3,0,1,0,1,13],
+"de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html#a15ad5fdcf2a7888ffebf175bf7a2321e":[2,0,0,0,0,13,1],
+"de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html#a15ad5fdcf2a7888ffebf175bf7a2321e":[3,0,1,0,1,13,1],
+"de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html#a6638fb1237a0507357045e79413f9654":[2,0,0,0,0,13,2],
+"de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html#a6638fb1237a0507357045e79413f9654":[3,0,1,0,1,13,2],
+"de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html#a9a0a80ed9de93d8793c30f0d2486d701":[2,0,0,0,0,13,0],
 "de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html#a9a0a80ed9de93d8793c30f0d2486d701":[3,0,1,0,1,13,0],
 "de/df5/_player_quit_event_8php_source.html":[4,0,0,7,3,37],
 "de/df6/_potion_container_change_recipe_data_8php_source.html":[4,0,0,3,0,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX224 =
 "df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,16,12],
 "df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a9837023b7de99820e62ae964bae1cde5":[2,0,0,0,14,66],
 "df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a9837023b7de99820e62ae964bae1cde5":[3,0,1,0,16,66],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,14,41],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,16,41],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,14,8],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,16,8],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,14,5],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,16,5],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,14,18]
+"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,14,41]
 };

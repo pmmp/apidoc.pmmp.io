@@ -1,5 +1,10 @@
 var NAVTREEINDEX195 =
 {
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a8307fc850da5c3f36e9dfc7ce639fe55":[2,0,0,0,213,45],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a8307fc850da5c3f36e9dfc7ce639fe55":[3,0,1,0,215,45],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,213,28],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,215,28],
+"dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,213,11],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,215,11],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,213,66],
 "dc/de3/classpocketmine_1_1block_1_1_stone_button.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,215,66],
@@ -244,10 +249,5 @@ var NAVTREEINDEX195 =
 "dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,35,32],
 "dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,37,32],
 "dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,35,54],
-"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,37,54],
-"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#af45a3d45c4ab6528c6641915722b9de8":[2,0,0,0,35,6],
-"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#af45a3d45c4ab6528c6641915722b9de8":[3,0,1,0,37,6],
-"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#af97d045122137ac415425b45e7b22a36":[2,0,0,0,35,49],
-"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#af97d045122137ac415425b45e7b22a36":[3,0,1,0,37,49],
-"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,35,29]
+"dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,37,54]
 };

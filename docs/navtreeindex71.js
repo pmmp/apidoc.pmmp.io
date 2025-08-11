@@ -89,7 +89,7 @@ var NAVTREEINDEX71 =
 "d4/dfc/_set_player_inventory_options_packet_8php_source.html":[4,0,1,0,1,0,177],
 "d4/dfc/_set_score_packet_8php_source.html":[4,0,1,0,1,0,179],
 "d4/dfc/_user_to_rak_lib_thread_message_receiver_8php_source.html":[4,0,1,0,10,0,6],
-"d4/dfe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease_type.html":[3,0,1,16,0,6,1,1,13],
+"d4/dfe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_ease_type.html":[3,0,1,16,0,6,1,1,14],
 "d4/dfe/classpocketmine_1_1world_1_1light_1_1_light_update.html":[3,0,1,30,3,3],
 "d4/dfe/classpocketmine_1_1world_1_1light_1_1_light_update.html#a7d1ded82386409947c05d8b8be4a7082":[3,0,1,30,3,3,1],
 "d4/dfe/classpocketmine_1_1world_1_1light_1_1_light_update.html#aea6d09bcc64c168af9ca52303218c3af":[3,0,1,30,3,3,0],

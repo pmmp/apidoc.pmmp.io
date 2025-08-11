@@ -1,5 +1,6 @@
 var NAVTREEINDEX99 =
 {
+"d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#ab51ea2314ed5df2163bca971a462fb72":[2,0,0,0,208,8],
 "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#ab51ea2314ed5df2163bca971a462fb72":[3,0,1,0,210,8],
 "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,208,64],
 "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,210,64],
@@ -248,6 +249,5 @@ var NAVTREEINDEX99 =
 "d6/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_take_stack_request_action.html":[3,0,1,16,0,6,1,4,0,21],
 "d6/dc0/namespacepocketmine_1_1permission.html":[2,0,0,9],
 "d6/dc0/namespacepocketmine_1_1permission.html#a1a5ce458d87f4afd550a866af20037ed":[2,0,0,9,14],
-"d6/dc0/namespacepocketmine_1_1permission.html#aaba8c18af6b314f1bbb7ce0b041c1b83":[2,0,0,9,13],
-"d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html":[2,0,0,0,241]
+"d6/dc0/namespacepocketmine_1_1permission.html#aaba8c18af6b314f1bbb7ce0b041c1b83":[2,0,0,9,13]
 };

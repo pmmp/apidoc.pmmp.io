@@ -1,5 +1,10 @@
 var NAVTREEINDEX217 =
 {
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,67,34],
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,69,34],
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,67,23],
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,69,23],
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,67,31],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,69,31],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#ab4d678fcc49f71fc70fff710482f3f4e":[2,0,0,0,67,19],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#ab4d678fcc49f71fc70fff710482f3f4e":[3,0,1,0,69,19],
@@ -244,10 +249,5 @@ var NAVTREEINDEX217 =
 "de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a43e646d154a8134eb1e7294d158d576d":[3,0,1,4,2,9],
 "de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a46ca31398256b2a5fecddd025587579b":[3,0,1,4,2,2],
 "de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a4c58fc3d97b59245d73157c09b3bbe03":[3,0,1,4,2,26],
-"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a4c7aef211a9628f380e7de98b49c4551":[3,0,1,4,2,4],
-"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a5b07e7dec2523174411fb7762c69bf3f":[3,0,1,4,2,14],
-"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a5c676080faee6eaecdc04a70fcedf142":[3,0,1,4,2,24],
-"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a62e8a8891e7940a3b14878c3b46cbdd0":[3,0,1,4,2,8],
-"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a6a079a7248296bc592b391ad6d5d56bf":[3,0,1,4,2,0],
-"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a7296a52c88addd5eefe215276200b6e3":[3,0,1,4,2,29]
+"de/d7a/classpocketmine_1_1crafting_1_1_crafting_grid.html#a4c7aef211a9628f380e7de98b49c4551":[3,0,1,4,2,4]
 };

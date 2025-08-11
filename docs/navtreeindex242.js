@@ -1,5 +1,11 @@
 var NAVTREEINDEX242 =
 {
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,5,4,0],
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,5,4,0],
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d":[2,0,0,3,5,4,1],
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d":[3,0,1,9,5,4,1],
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06":[2,0,0,3,5,4,3],
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06":[3,0,1,9,5,4,3],
 "df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,5,4,5],
 "df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,5,4,5],
 "df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#aab6da03c8024748329b94fd714b747cb":[2,0,0,3,5,4,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX242 =
 "functions_func_c.html":[3,3,1,3],
 "functions_func_d.html":[3,3,1,4],
 "functions_func_e.html":[3,3,1,5],
-"functions_func_f.html":[3,3,1,6],
-"functions_func_g.html":[3,3,1,7],
-"functions_func_h.html":[3,3,1,8],
-"functions_func_i.html":[3,3,1,9],
-"functions_func_j.html":[3,3,1,10],
-"functions_func_k.html":[3,3,1,11],
-"functions_func_l.html":[3,3,1,12]
+"functions_func_f.html":[3,3,1,6]
 };

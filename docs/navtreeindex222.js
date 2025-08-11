@@ -1,5 +1,11 @@
 var NAVTREEINDEX222 =
 {
+"de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#ad23f3231aef6a75a4254d3a7a0ad61c0":[3,0,1,19,15,0],
+"de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#aed7a354e34ecefc1e06093be3b840453":[2,0,0,10,15,8],
+"de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#aed7a354e34ecefc1e06093be3b840453":[3,0,1,19,15,8],
+"de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#af481321b150b700b751722731a1100ac":[2,0,0,10,15,3],
+"de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#af481321b150b700b751722731a1100ac":[3,0,1,19,15,3],
+"de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#afd90b06678e950d3df1fa3040ec2e39b":[2,0,0,10,15,4],
 "de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#afd90b06678e950d3df1fa3040ec2e39b":[3,0,1,19,15,4],
 "de/dc9/_player_data_save_exception_8php_source.html":[4,0,0,14,9],
 "de/dc9/_powered_rail_8php_source.html":[4,0,0,0,171],
@@ -243,11 +249,5 @@ var NAVTREEINDEX222 =
 "de/dd3/classpocketmine_1_1item_1_1_egg.html#abe253aa6fbfe2fc36389edadb753ffc7":[3,0,1,12,39,18],
 "de/dd3/classpocketmine_1_1item_1_1_egg.html#ac534c116a4d2291a8d67f15c4b485b74":[2,0,0,5,38,25],
 "de/dd3/classpocketmine_1_1item_1_1_egg.html#ac534c116a4d2291a8d67f15c4b485b74":[3,0,1,12,39,25],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ac7e878537e8ea68cc0d4d565f9f25062":[2,0,0,5,38,41],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ac7e878537e8ea68cc0d4d565f9f25062":[3,0,1,12,39,41],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ad2d004e5063f6ca465ed956b024217b1":[2,0,0,5,38,26],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ad2d004e5063f6ca465ed956b024217b1":[3,0,1,12,39,26],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ae0735ccc1dee85d0c095aaa4109f40fb":[2,0,0,5,38,12],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ae0735ccc1dee85d0c095aaa4109f40fb":[3,0,1,12,39,12],
-"de/dd3/classpocketmine_1_1item_1_1_egg.html#ae2543fd294d689ca6850d5bc78710522":[2,0,0,5,38,35]
+"de/dd3/classpocketmine_1_1item_1_1_egg.html#ac7e878537e8ea68cc0d4d565f9f25062":[2,0,0,5,38,41]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX188 =
 {
+"dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet.html":[3,0,1,16,0,6,118],
+"dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet.html#a1e8c3bc264e9bb748048d17353e5763f":[3,0,1,16,0,6,118,6],
 "dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet.html#a29c9dee74bb70329d3921325c0e75cc6":[3,0,1,16,0,6,118,7],
 "dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet.html#a4f652c088d879ef9d64b1576cbb47402":[3,0,1,16,0,6,118,2],
 "dc/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_photo_transfer_packet.html#a63cea61b09a2627816c47063fa07c4cd":[3,0,1,16,0,6,118,5],
@@ -11,6 +13,9 @@ var NAVTREEINDEX188 =
 "dc/d79/classraklib_1_1protocol_1_1_disconnection_notification.html#ab8de9fe0266990afaa8ba01c09ff302a":[3,0,2,2,9,1],
 "dc/d79/classraklib_1_1protocol_1_1_disconnection_notification.html#ac7e76cdbad6daaa6bf594f5d3d46099e":[3,0,2,2,9,0],
 "dc/d79/classraklib_1_1protocol_1_1_disconnection_notification.html#ad0821f220d2bd75d9bd9617d63d764c3":[3,0,2,2,9,2],
+"dc/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fov_instruction.html":[3,0,1,16,0,6,1,1,9],
+"dc/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fov_instruction.html#a640f71dc1d71eaeac417b0876d139a8a":[3,0,1,16,0,6,1,1,9,1],
+"dc/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fov_instruction.html#a660bd27336ead1e486665c182fd06f7e":[3,0,1,16,0,6,1,1,9,0],
 "dc/d7b/classpocketmine_1_1world_1_1particle_1_1_terrain_particle.html":[3,0,1,30,4,34],
 "dc/d7b/classpocketmine_1_1world_1_1particle_1_1_terrain_particle.html#ae72191b426c162ecf270b5038205a9f5":[3,0,1,30,4,34,0],
 "dc/d7c/_default_gamemode_command_8php_source.html":[4,0,0,1,0,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX188 =
 "dc/d9e/classpocketmine_1_1block_1_1_wood.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,246,1],
 "dc/d9e/classpocketmine_1_1block_1_1_wood.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,248,1],
 "dc/d9e/classpocketmine_1_1block_1_1_wood.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,246,5],
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,248,5],
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,246,33],
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,248,33],
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#ae6f3cdb7eeee27448b561fa3f8323916":[2,0,0,0,246,48],
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#ae6f3cdb7eeee27448b561fa3f8323916":[3,0,1,0,248,48],
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,246,32]
+"dc/d9e/classpocketmine_1_1block_1_1_wood.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,248,5]
 };

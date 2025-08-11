@@ -466,6 +466,7 @@ var hierarchy =
     [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraFadeInstruction", "d7/d08/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraFadeInstructionColor", "da/d63/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_color.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraFadeInstructionTime", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_time.html", null ],
+    [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraFovInstruction", "dc/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fov_instruction.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraPreset", "d1/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraPresetAimAssist", "d7/dec/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset_aim_assist.html", null ],
     [ "pocketmine\\network\\mcpe\\protocol\\types\\camera\\CameraSetInstruction", "dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html", null ],

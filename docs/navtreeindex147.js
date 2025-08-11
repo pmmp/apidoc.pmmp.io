@@ -1,5 +1,7 @@
 var NAVTREEINDEX147 =
 {
+"d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,60,14],
+"d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,62,14],
 "d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,60,39],
 "d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,62,39],
 "d9/d68/classpocketmine_1_1block_1_1_cocoa_block.html#a63a59c516524bff04f00d01320264add":[2,0,0,0,60,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX147 =
 "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#afdd4efc12fe21730ceb104af111f576d":[2,0,0,2,19,35],
 "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#afdd4efc12fe21730ceb104af111f576d":[3,0,1,7,24,35],
 "d9/d6b/classpocketmine_1_1entity_1_1_villager.html#afeda8ddcc77181100f2934068c76facb":[2,0,0,2,19,42],
-"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#afeda8ddcc77181100f2934068c76facb":[3,0,1,7,24,42],
-"d9/d6e/_help_command_8php_source.html":[4,0,0,1,0,13],
-"d9/d6e/_multi_any_support_trait_8php_source.html":[4,0,0,0,2,33]
+"d9/d6b/classpocketmine_1_1entity_1_1_villager.html#afeda8ddcc77181100f2934068c76facb":[3,0,1,7,24,42]
 };

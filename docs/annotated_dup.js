@@ -1041,7 +1041,7 @@ var annotated_dup =
           ] ],
           [ "cache", null, [
             [ "ChunkCache", "d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache.html", "d0/deb/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_chunk_cache" ],
-            [ "CraftingDataCache", "d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html", null ],
+            [ "CraftingDataCache", "d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html", "d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache" ],
             [ "CreativeInventoryCache", "dc/df6/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache.html", null ],
             [ "CreativeInventoryCacheEntry", "d2/ddf/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache_entry.html", "d2/ddf/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_creative_inventory_cache_entry" ],
             [ "StaticPacketCache", "df/dc5/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_static_packet_cache.html", null ]
@@ -1128,6 +1128,7 @@ var annotated_dup =
                 [ "CameraFadeInstruction", "d7/d08/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction.html", null ],
                 [ "CameraFadeInstructionColor", "da/d63/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_color.html", null ],
                 [ "CameraFadeInstructionTime", "de/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fade_instruction_time.html", null ],
+                [ "CameraFovInstruction", "dc/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fov_instruction.html", "dc/d7a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_fov_instruction" ],
                 [ "CameraPreset", "d1/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset.html", null ],
                 [ "CameraPresetAimAssist", "d7/dec/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset_aim_assist.html", null ],
                 [ "CameraSetInstruction", "dc/d3a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction.html", null ],

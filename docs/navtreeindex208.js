@@ -1,5 +1,10 @@
 var NAVTREEINDEX208 =
 {
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a57b1586e3b6d81440be1aa89471f2a2a":[3,0,1,0,196,57],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a588080e805e50e4f97e1a3d256b8c11e":[2,0,0,0,194,16],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a588080e805e50e4f97e1a3d256b8c11e":[3,0,1,0,196,16],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a60fbeee5c491ef33041066e07ba1ca8c":[2,0,0,0,194,56],
+"dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a60fbeee5c491ef33041066e07ba1ca8c":[3,0,1,0,196,56],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a6201b0d5460ae6f3b5cee03197c9a94a":[2,0,0,0,194,42],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a6201b0d5460ae6f3b5cee03197c9a94a":[3,0,1,0,196,42],
 "dd/dc4/classpocketmine_1_1block_1_1_simple_pressure_plate.html#a6d3cefce63d654d994f2e1b5dcc11c54":[2,0,0,0,194,23],
@@ -244,10 +249,5 @@ var NAVTREEINDEX208 =
 "dd/dd0/classpocketmine_1_1block_1_1_ladder.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,133,15],
 "dd/dd0/classpocketmine_1_1block_1_1_ladder.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,131,1],
 "dd/dd0/classpocketmine_1_1block_1_1_ladder.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,133,1],
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,131,5],
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,133,5],
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,131,33],
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,133,33],
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,131,32],
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,133,32]
+"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,131,5]
 };

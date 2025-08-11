@@ -157,7 +157,7 @@ var NAVTREEINDEX61 =
 "d4/d65/classpocketmine_1_1block_1_1tile_1_1_ender_chest.html#aae5a51b50f48ba5b0a8559c0c12a8456":[3,0,1,0,1,15,6],
 "d4/d65/classpocketmine_1_1block_1_1tile_1_1_ender_chest.html#afe23cda17d38b77ada895bb27dfdd6c9":[2,0,0,0,0,15,7],
 "d4/d65/classpocketmine_1_1block_1_1tile_1_1_ender_chest.html#afe23cda17d38b77ada895bb27dfdd6c9":[3,0,1,0,1,15,7],
-"d4/d65/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_rotation.html":[3,0,1,16,0,6,1,1,14],
+"d4/d65/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_set_instruction_rotation.html":[3,0,1,16,0,6,1,1,15],
 "d4/d66/classpocketmine_1_1block_1_1_furnace.html":[2,0,0,0,108],
 "d4/d66/classpocketmine_1_1block_1_1_furnace.html":[3,0,1,0,110],
 "d4/d66/classpocketmine_1_1block_1_1_furnace.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,108,58],

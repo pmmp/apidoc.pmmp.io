@@ -1,5 +1,6 @@
 var NAVTREEINDEX92 =
 {
+"d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,179,22],
 "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,181,22],
 "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,179,2],
 "d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a286fc64348f13417dcb6106c2695911b":[3,0,1,0,181,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX92 =
 "d6/d74/classpocketmine_1_1item_1_1_sword.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,110,48],
 "d6/d74/classpocketmine_1_1item_1_1_sword.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,109,51],
 "d6/d74/classpocketmine_1_1item_1_1_sword.html#aa27432059ecfd201a3cec74253b21fa9":[3,0,1,12,110,51],
-"d6/d74/classpocketmine_1_1item_1_1_sword.html#aa2834fb1656bc61244f5a24091aaa600":[2,0,0,5,109,39],
-"d6/d74/classpocketmine_1_1item_1_1_sword.html#aa2834fb1656bc61244f5a24091aaa600":[3,0,1,12,110,39]
+"d6/d74/classpocketmine_1_1item_1_1_sword.html#aa2834fb1656bc61244f5a24091aaa600":[2,0,0,5,109,39]
 };

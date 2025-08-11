@@ -1,5 +1,7 @@
 var NAVTREEINDEX175 =
 {
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,163,4],
+"db/dc5/classpocketmine_1_1block_1_1_opaque.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,161,17],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,163,17],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,161,34],
 "db/dc5/classpocketmine_1_1block_1_1_opaque.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,163,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX175 =
 "db/de1/_permissible_delegate_trait_8php_source.html":[4,0,0,13,6],
 "db/de2/_pardon_command_8php_source.html":[4,0,0,1,0,19],
 "db/de4/_block_type_names_8php_source.html":[4,0,0,5,0,0,10],
-"db/de4/_form_validation_exception_8php_source.html":[4,0,0,8,1],
-"db/de8/_fire_aspect_enchantment_8php_source.html":[4,0,0,10,0,5],
-"db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html":[3,0,1,16,0,6,1,1,3]
+"db/de4/_form_validation_exception_8php_source.html":[4,0,0,8,1]
 };

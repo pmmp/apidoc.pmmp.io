@@ -1,5 +1,10 @@
 var NAVTREEINDEX200 =
 {
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,33,21],
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,32,31],
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,33,31],
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,32,5],
+"dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,33,5],
 "dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a56bc59582baf2faf3412ca7044831e3b":[2,0,0,5,32,37],
 "dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a56bc59582baf2faf3412ca7044831e3b":[3,0,1,12,33,37],
 "dd/d3a/classpocketmine_1_1item_1_1_cooked_salmon.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,32,52],
@@ -244,10 +249,5 @@ var NAVTREEINDEX200 =
 "dd/d4a/_inter_thread_channel_reader_8php_source.html":[4,0,1,0,10,0,0],
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html":[2,0,0,0,51],
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html":[3,0,1,0,53],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,51,58],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,53,58],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a09f4667329f89292dd319d56c4243b59":[2,0,0,0,51,30],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a09f4667329f89292dd319d56c4243b59":[3,0,1,0,53,30],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[2,0,0,0,51,18],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,53,18]
+"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,51,58]
 };

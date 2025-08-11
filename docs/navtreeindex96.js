@@ -1,5 +1,6 @@
 var NAVTREEINDEX96 =
 {
+"d6/d94/classpocketmine_1_1block_1_1_infested_stone.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,127,3],
 "d6/d94/classpocketmine_1_1block_1_1_infested_stone.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,129,3],
 "d6/d94/classpocketmine_1_1block_1_1_infested_stone.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,127,22],
 "d6/d94/classpocketmine_1_1block_1_1_infested_stone.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,129,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX96 =
 "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#ae2543fd294d689ca6850d5bc78710522":[2,0,0,5,87,38],
 "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#ae2543fd294d689ca6850d5bc78710522":[3,0,1,12,88,38],
 "d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#aec8070c04112770e0d01a3c56b252e81":[2,0,0,5,87,49],
-"d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,88,49],
-"d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#af737301b899b7a7c9e9b0bb9a234a119":[2,0,0,5,87,7]
+"d6/d9e/classpocketmine_1_1item_1_1_raw_fish.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,88,49]
 };

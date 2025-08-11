@@ -125,7 +125,7 @@ var NAVTREEINDEX22 =
 "d1/d7b/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_destroy_item_action.html#a97742709e144dcff331d0359d6860351":[3,0,1,11,1,0,2,2],
 "d1/d7b/classpocketmine_1_1world_1_1sound_1_1_scrape_sound.html":[3,0,1,30,5,93],
 "d1/d7b/classpocketmine_1_1world_1_1sound_1_1_scrape_sound.html#a06941c85c5f68f6446aea5bc5fd17f40":[3,0,1,30,5,93,0],
-"d1/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_target_instruction.html":[3,0,1,16,0,6,1,1,15],
+"d1/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_target_instruction.html":[3,0,1,16,0,6,1,1,16],
 "d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html":[3,0,1,16,0,6,115],
 "d1/d7e/_standard_chat_formatter_8php_source.html":[4,0,0,14,0,2],
 "d1/d7f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_crafting_data_packet.html":[3,0,1,16,0,6,56],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX124 =
 {
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,241,36],
+"d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,239,35],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,241,35],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,239,58],
 "d8/d25/classpocketmine_1_1block_1_1_water_cauldron.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,241,58],
@@ -247,7 +249,5 @@ var NAVTREEINDEX124 =
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#ae0735ccc1dee85d0c095aaa4109f40fb":[3,0,1,12,98,13],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#ae1229e66119370a5b7d18d8bbc15c485":[2,0,0,5,97,21],
 "d8/d37/classpocketmine_1_1item_1_1_shovel.html#ae1229e66119370a5b7d18d8bbc15c485":[3,0,1,12,98,21],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#aec8070c04112770e0d01a3c56b252e81":[2,0,0,5,97,50],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,98,50],
-"d8/d37/classpocketmine_1_1item_1_1_shovel.html#af737301b899b7a7c9e9b0bb9a234a119":[2,0,0,5,97,8]
+"d8/d37/classpocketmine_1_1item_1_1_shovel.html#aec8070c04112770e0d01a3c56b252e81":[2,0,0,5,97,50]
 };

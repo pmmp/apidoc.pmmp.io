@@ -1,5 +1,10 @@
 var NAVTREEINDEX216 =
 {
+"de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,28,16],
+"de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,27,15],
+"de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a7d45886d40860e24fb4c18d02a3d1a32":[3,0,1,12,28,15],
+"de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a8e97e9296238bf8794a2d2f8e94e8a93":[2,0,0,5,27,51],
+"de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a8e97e9296238bf8794a2d2f8e94e8a93":[3,0,1,12,28,51],
 "de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a95cfab40de7390593990a239f8e4af73":[2,0,0,5,27,12],
 "de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a95cfab40de7390593990a239f8e4af73":[3,0,1,12,28,12],
 "de/d45/classpocketmine_1_1item_1_1_cooked_chicken.html#a9866a7ab362cec28252d67f6382a4ad4":[2,0,0,5,27,33],
@@ -244,10 +249,5 @@ var NAVTREEINDEX216 =
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,67,4],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,69,4],
 "de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,67,17],
-"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,69,17],
-"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,67,34],
-"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,69,34],
-"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,67,23],
-"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,69,23],
-"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,67,31]
+"de/d68/classpocketmine_1_1block_1_1_copper_ore.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,69,17]
 };

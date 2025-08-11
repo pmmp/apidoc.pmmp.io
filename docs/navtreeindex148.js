@@ -1,5 +1,7 @@
 var NAVTREEINDEX148 =
 {
+"d9/d6e/_help_command_8php_source.html":[4,0,0,1,0,13],
+"d9/d6e/_multi_any_support_trait_8php_source.html":[4,0,0,0,2,33],
 "d9/d6f/_change_mob_property_packet_8php_source.html":[4,0,1,0,1,0,32],
 "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html":[2,0,0,5,63],
 "d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html":[3,0,1,12,64],
@@ -247,7 +249,5 @@ var NAVTREEINDEX148 =
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a9dd9484fe3ab1afcbd2627860e01973a":[2,0,0,5,21,43],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a9dd9484fe3ab1afcbd2627860e01973a":[3,0,1,12,22,43],
 "d9/d97/classpocketmine_1_1item_1_1_clock.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[2,0,0,5,21,8],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[3,0,1,12,22,8],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#aa27432059ecfd201a3cec74253b21fa9":[2,0,0,5,21,46],
-"d9/d97/classpocketmine_1_1item_1_1_clock.html#aa27432059ecfd201a3cec74253b21fa9":[3,0,1,12,22,46]
+"d9/d97/classpocketmine_1_1item_1_1_clock.html#a9fbcd5bdd10c237ec9f0dea1daaeeb57":[3,0,1,12,22,8]
 };

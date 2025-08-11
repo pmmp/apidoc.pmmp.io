@@ -43,6 +43,7 @@ var NAVTREEINDEX90 =
 "d6/d47/_plugin_enable_order_8php_source.html":[4,0,0,15,9],
 "d6/d48/_manifest_metadata_8php_source.html":[4,0,0,17,0,3],
 "d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html":[3,0,1,16,0,1,1],
+"d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache.html#ae64af4c2af9b04c82d125066eb03fc8d":[3,0,1,16,0,1,1,0],
 "d6/d49/block_2tile_2_banner_8php_source.html":[4,0,0,0,1,0],
 "d6/d4a/_instant_enchant_particle_8php_source.html":[4,0,0,25,4,20],
 "d6/d4b/_input_mode_8php_source.html":[4,0,1,0,1,0,1,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX90 =
 "d6/d58/tile_2_brewing_stand_8php_source.html":[4,0,0,0,1,6],
 "d6/d5a/classpocketmine_1_1item_1_1_coal.html":[2,0,0,5,23],
 "d6/d5a/classpocketmine_1_1item_1_1_coal.html":[3,0,1,12,24],
-"d6/d5a/classpocketmine_1_1item_1_1_coal.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,23,30],
-"d6/d5a/classpocketmine_1_1item_1_1_coal.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,24,30]
+"d6/d5a/classpocketmine_1_1item_1_1_coal.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,23,30]
 };

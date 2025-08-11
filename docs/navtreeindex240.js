@@ -1,5 +1,11 @@
 var NAVTREEINDEX240 =
 {
+"df/db6/classpocketmine_1_1item_1_1_string_item.html#abd2688f008221d4c5fcdacac754d807e":[3,0,1,12,106,36],
+"df/db6/classpocketmine_1_1item_1_1_string_item.html#abe253aa6fbfe2fc36389edadb753ffc7":[2,0,0,5,105,18],
+"df/db6/classpocketmine_1_1item_1_1_string_item.html#abe253aa6fbfe2fc36389edadb753ffc7":[3,0,1,12,106,18],
+"df/db6/classpocketmine_1_1item_1_1_string_item.html#ac534c116a4d2291a8d67f15c4b485b74":[2,0,0,5,105,25],
+"df/db6/classpocketmine_1_1item_1_1_string_item.html#ac534c116a4d2291a8d67f15c4b485b74":[3,0,1,12,106,25],
+"df/db6/classpocketmine_1_1item_1_1_string_item.html#ac7e878537e8ea68cc0d4d565f9f25062":[2,0,0,5,105,41],
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#ac7e878537e8ea68cc0d4d565f9f25062":[3,0,1,12,106,41],
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#ad2d004e5063f6ca465ed956b024217b1":[2,0,0,5,105,26],
 "df/db6/classpocketmine_1_1item_1_1_string_item.html#ad2d004e5063f6ca465ed956b024217b1":[3,0,1,12,106,26],
@@ -243,11 +249,5 @@ var NAVTREEINDEX240 =
 "df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html":[3,0,1,22,13],
 "df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a027df996b2300ee4ccc3436a86bb6b44":[2,0,0,11,13,8],
 "df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a027df996b2300ee4ccc3436a86bb6b44":[3,0,1,22,13,8],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ba680fdef8ef3e5832322b56dc460f0":[2,0,0,11,13,3],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ba680fdef8ef3e5832322b56dc460f0":[3,0,1,22,13,3],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948":[2,0,0,11,13,12],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948":[3,0,1,22,13,12],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a31a5f710f3a68f80c5daa945dc4642e2":[2,0,0,11,13,5],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a31a5f710f3a68f80c5daa945dc4642e2":[3,0,1,22,13,5],
-"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a328e5ca10ddf86ef16c7311f18933041":[2,0,0,11,13,6]
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ba680fdef8ef3e5832322b56dc460f0":[2,0,0,11,13,3]
 };

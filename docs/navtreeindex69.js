@@ -62,7 +62,7 @@ var NAVTREEINDEX69 =
 "d4/ddb/classpocketmine_1_1item_1_1_projectile_item.html#af85accbedba28b67bb66d5f12d329585":[2,0,0,5,80,37],
 "d4/ddb/classpocketmine_1_1item_1_1_projectile_item.html#af85accbedba28b67bb66d5f12d329585":[3,0,1,12,81,37],
 "d4/ddc/_world_particle_event_8php_source.html":[4,0,0,7,6,10],
-"d4/ddd/_camera_preset_aim_assist_8php_source.html":[4,0,1,0,1,0,1,1,12],
+"d4/ddd/_camera_preset_aim_assist_8php_source.html":[4,0,1,0,1,0,1,1,13],
 "d4/ddd/_rabbit_stew_8php_source.html":[4,0,0,10,91],
 "d4/ddd/_world_unload_event_8php_source.html":[4,0,0,7,6,13],
 "d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html":[3,0,1,4,8],

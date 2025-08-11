@@ -1,5 +1,11 @@
 var NAVTREEINDEX241 =
 {
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ba680fdef8ef3e5832322b56dc460f0":[3,0,1,22,13,3],
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948":[2,0,0,11,13,12],
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948":[3,0,1,22,13,12],
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a31a5f710f3a68f80c5daa945dc4642e2":[2,0,0,11,13,5],
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a31a5f710f3a68f80c5daa945dc4642e2":[3,0,1,22,13,5],
+"df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a328e5ca10ddf86ef16c7311f18933041":[2,0,0,11,13,6],
 "df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a328e5ca10ddf86ef16c7311f18933041":[3,0,1,22,13,6],
 "df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a3cf7454be9911ea585af23c81846c4f2":[2,0,0,11,13,7],
 "df/ddd/classpocketmine_1_1scheduler_1_1_timings_collection_task.html#a3cf7454be9911ea585af23c81846c4f2":[3,0,1,22,13,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX241 =
 "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,235,27],
 "df/dee/classpocketmine_1_1block_1_1_wall_banner.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,237,27],
 "df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html":[2,0,0,3,5,4],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html":[3,0,1,9,5,4],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,5,4,0],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,5,4,0],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d":[2,0,0,3,5,4,1],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a5b80a5685d7c99143da08c5b98991c3d":[3,0,1,9,5,4,1],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06":[2,0,0,3,5,4,3],
-"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html#a93024f18be81026a91668bcfc5544a06":[3,0,1,9,5,4,3]
+"df/def/classpocketmine_1_1event_1_1server_1_1_low_memory_event.html":[3,0,1,9,5,4]
 };

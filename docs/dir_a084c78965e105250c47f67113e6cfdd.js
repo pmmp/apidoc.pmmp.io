@@ -11,6 +11,7 @@ var dir_a084c78965e105250c47f67113e6cfdd =
     [ "CameraFadeInstruction.php", "d7/d6a/_camera_fade_instruction_8php_source.html", null ],
     [ "CameraFadeInstructionColor.php", "dc/da3/_camera_fade_instruction_color_8php_source.html", null ],
     [ "CameraFadeInstructionTime.php", "d3/dbb/_camera_fade_instruction_time_8php_source.html", null ],
+    [ "CameraFovInstruction.php", "de/db1/_camera_fov_instruction_8php_source.html", null ],
     [ "CameraPreset.php", "d8/df0/_camera_preset_8php_source.html", null ],
     [ "CameraPresetAimAssist.php", "d4/ddd/_camera_preset_aim_assist_8php_source.html", null ],
     [ "CameraSetInstruction.php", "d4/da6/_camera_set_instruction_8php_source.html", null ],

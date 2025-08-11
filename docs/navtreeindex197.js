@@ -1,5 +1,10 @@
 var NAVTREEINDEX197 =
 {
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aabd7c38d2f74e537da5bcc6149570fd8":[3,0,1,12,73,18],
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aad9f6fbf32449170a157b787d4227ee6":[2,0,0,5,72,30],
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aad9f6fbf32449170a157b787d4227ee6":[3,0,1,12,73,30],
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aba073e91196cf2978057ec4d3842aa76":[2,0,0,5,72,42],
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#aba073e91196cf2978057ec4d3842aa76":[3,0,1,12,73,42],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#abd2688f008221d4c5fcdacac754d807e":[2,0,0,5,72,39],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#abd2688f008221d4c5fcdacac754d807e":[3,0,1,12,73,39],
 "dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#abe253aa6fbfe2fc36389edadb753ffc7":[2,0,0,5,72,19],
@@ -244,10 +249,5 @@ var NAVTREEINDEX197 =
 "dd/d18/classpocketmine_1_1block_1_1_block_identifier.html#a007bec20455b9a4e8499170a5d72117a":[3,0,1,0,26,1],
 "dd/d18/classpocketmine_1_1block_1_1_block_identifier.html#ae9933de2590f5045eaffd5cde23b553b":[2,0,0,0,24,0],
 "dd/d18/classpocketmine_1_1block_1_1_block_identifier.html#ae9933de2590f5045eaffd5cde23b553b":[3,0,1,0,26,0],
-"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html":[3,0,1,16,0,6,1,2,2],
-"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html#a368f6cc1f4d49ab9c221c68ceae9248c":[3,0,1,16,0,6,1,2,2,2],
-"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html#a375f9981fb66419d8732ea4101c48f6b":[3,0,1,16,0,6,1,2,2,0],
-"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html#ae830301ea0e4a6d9e799d159a31e3796":[3,0,1,16,0,6,1,2,2,1],
-"dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html":[2,0,0,11,11],
-"dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html":[3,0,1,22,11]
+"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html":[3,0,1,16,0,6,1,2,2]
 };

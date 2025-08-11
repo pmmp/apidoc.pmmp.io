@@ -33,7 +33,7 @@ var NAVTREEINDEX29 =
 "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,238,16],
 "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,236,27],
 "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,238,27],
-"d1/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset.html":[3,0,1,16,0,6,1,1,9],
+"d1/dfd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_preset.html":[3,0,1,16,0,6,1,1,10],
 "d1/dfe/_gravel_8php_source.html":[4,0,0,0,121],
 "d1/dfe/_player_display_name_change_event_8php_source.html":[4,0,0,7,3,12],
 "d1/dff/_fizz_sound_8php_source.html":[4,0,0,25,5,62],

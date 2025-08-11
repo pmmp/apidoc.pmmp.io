@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.31.1 git-a83c62a4a2e5eea17fdfc3eb2bfd55f31534a9e3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.1 git-11612ed0e2a554ed94f654a625656e5f6b9a14b3</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,7 @@ $(function(){initNavTree('d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../de/da3/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1_crafting_data_cache-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">pocketmine\network\mcpe\cache\CraftingDataCache Class Reference</div></div>
 </div><!--header-->
@@ -121,6 +122,11 @@ $(function(){initNavTree('d6/d48/classpocketmine_1_1network_1_1mcpe_1_1cache_1_1
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab969f0bdfaf1eb3c7aaf4d98c0c09e31" id="r_ab969f0bdfaf1eb3c7aaf4d98c0c09e31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab969f0bdfaf1eb3c7aaf4d98c0c09e31">getCache</a> (<a class="el" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html">CraftingManager</a> $manager)</td></tr>
 <tr class="separator:ab969f0bdfaf1eb3c7aaf4d98c0c09e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae64af4c2af9b04c82d125066eb03fc8d" id="r_ae64af4c2af9b04c82d125066eb03fc8d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae64af4c2af9b04c82d125066eb03fc8d">RECIPE_ID_OFFSET</a> = 1</td></tr>
+<tr class="separator:ae64af4c2af9b04c82d125066eb03fc8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -141,7 +147,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d17/_crafting_data_cache_8php_source.html#l00059">59</a> of file <a class="el" href="../../d8/d17/_crafting_data_cache_8php_source.html">CraftingDataCache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d17/_crafting_data_cache_8php_source.html#l00065">65</a> of file <a class="el" href="../../d8/d17/_crafting_data_cache_8php_source.html">CraftingDataCache.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae64af4c2af9b04c82d125066eb03fc8d" name="ae64af4c2af9b04c82d125066eb03fc8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64af4c2af9b04c82d125066eb03fc8d">&#9670;&#160;</a></span>RECIPE_ID_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\cache\CraftingDataCache::RECIPE_ID_OFFSET = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The client doesn't like recipes with ID 0 (as of 1.21.100) and complains about them in the content log This doesn't actually affect the function of the recipe, but it is annoying, so this offset fixes it </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d17/_crafting_data_cache_8php_source.html#l00063">63</a> of file <a class="el" href="../../d8/d17/_crafting_data_cache_8php_source.html">CraftingDataCache.php</a>.</p>
 
 </div>
 </div>

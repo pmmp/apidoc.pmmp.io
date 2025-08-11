@@ -1,5 +1,7 @@
 var NAVTREEINDEX176 =
 {
+"db/de8/_fire_aspect_enchantment_8php_source.html":[4,0,0,10,0,5],
+"db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html":[3,0,1,16,0,6,1,1,3],
 "db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html#a0b5df1670b0dd69f8a507b6133537568":[3,0,1,16,0,6,1,1,3,2],
 "db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html#a6b26c189192189985ab84578c9677c0b":[3,0,1,16,0,6,1,1,3,1],
 "db/de8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_aim_assist_category_priorities.html#ae942c4f772f96b5b5338fd8dc001180c":[3,0,1,16,0,6,1,1,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX176 =
 "dc/d04/scan_8php_source.html":[4,0,1,0,9,1,1],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html":[2,0,0,0,47],
 "dc/d05/classpocketmine_1_1block_1_1_cauldron.html":[3,0,1,0,49],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,47,48],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a028afd613a6f42370ede9aec4c9796d6":[3,0,1,0,49,48],
-"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,47,58]
+"dc/d05/classpocketmine_1_1block_1_1_cauldron.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,47,48]
 };

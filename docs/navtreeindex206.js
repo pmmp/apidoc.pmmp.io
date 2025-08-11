@@ -1,5 +1,10 @@
 var NAVTREEINDEX206 =
 {
+"dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#a4df189af782480d60d8a175e601e1408":[3,0,1,7,1,14,0],
+"dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#a6a3d10360dbcd001a11f3531e3a5234f":[3,0,1,7,1,14,5],
+"dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#a6f10244e47d1979de4b4b92a84033ef6":[3,0,1,7,1,14,3],
+"dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#a7b2e804f2bd6d6f11acae88699ccec85":[3,0,1,7,1,14,4],
+"dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#aa8327bd087f9863ba29cfad57f8f8c0c":[3,0,1,7,1,14,1],
 "dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#acb025bd8ea0cfe894f21f0bd40122f8d":[3,0,1,7,1,14,8],
 "dd/dad/classpocketmine_1_1entity_1_1effect_1_1_slowness_effect.html#ad8531e42059f72e6315e1157c87c1e7a":[3,0,1,7,1,14,2],
 "dd/daf/_totem_use_sound_8php_source.html":[4,0,0,25,5,101],
@@ -244,10 +249,5 @@ var NAVTREEINDEX206 =
 "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,71,47],
 "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a47b12dc7738ac0e6b116e360c2937788":[2,0,0,5,70,8],
 "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a47b12dc7738ac0e6b116e360c2937788":[3,0,1,12,71,8],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,70,0],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,71,0],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,70,6],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,71,6],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,70,21],
-"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a51b97f07ff97887a144198bb3dba6fc4":[3,0,1,12,71,21]
+"dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,70,0]
 };

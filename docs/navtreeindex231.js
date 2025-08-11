@@ -1,5 +1,11 @@
 var NAVTREEINDEX231 =
 {
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,4,16],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,6,16],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,4,28],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,6,28],
+"df/d58/classpocketmine_1_1block_1_1_copper_door.html":[2,0,0,0,65],
+"df/d58/classpocketmine_1_1block_1_1_copper_door.html":[3,0,1,0,67],
 "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,65,58],
 "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,67,58],
 "df/d58/classpocketmine_1_1block_1_1_copper_door.html#a09f4667329f89292dd319d56c4243b59":[2,0,0,0,65,30],
@@ -243,11 +249,5 @@ var NAVTREEINDEX231 =
 "df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a1ce2444f76246982cfbb507fed99a48e":[2,0,0,0,197,47],
 "df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a1ce2444f76246982cfbb507fed99a48e":[3,0,1,0,199,47],
 "df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a1e9ba701d71d857020b8dfdfe14a571f":[2,0,0,0,197,24],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a1e9ba701d71d857020b8dfdfe14a571f":[3,0,1,0,199,24],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,197,3],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,199,3],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a24f96b8bf8c6aaf18d6f6420e052ab0a":[2,0,0,0,197,63],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a24f96b8bf8c6aaf18d6f6420e052ab0a":[3,0,1,0,199,63],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,197,22],
-"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,199,22]
+"df/d71/classpocketmine_1_1block_1_1_small_dripleaf.html#a1e9ba701d71d857020b8dfdfe14a571f":[3,0,1,0,199,24]
 };

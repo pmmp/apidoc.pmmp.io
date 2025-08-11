@@ -1,5 +1,10 @@
 var NAVTREEINDEX198 =
 {
+"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html#a368f6cc1f4d49ab9c221c68ceae9248c":[3,0,1,16,0,6,1,2,2,2],
+"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html#a375f9981fb66419d8732ea4101c48f6b":[3,0,1,16,0,6,1,2,2,0],
+"dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html#ae830301ea0e4a6d9e799d159a31e3796":[3,0,1,16,0,6,1,2,2,1],
+"dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html":[2,0,0,11,11],
+"dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html":[3,0,1,22,11],
 "dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#a2e9d4ed9f394f6601500c019a773b10e":[2,0,0,11,11,0],
 "dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#a2e9d4ed9f394f6601500c019a773b10e":[3,0,1,22,11,0],
 "dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#ada3f8dfc580c8b687d1bea2dc9876676":[2,0,0,11,11,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX198 =
 "dd/d22/interfaceraklib_1_1protocol_1_1_message_identifiers.html#afbc1a5839f367aa4bd9cb71d06c96804":[3,0,2,2,12,19],
 "dd/d22/interfaceraklib_1_1protocol_1_1_message_identifiers.html#afd9c7744691f3b0917a85b7322d1a76d":[3,0,2,2,12,50],
 "dd/d24/_boat_type_8php_source.html":[4,0,0,10,15],
-"dd/d24/_slot_change_action_8php_source.html":[4,0,0,9,1,0,5],
-"dd/d25/classpocketmine_1_1math_1_1_facing.html":[2,0,0,6,2],
-"dd/d25/classpocketmine_1_1math_1_1_facing.html":[3,0,1,14,2],
-"dd/d25/classpocketmine_1_1math_1_1_facing.html#a0d3b9c4173f3cbd3a2630f6c9eccb8eb":[2,0,0,6,2,3],
-"dd/d25/classpocketmine_1_1math_1_1_facing.html#a0d3b9c4173f3cbd3a2630f6c9eccb8eb":[3,0,1,14,2,3],
-"dd/d25/classpocketmine_1_1math_1_1_facing.html#a0e5ad4ca547aee0358659d9065d23c44":[2,0,0,6,2,7]
+"dd/d24/_slot_change_action_8php_source.html":[4,0,0,9,1,0,5]
 };
