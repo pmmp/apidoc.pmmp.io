@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_lit_pumpkin =
     [ "getDropsForCompatibleTool", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_lit_pumpkin =
     [ "place", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setFacing", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

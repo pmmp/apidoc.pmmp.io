@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -132,35 +132,24 @@ $(function(){initNavTree('d7/d4a/_mushroom_block_type_id_map_8php_source.html','
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\data\bedrock;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\MushroomBlockType;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../df/d5e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_legacy_metadata.html">pocketmine\data\bedrock\block\BlockLegacyMetadata</a> as LegacyMeta;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../db/df3/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1property_1_1_value_mappings.html">pocketmine\data\bedrock\block\convert\property\ValueMappings</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\utils\SingletonTrait;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">MushroomBlockTypeIdMap</a>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    use SingletonTrait;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    use IntSaveIdMapTrait;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">foreach</span>(MushroomBlockType::cases() as $case){</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            $this-&gt;<span class="keyword">register</span>(match($case){</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                MushroomBlockType::PORES =&gt; LegacyMeta::MUSHROOM_BLOCK_ALL_PORES,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                MushroomBlockType::CAP_NORTHWEST =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_NORTHWEST_CORNER,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                MushroomBlockType::CAP_NORTH =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_NORTH_SIDE,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                MushroomBlockType::CAP_NORTHEAST =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_NORTHEAST_CORNER,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                MushroomBlockType::CAP_WEST =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_WEST_SIDE,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                MushroomBlockType::CAP_MIDDLE =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_TOP_ONLY,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                MushroomBlockType::CAP_EAST =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_EAST_SIDE,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                MushroomBlockType::CAP_SOUTHWEST =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_SOUTHWEST_CORNER,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                MushroomBlockType::CAP_SOUTH =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_SOUTH_SIDE,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                MushroomBlockType::CAP_SOUTHEAST =&gt; LegacyMeta::MUSHROOM_BLOCK_CAP_SOUTHEAST_CORNER,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                MushroomBlockType::ALL_CAP =&gt; LegacyMeta::MUSHROOM_BLOCK_ALL_CAP,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }, $case);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">   33</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">MushroomBlockTypeIdMap</a>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use SingletonTrait;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use IntSaveIdMapTrait;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $newMapping = ValueMappings::getInstance()-&gt;mushroomBlockType;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">foreach</span>(MushroomBlockType::cases() as $case){</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $this-&gt;<span class="keyword">register</span>($newMapping-&gt;valueToRaw($case), $case);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map_html"><div class="ttname"><a href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">pocketmine\data\bedrock\MushroomBlockTypeIdMap</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">MushroomBlockTypeIdMap.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_legacy_metadata_html"><div class="ttname"><a href="../../df/d5e/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_legacy_metadata.html">pocketmine\data\bedrock\block\BlockLegacyMetadata</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_block_legacy_metadata_8php_source.html#l00029">BlockLegacyMetadata.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map_html"><div class="ttname"><a href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">pocketmine\data\bedrock\MushroomBlockTypeIdMap</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">MushroomBlockTypeIdMap.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1property_1_1_value_mappings_html"><div class="ttname"><a href="../../db/df3/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1property_1_1_value_mappings.html">pocketmine\data\bedrock\block\convert\property\ValueMappings</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db0/_value_mappings_8php_source.html#l00042">ValueMappings.php:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

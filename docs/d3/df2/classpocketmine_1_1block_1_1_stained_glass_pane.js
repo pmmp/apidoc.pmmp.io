@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_stained_glass_pane =
     [ "place", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#a61d53e088798a8cbbe8cb5f2155943a1", null ],
     [ "recalculateCollisionBoxes", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#aeb29d78d84483905346d3c777f860ed5", null ],
+    [ "setColor", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#af95495be09d518364547340a75b91392", null ],
     [ "ticksRandomly", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d3/df2/classpocketmine_1_1block_1_1_stained_glass_pane.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

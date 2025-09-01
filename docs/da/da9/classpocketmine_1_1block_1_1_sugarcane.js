@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_sugarcane =
     [ "place", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#ab405d5c0c13b9eaee3bd0dba5f257a0d", null ],
     [ "readStateFromWorld", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a40ab458fbc66796a88837819808c839a", null ],
     [ "writeStateToWorld", "da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

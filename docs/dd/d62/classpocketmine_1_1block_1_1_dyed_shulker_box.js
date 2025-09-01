@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_dyed_shulker_box =
     [ "getDropsForCompatibleTool", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a34c382f7f1002f8c2674ee69bc3ecb2b", null ],
     [ "getDropsForIncompatibleTool", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a4a679eb075cd89e27031e1f7a2ee50c6", null ],
     [ "getFlameEncouragement", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,8 @@ var classpocketmine_1_1block_1_1_dyed_shulker_box =
     [ "place", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#afbd0ebfd70664e0a64e86d7428958ef1", null ],
     [ "readStateFromWorld", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#aba9ce3300d6f0858414954e435388ab2", null ],
     [ "recalculateCollisionBoxes", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setColor", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#af95495be09d518364547340a75b91392", null ],
+    [ "setFacing", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#af14ccaed7b5aa3bd73e77066696f14a5", null ],
     [ "ticksRandomly", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dd/d62/classpocketmine_1_1block_1_1_dyed_shulker_box.html#af1c42740eedc0ade31b9f7500f39d009", null ]
 ];

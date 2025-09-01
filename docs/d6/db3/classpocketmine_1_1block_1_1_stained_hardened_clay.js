@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_stained_hardened_clay =
     [ "place", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setColor", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#af95495be09d518364547340a75b91392", null ],
     [ "ticksRandomly", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d6/db3/classpocketmine_1_1block_1_1_stained_hardened_clay.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_redstone_repeater =
     [ "getDropsForCompatibleTool", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -65,6 +66,8 @@ var classpocketmine_1_1block_1_1_redstone_repeater =
     [ "readStateFromWorld", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a9529f68274ec76a9892a56bac0c99aca", null ],
     [ "setDelay", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a35ad04ed5dc623159c03faf678d08c65", null ],
+    [ "setFacing", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a309c4f7dfc285c358bb69a4253114afa", null ],
+    [ "setPowered", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a2295052904e3730345973ce47e4dc083", null ],
     [ "ticksRandomly", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "de/dd0/classpocketmine_1_1block_1_1_redstone_repeater.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

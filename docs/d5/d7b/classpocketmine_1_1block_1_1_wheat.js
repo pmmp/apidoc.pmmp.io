@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_wheat =
     [ "place", "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a2175d7c31f1159374dd4dd359a117dbb", null ],
     [ "writeStateToWorld", "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

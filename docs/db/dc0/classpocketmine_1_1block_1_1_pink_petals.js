@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_pink_petals =
     [ "getDropsForCompatibleTool", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a765379a94d5e7abab7f832b20d468311", null ],
     [ "getDropsForIncompatibleTool", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a46455532eeac9c815a6b96bc705f44ce", null ],
     [ "getFlammability", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#abccc3faf8ba77670336cfe71222d6c56", null ],
     [ "getFrictionFactor", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -65,6 +66,7 @@ var classpocketmine_1_1block_1_1_pink_petals =
     [ "readStateFromWorld", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a097af4a935135a8524d812f497373075", null ],
     [ "setCount", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a0f062eb1cf1600dc9996fa37ab72d103", null ],
+    [ "setFacing", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "db/dc0/classpocketmine_1_1block_1_1_pink_petals.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

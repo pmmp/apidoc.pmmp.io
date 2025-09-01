@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_glow_lichen =
     [ "getDropsForCompatibleTool", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFaces", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#afddf14e4b93e4f373f6afbab20eaf112", null ],
     [ "getFlameEncouragement", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a7bf80112d0fcb7b576abc45775527fda", null ],
     [ "getFlammability", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#abb40b151e3cbf6247cb1ec1c5f28d5bc", null ],
     [ "getFrictionFactor", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -65,6 +66,8 @@ var classpocketmine_1_1block_1_1_glow_lichen =
     [ "place", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a5fce0dba05d878b3836c3492868b6798", null ],
+    [ "setFace", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#aa3c92a5718b5418cffe5c63cf01bf07a", null ],
+    [ "setFaces", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#ac6006145839bda2efd1b78ff72037290", null ],
     [ "ticksRandomly", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d4/dc5/classpocketmine_1_1block_1_1_glow_lichen.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

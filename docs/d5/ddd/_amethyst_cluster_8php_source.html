@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -132,148 +132,149 @@ $(function(){initNavTree('d5/ddd/_amethyst_cluster_8php_source.html','../../'); 
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\AmethystTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\AnyFacingTrait;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use pocketmine\block\utils\SupportType;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">pocketmine\math\Axis</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">pocketmine\world\BlockTransaction</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">   41</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">AmethystCluster</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    use AmethystTrait;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    use AnyFacingTrait;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_SMALL_BUD = 0;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_MEDIUM_BUD = 1;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_LARGE_BUD = 2;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_CLUSTER = 3;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $stage = self::STAGE_CLUSTER;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a27e7dc4fce312cb235eaa7bc6639b966">   52</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a27e7dc4fce312cb235eaa7bc6639b966">describeBlockItemState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $w-&gt;boundedIntAuto(self::STAGE_SMALL_BUD, self::STAGE_CLUSTER, $this-&gt;stage);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d2/df5/interfacepocketmine_1_1block_1_1utils_1_1_any_facing.html">pocketmine\block\utils\AnyFacing</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\block\utils\AnyFacingTrait;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use pocketmine\block\utils\SupportType;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <a class="code hl_class" href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">pocketmine\math\Axis</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <a class="code hl_class" href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">pocketmine\world\BlockTransaction</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">   42</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">AmethystCluster</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a> implements <a class="code hl_interface" href="../../d2/df5/interfacepocketmine_1_1block_1_1utils_1_1_any_facing.html">AnyFacing</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    use AmethystTrait;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    use AnyFacingTrait;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_SMALL_BUD = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_MEDIUM_BUD = 1;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_LARGE_BUD = 2;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span> <span class="keyword">const</span> STAGE_CLUSTER = 3;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $stage = self::STAGE_CLUSTER;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a27e7dc4fce312cb235eaa7bc6639b966">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a27e7dc4fce312cb235eaa7bc6639b966">describeBlockItemState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $w-&gt;boundedIntAuto(self::STAGE_SMALL_BUD, self::STAGE_CLUSTER, $this-&gt;stage);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">public</span> <span class="keyword">function</span> getStage() : int{ return $this-&gt;stage; }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> setStage(<span class="keywordtype">int</span> $stage) : self{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        if($stage &lt; self::STAGE_SMALL_BUD || $stage &gt; self::STAGE_CLUSTER){</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Size must be in range &quot;</span> . self::STAGE_SMALL_BUD . <span class="stringliteral">&quot; ... &quot;</span> . self::STAGE_CLUSTER);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;stage = $stage;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaa77a85ef3a7df7e532e348edc11746e">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaa77a85ef3a7df7e532e348edc11746e">getLightLevel</a>() : int{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        return match($this-&gt;stage){</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            self::STAGE_SMALL_BUD =&gt; 1,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            self::STAGE_MEDIUM_BUD =&gt; 2,</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            self::STAGE_LARGE_BUD =&gt; 4,</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            self::STAGE_CLUSTER =&gt; 5,</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Invalid stage $this-&gt;stage&quot;</span>),</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        };</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">public</span> <span class="keyword">function</span> getStage() : int{ return $this-&gt;stage; }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span> <span class="keyword">function</span> setStage(<span class="keywordtype">int</span> $stage) : self{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        if($stage &lt; self::STAGE_SMALL_BUD || $stage &gt; self::STAGE_CLUSTER){</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Size must be in range &quot;</span> . self::STAGE_SMALL_BUD . <span class="stringliteral">&quot; ... &quot;</span> . self::STAGE_CLUSTER);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;stage = $stage;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaa77a85ef3a7df7e532e348edc11746e">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaa77a85ef3a7df7e532e348edc11746e">getLightLevel</a>() : int{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return match($this-&gt;stage){</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            self::STAGE_SMALL_BUD =&gt; 1,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            self::STAGE_MEDIUM_BUD =&gt; 2,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            self::STAGE_LARGE_BUD =&gt; 4,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            self::STAGE_CLUSTER =&gt; 5,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Invalid stage $this-&gt;stage&quot;</span>),</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236">   76</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236">recalculateCollisionBoxes</a>() : array{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $myAxis = <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::axis($this-&gt;facing);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $box = AxisAlignedBB::one();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">foreach</span>([Axis::Y, Axis::Z, Axis::X] as $axis){</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span>($axis === $myAxis){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            $box-&gt;squash($axis, $this-&gt;stage === self::STAGE_SMALL_BUD ? 4 / 16 : 3 / 16);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $box-&gt;trim($this-&gt;facing, 1 - ($this-&gt;stage === self::STAGE_CLUSTER ? 7 / 16 : ($this-&gt;stage + 3) / 16));</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> [$box];</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236">   77</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236">recalculateCollisionBoxes</a>() : array{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $myAxis = <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::axis($this-&gt;facing);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $box = AxisAlignedBB::one();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">foreach</span>([Axis::Y, Axis::Z, Axis::X] as $axis){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">if</span>($axis === $myAxis){</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            $box-&gt;squash($axis, $this-&gt;stage === self::STAGE_SMALL_BUD ? 4 / 16 : 3 / 16);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $box-&gt;trim($this-&gt;facing, 1 - ($this-&gt;stage === self::STAGE_CLUSTER ? 7 / 16 : ($this-&gt;stage + 3) / 16));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> [$box];</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(Block $block, <span class="keywordtype">int</span> $facing) : bool{</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        return $block-&gt;getAdjacentSupportType($facing) === SupportType::FULL;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a32144f4e9612a4b1e74a5a27f11615de">   95</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a32144f4e9612a4b1e74a5a27f11615de">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        return SupportType::NONE;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(Block $block, <span class="keywordtype">int</span> $facing) : bool{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        return $block-&gt;getAdjacentSupportType($facing) === SupportType::FULL;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a32144f4e9612a4b1e74a5a27f11615de">   96</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a32144f4e9612a4b1e74a5a27f11615de">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        return SupportType::NONE;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617">   99</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617">place</a>(<a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">BlockTransaction</a> $tx, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockClicked, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        if(!$this-&gt;canBeSupportedAt($blockReplace, <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::opposite($face))){</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $this-&gt;facing = $face;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">return</span> parent::place($tx, $item, $blockReplace, $blockClicked, $face, $clickVector, $player);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617">  100</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617">place</a>(<a class="code hl_class" href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">BlockTransaction</a> $tx, <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace, <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockClicked, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>) : bool{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        if(!$this-&gt;canBeSupportedAt($blockReplace, <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::opposite($face))){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $this-&gt;facing = $face;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> parent::place($tx, $item, $blockReplace, $blockClicked, $face, $clickVector, $player);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a0ca9aeb784eb1eee408750753b41b2a8">  108</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a0ca9aeb784eb1eee408750753b41b2a8">onNearbyBlockChange</a>() : void{</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        if(!$this-&gt;canBeSupportedAt($this, <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::opposite($this-&gt;facing))){</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            $this-&gt;position-&gt;getWorld()-&gt;useBreakOn($this-&gt;position);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a0ca9aeb784eb1eee408750753b41b2a8">  109</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a0ca9aeb784eb1eee408750753b41b2a8">onNearbyBlockChange</a>() : void{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        if(!$this-&gt;canBeSupportedAt($this, <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::opposite($this-&gt;facing))){</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            $this-&gt;position-&gt;getWorld()-&gt;useBreakOn($this-&gt;position);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914">  114</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914">isAffectedBySilkTouch</a>() : bool{</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        return true;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914">  115</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914">isAffectedBySilkTouch</a>() : bool{</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        return true;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
 </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9">  118</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        if($this-&gt;stage === self::STAGE_CLUSTER){</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keywordflow">return</span> [VanillaItems::AMETHYST_SHARD()-&gt;setCount(FortuneDropHelper::weighted($item, min: 4, maxBase: 4))];</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> [];</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9">  119</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        if($this-&gt;stage === self::STAGE_CLUSTER){</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">return</span> [VanillaItems::AMETHYST_SHARD()-&gt;setCount(FortuneDropHelper::weighted($item, min: 4, maxBase: 4))];</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> [];</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
 </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b">  126</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b">getDropsForIncompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        if($this-&gt;stage === self::STAGE_CLUSTER){</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keywordflow">return</span> [VanillaItems::AMETHYST_SHARD()-&gt;setCount(FortuneDropHelper::weighted($item, min: 2, maxBase: 2))];</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">return</span> [];</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b">  127</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b">getDropsForIncompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        if($this-&gt;stage === self::STAGE_CLUSTER){</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">return</span> [VanillaItems::AMETHYST_SHARD()-&gt;setCount(FortuneDropHelper::weighted($item, min: 2, maxBase: 2))];</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> [];</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">pocketmine\block\AmethystCluster</a></div><div class="ttdef"><b>Definition</b> <a href="#l00041">AmethystCluster.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a0ca9aeb784eb1eee408750753b41b2a8"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a0ca9aeb784eb1eee408750753b41b2a8">pocketmine\block\AmethystCluster\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition</b> <a href="#l00108">AmethystCluster.php:108</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a27e7dc4fce312cb235eaa7bc6639b966"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a27e7dc4fce312cb235eaa7bc6639b966">pocketmine\block\AmethystCluster\describeBlockItemState</a></div><div class="ttdeci">describeBlockItemState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition</b> <a href="#l00052">AmethystCluster.php:52</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a2f9880c1d1e65ad51c5d22a85e162617"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617">pocketmine\block\AmethystCluster\place</a></div><div class="ttdeci">place(BlockTransaction $tx, Item $item, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00099">AmethystCluster.php:99</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a32144f4e9612a4b1e74a5a27f11615de"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a32144f4e9612a4b1e74a5a27f11615de">pocketmine\block\AmethystCluster\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00095">AmethystCluster.php:95</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a4142396a85fd943014f51a0c4cb14236"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236">pocketmine\block\AmethystCluster\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00076">AmethystCluster.php:76</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a9a863db873b8e94a8a035c60744d40e9"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9">pocketmine\block\AmethystCluster\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00118">AmethystCluster.php:118</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_aaa77a85ef3a7df7e532e348edc11746e"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaa77a85ef3a7df7e532e348edc11746e">pocketmine\block\AmethystCluster\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition</b> <a href="#l00066">AmethystCluster.php:66</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_aadd0f4e3a4822e3ad69ef73ab3541914"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914">pocketmine\block\AmethystCluster\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition</b> <a href="#l00114">AmethystCluster.php:114</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_ab1d8f7e0c8eea496e464f2382ea9d83b"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b">pocketmine\block\AmethystCluster\getDropsForIncompatibleTool</a></div><div class="ttdeci">getDropsForIncompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00126">AmethystCluster.php:126</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html">pocketmine\block\AmethystCluster</a></div><div class="ttdef"><b>Definition</b> <a href="#l00042">AmethystCluster.php:42</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a0ca9aeb784eb1eee408750753b41b2a8"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a0ca9aeb784eb1eee408750753b41b2a8">pocketmine\block\AmethystCluster\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition</b> <a href="#l00109">AmethystCluster.php:109</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a27e7dc4fce312cb235eaa7bc6639b966"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a27e7dc4fce312cb235eaa7bc6639b966">pocketmine\block\AmethystCluster\describeBlockItemState</a></div><div class="ttdeci">describeBlockItemState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition</b> <a href="#l00053">AmethystCluster.php:53</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a2f9880c1d1e65ad51c5d22a85e162617"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617">pocketmine\block\AmethystCluster\place</a></div><div class="ttdeci">place(BlockTransaction $tx, Item $item, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector, ?Player $player=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00100">AmethystCluster.php:100</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a32144f4e9612a4b1e74a5a27f11615de"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a32144f4e9612a4b1e74a5a27f11615de">pocketmine\block\AmethystCluster\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00096">AmethystCluster.php:96</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a4142396a85fd943014f51a0c4cb14236"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236">pocketmine\block\AmethystCluster\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00077">AmethystCluster.php:77</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_a9a863db873b8e94a8a035c60744d40e9"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9">pocketmine\block\AmethystCluster\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00119">AmethystCluster.php:119</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_aaa77a85ef3a7df7e532e348edc11746e"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aaa77a85ef3a7df7e532e348edc11746e">pocketmine\block\AmethystCluster\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition</b> <a href="#l00067">AmethystCluster.php:67</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_aadd0f4e3a4822e3ad69ef73ab3541914"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aadd0f4e3a4822e3ad69ef73ab3541914">pocketmine\block\AmethystCluster\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition</b> <a href="#l00115">AmethystCluster.php:115</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_amethyst_cluster_html_ab1d8f7e0c8eea496e464f2382ea9d83b"><div class="ttname"><a href="../../d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b">pocketmine\block\AmethystCluster\getDropsForIncompatibleTool</a></div><div class="ttdeci">getDropsForIncompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00127">AmethystCluster.php:127</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_fortune_drop_helper_html"><div class="ttname"><a href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd6/_fortune_drop_helper_8php_source.html#l00033">FortuneDropHelper.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00346">VanillaItems.php:346</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00358">VanillaItems.php:358</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_aligned_b_b_html"><div class="ttname"><a href="../../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html">pocketmine\math\AxisAlignedBB</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d87/_axis_aligned_b_b_8php_source.html#l00029">AxisAlignedBB.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_axis_html"><div class="ttname"><a href="../../db/d25/classpocketmine_1_1math_1_1_axis.html">pocketmine\math\Axis</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d14/_axis_8php_source.html#l00026">Axis.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
@@ -281,6 +282,7 @@ $(function(){initNavTree('d5/ddd/_amethyst_cluster_8php_source.html','../../'); 
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00172">Player.php:172</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_block_transaction_html"><div class="ttname"><a href="../../d4/d3e/classpocketmine_1_1world_1_1_block_transaction.html">pocketmine\world\BlockTransaction</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d1f/_block_transaction_8php_source.html#l00030">BlockTransaction.php:30</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_any_facing_html"><div class="ttname"><a href="../../d2/df5/interfacepocketmine_1_1block_1_1utils_1_1_any_facing.html">pocketmine\block\utils\AnyFacing</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d97/_any_facing_8php_source.html#l00028">AnyFacing.php:28</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer_html"><div class="ttname"><a href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d3f/_runtime_data_describer_8php_source.html#l00038">RuntimeDataDescriber.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

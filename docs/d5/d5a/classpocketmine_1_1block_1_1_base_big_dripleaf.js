@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_base_big_dripleaf =
     [ "getDropsForCompatibleTool", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#afc152e112889c63d8f9a0f01b6f66f84", null ],
     [ "getFlammability", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a9e432d835730176eb73b1e954c38fad1", null ],
     [ "getFrictionFactor", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_base_big_dripleaf =
     [ "place", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a345d29c627db9013a57a1217796b321e", null ],
     [ "readStateFromWorld", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setFacing", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d5/d5a/classpocketmine_1_1block_1_1_base_big_dripleaf.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

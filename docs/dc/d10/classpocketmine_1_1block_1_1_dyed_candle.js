@@ -64,7 +64,9 @@ var classpocketmine_1_1block_1_1_dyed_candle =
     [ "place", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#ab4a06e3979bd908f24cd309644aba48b", null ],
     [ "readStateFromWorld", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a4a0c59266d64c821c9198cc4ab65c190", null ],
+    [ "setColor", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#af95495be09d518364547340a75b91392", null ],
     [ "setCount", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a57464d35cc891577aeb8f39e0ed88724", null ],
+    [ "setLit", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#af1807ff180e5678ba081b846f28fdeb0", null ],
     [ "ticksRandomly", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/d10/classpocketmine_1_1block_1_1_dyed_candle.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

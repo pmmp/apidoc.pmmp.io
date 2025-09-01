@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_redstone_comparator =
     [ "getDropsForCompatibleTool", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,9 @@ var classpocketmine_1_1block_1_1_redstone_comparator =
     [ "place", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#ad42ace834e6b9c0cbc652eb3c646bb71", null ],
     [ "readStateFromWorld", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a0f6140b07e06d947f591523ed439da06", null ],
     [ "recalculateCollisionBoxes", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#ac735a5940bf845c523ccbad2841f0350", null ],
+    [ "setFacing", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a309c4f7dfc285c358bb69a4253114afa", null ],
+    [ "setOutputSignalStrength", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#ac5e4833900ce79658e388de47fd0e9ba", null ],
+    [ "setPowered", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a2295052904e3730345973ce47e4dc083", null ],
     [ "setSubtractMode", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a41ee3d9e5252cec776795971e856e8ef", null ],
     [ "ticksRandomly", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/dc1/classpocketmine_1_1block_1_1_redstone_comparator.html#a4877cc9d6c4bdf4ce2cb16b9f7bb6e5c", null ]

@@ -17,6 +17,7 @@ var classpocketmine_1_1block_1_1_simple_pillar =
     [ "generateStatePermutations", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
+    [ "getAxis", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#ac7abcbdd0edc66f932eb743d814a5fdd", null ],
     [ "getBreakInfo", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#aa4773f0153324728a2f41820fa52442d", null ],
     [ "getCollisionBoxes", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a104403fbe0f0d27d8a5ac667cd1a89ef", null ],
     [ "getDrops", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_simple_pillar =
     [ "place", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setAxis", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a609fb6e86be98370684476e2b20a685a", null ],
     [ "ticksRandomly", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "df/d01/classpocketmine_1_1block_1_1_simple_pillar.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

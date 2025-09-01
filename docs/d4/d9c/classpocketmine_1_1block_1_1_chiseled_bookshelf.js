@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_chiseled_bookshelf =
     [ "getDropsForCompatibleTool", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a5748f8ba0e6b056a8d0bb0b1734f2469", null ],
     [ "getDropsForIncompatibleTool", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -67,8 +68,10 @@ var classpocketmine_1_1block_1_1_chiseled_bookshelf =
     [ "place", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a7ced148fefe18981dda6b0c6a4474afc", null ],
     [ "recalculateCollisionBoxes", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setFacing", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "setLastInteractedSlot", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#af80ff7f38107d61c1a14506089e28451", null ],
     [ "setSlot", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a1dd9cd995ebe6aa3f7c44c529e33bf94", null ],
+    [ "setSlots", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a2124f965df5fedfff452a95f52eb5084", null ],
     [ "ticksRandomly", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d4/d9c/classpocketmine_1_1block_1_1_chiseled_bookshelf.html#a94f042b69b4218372b202ea233eaeed0", null ]
 ];

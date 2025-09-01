@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_stonecutter =
     [ "getDropsForCompatibleTool", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_stonecutter =
     [ "place", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a71cbe538c6393d57fef14b7d7729791e", null ],
+    [ "setFacing", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

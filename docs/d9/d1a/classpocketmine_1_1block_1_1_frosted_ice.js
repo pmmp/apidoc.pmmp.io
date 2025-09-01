@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_frosted_ice =
     [ "place", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setAge", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad22cce43d6d98bf006980c355179ef41", null ],
     [ "writeStateToWorld", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

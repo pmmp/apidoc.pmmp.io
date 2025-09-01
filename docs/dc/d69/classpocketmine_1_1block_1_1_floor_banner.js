@@ -34,8 +34,10 @@ var classpocketmine_1_1block_1_1_floor_banner =
     [ "getMaxStackSize", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a40e69d7dfc1bda12e69de1b737737829", null ],
     [ "getModelPositionOffset", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#ae829b9f476afef6b23d6f4f7fd558e0f", null ],
     [ "getName", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#ade77e0b1fce7bdebceed4092b9c5c022", null ],
+    [ "getOminousVersion", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a0870f8bf5becda1a68bc91841fe6878f", null ],
     [ "getPatterns", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a45f473ca6ec3ccc58aef49d6f8ec2bb6", null ],
     [ "getPickedItem", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#acdebf29c6e6115d6947e11203acc3aa0", null ],
+    [ "getRotation", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a10aae4a1c309e36a024add2c5924ae7f", null ],
     [ "getSide", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a6f13ff76dad934b1b2e078a5b57dd7a5", null ],
     [ "getSilkTouchDrops", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a4b01df2347f9cc897c5eb2858d6c5e7e", null ],
     [ "getSupportType", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#aa9143cb0f012d235f7b3be1677dd583b", null ],
@@ -65,7 +67,9 @@ var classpocketmine_1_1block_1_1_floor_banner =
     [ "place", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#ae6624de449b77810689aba8fd71f80dd", null ],
     [ "readStateFromWorld", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#aeb20ff2ee974d4684b838daffe726ca2", null ],
     [ "recalculateCollisionBoxes", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a94d7b31db84d6ac161d1864fc7e9587b", null ],
+    [ "setColor", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#af95495be09d518364547340a75b91392", null ],
     [ "setPatterns", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a210f41a0a7d20f12b00c27a8402e4a43", null ],
+    [ "setRotation", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#a3a8c1d220086e56368d29a645f60bf1e", null ],
     [ "ticksRandomly", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/d69/classpocketmine_1_1block_1_1_floor_banner.html#afd2762b6c2ec7b9910fb9f6b45fa7c0c", null ]
 ];

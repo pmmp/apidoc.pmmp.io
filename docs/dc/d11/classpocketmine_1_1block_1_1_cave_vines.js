@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_cave_vines =
     [ "place", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#abf8e291bd656070392c3c00e7b6c1eee", null ],
     [ "readStateFromWorld", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a9851c6ac41a91632f7f608c9b6f7173d", null ],
+    [ "setAge", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "setBerries", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a683eda77c4935af49c74d218ed830702", null ],
     [ "setHead", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a2df9c865e66c5a6f9e7c9759971126e5", null ],
     [ "ticksRandomly", "dc/d11/classpocketmine_1_1block_1_1_cave_vines.html#a0976b842355ea6322f0aca246cfe2c72", null ],

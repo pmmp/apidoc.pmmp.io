@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -131,61 +131,63 @@ $(function(){initNavTree('de/dfe/_nether_wart_plant_8php_source.html','../../');
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\AgeableTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html">pocketmine\block\utils\BlockEventHelper</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use pocketmine\block\utils\StaticSupportTrait;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> mt_rand;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html">NetherWartPlant</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use AgeableTrait;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use StaticSupportTrait;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">const</span> MAX_AGE = 3;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block) : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $block-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">getSide</a>(Facing::DOWN)-&gt;getTypeId() === BlockTypeIds::SOUL_SAND;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72">ticksRandomly</a>() : bool{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        return $this-&gt;age &lt; self::MAX_AGE;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../dc/d33/interfacepocketmine_1_1block_1_1utils_1_1_ageable.html">pocketmine\block\utils\Ageable</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\AgeableTrait;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html">pocketmine\block\utils\BlockEventHelper</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use pocketmine\block\utils\StaticSupportTrait;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> mt_rand;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html">NetherWartPlant</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a> implements <a class="code hl_interface" href="../../dc/d33/interfacepocketmine_1_1block_1_1utils_1_1_ageable.html">Ageable</a>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use AgeableTrait;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    use StaticSupportTrait;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">const</span> MAX_AGE = 3;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block) : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> $block-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">getSide</a>(Facing::DOWN)-&gt;getTypeId() === BlockTypeIds::SOUL_SAND;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72">   45</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72">ticksRandomly</a>() : bool{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        return $this-&gt;age &lt; self::MAX_AGE;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#af8563c2b8d83535b45c78e069d8f5ed4">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#af8563c2b8d83535b45c78e069d8f5ed4">onRandomTick</a>() : void{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        if($this-&gt;age &lt; self::MAX_AGE &amp;&amp; mt_rand(0, 10) === 0){ <span class="comment">//Still growing</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $block = clone $this;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $block-&gt;age++;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            BlockEventHelper::grow($this, $block, <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#af8563c2b8d83535b45c78e069d8f5ed4">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#af8563c2b8d83535b45c78e069d8f5ed4">onRandomTick</a>() : void{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        if($this-&gt;age &lt; self::MAX_AGE &amp;&amp; mt_rand(0, 10) === 0){ <span class="comment">//Still growing</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $block = clone $this;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $block-&gt;age++;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            BlockEventHelper::grow($this, $block, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        return [</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $this-&gt;asItem()-&gt;setCount($this-&gt;age === self::MAX_AGE ? <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">FortuneDropHelper</a>::discrete($item, 2, 4) : 1)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        ];</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        return [</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            $this-&gt;asItem()-&gt;setCount($this-&gt;age === self::MAX_AGE ? <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">FortuneDropHelper</a>::discrete($item, 2, 4) : 1)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        ];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a6f13ff76dad934b1b2e078a5b57dd7a5"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">pocketmine\block\Block\getSide</a></div><div class="ttdeci">getSide(int $side, int $step=1)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00773">Block.php:773</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d33/_flowable_8php_source.html#l00033">Flowable.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html">pocketmine\block\NetherWartPlant</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">NetherWartPlant.php:34</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html_a72a4fe83e01d6b1a7749185aade1fbad"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad">pocketmine\block\NetherWartPlant\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00056">NetherWartPlant.php:56</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html_ab166a4d30a8d4ca561317d39d8c9de72"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72">pocketmine\block\NetherWartPlant\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition</b> <a href="#l00044">NetherWartPlant.php:44</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html_af8563c2b8d83535b45c78e069d8f5ed4"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#af8563c2b8d83535b45c78e069d8f5ed4">pocketmine\block\NetherWartPlant\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition</b> <a href="#l00048">NetherWartPlant.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html">pocketmine\block\NetherWartPlant</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">NetherWartPlant.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html_a72a4fe83e01d6b1a7749185aade1fbad"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a72a4fe83e01d6b1a7749185aade1fbad">pocketmine\block\NetherWartPlant\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00057">NetherWartPlant.php:57</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html_ab166a4d30a8d4ca561317d39d8c9de72"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72">pocketmine\block\NetherWartPlant\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition</b> <a href="#l00045">NetherWartPlant.php:45</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_nether_wart_plant_html_af8563c2b8d83535b45c78e069d8f5ed4"><div class="ttname"><a href="../../d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#af8563c2b8d83535b45c78e069d8f5ed4">pocketmine\block\NetherWartPlant\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition</b> <a href="#l00049">NetherWartPlant.php:49</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_block_event_helper_html"><div class="ttname"><a href="../../d4/d5d/classpocketmine_1_1block_1_1utils_1_1_block_event_helper.html">pocketmine\block\utils\BlockEventHelper</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/de3/_block_event_helper_8php_source.html#l00039">BlockEventHelper.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_fortune_drop_helper_html"><div class="ttname"><a href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd6/_fortune_drop_helper_8php_source.html#l00033">FortuneDropHelper.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_ageable_html"><div class="ttname"><a href="../../dc/d33/interfacepocketmine_1_1block_1_1utils_1_1_ageable.html">pocketmine\block\utils\Ageable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d70/block_2utils_2_ageable_8php_source.html#l00026">block/utils/Ageable.php:26</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

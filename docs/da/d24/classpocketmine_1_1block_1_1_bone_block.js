@@ -17,6 +17,7 @@ var classpocketmine_1_1block_1_1_bone_block =
     [ "generateStatePermutations", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
+    [ "getAxis", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#ac7abcbdd0edc66f932eb743d814a5fdd", null ],
     [ "getBreakInfo", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#aa4773f0153324728a2f41820fa52442d", null ],
     [ "getCollisionBoxes", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a104403fbe0f0d27d8a5ac667cd1a89ef", null ],
     [ "getDrops", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_bone_block =
     [ "place", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setAxis", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a609fb6e86be98370684476e2b20a685a", null ],
     [ "ticksRandomly", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "da/d24/classpocketmine_1_1block_1_1_bone_block.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_cactus =
     [ "place", "df/d22/classpocketmine_1_1block_1_1_cactus.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "df/d22/classpocketmine_1_1block_1_1_cactus.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "df/d22/classpocketmine_1_1block_1_1_cactus.html#a523f39fa4204ffd3107d6a1012b5f35f", null ],
+    [ "setAge", "df/d22/classpocketmine_1_1block_1_1_cactus.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "df/d22/classpocketmine_1_1block_1_1_cactus.html#a07b0a9cf979d39e7db8e1ab96cd96139", null ],
     [ "writeStateToWorld", "df/d22/classpocketmine_1_1block_1_1_cactus.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -114,13 +114,15 @@ $(function(){initNavTree('da/d68/classpocketmine_1_1world_1_1format_1_1io_1_1_gl
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d90/classpocketmine_1_1world_1_1format_1_1io_1_1_global_block_state_handlers__coll__graph.svg" width="232" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d90/classpocketmine_1_1world_1_1format_1_1io_1_1_global_block_state_handlers__coll__graph.svg" width="232" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fa1a7f532baff54b9ffaf1cfe1b38b1" id="r_a9fa1a7f532baff54b9ffaf1cfe1b38b1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fa1a7f532baff54b9ffaf1cfe1b38b1">getDeserializer</a> ()</td></tr>
 <tr class="separator:a9fa1a7f532baff54b9ffaf1cfe1b38b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe69db3408c855fef3a5f918f52c500" id="r_aabe69db3408c855fef3a5f918f52c500"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe69db3408c855fef3a5f918f52c500">getRegistrar</a> ()</td></tr>
+<tr class="separator:aabe69db3408c855fef3a5f918f52c500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d489912fa9e9101e2544fdc53b9bb3f" id="r_a5d489912fa9e9101e2544fdc53b9bb3f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d489912fa9e9101e2544fdc53b9bb3f">getSerializer</a> ()</td></tr>
 <tr class="separator:a5d489912fa9e9101e2544fdc53b9bb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d982a239c8137167ed4d2d7acb3d9c" id="r_af9d982a239c8137167ed4d2d7acb3d9c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9d982a239c8137167ed4d2d7acb3d9c">getUnknownBlockStateData</a> ()</td></tr>
@@ -131,7 +133,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides global access to blockstate serializers for all world providers. TODO: Get rid of this. This is necessary to enable plugins to register custom serialize/deserialize handlers, and also because we can't break BC of WorldProvider before PM5. While this is a sucky hack, it provides meaningful benefits for now. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00046">46</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00048">48</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9fa1a7f532baff54b9ffaf1cfe1b38b1" name="a9fa1a7f532baff54b9ffaf1cfe1b38b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fa1a7f532baff54b9ffaf1cfe1b38b1">&#9670;&#160;</a></span>getDeserializer()</h2>
@@ -144,6 +146,33 @@ Static Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static pocketmine\world\format\io\GlobalBlockStateHandlers::getDeserializer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00065">65</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
+
+</div>
+</div>
+<a id="aabe69db3408c855fef3a5f918f52c500" name="aabe69db3408c855fef3a5f918f52c500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe69db3408c855fef3a5f918f52c500">&#9670;&#160;</a></span>getRegistrar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\world\format\io\GlobalBlockStateHandlers::getRegistrar </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -183,7 +212,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00059">59</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00069">69</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
 
 </div>
 </div>
@@ -210,7 +239,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00085">85</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00095">95</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
 
 </div>
 </div>
@@ -237,7 +266,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00063">63</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html#l00073">73</a> of file <a class="el" href="../../d8/d24/_global_block_state_handlers_8php_source.html">GlobalBlockStateHandlers.php</a>.</p>
 
 </div>
 </div>

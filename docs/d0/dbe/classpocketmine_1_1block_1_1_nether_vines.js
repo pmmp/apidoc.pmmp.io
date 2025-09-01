@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_nether_vines =
     [ "place", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a90ff5d1b71d1e477548a35ba64626c5b", null ],
     [ "readStateFromWorld", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a327bee6aa215bcd1127beb0a20bd8575", null ],
+    [ "setAge", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a2ce5973663dd71454384e009ff282678", null ],
     [ "writeStateToWorld", "d0/dbe/classpocketmine_1_1block_1_1_nether_vines.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_amethyst_cluster =
     [ "getDropsForCompatibleTool", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9a863db873b8e94a8a035c60744d40e9", null ],
     [ "getDropsForIncompatibleTool", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab1d8f7e0c8eea496e464f2382ea9d83b", null ],
     [ "getEnchantmentTags", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4a679eb075cd89e27031e1f7a2ee50c6", null ],
     [ "getFlameEncouragement", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_amethyst_cluster =
     [ "place", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a2f9880c1d1e65ad51c5d22a85e162617", null ],
     [ "readStateFromWorld", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a4142396a85fd943014f51a0c4cb14236", null ],
+    [ "setFacing", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#af14ccaed7b5aa3bd73e77066696f14a5", null ],
     [ "ticksRandomly", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d7/dd3/classpocketmine_1_1block_1_1_amethyst_cluster.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_tripwire_hook =
     [ "getDropsForCompatibleTool", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -65,6 +66,7 @@ var classpocketmine_1_1block_1_1_tripwire_hook =
     [ "readStateFromWorld", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a097af4a935135a8524d812f497373075", null ],
     [ "setConnected", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a9278e31f867444d301bb6d5d837b43e1", null ],
+    [ "setFacing", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "setPowered", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a63063ca1401cab3a2185fc89fb462c88", null ],
     [ "ticksRandomly", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "da/df6/classpocketmine_1_1block_1_1_tripwire_hook.html#a9404d9040389f3ff2462f86d9a181160", null ]

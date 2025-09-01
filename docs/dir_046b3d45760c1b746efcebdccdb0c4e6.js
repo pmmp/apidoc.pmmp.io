@@ -20,6 +20,7 @@ var dir_046b3d45760c1b746efcebdccdb0c4e6 =
     [ "tile/FlowerPot.php", "d8/d46/tile_2_flower_pot_8php_source.html", null ],
     [ "tile/Furnace.php", "de/d0e/tile_2_furnace_8php_source.html", null ],
     [ "GlowingItemFrame.php", "d6/d7d/_glowing_item_frame_8php_source.html", null ],
+    [ "block/tile/HangingSign.php", "da/d56/block_2tile_2_hanging_sign_8php_source.html", null ],
     [ "tile/Hopper.php", "d4/d32/tile_2_hopper_8php_source.html", null ],
     [ "tile/ItemFrame.php", "da/d39/tile_2_item_frame_8php_source.html", null ],
     [ "tile/Jukebox.php", "d3/def/tile_2_jukebox_8php_source.html", null ],

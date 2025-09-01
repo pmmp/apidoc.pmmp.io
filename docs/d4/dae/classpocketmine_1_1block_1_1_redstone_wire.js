@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_redstone_wire =
     [ "place", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5", null ],
     [ "recalculateCollisionBoxes", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setOutputSignalStrength", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#ac5e4833900ce79658e388de47fd0e9ba", null ],
     [ "ticksRandomly", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

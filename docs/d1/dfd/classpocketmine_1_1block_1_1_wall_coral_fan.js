@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_wall_coral_fan =
     [ "getDropsForCompatibleTool", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a6fe697a151ea94bb9c667c534ca89f63", null ],
     [ "getDropsForIncompatibleTool", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,9 @@ var classpocketmine_1_1block_1_1_wall_coral_fan =
     [ "place", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a793ef5341911f82ecc48530ae37c3276", null ],
     [ "readStateFromWorld", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a1acb95b5c78e0c14c836a31f9275de45", null ],
+    [ "setCoralType", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#ab4fb5fc92762dcc3220cd317e64425d8", null ],
+    [ "setDead", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a3e428b43a105a87fb50a5cf68afc0fb5", null ],
+    [ "setFacing", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d1/dfd/classpocketmine_1_1block_1_1_wall_coral_fan.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

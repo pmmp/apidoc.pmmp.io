@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -131,56 +131,58 @@ $(function(){initNavTree('d3/dcf/_weighted_pressure_plate_8php_source.html','../
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\AnalogRedstoneSignalEmitterTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <span class="keyword">function</span> ceil;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> max;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> min;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html">WeightedPressurePlate</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../de/d89/classpocketmine_1_1block_1_1_pressure_plate.html">PressurePlate</a>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    use AnalogRedstoneSignalEmitterTrait;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> readonly <span class="keywordtype">float</span> $signalStrengthFactor;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#aa4c22c9d40802b911617d9341555b460">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#aa4c22c9d40802b911617d9341555b460">__construct</a>(<a class="code hl_class" href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">BlockIdentifier</a> $idInfo, <span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">BlockTypeInfo</a> $typeInfo, <span class="keywordtype">int</span> $deactivationDelayTicks, <span class="keywordtype">float</span> $signalStrengthFactor = 1.0){</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        parent::__construct($idInfo, $name, $typeInfo, $deactivationDelayTicks);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;signalStrengthFactor = $signalStrengthFactor;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../dd/d1e/interfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter.html">pocketmine\block\utils\AnalogRedstoneSignalEmitter</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\AnalogRedstoneSignalEmitterTrait;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> ceil;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> max;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> min;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html">WeightedPressurePlate</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../de/d89/classpocketmine_1_1block_1_1_pressure_plate.html">PressurePlate</a> implements <a class="code hl_interface" href="../../dd/d1e/interfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter.html">AnalogRedstoneSignalEmitter</a>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use AnalogRedstoneSignalEmitterTrait;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> readonly <span class="keywordtype">float</span> $signalStrengthFactor;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#aa4c22c9d40802b911617d9341555b460">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#aa4c22c9d40802b911617d9341555b460">__construct</a>(<a class="code hl_class" href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">BlockIdentifier</a> $idInfo, <span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">BlockTypeInfo</a> $typeInfo, <span class="keywordtype">int</span> $deactivationDelayTicks, <span class="keywordtype">float</span> $signalStrengthFactor = 1.0){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        parent::__construct($idInfo, $name, $typeInfo, $deactivationDelayTicks);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $this-&gt;signalStrengthFactor = $signalStrengthFactor;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a2855373ccb22f3c9d35d5d9eb120b409">   45</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a2855373ccb22f3c9d35d5d9eb120b409">hasOutputSignal</a>() : bool{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        return $this-&gt;signalStrength &gt; 0;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a2855373ccb22f3c9d35d5d9eb120b409">   46</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a2855373ccb22f3c9d35d5d9eb120b409">hasOutputSignal</a>() : bool{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        return $this-&gt;signalStrength &gt; 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a44490a949a5f31145924fe121e418654">   49</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a44490a949a5f31145924fe121e418654">calculatePlateState</a>(array $entities) : array{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $newSignalStrength = min(15, max(0,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            (int) ceil(count($entities) * $this-&gt;signalStrengthFactor)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        ));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span>($newSignalStrength === $this-&gt;signalStrength){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> [$this, <span class="keyword">null</span>];</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $wasActive = $this-&gt;signalStrength !== 0;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $isActive = $newSignalStrength !== 0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> [</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            (clone $this)-&gt;setOutputSignalStrength($newSignalStrength),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $wasActive !== $isActive ? $isActive : <span class="keyword">null</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        ];</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a44490a949a5f31145924fe121e418654">   50</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a44490a949a5f31145924fe121e418654">calculatePlateState</a>(array $entities) : array{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $newSignalStrength = min(15, max(0,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            (int) ceil(count($entities) * $this-&gt;signalStrengthFactor)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        ));</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span>($newSignalStrength === $this-&gt;signalStrength){</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">return</span> [$this, <span class="keyword">null</span>];</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $wasActive = $this-&gt;signalStrength !== 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $isActive = $newSignalStrength !== 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> [</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            (clone $this)-&gt;setOutputSignalStrength($newSignalStrength),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $wasActive !== $isActive ? $isActive : <span class="keyword">null</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        ];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_identifier_html"><div class="ttname"><a href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">pocketmine\block\BlockIdentifier</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0b/_block_identifier_8php_source.html#l00029">BlockIdentifier.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_info_html"><div class="ttname"><a href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">pocketmine\block\BlockTypeInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/_block_type_info_8php_source.html#l00029">BlockTypeInfo.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_pressure_plate_html"><div class="ttname"><a href="../../de/d89/classpocketmine_1_1block_1_1_pressure_plate.html">pocketmine\block\PressurePlate</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d29/_pressure_plate_8php_source.html#l00037">PressurePlate.php:37</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html">pocketmine\block\WeightedPressurePlate</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">WeightedPressurePlate.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html_a2855373ccb22f3c9d35d5d9eb120b409"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a2855373ccb22f3c9d35d5d9eb120b409">pocketmine\block\WeightedPressurePlate\hasOutputSignal</a></div><div class="ttdeci">hasOutputSignal()</div><div class="ttdef"><b>Definition</b> <a href="#l00045">WeightedPressurePlate.php:45</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html_a44490a949a5f31145924fe121e418654"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a44490a949a5f31145924fe121e418654">pocketmine\block\WeightedPressurePlate\calculatePlateState</a></div><div class="ttdeci">calculatePlateState(array $entities)</div><div class="ttdef"><b>Definition</b> <a href="#l00049">WeightedPressurePlate.php:49</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html_aa4c22c9d40802b911617d9341555b460"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#aa4c22c9d40802b911617d9341555b460">pocketmine\block\WeightedPressurePlate\__construct</a></div><div class="ttdeci">__construct(BlockIdentifier $idInfo, string $name, BlockTypeInfo $typeInfo, int $deactivationDelayTicks, float $signalStrengthFactor=1.0)</div><div class="ttdef"><b>Definition</b> <a href="#l00040">WeightedPressurePlate.php:40</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html">pocketmine\block\WeightedPressurePlate</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">WeightedPressurePlate.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html_a2855373ccb22f3c9d35d5d9eb120b409"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a2855373ccb22f3c9d35d5d9eb120b409">pocketmine\block\WeightedPressurePlate\hasOutputSignal</a></div><div class="ttdeci">hasOutputSignal()</div><div class="ttdef"><b>Definition</b> <a href="#l00046">WeightedPressurePlate.php:46</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html_a44490a949a5f31145924fe121e418654"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#a44490a949a5f31145924fe121e418654">pocketmine\block\WeightedPressurePlate\calculatePlateState</a></div><div class="ttdeci">calculatePlateState(array $entities)</div><div class="ttdef"><b>Definition</b> <a href="#l00050">WeightedPressurePlate.php:50</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_weighted_pressure_plate_html_aa4c22c9d40802b911617d9341555b460"><div class="ttname"><a href="../../d6/dc1/classpocketmine_1_1block_1_1_weighted_pressure_plate.html#aa4c22c9d40802b911617d9341555b460">pocketmine\block\WeightedPressurePlate\__construct</a></div><div class="ttdeci">__construct(BlockIdentifier $idInfo, string $name, BlockTypeInfo $typeInfo, int $deactivationDelayTicks, float $signalStrengthFactor=1.0)</div><div class="ttdef"><b>Definition</b> <a href="#l00041">WeightedPressurePlate.php:41</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter_html"><div class="ttname"><a href="../../dd/d1e/interfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter.html">pocketmine\block\utils\AnalogRedstoneSignalEmitter</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dca/_analog_redstone_signal_emitter_8php_source.html#l00026">AnalogRedstoneSignalEmitter.php:26</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

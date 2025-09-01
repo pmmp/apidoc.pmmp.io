@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -436,35 +436,47 @@ $(function(){initNavTree('d4/d6d/_item_type_ids_8php_source.html','../../'); ini
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keyword">public</span> <span class="keyword">const</span> RECORD_CREATOR = 20295;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keyword">public</span> <span class="keyword">const</span> RECORD_CREATOR_MUSIC_BOX = 20296;</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <span class="keyword">public</span> <span class="keyword">const</span> RECORD_PRECIPICE = 20297;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_ITEM_ID = 20298;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_ITEM_ID;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="foldopen" id="foldopen00345" data-start="{" data-end="}">
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html#a5313a6bc3958d1fb0253f12556a5bd3f">  345</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html#a5313a6bc3958d1fb0253f12556a5bd3f">newId</a>() : int{</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        return self::$nextDynamicId++;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    }</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keyword">public</span> <span class="keyword">const</span> OMINOUS_BANNER = 20298;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keyword">public</span> <span class="keyword">const</span> ACACIA_HANGING_SIGN = 20299;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIRCH_HANGING_SIGN = 20300;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHERRY_HANGING_SIGN = 20301;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keyword">public</span> <span class="keyword">const</span> CRIMSON_HANGING_SIGN = 20302;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="keyword">public</span> <span class="keyword">const</span> DARK_OAK_HANGING_SIGN = 20303;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keyword">public</span> <span class="keyword">const</span> JUNGLE_HANGING_SIGN = 20304;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <span class="keyword">public</span> <span class="keyword">const</span> MANGROVE_HANGING_SIGN = 20305;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keyword">public</span> <span class="keyword">const</span> OAK_HANGING_SIGN = 20306;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keyword">public</span> <span class="keyword">const</span> PALE_OAK_HANGING_SIGN = 20307;</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPRUCE_HANGING_SIGN = 20308;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARPED_HANGING_SIGN = 20309;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_ITEM_ID = 20310;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_ITEM_ID;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="foldopen" id="foldopen00357" data-start="{" data-end="}">
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html#a5313a6bc3958d1fb0253f12556a5bd3f">  357</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html#a5313a6bc3958d1fb0253f12556a5bd3f">newId</a>() : int{</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        return self::$nextDynamicId++;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    }</div>
 </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> fromBlockTypeId(<span class="keywordtype">int</span> $blockTypeId) : int{</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        if($blockTypeId &lt; 0){</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Block type IDs cannot be negative&quot;</span>);</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        }</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="comment">//negative item type IDs are treated as block IDs</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">return</span> -$blockTypeId;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    }</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> toBlockTypeId(<span class="keywordtype">int</span> $itemTypeId) : ?int{</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        if($itemTypeId &gt; 0){ <span class="comment">//not a blockitem</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        }</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">return</span> -$itemTypeId;</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    }</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>}</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> fromBlockTypeId(<span class="keywordtype">int</span> $blockTypeId) : int{</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        if($blockTypeId &lt; 0){</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Block type IDs cannot be negative&quot;</span>);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        }</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        <span class="comment">//negative item type IDs are treated as block IDs</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <span class="keywordflow">return</span> -$blockTypeId;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> toBlockTypeId(<span class="keywordtype">int</span> $itemTypeId) : ?int{</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        if($itemTypeId &gt; 0){ <span class="comment">//not a blockitem</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        }</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <span class="keywordflow">return</span> -$itemTypeId;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    }</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_type_ids_html"><div class="ttname"><a href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html">pocketmine\item\ItemTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">ItemTypeIds.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_type_ids_html_a5313a6bc3958d1fb0253f12556a5bd3f"><div class="ttname"><a href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html#a5313a6bc3958d1fb0253f12556a5bd3f">pocketmine\item\ItemTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition</b> <a href="#l00345">ItemTypeIds.php:345</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_type_ids_html_a5313a6bc3958d1fb0253f12556a5bd3f"><div class="ttname"><a href="../../d9/d6f/classpocketmine_1_1item_1_1_item_type_ids.html#a5313a6bc3958d1fb0253f12556a5bd3f">pocketmine\item\ItemTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition</b> <a href="#l00357">ItemTypeIds.php:357</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

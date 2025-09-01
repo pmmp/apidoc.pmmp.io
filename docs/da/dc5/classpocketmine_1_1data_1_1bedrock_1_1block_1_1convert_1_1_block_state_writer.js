@@ -1,5 +1,7 @@
 var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer =
 [
+    [ "mapIntToInt", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a685cb337ce250d6cc7a60e7c64612ccd", null ],
+    [ "mapIntToString", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a7b8340e992538d1527468ab3af4c570f", null ],
     [ "write5MinusHorizontalFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a72c4e1da482fefe8e673131384d1d455", null ],
     [ "writeBellAttachmentType", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a7049c91baa3906707bc69f9128895dcf", null ],
     [ "writeBlockFace", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae488d819f4bd07d1888f2a85f1e6fab1", null ],
@@ -18,6 +20,7 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_write
     [ "writeSlabPosition", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a3f9c52c386900aed5f6354a7cc34f240", null ],
     [ "writeString", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#af2c790e7eb922a0da615abd7631eaf52", null ],
     [ "writeTorchFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a731bebd6ec1bf4c41687523aded91b4b", null ],
+    [ "writeUnitEnum", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a2e64e599a80ff16fb24bd3bed455646c", null ],
     [ "writeWallConnectionType", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a9a8862ed8f7cc503ae8e1e46f29dc269", null ],
     [ "writeWeirdoHorizontalFacing", "da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a6e57f2573097074d05b5c16f6afba0ff", null ]
 ];

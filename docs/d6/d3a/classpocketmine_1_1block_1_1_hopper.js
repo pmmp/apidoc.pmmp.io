@@ -65,6 +65,7 @@ var classpocketmine_1_1block_1_1_hopper =
     [ "readStateFromWorld", "d6/d3a/classpocketmine_1_1block_1_1_hopper.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d6/d3a/classpocketmine_1_1block_1_1_hopper.html#ab9ca4be9cb9995dcbe8af21715797ccd", null ],
     [ "setFacing", "d6/d3a/classpocketmine_1_1block_1_1_hopper.html#ae4822b451fb6715d2f6947b2747b5924", null ],
+    [ "setPowered", "d6/d3a/classpocketmine_1_1block_1_1_hopper.html#a2295052904e3730345973ce47e4dc083", null ],
     [ "ticksRandomly", "d6/d3a/classpocketmine_1_1block_1_1_hopper.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d6/d3a/classpocketmine_1_1block_1_1_hopper.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

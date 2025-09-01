@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -131,45 +131,47 @@ $(function(){initNavTree('d3/d4b/_redstone_wire_8php_source.html','../../'); ini
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\AnalogRedstoneSignalEmitterTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\StaticSupportTrait;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html">RedstoneWire</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    use AnalogRedstoneSignalEmitterTrait;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use StaticSupportTrait;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">readStateFromWorld</a>() : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        parent::<a class="code hl_function" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">readStateFromWorld</a>();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">//TODO: check connections to nearby redstone components</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../dd/d1e/interfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter.html">pocketmine\block\utils\AnalogRedstoneSignalEmitter</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\AnalogRedstoneSignalEmitterTrait;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\block\utils\StaticSupportTrait;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html">RedstoneWire</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a> implements <a class="code hl_interface" href="../../dd/d1e/interfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter.html">AnalogRedstoneSignalEmitter</a>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    use AnalogRedstoneSignalEmitterTrait;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use StaticSupportTrait;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">readStateFromWorld</a>() : <a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        parent::<a class="code hl_function" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">readStateFromWorld</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">//TODO: check connections to nearby redstone components</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block) : bool{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        return $block-&gt;getAdjacentSupportType(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::DOWN)-&gt;hasCenterSupport();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49b18ec5cd8d780e0f3209822517e215">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49b18ec5cd8d780e0f3209822517e215">asItem</a>() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">VanillaItems</a>::REDSTONE_DUST();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block) : bool{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        return $block-&gt;getAdjacentSupportType(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::DOWN)-&gt;hasCenterSupport();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49b18ec5cd8d780e0f3209822517e215">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49b18ec5cd8d780e0f3209822517e215">asItem</a>() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        return <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">VanillaItems</a>::REDSTONE_DUST();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d33/_flowable_8php_source.html#l00033">Flowable.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_wire_html"><div class="ttname"><a href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html">pocketmine\block\RedstoneWire</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">RedstoneWire.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_wire_html_a3329bb1752ad8823ff6564c186ccccc5"><div class="ttname"><a href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">pocketmine\block\RedstoneWire\readStateFromWorld</a></div><div class="ttdeci">readStateFromWorld()</div><div class="ttdef"><b>Definition</b> <a href="#l00036">RedstoneWire.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_wire_html_a49b18ec5cd8d780e0f3209822517e215"><div class="ttname"><a href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49b18ec5cd8d780e0f3209822517e215">pocketmine\block\RedstoneWire\asItem</a></div><div class="ttdeci">asItem()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">RedstoneWire.php:47</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00346">VanillaItems.php:346</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_wire_html"><div class="ttname"><a href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html">pocketmine\block\RedstoneWire</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">RedstoneWire.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_wire_html_a3329bb1752ad8823ff6564c186ccccc5"><div class="ttname"><a href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a3329bb1752ad8823ff6564c186ccccc5">pocketmine\block\RedstoneWire\readStateFromWorld</a></div><div class="ttdeci">readStateFromWorld()</div><div class="ttdef"><b>Definition</b> <a href="#l00037">RedstoneWire.php:37</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_wire_html_a49b18ec5cd8d780e0f3209822517e215"><div class="ttname"><a href="../../d4/dae/classpocketmine_1_1block_1_1_redstone_wire.html#a49b18ec5cd8d780e0f3209822517e215">pocketmine\block\RedstoneWire\asItem</a></div><div class="ttdeci">asItem()</div><div class="ttdef"><b>Definition</b> <a href="#l00048">RedstoneWire.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00358">VanillaItems.php:358</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter_html"><div class="ttname"><a href="../../dd/d1e/interfacepocketmine_1_1block_1_1utils_1_1_analog_redstone_signal_emitter.html">pocketmine\block\utils\AnalogRedstoneSignalEmitter</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dca/_analog_redstone_signal_emitter_8php_source.html#l00026">AnalogRedstoneSignalEmitter.php:26</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

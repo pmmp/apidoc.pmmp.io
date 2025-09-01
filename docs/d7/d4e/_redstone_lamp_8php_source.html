@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -131,30 +131,46 @@ $(function(){initNavTree('d7/d4e/_redstone_lamp_8php_source.html','../../'); ini
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\PoweredByRedstoneTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html">RedstoneLamp</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    use PoweredByRedstoneTrait;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ac26da783d1461e0b909df980dab6d798">   32</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ac26da783d1461e0b909df980dab6d798">describeBlockOnlyState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $w-&gt;bool($this-&gt;powered);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../d4/de8/interfacepocketmine_1_1block_1_1utils_1_1_lightable.html">pocketmine\block\utils\Lightable</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d0/db8/interfacepocketmine_1_1block_1_1utils_1_1_powered_by_redstone.html">pocketmine\block\utils\PoweredByRedstone</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\block\utils\PoweredByRedstoneTrait;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html">RedstoneLamp</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a> implements <a class="code hl_interface" href="../../d0/db8/interfacepocketmine_1_1block_1_1utils_1_1_powered_by_redstone.html">PoweredByRedstone</a>, <a class="code hl_interface" href="../../d4/de8/interfacepocketmine_1_1block_1_1utils_1_1_lightable.html">Lightable</a>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use PoweredByRedstoneTrait;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ac26da783d1461e0b909df980dab6d798">   34</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ac26da783d1461e0b909df980dab6d798">describeBlockOnlyState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $w-&gt;bool($this-&gt;powered);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ab67e8449ea2522f5ff95dc4bbb3d3b43">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ab67e8449ea2522f5ff95dc4bbb3d3b43">getLightLevel</a>() : int{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        return $this-&gt;powered ? 15 : 0;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ab67e8449ea2522f5ff95dc4bbb3d3b43">   38</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ab67e8449ea2522f5ff95dc4bbb3d3b43">getLightLevel</a>() : int{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        return $this-&gt;powered ? 15 : 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> isLit() : bool{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        return $this-&gt;powered;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#a0d12d6b8ae130b011151c9efbafa12c2">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#a0d12d6b8ae130b011151c9efbafa12c2">setLit</a>(<span class="keywordtype">bool</span> $lit = <span class="keyword">true</span>) : self{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;powered = $lit;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_opaque_html"><div class="ttname"><a href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">pocketmine\block\Opaque</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbc/_opaque_8php_source.html#l00030">Opaque.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html">pocketmine\block\RedstoneLamp</a></div><div class="ttdef"><b>Definition</b> <a href="#l00029">RedstoneLamp.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html_ab67e8449ea2522f5ff95dc4bbb3d3b43"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ab67e8449ea2522f5ff95dc4bbb3d3b43">pocketmine\block\RedstoneLamp\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition</b> <a href="#l00036">RedstoneLamp.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html_ac26da783d1461e0b909df980dab6d798"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ac26da783d1461e0b909df980dab6d798">pocketmine\block\RedstoneLamp\describeBlockOnlyState</a></div><div class="ttdeci">describeBlockOnlyState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition</b> <a href="#l00032">RedstoneLamp.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html">pocketmine\block\RedstoneLamp</a></div><div class="ttdef"><b>Definition</b> <a href="#l00031">RedstoneLamp.php:31</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html_a0d12d6b8ae130b011151c9efbafa12c2"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#a0d12d6b8ae130b011151c9efbafa12c2">pocketmine\block\RedstoneLamp\setLit</a></div><div class="ttdeci">setLit(bool $lit=true)</div><div class="ttdef"><b>Definition</b> <a href="#l00047">RedstoneLamp.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html_ab67e8449ea2522f5ff95dc4bbb3d3b43"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ab67e8449ea2522f5ff95dc4bbb3d3b43">pocketmine\block\RedstoneLamp\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition</b> <a href="#l00038">RedstoneLamp.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_lamp_html_ac26da783d1461e0b909df980dab6d798"><div class="ttname"><a href="../../da/db8/classpocketmine_1_1block_1_1_redstone_lamp.html#ac26da783d1461e0b909df980dab6d798">pocketmine\block\RedstoneLamp\describeBlockOnlyState</a></div><div class="ttdeci">describeBlockOnlyState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition</b> <a href="#l00034">RedstoneLamp.php:34</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_lightable_html"><div class="ttname"><a href="../../d4/de8/interfacepocketmine_1_1block_1_1utils_1_1_lightable.html">pocketmine\block\utils\Lightable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/ddb/_lightable_8php_source.html#l00026">Lightable.php:26</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_powered_by_redstone_html"><div class="ttname"><a href="../../d0/db8/interfacepocketmine_1_1block_1_1utils_1_1_powered_by_redstone.html">pocketmine\block\utils\PoweredByRedstone</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d4e/_powered_by_redstone_8php_source.html#l00026">PoweredByRedstone.php:26</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer_html"><div class="ttname"><a href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d3f/_runtime_data_describer_8php_source.html#l00038">RuntimeDataDescriber.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

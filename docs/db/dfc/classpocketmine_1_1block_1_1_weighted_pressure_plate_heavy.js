@@ -68,6 +68,7 @@ var classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy =
     [ "place", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#af6cd0b6690ff09dac13f0af27eb61aa2", null ],
+    [ "setOutputSignalStrength", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#ac5e4833900ce79658e388de47fd0e9ba", null ],
     [ "ticksRandomly", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

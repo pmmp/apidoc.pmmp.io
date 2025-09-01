@@ -65,6 +65,7 @@ var classpocketmine_1_1block_1_1_daylight_sensor =
     [ "readStateFromWorld", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a2fca478f1628591db2f199dfd01e22f3", null ],
     [ "setInverted", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#af2b7e0a0a6404fdbfc9c48901d127a20", null ],
+    [ "setOutputSignalStrength", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#ac5e4833900ce79658e388de47fd0e9ba", null ],
     [ "ticksRandomly", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d1/d6d/classpocketmine_1_1block_1_1_daylight_sensor.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

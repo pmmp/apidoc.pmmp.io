@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_anvil =
     [ "getDropsForCompatibleTool", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "df/d58/classpocketmine_1_1block_1_1_anvil.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFallDamagePerBlock", "df/d58/classpocketmine_1_1block_1_1_anvil.html#ad0af3d5a3dc1450def34c40d3be10d32", null ],
     [ "getFlameEncouragement", "df/d58/classpocketmine_1_1block_1_1_anvil.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "df/d58/classpocketmine_1_1block_1_1_anvil.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
@@ -69,6 +70,7 @@ var classpocketmine_1_1block_1_1_anvil =
     [ "readStateFromWorld", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a369d5d4b4101dfceaec31ca6891d3d8c", null ],
     [ "setDamage", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a5b66c7177221dce37b45b8e0028a642f", null ],
+    [ "setFacing", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "tickFalling", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a5d57dfa3ec1e755788fab0ed75de9d99", null ],
     [ "ticksRandomly", "df/d58/classpocketmine_1_1block_1_1_anvil.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "df/d58/classpocketmine_1_1block_1_1_anvil.html#a9404d9040389f3ff2462f86d9a181160", null ]

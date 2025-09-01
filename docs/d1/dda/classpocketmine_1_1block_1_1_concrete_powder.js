@@ -68,6 +68,7 @@ var classpocketmine_1_1block_1_1_concrete_powder =
     [ "place", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setColor", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#af95495be09d518364547340a75b91392", null ],
     [ "tickFalling", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#aee29b52ec6061e35bff88e57e396a7d2", null ],
     [ "ticksRandomly", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html#a9404d9040389f3ff2462f86d9a181160", null ]

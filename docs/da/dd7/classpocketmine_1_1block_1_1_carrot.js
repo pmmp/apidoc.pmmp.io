@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_carrot =
     [ "place", "da/dd7/classpocketmine_1_1block_1_1_carrot.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "da/dd7/classpocketmine_1_1block_1_1_carrot.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/dd7/classpocketmine_1_1block_1_1_carrot.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "da/dd7/classpocketmine_1_1block_1_1_carrot.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "da/dd7/classpocketmine_1_1block_1_1_carrot.html#a2175d7c31f1159374dd4dd359a117dbb", null ],
     [ "writeStateToWorld", "da/dd7/classpocketmine_1_1block_1_1_carrot.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

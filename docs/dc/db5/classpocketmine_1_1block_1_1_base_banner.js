@@ -34,6 +34,7 @@ var classpocketmine_1_1block_1_1_base_banner =
     [ "getMaxStackSize", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a40e69d7dfc1bda12e69de1b737737829", null ],
     [ "getModelPositionOffset", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#ae829b9f476afef6b23d6f4f7fd558e0f", null ],
     [ "getName", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#ade77e0b1fce7bdebceed4092b9c5c022", null ],
+    [ "getOminousVersion", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a7e20297989ca86961b97b435a00db607", null ],
     [ "getPatterns", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a45f473ca6ec3ccc58aef49d6f8ec2bb6", null ],
     [ "getPickedItem", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#acdebf29c6e6115d6947e11203acc3aa0", null ],
     [ "getSide", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a6f13ff76dad934b1b2e078a5b57dd7a5", null ],
@@ -65,6 +66,7 @@ var classpocketmine_1_1block_1_1_base_banner =
     [ "place", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a3034ae91c0ec46e9567e1be483ae5ff6", null ],
     [ "readStateFromWorld", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#aeb20ff2ee974d4684b838daffe726ca2", null ],
     [ "recalculateCollisionBoxes", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a94d7b31db84d6ac161d1864fc7e9587b", null ],
+    [ "setColor", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#af95495be09d518364547340a75b91392", null ],
     [ "setPatterns", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#a210f41a0a7d20f12b00c27a8402e4a43", null ],
     [ "ticksRandomly", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/db5/classpocketmine_1_1block_1_1_base_banner.html#afd2762b6c2ec7b9910fb9f6b45fa7c0c", null ]

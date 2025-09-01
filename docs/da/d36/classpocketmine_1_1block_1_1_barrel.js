@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_barrel =
     [ "getDropsForCompatibleTool", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "da/d36/classpocketmine_1_1block_1_1_barrel.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a4a679eb075cd89e27031e1f7a2ee50c6", null ],
     [ "getFlameEncouragement", "da/d36/classpocketmine_1_1block_1_1_barrel.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "da/d36/classpocketmine_1_1block_1_1_barrel.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_barrel =
     [ "place", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a721bc98619c49e6b9a7a3a622b7033c2", null ],
     [ "readStateFromWorld", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setFacing", "da/d36/classpocketmine_1_1block_1_1_barrel.html#af14ccaed7b5aa3bd73e77066696f14a5", null ],
     [ "setOpen", "da/d36/classpocketmine_1_1block_1_1_barrel.html#abf2b9d7ec3695bfbaaffc43168614e84", null ],
     [ "ticksRandomly", "da/d36/classpocketmine_1_1block_1_1_barrel.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "da/d36/classpocketmine_1_1block_1_1_barrel.html#a9404d9040389f3ff2462f86d9a181160", null ]

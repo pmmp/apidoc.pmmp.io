@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -132,93 +132,95 @@ $(function(){initNavTree('dc/d92/_redstone_ore_8php_source.html','../../'); init
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\LightableTrait;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> mt_rand;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html">RedstoneOre</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use LightableTrait;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad717ef68f25f7ce25c5e800686cadc9d">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad717ef68f25f7ce25c5e800686cadc9d">getLightLevel</a>() : int{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return $this-&gt;lit ? 9 : 0;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_interface" href="../../d4/de8/interfacepocketmine_1_1block_1_1utils_1_1_lightable.html">pocketmine\block\utils\Lightable</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\block\utils\LightableTrait;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> mt_rand;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html">RedstoneOre</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">Opaque</a> implements <a class="code hl_interface" href="../../d4/de8/interfacepocketmine_1_1block_1_1utils_1_1_lightable.html">Lightable</a>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use LightableTrait;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad717ef68f25f7ce25c5e800686cadc9d">   38</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad717ef68f25f7ce25c5e800686cadc9d">getLightLevel</a>() : int{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        return $this-&gt;lit ? 9 : 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a79099142145a3d4f3cdb4a68607778f7">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a79099142145a3d4f3cdb4a68607778f7">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>, array &amp;$returnedItems = []) : bool{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        if(!$this-&gt;lit){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            $this-&gt;lit = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this); <span class="comment">//no return here - this shouldn&#39;t prevent block placement</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a79099142145a3d4f3cdb4a68607778f7">   42</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a79099142145a3d4f3cdb4a68607778f7">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>, array &amp;$returnedItems = []) : bool{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        if(!$this-&gt;lit){</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            $this-&gt;lit = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this); <span class="comment">//no return here - this shouldn&#39;t prevent block placement</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9a82670b9779cf6fd063de7451e5d7d3">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9a82670b9779cf6fd063de7451e5d7d3">onNearbyBlockChange</a>() : void{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        if(!$this-&gt;lit){</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $this-&gt;lit = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9a82670b9779cf6fd063de7451e5d7d3">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9a82670b9779cf6fd063de7451e5d7d3">onNearbyBlockChange</a>() : void{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        if(!$this-&gt;lit){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $this-&gt;lit = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d">ticksRandomly</a>() : bool{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        return $this-&gt;lit;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d">ticksRandomly</a>() : bool{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        return $this-&gt;lit;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae1b5cd849c1a2d19bfafe722ad78612a">   60</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae1b5cd849c1a2d19bfafe722ad78612a">onRandomTick</a>() : void{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        if($this-&gt;lit){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $this-&gt;lit = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae1b5cd849c1a2d19bfafe722ad78612a">   61</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae1b5cd849c1a2d19bfafe722ad78612a">onRandomTick</a>() : void{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        if($this-&gt;lit){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $this-&gt;lit = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $this-&gt;position-&gt;getWorld()-&gt;setBlock($this-&gt;position, $this);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a47f44acacc3cf545a859a5a20540d47c">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a47f44acacc3cf545a859a5a20540d47c">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        return [</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">VanillaItems</a>::REDSTONE_DUST()-&gt;setCount(<a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">FortuneDropHelper</a>::discrete($item, 4, 5))</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        ];</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a47f44acacc3cf545a859a5a20540d47c">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a47f44acacc3cf545a859a5a20540d47c">getDropsForCompatibleTool</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item) : array{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        return [</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_class" href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">VanillaItems</a>::REDSTONE_DUST()-&gt;setCount(<a class="code hl_class" href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">FortuneDropHelper</a>::discrete($item, 4, 5))</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        ];</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9">   73</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9">isAffectedBySilkTouch</a>() : bool{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        return true;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9">   74</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9">isAffectedBySilkTouch</a>() : bool{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        return true;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a77fce2123a6fcb32a6ace7d7e1863ad5">   77</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a77fce2123a6fcb32a6ace7d7e1863ad5">getXpDropAmount</a>() : int{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        return mt_rand(1, 5);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a77fce2123a6fcb32a6ace7d7e1863ad5">   78</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a77fce2123a6fcb32a6ace7d7e1863ad5">getXpDropAmount</a>() : int{</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        return mt_rand(1, 5);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_opaque_html"><div class="ttname"><a href="../../db/dc5/classpocketmine_1_1block_1_1_opaque.html">pocketmine\block\Opaque</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbc/_opaque_8php_source.html#l00030">Opaque.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html">pocketmine\block\RedstoneOre</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">RedstoneOre.php:34</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a47f44acacc3cf545a859a5a20540d47c"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a47f44acacc3cf545a859a5a20540d47c">pocketmine\block\RedstoneOre\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00067">RedstoneOre.php:67</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a77fce2123a6fcb32a6ace7d7e1863ad5"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a77fce2123a6fcb32a6ace7d7e1863ad5">pocketmine\block\RedstoneOre\getXpDropAmount</a></div><div class="ttdeci">getXpDropAmount()</div><div class="ttdef"><b>Definition</b> <a href="#l00077">RedstoneOre.php:77</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a79099142145a3d4f3cdb4a68607778f7"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a79099142145a3d4f3cdb4a68607778f7">pocketmine\block\RedstoneOre\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00041">RedstoneOre.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a8e83429d90560eee7f587565ae8e76b9"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9">pocketmine\block\RedstoneOre\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition</b> <a href="#l00073">RedstoneOre.php:73</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a9a82670b9779cf6fd063de7451e5d7d3"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9a82670b9779cf6fd063de7451e5d7d3">pocketmine\block\RedstoneOre\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition</b> <a href="#l00049">RedstoneOre.php:49</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_ac816bb84420ff73b89b60aeb32463f8d"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d">pocketmine\block\RedstoneOre\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition</b> <a href="#l00056">RedstoneOre.php:56</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_ad717ef68f25f7ce25c5e800686cadc9d"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad717ef68f25f7ce25c5e800686cadc9d">pocketmine\block\RedstoneOre\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition</b> <a href="#l00037">RedstoneOre.php:37</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_ae1b5cd849c1a2d19bfafe722ad78612a"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae1b5cd849c1a2d19bfafe722ad78612a">pocketmine\block\RedstoneOre\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition</b> <a href="#l00060">RedstoneOre.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html">pocketmine\block\RedstoneOre</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">RedstoneOre.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a47f44acacc3cf545a859a5a20540d47c"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a47f44acacc3cf545a859a5a20540d47c">pocketmine\block\RedstoneOre\getDropsForCompatibleTool</a></div><div class="ttdeci">getDropsForCompatibleTool(Item $item)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">RedstoneOre.php:68</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a77fce2123a6fcb32a6ace7d7e1863ad5"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a77fce2123a6fcb32a6ace7d7e1863ad5">pocketmine\block\RedstoneOre\getXpDropAmount</a></div><div class="ttdeci">getXpDropAmount()</div><div class="ttdef"><b>Definition</b> <a href="#l00078">RedstoneOre.php:78</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a79099142145a3d4f3cdb4a68607778f7"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a79099142145a3d4f3cdb4a68607778f7">pocketmine\block\RedstoneOre\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00042">RedstoneOre.php:42</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a8e83429d90560eee7f587565ae8e76b9"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a8e83429d90560eee7f587565ae8e76b9">pocketmine\block\RedstoneOre\isAffectedBySilkTouch</a></div><div class="ttdeci">isAffectedBySilkTouch()</div><div class="ttdef"><b>Definition</b> <a href="#l00074">RedstoneOre.php:74</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_a9a82670b9779cf6fd063de7451e5d7d3"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a9a82670b9779cf6fd063de7451e5d7d3">pocketmine\block\RedstoneOre\onNearbyBlockChange</a></div><div class="ttdeci">onNearbyBlockChange()</div><div class="ttdef"><b>Definition</b> <a href="#l00050">RedstoneOre.php:50</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_ac816bb84420ff73b89b60aeb32463f8d"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac816bb84420ff73b89b60aeb32463f8d">pocketmine\block\RedstoneOre\ticksRandomly</a></div><div class="ttdeci">ticksRandomly()</div><div class="ttdef"><b>Definition</b> <a href="#l00057">RedstoneOre.php:57</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_ad717ef68f25f7ce25c5e800686cadc9d"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ad717ef68f25f7ce25c5e800686cadc9d">pocketmine\block\RedstoneOre\getLightLevel</a></div><div class="ttdeci">getLightLevel()</div><div class="ttdef"><b>Definition</b> <a href="#l00038">RedstoneOre.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_redstone_ore_html_ae1b5cd849c1a2d19bfafe722ad78612a"><div class="ttname"><a href="../../d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ae1b5cd849c1a2d19bfafe722ad78612a">pocketmine\block\RedstoneOre\onRandomTick</a></div><div class="ttdeci">onRandomTick()</div><div class="ttdef"><b>Definition</b> <a href="#l00061">RedstoneOre.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_fortune_drop_helper_html"><div class="ttname"><a href="../../dd/dfb/classpocketmine_1_1block_1_1utils_1_1_fortune_drop_helper.html">pocketmine\block\utils\FortuneDropHelper</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd6/_fortune_drop_helper_8php_source.html#l00033">FortuneDropHelper.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00060">Item.php:60</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00346">VanillaItems.php:346</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00358">VanillaItems.php:358</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00172">Player.php:172</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_lightable_html"><div class="ttname"><a href="../../d4/de8/interfacepocketmine_1_1block_1_1utils_1_1_lightable.html">pocketmine\block\utils\Lightable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/ddb/_lightable_8php_source.html#l00026">Lightable.php:26</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

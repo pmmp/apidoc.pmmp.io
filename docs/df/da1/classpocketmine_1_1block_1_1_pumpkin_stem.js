@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_pumpkin_stem =
     [ "place", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "setFacing", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a00b17b6ab2ea033f777b0819343c5498", null ],
     [ "ticksRandomly", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#aeb1cdfcdae26314901d4093f2cdd100b", null ],
     [ "writeStateToWorld", "df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a9404d9040389f3ff2462f86d9a181160", null ]

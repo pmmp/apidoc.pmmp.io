@@ -68,6 +68,8 @@ var classpocketmine_1_1block_1_1_cake_with_dyed_candle =
     [ "readStateFromWorld", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#aaeb80f7e0a5a78edc84b4ddceac05291", null ],
     [ "requiresHunger", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a50519b1d2d6a585f50e380fe4a6c9196", null ],
+    [ "setColor", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#af95495be09d518364547340a75b91392", null ],
+    [ "setLit", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#af1807ff180e5678ba081b846f28fdeb0", null ],
     [ "ticksRandomly", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

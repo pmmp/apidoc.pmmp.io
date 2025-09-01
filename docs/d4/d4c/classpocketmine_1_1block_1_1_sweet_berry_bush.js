@@ -65,6 +65,7 @@ var classpocketmine_1_1block_1_1_sweet_berry_bush =
     [ "place", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a6342099d75bfb19a6a4b6abada35acba", null ],
     [ "writeStateToWorld", "d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

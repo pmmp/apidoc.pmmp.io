@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -131,52 +131,54 @@ $(function(){initNavTree('d5/d48/_resin_clump_8php_source.html','../../'); initR
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\MultiAnySupportTrait;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\SupportType;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">   29</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">ResinClump</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    use MultiAnySupportTrait;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#addb165ce872d1da7bc63db5b47f3cf77">   32</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#addb165ce872d1da7bc63db5b47f3cf77">isSolid</a>() : bool{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        return false;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_interface" href="../../db/d50/interfacepocketmine_1_1block_1_1utils_1_1_multi_any_facing.html">pocketmine\block\utils\MultiAnyFacing</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\MultiAnySupportTrait;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use pocketmine\block\utils\SupportType;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">ResinClump</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">Transparent</a> implements <a class="code hl_interface" href="../../db/d50/interfacepocketmine_1_1block_1_1utils_1_1_multi_any_facing.html">MultiAnyFacing</a>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    use MultiAnySupportTrait;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#addb165ce872d1da7bc63db5b47f3cf77">   33</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#addb165ce872d1da7bc63db5b47f3cf77">isSolid</a>() : bool{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        return false;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a9f5c157d1703fa445c05d3b9001ff1fc">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a9f5c157d1703fa445c05d3b9001ff1fc">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        return SupportType::NONE;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a9f5c157d1703fa445c05d3b9001ff1fc">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a9f5c157d1703fa445c05d3b9001ff1fc">getSupportType</a>(<span class="keywordtype">int</span> $facing) : SupportType{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return SupportType::NONE;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a33a5e4c2d7595ea4472395c40fb67db1">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a33a5e4c2d7595ea4472395c40fb67db1">canBeReplaced</a>() : bool{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        return true;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a33a5e4c2d7595ea4472395c40fb67db1">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a33a5e4c2d7595ea4472395c40fb67db1">canBeReplaced</a>() : bool{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        return true;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#aa07a69862c8a88c4bc215c170ad0673a">   47</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#aa07a69862c8a88c4bc215c170ad0673a">getInitialPlaceFaces</a>(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace) : array{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return $blockReplace instanceof <a class="code hl_class" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">ResinClump</a> ? $blockReplace-&gt;faces : [];</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#aa07a69862c8a88c4bc215c170ad0673a">   48</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#aa07a69862c8a88c4bc215c170ad0673a">getInitialPlaceFaces</a>(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $blockReplace) : array{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        return $blockReplace instanceof <a class="code hl_class" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">ResinClump</a> ? $blockReplace-&gt;faces : [];</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de">   51</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de">recalculateCollisionBoxes</a>() : array{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        return [];</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de">   52</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de">recalculateCollisionBoxes</a>() : array{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        return [];</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00062">Block.php:62</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">pocketmine\block\ResinClump</a></div><div class="ttdef"><b>Definition</b> <a href="#l00029">ResinClump.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_a33a5e4c2d7595ea4472395c40fb67db1"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a33a5e4c2d7595ea4472395c40fb67db1">pocketmine\block\ResinClump\canBeReplaced</a></div><div class="ttdeci">canBeReplaced()</div><div class="ttdef"><b>Definition</b> <a href="#l00040">ResinClump.php:40</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_a5b036566b634caf960388940663e93de"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de">pocketmine\block\ResinClump\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00051">ResinClump.php:51</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_a9f5c157d1703fa445c05d3b9001ff1fc"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a9f5c157d1703fa445c05d3b9001ff1fc">pocketmine\block\ResinClump\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00036">ResinClump.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_aa07a69862c8a88c4bc215c170ad0673a"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#aa07a69862c8a88c4bc215c170ad0673a">pocketmine\block\ResinClump\getInitialPlaceFaces</a></div><div class="ttdeci">getInitialPlaceFaces(Block $blockReplace)</div><div class="ttdef"><b>Definition</b> <a href="#l00047">ResinClump.php:47</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_addb165ce872d1da7bc63db5b47f3cf77"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#addb165ce872d1da7bc63db5b47f3cf77">pocketmine\block\ResinClump\isSolid</a></div><div class="ttdeci">isSolid()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">ResinClump.php:32</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html">pocketmine\block\ResinClump</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">ResinClump.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_a33a5e4c2d7595ea4472395c40fb67db1"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a33a5e4c2d7595ea4472395c40fb67db1">pocketmine\block\ResinClump\canBeReplaced</a></div><div class="ttdeci">canBeReplaced()</div><div class="ttdef"><b>Definition</b> <a href="#l00041">ResinClump.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_a5b036566b634caf960388940663e93de"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a5b036566b634caf960388940663e93de">pocketmine\block\ResinClump\recalculateCollisionBoxes</a></div><div class="ttdeci">recalculateCollisionBoxes()</div><div class="ttdef"><b>Definition</b> <a href="#l00052">ResinClump.php:52</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_a9f5c157d1703fa445c05d3b9001ff1fc"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#a9f5c157d1703fa445c05d3b9001ff1fc">pocketmine\block\ResinClump\getSupportType</a></div><div class="ttdeci">getSupportType(int $facing)</div><div class="ttdef"><b>Definition</b> <a href="#l00037">ResinClump.php:37</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_aa07a69862c8a88c4bc215c170ad0673a"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#aa07a69862c8a88c4bc215c170ad0673a">pocketmine\block\ResinClump\getInitialPlaceFaces</a></div><div class="ttdeci">getInitialPlaceFaces(Block $blockReplace)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">ResinClump.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_resin_clump_html_addb165ce872d1da7bc63db5b47f3cf77"><div class="ttname"><a href="../../d1/da4/classpocketmine_1_1block_1_1_resin_clump.html#addb165ce872d1da7bc63db5b47f3cf77">pocketmine\block\ResinClump\isSolid</a></div><div class="ttdeci">isSolid()</div><div class="ttdef"><b>Definition</b> <a href="#l00033">ResinClump.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_transparent_html"><div class="ttname"><a href="../../d5/d1b/classpocketmine_1_1block_1_1_transparent.html">pocketmine\block\Transparent</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d83/_transparent_8php_source.html#l00032">Transparent.php:32</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1block_1_1utils_1_1_multi_any_facing_html"><div class="ttname"><a href="../../db/d50/interfacepocketmine_1_1block_1_1utils_1_1_multi_any_facing.html">pocketmine\block\utils\MultiAnyFacing</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d44/_multi_any_facing_8php_source.html#l00028">MultiAnyFacing.php:28</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

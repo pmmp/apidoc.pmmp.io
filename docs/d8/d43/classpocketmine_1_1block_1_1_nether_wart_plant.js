@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_nether_wart_plant =
     [ "place", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#ab166a4d30a8d4ca561317d39d8c9de72", null ],
     [ "writeStateToWorld", "d8/d43/classpocketmine_1_1block_1_1_nether_wart_plant.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

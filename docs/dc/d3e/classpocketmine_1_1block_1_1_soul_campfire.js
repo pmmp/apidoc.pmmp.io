@@ -24,6 +24,7 @@ var classpocketmine_1_1block_1_1_soul_campfire =
     [ "getDropsForCompatibleTool", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a9be90efd616561651f257173c64fbc4d", null ],
     [ "getDropsForIncompatibleTool", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -67,6 +68,8 @@ var classpocketmine_1_1block_1_1_soul_campfire =
     [ "readStateFromWorld", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a41d5a4c06b5bea06efa0492f993ad673", null ],
     [ "recalculateCollisionBoxes", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a4cf9d206e4c05add6ebbb00bc3d25cc0", null ],
     [ "setCookingTime", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a975bac67e2f668e4a1a4964cf82ab54f", null ],
+    [ "setFacing", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#a309c4f7dfc285c358bb69a4253114afa", null ],
+    [ "setLit", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#af1807ff180e5678ba081b846f28fdeb0", null ],
     [ "ticksRandomly", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#aea0f9fb1389bd102d1da8e07eecf1db9", null ],
     [ "$inventory", "dc/d3e/classpocketmine_1_1block_1_1_soul_campfire.html#acdd2f630f36ebd234f03c65425632417", null ]

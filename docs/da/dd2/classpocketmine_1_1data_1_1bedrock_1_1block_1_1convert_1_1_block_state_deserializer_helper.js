@@ -25,5 +25,6 @@ var classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deser
     [ "decodeTrapdoor", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a754d346d0d1aff0a9299a319e8903da5", null ],
     [ "decodeWall", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a5cc8f0e4a0ae56d3eda8c3eed6bc4fdd", null ],
     [ "decodeWallSign", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a3413365106e39750ae20b7729d220651", null ],
-    [ "decodeWaxedCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#abc453c0f2d83ba3ffdd95d2ce7edd91b", null ]
+    [ "decodeWaxedCopper", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#abc453c0f2d83ba3ffdd95d2ce7edd91b", null ],
+    [ "decodeWeightedPressurePlate", "da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ae3de5c4d64addaf29890f8df778a4a23", null ]
 ];

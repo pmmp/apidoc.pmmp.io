@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_bell =
     [ "getDropsForCompatibleTool", "df/d78/classpocketmine_1_1block_1_1_bell.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "df/d78/classpocketmine_1_1block_1_1_bell.html#a861ceb68c13643f9e66331de98c6bb4e", null ],
     [ "getEnchantmentTags", "df/d78/classpocketmine_1_1block_1_1_bell.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "df/d78/classpocketmine_1_1block_1_1_bell.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "df/d78/classpocketmine_1_1block_1_1_bell.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "df/d78/classpocketmine_1_1block_1_1_bell.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "df/d78/classpocketmine_1_1block_1_1_bell.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -65,6 +66,7 @@ var classpocketmine_1_1block_1_1_bell =
     [ "readStateFromWorld", "df/d78/classpocketmine_1_1block_1_1_bell.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "df/d78/classpocketmine_1_1block_1_1_bell.html#af240943b6507544086107f72eaa89172", null ],
     [ "setAttachmentType", "df/d78/classpocketmine_1_1block_1_1_bell.html#a1ef954012c006453345f10f0481a2e78", null ],
+    [ "setFacing", "df/d78/classpocketmine_1_1block_1_1_bell.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "df/d78/classpocketmine_1_1block_1_1_bell.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "df/d78/classpocketmine_1_1block_1_1_bell.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

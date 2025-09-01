@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.32.2 git-5c0a109f1849a148731c8adf0e53d5b2a98d16f3</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-09cc76ae2b49f1fe3ab0253e6e987fb82bd0a08f</span>
    </div>
   </td>
  </tr>
@@ -886,20 +886,55 @@ $(function(){initNavTree('d8/dbd/_block_type_ids_8php_source.html','../../'); in
 <div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="keyword">public</span> <span class="keyword">const</span> RESIN_CLUMP = 10757;</div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHISELED_RESIN_BRICKS = 10758;</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    <span class="keyword">public</span> <span class="keyword">const</span> RESPAWN_ANCHOR = 10759;</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10760;</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
-<div class="foldopen" id="foldopen00798" data-start="{" data-end="}">
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  798</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        return self::$nextDynamicId++;</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    }</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keyword">public</span> <span class="keyword">const</span> OMINOUS_BANNER = 10760;</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    <span class="keyword">public</span> <span class="keyword">const</span> OMINOUS_WALL_BANNER = 10761;</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="keyword">public</span> <span class="keyword">const</span> ACACIA_CEILING_CENTER_HANGING_SIGN = 10762;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keyword">public</span> <span class="keyword">const</span> ACACIA_CEILING_EDGES_HANGING_SIGN = 10763;</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    <span class="keyword">public</span> <span class="keyword">const</span> ACACIA_WALL_HANGING_SIGN = 10764;</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIRCH_CEILING_CENTER_HANGING_SIGN = 10765;</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIRCH_CEILING_EDGES_HANGING_SIGN = 10766;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keyword">public</span> <span class="keyword">const</span> BIRCH_WALL_HANGING_SIGN = 10767;</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHERRY_CEILING_CENTER_HANGING_SIGN = 10768;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHERRY_CEILING_EDGES_HANGING_SIGN = 10769;</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    <span class="keyword">public</span> <span class="keyword">const</span> CHERRY_WALL_HANGING_SIGN = 10770;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keyword">public</span> <span class="keyword">const</span> CRIMSON_CEILING_CENTER_HANGING_SIGN = 10771;</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    <span class="keyword">public</span> <span class="keyword">const</span> CRIMSON_CEILING_EDGES_HANGING_SIGN = 10772;</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keyword">public</span> <span class="keyword">const</span> CRIMSON_WALL_HANGING_SIGN = 10773;</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    <span class="keyword">public</span> <span class="keyword">const</span> DARK_OAK_CEILING_CENTER_HANGING_SIGN = 10774;</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keyword">public</span> <span class="keyword">const</span> DARK_OAK_CEILING_EDGES_HANGING_SIGN = 10775;</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    <span class="keyword">public</span> <span class="keyword">const</span> DARK_OAK_WALL_HANGING_SIGN = 10776;</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="keyword">public</span> <span class="keyword">const</span> JUNGLE_CEILING_CENTER_HANGING_SIGN = 10777;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    <span class="keyword">public</span> <span class="keyword">const</span> JUNGLE_CEILING_EDGES_HANGING_SIGN = 10778;</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    <span class="keyword">public</span> <span class="keyword">const</span> JUNGLE_WALL_HANGING_SIGN = 10779;</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    <span class="keyword">public</span> <span class="keyword">const</span> MANGROVE_CEILING_CENTER_HANGING_SIGN = 10780;</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keyword">public</span> <span class="keyword">const</span> MANGROVE_CEILING_EDGES_HANGING_SIGN = 10781;</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    <span class="keyword">public</span> <span class="keyword">const</span> MANGROVE_WALL_HANGING_SIGN = 10782;</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <span class="keyword">public</span> <span class="keyword">const</span> OAK_CEILING_CENTER_HANGING_SIGN = 10783;</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keyword">public</span> <span class="keyword">const</span> OAK_CEILING_EDGES_HANGING_SIGN = 10784;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    <span class="keyword">public</span> <span class="keyword">const</span> OAK_WALL_HANGING_SIGN = 10785;</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <span class="keyword">public</span> <span class="keyword">const</span> PALE_OAK_CEILING_CENTER_HANGING_SIGN = 10786;</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keyword">public</span> <span class="keyword">const</span> PALE_OAK_CEILING_EDGES_HANGING_SIGN = 10787;</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    <span class="keyword">public</span> <span class="keyword">const</span> PALE_OAK_WALL_HANGING_SIGN = 10788;</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPRUCE_CEILING_CENTER_HANGING_SIGN = 10789;</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPRUCE_CEILING_EDGES_HANGING_SIGN = 10790;</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    <span class="keyword">public</span> <span class="keyword">const</span> SPRUCE_WALL_HANGING_SIGN = 10791;</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARPED_CEILING_CENTER_HANGING_SIGN = 10792;</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARPED_CEILING_EDGES_HANGING_SIGN = 10793;</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARPED_WALL_HANGING_SIGN = 10794;</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10795;</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span> </div>
+<div class="foldopen" id="foldopen00833" data-start="{" data-end="}">
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  833</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>        return self::$nextDynamicId++;</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    }</div>
 </div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>}</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="#l00036">BlockTypeIds.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition</b> <a href="#l00798">BlockTypeIds.php:798</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition</b> <a href="#l00833">BlockTypeIds.php:833</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html">pocketmine\block\TNT</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00044">TNT.php:44</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

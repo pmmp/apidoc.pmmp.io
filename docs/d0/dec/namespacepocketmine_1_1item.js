@@ -55,6 +55,7 @@ var namespacepocketmine_1_1item =
     [ "GoldenApple", "db/dc4/classpocketmine_1_1item_1_1_golden_apple.html", "db/dc4/classpocketmine_1_1item_1_1_golden_apple" ],
     [ "GoldenAppleEnchanted", "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted.html", "d7/dd7/classpocketmine_1_1item_1_1_golden_apple_enchanted" ],
     [ "GoldenCarrot", "d3/d87/classpocketmine_1_1item_1_1_golden_carrot.html", "d3/d87/classpocketmine_1_1item_1_1_golden_carrot" ],
+    [ "HangingSign", "db/dc1/classpocketmine_1_1item_1_1_hanging_sign.html", "db/dc1/classpocketmine_1_1item_1_1_hanging_sign" ],
     [ "Hoe", "db/d96/classpocketmine_1_1item_1_1_hoe.html", "db/d96/classpocketmine_1_1item_1_1_hoe" ],
     [ "HoneyBottle", "d9/d0e/classpocketmine_1_1item_1_1_honey_bottle.html", "d9/d0e/classpocketmine_1_1item_1_1_honey_bottle" ],
     [ "IceBomb", "d9/dfd/classpocketmine_1_1item_1_1_ice_bomb.html", "d9/dfd/classpocketmine_1_1item_1_1_ice_bomb" ],

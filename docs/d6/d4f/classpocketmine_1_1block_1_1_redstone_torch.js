@@ -66,6 +66,7 @@ var classpocketmine_1_1block_1_1_redstone_torch =
     [ "readStateFromWorld", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a097af4a935135a8524d812f497373075", null ],
     [ "setFacing", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a2a8cdd2e0048ba0feb8420787b3f045b", null ],
+    [ "setLit", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#af1807ff180e5678ba081b846f28fdeb0", null ],
     [ "ticksRandomly", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d6/d4f/classpocketmine_1_1block_1_1_redstone_torch.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -17,6 +17,7 @@ var classpocketmine_1_1block_1_1_froglight =
     [ "generateStatePermutations", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "de/d96/classpocketmine_1_1block_1_1_froglight.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "de/d96/classpocketmine_1_1block_1_1_froglight.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
+    [ "getAxis", "de/d96/classpocketmine_1_1block_1_1_froglight.html#ac7abcbdd0edc66f932eb743d814a5fdd", null ],
     [ "getBreakInfo", "de/d96/classpocketmine_1_1block_1_1_froglight.html#aa4773f0153324728a2f41820fa52442d", null ],
     [ "getCollisionBoxes", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a104403fbe0f0d27d8a5ac667cd1a89ef", null ],
     [ "getDrops", "de/d96/classpocketmine_1_1block_1_1_froglight.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_froglight =
     [ "place", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setAxis", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a609fb6e86be98370684476e2b20a685a", null ],
     [ "setFroglightType", "de/d96/classpocketmine_1_1block_1_1_froglight.html#af3605d26146cffcfc316d450cedf9185", null ],
     [ "ticksRandomly", "de/d96/classpocketmine_1_1block_1_1_froglight.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "de/d96/classpocketmine_1_1block_1_1_froglight.html#a9404d9040389f3ff2462f86d9a181160", null ]

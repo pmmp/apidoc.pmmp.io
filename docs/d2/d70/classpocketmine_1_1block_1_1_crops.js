@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_crops =
     [ "place", "d2/d70/classpocketmine_1_1block_1_1_crops.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "d2/d70/classpocketmine_1_1block_1_1_crops.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d2/d70/classpocketmine_1_1block_1_1_crops.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "d2/d70/classpocketmine_1_1block_1_1_crops.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "d2/d70/classpocketmine_1_1block_1_1_crops.html#a2175d7c31f1159374dd4dd359a117dbb", null ],
     [ "writeStateToWorld", "d2/d70/classpocketmine_1_1block_1_1_crops.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

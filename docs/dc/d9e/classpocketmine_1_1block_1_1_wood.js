@@ -17,6 +17,7 @@ var classpocketmine_1_1block_1_1_wood =
     [ "generateStatePermutations", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a588080e805e50e4f97e1a3d256b8c11e", null ],
     [ "getAffectedBlocks", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#ad57a8bddf87431ff034f3a96e7219d63", null ],
     [ "getAllSides", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#afe506084e4bb8741a7ac64f6d90c00a5", null ],
+    [ "getAxis", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#ac7abcbdd0edc66f932eb743d814a5fdd", null ],
     [ "getBreakInfo", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#aa4773f0153324728a2f41820fa52442d", null ],
     [ "getCollisionBoxes", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a104403fbe0f0d27d8a5ac667cd1a89ef", null ],
     [ "getDrops", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#ab4d678fcc49f71fc70fff710482f3f4e", null ],
@@ -64,6 +65,7 @@ var classpocketmine_1_1block_1_1_wood =
     [ "place", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setAxis", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a609fb6e86be98370684476e2b20a685a", null ],
     [ "setStripped", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a84afa47e8556c8bf807a8930dc6ea07d", null ],
     [ "ticksRandomly", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/d9e/classpocketmine_1_1block_1_1_wood.html#a9404d9040389f3ff2462f86d9a181160", null ]

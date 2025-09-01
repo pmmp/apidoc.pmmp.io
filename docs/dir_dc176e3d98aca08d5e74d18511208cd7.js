@@ -58,6 +58,7 @@ var dir_dc176e3d98aca08d5e74d18511208cd7 =
     [ "GoldenApple.php", "db/d7c/_golden_apple_8php_source.html", null ],
     [ "GoldenAppleEnchanted.php", "d0/d15/_golden_apple_enchanted_8php_source.html", null ],
     [ "GoldenCarrot.php", "d7/dd0/_golden_carrot_8php_source.html", null ],
+    [ "item/HangingSign.php", "d7/dc7/item_2_hanging_sign_8php_source.html", null ],
     [ "Hoe.php", "d2/de0/_hoe_8php_source.html", null ],
     [ "HoneyBottle.php", "df/df5/_honey_bottle_8php_source.html", null ],
     [ "item/IceBomb.php", "db/ddc/item_2_ice_bomb_8php_source.html", null ],

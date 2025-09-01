@@ -64,6 +64,7 @@ var classpocketmine_1_1block_1_1_fire =
     [ "place", "da/d18/classpocketmine_1_1block_1_1_fire.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "da/d18/classpocketmine_1_1block_1_1_fire.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "da/d18/classpocketmine_1_1block_1_1_fire.html#a097af4a935135a8524d812f497373075", null ],
+    [ "setAge", "da/d18/classpocketmine_1_1block_1_1_fire.html#a757b95c06e4042e1bea731c7f53b9cbc", null ],
     [ "ticksRandomly", "da/d18/classpocketmine_1_1block_1_1_fire.html#a9b796dfb5a552f39dc977b9404c31836", null ],
     [ "writeStateToWorld", "da/d18/classpocketmine_1_1block_1_1_fire.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

@@ -23,6 +23,7 @@ var classpocketmine_1_1block_1_1_glazed_terracotta =
     [ "getDropsForCompatibleTool", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a6d3cefce63d654d994f2e1b5dcc11c54", null ],
     [ "getDropsForIncompatibleTool", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#afe4928a6da38d63eccea78bd1a2fdcd3", null ],
     [ "getEnchantmentTags", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a26bbbd2a3058bb57bd16a6f73b32d9d0", null ],
+    [ "getFacing", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a8581da0e1cba085fdfebe5612edfbbfb", null ],
     [ "getFlameEncouragement", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#aad121ffc31a225748d5bcc0e0752a9f0", null ],
     [ "getFlammability", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#acb7cc5bba94398c6a329b3b2af8fa859", null ],
     [ "getFrictionFactor", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a2cbe9ba6733a72db2c2630aaab7cefe9", null ],
@@ -64,6 +65,8 @@ var classpocketmine_1_1block_1_1_glazed_terracotta =
     [ "place", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a4bc78712a6bf9ec1e50890f716dbbd2d", null ],
     [ "readStateFromWorld", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a8a733c2fe564a205938a9146c8b0e0f1", null ],
+    [ "setColor", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#af95495be09d518364547340a75b91392", null ],
+    [ "setFacing", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a309c4f7dfc285c358bb69a4253114afa", null ],
     [ "ticksRandomly", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "dc/d22/classpocketmine_1_1block_1_1_glazed_terracotta.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];
