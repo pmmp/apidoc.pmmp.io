@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.2 git-636b96a9a5c35292f076e2f2e9c5723611d28d7b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
    </div>
   </td>
  </tr>
@@ -332,24 +332,28 @@ $(function(){initNavTree('d3/d98/_block_state_upgrader_8php_source.html','../../
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keyword">private</span> <span class="keyword">function</span> applyPropertyFlattened(BlockStateUpgradeSchemaFlattenInfo $flattenInfo, <span class="keywordtype">string</span> $oldName, array $states) : array{</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        $flattenedValue = $states[$flattenInfo-&gt;flattenedProperty] ?? null;</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        $expectedType = $flattenInfo-&gt;flattenedPropertyType;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keywordflow">if</span>(!$flattenedValue instanceof $expectedType){</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <span class="comment">//flattened property is not of the expected type, so this transformation is not applicable</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <span class="keywordflow">return</span> [$oldName, $states];</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keywordflow">if</span>($expectedType === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <span class="comment">//TODO: we can&#39;t make this non-nullable in a patch release</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;We never give this null&quot;</span>);</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        $embedKey = match(get_class($flattenedValue)){</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            StringTag::class =&gt; $flattenedValue-&gt;getValue(),</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            ByteTag::class =&gt; (string) $flattenedValue-&gt;getValue(),</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            IntTag::class =&gt; (string) $flattenedValue-&gt;getValue(),</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="comment">//flattenedPropertyType is always one of these three types, but PHPStan doesn&#39;t know that</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;flattenedPropertyType should be one of these three types, but have &quot;</span> . get_class($flattenedValue)),</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        };</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        $embedValue = $flattenInfo-&gt;flattenedValueRemaps[$embedKey] ?? $embedKey;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        $newName = sprintf(<span class="stringliteral">&quot;%s%s%s&quot;</span>, $flattenInfo-&gt;prefix, $embedValue, $flattenInfo-&gt;suffix);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        unset($states[$flattenInfo-&gt;flattenedProperty]);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordflow">return</span> [$newName, $states];</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    }</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="keywordflow">if</span>(!$flattenedValue instanceof $expectedType){</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="comment">//flattened property is not of the expected type, so this transformation is not applicable</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <span class="keywordflow">return</span> [$oldName, $states];</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        }</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        $embedKey = match(get_class($flattenedValue)){</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            StringTag::class =&gt; $flattenedValue-&gt;getValue(),</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            ByteTag::class =&gt; (string) $flattenedValue-&gt;getValue(),</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            IntTag::class =&gt; (string) $flattenedValue-&gt;getValue(),</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="comment">//flattenedPropertyType is always one of these three types, but PHPStan doesn&#39;t know that</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> AssumptionFailedError(<span class="stringliteral">&quot;flattenedPropertyType should be one of these three types, but have &quot;</span> . get_class($flattenedValue)),</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        };</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        $embedValue = $flattenInfo-&gt;flattenedValueRemaps[$embedKey] ?? $embedKey;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        $newName = sprintf(<span class="stringliteral">&quot;%s%s%s&quot;</span>, $flattenInfo-&gt;prefix, $embedValue, $flattenInfo-&gt;suffix);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        unset($states[$flattenInfo-&gt;flattenedProperty]);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="keywordflow">return</span> [$newName, $states];</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data_html"><div class="ttname"><a href="../../da/dce/classpocketmine_1_1data_1_1bedrock_1_1block_1_1_block_state_data.html">pocketmine\data\bedrock\block\BlockStateData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d1e/_block_state_data_8php_source.html#l00039">BlockStateData.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema_html"><div class="ttname"><a href="../../de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema.html">pocketmine\data\bedrock\block\upgrade\BlockStateUpgradeSchema</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/de0/_block_state_upgrade_schema_8php_source.html#l00031">BlockStateUpgradeSchema.php:31</a></div></div>
