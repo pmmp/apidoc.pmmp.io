@@ -13,6 +13,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb =
     [ "dealFireDamage", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#ae36a7e5064724e460fabfe810f2def20", null ],
     [ "despawnFrom", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#a22a098fc4892820db7d15a73edea64ca", null ],
     [ "despawnFromAll", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#a89a01723e97021d54e83c24d1b74670f", null ],
+    [ "despawnsOnEntityHit", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#a8bf437d2920bb38864a0074e34d312fc", null ],
     [ "destroyCycles", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#a13cdde5ca9d85ff86e155b8017e713c0", null ],
     [ "flagForDespawn", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#ab3c11dd444626eb5ef1d2ab666ce5def", null ],
     [ "getAllNetworkData", "d8/df4/classpocketmine_1_1entity_1_1projectile_1_1_ice_bomb.html#ae96e5d919208d6d9d4ccc75136167684", null ],

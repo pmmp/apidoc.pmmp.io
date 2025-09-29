@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -122,96 +122,85 @@ $(function(){initNavTree('df/dc7/_login_packet_8php_source.html','../../'); init
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use <span class="keyword">function</span> strlen;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html">LoginPacket</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">DataPacket</a> implements <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span> <span class="keyword">const</span> NETWORK_ID = ProtocolInfo::LOGIN_PACKET;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\BE;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferReader;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use pmmp\encoding\ByteBufferWriter;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use pmmp\encoding\LE;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>use <span class="keyword">function</span> strlen;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $protocol;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keywordtype">string</span> $authInfoJson;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span> <span class="keywordtype">string</span> $clientDataJwt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#ad8827972b92268ae041ff85b731612e6">   31</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#ad8827972b92268ae041ff85b731612e6">create</a>(<span class="keywordtype">int</span> $protocol, <span class="keywordtype">string</span> $authInfoJson, <span class="keywordtype">string</span> $clientDataJwt) : self{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        $result = new self;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $result-&gt;protocol = $protocol;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $result-&gt;authInfoJson = $authInfoJson;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $result-&gt;clientDataJwt = $clientDataJwt;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html">LoginPacket</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">DataPacket</a> implements <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">const</span> NETWORK_ID = ProtocolInfo::LOGIN_PACKET;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $protocol;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span> <span class="keywordtype">string</span> $authInfoJson;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">public</span> <span class="keywordtype">string</span> $clientDataJwt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#ad8827972b92268ae041ff85b731612e6">   34</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#ad8827972b92268ae041ff85b731612e6">create</a>(<span class="keywordtype">int</span> $protocol, <span class="keywordtype">string</span> $authInfoJson, <span class="keywordtype">string</span> $clientDataJwt) : self{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $result = new self;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $result-&gt;protocol = $protocol;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $result-&gt;authInfoJson = $authInfoJson;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $result-&gt;clientDataJwt = $clientDataJwt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">function</span> canBeSentBeforeLogin() : bool{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        return true;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a88b1e28a4f70ed5c1f63c5fd00709371">   43</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a88b1e28a4f70ed5c1f63c5fd00709371">decodePayload</a>(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in) : void{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $this-&gt;protocol = $in-&gt;getInt();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $this-&gt;decodeConnectionRequest($in-&gt;<a class="code hl_function" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#ae1bedf1a79e26eb799fe8e50026560c4">getString</a>());</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> canBeSentBeforeLogin() : bool{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        return true;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a0a0d61655449dcc41fceac9755ac9f79">   46</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a0a0d61655449dcc41fceac9755ac9f79">decodePayload</a>(ByteBufferReader $in) : void{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;protocol = BE::readUnsignedInt($in);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;decodeConnectionRequest(CommonTypes::getString($in));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">protected</span> <span class="keyword">function</span> decodeConnectionRequest(<span class="keywordtype">string</span> $binary) : void{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $connRequestReader = new <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">BinaryStream</a>($binary);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $authInfoJsonLength = $connRequestReader-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#afc6ed67469ec930ba28a541f05cf622f">getLInt</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span>($authInfoJsonLength &lt;= 0){</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="comment">//technically this is always positive; the problem results because getLInt() is implicitly signed</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="comment">//this is inconsistent with many other methods, but we can&#39;t do anything about that for now</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Length of auth info JSON must be positive&quot;</span>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $this-&gt;authInfoJson = $connRequestReader-&gt;get($authInfoJsonLength);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $clientDataJwtLength = $connRequestReader-&gt;getLInt();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span>($clientDataJwtLength &lt;= 0){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="comment">//technically this is always positive; the problem results because getLInt() is implicitly signed</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="comment">//this is inconsistent with many other methods, but we can&#39;t do anything about that for now</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Length of clientData JWT must be positive&quot;</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;clientDataJwt = $connRequestReader-&gt;get($clientDataJwtLength);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a8a55fab12260c77ebef53373b0c55f81">   68</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a8a55fab12260c77ebef53373b0c55f81">encodePayload</a>(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out) : void{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $out-&gt;putInt($this-&gt;protocol);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $out-&gt;putString($this-&gt;encodeConnectionRequest());</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">protected</span> <span class="keyword">function</span> decodeConnectionRequest(<span class="keywordtype">string</span> $binary) : void{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $connRequestReader = new ByteBufferReader($binary);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $authInfoJsonLength = LE::readUnsignedInt($connRequestReader);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $this-&gt;authInfoJson = $connRequestReader-&gt;readByteArray($authInfoJsonLength);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $clientDataJwtLength = LE::readUnsignedInt($connRequestReader);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $this-&gt;clientDataJwt = $connRequestReader-&gt;readByteArray($clientDataJwtLength);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#abb5c8781b4aeb48a66b595465b959fbe">   61</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#abb5c8781b4aeb48a66b595465b959fbe">encodePayload</a>(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        BE::writeUnsignedInt($out, $this-&gt;protocol);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        CommonTypes::putString($out, $this-&gt;encodeConnectionRequest());</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeConnectionRequest() : string{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $connRequestWriter = new <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">BinaryStream</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $connRequestWriter-&gt;putLInt(strlen($this-&gt;authInfoJson));</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $connRequestWriter-&gt;put($this-&gt;authInfoJson);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $connRequestWriter-&gt;putLInt(strlen($this-&gt;clientDataJwt));</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $connRequestWriter-&gt;put($this-&gt;clientDataJwt);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> $connRequestWriter-&gt;getBuffer();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a60e792896b3ef4db26daa188f60ba320">   85</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a60e792896b3ef4db26daa188f60ba320">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        return $handler-&gt;handleLogin($this);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeConnectionRequest() : string{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $connRequestWriter = new ByteBufferWriter();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        LE::writeUnsignedInt($connRequestWriter, strlen($this-&gt;authInfoJson));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $connRequestWriter-&gt;writeByteArray($this-&gt;authInfoJson);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        LE::writeUnsignedInt($connRequestWriter, strlen($this-&gt;clientDataJwt));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $connRequestWriter-&gt;writeByteArray($this-&gt;clientDataJwt);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> $connRequestWriter-&gt;getData();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a60e792896b3ef4db26daa188f60ba320">   78</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a60e792896b3ef4db26daa188f60ba320">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        return $handler-&gt;handleLogin($this);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00021">DataPacket.php:21</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html">pocketmine\network\mcpe\protocol\LoginPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00021">LoginPacket.php:21</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_a60e792896b3ef4db26daa188f60ba320"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a60e792896b3ef4db26daa188f60ba320">pocketmine\network\mcpe\protocol\LoginPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00085">LoginPacket.php:85</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_a88b1e28a4f70ed5c1f63c5fd00709371"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a88b1e28a4f70ed5c1f63c5fd00709371">pocketmine\network\mcpe\protocol\LoginPacket\decodePayload</a></div><div class="ttdeci">decodePayload(PacketSerializer $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00043">LoginPacket.php:43</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_a8a55fab12260c77ebef53373b0c55f81"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a8a55fab12260c77ebef53373b0c55f81">pocketmine\network\mcpe\protocol\LoginPacket\encodePayload</a></div><div class="ttdeci">encodePayload(PacketSerializer $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">LoginPacket.php:68</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_ad8827972b92268ae041ff85b731612e6"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#ad8827972b92268ae041ff85b731612e6">pocketmine\network\mcpe\protocol\LoginPacket\create</a></div><div class="ttdeci">static create(int $protocol, string $authInfoJson, string $clientDataJwt)</div><div class="ttdef"><b>Definition</b> <a href="#l00031">LoginPacket.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception_html"><div class="ttname"><a href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dc6/_packet_decode_exception_8php_source.html#l00017">PacketDecodeException.php:17</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00066">bedrock-protocol/src/serializer/PacketSerializer.php:66</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html_ae1bedf1a79e26eb799fe8e50026560c4"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html#ae1bedf1a79e26eb799fe8e50026560c4">pocketmine\network\mcpe\protocol\serializer\PacketSerializer\getString</a></div><div class="ttdeci">getString()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00083">bedrock-protocol/src/serializer/PacketSerializer.php:83</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00031">BinaryStream.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_afc6ed67469ec930ba28a541f05cf622f"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#afc6ed67469ec930ba28a541f05cf622f">pocketmine\utils\BinaryStream\getLInt</a></div><div class="ttdeci">getLInt()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00205">BinaryStream.php:205</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00023">DataPacket.php:23</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html">pocketmine\network\mcpe\protocol\LoginPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">LoginPacket.php:24</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_a0a0d61655449dcc41fceac9755ac9f79"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a0a0d61655449dcc41fceac9755ac9f79">pocketmine\network\mcpe\protocol\LoginPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">LoginPacket.php:46</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_a60e792896b3ef4db26daa188f60ba320"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#a60e792896b3ef4db26daa188f60ba320">pocketmine\network\mcpe\protocol\LoginPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00078">LoginPacket.php:78</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_abb5c8781b4aeb48a66b595465b959fbe"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#abb5c8781b4aeb48a66b595465b959fbe">pocketmine\network\mcpe\protocol\LoginPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00061">LoginPacket.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet_html_ad8827972b92268ae041ff85b731612e6"><div class="ttname"><a href="../../d9/de5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_login_packet.html#ad8827972b92268ae041ff85b731612e6">pocketmine\network\mcpe\protocol\LoginPacket\create</a></div><div class="ttdeci">static create(int $protocol, string $authInfoJson, string $clientDataJwt)</div><div class="ttdef"><b>Definition</b> <a href="#l00034">LoginPacket.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface_html"><div class="ttname"><a href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_packet_handler_interface_8php_source.html#l00020">PacketHandlerInterface.php:20</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet_html"><div class="ttname"><a href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">pocketmine\network\mcpe\protocol\ServerboundPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfc/_serverbound_packet_8php_source.html#l00017">ServerboundPacket.php:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

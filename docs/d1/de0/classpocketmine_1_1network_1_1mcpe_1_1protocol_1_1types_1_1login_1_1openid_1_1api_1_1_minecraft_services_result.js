@@ -1,0 +1,4 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_services_result =
+[
+    [ "$serviceEnvironments", "d1/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_services_result.html#a2fdd65f62960d3a4b5ac3a704dd02df0", null ]
+];

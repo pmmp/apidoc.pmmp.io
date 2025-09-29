@@ -17,6 +17,7 @@ var namespacepocketmine_1_1entity =
     [ "InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ],
     [ "Living", "df/d0c/classpocketmine_1_1entity_1_1_living.html", "df/d0c/classpocketmine_1_1entity_1_1_living" ],
     [ "Location", "dc/d56/classpocketmine_1_1entity_1_1_location.html", "dc/d56/classpocketmine_1_1entity_1_1_location" ],
+    [ "NeverSavedWithChunkEntity", "d2/dc0/interfacepocketmine_1_1entity_1_1_never_saved_with_chunk_entity.html", null ],
     [ "Skin", "d8/d49/classpocketmine_1_1entity_1_1_skin.html", null ],
     [ "Squid", "d5/d49/classpocketmine_1_1entity_1_1_squid.html", "d5/d49/classpocketmine_1_1entity_1_1_squid" ],
     [ "Villager", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html", "d9/d6b/classpocketmine_1_1entity_1_1_villager" ],

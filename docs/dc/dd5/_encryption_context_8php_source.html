@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(function(){initNavTree('dc/dd5/_encryption_context_8php_source.html','../../')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>pocketmine\network\mcpe\encryption;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use Crypto\Cipher;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html">pocketmine\utils\Binary</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pmmp\encoding\LE;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <span class="keyword">function</span> bin2hex;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> openssl_digest;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> openssl_error_string;</div>
@@ -204,7 +204,7 @@ $(function(){initNavTree('dc/dd5/_encryption_context_8php_source.html','../../')
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">private</span> <span class="keyword">function</span> calculateChecksum(<span class="keywordtype">int</span> $counter, <span class="keywordtype">string</span> $payload) : string{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $hash = openssl_digest(Binary::writeLLong($counter) . $payload . $this-&gt;key, self::CHECKSUM_ALGO, true);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $hash = openssl_digest(LE::packUnsignedLong($counter) . $payload . $this-&gt;key, self::CHECKSUM_ALGO, true);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">if</span>($hash === <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;openssl_digest() error: &quot;</span> . openssl_error_string());</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
@@ -216,7 +216,6 @@ $(function(){initNavTree('dc/dd5/_encryption_context_8php_source.html','../../')
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context_html"><div class="ttname"><a href="../../d0/d84/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context.html">pocketmine\network\mcpe\encryption\EncryptionContext</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">EncryptionContext.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context_html_a927e3d948e106c0e6873fc15d5974c91"><div class="ttname"><a href="../../d0/d84/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context.html#a927e3d948e106c0e6873fc15d5974c91">pocketmine\network\mcpe\encryption\EncryptionContext\decrypt</a></div><div class="ttdeci">decrypt(string $encrypted)</div><div class="ttdef"><b>Definition</b> <a href="#l00086">EncryptionContext.php:86</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context_html_ae00ff4f543819978f588030a7ae33c4c"><div class="ttname"><a href="../../d0/d84/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_encryption_context.html#ae00ff4f543819978f588030a7ae33c4c">pocketmine\network\mcpe\encryption\EncryptionContext\fakeGCM</a></div><div class="ttdeci">static fakeGCM(string $encryptionKey)</div><div class="ttdef"><b>Definition</b> <a href="#l00067">EncryptionContext.php:67</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_html"><div class="ttname"><a href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html">pocketmine\utils\Binary</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/daf/_binary_8php_source.html#l00041">Binary.php:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

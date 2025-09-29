@@ -12,9 +12,6 @@ var searchData=
   ['jumping_9',['JUMPING',['../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html#a229a834552fbcb8b38ed7de045a7cf08',1,'pocketmine::network::mcpe::protocol::types::PlayerAuthInputFlags']]],
   ['jungletree_10',['JungleTree',['../dc/ded/classpocketmine_1_1world_1_1generator_1_1object_1_1_jungle_tree.html',1,'pocketmine::world::generator::object']]],
   ['jwtbodyrfc7519_11',['JwtBodyRfc7519',['../d8/df3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_body_rfc7519.html',1,'pocketmine::network::mcpe::protocol::types::login']]],
-  ['jwtchain_12',['JwtChain',['../df/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_chain.html',1,'pocketmine::network::mcpe::protocol::types::login']]],
-  ['jwtchainlinkbody_13',['JwtChainLinkBody',['../df/d48/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_chain_link_body.html',1,'pocketmine::network::mcpe::protocol::types::login']]],
-  ['jwtexception_14',['JwtException',['../d6/d69/classpocketmine_1_1network_1_1mcpe_1_1_jwt_exception.html',1,'pocketmine::network::mcpe']]],
-  ['jwtheader_15',['JwtHeader',['../db/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_header.html',1,'pocketmine::network::mcpe::protocol::types::login']]],
-  ['jwtutils_16',['JwtUtils',['../de/d36/classpocketmine_1_1network_1_1mcpe_1_1_jwt_utils.html',1,'pocketmine::network::mcpe']]]
+  ['jwtexception_12',['JwtException',['../d6/d69/classpocketmine_1_1network_1_1mcpe_1_1_jwt_exception.html',1,'pocketmine::network::mcpe']]],
+  ['jwtutils_13',['JwtUtils',['../de/d36/classpocketmine_1_1network_1_1mcpe_1_1_jwt_utils.html',1,'pocketmine::network::mcpe']]]
 ];

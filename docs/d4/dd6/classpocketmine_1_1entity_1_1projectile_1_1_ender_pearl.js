@@ -13,6 +13,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl =
     [ "dealFireDamage", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#ae36a7e5064724e460fabfe810f2def20", null ],
     [ "despawnFrom", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#a22a098fc4892820db7d15a73edea64ca", null ],
     [ "despawnFromAll", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#a89a01723e97021d54e83c24d1b74670f", null ],
+    [ "despawnsOnEntityHit", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#a8bf437d2920bb38864a0074e34d312fc", null ],
     [ "destroyCycles", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#a13cdde5ca9d85ff86e155b8017e713c0", null ],
     [ "flagForDespawn", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#ab3c11dd444626eb5ef1d2ab666ce5def", null ],
     [ "getAllNetworkData", "d4/dd6/classpocketmine_1_1entity_1_1projectile_1_1_ender_pearl.html#ae96e5d919208d6d9d4ccc75136167684", null ],

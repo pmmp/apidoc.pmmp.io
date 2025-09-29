@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -204,6 +204,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/classpocketmine_1_1item_1_1_fire_charge.html">FireCharge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3a/classpocketmine_1_1item_1_1_firework_rocket.html">FireworkRocket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/classpocketmine_1_1item_1_1_firework_rocket_explosion.html">FireworkRocketExplosion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da8/classpocketmine_1_1item_1_1_firework_star.html">FireworkStar</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html">FishingRod</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/classpocketmine_1_1item_1_1_flint_steel.html">FlintSteel</a></td></tr>
@@ -344,6 +350,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d09/classpocketmine_1_1item_1_1_totem.html">Totem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dab/classpocketmine_1_1item_1_1_trident.html">Trident</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html">TurtleHelmet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html">VanillaArmorMaterials</a></td></tr>
@@ -366,6 +374,9 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afe460b21511aa8ad76e531b450a224de" id="r_afe460b21511aa8ad76e531b450a224de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe460b21511aa8ad76e531b450a224de">BoatType</a> { <b>getWoodType</b>
  }</td></tr>
 <tr class="separator:afe460b21511aa8ad76e531b450a224de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999fdf1d40a7bc41e9e857bc3747ef40" id="r_a999fdf1d40a7bc41e9e857bc3747ef40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>FireworkRocketType</b> { <b>getExplosionSound</b>
+ }</td></tr>
+<tr class="separator:a999fdf1d40a7bc41e9e857bc3747ef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b1a934a804d705f9ca4ebb6c4dfa6f" id="r_a67b1a934a804d705f9ca4ebb6c4dfa6f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>GoatHornType</b> { <b>DREAM</b>
  }</td></tr>
 <tr class="separator:a67b1a934a804d705f9ca4ebb6c4dfa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,6 +438,22 @@ Variables</h2></td></tr>
 <p>@method static BoatType ACACIA() @method static BoatType BIRCH() @method static BoatType DARK_OAK() @method static BoatType JUNGLE() @method static BoatType MANGROVE() @method static BoatType OAK() @method static BoatType SPRUCE() </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d24/_boat_type_8php_source.html#l00041">41</a> of file <a class="el" href="../../dd/d24/_boat_type_8php_source.html">BoatType.php</a>.</p>
+
+</div>
+</div>
+<a id="a999fdf1d40a7bc41e9e857bc3747ef40" name="a999fdf1d40a7bc41e9e857bc3747ef40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999fdf1d40a7bc41e9e857bc3747ef40">&#9670;&#160;</a></span>FireworkRocketType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum pocketmine::item::FireworkRocketType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d43/_firework_rocket_type_8php_source.html#l00030">30</a> of file <a class="el" href="../../d9/d43/_firework_rocket_type_8php_source.html">FireworkRocketType.php</a>.</p>
 
 </div>
 </div>

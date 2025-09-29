@@ -22,6 +22,7 @@ var dir_b6f0bb288e976a059ae88387d5b9ae90 =
     [ "InvalidSkinException.php", "dd/d9d/_invalid_skin_exception_8php_source.html", null ],
     [ "Living.php", "dc/d77/_living_8php_source.html", null ],
     [ "Location.php", "db/df8/_location_8php_source.html", null ],
+    [ "NeverSavedWithChunkEntity.php", "db/d57/_never_saved_with_chunk_entity_8php_source.html", null ],
     [ "Skin.php", "dd/d80/_skin_8php_source.html", null ],
     [ "Squid.php", "d2/df8/_squid_8php_source.html", null ],
     [ "Villager.php", "db/d93/_villager_8php_source.html", null ],

@@ -1,0 +1,4 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environment =
+[
+    [ "$serviceUri", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environment.html#a77d592ab16ce9f85247739707851ed73", null ]
+];

@@ -31,7 +31,7 @@ var classpocketmine_1_1entity_1_1object_1_1_end_crystal =
     [ "isClosed", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#ae8a891986a06e3621c4486538b0e5a60", null ],
     [ "nextRuntimeId", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#a7a0ab51bbdfe50c4c8c58424974b47a7", null ],
     [ "onDeath", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#aac17dc3f3f88b2f3bcd614503d9a34ae", null ],
-    [ "onDeathUpdate", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#a5a122ae10d347948d919332654042417", null ],
+    [ "onDeathUpdate", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#a03d696bf08dbd8d658c70073afd4e16a", null ],
     [ "onDispose", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#a902a93c1b861c0738e47c2f1070023db", null ],
     [ "onFirstUpdate", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#ad52d796618bbd28ffa2f90b368f2dd0c", null ],
     [ "onHitGround", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html#a25ad669890dc24d70b8cdad878cd6449", null ],

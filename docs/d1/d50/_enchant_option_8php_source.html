@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -122,86 +122,89 @@ $(function(){initNavTree('d1/d50/_enchant_option_8php_source.html','../../'); in
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol\types;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">   20</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">EnchantOption</a>{</div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#ab4733422ebb3fefb087c27e576fe3b3f">   26</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#ab4733422ebb3fefb087c27e576fe3b3f">__construct</a>(</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $cost,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $slotFlags,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">private</span> array $equipActivatedEnchantments,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">private</span> array $heldActivatedEnchantments,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">private</span> array $selfActivatedEnchantments,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $name,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $optionId</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ){}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\ByteBufferReader;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferWriter;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use pmmp\encoding\LE;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use pmmp\encoding\VarInt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">   24</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">EnchantOption</a>{</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#ab4733422ebb3fefb087c27e576fe3b3f">   30</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#ab4733422ebb3fefb087c27e576fe3b3f">__construct</a>(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $cost,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $slotFlags,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> array $equipActivatedEnchantments,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> array $heldActivatedEnchantments,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> array $selfActivatedEnchantments,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $name,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $optionId</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ){}</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCost() : int{ return $this-&gt;cost; }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSlotFlags() : int{ return $this-&gt;slotFlags; }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#acea6bbfc7cfe85d0b2710452321f2d07">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#acea6bbfc7cfe85d0b2710452321f2d07">getEquipActivatedEnchantments</a>() : array{ return $this-&gt;equipActivatedEnchantments; }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#a20e958fcb4fbfc92f18db7f6d70e7530">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#a20e958fcb4fbfc92f18db7f6d70e7530">getHeldActivatedEnchantments</a>() : array{ return $this-&gt;heldActivatedEnchantments; }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#aedbf6aa0fbc36f11c2158b9487ab6677">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#aedbf6aa0fbc36f11c2158b9487ab6677">getSelfActivatedEnchantments</a>() : array{ return $this-&gt;selfActivatedEnchantments; }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span> <span class="keyword">function</span> getName() : string{ return $this-&gt;name; }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOptionId() : int{ return $this-&gt;optionId; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCost() : int{ return $this-&gt;cost; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSlotFlags() : int{ return $this-&gt;slotFlags; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#acea6bbfc7cfe85d0b2710452321f2d07">   45</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#acea6bbfc7cfe85d0b2710452321f2d07">getEquipActivatedEnchantments</a>() : array{ return $this-&gt;equipActivatedEnchantments; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#a20e958fcb4fbfc92f18db7f6d70e7530">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#a20e958fcb4fbfc92f18db7f6d70e7530">getHeldActivatedEnchantments</a>() : array{ return $this-&gt;heldActivatedEnchantments; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#aedbf6aa0fbc36f11c2158b9487ab6677">   51</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#aedbf6aa0fbc36f11c2158b9487ab6677">getSelfActivatedEnchantments</a>() : array{ return $this-&gt;selfActivatedEnchantments; }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> readEnchantList(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in) : array{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $result = [];</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">for</span>($i = 0, $len = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab51e507a9f4baec0713ff4007ce192b8">getUnsignedVarInt</a>(); $i &lt; $len; ++$i){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            $result[] = Enchant::read($in);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> writeEnchantList(PacketSerializer $out, array $list) : void{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $out-&gt;putUnsignedVarInt(count($list));</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">foreach</span>($list as $item){</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            $item-&gt;write($out);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(PacketSerializer $in) : self{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $cost = $in-&gt;getUnsignedVarInt();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $slotFlags = $in-&gt;getLInt();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $equipActivatedEnchants = self::readEnchantList($in);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $heldActivatedEnchants = self::readEnchantList($in);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $selfActivatedEnchants = self::readEnchantList($in);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $name = $in-&gt;getString();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $optionId = $in-&gt;readRecipeNetId();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($cost, $slotFlags, $equipActivatedEnchants, $heldActivatedEnchants, $selfActivatedEnchants, $name, $optionId);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(PacketSerializer $out) : void{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $out-&gt;putUnsignedVarInt($this-&gt;cost);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $out-&gt;putLInt($this-&gt;slotFlags);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        self::writeEnchantList($out, $this-&gt;equipActivatedEnchantments);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        self::writeEnchantList($out, $this-&gt;heldActivatedEnchantments);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        self::writeEnchantList($out, $this-&gt;selfActivatedEnchantments);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $out-&gt;putString($this-&gt;name);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $out-&gt;writeRecipeNetId($this-&gt;optionId);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span> <span class="keyword">function</span> getName() : string{ return $this-&gt;name; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">public</span> <span class="keyword">function</span> getOptionId() : int{ return $this-&gt;optionId; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> readEnchantList(ByteBufferReader $in) : array{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $result = [];</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">for</span>($i = 0, $len = VarInt::readUnsignedInt($in); $i &lt; $len; ++$i){</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $result[] = Enchant::read($in);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> writeEnchantList(ByteBufferWriter $out, array $list) : void{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        VarInt::writeUnsignedInt($out, count($list));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">foreach</span>($list as $item){</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $item-&gt;write($out);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : self{</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $cost = VarInt::readUnsignedInt($in);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        $slotFlags = LE::readUnsignedInt($in);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        $equipActivatedEnchants = self::readEnchantList($in);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $heldActivatedEnchants = self::readEnchantList($in);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $selfActivatedEnchants = self::readEnchantList($in);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $name = CommonTypes::getString($in);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $optionId = CommonTypes::readRecipeNetId($in);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($cost, $slotFlags, $equipActivatedEnchants, $heldActivatedEnchants, $selfActivatedEnchants, $name, $optionId);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        VarInt::writeUnsignedInt($out, $this-&gt;cost);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        LE::writeUnsignedInt($out, $this-&gt;slotFlags);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        self::writeEnchantList($out, $this-&gt;equipActivatedEnchantments);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        self::writeEnchantList($out, $this-&gt;heldActivatedEnchantments);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        self::writeEnchantList($out, $this-&gt;selfActivatedEnchantments);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        CommonTypes::putString($out, $this-&gt;name);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        CommonTypes::writeRecipeNetId($out, $this-&gt;optionId);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00066">bedrock-protocol/src/serializer/PacketSerializer.php:66</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">pocketmine\network\mcpe\protocol\types\EnchantOption</a></div><div class="ttdef"><b>Definition</b> <a href="#l00020">EnchantOption.php:20</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_a20e958fcb4fbfc92f18db7f6d70e7530"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#a20e958fcb4fbfc92f18db7f6d70e7530">pocketmine\network\mcpe\protocol\types\EnchantOption\getHeldActivatedEnchantments</a></div><div class="ttdeci">getHeldActivatedEnchantments()</div><div class="ttdef"><b>Definition</b> <a href="#l00044">EnchantOption.php:44</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_ab4733422ebb3fefb087c27e576fe3b3f"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#ab4733422ebb3fefb087c27e576fe3b3f">pocketmine\network\mcpe\protocol\types\EnchantOption\__construct</a></div><div class="ttdeci">__construct(private int $cost, private int $slotFlags, private array $equipActivatedEnchantments, private array $heldActivatedEnchantments, private array $selfActivatedEnchantments, private string $name, private int $optionId)</div><div class="ttdef"><b>Definition</b> <a href="#l00026">EnchantOption.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_acea6bbfc7cfe85d0b2710452321f2d07"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#acea6bbfc7cfe85d0b2710452321f2d07">pocketmine\network\mcpe\protocol\types\EnchantOption\getEquipActivatedEnchantments</a></div><div class="ttdeci">getEquipActivatedEnchantments()</div><div class="ttdef"><b>Definition</b> <a href="#l00041">EnchantOption.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_aedbf6aa0fbc36f11c2158b9487ab6677"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#aedbf6aa0fbc36f11c2158b9487ab6677">pocketmine\network\mcpe\protocol\types\EnchantOption\getSelfActivatedEnchantments</a></div><div class="ttdeci">getSelfActivatedEnchantments()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">EnchantOption.php:47</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_ab51e507a9f4baec0713ff4007ce192b8"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ab51e507a9f4baec0713ff4007ce192b8">pocketmine\utils\BinaryStream\getUnsignedVarInt</a></div><div class="ttdeci">getUnsignedVarInt()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00307">BinaryStream.php:307</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">pocketmine\network\mcpe\protocol\types\EnchantOption</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">EnchantOption.php:24</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_a20e958fcb4fbfc92f18db7f6d70e7530"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#a20e958fcb4fbfc92f18db7f6d70e7530">pocketmine\network\mcpe\protocol\types\EnchantOption\getHeldActivatedEnchantments</a></div><div class="ttdeci">getHeldActivatedEnchantments()</div><div class="ttdef"><b>Definition</b> <a href="#l00048">EnchantOption.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_ab4733422ebb3fefb087c27e576fe3b3f"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#ab4733422ebb3fefb087c27e576fe3b3f">pocketmine\network\mcpe\protocol\types\EnchantOption\__construct</a></div><div class="ttdeci">__construct(private int $cost, private int $slotFlags, private array $equipActivatedEnchantments, private array $heldActivatedEnchantments, private array $selfActivatedEnchantments, private string $name, private int $optionId)</div><div class="ttdef"><b>Definition</b> <a href="#l00030">EnchantOption.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_acea6bbfc7cfe85d0b2710452321f2d07"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#acea6bbfc7cfe85d0b2710452321f2d07">pocketmine\network\mcpe\protocol\types\EnchantOption\getEquipActivatedEnchantments</a></div><div class="ttdeci">getEquipActivatedEnchantments()</div><div class="ttdef"><b>Definition</b> <a href="#l00045">EnchantOption.php:45</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html_aedbf6aa0fbc36f11c2158b9487ab6677"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html#aedbf6aa0fbc36f11c2158b9487ab6677">pocketmine\network\mcpe\protocol\types\EnchantOption\getSelfActivatedEnchantments</a></div><div class="ttdeci">getSelfActivatedEnchantments()</div><div class="ttdef"><b>Definition</b> <a href="#l00051">EnchantOption.php:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

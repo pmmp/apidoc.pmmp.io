@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -122,44 +122,45 @@ $(function(){initNavTree('db/d56/_item_stack_extra_data_shield_8php_source.html'
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol\types\inventory;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html">   23</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html">ItemStackExtraDataShield</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data.html">ItemStackExtraData</a>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5">   29</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5">__construct</a>(</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        ?<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        array $canPlaceOn,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        array $canDestroy,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $blockingTick</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ){</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        parent::__construct($nbt, $canPlaceOn, $canDestroy);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\ByteBufferReader;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferWriter;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use pmmp\encoding\LE;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html">   25</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html">ItemStackExtraDataShield</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data.html">ItemStackExtraData</a>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5">   31</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5">__construct</a>(</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        ?<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        array $canPlaceOn,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        array $canDestroy,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $blockingTick</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        parent::__construct($nbt, $canPlaceOn, $canDestroy);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBlockingTick() : int{ return $this-&gt;blockingTick; }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $in) : self{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $base = parent::read($in);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $blockingTick = $in-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad068b3be574049db538e015f546ec142">getLLong</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($base-&gt;getNbt(), $base-&gt;getCanPlaceOn(), $base-&gt;getCanDestroy(), $blockingTick);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBlockingTick() : int{ return $this-&gt;blockingTick; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : self{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $base = parent::read($in);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">//TODO: I don&#39;t know for sure if this is supposed to be signed or unsigned</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $blockingTick = LE::readSignedLong($in);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $out) : void{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        parent::write($out);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $out-&gt;putLLong($this-&gt;blockingTick);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($base-&gt;getNbt(), $base-&gt;getCanPlaceOn(), $base-&gt;getCanDestroy(), $blockingTick);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        parent::write($out);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        LE::writeSignedLong($out, $this-&gt;blockingTick);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00045">CompoundTag.php:45</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00066">bedrock-protocol/src/serializer/PacketSerializer.php:66</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_html"><div class="ttname"><a href="../../dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackExtraData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d87/_item_stack_extra_data_8php_source.html#l00031">ItemStackExtraData.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield_html"><div class="ttname"><a href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackExtraDataShield</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">ItemStackExtraDataShield.php:23</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield_html_a112226d8501c6070c0812b98fe2aeea5"><div class="ttname"><a href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5">pocketmine\network\mcpe\protocol\types\inventory\ItemStackExtraDataShield\__construct</a></div><div class="ttdeci">__construct(?CompoundTag $nbt, array $canPlaceOn, array $canDestroy, private int $blockingTick)</div><div class="ttdef"><b>Definition</b> <a href="#l00029">ItemStackExtraDataShield.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_ad068b3be574049db538e015f546ec142"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#ad068b3be574049db538e015f546ec142">pocketmine\utils\BinaryStream\getLLong</a></div><div class="ttdeci">getLLong()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00293">BinaryStream.php:293</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_html"><div class="ttname"><a href="../../dc/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackExtraData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d87/_item_stack_extra_data_8php_source.html#l00034">ItemStackExtraData.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield_html"><div class="ttname"><a href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackExtraDataShield</a></div><div class="ttdef"><b>Definition</b> <a href="#l00025">ItemStackExtraDataShield.php:25</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield_html_a112226d8501c6070c0812b98fe2aeea5"><div class="ttname"><a href="../../db/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_extra_data_shield.html#a112226d8501c6070c0812b98fe2aeea5">pocketmine\network\mcpe\protocol\types\inventory\ItemStackExtraDataShield\__construct</a></div><div class="ttdeci">__construct(?CompoundTag $nbt, array $canPlaceOn, array $canDestroy, private int $blockingTick)</div><div class="ttdef"><b>Definition</b> <a href="#l00031">ItemStackExtraDataShield.php:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

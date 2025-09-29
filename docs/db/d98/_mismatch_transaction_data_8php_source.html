@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -122,41 +122,41 @@ $(function(){initNavTree('db/d98/_mismatch_transaction_data_8php_source.html','.
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol\types\inventory;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use <a class="code hl_class" href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use <a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use pocketmine\network\mcpe\protocol\types\GetTypeIdFromConstTrait;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html">MismatchTransactionData</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html">TransactionData</a>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    use GetTypeIdFromConstTrait;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span> <span class="keyword">const</span> ID = InventoryTransactionPacket::TYPE_MISMATCH;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html#a244976bdbf28569f036a3ce52bd6c2c0">   28</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html#a244976bdbf28569f036a3ce52bd6c2c0">decodeData</a>(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $stream) : void{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        if(count($this-&gt;actions) &gt; 0){</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Mismatch transaction type should not have any actions associated with it, but got &quot;</span> . count($this-&gt;actions));</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\ByteBufferReader;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferWriter;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use <a class="code hl_class" href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use pocketmine\network\mcpe\protocol\types\GetTypeIdFromConstTrait;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html">MismatchTransactionData</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html">TransactionData</a>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    use GetTypeIdFromConstTrait;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">const</span> ID = InventoryTransactionPacket::TYPE_MISMATCH;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html#ac0c054a613d2de2841f123796bd7ee29">   29</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html#ac0c054a613d2de2841f123796bd7ee29">decodeData</a>(ByteBufferReader $in) : void{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        if(count($this-&gt;actions) &gt; 0){</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Mismatch transaction type should not have any actions associated with it, but got &quot;</span> . count($this-&gt;actions));</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeData(<a class="code hl_class" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $stream) : void{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    public static function new() : self{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        return new self; <span class="comment">//no arguments</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeData(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    public static function new() : self{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        return new self; <span class="comment">//no arguments</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet_html"><div class="ttname"><a href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8b/_inventory_transaction_packet_8php_source.html#l00030">InventoryTransactionPacket.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet_html"><div class="ttname"><a href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8b/_inventory_transaction_packet_8php_source.html#l00033">InventoryTransactionPacket.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception_html"><div class="ttname"><a href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dc6/_packet_decode_exception_8php_source.html#l00017">PacketDecodeException.php:17</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer_html"><div class="ttname"><a href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">pocketmine\network\mcpe\protocol\serializer\PacketSerializer</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d33/bedrock-protocol_2src_2serializer_2_packet_serializer_8php_source.html#l00066">bedrock-protocol/src/serializer/PacketSerializer.php:66</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data_html"><div class="ttname"><a href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html">pocketmine\network\mcpe\protocol\types\inventory\MismatchTransactionData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">MismatchTransactionData.php:23</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data_html_a244976bdbf28569f036a3ce52bd6c2c0"><div class="ttname"><a href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html#a244976bdbf28569f036a3ce52bd6c2c0">pocketmine\network\mcpe\protocol\types\inventory\MismatchTransactionData\decodeData</a></div><div class="ttdeci">decodeData(PacketSerializer $stream)</div><div class="ttdef"><b>Definition</b> <a href="#l00028">MismatchTransactionData.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data_html"><div class="ttname"><a href="../../d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html">pocketmine\network\mcpe\protocol\types\inventory\TransactionData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_transaction_data_8php_source.html#l00022">TransactionData.php:22</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data_html"><div class="ttname"><a href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html">pocketmine\network\mcpe\protocol\types\inventory\MismatchTransactionData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">MismatchTransactionData.php:24</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data_html_ac0c054a613d2de2841f123796bd7ee29"><div class="ttname"><a href="../../d7/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_mismatch_transaction_data.html#ac0c054a613d2de2841f123796bd7ee29">pocketmine\network\mcpe\protocol\types\inventory\MismatchTransactionData\decodeData</a></div><div class="ttdeci">decodeData(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00029">MismatchTransactionData.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data_html"><div class="ttname"><a href="../../d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html">pocketmine\network\mcpe\protocol\types\inventory\TransactionData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_transaction_data_8php_source.html#l00024">TransactionData.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,5 +1,16 @@
 var NAVTREEINDEX7 =
 {
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a31b789765ede98d12bc821a64ea7c60f":[3,0,1,0,258,52],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a36afea9f0214193963f75577e8d48c26":[2,0,0,0,256,63],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a36afea9f0214193963f75577e8d48c26":[3,0,1,0,258,63],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a39b42de71b74941202b324e035270326":[2,0,0,0,256,17],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a39b42de71b74941202b324e035270326":[3,0,1,0,258,17],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,256,66],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,258,66],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,256,11],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,258,11],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3f7f216b87cf31a3209f87f7ac631bf3":[2,0,0,0,256,15],
+"d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a3f7f216b87cf31a3209f87f7ac631bf3":[3,0,1,0,258,15],
 "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,256,48],
 "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,258,48],
 "d0/d98/classpocketmine_1_1block_1_1_wooden_pressure_plate.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,256,39],
@@ -125,7 +136,7 @@ var NAVTREEINDEX7 =
 "d0/d9a/classpocketmine_1_1block_1_1tile_1_1_beacon.html#aae5a51b50f48ba5b0a8559c0c12a8456":[2,0,0,0,0,2,6],
 "d0/d9a/classpocketmine_1_1block_1_1tile_1_1_beacon.html#aae5a51b50f48ba5b0a8559c0c12a8456":[3,0,1,0,1,2,6],
 "d0/d9b/_saturation_effect_8php_source.html":[4,0,0,6,1,13],
-"d0/d9b/_water_splash_sound_8php_source.html":[4,0,0,25,5,102],
+"d0/d9b/_water_splash_sound_8php_source.html":[4,0,0,25,5,109],
 "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html":[3,0,1,6,0,0,1,0,1],
 "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html#a7e3d878de079861223b7c5431f4e4a23":[3,0,1,6,0,0,1,0,1,1],
 "d0/d9b/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1model_1_1_block_state_upgrade_schema_model_block_remap.html#aa3e9cb0d1cbf85fb98c1ec4197bcdaa8":[3,0,1,6,0,0,1,0,1,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX7 =
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,55,49],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,53,51],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,55,51],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,53,0],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,55,0],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,53,24],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,55,24],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,53,57],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,55,57],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,53,43],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,55,43],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,53,15],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,55,15],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,53,42],
-"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,55,42]
+"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,53,0]
 };

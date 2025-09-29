@@ -22,7 +22,7 @@ var dir_1de0facd236845b101a2fa07512fb173 =
     [ "OpenConnectionRequest2.php", "d2/d09/_open_connection_request2_8php_source.html", null ],
     [ "raklib/src/protocol/Packet.php", "db/d65/raklib_2src_2protocol_2_packet_8php_source.html", null ],
     [ "PacketReliability.php", "d8/d7a/_packet_reliability_8php_source.html", null ],
-    [ "raklib/src/protocol/PacketSerializer.php", "da/de1/raklib_2src_2protocol_2_packet_serializer_8php_source.html", null ],
+    [ "PacketSerializer.php", "d3/dec/_packet_serializer_8php_source.html", null ],
     [ "SplitPacketInfo.php", "d2/d42/_split_packet_info_8php_source.html", null ],
     [ "UnconnectedPing.php", "d0/dde/_unconnected_ping_8php_source.html", null ],
     [ "UnconnectedPingOpenConnections.php", "d5/da7/_unconnected_ping_open_connections_8php_source.html", null ],

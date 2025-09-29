@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -141,49 +141,55 @@ $(function(){initNavTree('d1/d1d/_sign_change_event_8php_source.html','../../');
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html">SignChangeEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../df/d69/classpocketmine_1_1event_1_1block_1_1_block_event.html">BlockEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html">BaseSign</a> $sign,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a> $text</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        parent::__construct($sign);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSign() : <a class="code hl_class" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html">BaseSign</a>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> $this-&gt;sign;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a> $oldText;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html">BaseSign</a> $sign,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a> $text,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> $frontFace = <span class="keyword">true</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ){</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;oldText = $this-&gt;sign-&gt;getFaceText($this-&gt;frontFace);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        parent::__construct($sign);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPlayer() : <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> $this-&gt;player;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSign() : <a class="code hl_class" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html">BaseSign</a>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> $this-&gt;sign;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612d1709a9c20fd0137492e8a1a7ec35">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612d1709a9c20fd0137492e8a1a7ec35">getOldText</a>() : <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        return $this-&gt;sign-&gt;getText();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPlayer() : <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> $this-&gt;player;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612d1709a9c20fd0137492e8a1a7ec35">   61</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612d1709a9c20fd0137492e8a1a7ec35">getOldText</a>() : <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        return $this-&gt;oldText;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612f4a26edec37bc8a51ae1f449cd11f">   64</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612f4a26edec37bc8a51ae1f449cd11f">getNewText</a>() : <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        return $this-&gt;text;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612f4a26edec37bc8a51ae1f449cd11f">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612f4a26edec37bc8a51ae1f449cd11f">getNewText</a>() : <a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        return $this-&gt;text;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a8daca8e967d2ce668dc122a820861359">   71</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a8daca8e967d2ce668dc122a820861359">setNewText</a>(<a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a> $text) : void{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $this-&gt;text = $text;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a8daca8e967d2ce668dc122a820861359">   75</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a8daca8e967d2ce668dc122a820861359">setNewText</a>(<a class="code hl_class" href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">SignText</a> $text) : void{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;text = $text;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> isFrontFace() : bool{ return $this-&gt;frontFace; }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_base_sign_html"><div class="ttname"><a href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html">pocketmine\block\BaseSign</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/ddd/_base_sign_8php_source.html#l00048">BaseSign.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_base_sign_html"><div class="ttname"><a href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html">pocketmine\block\BaseSign</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/ddd/_base_sign_8php_source.html#l00052">BaseSign.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1utils_1_1_sign_text_html"><div class="ttname"><a href="../../d3/d1c/classpocketmine_1_1block_1_1utils_1_1_sign_text.html">pocketmine\block\utils\SignText</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d96/_sign_text_8php_source.html#l00036">SignText.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_block_event_html"><div class="ttname"><a href="../../df/d69/classpocketmine_1_1event_1_1block_1_1_block_event.html">pocketmine\event\block\BlockEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dc2/_block_event_8php_source.html#l00032">BlockEvent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html">pocketmine\event\block\SignChangeEvent</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">SignChangeEvent.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html_a612d1709a9c20fd0137492e8a1a7ec35"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612d1709a9c20fd0137492e8a1a7ec35">pocketmine\event\block\SignChangeEvent\getOldText</a></div><div class="ttdeci">getOldText()</div><div class="ttdef"><b>Definition</b> <a href="#l00057">SignChangeEvent.php:57</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html_a612f4a26edec37bc8a51ae1f449cd11f"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612f4a26edec37bc8a51ae1f449cd11f">pocketmine\event\block\SignChangeEvent\getNewText</a></div><div class="ttdeci">getNewText()</div><div class="ttdef"><b>Definition</b> <a href="#l00064">SignChangeEvent.php:64</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html_a8daca8e967d2ce668dc122a820861359"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a8daca8e967d2ce668dc122a820861359">pocketmine\event\block\SignChangeEvent\setNewText</a></div><div class="ttdeci">setNewText(SignText $text)</div><div class="ttdef"><b>Definition</b> <a href="#l00071">SignChangeEvent.php:71</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00172">Player.php:172</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html_a612d1709a9c20fd0137492e8a1a7ec35"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612d1709a9c20fd0137492e8a1a7ec35">pocketmine\event\block\SignChangeEvent\getOldText</a></div><div class="ttdeci">getOldText()</div><div class="ttdef"><b>Definition</b> <a href="#l00061">SignChangeEvent.php:61</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html_a612f4a26edec37bc8a51ae1f449cd11f"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a612f4a26edec37bc8a51ae1f449cd11f">pocketmine\event\block\SignChangeEvent\getNewText</a></div><div class="ttdeci">getNewText()</div><div class="ttdef"><b>Definition</b> <a href="#l00068">SignChangeEvent.php:68</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1block_1_1_sign_change_event_html_a8daca8e967d2ce668dc122a820861359"><div class="ttname"><a href="../../dd/d93/classpocketmine_1_1event_1_1block_1_1_sign_change_event.html#a8daca8e967d2ce668dc122a820861359">pocketmine\event\block\SignChangeEvent\setNewText</a></div><div class="ttdeci">setNewText(SignText $text)</div><div class="ttdef"><b>Definition</b> <a href="#l00075">SignChangeEvent.php:75</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00173">Player.php:173</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1block_html"><div class="ttname"><a href="../../d0/d1c/namespacepocketmine_1_1event_1_1block.html">pocketmine\event\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/df1/_base_block_change_event_8php_source.html#l00024">BaseBlockChangeEvent.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html_ab6c4dceac6e98e0eb02896a6809e52fa"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">pocketmine\event\CancellableTrait</a></div><div class="ttdeci">trait CancellableTrait</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d98/_cancellable_trait_8php_source.html#l00034">CancellableTrait.php:34</a></div></div>

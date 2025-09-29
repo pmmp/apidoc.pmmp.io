@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -131,16 +131,16 @@ $(function(){initNavTree('db/dad/_query_handler_8php_source.html','../../'); ini
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/df5/namespacepocketmine_1_1network_1_1query.html">pocketmine\network\query</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_interface" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html">pocketmine\network\AdvancedNetworkInterface</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_interface" href="../../d3/d69/interfacepocketmine_1_1network_1_1_raw_packet_handler.html">pocketmine\network\RawPacketHandler</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html">pocketmine\utils\Binary</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <a class="code hl_class" href="../../de/da7/classpocketmine_1_1utils_1_1_binary_data_exception.html">pocketmine\utils\BinaryDataException</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> chr;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <span class="keyword">function</span> hash;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <span class="keyword">function</span> random_bytes;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> strlen;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use pmmp\encoding\BE;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use pmmp\encoding\Byte;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use pmmp\encoding\ByteBufferReader;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use pmmp\encoding\ByteBufferWriter;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use pmmp\encoding\DataDecodeException;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <a class="code hl_interface" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html">pocketmine\network\AdvancedNetworkInterface</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <a class="code hl_interface" href="../../d3/d69/interfacepocketmine_1_1network_1_1_raw_packet_handler.html">pocketmine\network\RawPacketHandler</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>use <a class="code hl_class" href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>use <span class="keyword">function</span> hash;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>use <span class="keyword">function</span> random_bytes;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>use <span class="keyword">function</span> substr;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
@@ -187,72 +187,70 @@ $(function(){initNavTree('db/dad/_query_handler_8php_source.html','../../'); ini
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getTokenString(<span class="keywordtype">string</span> $token, <span class="keywordtype">string</span> $salt) : int{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        return Binary::readInt(substr(hash(<span class="stringliteral">&quot;sha512&quot;</span>, $salt . <span class="stringliteral">&quot;:&quot;</span> . $token, true), 7, 4));</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        return BE::unpackSignedInt(substr(hash(<span class="stringliteral">&quot;sha512&quot;</span>, $salt . <span class="stringliteral">&quot;:&quot;</span> . $token, true), 7, 4));</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a193cd054f746bda4c326556cf67a5a9d">   86</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a193cd054f746bda4c326556cf67a5a9d">handle</a>(<a class="code hl_interface" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html">AdvancedNetworkInterface</a> $interface, <span class="keywordtype">string</span> $address, <span class="keywordtype">int</span> $port, <span class="keywordtype">string</span> $packet) : bool{</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        try{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $stream = new <a class="code hl_class" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">BinaryStream</a>($packet);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $header = $stream-&gt;<a class="code hl_function" href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a72906880e477d3a95aef8636447bb70f">get</a>(2);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            $stream = new ByteBufferReader($packet);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $header = $stream-&gt;readByteArray(2);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">if</span>($header !== <span class="stringliteral">&quot;\xfe\xfd&quot;</span>){ <span class="comment">//TODO: have this filtered by the regex filter we installed above</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $packetType = $stream-&gt;getByte();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $sessionID = $stream-&gt;getInt();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $packetType = Byte::readUnsigned($stream);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $sessionID = BE::readUnsignedInt($stream);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">switch</span>($packetType){</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordflow">case</span> self::HANDSHAKE: <span class="comment">//Handshake</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    $reply = chr(self::HANDSHAKE);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    $reply .= Binary::writeInt($sessionID);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    $reply .= self::getTokenString($this-&gt;token, $address) . <span class="stringliteral">&quot;\x00&quot;</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    $interface-&gt;<a class="code hl_function" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html#a074547193a617585c24ad1c1b0b8e841">sendRawPacket</a>($address, $port, $reply);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordflow">case</span> self::STATISTICS: <span class="comment">//Stat</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    $token = $stream-&gt;getInt();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    <span class="keywordflow">if</span>($token !== ($t1 = self::getTokenString($this-&gt;token, $address)) &amp;&amp; $token !== ($t2 = self::getTokenString($this-&gt;lastToken, $address))){</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Bad token $token from $address $port, expected $t1 or $t2&quot;</span>);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    $reply = chr(self::STATISTICS);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    $reply .= Binary::writeInt($sessionID);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    $remaining = $stream-&gt;getRemaining();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    <span class="keywordflow">if</span>(strlen($remaining) === 4){ <span class="comment">//TODO: check this! according to the spec, this should always be here and always be FF FF FF 01</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                        $reply .= $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getQueryInformation()-&gt;getLongQuery();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                        $reply .= $this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getQueryInformation()-&gt;getShortQuery();</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                    $interface-&gt;<a class="code hl_function" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html#a074547193a617585c24ad1c1b0b8e841">sendRawPacket</a>($address, $port, $reply);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }<span class="keywordflow">catch</span>(BinaryDataException $e){</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Bad packet from $address $port: &quot;</span> . $e-&gt;getMessage());</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    $writer = <span class="keyword">new</span> ByteBufferWriter();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    Byte::writeUnsigned($writer, self::HANDSHAKE);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    BE::writeUnsignedInt($writer, $sessionID);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    $writer-&gt;writeByteArray(self::getTokenString($this-&gt;token, $address) . <span class="stringliteral">&quot;\x00&quot;</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    $interface-&gt;<a class="code hl_function" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html#a074547193a617585c24ad1c1b0b8e841">sendRawPacket</a>($address, $port, $writer-&gt;getData());</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">case</span> self::STATISTICS: <span class="comment">//Stat</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $token = BE::readUnsignedInt($stream);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    <span class="keywordflow">if</span>($token !== ($t1 = self::getTokenString($this-&gt;token, $address)) &amp;&amp; $token !== ($t2 = self::getTokenString($this-&gt;lastToken, $address))){</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Bad token $token from $address $port, expected $t1 or $t2&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    $writer = <span class="keyword">new</span> ByteBufferWriter();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    Byte::writeUnsigned($writer, self::STATISTICS);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    BE::writeUnsignedInt($writer, $sessionID);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                    $remaining = $stream-&gt;getUnreadLength();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    <span class="keywordflow">if</span>($remaining === 4){ <span class="comment">//TODO: check this! according to the spec, this should always be here and always be FF FF FF 01</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                        $writer-&gt;writeByteArray($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getQueryInformation()-&gt;getLongQuery());</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                        $writer-&gt;writeByteArray($this-&gt;<a class="code hl_function" href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">server</a>-&gt;getQueryInformation()-&gt;getShortQuery());</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    $interface-&gt;<a class="code hl_function" href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html#a074547193a617585c24ad1c1b0b8e841">sendRawPacket</a>($address, $port, $writer-&gt;getData());</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }<span class="keywordflow">catch</span>(DataDecodeException $e){</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Bad packet from $address $port: &quot;</span> . $e-&gt;getMessage());</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00182">src/Server.php:182</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1_server_html"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html">pocketmine\Server</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d05/src_2_server_8php_source.html#l00183">src/Server.php:183</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1query_1_1_query_handler_html"><div class="ttname"><a href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html">pocketmine\network\query\QueryHandler</a></div><div class="ttdef"><b>Definition</b> <a href="#l00042">QueryHandler.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1query_1_1_query_handler_html_a193cd054f746bda4c326556cf67a5a9d"><div class="ttname"><a href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a193cd054f746bda4c326556cf67a5a9d">pocketmine\network\query\QueryHandler\handle</a></div><div class="ttdeci">handle(AdvancedNetworkInterface $interface, string $address, int $port, string $packet)</div><div class="ttdef"><b>Definition</b> <a href="#l00086">QueryHandler.php:86</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1query_1_1_query_handler_html_a8425e24932332604b31adb15ee6204b8"><div class="ttname"><a href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a8425e24932332604b31adb15ee6204b8">pocketmine\network\query\QueryHandler\getPattern</a></div><div class="ttdeci">getPattern()</div><div class="ttdef"><b>Definition</b> <a href="#l00069">QueryHandler.php:69</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_data_exception_html"><div class="ttname"><a href="../../de/da7/classpocketmine_1_1utils_1_1_binary_data_exception.html">pocketmine\utils\BinaryDataException</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d8a/_binary_data_exception_8php_source.html#l00026">BinaryDataException.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_html"><div class="ttname"><a href="../../d8/d1f/classpocketmine_1_1utils_1_1_binary.html">pocketmine\utils\Binary</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/daf/_binary_8php_source.html#l00041">Binary.php:41</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html">pocketmine\utils\BinaryStream</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00031">BinaryStream.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1utils_1_1_binary_stream_html_a72906880e477d3a95aef8636447bb70f"><div class="ttname"><a href="../../d6/dc6/classpocketmine_1_1utils_1_1_binary_stream.html#a72906880e477d3a95aef8636447bb70f">pocketmine\utils\BinaryStream\get</a></div><div class="ttdeci">get(int $len)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d34/_binary_stream_8php_source.html#l00067">BinaryStream.php:67</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1_advanced_network_interface_html"><div class="ttname"><a href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html">pocketmine\network\AdvancedNetworkInterface</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/df4/_advanced_network_interface_8php_source.html#l00033">AdvancedNetworkInterface.php:33</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1_advanced_network_interface_html_a074547193a617585c24ad1c1b0b8e841"><div class="ttname"><a href="../../dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html#a074547193a617585c24ad1c1b0b8e841">pocketmine\network\AdvancedNetworkInterface\sendRawPacket</a></div><div class="ttdeci">sendRawPacket(string $address, int $port, string $payload)</div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1_raw_packet_handler_html"><div class="ttname"><a href="../../d3/d69/interfacepocketmine_1_1network_1_1_raw_packet_handler.html">pocketmine\network\RawPacketHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d50/_raw_packet_handler_8php_source.html#l00026">RawPacketHandler.php:26</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1network_1_1query_html"><div class="ttname"><a href="../../d9/df5/namespacepocketmine_1_1network_1_1query.html">pocketmine\network\query</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d61/_dedicated_query_network_interface_8php_source.html#l00024">DedicatedQueryNetworkInterface.php:24</a></div></div>
-<div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00235">PocketMine.php:235</a></div></div>
+<div class="ttc" id="anamespacepocketmine_html_ac8040f61ade1040754abb856b9707674"><div class="ttname"><a href="../../d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674">pocketmine\server</a></div><div class="ttdeci">server()</div><div class="ttdef"><b>Definition</b> <a href="../../de/d55/_pocket_mine_8php_source.html#l00242">PocketMine.php:242</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

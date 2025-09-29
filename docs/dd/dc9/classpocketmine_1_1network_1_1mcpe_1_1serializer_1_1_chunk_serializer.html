@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -125,8 +125,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a90c6985acf3c08758d68c20edd3ea531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4f6918eb2f2a1eac40b9c69245a7b4" id="r_a8e4f6918eb2f2a1eac40b9c69245a7b4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e4f6918eb2f2a1eac40b9c69245a7b4">serializeFullChunk</a> (<a class="el" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk, int $dimensionId, <a class="el" href="../../d8/d98/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_translator.html">BlockTranslator</a> $blockTranslator, ?string $tiles=null)</td></tr>
 <tr class="separator:a8e4f6918eb2f2a1eac40b9c69245a7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6235b40965030680470baa29a292c1" id="r_a0d6235b40965030680470baa29a292c1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d6235b40965030680470baa29a292c1">serializeSubChunk</a> (<a class="el" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1_sub_chunk.html">SubChunk</a> $subChunk, <a class="el" href="../../d8/d98/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_translator.html">BlockTranslator</a> $blockTranslator, <a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a> $stream, bool $persistentBlockStates)</td></tr>
-<tr class="separator:a0d6235b40965030680470baa29a292c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa3a94665dcdf295624f0529b7e00a0" id="r_aefa3a94665dcdf295624f0529b7e00a0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefa3a94665dcdf295624f0529b7e00a0">serializeSubChunk</a> (<a class="el" href="../../de/dda/classpocketmine_1_1world_1_1format_1_1_sub_chunk.html">SubChunk</a> $subChunk, <a class="el" href="../../d8/d98/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_translator.html">BlockTranslator</a> $blockTranslator, ByteBufferWriter $stream, bool $persistentBlockStates)</td></tr>
+<tr class="separator:aefa3a94665dcdf295624f0529b7e00a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1036bc5c35306a8329aa6534abaf844" id="r_ad1036bc5c35306a8329aa6534abaf844"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1036bc5c35306a8329aa6534abaf844">serializeTiles</a> (<a class="el" href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">Chunk</a> $chunk)</td></tr>
 <tr class="separator:ad1036bc5c35306a8329aa6534abaf844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -238,8 +238,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d6235b40965030680470baa29a292c1" name="a0d6235b40965030680470baa29a292c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d6235b40965030680470baa29a292c1">&#9670;&#160;</a></span>serializeSubChunk()</h2>
+<a id="aefa3a94665dcdf295624f0529b7e00a0" name="aefa3a94665dcdf295624f0529b7e00a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa3a94665dcdf295624f0529b7e00a0">&#9670;&#160;</a></span>serializeSubChunk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +260,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html">PacketSerializer</a></td>          <td class="paramname"><span class="paramname"><em>$stream</em></span>, </td>
+          <td class="paramtype">ByteBufferWriter</td>          <td class="paramname"><span class="paramname"><em>$stream</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -302,7 +302,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d68/_chunk_serializer_8php_source.html#l00176">176</a> of file <a class="el" href="../../d2/d68/_chunk_serializer_8php_source.html">ChunkSerializer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d68/_chunk_serializer_8php_source.html#l00170">170</a> of file <a class="el" href="../../d2/d68/_chunk_serializer_8php_source.html">ChunkSerializer.php</a>.</p>
 
 </div>
 </div>

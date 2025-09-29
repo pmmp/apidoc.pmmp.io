@@ -1,6 +1,7 @@
 var classpocketmine_1_1nbt_1_1tag_1_1_list_tag =
 [
     [ "__construct", "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#a1ada3b470b5eb959d7fc071ddd34e184", null ],
+    [ "cast", "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#ab4f778fc565adb09b067b02dc0b3ee30", null ],
     [ "empty", "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#a91125300e4864b440db26175c2ed38a3", null ],
     [ "equals", "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#ab43c93033321512c6ac4aff956680f1b", null ],
     [ "first", "d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#a32fa54d52f30fce08d7eb146e9197d11", null ],

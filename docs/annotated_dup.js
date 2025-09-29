@@ -549,6 +549,8 @@ var annotated_dup =
           [ "EffectIds", "d3/d75/classpocketmine_1_1data_1_1bedrock_1_1_effect_ids.html", null ],
           [ "EnchantmentIdMap", "d3/d24/classpocketmine_1_1data_1_1bedrock_1_1_enchantment_id_map.html", null ],
           [ "EnchantmentIds", "d4/d2f/classpocketmine_1_1data_1_1bedrock_1_1_enchantment_ids.html", null ],
+          [ "FireworkRocketTypeIdMap", "d6/d55/classpocketmine_1_1data_1_1bedrock_1_1_firework_rocket_type_id_map.html", null ],
+          [ "FireworkRocketTypeIds", "d9/d53/classpocketmine_1_1data_1_1bedrock_1_1_firework_rocket_type_ids.html", null ],
           [ "GoatHornTypeIdMap", "d7/d1a/classpocketmine_1_1data_1_1bedrock_1_1_goat_horn_type_id_map.html", null ],
           [ "GoatHornTypeIds", "db/db7/classpocketmine_1_1data_1_1bedrock_1_1_goat_horn_type_ids.html", null ],
           [ "ItemTagToIdMap", "d0/dbe/classpocketmine_1_1data_1_1bedrock_1_1_item_tag_to_id_map.html", "d0/dbe/classpocketmine_1_1data_1_1bedrock_1_1_item_tag_to_id_map" ],
@@ -588,6 +590,7 @@ var annotated_dup =
           [ "ConsumingItemAnimation", "d7/df9/classpocketmine_1_1entity_1_1animation_1_1_consuming_item_animation.html", "d7/df9/classpocketmine_1_1entity_1_1animation_1_1_consuming_item_animation" ],
           [ "CriticalHitAnimation", "dd/d0b/classpocketmine_1_1entity_1_1animation_1_1_critical_hit_animation.html", "dd/d0b/classpocketmine_1_1entity_1_1animation_1_1_critical_hit_animation" ],
           [ "DeathAnimation", "d5/d2e/classpocketmine_1_1entity_1_1animation_1_1_death_animation.html", "d5/d2e/classpocketmine_1_1entity_1_1animation_1_1_death_animation" ],
+          [ "FireworkParticlesAnimation", "d5/dab/classpocketmine_1_1entity_1_1animation_1_1_firework_particles_animation.html", "d5/dab/classpocketmine_1_1entity_1_1animation_1_1_firework_particles_animation" ],
           [ "HurtAnimation", "d5/de7/classpocketmine_1_1entity_1_1animation_1_1_hurt_animation.html", "d5/de7/classpocketmine_1_1entity_1_1animation_1_1_hurt_animation" ],
           [ "ItemEntityStackSizeChangeAnimation", "da/dc8/classpocketmine_1_1entity_1_1animation_1_1_item_entity_stack_size_change_animation.html", "da/dc8/classpocketmine_1_1entity_1_1animation_1_1_item_entity_stack_size_change_animation" ],
           [ "RespawnAnimation", "d3/d4f/classpocketmine_1_1entity_1_1animation_1_1_respawn_animation.html", "d3/d4f/classpocketmine_1_1entity_1_1animation_1_1_respawn_animation" ],
@@ -619,6 +622,7 @@ var annotated_dup =
           [ "EndCrystal", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal" ],
           [ "ExperienceOrb", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb" ],
           [ "FallingBlock", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block" ],
+          [ "FireworkRocket", "d7/d2a/classpocketmine_1_1entity_1_1object_1_1_firework_rocket.html", "d7/d2a/classpocketmine_1_1entity_1_1object_1_1_firework_rocket" ],
           [ "ItemEntity", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html", "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity" ],
           [ "Painting", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting.html", "de/dc4/classpocketmine_1_1entity_1_1object_1_1_painting" ],
           [ "PaintingMotive", "de/d26/classpocketmine_1_1entity_1_1object_1_1_painting_motive.html", "de/d26/classpocketmine_1_1entity_1_1object_1_1_painting_motive" ],
@@ -634,7 +638,8 @@ var annotated_dup =
           [ "ProjectileSource", "d0/d26/interfacepocketmine_1_1entity_1_1projectile_1_1_projectile_source.html", null ],
           [ "Snowball", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html", "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball" ],
           [ "SplashPotion", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion" ],
-          [ "Throwable", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable" ]
+          [ "Throwable", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html", "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable" ],
+          [ "Trident", "d8/d4f/classpocketmine_1_1entity_1_1projectile_1_1_trident.html", "d8/d4f/classpocketmine_1_1entity_1_1projectile_1_1_trident" ]
         ] ],
         [ "utils", null, [
           [ "ExperienceUtils", "d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html", "d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils" ]
@@ -656,6 +661,7 @@ var annotated_dup =
         [ "InvalidSkinException", "d6/d6d/classpocketmine_1_1entity_1_1_invalid_skin_exception.html", null ],
         [ "Living", "df/d0c/classpocketmine_1_1entity_1_1_living.html", "df/d0c/classpocketmine_1_1entity_1_1_living" ],
         [ "Location", "dc/d56/classpocketmine_1_1entity_1_1_location.html", "dc/d56/classpocketmine_1_1entity_1_1_location" ],
+        [ "NeverSavedWithChunkEntity", "d2/dc0/interfacepocketmine_1_1entity_1_1_never_saved_with_chunk_entity.html", null ],
         [ "Skin", "d8/d49/classpocketmine_1_1entity_1_1_skin.html", null ],
         [ "Squid", "d5/d49/classpocketmine_1_1entity_1_1_squid.html", "d5/d49/classpocketmine_1_1entity_1_1_squid" ],
         [ "Villager", "d9/d6b/classpocketmine_1_1entity_1_1_villager.html", "d9/d6b/classpocketmine_1_1entity_1_1_villager" ],
@@ -944,6 +950,9 @@ var annotated_dup =
         [ "ExperienceBottle", "d0/dac/classpocketmine_1_1item_1_1_experience_bottle.html", "d0/dac/classpocketmine_1_1item_1_1_experience_bottle" ],
         [ "Fertilizer", "d2/df4/classpocketmine_1_1item_1_1_fertilizer.html", "d2/df4/classpocketmine_1_1item_1_1_fertilizer" ],
         [ "FireCharge", "d9/d13/classpocketmine_1_1item_1_1_fire_charge.html", "d9/d13/classpocketmine_1_1item_1_1_fire_charge" ],
+        [ "FireworkRocket", "d8/d3a/classpocketmine_1_1item_1_1_firework_rocket.html", "d8/d3a/classpocketmine_1_1item_1_1_firework_rocket" ],
+        [ "FireworkRocketExplosion", "df/d78/classpocketmine_1_1item_1_1_firework_rocket_explosion.html", "df/d78/classpocketmine_1_1item_1_1_firework_rocket_explosion" ],
+        [ "FireworkStar", "dd/da8/classpocketmine_1_1item_1_1_firework_star.html", "dd/da8/classpocketmine_1_1item_1_1_firework_star" ],
         [ "FishingRod", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod.html", "d4/d82/classpocketmine_1_1item_1_1_fishing_rod" ],
         [ "FlintSteel", "d5/db8/classpocketmine_1_1item_1_1_flint_steel.html", "d5/db8/classpocketmine_1_1item_1_1_flint_steel" ],
         [ "Food", "dc/de1/classpocketmine_1_1item_1_1_food.html", "dc/de1/classpocketmine_1_1item_1_1_food" ],
@@ -1014,6 +1023,7 @@ var annotated_dup =
         [ "Tool", "da/de7/classpocketmine_1_1item_1_1_tool.html", "da/de7/classpocketmine_1_1item_1_1_tool" ],
         [ "TorchflowerSeeds", "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html", "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds" ],
         [ "Totem", "d2/d09/classpocketmine_1_1item_1_1_totem.html", "d2/d09/classpocketmine_1_1item_1_1_totem" ],
+        [ "Trident", "d3/dab/classpocketmine_1_1item_1_1_trident.html", "d3/dab/classpocketmine_1_1item_1_1_trident" ],
         [ "TurtleHelmet", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet.html", "d8/d87/classpocketmine_1_1item_1_1_turtle_helmet" ],
         [ "VanillaArmorMaterials", "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html", "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials" ],
         [ "VanillaItems", "d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html", "d9/dff/classpocketmine_1_1item_1_1_vanilla_items" ],
@@ -1076,7 +1086,12 @@ var annotated_dup =
       [ "network", "db/dd0/namespacepocketmine_1_1network.html", [
         [ "mcpe", null, [
           [ "auth", null, [
-            [ "ProcessLoginTask", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task.html", "df/df7/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_login_task" ],
+            [ "AuthJwtHelper", "d6/d84/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_jwt_helper.html", "d6/d84/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_jwt_helper" ],
+            [ "AuthKeyProvider", "df/dd6/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_key_provider.html", "df/dd6/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_key_provider" ],
+            [ "AuthKeyring", "db/d69/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_keyring.html", "db/d69/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_keyring" ],
+            [ "FetchAuthKeysTask", "d8/d82/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_fetch_auth_keys_task.html", "d8/d82/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_fetch_auth_keys_task" ],
+            [ "ProcessLegacyLoginTask", "dc/df4/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_legacy_login_task.html", "dc/df4/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_legacy_login_task" ],
+            [ "ProcessOpenIdLoginTask", "d1/d20/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_open_id_login_task.html", "d1/d20/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_process_open_id_login_task" ],
             [ "VerifyLoginException", "db/d38/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_verify_login_exception.html", null ]
           ] ],
           [ "cache", null, [
@@ -1128,10 +1143,10 @@ var annotated_dup =
           [ "protocol", null, [
             [ "serializer", null, [
               [ "BitSet", "db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html", "db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set" ],
+              [ "CommonTypes", "d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html", "d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types" ],
               [ "ItemTypeDictionary", "da/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_item_type_dictionary.html", "da/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_item_type_dictionary" ],
               [ "NetworkNbtSerializer", "d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer.html", "d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer" ],
-              [ "PacketBatch", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch" ],
-              [ "PacketSerializer", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer.html", "d9/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_serializer" ]
+              [ "PacketBatch", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch" ]
             ] ],
             [ "types", null, [
               [ "biome", null, [
@@ -1266,17 +1281,34 @@ var annotated_dup =
                 [ "WindowTypes", "d4/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_window_types.html", null ]
               ] ],
               [ "login", null, [
-                [ "AuthenticationData", "d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data.html", "d4/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_data" ],
+                [ "clientdata", null, [
+                  [ "ClientData", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data" ],
+                  [ "ClientDataAnimationFrame", "d9/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_animation_frame.html", "d9/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_animation_frame" ],
+                  [ "ClientDataPersonaPieceTintColor", "df/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_piece_tint_color.html", "df/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_piece_tint_color" ],
+                  [ "ClientDataPersonaSkinPiece", "d4/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_skin_piece.html", "d4/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_skin_piece" ],
+                  [ "ClientDataToSkinDataHelper", "d5/d1d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_to_skin_data_helper.html", "d5/d1d/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_to_skin_data_helper" ]
+                ] ],
+                [ "legacy", null, [
+                  [ "LegacyAuthChain", "d8/d8c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1legacy_1_1_legacy_auth_chain.html", null ],
+                  [ "LegacyAuthIdentityData", "d7/dc0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1legacy_1_1_legacy_auth_identity_data.html", "d7/dc0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1legacy_1_1_legacy_auth_identity_data" ],
+                  [ "LegacyAuthJwtBody", "db/d48/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1legacy_1_1_legacy_auth_jwt_body.html", null ]
+                ] ],
+                [ "openid", null, [
+                  [ "api", null, [
+                    [ "AuthServiceKey", "d0/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_auth_service_key.html", "d0/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_auth_service_key" ],
+                    [ "AuthServiceOpenIdConfiguration", "d2/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_auth_service_open_id_configuration.html", "d2/d24/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_auth_service_open_id_configuration" ],
+                    [ "MinecraftServiceAuthEnvironment", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environment.html", "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environment" ],
+                    [ "MinecraftServiceAuthEnvironments", "d9/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environments.html", "d9/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environments" ],
+                    [ "MinecraftServiceEnvironments", "d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_environments.html", "d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_environments" ],
+                    [ "MinecraftServicesDiscovery", "d1/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_services_discovery.html", "d1/d19/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_services_discovery" ],
+                    [ "MinecraftServicesResult", "d1/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_services_result.html", "d1/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_services_result" ]
+                  ] ],
+                  [ "XboxAuthJwtBody", "d4/ddd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1_xbox_auth_jwt_body.html", "d4/ddd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1_xbox_auth_jwt_body" ],
+                  [ "XboxAuthJwtHeader", "d1/d58/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1_xbox_auth_jwt_header.html", "d1/d58/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1_xbox_auth_jwt_header" ]
+                ] ],
                 [ "AuthenticationInfo", "dd/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_info.html", "dd/de3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_authentication_info" ],
-                [ "ClientData", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data.html", "d2/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data" ],
-                [ "ClientDataAnimationFrame", "dc/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_animation_frame.html", "dc/de9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_animation_frame" ],
-                [ "ClientDataPersonaPieceTintColor", "dc/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_persona_piece_tint_color.html", "dc/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_persona_piece_tint_color" ],
-                [ "ClientDataPersonaSkinPiece", "de/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_persona_skin_piece.html", "de/deb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_persona_skin_piece" ],
-                [ "ClientDataToSkinDataHelper", "d0/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_to_skin_data_helper.html", "d0/dcb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_client_data_to_skin_data_helper" ],
                 [ "JwtBodyRfc7519", "d8/df3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_body_rfc7519.html", null ],
-                [ "JwtChain", "df/df8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_chain.html", null ],
-                [ "JwtChainLinkBody", "df/d48/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_chain_link_body.html", null ],
-                [ "JwtHeader", "db/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_header.html", "db/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_jwt_header" ]
+                [ "SelfSignedJwtHeader", "dc/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_self_signed_jwt_header.html", "dc/dae/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1_self_signed_jwt_header" ]
               ] ],
               [ "recipe", null, [
                 [ "ComplexAliasItemDescriptor", "db/d4e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_complex_alias_item_descriptor.html", null ],
@@ -2047,6 +2079,10 @@ var annotated_dup =
           [ "EntityShortFallSound", "d0/d4a/classpocketmine_1_1world_1_1sound_1_1_entity_short_fall_sound.html", "d0/d4a/classpocketmine_1_1world_1_1sound_1_1_entity_short_fall_sound" ],
           [ "ExplodeSound", "d8/d1f/classpocketmine_1_1world_1_1sound_1_1_explode_sound.html", "d8/d1f/classpocketmine_1_1world_1_1sound_1_1_explode_sound" ],
           [ "FireExtinguishSound", "d9/d57/classpocketmine_1_1world_1_1sound_1_1_fire_extinguish_sound.html", "d9/d57/classpocketmine_1_1world_1_1sound_1_1_fire_extinguish_sound" ],
+          [ "FireworkCrackleSound", "db/d8f/classpocketmine_1_1world_1_1sound_1_1_firework_crackle_sound.html", "db/d8f/classpocketmine_1_1world_1_1sound_1_1_firework_crackle_sound" ],
+          [ "FireworkExplosionSound", "d8/d6a/classpocketmine_1_1world_1_1sound_1_1_firework_explosion_sound.html", "d8/d6a/classpocketmine_1_1world_1_1sound_1_1_firework_explosion_sound" ],
+          [ "FireworkLargeExplosionSound", "d5/deb/classpocketmine_1_1world_1_1sound_1_1_firework_large_explosion_sound.html", "d5/deb/classpocketmine_1_1world_1_1sound_1_1_firework_large_explosion_sound" ],
+          [ "FireworkLaunchSound", "d5/dfd/classpocketmine_1_1world_1_1sound_1_1_firework_launch_sound.html", "d5/dfd/classpocketmine_1_1world_1_1sound_1_1_firework_launch_sound" ],
           [ "FizzSound", "dd/d32/classpocketmine_1_1world_1_1sound_1_1_fizz_sound.html", "dd/d32/classpocketmine_1_1world_1_1sound_1_1_fizz_sound" ],
           [ "FlintSteelSound", "d7/d86/classpocketmine_1_1world_1_1sound_1_1_flint_steel_sound.html", "d7/d86/classpocketmine_1_1world_1_1sound_1_1_flint_steel_sound" ],
           [ "FurnaceSound", "dd/d28/classpocketmine_1_1world_1_1sound_1_1_furnace_sound.html", "dd/d28/classpocketmine_1_1world_1_1sound_1_1_furnace_sound" ],
@@ -2086,6 +2122,9 @@ var annotated_dup =
           [ "SweetBerriesPickSound", "d3/dd4/classpocketmine_1_1world_1_1sound_1_1_sweet_berries_pick_sound.html", "d3/dd4/classpocketmine_1_1world_1_1sound_1_1_sweet_berries_pick_sound" ],
           [ "ThrowSound", "d9/d18/classpocketmine_1_1world_1_1sound_1_1_throw_sound.html", "d9/d18/classpocketmine_1_1world_1_1sound_1_1_throw_sound" ],
           [ "TotemUseSound", "de/dbd/classpocketmine_1_1world_1_1sound_1_1_totem_use_sound.html", "de/dbd/classpocketmine_1_1world_1_1sound_1_1_totem_use_sound" ],
+          [ "TridentHitBlockSound", "d1/d19/classpocketmine_1_1world_1_1sound_1_1_trident_hit_block_sound.html", "d1/d19/classpocketmine_1_1world_1_1sound_1_1_trident_hit_block_sound" ],
+          [ "TridentHitEntitySound", "d7/d84/classpocketmine_1_1world_1_1sound_1_1_trident_hit_entity_sound.html", "d7/d84/classpocketmine_1_1world_1_1sound_1_1_trident_hit_entity_sound" ],
+          [ "TridentThrowSound", "d0/d25/classpocketmine_1_1world_1_1sound_1_1_trident_throw_sound.html", "d0/d25/classpocketmine_1_1world_1_1sound_1_1_trident_throw_sound" ],
           [ "WaterSplashSound", "df/d82/classpocketmine_1_1world_1_1sound_1_1_water_splash_sound.html", "df/d82/classpocketmine_1_1world_1_1sound_1_1_water_splash_sound" ],
           [ "XpCollectSound", "d9/d40/classpocketmine_1_1world_1_1sound_1_1_xp_collect_sound.html", "d9/d40/classpocketmine_1_1world_1_1sound_1_1_xp_collect_sound" ],
           [ "XpLevelUpSound", "d5/d3d/classpocketmine_1_1world_1_1sound_1_1_xp_level_up_sound.html", "d5/d3d/classpocketmine_1_1world_1_1sound_1_1_xp_level_up_sound" ]

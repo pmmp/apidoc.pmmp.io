@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -108,311 +108,321 @@ $(function(){initNavTree('da/d58/deprecated.html','../../'); initResizable(true)
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine::utils::EnumTrait</a>  </dt>
-<dd><a class="anchor" id="_deprecated000145"></a>Use native PHP 8.1 enums instead. Use <code><a class="el" href="">LegacyEnumShimTrait</a></code> if you need to provide backwards compatible EnumTrait-like API for migrated enums.  </dd>
+<dd><a class="anchor" id="_deprecated000149"></a>Use native PHP 8.1 enums instead. Use <code><a class="el" href="">LegacyEnumShimTrait</a></code> if you need to provide backwards compatible EnumTrait-like API for migrated enums.  </dd>
+<dt>Member <a class="el" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a0f649b79e6c05fc9f8d744ff69bb0b23">pocketmine\block\BaseSign::getText</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000001"></a>  </dd>
+<dt>Member <a class="el" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html#ac38134f941cceb363658c3fdfeccb9a4">pocketmine\block\BaseSign::setText</a>  (SignText $text)</dt>
+<dd><a class="anchor" id="_deprecated000002"></a>  </dd>
+<dt>Member <a class="el" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a3dcfd3416ae91908d4c00c41eabd93df">pocketmine\block\BaseSign::updateText</a>  (Player $author, SignText $text)</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>  </dd>
 <dt>Member <a class="el" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a028afd613a6f42370ede9aec4c9796d6">pocketmine\block\Block::isSolid</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000001"></a>TL;DR: Don't use this function. Its results are confusing and inconsistent. </dd>
+<dd><a class="anchor" id="_deprecated000004"></a>TL;DR: Don't use this function. Its results are confusing and inconsistent. </dd>
 <dt>Member <a class="el" href="../../d7/d9a/classpocketmine_1_1block_1_1_campfire.html#acdd2f630f36ebd234f03c65425632417">pocketmine\block\Campfire::$inventory</a>  </dt>
-<dd><a class="anchor" id="_deprecated000002"></a>This was added by mistake. It can't be relied on as the inventory won't be initialized if this block has never been set in the world.  </dd>
+<dd><a class="anchor" id="_deprecated000005"></a>This was added by mistake. It can't be relied on as the inventory won't be initialized if this block has never been set in the world.  </dd>
 <dt>Member <a class="el" href="../../d7/d9a/classpocketmine_1_1block_1_1_campfire.html#a4546508b1d31f8091f12aa83a8ecbc32">pocketmine\block\Campfire::getInventory</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>This was added by mistake. It can't be relied on as the inventory won't be initialized if this block has never been set in the world.  </dd>
+<dd><a class="anchor" id="_deprecated000006"></a>This was added by mistake. It can't be relied on as the inventory won't be initialized if this block has never been set in the world.  </dd>
 <dt>Member <a class="el" href="../../d4/d4c/classpocketmine_1_1block_1_1_sweet_berry_bush.html#aa8240b691c99d2c835bd340a8239db8e">pocketmine\block\SweetBerryBush::canBeSupportedBy</a>  (<a class="el" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block)</dt>
-<dd><a class="anchor" id="_deprecated000004"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>  </dd>
 <dt>Class <a class="el" href="../../d2/d87/classpocketmine_1_1block_1_1tile_1_1_banner.html">pocketmine\block\tile\Banner</a>  </dt>
-<dd><a class="anchor" id="_deprecated000005"></a>  </dd>
-<dt>Class <a class="el" href="../../df/de7/classpocketmine_1_1block_1_1tile_1_1_comparator.html">pocketmine\block\tile\Comparator</a>  </dt>
-<dd><a class="anchor" id="_deprecated000006"></a>  </dd>
-<dt>Class <a class="el" href="../../de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html">pocketmine\block\tile\DaylightSensor</a>  </dt>
-<dd><a class="anchor" id="_deprecated000007"></a> As per the wiki, this is an old hack to force daylight sensors to get updated every game tick. This is necessary to ensure that the daylight sensor's power output is always up to date with the current world time. It's theoretically possible to implement this without a blockentity, but this is here to ensure that vanilla can understand daylight sensors in worlds created by PM.  </dd>
-<dt>Class <a class="el" href="../../d5/d8b/classpocketmine_1_1block_1_1tile_1_1_flower_pot.html">pocketmine\block\tile\FlowerPot</a>  </dt>
 <dd><a class="anchor" id="_deprecated000008"></a>  </dd>
-<dt>Class <a class="el" href="../../d4/dca/classpocketmine_1_1block_1_1tile_1_1_glowing_item_frame.html">pocketmine\block\tile\GlowingItemFrame</a>  </dt>
+<dt>Class <a class="el" href="../../df/de7/classpocketmine_1_1block_1_1tile_1_1_comparator.html">pocketmine\block\tile\Comparator</a>  </dt>
 <dd><a class="anchor" id="_deprecated000009"></a>  </dd>
-<dt>Class <a class="el" href="../../d9/d1e/classpocketmine_1_1block_1_1tile_1_1_hanging_sign.html">pocketmine\block\tile\HangingSign</a>  </dt>
-<dd><a class="anchor" id="_deprecated000010"></a>  </dd>
-<dt>Class <a class="el" href="../../d4/dff/classpocketmine_1_1block_1_1tile_1_1_item_frame.html">pocketmine\block\tile\ItemFrame</a>  </dt>
+<dt>Class <a class="el" href="../../de/df4/classpocketmine_1_1block_1_1tile_1_1_daylight_sensor.html">pocketmine\block\tile\DaylightSensor</a>  </dt>
+<dd><a class="anchor" id="_deprecated000010"></a> As per the wiki, this is an old hack to force daylight sensors to get updated every game tick. This is necessary to ensure that the daylight sensor's power output is always up to date with the current world time. It's theoretically possible to implement this without a blockentity, but this is here to ensure that vanilla can understand daylight sensors in worlds created by PM.  </dd>
+<dt>Class <a class="el" href="../../d5/d8b/classpocketmine_1_1block_1_1tile_1_1_flower_pot.html">pocketmine\block\tile\FlowerPot</a>  </dt>
 <dd><a class="anchor" id="_deprecated000011"></a>  </dd>
-<dt>Class <a class="el" href="../../d0/dc1/classpocketmine_1_1block_1_1tile_1_1_lectern.html">pocketmine\block\tile\Lectern</a>  </dt>
+<dt>Class <a class="el" href="../../d4/dca/classpocketmine_1_1block_1_1tile_1_1_glowing_item_frame.html">pocketmine\block\tile\GlowingItemFrame</a>  </dt>
 <dd><a class="anchor" id="_deprecated000012"></a>  </dd>
-<dt>Class <a class="el" href="../../dc/d52/classpocketmine_1_1block_1_1tile_1_1_mob_head.html">pocketmine\block\tile\MobHead</a>  </dt>
+<dt>Class <a class="el" href="../../d9/d1e/classpocketmine_1_1block_1_1tile_1_1_hanging_sign.html">pocketmine\block\tile\HangingSign</a>  </dt>
 <dd><a class="anchor" id="_deprecated000013"></a>  </dd>
-<dt>Class <a class="el" href="../../d6/d8f/classpocketmine_1_1block_1_1tile_1_1_monster_spawner.html">pocketmine\block\tile\MonsterSpawner</a>  </dt>
+<dt>Class <a class="el" href="../../d4/dff/classpocketmine_1_1block_1_1tile_1_1_item_frame.html">pocketmine\block\tile\ItemFrame</a>  </dt>
 <dd><a class="anchor" id="_deprecated000014"></a>  </dd>
-<dt>Class <a class="el" href="../../d8/dab/classpocketmine_1_1block_1_1tile_1_1_note.html">pocketmine\block\tile\Note</a>  </dt>
+<dt>Class <a class="el" href="../../d0/dc1/classpocketmine_1_1block_1_1tile_1_1_lectern.html">pocketmine\block\tile\Lectern</a>  </dt>
 <dd><a class="anchor" id="_deprecated000015"></a>  </dd>
-<dt>Class <a class="el" href="../../d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html">pocketmine\block\tile\Sign</a>  </dt>
+<dt>Class <a class="el" href="../../dc/d52/classpocketmine_1_1block_1_1tile_1_1_mob_head.html">pocketmine\block\tile\MobHead</a>  </dt>
 <dd><a class="anchor" id="_deprecated000016"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html#ae97f2521db72a18e20c0b9565068d0d2">pocketmine\block\tile\Sign::fixTextBlob</a>  (string $blob)</dt>
+<dt>Class <a class="el" href="../../d6/d8f/classpocketmine_1_1block_1_1tile_1_1_monster_spawner.html">pocketmine\block\tile\MonsterSpawner</a>  </dt>
 <dd><a class="anchor" id="_deprecated000017"></a>  </dd>
-<dt>Member <a class="el" href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html#a808637144585f174736382b6c1b4b01d">pocketmine\block\tile\Spawnable::isDirty</a>  ()</dt>
+<dt>Class <a class="el" href="../../d8/dab/classpocketmine_1_1block_1_1tile_1_1_note.html">pocketmine\block\tile\Note</a>  </dt>
 <dd><a class="anchor" id="_deprecated000018"></a>  </dd>
-<dt>Member <a class="el" href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html#aae5a51b50f48ba5b0a8559c0c12a8456">pocketmine\block\tile\Spawnable::setDirty</a>  (bool $dirty=true)</dt>
+<dt>Class <a class="el" href="../../d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html">pocketmine\block\tile\Sign</a>  </dt>
 <dd><a class="anchor" id="_deprecated000019"></a>  </dd>
-<dt>Class <a class="el" href="../../db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html">pocketmine\block\WeightedPressurePlateHeavy</a>  </dt>
+<dt>Member <a class="el" href="../../d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html#ae97f2521db72a18e20c0b9565068d0d2">pocketmine\block\tile\Sign::fixTextBlob</a>  (string $blob)</dt>
 <dd><a class="anchor" id="_deprecated000020"></a>  </dd>
-<dt>Class <a class="el" href="../../dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html">pocketmine\block\WeightedPressurePlateLight</a>  </dt>
+<dt>Member <a class="el" href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html#a808637144585f174736382b6c1b4b01d">pocketmine\block\tile\Spawnable::isDirty</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000021"></a>  </dd>
-<dt>Member <a class="el" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">pocketmine\crafting\CraftingManager::sort</a>  (Item $i1, Item $i2)</dt>
+<dt>Member <a class="el" href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html#aae5a51b50f48ba5b0a8559c0c12a8456">pocketmine\block\tile\Spawnable::setDirty</a>  (bool $dirty=true)</dt>
 <dd><a class="anchor" id="_deprecated000022"></a>  </dd>
-<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#ac5a68f0ac6137579860421ad8c3e1d33">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapLog</a>  (Wood $block, string $unstrippedId, string $strippedId)</dt>
-<dd><a class="anchor" id="_deprecated000026"></a>  </dd>
-<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#aa884cb88c8f3166d57bec72f81ecf683">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapSimple</a>  (Block $block, string $id)</dt>
+<dt>Class <a class="el" href="../../db/dfc/classpocketmine_1_1block_1_1_weighted_pressure_plate_heavy.html">pocketmine\block\WeightedPressurePlateHeavy</a>  </dt>
 <dd><a class="anchor" id="_deprecated000023"></a>  </dd>
-<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#a9a9bc50ca634ba3a3ad7ccba32835561">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapSlab</a>  (Slab $block, string $singleId, string $doubleId)</dt>
+<dt>Class <a class="el" href="../../dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html">pocketmine\block\WeightedPressurePlateLight</a>  </dt>
 <dd><a class="anchor" id="_deprecated000024"></a>  </dd>
-<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#a2ed04f6078e45ac88c473303b3cc54cf">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapStairs</a>  (Stair $block, string $id)</dt>
+<dt>Member <a class="el" href="../../df/d71/classpocketmine_1_1crafting_1_1_crafting_manager.html#a19cbfd98b01ad787885b7bda1d7e4de1">pocketmine\crafting\CraftingManager::sort</a>  (Item $i1, Item $i2)</dt>
 <dd><a class="anchor" id="_deprecated000025"></a>  </dd>
-<dt>Class <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper</a>  </dt>
+<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#ac5a68f0ac6137579860421ad8c3e1d33">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapLog</a>  (Wood $block, string $unstrippedId, string $strippedId)</dt>
+<dd><a class="anchor" id="_deprecated000029"></a>  </dd>
+<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#aa884cb88c8f3166d57bec72f81ecf683">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapSimple</a>  (Block $block, string $id)</dt>
+<dd><a class="anchor" id="_deprecated000026"></a>  </dd>
+<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#a9a9bc50ca634ba3a3ad7ccba32835561">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapSlab</a>  (Slab $block, string $singleId, string $doubleId)</dt>
 <dd><a class="anchor" id="_deprecated000027"></a>  </dd>
+<dt>Member <a class="el" href="../../d8/d0c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_object_to_state_serializer.html#a2ed04f6078e45ac88c473303b3cc54cf">pocketmine\data\bedrock\block\convert\BlockObjectToStateSerializer::mapStairs</a>  (Stair $block, string $id)</dt>
+<dd><a class="anchor" id="_deprecated000028"></a>  </dd>
+<dt>Class <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper</a>  </dt>
+<dd><a class="anchor" id="_deprecated000030"></a>  </dd>
 <dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a57fb8b7973a8043fd215863a3c4969aa">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeCandle</a>  (Candle $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000028"></a> @phpstan-template TCandle of Candle @phpstan-param TCandle $block @phpstan-return TCandle </dd>
+<dd><a class="anchor" id="_deprecated000031"></a> @phpstan-template TCandle of Candle @phpstan-param TCandle $block @phpstan-return TCandle </dd>
 <dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a116acb499872e8ae6e9b655c9c82eee7">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeCopper</a>  (CopperMaterial $block, CopperOxidation $oxidation)</dt>
-<dd><a class="anchor" id="_deprecated000029"></a> @phpstan-template TBlock of CopperMaterial </dd>
+<dd><a class="anchor" id="_deprecated000032"></a> @phpstan-template TBlock of CopperMaterial </dd>
 <dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ac29498aa872fdb5dd341a3a6607334c6">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeDoor</a>  (Door $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000031"></a> @phpstan-template TDoor of Door @phpstan-param TDoor $block @phpstan-return TDoor </dd>
+<dd><a class="anchor" id="_deprecated000034"></a> @phpstan-template TDoor of Door @phpstan-param TDoor $block @phpstan-return TDoor </dd>
 <dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a78b2cf1d1886ee40fd35b167bd847977">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeFenceGate</a>  (FenceGate $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000032"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ad8065144c93213463c44fde15f6db92c">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeFloorCoralFan</a>  (FloorCoralFan $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000033"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a7a5b6ffe1cc03e6df09f3244a4b9da68">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeFloorSign</a>  (FloorSign $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000034"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a4eb119f90e5432d10efa52f4e24e07b1">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeLeaves</a>  (Leaves $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
 <dd><a class="anchor" id="_deprecated000035"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a9b3807f8379596818b156d6fe188747d">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeSapling</a>  (Sapling $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ad8065144c93213463c44fde15f6db92c">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeFloorCoralFan</a>  (FloorCoralFan $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
 <dd><a class="anchor" id="_deprecated000036"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a50d914f1667dfbc46013aa46dc1dc26e">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeStairs</a>  (Stair $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000037"></a> @phpstan-template TStair of Stair @phpstan-param TStair $block @phpstan-return TStair </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a754d346d0d1aff0a9299a319e8903da5">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeTrapdoor</a>  (Trapdoor $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000038"></a> @phpstan-template TTrapdoor of Trapdoor @phpstan-param TTrapdoor $block @phpstan-return TTrapdoor </dd>
-<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a3413365106e39750ae20b7729d220651">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeWallSign</a>  (WallSign $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a7a5b6ffe1cc03e6df09f3244a4b9da68">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeFloorSign</a>  (FloorSign $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dd><a class="anchor" id="_deprecated000037"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a4eb119f90e5432d10efa52f4e24e07b1">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeLeaves</a>  (Leaves $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dd><a class="anchor" id="_deprecated000038"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a9b3807f8379596818b156d6fe188747d">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeSapling</a>  (Sapling $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
 <dd><a class="anchor" id="_deprecated000039"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a50d914f1667dfbc46013aa46dc1dc26e">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeStairs</a>  (Stair $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dd><a class="anchor" id="_deprecated000040"></a> @phpstan-template TStair of Stair @phpstan-param TStair $block @phpstan-return TStair </dd>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a754d346d0d1aff0a9299a319e8903da5">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeTrapdoor</a>  (Trapdoor $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dd><a class="anchor" id="_deprecated000041"></a> @phpstan-template TTrapdoor of Trapdoor @phpstan-param TTrapdoor $block @phpstan-return TTrapdoor </dd>
+<dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#a3413365106e39750ae20b7729d220651">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeWallSign</a>  (WallSign $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
+<dd><a class="anchor" id="_deprecated000042"></a>  </dd>
 <dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#abc453c0f2d83ba3ffdd95d2ce7edd91b">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeWaxedCopper</a>  (CopperMaterial $block, CopperOxidation $oxidation)</dt>
-<dd><a class="anchor" id="_deprecated000030"></a> @phpstan-template TBlock of CopperMaterial </dd>
+<dd><a class="anchor" id="_deprecated000033"></a> @phpstan-template TBlock of CopperMaterial </dd>
 <dt>Member <a class="el" href="../../da/dd2/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_deserializer_helper.html#ae3de5c4d64addaf29890f8df778a4a23">pocketmine\data\bedrock\block\convert\BlockStateDeserializerHelper::decodeWeightedPressurePlate</a>  (WeightedPressurePlate $block, <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html">BlockStateReader</a> $in)</dt>
-<dd><a class="anchor" id="_deprecated000040"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a60746d272961e46ec46b21c9df7c3605">pocketmine\data\bedrock\block\convert\BlockStateReader::mapIntFromInt</a>  (string $name, IntFromRawStateMap $map)</dt>
-<dd><a class="anchor" id="_deprecated000042"></a> @phpstan-param IntFromRawStateMap&lt;int&gt; $map  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#adfca99af953ae0c2c896c7c254ec4ff2">pocketmine\data\bedrock\block\convert\BlockStateReader::mapIntFromString</a>  (string $name, IntFromRawStateMap $map)</dt>
-<dd><a class="anchor" id="_deprecated000041"></a> @phpstan-param IntFromRawStateMap&lt;string&gt; $map  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac0e96ada52f01106071e90e8b3e560f0">pocketmine\data\bedrock\block\convert\BlockStateReader::read5MinusHorizontalFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000050"></a> This is for trapdoors, because Mojang botched the conversion in 1.13  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a70ee8bed64c99643e7ce44cb66b19774">pocketmine\data\bedrock\block\convert\BlockStateReader::readBellAttachmentType</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000058"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a8e80b4d2438a45495d74155ba4a199d3">pocketmine\data\bedrock\block\convert\BlockStateReader::readBlockFace</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000044"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a7d323b74af2a524c8a570240f784ed02">pocketmine\data\bedrock\block\convert\BlockStateReader::readCardinalHorizontalFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000051"></a> Used by pumpkins as of 1.20.0.23 beta  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac1db9d3f20ac074f75dff0b015c45877">pocketmine\data\bedrock\block\convert\BlockStateReader::readCoralFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000052"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afc1ef00264a5352737a3ddfeae7ec035">pocketmine\data\bedrock\block\convert\BlockStateReader::readEndRodFacingDirection</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000046"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aff25248c87fd7d165eaafa7d5b46ac94">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingDirection</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000043"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a513e6138cd138c07e878d7c680ec806e">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingFlags</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000045"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a498a3aad6674956d3d17fb1f9706c9d8">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingWithoutDown</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000053"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a9a76726a3bff0ceebb7347253e7931e2">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingWithoutUp</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000054"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#af62c69849cba2d79dfb8e040ae68f58e">pocketmine\data\bedrock\block\convert\BlockStateReader::readHorizontalFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000047"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ad4c357683d2e3079045a344be37e4692">pocketmine\data\bedrock\block\convert\BlockStateReader::readLegacyHorizontalFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000049"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a361ef7e26fde8c2130ea07a1e52e8722">pocketmine\data\bedrock\block\convert\BlockStateReader::readPillarAxis</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000055"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac119a1cb8c9c25c355769775c5f0f5f1">pocketmine\data\bedrock\block\convert\BlockStateReader::readSlabPosition</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000056"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afecfc67d26c96eb963438588d6be1b63">pocketmine\data\bedrock\block\convert\BlockStateReader::readTorchFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000057"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#add4469bf419d99940f93c5e251cc0d4c">pocketmine\data\bedrock\block\convert\BlockStateReader::readUnitEnum</a>  (string $name, EnumFromRawStateMap $map)</dt>
-<dd><a class="anchor" id="_deprecated000060"></a> @phpstan-template TEnum of \UnitEnum @phpstan-param EnumFromRawStateMap&lt;TEnum, string&gt; $map @phpstan-return TEnum  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aed117b3159242b164b5220f7cf9ad9df">pocketmine\data\bedrock\block\convert\BlockStateReader::readWallConnectionType</a>  (string $name)</dt>
-<dd><a class="anchor" id="_deprecated000059"></a>  </dd>
-<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a61cedb7ed7e27f24b1beefd2c0b5251d">pocketmine\data\bedrock\block\convert\BlockStateReader::readWeirdoHorizontalFacing</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000048"></a>  </dd>
-<dt>Class <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper</a>  </dt>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a60746d272961e46ec46b21c9df7c3605">pocketmine\data\bedrock\block\convert\BlockStateReader::mapIntFromInt</a>  (string $name, IntFromRawStateMap $map)</dt>
+<dd><a class="anchor" id="_deprecated000045"></a> @phpstan-param IntFromRawStateMap&lt;int&gt; $map  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#adfca99af953ae0c2c896c7c254ec4ff2">pocketmine\data\bedrock\block\convert\BlockStateReader::mapIntFromString</a>  (string $name, IntFromRawStateMap $map)</dt>
+<dd><a class="anchor" id="_deprecated000044"></a> @phpstan-param IntFromRawStateMap&lt;string&gt; $map  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac0e96ada52f01106071e90e8b3e560f0">pocketmine\data\bedrock\block\convert\BlockStateReader::read5MinusHorizontalFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000053"></a> This is for trapdoors, because Mojang botched the conversion in 1.13  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a70ee8bed64c99643e7ce44cb66b19774">pocketmine\data\bedrock\block\convert\BlockStateReader::readBellAttachmentType</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000061"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#aaa0bc525a0e14e7f83e394337de50872">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeDoor</a>  (Door $block, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000063"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a8fc44fb84ec04bf3a5111a82c8f2f43c">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeFenceGate</a>  (FenceGate $block, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000064"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a226ffd6f82ee0bed43b786a52551446f">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeFloorSign</a>  (FloorSign $block, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000065"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#aaf86b06a751c11dda063d2314a71f352">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeLeaves</a>  (Leaves $block, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000066"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab6e5a83b31f1e752fe52006920f0b34d">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeQuartz</a>  (int $axis, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000067"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a765829c92f168ea3d9decb6752c75cae">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeSapling</a>  (Sapling $block, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000068"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#af5bf42a4fe0fdb49f368ee79b79068e6">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeStairs</a>  (Stair $block, Writer $out)</dt>
-<dd><a class="anchor" id="_deprecated000069"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a00cfb67146d9bf6158a100056355351d">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeTorch</a>  (Torch $block, Writer $out)</dt>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a8e80b4d2438a45495d74155ba4a199d3">pocketmine\data\bedrock\block\convert\BlockStateReader::readBlockFace</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000047"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a7d323b74af2a524c8a570240f784ed02">pocketmine\data\bedrock\block\convert\BlockStateReader::readCardinalHorizontalFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000054"></a> Used by pumpkins as of 1.20.0.23 beta  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac1db9d3f20ac074f75dff0b015c45877">pocketmine\data\bedrock\block\convert\BlockStateReader::readCoralFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000055"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afc1ef00264a5352737a3ddfeae7ec035">pocketmine\data\bedrock\block\convert\BlockStateReader::readEndRodFacingDirection</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000049"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aff25248c87fd7d165eaafa7d5b46ac94">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingDirection</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000046"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a513e6138cd138c07e878d7c680ec806e">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingFlags</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000048"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a498a3aad6674956d3d17fb1f9706c9d8">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingWithoutDown</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000056"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a9a76726a3bff0ceebb7347253e7931e2">pocketmine\data\bedrock\block\convert\BlockStateReader::readFacingWithoutUp</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000057"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#af62c69849cba2d79dfb8e040ae68f58e">pocketmine\data\bedrock\block\convert\BlockStateReader::readHorizontalFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000050"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ad4c357683d2e3079045a344be37e4692">pocketmine\data\bedrock\block\convert\BlockStateReader::readLegacyHorizontalFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000052"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a361ef7e26fde8c2130ea07a1e52e8722">pocketmine\data\bedrock\block\convert\BlockStateReader::readPillarAxis</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000058"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#ac119a1cb8c9c25c355769775c5f0f5f1">pocketmine\data\bedrock\block\convert\BlockStateReader::readSlabPosition</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000059"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#afecfc67d26c96eb963438588d6be1b63">pocketmine\data\bedrock\block\convert\BlockStateReader::readTorchFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000060"></a>  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#add4469bf419d99940f93c5e251cc0d4c">pocketmine\data\bedrock\block\convert\BlockStateReader::readUnitEnum</a>  (string $name, EnumFromRawStateMap $map)</dt>
+<dd><a class="anchor" id="_deprecated000063"></a> @phpstan-template TEnum of \UnitEnum @phpstan-param EnumFromRawStateMap&lt;TEnum, string&gt; $map @phpstan-return TEnum  </dd>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#aed117b3159242b164b5220f7cf9ad9df">pocketmine\data\bedrock\block\convert\BlockStateReader::readWallConnectionType</a>  (string $name)</dt>
 <dd><a class="anchor" id="_deprecated000062"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab74b52267b288b461d826c154f659434">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeTrapdoor</a>  (Trapdoor $block, Writer $out)</dt>
+<dt>Member <a class="el" href="../../d5/de5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_reader.html#a61cedb7ed7e27f24b1beefd2c0b5251d">pocketmine\data\bedrock\block\convert\BlockStateReader::readWeirdoHorizontalFacing</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000051"></a>  </dd>
+<dt>Class <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper</a>  </dt>
+<dd><a class="anchor" id="_deprecated000064"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#aaa0bc525a0e14e7f83e394337de50872">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeDoor</a>  (Door $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000066"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a8fc44fb84ec04bf3a5111a82c8f2f43c">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeFenceGate</a>  (FenceGate $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000067"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a226ffd6f82ee0bed43b786a52551446f">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeFloorSign</a>  (FloorSign $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000068"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#aaf86b06a751c11dda063d2314a71f352">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeLeaves</a>  (Leaves $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000069"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab6e5a83b31f1e752fe52006920f0b34d">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeQuartz</a>  (int $axis, Writer $out)</dt>
 <dd><a class="anchor" id="_deprecated000070"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab7cfa13f0d63280e4a0990d536d10991">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeWallSign</a>  (WallSign $block, Writer $out)</dt>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a765829c92f168ea3d9decb6752c75cae">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeSapling</a>  (Sapling $block, Writer $out)</dt>
 <dd><a class="anchor" id="_deprecated000071"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#af5bf42a4fe0fdb49f368ee79b79068e6">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeStairs</a>  (Stair $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000072"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a00cfb67146d9bf6158a100056355351d">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeTorch</a>  (Torch $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000065"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab74b52267b288b461d826c154f659434">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeTrapdoor</a>  (Trapdoor $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000073"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab7cfa13f0d63280e4a0990d536d10991">pocketmine\data\bedrock\block\convert\BlockStateSerializerHelper::encodeWallSign</a>  (WallSign $block, Writer $out)</dt>
+<dd><a class="anchor" id="_deprecated000074"></a>  </dd>
 <dt>Member <a class="el" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a4dfe05657ef194ccc3d602b7b2cdc12b">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer::mapLog</a>  (string $unstrippedId, string $strippedId, \Closure $getBlock)</dt>
-<dd><a class="anchor" id="_deprecated000075"></a> @phpstan-param \Closure() : Wood $getBlock  </dd>
+<dd><a class="anchor" id="_deprecated000078"></a> @phpstan-param \Closure() : Wood $getBlock  </dd>
 <dt>Member <a class="el" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a38702414de2f194f64fa6697d37ada58">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer::mapSimple</a>  (string $id, \Closure $getBlock)</dt>
-<dd><a class="anchor" id="_deprecated000072"></a> @phpstan-param \Closure() : Block $getBlock  </dd>
+<dd><a class="anchor" id="_deprecated000075"></a> @phpstan-param \Closure() : Block $getBlock  </dd>
 <dt>Member <a class="el" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a1b1d2d286a0a8276f90c7064f2061b6f">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer::mapSlab</a>  (string $singleId, string $doubleId, \Closure $getBlock)</dt>
-<dd><a class="anchor" id="_deprecated000073"></a> @phpstan-param \Closure(Reader) : Slab $getBlock  </dd>
+<dd><a class="anchor" id="_deprecated000076"></a> @phpstan-param \Closure(Reader) : Slab $getBlock  </dd>
 <dt>Member <a class="el" href="../../d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a76862f1af20a2c109224dfaca2dcb867">pocketmine\data\bedrock\block\convert\BlockStateToObjectDeserializer::mapStairs</a>  (string $id, \Closure $getBlock)</dt>
-<dd><a class="anchor" id="_deprecated000074"></a> @phpstan-param \Closure() : Stair $getBlock  </dd>
+<dd><a class="anchor" id="_deprecated000077"></a> @phpstan-param \Closure() : Stair $getBlock  </dd>
 <dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a685cb337ce250d6cc7a60e7c64612ccd">pocketmine\data\bedrock\block\convert\BlockStateWriter::mapIntToInt</a>  (string $name, IntFromRawStateMap $map, int $value)</dt>
-<dd><a class="anchor" id="_deprecated000077"></a> @phpstan-param IntFromRawStateMap&lt;int&gt; $map  </dd>
+<dd><a class="anchor" id="_deprecated000080"></a> @phpstan-param IntFromRawStateMap&lt;int&gt; $map  </dd>
 <dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a7b8340e992538d1527468ab3af4c570f">pocketmine\data\bedrock\block\convert\BlockStateWriter::mapIntToString</a>  (string $name, IntFromRawStateMap $map, int $value)</dt>
-<dd><a class="anchor" id="_deprecated000076"></a> @phpstan-param IntFromRawStateMap&lt;string&gt; $map  </dd>
+<dd><a class="anchor" id="_deprecated000079"></a> @phpstan-param IntFromRawStateMap&lt;string&gt; $map  </dd>
 <dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a72c4e1da482fefe8e673131384d1d455">pocketmine\data\bedrock\block\convert\BlockStateWriter::write5MinusHorizontalFacing</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000085"></a> This is for trapdoors, because Mojang botched the conversion in 1.13  </dd>
+<dd><a class="anchor" id="_deprecated000088"></a> This is for trapdoors, because Mojang botched the conversion in 1.13  </dd>
 <dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a7049c91baa3906707bc69f9128895dcf">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeBellAttachmentType</a>  (BellAttachmentType $attachmentType)</dt>
-<dd><a class="anchor" id="_deprecated000093"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000096"></a>  </dd>
 <dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae488d819f4bd07d1888f2a85f1e6fab1">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeBlockFace</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000079"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a62034674fed6ea11e7b7911d9c2a766f">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeCardinalHorizontalFacing</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000086"></a> Used by pumpkins as of 1.20.0.23 beta  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a0c1a39801da888944d24bc495a790fe9">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeCoralFacing</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000087"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a557dfc8909241bac75d543c665f826e4">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeEndRodFacingDirection</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000081"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a23db9d6f4c8b84557cf531a2c6c3f7f9">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingDirection</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000078"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a4ae4d553cc03f0e33a342b33c1266774">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingFlags</a>  (array $faces)</dt>
-<dd><a class="anchor" id="_deprecated000080"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a9d07d4633a59629830ee4a6c96a02e4c">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingWithoutDown</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000088"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#aa7f17f097a210a262b91b2801fa43268">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingWithoutUp</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000089"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ad460dddf54667e24486fa7750644e2bf">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeHorizontalFacing</a>  (int $value)</dt>
 <dd><a class="anchor" id="_deprecated000082"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a158eec70083340377eac0362e855009b">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeLegacyHorizontalFacing</a>  (int $value)</dt>
-<dd><a class="anchor" id="_deprecated000084"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae8f38f066b6f6c49c26cbb45dfc8a1e9">pocketmine\data\bedrock\block\convert\BlockStateWriter::writePillarAxis</a>  (int $axis)</dt>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a62034674fed6ea11e7b7911d9c2a766f">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeCardinalHorizontalFacing</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000089"></a> Used by pumpkins as of 1.20.0.23 beta  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a0c1a39801da888944d24bc495a790fe9">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeCoralFacing</a>  (int $value)</dt>
 <dd><a class="anchor" id="_deprecated000090"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a3f9c52c386900aed5f6354a7cc34f240">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeSlabPosition</a>  (SlabType $slabType)</dt>
-<dd><a class="anchor" id="_deprecated000091"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a731bebd6ec1bf4c41687523aded91b4b">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeTorchFacing</a>  (int $facing)</dt>
-<dd><a class="anchor" id="_deprecated000092"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a2e64e599a80ff16fb24bd3bed455646c">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeUnitEnum</a>  (string $name, EnumFromRawStateMap $map, \UnitEnum $case)</dt>
-<dd><a class="anchor" id="_deprecated000095"></a> @phpstan-template TEnum of \UnitEnum @phpstan-param EnumFromRawStateMap&lt;TEnum, string&gt; $map @phpstan-param TEnum $case </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a9a8862ed8f7cc503ae8e1e46f29dc269">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeWallConnectionType</a>  (string $name, ?WallConnectionType $wallConnectionType)</dt>
-<dd><a class="anchor" id="_deprecated000094"></a>  </dd>
-<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a6e57f2573097074d05b5c16f6afba0ff">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeWeirdoHorizontalFacing</a>  (int $value)</dt>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a557dfc8909241bac75d543c665f826e4">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeEndRodFacingDirection</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000084"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a23db9d6f4c8b84557cf531a2c6c3f7f9">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingDirection</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000081"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a4ae4d553cc03f0e33a342b33c1266774">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingFlags</a>  (array $faces)</dt>
 <dd><a class="anchor" id="_deprecated000083"></a>  </dd>
-<dt>Member <a class="el" href="../../de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema.html#a190d15d1b0666a77c14b76f9ed6d0c68">pocketmine\data\bedrock\block\upgrade\BlockStateUpgradeSchema::getVersionId</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000096"></a>This is defined by Mojang, and therefore cannot be relied on. Use getSchemaId() instead for internal version management.  </dd>
-<dt>Class <a class="el" href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">pocketmine\data\bedrock\MushroomBlockTypeIdMap</a>  </dt>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a9d07d4633a59629830ee4a6c96a02e4c">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingWithoutDown</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000091"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#aa7f17f097a210a262b91b2801fa43268">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeFacingWithoutUp</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000092"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ad460dddf54667e24486fa7750644e2bf">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeHorizontalFacing</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000085"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a158eec70083340377eac0362e855009b">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeLegacyHorizontalFacing</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000087"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#ae8f38f066b6f6c49c26cbb45dfc8a1e9">pocketmine\data\bedrock\block\convert\BlockStateWriter::writePillarAxis</a>  (int $axis)</dt>
+<dd><a class="anchor" id="_deprecated000093"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a3f9c52c386900aed5f6354a7cc34f240">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeSlabPosition</a>  (SlabType $slabType)</dt>
+<dd><a class="anchor" id="_deprecated000094"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a731bebd6ec1bf4c41687523aded91b4b">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeTorchFacing</a>  (int $facing)</dt>
+<dd><a class="anchor" id="_deprecated000095"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a2e64e599a80ff16fb24bd3bed455646c">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeUnitEnum</a>  (string $name, EnumFromRawStateMap $map, \UnitEnum $case)</dt>
+<dd><a class="anchor" id="_deprecated000098"></a> @phpstan-template TEnum of \UnitEnum @phpstan-param EnumFromRawStateMap&lt;TEnum, string&gt; $map @phpstan-param TEnum $case </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a9a8862ed8f7cc503ae8e1e46f29dc269">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeWallConnectionType</a>  (string $name, ?WallConnectionType $wallConnectionType)</dt>
 <dd><a class="anchor" id="_deprecated000097"></a>  </dd>
+<dt>Member <a class="el" href="../../da/dc5/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_writer.html#a6e57f2573097074d05b5c16f6afba0ff">pocketmine\data\bedrock\block\convert\BlockStateWriter::writeWeirdoHorizontalFacing</a>  (int $value)</dt>
+<dd><a class="anchor" id="_deprecated000086"></a>  </dd>
+<dt>Member <a class="el" href="../../de/d35/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_block_state_upgrade_schema.html#a190d15d1b0666a77c14b76f9ed6d0c68">pocketmine\data\bedrock\block\upgrade\BlockStateUpgradeSchema::getVersionId</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000099"></a>This is defined by Mojang, and therefore cannot be relied on. Use getSchemaId() instead for internal version management.  </dd>
+<dt>Class <a class="el" href="../../db/db9/classpocketmine_1_1data_1_1bedrock_1_1_mushroom_block_type_id_map.html">pocketmine\data\bedrock\MushroomBlockTypeIdMap</a>  </dt>
+<dd><a class="anchor" id="_deprecated000100"></a>  </dd>
 <dt>Member <a class="el" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html#a003e63b31ec673ecc443ac9f936a96c0">pocketmine\data\runtime\RuntimeDataDescriber::boundedInt</a>  (int $bits, int $min, int $max, int &amp;$value)</dt>
-<dd><a class="anchor" id="_deprecated000099"></a>Use <code><a class="el" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html#a58ec2633f4941db922b2379f8d6a3379">RuntimeDataDescriber::boundedIntAuto()</a></code> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000102"></a>Use <code><a class="el" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html#a58ec2633f4941db922b2379f8d6a3379">RuntimeDataDescriber::boundedIntAuto()</a></code> instead.  </dd>
 <dt>Member <a class="el" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html#a9a2dcb097497b9cca7b7669fa46e03c3">pocketmine\data\runtime\RuntimeDataDescriber::brewingStandSlots</a>  (array &amp;$slots)</dt>
-<dd><a class="anchor" id="_deprecated000100"></a>Use <code><a class="el" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html#af8574ef3201ddd8e44b5932592c6bcff">enumSet()</a></code> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000103"></a>Use <code><a class="el" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html#af8574ef3201ddd8e44b5932592c6bcff">enumSet()</a></code> instead.  </dd>
 <dt>Member <a class="el" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#a77d0214f3df0532b5b438751caea0536">pocketmine\data\runtime\RuntimeDataReader::boundedInt</a>  (int $bits, int $min, int $max, int &amp;$value)</dt>
-<dd><a class="anchor" id="_deprecated000101"></a>Use <code><a class="el" href="">self::boundedIntAuto()</a></code> instead.  </dd>
-<dt>Member <a class="el" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">pocketmine\data\runtime\RuntimeDataReader::brewingStandSlots</a>  (array &amp;$slots)</dt>
-<dd><a class="anchor" id="_deprecated000102"></a>Use <code><a class="el" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#ab24c32663d89b11bdedbbcdc96d1e20e">enumSet()</a></code> instead.  </dd>
-<dt>Member <a class="el" href="../../db/dff/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_size_calculator.html#a33e5db55ac2dcec5b44ff9744a6ee59c">pocketmine\data\runtime\RuntimeDataSizeCalculator::boundedInt</a>  (int $bits, int $min, int $max, int &amp;$value)</dt>
-<dd><a class="anchor" id="_deprecated000103"></a>Use <code><a class="el" href="">self::boundedIntAuto()</a></code> instead.  </dd>
-<dt>Member <a class="el" href="../../dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer.html#a634f312bc0cc1a1f2c1685c3b215453f">pocketmine\data\runtime\RuntimeDataWriter::boundedInt</a>  (int $bits, int $min, int $max, int &amp;$value)</dt>
 <dd><a class="anchor" id="_deprecated000104"></a>Use <code><a class="el" href="">self::boundedIntAuto()</a></code> instead.  </dd>
+<dt>Member <a class="el" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#aa09fc4d5f553e61c0184aa84587e7c66">pocketmine\data\runtime\RuntimeDataReader::brewingStandSlots</a>  (array &amp;$slots)</dt>
+<dd><a class="anchor" id="_deprecated000105"></a>Use <code><a class="el" href="../../de/d4d/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_reader.html#ab24c32663d89b11bdedbbcdc96d1e20e">enumSet()</a></code> instead.  </dd>
+<dt>Member <a class="el" href="../../db/dff/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_size_calculator.html#a33e5db55ac2dcec5b44ff9744a6ee59c">pocketmine\data\runtime\RuntimeDataSizeCalculator::boundedInt</a>  (int $bits, int $min, int $max, int &amp;$value)</dt>
+<dd><a class="anchor" id="_deprecated000106"></a>Use <code><a class="el" href="">self::boundedIntAuto()</a></code> instead.  </dd>
+<dt>Member <a class="el" href="../../dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer.html#a634f312bc0cc1a1f2c1685c3b215453f">pocketmine\data\runtime\RuntimeDataWriter::boundedInt</a>  (int $bits, int $min, int $max, int &amp;$value)</dt>
+<dd><a class="anchor" id="_deprecated000107"></a>Use <code><a class="el" href="">self::boundedIntAuto()</a></code> instead.  </dd>
 <dt>Member <a class="el" href="../../dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer.html#abc3f13cc2a7247122463b86dd00c8079">pocketmine\data\runtime\RuntimeDataWriter::brewingStandSlots</a>  (array &amp;$slots)</dt>
-<dd><a class="anchor" id="_deprecated000105"></a>Use <code><a class="el" href="../../dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer.html#aa3be04d2b112cb653d8e6c759b1850bf">enumSet()</a></code> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000108"></a>Use <code><a class="el" href="../../dd/d76/classpocketmine_1_1data_1_1runtime_1_1_runtime_data_writer.html#aa3be04d2b112cb653d8e6c759b1850bf">enumSet()</a></code> instead.  </dd>
 <dt>Interface <a class="el" href="../../dc/d84/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_enum_describer.html">pocketmine\data\runtime\RuntimeEnumDescriber</a>  </dt>
-<dd><a class="anchor" id="_deprecated000106"></a>  </dd>
-<dt>Member <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a22a098fc4892820db7d15a73edea64ca">pocketmine\entity\Entity::despawnFrom</a>  (Player $player, bool $send=true)</dt>
-<dd><a class="anchor" id="_deprecated000107"></a>WARNING: This function DOES NOT permanently hide the entity from the player. As soon as the entity or player moves, the player will once again be able to see the entity.  </dd>
-<dt>Member <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89a01723e97021d54e83c24d1b74670f">pocketmine\entity\Entity::despawnFromAll</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000108"></a>WARNING: This function DOES NOT permanently hide the entity from viewers. As soon as the entity or player moves, viewers will once again be able to see the entity.  </dd>
-<dt>Member <a class="el" href="../../df/def/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_inventory_action.html#a5844aac564a59f0536edd155a536642d">pocketmine\inventory\transaction\action\InventoryAction::onAddToTransaction</a>  (<a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">InventoryTransaction</a> $transaction)</dt>
 <dd><a class="anchor" id="_deprecated000109"></a>  </dd>
+<dt>Member <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a22a098fc4892820db7d15a73edea64ca">pocketmine\entity\Entity::despawnFrom</a>  (Player $player, bool $send=true)</dt>
+<dd><a class="anchor" id="_deprecated000110"></a>WARNING: This function DOES NOT permanently hide the entity from the player. As soon as the entity or player moves, the player will once again be able to see the entity.  </dd>
+<dt>Member <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89a01723e97021d54e83c24d1b74670f">pocketmine\entity\Entity::despawnFromAll</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000111"></a>WARNING: This function DOES NOT permanently hide the entity from viewers. As soon as the entity or player moves, viewers will once again be able to see the entity.  </dd>
+<dt>Member <a class="el" href="../../dc/d01/classpocketmine_1_1entity_1_1projectile_1_1_projectile.html#a8bf437d2920bb38864a0074e34d312fc">pocketmine\entity\projectile\Projectile::despawnsOnEntityHit</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000112"></a>This will be dropped in favor of deciding whether to despawn within <code><a class="el" href="../../dc/d01/classpocketmine_1_1entity_1_1projectile_1_1_projectile.html#abefd6990ef1fb83a1b4e0352a44f2455">onHitEntity()</a></code> method.  </dd>
+<dt>Member <a class="el" href="../../df/def/classpocketmine_1_1inventory_1_1transaction_1_1action_1_1_inventory_action.html#a5844aac564a59f0536edd155a536642d">pocketmine\inventory\transaction\action\InventoryAction::onAddToTransaction</a>  (<a class="el" href="../../d3/de1/classpocketmine_1_1inventory_1_1transaction_1_1_inventory_transaction.html">InventoryTransaction</a> $transaction)</dt>
+<dd><a class="anchor" id="_deprecated000113"></a>  </dd>
 <dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#aaa47f90644d49c3d2273a878974acf72">pocketmine\item\enchantment\Enchantment::__construct</a>  (private Translatable|string $name, private int $rarity, private int $primaryItemFlags, private int $secondaryItemFlags, private int $maxLevel, ?\Closure $minEnchantingPower=null, private int $enchantingPowerRange=50)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000110"></a> </p>
-<p class="enddd"><a class="anchor" id="_deprecated000111"></a>  </p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000114"></a> </p>
+<p class="enddd"><a class="anchor" id="_deprecated000115"></a>  </p>
 </dd>
 <dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#a13726067f9336d60eb0ee8e7f4bd2dd0">pocketmine\item\enchantment\Enchantment::getPrimaryItemFlags</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000112"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#a9650172a5134fd0089d2d2b50e81fbe9">pocketmine\item\enchantment\Enchantment::getSecondaryItemFlags</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000113"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#a7b2478a9dba1b446491f051d72f73ace">pocketmine\item\enchantment\Enchantment::hasPrimaryItemType</a>  (int $flag)</dt>
-<dd><a class="anchor" id="_deprecated000114"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#ad442b2ab6321d3016ff7d297799b4f5d">pocketmine\item\enchantment\Enchantment::hasSecondaryItemType</a>  (int $flag)</dt>
-<dd><a class="anchor" id="_deprecated000115"></a>  </dd>
-<dt>Class <a class="el" href="../../d2/da7/classpocketmine_1_1item_1_1enchantment_1_1_item_flags.html">pocketmine\item\enchantment\ItemFlags</a>  </dt>
 <dd><a class="anchor" id="_deprecated000116"></a>  </dd>
+<dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#a9650172a5134fd0089d2d2b50e81fbe9">pocketmine\item\enchantment\Enchantment::getSecondaryItemFlags</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000117"></a>  </dd>
+<dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#a7b2478a9dba1b446491f051d72f73ace">pocketmine\item\enchantment\Enchantment::hasPrimaryItemType</a>  (int $flag)</dt>
+<dd><a class="anchor" id="_deprecated000118"></a>  </dd>
+<dt>Member <a class="el" href="../../dd/d6c/classpocketmine_1_1item_1_1enchantment_1_1_enchantment.html#ad442b2ab6321d3016ff7d297799b4f5d">pocketmine\item\enchantment\Enchantment::hasSecondaryItemType</a>  (int $flag)</dt>
+<dd><a class="anchor" id="_deprecated000119"></a>  </dd>
+<dt>Class <a class="el" href="../../d2/da7/classpocketmine_1_1item_1_1enchantment_1_1_item_flags.html">pocketmine\item\enchantment\ItemFlags</a>  </dt>
+<dd><a class="anchor" id="_deprecated000120"></a>  </dd>
 <dt>Member <a class="el" href="../../d2/d67/classpocketmine_1_1item_1_1enchantment_1_1_protection_enchantment.html#ab645ade3e0ea626f0ac8a5b53bce06b6">pocketmine\item\enchantment\ProtectionEnchantment::__construct</a>  (Translatable|string $name, int $rarity, int $primaryItemFlags, int $secondaryItemFlags, int $maxLevel, float $typeModifier, ?array $applicableDamageTypes, ?\Closure $minEnchantingPower=null, int $enchantingPowerRange=50)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000117"></a> </p>
-<p class="enddd"><a class="anchor" id="_deprecated000118"></a>  </p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000121"></a> </p>
+<p class="enddd"><a class="anchor" id="_deprecated000122"></a>  </p>
 </dd>
 <dt>Member <a class="el" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a4a9aa55600bb30c4d55ad63337874a07">pocketmine\item\Item::equals</a>  (<a class="el" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, bool $checkDamage=true, bool $checkCompound=true)</dt>
-<dd><a class="anchor" id="_deprecated000119"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000123"></a>  </dd>
 <dt>Class <a class="el" href="../../d8/d89/classpocketmine_1_1item_1_1_legacy_string_to_item_parser.html">pocketmine\item\LegacyStringToItemParser</a>  </dt>
-<dd><a class="anchor" id="_deprecated000120"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000124"></a>  </dd>
 <dt>Member <a class="el" href="../../d3/df7/classpocketmine_1_1_memory_manager.html#aaf0c252f74e9a1a8a31a91feff258c52">pocketmine\MemoryManager::canUseChunkCache</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000121"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000125"></a>  </dd>
 <dt>Member <a class="el" href="../../d3/df7/classpocketmine_1_1_memory_manager.html#a2a420ac63120c701f02f024ef3b8ae11">pocketmine\MemoryManager::dumpMemory</a>  (mixed $startingObject, string $outputFolder, int $maxNesting, int $maxStringSize, \<a class="el" href="../../d4/d00/interface_logger.html">Logger</a> $logger)</dt>
-<dd><a class="anchor" id="_deprecated000122"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000126"></a>  </dd>
 <dt>Member <a class="el" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#af4536430dc517a3e4f7283d1c760bc4a">pocketmine\nbt\tag\ListTag::setTagType</a>  (int $type)</dt>
-<dd><a class="anchor" id="_deprecated000157"></a>As of 1.1, an empty list's type will always be inferred from the first <a class="el" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> to be inserted. Therefore, this function is now useless.  </dd>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000161"></a> Sets the type of tag that can be added to this list. If TAG_End is used, the type will be auto-detected from the first tag added to the list.</p>
+<p class="enddd"><a class="anchor" id="_deprecated000162"></a>As of 1.1, an empty list's type will always be inferred from the first <a class="el" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> to be inserted. Therefore, this function is now useless.  </p>
+</dd>
 <dt>Member <a class="el" href="../../da/d0a/classpocketmine_1_1permission_1_1_permission_manager.html#a43a8f05643252277a182926926952242">pocketmine\permission\PermissionManager::getPermissionSubscriptions</a>  (string $permission)</dt>
-<dd><a class="anchor" id="_deprecated000126"></a>Superseded by server chat broadcast channels  </dd>
+<dd><a class="anchor" id="_deprecated000130"></a>Superseded by server chat broadcast channels  </dd>
 <dt>Member <a class="el" href="../../da/d0a/classpocketmine_1_1permission_1_1_permission_manager.html#a235beaa3896baf0b5e653c07abe75e8c">pocketmine\permission\PermissionManager::subscribeToPermission</a>  (string $permission, <a class="el" href="../../d9/d10/classpocketmine_1_1permission_1_1_permissible_internal.html">PermissibleInternal</a> $permissible)</dt>
-<dd><a class="anchor" id="_deprecated000123"></a>Superseded by server chat broadcast channels  </dd>
+<dd><a class="anchor" id="_deprecated000127"></a>Superseded by server chat broadcast channels  </dd>
 <dt>Member <a class="el" href="../../da/d0a/classpocketmine_1_1permission_1_1_permission_manager.html#ac7cead8748af81e1588cb258ca47c445">pocketmine\permission\PermissionManager::unsubscribeFromAllPermissions</a>  (<a class="el" href="../../d9/d10/classpocketmine_1_1permission_1_1_permissible_internal.html">PermissibleInternal</a> $permissible)</dt>
-<dd><a class="anchor" id="_deprecated000125"></a>Superseded by server chat broadcast channels  </dd>
+<dd><a class="anchor" id="_deprecated000129"></a>Superseded by server chat broadcast channels  </dd>
 <dt>Member <a class="el" href="../../da/d0a/classpocketmine_1_1permission_1_1_permission_manager.html#a3790b40d97f369bee88117c438682240">pocketmine\permission\PermissionManager::unsubscribeFromPermission</a>  (string $permission, <a class="el" href="../../d9/d10/classpocketmine_1_1permission_1_1_permissible_internal.html">PermissibleInternal</a> $permissible)</dt>
-<dd><a class="anchor" id="_deprecated000124"></a>Superseded by server chat broadcast channels  </dd>
+<dd><a class="anchor" id="_deprecated000128"></a>Superseded by server chat broadcast channels  </dd>
 <dt>Class <a class="el" href="../../de/d85/classpocketmine_1_1plugin_1_1_disk_resource_provider.html">pocketmine\plugin\DiskResourceProvider</a>  </dt>
-<dd><a class="anchor" id="_deprecated000127"></a>  </dd>
-<dt>Member <a class="el" href="../../d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#aa1401211086bd3cf9ae7b422b6e0f637">pocketmine\plugin\PluginBase::getResource</a>  (string $filename)</dt>
-<dd><a class="anchor" id="_deprecated000128"></a>Prefer using standard PHP functions with <code><a class="el" href="../../d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a3bdfd3479eb186a29a74c52aa370c278">PluginBase::getResourcePath()</a></code>, like file_get_contents() or fopen(). </dd>
-<dt>Interface <a class="el" href="../../de/d0d/interfacepocketmine_1_1plugin_1_1_resource_provider.html">pocketmine\plugin\ResourceProvider</a>  </dt>
-<dd><a class="anchor" id="_deprecated000129"></a>  </dd>
-<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a54da2298c61d0b04e6c7f058b0591250">pocketmine\scheduler\AsyncTask::cancelRun</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000132"></a>  </dd>
-<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">pocketmine\scheduler\AsyncTask::checkProgressUpdates</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000135"></a>  </dd>
-<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a31a5f710f3a68f80c5daa945dc4642e2">pocketmine\scheduler\AsyncTask::hasCancelledRun</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000133"></a>  </dd>
-<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a328e5ca10ddf86ef16c7311f18933041">pocketmine\scheduler\AsyncTask::isCrashed</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000131"></a>  </dd>
+<dt>Member <a class="el" href="../../d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#aa1401211086bd3cf9ae7b422b6e0f637">pocketmine\plugin\PluginBase::getResource</a>  (string $filename)</dt>
+<dd><a class="anchor" id="_deprecated000132"></a>Prefer using standard PHP functions with <code><a class="el" href="../../d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a3bdfd3479eb186a29a74c52aa370c278">PluginBase::getResourcePath()</a></code>, like file_get_contents() or fopen(). </dd>
+<dt>Interface <a class="el" href="../../de/d0d/interfacepocketmine_1_1plugin_1_1_resource_provider.html">pocketmine\plugin\ResourceProvider</a>  </dt>
+<dd><a class="anchor" id="_deprecated000133"></a>  </dd>
+<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a54da2298c61d0b04e6c7f058b0591250">pocketmine\scheduler\AsyncTask::cancelRun</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000136"></a>  </dd>
+<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">pocketmine\scheduler\AsyncTask::checkProgressUpdates</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000139"></a>  </dd>
+<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a31a5f710f3a68f80c5daa945dc4642e2">pocketmine\scheduler\AsyncTask::hasCancelledRun</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000137"></a>  </dd>
+<dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a328e5ca10ddf86ef16c7311f18933041">pocketmine\scheduler\AsyncTask::isCrashed</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000135"></a>  </dd>
 <dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae387a6b494c63a70c82924a05e90875d">pocketmine\scheduler\AsyncTask::onError</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000137"></a>No longer used  </dd>
+<dd><a class="anchor" id="_deprecated000141"></a>No longer used  </dd>
 <dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">pocketmine\scheduler\AsyncTask::onProgressUpdate</a>  ($progress)</dt>
-<dd><a class="anchor" id="_deprecated000136"></a> </dd>
+<dd><a class="anchor" id="_deprecated000140"></a> </dd>
 <dt>Member <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948">pocketmine\scheduler\AsyncTask::publishProgress</a>  (mixed $progress)</dt>
-<dd><a class="anchor" id="_deprecated000134"></a> </dd>
+<dd><a class="anchor" id="_deprecated000138"></a> </dd>
 <dt>Member <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#a75770eb28002e31779b92e86a29cb4e9">pocketmine\scheduler\AsyncWorker::getFromThreadStore</a>  (string $identifier)</dt>
-<dd><a class="anchor" id="_deprecated000139"></a>Use static class properties instead.  </dd>
+<dd><a class="anchor" id="_deprecated000143"></a>Use static class properties instead.  </dd>
 <dt>Member <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#abb31f220a09e40bb22c29bb68a693e7c">pocketmine\scheduler\AsyncWorker::removeFromThreadStore</a>  (string $identifier)</dt>
-<dd><a class="anchor" id="_deprecated000140"></a>Use static class properties instead.  </dd>
+<dd><a class="anchor" id="_deprecated000144"></a>Use static class properties instead.  </dd>
 <dt>Member <a class="el" href="../../d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#adf6cfa9e72379b162d462a2e9dc8d301">pocketmine\scheduler\AsyncWorker::saveToThreadStore</a>  (string $identifier, mixed $value)</dt>
-<dd><a class="anchor" id="_deprecated000138"></a>Use static class properties instead.  </dd>
+<dd><a class="anchor" id="_deprecated000142"></a>Use static class properties instead.  </dd>
 <dt>Member <a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a6a32d7ce2b7100d6117cd6e3cfb3b1d6">pocketmine\Server::getPlayerByPrefix</a>  (string $name)</dt>
-<dd><a class="anchor" id="_deprecated000141"></a>This method's results are unpredictable. The string "Steve" will return the player named "SteveJobs", until another player named "SteveJ" joins the server, at which point it will return that player instead. Prefer filtering the results of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">Server::getOnlinePlayers()</a></code> yourself. </dd>
+<dd><a class="anchor" id="_deprecated000145"></a>This method's results are unpredictable. The string "Steve" will return the player named "SteveJobs", until another player named "SteveJ" joins the server, at which point it will return that player instead. Prefer filtering the results of <code><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">Server::getOnlinePlayers()</a></code> yourself. </dd>
 <dt>Member <a class="el" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html#a2924b8e8608bfb4521250f44402a215c">pocketmine\timings\Timings::getAsyncTaskErrorTimings</a>  (AsyncTask $task, string $group=self::GROUP_MINECRAFT)</dt>
-<dd><a class="anchor" id="_deprecated000143"></a>No longer used  </dd>
+<dd><a class="anchor" id="_deprecated000147"></a>No longer used  </dd>
 <dt>Member <a class="el" href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html#ae64c4ba5c3e1b1cc002aafbb3967ee65">pocketmine\timings\Timings::GROUP_BREAKDOWN</a>  </dt>
-<dd><a class="anchor" id="_deprecated000142"></a>No longer used  </dd>
+<dd><a class="anchor" id="_deprecated000146"></a>No longer used  </dd>
 <dt>Member <a class="el" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html#a1b6e3c8b2fd755943c660b6077911de5">pocketmine\timings\TimingsHandler::printTimings</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000144"></a>This only collects timings from the main thread. Collecting timings from all threads is an async operation, so it can't be done synchronously. </dd>
+<dd><a class="anchor" id="_deprecated000148"></a>This only collects timings from the main thread. Collecting timings from all threads is an async operation, so it can't be done synchronously. </dd>
 <dt>Member <a class="el" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">pocketmine\utils\Process::kill</a>  (int $pid, bool $subprocesses=false)</dt>
-<dd><a class="anchor" id="_deprecated000147"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0671e59be6d7188889a00867161762c1">pocketmine\utils\TextFormat::STRIKETHROUGH</a>  </dt>
-<dd><a class="anchor" id="_deprecated000148"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a03dd8524c7027c0cf97238eaddca3de5">pocketmine\utils\TextFormat::UNDERLINE</a>  </dt>
-<dd><a class="anchor" id="_deprecated000149"></a>  </dd>
-<dt>Member <a class="el" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">pocketmine\utils\Utils::cloneCallback</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000150"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a29cc61d550f0851f92c81e6de5b22137">pocketmine\wizard\SetupWizard::DEFAULT_NAME</a>  </dt>
 <dd><a class="anchor" id="_deprecated000151"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a56f5764f3c3646e79bc25c2f0a09b033">pocketmine\wizard\SetupWizard::DEFAULT_PLAYERS</a>  </dt>
-<dd><a class="anchor" id="_deprecated000153"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#aca92aa8fd97856d4aa6bbc74fa7efccf">pocketmine\wizard\SetupWizard::DEFAULT_PORT</a>  </dt>
+<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0671e59be6d7188889a00867161762c1">pocketmine\utils\TextFormat::STRIKETHROUGH</a>  </dt>
 <dd><a class="anchor" id="_deprecated000152"></a>  </dd>
+<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a03dd8524c7027c0cf97238eaddca3de5">pocketmine\utils\TextFormat::UNDERLINE</a>  </dt>
+<dd><a class="anchor" id="_deprecated000153"></a>  </dd>
+<dt>Member <a class="el" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">pocketmine\utils\Utils::cloneCallback</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000154"></a>  </dd>
+<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a29cc61d550f0851f92c81e6de5b22137">pocketmine\wizard\SetupWizard::DEFAULT_NAME</a>  </dt>
+<dd><a class="anchor" id="_deprecated000155"></a>  </dd>
+<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a56f5764f3c3646e79bc25c2f0a09b033">pocketmine\wizard\SetupWizard::DEFAULT_PLAYERS</a>  </dt>
+<dd><a class="anchor" id="_deprecated000157"></a>  </dd>
+<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#aca92aa8fd97856d4aa6bbc74fa7efccf">pocketmine\wizard\SetupWizard::DEFAULT_PORT</a>  </dt>
+<dd><a class="anchor" id="_deprecated000156"></a>  </dd>
 <dt>Member <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a72b2673cda248e41ef6b73b8d50bd192">pocketmine\world\World::getChunkPlayers</a>  (int $chunkX, int $chunkZ)</dt>
-<dd><a class="anchor" id="_deprecated000154"></a>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk. </dd>
+<dd><a class="anchor" id="_deprecated000158"></a>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk. </dd>
 <dt>Member <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a66641714cd2375a754e4e105b8bf12c0">pocketmine\world\World::getCollisionBoxes</a>  (Entity $entity, AxisAlignedBB $bb, bool $entities=true)</dt>
-<dd><a class="anchor" id="_deprecated000155"></a>Use <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a9316f2b8d9e016ccdce8b57d78d9f9e2">World::getBlockCollisionBoxes()</a></code> instead (alongside <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98697e8c47a2ed43da52da0c77f0a2d4">World::getCollidingEntities()</a></code> if entity collision boxes are also required).</dd>
+<dd><a class="anchor" id="_deprecated000159"></a>Use <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a9316f2b8d9e016ccdce8b57d78d9f9e2">World::getBlockCollisionBoxes()</a></code> instead (alongside <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98697e8c47a2ed43da52da0c77f0a2d4">World::getCollidingEntities()</a></code> if entity collision boxes are also required).</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

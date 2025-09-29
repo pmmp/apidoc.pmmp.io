@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.33.3 git-dd5a7adec487aa4fd24ef5cf1b9eff1aa9a6315b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
    </div>
   </td>
  </tr>
@@ -131,174 +131,172 @@ $(function(){initNavTree('d6/da4/_writable_book_base_8php_source.html','../../')
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html">pocketmine\nbt\NBT</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">pocketmine\nbt\tag\StringTag</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> array_push;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> array_slice;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> array_values;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">function</span> mb_scrub;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html">   36</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html">WritableBookBase</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">const</span> TAG_PAGES = <span class="stringliteral">&quot;pages&quot;</span>; <span class="comment">//TAG_List&lt;TAG_Compound&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">const</span> TAG_PAGE_TEXT = <span class="stringliteral">&quot;text&quot;</span>; <span class="comment">//TAG_String</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">const</span> TAG_PAGE_PHOTONAME = <span class="stringliteral">&quot;photoname&quot;</span>; <span class="comment">//TAG_String - TODO</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> array $pages = [];</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html">ItemIdentifier</a> $identifier, <span class="keywordtype">string</span> $name){</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        parent::__construct($identifier, $name);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0889a74b4c775fc288bf5d3730516318">   54</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0889a74b4c775fc288bf5d3730516318">pageExists</a>(<span class="keywordtype">int</span> $pageId) : bool{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        return isset($this-&gt;pages[$pageId]);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">pocketmine\nbt\tag\StringTag</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <span class="keyword">function</span> array_push;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> array_slice;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> array_values;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <span class="keyword">function</span> mb_scrub;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html">   35</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html">WritableBookBase</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">const</span> TAG_PAGES = <span class="stringliteral">&quot;pages&quot;</span>; <span class="comment">//TAG_List&lt;TAG_Compound&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">const</span> TAG_PAGE_TEXT = <span class="stringliteral">&quot;text&quot;</span>; <span class="comment">//TAG_String</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">const</span> TAG_PAGE_PHOTONAME = <span class="stringliteral">&quot;photoname&quot;</span>; <span class="comment">//TAG_String - TODO</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> array $pages = [];</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="../../d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html">ItemIdentifier</a> $identifier, <span class="keywordtype">string</span> $name){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        parent::__construct($identifier, $name);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0889a74b4c775fc288bf5d3730516318">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0889a74b4c775fc288bf5d3730516318">pageExists</a>(<span class="keywordtype">int</span> $pageId) : bool{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        return isset($this-&gt;pages[$pageId]);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80">getPageText</a>(<span class="keywordtype">int</span> $pageId) : string{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return $this-&gt;pages[$pageId]-&gt;getText();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80">getPageText</a>(<span class="keywordtype">int</span> $pageId) : string{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        return $this-&gt;pages[$pageId]-&gt;getText();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d">   72</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d">setPageText</a>(<span class="keywordtype">int</span> $pageId, <span class="keywordtype">string</span> $pageText) : self{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        if(!$this-&gt;pageExists($pageId)){</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $this-&gt;addPage($pageId);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;pages[$pageId] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>($pageText);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d">   71</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d">setPageText</a>(<span class="keywordtype">int</span> $pageId, <span class="keywordtype">string</span> $pageText) : self{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        if(!$this-&gt;pageExists($pageId)){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            $this-&gt;addPage($pageId);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;pages[$pageId] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>($pageText);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a5cbab3ac2c040f738eff457295cffefc">   87</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a5cbab3ac2c040f738eff457295cffefc">addPage</a>(<span class="keywordtype">int</span> $pageId) : self{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        if($pageId &lt; 0){</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Page number \&quot;$pageId\&quot; is out of range&quot;</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">for</span>($current = count($this-&gt;pages); $current &lt;= $pageId; $current++){</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $this-&gt;pages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a5cbab3ac2c040f738eff457295cffefc">   86</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a5cbab3ac2c040f738eff457295cffefc">addPage</a>(<span class="keywordtype">int</span> $pageId) : self{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        if($pageId &lt; 0){</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Page number \&quot;$pageId\&quot; is out of range&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">for</span>($current = count($this-&gt;pages); $current &lt;= $pageId; $current++){</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $this-&gt;pages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
 </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a46e9597cc1a492c84e5f32d006a4a1d3">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a46e9597cc1a492c84e5f32d006a4a1d3">deletePage</a>(<span class="keywordtype">int</span> $pageId) : self{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $newPages = $this-&gt;pages;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        unset($newPages[$pageId]);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $this-&gt;pages = array_values($newPages);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a46e9597cc1a492c84e5f32d006a4a1d3">  102</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a46e9597cc1a492c84e5f32d006a4a1d3">deletePage</a>(<span class="keywordtype">int</span> $pageId) : self{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $newPages = $this-&gt;pages;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        unset($newPages[$pageId]);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $this-&gt;pages = array_values($newPages);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a04ecc3680065c256f269e45cfefde942">  115</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a04ecc3680065c256f269e45cfefde942">insertPage</a>(<span class="keywordtype">int</span> $pageId, <span class="keywordtype">string</span> $pageText = <span class="stringliteral">&quot;&quot;</span>) : self{</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        if($pageId &lt; 0 || $pageId &gt; count($this-&gt;pages)){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Page ID must not be negative&quot;</span>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $newPages = array_slice($this-&gt;pages, 0, $pageId);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        $newPages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>($pageText);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        array_push($newPages, ...array_slice($this-&gt;pages, $pageId));</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        $this-&gt;pages = $newPages;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a04ecc3680065c256f269e45cfefde942">  114</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a04ecc3680065c256f269e45cfefde942">insertPage</a>(<span class="keywordtype">int</span> $pageId, <span class="keywordtype">string</span> $pageText = <span class="stringliteral">&quot;&quot;</span>) : self{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        if($pageId &lt; 0 || $pageId &gt; count($this-&gt;pages)){</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Page ID must not be negative&quot;</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $newPages = array_slice($this-&gt;pages, 0, $pageId);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $newPages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>($pageText);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        array_push($newPages, ...array_slice($this-&gt;pages, $pageId));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        $this-&gt;pages = $newPages;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
 </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a428cb509ce7bbe12bdedb1b97bcb47d3">  132</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a428cb509ce7bbe12bdedb1b97bcb47d3">swapPages</a>(<span class="keywordtype">int</span> $pageId1, <span class="keywordtype">int</span> $pageId2) : bool{</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $pageContents1 = $this-&gt;getPageText($pageId1);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        $pageContents2 = $this-&gt;getPageText($pageId2);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        $this-&gt;setPageText($pageId1, $pageContents2);</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        $this-&gt;setPageText($pageId2, $pageContents1);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a428cb509ce7bbe12bdedb1b97bcb47d3">  131</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a428cb509ce7bbe12bdedb1b97bcb47d3">swapPages</a>(<span class="keywordtype">int</span> $pageId1, <span class="keywordtype">int</span> $pageId2) : bool{</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        $pageContents1 = $this-&gt;getPageText($pageId1);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $pageContents2 = $this-&gt;getPageText($pageId2);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        $this-&gt;setPageText($pageId1, $pageContents2);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        $this-&gt;setPageText($pageId2, $pageContents1);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
 </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a4102fca8ddc8399f8675c605fc28f242">  141</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a4102fca8ddc8399f8675c605fc28f242">getMaxStackSize</a>() : int{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        return 1;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a4102fca8ddc8399f8675c605fc28f242">  140</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a4102fca8ddc8399f8675c605fc28f242">getMaxStackSize</a>() : int{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        return 1;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
 </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0a79e011845ae3dc79a34887350caecf">  150</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0a79e011845ae3dc79a34887350caecf">getPages</a>() : array{</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        return $this-&gt;pages;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0a79e011845ae3dc79a34887350caecf">  149</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0a79e011845ae3dc79a34887350caecf">getPages</a>() : array{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        return $this-&gt;pages;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
 </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a99bdaaa5b81efae537f45a6413db4103">  159</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a99bdaaa5b81efae537f45a6413db4103">setPages</a>(array $pages) : self{</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        $this-&gt;pages = array_values($pages);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> $this;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a99bdaaa5b81efae537f45a6413db4103">  158</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a99bdaaa5b81efae537f45a6413db4103">setPages</a>(array $pages) : self{</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        $this-&gt;pages = array_values($pages);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
 </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a6a95cea665344fe13b4f7f5847aad733">  164</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a6a95cea665344fe13b4f7f5847aad733">deserializeCompoundTag</a>(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag) : void{</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        parent::deserializeCompoundTag($tag);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        $this-&gt;pages = [];</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        $pages = $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">getListTag</a>(self::TAG_PAGES);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">if</span>($pages !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">if</span>($pages-&gt;getTagType() === NBT::TAG_Compound){ <span class="comment">//PE format</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                <span class="keywordflow">foreach</span>($pages as $page){</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                    $this-&gt;pages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>(mb_scrub($page-&gt;getString(self::TAG_PAGE_TEXT), <span class="stringliteral">&#39;UTF-8&#39;</span>), $page-&gt;getString(self::TAG_PAGE_PHOTONAME, <span class="stringliteral">&quot;&quot;</span>));</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            }elseif($pages-&gt;getTagType() === NBT::TAG_String){ <span class="comment">//PC format</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                <span class="keywordflow">foreach</span>($pages as $page){</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    $this-&gt;pages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>(mb_scrub($page-&gt;getValue(), <span class="stringliteral">&#39;UTF-8&#39;</span>));</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            }</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        }</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a6a95cea665344fe13b4f7f5847aad733">  163</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a6a95cea665344fe13b4f7f5847aad733">deserializeCompoundTag</a>(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag) : void{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        parent::deserializeCompoundTag($tag);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        $this-&gt;pages = [];</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        $pages = $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a813855ff4322dc6bf035ffb3f3b358c0">getListTag</a>(self::TAG_PAGES);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordflow">if</span>($pages !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">if</span>(($compoundPages = $pages-&gt;cast(CompoundTag::class)) !== <span class="keyword">null</span>){ <span class="comment">//PE format</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                <span class="keywordflow">foreach</span>($compoundPages as $page){</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    $this-&gt;pages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>(mb_scrub($page-&gt;getString(self::TAG_PAGE_TEXT), <span class="stringliteral">&#39;UTF-8&#39;</span>), $page-&gt;getString(self::TAG_PAGE_PHOTONAME, <span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            }elseif(($stringPages = $pages-&gt;cast(StringTag::class)) !== <span class="keyword">null</span>){ <span class="comment">//PC format</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="keywordflow">foreach</span>($stringPages as $page){</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    $this-&gt;pages[] = <span class="keyword">new</span> <a class="code hl_class" href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">WritableBookPage</a>(mb_scrub($page-&gt;getValue(), <span class="stringliteral">&#39;UTF-8&#39;</span>));</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
 </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">protected</span> <span class="keyword">function</span> serializeCompoundTag(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag) : void{</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        parent::serializeCompoundTag($tag);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">if</span>(count($this-&gt;pages) &gt; 0){</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            $pages = <span class="keyword">new</span> ListTag();</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keywordflow">foreach</span>($this-&gt;pages as $page){</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                $pages-&gt;push(CompoundTag::create()</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                    -&gt;setString(self::TAG_PAGE_TEXT, $page-&gt;getText())</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                    -&gt;setString(self::TAG_PAGE_PHOTONAME, $page-&gt;getPhotoName())</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                );</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">setTag</a>(self::TAG_PAGES, $pages);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">removeTag</a>(self::TAG_PAGES);</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keyword">protected</span> <span class="keyword">function</span> serializeCompoundTag(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag) : void{</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        parent::serializeCompoundTag($tag);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">if</span>(count($this-&gt;pages) &gt; 0){</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            $pages = <span class="keyword">new</span> ListTag();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keywordflow">foreach</span>($this-&gt;pages as $page){</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                $pages-&gt;push(CompoundTag::create()</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                    -&gt;setString(self::TAG_PAGE_TEXT, $page-&gt;getText())</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    -&gt;setString(self::TAG_PAGE_PHOTONAME, $page-&gt;getPhotoName())</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                );</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">setTag</a>(self::TAG_PAGES, $pages);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            $tag-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">removeTag</a>(self::TAG_PAGES);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_identifier_html"><div class="ttname"><a href="../../d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html">pocketmine\item\ItemIdentifier</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/dd2/_item_identifier_8php_source.html#l00028">ItemIdentifier.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html">pocketmine\item\WritableBookBase</a></div><div class="ttdef"><b>Definition</b> <a href="#l00036">WritableBookBase.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a04ecc3680065c256f269e45cfefde942"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a04ecc3680065c256f269e45cfefde942">pocketmine\item\WritableBookBase\insertPage</a></div><div class="ttdeci">insertPage(int $pageId, string $pageText=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00115">WritableBookBase.php:115</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a0889a74b4c775fc288bf5d3730516318"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0889a74b4c775fc288bf5d3730516318">pocketmine\item\WritableBookBase\pageExists</a></div><div class="ttdeci">pageExists(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00054">WritableBookBase.php:54</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a0a79e011845ae3dc79a34887350caecf"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0a79e011845ae3dc79a34887350caecf">pocketmine\item\WritableBookBase\getPages</a></div><div class="ttdeci">getPages()</div><div class="ttdef"><b>Definition</b> <a href="#l00150">WritableBookBase.php:150</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a4102fca8ddc8399f8675c605fc28f242"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a4102fca8ddc8399f8675c605fc28f242">pocketmine\item\WritableBookBase\getMaxStackSize</a></div><div class="ttdeci">getMaxStackSize()</div><div class="ttdef"><b>Definition</b> <a href="#l00141">WritableBookBase.php:141</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a428cb509ce7bbe12bdedb1b97bcb47d3"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a428cb509ce7bbe12bdedb1b97bcb47d3">pocketmine\item\WritableBookBase\swapPages</a></div><div class="ttdeci">swapPages(int $pageId1, int $pageId2)</div><div class="ttdef"><b>Definition</b> <a href="#l00132">WritableBookBase.php:132</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a46e9597cc1a492c84e5f32d006a4a1d3"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a46e9597cc1a492c84e5f32d006a4a1d3">pocketmine\item\WritableBookBase\deletePage</a></div><div class="ttdeci">deletePage(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00103">WritableBookBase.php:103</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a5cbab3ac2c040f738eff457295cffefc"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a5cbab3ac2c040f738eff457295cffefc">pocketmine\item\WritableBookBase\addPage</a></div><div class="ttdeci">addPage(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00087">WritableBookBase.php:87</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a6a95cea665344fe13b4f7f5847aad733"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a6a95cea665344fe13b4f7f5847aad733">pocketmine\item\WritableBookBase\deserializeCompoundTag</a></div><div class="ttdeci">deserializeCompoundTag(CompoundTag $tag)</div><div class="ttdef"><b>Definition</b> <a href="#l00164">WritableBookBase.php:164</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a99bdaaa5b81efae537f45a6413db4103"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a99bdaaa5b81efae537f45a6413db4103">pocketmine\item\WritableBookBase\setPages</a></div><div class="ttdeci">setPages(array $pages)</div><div class="ttdef"><b>Definition</b> <a href="#l00159">WritableBookBase.php:159</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_aa337959d938a55fc1f4e80bf0fbf7a80"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80">pocketmine\item\WritableBookBase\getPageText</a></div><div class="ttdeci">getPageText(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00063">WritableBookBase.php:63</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_ab4c7797f15342a2368f4a730dfa57f0d"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d">pocketmine\item\WritableBookBase\setPageText</a></div><div class="ttdeci">setPageText(int $pageId, string $pageText)</div><div class="ttdef"><b>Definition</b> <a href="#l00072">WritableBookBase.php:72</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html">pocketmine\item\WritableBookBase</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">WritableBookBase.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a04ecc3680065c256f269e45cfefde942"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a04ecc3680065c256f269e45cfefde942">pocketmine\item\WritableBookBase\insertPage</a></div><div class="ttdeci">insertPage(int $pageId, string $pageText=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00114">WritableBookBase.php:114</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a0889a74b4c775fc288bf5d3730516318"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0889a74b4c775fc288bf5d3730516318">pocketmine\item\WritableBookBase\pageExists</a></div><div class="ttdeci">pageExists(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00053">WritableBookBase.php:53</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a0a79e011845ae3dc79a34887350caecf"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a0a79e011845ae3dc79a34887350caecf">pocketmine\item\WritableBookBase\getPages</a></div><div class="ttdeci">getPages()</div><div class="ttdef"><b>Definition</b> <a href="#l00149">WritableBookBase.php:149</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a4102fca8ddc8399f8675c605fc28f242"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a4102fca8ddc8399f8675c605fc28f242">pocketmine\item\WritableBookBase\getMaxStackSize</a></div><div class="ttdeci">getMaxStackSize()</div><div class="ttdef"><b>Definition</b> <a href="#l00140">WritableBookBase.php:140</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a428cb509ce7bbe12bdedb1b97bcb47d3"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a428cb509ce7bbe12bdedb1b97bcb47d3">pocketmine\item\WritableBookBase\swapPages</a></div><div class="ttdeci">swapPages(int $pageId1, int $pageId2)</div><div class="ttdef"><b>Definition</b> <a href="#l00131">WritableBookBase.php:131</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a46e9597cc1a492c84e5f32d006a4a1d3"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a46e9597cc1a492c84e5f32d006a4a1d3">pocketmine\item\WritableBookBase\deletePage</a></div><div class="ttdeci">deletePage(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00102">WritableBookBase.php:102</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a5cbab3ac2c040f738eff457295cffefc"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a5cbab3ac2c040f738eff457295cffefc">pocketmine\item\WritableBookBase\addPage</a></div><div class="ttdeci">addPage(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00086">WritableBookBase.php:86</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a6a95cea665344fe13b4f7f5847aad733"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a6a95cea665344fe13b4f7f5847aad733">pocketmine\item\WritableBookBase\deserializeCompoundTag</a></div><div class="ttdeci">deserializeCompoundTag(CompoundTag $tag)</div><div class="ttdef"><b>Definition</b> <a href="#l00163">WritableBookBase.php:163</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_a99bdaaa5b81efae537f45a6413db4103"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#a99bdaaa5b81efae537f45a6413db4103">pocketmine\item\WritableBookBase\setPages</a></div><div class="ttdeci">setPages(array $pages)</div><div class="ttdef"><b>Definition</b> <a href="#l00158">WritableBookBase.php:158</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_aa337959d938a55fc1f4e80bf0fbf7a80"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#aa337959d938a55fc1f4e80bf0fbf7a80">pocketmine\item\WritableBookBase\getPageText</a></div><div class="ttdeci">getPageText(int $pageId)</div><div class="ttdef"><b>Definition</b> <a href="#l00062">WritableBookBase.php:62</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_base_html_ab4c7797f15342a2368f4a730dfa57f0d"><div class="ttname"><a href="../../d7/d37/classpocketmine_1_1item_1_1_writable_book_base.html#ab4c7797f15342a2368f4a730dfa57f0d">pocketmine\item\WritableBookBase\setPageText</a></div><div class="ttdeci">setPageText(int $pageId, string $pageText)</div><div class="ttdef"><b>Definition</b> <a href="#l00071">WritableBookBase.php:71</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_writable_book_page_html"><div class="ttname"><a href="../../d8/dc3/classpocketmine_1_1item_1_1_writable_book_page.html">pocketmine\item\WritableBookPage</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d11/_writable_book_page_8php_source.html#l00031">WritableBookPage.php:31</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1_n_b_t_html"><div class="ttname"><a href="../../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html">pocketmine\nbt\NBT</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/da2/_n_b_t_8php_source.html#l00042">NBT.php:42</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00045">CompoundTag.php:45</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a1394545e652ca41b3d3793201049862e"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a1394545e652ca41b3d3793201049862e">pocketmine\nbt\tag\CompoundTag\getListTag</a></div><div class="ttdeci">getListTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00095">CompoundTag.php:95</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a69f8ea4b1a4c873d848da47c155845f6"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">pocketmine\nbt\tag\CompoundTag\setTag</a></div><div class="ttdeci">setTag(string $name, Tag $tag)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00120">CompoundTag.php:120</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a714ad7c1eb7921e14f684524a66e5e17"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">pocketmine\nbt\tag\CompoundTag\removeTag</a></div><div class="ttdeci">removeTag(string ... $names)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00132">CompoundTag.php:132</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_list_tag_html"><div class="ttname"><a href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0f/_list_tag_8php_source.html#l00047">ListTag.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a69f8ea4b1a4c873d848da47c155845f6"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a69f8ea4b1a4c873d848da47c155845f6">pocketmine\nbt\tag\CompoundTag\setTag</a></div><div class="ttdeci">setTag(string $name, Tag $tag)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00133">CompoundTag.php:133</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a714ad7c1eb7921e14f684524a66e5e17"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a714ad7c1eb7921e14f684524a66e5e17">pocketmine\nbt\tag\CompoundTag\removeTag</a></div><div class="ttdeci">removeTag(string ... $names)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00145">CompoundTag.php:145</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a813855ff4322dc6bf035ffb3f3b358c0"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a813855ff4322dc6bf035ffb3f3b358c0">pocketmine\nbt\tag\CompoundTag\getListTag</a></div><div class="ttdeci">getListTag(string $name, string $tagClass=Tag::class)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00101">CompoundTag.php:101</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_list_tag_html"><div class="ttname"><a href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html">pocketmine\nbt\tag\ListTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0f/_list_tag_8php_source.html#l00048">ListTag.php:48</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_string_tag_html"><div class="ttname"><a href="../../d6/d25/classpocketmine_1_1nbt_1_1tag_1_1_string_tag.html">pocketmine\nbt\tag\StringTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d19/_string_tag_8php_source.html#l00033">StringTag.php:33</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

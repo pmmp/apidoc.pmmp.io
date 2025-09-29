@@ -1,0 +1,4 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environments =
+[
+    [ "$prod", "d9/d67/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_auth_environments.html#a314de799a2ac9bc3bd49efdfd7f06b38", null ]
+];

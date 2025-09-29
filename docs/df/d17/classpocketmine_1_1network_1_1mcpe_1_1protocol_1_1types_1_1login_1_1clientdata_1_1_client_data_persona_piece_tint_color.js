@@ -1,0 +1,4 @@
+var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_piece_tint_color =
+[
+    [ "$PieceType", "df/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_piece_tint_color.html#aec7f1ffba81a10db5568965977aa5d03", null ]
+];

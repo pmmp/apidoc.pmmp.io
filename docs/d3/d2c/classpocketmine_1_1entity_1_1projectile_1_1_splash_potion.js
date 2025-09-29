@@ -13,6 +13,7 @@ var classpocketmine_1_1entity_1_1projectile_1_1_splash_potion =
     [ "dealFireDamage", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ae36a7e5064724e460fabfe810f2def20", null ],
     [ "despawnFrom", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a22a098fc4892820db7d15a73edea64ca", null ],
     [ "despawnFromAll", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a89a01723e97021d54e83c24d1b74670f", null ],
+    [ "despawnsOnEntityHit", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a8bf437d2920bb38864a0074e34d312fc", null ],
     [ "destroyCycles", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a13cdde5ca9d85ff86e155b8017e713c0", null ],
     [ "flagForDespawn", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ab3c11dd444626eb5ef1d2ab666ce5def", null ],
     [ "getAllNetworkData", "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ae96e5d919208d6d9d4ccc75136167684", null ],
