@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"d1/d73/classpocketmine_1_1block_1_1_glass.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,113,51],
+"d1/d73/classpocketmine_1_1block_1_1_glass.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,115,51],
 "d1/d73/classpocketmine_1_1block_1_1_glass.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,113,0],
 "d1/d73/classpocketmine_1_1block_1_1_glass.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,115,0],
 "d1/d73/classpocketmine_1_1block_1_1_glass.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,113,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "d1/d89/_network_settings_packet_8php_source.html":[4,0,1,0,1,0,107],
 "d1/d8a/_correct_player_move_prediction_packet_8php_source.html":[4,0,1,0,1,0,55],
 "d1/d8a/_mob_head_type_id_map_8php_source.html":[4,0,0,5,0,22],
-"d1/d8a/classpocketmine_1_1data_1_1bedrock_1_1_legacy_to_string_id_map.html":[3,0,1,6,0,18],
-"d1/d8a/classpocketmine_1_1data_1_1bedrock_1_1_legacy_to_string_id_map.html#a0746412c1d07cca3582238dfd610aa28":[3,0,1,6,0,18,0],
-"d1/d8b/_tell_command_8php_source.html":[4,0,0,1,0,33]
+"d1/d8a/classpocketmine_1_1data_1_1bedrock_1_1_legacy_to_string_id_map.html":[3,0,1,6,0,18]
 };

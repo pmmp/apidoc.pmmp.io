@@ -1,5 +1,15 @@
 var NAVTREEINDEX46 =
 {
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a9a6da410c5e52a66b55e3b5b1bf32f87":[3,0,1,0,0,8,27],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a9d09d6857c9b54d9f1e5ce847d53e8b5":[3,0,1,0,0,8,12],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#a9e8a9a58178c93680c225de229606fec":[3,0,1,0,0,8,1],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#aa2d57d9cb0e9cbb043329c99539706ef":[3,0,1,0,0,8,5],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#aa58d568c421e711863c33c3b7bd4d6d5":[3,0,1,0,0,8,25],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ab1a7a21cbea42e80ecc6a99a6625af80":[3,0,1,0,0,8,14],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ab4558205396b6e9a38bd25c809616320":[3,0,1,0,0,8,28],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ab91f0a13cfec22468eb5e6bfed9a9a80":[3,0,1,0,0,8,7],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ad61d0fa541f73c0387c81dc3c46def67":[3,0,1,0,0,8,20],
+"d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ad9d5950315bc88e0ab14f8026388aabf":[3,0,1,0,0,8,17],
 "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,0,0,8,29],
 "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#af49a170465ef056e566dbceceacec2f0":[3,0,1,0,0,8,10],
 "d3/d26/classpocketmine_1_1block_1_1inventory_1_1_double_chest_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[3,0,1,0,0,8,3],
@@ -39,7 +49,7 @@ var NAVTREEINDEX46 =
 "d3/d27/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_data_upgrader.html#a7ce8c2cee2561c3116947cbffa8d81e4":[3,0,1,6,0,1,0,1,1],
 "d3/d27/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_deplete_sound.html":[3,0,1,30,5,95],
 "d3/d27/classpocketmine_1_1world_1_1sound_1_1_respawn_anchor_deplete_sound.html#adacb9304cb9d4f492e71ad4bdc454177":[3,0,1,30,5,95,0],
-"d3/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_compression_algorithm.html":[3,0,1,16,0,6,1,21],
+"d3/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_compression_algorithm.html":[3,0,1,16,0,6,1,23],
 "d3/d28/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_creative_item_entry.html":[3,0,1,16,0,6,1,4,5],
 "d3/d2a/_network_interface_start_exception_8php_source.html":[4,0,0,12,8],
 "d3/d2c/classpocketmine_1_1block_1_1_base_fire.html":[2,0,0,0,12],
@@ -239,15 +249,5 @@ var NAVTREEINDEX46 =
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#afb812d7f22d278d1ac35fc063ea63df7":[3,0,1,7,3,8,28],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#afdd4efc12fe21730ceb104af111f576d":[3,0,1,7,3,8,23],
 "d3/d2f/_food_source_item_8php_source.html":[4,0,0,10,54],
-"d3/d31/_block_state_writer_8php_source.html":[4,0,0,5,0,0,0,7],
-"d3/d31/vendor_2pocketmine_2raklib_2src_2generic_2_packet_handling_exception_8php_source.html":[4,0,1,0,9,0,1,1],
-"d3/d33/classpocketmine_1_1world_1_1sound_1_1_amethyst_block_chime_sound.html":[3,0,1,30,5,0],
-"d3/d33/classpocketmine_1_1world_1_1sound_1_1_amethyst_block_chime_sound.html#a1aebdb444277b339eeada878313d737c":[3,0,1,30,5,0,0],
-"d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html":[3,0,1,16,0,2,2],
-"d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#a091740691fd6debe0cc242e5c21967ff":[3,0,1,16,0,2,2,0],
-"d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#aaaa686638057bcc9babbba38d41fd922":[3,0,1,16,0,2,2,2],
-"d3/d33/interfacepocketmine_1_1network_1_1mcpe_1_1compression_1_1_compressor.html#ac49ca1a3962b0926dd5aa11875e96168":[3,0,1,16,0,2,2,1],
-"d3/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_release_item_transaction_data.html":[3,0,1,16,0,6,1,4,15],
-"d3/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_release_item_transaction_data.html#a0028898d048b80eebc9de155cb07989e":[3,0,1,16,0,6,1,4,15,3],
-"d3/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_release_item_transaction_data.html#a851f5fdffd9e12c3e6ff1740f1cbbdd0":[3,0,1,16,0,6,1,4,15,0]
+"d3/d31/_block_state_writer_8php_source.html":[4,0,0,5,0,0,0,7]
 };

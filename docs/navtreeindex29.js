@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"d1/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sub_client_login_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,197,4],
+"d1/df6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_sub_client_login_packet.html#afec316bba56aaa42395ac40fb223453f":[3,0,1,16,0,6,197,5],
+"d1/df6/classraklib_1_1protocol_1_1_connection_request.html":[3,0,2,2,6],
 "d1/df6/classraklib_1_1protocol_1_1_connection_request.html#a38a6ef949d6757f3169170321d00caed":[3,0,2,2,6,2],
 "d1/df6/classraklib_1_1protocol_1_1_connection_request.html#ab8de9fe0266990afaa8ba01c09ff302a":[3,0,2,2,6,1],
 "d1/df6/classraklib_1_1protocol_1_1_connection_request.html#ac7e76cdbad6daaa6bf594f5d3d46099e":[3,0,2,2,6,0],
@@ -153,7 +156,7 @@ var NAVTREEINDEX29 =
 "d1/dfe/_gravel_8php_source.html":[4,0,0,0,124],
 "d1/dfe/_player_display_name_change_event_8php_source.html":[4,0,0,7,3,12],
 "d1/dff/_fizz_sound_8php_source.html":[4,0,0,25,5,66],
-"d1/dff/_get_type_id_from_const_trait_8php_source.html":[4,0,1,0,1,0,1,42],
+"d1/dff/_get_type_id_from_const_trait_8php_source.html":[4,0,1,0,1,0,1,46],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html":[2,0,0,0,228],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html":[3,0,1,0,230],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,228,58],
@@ -246,8 +249,5 @@ var NAVTREEINDEX29 =
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,230,12],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,228,55],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,230,55],
-"d2/d00/classpocketmine_1_1block_1_1_torch.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,228,49],
-"d2/d00/classpocketmine_1_1block_1_1_torch.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,230,49],
-"d2/d00/classpocketmine_1_1block_1_1_torch.html#ac7c6b2cf8fdce0bf501dc62d06b04aff":[2,0,0,0,228,6],
-"d2/d00/classpocketmine_1_1block_1_1_torch.html#ac7c6b2cf8fdce0bf501dc62d06b04aff":[3,0,1,0,230,6]
+"d2/d00/classpocketmine_1_1block_1_1_torch.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,228,49]
 };

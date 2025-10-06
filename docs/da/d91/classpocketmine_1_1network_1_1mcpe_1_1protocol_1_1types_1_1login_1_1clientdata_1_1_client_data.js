@@ -24,7 +24,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientda
     [ "$PlatformOfflineId", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a9641704f31756d54f7a0f0c97df80cfe", null ],
     [ "$PlatformOnlineId", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#ab9c6a66f3e29b149c279feda8ac3d8e6", null ],
     [ "$PlatformType", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a1579eec35d83da8879ad86ffb58fb779", null ],
-    [ "$PlayFabId", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#adb82f259596e25d08b247759a2790717", null ],
     [ "$PremiumSkin", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a03f9cd98cad1237f6f140dc7404d7c1c", null ],
     [ "$SelfSignedId", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a8edfdb3c97a1cdd414017f6735c9c378", null ],
     [ "$ServerAddress", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#ada52a53fc9a5b748a77ea862cdeba92b", null ],

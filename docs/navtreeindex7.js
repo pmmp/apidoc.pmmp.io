@@ -146,7 +146,7 @@ var NAVTREEINDEX7 =
 "d0/d9f/_toast_request_packet_8php_source.html":[4,0,1,0,1,0,203],
 "d0/d9f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_lab_table_combine_stack_request_action.html":[3,0,1,16,0,6,1,4,0,16],
 "d0/da1/_complex_inventory_map_entry_8php_source.html":[4,0,0,12,0,9],
-"d0/da1/_editor_world_type_8php_source.html":[4,0,1,0,1,0,1,28],
+"d0/da1/_editor_world_type_8php_source.html":[4,0,1,0,1,0,1,31],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html":[2,0,0,0,53],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html":[3,0,1,0,55],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,53,48],

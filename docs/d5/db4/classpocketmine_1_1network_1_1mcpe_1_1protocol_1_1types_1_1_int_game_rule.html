@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-05a71d8cc5185aa9e46ef5f9754bb862464c13e0</span>
    </div>
   </td>
  </tr>
@@ -130,8 +130,8 @@ $(function(){initNavTree('d5/db4/classpocketmine_1_1network_1_1mcpe_1_1protocol_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aefbb593839d90e08d53b7f5975085e5a" id="r_aefbb593839d90e08d53b7f5975085e5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefbb593839d90e08d53b7f5975085e5a">__construct</a> (int $value, bool $isPlayerModifiable)</td></tr>
 <tr class="separator:aefbb593839d90e08d53b7f5975085e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02e02e38f2724aaa609b6e87dd4d81f2" id="r_a02e02e38f2724aaa609b6e87dd4d81f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02e02e38f2724aaa609b6e87dd4d81f2">encode</a> (ByteBufferWriter $out)</td></tr>
-<tr class="separator:a02e02e38f2724aaa609b6e87dd4d81f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed576e168cf398abb95e4ca72c37bf42" id="r_aed576e168cf398abb95e4ca72c37bf42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed576e168cf398abb95e4ca72c37bf42">encode</a> (ByteBufferWriter $out, bool $isStartGame)</td></tr>
+<tr class="separator:aed576e168cf398abb95e4ca72c37bf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade52ab8631856cc8b3c067b454a0a7c0" id="r_ade52ab8631856cc8b3c067b454a0a7c0"><td class="memItemLeft" align="right" valign="top"><a id="ade52ab8631856cc8b3c067b454a0a7c0" name="ade52ab8631856cc8b3c067b454a0a7c0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>getTypeId</b> ()</td></tr>
 <tr class="separator:ade52ab8631856cc8b3c067b454a0a7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +142,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8e12a0662d19f00e5865a8a4bc915fc" id="r_ac8e12a0662d19f00e5865a8a4bc915fc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e12a0662d19f00e5865a8a4bc915fc">decode</a> (ByteBufferReader $in, bool $isPlayerModifiable)</td></tr>
-<tr class="separator:ac8e12a0662d19f00e5865a8a4bc915fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb0b84169c64b1cfc3d88a7bd12f4ff" id="r_aacb0b84169c64b1cfc3d88a7bd12f4ff"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb0b84169c64b1cfc3d88a7bd12f4ff">decode</a> (ByteBufferReader $in, bool $isPlayerModifiable, bool $isStartGame)</td></tr>
+<tr class="separator:aacb0b84169c64b1cfc3d88a7bd12f4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -152,7 +152,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00021">21</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00022">22</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aefbb593839d90e08d53b7f5975085e5a" name="aefbb593839d90e08d53b7f5975085e5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefbb593839d90e08d53b7f5975085e5a">&#9670;&#160;</a></span>__construct()</h2>
@@ -173,13 +173,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00028">28</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00029">29</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac8e12a0662d19f00e5865a8a4bc915fc" name="ac8e12a0662d19f00e5865a8a4bc915fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8e12a0662d19f00e5865a8a4bc915fc">&#9670;&#160;</a></span>decode()</h2>
+<a id="aacb0b84169c64b1cfc3d88a7bd12f4ff" name="aacb0b84169c64b1cfc3d88a7bd12f4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb0b84169c64b1cfc3d88a7bd12f4ff">&#9670;&#160;</a></span>decode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +195,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$isPlayerModifiable</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$isPlayerModifiable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$isStartGame</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -205,12 +210,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00041">41</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00046">46</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
 
 </div>
 </div>
-<a id="a02e02e38f2724aaa609b6e87dd4d81f2" name="a02e02e38f2724aaa609b6e87dd4d81f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02e02e38f2724aaa609b6e87dd4d81f2">&#9670;&#160;</a></span>encode()</h2>
+<a id="aed576e168cf398abb95e4ca72c37bf42" name="aed576e168cf398abb95e4ca72c37bf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed576e168cf398abb95e4ca72c37bf42">&#9670;&#160;</a></span>encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,15 +223,19 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">pocketmine\network\mcpe\protocol\types\IntGameRule::encode </td>
           <td>(</td>
-          <td class="paramtype">ByteBufferWriter</td>          <td class="paramname"><span class="paramname"><em>$out</em></span></td><td>)</td>
+          <td class="paramtype">ByteBufferWriter</td>          <td class="paramname"><span class="paramname"><em>$out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$isStartGame</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="../../da/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_game_rule.html">pocketmine\network\mcpe\protocol\types\GameRule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00037">37</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00038">38</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
 
 </div>
 </div>
@@ -245,7 +254,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00033">33</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00034">34</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
 
 </div>
 </div>
@@ -289,7 +298,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00024">24</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html#l00025">25</a> of file <a class="el" href="../../dd/db2/_int_game_rule_8php_source.html">IntGameRule.php</a>.</p>
 
 </div>
 </div>

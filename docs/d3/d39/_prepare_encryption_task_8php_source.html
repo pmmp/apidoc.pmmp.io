@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-05a71d8cc5185aa9e46ef5f9754bb862464c13e0</span>
    </div>
   </td>
  </tr>
@@ -158,49 +158,52 @@ $(function(){initNavTree('d3/d39/_prepare_encryption_task_8php_source.html','../
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $clientPub,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        \Closure $onCompletion</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span>(self::$SERVER_PRIVATE_KEY === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            $serverPrivateKey = openssl_pkey_new([<span class="stringliteral">&quot;ec&quot;</span> =&gt; [<span class="stringliteral">&quot;curve_name&quot;</span> =&gt; <span class="stringliteral">&quot;secp384r1&quot;</span>]]);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span>($serverPrivateKey === <span class="keyword">false</span>){</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;openssl_pkey_new() failed: &quot;</span> . openssl_error_string());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            self::$SERVER_PRIVATE_KEY = $serverPrivateKey;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;serverPrivateKey = igbinary_serialize(openssl_pkey_get_details(self::$SERVER_PRIVATE_KEY));</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;<a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b">storeLocal</a>(self::TLS_KEY_ON_COMPLETION, $onCompletion);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">//make sure the key is valid before we break the stack trace</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="comment">//TODO: maybe in the future we should require OpenSSLAsymmetricKey here instead of string</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        JwtUtils::parseDerPublicKey($this-&gt;clientPub);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>(self::$SERVER_PRIVATE_KEY === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $serverPrivateKey = openssl_pkey_new([<span class="stringliteral">&quot;ec&quot;</span> =&gt; [<span class="stringliteral">&quot;curve_name&quot;</span> =&gt; <span class="stringliteral">&quot;secp384r1&quot;</span>]]);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span>($serverPrivateKey === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;openssl_pkey_new() failed: &quot;</span> . openssl_error_string());</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            self::$SERVER_PRIVATE_KEY = $serverPrivateKey;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $this-&gt;serverPrivateKey = igbinary_serialize(openssl_pkey_get_details(self::$SERVER_PRIVATE_KEY));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $this-&gt;<a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b">storeLocal</a>(self::TLS_KEY_ON_COMPLETION, $onCompletion);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7">onRun</a>() : void{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $serverPrivDetails = igbinary_unserialize($this-&gt;serverPrivateKey);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $serverPriv = openssl_pkey_new($serverPrivDetails);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span>($serverPriv === <span class="keyword">false</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Failed to restore server signing key from details&quot;</span>);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $clientPub = JwtUtils::parseDerPublicKey($this-&gt;clientPub);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $sharedSecret = EncryptionUtils::generateSharedSecret($serverPriv, $clientPub);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $salt = random_bytes(16);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $this-&gt;aesKey = EncryptionUtils::generateKey($sharedSecret, $salt);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;handshakeJwt = EncryptionUtils::generateServerHandshakeJwt($serverPriv, $salt);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7">onRun</a>() : void{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $serverPrivDetails = igbinary_unserialize($this-&gt;serverPrivateKey);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $serverPriv = openssl_pkey_new($serverPrivDetails);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>($serverPriv === <span class="keyword">false</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Failed to restore server signing key from details&quot;</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $clientPub = JwtUtils::parseDerPublicKey($this-&gt;clientPub);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $sharedSecret = EncryptionUtils::generateSharedSecret($serverPriv, $clientPub);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $salt = random_bytes(16);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $this-&gt;aesKey = EncryptionUtils::generateKey($sharedSecret, $salt);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $this-&gt;handshakeJwt = EncryptionUtils::generateServerHandshakeJwt($serverPriv, $salt);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">   79</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">onCompletion</a>() : void{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        $callback = $this-&gt;fetchLocal(self::TLS_KEY_ON_COMPLETION);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span>($this-&gt;aesKey === <span class="keyword">null</span> || $this-&gt;handshakeJwt === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Something strange happened here ...&quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $callback($this-&gt;aesKey, $this-&gt;handshakeJwt);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">onCompletion</a>() : void{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $callback = $this-&gt;fetchLocal(self::TLS_KEY_ON_COMPLETION);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">if</span>($this-&gt;aesKey === <span class="keyword">null</span> || $this-&gt;handshakeJwt === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">AssumptionFailedError</a>(<span class="stringliteral">&quot;Something strange happened here ...&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $callback($this-&gt;aesKey, $this-&gt;handshakeJwt);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_jwt_utils_html"><div class="ttname"><a href="../../de/d36/classpocketmine_1_1network_1_1mcpe_1_1_jwt_utils.html">pocketmine\network\mcpe\JwtUtils</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfb/_jwt_utils_8php_source.html#l00064">JwtUtils.php:64</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task_html"><div class="ttname"><a href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html">pocketmine\network\mcpe\encryption\PrepareEncryptionTask</a></div><div class="ttdef"><b>Definition</b> <a href="#l00036">PrepareEncryptionTask.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task_html_a951d33bc9b9ce99b2f969bf522a15ed7"><div class="ttname"><a href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7">pocketmine\network\mcpe\encryption\PrepareEncryptionTask\onRun</a></div><div class="ttdeci">onRun()</div><div class="ttdef"><b>Definition</b> <a href="#l00066">PrepareEncryptionTask.php:66</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task_html_a951d33bc9b9ce99b2f969bf522a15ed7"><div class="ttname"><a href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#a951d33bc9b9ce99b2f969bf522a15ed7">pocketmine\network\mcpe\encryption\PrepareEncryptionTask\onRun</a></div><div class="ttdeci">onRun()</div><div class="ttdef"><b>Definition</b> <a href="#l00069">PrepareEncryptionTask.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task_html_acb724a6ac8242603b8f32a1b493e05f2"><div class="ttname"><a href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#acb724a6ac8242603b8f32a1b493e05f2">pocketmine\network\mcpe\encryption\PrepareEncryptionTask\__construct</a></div><div class="ttdeci">__construct(private string $clientPub, \Closure $onCompletion)</div><div class="ttdef"><b>Definition</b> <a href="#l00050">PrepareEncryptionTask.php:50</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task_html_ada4dd996154cbcfa45fabc0796e31334"><div class="ttname"><a href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">pocketmine\network\mcpe\encryption\PrepareEncryptionTask\onCompletion</a></div><div class="ttdeci">onCompletion()</div><div class="ttdef"><b>Definition</b> <a href="#l00079">PrepareEncryptionTask.php:79</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task_html_ada4dd996154cbcfa45fabc0796e31334"><div class="ttname"><a href="../../d7/d18/classpocketmine_1_1network_1_1mcpe_1_1encryption_1_1_prepare_encryption_task.html#ada4dd996154cbcfa45fabc0796e31334">pocketmine\network\mcpe\encryption\PrepareEncryptionTask\onCompletion</a></div><div class="ttdeci">onCompletion()</div><div class="ttdef"><b>Definition</b> <a href="#l00082">PrepareEncryptionTask.php:82</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">pocketmine\scheduler\AsyncTask</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d42/_async_task_8php_source.html#l00062">AsyncTask.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ad5e0edb131fe81a8b68e64c70ba06d2b"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b">pocketmine\scheduler\AsyncTask\storeLocal</a></div><div class="ttdeci">storeLocal(string $key, mixed $complexData)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d42/_async_task_8php_source.html#l00231">AsyncTask.php:231</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>

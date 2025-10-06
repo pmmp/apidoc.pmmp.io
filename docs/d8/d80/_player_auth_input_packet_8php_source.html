@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-05a71d8cc5185aa9e46ef5f9754bb862464c13e0</span>
    </div>
   </td>
  </tr>
@@ -136,330 +136,330 @@ $(function(){initNavTree('d8/d80/_player_auth_input_packet_8php_source.html','..
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">pocketmine\network\mcpe\protocol\types\ItemInteractionData</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../de/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_action.html">pocketmine\network\mcpe\protocol\types\PlayerAction</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html">pocketmine\network\mcpe\protocol\types\PlayerAuthInputFlags</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_interface" href="../../d7/df2/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action.html">pocketmine\network\mcpe\protocol\types\PlayerBlockAction</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../db/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_stop_break.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionStopBreak</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../d4/d34/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionWithBlockInfo</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <a class="code hl_class" href="../../dd/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_play_mode.html">pocketmine\network\mcpe\protocol\types\PlayMode</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">function</span> count;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html">PlayerAuthInputPacket</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">DataPacket</a> implements <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">const</span> NETWORK_ID = ProtocolInfo::PLAYER_AUTH_INPUT_PACKET;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $pitch;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $yaw;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $headYaw;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $moveVecX;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $moveVecZ;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $inputMode;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $playMode;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $interactionMode;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $tick;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">private</span> ?array $blockActions = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $analogMoveVecX;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $analogMoveVecZ;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> internalCreate(</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">float</span> $pitch,</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">float</span> $yaw,</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">float</span> $headYaw,</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">float</span> $moveVecX,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">float</span> $moveVecZ,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">int</span> $inputMode,</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">int</span> $playMode,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">int</span> $interactionMode,</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">int</span> $tick,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        ?<a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        ?<a class="code hl_class" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        ?array $blockActions,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        ?<a class="code hl_class" href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">float</span> $analogMoveVecX,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">float</span> $analogMoveVecZ,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation,</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    ) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $result = <span class="keyword">new</span> <span class="keyword">self</span>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $result-&gt;position = $position;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $result-&gt;pitch = $pitch;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $result-&gt;yaw = $yaw;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $result-&gt;headYaw = $headYaw;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $result-&gt;moveVecX = $moveVecX;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $result-&gt;moveVecZ = $moveVecZ;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $result-&gt;inputFlags = $inputFlags;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $result-&gt;inputMode = $inputMode;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $result-&gt;playMode = $playMode;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $result-&gt;interactionMode = $interactionMode;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $result-&gt;interactRotation = $interactRotation;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $result-&gt;tick = $tick;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $result-&gt;delta = $delta;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $result-&gt;itemInteractionData = $itemInteractionData;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $result-&gt;itemStackRequest = $itemStackRequest;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $result-&gt;blockActions = $blockActions;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $result-&gt;vehicleInfo = $vehicleInfo;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $result-&gt;analogMoveVecX = $analogMoveVecX;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $result-&gt;analogMoveVecZ = $analogMoveVecZ;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        $result-&gt;cameraOrientation = $cameraOrientation;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $result-&gt;rawMove = $rawMove;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27">  122</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27">create</a>(</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position,</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordtype">float</span> $pitch,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordtype">float</span> $yaw,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordtype">float</span> $headYaw,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">float</span> $moveVecX,</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordtype">float</span> $moveVecZ,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags,</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordtype">int</span> $inputMode,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordtype">int</span> $playMode,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordtype">int</span> $interactionMode,</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation,</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordtype">int</span> $tick,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        ?<a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData,</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        ?<a class="code hl_class" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest,</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        ?array $blockActions,</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        ?<a class="code hl_class" href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo,</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordtype">float</span> $analogMoveVecX,</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordtype">float</span> $analogMoveVecZ,</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    ) : self{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        if($inputFlags-&gt;getLength() !== <a class="code hl_class" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html">PlayerAuthInputFlags</a>::NUMBER_OF_FLAGS){</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Input flags must be &quot;</span> . PlayerAuthInputFlags::NUMBER_OF_FLAGS . <span class="stringliteral">&quot; bits long&quot;</span>);</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        }</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::PERFORM_ITEM_STACK_REQUEST, $itemStackRequest !== <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::PERFORM_ITEM_INTERACTION, $itemInteractionData !== <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::PERFORM_BLOCK_ACTIONS, $blockActions !== <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::IN_CLIENT_PREDICTED_VEHICLE, $vehicleInfo !== <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">return</span> self::internalCreate(</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            $position,</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            $pitch,</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            $yaw,</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            $headYaw,</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            $moveVecX,</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            $moveVecZ,</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            $inputFlags,</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            $inputMode,</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            $playMode,</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            $interactionMode,</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            $interactRotation,</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            $tick,</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            $delta,</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            $itemInteractionData,</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            $itemStackRequest,</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            $blockActions,</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            $vehicleInfo,</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            $analogMoveVecX,</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            $analogMoveVecZ,</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            $cameraOrientation,</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            $rawMove</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        );</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html">pocketmine\network\mcpe\protocol\types\PlayerAuthInputVehicleInfo</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_interface" href="../../d7/df2/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action.html">pocketmine\network\mcpe\protocol\types\PlayerBlockAction</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>use <a class="code hl_class" href="../../db/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_stop_break.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionStopBreak</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <a class="code hl_class" href="../../d4/d34/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionWithBlockInfo</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <a class="code hl_class" href="../../dd/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_play_mode.html">pocketmine\network\mcpe\protocol\types\PlayMode</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html">   38</a></span><span class="keyword">class </span><a class="code hl_class" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html">PlayerAuthInputPacket</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">DataPacket</a> implements <a class="code hl_interface" href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">ServerboundPacket</a>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">const</span> NETWORK_ID = ProtocolInfo::PLAYER_AUTH_INPUT_PACKET;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $pitch;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $yaw;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $headYaw;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $moveVecX;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $moveVecZ;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $inputMode;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $playMode;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $interactionMode;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $tick;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">private</span> ?array $blockActions = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $analogMoveVecX;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $analogMoveVecZ;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> internalCreate(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">float</span> $pitch,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">float</span> $yaw,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">float</span> $headYaw,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">float</span> $moveVecX,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">float</span> $moveVecZ,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">int</span> $inputMode,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">int</span> $playMode,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">int</span> $interactionMode,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">int</span> $tick,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        ?<a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        ?<a class="code hl_class" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        ?array $blockActions,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        ?<a class="code hl_class" href="../../d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">float</span> $analogMoveVecX,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">float</span> $analogMoveVecZ,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    ) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $result = <span class="keyword">new</span> <span class="keyword">self</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $result-&gt;position = $position;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $result-&gt;pitch = $pitch;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $result-&gt;yaw = $yaw;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $result-&gt;headYaw = $headYaw;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $result-&gt;moveVecX = $moveVecX;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $result-&gt;moveVecZ = $moveVecZ;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $result-&gt;inputFlags = $inputFlags;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $result-&gt;inputMode = $inputMode;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        $result-&gt;playMode = $playMode;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        $result-&gt;interactionMode = $interactionMode;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        $result-&gt;interactRotation = $interactRotation;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        $result-&gt;tick = $tick;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $result-&gt;delta = $delta;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        $result-&gt;itemInteractionData = $itemInteractionData;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $result-&gt;itemStackRequest = $itemStackRequest;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $result-&gt;blockActions = $blockActions;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $result-&gt;vehicleInfo = $vehicleInfo;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $result-&gt;analogMoveVecX = $analogMoveVecX;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        $result-&gt;analogMoveVecZ = $analogMoveVecZ;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        $result-&gt;cameraOrientation = $cameraOrientation;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        $result-&gt;rawMove = $rawMove;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27">  123</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27">create</a>(</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordtype">float</span> $pitch,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordtype">float</span> $yaw,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">float</span> $headYaw,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordtype">float</span> $moveVecX,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordtype">float</span> $moveVecZ,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a> $inputFlags,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordtype">int</span> $inputMode,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordtype">int</span> $playMode,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordtype">int</span> $interactionMode,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $interactRotation,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordtype">int</span> $tick,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $delta,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        ?<a class="code hl_class" href="../../dc/dd2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_item_interaction_data.html">ItemInteractionData</a> $itemInteractionData,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        ?<a class="code hl_class" href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">ItemStackRequest</a> $itemStackRequest,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        ?array $blockActions,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        ?<a class="code hl_class" href="../../d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a> $vehicleInfo,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordtype">float</span> $analogMoveVecX,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordtype">float</span> $analogMoveVecZ,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $cameraOrientation,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a> $rawMove</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    ) : self{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        if($inputFlags-&gt;getLength() !== <a class="code hl_class" href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html">PlayerAuthInputFlags</a>::NUMBER_OF_FLAGS){</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Input flags must be &quot;</span> . PlayerAuthInputFlags::NUMBER_OF_FLAGS . <span class="stringliteral">&quot; bits long&quot;</span>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::PERFORM_ITEM_STACK_REQUEST, $itemStackRequest !== <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::PERFORM_ITEM_INTERACTION, $itemInteractionData !== <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::PERFORM_BLOCK_ACTIONS, $blockActions !== <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        $inputFlags-&gt;set(PlayerAuthInputFlags::IN_CLIENT_PREDICTED_VEHICLE, $vehicleInfo !== <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">return</span> self::internalCreate(</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            $position,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            $pitch,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            $yaw,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            $headYaw,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            $moveVecX,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            $moveVecZ,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            $inputFlags,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            $inputMode,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            $playMode,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            $interactionMode,</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            $interactRotation,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            $tick,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            $delta,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            $itemInteractionData,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            $itemStackRequest,</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            $blockActions,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            $vehicleInfo,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            $analogMoveVecX,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            $analogMoveVecZ,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            $cameraOrientation,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            $rawMove</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        );</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
 </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPosition() : <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        return $this-&gt;position;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPitch() : float{</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        return $this-&gt;pitch;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">public</span> <span class="keyword">function</span> getYaw() : float{</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        return $this-&gt;yaw;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keyword">public</span> <span class="keyword">function</span> getHeadYaw() : float{</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        return $this-&gt;headYaw;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMoveVecX() : float{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        return $this-&gt;moveVecX;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMoveVecZ() : float{</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        return $this-&gt;moveVecZ;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c">  206</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c">getInputFlags</a>() : <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a>{</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        return $this-&gt;inputFlags;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPosition() : <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        return $this-&gt;position;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPitch() : float{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        return $this-&gt;pitch;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">public</span> <span class="keyword">function</span> getYaw() : float{</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        return $this-&gt;yaw;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">public</span> <span class="keyword">function</span> getHeadYaw() : float{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        return $this-&gt;headYaw;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMoveVecX() : float{</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        return $this-&gt;moveVecX;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMoveVecZ() : float{</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        return $this-&gt;moveVecZ;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="foldopen" id="foldopen00207" data-start="{" data-end="}">
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c">  207</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c">getInputFlags</a>() : <a class="code hl_class" href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">BitSet</a>{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        return $this-&gt;inputFlags;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
 </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a29d5c3aac7f9a7c2433f725eb1d992bb">  213</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a29d5c3aac7f9a7c2433f725eb1d992bb">getInputMode</a>() : int{</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        return $this-&gt;inputMode;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a29d5c3aac7f9a7c2433f725eb1d992bb">  214</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a29d5c3aac7f9a7c2433f725eb1d992bb">getInputMode</a>() : int{</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        return $this-&gt;inputMode;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
 </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a928926ca6589c8c1d3fa17ddb961f41d">  220</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a928926ca6589c8c1d3fa17ddb961f41d">getPlayMode</a>() : int{</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        return $this-&gt;playMode;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a928926ca6589c8c1d3fa17ddb961f41d">  221</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a928926ca6589c8c1d3fa17ddb961f41d">getPlayMode</a>() : int{</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        return $this-&gt;playMode;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
 </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3">  227</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3">getInteractionMode</a>() : int{</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        return $this-&gt;interactionMode;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3">  228</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3">getInteractionMode</a>() : int{</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        return $this-&gt;interactionMode;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
 </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInteractRotation() : <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a>{ return $this-&gt;interactRotation; }</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTick() : int{</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        return $this-&gt;tick;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDelta() : Vector3{</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        return $this-&gt;delta;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemInteractionData() : ?ItemInteractionData{</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        return $this-&gt;itemInteractionData;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemStackRequest() : ?ItemStackRequest{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        return $this-&gt;itemStackRequest;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="foldopen" id="foldopen00252" data-start="{" data-end="}">
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f">  252</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f">getBlockActions</a>() : ?array{</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        return $this-&gt;blockActions;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">public</span> <span class="keyword">function</span> getInteractRotation() : <a class="code hl_class" href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">Vector2</a>{ return $this-&gt;interactRotation; }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTick() : int{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        return $this-&gt;tick;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDelta() : Vector3{</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        return $this-&gt;delta;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemInteractionData() : ?ItemInteractionData{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        return $this-&gt;itemInteractionData;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItemStackRequest() : ?ItemStackRequest{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        return $this-&gt;itemStackRequest;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    }</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f">  253</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f">getBlockActions</a>() : ?array{</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        return $this-&gt;blockActions;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
 </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keyword">public</span> <span class="keyword">function</span> getVehicleInfo() : ?<a class="code hl_class" href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a>{ return $this-&gt;vehicleInfo; }</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAnalogMoveVecX() : float{ return $this-&gt;analogMoveVecX; }</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAnalogMoveVecZ() : float{ return $this-&gt;analogMoveVecZ; }</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCameraOrientation() : Vector3{ return $this-&gt;cameraOrientation; }</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRawMove() : Vector2{ return $this-&gt;rawMove; }</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="foldopen" id="foldopen00266" data-start="{" data-end="}">
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a777d5d174e42f40fa5dc5142b5595e77">  266</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a777d5d174e42f40fa5dc5142b5595e77">decodePayload</a>(ByteBufferReader $in) : void{</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        $this-&gt;pitch = LE::readFloat($in);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        $this-&gt;yaw = LE::readFloat($in);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        $this-&gt;position = CommonTypes::getVector3($in);</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        $this-&gt;moveVecX = LE::readFloat($in);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        $this-&gt;moveVecZ = LE::readFloat($in);</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        $this-&gt;headYaw = LE::readFloat($in);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        $this-&gt;inputFlags = BitSet::read($in, PlayerAuthInputFlags::NUMBER_OF_FLAGS);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        $this-&gt;inputMode = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        $this-&gt;playMode = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        $this-&gt;interactionMode = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        $this-&gt;interactRotation = CommonTypes::getVector2($in);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        $this-&gt;tick = VarInt::readUnsignedLong($in);</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        $this-&gt;delta = CommonTypes::getVector3($in);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::PERFORM_ITEM_INTERACTION)){</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            $this-&gt;itemInteractionData = ItemInteractionData::read($in);</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::PERFORM_ITEM_STACK_REQUEST)){</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            $this-&gt;itemStackRequest = ItemStackRequest::read($in);</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        }</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::PERFORM_BLOCK_ACTIONS)){</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            $this-&gt;blockActions = [];</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            $max = VarInt::readSignedInt($in);</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">for</span>($i = 0; $i &lt; $max; ++$i){</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                $actionType = VarInt::readSignedInt($in);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                $this-&gt;blockActions[] = match(<span class="keyword">true</span>){</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                    PlayerBlockActionWithBlockInfo::isValidActionType($actionType) =&gt; PlayerBlockActionWithBlockInfo::read($in, $actionType),</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    $actionType === PlayerAction::STOP_BREAK =&gt; <span class="keyword">new</span> PlayerBlockActionStopBreak(),</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                    <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Unexpected block action type $actionType&quot;</span>)</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                };</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            }</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::IN_CLIENT_PREDICTED_VEHICLE)){</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            $this-&gt;vehicleInfo = PlayerAuthInputVehicleInfo::read($in);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        $this-&gt;analogMoveVecX = LE::readFloat($in);</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        $this-&gt;analogMoveVecZ = LE::readFloat($in);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        $this-&gt;cameraOrientation = CommonTypes::getVector3($in);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        $this-&gt;rawMove = CommonTypes::getVector2($in);</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">public</span> <span class="keyword">function</span> getVehicleInfo() : ?<a class="code hl_class" href="../../d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html">PlayerAuthInputVehicleInfo</a>{ return $this-&gt;vehicleInfo; }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAnalogMoveVecX() : float{ return $this-&gt;analogMoveVecX; }</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAnalogMoveVecZ() : float{ return $this-&gt;analogMoveVecZ; }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCameraOrientation() : Vector3{ return $this-&gt;cameraOrientation; }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRawMove() : Vector2{ return $this-&gt;rawMove; }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="foldopen" id="foldopen00267" data-start="{" data-end="}">
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a777d5d174e42f40fa5dc5142b5595e77">  267</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a777d5d174e42f40fa5dc5142b5595e77">decodePayload</a>(ByteBufferReader $in) : void{</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        $this-&gt;pitch = LE::readFloat($in);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        $this-&gt;yaw = LE::readFloat($in);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        $this-&gt;position = CommonTypes::getVector3($in);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        $this-&gt;moveVecX = LE::readFloat($in);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        $this-&gt;moveVecZ = LE::readFloat($in);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        $this-&gt;headYaw = LE::readFloat($in);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        $this-&gt;inputFlags = BitSet::read($in, PlayerAuthInputFlags::NUMBER_OF_FLAGS);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        $this-&gt;inputMode = VarInt::readUnsignedInt($in);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        $this-&gt;playMode = VarInt::readUnsignedInt($in);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        $this-&gt;interactionMode = VarInt::readUnsignedInt($in);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        $this-&gt;interactRotation = CommonTypes::getVector2($in);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        $this-&gt;tick = VarInt::readUnsignedLong($in);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        $this-&gt;delta = CommonTypes::getVector3($in);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::PERFORM_ITEM_INTERACTION)){</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            $this-&gt;itemInteractionData = ItemInteractionData::read($in);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::PERFORM_ITEM_STACK_REQUEST)){</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            $this-&gt;itemStackRequest = ItemStackRequest::read($in);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::PERFORM_BLOCK_ACTIONS)){</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            $this-&gt;blockActions = [];</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            $max = VarInt::readSignedInt($in);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <span class="keywordflow">for</span>($i = 0; $i &lt; $max; ++$i){</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                $actionType = VarInt::readSignedInt($in);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                $this-&gt;blockActions[] = match(<span class="keyword">true</span>){</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    PlayerBlockActionWithBlockInfo::isValidActionType($actionType) =&gt; PlayerBlockActionWithBlockInfo::read($in, $actionType),</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                    $actionType === PlayerAction::STOP_BREAK =&gt; <span class="keyword">new</span> PlayerBlockActionStopBreak(),</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                    <span class="keywordflow">default</span> =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Unexpected block action type $actionType&quot;</span>)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                };</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordflow">if</span>($this-&gt;inputFlags-&gt;get(PlayerAuthInputFlags::IN_CLIENT_PREDICTED_VEHICLE)){</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            $this-&gt;vehicleInfo = PlayerAuthInputVehicleInfo::read($in);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        $this-&gt;analogMoveVecX = LE::readFloat($in);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        $this-&gt;analogMoveVecZ = LE::readFloat($in);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        $this-&gt;cameraOrientation = CommonTypes::getVector3($in);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        $this-&gt;rawMove = CommonTypes::getVector2($in);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    }</div>
 </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="foldopen" id="foldopen00307" data-start="{" data-end="}">
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a08ed285ecfe216f72ecf2d8ffadad605">  307</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a08ed285ecfe216f72ecf2d8ffadad605">encodePayload</a>(ByteBufferWriter $out) : void{</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        LE::writeFloat($out, $this-&gt;pitch);</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        LE::writeFloat($out, $this-&gt;yaw);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        CommonTypes::putVector3($out, $this-&gt;position);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        LE::writeFloat($out, $this-&gt;moveVecX);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        LE::writeFloat($out, $this-&gt;moveVecZ);</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        LE::writeFloat($out, $this-&gt;headYaw);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        $this-&gt;inputFlags-&gt;write($out);</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        VarInt::writeUnsignedInt($out, $this-&gt;inputMode);</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        VarInt::writeUnsignedInt($out, $this-&gt;playMode);</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        VarInt::writeUnsignedInt($out, $this-&gt;interactionMode);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        CommonTypes::putVector2($out, $this-&gt;interactRotation);</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        VarInt::writeUnsignedLong($out, $this-&gt;tick);</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        CommonTypes::putVector3($out, $this-&gt;delta);</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordflow">if</span>($this-&gt;itemInteractionData !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            $this-&gt;itemInteractionData-&gt;write($out);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        }</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">if</span>($this-&gt;itemStackRequest !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            $this-&gt;itemStackRequest-&gt;write($out);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        }</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="keywordflow">if</span>($this-&gt;blockActions !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            VarInt::writeSignedInt($out, count($this-&gt;blockActions));</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="keywordflow">foreach</span>($this-&gt;blockActions as $blockAction){</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                VarInt::writeSignedInt($out, $blockAction-&gt;getActionType());</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                $blockAction-&gt;write($out);</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            }</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        }</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keywordflow">if</span>($this-&gt;vehicleInfo !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            $this-&gt;vehicleInfo-&gt;write($out);</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        }</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        LE::writeFloat($out, $this-&gt;analogMoveVecX);</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        LE::writeFloat($out, $this-&gt;analogMoveVecZ);</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        CommonTypes::putVector3($out, $this-&gt;cameraOrientation);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        CommonTypes::putVector2($out, $this-&gt;rawMove);</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="foldopen" id="foldopen00308" data-start="{" data-end="}">
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a08ed285ecfe216f72ecf2d8ffadad605">  308</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a08ed285ecfe216f72ecf2d8ffadad605">encodePayload</a>(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        LE::writeFloat($out, $this-&gt;pitch);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        LE::writeFloat($out, $this-&gt;yaw);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        CommonTypes::putVector3($out, $this-&gt;position);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        LE::writeFloat($out, $this-&gt;moveVecX);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        LE::writeFloat($out, $this-&gt;moveVecZ);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        LE::writeFloat($out, $this-&gt;headYaw);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        $this-&gt;inputFlags-&gt;write($out);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        VarInt::writeUnsignedInt($out, $this-&gt;inputMode);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        VarInt::writeUnsignedInt($out, $this-&gt;playMode);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        VarInt::writeUnsignedInt($out, $this-&gt;interactionMode);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        CommonTypes::putVector2($out, $this-&gt;interactRotation);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        VarInt::writeUnsignedLong($out, $this-&gt;tick);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        CommonTypes::putVector3($out, $this-&gt;delta);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keywordflow">if</span>($this-&gt;itemInteractionData !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            $this-&gt;itemInteractionData-&gt;write($out);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <span class="keywordflow">if</span>($this-&gt;itemStackRequest !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            $this-&gt;itemStackRequest-&gt;write($out);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">if</span>($this-&gt;blockActions !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            VarInt::writeSignedInt($out, count($this-&gt;blockActions));</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="keywordflow">foreach</span>($this-&gt;blockActions as $blockAction){</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                VarInt::writeSignedInt($out, $blockAction-&gt;getActionType());</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                $blockAction-&gt;write($out);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            }</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">if</span>($this-&gt;vehicleInfo !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            $this-&gt;vehicleInfo-&gt;write($out);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        }</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        LE::writeFloat($out, $this-&gt;analogMoveVecX);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        LE::writeFloat($out, $this-&gt;analogMoveVecZ);</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        CommonTypes::putVector3($out, $this-&gt;cameraOrientation);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        CommonTypes::putVector2($out, $this-&gt;rawMove);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    }</div>
 </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a62b2a3f7ffc88dae034b416488a3405a">  343</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a62b2a3f7ffc88dae034b416488a3405a">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        return $handler-&gt;handlePlayerAuthInput($this);</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="foldopen" id="foldopen00344" data-start="{" data-end="}">
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a62b2a3f7ffc88dae034b416488a3405a">  344</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a62b2a3f7ffc88dae034b416488a3405a">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        return $handler-&gt;handlePlayerAuthInput($this);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    }</div>
 </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>}</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector2_html"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1math_1_1_vector2.html">pocketmine\math\Vector2</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d7f/_vector2_8php_source.html#l00032">Vector2.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00023">DataPacket.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception_html"><div class="ttname"><a href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dc6/_packet_decode_exception_8php_source.html#l00017">PacketDecodeException.php:17</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00037">PlayerAuthInputPacket.php:37</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a08ed285ecfe216f72ecf2d8ffadad605"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a08ed285ecfe216f72ecf2d8ffadad605">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00307">PlayerAuthInputPacket.php:307</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a29d5c3aac7f9a7c2433f725eb1d992bb"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a29d5c3aac7f9a7c2433f725eb1d992bb">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getInputMode</a></div><div class="ttdeci">getInputMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00213">PlayerAuthInputPacket.php:213</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a62b2a3f7ffc88dae034b416488a3405a"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a62b2a3f7ffc88dae034b416488a3405a">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00343">PlayerAuthInputPacket.php:343</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a777d5d174e42f40fa5dc5142b5595e77"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a777d5d174e42f40fa5dc5142b5595e77">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00266">PlayerAuthInputPacket.php:266</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a928926ca6589c8c1d3fa17ddb961f41d"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a928926ca6589c8c1d3fa17ddb961f41d">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getPlayMode</a></div><div class="ttdeci">getPlayMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00220">PlayerAuthInputPacket.php:220</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a9a3175b8b4c83234da6e92b894cf38f3"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getInteractionMode</a></div><div class="ttdeci">getInteractionMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00227">PlayerAuthInputPacket.php:227</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_ac368b38f7238f198e526b82e82d3716f"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getBlockActions</a></div><div class="ttdeci">getBlockActions()</div><div class="ttdef"><b>Definition</b> <a href="#l00252">PlayerAuthInputPacket.php:252</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_ae6f3eee637f9dfbf85fb80e861aac37c"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getInputFlags</a></div><div class="ttdeci">getInputFlags()</div><div class="ttdef"><b>Definition</b> <a href="#l00206">PlayerAuthInputPacket.php:206</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_aeb62982e60bdd0719c8ab07d28dbce27"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\create</a></div><div class="ttdeci">static create(Vector3 $position, float $pitch, float $yaw, float $headYaw, float $moveVecX, float $moveVecZ, BitSet $inputFlags, int $inputMode, int $playMode, int $interactionMode, Vector2 $interactRotation, int $tick, Vector3 $delta, ?ItemInteractionData $itemInteractionData, ?ItemStackRequest $itemStackRequest, ?array $blockActions, ?PlayerAuthInputVehicleInfo $vehicleInfo, float $analogMoveVecX, float $analogMoveVecZ, Vector3 $cameraOrientation, Vector2 $rawMove)</div><div class="ttdef"><b>Definition</b> <a href="#l00122">PlayerAuthInputPacket.php:122</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info_html"><div class="ttname"><a href="../../df/dbd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_vehicle_info.html">pocketmine\network\mcpe\protocol\PlayerAuthInputVehicleInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dea/_player_auth_input_vehicle_info_8php_source.html#l00022">PlayerAuthInputVehicleInfo.php:22</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00038">PlayerAuthInputPacket.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a08ed285ecfe216f72ecf2d8ffadad605"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a08ed285ecfe216f72ecf2d8ffadad605">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00308">PlayerAuthInputPacket.php:308</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a29d5c3aac7f9a7c2433f725eb1d992bb"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a29d5c3aac7f9a7c2433f725eb1d992bb">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getInputMode</a></div><div class="ttdeci">getInputMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00214">PlayerAuthInputPacket.php:214</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a62b2a3f7ffc88dae034b416488a3405a"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a62b2a3f7ffc88dae034b416488a3405a">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00344">PlayerAuthInputPacket.php:344</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a777d5d174e42f40fa5dc5142b5595e77"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a777d5d174e42f40fa5dc5142b5595e77">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00267">PlayerAuthInputPacket.php:267</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a928926ca6589c8c1d3fa17ddb961f41d"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a928926ca6589c8c1d3fa17ddb961f41d">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getPlayMode</a></div><div class="ttdeci">getPlayMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00221">PlayerAuthInputPacket.php:221</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_a9a3175b8b4c83234da6e92b894cf38f3"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#a9a3175b8b4c83234da6e92b894cf38f3">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getInteractionMode</a></div><div class="ttdeci">getInteractionMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00228">PlayerAuthInputPacket.php:228</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_ac368b38f7238f198e526b82e82d3716f"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ac368b38f7238f198e526b82e82d3716f">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getBlockActions</a></div><div class="ttdeci">getBlockActions()</div><div class="ttdef"><b>Definition</b> <a href="#l00253">PlayerAuthInputPacket.php:253</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_ae6f3eee637f9dfbf85fb80e861aac37c"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#ae6f3eee637f9dfbf85fb80e861aac37c">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\getInputFlags</a></div><div class="ttdeci">getInputFlags()</div><div class="ttdef"><b>Definition</b> <a href="#l00207">PlayerAuthInputPacket.php:207</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet_html_aeb62982e60bdd0719c8ab07d28dbce27"><div class="ttname"><a href="../../de/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_auth_input_packet.html#aeb62982e60bdd0719c8ab07d28dbce27">pocketmine\network\mcpe\protocol\PlayerAuthInputPacket\create</a></div><div class="ttdeci">static create(Vector3 $position, float $pitch, float $yaw, float $headYaw, float $moveVecX, float $moveVecZ, BitSet $inputFlags, int $inputMode, int $playMode, int $interactionMode, Vector2 $interactRotation, int $tick, Vector3 $delta, ?ItemInteractionData $itemInteractionData, ?ItemStackRequest $itemStackRequest, ?array $blockActions, ?PlayerAuthInputVehicleInfo $vehicleInfo, float $analogMoveVecX, float $analogMoveVecZ, Vector3 $cameraOrientation, Vector2 $rawMove)</div><div class="ttdef"><b>Definition</b> <a href="#l00123">PlayerAuthInputPacket.php:123</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set_html"><div class="ttname"><a href="../../db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html">pocketmine\network\mcpe\protocol\serializer\BitSet</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d9c/_bit_set_8php_source.html#l00025">BitSet.php:25</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_input_mode_html"><div class="ttname"><a href="../../dc/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_input_mode.html">pocketmine\network\mcpe\protocol\types\InputMode</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d4b/_input_mode_8php_source.html#l00017">InputMode.php:17</a></div></div>
@@ -468,6 +468,7 @@ $(function(){initNavTree('d8/d80/_player_auth_input_packet_8php_source.html','..
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_play_mode_html"><div class="ttname"><a href="../../dd/d40/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_play_mode.html">pocketmine\network\mcpe\protocol\types\PlayMode</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/db4/_play_mode_8php_source.html#l00020">PlayMode.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_action_html"><div class="ttname"><a href="../../de/d62/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_action.html">pocketmine\network\mcpe\protocol\types\PlayerAction</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d17/_player_action_8php_source.html#l00017">PlayerAction.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags_html"><div class="ttname"><a href="../../d5/d04/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_flags.html">pocketmine\network\mcpe\protocol\types\PlayerAuthInputFlags</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/dda/_player_auth_input_flags_8php_source.html#l00028">PlayerAuthInputFlags.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info_html"><div class="ttname"><a href="../../d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html">pocketmine\network\mcpe\protocol\types\PlayerAuthInputVehicleInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dea/_player_auth_input_vehicle_info_8php_source.html#l00022">PlayerAuthInputVehicleInfo.php:22</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_stop_break_html"><div class="ttname"><a href="../../db/d35/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_stop_break.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionStopBreak</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d94/_player_block_action_stop_break_8php_source.html#l00019">PlayerBlockActionStopBreak.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info_html"><div class="ttname"><a href="../../d4/d34/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionWithBlockInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d70/_player_block_action_with_block_info_8php_source.html#l00023">PlayerBlockActionWithBlockInfo.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request_html"><div class="ttname"><a href="../../df/d78/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_item_stack_request.html">pocketmine\network\mcpe\protocol\types\inventory\stackrequest\ItemStackRequest</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d2f/_item_stack_request_8php_source.html#l00027">ItemStackRequest.php:27</a></div></div>

@@ -245,7 +245,7 @@ var NAVTREEINDEX2 =
 "d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#ab2ee843c2cf4cb7c4f4f4d75988d0187":[2,0,0,14,0,0,1,7],
 "d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#ab2ee843c2cf4cb7c4f4f4d75988d0187":[3,0,1,30,2,3,1,7],
 "d0/d39/_broadcast_logger_forwarder_8php_source.html":[4,0,0,23,1],
-"d0/d39/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_float_game_rule.html":[3,0,1,16,0,6,1,35],
+"d0/d39/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_float_game_rule.html":[3,0,1,16,0,6,1,37],
 "d0/d3a/_chunk_load_event_8php_source.html":[4,0,0,7,6,1],
 "d0/d3a/_redstone_torch_8php_source.html":[4,0,0,0,188],
 "d0/d3b/_vanilla_armor_materials_8php_source.html":[4,0,0,10,130],

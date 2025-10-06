@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-05a71d8cc5185aa9e46ef5f9754bb862464c13e0</span>
    </div>
   </td>
  </tr>
@@ -132,63 +132,39 @@ $(function(){initNavTree('d2/d7a/_biome_climate_data_8php_source.html','../../')
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $temperature,</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $downfall,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $redSporeDensity,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $blueSporeDensity,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $ashDensity,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $whiteAshDensity,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $snowAccumulationMin,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $snowAccumulationMax,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ){}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $snowAccumulationMin,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">private</span> <span class="keywordtype">float</span> $snowAccumulationMax,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ){}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTemperature() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;temperature; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDownfall() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;downfall; }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTemperature() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;temperature; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSnowAccumulationMin() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;snowAccumulationMin; }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDownfall() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;downfall; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSnowAccumulationMax() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;snowAccumulationMax; }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRedSporeDensity() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;redSporeDensity; }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBlueSporeDensity() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;blueSporeDensity; }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAshDensity() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;ashDensity; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $temperature = LE::readFloat($in);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $downfall = LE::readFloat($in);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $snowAccumulationMin = LE::readFloat($in);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $snowAccumulationMax = LE::readFloat($in);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getWhiteAshDensity() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;whiteAshDensity; }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSnowAccumulationMin() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;snowAccumulationMin; }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSnowAccumulationMax() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;snowAccumulationMax; }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $temperature = LE::readFloat($in);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $downfall = LE::readFloat($in);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $redSporeDensity = LE::readFloat($in);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $blueSporeDensity = LE::readFloat($in);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $ashDensity = LE::readFloat($in);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $whiteAshDensity = LE::readFloat($in);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $snowAccumulationMin = LE::readFloat($in);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $snowAccumulationMax = LE::readFloat($in);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $temperature,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $downfall,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $redSporeDensity,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $blueSporeDensity,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            $ashDensity,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $whiteAshDensity,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            $snowAccumulationMin,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            $snowAccumulationMax</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        );</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        LE::writeFloat($out, $this-&gt;temperature);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        LE::writeFloat($out, $this-&gt;downfall);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        LE::writeFloat($out, $this-&gt;redSporeDensity);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        LE::writeFloat($out, $this-&gt;blueSporeDensity);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        LE::writeFloat($out, $this-&gt;ashDensity);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        LE::writeFloat($out, $this-&gt;whiteAshDensity);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        LE::writeFloat($out, $this-&gt;snowAccumulationMin);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        LE::writeFloat($out, $this-&gt;snowAccumulationMax);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            $temperature,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            $downfall,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            $snowAccumulationMin,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $snowAccumulationMax</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        );</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        LE::writeFloat($out, $this-&gt;temperature);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        LE::writeFloat($out, $this-&gt;downfall);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        LE::writeFloat($out, $this-&gt;snowAccumulationMin);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        LE::writeFloat($out, $this-&gt;snowAccumulationMax);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_climate_data_html"><div class="ttname"><a href="../../d2/d86/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_climate_data.html">pocketmine\network\mcpe\protocol\types\biome\chunkgen\BiomeClimateData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00021">BiomeClimateData.php:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

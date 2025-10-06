@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.34.2 git-b8b7580153f47ebb90f8237be49e0e6c98a655e2</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-05a71d8cc5185aa9e46ef5f9754bb862464c13e0</span>
    </div>
   </td>
  </tr>
@@ -226,7 +226,7 @@ $(function(){initNavTree('d9/dda/_level_settings_8php_source.html','../../'); in
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        $this-&gt;platformBroadcastMode = VarInt::readSignedInt($in);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        $this-&gt;commandsEnabled = CommonTypes::getBool($in);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        $this-&gt;isTexturePacksRequired = CommonTypes::getBool($in);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $this-&gt;gameRules = CommonTypes::getGameRules($in);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $this-&gt;gameRules = CommonTypes::getGameRules($in, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        $this-&gt;experiments = Experiments::read($in);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        $this-&gt;hasBonusChestEnabled = CommonTypes::getBool($in);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $this-&gt;hasStartWithMapEnabled = CommonTypes::getBool($in);</div>
@@ -281,7 +281,7 @@ $(function(){initNavTree('d9/dda/_level_settings_8php_source.html','../../'); in
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        VarInt::writeSignedInt($out, $this-&gt;platformBroadcastMode);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        CommonTypes::putBool($out, $this-&gt;commandsEnabled);</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        CommonTypes::putBool($out, $this-&gt;isTexturePacksRequired);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        CommonTypes::putGameRules($out, $this-&gt;gameRules);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        CommonTypes::putGameRules($out, $this-&gt;gameRules, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        $this-&gt;experiments-&gt;write($out);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        CommonTypes::putBool($out, $this-&gt;hasBonusChestEnabled);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        CommonTypes::putBool($out, $this-&gt;hasStartWithMapEnabled);</div>

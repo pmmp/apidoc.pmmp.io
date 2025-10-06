@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,61,50],
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,0,0,59,35],
 "d1/d96/classpocketmine_1_1block_1_1_clay.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,61,35],
 "d1/d96/classpocketmine_1_1block_1_1_clay.html#a75b16ca6e22355cf632466a969e79211":[2,0,0,0,59,41],
 "d1/d96/classpocketmine_1_1block_1_1_clay.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,61,41],
@@ -110,7 +112,7 @@ var NAVTREEINDEX24 =
 "d1/d98/_cancellable_trait_8php_source.html":[4,0,0,7,8],
 "d1/d99/_bucket_empty_lava_sound_8php_source.html":[4,0,0,25,5,22],
 "d1/d99/namespacepocketmine_1_1world_1_1generator_1_1populator.html":[2,0,0,14,0,1],
-"d1/d9a/_score_packet_entry_8php_source.html":[4,0,1,0,1,0,1,74],
+"d1/d9a/_score_packet_entry_8php_source.html":[4,0,1,0,1,0,1,81],
 "d1/d9b/_player_login_event_8php_source.html":[4,0,0,7,3,32],
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html":[2,0,0,0,154],
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html":[3,0,1,0,156],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,154,27],
 "d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,156,27],
 "d1/d9c/_suspicious_stew_type_ids_8php_source.html":[4,0,0,5,0,28],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html":[3,0,1,6,0,0,0,6],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a1b1d2d286a0a8276f90c7064f2061b6f":[3,0,1,6,0,0,0,6,6],
-"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html#a23db89238928e222daf74ebbb1fa65d0":[3,0,1,6,0,0,0,6,1]
+"d1/d9c/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_to_object_deserializer.html":[3,0,1,6,0,0,0,6]
 };

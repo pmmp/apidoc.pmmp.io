@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d0/df7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_name_ids.html":[3,0,1,16,0,6,1,27],
 "d0/df9/_async_generator_unregister_task_8php_source.html":[4,0,0,25,2,1,2],
 "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html":[2,0,0,3,0,0],
 "d0/df9/classpocketmine_1_1event_1_1block_1_1_base_block_change_event.html":[3,0,1,9,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,179,11],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,181,11],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,179,65],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,181,65],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,179,38]
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,181,65]
 };

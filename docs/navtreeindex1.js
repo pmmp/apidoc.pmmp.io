@@ -88,7 +88,7 @@ var NAVTREEINDEX1 =
 "d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html#ae276a84b543f500378de0a8ad639db42":[2,0,0,14,11,5],
 "d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html#ae276a84b543f500378de0a8ad639db42":[3,0,1,30,17,5],
 "d0/d15/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_metadata_property.html":[3,0,1,16,0,6,1,3,16],
-"d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html":[3,0,1,16,0,6,1,15],
+"d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html":[3,0,1,16,0,6,1,16],
 "d0/d18/_stonecutter_inventory_8php_source.html":[4,0,0,0,0,18],
 "d0/d18/classpocketmine_1_1item_1_1_glow_berries.html":[2,0,0,5,53],
 "d0/d18/classpocketmine_1_1item_1_1_glow_berries.html":[3,0,1,12,54],

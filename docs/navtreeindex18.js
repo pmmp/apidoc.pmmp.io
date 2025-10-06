@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"d1/d4a/classpocketmine_1_1world_1_1sound_1_1_item_frame_add_item_sound.html#afd248bd909ae0233dbf0281decfbd071":[3,0,1,30,5,77,0],
+"d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html":[3,0,1,4,0,0],
 "d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html#a32ae158a516f28afd44ee5e0b8bf9e8f":[3,0,1,4,0,0,0],
 "d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html#a977e351494916a70a6a28073a49f42d3":[3,0,1,4,0,0,1],
 "d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html#af3b88c0414a7b2498f0cd13c87fff243":[3,0,1,4,0,0,2],
@@ -142,7 +144,7 @@ var NAVTREEINDEX18 =
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#abb31f220a09e40bb22c29bb68a693e7c":[3,0,1,22,3,1],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#adf6cfa9e72379b162d462a2e9dc8d301":[2,0,0,11,3,2],
 "d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html#adf6cfa9e72379b162d462a2e9dc8d301":[3,0,1,22,3,2],
-"d1/d50/_enchant_option_8php_source.html":[4,0,1,0,1,0,1,34],
+"d1/d50/_enchant_option_8php_source.html":[4,0,1,0,1,0,1,37],
 "d1/d50/_written_book_8php_source.html":[4,0,0,10,136],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html":[2,0,0,5,29],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html":[3,0,1,12,30],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#ae2543fd294d689ca6850d5bc78710522":[2,0,0,5,29,38],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#ae2543fd294d689ca6850d5bc78710522":[3,0,1,12,30,38],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#aec8070c04112770e0d01a3c56b252e81":[2,0,0,5,29,49],
-"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,30,49],
-"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#af737301b899b7a7c9e9b0bb9a234a119":[2,0,0,5,29,7],
-"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#af737301b899b7a7c9e9b0bb9a234a119":[3,0,1,12,30,7]
+"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#aec8070c04112770e0d01a3c56b252e81":[3,0,1,12,30,49]
 };

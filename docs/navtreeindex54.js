@@ -1,5 +1,15 @@
 var NAVTREEINDEX54 =
 {
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,118,49],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,119,49],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a40f57ea1d37fba8d60bf520baf93d4e0":[2,0,0,5,118,31],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a40f57ea1d37fba8d60bf520baf93d4e0":[3,0,1,12,119,31],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a444bab7a652a1dc604048e392f5887cd":[2,0,0,5,118,6],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a444bab7a652a1dc604048e392f5887cd":[3,0,1,12,119,6],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,118,1],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,119,1],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a4a9aa55600bb30c4d55ad63337874a07":[2,0,0,5,118,7],
+"d3/dab/classpocketmine_1_1item_1_1_trident.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,119,7],
 "d3/dab/classpocketmine_1_1item_1_1_trident.html#a4ffd014f09b6f93acd8b08975ab58485":[2,0,0,5,118,24],
 "d3/dab/classpocketmine_1_1item_1_1_trident.html#a4ffd014f09b6f93acd8b08975ab58485":[3,0,1,12,119,24],
 "d3/dab/classpocketmine_1_1item_1_1_trident.html#a51b97f07ff97887a144198bb3dba6fc4":[2,0,0,5,118,21],
@@ -85,7 +95,7 @@ var NAVTREEINDEX54 =
 "d3/db1/classpocketmine_1_1resourcepacks_1_1json_1_1_manifest_metadata.html":[3,0,1,21,0,3],
 "d3/db2/_experience_utils_8php_source.html":[4,0,0,6,4,0],
 "d3/db4/_crafting_manager_from_data_helper_8php_source.html":[4,0,0,3,4],
-"d3/db4/_play_mode_8php_source.html":[4,0,1,0,1,0,1,72],
+"d3/db4/_play_mode_8php_source.html":[4,0,1,0,1,0,1,79],
 "d3/db4/_settings_command_packet_8php_source.html":[4,0,1,0,1,0,182],
 "d3/db8/_froglight_8php_source.html":[4,0,0,0,111],
 "d3/db8/_furnace_recipe_manager_8php_source.html":[4,0,0,3,8],
@@ -239,15 +249,5 @@ var NAVTREEINDEX54 =
 "d3/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_scatter_param_data.html":[3,0,1,16,0,6,1,0,0,13],
 "d3/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_scatter_param_data.html#ac1b92ca35652f9df5cb38248d35a8c72":[3,0,1,16,0,6,1,0,0,13,0],
 "d3/dc5/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_scatter_param_data.html#af3e4935e1dc7ccc90717996b2af99e06":[3,0,1,16,0,6,1,0,0,13,1],
-"d3/dc6/_console_reader_child_process_8php_source.html":[4,0,0,2,2],
-"d3/dc6/_item_serializer_8php_source.html":[4,0,0,5,0,1,3],
-"d3/dc8/_play_sound_packet_8php_source.html":[4,0,1,0,1,0,134],
-"d3/dc9/_writable_region_world_provider_8php_source.html":[4,0,0,25,1,0,3,10],
-"d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html":[2,0,0,9,3],
-"d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html":[3,0,1,17,3],
-"d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469":[2,0,0,9,3,0],
-"d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469":[3,0,1,17,3,0],
-"d3/dcc/_respawn_anchor_set_spawn_sound_8php_source.html":[4,0,0,25,5,97],
-"d3/dcd/_setup_wizard_8php_source.html":[4,0,0,24,0],
-"d3/dcd/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1skin_1_1_skin_animation.html":[3,0,1,16,0,6,1,8,2]
+"d3/dc6/_console_reader_child_process_8php_source.html":[4,0,0,2,2]
 };

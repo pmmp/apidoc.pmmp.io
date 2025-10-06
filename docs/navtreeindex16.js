@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,43,65],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,41,11],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,43,11],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a3e16854d55d72e669ae2de47be272afb":[2,0,0,0,41,58],
@@ -120,7 +121,7 @@ var NAVTREEINDEX16 =
 "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html#a082a35789a7fac58f9b2e6772f8ebcde":[3,0,1,16,0,3,1,1],
 "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html#a34e3b467380b9eac0031c960a970b6b0":[3,0,1,16,0,3,1,0],
 "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html#aea7121b497f3ad451c28b94466b9765c":[3,0,1,16,0,3,1,2],
-"d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html":[3,0,1,16,0,6,1,52],
+"d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html":[3,0,1,16,0,6,1,55],
 "d1/d2f/classpocketmine_1_1event_1_1_event.html":[2,0,0,3,8],
 "d1/d2f/classpocketmine_1_1event_1_1_event.html":[3,0,1,9,8],
 "d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,8,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "d1/d30/classpocketmine_1_1block_1_1_podzol.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,171,32],
 "d1/d30/classpocketmine_1_1block_1_1_podzol.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,173,32],
 "d1/d30/classpocketmine_1_1block_1_1_podzol.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,171,54],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,173,54],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#af45a3d45c4ab6528c6641915722b9de8":[2,0,0,0,171,6]
+"d1/d30/classpocketmine_1_1block_1_1_podzol.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,173,54]
 };

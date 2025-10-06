@@ -1,5 +1,14 @@
 var NAVTREEINDEX35 =
 {
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a2ce778f940de9e172cd268f378893b8f":[3,0,1,12,53,13],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a2e7d9e107f4f24de4aabc19764dc7dc2":[2,0,0,5,52,16],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a2e7d9e107f4f24de4aabc19764dc7dc2":[3,0,1,12,53,16],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[2,0,0,5,52,23],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a2ee3936259ed3fd96fa07dcbcc4797c1":[3,0,1,12,53,23],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a30c23cf281199b48fbbe0f4c45c01fb9":[2,0,0,5,52,33],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a30c23cf281199b48fbbe0f4c45c01fb9":[3,0,1,12,53,33],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a319a186a07d166461600dd4a639eb86f":[2,0,0,5,52,10],
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a319a186a07d166461600dd4a639eb86f":[3,0,1,12,53,10],
 "d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a336d6f91be72079853413f5b4036a57d":[2,0,0,5,52,2],
 "d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a336d6f91be72079853413f5b4036a57d":[3,0,1,12,53,2],
 "d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,52,44],
@@ -80,7 +89,7 @@ var NAVTREEINDEX35 =
 "d2/d5e/interfacepocketmine_1_1event_1_1_listener.html":[3,0,1,9,12],
 "d2/d60/_item_stack_request_action_type_8php_source.html":[4,0,1,0,1,0,1,5,0,15],
 "d2/d60/_plugin_owned_8php_source.html":[4,0,0,15,18],
-"d2/d62/_structure_editor_data_8php_source.html":[4,0,1,0,1,0,1,78],
+"d2/d62/_structure_editor_data_8php_source.html":[4,0,1,0,1,0,1,86],
 "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html":[2,0,0,5,120],
 "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html":[3,0,1,12,121],
 "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html#ab370e7ef515d5e1b7e78051b7115cc8d":[2,0,0,5,120,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX35 =
 "d2/d67/classpocketmine_1_1item_1_1enchantment_1_1_protection_enchantment.html#ada5f527df9d208b2069a530de88de9a4":[3,0,1,12,0,13,1],
 "d2/d68/_chunk_serializer_8php_source.html":[4,0,0,12,0,7,0],
 "d2/d69/namespacepocketmine.html":[2,0,0],
-"d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69":[2,0,0,26],
-"d2/d69/namespacepocketmine.html#ab89ad77c9b8adb99db42b2ace0c69151":[2,0,0,25],
-"d2/d69/namespacepocketmine.html#ac8040f61ade1040754abb856b9707674":[2,0,0,28],
-"d2/d69/namespacepocketmine.html#acc028521d7480726dbb9f9c4b6aecb83":[2,0,0,27],
-"d2/d69/namespacepocketmine.html#aef997bf78be309b4d9f3b8c3089af4d9":[2,0,0,29],
-"d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html":[3,0,1,7,4,0],
-"d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html#a2654a6ebb1ffbbad7179e26dec070ebf":[3,0,1,7,4,0,2],
-"d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html#ac1444c8ac54359d71662ec0f9833f85e":[3,0,1,7,4,0,1],
-"d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html#ae02108eddad47945a828de3e3895fc3d":[3,0,1,7,4,0,0],
-"d2/d6c/_client_cache_status_packet_8php_source.html":[4,0,1,0,1,0,41]
+"d2/d69/namespacepocketmine.html#a4917b9fbb96d9758f51845080b142b69":[2,0,0,26]
 };

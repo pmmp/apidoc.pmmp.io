@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,179,38],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,181,38],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,179,7],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,181,7],
@@ -237,17 +238,16 @@ var NAVTREEINDEX14 =
 "d1/d0f/namespacepocketmine_1_1wizard.html":[2,0,0,13],
 "d1/d10/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_legacy_block_id_to_string_id_map.html":[3,0,1,6,0,0,1,9],
 "d1/d10/classpocketmine_1_1data_1_1bedrock_1_1block_1_1upgrade_1_1_legacy_block_id_to_string_id_map.html#a0746412c1d07cca3582238dfd610aa28":[3,0,1,6,0,0,1,9,0],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html":[3,0,1,16,0,6,134],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a280b6bdde14729fec6b73b8911b7ce22":[3,0,1,16,0,6,134,2],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a317597654a2fdff69bb5a7129dc1c93c":[3,0,1,16,0,6,134,6],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,134,3],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a7ccc70dd0dac4697367dbbe0a2873812":[3,0,1,16,0,6,134,5],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,134,0],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,134,1],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,134,4],
-"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#afdc5aa63d205a92e089a3d199ab2991d":[3,0,1,16,0,6,134,7],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html":[3,0,1,16,0,6,133],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a280b6bdde14729fec6b73b8911b7ce22":[3,0,1,16,0,6,133,2],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a317597654a2fdff69bb5a7129dc1c93c":[3,0,1,16,0,6,133,6],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,133,3],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a7ccc70dd0dac4697367dbbe0a2873812":[3,0,1,16,0,6,133,5],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,133,0],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,133,1],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,133,4],
+"d1/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_play_status_packet.html#afdc5aa63d205a92e089a3d199ab2991d":[3,0,1,16,0,6,133,7],
 "d1/d12/_base_cake_8php_source.html":[4,0,0,0,12],
 "d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html":[2,0,0,2,9],
-"d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html":[3,0,1,7,14],
-"d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html#a02b5ec3a3d33ba74cd0a5b3883b5a818":[2,0,0,2,9,7]
+"d1/d14/classpocketmine_1_1entity_1_1_experience_manager.html":[3,0,1,7,14]
 };
