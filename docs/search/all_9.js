@@ -18,7 +18,7 @@ var searchData=
   ['hardenedclay_15',['HardenedClay',['../da/d55/classpocketmine_1_1block_1_1_hardened_clay.html',1,'pocketmine::block']]],
   ['hardenedglass_16',['HardenedGlass',['../d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html',1,'pocketmine::block']]],
   ['hardenedglasspane_17',['HardenedGlassPane',['../df/d72/classpocketmine_1_1block_1_1_hardened_glass_pane.html',1,'pocketmine::block']]],
-  ['has_18',['has',['../da/d02/classpocketmine_1_1entity_1_1effect_1_1_effect_manager.html#a7d62d566cf99e829a7c6871f10cedb6e',1,'pocketmine::entity::effect::EffectManager']]],
+  ['has_18',['has',['../d7/d9f/classpocketmine_1_1entity_1_1effect_1_1_effect_collection.html#a0f2d95aa47edaef53ac3035a16c5429d',1,'pocketmine::entity::effect::EffectCollection']]],
   ['hasblockcollision_19',['hasBlockCollision',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#a851c9a91d0743f4c146a560082be2af4',1,'pocketmine::player::Player']]],
   ['hasbubbles_20',['hasBubbles',['../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html#a47e78434ab3294753bc42572711b3d49',1,'pocketmine::entity::effect::Effect']]],
   ['hascancelledrun_21',['hasCancelledRun',['../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a31a5f710f3a68f80c5daa945dc4642e2',1,'pocketmine::scheduler::AsyncTask']]],

@@ -1,5 +1,6 @@
 var classpocketmine_1_1block_1_1_tall_grass =
 [
+    [ "__construct", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a5579789e1a75021957b46a7d6a6508b0", null ],
     [ "__toString", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#acb449b40461f4800cf6e6288cb9a069d", null ],
     [ "addVelocityToEntity", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#adc7b2fcbcc10f046b1cbcafdd0858863", null ],
     [ "asItem", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a286fc64348f13417dcb6106c2695911b", null ],
@@ -55,7 +56,7 @@ var classpocketmine_1_1block_1_1_tall_grass =
     [ "onEntityInside", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a49395de82d025ca78745a17528049f18", null ],
     [ "onEntityLand", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
-    [ "onInteract", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#abce48b40feb225f4ce9b7cf2e02a9336", null ],
+    [ "onInteract", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a55704a0f19e80c82c13b61fa39795d13", null ],
     [ "onNearbyBlockChange", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onPostPlace", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a0931c682312473fc2540464b7a4747c0", null ],

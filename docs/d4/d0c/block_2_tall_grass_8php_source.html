@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-806d88ec20f35d738d58baa8d4db319fbdea3bdc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.36.1 git-55c110e5c700c713120b6063b24d64da9128ed0b</span>
    </div>
   </td>
  </tr>
@@ -133,24 +133,73 @@ $(function(){initNavTree('d4/d0c/block_2_tall_grass_8php_source.html','../../');
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use pocketmine\block\utils\StaticSupportTrait;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\block\utils\TallGrassTrait;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html">TallGrass</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    use TallGrassTrait;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    use StaticSupportTrait;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">pocketmine\item\Fertilizer</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block) : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $supportBlock = $block-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">getSide</a>(Facing::DOWN);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> $supportBlock-&gt;hasTypeTag(BlockTypeTags::DIRT) || $supportBlock-&gt;hasTypeTag(BlockTypeTags::MUD);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html">TallGrass</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">Flowable</a>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use TallGrassTrait;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use StaticSupportTrait;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> ?\Closure $doublePlantVariant;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a5579789e1a75021957b46a7d6a6508b0">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a5579789e1a75021957b46a7d6a6508b0">__construct</a>(<a class="code hl_class" href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">BlockIdentifier</a> $idInfo, <span class="keywordtype">string</span> $name, <a class="code hl_class" href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">BlockTypeInfo</a> $typeInfo, ?\Closure $doublePlantVariant = <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        parent::__construct($idInfo, $name, $typeInfo);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;doublePlantVariant = $doublePlantVariant;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keyword">function</span> canBeSupportedAt(<a class="code hl_class" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">Block</a> $block) : bool{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $supportBlock = $block-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">getSide</a>(<a class="code hl_class" href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">Facing</a>::DOWN);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> $supportBlock-&gt;<a class="code hl_function" href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a43e3458847422ebd5dec6c914b443c93">hasTypeTag</a>(BlockTypeTags::DIRT) || $supportBlock-&gt;hasTypeTag(BlockTypeTags::MUD);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a55704a0f19e80c82c13b61fa39795d13">   54</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a55704a0f19e80c82c13b61fa39795d13">onInteract</a>(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item, <span class="keywordtype">int</span> $face, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickVector, ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player = <span class="keyword">null</span>, array &amp;$returnedItems = []) : bool{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $world = $this-&gt;position-&gt;getWorld();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $upPos = $this-&gt;position-&gt;getSide(Facing::UP);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>(!$world-&gt;isInWorld($upPos-&gt;getFloorX(), $upPos-&gt;getFloorY(), $upPos-&gt;getFloorZ()) || $this-&gt;getSide(Facing::UP)-&gt;getTypeId() !== BlockTypeIds::AIR){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            return false;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>($item instanceof <a class="code hl_class" href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">Fertilizer</a> &amp;&amp; ($doubleVariant = $this-&gt;getDoublePlantVariant()) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $bottom = (clone $doubleVariant)-&gt;setTop(false);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $top = (clone $doubleVariant)-&gt;setTop(true);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $world-&gt;setBlock($this-&gt;position, $bottom);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            $world-&gt;setBlock($this-&gt;position-&gt;getSide(Facing::UP), $top);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $item-&gt;pop();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            return true;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">private</span> <span class="keyword">function</span> getDoublePlantVariant() : ?<a class="code hl_class" href="../../dd/d6a/classpocketmine_1_1block_1_1_double_plant.html">DoublePlant</a>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        return $this-&gt;doublePlantVariant !== null ? ($this-&gt;doublePlantVariant)() : null;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00063">Block.php:63</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a43e3458847422ebd5dec6c914b443c93"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a43e3458847422ebd5dec6c914b443c93">pocketmine\block\Block\hasTypeTag</a></div><div class="ttdeci">hasTypeTag(string $tag)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00217">Block.php:217</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html_a6f13ff76dad934b1b2e078a5b57dd7a5"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html#a6f13ff76dad934b1b2e078a5b57dd7a5">pocketmine\block\Block\getSide</a></div><div class="ttdeci">getSide(int $side, int $step=1)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00775">Block.php:775</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_identifier_html"><div class="ttname"><a href="../../dd/d18/classpocketmine_1_1block_1_1_block_identifier.html">pocketmine\block\BlockIdentifier</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0b/_block_identifier_8php_source.html#l00029">BlockIdentifier.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_info_html"><div class="ttname"><a href="../../de/d9a/classpocketmine_1_1block_1_1_block_type_info.html">pocketmine\block\BlockTypeInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/df3/_block_type_info_8php_source.html#l00029">BlockTypeInfo.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_double_plant_html"><div class="ttname"><a href="../../dd/d6a/classpocketmine_1_1block_1_1_double_plant.html">pocketmine\block\DoublePlant</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d87/_double_plant_8php_source.html#l00033">DoublePlant.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_flowable_html"><div class="ttname"><a href="../../d3/d1e/classpocketmine_1_1block_1_1_flowable.html">pocketmine\block\Flowable</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d33/_flowable_8php_source.html#l00033">Flowable.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_tall_grass_html"><div class="ttname"><a href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html">pocketmine\block\TallGrass</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">block/TallGrass.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_tall_grass_html"><div class="ttname"><a href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html">pocketmine\block\TallGrass</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">block/TallGrass.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_tall_grass_html_a55704a0f19e80c82c13b61fa39795d13"><div class="ttname"><a href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a55704a0f19e80c82c13b61fa39795d13">pocketmine\block\TallGrass\onInteract</a></div><div class="ttdeci">onInteract(Item $item, int $face, Vector3 $clickVector, ?Player $player=null, array &amp;$returnedItems=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00054">block/TallGrass.php:54</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_tall_grass_html_a5579789e1a75021957b46a7d6a6508b0"><div class="ttname"><a href="../../d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a5579789e1a75021957b46a7d6a6508b0">pocketmine\block\TallGrass\__construct</a></div><div class="ttdeci">__construct(BlockIdentifier $idInfo, string $name, BlockTypeInfo $typeInfo, ?\Closure $doublePlantVariant=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00044">block/TallGrass.php:44</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_fertilizer_html"><div class="ttname"><a href="../../d2/df4/classpocketmine_1_1item_1_1_fertilizer.html">pocketmine\item\Fertilizer</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0d/_fertilizer_8php_source.html#l00026">Fertilizer.php:26</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_facing_html"><div class="ttname"><a href="../../dd/d25/classpocketmine_1_1math_1_1_facing.html">pocketmine\math\Facing</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d0d/_facing_8php_source.html#l00028">Facing.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00173">Player.php:173</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

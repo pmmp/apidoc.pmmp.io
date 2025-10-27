@@ -9,7 +9,7 @@ var searchData=
   ['handleraknetconnectionpacket_6',['handleRakNetConnectionPacket',['../dd/dca/classraklib_1_1generic_1_1_session.html#a00ae8b59f6935e1cca48c8499e2a9805',1,'raklib\generic\Session\handleRakNetConnectionPacket()'],['../d6/d79/classraklib_1_1server_1_1_server_session.html#a547aa4fee8ef48f28fbb1e6191f745fd',1,'raklib\server\ServerSession\handleRakNetConnectionPacket()']]],
   ['handleraw_7',['handleRaw',['../dd/dc3/classraklib_1_1server_1_1_unconnected_message_handler.html#aabf10ce12c1ef4947d7845e0ae01c55f',1,'raklib::server::UnconnectedMessageHandler']]],
   ['handleresponse_8',['handleResponse',['../d5/d7b/interfacepocketmine_1_1form_1_1_form.html#a00e0c0ae357b83c56e8d89a9095e8b97',1,'pocketmine::form::Form']]],
-  ['has_9',['has',['../da/d02/classpocketmine_1_1entity_1_1effect_1_1_effect_manager.html#a7d62d566cf99e829a7c6871f10cedb6e',1,'pocketmine::entity::effect::EffectManager']]],
+  ['has_9',['has',['../d7/d9f/classpocketmine_1_1entity_1_1effect_1_1_effect_collection.html#a0f2d95aa47edaef53ac3035a16c5429d',1,'pocketmine::entity::effect::EffectCollection']]],
   ['hasblockcollision_10',['hasBlockCollision',['../d0/d6f/classpocketmine_1_1player_1_1_player.html#a851c9a91d0743f4c146a560082be2af4',1,'pocketmine::player::Player']]],
   ['hasbubbles_11',['hasBubbles',['../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html#a47e78434ab3294753bc42572711b3d49',1,'pocketmine::entity::effect::Effect']]],
   ['hascancelledrun_12',['hasCancelledRun',['../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a31a5f710f3a68f80c5daa945dc4642e2',1,'pocketmine::scheduler::AsyncTask']]],

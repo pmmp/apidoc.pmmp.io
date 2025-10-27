@@ -66,6 +66,8 @@ var classpocketmine_1_1block_1_1_lightning_rod =
     [ "readStateFromWorld", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#a3a46169e7d256b3a1f3af8c54ddba832", null ],
     [ "recalculateCollisionBoxes", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#ae34938a8193b321d3c042eeae9417f58", null ],
     [ "setFacing", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#af14ccaed7b5aa3bd73e77066696f14a5", null ],
+    [ "setOxidation", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#a5589a4f36e3f44cf11120116b93b0802", null ],
+    [ "setWaxed", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#ace264e4db5ba15d3f7f2072f79d77023", null ],
     [ "ticksRandomly", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#ab6b90601adfc9732893dcffe256514a9", null ],
     [ "writeStateToWorld", "d9/d2e/classpocketmine_1_1block_1_1_lightning_rod.html#a9404d9040389f3ff2462f86d9a181160", null ]
 ];

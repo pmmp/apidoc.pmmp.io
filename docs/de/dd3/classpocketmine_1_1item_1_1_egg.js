@@ -41,6 +41,7 @@ var classpocketmine_1_1item_1_1_egg =
     [ "onReleaseUsing", "de/dd3/classpocketmine_1_1item_1_1_egg.html#a71289362f9d561347b5c8c2717eb0512", null ],
     [ "onTickWorn", "de/dd3/classpocketmine_1_1item_1_1_egg.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "de/dd3/classpocketmine_1_1item_1_1_egg.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
+    [ "safeNbtDeserialize", "de/dd3/classpocketmine_1_1item_1_1_egg.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "de/dd3/classpocketmine_1_1item_1_1_egg.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "de/dd3/classpocketmine_1_1item_1_1_egg.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "de/dd3/classpocketmine_1_1item_1_1_egg.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],

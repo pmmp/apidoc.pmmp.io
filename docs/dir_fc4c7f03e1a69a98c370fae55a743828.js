@@ -6,6 +6,7 @@ var dir_fc4c7f03e1a69a98c370fae55a743828 =
     [ "AdvancedNetworkInterface.php", "d0/df4/_advanced_network_interface_8php_source.html", null ],
     [ "BandwidthStatsTracker.php", "dd/d05/_bandwidth_stats_tracker_8php_source.html", null ],
     [ "BidirectionalBandwidthStatsTracker.php", "df/d41/_bidirectional_bandwidth_stats_tracker_8php_source.html", null ],
+    [ "FilterNoisyPacketException.php", "d1/d6b/_filter_noisy_packet_exception_8php_source.html", null ],
     [ "Network.php", "df/d5f/_network_8php_source.html", null ],
     [ "NetworkInterface.php", "dd/d5c/_network_interface_8php_source.html", null ],
     [ "NetworkInterfaceStartException.php", "d3/d2a/_network_interface_start_exception_8php_source.html", null ],

@@ -29,7 +29,7 @@ var searchData=
   ['wheat_26',['Wheat',['../d5/d7b/classpocketmine_1_1block_1_1_wheat.html',1,'pocketmine::block']]],
   ['wheatseeds_27',['WheatSeeds',['../d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html',1,'pocketmine::item']]],
   ['whitelistcommand_28',['WhitelistCommand',['../d5/d43/classpocketmine_1_1command_1_1defaults_1_1_whitelist_command.html',1,'pocketmine::command::defaults']]],
-  ['willlinger_29',['willLinger',['../d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a3c56e36851372e6f45453becc1d5c75c',1,'pocketmine::entity::projectile::SplashPotion']]],
+  ['willlinger_29',['willLinger',['../d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#a3c56e36851372e6f45453becc1d5c75c',1,'pocketmine\entity\projectile\SplashPotion\willLinger()'],['../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a8d65264cbc7b789f49bcdfe946a7f6b1',1,'pocketmine\item\SplashPotion\willLinger()']]],
   ['willmodify_30',['willModify',['../d7/d1b/classpocketmine_1_1event_1_1entity_1_1_entity_effect_add_event.html#a107d17cfdf2aa4c247af1b2f5f7eaed3',1,'pocketmine::event::entity::EntityEffectAddEvent']]],
   ['willtwinkle_31',['willTwinkle',['../df/d78/classpocketmine_1_1item_1_1_firework_rocket_explosion.html#a29948b8bdfff8c34501136673b3145ca',1,'pocketmine::item::FireworkRocketExplosion']]],
   ['windowtypes_32',['WindowTypes',['../d4/df2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_window_types.html',1,'pocketmine::network::mcpe::protocol::types::inventory']]],

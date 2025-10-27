@@ -41,6 +41,7 @@ var classpocketmine_1_1item_1_1_liquid_bucket =
     [ "onReleaseUsing", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a71289362f9d561347b5c8c2717eb0512", null ],
     [ "onTickWorn", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
+    [ "safeNbtDeserialize", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "db/dc0/classpocketmine_1_1item_1_1_liquid_bucket.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],

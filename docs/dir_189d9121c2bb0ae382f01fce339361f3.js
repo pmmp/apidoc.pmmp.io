@@ -32,6 +32,7 @@ var dir_189d9121c2bb0ae382f01fce339361f3 =
     [ "RedstoneParticle.php", "d1/dcd/_redstone_particle_8php_source.html", null ],
     [ "SmokeParticle.php", "dd/dfa/_smoke_particle_8php_source.html", null ],
     [ "SnowballPoofParticle.php", "de/dfc/_snowball_poof_particle_8php_source.html", null ],
+    [ "SonicExplosionParticle.php", "d0/dfe/_sonic_explosion_particle_8php_source.html", null ],
     [ "SplashParticle.php", "d8/ded/_splash_particle_8php_source.html", null ],
     [ "SporeParticle.php", "df/d66/_spore_particle_8php_source.html", null ],
     [ "TerrainParticle.php", "d8/d7b/_terrain_particle_8php_source.html", null ],

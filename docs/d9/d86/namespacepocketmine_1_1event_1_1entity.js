@@ -1,5 +1,6 @@
 var namespacepocketmine_1_1event_1_1entity =
 [
+    [ "AreaEffectCloudApplyEvent", "d8/d7c/classpocketmine_1_1event_1_1entity_1_1_area_effect_cloud_apply_event.html", "d8/d7c/classpocketmine_1_1event_1_1entity_1_1_area_effect_cloud_apply_event" ],
     [ "EntityBlockChangeEvent", "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html", "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event" ],
     [ "EntityCombustByBlockEvent", "df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event.html", "df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event" ],
     [ "EntityCombustByEntityEvent", "da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event.html", "da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event" ],

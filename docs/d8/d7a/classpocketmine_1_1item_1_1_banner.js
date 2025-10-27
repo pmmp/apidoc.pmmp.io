@@ -42,6 +42,7 @@ var classpocketmine_1_1item_1_1_banner =
     [ "onReleaseUsing", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#a71289362f9d561347b5c8c2717eb0512", null ],
     [ "onTickWorn", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
+    [ "safeNbtDeserialize", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setColor", "d8/d7a/classpocketmine_1_1item_1_1_banner.html#ae64c96993985862c2e97904b91bf511d", null ],

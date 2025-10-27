@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-806d88ec20f35d738d58baa8d4db319fbdea3bdc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.36.1 git-55c110e5c700c713120b6063b24d64da9128ed0b</span>
    </div>
   </td>
  </tr>
@@ -156,7 +156,7 @@ $(function(){initNavTree('da/d39/tile_2_item_frame_8php_source.html','../../'); 
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">function</span> readSaveData(<a class="code hl_class" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $nbt) : <span class="keywordtype">void</span>{</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span>(($itemTag = $nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a49173ac32d93c67570cde49859042651">getCompoundTag</a>(self::TAG_ITEM)) !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;item = Item::nbtDeserialize($itemTag);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $this-&gt;item = Item::safeNbtDeserialize($itemTag, <span class="stringliteral">&quot;ItemFrame ($this-&gt;position) framed item&quot;</span>);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span>($nbt-&gt;<a class="code hl_function" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">getTag</a>(self::TAG_ITEM_ROTATION) instanceof <a class="code hl_class" href="../../d7/d9e/classpocketmine_1_1nbt_1_1tag_1_1_float_tag.html">FloatTag</a>){</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $this-&gt;itemRotation = (int) ($nbt-&gt;getFloat(self::TAG_ITEM_ROTATION, $this-&gt;itemRotation * 45) / 45);</div>
@@ -224,7 +224,7 @@ $(function(){initNavTree('da/d39/tile_2_item_frame_8php_source.html','../../'); 
 <div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_item_frame_html_afef06c838b88eb99293f27e96c4dfdad"><div class="ttname"><a href="../../d4/dff/classpocketmine_1_1block_1_1tile_1_1_item_frame.html#afef06c838b88eb99293f27e96c4dfdad">pocketmine\block\tile\ItemFrame\writeSaveData</a></div><div class="ttdeci">writeSaveData(CompoundTag $nbt)</div><div class="ttdef"><b>Definition</b> <a href="#l00064">tile/ItemFrame.php:64</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_spawnable_html"><div class="ttname"><a href="../../dc/d0b/classpocketmine_1_1block_1_1tile_1_1_spawnable.html">pocketmine\block\tile\Spawnable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/df1/_spawnable_8php_source.html#l00034">Spawnable.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00361">VanillaItems.php:361</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00362">VanillaItems.php:362</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00045">CompoundTag.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html_a464983b3197549219cb5db0efda3c8e5"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html#a464983b3197549219cb5db0efda3c8e5">pocketmine\nbt\tag\CompoundTag\getTag</a></div><div class="ttdeci">getTag(string $name)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00087">CompoundTag.php:87</a></div></div>

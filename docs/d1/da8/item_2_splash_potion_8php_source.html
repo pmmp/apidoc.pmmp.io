@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-806d88ec20f35d738d58baa8d4db319fbdea3bdc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.36.1 git-55c110e5c700c713120b6063b24d64da9128ed0b</span>
    </div>
   </td>
  </tr>
@@ -142,44 +142,64 @@ $(function(){initNavTree('d1/da8/item_2_splash_potion_8php_source.html','../../'
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52">PotionType</a> $potionType = PotionType::WATER;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a576afe3c52a4eb7eeba3fc8c9eb40183">   36</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a576afe3c52a4eb7eeba3fc8c9eb40183">describeState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $w-&gt;enum($this-&gt;potionType);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : <a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52">PotionType</a>{ return $this-&gt;potionType; }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a72d7d516c41b06c8799271c988432c6a">   45</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a72d7d516c41b06c8799271c988432c6a">setType</a>(<a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52">PotionType</a> $type) : self{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;potionType = $type;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="../../d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html">ItemIdentifier</a> $identifier,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">string</span> $name = <span class="stringliteral">&quot;Splash Potion&quot;</span>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        array $enchantmentTags = [],</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> $linger = <span class="keyword">false</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    ){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="comment">//TODO: remove unnecessary default parameters in PM6, they remain because backward compatibility</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        parent::__construct($identifier, $name, $enchantmentTags);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a576afe3c52a4eb7eeba3fc8c9eb40183">   46</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a576afe3c52a4eb7eeba3fc8c9eb40183">describeState</a>(<a class="code hl_interface" href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">RuntimeDataDescriber</a> $w) : void{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $w-&gt;enum($this-&gt;potionType);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a4b6e71c9fdd613f374b114df559e0e96">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a4b6e71c9fdd613f374b114df559e0e96">getMaxStackSize</a>() : int{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        return 1;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : <a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52">PotionType</a>{ return $this-&gt;potionType; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a72d7d516c41b06c8799271c988432c6a">   55</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a72d7d516c41b06c8799271c988432c6a">setType</a>(<a class="code hl_enumeration" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52">PotionType</a> $type) : self{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $this-&gt;potionType = $type;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">protected</span> <span class="keyword">function</span> createEntity(<a class="code hl_class" href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">Location</a> $location, <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $thrower) : <a class="code hl_class" href="../../d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html">Throwable</a>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        return new SplashPotionEntity($location, $thrower, $this-&gt;potionType);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThrowForce() : float{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        return 0.5;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a4b6e71c9fdd613f374b114df559e0e96">   60</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a4b6e71c9fdd613f374b114df559e0e96">getMaxStackSize</a>() : int{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        return 1;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">protected</span> <span class="keyword">function</span> createEntity(<a class="code hl_class" href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">Location</a> $location, <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $thrower) : <a class="code hl_class" href="../../d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html">Throwable</a>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $projectile = new SplashPotionEntity($location, $thrower, $this-&gt;potionType);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $projectile-&gt;setLinger($this-&gt;linger);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> $projectile;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">function</span> getThrowForce() : float{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        return 0.5;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a8d65264cbc7b789f49bcdfe946a7f6b1">   77</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a8d65264cbc7b789f49bcdfe946a7f6b1">willLinger</a>() : bool{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        return $this-&gt;linger;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1projectile_1_1_splash_potion_html"><div class="ttname"><a href="../../d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html">pocketmine\entity\projectile\SplashPotion</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d73/entity_2projectile_2_splash_potion_8php_source.html#l00051">entity/projectile/SplashPotion.php:51</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1projectile_1_1_throwable_html"><div class="ttname"><a href="../../d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html">pocketmine\entity\projectile\Throwable</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcf/_throwable_8php_source.html#l00030">Throwable.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_item_identifier_html"><div class="ttname"><a href="../../d3/d4d/classpocketmine_1_1item_1_1_item_identifier.html">pocketmine\item\ItemIdentifier</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/dd2/_item_identifier_8php_source.html#l00028">ItemIdentifier.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_projectile_item_html"><div class="ttname"><a href="../../d4/ddb/classpocketmine_1_1item_1_1_projectile_item.html">pocketmine\item\ProjectileItem</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d70/_projectile_item_8php_source.html#l00033">ProjectileItem.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html">pocketmine\item\SplashPotion</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">item/SplashPotion.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a4b6e71c9fdd613f374b114df559e0e96"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a4b6e71c9fdd613f374b114df559e0e96">pocketmine\item\SplashPotion\getMaxStackSize</a></div><div class="ttdeci">getMaxStackSize()</div><div class="ttdef"><b>Definition</b> <a href="#l00050">item/SplashPotion.php:50</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a576afe3c52a4eb7eeba3fc8c9eb40183"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a576afe3c52a4eb7eeba3fc8c9eb40183">pocketmine\item\SplashPotion\describeState</a></div><div class="ttdeci">describeState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition</b> <a href="#l00036">item/SplashPotion.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a72d7d516c41b06c8799271c988432c6a"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a72d7d516c41b06c8799271c988432c6a">pocketmine\item\SplashPotion\setType</a></div><div class="ttdeci">setType(PotionType $type)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">item/SplashPotion.php:45</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a4b6e71c9fdd613f374b114df559e0e96"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a4b6e71c9fdd613f374b114df559e0e96">pocketmine\item\SplashPotion\getMaxStackSize</a></div><div class="ttdeci">getMaxStackSize()</div><div class="ttdef"><b>Definition</b> <a href="#l00060">item/SplashPotion.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a576afe3c52a4eb7eeba3fc8c9eb40183"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a576afe3c52a4eb7eeba3fc8c9eb40183">pocketmine\item\SplashPotion\describeState</a></div><div class="ttdeci">describeState(RuntimeDataDescriber $w)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">item/SplashPotion.php:46</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a72d7d516c41b06c8799271c988432c6a"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a72d7d516c41b06c8799271c988432c6a">pocketmine\item\SplashPotion\setType</a></div><div class="ttdeci">setType(PotionType $type)</div><div class="ttdef"><b>Definition</b> <a href="#l00055">item/SplashPotion.php:55</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html_a8d65264cbc7b789f49bcdfe946a7f6b1"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html#a8d65264cbc7b789f49bcdfe946a7f6b1">pocketmine\item\SplashPotion\willLinger</a></div><div class="ttdeci">willLinger()</div><div class="ttdef"><b>Definition</b> <a href="#l00077">item/SplashPotion.php:77</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00173">Player.php:173</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer_html"><div class="ttname"><a href="../../d8/d5e/interfacepocketmine_1_1data_1_1runtime_1_1_runtime_data_describer.html">pocketmine\data\runtime\RuntimeDataDescriber</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d3f/_runtime_data_describer_8php_source.html#l00038">RuntimeDataDescriber.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>

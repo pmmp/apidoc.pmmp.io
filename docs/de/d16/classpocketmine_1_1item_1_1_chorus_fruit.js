@@ -45,6 +45,7 @@ var classpocketmine_1_1item_1_1_chorus_fruit =
     [ "onTickWorn", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
     [ "requiresHunger", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a4baa4e7fc1068ce58cd725154002ba93", null ],
+    [ "safeNbtDeserialize", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "de/d16/classpocketmine_1_1item_1_1_chorus_fruit.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],

@@ -45,6 +45,7 @@ var classpocketmine_1_1item_1_1_apple =
     [ "onTickWorn", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
     [ "requiresHunger", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a653a8fbd8da17b08be95a985d857c4fc", null ],
+    [ "safeNbtDeserialize", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],

@@ -2,6 +2,7 @@ var dir_a11f9aa57d6ea4234f6e4cd9c671d157 =
 [
     [ "AbsorptionEffect.php", "db/d68/_absorption_effect_8php_source.html", null ],
     [ "Effect.php", "d8/dcc/_effect_8php_source.html", null ],
+    [ "EffectCollection.php", "d5/d5f/_effect_collection_8php_source.html", null ],
     [ "EffectInstance.php", "db/db0/_effect_instance_8php_source.html", null ],
     [ "EffectManager.php", "d3/d57/_effect_manager_8php_source.html", null ],
     [ "HealthBoostEffect.php", "dd/d77/_health_boost_effect_8php_source.html", null ],

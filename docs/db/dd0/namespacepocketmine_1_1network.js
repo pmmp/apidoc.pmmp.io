@@ -5,6 +5,7 @@ var namespacepocketmine_1_1network =
     [ "AdvancedNetworkInterface", "dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html", "dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface" ],
     [ "BandwidthStatsTracker", "da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html", "da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker" ],
     [ "BidirectionalBandwidthStatsTracker", "dd/d87/classpocketmine_1_1network_1_1_bidirectional_bandwidth_stats_tracker.html", "dd/d87/classpocketmine_1_1network_1_1_bidirectional_bandwidth_stats_tracker" ],
+    [ "FilterNoisyPacketException", "d1/d97/classpocketmine_1_1network_1_1_filter_noisy_packet_exception.html", null ],
     [ "Network", "df/d91/classpocketmine_1_1network_1_1_network.html", "df/d91/classpocketmine_1_1network_1_1_network" ],
     [ "NetworkInterface", "db/d95/interfacepocketmine_1_1network_1_1_network_interface.html", "db/d95/interfacepocketmine_1_1network_1_1_network_interface" ],
     [ "NetworkInterfaceStartException", "db/d75/classpocketmine_1_1network_1_1_network_interface_start_exception.html", null ],

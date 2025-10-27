@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-806d88ec20f35d738d58baa8d4db319fbdea3bdc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.36.1 git-55c110e5c700c713120b6063b24d64da9128ed0b</span>
    </div>
   </td>
  </tr>
@@ -217,24 +217,40 @@ $(function(){initNavTree('db/d51/_use_item_transaction_data_8php_source.html','.
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        VarInt::writeUnsignedInt($out, $this-&gt;clientInteractPrediction-&gt;value);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../dd/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_transaction_data.html#a5768ccede8303f73b8a17b20303d4926">  112</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">new</span>(array $actions, <span class="keywordtype">int</span> $actionType, TriggerType $triggerType, <a class="code hl_class" href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">BlockPosition</a> $blockPosition, <span class="keywordtype">int</span> $face, <span class="keywordtype">int</span> $hotbarSlot, <a class="code hl_class" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a> $itemInHand, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $playerPosition, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickPosition, <span class="keywordtype">int</span> $blockRuntimeId, PredictedResult $clientInteractPrediction) : self{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        $result = new self;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $result-&gt;actions = $actions;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        $result-&gt;actionType = $actionType;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        $result-&gt;triggerType = $triggerType;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        $result-&gt;blockPosition = $blockPosition;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        $result-&gt;face = $face;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $result-&gt;hotbarSlot = $hotbarSlot;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        $result-&gt;itemInHand = $itemInHand;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        $result-&gt;playerPosition = $playerPosition;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        $result-&gt;clickPosition = $clickPosition;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $result-&gt;blockRuntimeId = $blockRuntimeId;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        $result-&gt;clientInteractPrediction = $clientInteractPrediction;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> initSelf(</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordtype">int</span> $actionType,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        TriggerType $triggerType,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_class" href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">BlockPosition</a> $blockPosition,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordtype">int</span> $face,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordtype">int</span> $hotbarSlot,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <a class="code hl_class" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a> $itemInHand,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $playerPosition,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickPosition,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordtype">int</span> $blockRuntimeId,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        PredictedResult $clientInteractPrediction,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    ) : self{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        $result = new self;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        $result-&gt;actionType = $actionType;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        $result-&gt;triggerType = $triggerType;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        $result-&gt;blockPosition = $blockPosition;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        $result-&gt;face = $face;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        $result-&gt;hotbarSlot = $hotbarSlot;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        $result-&gt;itemInHand = $itemInHand;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        $result-&gt;playerPosition = $playerPosition;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        $result-&gt;clickPosition = $clickPosition;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        $result-&gt;blockRuntimeId = $blockRuntimeId;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        $result-&gt;clientInteractPrediction = $clientInteractPrediction;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../dd/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_transaction_data.html#a5768ccede8303f73b8a17b20303d4926">  141</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">new</span>(array $actions, <span class="keywordtype">int</span> $actionType, TriggerType $triggerType, <a class="code hl_class" href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">BlockPosition</a> $blockPosition, <span class="keywordtype">int</span> $face, <span class="keywordtype">int</span> $hotbarSlot, <a class="code hl_class" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a> $itemInHand, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $playerPosition, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickPosition, <span class="keywordtype">int</span> $blockRuntimeId, PredictedResult $clientInteractPrediction) : self{</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        $result = self::initSelf($actionType, $triggerType, $blockPosition, $face, $hotbarSlot, $itemInHand, $playerPosition, $clickPosition, $blockRuntimeId, $clientInteractPrediction);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        $result-&gt;actions = $actions;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
 </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet_html"><div class="ttname"><a href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8b/_inventory_transaction_packet_8php_source.html#l00033">InventoryTransactionPacket.php:33</a></div></div>

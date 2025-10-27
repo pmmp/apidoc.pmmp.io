@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-806d88ec20f35d738d58baa8d4db319fbdea3bdc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.36.1 git-55c110e5c700c713120b6063b24d64da9128ed0b</span>
    </div>
   </td>
  </tr>
@@ -257,6 +257,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0a422a89abd427286bc2f312100f968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9866a7ab362cec28252d67f6382a4ad4" id="r_a9866a7ab362cec28252d67f6382a4ad4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#a9866a7ab362cec28252d67f6382a4ad4">nbtDeserialize</a> (<a class="el" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag)</td></tr>
 <tr class="separator:a9866a7ab362cec28252d67f6382a4ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaf9728336726192e1499e47cf7ae1d" id="r_adfaf9728336726192e1499e47cf7ae1d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html#adfaf9728336726192e1499e47cf7ae1d">safeNbtDeserialize</a> (<a class="el" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a> $tag, string $errorLogContext, ?\<a class="el" href="../../d4/d00/interface_logger.html">Logger</a> $logger=null)</td></tr>
+<tr class="separator:adfaf9728336726192e1499e47cf7ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -357,7 +359,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d98/_item_8php_source.html#l00778">778</a> of file <a class="el" href="../../db/d98/_item_8php_source.html">Item.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d98/_item_8php_source.html#l00796">796</a> of file <a class="el" href="../../db/d98/_item_8php_source.html">Item.php</a>.</p>
 
 </div>
 </div>
@@ -2093,6 +2095,49 @@ AvailableEnchantmentRegistry</dd></dl>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d8a/classpocketmine_1_1item_1_1_item_a67b44433c553602d7c851b1ca23e6e5e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="adfaf9728336726192e1499e47cf7ae1d" name="adfaf9728336726192e1499e47cf7ae1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaf9728336726192e1499e47cf7ae1d">&#9670;&#160;</a></span>safeNbtDeserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\item\Item::safeNbtDeserialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">CompoundTag</a></td>          <td class="paramname"><span class="paramname"><em>$tag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$errorLogContext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?\<a class="el" href="../../d4/d00/interface_logger.html">Logger</a></td>          <td class="paramname"><span class="paramname"><em>$logger</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as nbtDeserialize(), but purposely suppresses data errors and returns AIR if deserialization fails. An error will be logged to the global logger if this happens.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$errorLogContext</td><td>Used in log messages if deserialization fails to aid debugging (e.g. inventory owner, slot number, etc.) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d98/_item_8php_source.html#l00784">784</a> of file <a class="el" href="../../db/d98/_item_8php_source.html">Item.php</a>.</p>
 
 </div>
 </div>

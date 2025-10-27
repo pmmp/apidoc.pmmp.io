@@ -45,6 +45,7 @@ var classpocketmine_1_1item_1_1_spider_eye =
     [ "onTickWorn", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
     [ "requiresHunger", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a653a8fbd8da17b08be95a985d857c4fc", null ],
+    [ "safeNbtDeserialize", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "d8/d83/classpocketmine_1_1item_1_1_spider_eye.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],

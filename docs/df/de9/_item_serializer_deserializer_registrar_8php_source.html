@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.35.1 git-806d88ec20f35d738d58baa8d4db319fbdea3bdc</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.36.1 git-55c110e5c700c713120b6063b24d64da9128ed0b</span>
    </div>
   </td>
  </tr>
@@ -593,85 +593,93 @@ $(function(){initNavTree('df/de9/_item_serializer_deserializer_registrar_8php_so
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>            fn(GoatHorn $item) =&gt; GoatHornTypeIdMap::getInstance()-&gt;toId($item-&gt;getHornType())</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        );</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        $this-&gt;map1to1ItemWithMeta(</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            Ids::MEDICINE,</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            Items::MEDICINE(),</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>            <span class="keyword">function</span>(Medicine $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                $item-&gt;setType(MedicineTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown medicine type ID $meta&quot;</span>));</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            Ids::LINGERING_POTION,</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            Items::LINGERING_POTION(),</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>            <span class="keyword">function</span>(SplashPotion $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                $item-&gt;setType(PotionTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown potion type ID $meta&quot;</span>));</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>            },</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            fn(Medicine $item) =&gt; MedicineTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            fn(SplashPotion $item) =&gt; PotionTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        );</div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        $this-&gt;map1to1ItemWithMeta(</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>            Ids::POTION,</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            Items::POTION(),</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>            <span class="keyword">function</span>(Potion $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                $item-&gt;setType(PotionTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown potion type ID $meta&quot;</span>));</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>            Ids::MEDICINE,</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            Items::MEDICINE(),</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>            <span class="keyword">function</span>(Medicine $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                $item-&gt;setType(MedicineTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown medicine type ID $meta&quot;</span>));</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>            },</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>            fn(Potion $item) =&gt; PotionTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>            fn(Medicine $item) =&gt; MedicineTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        );</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        $this-&gt;map1to1ItemWithMeta(</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>            Ids::SPLASH_POTION,</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>            Items::SPLASH_POTION(),</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>            <span class="keyword">function</span>(SplashPotion $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>            Ids::POTION,</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>            Items::POTION(),</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>            <span class="keyword">function</span>(Potion $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>                $item-&gt;setType(PotionTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown potion type ID $meta&quot;</span>));</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>            },</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>            fn(SplashPotion $item) =&gt; PotionTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>            fn(Potion $item) =&gt; PotionTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        );</div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        $this-&gt;map1to1ItemWithMeta(</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>            Ids::SUSPICIOUS_STEW,</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>            Items::SUSPICIOUS_STEW(),</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>            <span class="keyword">function</span>(SuspiciousStew $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>                $item-&gt;setType(SuspiciousStewTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown suspicious stew type ID $meta&quot;</span>));</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>            Ids::SPLASH_POTION,</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>            Items::SPLASH_POTION(),</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>            <span class="keyword">function</span>(SplashPotion $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>                $item-&gt;setType(PotionTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown potion type ID $meta&quot;</span>));</div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>            },</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>            fn(SuspiciousStew $item) =&gt; SuspiciousStewTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>            fn(SplashPotion $item) =&gt; PotionTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        );</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    }</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="keyword">private</span> <span class="keyword">function</span> registerMiscItemMappings() : void{</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>        foreach(DyeColor::cases() as $color){</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>            $id = DyeColorIdMap::getInstance()-&gt;toItemId($color);</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>            $this-&gt;deserializer?-&gt;map($id, fn() =&gt; Items::DYE()-&gt;setColor($color));</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        }</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        $this-&gt;serializer?-&gt;map(Items::DYE(), fn(Dye $item) =&gt; <span class="keyword">new</span> Data(DyeColorIdMap::getInstance()-&gt;toItemId($item-&gt;getColor())));</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>        $this-&gt;deserializer?-&gt;map(Ids::BANNER, <span class="keyword">function</span>(Data $data) : Item{</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>            $type = $data-&gt;getTag()?-&gt;getInt(TileBanner::TAG_TYPE, TileBanner::TYPE_NORMAL) ?? TileBanner::TYPE_NORMAL;</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>            <span class="keywordflow">if</span>($type === TileBanner::TYPE_OMINOUS){</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                <span class="keywordflow">return</span> Items::OMINOUS_BANNER();</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>            }</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>            $color = DyeColorIdMap::getInstance()-&gt;fromInvertedId($data-&gt;getMeta()) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown banner meta &quot;</span> . $data-&gt;getMeta());</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>            <span class="keywordflow">return</span> Items::BANNER()-&gt;setColor($color);</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        });</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        $this-&gt;serializer?-&gt;map(Items::OMINOUS_BANNER(), fn() =&gt; <span class="keyword">new</span> Data(Ids::BANNER, tag: CompoundTag::create()</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>            -&gt;setInt(TileBanner::TAG_TYPE, TileBanner::TYPE_OMINOUS))</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>        );</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        $this-&gt;serializer?-&gt;map(Items::BANNER(), <span class="keyword">function</span>(Banner $item) : Data{</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> Data(Ids::BANNER, DyeColorIdMap::getInstance()-&gt;toInvertedId($item-&gt;getColor()));</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        });</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="keyword">private</span> <span class="keyword">function</span> registerMiscBlockMappings() : void{</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        $copperDoorStateIdMap = [];</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="keywordflow">foreach</span> ([</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>            [Ids::COPPER_DOOR, CopperOxidation::NONE, <span class="keyword">false</span>],</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>            [Ids::EXPOSED_COPPER_DOOR, CopperOxidation::EXPOSED, <span class="keyword">false</span>],</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>            [Ids::WEATHERED_COPPER_DOOR, CopperOxidation::WEATHERED, <span class="keyword">false</span>],</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>            [Ids::OXIDIZED_COPPER_DOOR, CopperOxidation::OXIDIZED, <span class="keyword">false</span>],</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            [Ids::WAXED_COPPER_DOOR, CopperOxidation::NONE, <span class="keyword">true</span>],</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            [Ids::WAXED_EXPOSED_COPPER_DOOR, CopperOxidation::EXPOSED, <span class="keyword">true</span>],</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            [Ids::WAXED_WEATHERED_COPPER_DOOR, CopperOxidation::WEATHERED, <span class="keyword">true</span>],</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>            [Ids::WAXED_OXIDIZED_COPPER_DOOR, CopperOxidation::OXIDIZED, <span class="keyword">true</span>]</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        ] as [$id, $oxidation, $waxed]) {</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            $copperDoorStateIdMap[$oxidation-&gt;value][$waxed ? 1 : 0] = $id;</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            $this-&gt;deserializer?-&gt;mapBlock($id, fn() =&gt; Blocks::COPPER_DOOR()-&gt;setOxidation($oxidation)-&gt;setWaxed($waxed));</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        }</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        $this-&gt;serializer?-&gt;mapBlock(Blocks::COPPER_DOOR(), fn(CopperDoor $block) =&gt; <span class="keyword">new</span> Data($copperDoorStateIdMap[$block-&gt;getOxidation()-&gt;value][$block-&gt;isWaxed() ? 1 : 0]));</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    }</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>}</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        $this-&gt;map1to1ItemWithMeta(</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            Ids::SUSPICIOUS_STEW,</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            Items::SUSPICIOUS_STEW(),</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>            <span class="keyword">function</span>(SuspiciousStew $item, <span class="keywordtype">int</span> $meta) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                $item-&gt;setType(SuspiciousStewTypeIdMap::getInstance()-&gt;fromId($meta) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown suspicious stew type ID $meta&quot;</span>));</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>            },</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>            fn(SuspiciousStew $item) =&gt; SuspiciousStewTypeIdMap::getInstance()-&gt;toId($item-&gt;getType())</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        );</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    }</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keyword">private</span> <span class="keyword">function</span> registerMiscItemMappings() : void{</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>        foreach(DyeColor::cases() as $color){</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>            $id = DyeColorIdMap::getInstance()-&gt;toItemId($color);</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>            $this-&gt;deserializer?-&gt;map($id, fn() =&gt; Items::DYE()-&gt;setColor($color));</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>        }</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        $this-&gt;serializer?-&gt;map(Items::DYE(), fn(Dye $item) =&gt; <span class="keyword">new</span> Data(DyeColorIdMap::getInstance()-&gt;toItemId($item-&gt;getColor())));</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span> </div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        $this-&gt;deserializer?-&gt;map(Ids::BANNER, <span class="keyword">function</span>(Data $data) : Item{</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>            $type = $data-&gt;getTag()?-&gt;getInt(TileBanner::TAG_TYPE, TileBanner::TYPE_NORMAL) ?? TileBanner::TYPE_NORMAL;</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            <span class="keywordflow">if</span>($type === TileBanner::TYPE_OMINOUS){</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                <span class="keywordflow">return</span> Items::OMINOUS_BANNER();</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>            }</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>            $color = DyeColorIdMap::getInstance()-&gt;fromInvertedId($data-&gt;getMeta()) ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ItemTypeDeserializeException(<span class="stringliteral">&quot;Unknown banner meta &quot;</span> . $data-&gt;getMeta());</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>            <span class="keywordflow">return</span> Items::BANNER()-&gt;setColor($color);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        });</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        $this-&gt;serializer?-&gt;map(Items::OMINOUS_BANNER(), fn() =&gt; <span class="keyword">new</span> Data(Ids::BANNER, tag: CompoundTag::create()</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>            -&gt;setInt(TileBanner::TAG_TYPE, TileBanner::TYPE_OMINOUS))</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        );</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        $this-&gt;serializer?-&gt;map(Items::BANNER(), <span class="keyword">function</span>(Banner $item) : Data{</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> Data(Ids::BANNER, DyeColorIdMap::getInstance()-&gt;toInvertedId($item-&gt;getColor()));</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        });</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    }</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    <span class="keyword">private</span> <span class="keyword">function</span> registerMiscBlockMappings() : void{</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        $copperDoorStateIdMap = [];</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        <span class="keywordflow">foreach</span> ([</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            [Ids::COPPER_DOOR, CopperOxidation::NONE, <span class="keyword">false</span>],</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            [Ids::EXPOSED_COPPER_DOOR, CopperOxidation::EXPOSED, <span class="keyword">false</span>],</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            [Ids::WEATHERED_COPPER_DOOR, CopperOxidation::WEATHERED, <span class="keyword">false</span>],</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>            [Ids::OXIDIZED_COPPER_DOOR, CopperOxidation::OXIDIZED, <span class="keyword">false</span>],</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>            [Ids::WAXED_COPPER_DOOR, CopperOxidation::NONE, <span class="keyword">true</span>],</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            [Ids::WAXED_EXPOSED_COPPER_DOOR, CopperOxidation::EXPOSED, <span class="keyword">true</span>],</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>            [Ids::WAXED_WEATHERED_COPPER_DOOR, CopperOxidation::WEATHERED, <span class="keyword">true</span>],</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>            [Ids::WAXED_OXIDIZED_COPPER_DOOR, CopperOxidation::OXIDIZED, <span class="keyword">true</span>]</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        ] as [$id, $oxidation, $waxed]) {</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>            $copperDoorStateIdMap[$oxidation-&gt;value][$waxed ? 1 : 0] = $id;</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>            $this-&gt;deserializer?-&gt;mapBlock($id, fn() =&gt; Blocks::COPPER_DOOR()-&gt;setOxidation($oxidation)-&gt;setWaxed($waxed));</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        }</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        $this-&gt;serializer?-&gt;mapBlock(Blocks::COPPER_DOOR(), fn(CopperDoor $block) =&gt; <span class="keyword">new</span> Data($copperDoorStateIdMap[$block-&gt;getOxidation()-&gt;value][$block-&gt;isWaxed() ? 1 : 0]));</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    }</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_bed_html"><div class="ttname"><a href="../../d0/dde/classpocketmine_1_1block_1_1_bed.html">pocketmine\block\Bed</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d93/_bed_8php_source.html#l00046">Bed.php:46</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_html"><div class="ttname"><a href="../../d7/d27/classpocketmine_1_1block_1_1_block.html">pocketmine\block\Block</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d89/_block_8php_source.html#l00063">Block.php:63</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_copper_door_html"><div class="ttname"><a href="../../df/d58/classpocketmine_1_1block_1_1_copper_door.html">pocketmine\block\CopperDoor</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d30/_copper_door_8php_source.html#l00033">CopperDoor.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00851">VanillaBlocks.php:851</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_vanilla_blocks_html"><div class="ttname"><a href="../../df/dec/classpocketmine_1_1block_1_1_vanilla_blocks.html">pocketmine\block\VanillaBlocks</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7b/_vanilla_blocks_8php_source.html#l00856">VanillaBlocks.php:856</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1tile_1_1_banner_html"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1block_1_1tile_1_1_banner.html">pocketmine\block\tile\Banner</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d49/block_2tile_2_banner_8php_source.html#l00038">block/tile/Banner.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_compound_type_ids_html"><div class="ttname"><a href="../../d1/d35/classpocketmine_1_1data_1_1bedrock_1_1_compound_type_ids.html">pocketmine\data\bedrock\CompoundTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d67/_compound_type_ids_8php_source.html#l00026">CompoundTypeIds.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map_html"><div class="ttname"><a href="../../d5/d50/classpocketmine_1_1data_1_1bedrock_1_1_dye_color_id_map.html">pocketmine\data\bedrock\DyeColorIdMap</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d94/_dye_color_id_map_8php_source.html#l00031">DyeColorIdMap.php:31</a></div></div>
@@ -697,7 +705,7 @@ $(function(){initNavTree('df/de9/_item_serializer_deserializer_registrar_8php_so
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_potion_html"><div class="ttname"><a href="../../d3/d00/classpocketmine_1_1item_1_1_potion.html">pocketmine\item\Potion</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d89/_potion_8php_source.html#l00031">Potion.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_splash_potion_html"><div class="ttname"><a href="../../d7/d11/classpocketmine_1_1item_1_1_splash_potion.html">pocketmine\item\SplashPotion</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/da8/item_2_splash_potion_8php_source.html#l00032">item/SplashPotion.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_suspicious_stew_html"><div class="ttname"><a href="../../d5/d12/classpocketmine_1_1item_1_1_suspicious_stew.html">pocketmine\item\SuspiciousStew</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d69/_suspicious_stew_8php_source.html#l00028">SuspiciousStew.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00361">VanillaItems.php:361</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1item_1_1_vanilla_items_html"><div class="ttname"><a href="../../d9/dff/classpocketmine_1_1item_1_1_vanilla_items.html">pocketmine\item\VanillaItems</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/da6/_vanilla_items_8php_source.html#l00362">VanillaItems.php:362</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00045">CompoundTag.php:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

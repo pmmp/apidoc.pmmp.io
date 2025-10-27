@@ -45,6 +45,7 @@ var classpocketmine_1_1item_1_1_melon =
     [ "onTickWorn", "d7/da1/classpocketmine_1_1item_1_1_melon.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "d7/da1/classpocketmine_1_1item_1_1_melon.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
     [ "requiresHunger", "d7/da1/classpocketmine_1_1item_1_1_melon.html#a653a8fbd8da17b08be95a985d857c4fc", null ],
+    [ "safeNbtDeserialize", "d7/da1/classpocketmine_1_1item_1_1_melon.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "d7/da1/classpocketmine_1_1item_1_1_melon.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "d7/da1/classpocketmine_1_1item_1_1_melon.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "d7/da1/classpocketmine_1_1item_1_1_melon.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],

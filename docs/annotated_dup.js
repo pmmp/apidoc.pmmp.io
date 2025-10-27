@@ -131,6 +131,7 @@ var annotated_dup =
         [ "BuddingAmethyst", "dc/df3/classpocketmine_1_1block_1_1_budding_amethyst.html", "dc/df3/classpocketmine_1_1block_1_1_budding_amethyst" ],
         [ "Button", "d2/da2/classpocketmine_1_1block_1_1_button.html", "d2/da2/classpocketmine_1_1block_1_1_button" ],
         [ "Cactus", "df/d22/classpocketmine_1_1block_1_1_cactus.html", "df/d22/classpocketmine_1_1block_1_1_cactus" ],
+        [ "CactusFlower", "dd/dc8/classpocketmine_1_1block_1_1_cactus_flower.html", "dd/dc8/classpocketmine_1_1block_1_1_cactus_flower" ],
         [ "Cake", "df/d1c/classpocketmine_1_1block_1_1_cake.html", "df/d1c/classpocketmine_1_1block_1_1_cake" ],
         [ "CakeWithCandle", "da/d60/classpocketmine_1_1block_1_1_cake_with_candle.html", "da/d60/classpocketmine_1_1block_1_1_cake_with_candle" ],
         [ "CakeWithDyedCandle", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html", "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle" ],
@@ -159,9 +160,12 @@ var annotated_dup =
         [ "Concrete", "d8/d25/classpocketmine_1_1block_1_1_concrete.html", "d8/d25/classpocketmine_1_1block_1_1_concrete" ],
         [ "ConcretePowder", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder.html", "d1/dda/classpocketmine_1_1block_1_1_concrete_powder" ],
         [ "Copper", "d7/d18/classpocketmine_1_1block_1_1_copper.html", "d7/d18/classpocketmine_1_1block_1_1_copper" ],
+        [ "CopperBars", "d9/d09/classpocketmine_1_1block_1_1_copper_bars.html", "d9/d09/classpocketmine_1_1block_1_1_copper_bars" ],
         [ "CopperBulb", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb.html", "d2/de7/classpocketmine_1_1block_1_1_copper_bulb" ],
+        [ "CopperChain", "df/d88/classpocketmine_1_1block_1_1_copper_chain.html", "df/d88/classpocketmine_1_1block_1_1_copper_chain" ],
         [ "CopperDoor", "df/d58/classpocketmine_1_1block_1_1_copper_door.html", "df/d58/classpocketmine_1_1block_1_1_copper_door" ],
         [ "CopperGrate", "d0/d03/classpocketmine_1_1block_1_1_copper_grate.html", "d0/d03/classpocketmine_1_1block_1_1_copper_grate" ],
+        [ "CopperLantern", "d1/d9d/classpocketmine_1_1block_1_1_copper_lantern.html", "d1/d9d/classpocketmine_1_1block_1_1_copper_lantern" ],
         [ "CopperOre", "de/d68/classpocketmine_1_1block_1_1_copper_ore.html", "de/d68/classpocketmine_1_1block_1_1_copper_ore" ],
         [ "CopperSlab", "d1/d66/classpocketmine_1_1block_1_1_copper_slab.html", "d1/d66/classpocketmine_1_1block_1_1_copper_slab" ],
         [ "CopperStairs", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs.html", "d4/de1/classpocketmine_1_1block_1_1_copper_stairs" ],
@@ -600,6 +604,7 @@ var annotated_dup =
         [ "effect", null, [
           [ "AbsorptionEffect", "d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect.html", "d3/d72/classpocketmine_1_1entity_1_1effect_1_1_absorption_effect" ],
           [ "Effect", "d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html", "d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect" ],
+          [ "EffectCollection", "d7/d9f/classpocketmine_1_1entity_1_1effect_1_1_effect_collection.html", "d7/d9f/classpocketmine_1_1entity_1_1effect_1_1_effect_collection" ],
           [ "EffectInstance", "dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance.html", "dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance" ],
           [ "EffectManager", "da/d02/classpocketmine_1_1entity_1_1effect_1_1_effect_manager.html", "da/d02/classpocketmine_1_1entity_1_1effect_1_1_effect_manager" ],
           [ "HealthBoostEffect", "de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect.html", "de/d8c/classpocketmine_1_1entity_1_1effect_1_1_health_boost_effect" ],
@@ -619,6 +624,7 @@ var annotated_dup =
           [ "WitherEffect", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect" ]
         ] ],
         [ "object", null, [
+          [ "AreaEffectCloud", "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html", "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud" ],
           [ "EndCrystal", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal.html", "dc/d98/classpocketmine_1_1entity_1_1object_1_1_end_crystal" ],
           [ "ExperienceOrb", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb.html", "df/deb/classpocketmine_1_1entity_1_1object_1_1_experience_orb" ],
           [ "FallingBlock", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block.html", "df/d14/classpocketmine_1_1entity_1_1object_1_1_falling_block" ],
@@ -701,6 +707,7 @@ var annotated_dup =
           [ "StructureGrowEvent", "dd/d17/classpocketmine_1_1event_1_1block_1_1_structure_grow_event.html", "dd/d17/classpocketmine_1_1event_1_1block_1_1_structure_grow_event" ]
         ] ],
         [ "entity", "d9/d86/namespacepocketmine_1_1event_1_1entity.html", [
+          [ "AreaEffectCloudApplyEvent", "d8/d7c/classpocketmine_1_1event_1_1entity_1_1_area_effect_cloud_apply_event.html", "d8/d7c/classpocketmine_1_1event_1_1entity_1_1_area_effect_cloud_apply_event" ],
           [ "EntityBlockChangeEvent", "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html", "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event" ],
           [ "EntityCombustByBlockEvent", "df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event.html", "df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event" ],
           [ "EntityCombustByEntityEvent", "da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event.html", "da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event" ],
@@ -1142,8 +1149,11 @@ var annotated_dup =
           ] ],
           [ "protocol", null, [
             [ "serializer", null, [
+              [ "AvailableCommandsPacketAssembler", "db/dd7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_available_commands_packet_assembler.html", "db/dd7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_available_commands_packet_assembler" ],
+              [ "AvailableCommandsPacketDisassembler", "d9/d5e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_available_commands_packet_disassembler.html", null ],
               [ "BitSet", "db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set.html", "db/db6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_bit_set" ],
               [ "CommonTypes", "d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html", "d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types" ],
+              [ "DisassembledAvailableCommandsData", "d7/d61/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_disassembled_available_commands_data.html", "d7/d61/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_disassembled_available_commands_data" ],
               [ "ItemTypeDictionary", "da/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_item_type_dictionary.html", "da/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_item_type_dictionary" ],
               [ "NetworkNbtSerializer", "d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer.html", "d4/dc8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_network_nbt_serializer" ],
               [ "PacketBatch", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch.html", "d9/df4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_packet_batch" ]
@@ -1193,17 +1203,27 @@ var annotated_dup =
                 [ "CameraTargetInstruction", "d1/d7c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1camera_1_1_camera_target_instruction.html", null ]
               ] ],
               [ "command", null, [
+                [ "raw", null, [
+                  [ "ChainedSubCommandRawData", "db/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_chained_sub_command_raw_data.html", "db/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_chained_sub_command_raw_data" ],
+                  [ "ChainedSubCommandValueRawData", "db/dd3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_chained_sub_command_value_raw_data.html", null ],
+                  [ "CommandEnumConstraintRawData", "df/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_enum_constraint_raw_data.html", "df/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_enum_constraint_raw_data" ],
+                  [ "CommandEnumRawData", "d1/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_enum_raw_data.html", "d1/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_enum_raw_data" ],
+                  [ "CommandOverloadRawData", "d4/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_overload_raw_data.html", "d4/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_overload_raw_data" ],
+                  [ "CommandParameterRawData", "d9/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_parameter_raw_data.html", null ],
+                  [ "CommandRawData", "d1/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_raw_data.html", "d1/d87/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1raw_1_1_command_raw_data" ]
+                ] ],
                 [ "ChainedSubCommandData", "d9/d55/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_data.html", "d9/d55/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_data" ],
                 [ "ChainedSubCommandValue", "dc/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_value.html", "dc/db9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_chained_sub_command_value" ],
                 [ "CommandData", "dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data.html", "dd/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_data" ],
-                [ "CommandEnum", "df/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum.html", "df/dc3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum" ],
-                [ "CommandEnumConstraint", "d1/d8f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum_constraint.html", "d1/d8f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_enum_constraint" ],
+                [ "CommandHardEnum", "d2/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_hard_enum.html", "d2/d90/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_hard_enum" ],
                 [ "CommandOriginData", "d9/dec/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_origin_data.html", null ],
                 [ "CommandOutputMessage", "d4/d31/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_output_message.html", null ],
                 [ "CommandOverload", "d8/dc1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_overload.html", "d8/dc1/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_overload" ],
-                [ "CommandParameter", "d1/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter.html", null ],
+                [ "CommandParameter", "d1/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter.html", "d1/d80/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter" ],
                 [ "CommandParameterTypes", "db/d73/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_parameter_types.html", null ],
-                [ "CommandPermissions", "d1/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_permissions.html", null ]
+                [ "CommandPermissions", "d1/dfa/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_permissions.html", null ],
+                [ "CommandSoftEnum", "d7/d5b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_soft_enum.html", "d7/d5b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_command_soft_enum" ],
+                [ "ConstrainedEnumValue", "d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_constrained_enum_value.html", "d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1command_1_1_constrained_enum_value" ]
               ] ],
               [ "entity", null, [
                 [ "Attribute", "da/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute.html", "da/de0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_attribute" ],
@@ -1685,6 +1705,7 @@ var annotated_dup =
         [ "AdvancedNetworkInterface", "dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface.html", "dd/de4/interfacepocketmine_1_1network_1_1_advanced_network_interface" ],
         [ "BandwidthStatsTracker", "da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker.html", "da/de2/classpocketmine_1_1network_1_1_bandwidth_stats_tracker" ],
         [ "BidirectionalBandwidthStatsTracker", "dd/d87/classpocketmine_1_1network_1_1_bidirectional_bandwidth_stats_tracker.html", "dd/d87/classpocketmine_1_1network_1_1_bidirectional_bandwidth_stats_tracker" ],
+        [ "FilterNoisyPacketException", "d1/d97/classpocketmine_1_1network_1_1_filter_noisy_packet_exception.html", null ],
         [ "Network", "df/d91/classpocketmine_1_1network_1_1_network.html", "df/d91/classpocketmine_1_1network_1_1_network" ],
         [ "NetworkInterface", "db/d95/interfacepocketmine_1_1network_1_1_network_interface.html", "db/d95/interfacepocketmine_1_1network_1_1_network_interface" ],
         [ "NetworkInterfaceStartException", "db/d75/classpocketmine_1_1network_1_1_network_interface_start_exception.html", null ],
@@ -2016,6 +2037,7 @@ var annotated_dup =
           [ "RedstoneParticle", "d8/d7b/classpocketmine_1_1world_1_1particle_1_1_redstone_particle.html", "d8/d7b/classpocketmine_1_1world_1_1particle_1_1_redstone_particle" ],
           [ "SmokeParticle", "dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle.html", "dc/df4/classpocketmine_1_1world_1_1particle_1_1_smoke_particle" ],
           [ "SnowballPoofParticle", "d6/d9f/classpocketmine_1_1world_1_1particle_1_1_snowball_poof_particle.html", "d6/d9f/classpocketmine_1_1world_1_1particle_1_1_snowball_poof_particle" ],
+          [ "SonicExplosionParticle", "d6/deb/classpocketmine_1_1world_1_1particle_1_1_sonic_explosion_particle.html", "d6/deb/classpocketmine_1_1world_1_1particle_1_1_sonic_explosion_particle" ],
           [ "SplashParticle", "d7/dcc/classpocketmine_1_1world_1_1particle_1_1_splash_particle.html", "d7/dcc/classpocketmine_1_1world_1_1particle_1_1_splash_particle" ],
           [ "SporeParticle", "d5/d5d/classpocketmine_1_1world_1_1particle_1_1_spore_particle.html", "d5/d5d/classpocketmine_1_1world_1_1particle_1_1_spore_particle" ],
           [ "TerrainParticle", "dc/d7b/classpocketmine_1_1world_1_1particle_1_1_terrain_particle.html", "dc/d7b/classpocketmine_1_1world_1_1particle_1_1_terrain_particle" ],

@@ -1,5 +1,6 @@
 var dir_9d6fa2a8476abc8567ee5f18d995c0e6 =
 [
+    [ "AreaEffectCloudApplyEvent.php", "d7/d04/_area_effect_cloud_apply_event_8php_source.html", null ],
     [ "EntityBlockChangeEvent.php", "db/d9a/_entity_block_change_event_8php_source.html", null ],
     [ "EntityCombustByBlockEvent.php", "dc/d6d/_entity_combust_by_block_event_8php_source.html", null ],
     [ "EntityCombustByEntityEvent.php", "d0/d36/_entity_combust_by_entity_event_8php_source.html", null ],

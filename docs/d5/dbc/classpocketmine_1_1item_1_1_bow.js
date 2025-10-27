@@ -46,6 +46,7 @@ var classpocketmine_1_1item_1_1_bow =
     [ "onReleaseUsing", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae1727de5238036de0ff9338867998283", null ],
     [ "onTickWorn", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#aba073e91196cf2978057ec4d3842aa76", null ],
     [ "pop", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a67b44433c553602d7c851b1ca23e6e5e", null ],
+    [ "safeNbtDeserialize", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#adfaf9728336726192e1499e47cf7ae1d", null ],
     [ "setCanDestroy", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#ac7e878537e8ea68cc0d4d565f9f25062", null ],
     [ "setCanPlaceOn", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#aa807b0fa5751723fed80570a4de1231b", null ],
     [ "setCount", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a9dd9484fe3ab1afcbd2627860e01973a", null ],
