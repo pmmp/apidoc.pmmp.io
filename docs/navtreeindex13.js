@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d0/dde/classpocketmine_1_1block_1_1_bed.html#afe4928a6da38d63eccea78bd1a2fdcd3":[3,0,1,0,19,21],
 "d0/dde/classpocketmine_1_1block_1_1_bed.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,17,16],
 "d0/dde/classpocketmine_1_1block_1_1_bed.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,19,16],
 "d0/dde/classpocketmine_1_1block_1_1_bed.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,17,28],
@@ -55,7 +56,7 @@ var NAVTREEINDEX13 =
 "d0/ded/_version_info_8php_source.html":[4,0,0,36],
 "d0/dee/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_int_id_meta_item_descriptor.html":[3,0,1,16,0,6,1,6,4],
 "d0/df0/classpocketmine_1_1thread_1_1_thread_exception.html":[3,0,1,25,6],
-"d0/df2/_sub_chunk_request_result_8php_source.html":[4,0,1,0,1,0,1,97],
+"d0/df2/_sub_chunk_request_result_8php_source.html":[4,0,1,0,1,0,1,99],
 "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html":[2,0,0,3,0,16],
 "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html":[3,0,1,9,0,16],
 "d0/df2/classpocketmine_1_1event_1_1block_1_1_brew_item_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,0,16,0],
@@ -74,7 +75,7 @@ var NAVTREEINDEX13 =
 "d0/df2/classpocketmine_1_1plugin_1_1_api_version.html#afdfe7b406b546cc84f7d02c73dd4ef53":[3,0,1,19,0,0],
 "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound.html":[3,0,1,30,5,89],
 "d0/df2/classpocketmine_1_1world_1_1sound_1_1_pressure_plate_deactivate_sound.html#a106f24b33b9a955039d4b9e04753106a":[3,0,1,30,5,89,0],
-"d0/df3/_player_toggle_crafter_slot_request_packet_8php_source.html":[4,0,1,0,1,0,130],
+"d0/df3/_player_toggle_crafter_slot_request_packet_8php_source.html":[4,0,1,0,1,0,133],
 "d0/df3/interfacepocketmine_1_1block_1_1utils_1_1_wood_material.html":[3,0,1,0,2,20],
 "d0/df4/_advanced_network_interface_8php_source.html":[4,0,0,12,3],
 "d0/df7/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_name_ids.html":[3,0,1,16,0,6,1,27],
@@ -103,7 +104,7 @@ var NAVTREEINDEX13 =
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#addf6091efc06869f310cfcdc937d1e6d":[2,0,0,3,1,30,3],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#addf6091efc06869f310cfcdc937d1e6d":[3,0,1,9,1,30,3],
 "d0/dfc/_entity_item_pickup_event_8php_source.html":[4,0,0,7,1,18],
-"d0/dfc/_level_chunk_packet_8php_source.html":[4,0,1,0,1,0,88],
+"d0/dfc/_level_chunk_packet_8php_source.html":[4,0,1,0,1,0,91],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html":[2,0,0,2,13],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html":[3,0,1,7,18],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html#a3fb40491d9ee68d833e434b8900c84f2":[2,0,0,2,13,2],
@@ -117,7 +118,7 @@ var NAVTREEINDEX13 =
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html#ae603135ee276f75567f4d54a395e117a":[2,0,0,2,13,1],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html#ae603135ee276f75567f4d54a395e117a":[3,0,1,7,18,1],
 "d0/dfe/_sonic_explosion_particle_8php_source.html":[4,0,0,25,4,32],
-"d0/dff/_move_actor_delta_packet_8php_source.html":[4,0,1,0,1,0,102],
+"d0/dff/_move_actor_delta_packet_8php_source.html":[4,0,1,0,1,0,105],
 "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html":[2,0,0,0,200],
 "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html":[3,0,1,0,202],
 "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,200,58],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#af834a22f1d4a9ec1d2346fcde8489e84":[3,0,1,0,202,63],
 "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#afb3b7256aa948ded892f0f2aac495221":[2,0,0,0,200,8],
 "d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#afb3b7256aa948ded892f0f2aac495221":[3,0,1,0,202,8],
-"d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,200,29],
-"d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#afcc19c437c8bef4487f5ecb956ae9a1a":[3,0,1,0,202,29]
+"d0/dff/classpocketmine_1_1block_1_1_sea_pickle.html#afcc19c437c8bef4487f5ecb956ae9a1a":[2,0,0,0,200,29]
 };

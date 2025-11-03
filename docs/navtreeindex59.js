@@ -1,5 +1,11 @@
 var NAVTREEINDEX59 =
 {
+"d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,15,35],
+"d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a75b16ca6e22355cf632466a969e79211":[2,0,0,0,13,41],
+"d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,15,41],
+"d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a771a30c30a36b0992f54c57dc63af10d":[2,0,0,0,13,40],
+"d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a771a30c30a36b0992f54c57dc63af10d":[3,0,1,0,15,40],
+"d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a8307fc850da5c3f36e9dfc7ce639fe55":[2,0,0,0,13,45],
 "d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a8307fc850da5c3f36e9dfc7ce639fe55":[3,0,1,0,15,45],
 "d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,13,28],
 "d3/dfa/classpocketmine_1_1block_1_1_base_ominous_banner.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,15,28],
@@ -72,8 +78,8 @@ var NAVTREEINDEX59 =
 "d3/dfa/classpocketmine_1_1data_1_1bedrock_1_1_bedrock_data_files.html":[3,0,1,6,0,3],
 "d3/dfb/_farmland_hydration_change_event_8php_source.html":[4,0,0,7,0,19],
 "d3/dfb/_used_chunk_status_8php_source.html":[4,0,0,14,12],
-"d3/dfc/_player_skin_packet_8php_source.html":[4,0,1,0,1,0,128],
-"d3/dfc/_serverbound_packet_8php_source.html":[4,0,1,0,1,0,157],
+"d3/dfc/_player_skin_packet_8php_source.html":[4,0,1,0,1,0,131],
+"d3/dfc/_serverbound_packet_8php_source.html":[4,0,1,0,1,0,160],
 "d3/dfc/classpocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments.html":[3,0,1,12,0,17],
 "d3/dfc/classpocketmine_1_1item_1_1enchantment_1_1_vanilla_enchantments.html#a57bd67a9a277a9db682c9be9c690b3b4":[3,0,1,12,0,17,0],
 "d3/dfe/_chest_pair_event_8php_source.html":[4,0,0,7,0,18],
@@ -235,7 +241,7 @@ var NAVTREEINDEX59 =
 "d4/d01/classpocketmine_1_1event_1_1world_1_1_world_unload_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,6,13,1],
 "d4/d01/classpocketmine_1_1event_1_1world_1_1_world_unload_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,6,13,1],
 "d4/d02/block_2_potato_8php_source.html":[4,0,0,0,178],
-"d4/d04/_move_player_packet_8php_source.html":[4,0,1,0,1,0,104],
+"d4/d04/_move_player_packet_8php_source.html":[4,0,1,0,1,0,107],
 "d4/d05/_xbox_auth_jwt_header_8php_source.html":[4,0,1,0,1,0,1,6,2,2],
 "d4/d06/_bread_8php_source.html":[4,0,0,10,19],
 "d4/d06/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_resource_packs_packet_handler.html":[3,0,1,16,0,5,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX59 =
 "d4/d09/_stone_pressure_plate_8php_source.html":[4,0,0,0,226],
 "d4/d0b/_armor_equip_gold_sound_8php_source.html":[4,0,0,25,5,7],
 "d4/d0c/block_2_tall_grass_8php_source.html":[4,0,0,0,230],
-"d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html":[3,0,1,16,0,6,1,10],
-"d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html#aab651e0bd36306677d71593963a7ed5a":[3,0,1,16,0,6,1,10,0],
-"d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html#ac4e12a2e1f16bd53caec1287d3ef6bf3":[3,0,1,16,0,6,1,10,1],
-"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html":[2,0,0,5,122],
-"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html":[3,0,1,12,123],
-"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,122,30],
-"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,123,30]
+"d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html":[3,0,1,16,0,6,1,10]
 };

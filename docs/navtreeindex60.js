@@ -1,5 +1,11 @@
 var NAVTREEINDEX60 =
 {
+"d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html#aab651e0bd36306677d71593963a7ed5a":[3,0,1,16,0,6,1,10,0],
+"d4/d0c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_abilities_layer.html#ac4e12a2e1f16bd53caec1287d3ef6bf3":[3,0,1,16,0,6,1,10,1],
+"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html":[2,0,0,5,122],
+"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html":[3,0,1,12,123],
+"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,122,30],
+"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,123,30],
 "d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,122,1],
 "d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,123,1],
 "d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,122,27],
@@ -106,7 +112,7 @@ var NAVTREEINDEX60 =
 "d4/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_skin_piece.html#adc359c8722ab259c3074e313ff6291da":[3,0,1,16,0,6,1,5,0,3,2],
 "d4/d10/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data_persona_skin_piece.html#ae51a284de8958d03bf52bb7221fce997":[3,0,1,16,0,6,1,5,0,3,3],
 "d4/d14/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_chat_restriction_level.html":[3,0,1,16,0,6,1,20],
-"d4/d16/_hurt_armor_packet_8php_source.html":[4,0,1,0,1,0,75],
+"d4/d16/_hurt_armor_packet_8php_source.html":[4,0,1,0,1,0,78],
 "d4/d17/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise.html":[3,0,1,16,0,2,0],
 "d4/d17/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise.html#a446ee9d5b4c8a4ae9359e73c0464f51a":[3,0,1,16,0,2,0,1],
 "d4/d17/classpocketmine_1_1network_1_1mcpe_1_1compression_1_1_compress_batch_promise.html#a6a234155aba45b3418a0141c6d7fa19d":[3,0,1,16,0,2,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX60 =
 "d4/d1a/classpocketmine_1_1block_1_1_snow.html#afcc19c437c8bef4487f5ecb956ae9a1a":[3,0,1,0,210,29],
 "d4/d1a/classpocketmine_1_1block_1_1_snow.html#afe4928a6da38d63eccea78bd1a2fdcd3":[2,0,0,0,208,21],
 "d4/d1a/classpocketmine_1_1block_1_1_snow.html#afe4928a6da38d63eccea78bd1a2fdcd3":[3,0,1,0,210,21],
-"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,208,16],
-"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,210,16],
-"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,208,27],
-"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,210,27],
-"d4/d1c/_torch_8php_source.html":[4,0,0,0,234],
-"d4/d1d/_permissible_internal_8php_source.html":[4,0,0,13,7],
-"d4/d1e/_plain_biome_8php_source.html":[4,0,0,25,0,10]
+"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afe506084e4bb8741a7ac64f6d90c00a5":[2,0,0,0,208,16]
 };

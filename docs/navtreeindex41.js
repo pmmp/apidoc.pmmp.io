@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"d2/da2/classpocketmine_1_1block_1_1_button.html":[3,0,1,0,39],
 "d2/da2/classpocketmine_1_1block_1_1_button.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,37,59],
 "d2/da2/classpocketmine_1_1block_1_1_button.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,39,59],
 "d2/da2/classpocketmine_1_1block_1_1_button.html#a097af4a935135a8524d812f497373075":[2,0,0,0,37,64],
@@ -148,7 +149,7 @@ var NAVTREEINDEX41 =
 "d2/da4/classraklib_1_1protocol_1_1_incompatible_protocol_version.html#ab8de9fe0266990afaa8ba01c09ff302a":[3,0,2,2,11,1],
 "d2/da4/classraklib_1_1protocol_1_1_incompatible_protocol_version.html#ac7e76cdbad6daaa6bf594f5d3d46099e":[3,0,2,2,11,0],
 "d2/da4/classraklib_1_1protocol_1_1_incompatible_protocol_version.html#ae2f92b294d641f3863fd550bc9e5c9d9":[3,0,2,2,11,3],
-"d2/da5/_npc_request_packet_8php_source.html":[4,0,1,0,1,0,110],
+"d2/da5/_npc_request_packet_8php_source.html":[4,0,1,0,1,0,113],
 "d2/da5/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrade_schema_utils.html":[3,0,1,6,0,1,0,4],
 "d2/da5/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_id_meta_upgrade_schema_utils.html#ac64e1b8f8f956e9bb3e84a486057cfc9":[3,0,1,6,0,1,0,4,0],
 "d2/da6/_abilities_data_8php_source.html":[4,0,1,0,1,0,1,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "d2/da7/classpocketmine_1_1item_1_1_cocoa_beans.html#adfaf9728336726192e1499e47cf7ae1d":[3,0,1,12,25,41],
 "d2/da7/classpocketmine_1_1item_1_1_cocoa_beans.html#ae0735ccc1dee85d0c095aaa4109f40fb":[2,0,0,5,24,12],
 "d2/da7/classpocketmine_1_1item_1_1_cocoa_beans.html#ae0735ccc1dee85d0c095aaa4109f40fb":[3,0,1,12,25,12],
-"d2/da7/classpocketmine_1_1item_1_1_cocoa_beans.html#ae2543fd294d689ca6850d5bc78710522":[2,0,0,5,24,35],
-"d2/da7/classpocketmine_1_1item_1_1_cocoa_beans.html#ae2543fd294d689ca6850d5bc78710522":[3,0,1,12,25,35]
+"d2/da7/classpocketmine_1_1item_1_1_cocoa_beans.html#ae2543fd294d689ca6850d5bc78710522":[2,0,0,5,24,35]
 };

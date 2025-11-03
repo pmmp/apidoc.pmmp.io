@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,56,10],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,54,44],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,56,44],
 "d0/da2/classpocketmine_1_1block_1_1_chemical_heat.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,54,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#acf169f2d54e0084902937105bbc94b84":[3,0,1,7,27,19],
 "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ad0800b31de14ef7ebb1354eb01588010":[2,0,0,2,22,47],
 "d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ad0800b31de14ef7ebb1354eb01588010":[3,0,1,7,27,47],
-"d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ad52d796618bbd28ffa2f90b368f2dd0c":[2,0,0,2,22,54],
-"d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ad52d796618bbd28ffa2f90b368f2dd0c":[3,0,1,7,27,54]
+"d0/da7/classpocketmine_1_1entity_1_1_zombie.html#ad52d796618bbd28ffa2f90b368f2dd0c":[2,0,0,2,22,54]
 };

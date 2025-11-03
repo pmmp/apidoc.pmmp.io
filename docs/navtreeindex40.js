@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#a30a070aa7befb02f9fff5cbf2693c01e":[2,0,0,0,14,9],
 "d2/d83/classpocketmine_1_1block_1_1_base_rail.html#a30a070aa7befb02f9fff5cbf2693c01e":[3,0,1,0,16,9],
 "d2/d83/classpocketmine_1_1block_1_1_base_rail.html#a36afea9f0214193963f75577e8d48c26":[2,0,0,0,14,61],
 "d2/d83/classpocketmine_1_1block_1_1_base_rail.html#a36afea9f0214193963f75577e8d48c26":[3,0,1,0,16,61],
@@ -214,7 +215,7 @@ var NAVTREEINDEX40 =
 "d2/d93/classpocketmine_1_1player_1_1_player_info.html#ab314a302802ee8f08bc0c64ea739343e":[3,0,1,18,9,0],
 "d2/d93/classpocketmine_1_1player_1_1_player_info.html#ad49ab2cfea72ac999e2bf075e6f0f4d1":[3,0,1,18,9,1],
 "d2/d94/_reader_tracker_8php_source.html":[4,0,1,0,8,0,12],
-"d2/d96/_motion_prediction_hints_packet_8php_source.html":[4,0,1,0,1,0,100],
+"d2/d96/_motion_prediction_hints_packet_8php_source.html":[4,0,1,0,1,0,103],
 "d2/d96/classpocketmine_1_1event_1_1entity_1_1_entity_shoot_bow_event.html":[2,0,0,3,1,22],
 "d2/d96/classpocketmine_1_1event_1_1entity_1_1_entity_shoot_bow_event.html":[3,0,1,9,1,22],
 "d2/d96/classpocketmine_1_1event_1_1entity_1_1_entity_shoot_bow_event.html#a2021f7bc8849bd342a3d9248a7cbf8f2":[2,0,0,3,1,22,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "d2/d9e/classpocketmine_1_1world_1_1sound_1_1_cauldron_add_dye_sound.html#a0f35c3e461dd95491bf340413986c23b":[3,0,1,30,5,28,0],
 "d2/da1/_light_8php_source.html":[4,0,0,0,148],
 "d2/da1/_value_set_from_int_property_8php_source.html":[4,0,0,5,0,0,0,0,14],
-"d2/da2/classpocketmine_1_1block_1_1_button.html":[2,0,0,0,37],
-"d2/da2/classpocketmine_1_1block_1_1_button.html":[3,0,1,0,39]
+"d2/da2/classpocketmine_1_1block_1_1_button.html":[2,0,0,0,37]
 };

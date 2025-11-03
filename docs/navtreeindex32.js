@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,47,0],
 "d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,49,0],
 "d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,47,24],
 "d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,49,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "d2/d14/_constrained_enum_value_8php_source.html":[4,0,1,0,1,0,1,2,12],
 "d2/d15/classpocketmine_1_1promise_1_1_promise_shared_data.html":[3,0,1,20,2],
 "d2/d15/classpocketmine_1_1promise_1_1_promise_shared_data.html#ab3eb32ca1195c635209b582165aefc47":[3,0,1,20,2,0],
-"d2/d16/classpocketmine_1_1command_1_1defaults_1_1_stop_command.html":[3,0,1,2,0,31],
-"d2/d16/classpocketmine_1_1command_1_1defaults_1_1_stop_command.html#a425117ae5e7bab32cc824f19f82b613b":[3,0,1,2,0,31,2]
+"d2/d16/classpocketmine_1_1command_1_1defaults_1_1_stop_command.html":[3,0,1,2,0,31]
 };

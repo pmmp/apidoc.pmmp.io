@@ -14,9 +14,11 @@ var dir_a084c78965e105250c47f67113e6cfdd =
     [ "CameraFovInstruction.php", "de/db1/_camera_fov_instruction_8php_source.html", null ],
     [ "CameraPreset.php", "d8/df0/_camera_preset_8php_source.html", null ],
     [ "CameraPresetAimAssist.php", "d4/ddd/_camera_preset_aim_assist_8php_source.html", null ],
+    [ "CameraRotationOption.php", "d0/d56/_camera_rotation_option_8php_source.html", null ],
     [ "CameraSetInstruction.php", "d4/da6/_camera_set_instruction_8php_source.html", null ],
     [ "CameraSetInstructionEase.php", "d5/d58/_camera_set_instruction_ease_8php_source.html", null ],
     [ "CameraSetInstructionEaseType.php", "de/dbb/_camera_set_instruction_ease_type_8php_source.html", null ],
     [ "CameraSetInstructionRotation.php", "d9/db8/_camera_set_instruction_rotation_8php_source.html", null ],
+    [ "CameraSplineInstruction.php", "da/dc7/_camera_spline_instruction_8php_source.html", null ],
     [ "CameraTargetInstruction.php", "de/d22/_camera_target_instruction_8php_source.html", null ]
 ];

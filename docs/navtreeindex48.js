@@ -1,5 +1,9 @@
 var NAVTREEINDEX48 =
 {
+"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ae96e5d919208d6d9d4ccc75136167684":[3,0,1,7,3,8,16],
+"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#af005466cb161158c9e7af41bd4be8241":[3,0,1,7,3,8,17],
+"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#af9c9f94d4c46643cbdaeb7d06d3e44b1":[3,0,1,7,3,8,8],
+"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#afb812d7f22d278d1ac35fc063ea63df7":[3,0,1,7,3,8,28],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#afdd4efc12fe21730ceb104af111f576d":[3,0,1,7,3,8,23],
 "d3/d2f/_food_source_item_8php_source.html":[4,0,0,10,54],
 "d3/d31/_block_state_writer_8php_source.html":[4,0,0,5,0,0,0,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX48 =
 "d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html#aee779e604579f71977cc5624dc8dfd0f":[3,0,1,30,0,3,1],
 "d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update.html":[3,0,1,30,3,0],
 "d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update.html#a11b5ff4ca7b922d880e59ac37ed5007f":[3,0,1,30,3,0,0],
-"d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update.html#a5ef1b15d8e6909d43b18d29dedca11db":[3,0,1,30,3,0,1],
-"d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html":[2,0,0,4,4],
-"d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html":[3,0,1,11,6],
-"d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5b4817d862c5a5a227d7a089bc500bdd":[2,0,0,4,4,5],
-"d3/d3e/classpocketmine_1_1inventory_1_1_creative_inventory.html#a5b4817d862c5a5a227d7a089bc500bdd":[3,0,1,11,6,5]
+"d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update.html#a5ef1b15d8e6909d43b18d29dedca11db":[3,0,1,30,3,0,1]
 };

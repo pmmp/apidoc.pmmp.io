@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"d0/d73/classpocketmine_1_1block_1_1_wall.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,0,0,243,36],
 "d0/d73/classpocketmine_1_1block_1_1_wall.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,245,36],
 "d0/d73/classpocketmine_1_1block_1_1_wall.html#a75b16ca6e22355cf632466a969e79211":[2,0,0,0,243,42],
 "d0/d73/classpocketmine_1_1block_1_1_wall.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,245,42],
@@ -116,7 +117,7 @@ var NAVTREEINDEX6 =
 "d0/d85/classpocketmine_1_1world_1_1generator_1_1populator_1_1_tall_grass.html":[2,0,0,14,0,1,3],
 "d0/d85/classpocketmine_1_1world_1_1generator_1_1populator_1_1_tall_grass.html":[3,0,1,30,2,6,3],
 "d0/d86/_painting_8php_source.html":[4,0,0,6,2,6],
-"d0/d86/_server_stats_packet_8php_source.html":[4,0,1,0,1,0,163],
+"d0/d86/_server_stats_packet_8php_source.html":[4,0,1,0,1,0,165],
 "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html":[3,0,1,7,3,9],
 "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#a02eb3401e4fe566c7a2528aeb7b0222a":[3,0,1,7,3,9,9],
 "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#a099fce07daf8c0ce633456ea00b4272b":[3,0,1,7,3,9,53],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d0/d89/classpocketmine_1_1inventory_1_1_player_off_hand_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[3,0,1,11,16,3],
 "d0/d8a/classpocketmine_1_1event_1_1_handler_list.html":[2,0,0,3,10],
 "d0/d8a/classpocketmine_1_1event_1_1_handler_list.html":[3,0,1,9,10],
-"d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a1a14b52638bc7914af248d00d74fd2a0":[2,0,0,3,10,0],
-"d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a1a14b52638bc7914af248d00d74fd2a0":[3,0,1,9,10,0]
+"d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#a1a14b52638bc7914af248d00d74fd2a0":[2,0,0,3,10,0]
 };

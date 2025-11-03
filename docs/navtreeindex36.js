@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,52,45],
 "d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,53,45],
 "d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a49a05b01faaaf071449c97060fe44926":[2,0,0,5,52,0],
 "d2/d57/classpocketmine_1_1item_1_1_glass_bottle.html#a49a05b01faaaf071449c97060fe44926":[3,0,1,12,53,0],
@@ -79,7 +80,7 @@ var NAVTREEINDEX36 =
 "d2/d5e/interfacepocketmine_1_1event_1_1_listener.html":[3,0,1,9,12],
 "d2/d60/_item_stack_request_action_type_8php_source.html":[4,0,1,0,1,0,1,5,0,15],
 "d2/d60/_plugin_owned_8php_source.html":[4,0,0,15,18],
-"d2/d62/_structure_editor_data_8php_source.html":[4,0,1,0,1,0,1,86],
+"d2/d62/_structure_editor_data_8php_source.html":[4,0,1,0,1,0,1,88],
 "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html":[2,0,0,5,120],
 "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html":[3,0,1,12,121],
 "d2/d63/classpocketmine_1_1item_1_1_vanilla_armor_materials.html#ab370e7ef515d5e1b7e78051b7115cc8d":[2,0,0,5,120,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html#a2654a6ebb1ffbbad7179e26dec070ebf":[3,0,1,7,4,0,2],
 "d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html#ac1444c8ac54359d71662ec0f9833f85e":[3,0,1,7,4,0,1],
 "d2/d6a/classpocketmine_1_1entity_1_1utils_1_1_experience_utils.html#ae02108eddad47945a828de3e3895fc3d":[3,0,1,7,4,0,0],
-"d2/d6c/_client_cache_status_packet_8php_source.html":[4,0,1,0,1,0,41],
-"d2/d6c/classpocketmine_1_1world_1_1sound_1_1_ignite_sound.html":[3,0,1,30,5,74]
+"d2/d6c/_client_cache_status_packet_8php_source.html":[4,0,1,0,1,0,41]
 };

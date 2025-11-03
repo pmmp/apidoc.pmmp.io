@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"d1/d37/classraklib_1_1protocol_1_1_open_connection_reply1.html#ac7e76cdbad6daaa6bf594f5d3d46099e":[3,0,2,2,16,0],
 "d1/d37/classraklib_1_1protocol_1_1_open_connection_reply1.html#ad7d81e360a193df0714709a37d9e672d":[3,0,2,2,16,2],
 "d1/d37/classraklib_1_1protocol_1_1_open_connection_reply1.html#ae2f92b294d641f3863fd550bc9e5c9d9":[3,0,2,2,16,3],
 "d1/d39/_creative_group_8php_source.html":[4,0,0,9,6],
@@ -19,7 +20,7 @@ var NAVTREEINDEX18 =
 "d1/d3e/classpocketmine_1_1entity_1_1effect_1_1_instant_health_effect.html#ae4622599c73e72cb6a898e4fdf34d978":[3,0,1,7,1,9,8],
 "d1/d3e/classpocketmine_1_1entity_1_1effect_1_1_instant_health_effect.html#afb66b7876e74cd33960c4fa09af1fe15":[3,0,1,7,1,9,1],
 "d1/d40/_amethyst_trait_8php_source.html":[4,0,0,0,2,2],
-"d1/d40/_respawn_packet_8php_source.html":[4,0,1,0,1,0,153],
+"d1/d40/_respawn_packet_8php_source.html":[4,0,1,0,1,0,156],
 "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html":[3,0,1,7,2,5],
 "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a02eb3401e4fe566c7a2528aeb7b0222a":[3,0,1,7,2,5,8],
 "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#a099fce07daf8c0ce633456ea00b4272b":[3,0,1,7,2,5,48],
@@ -75,9 +76,9 @@ var NAVTREEINDEX18 =
 "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#aeb75213027c56faa976d7038da4b437e":[3,0,1,7,2,5,19],
 "d1/d40/classpocketmine_1_1entity_1_1object_1_1_item_entity.html#afdd4efc12fe21730ceb104af111f576d":[3,0,1,7,2,5,21],
 "d1/d45/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_float_pack_setting.html":[3,0,1,16,0,6,1,38],
-"d1/d47/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_u_i_profile.html":[3,0,1,16,0,6,1,88],
+"d1/d47/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_u_i_profile.html":[3,0,1,16,0,6,1,89],
 "d1/d48/_smithing_transform_recipe_data_8php_source.html":[4,0,0,3,0,7],
-"d1/d48/_text_packet_8php_source.html":[4,0,1,0,1,0,201],
+"d1/d48/_text_packet_8php_source.html":[4,0,1,0,1,0,203],
 "d1/d49/_clientbound_packet_8php_source.html":[4,0,1,0,1,0,38],
 "d1/d4a/classpocketmine_1_1world_1_1sound_1_1_item_frame_add_item_sound.html":[3,0,1,30,5,77],
 "d1/d4a/classpocketmine_1_1world_1_1sound_1_1_item_frame_add_item_sound.html#afd248bd909ae0233dbf0281decfbd071":[3,0,1,30,5,77,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#a2b35e6f346e5955b086fcc07ead985a7":[3,0,1,12,30,25],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#a2bcaa528592d9ae259e2e6d0b89f375d":[2,0,0,5,29,22],
 "d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#a2bcaa528592d9ae259e2e6d0b89f375d":[3,0,1,12,30,22],
-"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#a2ce778f940de9e172cd268f378893b8f":[2,0,0,5,29,14],
-"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#a2ce778f940de9e172cd268f378893b8f":[3,0,1,12,30,14]
+"d1/d50/classpocketmine_1_1item_1_1_cooked_mutton.html#a2ce778f940de9e172cd268f378893b8f":[2,0,0,5,29,14]
 };

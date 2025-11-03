@@ -13,6 +13,7 @@ var dir_dfbaaab5a64ddf79c77f37e0a98efbcd =
     [ "BiomeMountainParamsData.php", "dd/d6b/_biome_mountain_params_data_8php_source.html", null ],
     [ "BiomeMultinoiseGenRulesData.php", "db/d83/_biome_multinoise_gen_rules_data_8php_source.html", null ],
     [ "BiomeOverworldGenRulesData.php", "da/df1/_biome_overworld_gen_rules_data_8php_source.html", null ],
+    [ "BiomeReplacementData.php", "d3/d94/_biome_replacement_data_8php_source.html", null ],
     [ "BiomeScatterParamData.php", "d5/def/_biome_scatter_param_data_8php_source.html", null ],
     [ "BiomeSurfaceMaterialAdjustmentData.php", "d9/d21/_biome_surface_material_adjustment_data_8php_source.html", null ],
     [ "BiomeSurfaceMaterialData.php", "de/dae/_biome_surface_material_data_8php_source.html", null ],

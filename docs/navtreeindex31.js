@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"d2/d00/classpocketmine_1_1block_1_1_torch.html#ad7f4d0973ebc76cec1c419c48dca0ffb":[2,0,0,0,232,13],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#ad7f4d0973ebc76cec1c419c48dca0ffb":[3,0,1,0,234,13],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,232,42],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,234,42],
@@ -26,17 +27,17 @@ var NAVTREEINDEX31 =
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,232,27],
 "d2/d00/classpocketmine_1_1block_1_1_torch.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,234,27],
 "d2/d01/_player_game_mode_change_event_8php_source.html":[4,0,0,7,3,23],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html":[3,0,1,16,0,6,122],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,122,3],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#a8644b9a05b6c12be03a7179d933036c2":[3,0,1,16,0,6,122,8],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,122,0],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,122,1],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,122,4],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ade18ffdd1efe0ef580736fe95ea37daa":[3,0,1,16,0,6,122,6],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ae1e9e3739cc463aa0cb55732f1535973":[3,0,1,16,0,6,122,2],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#aee5e45b3b38b641abcf62c7db4ec0eb9":[3,0,1,16,0,6,122,5],
-"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#afce1b06815509c65e4d34a4bd77be472":[3,0,1,16,0,6,122,7],
-"d2/d02/_server_settings_response_packet_8php_source.html":[4,0,1,0,1,0,162],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html":[3,0,1,16,0,6,125],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,125,3],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#a8644b9a05b6c12be03a7179d933036c2":[3,0,1,16,0,6,125,8],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,125,0],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,125,1],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,125,4],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ade18ffdd1efe0ef580736fe95ea37daa":[3,0,1,16,0,6,125,6],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#ae1e9e3739cc463aa0cb55732f1535973":[3,0,1,16,0,6,125,2],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#aee5e45b3b38b641abcf62c7db4ec0eb9":[3,0,1,16,0,6,125,5],
+"d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html#afce1b06815509c65e4d34a4bd77be472":[3,0,1,16,0,6,125,7],
+"d2/d02/_server_settings_response_packet_8php_source.html":[4,0,1,0,1,0,164],
 "d2/d03/_chest_8php_source.html":[4,0,0,0,58],
 "d2/d06/_campfire_inventory_8php_source.html":[4,0,0,0,0,6],
 "d2/d06/classpocketmine_1_1world_1_1sound_1_1_shulker_box_close_sound.html":[3,0,1,30,5,98],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,47,12],
 "d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,49,12],
 "d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,47,51],
-"d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,49,51],
-"d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,47,0]
+"d2/d0c/classpocketmine_1_1block_1_1_cartography_table.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,49,51]
 };

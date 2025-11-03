@@ -1,10 +1,16 @@
 var NAVTREEINDEX61 =
 {
+"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,210,16],
+"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,208,27],
+"d4/d1a/classpocketmine_1_1block_1_1_snow.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,210,27],
+"d4/d1c/_torch_8php_source.html":[4,0,0,0,234],
+"d4/d1d/_permissible_internal_8php_source.html":[4,0,0,13,7],
+"d4/d1e/_plain_biome_8php_source.html":[4,0,0,25,0,10],
 "d4/d1f/_noise_8php_source.html":[4,0,0,25,2,3,0],
-"d4/d21/bedrock-protocol_2src_2_packet_8php_source.html":[4,0,1,0,1,0,113],
+"d4/d21/bedrock-protocol_2src_2_packet_8php_source.html":[4,0,1,0,1,0,116],
 "d4/d23/_firework_crackle_sound_8php_source.html":[4,0,0,25,5,62],
 "d4/d24/_attachable_thread_safe_logger_8php_source.html":[4,0,0,20,0,0],
-"d4/d24/_emote_packet_8php_source.html":[4,0,1,0,1,0,69],
+"d4/d24/_emote_packet_8php_source.html":[4,0,1,0,1,0,71],
 "d4/d24/_player_item_consume_event_8php_source.html":[4,0,0,7,3,25],
 "d4/d24/classraklib_1_1protocol_1_1_n_a_c_k.html":[3,0,2,2,13],
 "d4/d24/classraklib_1_1protocol_1_1_n_a_c_k.html#a2b68647227d2955b341e335dbe06d709":[3,0,2,2,13,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX61 =
 "d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,215,22],
 "d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,213,2],
 "d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a286fc64348f13417dcb6106c2695911b":[3,0,1,0,215,2],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[2,0,0,0,213,25],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[3,0,1,0,215,25],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[2,0,0,0,213,37],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[3,0,1,0,215,37],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a30a070aa7befb02f9fff5cbf2693c01e":[2,0,0,0,213,9],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a30a070aa7befb02f9fff5cbf2693c01e":[3,0,1,0,215,9],
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a36afea9f0214193963f75577e8d48c26":[2,0,0,0,213,59]
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[2,0,0,0,213,25]
 };

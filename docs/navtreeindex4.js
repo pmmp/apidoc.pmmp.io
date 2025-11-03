@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a23093e6281aba70471af5c5e34051667":[3,0,1,7,2,0,6],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a243da4b76301d0b56a775e715d21cfa2":[3,0,1,7,2,0,22],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a25ad669890dc24d70b8cdad878cd6449":[3,0,1,7,2,0,43],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a265cb93031a89ccc4a4236b3702c690b":[3,0,1,7,2,0,36],
@@ -61,15 +62,15 @@ var NAVTREEINDEX4 =
 "d0/d6d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1property_1_1_value_from_int_property.html#ad0c70899448c90ef028742f3fb82abd4":[3,0,1,6,0,0,0,0,10,0],
 "d0/d6d/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1property_1_1_value_from_int_property.html#ad2d49d7113c64efed64cba6777be4692":[3,0,1,6,0,0,0,0,10,1],
 "d0/d6e/_item_id_meta_upgrade_schema_8php_source.html":[4,0,0,5,0,1,0,3],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html":[3,0,1,16,0,6,161],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,161,3],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a5e35547f2e19e1dea02ffe2102892b77":[3,0,1,16,0,6,161,2],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a6198774f79bea565eb088ff518e70285":[3,0,1,16,0,6,161,7],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a622fa41f9cccda08a43ad6ae2d7b2c1d":[3,0,1,16,0,6,161,6],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,161,0],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,161,1],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,161,4],
-"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#ae6b49a8c77ecd0f7c1547fd94a40fb89":[3,0,1,16,0,6,161,5],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html":[3,0,1,16,0,6,163],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,163,3],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a5e35547f2e19e1dea02ffe2102892b77":[3,0,1,16,0,6,163,2],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a6198774f79bea565eb088ff518e70285":[3,0,1,16,0,6,163,7],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a622fa41f9cccda08a43ad6ae2d7b2c1d":[3,0,1,16,0,6,163,6],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,163,0],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,163,1],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,163,4],
+"d0/d6e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_server_settings_response_packet.html#ae6b49a8c77ecd0f7c1547fd94a40fb89":[3,0,1,16,0,6,163,5],
 "d0/d6e/classpocketmine_1_1thread_1_1_thread.html":[3,0,1,25,2],
 "d0/d6f/classpocketmine_1_1player_1_1_player.html":[3,0,1,18,5],
 "d0/d6f/classpocketmine_1_1player_1_1_player.html#a00e01c4d202f1ed69d570d16382ba733":[3,0,1,18,5,79],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a010a9ab31edc7fa850b79849037cede7":[2,0,0,4,0,22],
 "d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a010a9ab31edc7fa850b79849037cede7":[3,0,1,11,2,22],
 "d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a0d82853303c17a6f720b487287092395":[2,0,0,4,0,17],
-"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a0d82853303c17a6f720b487287092395":[3,0,1,11,2,17],
-"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a295a782543c002623d01ec47a6e93329":[2,0,0,4,0,24]
+"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a0d82853303c17a6f720b487287092395":[3,0,1,11,2,17]
 };
