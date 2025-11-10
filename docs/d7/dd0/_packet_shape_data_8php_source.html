@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.1 git-cef37e7835c666594588f957a47b27d521c6a58e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.2 git-16b18b3ae19cb760b06adda7ce1d1700500e2b90</span>
    </div>
   </td>
  </tr>
@@ -130,220 +130,312 @@ $(function(){initNavTree('d7/dd0/_packet_shape_data_8php_source.html','../../');
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>use <a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">pocketmine\color\Color</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>use <a class="code hl_class" href="../../d4/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_debug_drawer_packet.html">pocketmine\network\mcpe\protocol\DebugDrawerPacket</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html">   30</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html">PacketShapeData</a>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $networkId,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> ?ScriptDebugShapeType $type,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $scale,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $rotation,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $totalTimeLeft,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> ?<span class="keywordtype">string</span> $text,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $boxBound,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $lineEndLocation,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $arrowHeadLength,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $arrowHeadRadius,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">private</span> ?<span class="keywordtype">int</span> $segments,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    ){}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">remove</span>(<span class="keywordtype">int</span> $networkId) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($networkId, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> line(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $lineEndLocation, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            networkId: $networkId,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            type: ScriptDebugShapeType::LINE,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            location: $location,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            scale: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            rotation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            color: $color,</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            text: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            boxBound: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            lineEndLocation: $lineEndLocation,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            segments: null</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        );</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> box(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $boxBound, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            networkId: $networkId,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            type: ScriptDebugShapeType::BOX,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            location: $location,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            scale: $scale,</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            rotation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            color: $color,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            text: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            boxBound: $boxBound,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            lineEndLocation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            segments: null</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        );</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> sphere(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, ?<span class="keywordtype">int</span> $segments = <span class="keyword">null</span>) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            networkId: $networkId,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            type: ScriptDebugShapeType::SPHERE,</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            location: $location,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            scale: $scale,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            rotation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            color: $color,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            text: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            boxBound: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            lineEndLocation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            segments: $segments</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        );</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> circle(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, ?<span class="keywordtype">int</span> $segments = <span class="keyword">null</span>) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            networkId: $networkId,</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            type: ScriptDebugShapeType::CIRCLE,</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            location: $location,</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            scale: $scale,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            rotation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            color: $color,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            text: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            boxBound: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            lineEndLocation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            segments: $segments</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        );</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> text(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <span class="keywordtype">string</span> $text, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            networkId: $networkId,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            type: ScriptDebugShapeType::TEXT,</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            location: $location,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            scale: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            rotation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            color: $color,</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            text: $text,</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            boxBound: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            lineEndLocation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            segments: null</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        );</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> arrow(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $lineEndLocation, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, ?<span class="keywordtype">float</span> $arrowHeadLength = <span class="keyword">null</span>, ?<span class="keywordtype">float</span> $arrowHeadRadius = <span class="keyword">null</span>, ?<span class="keywordtype">int</span> $segments = <span class="keyword">null</span>) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            networkId: $networkId,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            type: ScriptDebugShapeType::ARROW,</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            location: $location,</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            scale: $scale,</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            rotation: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            color: $color,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            text: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            boxBound: <span class="keyword">null</span>,</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            lineEndLocation: $lineEndLocation,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            arrowHeadLength: $arrowHeadLength,</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            arrowHeadRadius: $arrowHeadRadius,</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            segments: $segments</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        );</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNetworkId() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;networkId; }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : ?ScriptDebugShapeType{ <span class="keywordflow">return</span> $this-&gt;type; }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLocation() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;location; }</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">public</span> <span class="keyword">function</span> getScale() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;scale; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>use <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html">   31</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html">PacketShapeData</a>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $networkId,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">private</span> ?ScriptDebugShapeType $type,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $scale,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $rotation,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $totalTimeLeft,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> ?<span class="keywordtype">string</span> $text,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $boxBound,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">private</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $lineEndLocation,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $arrowHeadLength,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">private</span> ?<span class="keywordtype">float</span> $arrowHeadRadius,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">private</span> ?<span class="keywordtype">int</span> $segments,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    ){}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">remove</span>(<span class="keywordtype">int</span> $networkId, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($networkId, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, $dimensionId);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> line(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $lineEndLocation, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            networkId: $networkId,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            type: ScriptDebugShapeType::LINE,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            location: $location,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            scale: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            rotation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            color: $color,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            text: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            boxBound: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            lineEndLocation: $lineEndLocation,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            segments: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            dimensionId: $dimensionId</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        );</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> box(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $boxBound, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            networkId: $networkId,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            type: ScriptDebugShapeType::BOX,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            location: $location,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            scale: $scale,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            rotation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            color: $color,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            text: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            boxBound: $boxBound,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            lineEndLocation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            segments: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            dimensionId: $dimensionId</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        );</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> sphere(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, ?<span class="keywordtype">int</span> $segments = <span class="keyword">null</span>, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            networkId: $networkId,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            type: ScriptDebugShapeType::SPHERE,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            location: $location,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            scale: $scale,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            rotation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            color: $color,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            text: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            boxBound: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            lineEndLocation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            segments: $segments,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            dimensionId: $dimensionId</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> circle(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, ?<span class="keywordtype">int</span> $segments = <span class="keyword">null</span>, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            networkId: $networkId,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            type: ScriptDebugShapeType::CIRCLE,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            location: $location,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            scale: $scale,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            rotation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            color: $color,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            text: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            boxBound: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            lineEndLocation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            segments: $segments,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            dimensionId: $dimensionId</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        );</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> text(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <span class="keywordtype">string</span> $text, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            networkId: $networkId,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            type: ScriptDebugShapeType::TEXT,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            location: $location,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            scale: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            rotation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            color: $color,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            text: $text,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            boxBound: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            lineEndLocation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            arrowHeadLength: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            arrowHeadRadius: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            segments: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            dimensionId: $dimensionId</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        );</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> arrow(<span class="keywordtype">int</span> $networkId, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $location, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $lineEndLocation, ?<span class="keywordtype">float</span> $scale = <span class="keyword">null</span>, ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color = <span class="keyword">null</span>, ?<span class="keywordtype">float</span> $arrowHeadLength = <span class="keyword">null</span>, ?<span class="keywordtype">float</span> $arrowHeadRadius = <span class="keyword">null</span>, ?<span class="keywordtype">int</span> $segments = <span class="keyword">null</span>, <span class="keywordtype">int</span> $dimensionId = DimensionIds::OVERWORLD) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            networkId: $networkId,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            type: ScriptDebugShapeType::ARROW,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            location: $location,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            scale: $scale,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            rotation: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            totalTimeLeft: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            color: $color,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            text: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            boxBound: <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            lineEndLocation: $lineEndLocation,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            arrowHeadLength: $arrowHeadLength,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            arrowHeadRadius: $arrowHeadRadius,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            segments: $segments,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            dimensionId: $dimensionId</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        );</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRotation() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;rotation; }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNetworkId() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;networkId; }</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTotalTimeLeft() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;totalTimeLeft; }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : ?ScriptDebugShapeType{ <span class="keywordflow">return</span> $this-&gt;type; }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">public</span> <span class="keyword">function</span> getColor() : ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a>{ <span class="keywordflow">return</span> $this-&gt;color; }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLocation() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;location; }</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : ?<span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;text; }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">public</span> <span class="keyword">function</span> getScale() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;scale; }</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBoxBound() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;boxBound; }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRotation() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;rotation; }</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLineEndLocation() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;lineEndLocation; }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTotalTimeLeft() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;totalTimeLeft; }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keyword">public</span> <span class="keyword">function</span> getArrowHeadLength() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;arrowHeadLength; }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keyword">public</span> <span class="keyword">function</span> getColor() : ?<a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a>{ <span class="keywordflow">return</span> $this-&gt;color; }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">public</span> <span class="keyword">function</span> getArrowHeadRadius() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;arrowHeadRadius; }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDimensionId() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;dimensionId; }</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSegments() : ?<span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;segments; }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : ?<span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;text; }</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        $networkId = VarInt::readUnsignedLong($in);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        $type = CommonTypes::readOptional($in, fn() =&gt; ScriptDebugShapeType::fromPacket(Byte::readUnsigned($in)));</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        $location = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        $scale = CommonTypes::readOptional($in, LE::readFloat(...));</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        $rotation = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        $totalTimeLeft = CommonTypes::readOptional($in, LE::readFloat(...));</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        $color = CommonTypes::readOptional($in, fn() =&gt; Color::fromARGB(LE::readUnsignedInt($in)));</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        $text = CommonTypes::readOptional($in, CommonTypes::getString(...));</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        $boxBound = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        $lineEndLocation = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        $arrowHeadLength = CommonTypes::readOptional($in, LE::readFloat(...));</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        $arrowHeadRadius = CommonTypes::readOptional($in, LE::readFloat(...));</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        $segments = CommonTypes::readOptional($in, Byte::readUnsigned(...));</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            $networkId,</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            $type,</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            $location,</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            $scale,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            $rotation,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            $totalTimeLeft,</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            $color,</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            $text,</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            $boxBound,</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            $lineEndLocation,</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            $arrowHeadLength,</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            $arrowHeadRadius,</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            $segments</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        );</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        VarInt::writeUnsignedLong($out, $this-&gt;networkId);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        CommonTypes::writeOptional($out, $this-&gt;type, fn(ByteBufferWriter $out, ScriptDebugShapeType $type) =&gt; Byte::writeUnsigned($out, $type-&gt;value));</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        CommonTypes::writeOptional($out, $this-&gt;location, CommonTypes::putVector3(...));</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        CommonTypes::writeOptional($out, $this-&gt;scale, LE::writeFloat(...));</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        CommonTypes::writeOptional($out, $this-&gt;rotation, CommonTypes::putVector3(...));</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        CommonTypes::writeOptional($out, $this-&gt;totalTimeLeft, LE::writeFloat(...));</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        CommonTypes::writeOptional($out, $this-&gt;color, fn(ByteBufferWriter $out, <a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color) =&gt; LE::writeUnsignedInt($out, $color-&gt;<a class="code hl_function" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html#a8f3b0389d37f6ae3b9d37e2285d2acb8">toARGB</a>()));</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        CommonTypes::writeOptional($out, $this-&gt;text, CommonTypes::putString(...));</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        CommonTypes::writeOptional($out, $this-&gt;boxBound, CommonTypes::putVector3(...));</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        CommonTypes::writeOptional($out, $this-&gt;lineEndLocation, CommonTypes::putVector3(...));</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        CommonTypes::writeOptional($out, $this-&gt;arrowHeadLength, LE::writeFloat(...));</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        CommonTypes::writeOptional($out, $this-&gt;arrowHeadRadius, LE::writeFloat(...));</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        CommonTypes::writeOptional($out, $this-&gt;segments, Byte::writeUnsigned(...));</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>}</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBoxBound() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;boxBound; }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLineEndLocation() : ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;lineEndLocation; }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">public</span> <span class="keyword">function</span> getArrowHeadLength() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;arrowHeadLength; }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">public</span> <span class="keyword">function</span> getArrowHeadRadius() : ?<span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;arrowHeadRadius; }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSegments() : ?<span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;segments; }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        $networkId = VarInt::readUnsignedLong($in);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        $shapeType = CommonTypes::readOptional($in, fn() =&gt; ScriptDebugShapeType::fromPacket(Byte::readUnsigned($in)));</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        $location = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        $scale = CommonTypes::readOptional($in, LE::readFloat(...));</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        $rotation = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        $totalTimeLeft = CommonTypes::readOptional($in, LE::readFloat(...));</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        $color = CommonTypes::readOptional($in, fn() =&gt; Color::fromARGB(LE::readUnsignedInt($in)));</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        $dimensionId = VarInt::readSignedInt($in);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        $payloadType = VarInt::readUnsignedInt($in);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="comment">//WTF IS THIS HORROR SHOW</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">if</span>(</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            ($shapeType !== <span class="keyword">null</span> &amp;&amp; $payloadType !== $shapeType-&gt;getPayloadType() &amp;&amp; $payloadType !== ScriptDebugShapeType::PAYLOAD_TYPE_NONE) ||</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            ($shapeType === <span class="keyword">null</span> &amp;&amp; $payloadType !== ScriptDebugShapeType::PAYLOAD_TYPE_NONE)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        ){</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Unexpected payload type $payloadType for provided shape type &quot;</span> . ($shapeType-&gt;name ?? <span class="stringliteral">&quot;(not set)&quot;</span>));</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        $text = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        $boxBound = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        $lineEndLocation = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        $arrowHeadLength = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        $arrowHeadRadius = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        $segments = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">switch</span>($payloadType){</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="keywordflow">case</span> ScriptDebugShapeType::PAYLOAD_TYPE_NONE:</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="keywordflow">case</span> ScriptDebugShapeType::PAYLOAD_TYPE_ARROW:</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                $lineEndLocation = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                $arrowHeadLength = CommonTypes::readOptional($in, LE::readFloat(...));</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                $arrowHeadRadius = CommonTypes::readOptional($in, LE::readFloat(...));</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                $segments = CommonTypes::readOptional($in, Byte::readUnsigned(...));</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="keywordflow">case</span> ScriptDebugShapeType::PAYLOAD_TYPE_TEXT:</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                $text = CommonTypes::getString($in);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordflow">case</span> ScriptDebugShapeType::PAYLOAD_TYPE_BOX:</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                $boxBound = CommonTypes::getVector3($in);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">case</span> ScriptDebugShapeType::PAYLOAD_TYPE_LINE:</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                $lineEndLocation = CommonTypes::getVector3($in);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="keywordflow">case</span> ScriptDebugShapeType::PAYLOAD_TYPE_CIRCLE_OR_SPHERE:</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                $segments = Byte::readUnsigned($in);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Unexpected shape payload type $payloadType&quot;</span>);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            $networkId,</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            $shapeType,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            $location,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            $scale,</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            $rotation,</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            $totalTimeLeft,</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            $color,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            $text,</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            $boxBound,</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            $lineEndLocation,</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            $arrowHeadLength,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            $arrowHeadRadius,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            $segments,</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            $dimensionId</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        );</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        VarInt::writeUnsignedLong($out, $this-&gt;networkId);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        CommonTypes::writeOptional($out, $this-&gt;type, fn(ByteBufferWriter $out, ScriptDebugShapeType $type) =&gt; Byte::writeUnsigned($out, $type-&gt;value));</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        CommonTypes::writeOptional($out, $this-&gt;location, CommonTypes::putVector3(...));</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        CommonTypes::writeOptional($out, $this-&gt;scale, LE::writeFloat(...));</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        CommonTypes::writeOptional($out, $this-&gt;rotation, CommonTypes::putVector3(...));</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        CommonTypes::writeOptional($out, $this-&gt;totalTimeLeft, LE::writeFloat(...));</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        CommonTypes::writeOptional($out, $this-&gt;color, fn(ByteBufferWriter $out, <a class="code hl_class" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $color) =&gt; LE::writeUnsignedInt($out, $color-&gt;<a class="code hl_function" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html#a8f3b0389d37f6ae3b9d37e2285d2acb8">toARGB</a>()));</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        VarInt::writeSignedInt($out, $this-&gt;dimensionId);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="comment">//A godawful hack for a godawful packet</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        $payloadType = $this-&gt;type?-&gt;getPayloadType() ?? ScriptDebugShapeType::PAYLOAD_TYPE_NONE;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">if</span>($this-&gt;type === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            VarInt::writeUnsignedInt($out, ScriptDebugShapeType::PAYLOAD_TYPE_NONE);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">switch</span>($this-&gt;type){</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                <span class="keywordflow">case</span> ScriptDebugShapeType::ARROW:</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                    VarInt::writeUnsignedInt($out, $this-&gt;type-&gt;getPayloadType());</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                    CommonTypes::writeOptional($out, $this-&gt;lineEndLocation, CommonTypes::putVector3(...));</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                    CommonTypes::writeOptional($out, $this-&gt;arrowHeadLength, LE::writeFloat(...));</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                    CommonTypes::writeOptional($out, $this-&gt;arrowHeadRadius, LE::writeFloat(...));</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                    CommonTypes::writeOptional($out, $this-&gt;segments, Byte::writeUnsigned(...));</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                <span class="keywordflow">case</span> ScriptDebugShapeType::TEXT:</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                    <span class="keywordflow">if</span>($this-&gt;text !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                        VarInt::writeUnsignedInt($out, $this-&gt;type-&gt;getPayloadType());</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                        CommonTypes::putString($out, $this-&gt;text);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                        VarInt::writeUnsignedInt($out, ScriptDebugShapeType::PAYLOAD_TYPE_NONE);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                    }</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordflow">case</span> ScriptDebugShapeType::BOX:</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                    <span class="keywordflow">if</span>($this-&gt;boxBound !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                        VarInt::writeUnsignedInt($out, $this-&gt;type-&gt;getPayloadType());</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                        CommonTypes::putVector3($out, $this-&gt;boxBound);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                        VarInt::writeUnsignedInt($out, ScriptDebugShapeType::PAYLOAD_TYPE_NONE);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                <span class="keywordflow">case</span> ScriptDebugShapeType::LINE:</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                    <span class="keywordflow">if</span>($this-&gt;lineEndLocation !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                        VarInt::writeUnsignedInt($out, $this-&gt;type-&gt;getPayloadType());</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                        CommonTypes::putVector3($out, $this-&gt;lineEndLocation);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                        VarInt::writeUnsignedInt($out, ScriptDebugShapeType::PAYLOAD_TYPE_NONE);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                    }</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                <span class="keywordflow">case</span> ScriptDebugShapeType::CIRCLE:</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                <span class="keywordflow">case</span> ScriptDebugShapeType::SPHERE:</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                    <span class="keywordflow">if</span>($this-&gt;segments !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                        VarInt::writeUnsignedInt($out, $this-&gt;type-&gt;getPayloadType());</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                        Byte::writeUnsigned($out, $this-&gt;segments);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                        VarInt::writeUnsignedInt($out, ScriptDebugShapeType::PAYLOAD_TYPE_NONE);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                    <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&quot;Unknown payload type $payloadType&quot;</span>);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            }</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        }</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1color_1_1_color_html"><div class="ttname"><a href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">pocketmine\color\Color</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dd6/_color_8php_source.html#l00029">Color.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1color_1_1_color_html_a8f3b0389d37f6ae3b9d37e2285d2acb8"><div class="ttname"><a href="../../dd/d00/classpocketmine_1_1color_1_1_color.html#a8f3b0389d37f6ae3b9d37e2285d2acb8">pocketmine\color\Color\toARGB</a></div><div class="ttdeci">toARGB()</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dd6/_color_8php_source.html#l00108">Color.php:108</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_debug_drawer_packet_html"><div class="ttname"><a href="../../d4/dd4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_debug_drawer_packet.html">pocketmine\network\mcpe\protocol\DebugDrawerPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d77/_debug_drawer_packet_8php_source.html#l00023">DebugDrawerPacket.php:23</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception_html"><div class="ttname"><a href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dc6/_packet_decode_exception_8php_source.html#l00017">PacketDecodeException.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data_html"><div class="ttname"><a href="../../df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html">pocketmine\network\mcpe\protocol\types\PacketShapeData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">PacketShapeData.php:30</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data_html"><div class="ttname"><a href="../../df/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_packet_shape_data.html">pocketmine\network\mcpe\protocol\types\PacketShapeData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00031">PacketShapeData.php:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

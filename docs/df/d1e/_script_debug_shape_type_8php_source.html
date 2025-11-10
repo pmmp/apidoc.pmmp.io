@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.1 git-cef37e7835c666594588f957a47b27d521c6a58e</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.2 git-16b18b3ae19cb760b06adda7ce1d1700500e2b90</span>
    </div>
   </td>
  </tr>
@@ -133,7 +133,24 @@ $(function(){initNavTree('df/d1e/_script_debug_shape_type_8php_source.html','../
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">case</span> ARROW = 5;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> TEST = self::TEXT;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span> <span class="keyword">const</span> PAYLOAD_TYPE_NONE = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">const</span> PAYLOAD_TYPE_ARROW = 1;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">const</span> PAYLOAD_TYPE_TEXT = 2;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">const</span> PAYLOAD_TYPE_BOX = 3;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">const</span> PAYLOAD_TYPE_LINE = 4;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">const</span> PAYLOAD_TYPE_CIRCLE_OR_SPHERE = 5;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPayloadType() : int{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        return match($this){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            self::ARROW =&gt; self::PAYLOAD_TYPE_ARROW,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            self::TEXT =&gt; self::PAYLOAD_TYPE_TEXT,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            self::BOX =&gt; self::PAYLOAD_TYPE_BOX,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            self::LINE =&gt; self::PAYLOAD_TYPE_LINE,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            self::CIRCLE, self::SPHERE =&gt; self::PAYLOAD_TYPE_CIRCLE_OR_SPHERE</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        };</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
