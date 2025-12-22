@@ -5,6 +5,7 @@ var dir_8c559a8bd664375b6611e00b162a8314 =
     [ "AnvilFallSound.php", "db/d5a/_anvil_fall_sound_8php_source.html", null ],
     [ "AnvilUseSound.php", "dd/dd1/_anvil_use_sound_8php_source.html", null ],
     [ "ArmorEquipChainSound.php", "d9/d61/_armor_equip_chain_sound_8php_source.html", null ],
+    [ "ArmorEquipCopperSound.php", "db/dc6/_armor_equip_copper_sound_8php_source.html", null ],
     [ "ArmorEquipDiamondSound.php", "dd/dd4/_armor_equip_diamond_sound_8php_source.html", null ],
     [ "ArmorEquipGenericSound.php", "da/d46/_armor_equip_generic_sound_8php_source.html", null ],
     [ "ArmorEquipGoldSound.php", "d4/d0b/_armor_equip_gold_sound_8php_source.html", null ],

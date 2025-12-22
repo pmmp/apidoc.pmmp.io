@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -152,9 +152,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>HandlerList[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>HandlerList[] @phpstan-return array&lt;class-string&lt;Event&gt;, HandlerList&lt;*&gt;&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00128">128</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00149">149</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>
@@ -172,10 +172,10 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>@phpstan-param class-string&lt;covariant Event&gt; $event</p>
-<dl class="section return"><dt>Returns</dt><dd>RegisteredListener[] </dd></dl>
+<p>@phpstan-template TEvent of Event @phpstan-param class-string&lt;TEvent&gt; $event</p>
+<dl class="section return"><dt>Returns</dt><dd>RegisteredListener[] @phpstan-return list&lt;RegisteredListener&lt;TEvent&gt;&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00119">119</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00138">138</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>
@@ -195,7 +195,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the HandlerList for listeners that explicitly handle this event.</p>
 <p>Calling this method also lazily initializes the $classMap inheritance tree of handler lists.</p>
-<p>@phpstan-param class-string&lt;covariant Event&gt; $event</p>
+<p>@phpstan-template TEvent of Event</p>
+<p>@phpstan-param class-string&lt;TEvent&gt; $event @phpstan-return HandlerList&lt;TEvent&gt;</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -210,7 +211,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00094">94</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00102">102</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>
@@ -255,9 +256,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unregisters all the listeners If a Plugin or Listener is passed, all the listeners with that object will be removed </p>
+<p>Unregisters all the listeners If a Plugin or Listener is passed, all the listeners with that object will be removed @phpstan-param RegisteredListener&lt;*&gt;|Plugin|Listener|null $object </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00049">49</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html#l00053">53</a> of file <a class="el" href="../../d9/da6/_handler_list_manager_8php_source.html">HandlerListManager.php</a>.</p>
 
 </div>
 </div>

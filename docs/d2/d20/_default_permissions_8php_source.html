@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -131,104 +131,134 @@ $(function(){initNavTree('d2/d20/_default_permissions_8php_source.html','../../'
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/dc0/namespacepocketmine_1_1permission.html">pocketmine\permission</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a> as l10n;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../da/dca/classpocketmine_1_1permission_1_1_default_permission_names.html">pocketmine\permission\DefaultPermissionNames</a> as Names;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">   29</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">DefaultPermissions</a>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROOT_CONSOLE = Names::GROUP_CONSOLE;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROOT_OPERATOR = Names::GROUP_OPERATOR;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROOT_USER = Names::GROUP_USER;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>use <a class="code hl_class" href="../../d3/de8/classpocketmine_1_1lang_1_1_known_translation_parameter_info.html">pocketmine\lang\KnownTranslationParameterInfo</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use <a class="code hl_class" href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../da/dca/classpocketmine_1_1permission_1_1_default_permission_names.html">pocketmine\permission\DefaultPermissionNames</a> as Names;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <span class="keyword">function</span> count;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>use <span class="keyword">function</span> preg_last_error_msg;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>use <span class="keyword">function</span> preg_replace;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469">   38</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469">registerPermission</a>(<a class="code hl_class" href="../../db/dc3/classpocketmine_1_1permission_1_1_permission.html">Permission</a> $candidate, array $grantedBy = [], array $deniedBy = []) : <a class="code hl_class" href="../../db/dc3/classpocketmine_1_1permission_1_1_permission.html">Permission</a>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        foreach($grantedBy as $permission){</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            $permission-&gt;addChild($candidate-&gt;getName(), <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">foreach</span>($deniedBy as $permission){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            $permission-&gt;addChild($candidate-&gt;getName(), <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        PermissionManager::getInstance()-&gt;addPermission($candidate);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> PermissionManager::getInstance()-&gt;getPermission($candidate-&gt;getName());</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">   34</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">DefaultPermissions</a>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROOT_CONSOLE = Names::GROUP_CONSOLE;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROOT_OPERATOR = Names::GROUP_OPERATOR;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">const</span> ROOT_USER = Names::GROUP_USER;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469">   43</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469">registerPermission</a>(<a class="code hl_class" href="../../db/dc3/classpocketmine_1_1permission_1_1_permission.html">Permission</a> $candidate, array $grantedBy = [], array $deniedBy = []) : <a class="code hl_class" href="../../db/dc3/classpocketmine_1_1permission_1_1_permission.html">Permission</a>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        foreach($grantedBy as $permission){</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            $permission-&gt;addChild($candidate-&gt;getName(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">foreach</span>($deniedBy as $permission){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            $permission-&gt;addChild($candidate-&gt;getName(), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        PermissionManager::getInstance()-&gt;addPermission($candidate);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> PermissionManager::getInstance()-&gt;getPermission($candidate-&gt;getName());</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> registerCorePermissions() : void{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $consoleRoot = self::registerPermission(new Permission(self::ROOT_CONSOLE, l10n::pocketmine_permission_group_console()));</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $operatorRoot = self::registerPermission(<span class="keyword">new</span> Permission(self::ROOT_OPERATOR, l10n::pocketmine_permission_group_operator()), [$consoleRoot]);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $everyoneRoot = self::registerPermission(<span class="keyword">new</span> Permission(self::ROOT_USER, l10n::pocketmine_permission_group_user()), [$operatorRoot]);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::BROADCAST_ADMIN, l10n::pocketmine_permission_broadcast_admin()), [$operatorRoot]);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::BROADCAST_USER, l10n::pocketmine_permission_broadcast_user()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_BAN_IP, l10n::pocketmine_permission_command_ban_ip()), [$operatorRoot]);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_BAN_LIST, l10n::pocketmine_permission_command_ban_list()), [$operatorRoot]);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_BAN_PLAYER, l10n::pocketmine_permission_command_ban_player()), [$operatorRoot]);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_CLEAR_OTHER, l10n::pocketmine_permission_command_clear_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_CLEAR_SELF, l10n::pocketmine_permission_command_clear_self()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_DEFAULTGAMEMODE, l10n::pocketmine_permission_command_defaultgamemode()), [$operatorRoot]);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_DIFFICULTY, l10n::pocketmine_permission_command_difficulty()), [$operatorRoot]);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_DUMPMEMORY, l10n::pocketmine_permission_command_dumpmemory()), [$consoleRoot]);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_EFFECT_OTHER, l10n::pocketmine_permission_command_effect_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_EFFECT_SELF, l10n::pocketmine_permission_command_effect_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_ENCHANT_OTHER, l10n::pocketmine_permission_command_enchant_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_ENCHANT_SELF, l10n::pocketmine_permission_command_enchant_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_GAMEMODE_OTHER, l10n::pocketmine_permission_command_gamemode_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_GAMEMODE_SELF, l10n::pocketmine_permission_command_gamemode_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_GC, l10n::pocketmine_permission_command_gc()), [$operatorRoot]);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_GIVE_OTHER, l10n::pocketmine_permission_command_give_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_GIVE_SELF, l10n::pocketmine_permission_command_give_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_HELP, l10n::pocketmine_permission_command_help()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_KICK, l10n::pocketmine_permission_command_kick()), [$operatorRoot]);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_KILL_OTHER, l10n::pocketmine_permission_command_kill_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_KILL_SELF, l10n::pocketmine_permission_command_kill_self()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_LIST, l10n::pocketmine_permission_command_list()), [$operatorRoot]);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_ME, l10n::pocketmine_permission_command_me()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_OP_GIVE, l10n::pocketmine_permission_command_op_give()), [$operatorRoot]);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_OP_TAKE, l10n::pocketmine_permission_command_op_take()), [$operatorRoot]);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_PARTICLE, l10n::pocketmine_permission_command_particle()), [$operatorRoot]);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_PLUGINS, l10n::pocketmine_permission_command_plugins()), [$operatorRoot]);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SAVE_DISABLE, l10n::pocketmine_permission_command_save_disable()), [$operatorRoot]);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SAVE_ENABLE, l10n::pocketmine_permission_command_save_enable()), [$operatorRoot]);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SAVE_PERFORM, l10n::pocketmine_permission_command_save_perform()), [$operatorRoot]);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SAY, l10n::pocketmine_permission_command_say()), [$operatorRoot]);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SEED, l10n::pocketmine_permission_command_seed()), [$operatorRoot]);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SETWORLDSPAWN, l10n::pocketmine_permission_command_setworldspawn()), [$operatorRoot]);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SPAWNPOINT_OTHER, l10n::pocketmine_permission_command_spawnpoint_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_SPAWNPOINT_SELF, l10n::pocketmine_permission_command_spawnpoint_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_STATUS, l10n::pocketmine_permission_command_status()), [$operatorRoot]);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_STOP, l10n::pocketmine_permission_command_stop()), [$operatorRoot]);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TELEPORT_OTHER, l10n::pocketmine_permission_command_teleport_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TELEPORT_SELF, l10n::pocketmine_permission_command_teleport_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TELL, l10n::pocketmine_permission_command_tell()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TIME_ADD, l10n::pocketmine_permission_command_time_add()), [$operatorRoot]);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TIME_QUERY, l10n::pocketmine_permission_command_time_query()), [$operatorRoot]);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TIME_SET, l10n::pocketmine_permission_command_time_set()), [$operatorRoot]);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TIME_START, l10n::pocketmine_permission_command_time_start()), [$operatorRoot]);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TIME_STOP, l10n::pocketmine_permission_command_time_stop()), [$operatorRoot]);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TIMINGS, l10n::pocketmine_permission_command_timings()), [$operatorRoot]);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TITLE_OTHER, l10n::pocketmine_permission_command_title_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TITLE_SELF, l10n::pocketmine_permission_command_title_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_TRANSFERSERVER, l10n::pocketmine_permission_command_transferserver()), [$operatorRoot]);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_UNBAN_IP, l10n::pocketmine_permission_command_unban_ip()), [$operatorRoot]);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_UNBAN_PLAYER, l10n::pocketmine_permission_command_unban_player()), [$operatorRoot]);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_VERSION, l10n::pocketmine_permission_command_version()), [$everyoneRoot]);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_WHITELIST_ADD, l10n::pocketmine_permission_command_whitelist_add()), [$operatorRoot]);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_WHITELIST_DISABLE, l10n::pocketmine_permission_command_whitelist_disable()), [$operatorRoot]);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_WHITELIST_ENABLE, l10n::pocketmine_permission_command_whitelist_enable()), [$operatorRoot]);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_WHITELIST_LIST, l10n::pocketmine_permission_command_whitelist_list()), [$operatorRoot]);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_WHITELIST_RELOAD, l10n::pocketmine_permission_command_whitelist_reload()), [$operatorRoot]);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_WHITELIST_REMOVE, l10n::pocketmine_permission_command_whitelist_remove()), [$operatorRoot]);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_XP_OTHER, l10n::pocketmine_permission_command_xp_other()), [$operatorRoot]);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        self::registerPermission(<span class="keyword">new</span> Permission(Names::COMMAND_XP_SELF, l10n::pocketmine_permission_command_xp_self()), [$operatorRoot]);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> registerNoArgsDesc(<span class="keywordtype">string</span> $permission, array $grantedBy) : Permission{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $translationKey = preg_replace(<span class="stringliteral">&quot;/^pocketmine\./&quot;</span>, <span class="stringliteral">&quot;pocketmine.permission.&quot;</span>, $permission) ?? throw new AssumptionFailedError(preg_last_error_msg());</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $parameters = KnownTranslationParameterInfo::TABLE[$translationKey] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>($parameters === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Expected translation key $translationKey not defined&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span>(count($parameters) !== 0){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Cannot use this function to register a permission with a parameterisable description string&quot;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $translatable = <span class="keyword">new</span> Translatable($translationKey);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> self::registerPermission(<span class="keyword">new</span> Permission($permission, $translatable), $grantedBy);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> registerCorePermissions() : void{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $consoleRoot = self::registerNoArgsDesc(self::ROOT_CONSOLE, []);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $operatorRoot = self::registerNoArgsDesc(self::ROOT_OPERATOR, [$consoleRoot]);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $everyoneRoot = self::registerNoArgsDesc(self::ROOT_USER, [$operatorRoot]);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        self::registerNoArgsDesc(Names::COMMAND_DUMPMEMORY, [$consoleRoot]);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">foreach</span>([</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            Names::BROADCAST_ADMIN,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            Names::COMMAND_BAN_IP,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            Names::COMMAND_BAN_LIST,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            Names::COMMAND_BAN_PLAYER,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            Names::COMMAND_CLEAR_OTHER,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            Names::COMMAND_DEFAULTGAMEMODE,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            Names::COMMAND_DIFFICULTY,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            Names::COMMAND_EFFECT_OTHER,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            Names::COMMAND_EFFECT_SELF,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            Names::COMMAND_ENCHANT_OTHER,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            Names::COMMAND_ENCHANT_SELF,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            Names::COMMAND_GAMEMODE_OTHER,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            Names::COMMAND_GAMEMODE_SELF,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            Names::COMMAND_GC,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            Names::COMMAND_GIVE_OTHER,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            Names::COMMAND_GIVE_SELF,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            Names::COMMAND_KICK,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            Names::COMMAND_KILL_OTHER,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            Names::COMMAND_LIST,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            Names::COMMAND_OP_GIVE,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            Names::COMMAND_OP_TAKE,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            Names::COMMAND_PARTICLE,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            Names::COMMAND_PLUGINS,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            Names::COMMAND_SAVE_DISABLE,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            Names::COMMAND_SAVE_ENABLE,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            Names::COMMAND_SAVE_PERFORM,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            Names::COMMAND_SAY,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            Names::COMMAND_SEED,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            Names::COMMAND_SETWORLDSPAWN,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            Names::COMMAND_SPAWNPOINT_OTHER,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            Names::COMMAND_SPAWNPOINT_SELF,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            Names::COMMAND_STATUS,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            Names::COMMAND_STOP,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            Names::COMMAND_TELEPORT_OTHER,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            Names::COMMAND_TELEPORT_SELF,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            Names::COMMAND_TIME_ADD,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            Names::COMMAND_TIME_QUERY,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            Names::COMMAND_TIME_SET,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            Names::COMMAND_TIME_START,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            Names::COMMAND_TIME_STOP,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            Names::COMMAND_TIMINGS,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            Names::COMMAND_TITLE_OTHER,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            Names::COMMAND_TITLE_SELF,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            Names::COMMAND_TRANSFERSERVER,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            Names::COMMAND_UNBAN_IP,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            Names::COMMAND_UNBAN_PLAYER,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            Names::COMMAND_WHITELIST_ADD,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            Names::COMMAND_WHITELIST_DISABLE,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            Names::COMMAND_WHITELIST_ENABLE,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            Names::COMMAND_WHITELIST_LIST,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            Names::COMMAND_WHITELIST_RELOAD,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            Names::COMMAND_WHITELIST_REMOVE,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            Names::COMMAND_XP_OTHER,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            Names::COMMAND_XP_SELF,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        ] as $permission){</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            self::registerNoArgsDesc($permission, [$operatorRoot]);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">foreach</span>([</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            Names::COMMAND_KILL_SELF,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            Names::COMMAND_ME,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            Names::COMMAND_HELP,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            Names::BROADCAST_USER,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            Names::COMMAND_CLEAR_SELF,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            Names::COMMAND_TELL,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            Names::COMMAND_VERSION,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        ] as $permission){</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            self::registerNoArgsDesc($permission, [$everyoneRoot]);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_parameter_info_html"><div class="ttname"><a href="../../d3/de8/classpocketmine_1_1lang_1_1_known_translation_parameter_info.html">pocketmine\lang\KnownTranslationParameterInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/df1/_known_translation_parameter_info_8php_source.html#l00034">KnownTranslationParameterInfo.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00028">Translatable.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permission_names_html"><div class="ttname"><a href="../../da/dca/classpocketmine_1_1permission_1_1_default_permission_names.html">pocketmine\permission\DefaultPermissionNames</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4c/_default_permission_names_8php_source.html#l00026">DefaultPermissionNames.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permissions_html"><div class="ttname"><a href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">pocketmine\permission\DefaultPermissions</a></div><div class="ttdef"><b>Definition</b> <a href="#l00029">DefaultPermissions.php:29</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permissions_html_ade0d09594a23f69341572ff303b49469"><div class="ttname"><a href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469">pocketmine\permission\DefaultPermissions\registerPermission</a></div><div class="ttdeci">static registerPermission(Permission $candidate, array $grantedBy=[], array $deniedBy=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00038">DefaultPermissions.php:38</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permissions_html"><div class="ttname"><a href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">pocketmine\permission\DefaultPermissions</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">DefaultPermissions.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permissions_html_ade0d09594a23f69341572ff303b49469"><div class="ttname"><a href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html#ade0d09594a23f69341572ff303b49469">pocketmine\permission\DefaultPermissions\registerPermission</a></div><div class="ttdeci">static registerPermission(Permission $candidate, array $grantedBy=[], array $deniedBy=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00043">DefaultPermissions.php:43</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_permission_html"><div class="ttname"><a href="../../db/dc3/classpocketmine_1_1permission_1_1_permission.html">pocketmine\permission\Permission</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d15/_permission_8php_source.html#l00035">Permission.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1permission_html"><div class="ttname"><a href="../../d6/dc0/namespacepocketmine_1_1permission.html">pocketmine\permission</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d0a/_ban_entry_8php_source.html#l00024">BanEntry.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

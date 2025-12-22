@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -158,7 +158,7 @@ $(function(){initNavTree('dc/de7/_serverbound_pack_setting_change_packet_8php_so
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;packId = <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">CommonTypes</a>::getUUID($in);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $name = CommonTypes::getString($in);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $typeId = PackSettingType::from(VarInt::readUnsignedInt($in));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $typeId = PackSettingType::fromPacket(VarInt::readUnsignedInt($in));</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;packSetting = match($typeId){</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            PackSettingType::FLOAT =&gt; FloatPackSetting::read($in, $name),</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            PackSettingType::BOOL =&gt; BoolPackSetting::read($in, $name),</div>

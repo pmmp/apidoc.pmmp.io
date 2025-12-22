@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -1514,445 +1514,455 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span>        if($this-&gt;isRunning){</div>
 <div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>            $this-&gt;isRunning = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>            $this-&gt;signalHandler-&gt;unregister();</div>
-<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>        }</div>
-<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>    }</div>
+<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span> </div>
+<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>            <span class="keywordflow">if</span>(TimingsHandler::isEnabled()){</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>                TimingsHandler::createReportFile(Path::join($this-&gt;getDataPath(), <span class="stringliteral">&quot;timings&quot;</span>))-&gt;onCompletion(</div>
+<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>                    <span class="keyword">function</span>(<span class="keywordtype">string</span> $timingsFile) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>                        $this-&gt;logger-&gt;info($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_command_timings_timingsWrite($timingsFile)));</div>
+<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>                        TimingsHandler::setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span>                    },</div>
+<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span>                    fn() =&gt; $this-&gt;logger-&gt;error(<span class="stringliteral">&quot;Failed to create timings report file&quot;</span>)</div>
+<div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>                );</div>
+<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>            }</div>
+<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>        }</div>
+<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>    }</div>
 </div>
-<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span> </div>
-<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>    <span class="keyword">private</span> <span class="keyword">function</span> forceShutdownExit() : void{</div>
-<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>        $this-&gt;forceShutdown();</div>
-<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>        Process::kill(Process::pid());</div>
-<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span>    }</div>
-<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span> </div>
-<div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>    <span class="keyword">public</span> <span class="keyword">function</span> forceShutdown() : void{</div>
-<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>        if($this-&gt;hasStopped){</div>
-<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>        }</div>
 <div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span> </div>
-<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>        <span class="keywordflow">if</span>($this-&gt;doTitleTick){</div>
-<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>            echo <span class="stringliteral">&quot;\x1b]0;\x07&quot;</span>;</div>
-<div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span>        }</div>
-<div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span> </div>
-<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span>        <span class="keywordflow">if</span>($this-&gt;isRunning){</div>
-<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_server_forcingShutdown()));</div>
-<div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span>        }</div>
-<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>            <span class="keywordflow">if</span>(!$this-&gt;isRunning()){</div>
-<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>                $this-&gt;sendUsage(SendUsageTask::TYPE_CLOSE);</div>
-<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>            }</div>
-<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span> </div>
-<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>            $this-&gt;hasStopped = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>    <span class="keyword">private</span> <span class="keyword">function</span> forceShutdownExit() : void{</div>
+<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>        $this-&gt;forceShutdown();</div>
+<div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span>        Process::kill(Process::pid());</div>
+<div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span>    }</div>
+<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span> </div>
+<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>    <span class="keyword">public</span> <span class="keyword">function</span> forceShutdown() : void{</div>
+<div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span>        if($this-&gt;hasStopped){</div>
+<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>        }</div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span> </div>
+<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>        <span class="keywordflow">if</span>($this-&gt;doTitleTick){</div>
+<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>            echo <span class="stringliteral">&quot;\x1b]0;\x07&quot;</span>;</div>
+<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>        }</div>
 <div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span> </div>
-<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>            $this-&gt;shutdown();</div>
-<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span> </div>
-<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>            <span class="keywordflow">if</span>(isset($this-&gt;pluginManager)){</div>
-<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Disabling all plugins&quot;</span>);</div>
-<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>                $this-&gt;pluginManager-&gt;disablePlugins();</div>
-<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>            }</div>
-<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span> </div>
-<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>            <span class="keywordflow">if</span>(isset($this-&gt;network)){</div>
-<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>                $this-&gt;network-&gt;getSessionManager()-&gt;close($this-&gt;configGroup-&gt;getPropertyString(Yml::SETTINGS_SHUTDOWN_MESSAGE, <span class="stringliteral">&quot;Server closed&quot;</span>));</div>
-<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>            }</div>
-<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span> </div>
-<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>            <span class="keywordflow">if</span>(isset($this-&gt;worldManager)){</div>
-<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Unloading all worlds&quot;</span>);</div>
-<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>                <span class="keywordflow">foreach</span>($this-&gt;worldManager-&gt;getWorlds() as $world){</div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>                    $this-&gt;worldManager-&gt;unloadWorld($world, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>                }</div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>            }</div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span> </div>
-<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Removing event handlers&quot;</span>);</div>
-<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>            HandlerListManager::global()-&gt;unregisterAll();</div>
+<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>        <span class="keywordflow">if</span>($this-&gt;isRunning){</div>
+<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_server_forcingShutdown()));</div>
+<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>        }</div>
+<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>            <span class="keywordflow">if</span>(!$this-&gt;isRunning()){</div>
+<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>                $this-&gt;sendUsage(SendUsageTask::TYPE_CLOSE);</div>
+<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>            }</div>
+<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span> </div>
+<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>            $this-&gt;hasStopped = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span> </div>
+<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>            $this-&gt;shutdown();</div>
+<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span> </div>
+<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>            <span class="keywordflow">if</span>(isset($this-&gt;pluginManager)){</div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Disabling all plugins&quot;</span>);</div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>                $this-&gt;pluginManager-&gt;disablePlugins();</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>            }</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span> </div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>            <span class="keywordflow">if</span>(isset($this-&gt;network)){</div>
+<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>                $this-&gt;network-&gt;getSessionManager()-&gt;close($this-&gt;configGroup-&gt;getPropertyString(Yml::SETTINGS_SHUTDOWN_MESSAGE, <span class="stringliteral">&quot;Server closed&quot;</span>));</div>
+<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>            }</div>
 <div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span> </div>
-<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>            <span class="keywordflow">if</span>(isset($this-&gt;asyncPool)){</div>
-<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Shutting down async task worker pool&quot;</span>);</div>
-<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span>                $this-&gt;asyncPool-&gt;shutdown();</div>
-<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>            }</div>
-<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span> </div>
-<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>            <span class="keywordflow">if</span>(isset($this-&gt;configGroup)){</div>
-<div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Saving properties&quot;</span>);</div>
-<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>                $this-&gt;configGroup-&gt;save();</div>
-<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>            }</div>
+<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>            <span class="keywordflow">if</span>(isset($this-&gt;worldManager)){</div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Unloading all worlds&quot;</span>);</div>
+<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span>                <span class="keywordflow">foreach</span>($this-&gt;worldManager-&gt;getWorlds() as $world){</div>
+<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>                    $this-&gt;worldManager-&gt;unloadWorld($world, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>                }</div>
+<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>            }</div>
+<div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span> </div>
+<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>            $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Removing event handlers&quot;</span>);</div>
+<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>            HandlerListManager::global()-&gt;unregisterAll();</div>
 <div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span> </div>
-<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>            <span class="keywordflow">if</span>($this-&gt;console !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Closing console&quot;</span>);</div>
-<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>                $this-&gt;console-&gt;quit();</div>
+<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>            <span class="keywordflow">if</span>(isset($this-&gt;asyncPool)){</div>
+<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Shutting down async task worker pool&quot;</span>);</div>
+<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>                $this-&gt;asyncPool-&gt;shutdown();</div>
 <div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>            }</div>
 <div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span> </div>
-<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span>            <span class="keywordflow">if</span>(isset($this-&gt;network)){</div>
-<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Stopping network interfaces&quot;</span>);</div>
-<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>                <span class="keywordflow">foreach</span>($this-&gt;network-&gt;getInterfaces() as $interface){</div>
-<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Stopping network interface &quot;</span> . get_class($interface));</div>
-<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span>                    $this-&gt;network-&gt;unregisterInterface($interface);</div>
-<div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span>                }</div>
-<div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>            }</div>
-<div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>        }<span class="keywordflow">catch</span>(\Throwable $e){</div>
-<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"> 1574</span>            $this-&gt;logger-&gt;logException($e);</div>
-<div class="line"><a id="l01575" name="l01575"></a><span class="lineno"> 1575</span>            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Crashed while crashing, killing process&quot;</span>);</div>
-<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"> 1576</span>            @Process::kill(Process::pid());</div>
-<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span>        }</div>
-<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span> </div>
-<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span>    }</div>
-<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span> </div>
-<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>    <span class="keyword">public</span> <span class="keyword">function</span> getQueryInformation() : QueryInfo{</div>
-<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>        return $this-&gt;queryInfo;</div>
-<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>    }</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span> </div>
-<div class="foldopen" id="foldopen01589" data-start="{" data-end="}">
-<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"><a class="line" href="../../d5/df7/classpocketmine_1_1_server.html#a48d4aa236cafa4fe511dcf26970a7498"> 1589</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/df7/classpocketmine_1_1_server.html#a48d4aa236cafa4fe511dcf26970a7498">exceptionHandler</a>(\Throwable $e, ?array $trace = <span class="keyword">null</span>) : void{</div>
-<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>        while(@ob_end_flush()){}</div>
-<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>        global $lastError;</div>
-<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span> </div>
-<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>        <span class="keywordflow">if</span>($trace === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>            $trace = $e-&gt;getTrace();</div>
-<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>        }</div>
-<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span> </div>
-<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>        <span class="comment">//If this is a thread crash, this logs where the exception came from on the main thread, as opposed to the</span></div>
-<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span>        <span class="comment">//crashed thread. This is intentional, and might be useful for debugging</span></div>
-<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span>        <span class="comment">//Assume that the thread already logged the original exception with the correct stack trace</span></div>
-<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>        $this-&gt;logger-&gt;logException($e, $trace);</div>
-<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span> </div>
-<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span>        <span class="keywordflow">if</span>($e instanceof ThreadCrashException){</div>
-<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"> 1603</span>            $info = $e-&gt;getCrashInfo();</div>
-<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span>            $type = $info-&gt;getType();</div>
-<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span>            $errstr = $info-&gt;getMessage();</div>
-<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span>            $errfile = $info-&gt;getFile();</div>
-<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>            $errline = $info-&gt;getLine();</div>
-<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>            $printableTrace = $info-&gt;getTrace();</div>
-<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>            $thread = $info-&gt;getThreadName();</div>
-<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span>            $type = get_class($e);</div>
-<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>            $errstr = $e-&gt;getMessage();</div>
-<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>            $errfile = $e-&gt;getFile();</div>
-<div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>            $errline = $e-&gt;getLine();</div>
-<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>            $printableTrace = Utils::printableTraceWithMetadata($trace);</div>
-<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span>            $thread = <span class="stringliteral">&quot;Main&quot;</span>;</div>
-<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>        }</div>
-<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span> </div>
-<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span>        $errstr = preg_replace(<span class="stringliteral">&#39;/\s+/&#39;</span>, <span class="charliteral">&#39; &#39;</span>, trim($errstr));</div>
-<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span> </div>
-<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>        $lastError = [</div>
-<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>            <span class="stringliteral">&quot;type&quot;</span> =&gt; $type,</div>
-<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span>            <span class="stringliteral">&quot;message&quot;</span> =&gt; $errstr,</div>
-<div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span>            <span class="stringliteral">&quot;fullFile&quot;</span> =&gt; $errfile,</div>
-<div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span>            <span class="stringliteral">&quot;file&quot;</span> =&gt; Filesystem::cleanPath($errfile),</div>
-<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span>            <span class="stringliteral">&quot;line&quot;</span> =&gt; $errline,</div>
-<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span>            <span class="stringliteral">&quot;trace&quot;</span> =&gt; $printableTrace,</div>
-<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span>            <span class="stringliteral">&quot;thread&quot;</span> =&gt; $thread</div>
-<div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span>        ];</div>
+<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span>            <span class="keywordflow">if</span>(isset($this-&gt;configGroup)){</div>
+<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Saving properties&quot;</span>);</div>
+<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>                $this-&gt;configGroup-&gt;save();</div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>            }</div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span> </div>
+<div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span>            <span class="keywordflow">if</span>($this-&gt;console !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Closing console&quot;</span>);</div>
+<div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>                $this-&gt;console-&gt;quit();</div>
+<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"> 1574</span>            }</div>
+<div class="line"><a id="l01575" name="l01575"></a><span class="lineno"> 1575</span> </div>
+<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"> 1576</span>            <span class="keywordflow">if</span>(isset($this-&gt;network)){</div>
+<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span>                $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Stopping network interfaces&quot;</span>);</div>
+<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span>                <span class="keywordflow">foreach</span>($this-&gt;network-&gt;getInterfaces() as $interface){</div>
+<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Stopping network interface &quot;</span> . get_class($interface));</div>
+<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span>                    $this-&gt;network-&gt;unregisterInterface($interface);</div>
+<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>                }</div>
+<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>            }</div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>        }<span class="keywordflow">catch</span>(\Throwable $e){</div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>            $this-&gt;logger-&gt;logException($e);</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Crashed while crashing, killing process&quot;</span>);</div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>            @Process::kill(Process::pid());</div>
+<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>        }</div>
+<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span> </div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>    }</div>
+<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span> </div>
+<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>    <span class="keyword">public</span> <span class="keyword">function</span> getQueryInformation() : QueryInfo{</div>
+<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>        return $this-&gt;queryInfo;</div>
+<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>    }</div>
+<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span> </div>
+<div class="foldopen" id="foldopen01599" data-start="{" data-end="}">
+<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"><a class="line" href="../../d5/df7/classpocketmine_1_1_server.html#a48d4aa236cafa4fe511dcf26970a7498"> 1599</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/df7/classpocketmine_1_1_server.html#a48d4aa236cafa4fe511dcf26970a7498">exceptionHandler</a>(\Throwable $e, ?array $trace = <span class="keyword">null</span>) : void{</div>
+<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>        while(@ob_end_flush()){}</div>
+<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span>        global $lastError;</div>
+<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span> </div>
+<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"> 1603</span>        <span class="keywordflow">if</span>($trace === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span>            $trace = $e-&gt;getTrace();</div>
+<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span>        }</div>
+<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span> </div>
+<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>        <span class="comment">//If this is a thread crash, this logs where the exception came from on the main thread, as opposed to the</span></div>
+<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>        <span class="comment">//crashed thread. This is intentional, and might be useful for debugging</span></div>
+<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>        <span class="comment">//Assume that the thread already logged the original exception with the correct stack trace</span></div>
+<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>        $this-&gt;logger-&gt;logException($e, $trace);</div>
+<div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span> </div>
+<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>        <span class="keywordflow">if</span>($e instanceof ThreadCrashException){</div>
+<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>            $info = $e-&gt;getCrashInfo();</div>
+<div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>            $type = $info-&gt;getType();</div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>            $errstr = $info-&gt;getMessage();</div>
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span>            $errfile = $info-&gt;getFile();</div>
+<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>            $errline = $info-&gt;getLine();</div>
+<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span>            $printableTrace = $info-&gt;getTrace();</div>
+<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span>            $thread = $info-&gt;getThreadName();</div>
+<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>            $type = get_class($e);</div>
+<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>            $errstr = $e-&gt;getMessage();</div>
+<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span>            $errfile = $e-&gt;getFile();</div>
+<div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span>            $errline = $e-&gt;getLine();</div>
+<div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span>            $printableTrace = Utils::printableTraceWithMetadata($trace);</div>
+<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span>            $thread = <span class="stringliteral">&quot;Main&quot;</span>;</div>
+<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span>        }</div>
+<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span> </div>
+<div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span>        $errstr = preg_replace(<span class="stringliteral">&#39;/\s+/&#39;</span>, <span class="charliteral">&#39; &#39;</span>, trim($errstr));</div>
 <div class="line"><a id="l01630" name="l01630"></a><span class="lineno"> 1630</span> </div>
-<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>        global $lastExceptionError, $lastError;</div>
-<div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>        $lastExceptionError = $lastError;</div>
-<div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>        $this-&gt;crashDump();</div>
-<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>    }</div>
+<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>        $lastError = [</div>
+<div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>            <span class="stringliteral">&quot;type&quot;</span> =&gt; $type,</div>
+<div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>            <span class="stringliteral">&quot;message&quot;</span> =&gt; $errstr,</div>
+<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>            <span class="stringliteral">&quot;fullFile&quot;</span> =&gt; $errfile,</div>
+<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span>            <span class="stringliteral">&quot;file&quot;</span> =&gt; Filesystem::cleanPath($errfile),</div>
+<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>            <span class="stringliteral">&quot;line&quot;</span> =&gt; $errline,</div>
+<div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>            <span class="stringliteral">&quot;trace&quot;</span> =&gt; $printableTrace,</div>
+<div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>            <span class="stringliteral">&quot;thread&quot;</span> =&gt; $thread</div>
+<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>        ];</div>
+<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span> </div>
+<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>        global $lastExceptionError, $lastError;</div>
+<div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>        $lastExceptionError = $lastError;</div>
+<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>        $this-&gt;crashDump();</div>
+<div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>    }</div>
 </div>
-<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span> </div>
-<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>    <span class="keyword">private</span> <span class="keyword">function</span> writeCrashDumpFile(CrashDump $dump) : string{</div>
-<div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>        $crashFolder = Path::join($this-&gt;dataPath, <span class="stringliteral">&quot;crashdumps&quot;</span>);</div>
-<div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>        <span class="keywordflow">if</span>(!is_dir($crashFolder)){</div>
-<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>            mkdir($crashFolder);</div>
-<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span>        }</div>
-<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>        $crashDumpPath = Path::join($crashFolder, date(<span class="stringliteral">&quot;Y-m-d_H.i.s_T&quot;</span>, (<span class="keywordtype">int</span>) $dump-&gt;getData()-&gt;time) . <span class="stringliteral">&quot;.log&quot;</span>);</div>
-<div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span> </div>
-<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>        $fp = @fopen($crashDumpPath, <span class="stringliteral">&quot;wb&quot;</span>);</div>
-<div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>        <span class="keywordflow">if</span>(!is_resource($fp)){</div>
-<div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Unable to open new file to generate crashdump&quot;</span>);</div>
-<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span>        }</div>
-<div class="line"><a id="l01647" name="l01647"></a><span class="lineno"> 1647</span>        $writer = <span class="keyword">new</span> CrashDumpRenderer($fp, $dump-&gt;getData());</div>
-<div class="line"><a id="l01648" name="l01648"></a><span class="lineno"> 1648</span>        $writer-&gt;renderHumanReadable();</div>
-<div class="line"><a id="l01649" name="l01649"></a><span class="lineno"> 1649</span>        $dump-&gt;encodeData($writer);</div>
-<div class="line"><a id="l01650" name="l01650"></a><span class="lineno"> 1650</span> </div>
-<div class="line"><a id="l01651" name="l01651"></a><span class="lineno"> 1651</span>        fclose($fp);</div>
-<div class="line"><a id="l01652" name="l01652"></a><span class="lineno"> 1652</span>        <span class="keywordflow">return</span> $crashDumpPath;</div>
-<div class="line"><a id="l01653" name="l01653"></a><span class="lineno"> 1653</span>    }</div>
-<div class="line"><a id="l01654" name="l01654"></a><span class="lineno"> 1654</span> </div>
-<div class="line"><a id="l01655" name="l01655"></a><span class="lineno"> 1655</span>    <span class="keyword">public</span> <span class="keyword">function</span> crashDump() : void{</div>
-<div class="line"><a id="l01656" name="l01656"></a><span class="lineno"> 1656</span>        while(@ob_end_flush()){}</div>
-<div class="line"><a id="l01657" name="l01657"></a><span class="lineno"> 1657</span>        <span class="keywordflow">if</span>(!$this-&gt;isRunning){</div>
-<div class="line"><a id="l01658" name="l01658"></a><span class="lineno"> 1658</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01659" name="l01659"></a><span class="lineno"> 1659</span>        }</div>
-<div class="line"><a id="l01660" name="l01660"></a><span class="lineno"> 1660</span>        <span class="keywordflow">if</span>($this-&gt;sendUsageTicker &gt; 0){</div>
-<div class="line"><a id="l01661" name="l01661"></a><span class="lineno"> 1661</span>            $this-&gt;sendUsage(SendUsageTask::TYPE_CLOSE);</div>
-<div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span>        }</div>
-<div class="line"><a id="l01663" name="l01663"></a><span class="lineno"> 1663</span>        $this-&gt;hasStopped = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span> </div>
+<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span>    <span class="keyword">private</span> <span class="keyword">function</span> writeCrashDumpFile(CrashDump $dump) : string{</div>
+<div class="line"><a id="l01647" name="l01647"></a><span class="lineno"> 1647</span>        $crashFolder = Path::join($this-&gt;dataPath, <span class="stringliteral">&quot;crashdumps&quot;</span>);</div>
+<div class="line"><a id="l01648" name="l01648"></a><span class="lineno"> 1648</span>        <span class="keywordflow">if</span>(!is_dir($crashFolder)){</div>
+<div class="line"><a id="l01649" name="l01649"></a><span class="lineno"> 1649</span>            mkdir($crashFolder);</div>
+<div class="line"><a id="l01650" name="l01650"></a><span class="lineno"> 1650</span>        }</div>
+<div class="line"><a id="l01651" name="l01651"></a><span class="lineno"> 1651</span>        $crashDumpPath = Path::join($crashFolder, date(<span class="stringliteral">&quot;Y-m-d_H.i.s_T&quot;</span>, (<span class="keywordtype">int</span>) $dump-&gt;getData()-&gt;time) . <span class="stringliteral">&quot;.log&quot;</span>);</div>
+<div class="line"><a id="l01652" name="l01652"></a><span class="lineno"> 1652</span> </div>
+<div class="line"><a id="l01653" name="l01653"></a><span class="lineno"> 1653</span>        $fp = @fopen($crashDumpPath, <span class="stringliteral">&quot;wb&quot;</span>);</div>
+<div class="line"><a id="l01654" name="l01654"></a><span class="lineno"> 1654</span>        <span class="keywordflow">if</span>(!is_resource($fp)){</div>
+<div class="line"><a id="l01655" name="l01655"></a><span class="lineno"> 1655</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&quot;Unable to open new file to generate crashdump&quot;</span>);</div>
+<div class="line"><a id="l01656" name="l01656"></a><span class="lineno"> 1656</span>        }</div>
+<div class="line"><a id="l01657" name="l01657"></a><span class="lineno"> 1657</span>        $writer = <span class="keyword">new</span> CrashDumpRenderer($fp, $dump-&gt;getData());</div>
+<div class="line"><a id="l01658" name="l01658"></a><span class="lineno"> 1658</span>        $writer-&gt;renderHumanReadable();</div>
+<div class="line"><a id="l01659" name="l01659"></a><span class="lineno"> 1659</span>        $dump-&gt;encodeData($writer);</div>
+<div class="line"><a id="l01660" name="l01660"></a><span class="lineno"> 1660</span> </div>
+<div class="line"><a id="l01661" name="l01661"></a><span class="lineno"> 1661</span>        fclose($fp);</div>
+<div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span>        <span class="keywordflow">return</span> $crashDumpPath;</div>
+<div class="line"><a id="l01663" name="l01663"></a><span class="lineno"> 1663</span>    }</div>
 <div class="line"><a id="l01664" name="l01664"></a><span class="lineno"> 1664</span> </div>
-<div class="line"><a id="l01665" name="l01665"></a><span class="lineno"> 1665</span>        ini_set(<span class="stringliteral">&quot;error_reporting&quot;</span>, <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><a id="l01666" name="l01666"></a><span class="lineno"> 1666</span>        ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, <span class="stringliteral">&#39;-1&#39;</span>); <span class="comment">//Fix error dump not dumped on memory problems</span></div>
-<div class="line"><a id="l01667" name="l01667"></a><span class="lineno"> 1667</span>        <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l01668" name="l01668"></a><span class="lineno"> 1668</span>            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_create()));</div>
-<div class="line"><a id="l01669" name="l01669"></a><span class="lineno"> 1669</span>            $dump = <span class="keyword">new</span> CrashDump($this, $this-&gt;pluginManager ?? <span class="keyword">null</span>);</div>
-<div class="line"><a id="l01670" name="l01670"></a><span class="lineno"> 1670</span> </div>
-<div class="line"><a id="l01671" name="l01671"></a><span class="lineno"> 1671</span>            $crashDumpPath = $this-&gt;writeCrashDumpFile($dump);</div>
-<div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span> </div>
-<div class="line"><a id="l01673" name="l01673"></a><span class="lineno"> 1673</span>            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_submit($crashDumpPath)));</div>
+<div class="line"><a id="l01665" name="l01665"></a><span class="lineno"> 1665</span>    <span class="keyword">public</span> <span class="keyword">function</span> crashDump() : void{</div>
+<div class="line"><a id="l01666" name="l01666"></a><span class="lineno"> 1666</span>        while(@ob_end_flush()){}</div>
+<div class="line"><a id="l01667" name="l01667"></a><span class="lineno"> 1667</span>        <span class="keywordflow">if</span>(!$this-&gt;isRunning){</div>
+<div class="line"><a id="l01668" name="l01668"></a><span class="lineno"> 1668</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01669" name="l01669"></a><span class="lineno"> 1669</span>        }</div>
+<div class="line"><a id="l01670" name="l01670"></a><span class="lineno"> 1670</span>        <span class="keywordflow">if</span>($this-&gt;sendUsageTicker &gt; 0){</div>
+<div class="line"><a id="l01671" name="l01671"></a><span class="lineno"> 1671</span>            $this-&gt;sendUsage(SendUsageTask::TYPE_CLOSE);</div>
+<div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span>        }</div>
+<div class="line"><a id="l01673" name="l01673"></a><span class="lineno"> 1673</span>        $this-&gt;hasStopped = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01674" name="l01674"></a><span class="lineno"> 1674</span> </div>
-<div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span>            <span class="keywordflow">if</span>($this-&gt;configGroup-&gt;getPropertyBool(Yml::AUTO_REPORT_ENABLED, <span class="keyword">true</span>)){</div>
-<div class="line"><a id="l01676" name="l01676"></a><span class="lineno"> 1676</span>                $report = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01677" name="l01677"></a><span class="lineno"> 1677</span> </div>
-<div class="line"><a id="l01678" name="l01678"></a><span class="lineno"> 1678</span>                $stamp = Path::join($this-&gt;dataPath, <span class="stringliteral">&quot;crashdumps&quot;</span>, <span class="stringliteral">&quot;.last_crash&quot;</span>);</div>
-<div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span>                $crashInterval = 120; <span class="comment">//2 minutes</span></div>
-<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span>                <span class="keywordflow">if</span>(($lastReportTime = @filemtime($stamp)) !== <span class="keyword">false</span> &amp;&amp; $lastReportTime + $crashInterval &gt;= time()){</div>
-<div class="line"><a id="l01681" name="l01681"></a><span class="lineno"> 1681</span>                    $report = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Not sending crashdump due to last crash less than $crashInterval seconds ago&quot;</span>);</div>
-<div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>                }</div>
-<div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span>                @touch($stamp); <span class="comment">//update file timestamp</span></div>
-<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span> </div>
-<div class="line"><a id="l01686" name="l01686"></a><span class="lineno"> 1686</span>                <span class="keywordflow">if</span>($dump-&gt;getData()-&gt;error[<span class="stringliteral">&quot;type&quot;</span>] === \ParseError::class){</div>
-<div class="line"><a id="l01687" name="l01687"></a><span class="lineno"> 1687</span>                    $report = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01688" name="l01688"></a><span class="lineno"> 1688</span>                }</div>
-<div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span> </div>
-<div class="line"><a id="l01690" name="l01690"></a><span class="lineno"> 1690</span>                <span class="keywordflow">if</span>(strrpos(VersionInfo::GIT_HASH(), <span class="stringliteral">&quot;-dirty&quot;</span>) !== <span class="keyword">false</span> || VersionInfo::GIT_HASH() === str_repeat(<span class="stringliteral">&quot;00&quot;</span>, 20)){</div>
-<div class="line"><a id="l01691" name="l01691"></a><span class="lineno"> 1691</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Not sending crashdump due to locally modified&quot;</span>);</div>
-<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span>                    $report = <span class="keyword">false</span>; <span class="comment">//Don&#39;t send crashdumps for locally modified builds</span></div>
+<div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span>        ini_set(<span class="stringliteral">&quot;error_reporting&quot;</span>, <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a id="l01676" name="l01676"></a><span class="lineno"> 1676</span>        ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, <span class="stringliteral">&#39;-1&#39;</span>); <span class="comment">//Fix error dump not dumped on memory problems</span></div>
+<div class="line"><a id="l01677" name="l01677"></a><span class="lineno"> 1677</span>        <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l01678" name="l01678"></a><span class="lineno"> 1678</span>            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_create()));</div>
+<div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span>            $dump = <span class="keyword">new</span> CrashDump($this, $this-&gt;pluginManager ?? <span class="keyword">null</span>);</div>
+<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span> </div>
+<div class="line"><a id="l01681" name="l01681"></a><span class="lineno"> 1681</span>            $crashDumpPath = $this-&gt;writeCrashDumpFile($dump);</div>
+<div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span> </div>
+<div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_submit($crashDumpPath)));</div>
+<div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span> </div>
+<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>            <span class="keywordflow">if</span>($this-&gt;configGroup-&gt;getPropertyBool(Yml::AUTO_REPORT_ENABLED, <span class="keyword">true</span>)){</div>
+<div class="line"><a id="l01686" name="l01686"></a><span class="lineno"> 1686</span>                $report = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01687" name="l01687"></a><span class="lineno"> 1687</span> </div>
+<div class="line"><a id="l01688" name="l01688"></a><span class="lineno"> 1688</span>                $stamp = Path::join($this-&gt;dataPath, <span class="stringliteral">&quot;crashdumps&quot;</span>, <span class="stringliteral">&quot;.last_crash&quot;</span>);</div>
+<div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span>                $crashInterval = 120; <span class="comment">//2 minutes</span></div>
+<div class="line"><a id="l01690" name="l01690"></a><span class="lineno"> 1690</span>                <span class="keywordflow">if</span>(($lastReportTime = @filemtime($stamp)) !== <span class="keyword">false</span> &amp;&amp; $lastReportTime + $crashInterval &gt;= time()){</div>
+<div class="line"><a id="l01691" name="l01691"></a><span class="lineno"> 1691</span>                    $report = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Not sending crashdump due to last crash less than $crashInterval seconds ago&quot;</span>);</div>
 <div class="line"><a id="l01693" name="l01693"></a><span class="lineno"> 1693</span>                }</div>
-<div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span> </div>
-<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>                <span class="keywordflow">if</span>($report){</div>
-<div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>                    $url = ($this-&gt;configGroup-&gt;getPropertyBool(Yml::AUTO_REPORT_USE_HTTPS, <span class="keyword">true</span>) ? <span class="stringliteral">&quot;https&quot;</span> : <span class="stringliteral">&quot;http&quot;</span>) . <span class="stringliteral">&quot;://&quot;</span> . $this-&gt;configGroup-&gt;getPropertyString(Yml::AUTO_REPORT_HOST, <span class="stringliteral">&quot;crash.pmmp.io&quot;</span>) . <span class="stringliteral">&quot;/submit/api&quot;</span>;</div>
-<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>                    $postUrlError = <span class="stringliteral">&quot;Unknown error&quot;</span>;</div>
-<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>                    $reply = Internet::postURL($url, [</div>
-<div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span>                        <span class="stringliteral">&quot;report&quot;</span> =&gt; <span class="stringliteral">&quot;yes&quot;</span>,</div>
-<div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>                        <span class="stringliteral">&quot;name&quot;</span> =&gt; $this-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> . $this-&gt;getPocketMineVersion(),</div>
-<div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>                        <span class="stringliteral">&quot;email&quot;</span> =&gt; <span class="stringliteral">&quot;crash@pocketmine.net&quot;</span>,</div>
-<div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>                        <span class="stringliteral">&quot;reportPaste&quot;</span> =&gt; base64_encode($dump-&gt;getEncodedData())</div>
-<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>                    ], 10, [], $postUrlError);</div>
+<div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span>                @touch($stamp); <span class="comment">//update file timestamp</span></div>
+<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span> </div>
+<div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>                <span class="keywordflow">if</span>($dump-&gt;getData()-&gt;error[<span class="stringliteral">&quot;type&quot;</span>] === \ParseError::class){</div>
+<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>                    $report = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>                }</div>
+<div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span> </div>
+<div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>                <span class="keywordflow">if</span>(strrpos(VersionInfo::GIT_HASH(), <span class="stringliteral">&quot;-dirty&quot;</span>) !== <span class="keyword">false</span> || VersionInfo::GIT_HASH() === str_repeat(<span class="stringliteral">&quot;00&quot;</span>, 20)){</div>
+<div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>                    $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Not sending crashdump due to locally modified&quot;</span>);</div>
+<div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>                    $report = <span class="keyword">false</span>; <span class="comment">//Don&#39;t send crashdumps for locally modified builds</span></div>
+<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>                }</div>
 <div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span> </div>
-<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>                    <span class="keywordflow">if</span>($reply !== <span class="keyword">null</span> &amp;&amp; is_object($data = json_decode($reply-&gt;getBody()))){</div>
-<div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>                        <span class="keywordflow">if</span>(isset($data-&gt;crashId) &amp;&amp; is_int($data-&gt;crashId) &amp;&amp; isset($data-&gt;crashUrl) &amp;&amp; is_string($data-&gt;crashUrl)){</div>
-<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>                            $reportId = $data-&gt;crashId;</div>
-<div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>                            $reportUrl = $data-&gt;crashUrl;</div>
-<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>                            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_archive($reportUrl, (<span class="keywordtype">string</span>) $reportId)));</div>
-<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>                        }elseif(isset($data-&gt;error) &amp;&amp; is_string($data-&gt;error)){</div>
-<div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span>                            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Automatic crash report submission failed: $data-&gt;error&quot;</span>);</div>
-<div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span>                        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>                            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Invalid JSON response received from crash archive: &quot;</span> . $reply-&gt;getBody());</div>
-<div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span>                        }</div>
-<div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>                    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span>                        $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Failed to communicate with crash archive: $postUrlError&quot;</span>);</div>
-<div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span>                    }</div>
-<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>                }</div>
-<div class="line"><a id="l01719" name="l01719"></a><span class="lineno"> 1719</span>            }</div>
-<div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span>        }<span class="keywordflow">catch</span>(\Throwable $e){</div>
-<div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>            $this-&gt;logger-&gt;logException($e);</div>
-<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>            <span class="keywordflow">try</span>{</div>
-<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>                $this-&gt;logger-&gt;critical($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_error($e-&gt;getMessage())));</div>
-<div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>            }<span class="keywordflow">catch</span>(\Throwable $e){}</div>
-<div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>        }</div>
-<div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span> </div>
-<div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>        $this-&gt;forceShutdown();</div>
-<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>        $this-&gt;isRunning = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span> </div>
-<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>        <span class="comment">//Force minimum uptime to be &gt;= 120 seconds, to reduce the impact of spammy crash loops</span></div>
-<div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>        $uptime = time() - ((int) $this-&gt;startTime);</div>
-<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>        $minUptime = 120;</div>
-<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>        $spacing = $minUptime - $uptime;</div>
-<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>        <span class="keywordflow">if</span>($spacing &gt; 0){</div>
-<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>            echo <span class="stringliteral">&quot;--- Uptime {$uptime}s - waiting {$spacing}s to throttle automatic restart (you can kill the process safely now) ---&quot;</span> . PHP_EOL;</div>
-<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>            sleep($spacing);</div>
-<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>        }</div>
-<div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>        @Process::kill(Process::pid());</div>
-<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>        exit(1);</div>
-<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>    }</div>
-<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span> </div>
-<div class="foldopen" id="foldopen01745" data-start="{" data-end="}">
-<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"><a class="line" href="../../d5/df7/classpocketmine_1_1_server.html#a5db762a6ed883975faab5d1205dec643"> 1745</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/df7/classpocketmine_1_1_server.html#a5db762a6ed883975faab5d1205dec643">__debugInfo</a>() : array{</div>
-<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>        return [];</div>
-<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>    }</div>
+<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>                <span class="keywordflow">if</span>($report){</div>
+<div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>                    $url = ($this-&gt;configGroup-&gt;getPropertyBool(Yml::AUTO_REPORT_USE_HTTPS, <span class="keyword">true</span>) ? <span class="stringliteral">&quot;https&quot;</span> : <span class="stringliteral">&quot;http&quot;</span>) . <span class="stringliteral">&quot;://&quot;</span> . $this-&gt;configGroup-&gt;getPropertyString(Yml::AUTO_REPORT_HOST, <span class="stringliteral">&quot;crash.pmmp.io&quot;</span>) . <span class="stringliteral">&quot;/submit/api&quot;</span>;</div>
+<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>                    $postUrlError = <span class="stringliteral">&quot;Unknown error&quot;</span>;</div>
+<div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>                    $reply = Internet::postURL($url, [</div>
+<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>                        <span class="stringliteral">&quot;report&quot;</span> =&gt; <span class="stringliteral">&quot;yes&quot;</span>,</div>
+<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>                        <span class="stringliteral">&quot;name&quot;</span> =&gt; $this-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> . $this-&gt;getPocketMineVersion(),</div>
+<div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span>                        <span class="stringliteral">&quot;email&quot;</span> =&gt; <span class="stringliteral">&quot;crash@pocketmine.net&quot;</span>,</div>
+<div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span>                        <span class="stringliteral">&quot;reportPaste&quot;</span> =&gt; base64_encode($dump-&gt;getEncodedData())</div>
+<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>                    ], 10, [], $postUrlError);</div>
+<div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span> </div>
+<div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>                    <span class="keywordflow">if</span>($reply !== <span class="keyword">null</span> &amp;&amp; is_object($data = json_decode($reply-&gt;getBody()))){</div>
+<div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span>                        <span class="keywordflow">if</span>(isset($data-&gt;crashId) &amp;&amp; is_int($data-&gt;crashId) &amp;&amp; isset($data-&gt;crashUrl) &amp;&amp; is_string($data-&gt;crashUrl)){</div>
+<div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span>                            $reportId = $data-&gt;crashId;</div>
+<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>                            $reportUrl = $data-&gt;crashUrl;</div>
+<div class="line"><a id="l01719" name="l01719"></a><span class="lineno"> 1719</span>                            $this-&gt;logger-&gt;emergency($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_archive($reportUrl, (<span class="keywordtype">string</span>) $reportId)));</div>
+<div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span>                        }elseif(isset($data-&gt;error) &amp;&amp; is_string($data-&gt;error)){</div>
+<div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>                            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Automatic crash report submission failed: $data-&gt;error&quot;</span>);</div>
+<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>                        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>                            $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Invalid JSON response received from crash archive: &quot;</span> . $reply-&gt;getBody());</div>
+<div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>                        }</div>
+<div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span>                        $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Failed to communicate with crash archive: $postUrlError&quot;</span>);</div>
+<div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>                    }</div>
+<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>                }</div>
+<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span>            }</div>
+<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>        }<span class="keywordflow">catch</span>(\Throwable $e){</div>
+<div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>            $this-&gt;logger-&gt;logException($e);</div>
+<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>            <span class="keywordflow">try</span>{</div>
+<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>                $this-&gt;logger-&gt;critical($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_crash_error($e-&gt;getMessage())));</div>
+<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>            }<span class="keywordflow">catch</span>(\Throwable $e){}</div>
+<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>        }</div>
+<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span> </div>
+<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>        $this-&gt;forceShutdown();</div>
+<div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>        $this-&gt;isRunning = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span> </div>
+<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>        <span class="comment">//Force minimum uptime to be &gt;= 120 seconds, to reduce the impact of spammy crash loops</span></div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>        $uptime = time() - ((int) $this-&gt;startTime);</div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>        $minUptime = 120;</div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>        $spacing = $minUptime - $uptime;</div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>        <span class="keywordflow">if</span>($spacing &gt; 0){</div>
+<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>            echo <span class="stringliteral">&quot;--- Uptime {$uptime}s - waiting {$spacing}s to throttle automatic restart (you can kill the process safely now) ---&quot;</span> . PHP_EOL;</div>
+<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>            sleep($spacing);</div>
+<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>        }</div>
+<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>        @Process::kill(Process::pid());</div>
+<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>        exit(1);</div>
+<div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>    }</div>
+<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span> </div>
+<div class="foldopen" id="foldopen01755" data-start="{" data-end="}">
+<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"><a class="line" href="../../d5/df7/classpocketmine_1_1_server.html#a5db762a6ed883975faab5d1205dec643"> 1755</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d5/df7/classpocketmine_1_1_server.html#a5db762a6ed883975faab5d1205dec643">__debugInfo</a>() : array{</div>
+<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>        return [];</div>
+<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>    }</div>
 </div>
-<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span> </div>
-<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTickSleeper() : <a class="code hl_class" href="../../d7/d08/classpocketmine_1_1snooze_1_1_sleeper_handler.html">SleeperHandler</a>{</div>
-<div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>        return $this-&gt;tickSleeper;</div>
-<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>    }</div>
-<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span> </div>
-<div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>    <span class="keyword">private</span> <span class="keyword">function</span> tickProcessor() : void{</div>
-<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        $this-&gt;nextTick = microtime(true);</div>
-<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span> </div>
-<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>        <span class="keywordflow">while</span>($this-&gt;isRunning){</div>
-<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>            $this-&gt;tick();</div>
 <div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span> </div>
-<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>            <span class="comment">//sleeps are self-correcting - if we undersleep 1ms on this tick, we&#39;ll sleep an extra ms on the next tick</span></div>
-<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>            $this-&gt;tickSleeper-&gt;sleepUntil($this-&gt;nextTick);</div>
-<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span>        }</div>
-<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>    }</div>
-<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span> </div>
-<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>    <span class="keyword">public</span> <span class="keyword">function</span> addOnlinePlayer(Player $player) : bool{</div>
-<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>        $ev = new PlayerLoginEvent($player, <span class="stringliteral">&quot;Plugin reason&quot;</span>);</div>
-<div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>        $ev-&gt;call();</div>
-<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled() || !$player-&gt;isConnected()){</div>
-<div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>            $player-&gt;disconnect($ev-&gt;getKickMessage());</div>
-<div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span> </div>
-<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>            return false;</div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTickSleeper() : <a class="code hl_class" href="../../d7/d08/classpocketmine_1_1snooze_1_1_sleeper_handler.html">SleeperHandler</a>{</div>
+<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>        return $this-&gt;tickSleeper;</div>
+<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span>    }</div>
+<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span> </div>
+<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span>    <span class="keyword">private</span> <span class="keyword">function</span> tickProcessor() : void{</div>
+<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>        $this-&gt;nextTick = microtime(true);</div>
+<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span> </div>
+<div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>        <span class="keywordflow">while</span>($this-&gt;isRunning){</div>
+<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>            $this-&gt;tick();</div>
+<div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span> </div>
+<div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>            <span class="comment">//sleeps are self-correcting - if we undersleep 1ms on this tick, we&#39;ll sleep an extra ms on the next tick</span></div>
+<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>            $this-&gt;tickSleeper-&gt;sleepUntil($this-&gt;nextTick);</div>
 <div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>        }</div>
-<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span> </div>
-<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>        $session = $player-&gt;getNetworkSession();</div>
-<div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>        $position = $player-&gt;getPosition();</div>
-<div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>        $this-&gt;logger-&gt;info($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_player_logIn(</div>
-<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>            TextFormat::AQUA . $player-&gt;getName() . TextFormat::RESET,</div>
-<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>            $session-&gt;getIp(),</div>
-<div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span>            (<span class="keywordtype">string</span>) $session-&gt;getPort(),</div>
-<div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span>            (<span class="keywordtype">string</span>) $player-&gt;getId(),</div>
-<div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>            $position-&gt;getWorld()-&gt;getDisplayName(),</div>
-<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span>            (<span class="keywordtype">string</span>) round($position-&gt;x, 4),</div>
-<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>            (<span class="keywordtype">string</span>) round($position-&gt;y, 4),</div>
-<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>            (<span class="keywordtype">string</span>) round($position-&gt;z, 4)</div>
-<div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>        )));</div>
-<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span> </div>
-<div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span>        <span class="keywordflow">foreach</span>($this-&gt;playerList as $p){</div>
-<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>            $p-&gt;getNetworkSession()-&gt;onPlayerAdded($player);</div>
-<div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>        }</div>
-<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>        $rawUUID = $player-&gt;getUniqueId()-&gt;getBytes();</div>
-<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>        $this-&gt;playerList[$rawUUID] = $player;</div>
-<div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span> </div>
-<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>        <span class="keywordflow">if</span>($this-&gt;sendUsageTicker &gt; 0){</div>
-<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>            $this-&gt;uniquePlayers[$rawUUID] = $rawUUID;</div>
-<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>        }</div>
+<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>    }</div>
+<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span> </div>
+<div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>    <span class="keyword">public</span> <span class="keyword">function</span> addOnlinePlayer(Player $player) : bool{</div>
+<div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>        $ev = new PlayerLoginEvent($player, <span class="stringliteral">&quot;Plugin reason&quot;</span>);</div>
+<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>        $ev-&gt;call();</div>
+<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>        <span class="keywordflow">if</span>($ev-&gt;isCancelled() || !$player-&gt;isConnected()){</div>
+<div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span>            $player-&gt;disconnect($ev-&gt;getKickMessage());</div>
+<div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span> </div>
+<div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>            return false;</div>
+<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span>        }</div>
+<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span> </div>
+<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>        $session = $player-&gt;getNetworkSession();</div>
+<div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>        $position = $player-&gt;getPosition();</div>
+<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>        $this-&gt;logger-&gt;info($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_player_logIn(</div>
+<div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span>            TextFormat::AQUA . $player-&gt;getName() . TextFormat::RESET,</div>
+<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>            $session-&gt;getIp(),</div>
+<div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>            (<span class="keywordtype">string</span>) $session-&gt;getPort(),</div>
+<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>            (<span class="keywordtype">string</span>) $player-&gt;getId(),</div>
+<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>            $position-&gt;getWorld()-&gt;getDisplayName(),</div>
+<div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>            (<span class="keywordtype">string</span>) round($position-&gt;x, 4),</div>
+<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>            (<span class="keywordtype">string</span>) round($position-&gt;y, 4),</div>
+<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>            (<span class="keywordtype">string</span>) round($position-&gt;z, 4)</div>
+<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>        )));</div>
 <div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span> </div>
-<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>    }</div>
-<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span> </div>
-<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>    <span class="keyword">public</span> <span class="keyword">function</span> removeOnlinePlayer(Player $player) : void{</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        if(isset($this-&gt;playerList[$rawUUID = $player-&gt;getUniqueId()-&gt;getBytes()])){</div>
-<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>            unset($this-&gt;playerList[$rawUUID]);</div>
-<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>            <span class="keywordflow">foreach</span>($this-&gt;playerList as $p){</div>
-<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>                $p-&gt;getNetworkSession()-&gt;onPlayerRemoved($player);</div>
-<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>            }</div>
-<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>        }</div>
-<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>    }</div>
-<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span> </div>
-<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>    <span class="keyword">public</span> <span class="keyword">function</span> sendUsage(<span class="keywordtype">int</span> $type = SendUsageTask::TYPE_STATUS) : void{</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>        if($this-&gt;configGroup-&gt;getPropertyBool(Yml::ANONYMOUS_STATISTICS_ENABLED, true)){</div>
-<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>            $this-&gt;asyncPool-&gt;submitTask(<span class="keyword">new</span> SendUsageTask($this, $type, $this-&gt;uniquePlayers));</div>
-<div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>        }</div>
-<div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>        $this-&gt;uniquePlayers = [];</div>
-<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>    }</div>
-<div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span> </div>
-<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLanguage() : Language{</div>
-<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>        return $this-&gt;language;</div>
-<div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>    }</div>
-<div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span> </div>
-<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>    <span class="keyword">public</span> <span class="keyword">function</span> isLanguageForced() : bool{</div>
-<div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span>        return $this-&gt;forceLanguage;</div>
-<div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>    }</div>
-<div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span> </div>
-<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAuthKeyProvider() : AuthKeyProvider{</div>
-<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span>        return $this-&gt;authKeyProvider;</div>
-<div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span>    }</div>
-<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span> </div>
-<div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNetwork() : Network{</div>
-<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>        return $this-&gt;network;</div>
-<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>    }</div>
-<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span> </div>
-<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMemoryManager() : MemoryManager{</div>
-<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>        return $this-&gt;memoryManager;</div>
-<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>    }</div>
-<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span> </div>
-<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>    <span class="keyword">private</span> <span class="keyword">function</span> titleTick() : void{</div>
-<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>        Timings::$titleTick-&gt;startTiming();</div>
-<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span> </div>
-<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>        $u = Process::getAdvancedMemoryUsage();</div>
-<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>        $usage = sprintf(<span class="stringliteral">&quot;%g/%g/%g MB @ %d threads&quot;</span>, round(($u[0] / 1024) / 1024, 2), round(($u[1] / 1024) / 1024, 2), round(($u[2] / 1024) / 1024, 2), Process::getThreadCount());</div>
+<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>        <span class="keywordflow">foreach</span>($this-&gt;playerList as $p){</div>
+<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>            $p-&gt;getNetworkSession()-&gt;onPlayerAdded($player);</div>
+<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>        }</div>
+<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>        $rawUUID = $player-&gt;getUniqueId()-&gt;getBytes();</div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        $this-&gt;playerList[$rawUUID] = $player;</div>
+<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span> </div>
+<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>        <span class="keywordflow">if</span>($this-&gt;sendUsageTicker &gt; 0){</div>
+<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>            $this-&gt;uniquePlayers[$rawUUID] = $rawUUID;</div>
+<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>        }</div>
+<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span> </div>
+<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>    }</div>
+<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span> </div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>    <span class="keyword">public</span> <span class="keyword">function</span> removeOnlinePlayer(Player $player) : void{</div>
+<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>        if(isset($this-&gt;playerList[$rawUUID = $player-&gt;getUniqueId()-&gt;getBytes()])){</div>
+<div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>            unset($this-&gt;playerList[$rawUUID]);</div>
+<div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>            <span class="keywordflow">foreach</span>($this-&gt;playerList as $p){</div>
+<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>                $p-&gt;getNetworkSession()-&gt;onPlayerRemoved($player);</div>
+<div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>            }</div>
+<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>        }</div>
+<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>    }</div>
+<div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span> </div>
+<div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>    <span class="keyword">public</span> <span class="keyword">function</span> sendUsage(<span class="keywordtype">int</span> $type = SendUsageTask::TYPE_STATUS) : void{</div>
+<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>        if($this-&gt;configGroup-&gt;getPropertyBool(Yml::ANONYMOUS_STATISTICS_ENABLED, true)){</div>
+<div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span>            $this-&gt;asyncPool-&gt;submitTask(<span class="keyword">new</span> SendUsageTask($this, $type, $this-&gt;uniquePlayers));</div>
+<div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>        }</div>
+<div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span>        $this-&gt;uniquePlayers = [];</div>
+<div class="line"><a id="l01823" name="l01823"></a><span class="lineno"> 1823</span>    }</div>
+<div class="line"><a id="l01824" name="l01824"></a><span class="lineno"> 1824</span> </div>
+<div class="line"><a id="l01825" name="l01825"></a><span class="lineno"> 1825</span>    <span class="keyword">public</span> <span class="keyword">function</span> getLanguage() : Language{</div>
+<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span>        return $this-&gt;language;</div>
+<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span>    }</div>
+<div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span> </div>
+<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>    <span class="keyword">public</span> <span class="keyword">function</span> isLanguageForced() : bool{</div>
+<div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>        return $this-&gt;forceLanguage;</div>
+<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>    }</div>
+<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span> </div>
+<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAuthKeyProvider() : AuthKeyProvider{</div>
+<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>        return $this-&gt;authKeyProvider;</div>
+<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>    }</div>
+<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span> </div>
+<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>    <span class="keyword">public</span> <span class="keyword">function</span> getNetwork() : Network{</div>
+<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>        return $this-&gt;network;</div>
+<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>    }</div>
 <div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span> </div>
-<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>        $online = count($this-&gt;playerList);</div>
-<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>        $connecting = $this-&gt;network-&gt;getConnectionCount() - $online;</div>
-<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>        $bandwidthStats = $this-&gt;network-&gt;getBandwidthTracker();</div>
+<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMemoryManager() : MemoryManager{</div>
+<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>        return $this-&gt;memoryManager;</div>
+<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>    }</div>
 <div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span> </div>
-<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>        echo <span class="stringliteral">&quot;\x1b]0;&quot;</span> . $this-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> .</div>
-<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>            $this-&gt;getPocketMineVersion() .</div>
-<div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span>            <span class="stringliteral">&quot; | Online $online/&quot;</span> . $this-&gt;maxPlayers .</div>
-<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>            ($connecting &gt; 0 ? <span class="stringliteral">&quot; (+$connecting connecting)&quot;</span> : <span class="stringliteral">&quot;&quot;</span>) .</div>
-<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>            <span class="stringliteral">&quot; | Memory &quot;</span> . $usage .</div>
-<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>            <span class="stringliteral">&quot; | U &quot;</span> . round($bandwidthStats-&gt;getSend()-&gt;getAverageBytes() / 1024, 2) .</div>
-<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span>            <span class="stringliteral">&quot; D &quot;</span> . round($bandwidthStats-&gt;getReceive()-&gt;getAverageBytes() / 1024, 2) .</div>
-<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span>            <span class="stringliteral">&quot; kB/s | TPS &quot;</span> . $this-&gt;getTicksPerSecondAverage() .</div>
-<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span>            <span class="stringliteral">&quot; | Load &quot;</span> . $this-&gt;getTickUsageAverage() . <span class="stringliteral">&quot;%\x07&quot;</span>;</div>
+<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>    <span class="keyword">private</span> <span class="keyword">function</span> titleTick() : void{</div>
+<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>        Timings::$titleTick-&gt;startTiming();</div>
+<div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span> </div>
+<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>        $u = Process::getAdvancedMemoryUsage();</div>
+<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>        $usage = sprintf(<span class="stringliteral">&quot;%g/%g/%g MB @ %d threads&quot;</span>, round(($u[0] / 1024) / 1024, 2), round(($u[1] / 1024) / 1024, 2), round(($u[2] / 1024) / 1024, 2), Process::getThreadCount());</div>
+<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span> </div>
+<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span>        $online = count($this-&gt;playerList);</div>
+<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span>        $connecting = $this-&gt;network-&gt;getConnectionCount() - $online;</div>
+<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span>        $bandwidthStats = $this-&gt;network-&gt;getBandwidthTracker();</div>
 <div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span> </div>
-<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>        Timings::$titleTick-&gt;stopTiming();</div>
-<div class="line"><a id="l01859" name="l01859"></a><span class="lineno"> 1859</span>    }</div>
-<div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span> </div>
-<div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>    <span class="keyword">private</span> <span class="keyword">function</span> tick() : void{</div>
-<div class="line"><a id="l01865" name="l01865"></a><span class="lineno"> 1865</span>        $tickTime = microtime(true);</div>
-<div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span>        <span class="keywordflow">if</span>(($tickTime - $this-&gt;nextTick) &lt; -0.025){ <span class="comment">//Allow half a tick of diff</span></div>
-<div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>        }</div>
-<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span> </div>
-<div class="line"><a id="l01870" name="l01870"></a><span class="lineno"> 1870</span>        Timings::$serverTick-&gt;startTiming();</div>
-<div class="line"><a id="l01871" name="l01871"></a><span class="lineno"> 1871</span> </div>
-<div class="line"><a id="l01872" name="l01872"></a><span class="lineno"> 1872</span>        ++$this-&gt;tickCounter;</div>
-<div class="line"><a id="l01873" name="l01873"></a><span class="lineno"> 1873</span> </div>
-<div class="line"><a id="l01874" name="l01874"></a><span class="lineno"> 1874</span>        Timings::$scheduler-&gt;startTiming();</div>
-<div class="line"><a id="l01875" name="l01875"></a><span class="lineno"> 1875</span>        $this-&gt;pluginManager-&gt;tickSchedulers($this-&gt;tickCounter);</div>
-<div class="line"><a id="l01876" name="l01876"></a><span class="lineno"> 1876</span>        Timings::$scheduler-&gt;stopTiming();</div>
-<div class="line"><a id="l01877" name="l01877"></a><span class="lineno"> 1877</span> </div>
-<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span>        Timings::$schedulerAsync-&gt;startTiming();</div>
-<div class="line"><a id="l01879" name="l01879"></a><span class="lineno"> 1879</span>        $this-&gt;asyncPool-&gt;collectTasks();</div>
-<div class="line"><a id="l01880" name="l01880"></a><span class="lineno"> 1880</span>        Timings::$schedulerAsync-&gt;stopTiming();</div>
+<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>        echo <span class="stringliteral">&quot;\x1b]0;&quot;</span> . $this-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> .</div>
+<div class="line"><a id="l01859" name="l01859"></a><span class="lineno"> 1859</span>            $this-&gt;getPocketMineVersion() .</div>
+<div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span>            <span class="stringliteral">&quot; | Online $online/&quot;</span> . $this-&gt;maxPlayers .</div>
+<div class="line"><a id="l01861" name="l01861"></a><span class="lineno"> 1861</span>            ($connecting &gt; 0 ? <span class="stringliteral">&quot; (+$connecting connecting)&quot;</span> : <span class="stringliteral">&quot;&quot;</span>) .</div>
+<div class="line"><a id="l01862" name="l01862"></a><span class="lineno"> 1862</span>            <span class="stringliteral">&quot; | Memory &quot;</span> . $usage .</div>
+<div class="line"><a id="l01863" name="l01863"></a><span class="lineno"> 1863</span>            <span class="stringliteral">&quot; | U &quot;</span> . round($bandwidthStats-&gt;getSend()-&gt;getAverageBytes() / 1024, 2) .</div>
+<div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>            <span class="stringliteral">&quot; D &quot;</span> . round($bandwidthStats-&gt;getReceive()-&gt;getAverageBytes() / 1024, 2) .</div>
+<div class="line"><a id="l01865" name="l01865"></a><span class="lineno"> 1865</span>            <span class="stringliteral">&quot; kB/s | TPS &quot;</span> . $this-&gt;getTicksPerSecondAverage() .</div>
+<div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span>            <span class="stringliteral">&quot; | Load &quot;</span> . $this-&gt;getTickUsageAverage() . <span class="stringliteral">&quot;%\x07&quot;</span>;</div>
+<div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span> </div>
+<div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>        Timings::$titleTick-&gt;stopTiming();</div>
+<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>    }</div>
+<div class="line"><a id="l01870" name="l01870"></a><span class="lineno"> 1870</span> </div>
+<div class="line"><a id="l01874" name="l01874"></a><span class="lineno"> 1874</span>    <span class="keyword">private</span> <span class="keyword">function</span> tick() : void{</div>
+<div class="line"><a id="l01875" name="l01875"></a><span class="lineno"> 1875</span>        $tickTime = microtime(true);</div>
+<div class="line"><a id="l01876" name="l01876"></a><span class="lineno"> 1876</span>        <span class="keywordflow">if</span>(($tickTime - $this-&gt;nextTick) &lt; -0.025){ <span class="comment">//Allow half a tick of diff</span></div>
+<div class="line"><a id="l01877" name="l01877"></a><span class="lineno"> 1877</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span>        }</div>
+<div class="line"><a id="l01879" name="l01879"></a><span class="lineno"> 1879</span> </div>
+<div class="line"><a id="l01880" name="l01880"></a><span class="lineno"> 1880</span>        Timings::$serverTick-&gt;startTiming();</div>
 <div class="line"><a id="l01881" name="l01881"></a><span class="lineno"> 1881</span> </div>
-<div class="line"><a id="l01882" name="l01882"></a><span class="lineno"> 1882</span>        $this-&gt;worldManager-&gt;tick($this-&gt;tickCounter);</div>
+<div class="line"><a id="l01882" name="l01882"></a><span class="lineno"> 1882</span>        ++$this-&gt;tickCounter;</div>
 <div class="line"><a id="l01883" name="l01883"></a><span class="lineno"> 1883</span> </div>
-<div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span>        Timings::$connection-&gt;startTiming();</div>
-<div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span>        $this-&gt;network-&gt;tick();</div>
-<div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>        Timings::$connection-&gt;stopTiming();</div>
+<div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span>        Timings::$scheduler-&gt;startTiming();</div>
+<div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span>        $this-&gt;pluginManager-&gt;tickSchedulers($this-&gt;tickCounter);</div>
+<div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>        Timings::$scheduler-&gt;stopTiming();</div>
 <div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span> </div>
-<div class="line"><a id="l01888" name="l01888"></a><span class="lineno"> 1888</span>        <span class="keywordflow">if</span>(($this-&gt;tickCounter % self::TARGET_TICKS_PER_SECOND) === 0){</div>
-<div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>            <span class="keywordflow">if</span>($this-&gt;doTitleTick){</div>
-<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>                $this-&gt;titleTick();</div>
-<div class="line"><a id="l01891" name="l01891"></a><span class="lineno"> 1891</span>            }</div>
-<div class="line"><a id="l01892" name="l01892"></a><span class="lineno"> 1892</span>            $this-&gt;currentTPS = self::TARGET_TICKS_PER_SECOND;</div>
-<div class="line"><a id="l01893" name="l01893"></a><span class="lineno"> 1893</span>            $this-&gt;currentUse = 0;</div>
-<div class="line"><a id="l01894" name="l01894"></a><span class="lineno"> 1894</span> </div>
-<div class="line"><a id="l01895" name="l01895"></a><span class="lineno"> 1895</span>            $queryRegenerateEvent = <span class="keyword">new</span> QueryRegenerateEvent(<span class="keyword">new</span> QueryInfo($this));</div>
-<div class="line"><a id="l01896" name="l01896"></a><span class="lineno"> 1896</span>            $queryRegenerateEvent-&gt;call();</div>
-<div class="line"><a id="l01897" name="l01897"></a><span class="lineno"> 1897</span>            $this-&gt;queryInfo = $queryRegenerateEvent-&gt;getQueryInfo();</div>
-<div class="line"><a id="l01898" name="l01898"></a><span class="lineno"> 1898</span> </div>
-<div class="line"><a id="l01899" name="l01899"></a><span class="lineno"> 1899</span>            $this-&gt;network-&gt;updateName();</div>
-<div class="line"><a id="l01900" name="l01900"></a><span class="lineno"> 1900</span>            $this-&gt;network-&gt;getBandwidthTracker()-&gt;rotateAverageHistory();</div>
-<div class="line"><a id="l01901" name="l01901"></a><span class="lineno"> 1901</span>        }</div>
-<div class="line"><a id="l01902" name="l01902"></a><span class="lineno"> 1902</span> </div>
-<div class="line"><a id="l01903" name="l01903"></a><span class="lineno"> 1903</span>        <span class="keywordflow">if</span>($this-&gt;sendUsageTicker &gt; 0 &amp;&amp; --$this-&gt;sendUsageTicker === 0){</div>
-<div class="line"><a id="l01904" name="l01904"></a><span class="lineno"> 1904</span>            $this-&gt;sendUsageTicker = self::TICKS_PER_STATS_REPORT;</div>
-<div class="line"><a id="l01905" name="l01905"></a><span class="lineno"> 1905</span>            $this-&gt;sendUsage(SendUsageTask::TYPE_STATUS);</div>
-<div class="line"><a id="l01906" name="l01906"></a><span class="lineno"> 1906</span>        }</div>
-<div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span> </div>
-<div class="line"><a id="l01908" name="l01908"></a><span class="lineno"> 1908</span>        <span class="keywordflow">if</span>(($this-&gt;tickCounter % self::TICKS_PER_WORLD_CACHE_CLEAR) === 0){</div>
-<div class="line"><a id="l01909" name="l01909"></a><span class="lineno"> 1909</span>            <span class="keywordflow">foreach</span>($this-&gt;worldManager-&gt;getWorlds() as $world){</div>
-<div class="line"><a id="l01910" name="l01910"></a><span class="lineno"> 1910</span>                $world-&gt;clearCache();</div>
-<div class="line"><a id="l01911" name="l01911"></a><span class="lineno"> 1911</span>            }</div>
-<div class="line"><a id="l01912" name="l01912"></a><span class="lineno"> 1912</span>        }</div>
-<div class="line"><a id="l01913" name="l01913"></a><span class="lineno"> 1913</span> </div>
-<div class="line"><a id="l01914" name="l01914"></a><span class="lineno"> 1914</span>        <span class="keywordflow">if</span>(($this-&gt;tickCounter % self::TICKS_PER_TPS_OVERLOAD_WARNING) === 0 &amp;&amp; $this-&gt;getTicksPerSecondAverage() &lt; self::TPS_OVERLOAD_WARNING_THRESHOLD){</div>
-<div class="line"><a id="l01915" name="l01915"></a><span class="lineno"> 1915</span>            $this-&gt;logger-&gt;warning($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_server_tickOverload()));</div>
+<div class="line"><a id="l01888" name="l01888"></a><span class="lineno"> 1888</span>        Timings::$schedulerAsync-&gt;startTiming();</div>
+<div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>        $this-&gt;asyncPool-&gt;collectTasks();</div>
+<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>        Timings::$schedulerAsync-&gt;stopTiming();</div>
+<div class="line"><a id="l01891" name="l01891"></a><span class="lineno"> 1891</span> </div>
+<div class="line"><a id="l01892" name="l01892"></a><span class="lineno"> 1892</span>        $this-&gt;worldManager-&gt;tick($this-&gt;tickCounter);</div>
+<div class="line"><a id="l01893" name="l01893"></a><span class="lineno"> 1893</span> </div>
+<div class="line"><a id="l01894" name="l01894"></a><span class="lineno"> 1894</span>        Timings::$connection-&gt;startTiming();</div>
+<div class="line"><a id="l01895" name="l01895"></a><span class="lineno"> 1895</span>        $this-&gt;network-&gt;tick();</div>
+<div class="line"><a id="l01896" name="l01896"></a><span class="lineno"> 1896</span>        Timings::$connection-&gt;stopTiming();</div>
+<div class="line"><a id="l01897" name="l01897"></a><span class="lineno"> 1897</span> </div>
+<div class="line"><a id="l01898" name="l01898"></a><span class="lineno"> 1898</span>        <span class="keywordflow">if</span>(($this-&gt;tickCounter % self::TARGET_TICKS_PER_SECOND) === 0){</div>
+<div class="line"><a id="l01899" name="l01899"></a><span class="lineno"> 1899</span>            <span class="keywordflow">if</span>($this-&gt;doTitleTick){</div>
+<div class="line"><a id="l01900" name="l01900"></a><span class="lineno"> 1900</span>                $this-&gt;titleTick();</div>
+<div class="line"><a id="l01901" name="l01901"></a><span class="lineno"> 1901</span>            }</div>
+<div class="line"><a id="l01902" name="l01902"></a><span class="lineno"> 1902</span>            $this-&gt;currentTPS = self::TARGET_TICKS_PER_SECOND;</div>
+<div class="line"><a id="l01903" name="l01903"></a><span class="lineno"> 1903</span>            $this-&gt;currentUse = 0;</div>
+<div class="line"><a id="l01904" name="l01904"></a><span class="lineno"> 1904</span> </div>
+<div class="line"><a id="l01905" name="l01905"></a><span class="lineno"> 1905</span>            $queryRegenerateEvent = <span class="keyword">new</span> QueryRegenerateEvent(<span class="keyword">new</span> QueryInfo($this));</div>
+<div class="line"><a id="l01906" name="l01906"></a><span class="lineno"> 1906</span>            $queryRegenerateEvent-&gt;call();</div>
+<div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span>            $this-&gt;queryInfo = $queryRegenerateEvent-&gt;getQueryInfo();</div>
+<div class="line"><a id="l01908" name="l01908"></a><span class="lineno"> 1908</span> </div>
+<div class="line"><a id="l01909" name="l01909"></a><span class="lineno"> 1909</span>            $this-&gt;network-&gt;updateName();</div>
+<div class="line"><a id="l01910" name="l01910"></a><span class="lineno"> 1910</span>            $this-&gt;network-&gt;getBandwidthTracker()-&gt;rotateAverageHistory();</div>
+<div class="line"><a id="l01911" name="l01911"></a><span class="lineno"> 1911</span>        }</div>
+<div class="line"><a id="l01912" name="l01912"></a><span class="lineno"> 1912</span> </div>
+<div class="line"><a id="l01913" name="l01913"></a><span class="lineno"> 1913</span>        <span class="keywordflow">if</span>($this-&gt;sendUsageTicker &gt; 0 &amp;&amp; --$this-&gt;sendUsageTicker === 0){</div>
+<div class="line"><a id="l01914" name="l01914"></a><span class="lineno"> 1914</span>            $this-&gt;sendUsageTicker = self::TICKS_PER_STATS_REPORT;</div>
+<div class="line"><a id="l01915" name="l01915"></a><span class="lineno"> 1915</span>            $this-&gt;sendUsage(SendUsageTask::TYPE_STATUS);</div>
 <div class="line"><a id="l01916" name="l01916"></a><span class="lineno"> 1916</span>        }</div>
 <div class="line"><a id="l01917" name="l01917"></a><span class="lineno"> 1917</span> </div>
-<div class="line"><a id="l01918" name="l01918"></a><span class="lineno"> 1918</span>        $this-&gt;memoryManager-&gt;check();</div>
-<div class="line"><a id="l01919" name="l01919"></a><span class="lineno"> 1919</span> </div>
-<div class="line"><a id="l01920" name="l01920"></a><span class="lineno"> 1920</span>        <span class="keywordflow">if</span>($this-&gt;console !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01921" name="l01921"></a><span class="lineno"> 1921</span>            Timings::$serverCommand-&gt;startTiming();</div>
-<div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>            <span class="keywordflow">while</span>(($line = $this-&gt;console-&gt;readLine()) !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>                $this-&gt;consoleSender ??= <span class="keyword">new</span> ConsoleCommandSender($this, $this-&gt;language);</div>
-<div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>                $this-&gt;dispatchCommand($this-&gt;consoleSender, $line);</div>
-<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>            }</div>
-<div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>            Timings::$serverCommand-&gt;stopTiming();</div>
-<div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>        }</div>
-<div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span> </div>
-<div class="line"><a id="l01929" name="l01929"></a><span class="lineno"> 1929</span>        Timings::$serverTick-&gt;stopTiming();</div>
-<div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span> </div>
-<div class="line"><a id="l01931" name="l01931"></a><span class="lineno"> 1931</span>        $now = microtime(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>        $totalTickTimeSeconds = $now - $tickTime + ($this-&gt;tickSleeper-&gt;getNotificationProcessingTime() / 1_000_000_000);</div>
-<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>        $this-&gt;currentTPS = min(self::TARGET_TICKS_PER_SECOND, 1 / max(0.001, $totalTickTimeSeconds));</div>
-<div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>        $this-&gt;currentUse = min(1, $totalTickTimeSeconds / self::TARGET_SECONDS_PER_TICK);</div>
-<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span> </div>
-<div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>        TimingsHandler::tick($this-&gt;currentTPS &lt;= $this-&gt;profilingTickRate);</div>
-<div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span> </div>
-<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>        $idx = $this-&gt;tickCounter % self::TARGET_TICKS_PER_SECOND;</div>
-<div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>        $this-&gt;tickAverage[$idx] = $this-&gt;currentTPS;</div>
-<div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>        $this-&gt;useAverage[$idx] = $this-&gt;currentUse;</div>
-<div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span>        $this-&gt;tickSleeper-&gt;resetNotificationProcessingTime();</div>
-<div class="line"><a id="l01942" name="l01942"></a><span class="lineno"> 1942</span> </div>
-<div class="line"><a id="l01943" name="l01943"></a><span class="lineno"> 1943</span>        <span class="keywordflow">if</span>(($this-&gt;nextTick - $tickTime) &lt; -1){</div>
-<div class="line"><a id="l01944" name="l01944"></a><span class="lineno"> 1944</span>            $this-&gt;nextTick = $tickTime;</div>
-<div class="line"><a id="l01945" name="l01945"></a><span class="lineno"> 1945</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l01946" name="l01946"></a><span class="lineno"> 1946</span>            $this-&gt;nextTick += self::TARGET_SECONDS_PER_TICK;</div>
-<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>        }</div>
-<div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>    }</div>
-<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>}</div>
+<div class="line"><a id="l01918" name="l01918"></a><span class="lineno"> 1918</span>        <span class="keywordflow">if</span>(($this-&gt;tickCounter % self::TICKS_PER_WORLD_CACHE_CLEAR) === 0){</div>
+<div class="line"><a id="l01919" name="l01919"></a><span class="lineno"> 1919</span>            <span class="keywordflow">foreach</span>($this-&gt;worldManager-&gt;getWorlds() as $world){</div>
+<div class="line"><a id="l01920" name="l01920"></a><span class="lineno"> 1920</span>                $world-&gt;clearCache();</div>
+<div class="line"><a id="l01921" name="l01921"></a><span class="lineno"> 1921</span>            }</div>
+<div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>        }</div>
+<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span> </div>
+<div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>        <span class="keywordflow">if</span>(($this-&gt;tickCounter % self::TICKS_PER_TPS_OVERLOAD_WARNING) === 0 &amp;&amp; $this-&gt;getTicksPerSecondAverage() &lt; self::TPS_OVERLOAD_WARNING_THRESHOLD){</div>
+<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>            $this-&gt;logger-&gt;warning($this-&gt;language-&gt;translate(KnownTranslationFactory::pocketmine_server_tickOverload()));</div>
+<div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>        }</div>
+<div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span> </div>
+<div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span>        $this-&gt;memoryManager-&gt;check();</div>
+<div class="line"><a id="l01929" name="l01929"></a><span class="lineno"> 1929</span> </div>
+<div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span>        <span class="keywordflow">if</span>($this-&gt;console !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01931" name="l01931"></a><span class="lineno"> 1931</span>            Timings::$serverCommand-&gt;startTiming();</div>
+<div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>            <span class="keywordflow">while</span>(($line = $this-&gt;console-&gt;readLine()) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>                $this-&gt;consoleSender ??= <span class="keyword">new</span> ConsoleCommandSender($this, $this-&gt;language);</div>
+<div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>                $this-&gt;dispatchCommand($this-&gt;consoleSender, $line);</div>
+<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>            }</div>
+<div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>            Timings::$serverCommand-&gt;stopTiming();</div>
+<div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>        }</div>
+<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span> </div>
+<div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>        Timings::$serverTick-&gt;stopTiming();</div>
+<div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span> </div>
+<div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span>        $now = microtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l01942" name="l01942"></a><span class="lineno"> 1942</span>        $totalTickTimeSeconds = $now - $tickTime + ($this-&gt;tickSleeper-&gt;getNotificationProcessingTime() / 1_000_000_000);</div>
+<div class="line"><a id="l01943" name="l01943"></a><span class="lineno"> 1943</span>        $this-&gt;currentTPS = min(self::TARGET_TICKS_PER_SECOND, 1 / max(0.001, $totalTickTimeSeconds));</div>
+<div class="line"><a id="l01944" name="l01944"></a><span class="lineno"> 1944</span>        $this-&gt;currentUse = min(1, $totalTickTimeSeconds / self::TARGET_SECONDS_PER_TICK);</div>
+<div class="line"><a id="l01945" name="l01945"></a><span class="lineno"> 1945</span> </div>
+<div class="line"><a id="l01946" name="l01946"></a><span class="lineno"> 1946</span>        TimingsHandler::tick($this-&gt;currentTPS &lt;= $this-&gt;profilingTickRate);</div>
+<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span> </div>
+<div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>        $idx = $this-&gt;tickCounter % self::TARGET_TICKS_PER_SECOND;</div>
+<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>        $this-&gt;tickAverage[$idx] = $this-&gt;currentTPS;</div>
+<div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span>        $this-&gt;useAverage[$idx] = $this-&gt;currentUse;</div>
+<div class="line"><a id="l01951" name="l01951"></a><span class="lineno"> 1951</span>        $this-&gt;tickSleeper-&gt;resetNotificationProcessingTime();</div>
+<div class="line"><a id="l01952" name="l01952"></a><span class="lineno"> 1952</span> </div>
+<div class="line"><a id="l01953" name="l01953"></a><span class="lineno"> 1953</span>        <span class="keywordflow">if</span>(($this-&gt;nextTick - $tickTime) &lt; -1){</div>
+<div class="line"><a id="l01954" name="l01954"></a><span class="lineno"> 1954</span>            $this-&gt;nextTick = $tickTime;</div>
+<div class="line"><a id="l01955" name="l01955"></a><span class="lineno"> 1955</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l01956" name="l01956"></a><span class="lineno"> 1956</span>            $this-&gt;nextTick += self::TARGET_SECONDS_PER_TICK;</div>
+<div class="line"><a id="l01957" name="l01957"></a><span class="lineno"> 1957</span>        }</div>
+<div class="line"><a id="l01958" name="l01958"></a><span class="lineno"> 1958</span>    }</div>
+<div class="line"><a id="l01959" name="l01959"></a><span class="lineno"> 1959</span>}</div>
 </div>
 <div class="ttc" id="aclass_prefixed_logger_html"><div class="ttname"><a href="../../d9/d00/class_prefixed_logger.html">PrefixedLogger</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/dae/_prefixed_logger_8php_source.html#l00020">PrefixedLogger.php:20</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_memory_manager_html"><div class="ttname"><a href="../../d3/df7/classpocketmine_1_1_memory_manager.html">pocketmine\MemoryManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d45/_memory_manager_8php_source.html#l00043">MemoryManager.php:43</a></div></div>
@@ -1964,10 +1974,10 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a34297319629a54364616d495af596ab6"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a34297319629a54364616d495af596ab6">pocketmine\Server\getPlayerExact</a></div><div class="ttdeci">getPlayerExact(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00644">src/Server.php:644</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a3f09f0e8b2925c01d97c2a767c0eadad"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a3f09f0e8b2925c01d97c2a767c0eadad">pocketmine\Server\getTicksPerSecond</a></div><div class="ttdeci">getTicksPerSecond()</div><div class="ttdef"><b>Definition</b> <a href="#l00465">src/Server.php:465</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a433f122c1f2a3147c4141a9219d71f50"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a433f122c1f2a3147c4141a9219d71f50">pocketmine\Server\requiresAuthentication</a></div><div class="ttdeci">requiresAuthentication()</div><div class="ttdef"><b>Definition</b> <a href="#l00362">src/Server.php:362</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1_server_html_a48d4aa236cafa4fe511dcf26970a7498"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a48d4aa236cafa4fe511dcf26970a7498">pocketmine\Server\exceptionHandler</a></div><div class="ttdeci">exceptionHandler(\Throwable $e, ?array $trace=null)</div><div class="ttdef"><b>Definition</b> <a href="#l01589">src/Server.php:1589</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1_server_html_a48d4aa236cafa4fe511dcf26970a7498"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a48d4aa236cafa4fe511dcf26970a7498">pocketmine\Server\exceptionHandler</a></div><div class="ttdeci">exceptionHandler(\Throwable $e, ?array $trace=null)</div><div class="ttdef"><b>Definition</b> <a href="#l01599">src/Server.php:1599</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a54adb1578aafddec9f34c1af3f660b45"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a54adb1578aafddec9f34c1af3f660b45">pocketmine\Server\getCommandAliases</a></div><div class="ttdeci">getCommandAliases()</div><div class="ttdef"><b>Definition</b> <a href="#l00747">src/Server.php:747</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a56050983a98340c661899c4c9571621b"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a56050983a98340c661899c4c9571621b">pocketmine\Server\getOnlineMode</a></div><div class="ttdeci">getOnlineMode()</div><div class="ttdef"><b>Definition</b> <a href="#l00355">src/Server.php:355</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1_server_html_a5db762a6ed883975faab5d1205dec643"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a5db762a6ed883975faab5d1205dec643">pocketmine\Server\__debugInfo</a></div><div class="ttdeci">__debugInfo()</div><div class="ttdef"><b>Definition</b> <a href="#l01745">src/Server.php:1745</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1_server_html_a5db762a6ed883975faab5d1205dec643"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a5db762a6ed883975faab5d1205dec643">pocketmine\Server\__debugInfo</a></div><div class="ttdeci">__debugInfo()</div><div class="ttdef"><b>Definition</b> <a href="#l01755">src/Server.php:1755</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a5ea673149c3d2e0fbc7146d72d128563"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a5ea673149c3d2e0fbc7146d72d128563">pocketmine\Server\shutdown</a></div><div class="ttdeci">shutdown()</div><div class="ttdef"><b>Definition</b> <a href="#l01499">src/Server.php:1499</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a5fc55664671169ee15f3e083ecd538a6"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a5fc55664671169ee15f3e083ecd538a6">pocketmine\Server\broadcastTitle</a></div><div class="ttdeci">broadcastTitle(string $title, string $subtitle=&quot;&quot;, int $fadeIn=-1, int $stay=-1, int $fadeOut=-1, ?array $recipients=null)</div><div class="ttdef"><b>Definition</b> <a href="#l01409">src/Server.php:1409</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1_server_html_a62f6af5fa00c79555f5687b5dfff2b65"><div class="ttname"><a href="../../d5/df7/classpocketmine_1_1_server.html#a62f6af5fa00c79555f5687b5dfff2b65">pocketmine\Server\getPlayerByUUID</a></div><div class="ttdeci">getPlayerByUUID(UuidInterface $uuid)</div><div class="ttdef"><b>Definition</b> <a href="#l00665">src/Server.php:665</a></div></div>
@@ -2010,13 +2020,13 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_command_event_html"><div class="ttname"><a href="../../da/d32/classpocketmine_1_1event_1_1server_1_1_command_event.html">pocketmine\event\server\CommandEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d1e/_command_event_8php_source.html#l00044">CommandEvent.php:44</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1server_1_1_query_regenerate_event_html"><div class="ttname"><a href="../../dd/d42/classpocketmine_1_1event_1_1server_1_1_query_regenerate_event.html">pocketmine\event\server\QueryRegenerateEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d0e/_query_regenerate_event_8php_source.html#l00028">QueryRegenerateEvent.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1lang_1_1_language_html"><div class="ttname"><a href="../../d8/d53/classpocketmine_1_1lang_1_1_language.html">pocketmine\lang\Language</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dea/_language_8php_source.html#l00047">Language.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1lang_1_1_language_html"><div class="ttname"><a href="../../d8/d53/classpocketmine_1_1lang_1_1_language.html">pocketmine\lang\Language</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dea/_language_8php_source.html#l00049">Language.php:49</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_language_not_found_exception_html"><div class="ttname"><a href="../../db/d76/classpocketmine_1_1lang_1_1_language_not_found_exception.html">pocketmine\lang\LanguageNotFoundException</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d92/_language_not_found_exception_8php_source.html#l00026">LanguageNotFoundException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_translatable_html"><div class="ttname"><a href="../../da/d80/classpocketmine_1_1lang_1_1_translatable.html">pocketmine\lang\Translatable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd1/_translatable_8php_source.html#l00028">Translatable.php:28</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1nbt_1_1tag_1_1_compound_tag_html"><div class="ttname"><a href="../../de/d67/classpocketmine_1_1nbt_1_1tag_1_1_compound_tag.html">pocketmine\nbt\tag\CompoundTag</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d8c/_compound_tag_8php_source.html#l00045">CompoundTag.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1_network_html"><div class="ttname"><a href="../../df/d91/classpocketmine_1_1network_1_1_network.html">pocketmine\network\Network</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d5f/_network_8php_source.html#l00039">Network.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1_network_interface_start_exception_html"><div class="ttname"><a href="../../db/d75/classpocketmine_1_1network_1_1_network_interface_start_exception.html">pocketmine\network\NetworkInterfaceStartException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d2a/_network_interface_start_exception_8php_source.html#l00030">NetworkInterfaceStartException.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00143">NetworkSession.php:143</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_network_session_html"><div class="ttname"><a href="../../de/d3a/classpocketmine_1_1network_1_1mcpe_1_1_network_session.html">pocketmine\network\mcpe\NetworkSession</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbe/_network_session_8php_source.html#l00144">NetworkSession.php:144</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_standard_entity_event_broadcaster_html"><div class="ttname"><a href="../../d0/d65/classpocketmine_1_1network_1_1mcpe_1_1_standard_entity_event_broadcaster.html">pocketmine\network\mcpe\StandardEntityEventBroadcaster</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dd7/_standard_entity_event_broadcaster_8php_source.html#l00052">StandardEntityEventBroadcaster.php:52</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster_html"><div class="ttname"><a href="../../d2/d87/classpocketmine_1_1network_1_1mcpe_1_1_standard_packet_broadcaster.html">pocketmine\network\mcpe\StandardPacketBroadcaster</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d6e/_standard_packet_broadcaster_8php_source.html#l00036">StandardPacketBroadcaster.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_key_provider_html"><div class="ttname"><a href="../../df/dd6/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_key_provider.html">pocketmine\network\mcpe\auth\AuthKeyProvider</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d72/_auth_key_provider_8php_source.html#l00038">AuthKeyProvider.php:38</a></div></div>
@@ -2033,17 +2043,17 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="ttc" id="aclasspocketmine_1_1network_1_1query_1_1_query_info_html"><div class="ttname"><a href="../../da/d3f/classpocketmine_1_1network_1_1query_1_1_query_info.html">pocketmine\network\query\QueryInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d89/_query_info_8php_source.html#l00039">QueryInfo.php:39</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1upnp_1_1_u_pn_p_network_interface_html"><div class="ttname"><a href="../../d0/d45/classpocketmine_1_1network_1_1upnp_1_1_u_pn_p_network_interface.html">pocketmine\network\upnp\UPnPNetworkInterface</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d6b/_u_pn_p_network_interface_8php_source.html#l00030">UPnPNetworkInterface.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_ban_list_html"><div class="ttname"><a href="../../db/d2a/classpocketmine_1_1permission_1_1_ban_list.html">pocketmine\permission\BanList</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d0d/_ban_list_8php_source.html#l00035">BanList.php:35</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permissions_html"><div class="ttname"><a href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">pocketmine\permission\DefaultPermissions</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d20/_default_permissions_8php_source.html#l00029">DefaultPermissions.php:29</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permissions_html"><div class="ttname"><a href="../../d3/dc9/classpocketmine_1_1permission_1_1_default_permissions.html">pocketmine\permission\DefaultPermissions</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d20/_default_permissions_8php_source.html#l00034">DefaultPermissions.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_dat_file_player_data_provider_html"><div class="ttname"><a href="../../d5/db7/classpocketmine_1_1player_1_1_dat_file_player_data_provider.html">pocketmine\player\DatFilePlayerDataProvider</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dfb/_dat_file_player_data_provider_8php_source.html#l00044">DatFilePlayerDataProvider.php:44</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_offline_player_html"><div class="ttname"><a href="../../dd/d09/classpocketmine_1_1player_1_1_offline_player.html">pocketmine\player\OfflinePlayer</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_offline_player_8php_source.html#l00029">OfflinePlayer.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_data_load_exception_html"><div class="ttname"><a href="../../d6/d83/classpocketmine_1_1player_1_1_player_data_load_exception.html">pocketmine\player\PlayerDataLoadException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d0d/_player_data_load_exception_8php_source.html#l00026">PlayerDataLoadException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_data_save_exception_html"><div class="ttname"><a href="../../dc/d86/classpocketmine_1_1player_1_1_player_data_save_exception.html">pocketmine\player\PlayerDataSaveException</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dc9/_player_data_save_exception_8php_source.html#l00026">PlayerDataSaveException.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00173">Player.php:173</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00174">Player.php:174</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_info_html"><div class="ttname"><a href="../../d2/d93/classpocketmine_1_1player_1_1_player_info.html">pocketmine\player\PlayerInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/dfb/_player_info_8php_source.html#l00033">PlayerInfo.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_phar_plugin_loader_html"><div class="ttname"><a href="../../d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html">pocketmine\plugin\PharPluginLoader</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/da3/_phar_plugin_loader_8php_source.html#l00033">PharPluginLoader.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_plugin_graylist_html"><div class="ttname"><a href="../../de/ddf/classpocketmine_1_1plugin_1_1_plugin_graylist.html">pocketmine\plugin\PluginGraylist</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d28/_plugin_graylist_8php_source.html#l00034">PluginGraylist.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1plugin_1_1_plugin_manager_html"><div class="ttname"><a href="../../db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html">pocketmine\plugin\PluginManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d3b/_plugin_manager_8php_source.html#l00071">PluginManager.php:71</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1plugin_1_1_script_plugin_loader_html"><div class="ttname"><a href="../../d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader.html">pocketmine\plugin\ScriptPluginLoader</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db3/_script_plugin_loader_8php_source.html#l00040">ScriptPluginLoader.php:40</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1plugin_1_1_script_plugin_loader_html"><div class="ttname"><a href="../../d5/d4a/classpocketmine_1_1plugin_1_1_script_plugin_loader.html">pocketmine\plugin\ScriptPluginLoader</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db3/_script_plugin_loader_8php_source.html#l00041">ScriptPluginLoader.php:41</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_html"><div class="ttname"><a href="../../d9/db4/classpocketmine_1_1promise_1_1_promise.html">pocketmine\promise\Promise</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d76/_promise_8php_source.html#l00033">Promise.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1promise_1_1_promise_resolver_html"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1promise_1_1_promise_resolver.html">pocketmine\promise\PromiseResolver</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d06/_promise_resolver_8php_source.html#l00029">PromiseResolver.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1resourcepacks_1_1_resource_pack_manager_html"><div class="ttname"><a href="../../d3/d62/classpocketmine_1_1resourcepacks_1_1_resource_pack_manager.html">pocketmine\resourcepacks\ResourcePackManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dad/_resource_pack_manager_8php_source.html#l00047">ResourcePackManager.php:47</a></div></div>
@@ -2055,7 +2065,7 @@ $(function(){initNavTree('d0/d05/src_2_server_8php_source.html','../../'); initR
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_crash_exception_html"><div class="ttname"><a href="../../d4/dd1/classpocketmine_1_1thread_1_1_thread_crash_exception.html">pocketmine\thread\ThreadCrashException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d33/_thread_crash_exception_8php_source.html#l00026">ThreadCrashException.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_thread_safe_class_loader_html"><div class="ttname"><a href="../../df/d2b/classpocketmine_1_1thread_1_1_thread_safe_class_loader.html">pocketmine\thread\ThreadSafeClassLoader</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dcd/_thread_safe_class_loader_8php_source.html#l00048">ThreadSafeClassLoader.php:48</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger_html"><div class="ttname"><a href="../../d8/daf/classpocketmine_1_1thread_1_1log_1_1_attachable_thread_safe_logger.html">pocketmine\thread\log\AttachableThreadSafeLogger</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d24/_attachable_thread_safe_logger_8php_source.html#l00028">AttachableThreadSafeLogger.php:28</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_handler_html"><div class="ttname"><a href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">pocketmine\timings\TimingsHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/df7/_timings_handler_8php_source.html#l00041">TimingsHandler.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_handler_html"><div class="ttname"><a href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html">pocketmine\timings\TimingsHandler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/df7/_timings_handler_8php_source.html#l00051">TimingsHandler.php:51</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_html"><div class="ttname"><a href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/da0/_timings_8php_source.html#l00038">Timings.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1updater_1_1_update_checker_html"><div class="ttname"><a href="../../dd/d12/classpocketmine_1_1updater_1_1_update_checker.html">pocketmine\updater\UpdateChecker</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dbf/_update_checker_8php_source.html#l00035">UpdateChecker.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>

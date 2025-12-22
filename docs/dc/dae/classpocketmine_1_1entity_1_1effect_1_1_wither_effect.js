@@ -2,7 +2,8 @@ var classpocketmine_1_1entity_1_1effect_1_1_wither_effect =
 [
     [ "add", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#a73cf76481b94b56fcbb5ea04b5c29293", null ],
     [ "applyEffect", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#ae5a45c07ba2bab2fb02943158baf377d", null ],
-    [ "canTick", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#aa407cafc8c1a13a2b7dae07155c89f99", null ],
+    [ "canTick", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#ad8531e42059f72e6315e1157c87c1e7a", null ],
+    [ "getApplyInterval", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#ab85dcc2ef8b2b2113faf0d9aca32d657", null ],
     [ "getColor", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#a6f10244e47d1979de4b4b92a84033ef6", null ],
     [ "getDefaultDuration", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#a7b2e804f2bd6d6f11acae88699ccec85", null ],
     [ "getName", "dc/dae/classpocketmine_1_1entity_1_1effect_1_1_wither_effect.html#a6a3d10360dbcd001a11f3531e3a5234f", null ],

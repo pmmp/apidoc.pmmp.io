@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -218,25 +218,28 @@ $(function(){initNavTree('de/dd1/_version_command_8php_source.html','../../'); i
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">private</span> <span class="keyword">function</span> describeToSender(<a class="code hl_interface" href="../../d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html">Plugin</a> $plugin, <a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender) : void{</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $desc = $plugin-&gt;getDescription();</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        $sender-&gt;sendMessage(TextFormat::DARK_GREEN . $desc-&gt;getName() . TextFormat::RESET . <span class="stringliteral">&quot; version &quot;</span> . TextFormat::DARK_GREEN . $desc-&gt;getVersion());</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">if</span>($desc-&gt;getDescription() !== <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            $sender-&gt;sendMessage($desc-&gt;getDescription());</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span>($desc-&gt;getWebsite() !== <span class="stringliteral">&quot;&quot;</span>){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            $sender-&gt;sendMessage(<span class="stringliteral">&quot;Website: &quot;</span> . $desc-&gt;getWebsite());</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">if</span>(count($authors = $desc-&gt;getAuthors()) &gt; 0){</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            if(count($authors) === 1){</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                $sender-&gt;sendMessage(<span class="stringliteral">&quot;Author: &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $authors));</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                $sender-&gt;sendMessage(<span class="stringliteral">&quot;Authors: &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $authors));</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_version_plugin_header(</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            TextFormat::DARK_GREEN . $desc-&gt;getName() . TextFormat::RESET,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            TextFormat::DARK_GREEN . $desc-&gt;getVersion() . TextFormat::RESET</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        ));</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">if</span>($desc-&gt;getDescription() !== <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            $sender-&gt;sendMessage($desc-&gt;getDescription());</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">if</span>($desc-&gt;getWebsite() !== <span class="stringliteral">&quot;&quot;</span>){</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_version_plugin_website($desc-&gt;getWebsite()));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">if</span>(count($authors = $desc-&gt;getAuthors()) &gt; 0){</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            if(count($authors) === 1){</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_version_plugin_author(implode(<span class="stringliteral">&quot;, &quot;</span>, $authors)));</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_version_plugin_authors(implode(<span class="stringliteral">&quot;, &quot;</span>, $authors)));</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1_version_info_html"><div class="ttname"><a href="../../d4/db7/classpocketmine_1_1_version_info.html">pocketmine\VersionInfo</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/ded/_version_info_8php_source.html#l00032">VersionInfo.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1command_1_1defaults_1_1_vanilla_command_html"><div class="ttname"><a href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">pocketmine\command\defaults\VanillaCommand</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d10/_vanilla_command_8php_source.html#l00035">VanillaCommand.php:35</a></div></div>

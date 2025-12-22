@@ -41,7 +41,7 @@ var searchData=
   ['parseproperties_38',['parseProperties',['../d6/d2c/classpocketmine_1_1utils_1_1_config.html#a6fe04b438beb4d22b217b34de444d1d3',1,'pocketmine::utils::Config']]],
   ['parsequoteaware_39',['parseQuoteAware',['../d7/ddc/classpocketmine_1_1command_1_1utils_1_1_command_string_helper.html#a31c651ece9232e704c006233d2eb3a3d',1,'pocketmine::command::utils::CommandStringHelper']]],
   ['parseskinnbt_40',['parseSkinNBT',['../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a3951eae5207d661583a15363e2f14f3d',1,'pocketmine::entity::Human']]],
-  ['parsetranslation_41',['parseTranslation',['../d8/d53/classpocketmine_1_1lang_1_1_language.html#a00eb539aa3789514ea19b8a1d4ab493a',1,'pocketmine::lang::Language']]],
+  ['parsetranslation_41',['parseTranslation',['../d8/d53/classpocketmine_1_1lang_1_1_language.html#adde5e9b337340856b2b0ece707897ef7',1,'pocketmine::lang::Language']]],
   ['parsevec3_42',['parseVec3',['../d5/dbd/classpocketmine_1_1entity_1_1_entity_data_helper.html#a6858488cb4864ee2b9a14faf2d3d0050',1,'pocketmine::entity::EntityDataHelper']]],
   ['particle_43',['Particle',['../d1/dac/interfacepocketmine_1_1world_1_1particle_1_1_particle.html',1,'pocketmine::world::particle']]],
   ['particlecommand_44',['ParticleCommand',['../dd/d9b/classpocketmine_1_1command_1_1defaults_1_1_particle_command.html',1,'pocketmine::command::defaults']]],

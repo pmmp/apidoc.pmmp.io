@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -164,7 +164,7 @@ $(function(){initNavTree('d7/dfe/_teleport_command_8php_source.html','../../'); 
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> <span class="keyword">function</span> findPlayer(<a class="code hl_interface" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, <span class="keywordtype">string</span> $playerName) : ?<a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a>{</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $subject = $sender-&gt;getServer()-&gt;getPlayerByPrefix($playerName);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span>($subject === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $sender-&gt;sendMessage(TextFormat::RED . <span class="stringliteral">&quot;Can&#39;t find player &quot;</span> . $playerName);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $sender-&gt;sendMessage(KnownTranslationFactory::pocketmine_command_error_playerNotFound($playerName)-&gt;prefix(TextFormat::RED));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> $subject;</div>
@@ -243,7 +243,7 @@ $(function(){initNavTree('d7/dfe/_teleport_command_8php_source.html','../../'); 
 <div class="ttc" id="aclasspocketmine_1_1entity_1_1_location_html"><div class="ttname"><a href="../../dc/d56/classpocketmine_1_1entity_1_1_location.html">pocketmine\entity\Location</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/df8/_location_8php_source.html#l00030">Location.php:30</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1permission_1_1_default_permission_names_html"><div class="ttname"><a href="../../da/dca/classpocketmine_1_1permission_1_1_default_permission_names.html">pocketmine\permission\DefaultPermissionNames</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4c/_default_permission_names_8php_source.html#l00026">DefaultPermissionNames.php:26</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00173">Player.php:173</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00174">Player.php:174</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_assumption_failed_error_html"><div class="ttname"><a href="../../d1/d30/classpocketmine_1_1utils_1_1_assumption_failed_error.html">pocketmine\utils\AssumptionFailedError</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/da5/_assumption_failed_error_8php_source.html#l00031">AssumptionFailedError.php:31</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_text_format_html"><div class="ttname"><a href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html">pocketmine\utils\TextFormat</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d59/_text_format_8php_source.html#l00045">TextFormat.php:45</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1_world_html"><div class="ttname"><a href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html">pocketmine\world\World</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d88/_world_8php_source.html#l00151">World.php:151</a></div></div>

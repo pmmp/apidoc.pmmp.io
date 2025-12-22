@@ -1,5 +1,6 @@
 var classpocketmine_1_1timings_1_1_timings_handler =
 [
+    [ "createReportFile", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html#a9fc8ccfc8ab7c691d517fbd14b897201", null ],
     [ "getCollectCallbacks", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html#a6b7686e43b14108732d085c3050b8cb7", null ],
     [ "getReloadCallbacks", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html#ac561bb853b6b4e29002393e4943995cf", null ],
     [ "getToggleCallbacks", "d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html#a0e591ed8eb7d8e1bb74100f7ecaabbf5", null ],

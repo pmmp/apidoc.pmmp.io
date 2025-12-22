@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(function(){initNavTree('d6/da6/_interact_packet_8php_source.html','../../'); i
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\Byte;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferReader;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use pmmp\encoding\ByteBufferWriter;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use pmmp\encoding\LE;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
@@ -139,49 +139,37 @@ $(function(){initNavTree('d6/da6/_interact_packet_8php_source.html','../../'); i
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $action;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> $targetActorRuntimeId;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keywordtype">float</span> $x;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keywordtype">float</span> $y;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keywordtype">float</span> $z;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a4d6a56f94bf80b245ebef45411e860d1">   37</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a4d6a56f94bf80b245ebef45411e860d1">decodePayload</a>(ByteBufferReader $in) : void{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;action = Byte::readUnsigned($in);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $this-&gt;targetActorRuntimeId = CommonTypes::getActorRuntimeId($in);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> ?<a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a4d6a56f94bf80b245ebef45411e860d1">   35</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a4d6a56f94bf80b245ebef45411e860d1">decodePayload</a>(ByteBufferReader $in) : void{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;action = Byte::readUnsigned($in);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;targetActorRuntimeId = CommonTypes::getActorRuntimeId($in);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;position = CommonTypes::readOptional($in, CommonTypes::getVector3(...));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">if</span>($this-&gt;action === self::ACTION_MOUSEOVER || $this-&gt;action === self::ACTION_LEAVE_VEHICLE){</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="comment">//TODO: should this be a vector3?</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            $this-&gt;x = LE::readFloat($in);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            $this-&gt;y = LE::readFloat($in);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            $this-&gt;z = LE::readFloat($in);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a38c7dd38f00d2c691227c00c3c74e641">   41</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a38c7dd38f00d2c691227c00c3c74e641">encodePayload</a>(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        Byte::writeUnsigned($out, $this-&gt;action);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        CommonTypes::putActorRuntimeId($out, $this-&gt;targetActorRuntimeId);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        CommonTypes::writeOptional($out, $this-&gt;position, CommonTypes::putVector3(...));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a38c7dd38f00d2c691227c00c3c74e641">   49</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a38c7dd38f00d2c691227c00c3c74e641">encodePayload</a>(ByteBufferWriter $out) : void{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        Byte::writeUnsigned($out, $this-&gt;action);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        CommonTypes::putActorRuntimeId($out, $this-&gt;targetActorRuntimeId);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span>($this-&gt;action === self::ACTION_MOUSEOVER || $this-&gt;action === self::ACTION_LEAVE_VEHICLE){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            LE::writeFloat($out, $this-&gt;x);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            LE::writeFloat($out, $this-&gt;y);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            LE::writeFloat($out, $this-&gt;z);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a2adf72a60bfe03eff51b34774701aff4">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a2adf72a60bfe03eff51b34774701aff4">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return $handler-&gt;handleInteract($this);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a2adf72a60bfe03eff51b34774701aff4">   60</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a2adf72a60bfe03eff51b34774701aff4">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        return $handler-&gt;handleInteract($this);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-</div>
+<div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00023">DataPacket.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html">pocketmine\network\mcpe\protocol\InteractPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">InteractPacket.php:23</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html_a2adf72a60bfe03eff51b34774701aff4"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a2adf72a60bfe03eff51b34774701aff4">pocketmine\network\mcpe\protocol\InteractPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00060">InteractPacket.php:60</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html_a38c7dd38f00d2c691227c00c3c74e641"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a38c7dd38f00d2c691227c00c3c74e641">pocketmine\network\mcpe\protocol\InteractPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00049">InteractPacket.php:49</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html_a4d6a56f94bf80b245ebef45411e860d1"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a4d6a56f94bf80b245ebef45411e860d1">pocketmine\network\mcpe\protocol\InteractPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00037">InteractPacket.php:37</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html_a2adf72a60bfe03eff51b34774701aff4"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a2adf72a60bfe03eff51b34774701aff4">pocketmine\network\mcpe\protocol\InteractPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00047">InteractPacket.php:47</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html_a38c7dd38f00d2c691227c00c3c74e641"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a38c7dd38f00d2c691227c00c3c74e641">pocketmine\network\mcpe\protocol\InteractPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00041">InteractPacket.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet_html_a4d6a56f94bf80b245ebef45411e860d1"><div class="ttname"><a href="../../d8/d05/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_interact_packet.html#a4d6a56f94bf80b245ebef45411e860d1">pocketmine\network\mcpe\protocol\InteractPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00035">InteractPacket.php:35</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface_html"><div class="ttname"><a href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_packet_handler_interface_8php_source.html#l00020">PacketHandlerInterface.php:20</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet_html"><div class="ttname"><a href="../../dd/de6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_serverbound_packet.html">pocketmine\network\mcpe\protocol\ServerboundPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dfc/_serverbound_packet_8php_source.html#l00017">ServerboundPacket.php:17</a></div></div>

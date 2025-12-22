@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -131,13 +131,12 @@ $(function(){initNavTree('d7/d0b/_8minify__json_8php_source.html','../../'); ini
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>$ext = <span class="stringliteral">&quot;.json&quot;</span>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>$extLen = strlen($ext);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordflow">foreach</span>(scandir(__DIR__, SCANDIR_SORT_NONE) as $file){</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordflow">foreach</span>((<span class="keyword">new</span> RecursiveIteratorIterator(<span class="keyword">new</span> RecursiveDirectoryIterator(__DIR__, FilesystemIterator::CURRENT_AS_PATHNAME))) as $file){</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span>(substr($file, -$extLen) === $ext){</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        $file = __DIR__ . <span class="stringliteral">&quot;/$file&quot;</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        file_put_contents($file, json_encode(json_decode(file_get_contents($file))));</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        echo <span class="stringliteral">&quot;Minified JSON file $file\n&quot;</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        file_put_contents($file, json_encode(json_decode(file_get_contents($file))));</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        echo <span class="stringliteral">&quot;Minified JSON file $file\n&quot;</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

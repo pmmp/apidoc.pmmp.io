@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -175,24 +175,28 @@ $(function(){initNavTree('d6/d90/populator_2_tree_8php_source.html','../../'); i
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">private</span> <span class="keyword">function</span> getHighestWorkableBlock(ChunkManager $world, <span class="keywordtype">int</span> $x, <span class="keywordtype">int</span> $z) : int{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        for($y = 127; $y &gt;= 0; --$y){</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            $b = $world-&gt;getBlockAt($x, $y, $z);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span>($b-&gt;hasTypeTag(BlockTypeTags::DIRT) || $b-&gt;hasTypeTag(BlockTypeTags::MUD)){</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">return</span> $y + 1;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }elseif($b-&gt;getTypeId() !== BlockTypeIds::AIR &amp;&amp; $b-&gt;getTypeId() !== BlockTypeIds::SNOW_LAYER){</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $highestBlock = $world-&gt;getChunk($x &gt;&gt; Chunk::COORD_BIT_SIZE, $z &gt;&gt; Chunk::COORD_BIT_SIZE)?-&gt;getHighestBlockAt($x &amp; Chunk::COORD_MASK, $z &amp; Chunk::COORD_MASK);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span>($highestBlock === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">for</span>($y = $highestBlock; $y &gt;= 0; --$y){</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            $b = $world-&gt;getBlockAt($x, $y, $z);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span>($b-&gt;hasTypeTag(BlockTypeTags::DIRT) || $b-&gt;hasTypeTag(BlockTypeTags::MUD)){</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">return</span> $y + 1;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }elseif($b-&gt;getTypeId() !== BlockTypeIds::AIR &amp;&amp; $b-&gt;getTypeId() !== BlockTypeIds::SNOW_LAYER){</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00036">BlockTypeIds.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_tags_html"><div class="ttname"><a href="../../d6/dbc/classpocketmine_1_1block_1_1_block_type_tags.html">pocketmine\block\BlockTypeTags</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dc7/_block_type_tags_8php_source.html#l00026">BlockTypeTags.php:26</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1utils_1_1_random_html"><div class="ttname"><a href="../../db/dcb/classpocketmine_1_1utils_1_1_random.html">pocketmine\utils\Random</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/dbd/_random_8php_source.html#l00032">Random.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1format_1_1_chunk_html"><div class="ttname"><a href="../../d2/de7/classpocketmine_1_1world_1_1format_1_1_chunk.html">pocketmine\world\format\Chunk</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db1/_chunk_8php_source.html#l00034">Chunk.php:34</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory_html"><div class="ttname"><a href="../../da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory.html">pocketmine\world\generator\object\TreeFactory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d80/_tree_factory_8php_source.html#l00028">TreeFactory.php:28</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory_html"><div class="ttname"><a href="../../da/d12/classpocketmine_1_1world_1_1generator_1_1object_1_1_tree_factory.html">pocketmine\world\generator\object\TreeFactory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d80/_tree_factory_8php_source.html#l00029">TreeFactory.php:29</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1populator_1_1_tree_html"><div class="ttname"><a href="../../df/da0/classpocketmine_1_1world_1_1generator_1_1populator_1_1_tree.html">pocketmine\world\generator\populator\Tree</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">populator/Tree.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1populator_1_1_tree_html_a31822e9ee27b4e1c4082da001ff4cc92"><div class="ttname"><a href="../../df/da0/classpocketmine_1_1world_1_1generator_1_1populator_1_1_tree.html#a31822e9ee27b4e1c4082da001ff4cc92">pocketmine\world\generator\populator\Tree\__construct</a></div><div class="ttdeci">__construct(?TreeType $type=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00042">populator/Tree.php:42</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1world_1_1_chunk_manager_html"><div class="ttname"><a href="../../d0/d03/interfacepocketmine_1_1world_1_1_chunk_manager.html">pocketmine\world\ChunkManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dbf/_chunk_manager_8php_source.html#l00029">ChunkManager.php:29</a></div></div>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -119,8 +119,8 @@ $(function(){initNavTree('dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8eb20b62313b5c866eae2af34a34606" id="r_ac8eb20b62313b5c866eae2af34a34606"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8eb20b62313b5c866eae2af34a34606">__construct</a> (<a class="el" href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">Effect</a> $effectType, ?int $duration=null, int $amplifier=0, bool $visible=true, bool $ambient=false, ?<a class="el" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $overrideColor=null)</td></tr>
-<tr class="separator:ac8eb20b62313b5c866eae2af34a34606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fb998478539f3ec99b3d6aa4684102" id="r_a23fb998478539f3ec99b3d6aa4684102"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23fb998478539f3ec99b3d6aa4684102">__construct</a> (<a class="el" href="../../d0/d37/classpocketmine_1_1entity_1_1effect_1_1_effect.html">Effect</a> $effectType, ?int $duration=null, int $amplifier=0, bool $visible=true, bool $ambient=false, ?<a class="el" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a> $overrideColor=null, bool $infinite=false)</td></tr>
+<tr class="separator:a23fb998478539f3ec99b3d6aa4684102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abae1d2d3a519ac316a48463eadc7e959" id="r_abae1d2d3a519ac316a48463eadc7e959"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abae1d2d3a519ac316a48463eadc7e959">decreaseDuration</a> (int $ticks)</td></tr>
 <tr class="separator:abae1d2d3a519ac316a48463eadc7e959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab28d79e7205c47d0ba381c734e2cf05" id="r_aab28d79e7205c47d0ba381c734e2cf05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab28d79e7205c47d0ba381c734e2cf05">getAmplifier</a> ()</td></tr>
@@ -137,6 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac08ec4cb6ec63dee68ec60616dda73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ae43169440557ead44ffbc8a9612cc2" id="r_a7ae43169440557ead44ffbc8a9612cc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae43169440557ead44ffbc8a9612cc2">isAmbient</a> ()</td></tr>
 <tr class="separator:a7ae43169440557ead44ffbc8a9612cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02ff1fd4c758a11a4f2001dac6801ca" id="r_ac02ff1fd4c758a11a4f2001dac6801ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac02ff1fd4c758a11a4f2001dac6801ca">isInfinite</a> ()</td></tr>
+<tr class="separator:ac02ff1fd4c758a11a4f2001dac6801ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8454f1e9e896d9d5c606616d4ae4708c" id="r_a8454f1e9e896d9d5c606616d4ae4708c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8454f1e9e896d9d5c606616d4ae4708c">isVisible</a> ()</td></tr>
 <tr class="separator:a8454f1e9e896d9d5c606616d4ae4708c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6825da13f766d66608c6a45e94c5f6" id="r_a6a6825da13f766d66608c6a45e94c5f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6825da13f766d66608c6a45e94c5f6">resetColor</a> ()</td></tr>
@@ -154,10 +156,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00030">30</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00029">29</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac8eb20b62313b5c866eae2af34a34606" name="ac8eb20b62313b5c866eae2af34a34606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8eb20b62313b5c866eae2af34a34606">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a23fb998478539f3ec99b3d6aa4684102" name="a23fb998478539f3ec99b3d6aa4684102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23fb998478539f3ec99b3d6aa4684102">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +192,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?<a class="el" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a></td>          <td class="paramname"><span class="paramname"><em>$overrideColor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?<a class="el" href="../../dd/d00/classpocketmine_1_1color_1_1_color.html">Color</a></td>          <td class="paramname"><span class="paramname"><em>$overrideColor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$infinite</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -203,13 +210,13 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00041">41</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/dcc/_effect_8php_source.html#l00061">pocketmine\entity\effect\Effect\getColor()</a>, <a class="el" href="../../d8/dcc/_effect_8php_source.html#l00076">pocketmine\entity\effect\Effect\getDefaultDuration()</a>, <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00109">pocketmine\entity\effect\EffectInstance\setAmplifier()</a>, and <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00068">pocketmine\entity\effect\EffectInstance\setDuration()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/dcc/_effect_8php_source.html#l00061">pocketmine\entity\effect\Effect\getColor()</a>, <a class="el" href="../../d8/dcc/_effect_8php_source.html#l00076">pocketmine\entity\effect\Effect\getDefaultDuration()</a>, <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00120">pocketmine\entity\effect\EffectInstance\setAmplifier()</a>, and <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00069">pocketmine\entity\effect\EffectInstance\setDuration()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance_ac8eb20b62313b5c866eae2af34a34606_cgraph.svg" width="456" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance_a23fb998478539f3ec99b3d6aa4684102_cgraph.svg" width="456" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -229,10 +236,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Decreases the duration by the given number of ticks, without dropping below zero.</p>
+<p>Decreases the duration by the given number of ticks, without dropping below zero. Note: Infinite effects will still have their durations updated, but they'll wrap around to Limits::INT32_MAX if they drop below zero. This is because periodic effects rely on the duration ticker to know when to tick.</p>
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00082">82</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00085">85</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -251,7 +258,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00095">95</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00106">106</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -271,7 +278,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the particle colour of this effect instance. This can be overridden on a per-EffectInstance basis, so it is not reflective of the default colour of the effect. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00156">156</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00167">167</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -291,15 +298,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the number of ticks remaining until the effect expires. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00057">57</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00058">58</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d5f/_effect_collection_8php_source.html#l00123">pocketmine\entity\effect\EffectCollection\canAdd()</a>, <a class="el" href="../../d0/d52/_poison_effect_8php_source.html#l00040">pocketmine\entity\effect\PoisonEffect\canTick()</a>, <a class="el" href="../../d3/dbd/_regeneration_effect_8php_source.html#l00032">pocketmine\entity\effect\RegenerationEffect\canTick()</a>, and <a class="el" href="../../d8/dff/_wither_effect_8php_source.html#l00032">pocketmine\entity\effect\WitherEffect\canTick()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d5f/_effect_collection_8php_source.html#l00123">pocketmine\entity\effect\EffectCollection\canAdd()</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance_aee865d554b3bfe2e39eacc935e8dc727_icgraph.svg" width="462" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d2e/classpocketmine_1_1entity_1_1effect_1_1_effect_instance_aee865d554b3bfe2e39eacc935e8dc727_icgraph.svg" width="439" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -320,7 +327,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the level of this effect, which is always one higher than the amplifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00102">102</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00113">113</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d69/_hunger_effect_8php_source.html#l00037">pocketmine\entity\effect\HungerEffect\applyEffect()</a>, <a class="el" href="../../d0/d1e/_levitation_effect_8php_source.html#l00036">pocketmine\entity\effect\LevitationEffect\applyEffect()</a>, and <a class="el" href="../../d0/d9b/_saturation_effect_8php_source.html#l00032">pocketmine\entity\effect\SaturationEffect\applyEffect()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -348,7 +355,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00050">50</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00051">51</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -368,7 +375,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the duration has run out. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00091">91</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00102">102</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -388,7 +395,27 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the effect originated from the ambient environment. Ambient effects can originate from things such as a Beacon's area of effect radius. If this flag is set, the amount of visible particles will be reduced by a factor of 5. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00139">139</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00150">150</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+
+</div>
+</div>
+<a id="ac02ff1fd4c758a11a4f2001dac6801ca" name="ac02ff1fd4c758a11a4f2001dac6801ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02ff1fd4c758a11a4f2001dac6801ca">&#9670;&#160;</a></span>isInfinite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\entity\effect\EffectInstance::isInfinite </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether the effect is meant to last indefinitely </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00192">192</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -408,7 +435,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether this effect will produce some visible effect, such as bubbles or particles. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00121">121</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00132">132</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -428,7 +455,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the colour of this EffectInstance to the default specified by its type. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00172">172</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00183">183</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -448,7 +475,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00146">146</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00157">157</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -468,7 +495,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00109">109</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00120">120</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00041">pocketmine\entity\effect\EffectInstance\__construct()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -497,7 +524,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the colour of this EffectInstance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00163">163</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00174">174</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>
@@ -525,7 +552,7 @@ Public Member Functions</h2></td></tr>
 <p>InvalidArgumentException</p>
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00068">68</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00069">69</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00041">pocketmine\entity\effect\EffectInstance\__construct()</a>.</p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -554,7 +581,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>$this </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00128">128</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db0/_effect_instance_8php_source.html#l00139">139</a> of file <a class="el" href="../../db/db0/_effect_instance_8php_source.html">EffectInstance.php</a>.</p>
 
 </div>
 </div>

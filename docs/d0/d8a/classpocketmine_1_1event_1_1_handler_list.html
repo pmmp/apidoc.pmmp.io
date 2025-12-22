@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -137,8 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3461e220b148502ff789bf136178cb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00032">32</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<div class="textblock"><p>@phpstan-template TEvent of Event </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00035">35</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a14b52638bc7914af248d00d74fd2a0" name="a1a14b52638bc7914af248d00d74fd2a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a14b52638bc7914af248d00d74fd2a0">&#9670;&#160;</a></span>__construct()</h2>
@@ -163,9 +164,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>@phpstan-param class-string&lt;covariant Event&gt; $class </p>
+<p>TODO: parentList should not participate in the inference of TEvent, but PHPStan doesn't currently have NoInfer features @phpstan-param class-string&lt;TEvent&gt; $class @phpstan-param ?HandlerList&lt;contravariant TEvent&gt; $parentList @phpstan-param RegisteredListenerCache&lt;TEvent&gt; $handlerCache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00045">45</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00054">54</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -185,7 +186,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00093">93</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00106">106</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -203,9 +204,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>RegisteredListener[] @phpstan-return list&lt;RegisteredListener&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>RegisteredListener[] @phpstan-return list&lt;RegisteredListener&lt;TEvent&gt;&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00122">122</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00139">139</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -223,9 +224,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>RegisteredListener[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>RegisteredListener[] @phpstan-return array&lt;int, RegisteredListener&lt;TEvent&gt;&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00101">101</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00115">115</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -243,8 +244,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@phpstan-return ?HandlerList&lt;contravariant TEvent&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00105">105</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00122">122</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -262,15 +264,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Exception </p>
+<p>@phpstan-param RegisteredListener&lt;TEvent&gt; $listener </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00058">58</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00067">67</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -290,12 +286,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">RegisteredListener[]</td><td class="paramname">$listeners</td><td></td></tr>
+    <tr><td class="paramtype">RegisteredListener[]</td><td class="paramname">$listeners</td><td>@phpstan-param array&lt;RegisteredListener&lt;TEvent&gt;&gt; $listeners </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00069">69</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00079">79</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>
@@ -313,8 +309,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@phpstan-param RegisteredListener&lt;*&gt;|Plugin|Listener $object </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00076">76</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/da9/_handler_list_8php_source.html#l00089">89</a> of file <a class="el" href="../../d5/da9/_handler_list_8php_source.html">HandlerList.php</a>.</p>
 
 </div>
 </div>

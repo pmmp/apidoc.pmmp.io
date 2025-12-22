@@ -55,7 +55,7 @@ var classpocketmine_1_1block_1_1_netherrack =
     [ "onEntityInside", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#a49395de82d025ca78745a17528049f18", null ],
     [ "onEntityLand", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#a57b1586e3b6d81440be1aa89471f2a2a", null ],
     [ "onIncinerate", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b", null ],
-    [ "onInteract", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#abce48b40feb225f4ce9b7cf2e02a9336", null ],
+    [ "onInteract", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#aa020a81c7c374c5310d13bb64558517d", null ],
     [ "onNearbyBlockChange", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#a863a7a7c27f111cc622ebb10711807c2", null ],
     [ "onPostPlace", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#acf338037e498bd5c8dbe6d4bceb2a7ca", null ],
     [ "onProjectileHit", "d5/d84/classpocketmine_1_1block_1_1_netherrack.html#a0931c682312473fc2540464b7a4747c0", null ],

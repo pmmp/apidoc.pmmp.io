@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -140,49 +140,51 @@ $(function(){initNavTree('db/d8a/_tool_tier_8php_source.html','../../'); initRes
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">case</span> WOOD;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">case</span> GOLD;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">case</span> STONE;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">case</span> IRON;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">case</span> DIAMOND;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> NETHERITE;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">meta</a>(<span class="keywordtype">int</span> $harvestLevel, <span class="keywordtype">int</span> $maxDurability, <span class="keywordtype">int</span> $baseAttackPoints, <span class="keywordtype">int</span> $baseEfficiency, <span class="keywordtype">int</span> $enchantability) : array{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> [$harvestLevel, $maxDurability, $baseAttackPoints, $baseEfficiency, $enchantability];</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">private</span> <span class="keyword">function</span> <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>() : array{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> match($this){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            self::WOOD =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(1, 60, 5, 2, 15),</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            self::GOLD =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(2, 33, 5, 12, 22),</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            self::STONE =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(3, 132, 6, 4, 5),</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            self::IRON =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(4, 251, 7, 6, 14),</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            self::DIAMOND =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(5, 1562, 8, 8, 10),</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            self::NETHERITE =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(6, 2032, 9, 9, 15)</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        };</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span> <span class="keyword">function</span> getHarvestLevel() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[0];</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMaxDurability() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[1];</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseAttackPoints() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[2];</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseEfficiency() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[3];</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">public</span> <span class="keyword">function</span> getEnchantability() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[4];</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">   98</a></span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">case</span> COPPER;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">case</span> IRON;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> DIAMOND;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">case</span> NETHERITE;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">meta</a>(<span class="keywordtype">int</span> $harvestLevel, <span class="keywordtype">int</span> $maxDurability, <span class="keywordtype">int</span> $baseAttackPoints, <span class="keywordtype">int</span> $baseEfficiency, <span class="keywordtype">int</span> $enchantability) : array{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span> [$harvestLevel, $maxDurability, $baseAttackPoints, $baseEfficiency, $enchantability];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">private</span> <span class="keyword">function</span> <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>() : array{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> match($this){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            self::WOOD =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(1, 60, 5, 2, 15),</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            self::GOLD =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(2, 33, 5, 12, 22),</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            self::STONE =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(3, 132, 6, 4, 5),</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            self::COPPER =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(3, 191, 6, 5, 13),</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            self::IRON =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(4, 251, 7, 6, 14),</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            self::DIAMOND =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(5, 1562, 8, 8, 10),</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            self::NETHERITE =&gt; <a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">self::meta</a>(6, 2032, 9, 9, 15)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        };</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> getHarvestLevel() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[0];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">public</span> <span class="keyword">function</span> getMaxDurability() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[1];</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseAttackPoints() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[2];</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBaseEfficiency() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[3];</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">public</span> <span class="keyword">function</span> getEnchantability() : <span class="keywordtype">int</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_enumvalue" href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">getMetadata</a>()[4];</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">  100</a></span>}</div>
 </div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html">pocketmine\item</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d1f/_apple_8php_source.html#l00024">Apple.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html_a92f74d7644b6924d851218b97da8aa12"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12">pocketmine\item\ToolTier</a></div><div class="ttdeci">ToolTier</div><div class="ttdef"><b>Definition</b> <a href="#l00041">ToolTier.php:41</a></div></div>
-<div class="ttc" id="anamespacepocketmine_1_1item_html_a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">pocketmine\item\meta</a></div><div class="ttdeci">@ meta</div><div class="ttdef"><b>Definition</b> <a href="#l00098">ToolTier.php:55</a></div></div>
+<div class="ttc" id="anamespacepocketmine_1_1item_html_a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#a92f74d7644b6924d851218b97da8aa12ac612bde7c9677f4a4109bd764392df87">pocketmine\item\meta</a></div><div class="ttdeci">@ meta</div><div class="ttdef"><b>Definition</b> <a href="#l00100">ToolTier.php:56</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1item_html_ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e"><div class="ttname"><a href="../../d0/dec/namespacepocketmine_1_1item.html#ae624cd043eb049f4230e50cc788d5a52ad73f7487cd6d36010b8acc3e7bf02e8e">pocketmine\item\getMetadata</a></div><div class="ttdeci">@ getMetadata</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dfb/_medicine_type_8php_source.html#l00063">MedicineType.php:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

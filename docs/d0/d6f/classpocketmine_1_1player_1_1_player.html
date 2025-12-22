@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -454,6 +454,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab157bcc8d76ed2f3e3d990fedef2181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40ce51bbd3fc4366aa9d366ef528716" id="r_ae40ce51bbd3fc4366aa9d366ef528716"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae40ce51bbd3fc4366aa9d366ef528716">isSneaking</a> ()</td></tr>
 <tr class="separator:ae40ce51bbd3fc4366aa9d366ef528716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e4084f67bf02dc899ce7df49c91722" id="r_a43e4084f67bf02dc899ce7df49c91722"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43e4084f67bf02dc899ce7df49c91722">isSneakPressed</a> ()</td></tr>
+<tr class="separator:a43e4084f67bf02dc899ce7df49c91722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a93dcd625c226f76f0b01e62f6dcfa" id="r_ae2a93dcd625c226f76f0b01e62f6dcfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2a93dcd625c226f76f0b01e62f6dcfa">isSpectator</a> ()</td></tr>
 <tr class="separator:ae2a93dcd625c226f76f0b01e62f6dcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d9964fe4bf090e5a90f6232b24796fb" id="r_a2d9964fe4bf090e5a90f6232b24796fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2d9964fe4bf090e5a90f6232b24796fb">isSprinting</a> ()</td></tr>
@@ -653,6 +655,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7cf3f2132284ca3881fdf6da99dd3ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df91f635f26c616a19603de72c6d851" id="r_a5df91f635f26c616a19603de72c6d851"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a5df91f635f26c616a19603de72c6d851">setSneaking</a> (bool $value=true)</td></tr>
 <tr class="separator:a5df91f635f26c616a19603de72c6d851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48f0b3fe0c23ad7145568c674e3bc8b" id="r_af48f0b3fe0c23ad7145568c674e3bc8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af48f0b3fe0c23ad7145568c674e3bc8b">setSneakPressed</a> (bool $sneakPressed)</td></tr>
+<tr class="separator:af48f0b3fe0c23ad7145568c674e3bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21a7d3a42efbabb9d6067b8ea039026" id="r_ab21a7d3a42efbabb9d6067b8ea039026"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab21a7d3a42efbabb9d6067b8ea039026">setSpawn</a> (?<a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $pos)</td></tr>
 <tr class="separator:ab21a7d3a42efbabb9d6067b8ea039026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f528fc251e45e353bb08562db20958b" id="r_a2f528fc251e45e353bb08562db20958b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a2f528fc251e45e353bb08562db20958b">setSprinting</a> (bool $value=true)</td></tr>
@@ -687,8 +691,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a529c3a13c33516e7f0cf08b81c215779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fd2f9f23b52fbf48949f21c00a40208" id="r_a4fd2f9f23b52fbf48949f21c00a40208"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fd2f9f23b52fbf48949f21c00a40208">toggleGlide</a> (bool $glide)</td></tr>
 <tr class="separator:a4fd2f9f23b52fbf48949f21c00a40208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f72fddbe2de2ebc01d67c9dacbaff3" id="r_a30f72fddbe2de2ebc01d67c9dacbaff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30f72fddbe2de2ebc01d67c9dacbaff3">toggleSneak</a> (bool $sneak)</td></tr>
-<tr class="separator:a30f72fddbe2de2ebc01d67c9dacbaff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee177aa359d352277a61c23cb7601ab" id="r_aaee177aa359d352277a61c23cb7601ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee177aa359d352277a61c23cb7601ab">toggleSneak</a> (bool $sneak, bool $sneakPressed=true)</td></tr>
+<tr class="separator:aaee177aa359d352277a61c23cb7601ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7fae347061dace731283b52f9cad78" id="r_acf7fae347061dace731283b52f9cad78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf7fae347061dace731283b52f9cad78">toggleSprint</a> (bool $sprint)</td></tr>
 <tr class="separator:acf7fae347061dace731283b52f9cad78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177770905dde7c6f0747884ae98f595e" id="r_a177770905dde7c6f0747884ae98f595e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a177770905dde7c6f0747884ae98f595e">toggleSwim</a> (bool $swim)</td></tr>
@@ -1051,6 +1055,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6ee9b82b6997fe34362c7fcdb9dd25c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac755dd10bfab5cf7737995dc08ffc1f2" id="r_ac755dd10bfab5cf7737995dc08ffc1f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ac755dd10bfab5cf7737995dc08ffc1f2">$sneaking</a> = false</td></tr>
 <tr class="separator:ac755dd10bfab5cf7737995dc08ffc1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2df680178cb5c551a3e968dc8b5d05" id="r_a3e2df680178cb5c551a3e968dc8b5d05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e2df680178cb5c551a3e968dc8b5d05">$sneakPressed</a> = false</td></tr>
+<tr class="separator:a3e2df680178cb5c551a3e968dc8b5d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf563f093fae9d1d04a5967e2c2ac9d" id="r_a0cf563f093fae9d1d04a5967e2c2ac9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cf563f093fae9d1d04a5967e2c2ac9d">$spawnChunkLoadCount</a> = 0</td></tr>
 <tr class="separator:a0cf563f093fae9d1d04a5967e2c2ac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bcf40600ddad081c4d808d6cb930ee3" id="r_a4bcf40600ddad081c4d808d6cb930ee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bcf40600ddad081c4d808d6cb930ee3">$spawnThreshold</a></td></tr>
@@ -1093,7 +1099,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main class that handles networking, recovery, and packet sending to the server part </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00173">173</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00174">174</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad2d698c371fc991dff47775160f5f86" name="aad2d698c371fc991dff47775160f5f86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad2d698c371fc991dff47775160f5f86">&#9670;&#160;</a></span>__construct()</h2>
@@ -1134,7 +1140,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00318">318</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00320">320</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1161,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02429">2429</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02452">2452</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1182,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>mixed[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02425">2425</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02448">2448</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1230,7 +1236,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02532">2532</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02555">2555</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1295,7 +1301,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00203">203</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00206">206</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1328,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02704">2704</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02727">2727</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1395,7 +1401,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02826">2826</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02849">2849</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1509,7 +1515,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00720">720</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00723">723</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1545,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a0c8d978f17d3e10ffb65f28071ff773a">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02600">2600</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02623">2623</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1560,7 +1566,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02606">2606</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02629">2629</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1585,7 +1591,7 @@ Protected Attributes</h2></td></tr>
 <p>Performs a left-click (attack) action on the block.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if an action took place successfully </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01852">1852</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01866">1866</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1612,7 @@ Protected Attributes</h2></td></tr>
 <p>Attacks the given entity with the currently-held item. TODO: move this up the class hierarchy</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if the entity was dealt damage </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01954">1954</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01968">1968</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1627,7 +1633,7 @@ Protected Attributes</h2></td></tr>
 <p>Breaks the block at the given position using the currently-held item.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if the block was successfully broken, false if a rollback needs to take place. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01903">1903</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01917">1917</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1664,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a654116dd48f7df842204bdc9958b44c2">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02651">2651</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02674">2674</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1743,7 +1749,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a5afd6597d16c2bbfb8842a3df2ac8d0a">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02659">2659</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02682">2682</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/da6/_armor_8php_source.html#l00143">pocketmine\item\Armor\onClickAir()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1781,7 +1787,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01465">1465</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01479">1479</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1802,7 +1808,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00622">622</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00624">624</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1824,7 +1830,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a53b0d6d1b15c35b58e83c959ffec384c">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01322">1322</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01336">1336</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1846,7 +1852,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ae19e777d73c9df539048227ea31658f2">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00690">690</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00692">692</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1868,7 +1874,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a80b35509d294ca1b7ca463167c6e85f7">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01553">1553</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01567">1567</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1945,7 +1951,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00618">618</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00620">620</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1967,7 +1973,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5a73d2d90fae06273a6cb67232a6ef25">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01549">1549</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01563">1563</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2002,7 +2008,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01562">1562</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01576">1576</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2024,7 +2030,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#af9c9f94d4c46643cbdaeb7d06d3e44b1">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02434">2434</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02457">2457</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2043,7 +2049,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00596">596</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00598">598</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2072,7 +2078,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Called when a player changes their skin. Plugin developers should not use this, use setSkin() and sendSkin() instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00709">709</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00711">711</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2092,7 +2098,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sends a chat message as this player. If the message begins with a / (forward-slash) it will be treated as a command. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01578">1578</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01592">1592</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2172,7 +2178,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01306">1306</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01320">1320</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2199,7 +2205,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00779">779</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00781">781</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2226,7 +2232,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01326">1326</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01340">1340</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2311,7 +2317,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Closes the current viewing form and forms in queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02274">2274</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02297">2297</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2332,7 +2338,7 @@ Protected Attributes</h2></td></tr>
 <p>Consumes the currently-held item.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if the consumption succeeded. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01724">1724</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01738">1738</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2385,7 +2391,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01886">1886</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01900">1900</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2413,7 +2419,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Damages the worn armour according to the amount of damage given. Each 4 points (rounded down) deals 1 damage point to each armour piece, but never less than 1 total. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00522">522</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00525">525</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -2471,7 +2477,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000110">Deprecated</a></b></dt><dd>WARNING: This function DOES NOT permanently hide the entity from the player. As soon as the entity or player moves, the player will once again be able to see the entity. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000113">Deprecated</a></b></dt><dd>WARNING: This function DOES NOT permanently hide the entity from the player. As soon as the entity or player moves, the player will once again be able to see the entity. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l01568">1568</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
@@ -2499,7 +2505,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000111">Deprecated</a></b></dt><dd>WARNING: This function DOES NOT permanently hide the entity from viewers. As soon as the entity or player moves, viewers will once again be able to see the entity. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000114">Deprecated</a></b></dt><dd>WARNING: This function DOES NOT permanently hide the entity from viewers. As soon as the entity or player moves, viewers will once again be able to see the entity. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l01582">1582</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
@@ -2532,7 +2538,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#ad6c6806e43d516fe652fb1e93144b286">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02412">2412</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02435">2435</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2571,7 +2577,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02338">2338</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02361">2361</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2599,7 +2605,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Ticks the entity's air supply, consuming it when underwater and regenerating it when out of water. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00763">763</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00766">766</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -2619,7 +2625,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Ticks the chunk-requesting mechanism. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01075">1075</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01077">1077</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2639,7 +2645,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Called by the network system when the pre-spawn sequence is completed (e.g. after sending spawn chunks). This fires join events and broadcasts join messages to other online players. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00937">937</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00939">939</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2666,7 +2672,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00608">608</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00611">611</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -2713,7 +2719,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Drops an item on the ground in front of the player. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02149">2149</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02172">2172</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2740,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02133">2133</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02156">2156</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2761,7 +2767,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00664">664</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00667">667</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -2872,7 +2878,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00236">236</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00239">239</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -2900,7 +2906,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the number of ticks remaining in the entity's air supply. Note that the entity may survive longer than this amount of time without damage due to enchantments such as Respiration. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00822">822</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00825">825</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -2949,7 +2955,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns whether the player is allowed to toggle its flight state.</p>
 <p>If false, the player is locked in its current flight mode (flying/not flying), and attempts by the player to enter or exit flight mode will be prevented. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00490">490</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00492">492</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -2976,7 +2982,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00433">433</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00436">436</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3004,7 +3010,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns how many armour points this mob has. Armour points provide a percentage reduction to damage. For mobs which can wear armour, this should return the sum total of the armour points provided by their equipment. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00412">412</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00415">415</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3134,7 +3140,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02717">2717</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02740">2740</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3154,7 +3160,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the creative inventory shown to the player. Unless changed by a plugin, this is usually the same for all players. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02725">2725</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02748">2748</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3174,7 +3180,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the inventory the player is currently viewing. This might be a chest, furnace, or any other container. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02783">2783</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02806">2806</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3193,7 +3199,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02713">2713</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02736">2736</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3212,7 +3218,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01086">1086</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01088">1088</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3316,7 +3322,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#ab86b239e5e24b16efed3ba0e19895616">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00679">679</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00681">681</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3338,7 +3344,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a73931d2c87074890c2f7487ab65f96a0">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01290">1290</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01304">1304</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3393,7 +3399,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00335">335</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00338">338</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3577,7 +3583,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/df5/interfacepocketmine_1_1player_1_1_i_player.html">pocketmine\player\IPlayer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00453">453</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00455">455</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3600,7 +3606,7 @@ Protected Attributes</h2></td></tr>
 <p>If set to zero, the player will not be able to move in the xz plane when flying. Negative values will invert the controls.</p>
 <dl class="section see"><dt>See also</dt><dd>Player::DEFAULT_FLIGHT_SPEED_MULTIPLIER </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00560">560</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00562">562</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3627,7 +3633,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00756">756</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00759">759</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3646,7 +3652,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01194">1194</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01196">1196</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3728,7 +3734,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the highest level of the specified enchantment on any armour piece that the entity is currently wearing. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00424">424</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00427">427</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3828,7 +3834,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01338">1338</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01352">1352</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3859,7 +3865,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a853515497add5cc74078aa696148a41e">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00138">138</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00139">139</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3890,7 +3896,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a020854e1ad1eb9bbc132710b1c09537d">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00140">140</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00141">141</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -3968,7 +3974,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the server tick on which the player's cooldown period expires for the given item. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00755">755</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00757">757</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -3988,7 +3994,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns how long the player has been using their currently-held item for. Used for determining arrow shoot force for bows. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00748">748</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00750">750</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00242">pocketmine\server()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -4025,7 +4031,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the initial upwards velocity of a jumping entity in blocks/tick, including additional velocity due to effects. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00366">366</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00369">369</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -4046,7 +4052,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">pocketmine\command\CommandSender</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00701">701</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00703">703</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4095,7 +4101,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/df5/interfacepocketmine_1_1player_1_1_i_player.html">pocketmine\player\IPlayer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00460">460</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00462">462</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4114,7 +4120,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00413">413</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00415">415</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4157,7 +4163,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Block[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00878">878</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00881">881</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -4177,7 +4183,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the player's locale, e.g. en_US. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00697">697</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00699">699</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4232,7 +4238,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the maximum amount of air ticks the entity's air supply can contain. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00837">837</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00840">840</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -4261,7 +4267,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00228">228</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00231">231</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -4315,7 +4321,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00304">304</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00307">307</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -4337,7 +4343,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00672">672</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00674">674</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d38/_list_command_8php_source.html#l00047">pocketmine\command\defaults\ListCommand\execute()</a>.</p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -4419,7 +4425,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00662">662</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00664">664</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4647,7 +4653,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns an object containing information about the player, such as their username, skin, and misc extra client-specific data. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00429">429</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00431">431</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4693,7 +4699,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02442">2442</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02465">2465</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4769,7 +4775,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a1428021c250a27063d67667d81008b55">pocketmine\command\CommandSender</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00585">585</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00587">587</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4790,7 +4796,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">pocketmine\command\CommandSender</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00581">581</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00583">583</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -4894,7 +4900,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Position </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01113">1113</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01115">1115</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00242">pocketmine\server()</a>.</p>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -4967,7 +4973,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00919">919</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00922">922</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -5055,7 +5061,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00446">446</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00448">448</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5075,7 +5081,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>UsedChunkStatus[] chunkHash =&gt; status @phpstan-return array&lt;int, UsedChunkStatus&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01053">1053</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01055">1055</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5099,7 +5105,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a usage status of the given chunk, or null if the player is not using the given chunk. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01060">1060</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01062">1062</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5118,7 +5124,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00631">631</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00633">633</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5195,7 +5201,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#ad395e2f390fc5919596acc655bd6a603">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01298">1298</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01312">1312</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5242,7 +5248,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If the player is logged into Xbox Live, returns their Xbox user ID (XUID) as a string. Returns an empty string if the player is not logged into Xbox Live. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00435">435</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00437">437</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5269,7 +5275,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01350">1350</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01364">1364</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5288,7 +5294,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00571">571</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00573">573</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5308,7 +5314,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether blocks may obstruct the player's movement. If false, the player can move through any block unobstructed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00513">513</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00515">515</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5328,7 +5334,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO: make this a dynamic ability instead of being hardcoded </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01286">1286</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01300">1300</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d86/_painting_8php_source.html#l00107">pocketmine\entity\object\Painting\onDeath()</a>.</p>
 <div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -5384,7 +5390,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the player has a cooldown period left before it can use the given item again. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00763">763</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00765">765</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5491,7 +5497,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/df5/interfacepocketmine_1_1player_1_1_i_player.html">pocketmine\player\IPlayer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00464">464</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00466">466</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5515,7 +5521,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the target chunk has been sent to this player. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01067">1067</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01069">1069</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5534,7 +5540,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01123">1123</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01125">1125</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5580,7 +5586,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00600">600</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00602">602</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5609,7 +5615,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00372">372</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00374">374</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5639,7 +5645,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5b11cea1af3147e9c0d32de66651e602">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00358">358</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00360">360</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5669,7 +5675,7 @@ Protected Attributes</h2></td></tr>
 <p>Touches the block at the given position with the currently-held item.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if it did something </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01929">1929</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01943">1943</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5693,7 +5699,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Interacts with the given entity using the currently-held item. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02039">2039</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02056">2056</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5720,7 +5726,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01198">1198</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01200">1200</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5746,7 +5752,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01275">1275</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01277">1277</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5792,7 +5798,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00421">421</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00423">423</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5820,7 +5826,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the entity is currently breathing or not. If this is false, the entity's air supply will be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00805">805</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00808">808</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -5867,7 +5873,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00658">658</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00660">660</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5893,7 +5899,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01265">1265</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01267">1267</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5966,7 +5972,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00525">525</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00527">527</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -5993,7 +5999,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00272">272</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00275">275</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6174,7 +6180,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00654">654</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00656">656</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6248,7 +6254,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01147">1147</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01149">1149</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6275,7 +6281,27 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00248">248</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00251">251</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+
+</div>
+</div>
+<a id="a43e4084f67bf02dc899ce7df49c91722" name="a43e4084f67bf02dc899ce7df49c91722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e4084f67bf02dc899ce7df49c91722">&#9670;&#160;</a></span>isSneakPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\player\Player::isSneakPressed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether the player is pressing the sneak key. The player may still be sneaking even if this is false due to gameplay mechanics (e.g. releasing sneak while in a 1.5 block high space). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01293">1293</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6294,7 +6320,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01279">1279</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01281">1281</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6321,7 +6347,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00258">258</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00261">261</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6347,7 +6373,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01255">1255</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01257">1257</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6374,7 +6400,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00282">282</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00285">285</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6425,7 +6451,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the player is using the chunk with the given coordinates, irrespective of whether the chunk has been sent yet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01045">1045</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01047">1047</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6445,7 +6471,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether the player is currently using an item (right-click and hold). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00735">735</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00737">737</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6473,7 +6499,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Validates the given username. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00210">210</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00211">211</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6495,7 +6521,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a5841a9cfba413ed333a6af78a93bb4dd">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01469">1469</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01483">1483</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6532,7 +6558,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02305">2305</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02328">2328</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6600,7 +6626,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00612">612</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00615">615</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6628,7 +6654,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Changes the entity's yaw and pitch to make it look at the specified Vector3 position. For mobs, this will cause their heads to turn. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00932">932</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00935">935</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6648,7 +6674,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Performs actions associated with the attack action (left-click) without a target entity. Under normal circumstances, this will just play the no-damage attack sound and the arm-swing animation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02027">2027</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02044">2044</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6686,7 +6712,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00708">708</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00711">711</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6744,7 +6770,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a84c21ae006eccf2ea739eef7d150c929">pocketmine\entity\WaterAnimal</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00853">853</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00856">856</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -6803,7 +6829,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/dac/interfacepocketmine_1_1world_1_1_chunk_listener.html#a0ee14ccd9d35dbd2047de2bf1197190f">pocketmine\world\ChunkListener</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02858">2858</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02881">2881</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6904,7 +6930,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/dac/interfacepocketmine_1_1world_1_1_chunk_listener.html#ac53d922b459e49d77997f00e07c0c64e">pocketmine\world\ChunkListener</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02866">2866</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02889">2889</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6961,7 +6987,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a611283432404a91c42a84307659e471f">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02480">2480</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02503">2503</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -6991,7 +7017,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a51f179f6856625792527dd3c2b201003">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02516">2516</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02539">2539</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7021,7 +7047,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a583068d43f1e6f225ce3f1ee5ef47121">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02405">2405</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02428">2428</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7074,7 +7100,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02253">2253</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02276">2276</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7104,7 +7130,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a25ad669890dc24d70b8cdad878cd6449">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00383">383</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00386">386</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -7186,7 +7212,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02354">2354</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02377">2377</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7237,7 +7263,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01492">1492</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01506">1506</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7261,7 +7287,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Opens the player's sign editor GUI for the sign at the given position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02843">2843</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02866">2866</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7289,7 +7315,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculates which new chunks this player needs to use, and which currently-used chunks it needs to stop using. This is based on factors including the player's current render radius and current position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00996">996</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00998">998</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7346,7 +7372,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01779">1779</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01793">1793</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7365,7 +7391,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01801">1801</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01815">1815</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7393,7 +7419,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Fires movement events and synchronizes player movement, every tick. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01406">1406</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01420">1420</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7496,7 +7522,7 @@ Protected Attributes</h2></td></tr>
 <p>Releases the held item, for example to fire a bow. This should be preceded by a call to useHeldItem().</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if it did something. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01756">1756</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01770">1770</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7515,7 +7541,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02812">2812</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02835">2835</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7542,7 +7568,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02833">2833</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02856">2856</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7562,7 +7588,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes the title from the client's screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02186">2186</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02209">2209</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7590,7 +7616,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Requests chunks from the world to be sent, up to a set limit every tick. This operates on the results of the most recent chunk order. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00852">852</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00854">854</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7611,7 +7637,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00626">626</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00628">628</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7635,7 +7661,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the player's cooldown time for the given item back to the maximum. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00771">771</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00773">773</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d98/_item_8php_source.html#l00678">pocketmine\item\Item\getCooldownTag()</a>, and <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00242">pocketmine\server()</a>.</p>
 <div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -7691,7 +7717,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the title duration settings to defaults and removes any existing titles. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02193">2193</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02216">2216</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7710,7 +7736,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02521">2521</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02544">2544</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7764,7 +7790,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01460">1460</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01474">1474</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7784,7 +7810,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Handles player data saving </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02476">2476</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02499">2499</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00242">pocketmine\server()</a>.</p>
 <div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -7868,7 +7894,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01616">1616</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01630">1630</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7888,7 +7914,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds small text to the user's screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02179">2179</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02202">2202</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7921,7 +7947,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a180ddec765d91d56a76789284587ac89">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02643">2643</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02666">2666</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7948,7 +7974,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <p>InvalidArgumentException </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02246">2246</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02269">2269</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7967,7 +7993,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02217">2217</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02240">2240</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -7989,7 +8015,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">pocketmine\command\CommandSender</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02213">2213</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02236">2236</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8010,7 +8036,7 @@ Protected Attributes</h2></td></tr>
 <p>Sends a popup message to the player</p>
 <p>TODO: add translation type popups </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02226">2226</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02249">2249</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8052,7 +8078,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO: remove this </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02670">2670</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02693">2693</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8081,7 +8107,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#a3bca25fc5ec147ac108aa5efa17dd7dd">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00728">728</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00730">730</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d55/_pocket_mine_8php_source.html#l00242">pocketmine\server()</a>.</p>
 <div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -8140,7 +8166,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the subtitle message, without sending a title. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02172">2172</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02195">2195</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8159,7 +8185,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02230">2230</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02253">2253</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8206,7 +8232,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02161">2161</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02184">2184</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8230,7 +8256,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sends a toast message to the player, or queue to send it if a toast message is already shown. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02237">2237</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02260">2260</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8257,7 +8283,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00240">240</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00243">243</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -8285,7 +8311,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the number of air ticks left in the entity's air supply. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00829">829</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00832">832</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -8307,7 +8333,7 @@ Protected Attributes</h2></td></tr>
 <p>If set to false, the player will be locked in its current flight mode (flying/not flying), and attempts by the player to enter or exit flight mode will be prevented.</p>
 <p>Note: Setting this to false DOES NOT change whether the player is currently flying. Use <code><a class="el" href="">Player::setFlying()</a></code> for that purpose. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00477">477</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00479">479</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8326,7 +8352,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00564">564</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00566">566</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8386,7 +8412,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets whether the entity is currently breathing. If false, it will cause the entity's air supply to be used. For players, this also shows the oxygen bar. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00813">813</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00816">816</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -8464,7 +8490,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a5c4fe1ec80833443b6f4954ba4d443c9">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02438">2438</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02461">2461</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8484,7 +8510,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>To set a custom creative inventory, you need to make a clone of a CreativeInventory instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02732">2732</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02755">2755</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8504,7 +8530,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Opens an inventory window to the player. Returns if it was successful. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02790">2790</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02813">2813</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8529,7 +8555,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01096">1096</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01098">1098</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8548,7 +8574,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00683">683</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00685">685</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8660,7 +8686,7 @@ Protected Attributes</h2></td></tr>
 <p>Note: Movement speed attribute does not influence flight speed.</p>
 <dl class="section see"><dt>See also</dt><dd>Player::DEFAULT_FLIGHT_SPEED_MULTIPLIER </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00542">542</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00544">544</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8679,7 +8705,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00517">517</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00519">519</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8727,7 +8753,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the provided gamemode. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01226">1226</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01228">1228</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8754,7 +8780,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00276">276</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00279">279</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -8802,7 +8828,7 @@ Protected Attributes</h2></td></tr>
 <p>Sets whether the player's movement may be obstructed by blocks with collision boxes. If set to false, the player can move through any block unobstructed.</p>
 <p>Note: Enabling flight mode in conjunction with this is recommended. A non-flying player will simply fall through the ground into the void. </p><dl class="section see"><dt>See also</dt><dd>Player::setFlying() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00502">502</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00504">504</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -8859,7 +8885,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ae6385e7ea9eab6233e17ea4fe680108b">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00219">219</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00222">222</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d77/_health_boost_effect_8php_source.html#l00034">pocketmine\entity\effect\HealthBoostEffect\remove()</a>.</p>
 <div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -8950,7 +8976,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the maximum amount of air ticks the air supply can hold. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00844">844</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00847">847</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -8979,7 +9005,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00232">232</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00235">235</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -9000,7 +9026,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01474">1474</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01488">1488</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9031,7 +9057,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00308">308</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00311">311</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -9170,7 +9196,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00437">437</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00440">440</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -9234,7 +9260,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00788">788</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00790">790</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9377,7 +9403,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#adad74406049bccde79c289067e881028">pocketmine\command\CommandSender</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00589">589</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00591">591</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9486,7 +9512,26 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00252">252</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00255">255</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+
+</div>
+</div>
+<a id="af48f0b3fe0c23ad7145568c674e3bc8b" name="af48f0b3fe0c23ad7145568c674e3bc8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48f0b3fe0c23ad7145568c674e3bc8b">&#9670;&#160;</a></span>setSneakPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\player\Player::setSneakPressed </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$sneakPressed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01285">1285</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9512,7 +9557,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01133">1133</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01135">1135</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9539,7 +9584,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00262">262</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00265">265</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -9593,7 +9638,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00286">286</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00289">289</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -9665,7 +9710,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02204">2204</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02227">2227</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9684,7 +9729,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00739">739</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00741">741</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9703,7 +9748,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00635">635</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00637">637</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9722,7 +9767,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00608">608</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00610">610</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9741,7 +9786,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01151">1151</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01153">1153</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9768,7 +9813,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00831">831</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00833">833</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9799,7 +9844,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00840">840</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00842">842</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9820,7 +9865,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html">pocketmine\entity\Human</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00575">575</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00577">577</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9874,7 +9919,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00660">660</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00663">663</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -9893,7 +9938,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01892">1892</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01906">1906</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9912,7 +9957,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01176">1176</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01178">1178</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9941,7 +9986,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html">pocketmine\entity\Living</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02622">2622</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02645">2645</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9977,7 +10022,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a5661f8a252c5324dd54ed3534ab47a6b">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02676">2676</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02699">2699</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -9996,7 +10041,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02091">2091</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02114">2114</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10015,12 +10060,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02107">2107</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02130">2130</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
-<a id="a30f72fddbe2de2ebc01d67c9dacbaff3" name="a30f72fddbe2de2ebc01d67c9dacbaff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f72fddbe2de2ebc01d67c9dacbaff3">&#9670;&#160;</a></span>toggleSneak()</h2>
+<a id="aaee177aa359d352277a61c23cb7601ab" name="aaee177aa359d352277a61c23cb7601ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee177aa359d352277a61c23cb7601ab">&#9670;&#160;</a></span>toggleSneak()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10028,13 +10073,17 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">pocketmine\player\Player::toggleSneak </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$sneak</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$sneak</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$sneakPressed</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02078">2078</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02095">2095</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10053,7 +10102,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02065">2065</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02082">2082</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10072,7 +10121,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02120">2120</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02143">2143</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10110,7 +10159,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool if transfer was successful. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02287">2287</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02310">2310</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10139,7 +10188,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01488">1488</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01502">1502</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10175,7 +10224,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00811">811</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00813">813</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10263,7 +10312,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">pocketmine\entity\Entity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01484">1484</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01498">1498</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10284,7 +10333,7 @@ Protected Attributes</h2></td></tr>
 <p>Activates the item in hand, for example throwing a projectile.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool if it did something </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01689">1689</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01703">1703</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10309,7 +10358,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00127">127</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00128">128</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -10333,7 +10382,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00290">290</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00291">291</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10381,7 +10430,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00120">120</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00121">121</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -10405,7 +10454,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00111">111</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00112">112</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -10453,7 +10502,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00227">227</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00228">228</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10477,7 +10526,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00289">289</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00290">290</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10501,7 +10550,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00316">316</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00318">318</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10525,7 +10574,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00291">291</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00292">292</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10597,7 +10646,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00122">122</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00123">123</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -10621,7 +10670,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00123">123</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00124">124</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -10693,7 +10742,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00268">268</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00269">269</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10717,7 +10766,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00267">267</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00268">268</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10741,7 +10790,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00266">266</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00267">267</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10765,7 +10814,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00269">269</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00270">270</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10813,7 +10862,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00234">234</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00235">235</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10837,7 +10886,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00235">235</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00236">236</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10861,7 +10910,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00230">230</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00231">231</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10885,7 +10934,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00233">233</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00234">234</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10909,7 +10958,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00113">113</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00114">114</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -10933,7 +10982,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00225">225</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00226">226</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -10981,7 +11030,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00118">118</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00119">119</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11077,7 +11126,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00239">239</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00240">240</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11101,7 +11150,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00294">294</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00296">296</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11125,7 +11174,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00292">292</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00293">293</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11173,7 +11222,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00310">310</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00312">312</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11197,7 +11246,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00312">312</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00314">314</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11221,7 +11270,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00241">241</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00242">242</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11245,7 +11294,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00133">133</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00134">134</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11341,7 +11390,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00126">126</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00127">127</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11365,7 +11414,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00272">272</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00273">273</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11437,7 +11486,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00277">277</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00278">278</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11581,7 +11630,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00116">116</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00117">117</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11653,7 +11702,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00128">128</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00129">129</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11749,7 +11798,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00275">275</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00276">276</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11773,7 +11822,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00240">240</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00241">241</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11823,7 +11872,7 @@ Protected Attributes</h2></td></tr>
 <p>@phpstan-var positive-int|null <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00297">297</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00299">299</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11847,7 +11896,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00257">257</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00258">258</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11871,7 +11920,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00298">298</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00300">300</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11919,7 +11968,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00314">314</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00316">316</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -11943,7 +11992,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00124">124</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00125">125</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11967,7 +12016,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00114">114</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00115">115</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -11991,7 +12040,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00237">237</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00238">238</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12039,7 +12088,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00274">274</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00275">275</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12063,7 +12112,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00129">129</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00130">130</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -12159,7 +12208,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00220">220</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00221">221</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12183,7 +12232,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00258">258</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00259">259</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12327,7 +12376,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00232">232</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00233">233</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12351,7 +12400,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00228">228</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00229">229</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12519,7 +12568,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00281">281</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00282">282</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12543,7 +12592,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00132">132</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00133">133</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+
+</div>
+</div>
+<a id="a3e2df680178cb5c551a3e968dc8b5d05" name="a3e2df680178cb5c551a3e968dc8b5d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2df680178cb5c551a3e968dc8b5d05">&#9670;&#160;</a></span>$sneakPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pocketmine\player\Player::$sneakPressed = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00294">294</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12567,7 +12640,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00265">265</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00266">266</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12583,7 +12656,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00222">222</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00223">223</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12607,7 +12680,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00264">264</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00265">265</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12631,7 +12704,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00131">131</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00132">132</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -12655,7 +12728,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00300">300</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00302">302</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12679,7 +12752,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00279">279</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00280">280</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12703,7 +12776,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00134">134</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00135">135</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -12799,7 +12872,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00247">247</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00248">248</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12823,7 +12896,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00306">306</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00308">308</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12847,7 +12920,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00224">224</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00225">225</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12895,7 +12968,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00263">263</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00264">264</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -12967,7 +13040,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00226">226</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00227">227</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -13015,7 +13088,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00088">88</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00089">89</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -13031,7 +13104,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00191">191</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00192">192</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -13056,7 +13129,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The default knockback multiplier when an entity is hit by another entity. Larger values knock the entity back with increased velocity. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00094">94</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00095">95</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -13081,7 +13154,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Limit of an entity's vertical knockback velocity when hit by another entity. Without this limit, the entity may be knocked far up into the air with large knockback forces. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00099">99</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d77/_living_8php_source.html#l00100">100</a> of file <a class="el" href="../../dc/d77/_living_8php_source.html">Living.php</a>.</p>
 
 </div>
 </div>
@@ -13145,7 +13218,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00193">193</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00194">194</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -13161,7 +13234,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00205">205</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00206">206</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -13177,7 +13250,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00194">194</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00195">195</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -13193,7 +13266,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00204">204</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00205">205</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>

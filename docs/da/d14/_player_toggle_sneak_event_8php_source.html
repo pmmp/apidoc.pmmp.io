@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -141,19 +141,27 @@ $(function(){initNavTree('da/d14/_player_toggle_sneak_event_8php_source.html','.
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">protected</span> <span class="keywordtype">bool</span> $isSneaking</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ){</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;player = $player;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> isSneaking() : <span class="keywordtype">bool</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this-&gt;isSneaking;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">protected</span> <span class="keywordtype">bool</span> $isSneaking,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">protected</span> <span class="keywordtype">bool</span> $isSneakPressed</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    ){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;player = $player;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span> <span class="keyword">function</span> isSneaking() : <span class="keywordtype">bool</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> $this-&gt;isSneaking;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#aff71d196a7a305d27e5be1634add7127">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#aff71d196a7a305d27e5be1634add7127">isSneakPressed</a>() : bool{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        return $this-&gt;<a class="code hl_function" href="../../d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#aff71d196a7a305d27e5be1634add7127">isSneakPressed</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_event_html"><div class="ttname"><a href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">pocketmine\event\player\PlayerEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/da2/_player_event_8php_source.html#l00032">PlayerEvent.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event_html"><div class="ttname"><a href="../../d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html">pocketmine\event\player\PlayerToggleSneakEvent</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">PlayerToggleSneakEvent.php:30</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00173">Player.php:173</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event_html_aff71d196a7a305d27e5be1634add7127"><div class="ttname"><a href="../../d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#aff71d196a7a305d27e5be1634add7127">pocketmine\event\player\PlayerToggleSneakEvent\isSneakPressed</a></div><div class="ttdeci">isSneakPressed()</div><div class="ttdef"><b>Definition</b> <a href="#l00049">PlayerToggleSneakEvent.php:49</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00174">Player.php:174</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1player_html"><div class="ttname"><a href="../../de/d7b/namespacepocketmine_1_1event_1_1player.html">pocketmine\event\player</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d76/_player_bed_enter_event_8php_source.html#l00024">PlayerBedEnterEvent.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html_ab6c4dceac6e98e0eb02896a6809e52fa"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">pocketmine\event\CancellableTrait</a></div><div class="ttdeci">trait CancellableTrait</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d98/_cancellable_trait_8php_source.html#l00034">CancellableTrait.php:34</a></div></div>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -148,10 +148,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a58dab563c01e3f7e31aaf626272f20a7" id="r_a58dab563c01e3f7e31aaf626272f20a7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58dab563c01e3f7e31aaf626272f20a7">add</a> (int $actorRuntimeId, bool $replace, int $effectId, int $amplifier, bool $particles, int $duration, int $tick)</td></tr>
-<tr class="separator:a58dab563c01e3f7e31aaf626272f20a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf037c242c80705638b7464d016788e" id="r_a7bf037c242c80705638b7464d016788e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bf037c242c80705638b7464d016788e">create</a> (int $actorRuntimeId, int $eventId, int $effectId, int $amplifier, bool $particles, int $duration, int $tick,)</td></tr>
-<tr class="separator:a7bf037c242c80705638b7464d016788e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01282f37a959f321b7b774d8489620c7" id="r_a01282f37a959f321b7b774d8489620c7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01282f37a959f321b7b774d8489620c7">add</a> (int $actorRuntimeId, bool $replace, int $effectId, int $amplifier, bool $particles, int $duration, int $tick, bool $ambient)</td></tr>
+<tr class="separator:a01282f37a959f321b7b774d8489620c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e28ec0e1687ae540f18d8e796543178" id="r_a3e28ec0e1687ae540f18d8e796543178"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e28ec0e1687ae540f18d8e796543178">create</a> (int $actorRuntimeId, int $eventId, int $effectId, int $amplifier, bool $particles, int $duration, int $tick, bool $ambient,)</td></tr>
+<tr class="separator:a3e28ec0e1687ae540f18d8e796543178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb4f43cf9231170c2bbac0503016e826" id="r_aeb4f43cf9231170c2bbac0503016e826"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb4f43cf9231170c2bbac0503016e826">remove</a> (int $actorRuntimeId, int $effectId, int $tick)</td></tr>
 <tr class="separator:aeb4f43cf9231170c2bbac0503016e826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -159,6 +159,8 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9751c3d06d4b429b66274b245768c888" id="r_a9751c3d06d4b429b66274b245768c888"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9751c3d06d4b429b66274b245768c888">$actorRuntimeId</a></td></tr>
 <tr class="separator:a9751c3d06d4b429b66274b245768c888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656630df04e6de00b5e06fd779c8d03c" id="r_a656630df04e6de00b5e06fd779c8d03c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a656630df04e6de00b5e06fd779c8d03c">$ambient</a> = true</td></tr>
+<tr class="separator:a656630df04e6de00b5e06fd779c8d03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a000b4222dedaeed6ea89352d9f9343e5" id="r_a000b4222dedaeed6ea89352d9f9343e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a000b4222dedaeed6ea89352d9f9343e5">$amplifier</a> = 0</td></tr>
 <tr class="separator:a000b4222dedaeed6ea89352d9f9343e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa38e421b62e4d0be217e297843a8d6a1" id="r_aa38e421b62e4d0be217e297843a8d6a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa38e421b62e4d0be217e297843a8d6a1">$duration</a> = 0</td></tr>
@@ -273,8 +275,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a58dab563c01e3f7e31aaf626272f20a7" name="a58dab563c01e3f7e31aaf626272f20a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58dab563c01e3f7e31aaf626272f20a7">&#9670;&#160;</a></span>add()</h2>
+<a id="a01282f37a959f321b7b774d8489620c7" name="a01282f37a959f321b7b774d8489620c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01282f37a959f321b7b774d8489620c7">&#9670;&#160;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +317,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$tick</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$tick</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$ambient</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -325,7 +332,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00061">61</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00064">64</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -358,8 +365,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7bf037c242c80705638b7464d016788e" name="a7bf037c242c80705638b7464d016788e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bf037c242c80705638b7464d016788e">&#9670;&#160;</a></span>create()</h2>
+<a id="a3e28ec0e1687ae540f18d8e796543178" name="a3e28ec0e1687ae540f18d8e796543178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e28ec0e1687ae540f18d8e796543178">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +407,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$tick</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$tick</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$ambient</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -411,7 +423,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00042">42</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -517,7 +529,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5aecc6bc8bc976a8d34f0641d4af7f68">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00069">69</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00072">72</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -603,7 +615,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a1ae4fc82078a731a29ef8bd591280c30">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00079">79</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00083">83</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -663,7 +675,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00089">89</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00094">94</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -728,7 +740,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00065">65</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00068">68</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>
@@ -746,6 +758,22 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00030">30</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a656630df04e6de00b5e06fd779c8d03c" name="a656630df04e6de00b5e06fd779c8d03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656630df04e6de00b5e06fd779c8d03c">&#9670;&#160;</a></span>$ambient</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pocketmine\network\mcpe\protocol\MobEffectPacket::$ambient = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../df/d82/_mob_effect_packet_8php_source.html">MobEffectPacket.php</a>.</p>
 
 </div>
 </div>

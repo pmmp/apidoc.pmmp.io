@@ -2,5 +2,6 @@ var classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event =
 [
     [ "call", "d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#a3d979a673428c9ae66e1039bf796e945", null ],
     [ "hasHandlers", "d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#a9720c24a4971d7d2b9838e567ce7ec91", null ],
-    [ "isCancelled", "d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#a90efcab0d539a5cb5b17968dfa164017", null ]
+    [ "isCancelled", "d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
+    [ "isSneakPressed", "d1/d8b/classpocketmine_1_1event_1_1player_1_1_player_toggle_sneak_event.html#aff71d196a7a305d27e5be1634add7127", null ]
 ];

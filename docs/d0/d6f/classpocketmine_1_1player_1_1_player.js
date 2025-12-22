@@ -93,6 +93,7 @@ var classpocketmine_1_1player_1_1_player =
     [ "isClosed", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ae8a891986a06e3621c4486538b0e5a60", null ],
     [ "isCreative", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ac56863706cce2cdd18cf373ad311cd53", null ],
     [ "isPermissionSet", "d0/d6f/classpocketmine_1_1player_1_1_player.html#ad1d16d3102ca9a5e141e33212df90ea1", null ],
+    [ "isSneakPressed", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a43e4084f67bf02dc899ce7df49c91722", null ],
     [ "isSurvival", "d0/d6f/classpocketmine_1_1player_1_1_player.html#af5703325a13a275f84e1aefd655bfab8", null ],
     [ "isUsingChunk", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a2c30613bdef2e05bc1b3a9e6fd5e5014", null ],
     [ "isUsingItem", "d0/d6f/classpocketmine_1_1player_1_1_player.html#a6c00681968d1c761d16a6bd092d76325", null ],

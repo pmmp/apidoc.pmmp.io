@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -158,31 +158,35 @@ $(function(){initNavTree('de/d41/_ground_cover_8php_source.html','../../'); init
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        $diffY = 1;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    $startY = 127;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">for</span>(; $startY &gt; 0; --$startY){</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        <span class="keywordflow">if</span>(!$factory-&gt;fromStateId($chunk-&gt;getBlockStateId($x, $startY, $z))-&gt;isTransparent()){</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    $startY = min(127, $startY + $diffY);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    $endY = $startY - count($cover);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <span class="keywordflow">for</span>($y = $startY; $y &gt; $endY &amp;&amp; $y &gt;= 0; --$y){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                        $b = $cover[$startY - $y];</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                        $id = $factory-&gt;fromStateId($chunk-&gt;getBlockStateId($x, $y, $z));</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        <span class="keywordflow">if</span>($id-&gt;getTypeId() === BlockTypeIds::AIR &amp;&amp; $b-&gt;isSolid()){</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                        }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                        <span class="keywordflow">if</span>($b-&gt;canBeFlowedInto() &amp;&amp; $id instanceof <a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a>){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                        $chunk-&gt;setBlockStateId($x, $y, $z, $b-&gt;getStateId());</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    $startY = $chunk-&gt;getHighestBlockAt($x, $z);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">if</span>($startY === <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        <span class="comment">//ground cover is supposed to replace preexisting blocks, nothing to do if there are no blocks</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <span class="keywordflow">for</span>(; $startY &gt; 0; --$startY){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        <span class="keywordflow">if</span>(!$factory-&gt;fromStateId($chunk-&gt;getBlockStateId($x, $startY, $z))-&gt;isTransparent()){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                        }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    $startY = min(127, $startY + $diffY);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    $endY = $startY - count($cover);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    <span class="keywordflow">for</span>($y = $startY; $y &gt; $endY &amp;&amp; $y &gt;= 0; --$y){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                        $b = $cover[$startY - $y];</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                        $id = $factory-&gt;fromStateId($chunk-&gt;getBlockStateId($x, $y, $z));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        <span class="keywordflow">if</span>($id-&gt;getTypeId() === BlockTypeIds::AIR &amp;&amp; $b-&gt;isSolid()){</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                        <span class="keywordflow">if</span>($b-&gt;canBeFlowedInto() &amp;&amp; $id instanceof <a class="code hl_class" href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">Liquid</a>){</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        $chunk-&gt;setBlockStateId($x, $y, $z, $b-&gt;getStateId());</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/dbd/_block_type_ids_8php_source.html#l00036">BlockTypeIds.php:36</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_liquid_html"><div class="ttname"><a href="../../d8/d57/classpocketmine_1_1block_1_1_liquid.html">pocketmine\block\Liquid</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d0a/_liquid_8php_source.html#l00039">Liquid.php:39</a></div></div>

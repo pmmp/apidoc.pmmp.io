@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -328,7 +328,7 @@ $(function(){initNavTree('d4/d1f/_noise_8php_source.html','../../'); initResizab
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        assert($zSize % $zSamplingRate === 0, <span class="keyword">new</span> \InvalidArgumentException(<span class="stringliteral">&quot;zSize % zSamplingRate must return 0&quot;</span>));</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        assert($ySize % $ySamplingRate === 0, <span class="keyword">new</span> \InvalidArgumentException(<span class="stringliteral">&quot;ySize % ySamplingRate must return 0&quot;</span>));</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        $noiseArray = array_fill(0, $xSize + 1, array_fill(0, $zSize + 1, []));</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        $noiseArray = array_fill(0, $xSize + 1, array_fill(0, $zSize + 1, array_fill(0, $ySize + 1, 0)));</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">for</span>($xx = 0; $xx &lt;= $xSize; $xx += $xSamplingRate){</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="keywordflow">for</span>($zz = 0; $zz &lt;= $zSize; $zz += $zSamplingRate){</div>
@@ -338,50 +338,71 @@ $(function(){initNavTree('d4/d1f/_noise_8php_source.html','../../'); initResizab
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            }</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        }</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="keywordflow">for</span>($xx = 0; $xx &lt; $xSize; ++$xx){</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            $nx = (int) ($xx / $xSamplingRate) * $xSamplingRate;</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            $nnx = $nx + $xSamplingRate;</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            $dx1 = (($nnx - $xx) / ($nnx - $nx));</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            $dx2 = (($xx - $nx) / ($nnx - $nx));</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            <span class="keywordflow">for</span>($zz = 0; $zz &lt; $zSize; ++$zz){</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                $nz = (int) ($zz / $zSamplingRate) * $zSamplingRate;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                $nnz = $nz + $zSamplingRate;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        $xLerpStep = 1 / $xSamplingRate;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        $yLerpStep = 1 / $ySamplingRate;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        $zLerpStep = 1 / $zSamplingRate;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keywordflow">for</span>($leftX = 0; $leftX &lt; $xSize; $leftX += $xSamplingRate){</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            $rightX = $leftX + $xSamplingRate;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            <span class="keywordflow">for</span>($leftZ = 0; $leftZ &lt; $zSize; $leftZ += $zSamplingRate){</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                $rightZ = $leftZ + $zSamplingRate;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordflow">for</span>($leftY = 0; $leftY &lt; $ySize; $leftY += $ySamplingRate){</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                    $rightY = $leftY + $ySamplingRate;</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                $dz1 = ($nnz - $zz) / ($nnz - $nz);</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                $dz2 = ($zz - $nz) / ($nnz - $nz);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <span class="keywordflow">for</span>($yy = 0; $yy &lt; $ySize; ++$yy){</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                    <span class="keywordflow">if</span>($xx % $xSamplingRate !== 0 || $zz % $zSamplingRate !== 0 || $yy % $ySamplingRate !== 0){</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                        $ny = (int) ($yy / $ySamplingRate) * $ySamplingRate;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                        $nny = $ny + $ySamplingRate;</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                        $dy1 = (($nny - $yy) / ($nny - $ny));</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                        $dy2 = (($yy - $ny) / ($nny - $ny));</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                    <span class="comment">//Fetch the corner samples first - this avoids multidimensional array lookups in the inner loops,</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                    <span class="comment">//which are slow</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                    $c000 = $noiseArray[$leftX][$leftZ][$leftY];</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                    $c100 = $noiseArray[$rightX][$leftZ][$leftY];</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                    $c001 = $noiseArray[$leftX][$leftZ][$rightY];</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                    $c101 = $noiseArray[$rightX][$leftZ][$rightY];</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                    $c010 = $noiseArray[$leftX][$rightZ][$leftY];</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                    $c110 = $noiseArray[$rightX][$rightZ][$leftY];</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                    $c011 = $noiseArray[$leftX][$rightZ][$rightY];</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                    $c111 = $noiseArray[$rightX][$rightZ][$rightY];</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                        $noiseArray[$xx][$zz][$yy] = $dz1 * (</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                $dy1 * (</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                                    $dx1 * $noiseArray[$nx][$nz][$ny] + $dx2 * $noiseArray[$nnx][$nz][$ny]</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                                ) + $dy2 * (</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                                    $dx1 * $noiseArray[$nx][$nz][$nny] + $dx2 * $noiseArray[$nnx][$nz][$nny]</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                                )</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                            ) + $dz2 * (</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                                $dy1 * (</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                                    $dx1 * $noiseArray[$nx][$nnz][$ny] + $dx2 * $noiseArray[$nnx][$nnz][$ny]</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                                ) + $dy2 * (</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                                    $dx1 * $noiseArray[$nx][$nnz][$nny] + $dx2 * $noiseArray[$nnx][$nnz][$nny]</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                )</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                            );</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                    }</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                }</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            }</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        }</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="keywordflow">return</span> $noiseArray;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    }</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                    <span class="comment">//Now, lerp all the cells enclosed by the corner samples</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                    <span class="keywordflow">for</span>($xStep = 0; $xStep &lt; $xSamplingRate; $xStep++){</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                        $xx = $leftX + $xStep;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                        $dx2 = $xStep * $xLerpStep;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                        $dx1 = 1 - $dx2;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                        <span class="comment">//Lerp along the x axis first</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                        $x00 = ($c000 * $dx1) + ($c100 * $dx2);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                        $x01 = ($c001 * $dx1) + ($c101 * $dx2);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                        $x10 = ($c010 * $dx1) + ($c110 * $dx2);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                        $x11 = ($c011 * $dx1) + ($c111 * $dx2);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                        <span class="keywordflow">for</span>($zStep = 0; $zStep &lt; $zSamplingRate; $zStep++){</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                            $zz = $leftZ + $zStep;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                            $dz2 = $zStep * $zLerpStep;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                            $dz1 = 1 - $dz2;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                            <span class="comment">//Then, lerp the x lerped axis values along the z axis</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                            $z0 = $x00 * $dz1 + $x10 * $dz2;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                            $z1 = $x01 * $dz1 + $x11 * $dz2;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                            <span class="comment">//Skip first row if these are both zero</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                            $yStart = $xStep === 0 &amp;&amp; $zStep === 0 ? 1 : 0;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                            <span class="keywordflow">for</span>($yStep = $yStart; $yStep &lt; $ySamplingRate; $yStep++){</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                                $yy = $leftY + $yStep;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                                $dy2 = $yStep * $yLerpStep;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                $dy1 = 1 - $dy2;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                <span class="comment">//Finally, lerp the x/z lerped values along the y axis</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                                $noiseArray[$xx][$zz][$yy] = $dy1 * $z0 + $dy2 * $z1;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                            }</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                        }</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                    }</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                }</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            }</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        <span class="keywordflow">return</span> $noiseArray;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    }</div>
 </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>}</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1noise_1_1_noise_html"><div class="ttname"><a href="../../d2/dd0/classpocketmine_1_1world_1_1generator_1_1noise_1_1_noise.html">pocketmine\world\generator\noise\Noise</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">Noise.php:32</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1world_1_1generator_1_1noise_1_1_noise_html_a1e792c08e3c5071d7de1e9ba346e2575"><div class="ttname"><a href="../../d2/dd0/classpocketmine_1_1world_1_1generator_1_1noise_1_1_noise.html#a1e792c08e3c5071d7de1e9ba346e2575">pocketmine\world\generator\noise\Noise\noise3D</a></div><div class="ttdeci">noise3D($x, $y, $z, $normalized=false)</div><div class="ttdef"><b>Definition</b> <a href="#l00175">Noise.php:175</a></div></div>

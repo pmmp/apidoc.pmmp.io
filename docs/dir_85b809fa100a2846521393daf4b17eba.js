@@ -9,6 +9,7 @@ var dir_85b809fa100a2846521393daf4b17eba =
     [ "FireworkParticlesAnimation.php", "d9/dbe/_firework_particles_animation_8php_source.html", null ],
     [ "HurtAnimation.php", "d2/d5e/_hurt_animation_8php_source.html", null ],
     [ "ItemEntityStackSizeChangeAnimation.php", "de/d4d/_item_entity_stack_size_change_animation_8php_source.html", null ],
+    [ "MagicHitAnimation.php", "d0/dba/_magic_hit_animation_8php_source.html", null ],
     [ "RespawnAnimation.php", "da/d01/_respawn_animation_8php_source.html", null ],
     [ "SquidInkCloudAnimation.php", "d7/d29/_squid_ink_cloud_animation_8php_source.html", null ],
     [ "TotemUseAnimation.php", "d1/d87/_totem_use_animation_8php_source.html", null ]

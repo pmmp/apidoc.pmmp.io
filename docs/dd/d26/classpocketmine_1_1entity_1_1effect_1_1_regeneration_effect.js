@@ -2,7 +2,8 @@ var classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect =
 [
     [ "add", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a73cf76481b94b56fcbb5ea04b5c29293", null ],
     [ "applyEffect", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a2fc2dcb62ac854780b586524f55ed369", null ],
-    [ "canTick", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a69015c65f2aba533b51af67f3a7d3b51", null ],
+    [ "canTick", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#ad8531e42059f72e6315e1157c87c1e7a", null ],
+    [ "getApplyInterval", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a0b7ea63f3f3d9164739bd378e5900622", null ],
     [ "getColor", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6f10244e47d1979de4b4b92a84033ef6", null ],
     [ "getDefaultDuration", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a7b2e804f2bd6d6f11acae88699ccec85", null ],
     [ "getName", "dd/d26/classpocketmine_1_1entity_1_1effect_1_1_regeneration_effect.html#a6a3d10360dbcd001a11f3531e3a5234f", null ],

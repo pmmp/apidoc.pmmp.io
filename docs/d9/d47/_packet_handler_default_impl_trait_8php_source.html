@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -956,14 +956,18 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>        return false;</div>
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    }</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span> </div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleDataStoreSync(DataStoreSyncPacket $packet) : bool{</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleClientboundDataStore(ClientboundDataStorePacket $packet) : bool{</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>        return false;</div>
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>    }</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleGraphicsOverrideParameter(GraphicsOverrideParameterPacket $packet) : bool{</div>
 <div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        return false;</div>
 <div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    }</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>}</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleServerboundDataStore(ServerboundDataStorePacket $packet) : bool{</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        return false;</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    }</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

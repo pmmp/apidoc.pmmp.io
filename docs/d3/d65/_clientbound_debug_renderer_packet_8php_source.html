@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.37.4 git-0c453f585430c41919390ec01ffeb1e004b5334b</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
    </div>
   </td>
  </tr>
@@ -124,125 +124,65 @@ $(function(){initNavTree('d3/d65/_clientbound_debug_renderer_packet_8php_source.
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\ByteBufferReader;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferWriter;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use pmmp\encoding\LE;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html">ClientboundDebugRendererPacket</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">DataPacket</a> implements <a class="code hl_interface" href="../../da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet.html">ClientboundPacket</a>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span> <span class="keyword">const</span> NETWORK_ID = ProtocolInfo::CLIENTBOUND_DEBUG_RENDERER_PACKET;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span> <span class="keyword">const</span> TYPE_CLEAR = 1;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">const</span> TYPE_ADD_CUBE = 2;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $type;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use <a class="code hl_class" href="../../d3/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data.html">pocketmine\network\mcpe\protocol\types\DebugMarkerData</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html">ClientboundDebugRendererPacket</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">DataPacket</a> implements <a class="code hl_interface" href="../../da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet.html">ClientboundPacket</a>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span> <span class="keyword">const</span> NETWORK_ID = ProtocolInfo::CLIENTBOUND_DEBUG_RENDERER_PACKET;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">const</span> TYPE_CLEAR = <span class="stringliteral">&quot;cleardebugmarkers&quot;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span> <span class="keyword">const</span> TYPE_ADD_CUBE = <span class="stringliteral">&quot;adddebugmarkercube&quot;</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $type;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> ?<a class="code hl_class" href="../../d3/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data.html">DebugMarkerData</a> $data = <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//TODO: if more types are added, we&#39;ll probably want to make a separate data type and interfaces</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $text;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $red;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $green;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $blue;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> <span class="keywordtype">float</span> $alpha;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $durationMillis;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> base(<span class="keywordtype">int</span> $type) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $result = <span class="keyword">new</span> <span class="keyword">self</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $result-&gt;type = $type;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> clear() : <span class="keyword">self</span>{ <span class="keywordflow">return</span> self::base(self::TYPE_CLEAR); }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> addCube(<span class="keywordtype">string</span> $text, <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $position, <span class="keywordtype">float</span> $red, <span class="keywordtype">float</span> $green, <span class="keywordtype">float</span> $blue, <span class="keywordtype">float</span> $alpha, <span class="keywordtype">int</span> $durationMillis) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $result = self::base(self::TYPE_ADD_CUBE);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $result-&gt;text = $text;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $result-&gt;position = $position;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $result-&gt;red = $red;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $result-&gt;green = $green;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $result-&gt;blue = $blue;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        $result-&gt;alpha = $alpha;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $result-&gt;durationMillis = $durationMillis;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;type; }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">public</span> <span class="keyword">function</span> getText() : <span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;text; }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">public</span> <span class="keyword">function</span> getPosition() : <a class="code hl_class" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a>{ <span class="keywordflow">return</span> $this-&gt;position; }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">public</span> <span class="keyword">function</span> getRed() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;red; }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> getGreen() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;green; }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span> <span class="keyword">function</span> getBlue() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;blue; }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">public</span> <span class="keyword">function</span> getAlpha() : <span class="keywordtype">float</span>{ <span class="keywordflow">return</span> $this-&gt;alpha; }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">public</span> <span class="keyword">function</span> getDurationMillis() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;durationMillis; }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a0d37b0ea383d8acbdc3624a3c8d62be9">   76</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a0d37b0ea383d8acbdc3624a3c8d62be9">decodePayload</a>(ByteBufferReader $in) : void{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;type = LE::readUnsignedInt($in);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">switch</span>($this-&gt;type){</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">case</span> self::TYPE_CLEAR:</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="comment">//NOOP</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">case</span> self::TYPE_ADD_CUBE:</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                $this-&gt;text = CommonTypes::getString($in);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                $this-&gt;position = CommonTypes::getVector3($in);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                $this-&gt;red = LE::readFloat($in);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                $this-&gt;green = LE::readFloat($in);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                $this-&gt;blue = LE::readFloat($in);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                $this-&gt;alpha = LE::readFloat($in);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                $this-&gt;durationMillis = LE::readUnsignedLong($in);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">PacketDecodeException</a>(<span class="stringliteral">&quot;Unknown type &quot;</span> . $this-&gt;type);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> base(<span class="keywordtype">string</span> $type) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        $result = <span class="keyword">new</span> <span class="keyword">self</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $result-&gt;type = $type;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> clear() : <span class="keyword">self</span>{ <span class="keywordflow">return</span> self::base(self::TYPE_CLEAR); }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> addCube(<a class="code hl_class" href="../../d3/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data.html">DebugMarkerData</a> $data) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $result = self::base(self::TYPE_ADD_CUBE);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $result-&gt;data = $data;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> getType() : <span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;type; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">function</span> getData() : ?<a class="code hl_class" href="../../d3/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data.html">DebugMarkerData</a>{ <span class="keywordflow">return</span> $this-&gt;data; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a0d37b0ea383d8acbdc3624a3c8d62be9">   49</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a0d37b0ea383d8acbdc3624a3c8d62be9">decodePayload</a>(ByteBufferReader $in) : void{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;type = <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">CommonTypes</a>::getString($in);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;data = CommonTypes::readOptional($in, DebugMarkerData::read(...));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a11c1bd4ca402e298ee24f5dd3c7a4bf4">   97</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a11c1bd4ca402e298ee24f5dd3c7a4bf4">encodePayload</a>(ByteBufferWriter $out) : void{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        LE::writeUnsignedInt($out, $this-&gt;type);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">switch</span>($this-&gt;type){</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">case</span> self::TYPE_CLEAR:</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="comment">//NOOP</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">case</span> self::TYPE_ADD_CUBE:</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                CommonTypes::putString($out, $this-&gt;text);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                CommonTypes::putVector3($out, $this-&gt;position);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                LE::writeFloat($out, $this-&gt;red);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                LE::writeFloat($out, $this-&gt;green);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                LE::writeFloat($out, $this-&gt;blue);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                LE::writeFloat($out, $this-&gt;alpha);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                LE::writeUnsignedLong($out, $this-&gt;durationMillis);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Unknown type &quot;</span> . $this-&gt;type);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a11c1bd4ca402e298ee24f5dd3c7a4bf4">   54</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a11c1bd4ca402e298ee24f5dd3c7a4bf4">encodePayload</a>(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">CommonTypes</a>::putString($out, $this-&gt;type);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        CommonTypes::writeOptional($out, $this-&gt;data, fn(ByteBufferWriter $out, <a class="code hl_class" href="../../d3/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data.html">DebugMarkerData</a> $data) =&gt; $data-&gt;write($out));</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a86c69eb948c53efc5cb74ed341975ecd">  118</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a86c69eb948c53efc5cb74ed341975ecd">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        return $handler-&gt;handleClientboundDebugRenderer($this);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a86c69eb948c53efc5cb74ed341975ecd">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a86c69eb948c53efc5cb74ed341975ecd">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        return $handler-&gt;handleClientboundDebugRenderer($this);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">ClientboundDebugRendererPacket.php:23</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html_a0d37b0ea383d8acbdc3624a3c8d62be9"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a0d37b0ea383d8acbdc3624a3c8d62be9">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00076">ClientboundDebugRendererPacket.php:76</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html_a11c1bd4ca402e298ee24f5dd3c7a4bf4"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a11c1bd4ca402e298ee24f5dd3c7a4bf4">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00097">ClientboundDebugRendererPacket.php:97</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html_a86c69eb948c53efc5cb74ed341975ecd"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a86c69eb948c53efc5cb74ed341975ecd">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00118">ClientboundDebugRendererPacket.php:118</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00022">ClientboundDebugRendererPacket.php:22</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html_a0d37b0ea383d8acbdc3624a3c8d62be9"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a0d37b0ea383d8acbdc3624a3c8d62be9">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00049">ClientboundDebugRendererPacket.php:49</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html_a11c1bd4ca402e298ee24f5dd3c7a4bf4"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a11c1bd4ca402e298ee24f5dd3c7a4bf4">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00054">ClientboundDebugRendererPacket.php:54</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet_html_a86c69eb948c53efc5cb74ed341975ecd"><div class="ttname"><a href="../../da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html#a86c69eb948c53efc5cb74ed341975ecd">pocketmine\network\mcpe\protocol\ClientboundDebugRendererPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00059">ClientboundDebugRendererPacket.php:59</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00023">DataPacket.php:23</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception_html"><div class="ttname"><a href="../../d8/d0b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_decode_exception.html">pocketmine\network\mcpe\protocol\PacketDecodeException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/dc6/_packet_decode_exception_8php_source.html#l00017">PacketDecodeException.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data_html"><div class="ttname"><a href="../../d3/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_debug_marker_data.html">pocketmine\network\mcpe\protocol\types\DebugMarkerData</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dab/_debug_marker_data_8php_source.html#l00024">DebugMarkerData.php:24</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet_html"><div class="ttname"><a href="../../da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet.html">pocketmine\network\mcpe\protocol\ClientboundPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d49/_clientbound_packet_8php_source.html#l00017">ClientboundPacket.php:17</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface_html"><div class="ttname"><a href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_packet_handler_interface_8php_source.html#l00020">PacketHandlerInterface.php:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
