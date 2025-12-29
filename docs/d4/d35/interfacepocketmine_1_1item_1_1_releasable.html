@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-e9a3bc69d243d9208aea8933cfe81a1fbf667707</span>
    </div>
   </td>
  </tr>
@@ -126,15 +126,38 @@ $(function(){initNavTree('d4/d35/interfacepocketmine_1_1item_1_1_releasable.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad586783ae67ef3f8c8dafe7538f0e082" id="r_ad586783ae67ef3f8c8dafe7538f0e082"><td class="memItemLeft" align="right" valign="top"><a id="ad586783ae67ef3f8c8dafe7538f0e082" name="ad586783ae67ef3f8c8dafe7538f0e082"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>canStartUsingItem</b> (<a class="el" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player)</td></tr>
+<tr class="memitem:ad586783ae67ef3f8c8dafe7538f0e082" id="r_ad586783ae67ef3f8c8dafe7538f0e082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad586783ae67ef3f8c8dafe7538f0e082">canStartUsingItem</a> (<a class="el" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player)</td></tr>
 <tr class="separator:ad586783ae67ef3f8c8dafe7538f0e082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface implemented by objects that can be used. </p>
+<div class="textblock"><p>Implemented by items which can be used by pressing and holding the "use item" button in-game. The player's arm will appear to be raised and the "using item" flag will be set. Examples of this type of behaviour include bows, food and spyglasses.</p>
+<dl class="section see"><dt>See also</dt><dd>Player::isUsingItem() </dd>
+<dd>
+Player::getItemUseDuration() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/da1/_releasable_8php_source.html#l00031">31</a> of file <a class="el" href="../../df/da1/_releasable_8php_source.html">Releasable.php</a>.</p>
-</div><hr/>The documentation for this interface was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="../../df/da1/_releasable_8php_source.html#l00036">36</a> of file <a class="el" href="../../df/da1/_releasable_8php_source.html">Releasable.php</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad586783ae67ef3f8c8dafe7538f0e082" name="ad586783ae67ef3f8c8dafe7538f0e082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad586783ae67ef3f8c8dafe7538f0e082">&#9670;&#160;</a></span>canStartUsingItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\item\Releasable::canStartUsingItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a></td>          <td class="paramname"><span class="paramname"><em>$player</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether the player can currently trigger the press-and-hold behaviour of the item. For example, bows return whether the player has an arrow that can be fired. </p>
+
+<p>Implemented in <a class="el" href="../../d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae0c42c814600f8d60412a65f1a39832f">pocketmine\item\Bow</a>, <a class="el" href="../../dc/de1/classpocketmine_1_1item_1_1_food.html#ab2cdc8d44faef46a88800330c0e161c1">pocketmine\item\Food</a>, <a class="el" href="../../d5/d62/classpocketmine_1_1item_1_1_goat_horn.html#afb314314c73b8c57bd528f03aac361f9">pocketmine\item\GoatHorn</a>, <a class="el" href="../../d9/db1/classpocketmine_1_1item_1_1_medicine.html#aa3e111cdfbe8ba9d1759bd83039e490f">pocketmine\item\Medicine</a>, <a class="el" href="../../dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a6db5b6088d86047fe96afbdd7d06f5c5">pocketmine\item\MilkBucket</a>, <a class="el" href="../../d3/d00/classpocketmine_1_1item_1_1_potion.html#af72517d4bf2281f737f9daaf334ed22c">pocketmine\item\Potion</a>, <a class="el" href="../../d5/da3/classpocketmine_1_1item_1_1_spyglass.html#a51a0d3af451bf8b32c6a2a49f5bb6554">pocketmine\item\Spyglass</a>, and <a class="el" href="../../d3/dab/classpocketmine_1_1item_1_1_trident.html#ad01d0b82d4592a1764677b4afcd73030">pocketmine\item\Trident</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="../../df/da1/_releasable_8php_source.html">Releasable.php</a></li>
 </ul>
 </div><!-- contents -->

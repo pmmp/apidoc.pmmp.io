@@ -1,6 +1,7 @@
 var classpocketmine_1_1item_1_1_potion =
 [
     [ "canStackWith", "d3/d00/classpocketmine_1_1item_1_1_potion.html#a49a05b01faaaf071449c97060fe44926", null ],
+    [ "canStartUsingItem", "d3/d00/classpocketmine_1_1item_1_1_potion.html#af72517d4bf2281f737f9daaf334ed22c", null ],
     [ "clearCustomBlockData", "d3/d00/classpocketmine_1_1item_1_1_potion.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
     [ "clearCustomName", "d3/d00/classpocketmine_1_1item_1_1_potion.html#a336d6f91be72079853413f5b4036a57d", null ],
     [ "clearNamedTag", "d3/d00/classpocketmine_1_1item_1_1_potion.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a", null ],

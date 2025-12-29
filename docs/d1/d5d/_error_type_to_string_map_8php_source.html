@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-e9a3bc69d243d9208aea8933cfe81a1fbf667707</span>
    </div>
   </td>
  </tr>
@@ -142,26 +142,30 @@ $(function(){initNavTree('d1/d5d/_error_type_to_string_map_8php_source.html','..
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        E_USER_ERROR =&gt; <span class="stringliteral">&quot;E_USER_ERROR&quot;</span>,</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        E_USER_WARNING =&gt; <span class="stringliteral">&quot;E_USER_WARNING&quot;</span>,</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        E_USER_NOTICE =&gt; <span class="stringliteral">&quot;E_USER_NOTICE&quot;</span>,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        E_STRICT =&gt; <span class="stringliteral">&quot;E_STRICT&quot;</span>,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        E_RECOVERABLE_ERROR =&gt; <span class="stringliteral">&quot;E_RECOVERABLE_ERROR&quot;</span>,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        E_DEPRECATED =&gt; <span class="stringliteral">&quot;E_DEPRECATED&quot;</span>,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        E_USER_DEPRECATED =&gt; <span class="stringliteral">&quot;E_USER_DEPRECATED&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ];</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html#ad3c9dc37eed08d4fc6ac4d10b48fb988">   51</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">get</span>(<span class="keywordtype">int</span> $errorType) : string{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        if(!isset(self::ERROR_STRINGS[$errorType])){</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid error type $errorType&quot;</span>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> self::ERROR_STRINGS[$errorType];</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        E_RECOVERABLE_ERROR =&gt; <span class="stringliteral">&quot;E_RECOVERABLE_ERROR&quot;</span>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        E_DEPRECATED =&gt; <span class="stringliteral">&quot;E_DEPRECATED&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        E_USER_DEPRECATED =&gt; <span class="stringliteral">&quot;E_USER_DEPRECATED&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    ];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html#ad3c9dc37eed08d4fc6ac4d10b48fb988">   50</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <span class="keyword">get</span>(<span class="keywordtype">int</span> $errorType) : string{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        if(!isset(self::ERROR_STRINGS[$errorType])){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="comment">//E_STRICT constant is deprecated in PHP 8.4</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="comment">//we can&#39;t use it without polluting global error state, so the value is hardcoded for BC instead</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">if</span>(defined(<span class="stringliteral">&quot;E_STRICT&quot;</span>) &amp;&amp; $errorType === 2048){</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;E_STRICT&quot;</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Invalid error type $errorType&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> self::ERROR_STRINGS[$errorType];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1errorhandler_1_1_error_type_to_string_map_html"><div class="ttname"><a href="../../df/d91/classpocketmine_1_1errorhandler_1_1_error_type_to_string_map.html">pocketmine\errorhandler\ErrorTypeToStringMap</a></div><div class="ttdef"><b>Definition</b> <a href="#l00022">ErrorTypeToStringMap.php:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

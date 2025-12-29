@@ -98,7 +98,7 @@ var namespacepocketmine_1_1item =
     [ "RawSalmon", "df/da2/classpocketmine_1_1item_1_1_raw_salmon.html", "df/da2/classpocketmine_1_1item_1_1_raw_salmon" ],
     [ "Record", "d8/d29/classpocketmine_1_1item_1_1_record.html", "d8/d29/classpocketmine_1_1item_1_1_record" ],
     [ "Redstone", "dc/dff/classpocketmine_1_1item_1_1_redstone.html", "dc/dff/classpocketmine_1_1item_1_1_redstone" ],
-    [ "Releasable", "d4/d35/interfacepocketmine_1_1item_1_1_releasable.html", null ],
+    [ "Releasable", "d4/d35/interfacepocketmine_1_1item_1_1_releasable.html", "d4/d35/interfacepocketmine_1_1item_1_1_releasable" ],
     [ "RottenFlesh", "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh.html", "dd/d1a/classpocketmine_1_1item_1_1_rotten_flesh" ],
     [ "Shears", "dd/d7b/classpocketmine_1_1item_1_1_shears.html", "dd/d7b/classpocketmine_1_1item_1_1_shears" ],
     [ "Shovel", "d8/d37/classpocketmine_1_1item_1_1_shovel.html", "d8/d37/classpocketmine_1_1item_1_1_shovel" ],

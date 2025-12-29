@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-e9a3bc69d243d9208aea8933cfe81a1fbf667707</span>
    </div>
   </td>
  </tr>
@@ -217,7 +217,7 @@ $(function(){initNavTree('d6/d34/_binary_stream_8php_source.html','../../'); ini
 </div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">public</span> <span class="keyword">function</span> putByte(<span class="keywordtype">int</span> $v) : void{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        $this-&gt;buffer .= chr($v);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        $this-&gt;buffer .= chr($v &amp; 0xff);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="foldopen" id="foldopen00129" data-start="{" data-end="}">

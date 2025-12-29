@@ -2,6 +2,7 @@ var classpocketmine_1_1item_1_1_bow =
 [
     [ "applyDamage", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a66d8aa38bb8fd5197eed6335fc48453a", null ],
     [ "canStackWith", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a49a05b01faaaf071449c97060fe44926", null ],
+    [ "canStartUsingItem", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#ae0c42c814600f8d60412a65f1a39832f", null ],
     [ "clearCustomBlockData", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
     [ "clearCustomName", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a336d6f91be72079853413f5b4036a57d", null ],
     [ "clearNamedTag", "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a", null ],

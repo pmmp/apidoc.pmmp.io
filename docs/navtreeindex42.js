@@ -1,5 +1,11 @@
 var NAVTREEINDEX42 =
 {
+"d2/da2/classpocketmine_1_1block_1_1_button.html#ac7c6b2cf8fdce0bf501dc62d06b04aff":[2,0,0,0,37,6],
+"d2/da2/classpocketmine_1_1block_1_1_button.html#ac7c6b2cf8fdce0bf501dc62d06b04aff":[3,0,1,0,39,6],
+"d2/da2/classpocketmine_1_1block_1_1_button.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,37,52],
+"d2/da2/classpocketmine_1_1block_1_1_button.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,39,52],
+"d2/da2/classpocketmine_1_1block_1_1_button.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,37,0],
+"d2/da2/classpocketmine_1_1block_1_1_button.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,39,0],
 "d2/da2/classpocketmine_1_1block_1_1_button.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,37,25],
 "d2/da2/classpocketmine_1_1block_1_1_button.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,39,25],
 "d2/da2/classpocketmine_1_1block_1_1_button.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,37,58],
@@ -243,11 +249,5 @@ var NAVTREEINDEX42 =
 "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,120,4],
 "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,122,4],
 "d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,120,17],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,122,17],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,120,34],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,122,34],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,120,23],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,122,23],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,120,31],
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,122,31]
+"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,122,17]
 };

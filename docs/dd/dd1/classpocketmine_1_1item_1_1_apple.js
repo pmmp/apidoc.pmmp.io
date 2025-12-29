@@ -1,6 +1,7 @@
 var classpocketmine_1_1item_1_1_apple =
 [
     [ "canStackWith", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a49a05b01faaaf071449c97060fe44926", null ],
+    [ "canStartUsingItem", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#ab2cdc8d44faef46a88800330c0e161c1", null ],
     [ "clearCustomBlockData", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
     [ "clearCustomName", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a336d6f91be72079853413f5b4036a57d", null ],
     [ "clearNamedTag", "dd/dd1/classpocketmine_1_1item_1_1_apple.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a", null ],

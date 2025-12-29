@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-e9a3bc69d243d9208aea8933cfe81a1fbf667707</span>
    </div>
   </td>
  </tr>
@@ -636,7 +636,7 @@ $(function(){initNavTree('df/d16/_level_d_b_8php_source.html','../../'); initRes
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        $subChunkKeyOffset = self::hasOffsetCavesAndCliffsSubChunks($chunkVersion) ? self::CAVES_CLIFFS_EXPERIMENTAL_SUBCHUNK_KEY_OFFSET : 0;</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        <span class="keywordflow">for</span>($y = Chunk::MIN_SUBCHUNK_INDEX; $y &lt;= Chunk::MAX_SUBCHUNK_INDEX; ++$y){</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>            <span class="keywordflow">if</span>(($data = $this-&gt;db-&gt;get($index . ChunkDataKey::SUBCHUNK . chr($y + $subChunkKeyOffset))) === <span class="keyword">false</span>){</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>            <span class="keywordflow">if</span>(($data = $this-&gt;db-&gt;get($index . ChunkDataKey::SUBCHUNK . chr(($y + $subChunkKeyOffset) &amp; 0xff))) === <span class="keyword">false</span>){</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                $subChunks[$y] = <span class="keyword">new</span> SubChunk(Block::EMPTY_STATE_ID, [], $biomeArrays[$y]);</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>            }</div>
@@ -823,7 +823,7 @@ $(function(){initNavTree('df/d16/_level_d_b_8php_source.html','../../'); initRes
 <div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        <span class="keywordflow">if</span>(($dirtyFlags &amp; Chunk::DIRTY_FLAG_BLOCKS) !== 0){</div>
 <div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span> </div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>            <span class="keywordflow">foreach</span>($subChunks as $y =&gt; $subChunk){</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>                $key = $index . ChunkDataKey::SUBCHUNK . chr($y);</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>                $key = $index . ChunkDataKey::SUBCHUNK . chr($y &amp; 0xff);</div>
 <div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                <span class="keywordflow">if</span>($subChunk-&gt;isEmptyAuthoritative()){</div>
 <div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>                    $write-&gt;delete($key);</div>
 <div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                }<span class="keywordflow">else</span>{</div>

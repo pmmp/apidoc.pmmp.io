@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#ab2ee843c2cf4cb7c4f4f4d75988d0187":[3,0,1,30,2,3,1,7],
+"d0/d39/_broadcast_logger_forwarder_8php_source.html":[4,0,0,23,1],
 "d0/d39/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_float_game_rule.html":[3,0,1,16,0,6,1,47],
 "d0/d3a/_chunk_load_event_8php_source.html":[4,0,0,7,6,1],
 "d0/d3a/_redstone_torch_8php_source.html":[4,0,0,0,196],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a099fce07daf8c0ce633456ea00b4272b":[3,0,1,7,2,0,56],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a12c36fb08c3fec631c7f5e786b22346c":[3,0,1,7,2,0,27],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a1380adc70073eca8b76083e7357c44ea":[3,0,1,7,2,0,17],
-"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a180ddec765d91d56a76789284587ac89":[3,0,1,7,2,0,46],
-"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7":[3,0,1,7,2,0,25],
-"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a1c05137f3b4e08df3be0b372726021b1":[3,0,1,7,2,0,49]
+"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a180ddec765d91d56a76789284587ac89":[3,0,1,7,2,0,46]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-e9a3bc69d243d9208aea8933cfe81a1fbf667707</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,8 @@ $(function(){initNavTree('d3/dc6/_console_reader_child_process_8php_source.html'
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>use <span class="keyword">const</span> PHP_EOL;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>use <span class="keyword">const</span> STDOUT;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordflow">if</span>(count($argv) !== 2 || !is_numeric($argv[1])){</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    echo <span class="stringliteral">&quot;Usage: &quot;</span> . $argv[0] . <span class="stringliteral">&quot; &lt;command token seed&gt;&quot;</span> . PHP_EOL;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordflow">if</span>(!isset($argv) || count($argv) !== 2 || !is_numeric($argv[1])){</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    echo <span class="stringliteral">&quot;Usage: &quot;</span> . __FILE__ . <span class="stringliteral">&quot; &lt;command token seed&gt;&quot;</span> . PHP_EOL;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    exit(1);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>

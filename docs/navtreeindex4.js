@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a1bc4a8d3a405c0923c2ed2a8dbcff9a7":[3,0,1,7,2,0,25],
+"d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a1c05137f3b4e08df3be0b372726021b1":[3,0,1,7,2,0,49],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a1cb36d5dd35dc4ee35b2f6e59d93e17b":[3,0,1,7,2,0,33],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a22a098fc4892820db7d15a73edea64ca":[3,0,1,7,2,0,10],
 "d0/d6c/classpocketmine_1_1entity_1_1object_1_1_area_effect_cloud.html#a23093e6281aba70471af5c5e34051667":[3,0,1,7,2,0,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "d0/d6f/classpocketmine_1_1player_1_1_player.html#afdd4efc12fe21730ceb104af111f576d":[3,0,1,18,5,60],
 "d0/d70/block_2utils_2_ageable_8php_source.html":[4,0,0,0,2,0],
 "d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html":[2,0,0,4,0],
-"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html":[3,0,1,11,2],
-"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a0104746c6eceddc519011f354d610438":[2,0,0,4,0,6],
-"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html#a0104746c6eceddc519011f354d610438":[3,0,1,11,2,6]
+"d0/d70/classpocketmine_1_1inventory_1_1_armor_inventory.html":[3,0,1,11,2]
 };

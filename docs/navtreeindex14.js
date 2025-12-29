@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html":[2,0,0,2,13],
+"d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html":[3,0,1,7,18],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html#a3fb40491d9ee68d833e434b8900c84f2":[2,0,0,2,13,2],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html#a3fb40491d9ee68d833e434b8900c84f2":[3,0,1,7,18,2],
 "d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html#a4816eb6320b7a099f0ac33e053525429":[2,0,0,2,13,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,187,12],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,189,12],
 "d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,187,55],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,189,55],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,187,49],
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,189,49]
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,189,55]
 };

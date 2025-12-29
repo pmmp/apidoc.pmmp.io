@@ -1,6 +1,7 @@
 var classpocketmine_1_1item_1_1_milk_bucket =
 [
     [ "canStackWith", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a49a05b01faaaf071449c97060fe44926", null ],
+    [ "canStartUsingItem", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a6db5b6088d86047fe96afbdd7d06f5c5", null ],
     [ "clearCustomBlockData", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a11483f8bbc44517bf2a25e40a3aa7558", null ],
     [ "clearCustomName", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a336d6f91be72079853413f5b4036a57d", null ],
     [ "clearNamedTag", "dd/dc0/classpocketmine_1_1item_1_1_milk_bucket.html#a9b5b8368eb3d8389cb9ad26d09dd7a8a", null ],

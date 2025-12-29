@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.2 git-59db51750690dc8eb9a19c265b912b7701b2f31f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-e9a3bc69d243d9208aea8933cfe81a1fbf667707</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,7 @@ $(function(){initNavTree('dc/d04/scan_8php_source.html','../../'); initResizable
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>require dirname(__DIR__) . <span class="stringliteral">&#39;/vendor/autoload.php&#39;</span>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordflow">if</span>(count($argv) === 3){</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordflow">if</span>(isset($argv) &amp;&amp; count($argv) === 3){</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    $broadcastAddress = $argv[1];</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    $port = (int) $argv[2];</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}<span class="keywordflow">else</span>{</div>

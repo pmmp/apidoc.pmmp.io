@@ -1,5 +1,11 @@
 var NAVTREEINDEX40 =
 {
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,62,52],
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,64,52],
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,62,36],
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,64,36],
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[2,0,0,0,62,61],
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a4bc78712a6bf9ec1e50890f716dbbd2d":[3,0,1,0,64,61],
 "d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,62,46],
 "d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,64,46],
 "d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a57b1586e3b6d81440be1aa89471f2a2a":[2,0,0,0,62,53],
@@ -243,11 +249,5 @@ var NAVTREEINDEX40 =
 "d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,14,15],
 "d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,16,15],
 "d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,14,44],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,16,44],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#adc7b2fcbcc10f046b1cbcafdd0858863":[2,0,0,0,14,1],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#adc7b2fcbcc10f046b1cbcafdd0858863":[3,0,1,0,16,1],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#add4d4fd4fecc779dee9c9f94b8a556e5":[2,0,0,0,14,5],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#add4d4fd4fecc779dee9c9f94b8a556e5":[3,0,1,0,16,5],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,14,34],
-"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,16,34]
+"d2/d83/classpocketmine_1_1block_1_1_base_rail.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,16,44]
 };

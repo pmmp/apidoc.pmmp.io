@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"d0/dd8/_stem_8php_source.html":[4,0,0,0,227],
+"d0/dd8/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_spawn_response_packet_handler.html":[3,0,1,16,0,5,12],
 "d0/dd8/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_spawn_response_packet_handler.html#a1d2f45d14ddd97e7da7f66a8afe763c9":[3,0,1,16,0,5,12,0],
 "d0/ddc/_chest_close_sound_8php_source.html":[4,0,0,25,5,40],
 "d0/dde/_crops_8php_source.html":[4,0,0,0,83],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#addf6091efc06869f310cfcdc937d1e6d":[2,0,0,3,1,30,3],
 "d0/dfb/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_entity_event.html#addf6091efc06869f310cfcdc937d1e6d":[3,0,1,9,1,30,3],
 "d0/dfc/_entity_item_pickup_event_8php_source.html":[4,0,0,7,1,18],
-"d0/dfc/_level_chunk_packet_8php_source.html":[4,0,1,0,1,0,91],
-"d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html":[2,0,0,2,13],
-"d0/dfc/classpocketmine_1_1entity_1_1_hunger_manager.html":[3,0,1,7,18]
+"d0/dfc/_level_chunk_packet_8php_source.html":[4,0,1,0,1,0,91]
 };
