@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-0b6d8f8cb2aaa05ffad0b6386bd88d73ef54b395</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-4bda8738834730bd0be194d0a488229aa89d6d0e</span>
    </div>
   </td>
  </tr>
@@ -212,7 +212,7 @@ $(function(){initNavTree('db/dad/_query_handler_8php_source.html','../../'); ini
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">case</span> self::STATISTICS: <span class="comment">//Stat</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $token = BE::readUnsignedInt($stream);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    $token = BE::readSignedInt($stream);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    <span class="keywordflow">if</span>($token !== ($t1 = self::getTokenString($this-&gt;token, $address)) &amp;&amp; $token !== ($t2 = self::getTokenString($this-&gt;lastToken, $address))){</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        $this-&gt;logger-&gt;debug(<span class="stringliteral">&quot;Bad token $token from $address $port, expected $t1 or $t2&quot;</span>);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>

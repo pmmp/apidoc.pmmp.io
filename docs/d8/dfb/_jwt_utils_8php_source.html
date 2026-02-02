@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.3 git-0b6d8f8cb2aaa05ffad0b6386bd88d73ef54b395</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-4bda8738834730bd0be194d0a488229aa89d6d0e</span>
    </div>
   </td>
  </tr>
@@ -281,7 +281,7 @@ $(function(){initNavTree('d8/dfb/_jwt_utils_8php_source.html','../../'); initRes
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $v = openssl_verify(</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            $header . <span class="charliteral">&#39;.&#39;</span> . $body,</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            $derSignature,</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            self::derPublicKeyToPem($signingKeyDer),</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            self::parseDerPublicKey($signingKeyDer),</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            $ec ? self::SIGNATURE_ALGORITHM : OPENSSL_ALGO_SHA256</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        );</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">switch</span>($v){</div>
