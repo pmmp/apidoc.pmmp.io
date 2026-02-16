@@ -1,10 +1,10 @@
 var dir_a084c78965e105250c47f67113e6cfdd =
 [
     [ "CameraAimAssistActionType.php", "dd/dc9/_camera_aim_assist_action_type_8php_source.html", null ],
+    [ "CameraAimAssistActorPriorityData.php", "d1/d97/_camera_aim_assist_actor_priority_data_8php_source.html", null ],
     [ "CameraAimAssistCategory.php", "d4/dd0/_camera_aim_assist_category_8php_source.html", null ],
-    [ "CameraAimAssistCategoryBlockPriority.php", "d1/d4c/_camera_aim_assist_category_block_priority_8php_source.html", null ],
-    [ "CameraAimAssistCategoryEntityPriority.php", "d1/de7/_camera_aim_assist_category_entity_priority_8php_source.html", null ],
     [ "CameraAimAssistCategoryPriorities.php", "de/d76/_camera_aim_assist_category_priorities_8php_source.html", null ],
+    [ "CameraAimAssistCategoryPriority.php", "d1/d8f/_camera_aim_assist_category_priority_8php_source.html", null ],
     [ "CameraAimAssistPreset.php", "d2/d1e/_camera_aim_assist_preset_8php_source.html", null ],
     [ "CameraAimAssistPresetExclusionDefinition.php", "d7/d71/_camera_aim_assist_preset_exclusion_definition_8php_source.html", null ],
     [ "CameraAimAssistPresetItemSettings.php", "d4/dd2/_camera_aim_assist_preset_item_settings_8php_source.html", null ],
@@ -16,11 +16,13 @@ var dir_a084c78965e105250c47f67113e6cfdd =
     [ "CameraFovInstruction.php", "de/db1/_camera_fov_instruction_8php_source.html", null ],
     [ "CameraPreset.php", "d8/df0/_camera_preset_8php_source.html", null ],
     [ "CameraPresetAimAssist.php", "d4/ddd/_camera_preset_aim_assist_8php_source.html", null ],
+    [ "CameraProgressOption.php", "d0/d64/_camera_progress_option_8php_source.html", null ],
     [ "CameraRotationOption.php", "d0/d56/_camera_rotation_option_8php_source.html", null ],
     [ "CameraSetInstruction.php", "d4/da6/_camera_set_instruction_8php_source.html", null ],
     [ "CameraSetInstructionEase.php", "d5/d58/_camera_set_instruction_ease_8php_source.html", null ],
     [ "CameraSetInstructionEaseType.php", "de/dbb/_camera_set_instruction_ease_type_8php_source.html", null ],
     [ "CameraSetInstructionRotation.php", "d9/db8/_camera_set_instruction_rotation_8php_source.html", null ],
+    [ "CameraSplineDefinition.php", "dd/dc7/_camera_spline_definition_8php_source.html", null ],
     [ "CameraSplineInstruction.php", "da/dc7/_camera_spline_instruction_8php_source.html", null ],
     [ "CameraTargetInstruction.php", "de/d22/_camera_target_instruction_8php_source.html", null ]
 ];

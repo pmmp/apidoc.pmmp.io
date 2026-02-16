@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-fc9be17cf51063d4d1d23df927963d00a2f03f09</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-dec84fe67dc3319e33f5066e5d03b16f00f2ff4c</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,12 @@ $(function(){initNavTree('da/d58/deprecated.html','../../'); initResizable(true)
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Member <a class="el" href="../../dc/db6/namespacepocketmine_1_1utils.html#ac8a9451e10503894f63193bcb2785ef5">pocketmine::utils::CloningRegistryTrait</a>  </dt>
+<dd><a class="anchor" id="_deprecated000152"></a>Superseded by <code><a class="el" href="../../d6/dd9/classpocketmine_1_1utils_1_1_registry_source.html">RegistrySource</a></code>  </dd>
 <dt>Member <a class="el" href="../../dc/db6/namespacepocketmine_1_1utils.html#af2f53ef1ec175cd5613025a0513a3d97">pocketmine::utils::EnumTrait</a>  </dt>
-<dd><a class="anchor" id="_deprecated000152"></a>Use native PHP 8.1 enums instead. Use <code><a class="el" href="">LegacyEnumShimTrait</a></code> if you need to provide backwards compatible EnumTrait-like API for migrated enums.  </dd>
+<dd><a class="anchor" id="_deprecated000153"></a>Use native PHP 8.1 enums instead. Use <code><a class="el" href="">LegacyEnumShimTrait</a></code> if you need to provide backwards compatible EnumTrait-like API for migrated enums.  </dd>
+<dt>Member <a class="el" href="../../dc/db6/namespacepocketmine_1_1utils.html#a567edfa557749f22f42f6a2df53b5838">pocketmine::utils::RegistryTrait</a>  </dt>
+<dd><a class="anchor" id="_deprecated000156"></a>Superseded by <code><a class="el" href="../../d6/dd9/classpocketmine_1_1utils_1_1_registry_source.html">RegistrySource</a></code> </dd>
 <dt>Member <a class="el" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a0f649b79e6c05fc9f8d744ff69bb0b23">pocketmine\block\BaseSign::getText</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>  </dd>
 <dt>Member <a class="el" href="../../df/d0b/classpocketmine_1_1block_1_1_base_sign.html#ac38134f941cceb363658c3fdfeccb9a4">pocketmine\block\BaseSign::setText</a>  (SignText $text)</dt>
@@ -366,8 +370,8 @@ $(function(){initNavTree('da/d58/deprecated.html','../../'); initResizable(true)
 <dt>Member <a class="el" href="../../d3/df7/classpocketmine_1_1_memory_manager.html#a2a420ac63120c701f02f024ef3b8ae11">pocketmine\MemoryManager::dumpMemory</a>  (mixed $startingObject, string $outputFolder, int $maxNesting, int $maxStringSize, \<a class="el" href="../../d4/d00/interface_logger.html">Logger</a> $logger)</dt>
 <dd><a class="anchor" id="_deprecated000129"></a>  </dd>
 <dt>Member <a class="el" href="../../d5/df4/classpocketmine_1_1nbt_1_1tag_1_1_list_tag.html#af4536430dc517a3e4f7283d1c760bc4a">pocketmine\nbt\tag\ListTag::setTagType</a>  (int $type)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000164"></a> Sets the type of tag that can be added to this list. If TAG_End is used, the type will be auto-detected from the first tag added to the list.</p>
-<p class="enddd"><a class="anchor" id="_deprecated000165"></a>As of 1.1, an empty list's type will always be inferred from the first <a class="el" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> to be inserted. Therefore, this function is now useless.  </p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000166"></a> Sets the type of tag that can be added to this list. If TAG_End is used, the type will be auto-detected from the first tag added to the list.</p>
+<p class="enddd"><a class="anchor" id="_deprecated000167"></a>As of 1.1, an empty list's type will always be inferred from the first <a class="el" href="../../dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html">Tag</a> to be inserted. Therefore, this function is now useless.  </p>
 </dd>
 <dt>Member <a class="el" href="../../da/d0a/classpocketmine_1_1permission_1_1_permission_manager.html#a43a8f05643252277a182926926952242">pocketmine\permission\PermissionManager::getPermissionSubscriptions</a>  (string $permission)</dt>
 <dd><a class="anchor" id="_deprecated000133"></a>Superseded by server chat broadcast channels  </dd>
@@ -412,23 +416,23 @@ $(function(){initNavTree('da/d58/deprecated.html','../../'); initResizable(true)
 <dt>Member <a class="el" href="../../d7/d9b/classpocketmine_1_1timings_1_1_timings_handler.html#a1b6e3c8b2fd755943c660b6077911de5">pocketmine\timings\TimingsHandler::printTimings</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000151"></a>This only collects timings from the main thread. Collecting timings from all threads is an async operation, so it can't be done synchronously. </dd>
 <dt>Member <a class="el" href="../../d8/d9e/classpocketmine_1_1utils_1_1_process.html#a1ae6452e6e1b5e8ab6e135f649ba8e28">pocketmine\utils\Process::kill</a>  (int $pid, bool $subprocesses=false)</dt>
-<dd><a class="anchor" id="_deprecated000154"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0671e59be6d7188889a00867161762c1">pocketmine\utils\TextFormat::STRIKETHROUGH</a>  </dt>
 <dd><a class="anchor" id="_deprecated000155"></a>  </dd>
-<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a03dd8524c7027c0cf97238eaddca3de5">pocketmine\utils\TextFormat::UNDERLINE</a>  </dt>
-<dd><a class="anchor" id="_deprecated000156"></a>  </dd>
-<dt>Member <a class="el" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">pocketmine\utils\Utils::cloneCallback</a>  ()</dt>
+<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a0671e59be6d7188889a00867161762c1">pocketmine\utils\TextFormat::STRIKETHROUGH</a>  </dt>
 <dd><a class="anchor" id="_deprecated000157"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a29cc61d550f0851f92c81e6de5b22137">pocketmine\wizard\SetupWizard::DEFAULT_NAME</a>  </dt>
+<dt>Member <a class="el" href="../../dd/db5/classpocketmine_1_1utils_1_1_text_format.html#a03dd8524c7027c0cf97238eaddca3de5">pocketmine\utils\TextFormat::UNDERLINE</a>  </dt>
 <dd><a class="anchor" id="_deprecated000158"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a56f5764f3c3646e79bc25c2f0a09b033">pocketmine\wizard\SetupWizard::DEFAULT_PLAYERS</a>  </dt>
-<dd><a class="anchor" id="_deprecated000160"></a>  </dd>
-<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#aca92aa8fd97856d4aa6bbc74fa7efccf">pocketmine\wizard\SetupWizard::DEFAULT_PORT</a>  </dt>
+<dt>Member <a class="el" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html#aac62997164a42bfbaa201b2d66a27c55">pocketmine\utils\Utils::cloneCallback</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000159"></a>  </dd>
+<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a29cc61d550f0851f92c81e6de5b22137">pocketmine\wizard\SetupWizard::DEFAULT_NAME</a>  </dt>
+<dd><a class="anchor" id="_deprecated000160"></a>  </dd>
+<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#a56f5764f3c3646e79bc25c2f0a09b033">pocketmine\wizard\SetupWizard::DEFAULT_PLAYERS</a>  </dt>
+<dd><a class="anchor" id="_deprecated000162"></a>  </dd>
+<dt>Member <a class="el" href="../../d7/dde/classpocketmine_1_1wizard_1_1_setup_wizard.html#aca92aa8fd97856d4aa6bbc74fa7efccf">pocketmine\wizard\SetupWizard::DEFAULT_PORT</a>  </dt>
+<dd><a class="anchor" id="_deprecated000161"></a>  </dd>
 <dt>Member <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a72b2673cda248e41ef6b73b8d50bd192">pocketmine\world\World::getChunkPlayers</a>  (int $chunkX, int $chunkZ)</dt>
-<dd><a class="anchor" id="_deprecated000161"></a>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk. </dd>
+<dd><a class="anchor" id="_deprecated000163"></a>WARNING: This function has a misleading name. Contrary to what the name might imply, this function DOES NOT return players who are IN a chunk, rather, it returns players who can SEE the chunk. </dd>
 <dt>Member <a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a66641714cd2375a754e4e105b8bf12c0">pocketmine\world\World::getCollisionBoxes</a>  (Entity $entity, AxisAlignedBB $bb, bool $entities=true)</dt>
-<dd><a class="anchor" id="_deprecated000162"></a>Use <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a9316f2b8d9e016ccdce8b57d78d9f9e2">World::getBlockCollisionBoxes()</a></code> instead (alongside <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98697e8c47a2ed43da52da0c77f0a2d4">World::getCollidingEntities()</a></code> if entity collision boxes are also required).</dd>
+<dd><a class="anchor" id="_deprecated000164"></a>Use <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a9316f2b8d9e016ccdce8b57d78d9f9e2">World::getBlockCollisionBoxes()</a></code> instead (alongside <code><a class="el" href="../../d4/d2b/classpocketmine_1_1world_1_1_world.html#a98697e8c47a2ed43da52da0c77f0a2d4">World::getCollidingEntities()</a></code> if entity collision boxes are also required).</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

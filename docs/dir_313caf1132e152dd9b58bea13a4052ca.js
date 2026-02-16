@@ -20,6 +20,7 @@ var dir_313caf1132e152dd9b58bea13a4052ca =
     [ "ObjectSet.php", "da/da1/_object_set_8php_source.html", null ],
     [ "Process.php", "d1/dcb/_process_8php_source.html", null ],
     [ "Random.php", "d8/dbd/_random_8php_source.html", null ],
+    [ "RegistrySource.php", "da/dfc/_registry_source_8php_source.html", null ],
     [ "RegistryTrait.php", "da/df4/_registry_trait_8php_source.html", null ],
     [ "ReversePriorityQueue.php", "d2/dcd/_reverse_priority_queue_8php_source.html", null ],
     [ "ServerException.php", "d6/ddf/_server_exception_8php_source.html", null ],

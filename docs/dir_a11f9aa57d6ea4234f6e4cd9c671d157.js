@@ -18,6 +18,6 @@ var dir_a11f9aa57d6ea4234f6e4cd9c671d157 =
     [ "SlownessEffect.php", "d6/db1/_slowness_effect_8php_source.html", null ],
     [ "SpeedEffect.php", "d9/d00/_speed_effect_8php_source.html", null ],
     [ "StringToEffectParser.php", "db/dc6/_string_to_effect_parser_8php_source.html", null ],
-    [ "VanillaEffects.php", "d7/d0d/_vanilla_effects_8php_source.html", null ],
+    [ "VanillaEffectsInputs.php", "dc/dd0/_vanilla_effects_inputs_8php_source.html", null ],
     [ "WitherEffect.php", "d8/dff/_wither_effect_8php_source.html", null ]
 ];

@@ -3,8 +3,6 @@ var dir_e64dd50e80ee3730265ab587bc10b64e =
     [ "block", "dir_476d7bdb718a2b0f4102d6b9c513c8f8.html", "dir_476d7bdb718a2b0f4102d6b9c513c8f8" ],
     [ "item", "dir_71f1e627954ef110d7fffbc575066ce3.html", "dir_71f1e627954ef110d7fffbc575066ce3" ],
     [ "BannerPatternTypeIdMap.php", "db/d32/_banner_pattern_type_id_map_8php_source.html", null ],
-    [ "BedrockDataFiles.php", "d8/db3/_bedrock_data_files_8php_source.html", null ],
-    [ "BiomeIds.php", "d0/d7a/_biome_ids_8php_source.html", null ],
     [ "CompoundTypeIds.php", "d7/d67/_compound_type_ids_8php_source.html", null ],
     [ "DyeColorIdMap.php", "dd/d94/_dye_color_id_map_8php_source.html", null ],
     [ "EffectIdMap.php", "d1/dc8/_effect_id_map_8php_source.html", null ],

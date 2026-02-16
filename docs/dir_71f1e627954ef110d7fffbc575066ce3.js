@@ -6,7 +6,6 @@ var dir_71f1e627954ef110d7fffbc575066ce3 =
     [ "ItemSerializer.php", "d3/dc6/_item_serializer_8php_source.html", null ],
     [ "ItemSerializerDeserializerRegistrar.php", "df/de9/_item_serializer_deserializer_registrar_8php_source.html", null ],
     [ "ItemTypeDeserializeException.php", "de/d89/_item_type_deserialize_exception_8php_source.html", null ],
-    [ "ItemTypeNames.php", "dc/de7/_item_type_names_8php_source.html", null ],
     [ "ItemTypeSerializeException.php", "d7/df7/_item_type_serialize_exception_8php_source.html", null ],
     [ "SavedItemData.php", "df/dcd/_saved_item_data_8php_source.html", null ],
     [ "SavedItemStackData.php", "d8/d3e/_saved_item_stack_data_8php_source.html", null ],

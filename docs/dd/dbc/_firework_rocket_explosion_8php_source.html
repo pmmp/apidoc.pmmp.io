@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-fc9be17cf51063d4d1d23df927963d00a2f03f09</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-dec84fe67dc3319e33f5066e5d03b16f00f2ff4c</span>
    </div>
   </td>
  </tr>
@@ -195,7 +195,7 @@ $(function(){initNavTree('dd/dbc/_firework_rocket_explosion_8php_source.html','.
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $dyeColorIdMap = DyeColorIdMap::getInstance();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">foreach</span>($colors as $color){</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $colorsBytes .= chr($dyeColorIdMap-&gt;toInvertedId($color));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $colorsBytes .= chr($dyeColorIdMap-&gt;toInvertedId($color) &amp; 0xff);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> $colorsBytes;</div>

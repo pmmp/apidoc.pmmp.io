@@ -45,7 +45,7 @@ var classpocketmine_1_1block_1_1_frosted_ice =
     [ "hasEntityCollision", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#ad925607ef09026804dbbf059583e3add", null ],
     [ "hasSameTypeId", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#acfa7766036568571b645ae89ceb1029e", null ],
     [ "hasTypeTag", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a43e3458847422ebd5dec6c914b443c93", null ],
-    [ "isAffectedBySilkTouch", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a896f7d2a3f24763c90ca8d7183778e92", null ],
+    [ "isAffectedBySilkTouch", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#aa2310449acf1678f19cbc251eba3b266", null ],
     [ "isFlammable", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e", null ],
     [ "isSameState", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a1ce2444f76246982cfbb507fed99a48e", null ],
     [ "isSolid", "d9/d1a/classpocketmine_1_1block_1_1_frosted_ice.html#a028afd613a6f42370ede9aec4c9796d6", null ],

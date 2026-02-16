@@ -18,6 +18,7 @@ var namespacepocketmine_1_1utils =
     [ "ObjectSet", "dd/de5/classpocketmine_1_1utils_1_1_object_set.html", "dd/de5/classpocketmine_1_1utils_1_1_object_set" ],
     [ "Process", "d8/d9e/classpocketmine_1_1utils_1_1_process.html", "d8/d9e/classpocketmine_1_1utils_1_1_process" ],
     [ "Random", "db/dcb/classpocketmine_1_1utils_1_1_random.html", "db/dcb/classpocketmine_1_1utils_1_1_random" ],
+    [ "RegistrySource", "d6/dd9/classpocketmine_1_1utils_1_1_registry_source.html", "d6/dd9/classpocketmine_1_1utils_1_1_registry_source" ],
     [ "ReversePriorityQueue", "df/dad/classpocketmine_1_1utils_1_1_reverse_priority_queue.html", "df/dad/classpocketmine_1_1utils_1_1_reverse_priority_queue" ],
     [ "ServerException", "d8/d65/classpocketmine_1_1utils_1_1_server_exception.html", null ],
     [ "ServerKiller", "d2/d87/classpocketmine_1_1utils_1_1_server_killer.html", null ],

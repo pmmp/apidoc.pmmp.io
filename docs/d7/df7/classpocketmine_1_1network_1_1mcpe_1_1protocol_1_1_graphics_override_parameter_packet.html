@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-fc9be17cf51063d4d1d23df927963d00a2f03f09</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-dec84fe67dc3319e33f5066e5d03b16f00f2ff4c</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a245b65fde4dd08b9ab29026ca1294f12" id="r_a245b65fde4dd08b9ab29026ca1294f12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a245b65fde4dd08b9ab29026ca1294f12">getParameterType</a> ()</td></tr>
 <tr class="separator:a245b65fde4dd08b9ab29026ca1294f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dc8eef13189184d52f0f7105403c28" id="r_a54dc8eef13189184d52f0f7105403c28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54dc8eef13189184d52f0f7105403c28">getUnknownFloat</a> ()</td></tr>
+<tr class="separator:a54dc8eef13189184d52f0f7105403c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0d06b4ca99083ad3f2b54b0c7b1c2b" id="r_aae0d06b4ca99083ad3f2b54b0c7b1c2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae0d06b4ca99083ad3f2b54b0c7b1c2b">getUnknownVector3</a> ()</td></tr>
+<tr class="separator:aae0d06b4ca99083ad3f2b54b0c7b1c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee8468607eff0030a115f29980259d5" id="r_a8ee8468607eff0030a115f29980259d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ee8468607eff0030a115f29980259d5">getValues</a> ()</td></tr>
 <tr class="separator:a8ee8468607eff0030a115f29980259d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83d84d3a8fcc1a4286e8617803ea631" id="r_ae83d84d3a8fcc1a4286e8617803ea631"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae83d84d3a8fcc1a4286e8617803ea631">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
@@ -156,8 +160,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a02351f44a210bc0b53362828e0eee226" id="r_a02351f44a210bc0b53362828e0eee226"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02351f44a210bc0b53362828e0eee226">create</a> (array $values, string $biomeIdentifier, GraphicsOverrideParameterType $parameterType, bool $reset)</td></tr>
-<tr class="separator:a02351f44a210bc0b53362828e0eee226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f49b83d71a3aaf4a15ce3b3b966ea7b" id="r_a8f49b83d71a3aaf4a15ce3b3b966ea7b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f49b83d71a3aaf4a15ce3b3b966ea7b">create</a> (array $values, float $unknownFloat, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $unknownVector3, string $biomeIdentifier, GraphicsOverrideParameterType $parameterType, bool $reset)</td></tr>
+<tr class="separator:a8f49b83d71a3aaf4a15ce3b3b966ea7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -183,7 +187,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00026">26</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00028">28</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9e53bcf6c12eab41fd619f5d812c1be2" name="a9e53bcf6c12eab41fd619f5d812c1be2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e53bcf6c12eab41fd619f5d812c1be2">&#9670;&#160;</a></span>__get()</h2>
@@ -286,8 +290,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a02351f44a210bc0b53362828e0eee226" name="a02351f44a210bc0b53362828e0eee226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02351f44a210bc0b53362828e0eee226">&#9670;&#160;</a></span>create()</h2>
+<a id="a8f49b83d71a3aaf4a15ce3b3b966ea7b" name="a8f49b83d71a3aaf4a15ce3b3b966ea7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f49b83d71a3aaf4a15ce3b3b966ea7b">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,6 +303,16 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\GraphicsOverrideParameterPacket::create </td>
           <td>(</td>
           <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$values</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$unknownFloat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>$unknownVector3</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -329,7 +343,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -435,7 +449,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5aecc6bc8bc976a8d34f0641d4af7f68">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00059">59</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00069">69</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -521,7 +535,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a1ae4fc82078a731a29ef8bd591280c30">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00069">69</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00081">81</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -540,7 +554,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00053">53</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00063">63</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -588,7 +602,45 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00055">55</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00065">65</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a54dc8eef13189184d52f0f7105403c28" name="a54dc8eef13189184d52f0f7105403c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54dc8eef13189184d52f0f7105403c28">&#9670;&#160;</a></span>getUnknownFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\GraphicsOverrideParameterPacket::getUnknownFloat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00059">59</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="aae0d06b4ca99083ad3f2b54b0c7b1c2b" name="aae0d06b4ca99083ad3f2b54b0c7b1c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0d06b4ca99083ad3f2b54b0c7b1c2b">&#9670;&#160;</a></span>getUnknownVector3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\GraphicsOverrideParameterPacket::getUnknownVector3 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00061">61</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -608,7 +660,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>ParameterKeyframeValue[] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00051">51</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -639,7 +691,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00079">79</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00093">93</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -658,7 +710,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00067">67</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>
@@ -752,7 +804,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00027">27</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html#l00029">29</a> of file <a class="el" href="../../d5/d97/_graphics_override_parameter_packet_8php_source.html">GraphicsOverrideParameterPacket.php</a>.</p>
 
 </div>
 </div>

@@ -36,6 +36,5 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "ServerConfigGroup.php", "d2/d2c/_server_config_group_8php_source.html", null ],
     [ "ServerProperties.php", "dc/de7/_server_properties_8php_source.html", null ],
     [ "TimeTrackingSleeperHandler.php", "d1/d83/_time_tracking_sleeper_handler_8php_source.html", null ],
-    [ "VersionInfo.php", "d0/ded/_version_info_8php_source.html", null ],
-    [ "YmlServerProperties.php", "d1/d2c/_yml_server_properties_8php_source.html", null ]
+    [ "VersionInfo.php", "d0/ded/_version_info_8php_source.html", null ]
 ];

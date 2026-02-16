@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-fc9be17cf51063d4d1d23df927963d00a2f03f09</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-dec84fe67dc3319e33f5066e5d03b16f00f2ff4c</span>
    </div>
   </td>
  </tr>
@@ -933,20 +933,40 @@ $(function(){initNavTree('d8/dbd/_block_type_ids_8php_source.html','../../'); in
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    <span class="keyword">public</span> <span class="keyword">const</span> WARPED_NYLIUM = 10804;</div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    <span class="keyword">public</span> <span class="keyword">const</span> INFESTED_DEEPSLATE = 10805;</div>
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="keyword">public</span> <span class="keyword">const</span> STRUCTURE_VOID = 10806;</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10807;</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span> </div>
-<div class="foldopen" id="foldopen00845" data-start="{" data-end="}">
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  845</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        return self::$nextDynamicId++;</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    }</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_BLOCK = 10807;</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_BUTTON = 10808;</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_CEILING_CENTER_HANGING_SIGN = 10809;</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_CEILING_EDGES_HANGING_SIGN = 10810;</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_DOOR = 10811;</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_FENCE = 10812;</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_FENCE_GATE = 10813;</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_PLANKS = 10814;</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_PRESSURE_PLATE = 10815;</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_SIGN = 10816;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_SLAB = 10817;</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_STAIRS = 10818;</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_TRAPDOOR = 10819;</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_WALL_HANGING_SIGN = 10820;</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_WALL_SIGN = 10821;</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_MOSAIC = 10822;</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_MOSAIC_SLAB = 10823;</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    <span class="keyword">public</span> <span class="keyword">const</span> BAMBOO_MOSAIC_STAIRS = 10824;</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    <span class="keyword">public</span> <span class="keyword">const</span> AZALEA = 10825;</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>    <span class="keyword">public</span> <span class="keyword">const</span> FLOWERING_AZALEA = 10826;</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <span class="keyword">public</span> <span class="keyword">const</span> FIRST_UNUSED_BLOCK_ID = 10827;</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span> </div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> $nextDynamicId = self::FIRST_UNUSED_BLOCK_ID;</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> </div>
+<div class="foldopen" id="foldopen00865" data-start="{" data-end="}">
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno"><a class="line" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">  865</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">newId</a>() : int{</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        return self::$nextDynamicId++;</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    }</div>
 </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>}</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html">pocketmine\block\BlockTypeIds</a></div><div class="ttdef"><b>Definition</b> <a href="#l00036">BlockTypeIds.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition</b> <a href="#l00845">BlockTypeIds.php:845</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1block_1_1_block_type_ids_html_a933e9c5b3792f4abdda81f98d97b24ea"><div class="ttname"><a href="../../db/dbe/classpocketmine_1_1block_1_1_block_type_ids.html#a933e9c5b3792f4abdda81f98d97b24ea">pocketmine\block\BlockTypeIds\newId</a></div><div class="ttdeci">static newId()</div><div class="ttdef"><b>Definition</b> <a href="#l00865">BlockTypeIds.php:865</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1block_1_1_t_n_t_html"><div class="ttname"><a href="../../dc/dce/classpocketmine_1_1block_1_1_t_n_t.html">pocketmine\block\TNT</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d58/_t_n_t_8php_source.html#l00044">TNT.php:44</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1block_html"><div class="ttname"><a href="../../d0/dc3/namespacepocketmine_1_1block.html">pocketmine\block</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/de9/_activator_rail_8php_source.html#l00024">ActivatorRail.php:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

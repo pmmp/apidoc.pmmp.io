@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-fc9be17cf51063d4d1d23df927963d00a2f03f09</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-dec84fe67dc3319e33f5066e5d03b16f00f2ff4c</span>
    </div>
   </td>
  </tr>
@@ -165,6 +165,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aeba41e9a83216df9e0a119f25762e14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c10c41dd02350521122e0b401d00e76" id="r_a7c10c41dd02350521122e0b401d00e76"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c10c41dd02350521122e0b401d00e76">BOSS_EVENT_PACKET</a> = 0x4a</td></tr>
 <tr class="separator:a7c10c41dd02350521122e0b401d00e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b50b4cc49a76561dffe237b12558083" id="r_a5b50b4cc49a76561dffe237b12558083"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b50b4cc49a76561dffe237b12558083">CAMERA_AIM_ASSIST_ACTOR_PRIORITY_PACKET</a> = 0x153</td></tr>
+<tr class="separator:a5b50b4cc49a76561dffe237b12558083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85838d6f880c694d46118e7b28e720d" id="r_ad85838d6f880c694d46118e7b28e720d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad85838d6f880c694d46118e7b28e720d">CAMERA_AIM_ASSIST_PACKET</a> = 0x13c</td></tr>
 <tr class="separator:ad85838d6f880c694d46118e7b28e720d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79cde87ca5889e12db433b12b95fc43c" id="r_a79cde87ca5889e12db433b12b95fc43c"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79cde87ca5889e12db433b12b95fc43c">CAMERA_AIM_ASSIST_PRESETS_PACKET</a> = 0x140</td></tr>
@@ -177,6 +179,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a281919e32264ed0d75de7822b62c4a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f22ebf24930e56413464705871200e" id="r_a36f22ebf24930e56413464705871200e"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f22ebf24930e56413464705871200e">CAMERA_SHAKE_PACKET</a> = 0x9f</td></tr>
 <tr class="separator:a36f22ebf24930e56413464705871200e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35e9e54da6bb6edca6232b68c811e33" id="r_ae35e9e54da6bb6edca6232b68c811e33"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae35e9e54da6bb6edca6232b68c811e33">CAMERA_SPLINE_PACKET</a> = 0x152</td></tr>
+<tr class="separator:ae35e9e54da6bb6edca6232b68c811e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0646a0a1335ccac636301d47d746fc52" id="r_a0646a0a1335ccac636301d47d746fc52"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0646a0a1335ccac636301d47d746fc52">CHANGE_DIMENSION_PACKET</a> = 0x3d</td></tr>
 <tr class="separator:a0646a0a1335ccac636301d47d746fc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae079e268181793b14e55ace459098257" id="r_ae079e268181793b14e55ace459098257"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae079e268181793b14e55ace459098257">CHANGE_MOB_PROPERTY_PACKET</a> = 0xb6</td></tr>
@@ -199,12 +203,20 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5fda305616a7c39780f1946438a09c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19bab1f82d418ab150d558c1d31bbcec" id="r_a19bab1f82d418ab150d558c1d31bbcec"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19bab1f82d418ab150d558c1d31bbcec">CLIENTBOUND_CONTROL_SCHEME_SET_PACKET</a> = 0x147</td></tr>
 <tr class="separator:a19bab1f82d418ab150d558c1d31bbcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a783af3b01fb0f0342925c0246cc240" id="r_a2a783af3b01fb0f0342925c0246cc240"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a783af3b01fb0f0342925c0246cc240">CLIENTBOUND_DATA_DRIVEN_UI_CLOSE_ALL_SCREENS_PACKET</a> = 0x14e</td></tr>
+<tr class="separator:a2a783af3b01fb0f0342925c0246cc240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a98526db6e8733fae21e5ac866a173a" id="r_a3a98526db6e8733fae21e5ac866a173a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a98526db6e8733fae21e5ac866a173a">CLIENTBOUND_DATA_DRIVEN_UI_RELOAD_PACKET</a> = 0x14f</td></tr>
+<tr class="separator:a3a98526db6e8733fae21e5ac866a173a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962e442681b5ccab045283ad18fa1b1b" id="r_a962e442681b5ccab045283ad18fa1b1b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a962e442681b5ccab045283ad18fa1b1b">CLIENTBOUND_DATA_DRIVEN_UI_SHOW_SCREEN_PACKET</a> = 0x14d</td></tr>
+<tr class="separator:a962e442681b5ccab045283ad18fa1b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8918422aa63c820a9085acea3b0edb47" id="r_a8918422aa63c820a9085acea3b0edb47"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8918422aa63c820a9085acea3b0edb47">CLIENTBOUND_DATA_STORE_PACKET</a> = 0x14a</td></tr>
 <tr class="separator:a8918422aa63c820a9085acea3b0edb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b67d13887011ebabf484de93735b85" id="r_a98b67d13887011ebabf484de93735b85"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98b67d13887011ebabf484de93735b85">CLIENTBOUND_DEBUG_RENDERER_PACKET</a> = 0xa4</td></tr>
 <tr class="separator:a98b67d13887011ebabf484de93735b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d486f58e292a94c1cca46ef437d3b2" id="r_a61d486f58e292a94c1cca46ef437d3b2"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61d486f58e292a94c1cca46ef437d3b2">CLIENTBOUND_MAP_ITEM_DATA_PACKET</a> = 0x43</td></tr>
 <tr class="separator:a61d486f58e292a94c1cca46ef437d3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a90c0cbb65be2eb6e21556d4181eee" id="r_a24a90c0cbb65be2eb6e21556d4181eee"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24a90c0cbb65be2eb6e21556d4181eee">CLIENTBOUND_TEXTURE_SHIFT_PACKET</a> = 0x150</td></tr>
+<tr class="separator:a24a90c0cbb65be2eb6e21556d4181eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e033189dbf1fc37a1695d3a922eb1a" id="r_ad5e033189dbf1fc37a1695d3a922eb1a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5e033189dbf1fc37a1695d3a922eb1a">CODE_BUILDER_PACKET</a> = 0x96</td></tr>
 <tr class="separator:ad5e033189dbf1fc37a1695d3a922eb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d4edc740ca6631a29b88097e1925ff" id="r_a32d4edc740ca6631a29b88097e1925ff"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32d4edc740ca6631a29b88097e1925ff">CODE_BUILDER_SOURCE_PACKET</a> = 0xb2</td></tr>
@@ -233,7 +245,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af1574302e5be9e7f9a94cd7985166c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf70b55410d0b8aa3e45a29dd273122a" id="r_abf70b55410d0b8aa3e45a29dd273122a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf70b55410d0b8aa3e45a29dd273122a">CREATIVE_CONTENT_PACKET</a> = 0x91</td></tr>
 <tr class="separator:abf70b55410d0b8aa3e45a29dd273122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae46f498b2bb241bfb097d104dde58b0e" id="r_ae46f498b2bb241bfb097d104dde58b0e"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae46f498b2bb241bfb097d104dde58b0e">CURRENT_PROTOCOL</a> = 898</td></tr>
+<tr class="memitem:ae46f498b2bb241bfb097d104dde58b0e" id="r_ae46f498b2bb241bfb097d104dde58b0e"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae46f498b2bb241bfb097d104dde58b0e">CURRENT_PROTOCOL</a> = 924</td></tr>
 <tr class="separator:ae46f498b2bb241bfb097d104dde58b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9949d9cc0201424d95ab9221c5094b" id="r_a9f9949d9cc0201424d95ab9221c5094b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f9949d9cc0201424d95ab9221c5094b">CURRENT_STRUCTURE_FEATURE_PACKET</a> = 0x13a</td></tr>
 <tr class="separator:a9f9949d9cc0201424d95ab9221c5094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,9 +321,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad6c4931da7e4f1c5324ce62947b8a0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeacd04959385549036943e06c8b42880" id="r_aeacd04959385549036943e06c8b42880"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeacd04959385549036943e06c8b42880">MAP_INFO_REQUEST_PACKET</a> = 0x44</td></tr>
 <tr class="separator:aeacd04959385549036943e06c8b42880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a85ec061c7b725a2c2d792b5399e98" id="r_a36a85ec061c7b725a2c2d792b5399e98"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36a85ec061c7b725a2c2d792b5399e98">MINECRAFT_VERSION</a> = 'v1.21.130'</td></tr>
+<tr class="memitem:a36a85ec061c7b725a2c2d792b5399e98" id="r_a36a85ec061c7b725a2c2d792b5399e98"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36a85ec061c7b725a2c2d792b5399e98">MINECRAFT_VERSION</a> = 'v26.0'</td></tr>
 <tr class="separator:a36a85ec061c7b725a2c2d792b5399e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a790ceabc53505b3ca3c0474ea67670fc" id="r_a790ceabc53505b3ca3c0474ea67670fc"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a790ceabc53505b3ca3c0474ea67670fc">MINECRAFT_VERSION_NETWORK</a> = '1.21.130'</td></tr>
+<tr class="memitem:a790ceabc53505b3ca3c0474ea67670fc" id="r_a790ceabc53505b3ca3c0474ea67670fc"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a790ceabc53505b3ca3c0474ea67670fc">MINECRAFT_VERSION_NETWORK</a> = '1.26.0'</td></tr>
 <tr class="separator:a790ceabc53505b3ca3c0474ea67670fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325b0edec4513e85547bbf2ee92f4146" id="r_a325b0edec4513e85547bbf2ee92f4146"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a325b0edec4513e85547bbf2ee92f4146">MOB_ARMOR_EQUIPMENT_PACKET</a> = 0x20</td></tr>
 <tr class="separator:a325b0edec4513e85547bbf2ee92f4146"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,10 +395,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae29f347b6d59057710220d165d2c43b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe66e56fa336a0fd29f6f3909f5b4e8f" id="r_afe66e56fa336a0fd29f6f3909f5b4e8f"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe66e56fa336a0fd29f6f3909f5b4e8f">PLAYER_VIDEO_CAPTURE_PACKET</a> = 0x144</td></tr>
 <tr class="separator:afe66e56fa336a0fd29f6f3909f5b4e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa867c27fcdc61a918c70a76affee880b" id="r_aa867c27fcdc61a918c70a76affee880b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa867c27fcdc61a918c70a76affee880b">POSITION_TRACKING_D_B_CLIENT_REQUEST_PACKET</a> = 0x9a</td></tr>
-<tr class="separator:aa867c27fcdc61a918c70a76affee880b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac962bdf76b09305aec1e85a9cbd6c876" id="r_ac962bdf76b09305aec1e85a9cbd6c876"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac962bdf76b09305aec1e85a9cbd6c876">POSITION_TRACKING_D_B_SERVER_BROADCAST_PACKET</a> = 0x99</td></tr>
-<tr class="separator:ac962bdf76b09305aec1e85a9cbd6c876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01b1df00f793bad9d71bed94c76dc9d" id="r_aa01b1df00f793bad9d71bed94c76dc9d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01b1df00f793bad9d71bed94c76dc9d">POSITION_TRACKING_DB_CLIENT_REQUEST_PACKET</a> = 0x9a</td></tr>
+<tr class="separator:aa01b1df00f793bad9d71bed94c76dc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea1c0e074bba6295e79ba399f934590" id="r_a5ea1c0e074bba6295e79ba399f934590"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ea1c0e074bba6295e79ba399f934590">POSITION_TRACKING_DB_SERVER_BROADCAST_PACKET</a> = 0x99</td></tr>
+<tr class="separator:a5ea1c0e074bba6295e79ba399f934590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b417dadd76f5de0b0e742b4d6ab320b" id="r_a7b417dadd76f5de0b0e742b4d6ab320b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b417dadd76f5de0b0e742b4d6ab320b">PURCHASE_RECEIPT_PACKET</a> = 0x5c</td></tr>
 <tr class="separator:a7b417dadd76f5de0b0e742b4d6ab320b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1dcc8b6a5ca2a84aa2b380f5eda68c1" id="r_aa1dcc8b6a5ca2a84aa2b380f5eda68c1"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1dcc8b6a5ca2a84aa2b380f5eda68c1">REFRESH_ENTITLEMENTS_PACKET</a> = 0x131</td></tr>
@@ -547,6 +559,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a88ae0db58e49e43ab1312c90d30f64b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a458ecb274be3b47955126e5cf5661c" id="r_a3a458ecb274be3b47955126e5cf5661c"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a458ecb274be3b47955126e5cf5661c">UPDATE_TRADE_PACKET</a> = 0x50</td></tr>
 <tr class="separator:a3a458ecb274be3b47955126e5cf5661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee98eb23ccff9ac367640853909ffb6" id="r_a2ee98eb23ccff9ac367640853909ffb6"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ee98eb23ccff9ac367640853909ffb6">VOXEL_SHAPES_PACKET</a> = 0x151</td></tr>
+<tr class="separator:a2ee98eb23ccff9ac367640853909ffb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Version numbers and packet IDs for the current Minecraft PE protocol </p>
@@ -921,6 +935,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5b50b4cc49a76561dffe237b12558083" name="a5b50b4cc49a76561dffe237b12558083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b50b4cc49a76561dffe237b12558083">&#9670;&#160;</a></span>CAMERA_AIM_ASSIST_ACTOR_PRIORITY_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CAMERA_AIM_ASSIST_ACTOR_PRIORITY_PACKET = 0x153</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00276">276</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
 <a id="ad85838d6f880c694d46118e7b28e720d" name="ad85838d6f880c694d46118e7b28e720d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad85838d6f880c694d46118e7b28e720d">&#9670;&#160;</a></span>CAMERA_AIM_ASSIST_PACKET</h2>
 
@@ -1014,6 +1044,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00195">195</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
+<a id="ae35e9e54da6bb6edca6232b68c811e33" name="ae35e9e54da6bb6edca6232b68c811e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35e9e54da6bb6edca6232b68c811e33">&#9670;&#160;</a></span>CAMERA_SPLINE_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CAMERA_SPLINE_PACKET = 0x152</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00275">275</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
 
 </div>
 </div>
@@ -1193,6 +1239,54 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2a783af3b01fb0f0342925c0246cc240" name="a2a783af3b01fb0f0342925c0246cc240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a783af3b01fb0f0342925c0246cc240">&#9670;&#160;</a></span>CLIENTBOUND_DATA_DRIVEN_UI_CLOSE_ALL_SCREENS_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CLIENTBOUND_DATA_DRIVEN_UI_CLOSE_ALL_SCREENS_PACKET = 0x14e</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00271">271</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
+<a id="a3a98526db6e8733fae21e5ac866a173a" name="a3a98526db6e8733fae21e5ac866a173a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a98526db6e8733fae21e5ac866a173a">&#9670;&#160;</a></span>CLIENTBOUND_DATA_DRIVEN_UI_RELOAD_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CLIENTBOUND_DATA_DRIVEN_UI_RELOAD_PACKET = 0x14f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00272">272</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
+<a id="a962e442681b5ccab045283ad18fa1b1b" name="a962e442681b5ccab045283ad18fa1b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962e442681b5ccab045283ad18fa1b1b">&#9670;&#160;</a></span>CLIENTBOUND_DATA_DRIVEN_UI_SHOW_SCREEN_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CLIENTBOUND_DATA_DRIVEN_UI_SHOW_SCREEN_PACKET = 0x14d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00270">270</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
 <a id="a8918422aa63c820a9085acea3b0edb47" name="a8918422aa63c820a9085acea3b0edb47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8918422aa63c820a9085acea3b0edb47">&#9670;&#160;</a></span>CLIENTBOUND_DATA_STORE_PACKET</h2>
 
@@ -1238,6 +1332,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00106">106</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
+<a id="a24a90c0cbb65be2eb6e21556d4181eee" name="a24a90c0cbb65be2eb6e21556d4181eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a90c0cbb65be2eb6e21556d4181eee">&#9670;&#160;</a></span>CLIENTBOUND_TEXTURE_SHIFT_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CLIENTBOUND_TEXTURE_SHIFT_PACKET = 0x150</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00273">273</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1582,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CURRENT_PROTOCOL = 898</td>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::CURRENT_PROTOCOL = 924</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2084,11 +2194,11 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::MINECRAFT_VERSION = 'v1.21.130'</td>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::MINECRAFT_VERSION = 'v26.0'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Current Minecraft PE version reported by the server. This is usually the earliest currently supported version. </p>
+<p>Display version shown in the server logs. This should match the version on the game's home screen. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00037">37</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
 
@@ -2101,11 +2211,11 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::MINECRAFT_VERSION_NETWORK = '1.21.130'</td>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::MINECRAFT_VERSION_NETWORK = '1.26.0'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Version number sent to clients in ping responses. </p>
+<p>Version sent on the network for client side compatibility checks. This may differ from the display version. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00039">39</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
 
@@ -2673,14 +2783,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa867c27fcdc61a918c70a76affee880b" name="aa867c27fcdc61a918c70a76affee880b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa867c27fcdc61a918c70a76affee880b">&#9670;&#160;</a></span>POSITION_TRACKING_D_B_CLIENT_REQUEST_PACKET</h2>
+<a id="aa01b1df00f793bad9d71bed94c76dc9d" name="aa01b1df00f793bad9d71bed94c76dc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01b1df00f793bad9d71bed94c76dc9d">&#9670;&#160;</a></span>POSITION_TRACKING_DB_CLIENT_REQUEST_PACKET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::POSITION_TRACKING_D_B_CLIENT_REQUEST_PACKET = 0x9a</td>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::POSITION_TRACKING_DB_CLIENT_REQUEST_PACKET = 0x9a</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2689,14 +2799,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac962bdf76b09305aec1e85a9cbd6c876" name="ac962bdf76b09305aec1e85a9cbd6c876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac962bdf76b09305aec1e85a9cbd6c876">&#9670;&#160;</a></span>POSITION_TRACKING_D_B_SERVER_BROADCAST_PACKET</h2>
+<a id="a5ea1c0e074bba6295e79ba399f934590" name="a5ea1c0e074bba6295e79ba399f934590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea1c0e074bba6295e79ba399f934590">&#9670;&#160;</a></span>POSITION_TRACKING_DB_SERVER_BROADCAST_PACKET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::POSITION_TRACKING_D_B_SERVER_BROADCAST_PACKET = 0x99</td>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::POSITION_TRACKING_DB_SERVER_BROADCAST_PACKET = 0x99</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3982,6 +4092,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00119">119</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
+
+</div>
+</div>
+<a id="a2ee98eb23ccff9ac367640853909ffb6" name="a2ee98eb23ccff9ac367640853909ffb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee98eb23ccff9ac367640853909ffb6">&#9670;&#160;</a></span>VOXEL_SHAPES_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const pocketmine\network\mcpe\protocol\ProtocolInfo::VOXEL_SHAPES_PACKET = 0x151</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d97/_protocol_info_8php_source.html#l00274">274</a> of file <a class="el" href="../../d4/d97/_protocol_info_8php_source.html">ProtocolInfo.php</a>.</p>
 
 </div>
 </div>

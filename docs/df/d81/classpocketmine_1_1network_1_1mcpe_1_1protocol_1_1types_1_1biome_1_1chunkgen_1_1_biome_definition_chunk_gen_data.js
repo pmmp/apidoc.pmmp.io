@@ -1,5 +1,5 @@
 var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_definition_chunk_gen_data =
 [
-    [ "__construct", "df/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_definition_chunk_gen_data.html#ab1421abe6c0b4c4c98855076e004dfff", null ],
+    [ "__construct", "df/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_definition_chunk_gen_data.html#ac66ed3d0aecf5c4007efd21d0176f519", null ],
     [ "getReplacementsData", "df/d81/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1biome_1_1chunkgen_1_1_biome_definition_chunk_gen_data.html#a5841c4f31244a03d3cb66af7a76d47e2", null ]
 ];

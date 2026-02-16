@@ -9,8 +9,11 @@ var dir_0003aa60d4a21aee354b5b2fa826bf4b =
     [ "ItemStackResponseBuilder.php", "d9/d4c/_item_stack_response_builder_8php_source.html", null ],
     [ "LoginPacketHandler.php", "d9/d07/_login_packet_handler_8php_source.html", null ],
     [ "PacketHandler.php", "de/d8a/_packet_handler_8php_source.html", null ],
+    [ "PacketHandlerAction.php", "d6/d8b/_packet_handler_action_8php_source.html", null ],
+    [ "PacketHandlerInspector.php", "dd/dcf/_packet_handler_inspector_8php_source.html", null ],
     [ "PreSpawnPacketHandler.php", "dd/dbe/_pre_spawn_packet_handler_8php_source.html", null ],
     [ "ResourcePacksPacketHandler.php", "d8/d59/_resource_packs_packet_handler_8php_source.html", null ],
     [ "SessionStartPacketHandler.php", "d9/d7a/_session_start_packet_handler_8php_source.html", null ],
+    [ "SilentDiscard.php", "d6/d9c/_silent_discard_8php_source.html", null ],
     [ "SpawnResponsePacketHandler.php", "d8/d0a/_spawn_response_packet_handler_8php_source.html", null ]
 ];

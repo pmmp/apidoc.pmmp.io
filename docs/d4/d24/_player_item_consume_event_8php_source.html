@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.39.4 git-fc9be17cf51063d4d1d23df927963d00a2f03f09</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-dec84fe67dc3319e33f5066e5d03b16f00f2ff4c</span>
    </div>
   </td>
  </tr>
@@ -135,27 +135,49 @@ $(function(){initNavTree('d4/d24/_player_item_consume_event_8php_source.html','.
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>use pocketmine\event\CancellableTrait;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>use <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>use <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html">PlayerItemConsumeEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">PlayerEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ){</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;player = $player;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItem() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> clone $this-&gt;item;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>use <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html">PlayerItemConsumeEvent</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">PlayerEvent</a> implements <a class="code hl_interface" href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">Cancellable</a>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    use <a class="code hl_variable" href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">CancellableTrait</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#a0d468973c6dabb8b415b70e34b6c6928">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#a0d468973c6dabb8b415b70e34b6c6928">__construct</a>(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">Player</a> $player,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">private</span> <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $item,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">private</span> array $residue = []</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ){</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $this-&gt;player = $player;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span> <span class="keyword">function</span> getItem() : <a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        return clone $this-&gt;item;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#ac5f2b417a67ba17ec3c77b7dc9571f2d">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#ac5f2b417a67ba17ec3c77b7dc9571f2d">getResidue</a>() : array{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        return <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::cloneObjectArray($this-&gt;residue);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#a1381a19d0d4c9b61d2aefe40b65fcedd">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#a1381a19d0d4c9b61d2aefe40b65fcedd">setResidue</a>(array $items) : void{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_class" href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">Utils</a>::validateArrayValueType($items, function(<a class="code hl_class" href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">Item</a> $_) : void{});</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;residue = Utils::cloneObjectArray($items);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_event_html"><div class="ttname"><a href="../../d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html">pocketmine\event\player\PlayerEvent</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/da2/_player_event_8php_source.html#l00032">PlayerEvent.php:32</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_item_consume_event_html"><div class="ttname"><a href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html">pocketmine\event\player\PlayerItemConsumeEvent</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">PlayerItemConsumeEvent.php:34</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_item_consume_event_html"><div class="ttname"><a href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html">pocketmine\event\player\PlayerItemConsumeEvent</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">PlayerItemConsumeEvent.php:35</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_item_consume_event_html_a0d468973c6dabb8b415b70e34b6c6928"><div class="ttname"><a href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#a0d468973c6dabb8b415b70e34b6c6928">pocketmine\event\player\PlayerItemConsumeEvent\__construct</a></div><div class="ttdeci">__construct(Player $player, private Item $item, private array $residue=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00041">PlayerItemConsumeEvent.php:41</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_item_consume_event_html_a1381a19d0d4c9b61d2aefe40b65fcedd"><div class="ttname"><a href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#a1381a19d0d4c9b61d2aefe40b65fcedd">pocketmine\event\player\PlayerItemConsumeEvent\setResidue</a></div><div class="ttdeci">setResidue(array $items)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">PlayerItemConsumeEvent.php:68</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1event_1_1player_1_1_player_item_consume_event_html_ac5f2b417a67ba17ec3c77b7dc9571f2d"><div class="ttname"><a href="../../da/d8e/classpocketmine_1_1event_1_1player_1_1_player_item_consume_event.html#ac5f2b417a67ba17ec3c77b7dc9571f2d">pocketmine\event\player\PlayerItemConsumeEvent\getResidue</a></div><div class="ttdeci">getResidue()</div><div class="ttdef"><b>Definition</b> <a href="#l00059">PlayerItemConsumeEvent.php:59</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1item_1_1_item_html"><div class="ttname"><a href="../../d5/d8a/classpocketmine_1_1item_1_1_item.html">pocketmine\item\Item</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/_item_8php_source.html#l00061">Item.php:61</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1player_1_1_player_html"><div class="ttname"><a href="../../d0/d6f/classpocketmine_1_1player_1_1_player.html">pocketmine\player\Player</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d76/_player_8php_source.html#l00175">Player.php:175</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1utils_1_1_utils_html"><div class="ttname"><a href="../../dc/d1a/classpocketmine_1_1utils_1_1_utils.html">pocketmine\utils\Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/_utils_8php_source.html#l00105">Utils.php:105</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1event_1_1_cancellable_html"><div class="ttname"><a href="../../db/d62/interfacepocketmine_1_1event_1_1_cancellable.html">pocketmine\event\Cancellable</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/da6/_cancellable_8php_source.html#l00034">Cancellable.php:34</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_1_1player_html"><div class="ttname"><a href="../../de/d7b/namespacepocketmine_1_1event_1_1player.html">pocketmine\event\player</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d76/_player_bed_enter_event_8php_source.html#l00024">PlayerBedEnterEvent.php:24</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1event_html_ab6c4dceac6e98e0eb02896a6809e52fa"><div class="ttname"><a href="../../d3/daf/namespacepocketmine_1_1event.html#ab6c4dceac6e98e0eb02896a6809e52fa">pocketmine\event\CancellableTrait</a></div><div class="ttdeci">trait CancellableTrait</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d98/_cancellable_trait_8php_source.html#l00034">CancellableTrait.php:34</a></div></div>

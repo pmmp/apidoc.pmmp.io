@@ -17,5 +17,5 @@ var dir_80087b544e3581ca2035f1422dcce657 =
     [ "Rarity.php", "de/d46/_rarity_8php_source.html", null ],
     [ "SharpnessEnchantment.php", "d0/d88/_sharpness_enchantment_8php_source.html", null ],
     [ "StringToEnchantmentParser.php", "d9/da9/_string_to_enchantment_parser_8php_source.html", null ],
-    [ "VanillaEnchantments.php", "d4/d89/_vanilla_enchantments_8php_source.html", null ]
+    [ "VanillaEnchantmentsInputs.php", "df/d74/_vanilla_enchantments_inputs_8php_source.html", null ]
 ];
