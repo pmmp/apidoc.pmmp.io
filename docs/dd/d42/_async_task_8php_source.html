@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.1 git-4cc26be8342a80d0959efb4e622b1cc2fd01c47f</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.2 git-e73f84662e3363c758c5cd2380d3130518867133</span>
    </div>
   </td>
  </tr>
@@ -232,75 +232,76 @@ $(function(){initNavTree('dd/d42/_async_task_8php_source.html','../../'); initRe
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ec846ee57cc2aae1b5604d5bfcb9948">  175</a></span>    public function publishProgress(mixed $progress) : void{</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        $progressUpdates = $this-&gt;progressUpdates;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">if</span>($progressUpdates === <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            $progressUpdates = $this-&gt;progressUpdates = <span class="keyword">new</span> ThreadSafeArray();</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        $progressUpdates[] = igbinary_serialize($progress) ?? <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Progress must be serializable&quot;</span>);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            $progressUpdates = <span class="keyword">new</span> ThreadSafeArray();</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            $this-&gt;progressUpdates = $progressUpdates;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        $progressUpdates[] = igbinary_serialize($progress) ?? <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;Progress must be serializable&quot;</span>);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
 </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="foldopen" id="foldopen00187" data-start="{" data-end="}">
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">  187</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">checkProgressUpdates</a>() : void{</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        $progressUpdates = $this-&gt;progressUpdates;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">if</span>($progressUpdates !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <span class="keywordflow">while</span>(($progress = $progressUpdates-&gt;shift()) !== <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                $this-&gt;onProgressUpdate(igbinary_unserialize($progress));</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">  189</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">checkProgressUpdates</a>() : void{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        $progressUpdates = $this-&gt;progressUpdates;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span>($progressUpdates !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">while</span>(($progress = $progressUpdates-&gt;shift()) !== <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                $this-&gt;onProgressUpdate(igbinary_unserialize($progress));</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
 </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">  206</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">onProgressUpdate</a>($progress) : void{</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
-</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">  208</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">onProgressUpdate</a>($progress) : void{</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae387a6b494c63a70c82924a05e90875d">  213</a></span>    public function onError() : void{</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
 </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="foldopen" id="foldopen00215" data-start="{" data-end="}">
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae387a6b494c63a70c82924a05e90875d">  215</a></span>    public function onError() : void{</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="foldopen" id="foldopen00231" data-start="{" data-end="}">
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b">  231</a></span>    protected function storeLocal(string $key, mixed $complexData) : void{</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        self::$threadLocalStorage[spl_object_id($this)][$key] = $complexData;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    }</div>
 </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">  245</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">fetchLocal</a>(<span class="keywordtype">string</span> $key){</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        $id = spl_object_id($this);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span>(!isset(self::$threadLocalStorage[$id]) || !array_key_exists($key, self::$threadLocalStorage[$id])){</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;No matching thread-local data found on this thread&quot;</span>);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">return</span> self::$threadLocalStorage[$id][$key];</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="foldopen" id="foldopen00233" data-start="{" data-end="}">
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ad5e0edb131fe81a8b68e64c70ba06d2b">  233</a></span>    protected function storeLocal(string $key, mixed $complexData) : void{</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        self::$threadLocalStorage[spl_object_id($this)][$key] = $complexData;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
 </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        $this-&gt;reallyDestruct();</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        unset(self::$threadLocalStorage[spl_object_id($this)]);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    }</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="foldopen" id="foldopen00262" data-start="{" data-end="}">
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">  262</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">reallyDestruct</a>() : void{</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">  247</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">fetchLocal</a>(<span class="keywordtype">string</span> $key){</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        $id = spl_object_id($this);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">if</span>(!isset(self::$threadLocalStorage[$id]) || !array_key_exists($key, self::$threadLocalStorage[$id])){</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">throw</span> new \InvalidArgumentException(<span class="stringliteral">&quot;No matching thread-local data found on this thread&quot;</span>);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keywordflow">return</span> self::$threadLocalStorage[$id][$key];</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
 </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>}</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        $this-&gt;reallyDestruct();</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        unset(self::$threadLocalStorage[spl_object_id($this)]);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">  264</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">reallyDestruct</a>() : void{</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
+</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">pocketmine\scheduler\AsyncTask</a></div><div class="ttdef"><b>Definition</b> <a href="#l00062">AsyncTask.php:62</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a0116d1721376b18f7410934b72a19ecc"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a0116d1721376b18f7410934b72a19ecc">pocketmine\scheduler\AsyncTask\onCompletion</a></div><div class="ttdeci">onCompletion()</div><div class="ttdef"><b>Definition</b> <a href="#l00163">AsyncTask.php:163</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a1ba680fdef8ef3e5832322b56dc460f0"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">pocketmine\scheduler\AsyncTask\fetchLocal</a></div><div class="ttdeci">fetchLocal(string $key)</div><div class="ttdef"><b>Definition</b> <a href="#l00245">AsyncTask.php:245</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a1ba680fdef8ef3e5832322b56dc460f0"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a1ba680fdef8ef3e5832322b56dc460f0">pocketmine\scheduler\AsyncTask\fetchLocal</a></div><div class="ttdeci">fetchLocal(string $key)</div><div class="ttdef"><b>Definition</b> <a href="#l00247">AsyncTask.php:247</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a328e5ca10ddf86ef16c7311f18933041"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a328e5ca10ddf86ef16c7311f18933041">pocketmine\scheduler\AsyncTask\isCrashed</a></div><div class="ttdeci">isCrashed()</div><div class="ttdef"><b>Definition</b> <a href="#l00102">AsyncTask.php:102</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a3cf7454be9911ea585af23c81846c4f2"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a3cf7454be9911ea585af23c81846c4f2">pocketmine\scheduler\AsyncTask\isFinished</a></div><div class="ttdeci">isFinished()</div><div class="ttdef"><b>Definition</b> <a href="#l00110">AsyncTask.php:110</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a54da2298c61d0b04e6c7f058b0591250"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a54da2298c61d0b04e6c7f058b0591250">pocketmine\scheduler\AsyncTask\cancelRun</a></div><div class="ttdeci">cancelRun()</div><div class="ttdef"><b>Definition</b> <a href="#l00135">AsyncTask.php:135</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_a6db5fee11fc3b30c6ec45c62de8ee8dc"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a6db5fee11fc3b30c6ec45c62de8ee8dc">pocketmine\scheduler\AsyncTask\onRun</a></div><div class="ttdeci">onRun()</div></div>
 <div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_aa5a040d7bd6023185e91387c526f8527"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#aa5a040d7bd6023185e91387c526f8527">pocketmine\scheduler\AsyncTask\getResult</a></div><div class="ttdeci">getResult()</div><div class="ttdef"><b>Definition</b> <a href="#l00121">AsyncTask.php:121</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ab4ce5f03047e2ba85b4e17abd775e129"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">pocketmine\scheduler\AsyncTask\checkProgressUpdates</a></div><div class="ttdeci">checkProgressUpdates()</div><div class="ttdef"><b>Definition</b> <a href="#l00187">AsyncTask.php:187</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_adad32212908878d6e70423161dbae0bf"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">pocketmine\scheduler\AsyncTask\reallyDestruct</a></div><div class="ttdeci">reallyDestruct()</div><div class="ttdef"><b>Definition</b> <a href="#l00262">AsyncTask.php:262</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ae3aa1ef734e82c49e25962e56eaf76ef"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">pocketmine\scheduler\AsyncTask\onProgressUpdate</a></div><div class="ttdeci">onProgressUpdate($progress)</div><div class="ttdef"><b>Definition</b> <a href="#l00206">AsyncTask.php:206</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ab4ce5f03047e2ba85b4e17abd775e129"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ab4ce5f03047e2ba85b4e17abd775e129">pocketmine\scheduler\AsyncTask\checkProgressUpdates</a></div><div class="ttdeci">checkProgressUpdates()</div><div class="ttdef"><b>Definition</b> <a href="#l00189">AsyncTask.php:189</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_adad32212908878d6e70423161dbae0bf"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#adad32212908878d6e70423161dbae0bf">pocketmine\scheduler\AsyncTask\reallyDestruct</a></div><div class="ttdeci">reallyDestruct()</div><div class="ttdef"><b>Definition</b> <a href="#l00264">AsyncTask.php:264</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1scheduler_1_1_async_task_html_ae3aa1ef734e82c49e25962e56eaf76ef"><div class="ttname"><a href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#ae3aa1ef734e82c49e25962e56eaf76ef">pocketmine\scheduler\AsyncTask\onProgressUpdate</a></div><div class="ttdeci">onProgressUpdate($progress)</div><div class="ttdef"><b>Definition</b> <a href="#l00208">AsyncTask.php:208</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1thread_1_1_non_thread_safe_value_html"><div class="ttname"><a href="../../d4/d69/classpocketmine_1_1thread_1_1_non_thread_safe_value.html">pocketmine\thread\NonThreadSafeValue</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd6/_non_thread_safe_value_8php_source.html#l00038">NonThreadSafeValue.php:38</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1timings_1_1_timings_html"><div class="ttname"><a href="../../de/d8c/classpocketmine_1_1timings_1_1_timings.html">pocketmine\timings\Timings</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/da0/_timings_8php_source.html#l00038">Timings.php:38</a></div></div>
 <div class="ttc" id="anamespacepocketmine_1_1scheduler_html"><div class="ttname"><a href="../../d3/d75/namespacepocketmine_1_1scheduler.html">pocketmine\scheduler</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d27/_async_pool_8php_source.html#l00024">AsyncPool.php:24</a></div></div>
