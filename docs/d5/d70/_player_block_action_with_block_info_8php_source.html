@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.2 git-e73f84662e3363c758c5cd2380d3130518867133</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.1 git-d77520d210fcb967a02bc11817ad625393c8ebc6</span>
    </div>
   </td>
  </tr>
@@ -146,13 +146,13 @@ $(function(){initNavTree('d5/d70/_player_block_action_with_block_info_8php_sourc
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span> <span class="keyword">function</span> getFace() : <span class="keywordtype">int</span>{ <span class="keywordflow">return</span> $this-&gt;face; }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in, <span class="keywordtype">int</span> $actionType) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $blockPosition = CommonTypes::getSignedBlockPosition($in);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        $blockPosition = CommonTypes::getBlockPosition($in);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $face = VarInt::readSignedInt($in);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>($actionType, $blockPosition, $face);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        CommonTypes::putSignedBlockPosition($out, $this-&gt;blockPosition);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        CommonTypes::putBlockPosition($out, $this-&gt;blockPosition);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        VarInt::writeSignedInt($out, $this-&gt;face);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
@@ -168,7 +168,7 @@ $(function(){initNavTree('d5/d70/_player_block_action_with_block_info_8php_sourc
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00069">CommonTypes.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position_html"><div class="ttname"><a href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">pocketmine\network\mcpe\protocol\types\BlockPosition</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d80/_block_position_8php_source.html#l00019">BlockPosition.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info_html"><div class="ttname"><a href="../../d4/d34/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_with_block_info.html">pocketmine\network\mcpe\protocol\types\PlayerBlockActionWithBlockInfo</a></div><div class="ttdef"><b>Definition</b> <a href="#l00025">PlayerBlockActionWithBlockInfo.php:25</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action_html"><div class="ttname"><a href="../../d7/df2/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_block_action.html">pocketmine\network\mcpe\protocol\types\PlayerBlockAction</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d67/_player_block_action_8php_source.html#l00022">PlayerBlockAction.php:22</a></div></div>

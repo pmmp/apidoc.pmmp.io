@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.2 git-e73f84662e3363c758c5cd2380d3130518867133</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.1 git-d77520d210fcb967a02bc11817ad625393c8ebc6</span>
    </div>
   </td>
  </tr>
@@ -167,7 +167,7 @@ $(function(){initNavTree('d2/db2/_clientbound_map_item_data_packet_8php_source.h
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $this-&gt;type = VarInt::readUnsignedInt($in);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $this-&gt;dimensionId = Byte::readUnsigned($in);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $this-&gt;isLocked = CommonTypes::getBool($in);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;origin = CommonTypes::getSignedBlockPosition($in);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $this-&gt;origin = CommonTypes::getBlockPosition($in);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">if</span>(($this-&gt;type &amp; self::BITFLAG_MAP_CREATION) !== 0){</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            $count = VarInt::readUnsignedInt($in);</div>
@@ -239,7 +239,7 @@ $(function(){initNavTree('d2/db2/_clientbound_map_item_data_packet_8php_source.h
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        VarInt::writeUnsignedInt($out, $type);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        Byte::writeUnsigned($out, $this-&gt;dimensionId);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        CommonTypes::putBool($out, $this-&gt;isLocked);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        CommonTypes::putSignedBlockPosition($out, $this-&gt;origin);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        CommonTypes::putBlockPosition($out, $this-&gt;origin);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">if</span>(($type &amp; self::BITFLAG_MAP_CREATION) !== 0){</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            VarInt::writeUnsignedInt($out, $parentMapIdsCount);</div>
@@ -302,7 +302,7 @@ $(function(){initNavTree('d2/db2/_clientbound_map_item_data_packet_8php_source.h
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet_html_a7b5ce8d56f78a6324196fc94d574d82d"><div class="ttname"><a href="../../d6/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet.html#a7b5ce8d56f78a6324196fc94d574d82d">pocketmine\network\mcpe\protocol\ClientboundMapItemDataPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00058">ClientboundMapItemDataPacket.php:58</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet_html_aeed93a3ce552a2d2c3560f0f52416264"><div class="ttname"><a href="../../d6/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet.html#aeed93a3ce552a2d2c3560f0f52416264">pocketmine\network\mcpe\protocol\ClientboundMapItemDataPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00116">ClientboundMapItemDataPacket.php:116</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00023">DataPacket.php:23</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00069">CommonTypes.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position_html"><div class="ttname"><a href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">pocketmine\network\mcpe\protocol\types\BlockPosition</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d80/_block_position_8php_source.html#l00019">BlockPosition.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_ids_html"><div class="ttname"><a href="../../d5/db4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_ids.html">pocketmine\network\mcpe\protocol\types\DimensionIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d28/_dimension_ids_8php_source.html#l00017">DimensionIds.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_decoration_html"><div class="ttname"><a href="../../de/dd8/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_map_decoration.html">pocketmine\network\mcpe\protocol\types\MapDecoration</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d60/_map_decoration_8php_source.html#l00019">MapDecoration.php:19</a></div></div>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.2 git-e73f84662e3363c758c5cd2380d3130518867133</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.1 git-d77520d210fcb967a02bc11817ad625393c8ebc6</span>
    </div>
   </td>
  </tr>
@@ -137,66 +137,75 @@ $(function(){initNavTree('d8/d5d/_voxel_shapes_packet_8php_source.html','../../'
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">private</span> array $shapes;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> array $nameMap;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a69aa97d13098bb646d8796ee56165911">   46</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a69aa97d13098bb646d8796ee56165911">create</a>(array $shapes, array $nameMap) : self{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $result = new self;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $result-&gt;shapes = $shapes;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $result-&gt;nameMap = $nameMap;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $customShapeCount;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a83018848b32eab2b0f7acfca86424b62">   48</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a83018848b32eab2b0f7acfca86424b62">create</a>(array $shapes, array $nameMap, <span class="keywordtype">int</span> $customShapeCount) : self{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $result = new self;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $result-&gt;shapes = $shapes;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $result-&gt;nameMap = $nameMap;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $result-&gt;customShapeCount = $customShapeCount;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#ace32bf39c5c249daec7fe85cfd2a1a46">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#ace32bf39c5c249daec7fe85cfd2a1a46">getShapes</a>() : array{ return $this-&gt;shapes; }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a6928c49c0a7c44a5c6358520a8e8d264">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a6928c49c0a7c44a5c6358520a8e8d264">getNameMap</a>() : array{ return $this-&gt;nameMap; }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a74d65d49ae36a64d7c426d2aaf99fd74">   65</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a74d65d49ae36a64d7c426d2aaf99fd74">decodePayload</a>(ByteBufferReader $in) : void{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $this-&gt;shapes = [];</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">for</span>($i = 0, $shapesCount = VarInt::readUnsignedInt($in); $i &lt; $shapesCount; ++$i){</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            $this-&gt;shapes[] = SerializableVoxelShape::read($in);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;nameMap = [];</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">for</span>($i = 0, $namesCount = VarInt::readUnsignedInt($in); $i &lt; $namesCount; ++$i){</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            $name = CommonTypes::getString($in);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            $id = LE::readUnsignedShort($in);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            $this-&gt;nameMap[$name] = $id;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#ace32bf39c5c249daec7fe85cfd2a1a46">   60</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#ace32bf39c5c249daec7fe85cfd2a1a46">getShapes</a>() : array{ return $this-&gt;shapes; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a6928c49c0a7c44a5c6358520a8e8d264">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a6928c49c0a7c44a5c6358520a8e8d264">getNameMap</a>() : array{ return $this-&gt;nameMap; }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span> <span class="keyword">function</span> getCustomShapeCount() : int{ return $this-&gt;customShapeCount; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a74d65d49ae36a64d7c426d2aaf99fd74">   70</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a74d65d49ae36a64d7c426d2aaf99fd74">decodePayload</a>(ByteBufferReader $in) : void{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $this-&gt;shapes = [];</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">for</span>($i = 0, $shapesCount = VarInt::readUnsignedInt($in); $i &lt; $shapesCount; ++$i){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            $this-&gt;shapes[] = SerializableVoxelShape::read($in);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;nameMap = [];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">for</span>($i = 0, $namesCount = VarInt::readUnsignedInt($in); $i &lt; $namesCount; ++$i){</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            $name = CommonTypes::getString($in);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            $id = LE::readUnsignedShort($in);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $this-&gt;nameMap[$name] = $id;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        $this-&gt;customShapeCount = LE::readUnsignedShort($in);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a718026e3f615a189edc7b2e295a140bd">   79</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a718026e3f615a189edc7b2e295a140bd">encodePayload</a>(ByteBufferWriter $out) : void{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        VarInt::writeUnsignedInt($out, count($this-&gt;shapes));</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">foreach</span>($this-&gt;shapes as $shape){</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            $shape-&gt;write($out);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        VarInt::writeUnsignedInt($out, count($this-&gt;nameMap));</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">foreach</span>($this-&gt;nameMap as $name =&gt; $id){</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            CommonTypes::putString($out, $name);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            LE::writeUnsignedShort($out, $id);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
-</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a718026e3f615a189edc7b2e295a140bd">   86</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a718026e3f615a189edc7b2e295a140bd">encodePayload</a>(ByteBufferWriter $out) : void{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        VarInt::writeUnsignedInt($out, count($this-&gt;shapes));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">foreach</span>($this-&gt;shapes as $shape){</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $shape-&gt;write($out);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#aca16e4f020d85f475276849d109c192b">   92</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#aca16e4f020d85f475276849d109c192b">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        return $handler-&gt;handleVoxelShapes($this);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        VarInt::writeUnsignedInt($out, count($this-&gt;nameMap));</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">foreach</span>($this-&gt;nameMap as $name =&gt; $id){</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            CommonTypes::putString($out, $name);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            LE::writeUnsignedShort($out, $id);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        LE::writeUnsignedShort($out, $this-&gt;customShapeCount);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#aca16e4f020d85f475276849d109c192b">  101</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#aca16e4f020d85f475276849d109c192b">handle</a>(<a class="code hl_interface" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler) : bool{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        return $handler-&gt;handleVoxelShapes($this);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet_html"><div class="ttname"><a href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html">pocketmine\network\mcpe\protocol\DataPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/db7/_data_packet_8php_source.html#l00023">DataPacket.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html">pocketmine\network\mcpe\protocol\VoxelShapesPacket</a></div><div class="ttdef"><b>Definition</b> <a href="#l00025">VoxelShapesPacket.php:25</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a6928c49c0a7c44a5c6358520a8e8d264"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a6928c49c0a7c44a5c6358520a8e8d264">pocketmine\network\mcpe\protocol\VoxelShapesPacket\getNameMap</a></div><div class="ttdeci">getNameMap()</div><div class="ttdef"><b>Definition</b> <a href="#l00063">VoxelShapesPacket.php:63</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a69aa97d13098bb646d8796ee56165911"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a69aa97d13098bb646d8796ee56165911">pocketmine\network\mcpe\protocol\VoxelShapesPacket\create</a></div><div class="ttdeci">static create(array $shapes, array $nameMap)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">VoxelShapesPacket.php:46</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a718026e3f615a189edc7b2e295a140bd"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a718026e3f615a189edc7b2e295a140bd">pocketmine\network\mcpe\protocol\VoxelShapesPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00079">VoxelShapesPacket.php:79</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a74d65d49ae36a64d7c426d2aaf99fd74"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a74d65d49ae36a64d7c426d2aaf99fd74">pocketmine\network\mcpe\protocol\VoxelShapesPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00065">VoxelShapesPacket.php:65</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_aca16e4f020d85f475276849d109c192b"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#aca16e4f020d85f475276849d109c192b">pocketmine\network\mcpe\protocol\VoxelShapesPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00092">VoxelShapesPacket.php:92</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_ace32bf39c5c249daec7fe85cfd2a1a46"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#ace32bf39c5c249daec7fe85cfd2a1a46">pocketmine\network\mcpe\protocol\VoxelShapesPacket\getShapes</a></div><div class="ttdeci">getShapes()</div><div class="ttdef"><b>Definition</b> <a href="#l00057">VoxelShapesPacket.php:57</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00070">CommonTypes.php:70</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a6928c49c0a7c44a5c6358520a8e8d264"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a6928c49c0a7c44a5c6358520a8e8d264">pocketmine\network\mcpe\protocol\VoxelShapesPacket\getNameMap</a></div><div class="ttdeci">getNameMap()</div><div class="ttdef"><b>Definition</b> <a href="#l00066">VoxelShapesPacket.php:66</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a718026e3f615a189edc7b2e295a140bd"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a718026e3f615a189edc7b2e295a140bd">pocketmine\network\mcpe\protocol\VoxelShapesPacket\encodePayload</a></div><div class="ttdeci">encodePayload(ByteBufferWriter $out)</div><div class="ttdef"><b>Definition</b> <a href="#l00086">VoxelShapesPacket.php:86</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a74d65d49ae36a64d7c426d2aaf99fd74"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a74d65d49ae36a64d7c426d2aaf99fd74">pocketmine\network\mcpe\protocol\VoxelShapesPacket\decodePayload</a></div><div class="ttdeci">decodePayload(ByteBufferReader $in)</div><div class="ttdef"><b>Definition</b> <a href="#l00070">VoxelShapesPacket.php:70</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_a83018848b32eab2b0f7acfca86424b62"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#a83018848b32eab2b0f7acfca86424b62">pocketmine\network\mcpe\protocol\VoxelShapesPacket\create</a></div><div class="ttdeci">static create(array $shapes, array $nameMap, int $customShapeCount)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">VoxelShapesPacket.php:48</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_aca16e4f020d85f475276849d109c192b"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#aca16e4f020d85f475276849d109c192b">pocketmine\network\mcpe\protocol\VoxelShapesPacket\handle</a></div><div class="ttdeci">handle(PacketHandlerInterface $handler)</div><div class="ttdef"><b>Definition</b> <a href="#l00101">VoxelShapesPacket.php:101</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet_html_ace32bf39c5c249daec7fe85cfd2a1a46"><div class="ttname"><a href="../../d2/d85/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_voxel_shapes_packet.html#ace32bf39c5c249daec7fe85cfd2a1a46">pocketmine\network\mcpe\protocol\VoxelShapesPacket\getShapes</a></div><div class="ttdeci">getShapes()</div><div class="ttdef"><b>Definition</b> <a href="#l00060">VoxelShapesPacket.php:60</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00069">CommonTypes.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_serializable_voxel_shape_html"><div class="ttname"><a href="../../d1/d9f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_serializable_voxel_shape.html">pocketmine\network\mcpe\protocol\types\SerializableVoxelShape</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfd/_serializable_voxel_shape_8php_source.html#l00023">SerializableVoxelShape.php:23</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet_html"><div class="ttname"><a href="../../da/d77/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_packet.html">pocketmine\network\mcpe\protocol\ClientboundPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d49/_clientbound_packet_8php_source.html#l00017">ClientboundPacket.php:17</a></div></div>
 <div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface_html"><div class="ttname"><a href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">pocketmine\network\mcpe\protocol\PacketHandlerInterface</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_packet_handler_interface_8php_source.html#l00020">PacketHandlerInterface.php:20</a></div></div>

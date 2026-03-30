@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,132,3],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,130,22],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,132,22],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a286fc64348f13417dcb6106c2695911b":[2,0,0,0,130,2],
@@ -150,7 +151,7 @@ var NAVTREEINDEX2 =
 "d0/d27/_lightning_rod_8php_source.html":[4,0,1,0,151],
 "d0/d2b/classpocketmine_1_1scheduler_1_1_cancel_task_exception.html":[2,0,0,11,6],
 "d0/d2b/classpocketmine_1_1scheduler_1_1_cancel_task_exception.html":[3,0,1,22,6],
-"d0/d2c/_disconnect_packet_8php_source.html":[4,0,2,0,1,0,72],
+"d0/d2c/_disconnect_packet_8php_source.html":[4,0,2,0,1,0,73],
 "d0/d2f/classpocketmine_1_1command_1_1defaults_1_1_spawnpoint_command.html":[3,0,1,2,0,29],
 "d0/d2f/classpocketmine_1_1command_1_1defaults_1_1_spawnpoint_command.html#a425117ae5e7bab32cc824f19f82b613b":[3,0,1,2,0,29,2],
 "d0/d2f/classpocketmine_1_1command_1_1defaults_1_1_spawnpoint_command.html#a57c09d1063bc811e24bdc3d750e882d5":[3,0,1,2,0,29,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#a98fa8c0a2158631977fb9e47a3326a25":[2,0,0,14,0,0,1,1],
 "d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#a98fa8c0a2158631977fb9e47a3326a25":[3,0,1,30,2,3,1,1],
 "d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#a9f0c7eebea84e587ef67e226145335d3":[2,0,0,14,0,0,1,2],
-"d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#a9f0c7eebea84e587ef67e226145335d3":[3,0,1,30,2,3,1,2],
-"d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#ab2ee843c2cf4cb7c4f4f4d75988d0187":[2,0,0,14,0,0,1,7]
+"d0/d38/classpocketmine_1_1world_1_1generator_1_1noise_1_1_simplex.html#a9f0c7eebea84e587ef67e226145335d3":[3,0,1,30,2,3,1,2]
 };

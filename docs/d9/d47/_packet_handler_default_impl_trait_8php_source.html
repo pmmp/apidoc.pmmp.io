@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.2 git-e73f84662e3363c758c5cd2380d3130518867133</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.1 git-d77520d210fcb967a02bc11817ad625393c8ebc6</span>
    </div>
   </td>
  </tr>
@@ -972,7 +972,7 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        return false;</div>
 <div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>    }</div>
 <div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span> </div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleClientboundDataDrivenUICloseAllScreens(ClientboundDataDrivenUICloseAllScreensPacket $packet) : bool{</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleClientboundDataDrivenUICloseScreen(ClientboundDataDrivenUICloseScreenPacket $packet) : bool{</div>
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>        return false;</div>
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    }</div>
 <div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span> </div>
@@ -995,7 +995,31 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleCameraAimAssistActorPriority(CameraAimAssistActorPriorityPacket $packet) : bool{</div>
 <div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        return false;</div>
 <div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>    }</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>}</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span> </div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleResourcePacksReadyForValidation(ResourcePacksReadyForValidationPacket $packet) : bool{</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>        return false;</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    }</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleLocatorBar(LocatorBarPacket $packet) : bool{</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        return false;</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    }</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    <span class="keyword">public</span> <span class="keyword">function</span> handlePartyChanged(PartyChangedPacket $packet) : bool{</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>        return false;</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    }</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleServerboundDataDrivenScreenClosed(ServerboundDataDrivenScreenClosedPacket $packet) : bool{</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        return false;</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    }</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span> </div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleSyncWorldClocks(SyncWorldClocksPacket $packet) : bool{</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>        return false;</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    }</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span> </div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleClientboundAttributeLayerSync(ClientboundAttributeLayerSyncPacket $packet) : bool{</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        return false;</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    }</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

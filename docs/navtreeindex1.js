@@ -90,7 +90,8 @@ var NAVTREEINDEX1 =
 "d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html#ae276a84b543f500378de0a8ad639db42":[2,0,0,14,11,5],
 "d0/d15/classpocketmine_1_1world_1_1_world_creation_options.html#ae276a84b543f500378de0a8ad639db42":[3,0,1,30,17,5],
 "d0/d15/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1entity_1_1_metadata_property.html":[3,0,1,16,0,6,1,3,16],
-"d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html":[3,0,1,16,0,6,1,17],
+"d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_attribute_update_layer_settings.html":[3,0,1,16,0,6,1,26],
+"d0/d17/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_bool_game_rule.html":[3,0,1,16,0,6,1,39],
 "d0/d18/_stonecutter_inventory_8php_source.html":[4,0,1,0,0,18],
 "d0/d18/classpocketmine_1_1item_1_1_glow_berries.html":[2,0,0,5,53],
 "d0/d18/classpocketmine_1_1item_1_1_glow_berries.html":[3,0,1,12,54],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a1a1a2b2adf423738289d296198f044e1":[3,0,1,0,132,60],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a1ce2444f76246982cfbb507fed99a48e":[2,0,0,0,130,47],
 "d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a1ce2444f76246982cfbb507fed99a48e":[3,0,1,0,132,47],
-"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,130,3],
-"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,132,3]
+"d0/d1c/classpocketmine_1_1block_1_1_hardened_glass.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,130,3]
 };

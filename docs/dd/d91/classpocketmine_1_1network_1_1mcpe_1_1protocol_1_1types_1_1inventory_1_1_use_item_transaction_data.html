@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.41.2 git-e73f84662e3363c758c5cd2380d3130518867133</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.1 git-d77520d210fcb967a02bc11817ad625393c8ebc6</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7396ec8a18282fc7d27d4c6fc4c92551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f16171c5c85ebc55ebab5bdcb46d082" id="r_a5f16171c5c85ebc55ebab5bdcb46d082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f16171c5c85ebc55ebab5bdcb46d082">getClickPosition</a> ()</td></tr>
 <tr class="separator:a5f16171c5c85ebc55ebab5bdcb46d082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f5ba268511d0ef8cefe4fb1e819939" id="r_a98f5ba268511d0ef8cefe4fb1e819939"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98f5ba268511d0ef8cefe4fb1e819939">getClientCooldownState</a> ()</td></tr>
+<tr class="separator:a98f5ba268511d0ef8cefe4fb1e819939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1766d77f1393d0ce82bf0cbefbb5e269" id="r_a1766d77f1393d0ce82bf0cbefbb5e269"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1766d77f1393d0ce82bf0cbefbb5e269">getClientInteractPrediction</a> ()</td></tr>
 <tr class="separator:a1766d77f1393d0ce82bf0cbefbb5e269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a73582a7c09c66a3afa1cb9f58fa982" id="r_a6a73582a7c09c66a3afa1cb9f58fa982"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a73582a7c09c66a3afa1cb9f58fa982">getFace</a> ()</td></tr>
@@ -162,8 +164,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5768ccede8303f73b8a17b20303d4926" id="r_a5768ccede8303f73b8a17b20303d4926"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5768ccede8303f73b8a17b20303d4926">new</a> (array $actions, int $actionType, TriggerType $triggerType, <a class="el" href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">BlockPosition</a> $blockPosition, int $face, int $hotbarSlot, <a class="el" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a> $itemInHand, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $playerPosition, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickPosition, int $blockRuntimeId, PredictedResult $clientInteractPrediction)</td></tr>
-<tr class="separator:a5768ccede8303f73b8a17b20303d4926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf0fa64965c86260ffcccd66ddd8f2e" id="r_a7bf0fa64965c86260ffcccd66ddd8f2e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bf0fa64965c86260ffcccd66ddd8f2e">new</a> (array $actions, int $actionType, TriggerType $triggerType, <a class="el" href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">BlockPosition</a> $blockPosition, int $face, int $hotbarSlot, <a class="el" href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">ItemStackWrapper</a> $itemInHand, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $playerPosition, <a class="el" href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">Vector3</a> $clickPosition, int $blockRuntimeId, PredictedResult $clientInteractPrediction, int $clientCooldownState)</td></tr>
+<tr class="separator:a7bf0fa64965c86260ffcccd66ddd8f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -192,7 +194,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00026">26</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00027">27</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a851f5fdffd9e12c3e6ff1740f1cbbdd0" name="a851f5fdffd9e12c3e6ff1740f1cbbdd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a851f5fdffd9e12c3e6ff1740f1cbbdd0">&#9670;&#160;</a></span>decode()</h2>
@@ -260,7 +262,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html#a01a38549320dc34685ffb3f35cadaff4">pocketmine\network\mcpe\protocol\types\inventory\TransactionData</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00083">83</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00087">87</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -316,7 +318,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d6/da6/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_transaction_data.html">pocketmine\network\mcpe\protocol\types\inventory\TransactionData</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00096">96</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00101">101</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -363,7 +365,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00047">47</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00049">49</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -382,7 +384,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00053">53</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00055">55</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -401,7 +403,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00077">77</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00079">79</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -420,7 +422,26 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00073">73</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00075">75</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+
+</div>
+</div>
+<a id="a98f5ba268511d0ef8cefe4fb1e819939" name="a98f5ba268511d0ef8cefe4fb1e819939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f5ba268511d0ef8cefe4fb1e819939">&#9670;&#160;</a></span>getClientCooldownState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\types\inventory\UseItemTransactionData::getClientCooldownState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00085">85</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -439,7 +460,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00081">81</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00083">83</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -458,7 +479,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00057">57</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00059">59</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -477,7 +498,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00061">61</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00063">63</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -496,7 +517,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00065">65</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00067">67</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -515,7 +536,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00069">69</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00071">71</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -534,12 +555,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00051">51</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00053">53</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
-<a id="a5768ccede8303f73b8a17b20303d4926" name="a5768ccede8303f73b8a17b20303d4926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5768ccede8303f73b8a17b20303d4926">&#9670;&#160;</a></span>new()</h2>
+<a id="a7bf0fa64965c86260ffcccd66ddd8f2e" name="a7bf0fa64965c86260ffcccd66ddd8f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf0fa64965c86260ffcccd66ddd8f2e">&#9670;&#160;</a></span>new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,7 +621,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">PredictedResult</td>          <td class="paramname"><span class="paramname"><em>$clientInteractPrediction</em></span>&#160;)</td>
+          <td class="paramtype">PredictedResult</td>          <td class="paramname"><span class="paramname"><em>$clientInteractPrediction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$clientCooldownState</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -616,7 +642,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00141">141</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00149">149</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -657,7 +683,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00033">33</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00034">34</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -673,7 +699,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00032">32</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00033">33</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -689,7 +715,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00031">31</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00032">32</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -705,7 +731,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00034">34</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00035">35</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
@@ -721,7 +747,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00029">29</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html#l00030">30</a> of file <a class="el" href="../../db/d51/_use_item_transaction_data_8php_source.html">UseItemTransactionData.php</a>.</p>
 
 </div>
 </div>
