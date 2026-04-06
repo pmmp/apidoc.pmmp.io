@@ -1,5 +1,6 @@
 var NAVTREEINDEX85 =
 {
+"d5/d8a/classpocketmine_1_1item_1_1_item.html#abd2688f008221d4c5fcdacac754d807e":[3,0,1,12,63,37],
 "d5/d8a/classpocketmine_1_1item_1_1_item.html#abe253aa6fbfe2fc36389edadb753ffc7":[2,0,0,5,62,19],
 "d5/d8a/classpocketmine_1_1item_1_1_item.html#abe253aa6fbfe2fc36389edadb753ffc7":[3,0,1,12,63,19],
 "d5/d8a/classpocketmine_1_1item_1_1_item.html#ac534c116a4d2291a8d67f15c4b485b74":[2,0,0,5,62,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX85 =
 "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,1,1,2],
 "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,1,1,2],
 "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html#aa105cba08f6aa75722b2716a4887a477":[2,0,0,3,1,1,1],
-"d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html#aa105cba08f6aa75722b2716a4887a477":[3,0,1,9,1,1,1],
-"d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html":[3,0,1,16,0,6,1,100]
+"d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html#aa105cba08f6aa75722b2716a4887a477":[3,0,1,9,1,1,1]
 };

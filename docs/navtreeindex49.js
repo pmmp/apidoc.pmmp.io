@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#acaced48bc41cc13b10c1e99ba76bdabd":[3,0,1,7,3,8,31],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ad52d796618bbd28ffa2f90b368f2dd0c":[3,0,1,7,3,8,39],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ae36a7e5064724e460fabfe810f2def20":[3,0,1,7,3,8,10],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ae3d1faacc118b9fd25a401a995fcb1f4":[3,0,1,7,3,8,58],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "d3/d39/classpocketmine_1_1block_1_1_sand.html#afe506084e4bb8741a7ac64f6d90c00a5":[3,0,1,0,203,16],
 "d3/d39/classpocketmine_1_1block_1_1_sand.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[2,0,0,0,201,28],
 "d3/d39/classpocketmine_1_1block_1_1_sand.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,203,28],
-"d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html":[3,0,1,30,0,3],
-"d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html#a1c38e48a1e0afd5ca3362760e5deea21":[3,0,1,30,0,3,2]
+"d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html":[3,0,1,30,0,3]
 };

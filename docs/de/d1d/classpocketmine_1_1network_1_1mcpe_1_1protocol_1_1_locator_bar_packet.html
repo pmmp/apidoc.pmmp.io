@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.1 git-d77520d210fcb967a02bc11817ad625393c8ebc6</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-88c18cd9cf7fc37bd5261e6f29ed6041bfe776f1</span>
    </div>
   </td>
  </tr>
@@ -141,6 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0cb1214c98c0b82003467b6bb323ba55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c94c78d92e3be9720d4f5d1c5352ff3" id="r_a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5c94c78d92e3be9720d4f5d1c5352ff3">getName</a> ()</td></tr>
 <tr class="separator:a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e3531df84e89a8138c5fd17676614e" id="r_a52e3531df84e89a8138c5fd17676614e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e3531df84e89a8138c5fd17676614e">getWaypoints</a> ()</td></tr>
+<tr class="separator:a52e3531df84e89a8138c5fd17676614e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95e117d836cd0f44c91cf687ae68a9e" id="r_ad95e117d836cd0f44c91cf687ae68a9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad95e117d836cd0f44c91cf687ae68a9e">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
 <tr class="separator:ad95e117d836cd0f44c91cf687ae68a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2432f23e1c1b69a82f90588c1dbf5" id="r_a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a42c2432f23e1c1b69a82f90588c1dbf5">pid</a> ()</td></tr>
@@ -413,7 +415,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5aecc6bc8bc976a8d34f0641d4af7f68">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00049">49</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
 
 </div>
 </div>
@@ -499,7 +501,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a1ae4fc82078a731a29ef8bd591280c30">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00050">50</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00056">56</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
 
 </div>
 </div>
@@ -532,6 +534,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a52e3531df84e89a8138c5fd17676614e" name="a52e3531df84e89a8138c5fd17676614e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e3531df84e89a8138c5fd17676614e">&#9670;&#160;</a></span>getWaypoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\LocatorBarPacket::getWaypoints </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>LocatorBarWaypointPayload[] @phpstan-return list&lt;LocatorBarWaypointPayload&gt; </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00047">47</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
+
+</div>
+</div>
 <a id="ad95e117d836cd0f44c91cf687ae68a9e" name="ad95e117d836cd0f44c91cf687ae68a9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad95e117d836cd0f44c91cf687ae68a9e">&#9670;&#160;</a></span>handle()</h2>
 
@@ -559,7 +581,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html#l00063">63</a> of file <a class="el" href="../../d3/d83/_locator_bar_packet_8php_source.html">LocatorBarPacket.php</a>.</p>
 
 </div>
 </div>

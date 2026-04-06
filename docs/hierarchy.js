@@ -1728,6 +1728,7 @@ var hierarchy =
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundDataDrivenUICloseScreenPacket", "d6/d06/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_data_driven_u_i_close_screen_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundDataDrivenUIReloadPacket", "da/d7b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_data_driven_u_i_reload_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundDataDrivenUIShowScreenPacket", "de/d0e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_data_driven_u_i_show_screen_packet.html", null ],
+        [ "pocketmine\\network\\mcpe\\protocol\\ClientboundDataStorePacket", "da/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_data_store_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundDebugRendererPacket", "da/def/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_debug_renderer_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundMapItemDataPacket", "d6/d0a/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_map_item_data_packet.html", null ],
         [ "pocketmine\\network\\mcpe\\protocol\\ClientboundTextureShiftPacket", "db/d0f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_clientbound_texture_shift_packet.html", null ],

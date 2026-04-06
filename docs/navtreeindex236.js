@@ -1,5 +1,10 @@
 var NAVTREEINDEX236 =
 {
+"de/d96/classpocketmine_1_1block_1_1_froglight.html#ab51ea2314ed5df2163bca971a462fb72":[3,0,1,0,116,8],
+"de/d96/classpocketmine_1_1block_1_1_froglight.html#ab6b90601adfc9732893dcffe256514a9":[2,0,0,0,114,67],
+"de/d96/classpocketmine_1_1block_1_1_froglight.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,116,67],
+"de/d96/classpocketmine_1_1block_1_1_froglight.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,114,27],
+"de/d96/classpocketmine_1_1block_1_1_froglight.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,116,27],
 "de/d96/classpocketmine_1_1block_1_1_froglight.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,114,56],
 "de/d96/classpocketmine_1_1block_1_1_froglight.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,116,56],
 "de/d96/classpocketmine_1_1block_1_1_froglight.html#ac7abcbdd0edc66f932eb743d814a5fdd":[2,0,0,0,114,17],
@@ -244,10 +249,5 @@ var NAVTREEINDEX236 =
 "de/db2/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1stackrequest_1_1_swap_stack_request_action.html":[3,0,1,16,0,6,1,4,0,20],
 "de/db3/_container_ids_8php_source.html":[4,0,2,0,1,0,1,5,2],
 "de/db3/_rail_8php_source.html":[4,0,1,0,189],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html":[2,0,0,0,158],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html":[3,0,1,0,160],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#a028afd613a6f42370ede9aec4c9796d6":[2,0,0,0,158,48],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#a028afd613a6f42370ede9aec4c9796d6":[3,0,1,0,160,48],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,158,58],
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,160,58]
+"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html":[2,0,0,0,158]
 };

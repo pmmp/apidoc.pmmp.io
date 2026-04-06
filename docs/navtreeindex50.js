@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html#a1c38e48a1e0afd5ca3362760e5deea21":[3,0,1,30,0,3,2],
 "d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html#a3bd95c376c2ca535cb932b700bde38dc":[3,0,1,30,0,3,0],
 "d3/d39/classpocketmine_1_1world_1_1biome_1_1_desert_biome.html#aee779e604579f71977cc5624dc8dfd0f":[3,0,1,30,0,3,1],
 "d3/d39/classpocketmine_1_1world_1_1light_1_1_block_light_update.html":[3,0,1,30,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html":[2,0,0,7,2],
 "d3/d5f/classpocketmine_1_1nbt_1_1_invalid_tag_value_exception.html":[3,0,1,15,3],
 "d3/d5f/interfacepocketmine_1_1entity_1_1_explosive.html":[2,0,0,2,10],
-"d3/d5f/interfacepocketmine_1_1entity_1_1_explosive.html":[3,0,1,7,15],
-"d3/d60/_map_decoration_8php_source.html":[4,0,2,0,1,0,1,92]
+"d3/d5f/interfacepocketmine_1_1entity_1_1_explosive.html":[3,0,1,7,15]
 };

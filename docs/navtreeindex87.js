@@ -1,5 +1,6 @@
 var NAVTREEINDEX87 =
 {
+"d5/db1/_string_id_meta_item_descriptor_8php_source.html":[4,0,2,0,1,0,1,7,20],
 "d5/db3/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_gathering_join_info.html":[3,0,1,16,0,6,1,74],
 "d5/db4/classpocketmine_1_1data_1_1_saved_data_loading_exception.html":[3,0,1,6,3],
 "d5/db4/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_dimension_ids.html":[3,0,1,16,0,6,1,57],
@@ -248,6 +249,5 @@ var NAVTREEINDEX87 =
 "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a319a186a07d166461600dd4a639eb86f":[3,0,1,12,16,12],
 "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a336d6f91be72079853413f5b4036a57d":[2,0,0,5,15,4],
 "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a336d6f91be72079853413f5b4036a57d":[3,0,1,12,16,4],
-"d5/dbc/classpocketmine_1_1item_1_1_bow.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,15,51],
-"d5/dbc/classpocketmine_1_1item_1_1_bow.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,16,51]
+"d5/dbc/classpocketmine_1_1item_1_1_bow.html#a3bc65b2324649d8735dadf9bf8cf0705":[2,0,0,5,15,51]
 };

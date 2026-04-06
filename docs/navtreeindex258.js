@@ -1,5 +1,11 @@
 var NAVTREEINDEX258 =
 {
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,2,3,0],
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,2,3,0],
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a7d847a6d4db2e3a406f5ce7b4376206c":[2,0,0,3,2,3,1],
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a7d847a6d4db2e3a406f5ce7b4376206c":[3,0,1,9,2,3,1],
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,2,3,2],
+"df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,2,3,2],
 "df/dbe/_plugin_description_8php_source.html":[4,0,1,15,6],
 "df/dbe/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_attribute_layer_settings_weight_float.html":[3,0,1,16,0,6,1,18],
 "df/dbf/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_update_entity_overrides_packet.html":[3,0,1,16,0,6,142],
@@ -243,11 +249,5 @@ var NAVTREEINDEX258 =
 "df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,168,7],
 "df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,170,7],
 "df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,168,4],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,170,4],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aa4773f0153324728a2f41820fa52442d":[2,0,0,0,168,17],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,170,17],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,168,34],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,170,34],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,168,23],
-"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,170,23]
+"df/dcc/classpocketmine_1_1block_1_1_nether_sprouts.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[3,0,1,0,170,4]
 };

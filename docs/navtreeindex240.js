@@ -1,5 +1,11 @@
 var NAVTREEINDEX240 =
 {
+"de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ad20602c8437154b4c4a201d6798e90fd":[3,0,1,0,0,7,17],
+"de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ad61d0fa541f73c0387c81dc3c46def67":[3,0,1,0,0,7,23],
+"de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#ad9f449415dce59a49e0ee2609222b9e2":[3,0,1,0,0,7,32],
+"de/def/classpocketmine_1_1block_1_1inventory_1_1_crafting_table_inventory.html#af622143f2671cdfd7faa8369987c7e2e":[3,0,1,0,0,7,3],
+"de/df0/_available_actor_identifiers_packet_8php_source.html":[4,0,2,0,1,0,16],
+"de/df0/_blast_furnace_8php_source.html":[4,0,1,0,1,5],
 "de/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_trade_packet.html":[3,0,1,16,0,6,232],
 "de/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_trade_packet.html#a2c8b489fb03f50b9a7247213a0bb8d88":[3,0,1,16,0,6,232,5],
 "de/df0/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_update_trade_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,232,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX240 =
 "df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a49395de82d025ca78745a17528049f18":[2,0,0,0,16,58],
 "df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a49395de82d025ca78745a17528049f18":[3,0,1,0,18,58],
 "df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[2,0,0,0,16,40],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,18,40],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4e4dba286a9374624bf6d9ddefb50b07":[2,0,0,0,16,55],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4e4dba286a9374624bf6d9ddefb50b07":[3,0,1,0,18,55],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[2,0,0,0,16,51],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4f8f9fbfa29c3fb1d57d655f69dfa66e":[3,0,1,0,18,51],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a515306bd68cc6568172bb9add641e61d":[2,0,0,0,16,63],
-"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a515306bd68cc6568172bb9add641e61d":[3,0,1,0,18,63]
+"df/d0b/classpocketmine_1_1block_1_1_base_sign.html#a4b01df2347f9cc897c5eb2858d6c5e7e":[3,0,1,0,18,40]
 };

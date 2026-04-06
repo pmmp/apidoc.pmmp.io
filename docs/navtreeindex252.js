@@ -1,5 +1,11 @@
 var NAVTREEINDEX252 =
 {
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a6d937579e316caf0a9f92c20753a66cb":[2,0,0,0,268,51],
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a6d937579e316caf0a9f92c20753a66cb":[3,0,1,0,270,51],
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[2,0,0,0,268,35],
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a6f13ff76dad934b1b2e078a5b57dd7a5":[3,0,1,0,270,35],
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a70f3f1e778bd92f38c39033e089a5cb3":[2,0,0,0,268,24],
+"df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a70f3f1e778bd92f38c39033e089a5cb3":[3,0,1,0,270,24],
 "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a75b16ca6e22355cf632466a969e79211":[2,0,0,0,268,42],
 "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,270,42],
 "df/d7b/classpocketmine_1_1block_1_1_wooden_slab.html#a771a30c30a36b0992f54c57dc63af10d":[2,0,0,0,268,41],
@@ -243,11 +249,5 @@ var NAVTREEINDEX252 =
 "df/d88/classpocketmine_1_1block_1_1_copper_chain.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,71,25],
 "df/d88/classpocketmine_1_1block_1_1_copper_chain.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,73,25],
 "df/d88/classpocketmine_1_1block_1_1_copper_chain.html#ace264e4db5ba15d3f7f2072f79d77023":[2,0,0,0,71,67],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#ace264e4db5ba15d3f7f2072f79d77023":[3,0,1,0,73,67],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,71,58],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,73,58],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,71,44],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,73,44],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,71,15],
-"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,73,15]
+"df/d88/classpocketmine_1_1block_1_1_copper_chain.html#ace264e4db5ba15d3f7f2072f79d77023":[3,0,1,0,73,67]
 };

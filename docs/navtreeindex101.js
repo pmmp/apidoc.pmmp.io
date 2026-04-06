@@ -1,5 +1,6 @@
 var NAVTREEINDEX101 =
 {
+"d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,116,27],
 "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a1179a3b7a49461ede413b50c82b5684a":[3,0,1,12,117,27],
 "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a1df151eb419168f838e6d927c50f9210":[2,0,0,5,116,4],
 "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a1df151eb419168f838e6d927c50f9210":[3,0,1,12,117,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX101 =
 "d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a56ca3af23c90116ceb2673db28c8a6f8":[3,0,1,2,6,1],
 "d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a8b7b223af5887da270b6e15bde3ecc3c":[2,0,0,1,4,3],
 "d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a8b7b223af5887da270b6e15bde3ecc3c":[3,0,1,2,6,3],
-"d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#ab811d359621f6d634eaf165917f43d2b":[2,0,0,1,4,8],
-"d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#ab811d359621f6d634eaf165917f43d2b":[3,0,1,2,6,8]
+"d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#ab811d359621f6d634eaf165917f43d2b":[2,0,0,1,4,8]
 };

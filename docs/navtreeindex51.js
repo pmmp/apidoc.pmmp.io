@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"d3/d60/_map_decoration_8php_source.html":[4,0,2,0,1,0,1,92],
 "d3/d60/classpocketmine_1_1entity_1_1effect_1_1_speed_effect.html":[3,0,1,7,1,16],
 "d3/d60/classpocketmine_1_1entity_1_1effect_1_1_speed_effect.html#a125c11ecf3e80cdb71ecc6e07f162da4":[3,0,1,7,1,16,8],
 "d3/d60/classpocketmine_1_1entity_1_1effect_1_1_speed_effect.html#a47e78434ab3294753bc42572711b3d49":[3,0,1,7,1,16,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "d3/d6c/classpocketmine_1_1item_1_1_book.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,14,29],
 "d3/d6c/classpocketmine_1_1item_1_1_book.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,15,29],
 "d3/d6c/classpocketmine_1_1item_1_1_book.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,14,5],
-"d3/d6c/classpocketmine_1_1item_1_1_book.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,15,5],
-"d3/d6c/classpocketmine_1_1item_1_1_book.html#a5b53d78436bbdb5d53102fda463be4e6":[2,0,0,5,14,49]
+"d3/d6c/classpocketmine_1_1item_1_1_book.html#a568624515bba5ff57e21ec8c828ade56":[3,0,1,12,15,5]
 };

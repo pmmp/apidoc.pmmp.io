@@ -1,5 +1,9 @@
 var NAVTREEINDEX194 =
 {
+"dc/d20/classpocketmine_1_1item_1_1_durable.html#abd2688f008221d4c5fcdacac754d807e":[3,0,1,12,37,41],
+"dc/d20/classpocketmine_1_1item_1_1_durable.html#abe253aa6fbfe2fc36389edadb753ffc7":[2,0,0,5,36,19],
+"dc/d20/classpocketmine_1_1item_1_1_durable.html#abe253aa6fbfe2fc36389edadb753ffc7":[3,0,1,12,37,19],
+"dc/d20/classpocketmine_1_1item_1_1_durable.html#ac534c116a4d2291a8d67f15c4b485b74":[2,0,0,5,36,27],
 "dc/d20/classpocketmine_1_1item_1_1_durable.html#ac534c116a4d2291a8d67f15c4b485b74":[3,0,1,12,37,27],
 "dc/d20/classpocketmine_1_1item_1_1_durable.html#ac7e878537e8ea68cc0d4d565f9f25062":[2,0,0,5,36,47],
 "dc/d20/classpocketmine_1_1item_1_1_durable.html#ac7e878537e8ea68cc0d4d565f9f25062":[3,0,1,12,37,47],
@@ -245,9 +249,5 @@ var NAVTREEINDEX194 =
 "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,262,12],
 "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,260,70],
 "dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,262,70],
-"dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,260,41],
-"dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,262,41],
-"dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[2,0,0,0,260,8],
-"dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a9b788631c97edb0ea441d4f0e1a5f7b4":[3,0,1,0,262,8],
-"dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#aa09e248dd611c0ebb95cf2adf2d6d31c":[2,0,0,0,260,4]
+"dc/d22/classpocketmine_1_1block_1_1_weighted_pressure_plate_light.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,260,41]
 };

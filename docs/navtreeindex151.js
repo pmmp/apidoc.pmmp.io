@@ -1,5 +1,8 @@
 var NAVTREEINDEX151 =
 {
+"d9/d23/classpocketmine_1_1block_1_1_soul_fire.html#ade77e0b1fce7bdebceed4092b9c5c022":[2,0,0,0,216,33],
+"d9/d23/classpocketmine_1_1block_1_1_soul_fire.html#ade77e0b1fce7bdebceed4092b9c5c022":[3,0,1,0,218,33],
+"d9/d23/classpocketmine_1_1block_1_1_soul_fire.html#ae829b9f476afef6b23d6f4f7fd558e0f":[2,0,0,0,216,32],
 "d9/d23/classpocketmine_1_1block_1_1_soul_fire.html#ae829b9f476afef6b23d6f4f7fd558e0f":[3,0,1,0,218,32],
 "d9/d23/classpocketmine_1_1block_1_1_soul_fire.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[2,0,0,0,216,54],
 "d9/d23/classpocketmine_1_1block_1_1_soul_fire.html#aecdd2a95b05e843b6ffb66ee2dd8fa4b":[3,0,1,0,218,54],
@@ -246,8 +249,5 @@ var NAVTREEINDEX151 =
 "d9/d42/classpocketmine_1_1world_1_1biome_1_1_ice_plains_biome.html#a3bd95c376c2ca535cb932b700bde38dc":[3,0,1,30,0,7,0],
 "d9/d42/classpocketmine_1_1world_1_1biome_1_1_ice_plains_biome.html#aee779e604579f71977cc5624dc8dfd0f":[3,0,1,30,0,7,1],
 "d9/d43/_firework_rocket_type_8php_source.html":[4,0,1,10,49],
-"d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html":[2,0,0,22],
-"d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html":[3,0,1,38],
-"d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#a04e4b325df3590310bdccb730ebf973c":[2,0,0,22,3],
-"d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html#a04e4b325df3590310bdccb730ebf973c":[3,0,1,38,3]
+"d9/d43/classpocketmine_1_1_time_tracking_sleeper_handler.html":[2,0,0,22]
 };

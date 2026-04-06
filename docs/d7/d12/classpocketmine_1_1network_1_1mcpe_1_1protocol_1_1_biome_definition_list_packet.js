@@ -9,5 +9,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_pac
     [ "decodePayload", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a82dfe931d90ce923ac1c09236eb7c8bb", null ],
     [ "encodePayload", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a21df0e37a2f594734e52044e378fc8fc", null ],
     [ "fromDefinitions", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ade98668752bb5fb156d0ff06b3689629", null ],
+    [ "getDefinitionData", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a86b1ee9e5da332e612a98c03a9c788e2", null ],
+    [ "getStrings", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a8c37aea7850966002f93c88c7944a744", null ],
     [ "handle", "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ab96decbf39daf8225e3a9263b0bd9b46", null ]
 ];

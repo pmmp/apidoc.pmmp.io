@@ -1,5 +1,11 @@
 var NAVTREEINDEX242 =
 {
+"df/d0c/classpocketmine_1_1entity_1_1_living.html#ae36a7e5064724e460fabfe810f2def20":[2,0,0,2,15,15],
+"df/d0c/classpocketmine_1_1entity_1_1_living.html#ae36a7e5064724e460fabfe810f2def20":[3,0,1,7,20,15],
+"df/d0c/classpocketmine_1_1entity_1_1_living.html#ae3d1faacc118b9fd25a401a995fcb1f4":[2,0,0,2,15,71],
+"df/d0c/classpocketmine_1_1entity_1_1_living.html#ae3d1faacc118b9fd25a401a995fcb1f4":[3,0,1,7,20,71],
+"df/d0c/classpocketmine_1_1entity_1_1_living.html#ae8a891986a06e3621c4486538b0e5a60":[2,0,0,2,15,46],
+"df/d0c/classpocketmine_1_1entity_1_1_living.html#ae8a891986a06e3621c4486538b0e5a60":[3,0,1,7,20,46],
 "df/d0c/classpocketmine_1_1entity_1_1_living.html#ae96e5d919208d6d9d4ccc75136167684":[2,0,0,2,15,22],
 "df/d0c/classpocketmine_1_1entity_1_1_living.html#ae96e5d919208d6d9d4ccc75136167684":[3,0,1,7,20,22],
 "df/d0c/classpocketmine_1_1entity_1_1_living.html#aecbf08b9c016e79822cd3c7ad71c7f55":[2,0,0,2,15,18],
@@ -243,11 +249,5 @@ var NAVTREEINDEX242 =
 "df/d1c/classpocketmine_1_1block_1_1_cake.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,43,0],
 "df/d1c/classpocketmine_1_1block_1_1_cake.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,41,25],
 "df/d1c/classpocketmine_1_1block_1_1_cake.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,43,25],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,41,59],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,43,59],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,41,44],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,43,44],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,41,16],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,43,16],
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,41,43]
+"df/d1c/classpocketmine_1_1block_1_1_cake.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,41,59]
 };

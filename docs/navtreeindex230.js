@@ -1,5 +1,10 @@
 var NAVTREEINDEX230 =
 {
+"de/d29/classpocketmine_1_1block_1_1_lantern.html#ab6b90601adfc9732893dcffe256514a9":[3,0,1,0,143,65],
+"de/d29/classpocketmine_1_1block_1_1_lantern.html#ab92353cf0aa5c05ad26535f98a2b1dca":[2,0,0,0,141,26],
+"de/d29/classpocketmine_1_1block_1_1_lantern.html#ab92353cf0aa5c05ad26535f98a2b1dca":[3,0,1,0,143,26],
+"de/d29/classpocketmine_1_1block_1_1_lantern.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,141,12],
+"de/d29/classpocketmine_1_1block_1_1_lantern.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,143,12],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,141,55],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,143,55],
 "de/d29/classpocketmine_1_1block_1_1_lantern.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,141,49],
@@ -244,10 +249,5 @@ var NAVTREEINDEX230 =
 "de/d38/classpocketmine_1_1block_1_1_melon.html#afeb38d89fa6f5f5912a1b0e6d131fa3b":[3,0,1,0,157,27],
 "de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html":[3,0,1,6,0,0,0,5],
 "de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a00cfb67146d9bf6158a100056355351d":[3,0,1,6,0,0,0,5,7],
-"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a226ffd6f82ee0bed43b786a52551446f":[3,0,1,6,0,0,0,5,2],
-"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a765829c92f168ea3d9decb6752c75cae":[3,0,1,6,0,0,0,5,5],
-"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a8fc44fb84ec04bf3a5111a82c8f2f43c":[3,0,1,6,0,0,0,5,1],
-"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#aaa0bc525a0e14e7f83e394337de50872":[3,0,1,6,0,0,0,5,0],
-"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#aaf86b06a751c11dda063d2314a71f352":[3,0,1,6,0,0,0,5,3],
-"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#ab6e5a83b31f1e752fe52006920f0b34d":[3,0,1,6,0,0,0,5,4]
+"de/d3a/classpocketmine_1_1data_1_1bedrock_1_1block_1_1convert_1_1_block_state_serializer_helper.html#a226ffd6f82ee0bed43b786a52551446f":[3,0,1,6,0,0,0,5,2]
 };

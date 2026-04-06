@@ -1,5 +1,9 @@
 var NAVTREEINDEX166 =
 {
+"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,21,5],
+"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,21,0],
+"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,1,21,0],
+"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,1,21,4],
 "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a90efcab0d539a5cb5b17968dfa164017":[3,0,1,9,1,21,4],
 "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[2,0,0,3,1,21,3],
 "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a9720c24a4971d7d2b9838e567ce7ec91":[3,0,1,9,1,21,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX166 =
 "da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[2,0,0,0,129,25],
 "da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a2cbe9ba6733a72db2c2630aaab7cefe9":[3,0,1,0,131,25],
 "da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[2,0,0,0,129,37],
-"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[3,0,1,0,131,37],
-"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a30a070aa7befb02f9fff5cbf2693c01e":[2,0,0,0,129,9],
-"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a30a070aa7befb02f9fff5cbf2693c01e":[3,0,1,0,131,9],
-"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a36afea9f0214193963f75577e8d48c26":[2,0,0,0,129,59],
-"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a36afea9f0214193963f75577e8d48c26":[3,0,1,0,131,59]
+"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a2f69b17d8bb1c49eaf8ee1b13e4fd6e2":[3,0,1,0,131,37]
 };

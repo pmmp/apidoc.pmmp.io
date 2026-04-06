@@ -1,5 +1,9 @@
 var NAVTREEINDEX206 =
 {
+"dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[2,0,0,0,269,12],
+"dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#aba71bdae8759a0f2dc0bb44aeafc96e4":[3,0,1,0,271,12],
+"dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#abce48b40feb225f4ce9b7cf2e02a9336":[2,0,0,0,269,56],
+"dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,271,56],
 "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ac34d7d0bd5e5173f331e56f6b97ca796":[2,0,0,0,269,50],
 "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ac34d7d0bd5e5173f331e56f6b97ca796":[3,0,1,0,271,50],
 "dc/dc0/classpocketmine_1_1block_1_1_wooden_stairs.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,269,52],
@@ -245,9 +249,5 @@ var NAVTREEINDEX206 =
 "dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a71289362f9d561347b5c8c2717eb0512":[3,0,1,12,29,42],
 "dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a7b5c1e7e496c3077658212aaacec4b56":[2,0,0,5,28,17],
 "dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a7b5c1e7e496c3077658212aaacec4b56":[3,0,1,12,29,17],
-"dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,28,16],
-"dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a7d45886d40860e24fb4c18d02a3d1a32":[3,0,1,12,29,16],
-"dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a8e97e9296238bf8794a2d2f8e94e8a93":[2,0,0,5,28,53],
-"dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a8e97e9296238bf8794a2d2f8e94e8a93":[3,0,1,12,29,53],
-"dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a95cfab40de7390593990a239f8e4af73":[2,0,0,5,28,13]
+"dc/dc2/classpocketmine_1_1item_1_1_cooked_fish.html#a7d45886d40860e24fb4c18d02a3d1a32":[2,0,0,5,28,16]
 };

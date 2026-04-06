@@ -1,5 +1,9 @@
 var NAVTREEINDEX215 =
 {
+"dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a3a46169e7d256b3a1f3af8c54ddba832":[2,0,0,0,97,62],
+"dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a3a46169e7d256b3a1f3af8c54ddba832":[3,0,1,0,99,62],
+"dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a3bffed15a0b8de5f9df11e6f4b407163":[2,0,0,0,97,10],
+"dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a3bffed15a0b8de5f9df11e6f4b407163":[3,0,1,0,99,10],
 "dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a43e3458847422ebd5dec6c914b443c93":[2,0,0,0,97,44],
 "dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a43e3458847422ebd5dec6c914b443c93":[3,0,1,0,99,44],
 "dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a444028c60ad6c7afacda1a6cc3065e59":[2,0,0,0,97,13],
@@ -245,9 +249,5 @@ var NAVTREEINDEX215 =
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,56,58],
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,58,58],
 "dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,56,44],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,58,44],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,56,15],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,58,15],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,56,43],
-"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#ad925607ef09026804dbbf059583e3add":[3,0,1,0,58,43]
+"dd/d4a/classpocketmine_1_1block_1_1_chemistry_table.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,58,44]
 };

@@ -54,6 +54,7 @@ var NAVTREEINDEX48 =
 "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,98,1],
 "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ac4163a27d25837966e28d7d17d01e8ba":[3,0,1,16,0,6,98,6],
 "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,98,4],
+"d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#acd4dda99b544ae2d1df62eff98f9268e":[3,0,1,16,0,6,98,9],
 "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ad4a79e8de1933518efd24ed4d52d2b76":[3,0,1,16,0,6,98,7],
 "d3/d27/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_data_upgrader.html":[3,0,1,6,0,1,0,1],
 "d3/d27/classpocketmine_1_1data_1_1bedrock_1_1item_1_1upgrade_1_1_item_data_upgrader.html#a34e13e7797f23de03978ead6b85d0550":[3,0,1,6,0,1,0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ab3c11dd444626eb5ef1d2ab666ce5def":[3,0,1,7,3,8,15],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#abefd6990ef1fb83a1b4e0352a44f2455":[3,0,1,7,3,8,42],
 "d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ac028a6475bf09f61ce9dfb952d4a5d65":[3,0,1,7,3,8,20],
-"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ac63e377a16d1b0328ddb165a6a2b39e3":[3,0,1,7,3,8,41],
-"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#acaced48bc41cc13b10c1e99ba76bdabd":[3,0,1,7,3,8,31]
+"d3/d2c/classpocketmine_1_1entity_1_1projectile_1_1_splash_potion.html#ac63e377a16d1b0328ddb165a6a2b39e3":[3,0,1,7,3,8,41]
 };

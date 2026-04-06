@@ -1,5 +1,9 @@
 var NAVTREEINDEX184 =
 {
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a75b16ca6e22355cf632466a969e79211":[3,0,1,0,126,41],
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a771a30c30a36b0992f54c57dc63af10d":[2,0,0,0,124,40],
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a771a30c30a36b0992f54c57dc63af10d":[3,0,1,0,126,40],
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[2,0,0,0,124,28],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a85746252cd6a5f1e81cb4c4ebccb52e3":[3,0,1,0,126,28],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a863a7a7c27f111cc622ebb10711807c2":[2,0,0,0,124,56],
 "db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a863a7a7c27f111cc622ebb10711807c2":[3,0,1,0,126,56],
@@ -245,9 +249,5 @@ var NAVTREEINDEX184 =
 "db/db3/classpocketmine_1_1world_1_1particle_1_1_entity_flame_particle.html#a4b1e67bc0f60aa95b5b370c8cb215d62":[3,0,1,30,4,11,0],
 "db/db5/classpocketmine_1_1item_1_1_stick.html":[2,0,0,5,108],
 "db/db5/classpocketmine_1_1item_1_1_stick.html":[3,0,1,12,109],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,108,30],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,109,30],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#a113df9761f1a285d72fae0d9da6b21d6":[2,0,0,5,108,9],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#a113df9761f1a285d72fae0d9da6b21d6":[3,0,1,12,109,9],
-"db/db5/classpocketmine_1_1item_1_1_stick.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,108,1]
+"db/db5/classpocketmine_1_1item_1_1_stick.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,108,30]
 };

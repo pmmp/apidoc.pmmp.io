@@ -7,5 +7,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packe
     [ "decodeHeader", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3", null ],
     [ "decodePayload", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#ab18d17ed12b01b554a919c2d9a1fcb4a", null ],
     [ "encodePayload", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#ae9194b617653b7f91c5c9be8cc9fcd1b", null ],
-    [ "handle", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a3ec82d666f873f6dcd678b0a70339f47", null ]
+    [ "handle", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a3ec82d666f873f6dcd678b0a70339f47", null ],
+    [ "isForceDisablingVibrantVisuals", "de/dde/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_resource_packs_info_packet.html#a33aaba2c714d3b13a5f26d587e316247", null ]
 ];

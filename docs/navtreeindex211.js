@@ -1,5 +1,9 @@
 var NAVTREEINDEX211 =
 {
+"dd/d00/classpocketmine_1_1color_1_1_color.html#a8f3b0389d37f6ae3b9d37e2285d2acb8":[3,0,1,1,0,9],
+"dd/d00/classpocketmine_1_1color_1_1_color.html#aa1c51ca66ddba0c60e31eddf4eb6bb80":[3,0,1,1,0,7],
+"dd/d00/classpocketmine_1_1color_1_1_color.html#aaa783c78f617e894dca60bcf62925905":[3,0,1,1,0,10],
+"dd/d00/classpocketmine_1_1color_1_1_color.html#ada609140d3a3aada63e97307d43546d6":[3,0,1,1,0,5],
 "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html":[3,0,1,16,0,6,52],
 "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html#a30df532361d6f8d8523f70abdf266c9a":[3,0,1,16,0,6,52,7],
 "dd/d00/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_to_server_handshake_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,52,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX211 =
 "dd/d0a/_compression_algorithm_8php_source.html":[4,0,2,0,1,0,1,48],
 "dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html":[3,0,1,16,0,5,4],
 "dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a0238573cce0ab57ca3af35cfa4caff9b":[3,0,1,16,0,5,4,2],
-"dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a02f7f750887c577c272e7063a12fe587":[3,0,1,16,0,5,4,6],
-"dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a0d0412fea9d68ef11fe5f8fcccd2294c":[3,0,1,16,0,5,4,0],
-"dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a2e8f08ad90ca2da206b318d2d2b96324":[3,0,1,16,0,5,4,4],
-"dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a46880c85a482c8a85bb9b1361afc1da9":[3,0,1,16,0,5,4,5],
-"dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a58acfda5e6974f74d17ca7a910c88a6b":[3,0,1,16,0,5,4,3]
+"dd/d0a/classpocketmine_1_1network_1_1mcpe_1_1handler_1_1_item_stack_request_executor.html#a02f7f750887c577c272e7063a12fe587":[3,0,1,16,0,5,4,6]
 };

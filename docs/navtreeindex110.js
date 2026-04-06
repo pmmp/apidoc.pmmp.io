@@ -1,5 +1,6 @@
 var NAVTREEINDEX110 =
 {
+"d7/d0d/_vanilla_effects_8php_source.html":[4,0,0,2,0,0],
 "d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html":[2,0,0,0,0,30],
 "d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html":[3,0,1,0,1,30],
 "d7/d0d/classpocketmine_1_1block_1_1tile_1_1_sign.html#a02c276f7b9073d159259dbe92aa1142b":[2,0,0,0,0,30,10],
@@ -147,9 +148,11 @@ var NAVTREEINDEX110 =
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a55025ba182163f59eb3175f7a7611b5d":[3,0,1,16,0,6,19,4],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a72808b1706178c1520f09d690c0ea423":[3,0,1,16,0,6,19,2],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a82dfe931d90ce923ac1c09236eb7c8bb":[3,0,1,16,0,6,19,6],
+"d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a86b1ee9e5da332e612a98c03a9c788e2":[3,0,1,16,0,6,19,9],
+"d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a8c37aea7850966002f93c88c7944a744":[3,0,1,16,0,6,19,10],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#a9e53bcf6c12eab41fd619f5d812c1be2":[3,0,1,16,0,6,19,0],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ab869f6f8d246ff2f83744b48f43c4b54":[3,0,1,16,0,6,19,1],
-"d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ab96decbf39daf8225e3a9263b0bd9b46":[3,0,1,16,0,6,19,9],
+"d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ab96decbf39daf8225e3a9263b0bd9b46":[3,0,1,16,0,6,19,11],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,19,5],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#ade98668752bb5fb156d0ff06b3689629":[3,0,1,16,0,6,19,8],
 "d7/d12/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_biome_definition_list_packet.html#aeddf3d2eedcd565e567b4a2defe380a5":[3,0,1,16,0,6,19,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX110 =
 "d7/d18/classpocketmine_1_1block_1_1_copper.html#aa4773f0153324728a2f41820fa52442d":[3,0,1,0,70,17],
 "d7/d18/classpocketmine_1_1block_1_1_copper.html#aac6828efb885bc8fe0f8876728ddde5d":[2,0,0,0,68,34],
 "d7/d18/classpocketmine_1_1block_1_1_copper.html#aac6828efb885bc8fe0f8876728ddde5d":[3,0,1,0,70,34],
-"d7/d18/classpocketmine_1_1block_1_1_copper.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,68,23],
-"d7/d18/classpocketmine_1_1block_1_1_copper.html#aad121ffc31a225748d5bcc0e0752a9f0":[3,0,1,0,70,23],
-"d7/d18/classpocketmine_1_1block_1_1_copper.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[2,0,0,0,68,31],
-"d7/d18/classpocketmine_1_1block_1_1_copper.html#aaeaa1c5f259e28087e09db0a9b1ba39f":[3,0,1,0,70,31]
+"d7/d18/classpocketmine_1_1block_1_1_copper.html#aad121ffc31a225748d5bcc0e0752a9f0":[2,0,0,0,68,23]
 };

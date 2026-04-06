@@ -1,5 +1,6 @@
 var NAVTREEINDEX86 =
 {
+"d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_player_auth_input_vehicle_info.html":[3,0,1,16,0,6,1,100],
 "d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_environments.html":[3,0,1,16,0,6,1,5,2,0,4],
 "d5/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1openid_1_1api_1_1_minecraft_service_environments.html#a8791988f22bb46b0d015171b9c750f2a":[3,0,1,16,0,6,1,5,2,0,4,0],
 "d5/d9b/item_2_arrow_8php_source.html":[4,0,1,10,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX86 =
 "d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html":[3,0,1,30,6,0],
 "d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a36be7d7c97a6807d24d7da76a8308605":[3,0,1,30,6,0,2],
 "d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a416e1f6b373e72534a11d349c453f3e8":[3,0,1,30,6,0,1],
-"d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a45e8aa37f1e25d4ca78bf4f79d952ff9":[3,0,1,30,6,0,0],
-"d5/db1/_string_id_meta_item_descriptor_8php_source.html":[4,0,2,0,1,0,1,7,20]
+"d5/dad/classpocketmine_1_1world_1_1utils_1_1_sub_chunk_explorer.html#a45e8aa37f1e25d4ca78bf4f79d952ff9":[3,0,1,30,6,0,0]
 };

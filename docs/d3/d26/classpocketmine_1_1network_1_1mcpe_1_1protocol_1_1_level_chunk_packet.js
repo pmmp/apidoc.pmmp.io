@@ -8,5 +8,6 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet =
     [ "decodePayload", "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#aa9c2ebb4da0adb4d5c40b324cea150fd", null ],
     [ "encodePayload", "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ac4163a27d25837966e28d7d17d01e8ba", null ],
     [ "getUsedBlobHashes", "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ad4a79e8de1933518efd24ed4d52d2b76", null ],
-    [ "handle", "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ab05102bf20b6944e1ed936577b7329fa", null ]
+    [ "handle", "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#ab05102bf20b6944e1ed936577b7329fa", null ],
+    [ "isClientSubChunkRequestEnabled", "d3/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_level_chunk_packet.html#acd4dda99b544ae2d1df62eff98f9268e", null ]
 ];

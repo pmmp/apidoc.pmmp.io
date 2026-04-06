@@ -1,5 +1,6 @@
 var NAVTREEINDEX100 =
 {
+"d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a4a9aa55600bb30c4d55ad63337874a07":[3,0,1,12,35,6],
 "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a536378f334334c0e8b06e5ccaeb4de39":[2,0,0,5,34,29],
 "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a536378f334334c0e8b06e5ccaeb4de39":[3,0,1,12,35,29],
 "d6/d83/classpocketmine_1_1item_1_1_coral_fan.html#a568624515bba5ff57e21ec8c828ade56":[2,0,0,5,34,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX100 =
 "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a0a422a89abd427286bc2f312100f968c":[2,0,0,5,116,30],
 "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a0a422a89abd427286bc2f312100f968c":[3,0,1,12,117,30],
 "d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a11483f8bbc44517bf2a25e40a3aa7558":[2,0,0,5,116,1],
-"d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,117,1],
-"d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a1179a3b7a49461ede413b50c82b5684a":[2,0,0,5,116,27]
+"d6/d92/classpocketmine_1_1item_1_1_torchflower_seeds.html#a11483f8bbc44517bf2a25e40a3aa7558":[3,0,1,12,117,1]
 };

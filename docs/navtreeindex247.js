@@ -1,5 +1,11 @@
 var NAVTREEINDEX247 =
 {
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#a8581da0e1cba085fdfebe5612edfbbfb":[3,0,1,0,6,23],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#a863a7a7c27f111cc622ebb10711807c2":[2,0,0,0,4,61],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#a863a7a7c27f111cc622ebb10711807c2":[3,0,1,0,6,61],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,4,11],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,6,11],
+"df/d58/classpocketmine_1_1block_1_1_anvil.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,4,73],
 "df/d58/classpocketmine_1_1block_1_1_anvil.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,6,73],
 "df/d58/classpocketmine_1_1block_1_1_anvil.html#a994b80e9138156e5b90a803def57c7db":[2,0,0,0,4,42],
 "df/d58/classpocketmine_1_1block_1_1_anvil.html#a994b80e9138156e5b90a803def57c7db":[3,0,1,0,6,42],
@@ -243,11 +249,5 @@ var NAVTREEINDEX247 =
 "df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#a3eff96627ec2a65cc1524defb4de43a8":[3,0,1,2,0,18,0],
 "df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#a425117ae5e7bab32cc824f19f82b613b":[3,0,1,2,0,18,2],
 "df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#a57c09d1063bc811e24bdc3d750e882d5":[3,0,1,2,0,18,4],
-"df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#a8c40c93db847fcf02c3e7b19a729dd10":[3,0,1,2,0,18,5],
-"df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#ac9790f6d386568af660860ceb824ee9a":[3,0,1,2,0,18,3],
-"df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#acbccfc9431699f8cefb66e359419e1df":[3,0,1,2,0,18,1],
-"df/d65/_type_conversion_exception_8php_source.html":[4,0,1,12,0,3,7],
-"df/d66/_spore_particle_8php_source.html":[4,0,1,25,4,34],
-"df/d66/classpocketmine_1_1command_1_1defaults_1_1_set_world_spawn_command.html":[3,0,1,2,0,28],
-"df/d66/classpocketmine_1_1command_1_1defaults_1_1_set_world_spawn_command.html#a425117ae5e7bab32cc824f19f82b613b":[3,0,1,2,0,28,2]
+"df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#a8c40c93db847fcf02c3e7b19a729dd10":[3,0,1,2,0,18,5]
 };

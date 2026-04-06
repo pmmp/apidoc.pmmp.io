@@ -1,5 +1,6 @@
 var NAVTREEINDEX82 =
 {
+"d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,19,4],
 "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,19,0],
 "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,1,19,0],
 "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,1,19,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX82 =
 "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a863a7a7c27f111cc622ebb10711807c2":[3,0,1,0,263,56],
 "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a912c0f3a42aefc049e119f931a2ec86e":[2,0,0,0,261,11],
 "d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a912c0f3a42aefc049e119f931a2ec86e":[3,0,1,0,263,11],
-"d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,261,66],
-"d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a9404d9040389f3ff2462f86d9a181160":[3,0,1,0,263,66]
+"d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a9404d9040389f3ff2462f86d9a181160":[2,0,0,0,261,66]
 };

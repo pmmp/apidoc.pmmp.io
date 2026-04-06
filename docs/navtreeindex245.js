@@ -1,5 +1,11 @@
 var NAVTREEINDEX245 =
 {
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a6cffe11212563e8784ead553fa08bf23":[2,0,0,2,21,53],
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a6cffe11212563e8784ead553fa08bf23":[3,0,1,7,26,53],
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a72313b6172199315104d3a77a86d3b9d":[2,0,0,2,21,74],
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a72313b6172199315104d3a77a86d3b9d":[3,0,1,7,26,74],
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a75141c6ee2a98bd8b3f1ab49998b455c":[2,0,0,2,21,37],
+"df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a75141c6ee2a98bd8b3f1ab49998b455c":[3,0,1,7,26,37],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a755bb02c83a70658de4339e2c97affa1":[2,0,0,2,21,2],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a755bb02c83a70658de4339e2c97affa1":[3,0,1,7,26,2],
 "df/d3c/classpocketmine_1_1entity_1_1_water_animal.html#a7a0ab51bbdfe50c4c8c58424974b47a7":[2,0,0,2,21,49],
@@ -243,11 +249,5 @@ var NAVTREEINDEX245 =
 "df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html":[2,0,0,0,35],
 "df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html":[3,0,1,0,37],
 "df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a0931c682312473fc2540464b7a4747c0":[2,0,0,0,35,58],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,37,58],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a097af4a935135a8524d812f497373075":[2,0,0,0,35,63],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a097af4a935135a8524d812f497373075":[3,0,1,0,37,63],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[2,0,0,0,35,18],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,37,18],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a1a1a2b2adf423738289d296198f044e1":[2,0,0,0,35,60],
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a1a1a2b2adf423738289d296198f044e1":[3,0,1,0,37,60]
+"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a0931c682312473fc2540464b7a4747c0":[3,0,1,0,37,58]
 };

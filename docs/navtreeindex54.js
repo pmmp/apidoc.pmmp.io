@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#a4e3f681b4251ea64da8f24a4849415c7":[2,0,0,7,1,2],
 "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#a4e3f681b4251ea64da8f24a4849415c7":[3,0,1,15,2,2],
 "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#a5484f8798e35c2d3c858b48925c0d0e0":[2,0,0,7,1,16],
 "d3/d8c/classpocketmine_1_1nbt_1_1_big_endian_nbt_serializer.html#a5484f8798e35c2d3c858b48925c0d0e0":[3,0,1,15,2,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "d3/da7/classpocketmine_1_1block_1_1_shulker_box.html#a1ce2444f76246982cfbb507fed99a48e":[3,0,1,0,208,48],
 "d3/da7/classpocketmine_1_1block_1_1_shulker_box.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,206,3],
 "d3/da7/classpocketmine_1_1block_1_1_shulker_box.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,208,3],
-"d3/da7/classpocketmine_1_1block_1_1_shulker_box.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,206,22],
-"d3/da7/classpocketmine_1_1block_1_1_shulker_box.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[3,0,1,0,208,22]
+"d3/da7/classpocketmine_1_1block_1_1_shulker_box.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,206,22]
 };

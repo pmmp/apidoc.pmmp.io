@@ -1,5 +1,6 @@
 var NAVTREEINDEX88 =
 {
+"d5/dbc/classpocketmine_1_1item_1_1_bow.html#a3bc65b2324649d8735dadf9bf8cf0705":[3,0,1,12,16,51],
 "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a40f57ea1d37fba8d60bf520baf93d4e0":[2,0,0,5,15,32],
 "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a40f57ea1d37fba8d60bf520baf93d4e0":[3,0,1,12,16,32],
 "d5/dbc/classpocketmine_1_1item_1_1_bow.html#a444bab7a652a1dc604048e392f5887cd":[2,0,0,5,15,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX88 =
 "d5/dcf/classpocketmine_1_1entity_1_1projectile_1_1_snowball.html#afdd4efc12fe21730ceb104af111f576d":[3,0,1,7,3,7,23],
 "d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html":[3,0,1,0,0,10],
 "d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html#a0104746c6eceddc519011f354d610438":[3,0,1,0,0,10,6],
-"d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html#a010a9ab31edc7fa850b79849037cede7":[3,0,1,0,0,10,22],
-"d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html#a0d34eeb86b4a16b22bc775d8f1d11762":[3,0,1,0,0,10,14]
+"d5/dd0/classpocketmine_1_1block_1_1inventory_1_1_ender_chest_inventory.html#a010a9ab31edc7fa850b79849037cede7":[3,0,1,0,0,10,22]
 };

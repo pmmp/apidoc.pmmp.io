@@ -1,5 +1,9 @@
 var NAVTREEINDEX165 =
 {
+"da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a46ca31398256b2a5fecddd025587579b":[3,0,1,0,0,6,2],
+"da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a4c58fc3d97b59245d73157c09b3bbe03":[3,0,1,0,0,6,23],
+"da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a4c7aef211a9628f380e7de98b49c4551":[3,0,1,0,0,6,4],
+"da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a5b07e7dec2523174411fb7762c69bf3f":[3,0,1,0,0,6,13],
 "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a5c676080faee6eaecdc04a70fcedf142":[3,0,1,0,0,6,21],
 "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a62e8a8891e7940a3b14878c3b46cbdd0":[3,0,1,0,0,6,8],
 "da/d24/classpocketmine_1_1block_1_1inventory_1_1_chest_inventory.html#a6a079a7248296bc592b391ad6d5d56bf":[3,0,1,0,0,6,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX165 =
 "da/d3e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_respawn_packet.html#ac96358bb5d1d9ff91fd0d12d8883f4a3":[3,0,1,16,0,6,165,4],
 "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html":[2,0,0,3,1,21],
 "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html":[3,0,1,9,1,21],
-"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,21,5],
-"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a2333d7f055234d7fefc00066158bd888":[3,0,1,9,1,21,5],
-"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,1,21,0],
-"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a3d979a673428c9ae66e1039bf796e945":[3,0,1,9,1,21,0],
-"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a90efcab0d539a5cb5b17968dfa164017":[2,0,0,3,1,21,4]
+"da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html#a2333d7f055234d7fefc00066158bd888":[2,0,0,3,1,21,5]
 };
