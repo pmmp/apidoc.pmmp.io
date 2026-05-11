@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-9c2871e619ddaa0a56652c6c5556efcf767fbf05</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.2 git-c9e7b3ab9bd2149f206392522e8eb7e9d8d68cfa</span>
    </div>
   </td>
  </tr>
@@ -574,7 +574,7 @@ $(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.html','../../');
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                $windowId,</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                $netSlot,</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                <span class="keyword">new</span> FullContainerName($this-&gt;lastInventoryNetworkId),</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                <span class="keyword">new</span> ItemStackWrapper(0, ItemStack::null()),</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                <span class="keyword">null</span>,</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>                <span class="keyword">new</span> ItemStackWrapper(0, ItemStack::null())</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            ));</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        }</div>
@@ -583,7 +583,7 @@ $(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.html','../../');
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            $windowId,</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>            $netSlot,</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>            <span class="keyword">new</span> FullContainerName($this-&gt;lastInventoryNetworkId),</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>            <span class="keyword">new</span> ItemStackWrapper(0, ItemStack::null()),</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>            <span class="keyword">null</span>,</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>            $itemStackWrapper</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        ));</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    }</div>
@@ -846,8 +846,8 @@ $(function(){initNavTree('dc/d9e/_inventory_manager_8php_source.html','../../');
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_equipment_packet_html"><div class="ttname"><a href="../../dd/d1c/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_equipment_packet.html">pocketmine\network\mcpe\protocol\MobEquipmentPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/_mob_equipment_packet_8php_source.html#l00023">MobEquipmentPacket.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet_html"><div class="ttname"><a href="../../d2/d01/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_player_enchant_options_packet.html">pocketmine\network\mcpe\protocol\PlayerEnchantOptionsPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d70/_player_enchant_options_packet_8php_source.html#l00023">PlayerEnchantOptionsPacket.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position_html"><div class="ttname"><a href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">pocketmine\network\mcpe\protocol\types\BlockPosition</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d80/_block_position_8php_source.html#l00019">BlockPosition.php:19</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_html"><div class="ttname"><a href="../../dd/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant.html">pocketmine\network\mcpe\protocol\types\Enchant</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db7/_enchant_8php_source.html#l00021">Enchant.php:21</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">pocketmine\network\mcpe\protocol\types\EnchantOption</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d50/_enchant_option_8php_source.html#l00024">EnchantOption.php:24</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_html"><div class="ttname"><a href="../../dd/d33/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant.html">pocketmine\network\mcpe\protocol\types\Enchant</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db7/_enchant_8php_source.html#l00022">Enchant.php:22</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option_html"><div class="ttname"><a href="../../d2/d77/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_enchant_option.html">pocketmine\network\mcpe\protocol\types\EnchantOption</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d50/_enchant_option_8php_source.html#l00025">EnchantOption.php:25</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_ids_html"><div class="ttname"><a href="../../d0/d3b/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_container_ids.html">pocketmine\network\mcpe\protocol\types\inventory\ContainerIds</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/db3/_container_ids_8php_source.html#l00017">ContainerIds.php:17</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_full_container_name_html"><div class="ttname"><a href="../../d6/d50/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_full_container_name.html">pocketmine\network\mcpe\protocol\types\inventory\FullContainerName</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dc5/_full_container_name_8php_source.html#l00023">FullContainerName.php:23</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_html"><div class="ttname"><a href="../../d6/dc9/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStack</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d1e/_item_stack_8php_source.html#l00019">ItemStack.php:19</a></div></div>

@@ -64,10 +64,9 @@ var searchData=
   ['furnace_61',['Furnace',['../d4/d66/classpocketmine_1_1block_1_1_furnace.html',1,'pocketmine\block\Furnace'],['../db/d1f/classpocketmine_1_1block_1_1tile_1_1_furnace.html',1,'pocketmine\block\tile\Furnace']]],
   ['furnaceburnevent_62',['FurnaceBurnEvent',['../d5/d82/classpocketmine_1_1event_1_1inventory_1_1_furnace_burn_event.html',1,'pocketmine::event::inventory']]],
   ['furnaceinventory_63',['FurnaceInventory',['../d8/d69/classpocketmine_1_1block_1_1inventory_1_1_furnace_inventory.html',1,'pocketmine::block::inventory']]],
-  ['furnacerecipe_64',['FurnaceRecipe',['../da/d41/classpocketmine_1_1crafting_1_1_furnace_recipe.html',1,'pocketmine\crafting\FurnaceRecipe'],['../db/d68/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_furnace_recipe.html',1,'pocketmine\network\mcpe\protocol\types\recipe\FurnaceRecipe']]],
+  ['furnacerecipe_64',['FurnaceRecipe',['../da/d41/classpocketmine_1_1crafting_1_1_furnace_recipe.html',1,'pocketmine::crafting']]],
   ['furnacerecipeblockname_65',['FurnaceRecipeBlockName',['../d6/d97/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1recipe_1_1_furnace_recipe_block_name.html',1,'pocketmine::network::mcpe::protocol::types::recipe']]],
-  ['furnacerecipedata_66',['FurnaceRecipeData',['../d1/d4b/classpocketmine_1_1crafting_1_1json_1_1_furnace_recipe_data.html',1,'pocketmine::crafting::json']]],
-  ['furnacerecipemanager_67',['FurnaceRecipeManager',['../d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html',1,'pocketmine::crafting']]],
-  ['furnacesmeltevent_68',['FurnaceSmeltEvent',['../d8/df1/classpocketmine_1_1event_1_1inventory_1_1_furnace_smelt_event.html',1,'pocketmine::event::inventory']]],
-  ['furnacesound_69',['FurnaceSound',['../dd/d28/classpocketmine_1_1world_1_1sound_1_1_furnace_sound.html',1,'pocketmine::world::sound']]]
+  ['furnacerecipemanager_66',['FurnaceRecipeManager',['../d4/ddf/classpocketmine_1_1crafting_1_1_furnace_recipe_manager.html',1,'pocketmine::crafting']]],
+  ['furnacesmeltevent_67',['FurnaceSmeltEvent',['../d8/df1/classpocketmine_1_1event_1_1inventory_1_1_furnace_smelt_event.html',1,'pocketmine::event::inventory']]],
+  ['furnacesound_68',['FurnaceSound',['../dd/d28/classpocketmine_1_1world_1_1sound_1_1_furnace_sound.html',1,'pocketmine::world::sound']]]
 ];

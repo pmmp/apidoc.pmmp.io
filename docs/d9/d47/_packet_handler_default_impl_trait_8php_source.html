@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-9c2871e619ddaa0a56652c6c5556efcf767fbf05</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.2 git-c9e7b3ab9bd2149f206392522e8eb7e9d8d68cfa</span>
    </div>
   </td>
  </tr>
@@ -948,7 +948,7 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        return false;</div>
 <div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    }</div>
 <div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleDebugDrawer(DebugDrawerPacket $packet) : bool{</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    <span class="keyword">public</span> <span class="keyword">function</span> handlePrimitiveShapes(PrimitiveShapesPacket $packet) : bool{</div>
 <div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>        return false;</div>
 <div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    }</div>
 <div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span> </div>
@@ -1019,7 +1019,15 @@ $(function(){initNavTree('d9/d47/_packet_handler_default_impl_trait_8php_source.
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleClientboundAttributeLayerSync(ClientboundAttributeLayerSyncPacket $packet) : bool{</div>
 <div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        return false;</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    }</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>}</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleServerPresenceInfo(ServerPresenceInfoPacket $packet) : bool{</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>        return false;</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    }</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span> </div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleServerStoreInfo(ServerStoreInfoPacket $packet) : bool{</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        return false;</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    }</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

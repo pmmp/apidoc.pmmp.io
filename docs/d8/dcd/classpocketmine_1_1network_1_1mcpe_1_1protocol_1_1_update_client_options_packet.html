@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-9c2871e619ddaa0a56652c6c5556efcf767fbf05</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.2 git-c9e7b3ab9bd2149f206392522e8eb7e9d8d68cfa</span>
    </div>
   </td>
  </tr>
@@ -139,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a55025ba182163f59eb3175f7a7611b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb1214c98c0b82003467b6bb323ba55" id="r_a0cb1214c98c0b82003467b6bb323ba55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a0cb1214c98c0b82003467b6bb323ba55">encode</a> (ByteBufferWriter $out)</td></tr>
 <tr class="separator:a0cb1214c98c0b82003467b6bb323ba55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccb14987fc8476ed1b5777a8380d664" id="r_a0ccb14987fc8476ed1b5777a8380d664"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ccb14987fc8476ed1b5777a8380d664">getFilterProfanityChange</a> ()</td></tr>
+<tr class="separator:a0ccb14987fc8476ed1b5777a8380d664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac6a1a4ea7b51d09ef06c7890b4348a" id="r_a7ac6a1a4ea7b51d09ef06c7890b4348a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ac6a1a4ea7b51d09ef06c7890b4348a">getGraphicsMode</a> ()</td></tr>
 <tr class="separator:a7ac6a1a4ea7b51d09ef06c7890b4348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c94c78d92e3be9720d4f5d1c5352ff3" id="r_a5c94c78d92e3be9720d4f5d1c5352ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5c94c78d92e3be9720d4f5d1c5352ff3">getName</a> ()</td></tr>
@@ -150,8 +152,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4666ffb7855703f35663a621ba2f6097" id="r_a4666ffb7855703f35663a621ba2f6097"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4666ffb7855703f35663a621ba2f6097">create</a> (?GraphicsMode $graphicsMode)</td></tr>
-<tr class="separator:a4666ffb7855703f35663a621ba2f6097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112187b05ce1838212cdc188ec74f3fc" id="r_a112187b05ce1838212cdc188ec74f3fc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112187b05ce1838212cdc188ec74f3fc">create</a> (?GraphicsMode $graphicsMode, ?bool $filterProfanityChange)</td></tr>
+<tr class="separator:a112187b05ce1838212cdc188ec74f3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -280,8 +282,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4666ffb7855703f35663a621ba2f6097" name="a4666ffb7855703f35663a621ba2f6097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4666ffb7855703f35663a621ba2f6097">&#9670;&#160;</a></span>create()</h2>
+<a id="a112187b05ce1838212cdc188ec74f3fc" name="a112187b05ce1838212cdc188ec74f3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112187b05ce1838212cdc188ec74f3fc">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,8 +294,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\UpdateClientOptionsPacket::create </td>
           <td>(</td>
-          <td class="paramtype">?GraphicsMode</td>          <td class="paramname"><span class="paramname"><em>$graphicsMode</em></span></td><td>)</td>
+          <td class="paramtype">?GraphicsMode</td>          <td class="paramname"><span class="paramname"><em>$graphicsMode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?bool</td>          <td class="paramname"><span class="paramname"><em>$filterProfanityChange</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -304,7 +310,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00031">31</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -410,7 +416,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5aecc6bc8bc976a8d34f0641d4af7f68">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -496,7 +502,26 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a1ae4fc82078a731a29ef8bd591280c30">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00043">43</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00048">48</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a0ccb14987fc8476ed1b5777a8380d664" name="a0ccb14987fc8476ed1b5777a8380d664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ccb14987fc8476ed1b5777a8380d664">&#9670;&#160;</a></span>getFilterProfanityChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\UpdateClientOptionsPacket::getFilterProfanityChange </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -515,7 +540,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
 
 </div>
 </div>
@@ -575,7 +600,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00047">47</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html#l00053">53</a> of file <a class="el" href="../../d1/d81/_update_client_options_packet_8php_source.html">UpdateClientOptionsPacket.php</a>.</p>
 
 </div>
 </div>

@@ -7,7 +7,7 @@ var dir_e7c1c1475d31d734fc960a34819cd371 =
     [ "CraftingManagerFromDataHelper.php", "d3/db4/_crafting_manager_from_data_helper_8php_source.html", null ],
     [ "CraftingRecipe.php", "df/da4/_crafting_recipe_8php_source.html", null ],
     [ "ExactRecipeIngredient.php", "db/d5a/_exact_recipe_ingredient_8php_source.html", null ],
-    [ "src/crafting/FurnaceRecipe.php", "dc/d80/src_2crafting_2_furnace_recipe_8php_source.html", null ],
+    [ "FurnaceRecipe.php", "d9/ddf/_furnace_recipe_8php_source.html", null ],
     [ "FurnaceRecipeManager.php", "d3/db8/_furnace_recipe_manager_8php_source.html", null ],
     [ "FurnaceType.php", "de/de1/_furnace_type_8php_source.html", null ],
     [ "MetaWildcardRecipeIngredient.php", "d8/dd4/_meta_wildcard_recipe_ingredient_8php_source.html", null ],

@@ -1,6 +1,5 @@
 var dir_1904fd91fe536d0dc5ee147ff8092e49 =
 [
-    [ "FurnaceRecipeData.php", "d4/d67/_furnace_recipe_data_8php_source.html", null ],
     [ "ItemStackData.php", "d6/dbb/_item_stack_data_8php_source.html", null ],
     [ "PotionContainerChangeRecipeData.php", "de/df6/_potion_container_change_recipe_data_8php_source.html", null ],
     [ "PotionTypeRecipeData.php", "dc/d61/_potion_type_recipe_data_8php_source.html", null ],

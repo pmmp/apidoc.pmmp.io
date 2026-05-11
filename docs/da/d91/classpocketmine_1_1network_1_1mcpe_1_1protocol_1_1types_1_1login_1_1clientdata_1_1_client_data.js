@@ -13,6 +13,7 @@ var classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientda
     [ "$DeviceId", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#ac6aa5d2483dbac1b74d31dc94bca5b3e", null ],
     [ "$DeviceModel", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#aefabc9ab1c8da7f2b7f31a3030a2a073", null ],
     [ "$DeviceOS", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a6599ad543f3e1c309bc634700f309112", null ],
+    [ "$FilterProfanity", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#abad181a907f5bbc496276038159ac841", null ],
     [ "$GameVersion", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a4e0016dcde55a8d630f79fef7cecba3c", null ],
     [ "$GraphicsMode", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#aa9304648edbc3391193dec3c0819ef6f", null ],
     [ "$GuiScale", "da/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1login_1_1clientdata_1_1_client_data.html#a355b0bfa5633eb535f1a5f814bc1878b", null ],

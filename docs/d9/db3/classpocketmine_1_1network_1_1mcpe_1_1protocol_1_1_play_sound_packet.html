@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-9c2871e619ddaa0a56652c6c5556efcf767fbf05</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.2 git-c9e7b3ab9bd2149f206392522e8eb7e9d8d68cfa</span>
    </div>
   </td>
  </tr>
@@ -148,8 +148,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d9e851f34922430eb79f4f954c62f77" id="r_a9d9e851f34922430eb79f4f954c62f77"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d9e851f34922430eb79f4f954c62f77">create</a> (string $soundName, float $x, float $y, float $z, float $volume, float $pitch)</td></tr>
-<tr class="separator:a9d9e851f34922430eb79f4f954c62f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495426b90ef759a0082b412ebe7d0006" id="r_a495426b90ef759a0082b412ebe7d0006"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a495426b90ef759a0082b412ebe7d0006">create</a> (string $soundName, float $x, float $y, float $z, float $volume, float $pitch, ?int $serverSoundHandle,)</td></tr>
+<tr class="separator:a495426b90ef759a0082b412ebe7d0006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -159,6 +159,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa8f8e8ec577e46952ad065c9ede0943a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaad4a5e300a6eefe7bd9cb321626ba6" id="r_adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#adaad4a5e300a6eefe7bd9cb321626ba6">$senderSubId</a> = 0</td></tr>
 <tr class="separator:adaad4a5e300a6eefe7bd9cb321626ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5387dac190a56a302abd79679c64f756" id="r_a5387dac190a56a302abd79679c64f756"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5387dac190a56a302abd79679c64f756">$serverSoundHandle</a> = null</td></tr>
+<tr class="separator:a5387dac190a56a302abd79679c64f756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f6c72f917302502bce3a975aea67f65" id="r_a4f6c72f917302502bce3a975aea67f65"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f6c72f917302502bce3a975aea67f65">$soundName</a></td></tr>
 <tr class="separator:a4f6c72f917302502bce3a975aea67f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a557e1bdf78d26b4806023593494f25f7" id="r_a557e1bdf78d26b4806023593494f25f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a557e1bdf78d26b4806023593494f25f7">$volume</a></td></tr>
@@ -290,8 +292,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9d9e851f34922430eb79f4f954c62f77" name="a9d9e851f34922430eb79f4f954c62f77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d9e851f34922430eb79f4f954c62f77">&#9670;&#160;</a></span>create()</h2>
+<a id="a495426b90ef759a0082b412ebe7d0006" name="a495426b90ef759a0082b412ebe7d0006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495426b90ef759a0082b412ebe7d0006">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +329,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$pitch</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$pitch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$serverSoundHandle</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -338,7 +345,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00036">36</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
 
 </div>
 </div>
@@ -444,7 +451,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5aecc6bc8bc976a8d34f0641d4af7f68">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00047">47</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
 
 </div>
 </div>
@@ -530,7 +537,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a1ae4fc82078a731a29ef8bd591280c30">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00057">57</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00068">68</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
 
 </div>
 </div>
@@ -590,7 +597,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00064">64</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00076">76</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
 
 </div>
 </div>
@@ -685,6 +692,22 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/db7/_data_packet_8php_source.html#l00033">33</a> of file <a class="el" href="../../d1/db7/_data_packet_8php_source.html">DataPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="a5387dac190a56a302abd79679c64f756" name="a5387dac190a56a302abd79679c64f756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5387dac190a56a302abd79679c64f756">&#9670;&#160;</a></span>$serverSoundHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pocketmine\network\mcpe\protocol\PlaySoundPacket::$serverSoundHandle = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html#l00032">32</a> of file <a class="el" href="../../d3/dc8/_play_sound_packet_8php_source.html">PlaySoundPacket.php</a>.</p>
 
 </div>
 </div>

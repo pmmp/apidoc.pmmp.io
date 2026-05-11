@@ -129,7 +129,7 @@ var NAVTREEINDEX6 =
 "d0/d85/classpocketmine_1_1world_1_1generator_1_1populator_1_1_tall_grass.html":[2,0,0,14,0,1,3],
 "d0/d85/classpocketmine_1_1world_1_1generator_1_1populator_1_1_tall_grass.html":[3,0,1,30,2,6,3],
 "d0/d86/_painting_8php_source.html":[4,0,1,6,2,6],
-"d0/d86/_server_stats_packet_8php_source.html":[4,0,2,0,1,0,177],
+"d0/d86/_server_stats_packet_8php_source.html":[4,0,2,0,1,0,178],
 "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html":[3,0,1,7,3,9],
 "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#a02eb3401e4fe566c7a2528aeb7b0222a":[3,0,1,7,3,9,9],
 "d0/d86/classpocketmine_1_1entity_1_1projectile_1_1_throwable.html#a099fce07daf8c0ce633456ea00b4272b":[3,0,1,7,3,9,53],

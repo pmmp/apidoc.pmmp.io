@@ -1,5 +1,15 @@
 var NAVTREEINDEX17 =
 {
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a09f4667329f89292dd319d56c4243b59":[2,0,0,0,43,32],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a09f4667329f89292dd319d56c4243b59":[3,0,1,0,45,32],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a0cbaf41fcd8649702e27ebfae26c8e6f":[2,0,0,0,43,0],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a0cbaf41fcd8649702e27ebfae26c8e6f":[3,0,1,0,45,0],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[2,0,0,0,43,20],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a104403fbe0f0d27d8a5ac667cd1a89ef":[3,0,1,0,45,20],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a1a1a2b2adf423738289d296198f044e1":[2,0,0,0,43,63],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a1a1a2b2adf423738289d296198f044e1":[3,0,1,0,45,63],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a1ce2444f76246982cfbb507fed99a48e":[2,0,0,0,43,49],
+"d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a1ce2444f76246982cfbb507fed99a48e":[3,0,1,0,45,49],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a2127737ad69279d366e4462b54f693f2":[2,0,0,0,43,4],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a2127737ad69279d366e4462b54f693f2":[3,0,1,0,45,4],
 "d1/d2e/classpocketmine_1_1block_1_1_cake_with_dyed_candle.html#a26bbbd2a3058bb57bd16a6f73b32d9d0":[2,0,0,0,43,24],
@@ -134,7 +144,7 @@ var NAVTREEINDEX17 =
 "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html#a082a35789a7fac58f9b2e6772f8ebcde":[3,0,1,16,0,3,1,1],
 "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html#a34e3b467380b9eac0031c960a970b6b0":[3,0,1,16,0,3,1,0],
 "d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1convert_1_1_block_state_dictionary_entry.html#aea7121b497f3ad451c28b94466b9765c":[3,0,1,16,0,3,1,2],
-"d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html":[3,0,1,16,0,6,1,92],
+"d1/d2e/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_multiplayer_game_visibility.html":[3,0,1,16,0,6,1,94],
 "d1/d2f/classpocketmine_1_1event_1_1_event.html":[2,0,0,3,8],
 "d1/d2f/classpocketmine_1_1event_1_1_event.html":[3,0,1,9,8],
 "d1/d2f/classpocketmine_1_1event_1_1_event.html#a3d979a673428c9ae66e1039bf796e945":[2,0,0,3,8,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX17 =
 "d1/d30/classpocketmine_1_1block_1_1_podzol.html#abce48b40feb225f4ce9b7cf2e02a9336":[3,0,1,0,182,55],
 "d1/d30/classpocketmine_1_1block_1_1_podzol.html#ac85f12ad4e4d729db9f27ecb8e97998b":[2,0,0,0,180,51],
 "d1/d30/classpocketmine_1_1block_1_1_podzol.html#ac85f12ad4e4d729db9f27ecb8e97998b":[3,0,1,0,182,51],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,180,0],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acb449b40461f4800cf6e6288cb9a069d":[3,0,1,0,182,0],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acb7cc5bba94398c6a329b3b2af8fa859":[2,0,0,0,180,24],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acb7cc5bba94398c6a329b3b2af8fa859":[3,0,1,0,182,24],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[2,0,0,0,180,57],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acf338037e498bd5c8dbe6d4bceb2a7ca":[3,0,1,0,182,57],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acfa7766036568571b645ae89ceb1029e":[2,0,0,0,180,43],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acfa7766036568571b645ae89ceb1029e":[3,0,1,0,182,43],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#ad57a8bddf87431ff034f3a96e7219d63":[2,0,0,0,180,15],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#ad57a8bddf87431ff034f3a96e7219d63":[3,0,1,0,182,15],
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#ad925607ef09026804dbbf059583e3add":[2,0,0,0,180,42]
+"d1/d30/classpocketmine_1_1block_1_1_podzol.html#acb449b40461f4800cf6e6288cb9a069d":[2,0,0,0,180,0]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-9c2871e619ddaa0a56652c6c5556efcf767fbf05</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.2 git-c9e7b3ab9bd2149f206392522e8eb7e9d8d68cfa</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(function(){initNavTree('d6/d84/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dd8/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_jwt_helper__coll__graph.svg" width="216" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dd8/classpocketmine_1_1network_1_1mcpe_1_1auth_1_1_auth_jwt_helper__coll__graph.svg" width="239" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -124,6 +124,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a225e48ffcec141bf779604ecce2a3aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8af03a07c1fa62ad99fc15476a52dae" id="r_ae8af03a07c1fa62ad99fc15476a52dae"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8af03a07c1fa62ad99fc15476a52dae">validateOpenIdAuthToken</a> (string $jwt, string $signingKeyDer, string $issuer, string $audience)</td></tr>
 <tr class="separator:ae8af03a07c1fa62ad99fc15476a52dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18be4fe1aa110603c031aed947ee2fa" id="r_ac18be4fe1aa110603c031aed947ee2fa"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac18be4fe1aa110603c031aed947ee2fa">validateSelfSignedAuthToken</a> (string $jwt, string $signingKeyDer, string $audience)</td></tr>
+<tr class="separator:ac18be4fe1aa110603c031aed947ee2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44fc75d7d8e88cf6d83d3b39cb906b0a" id="r_a44fc75d7d8e88cf6d83d3b39cb906b0a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44fc75d7d8e88cf6d83d3b39cb906b0a">validateSelfSignedToken</a> (string $jwt, ?string $expectedKeyDer)</td></tr>
 <tr class="separator:a44fc75d7d8e88cf6d83d3b39cb906b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,7 +136,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00036">36</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00037">37</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a225e48ffcec141bf779604ecce2a3aea" name="a225e48ffcec141bf779604ecce2a3aea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a225e48ffcec141bf779604ecce2a3aea">&#9670;&#160;</a></span>validateLegacyAuthToken()</h2>
@@ -162,6 +164,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000130">Deprecated</a></b></dt><dd></dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">VerifyLoginException</td><td>if errors are encountered </td></tr>
@@ -169,7 +172,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00104">104</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00121">121</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
 
 </div>
 </div>
@@ -216,7 +219,49 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00059">59</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00111">111</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
+
+</div>
+</div>
+<a id="ac18be4fe1aa110603c031aed947ee2fa" name="ac18be4fe1aa110603c031aed947ee2fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18be4fe1aa110603c031aed947ee2fa">&#9670;&#160;</a></span>validateSelfSignedAuthToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pocketmine\network\mcpe\auth\AuthJwtHelper::validateSelfSignedAuthToken </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$jwt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$signingKeyDer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$audience</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">VerifyLoginException</td><td>if errors are encountered </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00102">102</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
 
 </div>
 </div>
@@ -246,8 +291,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Used for validating the info in clientDataJwt </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00128">128</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00148">148</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
 
 </div>
 </div>
@@ -264,7 +310,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00038">38</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html#l00039">39</a> of file <a class="el" href="../../dd/d47/_auth_jwt_helper_8php_source.html">AuthJwtHelper.php</a>.</p>
 
 </div>
 </div>

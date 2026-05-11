@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.42.2 git-9c2871e619ddaa0a56652c6c5556efcf767fbf05</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.2 git-c9e7b3ab9bd2149f206392522e8eb7e9d8d68cfa</span>
    </div>
   </td>
  </tr>
@@ -145,13 +145,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3fefae7e3639d5aa1e45fa4b7df2f96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12cc1a4da865f1343b706b4cab684ff" id="r_ac12cc1a4da865f1343b706b4cab684ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac12cc1a4da865f1343b706b4cab684ff">handle</a> (<a class="el" href="../../d1/d7c/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet_handler_interface.html">PacketHandlerInterface</a> $handler)</td></tr>
 <tr class="separator:ac12cc1a4da865f1343b706b4cab684ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5470e829cb2b37bac1724e077a6a37" id="r_abc5470e829cb2b37bac1724e077a6a37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc5470e829cb2b37bac1724e077a6a37">isPartyLeader</a> ()</td></tr>
+<tr class="separator:abc5470e829cb2b37bac1724e077a6a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2432f23e1c1b69a82f90588c1dbf5" id="r_a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a42c2432f23e1c1b69a82f90588c1dbf5">pid</a> ()</td></tr>
 <tr class="separator:a42c2432f23e1c1b69a82f90588c1dbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d94d811185fcfaad2e33fdc12abb844" id="r_a3d94d811185fcfaad2e33fdc12abb844"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d94d811185fcfaad2e33fdc12abb844">create</a> (string $partyId)</td></tr>
-<tr class="separator:a3d94d811185fcfaad2e33fdc12abb844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653a766ad28fb442e2b69e0d356628fa" id="r_a653a766ad28fb442e2b69e0d356628fa"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a653a766ad28fb442e2b69e0d356628fa">create</a> (string $partyId, bool $partyLeader)</td></tr>
+<tr class="separator:a653a766ad28fb442e2b69e0d356628fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -280,8 +282,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d94d811185fcfaad2e33fdc12abb844" name="a3d94d811185fcfaad2e33fdc12abb844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d94d811185fcfaad2e33fdc12abb844">&#9670;&#160;</a></span>create()</h2>
+<a id="a653a766ad28fb442e2b69e0d356628fa" name="a653a766ad28fb442e2b69e0d356628fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653a766ad28fb442e2b69e0d356628fa">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,8 +294,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static pocketmine\network\mcpe\protocol\PartyChangedPacket::create </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$partyId</em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$partyId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$partyLeader</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -304,7 +310,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>@generate-create-func </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00029">29</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00030">30</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
 
 </div>
 </div>
@@ -410,7 +416,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a5aecc6bc8bc976a8d34f0641d4af7f68">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
 
 </div>
 </div>
@@ -496,7 +502,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/ddb/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_data_packet.html#a1ae4fc82078a731a29ef8bd591280c30">pocketmine\network\mcpe\protocol\DataPacket</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00041">41</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00046">46</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
 
 </div>
 </div>
@@ -544,7 +550,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00035">35</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00037">37</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
 
 </div>
 </div>
@@ -575,7 +581,26 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d5d/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1_packet.html#af926682c9a4d4957235fe4faea7f5409">pocketmine\network\mcpe\protocol\Packet</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00045">45</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00051">51</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
+
+</div>
+</div>
+<a id="abc5470e829cb2b37bac1724e077a6a37" name="abc5470e829cb2b37bac1724e077a6a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5470e829cb2b37bac1724e077a6a37">&#9670;&#160;</a></span>isPartyLeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\network\mcpe\protocol\PartyChangedPacket::isPartyLeader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html#l00039">39</a> of file <a class="el" href="../../db/db1/_party_changed_packet_8php_source.html">PartyChangedPacket.php</a>.</p>
 
 </div>
 </div>
