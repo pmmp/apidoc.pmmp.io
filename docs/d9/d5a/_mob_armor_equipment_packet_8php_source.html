@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.3 git-3a0e9482340d5ce61574da3ec81cfb4feef68c88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.44.3 git-fe9f8bd801530ee23ac8e6fb9d8a1922846d5aff</span>
    </div>
   </td>
  </tr>
@@ -156,22 +156,22 @@ $(function(){initNavTree('d9/d5a/_mob_armor_equipment_packet_8php_source.html','
 <div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d1/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_armor_equipment_packet.html#a7a019e045c271d63bc8513deb756a58a">   48</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_armor_equipment_packet.html#a7a019e045c271d63bc8513deb756a58a">decodePayload</a>(ByteBufferReader $in) : void{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;actorRuntimeId = <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">CommonTypes</a>::getActorRuntimeId($in);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;head = CommonTypes::getItemStackWrapper($in);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;chest = CommonTypes::getItemStackWrapper($in);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;legs = CommonTypes::getItemStackWrapper($in);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;feet = CommonTypes::getItemStackWrapper($in);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;body = CommonTypes::getItemStackWrapper($in);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;head = CommonTypes::getNetworkItemStackDescriptor($in);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;chest = CommonTypes::getNetworkItemStackDescriptor($in);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;legs = CommonTypes::getNetworkItemStackDescriptor($in);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        $this-&gt;feet = CommonTypes::getNetworkItemStackDescriptor($in);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $this-&gt;body = CommonTypes::getNetworkItemStackDescriptor($in);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d1/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_armor_equipment_packet.html#a0f1052d6114cee9c3a66333221cd9fba">   57</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d26/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_mob_armor_equipment_packet.html#a0f1052d6114cee9c3a66333221cd9fba">encodePayload</a>(ByteBufferWriter $out) : void{</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">CommonTypes</a>::putActorRuntimeId($out, $this-&gt;actorRuntimeId);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        CommonTypes::putItemStackWrapper($out, $this-&gt;head);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        CommonTypes::putItemStackWrapper($out, $this-&gt;chest);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        CommonTypes::putItemStackWrapper($out, $this-&gt;legs);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        CommonTypes::putItemStackWrapper($out, $this-&gt;feet);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        CommonTypes::putItemStackWrapper($out, $this-&gt;body);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        CommonTypes::putNetworkItemStackDescriptor($out, $this-&gt;head);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        CommonTypes::putNetworkItemStackDescriptor($out, $this-&gt;chest);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        CommonTypes::putNetworkItemStackDescriptor($out, $this-&gt;legs);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        CommonTypes::putNetworkItemStackDescriptor($out, $this-&gt;feet);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        CommonTypes::putNetworkItemStackDescriptor($out, $this-&gt;body);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.3 git-3a0e9482340d5ce61574da3ec81cfb4feef68c88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.44.3 git-fe9f8bd801530ee23ac8e6fb9d8a1922846d5aff</span>
    </div>
   </td>
  </tr>
@@ -159,10 +159,10 @@ $(function(){initNavTree('de/d96/_client_cache_blob_status_packet_8php_source.ht
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html#ac1b697be13b32567bd6aa5952ac29026">   57</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html#ac1b697be13b32567bd6aa5952ac29026">decodePayload</a>(ByteBufferReader $in) : void{</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $missCount = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $hitCount = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; $missCount; ++$i){</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $this-&gt;missHashes[] = LE::readUnsignedLong($in);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; $missCount; ++$i){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $this-&gt;missHashes[] = LE::readUnsignedLong($in);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $hitCount = VarInt::readUnsignedInt($in);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">for</span>($i = 0; $i &lt; $hitCount; ++$i){</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            $this-&gt;hitHashes[] = LE::readUnsignedLong($in);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
@@ -172,10 +172,10 @@ $(function(){initNavTree('de/d96/_client_cache_blob_status_packet_8php_source.ht
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html#aed821b817f5b342f5133e9e678ce7c49">   68</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../d1/d18/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_client_cache_blob_status_packet.html#aed821b817f5b342f5133e9e678ce7c49">encodePayload</a>(ByteBufferWriter $out) : void{</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        VarInt::writeUnsignedInt($out, count($this-&gt;missHashes));</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        VarInt::writeUnsignedInt($out, count($this-&gt;hitHashes));</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">foreach</span>($this-&gt;missHashes as $hash){</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            LE::writeUnsignedLong($out, $hash);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">foreach</span>($this-&gt;missHashes as $hash){</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            LE::writeUnsignedLong($out, $hash);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        VarInt::writeUnsignedInt($out, count($this-&gt;hitHashes));</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">foreach</span>($this-&gt;hitHashes as $hash){</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            LE::writeUnsignedLong($out, $hash);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>

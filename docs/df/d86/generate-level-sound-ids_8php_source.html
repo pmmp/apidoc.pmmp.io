@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.3 git-3a0e9482340d5ce61574da3ec81cfb4feef68c88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.44.3 git-fe9f8bd801530ee23ac8e6fb9d8a1922846d5aff</span>
    </div>
   </td>
  </tr>
@@ -202,21 +202,16 @@ $(function(){initNavTree('df/d86/generate-level-sound-ids_8php_source.html','../
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>CODE);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>$prev = 0;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordflow">foreach</span>($list as $id =&gt; $name){</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    $constantName = strtoupper(str_replace(<span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>, $name));</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">if</span>($id !== $prev + 1){</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        fwrite($output, <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    $prev = $id;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    fwrite($output, <span class="stringliteral">&quot;\tpublic const $constantName = $id;\n&quot;</span>);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>fwrite($output, <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>fwrite($output, <span class="stringliteral">&quot;}\n&quot;</span>);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>fclose($output);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>echo <span class="stringliteral">&quot;Successfully regenerated LevelSoundEvent enum&quot;</span> . PHP_EOL;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordflow">foreach</span>($list as $name){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    $constantName = strtoupper(str_replace(<span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>, $name));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    fwrite($output, <span class="stringliteral">&quot;\tpublic const $constantName = \&quot;$name\&quot;;\n&quot;</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>fwrite($output, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>fwrite($output, <span class="stringliteral">&quot;}\n&quot;</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>fclose($output);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>echo <span class="stringliteral">&quot;Successfully regenerated LevelSoundEvent enum&quot;</span> . PHP_EOL;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

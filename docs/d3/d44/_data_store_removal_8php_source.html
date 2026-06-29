@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.3 git-3a0e9482340d5ce61574da3ec81cfb4feef68c88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.44.3 git-fe9f8bd801530ee23ac8e6fb9d8a1922846d5aff</span>
    </div>
   </td>
  </tr>
@@ -120,48 +120,47 @@ $(function(){initNavTree('d3/d44/_data_store_removal_8php_source.html','../../')
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>declare(strict_types=1);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol\types;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>pocketmine\network\mcpe\protocol\types\ddui;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use pmmp\encoding\ByteBufferReader;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use pmmp\encoding\ByteBufferWriter;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use <a class="code hl_class" href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../de/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store_removal.html">   24</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../de/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store_removal.html">DataStoreRemoval</a> <span class="keyword">extends</span> <a class="code hl_class" href="../../d9/d57/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store.html">DataStore</a>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">const</span> ID = DataStoreType::REMOVAL;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $name,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ){}</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span> <span class="keyword">function</span> getTypeId() : <span class="keywordtype">int</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> self::ID;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span> <span class="keyword">function</span> getName() : <span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;name; }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : <span class="keyword">self</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $name = CommonTypes::getString($in);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $name,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        );</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        CommonTypes::putString($out, $this-&gt;name);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use pocketmine\network\mcpe\protocol\types\GetTypeIdFromConstTrait;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d2/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_removal.html">   25</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_removal.html">DataStoreRemoval</a> <span class="keyword">implements</span> <a class="code hl_interface" href="../../d2/db6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_operation.html">DataStoreOperation</a>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    use GetTypeIdFromConstTrait;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span> <span class="keyword">const</span> ID = DataStoreOperationType::REMOVAL;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> $name,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ){}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span> <span class="keyword">function</span> getName() : <span class="keywordtype">string</span>{ <span class="keywordflow">return</span> $this-&gt;name; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> read(ByteBufferReader $in) : <span class="keyword">self</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $name = CommonTypes::getString($in);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keyword">self</span>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            $name,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        );</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span> <span class="keyword">function</span> write(ByteBufferWriter $out) : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        CommonTypes::putString($out, $this-&gt;name);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00069">CommonTypes.php:69</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store_html"><div class="ttname"><a href="../../d9/d57/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store.html">pocketmine\network\mcpe\protocol\types\DataStore</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d93/_data_store_8php_source.html#l00022">DataStore.php:22</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store_removal_html"><div class="ttname"><a href="../../de/d46/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_data_store_removal.html">pocketmine\network\mcpe\protocol\types\DataStoreRemoval</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">DataStoreRemoval.php:24</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_removal_html"><div class="ttname"><a href="../../d2/d66/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_removal.html">pocketmine\network\mcpe\protocol\types\ddui\DataStoreRemoval</a></div><div class="ttdef"><b>Definition</b> <a href="#l00025">DataStoreRemoval.php:25</a></div></div>
+<div class="ttc" id="ainterfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_operation_html"><div class="ttname"><a href="../../d2/db6/interfacepocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1ddui_1_1_data_store_operation.html">pocketmine\network\mcpe\protocol\types\ddui\DataStoreOperation</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d10/_data_store_operation_8php_source.html#l00023">DataStoreOperation.php:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_c5da75fdc1d6c57999112ed830c87a3c.html">vendor</a></li><li class="navelem"><a class="el" href="../../dir_67ec95640dccd85af7425ce27c77136c.html">pocketmine</a></li><li class="navelem"><a class="el" href="../../dir_35c25ee8b73bfc2a0e7ec3dc66e7b1c9.html">bedrock-protocol</a></li><li class="navelem"><a class="el" href="../../dir_682c7921c367674b86e95b8a006ee2ec.html">src</a></li><li class="navelem"><a class="el" href="../../dir_55bc17615453bf062ec3fe223a89c893.html">types</a></li><li class="navelem"><b>DataStoreRemoval.php</b></li>
+    <li class="navelem"><a class="el" href="../../dir_c5da75fdc1d6c57999112ed830c87a3c.html">vendor</a></li><li class="navelem"><a class="el" href="../../dir_67ec95640dccd85af7425ce27c77136c.html">pocketmine</a></li><li class="navelem"><a class="el" href="../../dir_35c25ee8b73bfc2a0e7ec3dc66e7b1c9.html">bedrock-protocol</a></li><li class="navelem"><a class="el" href="../../dir_682c7921c367674b86e95b8a006ee2ec.html">src</a></li><li class="navelem"><a class="el" href="../../dir_55bc17615453bf062ec3fe223a89c893.html">types</a></li><li class="navelem"><a class="el" href="../../dir_02052e8cf24b5bbee52dc3d04484d827.html">ddui</a></li><li class="navelem"><b>DataStoreRemoval.php</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

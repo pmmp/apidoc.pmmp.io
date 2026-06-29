@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.3 git-3a0e9482340d5ce61574da3ec81cfb4feef68c88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.44.3 git-fe9f8bd801530ee23ac8e6fb9d8a1922846d5aff</span>
    </div>
   </td>
  </tr>
@@ -195,31 +195,31 @@ $(function(){initNavTree('db/d51/_use_item_transaction_data_8php_source.html','.
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../dd/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_transaction_data.html#a53a35cb9ec31be500cb7f186bfb97eaf">   87</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="../../dd/d91/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_use_item_transaction_data.html#a53a35cb9ec31be500cb7f186bfb97eaf">decodeData</a>(ByteBufferReader $in) : void{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;actionType = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $this-&gt;triggerType = TriggerType::fromPacket(VarInt::readUnsignedInt($in));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $this-&gt;actionType = VarInt::readSignedInt($in);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        $this-&gt;triggerType = TriggerType::fromPacket(Byte::readUnsigned($in));</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $this-&gt;blockPosition = CommonTypes::getBlockPosition($in);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $this-&gt;face = VarInt::readSignedInt($in);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $this-&gt;face = Byte::readUnsigned($in);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $this-&gt;hotbarSlot = VarInt::readSignedInt($in);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;itemInHand = CommonTypes::getItemStackWrapper($in);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        $this-&gt;itemInHand = CommonTypes::getNetworkItemStackDescriptor($in);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        $this-&gt;playerPosition = CommonTypes::getVector3($in);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        $this-&gt;clickPosition = CommonTypes::getVector3($in);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $this-&gt;blockRuntimeId = VarInt::readUnsignedInt($in);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $this-&gt;clientInteractPrediction = PredictedResult::fromPacket(VarInt::readUnsignedInt($in));</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $this-&gt;clientInteractPrediction = PredictedResult::fromPacket(Byte::readUnsigned($in));</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        $this-&gt;clientCooldownState = Byte::readUnsigned($in);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">protected</span> <span class="keyword">function</span> encodeData(ByteBufferWriter $out) : void{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        VarInt::writeUnsignedInt($out, $this-&gt;actionType);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        VarInt::writeUnsignedInt($out, $this-&gt;triggerType-&gt;value);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        VarInt::writeSignedInt($out, $this-&gt;actionType);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        Byte::writeUnsigned($out, $this-&gt;triggerType-&gt;value);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        CommonTypes::putBlockPosition($out, $this-&gt;blockPosition);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        VarInt::writeSignedInt($out, $this-&gt;face);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        Byte::writeUnsigned($out, $this-&gt;face);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        VarInt::writeSignedInt($out, $this-&gt;hotbarSlot);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        CommonTypes::putItemStackWrapper($out, $this-&gt;itemInHand);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        CommonTypes::putNetworkItemStackDescriptor($out, $this-&gt;itemInHand);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        CommonTypes::putVector3($out, $this-&gt;playerPosition);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        CommonTypes::putVector3($out, $this-&gt;clickPosition);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        VarInt::writeUnsignedInt($out, $this-&gt;blockRuntimeId);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        VarInt::writeUnsignedInt($out, $this-&gt;clientInteractPrediction-&gt;value);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        Byte::writeUnsigned($out, $this-&gt;clientInteractPrediction-&gt;value);</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        Byte::writeUnsigned($out, $this-&gt;clientCooldownState);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
@@ -261,7 +261,7 @@ $(function(){initNavTree('db/d51/_use_item_transaction_data_8php_source.html','.
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1math_1_1_vector3_html"><div class="ttname"><a href="../../d2/d90/classpocketmine_1_1math_1_1_vector3.html">pocketmine\math\Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/d7b/_vector3_8php_source.html#l00036">Vector3.php:36</a></div></div>
-<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet_html"><div class="ttname"><a href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8b/_inventory_transaction_packet_8php_source.html#l00033">InventoryTransactionPacket.php:33</a></div></div>
+<div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet_html"><div class="ttname"><a href="../../d9/d54/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1_inventory_transaction_packet.html">pocketmine\network\mcpe\protocol\InventoryTransactionPacket</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d8b/_inventory_transaction_packet_8php_source.html#l00034">InventoryTransactionPacket.php:34</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types_html"><div class="ttname"><a href="../../d9/d99/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1serializer_1_1_common_types.html">pocketmine\network\mcpe\protocol\serializer\CommonTypes</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/_common_types_8php_source.html#l00069">CommonTypes.php:69</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position_html"><div class="ttname"><a href="../../d1/d5f/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1_block_position.html">pocketmine\network\mcpe\protocol\types\BlockPosition</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d80/_block_position_8php_source.html#l00019">BlockPosition.php:19</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper_html"><div class="ttname"><a href="../../dd/ded/classpocketmine_1_1network_1_1mcpe_1_1protocol_1_1types_1_1inventory_1_1_item_stack_wrapper.html">pocketmine\network\mcpe\protocol\types\inventory\ItemStackWrapper</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d18/_item_stack_wrapper_8php_source.html#l00017">ItemStackWrapper.php:17</a></div></div>

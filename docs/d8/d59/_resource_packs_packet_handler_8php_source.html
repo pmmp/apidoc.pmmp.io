@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.43.3 git-3a0e9482340d5ce61574da3ec81cfb4feef68c88</span>
+   <div id="projectname">PocketMine-MP<span id="projectnumber">&#160;5.44.3 git-fe9f8bd801530ee23ac8e6fb9d8a1922846d5aff</span>
    </div>
   </td>
  </tr>
@@ -312,71 +312,74 @@ $(function(){initNavTree('d8/d59/_resource_packs_packet_handler_8php_source.html
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">case</span> ResourcePackClientResponsePacket::STATUS_COMPLETED:</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                $this-&gt;session-&gt;getLogger()-&gt;debug(<span class="stringliteral">&quot;Resource packs sequence completed&quot;</span>);</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                ($this-&gt;completionCallback)();</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="keywordflow">if</span>($this-&gt;session-&gt;getHandler() === $this){</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    $this-&gt;session-&gt;setHandler(null);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                ($this-&gt;completionCallback)();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleResourcePackChunkRequest(ResourcePackChunkRequestPacket $packet) : bool{</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        $pack = $this-&gt;getPackById($packet-&gt;packId);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">if</span>(!($pack instanceof ResourcePack)){</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Invalid request for chunk $packet-&gt;chunkIndex of unknown pack $packet-&gt;packId, available packs: &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, array_keys($this-&gt;resourcePacksById)));</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        $packId = $pack-&gt;getPackId(); <span class="comment">//use this because case may be different</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keywordflow">if</span>(isset($this-&gt;downloadedChunks[$packId][$packet-&gt;chunkIndex])){</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Duplicate request for chunk $packet-&gt;chunkIndex of pack $packet-&gt;packId&quot;</span>);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            return false;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        $offset = $packet-&gt;chunkIndex * self::PACK_CHUNK_SIZE;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">if</span>($offset &lt; 0 || $offset &gt;= $pack-&gt;getPackSize()){</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Invalid out-of-bounds request for chunk $packet-&gt;chunkIndex of $packet-&gt;packId: offset $offset, file size &quot;</span> . $pack-&gt;getPackSize());</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            return false;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="keywordflow">if</span>(!isset($this-&gt;downloadedChunks[$packId])){</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            $this-&gt;downloadedChunks[$packId] = [$packet-&gt;chunkIndex =&gt; <span class="keyword">true</span>];</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }<span class="keywordflow">else</span>{</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            $this-&gt;downloadedChunks[$packId][$packet-&gt;chunkIndex] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        $this-&gt;requestQueue-&gt;enqueue([$pack, $packet-&gt;chunkIndex]);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        $this-&gt;processChunkRequestQueue();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keyword">public</span> <span class="keyword">function</span> handleResourcePackChunkRequest(ResourcePackChunkRequestPacket $packet) : bool{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        $pack = $this-&gt;getPackById($packet-&gt;packId);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">if</span>(!($pack instanceof ResourcePack)){</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Invalid request for chunk $packet-&gt;chunkIndex of unknown pack $packet-&gt;packId, available packs: &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, array_keys($this-&gt;resourcePacksById)));</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        $packId = $pack-&gt;getPackId(); <span class="comment">//use this because case may be different</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">if</span>(isset($this-&gt;downloadedChunks[$packId][$packet-&gt;chunkIndex])){</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Duplicate request for chunk $packet-&gt;chunkIndex of pack $packet-&gt;packId&quot;</span>);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            return false;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        $offset = $packet-&gt;chunkIndex * self::PACK_CHUNK_SIZE;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">if</span>($offset &lt; 0 || $offset &gt;= $pack-&gt;getPackSize()){</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Invalid out-of-bounds request for chunk $packet-&gt;chunkIndex of $packet-&gt;packId: offset $offset, file size &quot;</span> . $pack-&gt;getPackSize());</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            return false;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">if</span>(!isset($this-&gt;downloadedChunks[$packId])){</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            $this-&gt;downloadedChunks[$packId] = [$packet-&gt;chunkIndex =&gt; <span class="keyword">true</span>];</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            $this-&gt;downloadedChunks[$packId][$packet-&gt;chunkIndex] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        }</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        $this-&gt;requestQueue-&gt;enqueue([$pack, $packet-&gt;chunkIndex]);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        $this-&gt;processChunkRequestQueue();</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">private</span> <span class="keyword">function</span> processChunkRequestQueue() : void{</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        if($this-&gt;activeRequests &gt;= self::MAX_CONCURRENT_CHUNK_REQUESTS || $this-&gt;requestQueue-&gt;isEmpty()){</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        }</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        [$pack, $chunkIndex] = $this-&gt;requestQueue-&gt;dequeue();</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        $packId = $pack-&gt;getPackId();</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        $offset = $chunkIndex * self::PACK_CHUNK_SIZE;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        $chunkData = $pack-&gt;getPackChunk($offset, self::PACK_CHUNK_SIZE);</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        $this-&gt;activeRequests++;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        $this-&gt;session</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            -&gt;sendDataPacketWithReceipt(ResourcePackChunkDataPacket::create($packId, $chunkIndex, $offset, $chunkData))</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            -&gt;onCompletion(</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                <span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                    $this-&gt;activeRequests--;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    $this-&gt;processChunkRequestQueue();</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                },</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                <span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    <span class="comment">//this may have been rejected because of a disconnection - this will do nothing in that case</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                    $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Plugin interrupted sending of resource packs&quot;</span>);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                }</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            );</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    }</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keyword">private</span> <span class="keyword">function</span> processChunkRequestQueue() : void{</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        if($this-&gt;activeRequests &gt;= self::MAX_CONCURRENT_CHUNK_REQUESTS || $this-&gt;requestQueue-&gt;isEmpty()){</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        }</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        [$pack, $chunkIndex] = $this-&gt;requestQueue-&gt;dequeue();</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        $packId = $pack-&gt;getPackId();</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        $offset = $chunkIndex * self::PACK_CHUNK_SIZE;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        $chunkData = $pack-&gt;getPackChunk($offset, self::PACK_CHUNK_SIZE);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        $this-&gt;activeRequests++;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        $this-&gt;session</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            -&gt;sendDataPacketWithReceipt(ResourcePackChunkDataPacket::create($packId, $chunkIndex, $offset, $chunkData))</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            -&gt;onCompletion(</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                <span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                    $this-&gt;activeRequests--;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    $this-&gt;processChunkRequestQueue();</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                },</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                <span class="keyword">function</span>() : <span class="keywordtype">void</span>{</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                    <span class="comment">//this may have been rejected because of a disconnection - this will do nothing in that case</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                    $this-&gt;disconnectWithError(<span class="stringliteral">&quot;Plugin interrupted sending of resource packs&quot;</span>);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            );</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
 </div>
 <div class="ttc" id="aclasspocketmine_1_1lang_1_1_known_translation_factory_html"><div class="ttname"><a href="../../d0/dc6/classpocketmine_1_1lang_1_1_known_translation_factory.html">pocketmine\lang\KnownTranslationFactory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d12/_known_translation_factory_8php_source.html#l00033">KnownTranslationFactory.php:33</a></div></div>
 <div class="ttc" id="aclasspocketmine_1_1network_1_1_packet_handling_exception_html"><div class="ttname"><a href="../../d1/d78/classpocketmine_1_1network_1_1_packet_handling_exception.html">pocketmine\network\PacketHandlingException</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d63/src_2network_2_packet_handling_exception_8php_source.html#l00030">src/network/PacketHandlingException.php:30</a></div></div>
